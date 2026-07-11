@@ -1,0 +1,207 @@
+{
+  "Achat voiture neuve": {
+    "icon": "🚗",
+    "subs": [
+      {"name": "Guide d'achat par segment", "kws": ["meilleure citadine 2026|C","meilleur SUV compact 2026|C","meilleure berline familiale|C","meilleur break 2026|C","monospace 7 places comparatif|C","coupé cabriolet abordable|C","meilleure petite voiture pas chère|C"]},
+      {"name": "Négociation & remises", "kws": ["remise voiture neuve négocier|I","meilleure période acheter voiture|I","reprise ancienne voiture concession|I","véhicule de démonstration bon plan|I","stock concessionnaire remise|I"]},
+      {"name": "Mandataire & import", "kws": ["mandataire auto fiable|C","acheter voiture mandataire avis|I","import voiture Allemagne démarches|I","voiture importée garantie|I","quota véhicule importé|I"]},
+      {"name": "Leasing LOA & LLD", "kws": ["LOA vs LLD différence|I","leasing voiture neuve offres|C","leasing social 100 euros|I","fin de contrat LOA options|I","rachat LOA anticipé|I","leasing sans apport|C"]},
+      {"name": "Bonus, malus & fiscalité", "kws": ["bonus écologique 2026 conditions|I","malus écologique barème 2026|I","malus au poids véhicule|I","prime conversion remplacement|I","TVA voiture société|I"]},
+      {"name": "Options & configuration", "kws": ["options voiture indispensables|I","configurateur voiture neuve|T","peinture métallisée prix|I","pack hiver option utile|I","options revente valeur|I"]}
+    ]
+  },
+  "Voiture d'occasion": {
+    "icon": "🚙",
+    "subs": [
+      {"name": "Acheter une occasion", "kws": ["acheter voiture occasion particulier|I","checklist essai voiture occasion|I","kilométrage idéal occasion|I","arnaques voiture occasion éviter|I","acheter occasion concession vs particulier|I","meilleures occasions fiables|C"]},
+      {"name": "Vendre sa voiture", "kws": ["vendre sa voiture rapidement|I","documents vente voiture|I","annonce voiture rédiger|I","rachat cash voiture avis|C","vendre voiture en panne|I"]},
+      {"name": "Cote & estimation", "kws": ["cote argus gratuite|T","estimer prix voiture occasion|T","décote voiture par année|I","cote voiture kilométrage|I","voiture qui décote le moins|C"]},
+      {"name": "Historique & vices cachés", "kws": ["histovec rapport gratuit|T","vice caché voiture recours|I","compteur trafiqué détecter|I","voiture gagée vérifier|I","certificat de non gage|T"]},
+      {"name": "Garanties occasion", "kws": ["garantie légale conformité voiture|I","extension garantie occasion prix|C","garantie mécanique exclusions|I","garantie constructeur transférable|I"]},
+      {"name": "Enchères & ventes pro", "kws": ["enchères voitures occasion|I","ventes domaniales véhicules|I","voiture ex-LLD acheter|I","véhicule saisi acheter|I"]}
+    ]
+  },
+  "Électrique & hybride": {
+    "icon": "⚡",
+    "subs": [
+      {"name": "Modèles électriques", "kws": ["meilleure voiture électrique 2026|C","voiture électrique moins chère|C","SUV électrique comparatif|C","citadine électrique autonomie|C","Tesla Model 3 vs Model Y|C","voiture électrique chinoise avis|C"]},
+      {"name": "Hybride & rechargeable", "kws": ["hybride vs hybride rechargeable|I","meilleure hybride 2026|C","consommation réelle hybride rechargeable|I","full hybrid fonctionnement|I","hybride d'occasion fiabilité|I"]},
+      {"name": "Autonomie & batteries", "kws": ["autonomie réelle voiture électrique|I","batterie voiture électrique durée de vie|I","dégradation batterie kilométrage|I","batterie LFP vs NMC|I","remplacer batterie voiture électrique prix|I"]},
+      {"name": "Recharge à domicile", "kws": ["borne recharge maison prix pose|C","wallbox 7kW comparatif|C","prise renforcée green up|C","recharge heures creuses pilotage|I","aide installation borne crédit impôt|I","borne copropriété droit à la prise|I"]},
+      {"name": "Recharge publique & itinérance", "kws": ["carte recharge comparatif badges|C","prix recharge autoroute|I","planifier trajet voiture électrique|I","superchargeur Tesla ouverts tous|I","recharge rapide courbe puissance|I"]},
+      {"name": "Aides & fiscalité EV", "kws": ["aides voiture électrique 2026|I","leasing social électrique conditions|I","carte grise gratuite électrique|I","avantage nature véhicule électrique|I"]},
+      {"name": "Coût & TCO", "kws": ["coût réel voiture électrique|I","électrique vs thermique rentabilité|I","assurance voiture électrique prix|C","entretien voiture électrique coût|I","revente voiture électrique décote|I"]},
+      {"name": "Voiture autonome & connectée", "kws": ["voiture autonome niveau 3 France|I","conduite autonome comment ça marche|I","aides à la conduite ADAS liste|I","voiture connectée données personnelles|I","mise à jour OTA voiture|I"]},
+      {"name": "Technologies d'avenir & rétrofit", "kws": ["batterie solide voiture électrique|I","V2G recharge bidirectionnelle|I","rétrofit électrique prix homologation|I","voiture hydrogène avantages inconvénients|I","e-carburant voiture thermique avenir|I"]}
+    ]
+  },
+  "Marques & modèles": {
+    "icon": "🏷",
+    "subs": [
+      {"name": "Marques françaises", "kws": ["fiabilité Renault avis|I","Peugeot gamme 2026|I","Citroën suspension confort|I","Dacia rapport qualité prix|C","Alpine A290 essai|C"]},
+      {"name": "Marques allemandes", "kws": ["fiabilité Volkswagen moteurs|I","BMW entretien coût|I","Mercedes Classe A occasion|C","Audi quattro avantages|I","Porsche accessible occasion|C"]},
+      {"name": "Marques asiatiques", "kws": ["fiabilité Toyota hybride|I","Kia garantie 7 ans|I","Hyundai gamme électrique|I","Honda moteurs réputation|I","Mazda skyactiv avis|I"]},
+      {"name": "Marques chinoises & nouvelles", "kws": ["BYD en France avis|C","MG4 essai fiabilité|C","Leapmotor T03 prix|C","Xpeng NIO arrivée Europe|I","voiture chinoise pièces détachées|I"]},
+      {"name": "Fiches modèles & fiabilité", "kws": ["problèmes connus [modèle]|I","fiabilité moteur PureTech|I","moteur 1.2 TCe problèmes|I","DSG7 boîte fiabilité|I","chaîne distribution modèles concernés|I","meilleurs moteurs diesel fiables|C"]}
+    ]
+  },
+  "Essais & comparatifs": {
+    "icon": "🧪",
+    "subs": [
+      {"name": "Essais par segment", "kws": ["essai citadine polyvalente|C","essai SUV familial|C","essai berline routière|C","essai sportive compacte|C","essai micro-citadine|C"]},
+      {"name": "Comparatifs face-à-face", "kws": ["Peugeot 208 vs Renault Clio|C","Dacia Duster vs concurrence|C","Tesla vs BYD comparatif|C","SUV hybrides comparatif|C"]},
+      {"name": "Avis long terme", "kws": ["avis propriétaires fiabilité|I","essai longue durée bilan|I","coût entretien 100000 km|I","que vaut après 5 ans|I"]},
+      {"name": "Nouveautés & salons", "kws": ["nouveautés auto 2026|I","salon de l'auto calendrier|I","futurs modèles attendus|I","restylage nouveautés gamme|I"]},
+      {"name": "Concept-cars & anticipation", "kws": ["concept car dévoilé|I","future génération modèle|I","plateforme électrique nouvelle|I","technologies embarquées futures|I"]}
+    ]
+  },
+  "Entretien & révision": {
+    "icon": "🔧",
+    "subs": [
+      {"name": "Vidange & filtres", "kws": ["vidange prix moyen|I","quelle huile moteur choisir|I","vidange tous les combien|I","filtre habitacle changer soi-même|I","vidange boîte automatique|I","viscosité huile 5W30 vs 5W40|I"]},
+      {"name": "Freinage", "kws": ["plaquettes de frein prix changement|I","disques et plaquettes quand changer|I","purge liquide de frein|I","frein de parking électrique entretien|I","témoin usure plaquettes|I"]},
+      {"name": "Pneus & géométrie", "kws": ["pneus été hiver 4 saisons choisir|C","pression pneus recommandée|I","géométrie parallélisme prix|I","loi montagne pneus obligatoires|I","usure pneus anormale causes|I","comparatif pneus 4 saisons|C"]},
+      {"name": "Distribution & courroies", "kws": ["courroie distribution quand changer|I","kit distribution prix par modèle|I","courroie accessoire remplacement|I","chaîne vs courroie distribution|I","rupture courroie conséquences|I"]},
+      {"name": "Climatisation", "kws": ["recharge clim voiture prix|I","clim voiture ne refroidit plus|I","désinfection circuit climatisation|I","compresseur clim HS symptômes|I"]},
+      {"name": "Boîte & embrayage", "kws": ["embrayage changement prix|I","embrayage qui patine symptômes|I","vidange boîte de vitesses utilité|I","volant moteur bi-masse usure|I"]},
+      {"name": "Batterie & électricité", "kws": ["batterie voiture changer soi-même|I","batterie start and stop spécificité|I","alternateur HS signes|I","recharger batterie voiture chargeur|I"]},
+      {"name": "Prestations par marque", "kws": ["révision Renault prix|C","vidange Peugeot tarif|C","entretien Citroën forfait|C","révision Volkswagen coût|C","entretien Toyota hybride prix|C","décalaminage moteur utilité prix|I"]}
+    ]
+  },
+  "Pannes & diagnostic": {
+    "icon": "🛠",
+    "subs": [
+      {"name": "Voyants tableau de bord", "kws": ["voyant moteur orange allumé|I","voyant FAP signification|I","voyant batterie rouge rouler|I","voyant préchauffage clignote|I","voyant AdBlue redémarrage impossible|I","voyant huile moteur urgence|I"]},
+      {"name": "Codes défaut OBD", "kws": ["code défaut P0420 signification|I","P2002 FAP colmaté solutions|I","P0300 ratés combustion|I","effacer code défaut sans valise|I","lecture code défaut smartphone|I"]},
+      {"name": "Pannes moteur", "kws": ["voiture ne démarre plus causes|I","perte de puissance mode dégradé|I","fumée échappement couleur signification|I","surchauffe moteur que faire|I","consommation huile excessive causes|I"]},
+      {"name": "Pannes électroniques & capteurs", "kws": ["capteur PMH symptômes|I","débitmètre encrassé signes|I","vanne EGR nettoyage ou remplacement|I","sonde lambda défaillante|I","FAP colmaté rouler solutions|I"]},
+      {"name": "Bruits & symptômes", "kws": ["claquement moteur à froid|I","sifflement en accélérant|I","vibration volant vitesse|I","grincement au freinage|I","bruit roulement roue|I"]},
+      {"name": "Valises & outils diagnostic", "kws": ["valise diagnostic OBD2 comparatif|C","meilleure appli OBD2 bluetooth|C","valise multimarque pro particuliers|C","diagnostic électronique garage prix|I"]}
+    ]
+  },
+  "Pièces détachées & accessoires": {
+    "icon": "⚙️",
+    "subs": [
+      {"name": "Pièces moteur", "kws": ["turbo reconditionné ou neuf|I","injecteurs prix remplacement|I","FAP remplacement prix|I","vanne EGR prix pièce|I","pompe haute pression HS|I"]},
+      {"name": "Pièces d'usure", "kws": ["pièces auto en ligne fiables|C","pièces équivalentes qualité origine|I","amortisseurs prix paire|I","rotules suspension jeu|I","kit embrayage marques comparées|C"]},
+      {"name": "Carrosserie & optiques", "kws": ["rénover phares ternis|I","pare-brise impact réparation|I","peinture rayure retouche|I","rétroviseur remplacement prix|I","pare-chocs occasion casse|I"]},
+      {"name": "Accessoires intérieur & confort", "kws": ["tapis voiture sur mesure|C","housses siège comparatif|C","organiseur coffre pratique|C","siège auto bébé crash test|C"]},
+      {"name": "Électronique embarquée", "kws": ["dashcam comparatif 2026|C","meilleur GPS voiture|C","CarPlay sans fil adaptateur|C","caméra de recul installation|I","chargeur induction voiture|C"]},
+      {"name": "Casse & occasion", "kws": ["casse auto en ligne pièces|C","moteur occasion garantie|I","pièces réemploi obligation garagiste|I","démolisseur agréé VHU|I"]}
+    ]
+  },
+  "Carte grise & démarches": {
+    "icon": "📄",
+    "subs": [
+      {"name": "Changement de titulaire", "kws": ["changement titulaire carte grise en ligne|T","carte grise ANTS démarches|T","carte grise prix par région|I","délai carte grise après achat|I","code de cession obtenir|T"]},
+      {"name": "Cession & achat", "kws": ["déclaration cession véhicule en ligne|T","certificat cession cerfa 15776|T","vendre voiture sans contrôle technique|I","cession véhicule pour destruction|T"]},
+      {"name": "Duplicata & modifications", "kws": ["duplicata carte grise perte|T","changement adresse carte grise gratuit|T","carte grise héritage succession|I","rectifier erreur carte grise|T"]},
+      {"name": "Immatriculation & import", "kws": ["immatriculer véhicule importé|I","plaque WW provisoire durée|I","quitus fiscal véhicule étranger|T","certificat conformité européen COC|T"]},
+      {"name": "Malus & taxes", "kws": ["calcul malus occasion importée|I","exonération malus famille nombreuse|I","taxe CO2 véhicule occasion|I","cheval fiscal prix par région|I"]},
+      {"name": "Contrôle technique", "kws": ["contrôle technique points vérifiés|I","contre-visite délai défauts|I","contrôle technique pas cher près|C","CT véhicule électrique spécificités|I","contrôle technique moto 2026|I"]}
+    ]
+  },
+  "Assurance auto": {
+    "icon": "🛡",
+    "subs": [
+      {"name": "Comparer les offres", "kws": ["comparateur assurance auto|C","assurance auto pas chère 2026|C","changer assurance auto loi Hamon|I","devis assurance auto en ligne|T"]},
+      {"name": "Formules & garanties", "kws": ["tiers ou tous risques choisir|I","garantie bris de glace franchise|I","assistance 0 km utilité|I","valeur à neuf garantie|I","prêt volant assurance|I"]},
+      {"name": "Profils spécifiques", "kws": ["assurance jeune conducteur pas chère|C","assurance après résiliation|C","assurance malussé solutions|C","assurance au kilomètre avis|C","boîtier télématique jeune conducteur|I"]},
+      {"name": "Sinistres & indemnisation", "kws": ["constat amiable remplir|I","indemnisation véhicule épave|I","délai indemnisation assurance|I","recours tiers responsable|I","voiture vandalisée assurance|I"]},
+      {"name": "Bonus-malus", "kws": ["calcul bonus malus tableau|I","récupérer bonus après malus|I","bonus 50 à vie avantage|I","malus jeune conducteur surprime|I"]},
+      {"name": "Assurances spécifiques", "kws": ["assurance voiture électrique comparatif|C","assurance voiture collection conditions|I","assurance temporaire 1 jour|T","assurance voiture sans permis|C"]}
+    ]
+  },
+  "Permis & conduite": {
+    "icon": "🎓",
+    "subs": [
+      {"name": "Permis B & code", "kws": ["code de la route s'entraîner gratuit|T","permis B prix moyen|I","conduite accompagnée AAC conditions|I","examen permis points éliminatoires|I","permis boîte automatique B78|I"]},
+      {"name": "Permis moto & autres", "kws": ["permis A2 prix formation|I","passerelle A2 vers A|I","permis remorque BE quand|I","permis poids lourd financement CPF|I"]},
+      {"name": "Points & infractions", "kws": ["consulter solde points permis|T","stage récupération points prix|C","excès de vitesse sanctions barème|I","permis probatoire perte points|I","contestation amende radar|I"]},
+      {"name": "Auto-écoles & financement", "kws": ["auto-école en ligne avis|C","permis 1 euro par jour|I","CPF permis de conduire conditions|I","candidat libre permis inscription|I"]},
+      {"name": "Sécurité routière", "kws": ["distances de sécurité règles|I","conduite sur neige conseils|I","aquaplaning réagir|I","angles morts poids lourds|I","alcool au volant limites|I"]},
+      {"name": "Éco-conduite", "kws": ["éco-conduite techniques économies|I","frein moteur utilisation|I","consommation ville réduire|I","régulateur adaptatif consommation|I"]}
+    ]
+  },
+  "Moto & scooter": {
+    "icon": "🏍",
+    "subs": [
+      {"name": "Choisir sa moto", "kws": ["moto A2 débutant comparatif|C","meilleur trail 2026|C","roadster ou sportive choisir|I","moto occasion vérifications|I","cote moto occasion|T"]},
+      {"name": "Scooter & 125", "kws": ["meilleur scooter 125 2026|C","formation 125 permis B 7h|I","maxi scooter comparatif|C","scooter électrique équivalent 125|C","scooter 3 roues permis|I"]},
+      {"name": "Équipement pilote", "kws": ["casque moto comparatif sécurité|C","gants moto homologués obligation|I","blouson airbag moto avis|C","norme casque ECE 22.06|I","équipement moto hiver|C"]},
+      {"name": "Entretien moto", "kws": ["tension chaîne moto régler|I","vidange moto fréquence|I","pneus moto usure témoin|I","hivernage moto étapes|I"]},
+      {"name": "Assurance & réglementation moto", "kws": ["assurance moto A2 prix|C","assurance moto hivernage suspension|I","stationnement moto payant Paris|I","contrôle technique moto obligations|I"]},
+      {"name": "Balades & voyage moto", "kws": ["road trip moto France itinéraires|I","cols mythiques moto Alpes|I","bagagerie moto voyage|C","moto GPS tracker antivol|C"]}
+    ]
+  },
+  "Vélo & nouvelles mobilités": {
+    "icon": "🚲",
+    "subs": [
+      {"name": "Vélo électrique", "kws": ["meilleur VAE 2026|C","VAE ville confort comparatif|C","vélo cargo électrique famille|C","batterie VAE durée de vie|I","VAE reconditionné avis|C"]},
+      {"name": "Trottinettes & EDPM", "kws": ["meilleure trottinette électrique|C","trottinette électrique autonomie réelle|I","réglementation EDPM 2026|I","assurance trottinette obligatoire|I","casque trottinette obligatoire|I"]},
+      {"name": "Aides à l'achat", "kws": ["prime vélo électrique 2026|I","aide locale achat VAE|I","forfait mobilités durables vélo|I","leasing vélo entreprise|I"]},
+      {"name": "Équipement & antivol", "kws": ["antivol vélo U comparatif|C","meilleur éclairage vélo|C","traceur GPS vélo caché|C","marquage bicycode obligatoire|I"]},
+      {"name": "Vélotaf & pratique", "kws": ["vélotaf débuter conseils|I","itinéraire vélo sécurisé appli|I","vélo pliant train comparatif|C","entretien vélo électrique coût|I"]}
+    ]
+  },
+  "Mobilité partagée & transports": {
+    "icon": "🚌",
+    "subs": [
+      {"name": "Covoiturage", "kws": ["covoiturage domicile travail prime|I","BlaBlaCar Daily avis|C","covoiturage courte distance applis|C","prime covoiturage 100 euros|I"]},
+      {"name": "Autopartage & location particuliers", "kws": ["location voiture entre particuliers avis|C","Getaround Ouicar comparatif|C","autopartage Citiz tarifs|C","assurance location entre particuliers|I"]},
+      {"name": "Location courte & longue durée", "kws": ["louer voiture pas cher week-end|C","location voiture aéroport astuces|I","franchise location voiture racheter|I","LLD particulier sans apport|C"]},
+      {"name": "VTC & taxi", "kws": ["devenir chauffeur VTC conditions|I","carte VTC examen|I","Uber vs Bolt comparatif prix|C","taxi conventionné CPAM|I"]},
+      {"name": "Train & transports en commun", "kws": ["carte avantage SNCF rentable|I","TGV max abonnement avis|C","forfait Navigo télétravail|I","TER abonnement travail|I"]}
+    ]
+  },
+  "Carburants & consommation": {
+    "icon": "⛽",
+    "subs": [
+      {"name": "Prix & stations", "kws": ["carburant moins cher autour de moi|T","prix essence évolution 2026|I","stations low cost qualité carburant|I","carte carburant particulier cashback|C"]},
+      {"name": "E85 & conversions", "kws": ["boîtier E85 homologué prix|C","E85 rentabilité calcul|I","reprogrammation E85 vs boîtier|I","E85 fiabilité moteur long terme|I","carte grise gratuite E85|I"]},
+      {"name": "GPL, GNV & hydrogène", "kws": ["voiture GPL avantages inconvénients|I","GPL réservoir contrôle|I","station hydrogène France carte|I","GNV utilitaire pro|I"]},
+      {"name": "Réduire sa consommation", "kws": ["surconsommation causes courantes|I","coffre de toit consommation|I","pneus basse résistance économie|I","climatisation surconsommation|I"]}
+    ]
+  },
+  "Camping-car & van": {
+    "icon": "🚐",
+    "subs": [
+      {"name": "Acheter camping-car", "kws": ["camping-car occasion prix conseils|C","profilé vs intégral vs capucine|I","camping-car permis B poids|I","décote camping-car neuf|I"]},
+      {"name": "Van & fourgon aménagé", "kws": ["van aménagé occasion choisir|C","aménager fourgon soi-même homologation|I","VASP carte grise démarches|I","meilleur fourgon base aménagement|C"]},
+      {"name": "Voyager & aires", "kws": ["aires camping-car gratuites France|I","applications aires camping-car|C","France Passion vignoble étape|I","camping-car hiver ski conseils|I"]},
+      {"name": "Entretien & hivernage", "kws": ["hivernage camping-car checklist|I","étanchéité camping-car contrôle|I","batterie cellule entretien|I","gaz camping-car sécurité|I"]},
+      {"name": "Assurance & réglementation", "kws": ["assurance camping-car comparatif|C","stationnement camping-car règles ville|I","péage camping-car classe|I","limitation vitesse camping-car|I"]}
+    ]
+  },
+  "Utilitaires & flottes pro": {
+    "icon": "🛻",
+    "subs": [
+      {"name": "Choisir un utilitaire", "kws": ["meilleur utilitaire compact|C","fourgon 3m3 vs 6m3 usages|I","pick-up fiscalité avantage|I","utilitaire occasion kilométrage|I"]},
+      {"name": "Utilitaires électriques", "kws": ["utilitaire électrique autonomie réelle|I","aides utilitaire électrique pro|I","recharge flotte entreprise|I","kangoo master électrique avis|C"]},
+      {"name": "LLD & gestion de flotte", "kws": ["LLD utilitaire pro sans apport|C","gestion flotte logiciel TPE|C","carte carburant pro comparatif|C","télématique flotte avantages|I"]},
+      {"name": "Aménagement & équipement", "kws": ["aménagement utilitaire artisan|C","galerie et porte-échelle fourgon|C","habillage bois utilitaire kit|C","attelage utilitaire homologation|I"]},
+      {"name": "Fiscalité véhicule pro", "kws": ["TVS taxe véhicules société calcul|I","TVA récupérable utilitaire|I","amortissement véhicule société plafond|I","avantage en nature véhicule fonction|I"]}
+    ]
+  },
+  "Sport auto & passion": {
+    "icon": "🏁",
+    "subs": [
+      {"name": "F1 & compétition", "kws": ["calendrier F1 2026 horaires|I","règlement F1 2026 moteurs|I","classement F1 direct|I","GP de France retour|I"]},
+      {"name": "Rallye & endurance", "kws": ["calendrier WRC 2026|I","24h du Mans billets|C","rallye régional assister|I","licence FFSA débuter rallye|I"]},
+      {"name": "Track days & circuits", "kws": ["rouler sur circuit débutant|I","track day prix circuits France|I","assurance track day|I","équipement obligatoire circuit|I"]},
+      {"name": "Youngtimers & collection", "kws": ["youngtimer coter investir|C","carte grise collection avantages|I","youngtimers fiables plaisir|C","restaurer voiture ancienne coût|I","assurance collection conditions|C"]},
+      {"name": "Tuning & préparation", "kws": ["reprogrammation moteur stage 1 risques|I","homologation modifications véhicule|I","jantes plus grandes légalité|I","échappement sport homologué|C","suspension combinés filetés|C"]},
+      {"name": "Simracing", "kws": ["volant simracing comparatif|C","cockpit simracing budget|C","meilleurs jeux simulation auto|C","pédalier load cell intérêt|I"]}
+    ]
+  },
+  "Road trips & voyage auto": {
+    "icon": "🧳",
+    "subs": [
+      {"name": "Road trips France", "kws": ["road trip France itinéraires mythiques|I","route des grandes alpes étapes|I","côte atlantique en voiture|I","road trip week-end départ Paris|I"]},
+      {"name": "Road trips Europe", "kws": ["road trip Europe voiture itinéraire|I","conduire en Italie ZTL amendes|I","vignette Suisse autoroute|I","road trip Portugal voiture|I","Norvège en voiture fjords|I"]},
+      {"name": "Conduite à l'étranger", "kws": ["permis international demande|T","conduire à gauche conseils|I","assurance carte verte étranger|I","location voiture étranger caution|I"]},
+      {"name": "Équipement & préparation", "kws": ["équipements obligatoires voiture Europe|I","coffre de toit comparatif|C","porte-vélos attelage choisir|C","check-list départ vacances voiture|I"]},
+      {"name": "Péages & vignettes", "kws": ["badge télépéage comparatif|C","éviter péages itinéraire calcul|I","vignettes obligatoires Europe pays|I","crit'air commander vignette|T"]}
+    ]
+  }
+}

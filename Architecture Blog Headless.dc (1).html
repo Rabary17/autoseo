@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta charset="utf-8">
+  <title>Blog magazine headless — WordPress + Next.js</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; }
+    doc-page:not(:defined) { visibility: hidden; }
+    a { color: #2F4A75; text-decoration: none; }
+    a:hover { color: #1E3765; text-decoration: underline; }
+    pre { break-inside: avoid; contain: inline-size; }
+  </style>
+</helmet>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="{{ pageSize }}" margin="0.8in" hint-size="100%,1400px">
+
+  <h1 style="font:800 30px/1.15 'Libre Franklin',sans-serif;color:#16181C;margin:0 0 6px;letter-spacing:-0.01em">Blog magazine headless — WordPress&nbsp;+&nbsp;Next.js</h1>
+  <p style="font:500 14px/1.6 'Libre Franklin',sans-serif;color:#5C6066;margin:0 0 4px">Spécification technique &amp; code prêt à l'emploi — SSR/ISR, Yoast SEO via wp-json, GEO &amp; EEAT</p>
+  <p style="font:400 11px/1.6 'JetBrains Mono',monospace;color:#8A8F96;margin:0 0 28px">Next.js 15 (App Router) · WordPress 6.x · Yoast SEO ≥ 14 · Vercel/Cloudflare edge</p>
+
+  <!-- ============ 1. ARCHITECTURE ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:0 0 14px"><span style="color:#2F4A75">1.</span> Architecture &amp; stack</h2>
+
+  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 16px">
+    <div style="border:1.5px solid #16181C;border-radius:6px;padding:10px 14px;font:600 12px/1.4 'Libre Franklin',sans-serif;color:#16181C">WordPress natif<br><span style="font-weight:400;color:#5C6066">+ Yoast SEO + plugin bridge</span></div>
+    <span style="font:600 14px 'JetBrains Mono',monospace;color:#2F4A75">→</span>
+    <div style="border:1.5px solid #16181C;border-radius:6px;padding:10px 14px;font:600 12px/1.4 'Libre Franklin',sans-serif;color:#16181C">/wp-json/wp/v2/<br><span style="font-weight:400;color:#5C6066">posts · pages · media · users · acf/v3</span></div>
+    <span style="font:600 14px 'JetBrains Mono',monospace;color:#2F4A75">→</span>
+    <div style="border:1.5px solid #2F4A75;background:#F2F5FA;border-radius:6px;padding:10px 14px;font:600 12px/1.4 'Libre Franklin',sans-serif;color:#2F4A75">Next.js App Router<br><span style="font-weight:400;color:#5C6066">SSG + ISR, revalidateTag</span></div>
+    <span style="font:600 14px 'JetBrains Mono',monospace;color:#2F4A75">→</span>
+    <div style="border:1.5px solid #16181C;border-radius:6px;padding:10px 14px;font:600 12px/1.4 'Libre Franklin',sans-serif;color:#16181C">CDN edge<br><span style="font-weight:400;color:#5C6066">Vercel / Cloudflare</span></div>
+    <span style="font:600 14px 'JetBrains Mono',monospace;color:#2F4A75">→</span>
+    <div style="border:1.5px solid #16181C;border-radius:6px;padding:10px 14px;font:600 12px/1.4 'Libre Franklin',sans-serif;color:#16181C">Visiteur / Googlebot / LLM</div>
+  </div>
+
+  <ul style="font:400 13.5px/1.65 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 8px;padding-left:20px">
+    <li style="margin-bottom:5px"><strong>Rendu</strong> : 100 % SSG + ISR. Aucun contenu éditorial en CSR. Les 50 derniers articles sont générés au build (<code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">generateStaticParams</code>), le reste à la demande puis mis en cache.</li>
+    <li style="margin-bottom:5px"><strong>Fraîcheur</strong> : webhook WP <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">publish_post / save_post</code> → <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">POST /api/revalidate</code> → <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">revalidateTag</code>. Statique + quasi temps réel.</li>
+    <li style="margin-bottom:5px"><strong>SEO</strong> : Yoast reste la source de vérité. <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">yoast_head_json</code> (natif depuis Yoast 14) fournit title, description, canonical, OG et le graphe JSON-LD complet ; fallback généré côté front si absent (§6).</li>
+    <li style="margin-bottom:5px"><strong>Sitemap</strong> : généré par Yoast côté WP, proxifié via rewrites Next.js sous le domaine frontend (§6.4).</li>
+    <li><strong>Sécurité</strong> : le CMS vit sur un sous-domaine (<code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">cms.monmag.fr</code>) non indexé (réglage Yoast + X-Robots-Tag), seul le frontend est public.</li>
+  </ul>
+
+  <!-- ============ 2. ARBORESCENCE ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">2.</span> Arborescence du projet</h2>
+
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 24px">mon-magazine/
+├── app/
+│   ├── layout.tsx                    # Header/Footer, next/font
+│   ├── page.tsx                      # Accueil — une + grille d'articles
+│   ├── [slug]/page.tsx               # Article (/mon-article)
+│   ├── categorie/[slug]/page.tsx     # Archive catégorie + pagination
+│   ├── tag/[slug]/page.tsx           # Archive tag
+│   ├── auteur/[slug]/page.tsx        # Page auteur (schema Person)
+│   ├── a-propos/page.tsx             #
+│   ├── redaction/page.tsx            # Équipe — liste wp/v2/users
+│   ├── politique-editoriale/page.tsx # Pages EEAT (§7)
+│   ├── politique-des-sources/page.tsx
+│   ├── contact/page.tsx
+│   ├── mentions-legales/page.tsx
+│   ├── politique-de-confidentialite/page.tsx
+│   ├── robots.ts                     # robots.txt typé
+│   ├── not-found.tsx                 # 404 gracieux (contenu dépublié)
+│   └── api/
+│       └── revalidate/route.ts       # Webhook ISR (secret partagé)
+├── components/
+│   ├── Header.tsx        ├── Footer.tsx
+│   ├── ArticleCard.tsx   ├── Breadcrumb.tsx
+│   ├── TldrBox.tsx       ├── Pagination.tsx
+│   └── JsonLd.tsx        # Injection schema (Yoast ou fallback)
+├── lib/
+│   ├── wp.ts             # Fetch wp-json (retry, tags, cache)
+│   ├── types.ts          # Types WpPost, WpUser, YoastHead…
+│   └── seo.ts            # Fallback JSON-LD si yoast_head_json absent
+├── config/
+│   └── sites.ts          # Registre des 50 magazines (§9)
+├── public/
+│   └── llms.txt          # Visibilité IA (§6.5)
+├── wp-plugin/
+│   └── headless-bridge.php           # À installer côté WordPress (§4.2)
+├── next.config.ts        # images AVIF/WebP + proxy sitemap
+└── .env.local            # WP_API_URL, SITE_URL, REVALIDATE_SECRET</pre>
+
+  <!-- ============ 3. LIB FETCH ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">3.</span> Lib de fetch wp-json (TypeScript)</h2>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">lib/types.ts</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">export interface YoastHead {
+  title: string;
+  description?: string;
+  canonical?: string;
+  og_image?: { url: string; width: number; height: number }[];
+  schema?: Record&lt;string, unknown&gt;;   // @graph JSON-LD Yoast
+}
+
+export interface WpImage {
+  source_url: string;
+  alt_text: string;
+  media_details: { width: number; height: number };
+}
+
+export interface WpUser {
+  id: number; slug: string; name: string; description: string;
+  avatar_urls: Record&lt;string, string&gt;;
+  acf?: { role?: string; sameAs?: string[] };   // via ACF (LinkedIn, X…)
+  yoast_head_json?: YoastHead;
+}
+
+export interface WpTerm { id: number; slug: string; name: string; count: number; }
+
+export interface WpPost {
+  id: number; slug: string;
+  date: string; modified: string;     // datePublished / dateModified
+  title: { rendered: string };
+  excerpt: { rendered: string };
+  content: { rendered: string };
+  author: number; categories: number[]; tags: number[];
+  acf?: { tldr?: string; sources?: { label: string; url: string }[] };
+  yoast_head_json?: YoastHead;
+  _embedded?: {
+    author?: WpUser[];
+    "wp:featuredmedia"?: WpImage[];
+    "wp:term"?: WpTerm[][];
+  };
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">lib/wp.ts — fetch centralisé : timeout, retry exponentiel, cache par tags</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 24px">import type { WpPost, WpTerm, WpUser } from "./types";
+
+const WP &#61; process.env.WP_API_URL!;  // https://cms.monmag.fr/wp-json
+const TIMEOUT_MS &#61; 8_000;
+
+export class WpNotFound extends Error {}
+
+type Opts &#61; { revalidate?: number; tags?: string[]; retries?: number };
+
+async function wpFetch(path: string,
+  { revalidate &#61; 600, tags &#61; [], retries &#61; 2 }: Opts &#61; {}) {
+  let lastErr: unknown;
+  for (let i &#61; 0; i &lt;&#61; retries; i++) {
+    try {
+      const res &#61; await fetch(WP + path, {
+        next: { revalidate, tags },   // cache + tags de revalidation
+        signal: AbortSignal.timeout(TIMEOUT_MS),
+      });
+      if (res.status &#61;&#61;&#61; 404) throw new WpNotFound(path);
+      if (!res.ok) throw new Error(`WP ${res.status} — ${path}`);
+      return res;
+    } catch (e) {
+      if (e instanceof WpNotFound) throw e;    // 404 : pas de retry
+      lastErr &#61; e;
+      await new Promise((r) &#61;&gt; setTimeout(r, 300 * 2 ** i)); // backoff
+    }
+  }
+  throw lastErr;
+}
+
+const wpJson &#61; async &lt;T&gt;(path: string, opts?: Opts): Promise&lt;T&gt; &#61;&gt;
+  (await wpFetch(path, opts)).json();
+
+/* ---------- Articles ---------- */
+
+export async function getPosts(page &#61; 1, perPage &#61; 12, extra &#61; "") {
+  const res &#61; await wpFetch(
+    "/wp/v2/posts?_embed&#61;1&amp;status&#61;publish" +
+      `&amp;page&#61;${page}&amp;per_page&#61;${perPage}${extra}`,
+    { tags: ["posts"] },
+  );
+  return {
+    posts: (await res.json()) as WpPost[],
+    total: Number(res.headers.get("X-WP-Total")),
+    totalPages: Number(res.headers.get("X-WP-TotalPages")),
+  };
+}
+
+export async function getPostBySlug(slug: string): Promise&lt;WpPost | null&gt; {
+  try {
+    const posts &#61; await wpJson&lt;WpPost[]&gt;(
+      `/wp/v2/posts?slug&#61;${encodeURIComponent(slug)}` +
+        "&amp;_embed&#61;1&amp;status&#61;publish",
+      { tags: ["posts", `post:${slug}`] },
+    );
+    return posts[0] ?? null;          // dépublié / absent → 404
+  } catch { return null; }
+}
+
+/* ---------- Taxonomies &amp; auteurs ---------- */
+
+export const getCategories &#61; () &#61;&gt;
+  wpJson&lt;WpTerm[]&gt;(
+    "/wp/v2/categories?per_page&#61;8&amp;orderby&#61;count&amp;hide_empty&#61;true",
+    { tags: ["categories"], revalidate: 3600 });
+
+export async function getTermBySlug(tax: "categories" | "tags", slug: string) {
+  const terms &#61; await wpJson&lt;WpTerm[]&gt;(
+    `/wp/v2/${tax}?slug&#61;${slug}`, { tags: [tax] });
+  return terms[0] ?? null;
+}
+
+export async function getAuthorBySlug(slug: string) {
+  const users &#61; await wpJson&lt;WpUser[]&gt;(
+    `/wp/v2/users?slug&#61;${slug}`, { tags: ["users"] });
+  return users[0] ?? null;
+}
+
+export const getPostsByAuthor &#61; (id: number, page &#61; 1) &#61;&gt;
+  getPosts(page, 12, `&amp;author&#61;${id}`);
+export const getPostsByCategory &#61; (id: number, page &#61; 1) &#61;&gt;
+  getPosts(page, 12, `&amp;categories&#61;${id}`);</pre>
+
+  <!-- ============ 4. ISR + PLUGIN ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">4.</span> Revalidation ISR &amp; plugin WordPress</h2>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">app/api/revalidate/route.ts — endpoint appelé par WordPress</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import { revalidateTag } from "next/cache";
+
+export async function POST(req: Request) {
+  if (req.headers.get("x-revalidate-secret") !&#61;&#61; process.env.REVALIDATE_SECRET) {
+    return new Response("Forbidden", { status: 403 });
+  }
+  const { slug } &#61; await req.json().catch(() &#61;&gt; ({}));
+  revalidateTag("posts");             // accueil, catégories, auteurs
+  if (slug) revalidateTag(`post:${slug}`); // la page article
+  return Response.json(
+    { revalidated: true, slug: slug ?? "all", at: Date.now() });
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">wp-plugin/headless-bridge.php — à déposer dans wp-content/plugins/ puis activer</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 24px">&lt;?php
+/**
+ * Plugin Name: Headless Bridge (Yoast + ISR)
+ * Description: Expose yoast_head_json et notifie le frontend
+ *              Next.js à chaque publication / mise à jour.
+ */
+
+define('HB_FRONT_URL', 'https://www.monmag.fr');
+define('HB_SECRET', 'CHANGEZ-MOI');   // &#61; REVALIDATE_SECRET (Next.js)
+
+// yoast_head_json est natif depuis Yoast 14 — on le garde exposé.
+add_filter('wpseo_enable_rest_api', '__return_true');
+
+// Webhook de revalidation ISR
+function hb_notify_front($post_id, $post &#61; null) {
+  $post &#61; $post ?: get_post($post_id);
+  if (!$post || wp_is_post_revision($post_id)) return;
+  if ($post-&gt;post_type !&#61;&#61; 'post') return;
+  wp_remote_post(HB_FRONT_URL . '/api/revalidate', [
+    'blocking' &#61;&gt; false,              // ne bloque pas l'admin WP
+    'timeout'  &#61;&gt; 3,
+    'headers'  &#61;&gt; [
+      'Content-Type'        &#61;&gt; 'application/json',
+      'x-revalidate-secret' &#61;&gt; HB_SECRET,
+    ],
+    'body' &#61;&gt; wp_json_encode(['slug' &#61;&gt; $post-&gt;post_name]),
+  ]);
+}
+add_action('publish_post',   'hb_notify_front', 10, 2);
+add_action('save_post_post', 'hb_notify_front', 10, 2);
+add_action('trashed_post',   'hb_notify_front');  // dépublication
+
+// Sitemap Yoast : réécrire le domaine CMS → domaine frontend
+$hb_swap_host &#61; fn($url) &#61;&gt;
+  str_replace(home_url(), HB_FRONT_URL, $url);
+add_filter('wpseo_xml_sitemap_post_url', $hb_swap_host);
+add_filter('wpseo_sitemap_url',          $hb_swap_host);</pre>
+
+  <!-- ============ 5. COMPOSANTS ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">5.</span> Composants clés</h2>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">components/Header.tsx — Server Component, nav depuis wp-json, prefetch natif</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import Link from "next/link";
+import { getCategories } from "@/lib/wp";
+
+export default async function Header() {
+  const cats &#61; await getCategories();
+  return (
+    &lt;header&gt;
+      &lt;Link href&#61;"/" aria-label&#61;"Mon Magazine — accueil"&gt;
+        Mon Magazine
+      &lt;/Link&gt;
+      &lt;nav aria-label&#61;"Navigation principale"&gt;
+        &lt;ul&gt;
+          {cats.map((c) &#61;&gt; (
+            &lt;li key&#61;{c.id}&gt;
+              &lt;Link href&#61;{`/categorie/${c.slug}`} prefetch&gt;{c.name}&lt;/Link&gt;
+            &lt;/li&gt;
+          ))}
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+  );
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">components/ArticleCard.tsx — image dimensionnée (zéro CLS), dates balisées</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import Image from "next/image";
+import Link from "next/link";
+import type { WpPost } from "@/lib/types";
+
+export default function ArticleCard({ post, priority &#61; false }:
+  { post: WpPost; priority?: boolean }) {
+  const media &#61; post._embedded?.["wp:featuredmedia"]?.[0];
+  const cat   &#61; post._embedded?.["wp:term"]?.[0]?.[0];
+  return (
+    &lt;article&gt;
+      {media &amp;&amp; (
+        &lt;Link href&#61;{`/${post.slug}`} prefetch tabIndex&#61;{-1} aria-hidden&gt;
+          &lt;Image
+            src&#61;{media.source_url}
+            alt&#61;{media.alt_text || ""}
+            width&#61;{media.media_details.width}
+            height&#61;{media.media_details.height}
+            sizes&#61;"(max-width: 768px) 100vw, 33vw"
+            priority&#61;{priority}                 // true pour la une → LCP
+          /&gt;
+        &lt;/Link&gt;
+      )}
+      {cat &amp;&amp; (
+        &lt;p&gt;&lt;Link href&#61;{`/categorie/${cat.slug}`}&gt;{cat.name}&lt;/Link&gt;&lt;/p&gt;
+      )}
+      &lt;h3&gt;
+        &lt;Link href&#61;{`/${post.slug}`} prefetch
+          dangerouslySetInnerHTML&#61;{ { __html: post.title.rendered } } /&gt;
+      &lt;/h3&gt;
+      &lt;time dateTime&#61;{post.date}&gt;
+        {new Date(post.date)
+          .toLocaleDateString("fr-FR", { dateStyle: "long" })}
+      &lt;/time&gt;
+    &lt;/article&gt;
+  );
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">components/Breadcrumb.tsx — visible + JSON-LD BreadcrumbList (fallback si Yoast absent)</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import Link from "next/link";
+
+type Crumb &#61; { name: string; href: string };
+
+export default function Breadcrumb({ items, withSchema &#61; false }:
+  { items: Crumb[]; withSchema?: boolean }) {
+  const schema &#61; {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((c, i) &#61;&gt; ({
+      "@type": "ListItem", position: i + 1, name: c.name,
+      item: process.env.SITE_URL + c.href,
+    })),
+  };
+  return (
+    &lt;nav aria-label&#61;"Fil d'Ariane"&gt;
+      &lt;ol&gt;
+        {items.map((c, i) &#61;&gt; (
+          &lt;li key&#61;{c.href}&gt;
+            {i &lt; items.length - 1
+              ? &lt;Link href&#61;{c.href} prefetch&gt;{c.name}&lt;/Link&gt;
+              : &lt;span aria-current&#61;"page"&gt;{c.name}&lt;/span&gt;}
+          &lt;/li&gt;
+        ))}
+      &lt;/ol&gt;
+      {withSchema &amp;&amp; (
+        &lt;script type&#61;"application/ld+json"
+          dangerouslySetInnerHTML&#61;{ { __html: JSON.stringify(schema) } } /&gt;
+      )}
+    &lt;/nav&gt;
+  );
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">app/[slug]/page.tsx — la page article complète (metadata Yoast + JSON-LD + TL;DR)</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import { getPostBySlug, getPosts } from "@/lib/wp";
+import Breadcrumb from "@/components/Breadcrumb";
+import { fallbackArticleSchema } from "@/lib/seo";
+
+const dateFr &#61; (d: string) &#61;&gt;
+  new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" });
+
+export const revalidate &#61; 600;      // filet de sécurité (+ webhook)
+export const dynamicParams &#61; true;  // hors build → génération ISR
+
+export async function generateStaticParams() {
+  const { posts } &#61; await getPosts(1, 50);          // 50 derniers au build
+  return posts.map((p) &#61;&gt; ({ slug: p.slug }));
+}
+
+type Props &#61; { params: Promise&lt;{ slug: string }&gt; };
+
+export async function generateMetadata({ params }: Props):
+  Promise&lt;Metadata&gt; {
+  const post &#61; await getPostBySlug((await params).slug);
+  const y &#61; post?.yoast_head_json;
+  if (!post) return {};
+  return {                            // Yoast &#61; source de vérité
+    title: y?.title,
+    description: y?.description,
+    alternates: { canonical: y?.canonical },
+    openGraph: {
+      type: "article",
+      images: y?.og_image?.map((i) &#61;&gt; i.url),
+    },
+  };
+}
+
+export default async function ArticlePage({ params }: Props) {
+  const post &#61; await getPostBySlug((await params).slug);
+  if (!post) notFound();              // dépublié → 404 gracieux
+
+  const media  &#61; post._embedded?.["wp:featuredmedia"]?.[0];
+  const author &#61; post._embedded?.author?.[0];
+  const cat    &#61; post._embedded?.["wp:term"]?.[0]?.[0];
+  const schema &#61; post.yoast_head_json?.schema  // Yoast tel quel…
+    ?? fallbackArticleSchema(post);                 // …sinon fallback front
+
+  return (
+    &lt;&gt;
+      &lt;Breadcrumb withSchema&#61;{!post.yoast_head_json} items&#61;{[
+        { name: "Accueil", href: "/" },
+        ...(cat
+          ? [{ name: cat.name, href: `/categorie/${cat.slug}` }]
+          : []),
+        { name: post.title.rendered, href: `/${post.slug}` },
+      ]} /&gt;
+
+      &lt;article&gt;
+        &lt;header&gt;
+          &lt;h1 dangerouslySetInnerHTML&#61;{ { __html: post.title.rendered } } /&gt;
+          &lt;p&gt;
+            Par &lt;a href&#61;{`/auteur/${author?.slug}`} rel&#61;"author"&gt;
+              {author?.name}&lt;/a&gt;
+            {" · "}Publié le &lt;time dateTime&#61;{post.date}&gt;
+              {dateFr(post.date)}
+            &lt;/time&gt;
+            {post.modified !&#61;&#61; post.date &amp;&amp; (
+              &lt;&gt; · Mis à jour le &lt;time dateTime&#61;{post.modified}&gt;
+                {dateFr(post.modified)}
+              &lt;/time&gt;&lt;/&gt;
+            )}
+          &lt;/p&gt;
+        &lt;/header&gt;
+
+        {post.acf?.tldr &amp;&amp; (          /* TL;DR extractible (LLM) */
+          &lt;aside aria-label&#61;"L'essentiel"&gt;
+            &lt;h2&gt;L'essentiel&lt;/h2&gt;&lt;p&gt;{post.acf.tldr}&lt;/p&gt;
+          &lt;/aside&gt;
+        )}
+
+        {media &amp;&amp; (
+          &lt;Image src&#61;{media.source_url} alt&#61;{media.alt_text || ""}
+            width&#61;{media.media_details.width}
+            height&#61;{media.media_details.height}
+            sizes&#61;"(max-width: 768px) 100vw, 720px"
+            priority fetchPriority&#61;"high" /&gt;      /* LCP */
+        )}
+
+        &lt;div
+          dangerouslySetInnerHTML&#61;{ { __html: post.content.rendered } } /&gt;
+
+        {post.acf?.sources?.length ? ( /* EEAT : sources vérifiables */
+          &lt;footer&gt;
+            &lt;h2&gt;Sources&lt;/h2&gt;
+            &lt;ul&gt;{post.acf.sources.map((s) &#61;&gt; (
+              &lt;li key&#61;{s.url}&gt;
+                &lt;a href&#61;{s.url} rel&#61;"external noopener"&gt;{s.label}&lt;/a&gt;
+              &lt;/li&gt;
+            ))}&lt;/ul&gt;
+          &lt;/footer&gt;
+        ) : null}
+      &lt;/article&gt;
+
+      &lt;script type&#61;"application/ld+json"
+        dangerouslySetInnerHTML&#61;{ { __html: JSON.stringify(schema) } } /&gt;
+    &lt;/&gt;
+  );
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">app/auteur/[slug]/page.tsx — page auteur, articles filtrés via wp-json</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 24px">import { notFound } from "next/navigation";
+import { getAuthorBySlug, getPostsByAuthor } from "@/lib/wp";
+import ArticleCard from "@/components/ArticleCard";
+
+export default async function AuthorPage({ params }:
+  { params: Promise&lt;{ slug: string }&gt; }) {
+  const author &#61; await getAuthorBySlug((await params).slug);
+  if (!author) notFound();
+  const { posts } &#61; await getPostsByAuthor(author.id);
+
+  const person &#61; {
+    "@context": "https://schema.org", "@type": "Person",
+    name: author.name, description: author.description,
+    url: `${process.env.SITE_URL}/auteur/${author.slug}`,
+    jobTitle: author.acf?.role,
+    sameAs: author.acf?.sameAs ?? [],   // cohérence d'entité (GEO)
+  };
+
+  return (
+    &lt;&gt;
+      &lt;header&gt;
+        &lt;h1&gt;{author.name}&lt;/h1&gt;
+        {author.acf?.role &amp;&amp; &lt;p&gt;{author.acf.role}&lt;/p&gt;}
+        &lt;p&gt;{author.description}&lt;/p&gt;
+      &lt;/header&gt;
+      &lt;section aria-label&#61;"Articles de cet auteur"&gt;
+        {posts.map((p) &#61;&gt; &lt;ArticleCard key&#61;{p.id} post&#61;{p} /&gt;)}
+      &lt;/section&gt;
+      &lt;script type&#61;"application/ld+json"
+        dangerouslySetInnerHTML&#61;{ { __html: JSON.stringify(person) } } /&gt;
+    &lt;/&gt;
+  );
+}</pre>
+
+  <p style="font:400 13.5px/1.65 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 24px"><strong>Footer.tsx</strong> : liens vers les 7 pages EEAT (§7) + catégories principales + mention « Contenu géré via WordPress » facultative. <strong>Pagination.tsx</strong> : liens <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">/categorie/slug/page/2</code> réels (crawlables), jamais un infinite scroll seul.</p>
+
+  <!-- ============ 6. SEO / GEO ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">6.</span> SEO &amp; GEO — fichiers de configuration</h2>
+
+  <h3 style="font:700 15px/1.4 'Libre Franklin',sans-serif;color:#16181C;margin:0 0 8px">6.1 — Fallback JSON-LD (si yoast_head_json indisponible)</h3>
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">lib/seo.ts</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import type { WpPost } from "./types";
+
+const SITE &#61; process.env.SITE_URL!;
+
+export const fallbackArticleSchema &#61; (post: WpPost) &#61;&gt; ({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": `${SITE}/${post.slug}#article`,
+      headline: post.title.rendered,
+      datePublished: post.date,
+      dateModified: post.modified,
+      mainEntityOfPage: `${SITE}/${post.slug}`,
+      image: post._embedded?.["wp:featuredmedia"]?.[0]?.source_url,
+      author: {
+        "@type": "Person",
+        name: post._embedded?.author?.[0]?.name,
+        url: `${SITE}/auteur/${post._embedded?.author?.[0]?.slug}`,
+      },
+      publisher: { "@id": `${SITE}/#organization` },
+    },
+    {
+      "@type": "Organization",
+      "@id": `${SITE}/#organization`,
+      name: "Mon Magazine",
+      url: SITE,
+      logo: `${SITE}/logo.png`,
+      sameAs: [
+        "https://x.com/monmag",
+        "https://www.linkedin.com/company/monmag",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE}/#website`,
+      url: SITE,
+      name: "Mon Magazine",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: `${SITE}/recherche?q&#61;{search_term_string}`,
+        "query-input": "required name&#61;search_term_string",
+      },
+    },
+  ],
+});</pre>
+
+  <h3 style="font:700 15px/1.4 'Libre Franklin',sans-serif;color:#16181C;margin:0 0 8px">6.2 — robots.txt</h3>
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">app/robots.ts</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import type { MetadataRoute } from "next";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: [{
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/api/", "/*?s&#61;", "/*?replytocom&#61;", "/*?utm_"],
+    }],
+    sitemap: `${process.env.SITE_URL}/sitemap_index.xml`,
+  };
+}</pre>
+
+  <h3 style="font:700 15px/1.4 'Libre Franklin',sans-serif;color:#16181C;margin:0 0 8px">6.3 — Images &amp; proxy du sitemap Yoast</h3>
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">next.config.ts</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import type { NextConfig } from "next";
+
+const CMS &#61; "https://cms.monmag.fr";
+
+const nextConfig: NextConfig &#61; {
+  images: {
+    formats: ["image/avif", "image/webp"],
+    remotePatterns: [{ protocol: "https", hostname: "cms.monmag.fr" }],
+  },
+  async rewrites() {
+    return [   // sitemap Yoast servi sous le domaine frontend
+      { source: "/sitemap_index.xml",
+        destination: `${CMS}/sitemap_index.xml` },
+      { source: "/:name-sitemap.xml",
+        destination: `${CMS}/:name-sitemap.xml` },
+      { source: "/:name-sitemap:page.xml",
+        destination: `${CMS}/:name-sitemap:page.xml` },
+    ];
+  },
+};
+export default nextConfig;</pre>
+
+  <h3 style="font:700 15px/1.4 'Libre Franklin',sans-serif;color:#16181C;margin:0 0 8px">6.4 — llms.txt (visibilité IA)</h3>
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">public/llms.txt</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px"># Mon Magazine
+&gt; Magazine en ligne français : [thématique]. Articles signés, sourcés,
+&gt; datés, relus selon notre politique éditoriale.
+
+## Pages clés
+- [À propos](https://www.monmag.fr/a-propos) : mission et fonctionnement
+- [Rédaction](https://www.monmag.fr/redaction) : profils des auteurs
+- [Politique éditoriale](https://www.monmag.fr/politique-editoriale)
+- [Politique des sources](https://www.monmag.fr/politique-des-sources)
+
+## Rubriques
+- [Rubrique A](https://www.monmag.fr/categorie/rubrique-a) : résumé
+- [Rubrique B](https://www.monmag.fr/categorie/rubrique-b) : résumé</pre>
+
+  <p style="font:400 13.5px/1.65 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 24px"><strong>.env.local</strong> : <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">WP_API_URL</code>, <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">SITE_URL</code>, <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">REVALIDATE_SECRET</code>. Côté Yoast : renseigner l'Organization (nom, logo, profils sociaux) dans Réglages → Représentation du site — c'est ce qui alimente le graphe <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">sameAs</code> repris tel quel par le frontend.</p>
+
+  <!-- ============ 7. EEAT ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">7.</span> Pages EEAT</h2>
+
+  <p style="font:400 13.5px/1.65 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 10px">Contenu géré comme des <em>pages</em> WordPress (<code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">/wp/v2/pages?slug=…</code>), routes statiques côté Next.js, toutes liées depuis le footer :</p>
+
+  <table style="width:100%;border-collapse:collapse;font:400 12.5px/1.5 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 24px">
+    <thead>
+      <tr>
+        <th style="text-align:left;padding:7px 10px;border-bottom:1.5px solid #16181C;font-weight:700">Route</th>
+        <th style="text-align:left;padding:7px 10px;border-bottom:1.5px solid #16181C;font-weight:700">Rôle EEAT / GEO</th>
+        <th style="text-align:left;padding:7px 10px;border-bottom:1.5px solid #16181C;font-weight:700">Schema</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/a-propos</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Identité de la marque, mission, historique</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">AboutPage + Organization</td></tr>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/redaction</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Équipe (wp/v2/users) → lien vers chaque /auteur/[slug]</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">ItemList de Person</td></tr>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/auteur/[slug]</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Bio, expertise, sameAs, articles auto (author=ID)</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">ProfilePage + Person</td></tr>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/politique-editoriale</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Processus de rédaction, relecture, corrections</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">WebPage</td></tr>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/politique-des-sources</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Critères de citation — signal fort EEAT + GEO</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">WebPage</td></tr>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/contact</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Coordonnées réelles et vérifiables</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">ContactPage</td></tr>
+      <tr><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9;font-family:'JetBrains Mono',monospace;font-size:11.5px">/mentions-legales · /politique-de-confidentialite</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">Conformité légale (obligatoire FR)</td><td style="padding:6px 10px;border-bottom:1px solid #E3E5E9">WebPage</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============ 8. CHECKLIST ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">8.</span> Checklist finale de conformité</h2>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px 28px">
+    <div>
+      <h3 style="font:700 14px/1.4 'Libre Franklin',sans-serif;color:#2F4A75;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.06em">Core Web Vitals</h3>
+      <ul style="font:400 12.5px/1.7 'Libre Franklin',sans-serif;color:#2A2C30;margin:0;padding-left:18px;list-style:'□  '">
+        <li>LCP &lt; 2,5 s : image de une en <code style="font:400 11px 'JetBrains Mono',monospace">priority + fetchPriority&#61;"high"</code></li>
+        <li>CLS &lt; 0,1 : width/height explicites partout, fonts via <code style="font:400 11px 'JetBrains Mono',monospace">next/font</code> (zéro FOUT)</li>
+        <li>INP &lt; 200 ms : Server Components par défaut, JS client minimal</li>
+        <li>AVIF/WebP via next/image, lazy-loading hors viewport</li>
+        <li>Cache edge : pages ISR servies statiques (vérifier <code style="font:400 11px 'JetBrains Mono',monospace">x-vercel-cache: HIT</code>)</li>
+        <li>Prefetch des liens internes visibles (next/link par défaut)</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="font:700 14px/1.4 'Libre Franklin',sans-serif;color:#2F4A75;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.06em">SEO technique</h3>
+      <ul style="font:400 12.5px/1.7 'Libre Franklin',sans-serif;color:#2A2C30;margin:0;padding-left:18px;list-style:'□  '">
+        <li>Title + meta description uniques (Yoast) sur 100 % des pages</li>
+        <li>Canonical systématique = URL frontend (vérifier après proxy)</li>
+        <li>Un seul H1 par page, hiérarchie Hn sans saut</li>
+        <li>Sitemap Yoast accessible sur le domaine frontend + soumis à GSC</li>
+        <li>robots.txt : /api/ et paramètres d'URL exclus</li>
+        <li>CMS (cms.monmag.fr) non indexé : noindex global + X-Robots-Tag</li>
+        <li>404 réel (status code) pour contenu dépublié</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="font:700 14px/1.4 'Libre Franklin',sans-serif;color:#2F4A75;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.06em">GEO — visibilité IA</h3>
+      <ul style="font:400 12.5px/1.7 'Libre Franklin',sans-serif;color:#2A2C30;margin:0;padding-left:18px;list-style:'□  '">
+        <li>JSON-LD @graph complet (Article, Person, Organization, BreadcrumbList, WebSite+SearchAction) — validé sur validator.schema.org</li>
+        <li>TL;DR « L'essentiel » en tête d'article (champ ACF)</li>
+        <li>datePublished / dateModified visibles ET balisés, cohérents Yoast</li>
+        <li>llms.txt à la racine, à jour à chaque nouvelle rubrique</li>
+        <li>sameAs cohérents : mêmes profils sur site, Yoast et réseaux</li>
+        <li>GPTBot / ClaudeBot / PerplexityBot non bloqués dans robots.txt</li>
+      </ul>
+    </div>
+    <div>
+      <h3 style="font:700 14px/1.4 'Libre Franklin',sans-serif;color:#2F4A75;margin:0 0 8px;text-transform:uppercase;letter-spacing:0.06em">EEAT &amp; UX</h3>
+      <ul style="font:400 12.5px/1.7 'Libre Franklin',sans-serif;color:#2A2C30;margin:0;padding-left:18px;list-style:'□  '">
+        <li>7 pages EEAT publiées et liées depuis le footer</li>
+        <li>Chaque article signé → page auteur avec bio + sameAs</li>
+        <li>Bloc « Sources » avec liens externes vérifiables</li>
+        <li>Fil d'Ariane visible sur toutes les pages profondes</li>
+        <li>Contraste WCAG AA, cibles tactiles ≥ 44 px, zéro interstitiel intrusif</li>
+        <li>Pagination crawlable (liens réels /page/2), pas d'infinite scroll seul</li>
+        <li>Maillage interne contextuel : articles liés par catégorie/tag en fin d'article</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 9. MULTI-SITES ============ -->
+  <h2 style="font:700 20px/1.3 'Libre Franklin',sans-serif;color:#16181C;border-bottom:2px solid #16181C;padding-bottom:8px;margin:32px 0 14px"><span style="color:#2F4A75">9.</span> Déploiement multi-sites (N magazines réels)</h2>
+
+  <p style="font:400 13.5px/1.65 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 14px">Un <strong>seul dépôt de code</strong>, un <strong>fichier de configuration par magazine</strong>, une <strong>instance WordPress distincte par site</strong>. Chaque déploiement sélectionne sa configuration via la variable d'environnement <code style="font:400 12px 'JetBrains Mono',monospace;background:#EFF1F4;padding:1px 5px;border-radius:3px">SITE_KEY</code> — c'est le paramètre qui change d'un site à l'autre : nom, domaine, source WP, charte graphique, entité éditoriale et profils sociaux propres. Chaque magazine reste une entité réelle et autonome (contenu, équipe, pages EEAT), et non un gabarit dupliqué.</p>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">config/sites.ts — registre des sites, résolution du site actif au build</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import type { NextConfig } from "next";
+
+/* Un enregistrement par magazine du réseau. La clé &#61; SITE_KEY (env). */
+export interface SiteConfig {
+  key: string;             // "cuisine" | "voyage" | …
+  name: string;            // nom éditorial affiché
+  domain: string;          // www.monmag-cuisine.fr
+  wpApi: string;           // https://cms-cuisine.mondomaine.fr/wp-json
+  locale: string;          // "fr-FR"
+  brand: {
+    primary: string;       // couleur d'accent du thème
+    font: string;          // pairing de polices propre au site
+    logo: string;          // /brands/cuisine/logo.svg
+  };
+  org: {                   // alimente Organization + sameAs (par site)
+    legalName: string;
+    sameAs: string[];      // réseaux sociaux PROPRES à ce magazine
+  };
+}
+
+export const SITES: Record&lt;string, SiteConfig&gt; &#61; {
+  cuisine: {
+    key: "cuisine",
+    name: "Le Carnet Gourmand",
+    domain: "www.carnet-gourmand.fr",
+    wpApi: "https://cms.carnet-gourmand.fr/wp-json",
+    locale: "fr-FR",
+    brand: { primary: "#B4552D", font: "Fraunces, serif",
+             logo: "/brands/cuisine/logo.svg" },
+    org: { legalName: "Le Carnet Gourmand SAS",
+           sameAs: ["https://instagram.com/carnetgourmand"] },
+  },
+  // … 49 autres entrées, chacune 100% distincte
+};
+
+/* Site actif résolu au build depuis l'env de déploiement. */
+export const SITE: SiteConfig &#61; SITES[process.env.SITE_KEY ?? ""] ??
+  (() &#61;&gt; { throw new Error("SITE_KEY inconnu : " + process.env.SITE_KEY); })();</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">.env — une valeur par déploiement</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px"># .env par déploiement — une valeur par site (Vercel/Cloudflare project)
+SITE_KEY&#61;cuisine
+SITE_URL&#61;https://www.carnet-gourmand.fr
+REVALIDATE_SECRET&#61;… (secret unique par site)
+# WP_API_URL n'est plus en dur : il vient de SITES[SITE_KEY].wpApi</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">app/layout.tsx — branding &amp; métadonnées pilotés par la config</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">import { SITE } from "@/config/sites";
+import "./globals.css";
+
+export const metadata &#61; {
+  metadataBase: new URL(`https://${SITE.domain}`),
+  title: { default: SITE.name, template: `%s — ${SITE.name}` },
+};
+
+export default function RootLayout({ children }:
+  { children: React.ReactNode }) {
+  return (
+    &lt;html lang&#61;{SITE.locale} data-brand&#61;{SITE.key}&gt;
+      &lt;body style&#61;{{ "--accent": SITE.brand.primary,
+                     fontFamily: SITE.brand.font } as React.CSSProperties}&gt;
+        {children}
+      &lt;/body&gt;
+    &lt;/html&gt;
+  );
+}</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">lib/wp.ts — base d'API dérivée du site actif</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px">// lib/wp.ts — la base d'API vient désormais de la config du site actif
+import { SITE } from "@/config/sites";
+const WP &#61; SITE.wpApi;   // remplace process.env.WP_API_URL</pre>
+
+  <p style="font:400 11px/1.5 'JetBrains Mono',monospace;color:#2F4A75;margin:0 0 4px">Déploiement — un projet par site, même dépôt</p>
+  <pre style="background:#14171C;color:#DEE5EC;border-radius:8px;padding:16px 20px;font:400 12px/1.62 'JetBrains Mono',monospace;overflow-x:auto;white-space:pre;margin:0 0 18px"># Un projet de déploiement par site, même dépôt Git.
+# Vercel : 50 projets pointant sur le repo, chacun avec son SITE_KEY.
+vercel --build-env SITE_KEY&#61;cuisine   --prod
+vercel --build-env SITE_KEY&#61;voyage    --prod
+# … ou en CI, une matrice de 50 builds paramétrés par SITE_KEY.</pre>
+
+  <p style="font:400 13.5px/1.65 'Libre Franklin',sans-serif;color:#2A2C30;margin:0 0 14px"><strong>À personnaliser réellement par site</strong> (pour que chaque magazine ait une valeur propre, pas pour dissimuler quoi que ce soit) : ligne éditoriale et thématique, équipe et auteurs, charte graphique et polices, pages EEAT rédigées spécifiquement, profils sociaux dédiés, hébergement WP séparé. Les liens entre sites se posent uniquement quand ils sont éditorialement justifiés.</p>
+
+</x-import>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;pageSize&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;a4&quot;,&quot;letter&quot;],&quot;default&quot;:&quot;a4&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Document&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { pageSize: this.props.pageSize ?? "a4" };
+  }
+}
+</script>
+</body>
+</html>

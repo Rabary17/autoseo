@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PBN Taxonomy — Arbre complet des niches & mots-clés</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --bg2: #161b27;
+  --bg3: #1e2535;
+  --bg4: #252d3f;
+  --bg5: #2c3650;
+  --border: rgba(255,255,255,.07);
+  --border2: rgba(255,255,255,.13);
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+  --text3: #4a5568;
+  --sw: 280px;
+
+  --c1: #f5a623; /* Finance */
+  --c2: #e8614a; /* Santé */
+  --c3: #8b7cf8; /* Tech */
+  --c4: #4f8ef7; /* Maison */
+  --c5: #4caf7d; /* Juridique */
+  --c6: #e879a0; /* Voyage */
+  --c7: #f97316; /* Auto */
+  --c8: #06b6d4; /* Éducation */
+  --c9: #a855f7; /* Loisirs */
+  --c10:#10b981; /* Animaux */
+  --c11:#f43f5e; /* Mode */
+  --c12:#84cc16; /* Alimentation */
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);display:flex;min-height:100vh;font-size:13px}
+
+/* SIDEBAR */
+#sb{width:var(--sw);min-height:100vh;background:var(--bg2);border-right:1px solid var(--border);position:fixed;top:0;left:0;overflow-y:auto;z-index:100;transition:transform .25s}
+.sb-logo{padding:18px 16px 14px;border-bottom:1px solid var(--border)}
+.sb-logo-tag{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:3px}
+.sb-logo-title{font-size:14px;font-weight:700;color:var(--text)}
+.sb-logo-sub{font-size:11px;color:var(--text3);margin-top:2px}
+.sb-search{padding:10px 12px;border-bottom:1px solid var(--border)}
+.sb-search input{width:100%;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:7px 10px;font-size:12px;color:var(--text);outline:none}
+.sb-search input::placeholder{color:var(--text3)}
+.sb-search input:focus{border-color:var(--c4)}
+.sb-section{padding:10px 12px 3px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3)}
+.sb-item{display:flex;align-items:center;gap:8px;padding:6px 12px;font-size:12px;color:var(--text2);cursor:pointer;border-radius:5px;margin:1px 6px;transition:background .12s,color .12s;border:none;background:none;width:calc(100% - 12px);text-align:left}
+.sb-item:hover{background:var(--bg3);color:var(--text)}
+.sb-item.active{background:rgba(79,142,247,.12);color:var(--c4)}
+.sb-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.sb-count{margin-left:auto;font-size:10px;background:var(--bg4);color:var(--text3);padding:1px 6px;border-radius:10px}
+.sb-footer{margin-top:auto;padding:12px 14px;border-top:1px solid var(--border);font-size:10px;color:var(--text3)}
+
+/* MAIN */
+#main{margin-left:var(--sw);flex:1;min-height:100vh}
+.topbar{position:sticky;top:0;background:rgba(13,17,23,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:10px 28px;display:flex;align-items:center;gap:10px;z-index:50}
+.topbar-bc{font-size:11px;color:var(--text3)}
+.topbar-bc span{color:var(--text2)}
+.topbar-stats{margin-left:auto;display:flex;gap:12px}
+.tstat{font-size:11px;color:var(--text3)}
+.tstat strong{color:var(--text2)}
+.btn{padding:5px 12px;border-radius:5px;font-size:11px;font-weight:500;cursor:pointer;border:1px solid var(--border2);background:var(--bg3);color:var(--text2);transition:all .12s}
+.btn:hover{background:var(--bg4);color:var(--text)}
+
+/* PAGES */
+.page{display:none;padding:28px 32px 60px;max-width:1200px}
+.page.active{display:block}
+.ph{margin-bottom:24px}
+.ph-ey{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px}
+.ph-title{font-size:22px;font-weight:700;color:var(--text);line-height:1.25;margin-bottom:8px}
+.ph-desc{font-size:13px;color:var(--text2);max-width:700px;line-height:1.7}
+
+/* STAT ROW */
+.srow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.sc{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 16px;text-align:center;min-width:100px}
+.sv{font-size:24px;font-weight:700}
+.sl{font-size:10px;color:var(--text3);margin-top:2px}
+
+/* TAXONOMY TREE */
+.tax-container{display:flex;flex-direction:column;gap:0}
+
+.niche-block{background:var(--bg2);border:1px solid var(--border);border-radius:10px;margin-bottom:12px;overflow:hidden}
+.niche-head{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer;user-select:none;transition:background .12s}
+.niche-head:hover{background:var(--bg3)}
+.niche-stripe{width:4px;height:36px;border-radius:2px;flex-shrink:0}
+.niche-info{flex:1}
+.niche-name{font-size:14px;font-weight:700;color:var(--text)}
+.niche-meta{font-size:11px;color:var(--text3);margin-top:1px}
+.niche-badges{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px}
+.niche-toggle{font-size:11px;color:var(--text3);transition:transform .2s;margin-left:6px}
+.niche-body{display:none;padding:0 16px 16px}
+.niche-body.open{display:block}
+
+/* CATEGORIES */
+.cat-block{margin-top:14px;border-radius:8px;overflow:hidden;border:1px solid var(--border)}
+.cat-head{display:flex;align-items:center;gap:8px;padding:9px 12px;cursor:pointer;background:var(--bg3);transition:background .12s;user-select:none}
+.cat-head:hover{background:var(--bg4)}
+.cat-icon{font-size:14px;width:20px;text-align:center;flex-shrink:0}
+.cat-name{font-size:13px;font-weight:600;color:var(--text);flex:1}
+.cat-count{font-size:10px;color:var(--text3);background:var(--bg5);padding:1px 6px;border-radius:10px}
+.cat-toggle{font-size:10px;color:var(--text3);transition:transform .18s}
+.cat-body{display:none;padding:8px 12px 10px;background:var(--bg2)}
+.cat-body.open{display:block}
+
+/* SUBCATEGORIES */
+.sub-block{margin-top:10px;padding-left:12px;border-left:1px solid var(--border)}
+.sub-head{display:flex;align-items:center;gap:6px;padding:6px 8px;cursor:pointer;border-radius:6px;transition:background .1s;user-select:none}
+.sub-head:hover{background:var(--bg3)}
+.sub-arrow{font-size:9px;color:var(--text3);transition:transform .15s;width:12px;text-align:center}
+.sub-name{font-size:12px;font-weight:600;color:var(--text2);flex:1}
+.sub-kw-count{font-size:10px;color:var(--text3)}
+.sub-body{display:none;padding:4px 0 4px 18px}
+.sub-body.open{display:block}
+
+/* KEYWORDS */
+.kw-list{display:flex;flex-wrap:wrap;gap:5px;padding:6px 0}
+.kw-pill{display:inline-flex;align-items:center;gap:4px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:3px 10px;font-size:11px;color:var(--text2);white-space:nowrap}
+.kw-pill .intent{font-size:9px;font-weight:700;padding:1px 4px;border-radius:10px;flex-shrink:0}
+.int-i{background:rgba(79,142,247,.2);color:#60a5fa}
+.int-c{background:rgba(245,166,35,.2);color:#fbbf24}
+.int-t{background:rgba(76,175,125,.2);color:#4ade80}
+
+/* HIGHLIGHT for search */
+.hl{background:rgba(245,166,35,.3);border-radius:2px;color:var(--text)}
+.hidden-node{display:none!important}
+
+/* MOBILE */
+#mob-toggle{display:none;position:fixed;top:10px;left:10px;z-index:200;background:var(--bg2);border:1px solid var(--border2);border-radius:7px;width:34px;height:34px;align-items:center;justify-content:center;cursor:pointer;font-size:15px;color:var(--text2)}
+@media(max-width:768px){#sb{transform:translateX(-100%)}#sb.open{transform:translateX(0)}#main{margin-left:0}#mob-toggle{display:flex}.page{padding:16px 14px 48px}.topbar{padding:9px 14px 9px 50px}}
+::-webkit-scrollbar{width:4px;height:4px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:2px}
+
+/* COMPETITORS */
+.comp-block{background:var(--bg2);border:1px solid var(--border);border-radius:10px;margin-top:22px;padding:16px}
+.comp-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px}
+.comp-sub{font-size:11px;color:var(--text3);margin-bottom:12px}
+.comp-stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.comp-stat{background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:8px 14px;text-align:center;min-width:90px}
+.comp-stat .v{font-size:16px;font-weight:700;color:var(--text)}
+.comp-stat .l{font-size:9px;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.comp-table{width:100%;border-collapse:collapse;font-size:11px}
+.comp-table th{text-align:left;padding:6px 8px;color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border2)}
+.comp-table td{padding:7px 8px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+.comp-table tr:hover td{background:var(--bg3)}
+.comp-url{color:var(--c4);text-decoration:none;font-weight:600;word-break:break-all}
+.comp-url:hover{text-decoration:underline}
+.comp-desc{font-size:10.5px;color:var(--text3);line-height:1.5;max-width:420px}
+.comp-cat{font-size:9.5px;background:var(--bg4);border-radius:10px;padding:1px 7px;color:var(--text3);white-space:nowrap}
+.comp-num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:768px){.comp-desc{max-width:none}.comp-table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<button id="mob-toggle" onclick="document.getElementById('sb').classList.toggle('open')">☰</button>
+
+<nav id="sb">
+  <div class="sb-logo">
+    <div class="sb-logo-tag">PBN Taxonomy</div>
+    <div class="sb-logo-title">Arbre complet des niches</div>
+    <div class="sb-logo-sub">12 niches · 95 catégories · 1100+ mots-clés</div>
+  </div>
+  <div class="sb-search">
+    <input type="text" id="search-input" placeholder="Rechercher une catégorie ou mot-clé..." oninput="doSearch(this.value)">
+  </div>
+  <div class="sb-section">Niches principales</div>
+  <button class="sb-item active" onclick="showPage('all',this)" id="nav-all">
+    <span class="sb-dot" style="background:var(--text3)"></span>Vue complète
+  </button>
+  <button class="sb-item" onclick="showPage('finance',this)"><span class="sb-dot" style="background:var(--c1)"></span>Finance & business<span class="sb-count">8</span></button>
+  <button class="sb-item" onclick="showPage('sante',this)"><span class="sb-dot" style="background:var(--c2)"></span>Santé & bien-être<span class="sb-count">7</span></button>
+  <button class="sb-item" onclick="showPage('tech',this)"><span class="sb-dot" style="background:var(--c3)"></span>Tech & numérique<span class="sb-count">7</span></button>
+  <button class="sb-item" onclick="showPage('maison',this)"><span class="sb-dot" style="background:var(--c4)"></span>Maison & habitat<span class="sb-count">8</span></button>
+  <button class="sb-item" onclick="showPage('juridique',this)"><span class="sb-dot" style="background:var(--c5)"></span>Juridique & admin<span class="sb-count">7</span></button>
+  <button class="sb-item" onclick="showPage('voyage',this)"><span class="sb-dot" style="background:var(--c6)"></span>Voyage & tourisme<span class="sb-count">6</span></button>
+  <button class="sb-item" onclick="showPage('auto',this)"><span class="sb-dot" style="background:var(--c7)"></span>Auto & mobilité<span class="sb-count">19</span></button>
+  <button class="sb-item" onclick="showPage('education',this)"><span class="sb-dot" style="background:var(--c8)"></span>Éducation & formation<span class="sb-count">6</span></button>
+  <button class="sb-item" onclick="showPage('loisirs',this)"><span class="sb-dot" style="background:var(--c9)"></span>Loisirs & culture<span class="sb-count">6</span></button>
+  <button class="sb-item" onclick="showPage('animaux',this)"><span class="sb-dot" style="background:var(--c10)"></span>Animaux & nature<span class="sb-count">5</span></button>
+  <button class="sb-item" onclick="showPage('mode',this)"><span class="sb-dot" style="background:var(--c11)"></span>Mode & beauté<span class="sb-count">6</span></button>
+  <button class="sb-item" onclick="showPage('food',this)"><span class="sb-dot" style="background:var(--c12)"></span>Alimentation & cuisine<span class="sb-count">6</span></button>
+  <div class="sb-footer">12 niches · Publithings SEO · 2025</div>
+</nav>
+
+<main id="main">
+  <div class="topbar">
+    <div class="topbar-bc">PBN Taxonomy <span>/ <span id="bc">Vue complète</span></span></div>
+    <div class="topbar-stats">
+      <div class="tstat"><strong>12</strong> niches</div>
+      <div class="tstat"><strong>95</strong> catégories</div>
+      <div class="tstat"><strong>420+</strong> sous-catégories</div>
+      <div class="tstat"><strong>1100+</strong> mots-clés</div>
+    </div>
+    <button class="btn" onclick="expandAll()">Tout ouvrir</button>
+    <button class="btn" onclick="collapseAll()">Tout fermer</button>
+  </div>
+
+  <!-- PAGE ALL -->
+  <div id="page-all" class="page active">
+    <div class="ph">
+      <div class="ph-ey">Taxonomie complète</div>
+      <div class="ph-title">Arbre complet — 12 niches PBN</div>
+      <div class="ph-desc">Toutes les niches, catégories, sous-catégories et mots-clés cibles. Cliquer sur chaque niveau pour déplier. Utiliser la barre de recherche pour filtrer rapidement.</div>
+    </div>
+    <div class="srow">
+      <div class="sc"><div class="sv">12</div><div class="sl">Niches</div></div>
+      <div class="sc"><div class="sv">95</div><div class="sl">Catégories</div></div>
+      <div class="sc"><div class="sv">420+</div><div class="sl">Sous-catégories</div></div>
+      <div class="sc"><div class="sv" style="color:var(--c1)">1100+</div><div class="sl">Mots-clés</div></div>
+    </div>
+    <div id="tax-root" class="tax-container"></div>
+  </div>
+
+  <!-- Individual niche pages (filled by JS) -->
+  <div id="page-finance" class="page"><div class="ph"><div class="ph-ey">Niche 1</div><div class="ph-title" style="color:var(--c1)">Finance & business</div></div><div id="tax-finance"></div></div>
+  <div id="page-sante" class="page"><div class="ph"><div class="ph-ey">Niche 2</div><div class="ph-title" style="color:var(--c2)">Santé & bien-être</div></div><div id="tax-sante"></div></div>
+  <div id="page-tech" class="page"><div class="ph"><div class="ph-ey">Niche 3</div><div class="ph-title" style="color:var(--c3)">Tech & numérique</div></div><div id="tax-tech"></div></div>
+  <div id="page-maison" class="page"><div class="ph"><div class="ph-ey">Niche 4</div><div class="ph-title" style="color:var(--c4)">Maison & habitat</div></div><div id="tax-maison"></div></div>
+  <div id="page-juridique" class="page"><div class="ph"><div class="ph-ey">Niche 5</div><div class="ph-title" style="color:var(--c5)">Juridique & admin</div></div><div id="tax-juridique"></div></div>
+  <div id="page-voyage" class="page"><div class="ph"><div class="ph-ey">Niche 6</div><div class="ph-title" style="color:var(--c6)">Voyage & tourisme</div></div><div id="tax-voyage"></div></div>
+  <div id="page-auto" class="page"><div class="ph"><div class="ph-ey">Niche 7</div><div class="ph-title" style="color:var(--c7)">Auto & mobilité</div><div class="ph-desc">Taxonomie enrichie à partir des structures des concurrents leaders (Turbo.fr, Vroomly, iTurbo, Guichet Carte Grise, Le Repaire des Motards, Motor1, Caroom…). <a href="plan-auto-mobilite-10000.html" style="color:var(--c7);font-weight:700">→ Plan de production 10 000 articles</a></div></div><div id="tax-auto"></div></div>
+  <div id="page-education" class="page"><div class="ph"><div class="ph-ey">Niche 8</div><div class="ph-title" style="color:var(--c8)">Éducation & formation</div></div><div id="tax-education"></div></div>
+  <div id="page-loisirs" class="page"><div class="ph"><div class="ph-ey">Niche 9</div><div class="ph-title" style="color:var(--c9)">Loisirs & culture</div></div><div id="tax-loisirs"></div></div>
+  <div id="page-animaux" class="page"><div class="ph"><div class="ph-ey">Niche 10</div><div class="ph-title" style="color:var(--c10)">Animaux & nature</div></div><div id="tax-animaux"></div></div>
+  <div id="page-mode" class="page"><div class="ph"><div class="ph-ey">Niche 11</div><div class="ph-title" style="color:var(--c11)">Mode & beauté</div></div><div id="tax-mode"></div></div>
+  <div id="page-food" class="page"><div class="ph"><div class="ph-ey">Niche 12</div><div class="ph-title" style="color:var(--c12)">Alimentation & cuisine</div></div><div id="tax-food"></div></div>
+</main>
+
+<script>
+const NICHES = [
+{id:'finance',color:'--c1',name:'Finance & business',meta:'Tarif lien : 150–500€ · YMYL',cats:[
+  {icon:'🏦',name:'Crédit & financement',subs:[
+    {name:'Crédit immobilier',kws:['crédit immobilier taux 2025|I','simulation prêt immobilier|C','capacité emprunt|I','taux fixe vs variable|I','offre de prêt délai|I','courtier immobilier avis|C','TAEG explication|I']},
+    {name:'Crédit consommation',kws:['crédit auto en ligne|C','prêt personnel rapide|T','crédit renouvelable danger|I','mini crédit 24h|T','taux usure crédit conso|I']},
+    {name:'Rachat de crédit',kws:['rachat crédit immobilier|C','regroupement de dettes|C','simulation rachat crédit|T','économies rachat crédit|I']},
+    {name:'Microcrédit & financement participatif',kws:['microcrédit personnel|C','crowdfunding immobilier|C','crowdlending taux|I','financement participatif France|I']},
+    {name:'Crédit professionnel',kws:['prêt professionnel création|C','financement TPE PME|C','leasing matériel professionnel|C','affacturage entreprise|I']},
+  ]},
+  {icon:'📈',name:'Investissement & épargne',subs:[
+    {name:'Bourse & actions',kws:['investir bourse débutant|I','acheter actions CAC 40|T','dividendes actions France|I','analyse fondamentale action|I','PEA ouverture courtier|T']},
+    {name:'ETF & fonds',kws:['meilleur ETF 2025|C','ETF monde Vanguard|C','ETF dividendes éligibles PEA|C','frais gestion ETF comparatif|I','ETF vs OPCVM|I']},
+    {name:'SCPI & immobilier papier',kws:['SCPI rendement 2025|C','SCPI déficit foncier|I','SCPI en ligne achat|T','OPCI comparatif|C']},
+    {name:'Livrets & épargne réglementée',kws:['Livret A taux 2025|I','LEP conditions|I','PEL taux gel|I','LDDS plafond|I','meilleur taux livret bancaire|C']},
+    {name:'Assurance vie',kws:['assurance vie fonds euros|I','assurance vie unités de compte|I','fiscalité assurance vie|I','meilleur contrat assurance vie|C','assurance vie succession|I']},
+    {name:'Retraite & prévoyance',kws:['PER individuel comparatif|C','retraite complémentaire AGIRC|I','simuler retraite en ligne|T','racheter trimestres retraite|I','départ retraite anticipé|I']},
+    {name:'Or & matières premières',kws:['acheter or lingot France|T','gold ETF éligible PEA|C','cours or 2025|I','platine investissement|I']},
+  ]},
+  {icon:'🪙',name:'Crypto & actifs numériques',subs:[
+    {name:'Bitcoin & altcoins',kws:['acheter bitcoin France 2025|T','bitcoin halving explication|I','Ethereum staking rendement|I','altcoins prometteuses 2025|C']},
+    {name:'DeFi & protocoles',kws:['DeFi explication débutant|I','yield farming risques|I','Uniswap tutoriel|I','liquidity pool comprendre|I']},
+    {name:'NFT & Web3',kws:['NFT comment ça marche|I','créer NFT débutant|I','marché NFT 2025|I','Web3 investissement|C']},
+    {name:'Exchanges & wallets',kws:['meilleur exchange crypto France|C','Binance vs Coinbase|C','hardware wallet comparatif|C','cold wallet sécuriser crypto|I']},
+    {name:'Fiscalité crypto',kws:['fiscalité crypto France 2025|I','impôts bitcoin déclaration|I','formulaire 2086 crypto|I','crypto staking imposition|I']},
+  ]},
+  {icon:'🏢',name:'Entrepreneuriat & business',subs:[
+    {name:'Création d\'entreprise',kws:['créer SASU pas à pas|I','auto-entrepreneur démarches 2025|I','EURL vs SASU comparatif|I','SAS création coût|I','statut juridique choisir|I']},
+    {name:'Comptabilité & gestion',kws:['logiciel comptabilité TPE|C','expert-comptable en ligne tarif|C','bilan comptable explication|I','TVA auto-entrepreneur|I','charges sociales SASU|I']},
+    {name:'Marketing digital',kws:['stratégie SEO 2025|I','Google Ads débutant|I','Facebook Ads coût|C','email marketing logiciel|C','tunnel de vente créer|I']},
+    {name:'Freelance & indépendants',kws:['portage salarial vs freelance|I','trouver clients freelance|I','tarif journalier moyen freelance|I','plateforme freelance France|C']},
+    {name:'Financement startup',kws:['levée de fonds startup France|I','business angel trouver|I','BPI France prêt innovation|C','crowdfunding startup|C']},
+  ]},
+  {icon:'🛡',name:'Assurance',subs:[
+    {name:'Mutuelle santé',kws:['meilleure mutuelle santé 2025|C','mutuelle entreprise obligatoire|I','comparatif mutuelle senior|C','résiliation mutuelle loi|I']},
+    {name:'Assurance auto',kws:['assurance auto pas chère|C','assurance tous risques prix|C','franchise assurance auto|I','bonus malus calcul|I']},
+    {name:'Assurance habitation',kws:['assurance habitation obligatoire|I','multirisque habitation comparatif|C','assurance propriétaire non occupant|C','sinistre déclaration délai|I']},
+    {name:'Prévoyance & décès',kws:['assurance décès garanties|I','invalidité prévoyance TNS|C','contrat obsèques|C','garantie accidents de vie|I']},
+  ]},
+  {icon:'💳',name:'Banque & fintech',subs:[
+    {name:'Néobanques',kws:['Revolut avis 2025|C','N26 carte gratuite|C','Wise transfert international|C','Lydia paiement|C','Sumeria avis|C']},
+    {name:'Banques en ligne',kws:['Boursorama vs Hello Bank|C','Fortuneo avis|C','BforBank offre|C','banque en ligne sans frais|C']},
+    {name:'Paiement & transfert',kws:['virement international frais|I','PayPal frais 2025|I','carte prépayée comparatif|C','paiement fractionné 3x|I']},
+  ]},
+  {icon:'🧾',name:'Fiscalité personnelle',subs:[
+    {name:'Impôt sur le revenu',kws:['déclaration revenus 2025|I','tranches impôts France|I','réduction impôt enfants|I','frais réels vs forfait|I','simuler impôt en ligne|T']},
+    {name:'Défiscalisation',kws:['loi Pinel 2025|I','Malraux défiscalisation|I','Girardin industriel|C','FIP FCPI réduction impôt|C']},
+    {name:'IFI & patrimoine',kws:['IFI calcul 2025|I','exonération IFI résidence principale|I','démembrement propriété|I','donation enfants abattement|I']},
+  ]},
+  {icon:'🌍',name:'Finance internationale',subs:[
+    {name:'Expatriation & fiscalité',kws:['expatrié fiscalité France|I','convention fiscale double imposition|I','impôts non-résidents France|I','quitter fiscalité française|I']},
+    {name:'Investissement étranger',kws:['investir immobilier étranger|C','actions étrangères PEA|I','bourse américaine depuis France|I']},
+  ]},
+]},
+
+{id:'sante',color:'--c2',name:'Santé & bien-être',meta:'Tarif lien : 80–250€ · YMYL',cats:[
+  {icon:'🥗',name:'Nutrition & alimentation santé',subs:[
+    {name:'Régimes amincissants',kws:['régime keto débutant|I','régime méditerranéen menu|I','jeûne intermittent 16/8|I','régime sans sucre semaine|I','calories journalières femme|I']},
+    {name:'Nutrition sportive',kws:['protéines alimentaires sources|I','glucides avant entraînement|I','créatine dosage|I','BCAA effets|I','alimentation prise de masse|I']},
+    {name:'Intolérances alimentaires',kws:['intolérance lactose symptômes|I','régime sans gluten débutant|I','allergie alimentaire test|I','FODMAP liste aliments|I']},
+    {name:'Micronutrition',kws:['carence vitamine D symptômes|I','magnésium stress dosage|I','oméga 3 bienfaits|I','probiotiques microbiote|I','zinc immunité|I']},
+  ]},
+  {icon:'💪',name:'Sport & activité physique',subs:[
+    {name:'Musculation',kws:['programme musculation 3 jours/semaine|I','exercices dos musculation|I','squat technique|I','banc de musculation comparatif|C','whey protéine avis|C']},
+    {name:'Running & cardio',kws:['plan course débutant 5km|I','marathon préparation 16 semaines|I','cardio zone bruler graisse|I','montre GPS running comparatif|C']},
+    {name:'Yoga & disciplines douces',kws:['yoga débutant séquence|I','pilates exercices maison|I','stretching quotidien|I','qi gong bienfaits|I']},
+    {name:'Sports collectifs & loisirs',kws:['tennis progression débutant|I','natation programme|I','cyclisme vélo entraînement|I','CrossFit débutant|I']},
+    {name:'Équipements sportifs',kws:['vélo elliptique comparatif|C','tapis de course maison avis|C','haltères réglables comparatif|C','bande de résistance exercices|I']},
+  ]},
+  {icon:'🧘',name:'Bien-être & santé mentale',subs:[
+    {name:'Gestion du stress',kws:['techniques anti-stress rapides|I','cohérence cardiaque exercice|I','burn-out prévenir|I','anxiété remèdes naturels|I']},
+    {name:'Sommeil',kws:['améliorer qualité sommeil|I','insomnie solutions naturelles|I','apnée sommeil traitement|I','routine soir sommeil|I','matelas mémoire de forme|C']},
+    {name:'Méditation & mindfulness',kws:['méditation débutant 5 minutes|I','app méditation gratuite|C','pleine conscience exercices|I','MBSR programme|I']},
+    {name:'Psychologie & thérapie',kws:['TCC thérapie cognitive comportementale|I','psychologue en ligne tarif|C','dépression légère solutions|I','phobie traitement|I']},
+  ]},
+  {icon:'🌿',name:'Médecine douce & alternative',subs:[
+    {name:'Naturopathie',kws:['naturopathie principes|I','cure détox naturopathie|I','naturopathe consultation|C','drainage lymphatique|I']},
+    {name:'Aromathérapie',kws:['huiles essentielles lavande|I','aromathérapie diffuseur|C','huile essentielle tea tree|I','HE eucalyptus bronchites|I']},
+    {name:'Phytothérapie & herbes',kws:['valériane insomnie dosage|I','ashwagandha stress|I','gingembre bienfaits|I','curcuma inflammation|I']},
+    {name:'Acupuncture & énergétique',kws:['acupuncture douleurs dos|I','réflexologie plantaire points|I','shiatsu bienfaits|I','ostéopathie remboursement|I']},
+    {name:'Homéopathie',kws:['homéopathie efficace|I','arnica trauma|I','remèdes homéopathiques rhume|I']},
+  ]},
+  {icon:'👴',name:'Santé seniors & dépendance',subs:[
+    {name:'Maintien à domicile',kws:['aide à domicile sénior|C','APA allocation personnalisée|I','téléassistance sénior comparatif|C','aménagement domicile personne âgée|I']},
+    {name:'EHPAD & maisons de retraite',kws:['EHPAD tarif moyen 2025|I','choisir EHPAD critères|I','EHPAD public vs privé|I','financement EHPAD aides|I']},
+    {name:'Maladies chroniques',kws:['diabète type 2 régime|I','arthrose genou traitement|I','Alzheimer premiers signes|I','Parkinson accompagnement|I']},
+  ]},
+  {icon:'💊',name:'Santé préventive & médicale',subs:[
+    {name:'Prévention & dépistage',kws:['bilan de santé complet bilan|I','dépistage cancer col utérus|I','coloscopie préparation|I','bilan cardiovasculaire|I']},
+    {name:'Santé femme',kws:['endométriose symptômes|I','SOPK régime|I','ménopause traitement naturel|I','contraception comparatif|I','grossesse premier trimestre|I']},
+    {name:'Santé homme',kws:['prostate symptômes précoces|I','testostérone naturellement|I','santé sexuelle homme|I','fertilité masculine|I']},
+    {name:'Santé enfant',kws:['vaccins enfant calendrier|I','otite enfant traitement|I','croissance enfant courbe|I','sommeil bébé méthode|I']},
+  ]},
+  {icon:'🧴',name:'Beauté & soins santé',subs:[
+    {name:'Peau & dermatologie',kws:['acné adulte traitement|I','eczéma crème|I','psoriasis solution naturelle|I','SPF crème solaire|I','routine skincare anti-âge|I']},
+    {name:'Cheveux & capillaire',kws:['chute cheveux solutions femme|I','repousse cheveux traitement|I','routine capillaire bouclés|I','shampoing sans sulfate avis|C']},
+  ]},
+]},
+
+{id:'tech',color:'--c3',name:'Tech & numérique',meta:'Tarif lien : 60–200€',cats:[
+  {icon:'🤖',name:'Intelligence artificielle',subs:[
+    {name:'Outils IA grand public',kws:['ChatGPT tutoriel complet|I','Claude IA vs ChatGPT|C','Midjourney prompt guide|I','Gemini Google avis|C','Perplexity IA recherche|C']},
+    {name:'IA génération d\'images',kws:['Stable Diffusion tutoriel|I','DALL-E 3 exemples|I','Firefly Adobe IA|C','générateur image gratuit|C']},
+    {name:'IA génération de texte',kws:['meilleur IA rédaction|C','Jasper AI avis|C','Copy.ai tutoriel|I','IA pour SEO|I']},
+    {name:'IA vidéo & audio',kws:['Sora OpenAI vidéo|I','Runway ML tutoriel|I','ElevenLabs voix IA|C','transcription audio IA gratuite|C']},
+    {name:'LLM & IA pour développeurs',kws:['API OpenAI tutoriel|I','LangChain guide|I','prompt engineering avancé|I','fine-tuning modèle IA|I']},
+    {name:'Automatisation IA',kws:['Make vs n8n comparatif|C','Zapier IA workflows|C','agents IA autonomes|I','RPA automatisation entreprise|I']},
+  ]},
+  {icon:'🔒',name:'Cybersécurité & vie privée',subs:[
+    {name:'VPN',kws:['meilleur VPN 2025|C','VPN gratuit danger|I','NordVPN vs ExpressVPN|C','VPN streaming Netflix|C','VPN no-log politique|I']},
+    {name:'Antivirus & protection',kws:['meilleur antivirus 2025|C','antivirus gratuit Windows|C','protection ransomware|I','pare-feu logiciel|C']},
+    {name:'Mots de passe & 2FA',kws:['gestionnaire mots de passe|C','Bitwarden vs 1Password|C','authentification 2FA|I','passkey explication|I']},
+    {name:'Navigation sécurisée',kws:['navigateur vie privée|C','Tor browser guide|I','DNS chiffré|I','DuckDuckGo vs Google|C']},
+    {name:'Sécurité entreprise',kws:['RGPD conformité PME|I','zero trust sécurité|I','phishing formation|I','SOC entreprise|I']},
+  ]},
+  {icon:'📱',name:'Smartphones & mobiles',subs:[
+    {name:'Comparatifs & tests',kws:['meilleur smartphone 2025|C','iPhone 16 test|I','Samsung Galaxy S25 avis|C','smartphone moins 300€|C','rapport qualité prix smartphone|C']},
+    {name:'Accessoires',kws:['meilleure coque iPhone|C','écouteurs sans fil comparatif|C','chargeur rapide USB-C|C','montre connectée comparatif|C']},
+    {name:'Android & iOS',kws:['Android vs iOS 2025|C','rooter Android|I','personnaliser iPhone|I','migrer Android vers iPhone|I']},
+    {name:'Applications mobiles',kws:['meilleures apps productivité|C','apps santé iPhone|C','apps investissement bourse|C','apps méditation gratuite|C']},
+  ]},
+  {icon:'💻',name:'Ordinateurs & hardware',subs:[
+    {name:'PC & laptops',kws:['meilleur laptop 2025|C','PC portable moins 600€|C','MacBook vs PC Windows|C','laptop gaming comparatif|C']},
+    {name:'Composants PC',kws:['meilleure carte graphique 2025|C','processeur comparatif benchmark|C','RAM 32Go DDR5|C','SSD NVMe comparatif|C']},
+    {name:'Périphériques',kws:['meilleur écran PC 4K|C','clavier mécanique avis|C','souris gaming|C','webcam streaming|C']},
+    {name:'PC gaming',kws:['config gaming budget 800€|I','FPS optimiser Windows|I','overclocking débutant|I','refroidissement PC|I']},
+  ]},
+  {icon:'🌐',name:'Internet & réseaux',subs:[
+    {name:'Box & fibre',kws:['meilleur opérateur fibre|C','offre fibre comparatif 2025|C','box 5G avis|C','débits fibre test|I']},
+    {name:'Wi-Fi & réseau maison',kws:['Wi-Fi 6 routeur|C','mesh Wi-Fi maison|C','améliorer Wi-Fi appartement|I','NAS maison stockage|C']},
+    {name:'Hébergement web',kws:['meilleur hébergeur WordPress|C','VPS OVH vs Infomaniak|C','hébergement mutualisé|C','CDN Cloudflare gratuit|I']},
+  ]},
+  {icon:'🛒',name:'E-commerce & digital business',subs:[
+    {name:'Création de boutique',kws:['créer boutique Shopify|I','WooCommerce tutoriel|I','PrestaShop vs Shopify|C','boutique en ligne gratuite|C']},
+    {name:'Dropshipping',kws:['dropshipping débutant France|I','fournisseur dropshipping France|C','AliExpress dropshipping guide|I','dropshipping produits gagnants|I']},
+    {name:'Marketplace & Amazon',kws:['vendre Amazon FBA|I','Etsy boutique créer|I','Leboncoin pro|I','Vinted business|I']},
+    {name:'SEO & trafic',kws:['SEO débutant guide 2025|I','backlinks stratégie|I','netlinking PBN|I','audit SEO gratuit|C']},
+  ]},
+  {icon:'⚙️',name:'SaaS & outils pro',subs:[
+    {name:'Gestion de projet',kws:['Notion vs Asana|C','Monday.com avis|C','Trello gratuit|C','ClickUp tuto|I']},
+    {name:'CRM & ventes',kws:['HubSpot CRM gratuit|C','Salesforce PME|C','CRM pour TPE|C','pipeline commercial gérer|I']},
+    {name:'Design & créatif',kws:['Canva Pro vaut la peine|C','Figma débutant tutoriel|I','Adobe Express gratuit|C','outil design sans code|C']},
+    {name:'Communication & RH',kws:['Slack vs Teams|C','Zoom alternatives|C','logiciel paie TPE|C','SIRH PME comparatif|C']},
+  ]},
+]},
+
+{id:'maison',color:'--c4',name:'Maison & habitat',meta:'Tarif lien : 40–150€',cats:[
+  {icon:'🏠',name:'Immobilier',subs:[
+    {name:'Achat immobilier',kws:['acheter appartement 2025|I','primo-accédant aides|I','offre achat rédiger|I','compromis vente délai|I','DPE lettre G interdiction|I']},
+    {name:'Vente immobilier',kws:['vendre appartement sans agence|I','estimation bien immobilier|C','home staging photos|I','plus-value vente immobilière|I']},
+    {name:'Investissement locatif',kws:['investissement locatif débutant|I','rendement locatif calcul|I','LMNP déclaration|I','colocation investissement|I','location meublée avantages|I']},
+    {name:'Immobilier neuf',kws:['programme neuf livraison|I','VEFA risques|I','PTZ neuf 2025|I','promoteur immobilier choisir|I']},
+  ]},
+  {icon:'🔨',name:'Travaux & rénovation',subs:[
+    {name:'Gros œuvre',kws:['extension maison permis|I','surélévation maison coût|I','fondations maison|I','charpente rénovation prix|I']},
+    {name:'Second œuvre',kws:['isolation thermique comparatif|C','plaquiste tarif m2|I','carrelage poser soi-même|I','parquet pose flottante|I']},
+    {name:'Cuisine & salle de bain',kws:['rénover cuisine budget|I','plan cuisine L|I','douche italienne poser|I','rénovation salle de bain 5m2|I']},
+    {name:'Trouver des artisans',kws:['artisan certifié RGE|I','devis travaux comparatif|C','plateforme artisan France|C','garantie décennale artisan|I']},
+  ]},
+  {icon:'⚡',name:'Énergie & isolation',subs:[
+    {name:'Aides & primes',kws:['prime CEE isolation|I','MaPrimeRénov 2025|I','éco-prêt taux zéro|I','aide pompe à chaleur montant|I']},
+    {name:'Chauffage',kws:['pompe à chaleur prix installation|C','chaudière gaz remplacement|I','poêle à granulés comparatif|C','radiateur électrique inertie|C']},
+    {name:'Isolation',kws:['isolation combles perdus|I','isolation murs extérieurs prix|I','double vitrage coût remplacement|I','isolation plancher bas|I']},
+    {name:'Énergies renouvelables',kws:['panneaux solaires maison prix|C','autoconsommation solaire|I','pompe à chaleur air-eau|C','géothermie maison|I']},
+  ]},
+  {icon:'🛋',name:'Décoration & design intérieur',subs:[
+    {name:'Styles déco',kws:['déco style scandinave|I','intérieur japonais wabi-sabi|I','déco industrielle loft|I','style bohème déco|I','minimalisme maison|I']},
+    {name:'Pièces par pièce',kws:['décorer salon lumineux|I','chambre adulte idées|I','cuisine ouverte déco|I','entrée maison aménager|I','bureau maison ergonomique|I']},
+    {name:'DIY & upcycling',kws:['meuble palette fabriquer|I','relooker meuble bois|I','peinture béton ciré|I','tapisserie trompe l\'œil|I']},
+    {name:'Mobilier & shopping',kws:['meuble salon pas cher|C','canapé 3 places comparatif|C','lampe design salon|C','miroir entrée tendance|C']},
+  ]},
+  {icon:'🪴',name:'Jardin & extérieur',subs:[
+    {name:'Jardinage',kws:['potager débutant semis|I','taille rosiers quand|I','compostage débutant|I','jardin permaculturel|I','gazon semis ou rouleau|I']},
+    {name:'Aménagement extérieur',kws:['terrasse bois composite|C','pergola bioclimatique prix|C','clôture jardin prix m|I','piscine hors sol comparatif|C']},
+    {name:'Plantes d\'intérieur',kws:['plante purificatrice air|I','entretien monstera|I','orchidée faire refleurir|I','plante sans entretien|I']},
+    {name:'Outillage jardinage',kws:['robot tondeuse comparatif|C','taille-haie électrique avis|C','désherbeur thermique|C','arrosage automatique kit|C']},
+  ]},
+  {icon:'🔌',name:'Électroménager & équipement',subs:[
+    {name:'Gros électroménager',kws:['lave-linge frontal comparatif|C','réfrigérateur combiné avis|C','lave-vaisselle silencieux|C','congélateur armoire comparatif|C']},
+    {name:'Petit électroménager cuisine',kws:['robot cuisine multifonction|C','machine café grain comparatif|C','friteuse air comparatif|C','raclette appareil|C']},
+    {name:'Domotique & maison connectée',kws:['thermostat connecté|C','ampoule connectée comparatif|C','alarme maison sans abonnement|C','volet roulant connecté|C']},
+  ]},
+  {icon:'📦',name:'Déménagement & location',subs:[
+    {name:'Déménagement',kws:['devis déménageur comparatif|C','déménager seul camion|I','cartons déménagement gratuits|I','checklist déménagement|I']},
+    {name:'Location & bail',kws:['contrat bail location rédiger|I','préavis locataire délai|I','état des lieux entrant|I','loyer impayé procédure|I']},
+    {name:'Airbnb & location courte durée',kws:['Airbnb hôte débuter|I','réglementation location touristique|I','optimiser annonce Airbnb|I','taxe séjour Airbnb|I']},
+  ]},
+  {icon:'🏗',name:'Construction & architecture',subs:[
+    {name:'Faire construire',kws:['constructeur maison individuelle|C','maison clé en main prix|C','contrat CCMI|I','terrain à bâtir chercher|I']},
+    {name:'Architecture & plans',kws:['plan maison 100m2|I','maison passive conception|I','architecte honoraires|I','permis construire dossier|I']},
+  ]},
+]},
+
+{id:'juridique',color:'--c5',name:'Juridique & administratif',meta:'Tarif lien : 100–350€ · YMYL',cats:[
+  {icon:'👷',name:'Droit du travail',subs:[
+    {name:'Rupture du contrat',kws:['rupture conventionnelle montant 2025|I','licenciement abusif recours|I','démission chômage conditions|I','rupture période essai droits|I']},
+    {name:'Droits des salariés',kws:['heures supplémentaires paiement|I','congés payés calcul|I','télétravail droit refuser|I','arrêt maladie maintien salaire|I']},
+    {name:'Formation professionnelle',kws:['CPF utiliser 2025|I','VAE diplôme expérience|I','bilan de compétences|I','reconversion professionnelle aides|I']},
+    {name:'Chômage & ARE',kws:['allocation chômage calcul|I','inscription France Travail|I','ARE durée indemnisation|I','reprise activité ARE|I']},
+  ]},
+  {icon:'👨‍👩‍👧',name:'Droit de la famille',subs:[
+    {name:'Mariage & PACS',kws:['PACS avantages mariage|I','contrat mariage communauté|I','PACS fiscalité avantages|I','mariage à l\'étranger France|I']},
+    {name:'Divorce & séparation',kws:['divorce à l\'amiable procédure|I','divorce contentieux durée|I','pension alimentaire révision|I','résidence alternée enfants|I']},
+    {name:'Succession & héritage',kws:['succession héritiers légaux|I','testament olographe rédiger|I','droits succession calcul|I','donation enfants abattement|I','SCI familiale avantages|I']},
+    {name:'Adoption & filiation',kws:['adoption simple vs plénière|I','reconnaissance enfant démarches|I','congé parental droits|I']},
+  ]},
+  {icon:'📋',name:'Démarches administratives',subs:[
+    {name:'Documents d\'identité',kws:['carte identité renouvellement en ligne|T','passeport délai 2025|I','permis conduire perdu remplacement|T','acte de naissance demande|T']},
+    {name:'Véhicules & mobilité',kws:['carte grise changement propriétaire|T','contrôle technique date|I','vignette Crit\'Air commander|T','permis de conduire points|I']},
+    {name:'Logement social',kws:['HLM demande dossier|I','numéro unique demande logement|I','APL calcul 2025|I','CAF logement aides|I']},
+    {name:'État civil & notariat',kws:['acte mariage copie|T','légalisation documents France|I','notaire tarif acte|I','procuration démarches|I']},
+  ]},
+  {icon:'⚖️',name:'Droit des consommateurs',subs:[
+    {name:'Achats & garanties',kws:['garantie légale conformité|I','vice caché recours|I','droit de rétractation 14 jours|I','remboursement refus vendeur|I']},
+    {name:'Litiges & médiation',kws:['litige commerçant recours|I','saisir tribunal consommateur|I','médiateur consommation|I','chargeback carte bancaire|I']},
+    {name:'Abonnements & résiliation',kws:['résilier contrat loi Chatel|I','résiliation abonnement mobile|I','rétractation vente à distance|I']},
+  ]},
+  {icon:'🏛',name:'Droit immobilier',subs:[
+    {name:'Propriété & copropriété',kws:['règlement copropriété charges|I','assemblée générale copropriété|I','syndic bénévole|I','mitoyenneté règles|I']},
+    {name:'Baux & locations',kws:['loi Alur droits locataires|I','dépôt garantie restitution délai|I','loyer impayé expulsion procédure|I','colocation bail solidaire|I']},
+    {name:'Fiscalité immobilière',kws:['taxe foncière calcul|I','plus-value immobilière exonération|I','IFI déclaration|I','droits mutation achat|I']},
+  ]},
+  {icon:'🌐',name:'Droit numérique & RGPD',subs:[
+    {name:'Données personnelles',kws:['RGPD droits utilisateurs|I','droit à l\'oubli Google|T','CNIL plainte déposer|T','cookies consentement règles|I']},
+    {name:'Droit d\'auteur & propriété intellectuelle',kws:['copyright infraction web|I','dépôt marque INPI|I','droit image personnes|I','plagiat procédure|I']},
+    {name:'E-commerce & droit',kws:['CGV e-commerce obligatoire|I','mentions légales site web|I','RGPD boutique en ligne|I']},
+  ]},
+  {icon:'✈️',name:'Immigration & nationalité',subs:[
+    {name:'Titres de séjour',kws:['titre séjour renouvellement|T','carte résident 10 ans|I','visa long séjour France|T','regroupement familial dossier|I']},
+    {name:'Naturalisation',kws:['naturalisation française conditions|I','naturalisation dossier|I','test langue française OFII|I']},
+    {name:'Asile & protection',kws:['demande asile France|I','OFPRA procédure|I','statut réfugié droits|I']},
+  ]},
+]},
+
+{id:'voyage',color:'--c6',name:'Voyage & tourisme',meta:'Tarif lien : 80–300€',cats:[
+  {icon:'✈️',name:'Organisation & préparation',subs:[
+    {name:'Billets d\'avion',kws:['billet avion pas cher astuce|C','comparateur vol Skyscanner|C','erreur tarifaire vol|I','miles frequent flyer|I','bagages cabine règles|I']},
+    {name:'Hébergement',kws:['Airbnb vs hôtel|C','hôtel pas cher comparatif|C','hostel globe-trotteur|I','villa location vacances|C','camping-car location|C']},
+    {name:'Assurance voyage',kws:['assurance voyage comparatif|C','rapatriement médical|I','assurance annulation vol|C','carte bancaire assurance voyage|I']},
+    {name:'Visa & formalités',kws:['visa USA ESTA|T','visa Schengen dossier|I','passeport validité pays|I','formalités Australie|I']},
+  ]},
+  {icon:'🗺',name:'Destinations',subs:[
+    {name:'Europe',kws:['week-end Prague budget|I','Amsterdam visiter|I','Lisbonne itinéraire 5 jours|I','Islande road trip|I','Grèce îles moins chères|I']},
+    {name:'Asie',kws:['Japon voyage budget|I','Thaïlande itinéraire|I','Bali guide voyage|I','Vietnam pas cher|I','Indonésie moins connue|I']},
+    {name:'Amériques',kws:['New York budget voyage|I','road trip USA côte ouest|I','Mexique Yucatan|I','Colombie voyage sécurité|I','Argentine Buenos Aires|I']},
+    {name:'Afrique',kws:['Maroc désert circuit|I','Madagascar voyage|I','Zanzibar séjour|I','Afrique du Sud safari|I']},
+    {name:'DOM-TOM France',kws:['Réunion voyage guide|I','Martinique séjour|I','Tahiti voyage budget|I','Nouvelle-Calédonie|I']},
+  ]},
+  {icon:'🎒',name:'Types de voyages',subs:[
+    {name:'Voyage solo',kws:['voyage solo femme sécurité|I','premier voyage solo conseils|I','rencontres voyage solo|I']},
+    {name:'Voyage famille',kws:['voyage famille avec bébé|I','club vacances enfants|C','parc attraction Europe|C','location vacances famille|C']},
+    {name:'Voyage de luxe',kws:['hôtel 5 étoiles Maldives|C','croisière luxury|C','safari privé Kenya|C','villa piscine privée|C']},
+    {name:'Voyage responsable',kws:['voyage écoresponsable|I','compensation carbone vol|I','tourisme solidaire|I','voyager sans avion Europe|I']},
+  ]},
+  {icon:'🏖',name:'Activités & expériences',subs:[
+    {name:'Plages & mer',kws:['plus belles plages Europe|I','plongée débutant Méditerranée|I','snorkeling Maldives|I','surf débutant|I']},
+    {name:'Randonnée & nature',kws:['GR20 Corse rando|I','Tour du Mont Blanc|I','Camino de Santiago|I','national park USA randonnée|I']},
+    {name:'Gastronomie & culture',kws:['street food Bangkok|I','cours cuisine Toscane|I','wine tour Bordeaux|I','musées gratuits Paris|I']},
+  ]},
+  {icon:'💰',name:'Budget & astuces voyageur',subs:[
+    {name:'Économiser sur le voyage',kws:['voyager pas cher Europe|I','offre last minute vol|C','cashback voyage carte|I','student voyage carte ISIC|I']},
+    {name:'Numérique nomade',kws:['nomade numérique pays|I','coliving nomades|C','visa nomade numérique|I','travailler en voyage|I']},
+  ]},
+  {icon:'🚂',name:'Transports alternatifs',subs:[
+    {name:'Train & rail',kws:['Interrail Europe pas cher|C','Eurotunnel vs avion|I','nuit train Europe|I','TGV France|C']},
+    {name:'Camping-car & van life',kws:['van aménagé vie|I','camping-car débutant|I','road trip van location|C','van life budget mensuel|I']},
+  ]},
+]},
+
+{id:'auto',color:'--c7',name:'Auto & mobilité',meta:'Tarif lien : 60–200€ · Objectif 10 000 articles',plan:'plan-auto-mobilite-10000.html',cats:[
+  {icon:'🚗',name:"Achat voiture neuve",subs:[
+    {name:"Guide d'achat par segment",kws:["meilleure citadine 2026|C","meilleur SUV compact 2026|C","meilleure berline familiale|C","meilleur break 2026|C","monospace 7 places comparatif|C","coupé cabriolet abordable|C","meilleure petite voiture pas chère|C"]},
+    {name:"Négociation & remises",kws:["remise voiture neuve négocier|I","meilleure période acheter voiture|I","reprise ancienne voiture concession|I","véhicule de démonstration bon plan|I","stock concessionnaire remise|I"]},
+    {name:"Mandataire & import",kws:["mandataire auto fiable|C","acheter voiture mandataire avis|I","import voiture Allemagne démarches|I","voiture importée garantie|I","quota véhicule importé|I"]},
+    {name:"Leasing LOA & LLD",kws:["LOA vs LLD différence|I","leasing voiture neuve offres|C","leasing social 100 euros|I","fin de contrat LOA options|I","rachat LOA anticipé|I","leasing sans apport|C"]},
+    {name:"Bonus, malus & fiscalité",kws:["bonus écologique 2026 conditions|I","malus écologique barème 2026|I","malus au poids véhicule|I","prime conversion remplacement|I","TVA voiture société|I"]},
+    {name:"Options & configuration",kws:["options voiture indispensables|I","configurateur voiture neuve|T","peinture métallisée prix|I","pack hiver option utile|I","options revente valeur|I"]},
+  ]},
+  {icon:'🚙',name:"Voiture d'occasion",subs:[
+    {name:"Acheter une occasion",kws:["acheter voiture occasion particulier|I","checklist essai voiture occasion|I","kilométrage idéal occasion|I","arnaques voiture occasion éviter|I","acheter occasion concession vs particulier|I","meilleures occasions fiables|C"]},
+    {name:"Vendre sa voiture",kws:["vendre sa voiture rapidement|I","documents vente voiture|I","annonce voiture rédiger|I","rachat cash voiture avis|C","vendre voiture en panne|I"]},
+    {name:"Cote & estimation",kws:["cote argus gratuite|T","estimer prix voiture occasion|T","décote voiture par année|I","cote voiture kilométrage|I","voiture qui décote le moins|C"]},
+    {name:"Historique & vices cachés",kws:["histovec rapport gratuit|T","vice caché voiture recours|I","compteur trafiqué détecter|I","voiture gagée vérifier|I","certificat de non gage|T"]},
+    {name:"Garanties occasion",kws:["garantie légale conformité voiture|I","extension garantie occasion prix|C","garantie mécanique exclusions|I","garantie constructeur transférable|I"]},
+    {name:"Enchères & ventes pro",kws:["enchères voitures occasion|I","ventes domaniales véhicules|I","voiture ex-LLD acheter|I","véhicule saisi acheter|I"]},
+  ]},
+  {icon:'⚡',name:"Électrique & hybride",subs:[
+    {name:"Modèles électriques",kws:["meilleure voiture électrique 2026|C","voiture électrique moins chère|C","SUV électrique comparatif|C","citadine électrique autonomie|C","Tesla Model 3 vs Model Y|C","voiture électrique chinoise avis|C"]},
+    {name:"Hybride & rechargeable",kws:["hybride vs hybride rechargeable|I","meilleure hybride 2026|C","consommation réelle hybride rechargeable|I","full hybrid fonctionnement|I","hybride d'occasion fiabilité|I"]},
+    {name:"Autonomie & batteries",kws:["autonomie réelle voiture électrique|I","batterie voiture électrique durée de vie|I","dégradation batterie kilométrage|I","batterie LFP vs NMC|I","remplacer batterie voiture électrique prix|I"]},
+    {name:"Recharge à domicile",kws:["borne recharge maison prix pose|C","wallbox 7kW comparatif|C","prise renforcée green up|C","recharge heures creuses pilotage|I","aide installation borne crédit impôt|I","borne copropriété droit à la prise|I"]},
+    {name:"Recharge publique & itinérance",kws:["carte recharge comparatif badges|C","prix recharge autoroute|I","planifier trajet voiture électrique|I","superchargeur Tesla ouverts tous|I","recharge rapide courbe puissance|I"]},
+    {name:"Aides & fiscalité EV",kws:["aides voiture électrique 2026|I","leasing social électrique conditions|I","carte grise gratuite électrique|I","avantage nature véhicule électrique|I"]},
+    {name:"Coût & TCO",kws:["coût réel voiture électrique|I","électrique vs thermique rentabilité|I","assurance voiture électrique prix|C","entretien voiture électrique coût|I","revente voiture électrique décote|I"]},
+  ]},
+  {icon:'🏷',name:"Marques & modèles",subs:[
+    {name:"Marques françaises",kws:["fiabilité Renault avis|I","Peugeot gamme 2026|I","Citroën suspension confort|I","Dacia rapport qualité prix|C","Alpine A290 essai|C"]},
+    {name:"Marques allemandes",kws:["fiabilité Volkswagen moteurs|I","BMW entretien coût|I","Mercedes Classe A occasion|C","Audi quattro avantages|I","Porsche accessible occasion|C"]},
+    {name:"Marques asiatiques",kws:["fiabilité Toyota hybride|I","Kia garantie 7 ans|I","Hyundai gamme électrique|I","Honda moteurs réputation|I","Mazda skyactiv avis|I"]},
+    {name:"Marques chinoises & nouvelles",kws:["BYD en France avis|C","MG4 essai fiabilité|C","Leapmotor T03 prix|C","Xpeng NIO arrivée Europe|I","voiture chinoise pièces détachées|I"]},
+    {name:"Fiches modèles & fiabilité",kws:["problèmes connus [modèle]|I","fiabilité moteur PureTech|I","moteur 1.2 TCe problèmes|I","DSG7 boîte fiabilité|I","chaîne distribution modèles concernés|I","meilleurs moteurs diesel fiables|C"]},
+  ]},
+  {icon:'🧪',name:"Essais & comparatifs",subs:[
+    {name:"Essais par segment",kws:["essai citadine polyvalente|C","essai SUV familial|C","essai berline routière|C","essai sportive compacte|C","essai micro-citadine|C"]},
+    {name:"Comparatifs face-à-face",kws:["Peugeot 208 vs Renault Clio|C","Dacia Duster vs concurrence|C","Tesla vs BYD comparatif|C","SUV hybrides comparatif|C"]},
+    {name:"Avis long terme",kws:["avis propriétaires fiabilité|I","essai longue durée bilan|I","coût entretien 100000 km|I","que vaut après 5 ans|I"]},
+    {name:"Nouveautés & salons",kws:["nouveautés auto 2026|I","salon de l'auto calendrier|I","futurs modèles attendus|I","restylage nouveautés gamme|I"]},
+    {name:"Concept-cars & anticipation",kws:["concept car dévoilé|I","future génération modèle|I","plateforme électrique nouvelle|I","technologies embarquées futures|I"]},
+  ]},
+  {icon:'🔧',name:"Entretien & révision",subs:[
+    {name:"Vidange & filtres",kws:["vidange prix moyen|I","quelle huile moteur choisir|I","vidange tous les combien|I","filtre habitacle changer soi-même|I","vidange boîte automatique|I","viscosité huile 5W30 vs 5W40|I"]},
+    {name:"Freinage",kws:["plaquettes de frein prix changement|I","disques et plaquettes quand changer|I","purge liquide de frein|I","frein de parking électrique entretien|I","témoin usure plaquettes|I"]},
+    {name:"Pneus & géométrie",kws:["pneus été hiver 4 saisons choisir|C","pression pneus recommandée|I","géométrie parallélisme prix|I","loi montagne pneus obligatoires|I","usure pneus anormale causes|I","comparatif pneus 4 saisons|C"]},
+    {name:"Distribution & courroies",kws:["courroie distribution quand changer|I","kit distribution prix par modèle|I","courroie accessoire remplacement|I","chaîne vs courroie distribution|I","rupture courroie conséquences|I"]},
+    {name:"Climatisation",kws:["recharge clim voiture prix|I","clim voiture ne refroidit plus|I","désinfection circuit climatisation|I","compresseur clim HS symptômes|I"]},
+    {name:"Boîte & embrayage",kws:["embrayage changement prix|I","embrayage qui patine symptômes|I","vidange boîte de vitesses utilité|I","volant moteur bi-masse usure|I"]},
+    {name:"Batterie & électricité",kws:["batterie voiture changer soi-même|I","batterie start and stop spécificité|I","alternateur HS signes|I","recharger batterie voiture chargeur|I"]},
+    {name:"Prestations par marque",kws:["révision Renault prix|C","vidange Peugeot tarif|C","entretien Citroën forfait|C","révision Volkswagen coût|C","entretien Toyota hybride prix|C","décalaminage moteur utilité prix|I"]},
+  ]},
+  {icon:'🛠',name:"Pannes & diagnostic",subs:[
+    {name:"Voyants tableau de bord",kws:["voyant moteur orange allumé|I","voyant FAP signification|I","voyant batterie rouge rouler|I","voyant préchauffage clignote|I","voyant AdBlue redémarrage impossible|I","voyant huile moteur urgence|I"]},
+    {name:"Codes défaut OBD",kws:["code défaut P0420 signification|I","P2002 FAP colmaté solutions|I","P0300 ratés combustion|I","effacer code défaut sans valise|I","lecture code défaut smartphone|I"]},
+    {name:"Pannes moteur",kws:["voiture ne démarre plus causes|I","perte de puissance mode dégradé|I","fumée échappement couleur signification|I","surchauffe moteur que faire|I","consommation huile excessive causes|I"]},
+    {name:"Pannes électroniques & capteurs",kws:["capteur PMH symptômes|I","débitmètre encrassé signes|I","vanne EGR nettoyage ou remplacement|I","sonde lambda défaillante|I","FAP colmaté rouler solutions|I"]},
+    {name:"Bruits & symptômes",kws:["claquement moteur à froid|I","sifflement en accélérant|I","vibration volant vitesse|I","grincement au freinage|I","bruit roulement roue|I"]},
+    {name:"Valises & outils diagnostic",kws:["valise diagnostic OBD2 comparatif|C","meilleure appli OBD2 bluetooth|C","valise multimarque pro particuliers|C","diagnostic électronique garage prix|I"]},
+  ]},
+  {icon:'⚙️',name:"Pièces détachées & accessoires",subs:[
+    {name:"Pièces moteur",kws:["turbo reconditionné ou neuf|I","injecteurs prix remplacement|I","FAP remplacement prix|I","vanne EGR prix pièce|I","pompe haute pression HS|I"]},
+    {name:"Pièces d'usure",kws:["pièces auto en ligne fiables|C","pièces équivalentes qualité origine|I","amortisseurs prix paire|I","rotules suspension jeu|I","kit embrayage marques comparées|C"]},
+    {name:"Carrosserie & optiques",kws:["rénover phares ternis|I","pare-brise impact réparation|I","peinture rayure retouche|I","rétroviseur remplacement prix|I","pare-chocs occasion casse|I"]},
+    {name:"Accessoires intérieur & confort",kws:["tapis voiture sur mesure|C","housses siège comparatif|C","organiseur coffre pratique|C","siège auto bébé crash test|C"]},
+    {name:"Électronique embarquée",kws:["dashcam comparatif 2026|C","meilleur GPS voiture|C","CarPlay sans fil adaptateur|C","caméra de recul installation|I","chargeur induction voiture|C"]},
+    {name:"Casse & occasion",kws:["casse auto en ligne pièces|C","moteur occasion garantie|I","pièces réemploi obligation garagiste|I","démolisseur agréé VHU|I"]},
+  ]},
+  {icon:'📄',name:"Carte grise & démarches",subs:[
+    {name:"Changement de titulaire",kws:["changement titulaire carte grise en ligne|T","carte grise ANTS démarches|T","carte grise prix par région|I","délai carte grise après achat|I","code de cession obtenir|T"]},
+    {name:"Cession & achat",kws:["déclaration cession véhicule en ligne|T","certificat cession cerfa 15776|T","vendre voiture sans contrôle technique|I","cession véhicule pour destruction|T"]},
+    {name:"Duplicata & modifications",kws:["duplicata carte grise perte|T","changement adresse carte grise gratuit|T","carte grise héritage succession|I","rectifier erreur carte grise|T"]},
+    {name:"Immatriculation & import",kws:["immatriculer véhicule importé|I","plaque WW provisoire durée|I","quitus fiscal véhicule étranger|T","certificat conformité européen COC|T"]},
+    {name:"Malus & taxes",kws:["calcul malus occasion importée|I","exonération malus famille nombreuse|I","taxe CO2 véhicule occasion|I","cheval fiscal prix par région|I"]},
+    {name:"Contrôle technique",kws:["contrôle technique points vérifiés|I","contre-visite délai défauts|I","contrôle technique pas cher près|C","CT véhicule électrique spécificités|I","contrôle technique moto 2026|I"]},
+  ]},
+  {icon:'🛡',name:"Assurance auto",subs:[
+    {name:"Comparer les offres",kws:["comparateur assurance auto|C","assurance auto pas chère 2026|C","changer assurance auto loi Hamon|I","devis assurance auto en ligne|T"]},
+    {name:"Formules & garanties",kws:["tiers ou tous risques choisir|I","garantie bris de glace franchise|I","assistance 0 km utilité|I","valeur à neuf garantie|I","prêt volant assurance|I"]},
+    {name:"Profils spécifiques",kws:["assurance jeune conducteur pas chère|C","assurance après résiliation|C","assurance malussé solutions|C","assurance au kilomètre avis|C","boîtier télématique jeune conducteur|I"]},
+    {name:"Sinistres & indemnisation",kws:["constat amiable remplir|I","indemnisation véhicule épave|I","délai indemnisation assurance|I","recours tiers responsable|I","voiture vandalisée assurance|I"]},
+    {name:"Bonus-malus",kws:["calcul bonus malus tableau|I","récupérer bonus après malus|I","bonus 50 à vie avantage|I","malus jeune conducteur surprime|I"]},
+    {name:"Assurances spécifiques",kws:["assurance voiture électrique comparatif|C","assurance voiture collection conditions|I","assurance temporaire 1 jour|T","assurance voiture sans permis|C"]},
+  ]},
+  {icon:'🎓',name:"Permis & conduite",subs:[
+    {name:"Permis B & code",kws:["code de la route s'entraîner gratuit|T","permis B prix moyen|I","conduite accompagnée AAC conditions|I","examen permis points éliminatoires|I","permis boîte automatique B78|I"]},
+    {name:"Permis moto & autres",kws:["permis A2 prix formation|I","passerelle A2 vers A|I","permis remorque BE quand|I","permis poids lourd financement CPF|I"]},
+    {name:"Points & infractions",kws:["consulter solde points permis|T","stage récupération points prix|C","excès de vitesse sanctions barème|I","permis probatoire perte points|I","contestation amende radar|I"]},
+    {name:"Auto-écoles & financement",kws:["auto-école en ligne avis|C","permis 1 euro par jour|I","CPF permis de conduire conditions|I","candidat libre permis inscription|I"]},
+    {name:"Sécurité routière",kws:["distances de sécurité règles|I","conduite sur neige conseils|I","aquaplaning réagir|I","angles morts poids lourds|I","alcool au volant limites|I"]},
+    {name:"Éco-conduite",kws:["éco-conduite techniques économies|I","frein moteur utilisation|I","consommation ville réduire|I","régulateur adaptatif consommation|I"]},
+  ]},
+  {icon:'🏍',name:"Moto & scooter",subs:[
+    {name:"Choisir sa moto",kws:["moto A2 débutant comparatif|C","meilleur trail 2026|C","roadster ou sportive choisir|I","moto occasion vérifications|I","cote moto occasion|T"]},
+    {name:"Scooter & 125",kws:["meilleur scooter 125 2026|C","formation 125 permis B 7h|I","maxi scooter comparatif|C","scooter électrique équivalent 125|C","scooter 3 roues permis|I"]},
+    {name:"Équipement pilote",kws:["casque moto comparatif sécurité|C","gants moto homologués obligation|I","blouson airbag moto avis|C","norme casque ECE 22.06|I","équipement moto hiver|C"]},
+    {name:"Entretien moto",kws:["tension chaîne moto régler|I","vidange moto fréquence|I","pneus moto usure témoin|I","hivernage moto étapes|I"]},
+    {name:"Assurance & réglementation moto",kws:["assurance moto A2 prix|C","assurance moto hivernage suspension|I","stationnement moto payant Paris|I","contrôle technique moto obligations|I"]},
+    {name:"Balades & voyage moto",kws:["road trip moto France itinéraires|I","cols mythiques moto Alpes|I","bagagerie moto voyage|C","moto GPS tracker antivol|C"]},
+  ]},
+  {icon:'🚲',name:"Vélo & nouvelles mobilités",subs:[
+    {name:"Vélo électrique",kws:["meilleur VAE 2026|C","VAE ville confort comparatif|C","vélo cargo électrique famille|C","batterie VAE durée de vie|I","VAE reconditionné avis|C"]},
+    {name:"Trottinettes & EDPM",kws:["meilleure trottinette électrique|C","trottinette électrique autonomie réelle|I","réglementation EDPM 2026|I","assurance trottinette obligatoire|I","casque trottinette obligatoire|I"]},
+    {name:"Aides à l'achat",kws:["prime vélo électrique 2026|I","aide locale achat VAE|I","forfait mobilités durables vélo|I","leasing vélo entreprise|I"]},
+    {name:"Équipement & antivol",kws:["antivol vélo U comparatif|C","meilleur éclairage vélo|C","traceur GPS vélo caché|C","marquage bicycode obligatoire|I"]},
+    {name:"Vélotaf & pratique",kws:["vélotaf débuter conseils|I","itinéraire vélo sécurisé appli|I","vélo pliant train comparatif|C","entretien vélo électrique coût|I"]},
+  ]},
+  {icon:'🚌',name:"Mobilité partagée & transports",subs:[
+    {name:"Covoiturage",kws:["covoiturage domicile travail prime|I","BlaBlaCar Daily avis|C","covoiturage courte distance applis|C","prime covoiturage 100 euros|I"]},
+    {name:"Autopartage & location particuliers",kws:["location voiture entre particuliers avis|C","Getaround Ouicar comparatif|C","autopartage Citiz tarifs|C","assurance location entre particuliers|I"]},
+    {name:"Location courte & longue durée",kws:["louer voiture pas cher week-end|C","location voiture aéroport astuces|I","franchise location voiture racheter|I","LLD particulier sans apport|C"]},
+    {name:"VTC & taxi",kws:["devenir chauffeur VTC conditions|I","carte VTC examen|I","Uber vs Bolt comparatif prix|C","taxi conventionné CPAM|I"]},
+    {name:"Train & transports en commun",kws:["carte avantage SNCF rentable|I","TGV max abonnement avis|C","forfait Navigo télétravail|I","TER abonnement travail|I"]},
+  ]},
+  {icon:'⛽',name:"Carburants & consommation",subs:[
+    {name:"Prix & stations",kws:["carburant moins cher autour de moi|T","prix essence évolution 2026|I","stations low cost qualité carburant|I","carte carburant particulier cashback|C"]},
+    {name:"E85 & conversions",kws:["boîtier E85 homologué prix|C","E85 rentabilité calcul|I","reprogrammation E85 vs boîtier|I","E85 fiabilité moteur long terme|I","carte grise gratuite E85|I"]},
+    {name:"GPL, GNV & hydrogène",kws:["voiture GPL avantages inconvénients|I","GPL réservoir contrôle|I","station hydrogène France carte|I","GNV utilitaire pro|I"]},
+    {name:"Réduire sa consommation",kws:["surconsommation causes courantes|I","coffre de toit consommation|I","pneus basse résistance économie|I","climatisation surconsommation|I"]},
+  ]},
+  {icon:'🚐',name:"Camping-car & van",subs:[
+    {name:"Acheter camping-car",kws:["camping-car occasion prix conseils|C","profilé vs intégral vs capucine|I","camping-car permis B poids|I","décote camping-car neuf|I"]},
+    {name:"Van & fourgon aménagé",kws:["van aménagé occasion choisir|C","aménager fourgon soi-même homologation|I","VASP carte grise démarches|I","meilleur fourgon base aménagement|C"]},
+    {name:"Voyager & aires",kws:["aires camping-car gratuites France|I","applications aires camping-car|C","France Passion vignoble étape|I","camping-car hiver ski conseils|I"]},
+    {name:"Entretien & hivernage",kws:["hivernage camping-car checklist|I","étanchéité camping-car contrôle|I","batterie cellule entretien|I","gaz camping-car sécurité|I"]},
+    {name:"Assurance & réglementation",kws:["assurance camping-car comparatif|C","stationnement camping-car règles ville|I","péage camping-car classe|I","limitation vitesse camping-car|I"]},
+  ]},
+  {icon:'🛻',name:"Utilitaires & flottes pro",subs:[
+    {name:"Choisir un utilitaire",kws:["meilleur utilitaire compact|C","fourgon 3m3 vs 6m3 usages|I","pick-up fiscalité avantage|I","utilitaire occasion kilométrage|I"]},
+    {name:"Utilitaires électriques",kws:["utilitaire électrique autonomie réelle|I","aides utilitaire électrique pro|I","recharge flotte entreprise|I","kangoo master électrique avis|C"]},
+    {name:"LLD & gestion de flotte",kws:["LLD utilitaire pro sans apport|C","gestion flotte logiciel TPE|C","carte carburant pro comparatif|C","télématique flotte avantages|I"]},
+    {name:"Aménagement & équipement",kws:["aménagement utilitaire artisan|C","galerie et porte-échelle fourgon|C","habillage bois utilitaire kit|C","attelage utilitaire homologation|I"]},
+    {name:"Fiscalité véhicule pro",kws:["TVS taxe véhicules société calcul|I","TVA récupérable utilitaire|I","amortissement véhicule société plafond|I","avantage en nature véhicule fonction|I"]},
+  ]},
+  {icon:'🏁',name:"Sport auto & passion",subs:[
+    {name:"F1 & compétition",kws:["calendrier F1 2026 horaires|I","règlement F1 2026 moteurs|I","classement F1 direct|I","GP de France retour|I"]},
+    {name:"Rallye & endurance",kws:["calendrier WRC 2026|I","24h du Mans billets|C","rallye régional assister|I","licence FFSA débuter rallye|I"]},
+    {name:"Track days & circuits",kws:["rouler sur circuit débutant|I","track day prix circuits France|I","assurance track day|I","équipement obligatoire circuit|I"]},
+    {name:"Youngtimers & collection",kws:["youngtimer coter investir|C","carte grise collection avantages|I","youngtimers fiables plaisir|C","restaurer voiture ancienne coût|I","assurance collection conditions|C"]},
+    {name:"Tuning & préparation",kws:["reprogrammation moteur stage 1 risques|I","homologation modifications véhicule|I","jantes plus grandes légalité|I","échappement sport homologué|C","suspension combinés filetés|C"]},
+    {name:"Simracing",kws:["volant simracing comparatif|C","cockpit simracing budget|C","meilleurs jeux simulation auto|C","pédalier load cell intérêt|I"]},
+  ]},
+  {icon:'🧳',name:"Road trips & voyage auto",subs:[
+    {name:"Road trips France",kws:["road trip France itinéraires mythiques|I","route des grandes alpes étapes|I","côte atlantique en voiture|I","road trip week-end départ Paris|I"]},
+    {name:"Road trips Europe",kws:["road trip Europe voiture itinéraire|I","conduire en Italie ZTL amendes|I","vignette Suisse autoroute|I","road trip Portugal voiture|I","Norvège en voiture fjords|I"]},
+    {name:"Conduite à l'étranger",kws:["permis international demande|T","conduire à gauche conseils|I","assurance carte verte étranger|I","location voiture étranger caution|I"]},
+    {name:"Équipement & préparation",kws:["équipements obligatoires voiture Europe|I","coffre de toit comparatif|C","porte-vélos attelage choisir|C","check-list départ vacances voiture|I"]},
+    {name:"Péages & vignettes",kws:["badge télépéage comparatif|C","éviter péages itinéraire calcul|I","vignettes obligatoires Europe pays|I","crit'air commander vignette|T"]},
+  ]},
+]},
+
+{id:'education',color:'--c8',name:'Éducation & formation',meta:'Tarif lien : 50–150€',cats:[
+  {icon:'🎓',name:'Études supérieures',subs:[
+    {name:'Orientation & admission',kws:['Parcoursup stratégie vœux|I','BTS vs licence pro|I','grande école prépa CPGE|I','alternance BTS trouver|I']},
+    {name:'Universités & grandes écoles',kws:['classement universités France|I','école ingénieur post-bac|C','IAE école management|C','école de commerce coût|I']},
+    {name:'Études à l\'étranger',kws:['Erasmus conditions|I','étudier en Angleterre|I','master étranger financement|I','campus France visa|I']},
+    {name:'Bourses & financement',kws:['bourse CROUS conditions 2025|I','aide étudiant CAF|I','prêt étudiant garanti|I','financement formation CPF|I']},
+  ]},
+  {icon:'💼',name:'Formation professionnelle',subs:[
+    {name:'Reconversion',kws:['reconversion professionnelle 40 ans|I','bilan compétences financement|I','formation reconversion aide état|I','métiers en tension|I']},
+    {name:'Certifications & diplômes',kws:['certification TOEIC|C','certification PMP gestion projet|C','DELF DALF français|C','certif Google Analytics|C']},
+    {name:'Formations en ligne',kws:['Coursera vs Udemy|C','MOOC gratuit France|C','OpenClassrooms formation|C','LinkedIn Learning avis|C']},
+    {name:'Langues',kws:['apprendre anglais seul|I','Duolingo vs Babbel|C','cours espagnol en ligne|C','méthode immersive langue|I']},
+  ]},
+  {icon:'📚',name:'Soutien scolaire',subs:[
+    {name:'Primaire & collège',kws:['cours particuliers à domicile|C','aide devoirs application|C','méthode de lecture enfant|I','tables multiplication astuces|I']},
+    {name:'Lycée & bac',kws:['révision bac méthode|I','annales baccalauréat|I','bac spécialités choisir|I','grand oral préparation|I']},
+    {name:'Prépa & concours',kws:['CPGE méthode travail|I','ENS concours préparer|I','concours fonction publique|I','Sciences Po admission|I']},
+  ]},
+  {icon:'👶',name:'Petite enfance & parentalité',subs:[
+    {name:'Modes de garde',kws:['crèche liste attente|I','assistante maternelle démarches|I','garde partagée|I','PAJE aides garde|I']},
+    {name:'Développement enfant',kws:['apprentissage lecture Montessori|I','jeux éducatifs 3 ans|C','ateliers éveil bébé|I','stimulation cognitive enfant|I']},
+  ]},
+  {icon:'🧠',name:'Développement personnel',subs:[
+    {name:'Leadership & communication',kws:['prise de parole publique|I','communication assertive|I','management bienveillant|I','leadership formation|C']},
+    {name:'Productivité & organisation',kws:['méthode GTD|I','time blocking technique|I','Pomodoro méthode|I','morning routine efficace|I']},
+    {name:'Mémoire & apprentissage',kws:['technique mémorisation rapide|I','apprentissage spaced repetition|I','Anki mémorisation|I','mind mapping créer|I']},
+  ]},
+  {icon:'🎨',name:'Arts & créativité',subs:[
+    {name:'Beaux-arts',kws:['apprendre dessin adulte|I','aquarelle débutant|I','photographie cours en ligne|C','peinture huile technique|I']},
+    {name:'Musique',kws:['apprendre guitare seul|I','solfège débutant|I','piano méthode adulte|I','chant cours en ligne|C']},
+    {name:'Artisanat & DIY créatif',kws:['broderie point de croix débutant|I','poterie cours|C','tricot débutant guide|I','couture patron gratuit|I']},
+  ]},
+]},
+
+{id:'loisirs',color:'--c9',name:'Loisirs & culture',meta:'Tarif lien : 40–120€',cats:[
+  {icon:'🎮',name:'Gaming & jeux vidéo',subs:[
+    {name:'Consoles & hardware',kws:['PS5 vs Xbox Series X|C','Nintendo Switch OLED|C','gaming PC budget|C','manette gaming comparatif|C']},
+    {name:'Jeux & genres',kws:['meilleurs RPG 2025|C','FPS multijoueur PC|C','jeux famille Nintendo|C','jeux indé Steam|C']},
+    {name:'Gaming mobile',kws:['meilleur jeu mobile gratuit|C','MOBA mobile|C','jeu stratégie iPhone|C']},
+    {name:'Streaming & esport',kws:['Twitch streamer débuter|I','esport France compétitions|I','OBS Studio tutoriel|I']},
+  ]},
+  {icon:'📚',name:'Lecture & littérature',subs:[
+    {name:'Livres & genres',kws:['meilleurs romans 2025|C','roman policier recommandation|C','SF incontournables|C','développement personnel livre|C']},
+    {name:'Liseuses & ebooks',kws:['Kindle vs Kobo|C','liseuse comparatif|C','ebook gratuit légal|C','Kindle Unlimited vaut|C']},
+    {name:'Clubs de lecture',kws:['club de lecture démarrer|I','Babelio présentation|I','livre audio Audible|C']},
+  ]},
+  {icon:'🎬',name:'Cinéma & séries',subs:[
+    {name:'Streaming',kws:['Netflix vs Disney Plus|C','Prime Video contenu France|C','Canal Plus offre|C','Apple TV+ avis|C']},
+    {name:'Cinéma',kws:['sortie ciné 2025|I','meilleur film oscar|I','film art et essai Paris|I']},
+    {name:'Séries',kws:['meilleure série 2025|C','série Netflix française|C','série historique recommandée|C']},
+  ]},
+  {icon:'🎵',name:'Musique',subs:[
+    {name:'Streaming musical',kws:['Spotify vs Apple Music|C','Deezer famille offre|C','TIDAL qualité audio|C','playlist travail concentration|I']},
+    {name:'Concerts & festivals',kws:['festival musique France 2025|I','billets concert pas cher|C','Glastonbury tickets|I','Main Square Arras|I']},
+    {name:'Instruments',kws:['guitare acoustique débutant|C','piano numérique maison|C','ukulélé apprendre|I']},
+  ]},
+  {icon:'🎨',name:'Photographie',subs:[
+    {name:'Appareils photo',kws:['meilleur appareil photo 2025|C','hybride débutant|C','Sony Alpha vs Fujifilm|C','GoPro comparatif|C']},
+    {name:'Photo smartphone',kws:['photo portrait smartphone|I','Lightroom mobile gratuit|I','RAW iPhone éditer|I']},
+    {name:'Post-traitement',kws:['Lightroom vs Luminar|C','retouche photo Photoshop|I','preset Lightroom gratuit|C']},
+  ]},
+  {icon:'🎲',name:'Jeux de société & outdoor',subs:[
+    {name:'Jeux de société',kws:['meilleur jeu société 2025|C','jeu stratégie adulte|C','jeu coopératif famille|C','jeu société 2 joueurs|C']},
+    {name:'Plein air & outdoor',kws:['randonnée Vosges weekend|I','escalade débutant matériel|I','kayak rivière France|I','bivouac réglementation|I']},
+  ]},
+]},
+
+{id:'animaux',color:'--c10',name:'Animaux & nature',meta:'Tarif lien : 40–120€',cats:[
+  {icon:'🐕',name:'Chiens',subs:[
+    {name:'Races & adoption',kws:['choisir race chien appartement|I','adopter chien refuge|I','chiot éducateur|I','race chien hypoallergénique|I']},
+    {name:'Éducation canine',kws:['rappel chien dressage|I','chien tire laisse|I','chien aboie solutions|I','clicker training chien|I']},
+    {name:'Santé chien',kws:['vaccination chien calendrier|I','assurance chien comparatif|C','vermifuge chien fréquence|I','arthrose chien traitement|I']},
+    {name:'Alimentation chien',kws:['croquettes chien comparatif|C','BARF chien recette|I','alimentation naturelle chien|I','chien obèse régime|I']},
+  ]},
+  {icon:'🐈',name:'Chats',subs:[
+    {name:'Races & adoption',kws:['race chat appartement|I','adopter chaton|I','chat bengal prix|C','chat maine coon caractère|I']},
+    {name:'Santé & soins',kws:['chat urines problème|I','vaccination chat vaccins|I','stérilisation chat coût|I','assurance chat|C']},
+    {name:'Alimentation chat',kws:['croquettes chat comparatif|C','pâtée chat avis|C','chat diabétique alimentation|I','alimentation chat castré|I']},
+  ]},
+  {icon:'🐟',name:'Autres animaux',subs:[
+    {name:'Rongeurs & lapins',kws:['cochon d\'Inde soins|I','lapin nain appartement|I','hamster cage taille|I']},
+    {name:'Oiseaux',kws:['perroquet gris gabon|I','canari chant|I','perruche calopsitte|I']},
+    {name:'Reptiles & exotiques',kws:['gecko léopard terrarium|I','serpent maïs débutant|I','tortue Hermann entretien|I']},
+    {name:'Aquariophilie',kws:['aquarium débutant 60L|I','poisson discus eau|I','aquarium eau de mer|I','plante aquatique|I']},
+  ]},
+  {icon:'🌲',name:'Nature & environnement',subs:[
+    {name:'Écologie pratique',kws:['zero waste débutant|I','réduire plastique maison|I','composteur appartement|I','empreinte carbone réduire|I']},
+    {name:'Biodiversité & jardinage naturel',kws:['attirer oiseaux jardin|I','ruche abeilles jardin|I','plantes mellifères|I','nichoir construction|I']},
+    {name:'Chasse & pêche',kws:['permis chasse examen|I','pêche carpe montage|I','matériel pêche débutant|C','pêche fly rivière|I']},
+  ]},
+  {icon:'🐾',name:'Services & commerce animaux',subs:[
+    {name:'Vétérinaire & soins',kws:['vétérinaire pas cher|C','assurance animaux comparatif|C','téléconsultation vétérinaire|C','pharmacie vétérinaire en ligne|C']},
+    {name:'Pension & toilettage',kws:['pension chien tarif|C','toiletteur mobile chien|C','garde animaux plateforme|C','pet-sitting Paris|C']},
+  ]},
+]},
+
+{id:'mode',color:'--c11',name:'Mode & beauté',meta:'Tarif lien : 50–200€',cats:[
+  {icon:'👗',name:'Vêtements & style',subs:[
+    {name:'Mode femme',kws:['tendances mode femme 2025|I','looks casual chic|I','comment s\'habiller poire|I','style minimaliste garde-robe|I']},
+    {name:'Mode homme',kws:['style homme casual 2025|I','costume mariage choisir|I','streetwear marques|C','sneakers tendance|C']},
+    {name:'Mode enfant',kws:['vêtements bébé bio|C','marques vêtements enfant|C','pyjama enfant coton|C']},
+    {name:'Mode durable',kws:['mode éthique marques France|C','vinted vendre conseil|I','slow fashion guide|I','recyclage textile|I']},
+    {name:'Shopping en ligne',kws:['Zalando code promo|C','Asos livraison gratuite|C','Vinted arnaques éviter|I','SHEIN avis qualité|I']},
+  ]},
+  {icon:'💄',name:'Beauté & cosmétiques',subs:[
+    {name:'Maquillage',kws:['maquillage débutante tutoriel|I','fond de teint longue tenue|C','mascara volume comparatif|C','contouring débutant|I']},
+    {name:'Soin visage',kws:['routine skincare débutante|I','sérum vitamine C avis|C','acide hyaluronique crème|C','SPF50 visage avis|C']},
+    {name:'Soin corps',kws:['autobronzant naturel|C','gommage corps maison|I','huile corps sèche|C','crème anti-vergetures|C']},
+    {name:'Parfum',kws:['parfum femme tendance 2025|C','eau de parfum vs toilette|I','parfum dupe comparatif|C','meilleur parfum homme|C']},
+  ]},
+  {icon:'💅',name:'Ongles & cheveux',subs:[
+    {name:'Nail art & manucure',kws:['nail art facile débutante|I','gel ongle semi-permanent|C','pose capsules ongles|I','lampe UV ongle|C']},
+    {name:'Coiffure & coloration',kws:['balayage maison kit|C','coloration naturelle henné|I','brushing parfait|I','extensions cheveux|C']},
+  ]},
+  {icon:'💍',name:'Accessoires & bijoux',subs:[
+    {name:'Bijoux',kws:['bijoux argent 925|C','plaqué or vs argent|I','bague fiançailles budget|C','collier tendance 2025|C']},
+    {name:'Sacs & maroquinerie',kws:['sac à main luxe occasion|C','sac cuir marque|C','sac voyage cabine|C']},
+    {name:'Montres',kws:['montre homme moins 300€|C','Casio G-Shock avis|C','montre automatique entrée gamme|C']},
+  ]},
+  {icon:'🧴',name:'Hygiène & bien-être corps',subs:[
+    {name:'Soins naturels & bio',kws:['déodorant naturel efficace|C','dentifrice solide avis|C','savon surgras peau sèche|C','cosmétique bio certifié|C']},
+    {name:'Épilation',kws:['épilation laser maison|C','cire épilation comparatif|C','IPL maison avis|C','épilation définitive tarif|I']},
+  ]},
+  {icon:'🏋️‍♀️',name:'Sport & mode activewear',subs:[
+    {name:'Vêtements sport',kws:['legging sport femme|C','vêtements yoga marque|C','running tenue femme|C','Nike vs Adidas qualité|C']},
+    {name:'Chaussures sport',kws:['chaussure running pronateur|C','basket mode tendance|C','chaussure trail comparatif|C']},
+  ]},
+]},
+
+{id:'food',color:'--c12',name:'Alimentation & cuisine',meta:'Tarif lien : 40–150€',cats:[
+  {icon:'🍳',name:'Cuisine & recettes',subs:[
+    {name:'Recettes rapides',kws:['recette 15 minutes soir|I','batch cooking semaine|I','recette simple 4 ingrédients|I','cuisine étudiant budget|I']},
+    {name:'Cuisines du monde',kws:['recette japonaise ramen|I','curry thaï maison|I','plat mexicain tacos|I','cuisine italienne authentique|I']},
+    {name:'Pâtisserie',kws:['recette brioche maison|I','macarons débutant|I','tarte tatin traditionnelle|I','pain levain sans machine|I']},
+    {name:'Cuisine végane & végétarienne',kws:['recette vegan protéinée|I','tofu recette savoureuse|I','sans viande idées repas|I','végétarisme débuter|I']},
+    {name:'Cuisine diététique',kws:['repas faible calories|I','cuisine sans sucre ajouté|I','repas IG bas|I','menu minceur semaine|I']},
+  ]},
+  {icon:'🍷',name:'Boissons & alcool',subs:[
+    {name:'Vin',kws:['vin rouge débutant choisir|I','accords mets et vins|I','conservation vin cave|I','vin naturel différence|I']},
+    {name:'Bière artisanale',kws:['bière craft France|C','brasserie artisanale visiter|I','bière maison brassage|I','style bière IPA|I']},
+    {name:'Cocktails & mocktails',kws:['cocktail facile maison|I','mocktail sans alcool|I','Spritz recette|I','mojito maison|I']},
+    {name:'Café & thé',kws:['café specialty comparatif|C','méthode extraction café|I','thé matcha préparation|I','cafetière italienne entretien|I']},
+  ]},
+  {icon:'🛒',name:'Alimentation & courses',subs:[
+    {name:'Alimentation bio',kws:['label bio France explication|I','manger bio pas cher|I','panier bio livraison|C','épicerie vrac France|C']},
+    {name:'Courses en ligne',kws:['drive supermarché comparatif|C','livraison courses 1h|C','Picnic vs Intermarché drive|C','anti-gaspillage appli|C']},
+    {name:'Alimentation durable',kws:['AMAP légumes locaux|I','circuit court alimentation|I','saison fruits légumes|I','emballage alimentaire écolo|I']},
+  ]},
+  {icon:'🍽',name:'Restaurants & gastronomie',subs:[
+    {name:'Guide & critique',kws:['restaurant étoilé prix|I','bistronomie Paris tendance|I','meilleur restaurant Lyon|I','Michelin guide selection|I']},
+    {name:'Livraison à domicile',kws:['Uber Eats vs Deliveroo|C','Gorillas dark kitchen|I','meilleur resto livraison|C']},
+    {name:'Gastronomie régionale',kws:['cuisine bretonne spécialités|I','charcuterie basque|I','fromages Normandie|I','vins Alsace|I']},
+  ]},
+  {icon:'🥡',name:'Tendances alimentaires',subs:[
+    {name:'Régimes & modes alimentaires',kws:['régime méditerranéen bienfaits|I','alimentation anti-inflammatoire|I','régime DASH hypertension|I','blue zone alimentation|I']},
+    {name:'Superaliments',kws:['spiruline bienfaits|I','graines chia recette|I','baies goji propriétés|I','moringa poudre|I']},
+    {name:'Fermentation & lactofermentation',kws:['kéfir maison recette|I','kimchi maison|I','kombucha débutant|I','miso soupe|I']},
+  ]},
+  {icon:'🏭',name:'Industrie agro-alimentaire',subs:[
+    {name:'Additifs & étiquettes',kws:['additifs alimentaires danger|I','E110 colorant|I','Yuka application décryptage|I','nutriscore explication|I']},
+    {name:'Agriculture & production',kws:['agriculture biodynamique|I','élevage bien-être animal|I','label Rouge conditions|I','AOP AOC différence|I']},
+  ]},
+]},
+];
+
+function kwHtml(kws) {
+  return kws.map(k => {
+    const [label, intent] = k.split('|');
+    const cls = intent==='I'?'int-i':intent==='C'?'int-c':'int-t';
+    const tag = intent==='I'?'Info':intent==='C'?'Com':'Trans';
+    return `<span class="kw-pill"><span class="intent ${cls}">${tag}</span>${label}</span>`;
+  }).join('');
+}
+
+function buildNiche(n, container) {
+  const c = `var(${n.color})`;
+  let html = `<div class="niche-block" data-niche="${n.id}">
+    <div class="niche-head" onclick="toggleNiche(this)">
+      <div class="niche-stripe" style="background:${c}"></div>
+      <div class="niche-info">
+        <div class="niche-name">${n.name}</div>
+        <div class="niche-meta">${n.meta} · ${n.cats.length} catégories · ${n.cats.reduce((a,c)=>a+c.subs.length,0)} sous-catégories</div>
+      </div>
+      <div class="niche-badges">
+        <span class="badge" style="background:rgba(255,255,255,.06);color:${c}">${n.cats.reduce((a,c)=>a+c.subs.reduce((b,s)=>b+s.kws.length,0),0)} mots-clés</span>
+      </div>
+      <span class="niche-toggle">▼</span>
+    </div>
+    <div class="niche-body">`;
+
+  n.cats.forEach((cat,ci) => {
+    html += `<div class="cat-block">
+      <div class="cat-head" onclick="toggleCat(this)">
+        <span class="cat-icon">${cat.icon}</span>
+        <span class="cat-name">${cat.name}</span>
+        <span class="cat-count">${cat.subs.length} sous-cat.</span>
+        <span class="cat-toggle">▸</span>
+      </div>
+      <div class="cat-body">`;
+    cat.subs.forEach((sub,si) => {
+      html += `<div class="sub-block">
+        <div class="sub-head" onclick="toggleSub(this)">
+          <span class="sub-arrow">▸</span>
+          <span class="sub-name">${sub.name}</span>
+          <span class="sub-kw-count">${sub.kws.length} mots-clés</span>
+        </div>
+        <div class="sub-body">
+          <div class="kw-list">${kwHtml(sub.kws)}</div>
+        </div>
+      </div>`;
+    });
+    html += `</div></div>`;
+  });
+  html += `</div></div>`;
+  container.insertAdjacentHTML('beforeend', html);
+}
+
+// Build all niches in root
+const root = document.getElementById('tax-root');
+NICHES.forEach(n => {
+  buildNiche(n, root);
+  const nc = document.getElementById('tax-'+n.id);
+  if(nc) buildNiche(n, nc);
+});
+
+function toggleNiche(head) {
+  const body = head.nextElementSibling;
+  const tg = head.querySelector('.niche-toggle');
+  const open = body.classList.toggle('open');
+  tg.style.transform = open ? 'rotate(180deg)' : '';
+}
+function toggleCat(head) {
+  const body = head.nextElementSibling;
+  const tg = head.querySelector('.cat-toggle');
+  const open = body.classList.toggle('open');
+  tg.style.transform = open ? 'rotate(90deg)' : '';
+}
+function toggleSub(head) {
+  const body = head.nextElementSibling;
+  const arr = head.querySelector('.sub-arrow');
+  const open = body.classList.toggle('open');
+  arr.style.transform = open ? 'rotate(90deg)' : '';
+}
+
+function showPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.sb-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  btn.classList.add('active');
+  document.getElementById('bc').textContent = btn.textContent.trim().replace(/\d+$/,'').trim();
+  window.scrollTo(0,0);
+  document.getElementById('sb').classList.remove('open');
+}
+
+function expandAll() {
+  document.querySelectorAll('.page.active .niche-body').forEach(b => { b.classList.add('open'); b.previousElementSibling.querySelector('.niche-toggle').style.transform='rotate(180deg)'; });
+  document.querySelectorAll('.page.active .cat-body').forEach(b => { b.classList.add('open'); b.previousElementSibling.querySelector('.cat-toggle').style.transform='rotate(90deg)'; });
+  document.querySelectorAll('.page.active .sub-body').forEach(b => { b.classList.add('open'); b.previousElementSibling.querySelector('.sub-arrow').style.transform='rotate(90deg)'; });
+}
+function collapseAll() {
+  document.querySelectorAll('.niche-body,.cat-body,.sub-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.niche-toggle').forEach(t=>t.style.transform='');
+  document.querySelectorAll('.cat-toggle').forEach(t=>t.style.transform='');
+  document.querySelectorAll('.sub-arrow').forEach(t=>t.style.transform='');
+}
+
+function doSearch(q) {
+  const v = q.trim().toLowerCase();
+  if(!v) {
+    document.querySelectorAll('.hidden-node').forEach(el=>el.classList.remove('hidden-node'));
+    document.querySelectorAll('.hl').forEach(el=>{ el.outerHTML=el.textContent; });
+    return;
+  }
+  // Re-render with highlight
+  const pills = document.querySelectorAll('.kw-pill');
+  pills.forEach(pill => {
+    const txt = pill.textContent.toLowerCase();
+    pill.style.display = txt.includes(v) ? '' : 'none';
+  });
+  const subs = document.querySelectorAll('.sub-block');
+  subs.forEach(sub => {
+    const visible = [...sub.querySelectorAll('.kw-pill')].some(p=>p.style.display!=='none');
+    sub.style.display = visible ? '' : 'none';
+    if(visible) { sub.querySelector('.sub-body').classList.add('open'); sub.querySelector('.sub-arrow').style.transform='rotate(90deg)'; }
+  });
+  const cats = document.querySelectorAll('.cat-block');
+  cats.forEach(cat => {
+    const visible = [...cat.querySelectorAll('.sub-block')].some(s=>s.style.display!=='none');
+    cat.style.display = visible ? '' : 'none';
+    if(visible) { cat.querySelector('.cat-body').classList.add('open'); cat.querySelector('.cat-toggle').style.transform='rotate(90deg)'; }
+  });
+  const niches = document.querySelectorAll('.niche-block');
+  niches.forEach(n => {
+    const visible = [...n.querySelectorAll('.cat-block')].some(c=>c.style.display!=='none');
+    n.style.display = visible ? '' : 'none';
+    if(visible) { n.querySelector('.niche-body').classList.add('open'); n.querySelector('.niche-toggle').style.transform='rotate(180deg)'; }
+  });
+}
+document.getElementById('search-input').addEventListener('input', e => {
+  if(!e.target.value) {
+    document.querySelectorAll('.kw-pill,.sub-block,.cat-block,.niche-block').forEach(el=>el.style.display='');
+  }
+});
+
+/* ===== CONCURRENTS — donnees ereferer (68 304 sites dedupliques, 36 117 FR, exports 08/07/2026) ===== */
+const COMPETITORS = {"finance": {"stats": {"count": 7205, "da_med": 15.0, "prix_med": 27.2, "traf_med": 3.0, "age_med": 4.0}, "sites": [{"url": "https://www.blogdumoderateur.com", "cat": "E-commerce/ Informatique/ Webmasters", "da": 77, "traf": 869159, "rd": 9505, "prix": 2956.7, "age": 15, "title": "BDM", "desc": "Le média des pros du digital : marketing, social media, IA, SEO, product, design, tech... Suivez l"}, {"url": "https://eneba.com", "cat": "E-commerce/ Jeux", "da": 1, "traf": 807324, "rd": 4623, "prix": 210.0, "age": 18, "title": "Buy Games, Gift Cards & Top Ups Cheaper", "desc": "Eneba — the fastest-growing marketplace for gamers. Get games and gift cards for PC, PlayStation, Xbox, Nintendo in safe and affordable way. Eneba way."}, {"url": "https://www.mes-allocs.fr", "cat": "Finance & Assurance/ Maison", "da": 53, "traf": 526748, "rd": 2054, "prix": 1022.35, "age": 8, "title": "Mes Allocs | Toutes vos aides en quelques clics.", "desc": ""}, {"url": "https://lecapitalexpert.fr/", "cat": "Entreprise/ Finance & Assurance", "da": 5, "traf": 388666, "rd": 70, "prix": 60.35, "age": null, "title": "Le Capital Expert | Finance, entreprise, investissement et patrimoine", "desc": "Le Capital Expert vous informe sur le monde de l’entreprise, la finance, l’investissement, l’immobilier et la gestion de patrimoine à travers des analyses claires et des conseils d’experts."}, {"url": "https://www.bien-dans-ma-ville.fr/", "cat": "Immobilier/ Société/ Voyage & Tourisme/ Villes & Villages", "da": 33, "traf": 323637, "rd": 764, "prix": 99.35, "age": 10, "title": "Avis, classements et statistiques des villes et quartiers de France", "desc": "Informations sur les villes et les quartiers de France. Classements des communes. Avis des habitants, statistiques, immobilier, signalements urbains. Trouvez la ville idéale et le bon quartier pour vivre et habiter"}, {"url": "https://www.mediacongo.net/", "cat": "Entreprise/ Santé", "da": 55, "traf": 322657, "rd": 1742, "prix": 397.35, "age": 21, "title": "mediacongo.net - Infos - Actualité - Offres d'emploi, Appels d'offres, Petites annonces en RD Congo | RDC", "desc": "Infos - Actualité RD Congo, RDC, offres d"}, {"url": "https://www.bdor.fr/", "cat": "Finance & Assurance/ Finance", "da": 32, "traf": 303130, "rd": 2067, "prix": 2116.35, "age": 1, "title": "Achat Or, Vente, Rachat Or et Argent - Cours Or et Prix de l’Or – Agence BDOR", "desc": "Achat, Vente et rachat d’or ainsi que d’argent – BDOR, agence indépendante #1 en cotation d’or et or d’investissement. Venez acheter ou vendre de l'Or & de l’Argent dans nos agences BDOR à Strasbourg ou Colmar : Expert d"}, {"url": "https://journalducoin.com/", "cat": "Finance & Assurance/ Banque", "da": 51, "traf": 247455, "rd": 2426, "prix": 515.25, "age": 3, "title": "Journal Du Coin – Actu Crypto, Bitcoin, Blockchain, Économie et Trading", "desc": "Le média francophone #1 sur l'actualité Crypto : Bitcoin, Ethereum, Web3. Retrouvez aussi toutes les news cryptomonnaie, trading, blockchain et l'actu éco"}, {"url": "https://www.anousdevoir.com", "cat": "Entreprise/ Finance & Assurance", "da": 33, "traf": 240842, "rd": 390, "prix": 55.0, "age": 13, "title": "Accueil - Anousdevoir", "desc": "Média pratique pour lire l’argent sans détour À nous de voir Tout en un sur les assurances, la banque, le […]"}, {"url": "https://www.usinenouvelle.com", "cat": "Entreprise", "da": 77, "traf": 232428, "rd": 11173, "prix": 1104.35, "age": 29, "title": "", "desc": ""}]}, "sante": {"stats": {"count": 3064, "da_med": 16.0, "prix_med": 28.35, "traf_med": 2.0, "age_med": 4.0}, "sites": [{"url": "https://fr-sante.weebly.com/", "cat": "Bio/ Beauté/ Santé/ Bien-Être", "da": 3, "traf": 2954163, "rd": 1, "prix": 45.35, "age": 5, "title": "Santé info - Home", "desc": "Santé info"}, {"url": "https://www.doctissimo.fr", "cat": "Santé/ Bien-Être/ Maman", "da": 82, "traf": 1461904, "rd": 17822, "prix": 2392.2, "age": 26, "title": "Doctissimo : toutes les actualité santé", "desc": "Toute l'information santé et bien être avec Doctissimo. Découvrez nos rubriques santé, médicaments, grossesse, nutrition, forme"}, {"url": "https://www.magicmaman.com", "cat": "Santé/ Bébé/ Maman/ Gastronomie", "da": 76, "traf": 780268, "rd": 4282, "prix": 1988.3, "age": 26, "title": "Magicmaman : conseils grossesse, bébé et jeunes parents - magicmaman", "desc": "Grossesse, bébé, enfant, prénom, parentalité : conseils d"}, {"url": "https://www.chefclub.tv/fr", "cat": "Maman/ Gastronomie/ Maison", "da": 50, "traf": 427010, "rd": 896, "prix": 404.35, "age": 1, "title": "Chefclub, food is fun ! | chefclub.tv", "desc": "La marque des familles en cuisine"}, {"url": "https://www.caminteresse.fr/", "cat": "Santé/ Société", "da": 61, "traf": 323672, "rd": 4115, "prix": 1622.88, "age": 24, "title": "Ça m'intéresse : Curiosités du monde & infos insolites", "desc": "Évadez-vous sur Ça m'intéresse : décryptage de curiosités scientifiques et anecdotes insolites pour mieux comprendre le monde actuel tout en se divertissant"}, {"url": "https://alimentation-solidaire.montpellier.fr/", "cat": "Bio/ Santé/ Société/ Gastronomie", "da": 67, "traf": 315705, "rd": 2, "prix": 74.35, "age": 25, "title": "Alimentation Solidaire : Bienvenue sur l'espace commun du", "desc": ""}, {"url": "https://www.carenity.com", "cat": "Santé/ Bien-Être", "da": 45, "traf": 205411, "rd": 1037, "prix": 810.35, "age": 1, "title": "Maladies, symptômes et traitements sur Carenity", "desc": "Echangez avec des personnes concernées par une maladie spécifique. ✓ 1er réseau social pour les patients et leurs proches. ✓ Des milliers de discussions."}, {"url": "https://cuisine-saine.fr", "cat": "Bio/ Gastronomie", "da": 48, "traf": 176284, "rd": 651, "prix": 1360.0, "age": 17, "title": "Cuisine Saine - Blog de recettes sans gluten sans lactose - Cuisine Saine", "desc": "Cuisine Saine : recettes sans gluten ni lactose faciles et gourmandes. Articles santé, menus de saison, des conseils et astuces."}, {"url": "https://beaute.mystrikingly.com/", "cat": "Bio/ Beauté/ Santé/ Bien-Être", "da": 93, "traf": 156281, "rd": 0, "prix": 30.85, "age": 7, "title": "Santé & Beauté Blog on Strikingly", "desc": ""}, {"url": "https://esthetique.mystrikingly.com/", "cat": "Bio/ Beauté/ Santé/ Bien-Être", "da": 93, "traf": 156281, "rd": 0, "prix": 26.85, "age": 7, "title": "Esthétique blog on Strikingly", "desc": "text/html; charset=UTF-8' http-equiv='Content-Type'> <meta content='width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0' id='viewport' name='viewport'> <meta content='#ffffff' name="}]}, "tech": {"stats": {"count": 1898, "da_med": 17.5, "prix_med": 28.35, "traf_med": 1.5, "age_med": 4.0}, "sites": [{"url": "https://programme-tv.net", "cat": "Téléphone & Smartphone/ Cinéma", "da": 86, "traf": 53061858, "rd": 6679, "prix": 3726.0, "age": null, "title": "Programme TV par Télé-Loisirs, TNT, box télé et satellite", "desc": "Consultez votre programme TV de ce soir et retrouvez l'actualité des émissions télé et séries Netflix, Amazon Prime Video, Disney Plus et MyCanal."}, {"url": "https://www.lesnumeriques.com", "cat": "High-Tech/ Informatique", "da": 85, "traf": 4742222, "rd": 11879, "prix": 2302.2, "age": 3, "title": "Les Numériques - Test, actu, comparatif high-tech/électroménager", "desc": "Retrouvez toute l"}, {"url": "https://site.com/", "cat": "High-Tech/ Informatique", "da": 82, "traf": 1591731, "rd": 49795, "prix": 1007.35, "age": null, "title": "", "desc": ""}, {"url": "https://www.ecranlarge.com/high-tech", "cat": "High-Tech/ Informatique", "da": 81, "traf": 1579327, "rd": 3293, "prix": 973.25, "age": 3, "title": "High Tech : Actualités, Tests et Comparatifs", "desc": "Toute l'actualité High Tech & Audiovisuel : actualités, tests, tops, sorties, nouveautés, guides de l'actualité high tech lié à l'entertainment avec Ecran Large."}, {"url": "https://free.nf/", "cat": "High-Tech/ Webmasters", "da": 49, "traf": 255555, "rd": 5925, "prix": 126.0, "age": null, "title": "free.nf is hosted by InfinityFree", "desc": ""}, {"url": "https://www.phonandroid.com", "cat": "High-Tech/ Informatique/ Téléphone & Smartphone/ Cinéma", "da": 91, "traf": 238944, "rd": 5772, "prix": 2974.15, "age": 16, "title": "PhonAndroid – toute l'actualité high-tech et nouvelles technologies", "desc": "La meilleure communauté francophone dédiée à l'actualité android et High tech ! découvrez les nouveaux tests smartphones, apps, jeux vidéo ,tutoriels et astuces en avant-première !"}, {"url": "https://lasueur.com", "cat": "High-Tech/ Sport & Loisirs/ Musique/ Sport", "da": 53, "traf": 221616, "rd": 933, "prix": 475.85, "age": 10, "title": "La Sueur - UFC, MMA, Sport & Culture", "desc": ""}, {"url": "https://www.marques-de-france.fr", "cat": "High-Tech/ Mode", "da": 44, "traf": 186673, "rd": 824, "prix": 855.7, "age": 7, "title": "Marques de France - Le guide du Made in France", "desc": "Trouvez les marques et les produits fabriqués en France que vous cherchez. Bonus : nous dévoilons les lieux de fabrication pour que vous soyez sûr de votre choix !"}, {"url": "https://rf.gd/", "cat": "Informatique/ Webmasters", "da": 80, "traf": 163028, "rd": 10219, "prix": 126.0, "age": 12, "title": "rf.gd is hosted by InfinityFree", "desc": ""}, {"url": "https://hitek.fr", "cat": "High-Tech/ Informatique/ Téléphone & Smartphone/ Cinéma", "da": 69, "traf": 139496, "rd": 4851, "prix": 1954.15, "age": 18, "title": "", "desc": ""}]}, "maison": {"stats": {"count": 3357, "da_med": 14.0, "prix_med": 25.35, "traf_med": 1.0, "age_med": 4.0}, "sites": [{"url": "https://infodeco.weebly.com/", "cat": "Travaux et Batiment/ Décoration/ Maison/ Plombier", "da": 4, "traf": 2909688, "rd": 1, "prix": 36.85, "age": 20, "title": "Info Deco - Home", "desc": "Bienvenue sur notre site"}, {"url": "https://www.villepratique.fr", "cat": "Maison/ Villes & Villages", "da": 16, "traf": 367711, "rd": 476, "prix": 94.35, "age": 3, "title": "", "desc": ""}, {"url": "https://ynspir.com/", "cat": "Décoration/ Maison", "da": 36, "traf": 124711, "rd": 440, "prix": 256.35, "age": null, "title": "Architecte d'intérieur intemporel | Ynspir", "desc": "Ynspir met à disposition les meilleurs architectes d’intérieur pour vos projets les plus ambitieux partout en France."}, {"url": "https://www.forumconstruire.com", "cat": "Travaux et Batiment/ Bricolage/ Jardin/ Maison", "da": 58, "traf": 105992, "rd": 2575, "prix": 1493.35, "age": 18, "title": "ForumConstruire.com - le forum pour faire construire sa maison", "desc": "Vous allez faire construire votre maison (ou la rnover) ? ForumConstruire.com vous propose des forums, des conseils, mais aussi des rcits et photos !"}, {"url": "https://maison.20minutes.fr", "cat": "Bricolage/ Maison", "da": 93, "traf": 93518, "rd": 1281, "prix": 735.35, "age": 24, "title": "Tout l'univers de la maison : décoration, immobilier et jardin", "desc": "Minutes Maison est un site d'information sur la décoration, l'immobilier et le jardinage pour aménager vos intérieurs et extérieurs comme un pro."}, {"url": "https://www.decor-discount.com/", "cat": "Décoration", "da": 33, "traf": 93045, "rd": 220, "prix": 1316.35, "age": 1, "title": "Magasin de papier peint, peinture, revêtement de sol, déco pas cher", "desc": "Grand choix de revêtement mural et revêtement sol (PVC, lino, parquet, moquette, jonc de mer, dalles), peinture, papier peint, tapis, déco à petits prix."}, {"url": "https://monjardinmamaison.maison-travaux.fr/", "cat": "Jardin/ Maison", "da": 72, "traf": 78704, "rd": 1007, "prix": 962.2, "age": 4, "title": "Mon Jardin ma maison", "desc": "Retrouvez des conseils pratiques, des guides d'achat, des idées déco accessibles qui vous permettront de donner vie à des idées de rénovation et d'aménagement. Au fil du site, vous visiterez de nombreux intérieurs tous d"}, {"url": "https://www.la-vie-en-couleur.fr/", "cat": "Décoration/ Maison", "da": 13, "traf": 57728, "rd": 174, "prix": 110.35, "age": null, "title": "- La vie en couleur", "desc": "Des conseils peinture authentiques, des idées déco accessibles et des guides pratiques pour donner vie à chaque pièce de votre maison."}, {"url": "https://www.maison.rf.gd", "cat": "Travaux et Batiment/ Bricolage/ Décoration/ Maison", "da": 80, "traf": 57608, "rd": 0, "prix": 21.35, "age": 12, "title": "Maison Deco - Maison Deco Blog", "desc": "Maison Deco Blog"}, {"url": "http://www.bricolage.rf.gd/", "cat": "Travaux et Batiment/ Bricolage/ Maison/ Plombier", "da": 80, "traf": 57608, "rd": 0, "prix": 23.35, "age": 12, "title": "Bricolage -", "desc": ""}]}, "juridique": {"stats": {"count": 242, "da_med": 15.0, "prix_med": 28.35, "traf_med": 1.0, "age_med": 4.0}, "sites": [{"url": "https://www.enfant.com", "cat": "Société/ Bébé/ Maman", "da": 61, "traf": 48361, "rd": 1310, "prix": 2388.73, "age": 27, "title": "Accueil", "desc": "Accueil"}, {"url": "https://lesminimondes.fr/", "cat": "Société", "da": 44, "traf": 30865, "rd": 698, "prix": 307.35, "age": 1, "title": "Magazines enfance, jeux et jouets éducatifs | Les Mini Mondes- Les Mini Mondes", "desc": "Suivez les aventures d’Oscar et Sacha autour du monde avec Les Mini Mondes : magazine enfance, livres, jeux de société et application d'anglais."}, {"url": "https://coeur-de-gone.fr", "cat": "Société/ Voyage & Tourisme", "da": 1, "traf": 29732, "rd": 51, "prix": 330.0, "age": 1, "title": "Coeur de Gone", "desc": "Cœur de Gone est un webzine “Made in Lyon”, créé par un fan passionné de l’Olympique Lyonnais et de la région lyonnaise. Il met à l’honneur la Métropole de Lyon, le département du Rhône et plus largement la région Auverg"}, {"url": "https://vialmtv.tv/", "cat": "Société/ Villes & Villages", "da": 32, "traf": 23870, "rd": 607, "prix": 81.0, "age": 14, "title": "La TV en Direct", "desc": "Ne ratez rien de l'actualité TV"}, {"url": "https://lequotidien.sn", "cat": "Société/ Sport & Loisirs", "da": 58, "traf": 23050, "rd": 1385, "prix": 880.0, "age": null, "title": "Lequotidien – Journal d'information Générale – Site d'information Générale", "desc": ""}, {"url": "https://www.seniorsavotreservice.com", "cat": "Société", "da": 50, "traf": 17327, "rd": 738, "prix": 457.7, "age": 18, "title": "Seniors à votre service : Petites annonces emploi seniors et retraités", "desc": "IE=edge,chrome=1\" http-equiv=\"X-UA-Compatible\"/><title>Seniors à votre service : Petites annonces emploi seniors et retraités</title><meta content="}, {"url": "https://aidefamille.fr/", "cat": "Société/ Maman", "da": 27, "traf": 15518, "rd": 389, "prix": 82.35, "age": 15, "title": "Votre CAF - Liste des agences de la CAF - Aide Famille", "desc": "AEEH"}, {"url": "https://tapakila.fr", "cat": "Société/ Voyage & Tourisme", "da": 10, "traf": 13733, "rd": 21, "prix": 23.35, "age": null, "title": "Accueil - tapakila", "desc": "Découvrez le mondeautrement Explorez la richesse culturelle et naturelle des pays du monde grâce à nos guides détaillés et contenus […]"}, {"url": "https://www.webjunior.net", "cat": "Société/ Maman", "da": 33, "traf": 11372, "rd": 540, "prix": 304.35, "age": 22, "title": "WebJunior, site pour enfants : jeux, coloriages, blagues, mots-croisés...", "desc": "Le portail des jeunes internautes, offrant des jeux, des blagues, des clips, des coloriages et une multitude d"}, {"url": "http://www.lerefletdulac.com/", "cat": "Société/ Sport", "da": 46, "traf": 8943, "rd": 725, "prix": 484.35, "age": null, "title": "Accueil - Le Reflet du Lac", "desc": ""}]}, "voyage": {"stats": {"count": 1992, "da_med": 15.0, "prix_med": 25.35, "traf_med": 0.0, "age_med": 4.0}, "sites": [{"url": "https://www.petitfute.com", "cat": "Voyage & Tourisme/ Villes & Villages", "da": 75, "traf": 2924662, "rd": 8973, "prix": 1018.3, "age": 28, "title": "Guides de voyage Petit futé - Guide touristique en ligne", "desc": "Le guide Petit Futé vous propose 1 000 000 d"}, {"url": "https://www.routard.com", "cat": "Voyage & Tourisme", "da": 78, "traf": 2566464, "rd": 9181, "prix": 4990.25, "age": 27, "title": "Le Guide du Routard : préparez vos voyages et vacances", "desc": "La référence du voyage : inspirations, guides, conseils pratiques, bons plans et retours d'expériences pour vivre des séjours authentiques"}, {"url": "https://partir.ouest-france.fr", "cat": "Voyage & Tourisme", "da": 93, "traf": 1560306, "rd": 1126, "prix": 1021.35, "age": 29, "title": "Où et quand partir ? À chaque saison sa destination avec QuandPartir", "desc": "Où et quand partir ? À quelle période partir pour le meilleur climat ! Que voir ? Que faire ? Un guide touristique et climatique complet de 300 destinations"}, {"url": "https://www.winalist.fr/blog", "cat": "Voyage & Tourisme/ Villes & Villages", "da": 44, "traf": 417109, "rd": 856, "prix": 257.7, "age": 9, "title": "Winalist Blog - Idées week-ends oenologie et Route des vins", "desc": "Découvrez les derniers articles sur le vins, l'oenotourisme, des expériences viticoles et des conseils pour préparer vos week-ends viticoles."}, {"url": "https://www.vanupied.com", "cat": "Voyage & Tourisme/ Villes & Villages", "da": 50, "traf": 205377, "rd": 1488, "prix": 565.25, "age": 1, "title": "Vanupied, city-guide culturel et touristique : + de 60 destinations", "desc": "City guide Vanupied : Nos principaux guides de voyage Avec plus en détails : Culturel Des lieux et monuments incontournables et insolites, nous avons poussé la curiosité plus loin. Illustré Le voyage commence dans l’imag"}, {"url": "https://www.plusbeauxdetours.com/", "cat": "Voyage & Tourisme/ Villes & Villages", "da": 43, "traf": 160042, "rd": 543, "prix": 603.35, "age": 1, "title": "Les Plus Beaux Détours de France, découvrez les 100 plus beaux détours de France", "desc": "Bienvenue sur le portail des plus beaux détours de a France. Les Plus Beaux Détours de France sont de petites villes touristiques où l'on est toujours sûr de trouver un hébergement et un accueil de qualité, un patrimoine"}, {"url": "https://vivreathenes.com", "cat": "Voyage & Tourisme", "da": 33, "traf": 159814, "rd": 309, "prix": 860.68, "age": 9, "title": "Home page - Vivre Athènes", "desc": "Notre histoire Qui se cache derrière Vivre Athènes ? Plongez dans l’univers de Vivre Athènes, une initiative née de l’amitié entre deux Françaises, Laure et Sophie, expatriées pendant plusieurs années en Grèce. Leurs esc"}, {"url": "https://www.okvoyage.com", "cat": "Voyage & Tourisme/ Villes & Villages", "da": 42, "traf": 142627, "rd": 976, "prix": 426.4, "age": 21, "title": "OK Voyage - source d'inspiration pour vos voyages (Blog)", "desc": ""}, {"url": "https://www.tictactrip.eu", "cat": "Voyage & Tourisme", "da": 45, "traf": 132116, "rd": 1554, "prix": 271.35, "age": 6, "title": "", "desc": ""}, {"url": "https://www.jetcamp.com/fr/", "cat": "Voyage & Tourisme", "da": 36, "traf": 128717, "rd": 1590, "prix": 1018.3, "age": 20, "title": "JetCamp.com |Cherchez & comparez plus de 23.000 Campings en Europe", "desc": "Vos prochaines vacances ! Découvrez plus de 57 000 campings, glampings et parcs de vacances sur JetCamp.com"}]}, "auto": {"stats": {"count": 1472, "da_med": 16.0, "prix_med": 26.85, "traf_med": 2.0, "age_med": 4.0}, "sites": [{"url": "https://www.wandaloo.com/", "cat": "Auto & Moto", "da": 36, "traf": 922310, "rd": 708, "prix": 507.35, "age": 1, "title": "wandaloo.com - le comparateur auto-moto neuve et occasion au Maroc", "desc": "Portail de l"}, {"url": "https://motorsport.nextgen-auto.com/fr/", "cat": "Transport & Véhicules", "da": 58, "traf": 634780, "rd": 1055, "prix": 315.35, "age": 18, "title": "F1, Formule 1, motorsport, sport automobile | Nextgen-Auto.com", "desc": "La F1 et les infos Formule 1, F2, WEC de la saison 2026 en direct. Calendriers, classements, résultats et photos F1 en haute définition"}, {"url": "https://www.autojournal.fr", "cat": "Auto & Moto", "da": 68, "traf": 623770, "rd": 2549, "prix": 1502.2, "age": 25, "title": "L'Auto-Journal- Essais de voitures, voiture neuve - Tous les plaisirs de l'automobile", "desc": "Retrouvez toute l’actualité auto et moto sur le site autojournal.fr à travers des nouveautés, des essais, de l’occasion, du pratique et de l’insolite."}, {"url": "https://www.vroomly.com/", "cat": "Auto & Moto", "da": 49, "traf": 400657, "rd": 3154, "prix": 405.35, "age": 11, "title": "Trouvez les Meilleurs Garages au Meilleur Prix pour votre Auto | Vroomly", "desc": "Obtenez gratuitement un devis pour vos réparations auto et prenez rendez-vous en ligne dans le meilleur garage près de chez vous !"}, {"url": "https://fr.motor1.com", "cat": "Auto & Moto", "da": 91, "traf": 248105, "rd": 1561, "prix": 975.93, "age": 27, "title": "Motor1.com France | Essais, Actualités et Salons Automobiles", "desc": "Lire des essais détaillés, visionnez des photos de salons automobiles, consultez des designs de concept-cars et les lancements de nouveaux modèles."}, {"url": "https://www.turbo.fr", "cat": "Auto & Moto", "da": 73, "traf": 219453, "rd": 2893, "prix": 4414.35, "age": 26, "title": "Turbo : la passion de l'Automobile, actualité, essais, dossiers", "desc": "Retrouvez toute l’actualité auto, nos essais et comparatifs auto, nos conseils, nos services, nos dossiers et bien-sûr l’émission Turbo !"}, {"url": "http://www.lerepairedesmotards.com", "cat": "Auto & Moto", "da": 62, "traf": 207307, "rd": 2476, "prix": 877.2, "age": 24, "title": "Le Repaire des Motards : actualités essais reportages guides moto", "desc": "Le premier site d"}, {"url": "https://www.caroom.fr/", "cat": "Auto & Moto", "da": 51, "traf": 201103, "rd": 1599, "prix": 1507.35, "age": 1, "title": "Mandataire auto : achat voiture neuve et occasion | Caroom", "desc": "Jusqu'à -47% et 100% en confiance, 35 mandataires approuvés, +200 000 offres neuves et occasion. Les meilleurs mandataires sont ici et au meilleur prix !"}, {"url": "https://www.roadstr.fr/blog", "cat": "Auto & Moto/ Voyage & Tourisme", "da": 48, "traf": 153644, "rd": 1786, "prix": 508.35, "age": 11, "title": "", "desc": ""}, {"url": "https://www.automobile-sportive.com", "cat": "Auto & Moto", "da": 55, "traf": 82866, "rd": 1563, "prix": 375.35, "age": 23, "title": "L'AUTOMOBILE SPORTIVE, la passion des voitures de sport", "desc": "Le Guide des voitures de sport actuelles et anciennes propose des essais et avis pour bien acheter la sportive de vos rves."}]}, "education": {"stats": {"count": 1524, "da_med": 18.0, "prix_med": 35.35, "traf_med": 23.5, "age_med": 3.0}, "sites": [{"url": "https://www.digischool.fr/", "cat": "Enseignement & Formation/ Informatique", "da": 63, "traf": 537870, "rd": 2310, "prix": 2000.0, "age": 14, "title": "digiSchool | N°1 de l'éducation : soutien scolaire en ligne, orientation", "desc": "Un compte unique pour réussir tes examens, apprendre une nouvelle langue, passer ton code de la route ou affiner tes choix d'orientation. Commence tes révisions dès maintenant avec digiSchool !"}, {"url": "https://maths-et-tiques.fr/", "cat": "Enseignement & Formation", "da": 46, "traf": 282570, "rd": 1214, "prix": 757.35, "age": 1, "title": "maths et tiques", "desc": "Des cours de maths et des activités à télécharger, des videos, des dossiers d"}, {"url": "https://laculturegenerale.com", "cat": "Enseignement & Formation/ Finance", "da": 48, "traf": 255632, "rd": 1300, "prix": 80.35, "age": 10, "title": "", "desc": ""}, {"url": "https://www.pass-education.fr/", "cat": "Enseignement & Formation/ Société", "da": 51, "traf": 186088, "rd": 1898, "prix": 206.7, "age": 16, "title": "Exercices et évaluations en ligne avec correction pdf à imprimer", "desc": "Plus de 50000 ressources pédagogiques PDF à imprimer : leçons, cours, exercices, évaluations de la maternelle au lycée"}, {"url": "https://observatoiredesfragilites.fr", "cat": "Enseignement & Formation/ Entreprise/ Sénior", "da": 26, "traf": 110991, "rd": 71, "prix": 177.88, "age": null, "title": "", "desc": ""}, {"url": "https://tu-berlin.de/", "cat": "Enseignement & Formation/ High-Tech", "da": 75, "traf": 110868, "rd": 20396, "prix": 136.0, "age": null, "title": "", "desc": ""}, {"url": "https://www.lonasante.com/", "cat": "Enseignement & Formation/ Santé", "da": 34, "traf": 107825, "rd": 290, "prix": 707.6, "age": 1, "title": "", "desc": ""}, {"url": "https://www.blog-rh.com/", "cat": "Enseignement & Formation/ Entreprise", "da": 32, "traf": 58384, "rd": 488, "prix": 301.35, "age": 14, "title": "", "desc": ""}, {"url": "https://trajectio.fr/", "cat": "Enseignement & Formation/ Entreprise/ Finance & Assurance", "da": 21, "traf": 52093, "rd": 219, "prix": 72.35, "age": null, "title": "", "desc": ""}, {"url": "https://djgc.fr/", "cat": "Enseignement & Formation/ Finance & Assurance", "da": 15, "traf": 45543, "rd": 287, "prix": 42.35, "age": null, "title": "", "desc": ""}]}, "loisirs": {"stats": {"count": 2886, "da_med": 17.0, "prix_med": 26.35, "traf_med": 6.0, "age_med": 4.0}, "sites": [{"url": "https://rmcsport.bfmtv.com", "cat": "Sport", "da": 92, "traf": 11008507, "rd": 7194, "prix": 3884.35, "age": 21, "title": "", "desc": ""}, {"url": "https://madeinfoot.ouest-france.fr", "cat": "Sport & Loisirs/ Sport", "da": 93, "traf": 2382384, "rd": 1218, "prix": 190.35, "age": 20, "title": "", "desc": ""}, {"url": "https://tirage-gagnant.com", "cat": "Jeux/ Jeux d'argent", "da": 1, "traf": 1219496, "rd": 1714, "prix": 998.0, "age": 13, "title": "", "desc": ""}, {"url": "https://fr.motorsport.com", "cat": "Sport/ Auto & Moto", "da": 91, "traf": 1020287, "rd": 1144, "prix": 1235.35, "age": 31, "title": "Motorsport.com - Actualités, résultats, photos, vidéos sur les sports mécaniques", "desc": "Actus, photos, vidéos, résultats et classements de sports mécaniques. Motorsport.com couvre F1, MotoGP, WEC, WRC, 24 Heures du Mans, Formule E, WorldSBK, F2, F3, Dakar, IndyCar et bien d"}, {"url": "https://www.olympique-et-lyonnais.com", "cat": "Sport & Loisirs/ Sport", "da": 58, "traf": 992342, "rd": 976, "prix": 1682.35, "age": 20, "title": "", "desc": ""}, {"url": "https://www.sports.fr", "cat": "Sport", "da": 68, "traf": 856557, "rd": 3578, "prix": 1112.2, "age": 23, "title": "", "desc": ""}, {"url": "https://www.gralon.net", "cat": "Sport & Loisirs/ Voyage & Tourisme", "da": 74, "traf": 628743, "rd": 5570, "prix": 705.35, "age": 20, "title": "", "desc": ""}, {"url": "https://f1i.autojournal.fr", "cat": "Sport/ Auto & Moto", "da": 68, "traf": 452958, "rd": 521, "prix": 1070.2, "age": 29, "title": "", "desc": ""}, {"url": "https://fr.besoccer.com", "cat": "Sport", "da": 76, "traf": 403649, "rd": 2104, "prix": 565.35, "age": 16, "title": "", "desc": ""}]}, "animaux": {"stats": {"count": 1720, "da_med": 16.0, "prix_med": 28.35, "traf_med": 2.0, "age_med": 4.0}, "sites": [{"url": "https://www.chien.com", "cat": "Animaux", "da": 54, "traf": 218116, "rd": 1597, "prix": 544.75, "age": 28, "title": "", "desc": ""}, {"url": "https://www.science-et-vie.com", "cat": "Environnement/ High-Tech/ Santé", "da": 63, "traf": 146991, "rd": 5242, "prix": 2901.2, "age": 29, "title": "Science & Vie : premier magazine européen de l’actualité scientifique - Science & Vie", "desc": "Science & Vie analyse et décrypte les découvertes et avancées scientifiques."}, {"url": "https://www.notre-planete.info", "cat": "Environnement/ Bio", "da": 1, "traf": 107538, "rd": 3199, "prix": 982.35, "age": 24, "title": "", "desc": ""}, {"url": "https://www.garaulion.fr/blog/", "cat": "Nature/ Bien-Être", "da": 23, "traf": 87415, "rd": 18, "prix": 2132.7, "age": 6, "title": "", "desc": ""}, {"url": "https://le-pays.fr", "cat": "Environnement/ Société", "da": 55, "traf": 75641, "rd": 1402, "prix": 4438.0, "age": null, "title": "", "desc": ""}, {"url": "https://www.alexetalex.com/", "cat": "Nature/ Voyage & Tourisme", "da": 34, "traf": 69916, "rd": 305, "prix": 342.0, "age": 15, "title": "Livraison de fruits au bureau : Paris, Lille, Lyon - Alex & Alex", "desc": "Service de livraison de corbeilles de fruits au bureau pour les entreprises à Paris - Abonnement sans engagement de durée"}, {"url": "https://www.chatsdumonde.com", "cat": "Animaux", "da": 42, "traf": 62821, "rd": 650, "prix": 435.75, "age": 24, "title": "Chats du monde : aide pour adopter & élever un chaton ou chat", "desc": "Aide et conseils pour adopter et s"}, {"url": "https://emmenetonchien.com/", "cat": "Animaux/ Voyage & Tourisme", "da": 40, "traf": 62229, "rd": 1240, "prix": 579.5, "age": 10, "title": "EmmeneTonChien.com : le n°1 des vacances AVEC son chien", "desc": "Locations de vacances, campings, activités... des milliers d'adresses chiens et animaux bienvenus ou labellisées QUALIDOG vous attendent ☀️ 🐶"}, {"url": "https://www.lairdubois.fr/", "cat": "Environnement/ Travaux et Batiment/ Jardin/ Maison", "da": 35, "traf": 53670, "rd": 942, "prix": 152.45, "age": 1, "title": "L'Air du Bois - Découvrez, fabriquez, partagez", "desc": "L'Air du Bois est une plateforme Open Source de partage collaboratif ouvert à tous les amoureux du travail du bois"}, {"url": "https://www.conservation-nature.fr", "cat": "Écologie/ Bien-Être", "da": 43, "traf": 38390, "rd": 738, "prix": 236.35, "age": 5, "title": "Conservation Nature : Le Média français 100% Nature", "desc": "Conservation Nature est un média innovant de sensibilisation sur la nature, l'écologie et la protection de l'environnement."}]}, "mode": {"stats": {"count": 1966, "da_med": 17.0, "prix_med": 26.35, "traf_med": 3.0, "age_med": 4.0}, "sites": [{"url": "https://www.marieclaire.fr", "cat": "Mode/ Beauté/ Bien-Être", "da": 77, "traf": 2974218, "rd": 15045, "prix": 983.35, "age": 27, "title": "Magazine féminin de mode et beauté - Marie Claire", "desc": "Découvrez les idées déco et les conseils d'aménagement pour le salon. Envie de changer de canapé, de peindre un séjour ou de structurer un salon-salle à manger ? Marie Claire Maison vous accompagne..."}, {"url": "https://www.cosmopolitan.fr", "cat": "Mode/ Beauté/ Bien-Être", "da": 76, "traf": 1870818, "rd": 6166, "prix": 1594.35, "age": 21, "title": "Cosmopolitan.fr : Beauté, Mode, Sexo - Cosmopolitan.fr", "desc": "Cosmopolitan.fr, le site Web qui vous réussit. Cosmopolitan.fr est votre rendez-vous quotidien pour découvrir et partager les dernières tendances mode."}, {"url": "https://www.commeuncamion.com", "cat": "Mode/ Beauté", "da": 59, "traf": 302608, "rd": 2376, "prix": 800.25, "age": 21, "title": "", "desc": ""}, {"url": "https://www.aufeminin.com", "cat": "Mode/ Beauté/ Maman/ Gastronomie", "da": 86, "traf": 193901, "rd": 9685, "prix": 1947.2, "age": 27, "title": "aufeminin.com - Mode femme, Beauté femmes, Maman, Mariage, Psycho...", "desc": "Mode femme, Beauté femmes, Maman, Mariage, Psycho..."}, {"url": "https://www.beaute-test.com", "cat": "Beauté/ Maman", "da": 57, "traf": 169521, "rd": 2382, "prix": 947.2, "age": 22, "title": "Beauté Test - guide d'achat, avis beauté, parfum et cosmétique", "desc": "Découvrez les derniers tests produits et nouveautés cosmétiques sur Beauté Test. Candidatez, testez, partagez et restez informé en vous inscrivant à notre newsletter."}, {"url": "https://www.puralist.fr", "cat": "Beauté/ Bien-Être", "da": 42, "traf": 107050, "rd": 352, "prix": 96.35, "age": 1, "title": "Puralist : Blog Mode, Beauté & Lifestyle", "desc": "Tendances mode, conseils beauté et inspirations lifestyle : Puralist vous guide au quotidien pour vous sentir bien dans votre style et dans votre vie."}, {"url": "https://www.edp-nutrition.fr/", "cat": "Beauté/ Santé", "da": 32, "traf": 93530, "rd": 313, "prix": 205.35, "age": null, "title": "Expert Français N°1 sur les compléments alimentaires", "desc": "EDP Nutrition est l'expert N°1 sur les compléments alimentaires en France. Indépendant et géré par un diététicien-nutritionniste reconnu !"}, {"url": "https://www.modesettravaux.fr", "cat": "Beauté/ Gastronomie/ Bricolage/ Maison", "da": 56, "traf": 88903, "rd": 1154, "prix": 972.2, "age": 25, "title": "Modes et travaux - Créateur d'idées et de diy - Modes & Travaux - Modes&Travaux", "desc": "Créateur d'idées et de diy - Modes & Travaux - Modes&Travaux"}]}, "food": {"stats": {"count": 1101, "da_med": 18.0, "prix_med": 25.35, "traf_med": 5.0, "age_med": 4.0}, "sites": [{"url": "https://www.saveurs-magazine.fr", "cat": "Gastronomie", "da": 43, "traf": 473843, "rd": 597, "prix": 1884.85, "age": 19, "title": "Saveurs : des recettes authentiques et gratuites, de qualité premium | Saveurs Magazine", "desc": "Découvrez les recettes et conseils culinaires tirés de Saveurs, le magazine de l'art de vivre gourmand. Des préparations exclusives garanties 100% réussite."}, {"url": "https://www.recettes.qc.ca/", "cat": "Gastronomie/ Maison", "da": 55, "traf": 438882, "rd": 1166, "prix": 1221.35, "age": null, "title": "", "desc": ""}, {"url": "https://www.supertoinette.com", "cat": "Gastronomie", "da": 59, "traf": 365518, "rd": 1613, "prix": 693.35, "age": 24, "title": "+50000 recettes de cuisine faciles et rapides | Supertoinette", "desc": "Le site de recettes de cuisine tout en photos ! recettes en images, faciles, un forum de cuisine avec + de 50000 recettes. La recette du succès"}, {"url": "https://www.aux-fourneaux.fr/", "cat": "Gastronomie/ Voyage & Tourisme", "da": 49, "traf": 291069, "rd": 732, "prix": 706.7, "age": 1, "title": "Aux Fourneaux : Blog de cuisine de tous les jours", "desc": "Aux fourneaux propose des recettes de cuisine de tous les jours, faciles et saines à cuisiner. Des aliments et des recettes de saison"}, {"url": "https://www.zeste.ca/", "cat": "Gastronomie/ Maison", "da": 45, "traf": 267958, "rd": 1118, "prix": 1221.35, "age": 19, "title": "", "desc": ""}, {"url": "https://crealine.eu", "cat": "Gastronomie/ Maison/ Voyage & Tourisme", "da": 19, "traf": 174880, "rd": 171, "prix": 70.35, "age": null, "title": "Crealine Magazine", "desc": "{{post_date}}"}, {"url": "https://fr.newtable.com", "cat": "Gastronomie", "da": 23, "traf": 150723, "rd": 310, "prix": 495.85, "age": 17, "title": "", "desc": ""}, {"url": "https://www.larvf.com/", "cat": "Gastronomie", "da": 62, "traf": 148479, "rd": 2758, "prix": 1694.35, "age": 27, "title": "La Revue du vin de France - La Revue du vin de France", "desc": "La Revue du vin de France propose le meilleur du vin sur Internet : actualités du vin, dégustations de vins réalisées par des experts en vin, conseils pour s’initier au vin grâce à des informations..."}, {"url": "https://www.1001cocktails.com", "cat": "Gastronomie", "da": 58, "traf": 141137, "rd": 1576, "prix": 961.2, "age": 25, "title": "1001cocktails - Recettes de cocktails et boissons", "desc": "Les meilleures recettes, tendances et nouveautés autour des cocktails et de la mixologie"}, {"url": "http://restaurants-de-france.fr/blog", "cat": "Gastronomie", "da": 25, "traf": 136441, "rd": 645, "prix": 82.35, "age": null, "title": "Restaurants-de-france.fr - L'actu sur la food", "desc": "L'actu sur la food"}]}};
+
+function fmtN(x){ if(x>=1e6) return (x/1e6).toFixed(1)+'M'; if(x>=1e3) return (x/1e3).toFixed(0)+'k'; return String(Math.round(x)); }
+
+function compHtml(id, color){
+  const c = COMPETITORS[id]; if(!c) return '';
+  const st = c.stats;
+  let h = `<div class="comp-block">
+    <div class="comp-title" style="color:var(${color})">Concurrents observés sur cette niche</div>
+    <div class="comp-sub">Base ereferer FR — ${st.count.toLocaleString('fr-FR')} sites concurrents dans cette niche. La médiane du marché est faible (DA ${st.da_med}, ~${st.age_med} ans d'âge, trafic quasi nul) : un site de niche à contenu réellement qualitatif se démarque facilement.</div>
+    <div class="comp-stats">
+      <div class="comp-stat"><div class="v">${st.count.toLocaleString('fr-FR')}</div><div class="l">Sites FR</div></div>
+      <div class="comp-stat"><div class="v">${st.da_med}</div><div class="l">DA médian</div></div>
+      <div class="comp-stat"><div class="v">${fmtN(st.traf_med)}</div><div class="l">Trafic médian/mois</div></div>
+      <div class="comp-stat"><div class="v">${st.prix_med.toFixed(0)}€</div><div class="l">Prix lien médian</div></div>
+      <div class="comp-stat"><div class="v">${st.age_med} ans</div><div class="l">Âge médian</div></div>
+    </div>
+    <table class="comp-table"><thead><tr><th>Site (top trafic)</th><th>Ce qu'il fait</th><th>Catégorie</th><th style="text-align:right">DA</th><th style="text-align:right">Trafic/mois</th><th style="text-align:right">RD</th><th style="text-align:right">Prix lien</th></tr></thead><tbody>`;
+  c.sites.forEach(s=>{
+    const what = s.desc || s.title || '—';
+    h += `<tr><td><a class="comp-url" href="${s.url}" target="_blank" rel="noopener">${s.url.replace(/^https?:\/\/(www\.)?/,'').replace(/\/$/,'')}</a></td>
+      <td class="comp-desc">${what}</td>
+      <td><span class="comp-cat">${s.cat}</span></td>
+      <td class="comp-num">${s.da??'—'}</td><td class="comp-num">${fmtN(s.traf)}</td><td class="comp-num">${fmtN(s.rd)}</td><td class="comp-num">${s.prix.toFixed(0)}€</td></tr>`;
+  });
+  h += `</tbody></table></div>`;
+  return h;
+}
+
+// Injecter le panneau concurrents sur chaque page de niche
+NICHES.forEach(n=>{
+  const nc = document.getElementById('tax-'+n.id);
+  if(nc) nc.insertAdjacentHTML('beforeend', compHtml(n.id, n.color));
+});
+
+// Synthese marche sur la vue complete
+(function(){
+  const root = document.getElementById('tax-root'); if(!root) return;
+  const total = Object.values(COMPETITORS).reduce((a,c)=>a+c.stats.count,0);
+  let h = `<div class="comp-block">
+    <div class="comp-title">Synthèse du marché concurrent (base ereferer — 36 117 sites FR analysés)</div>
+    <div class="comp-sub">${total.toLocaleString('fr-FR')} sites FR répartis sur nos 12 niches. Constat global : DA médian 14–18, âge médian ~4 ans, trafic Google médian proche de zéro — l'immense majorité sont des sites PBN à contenu faible. Des sites de niche haute qualité (contenu expert, structure taxonomique profonde, E-E-A-T) surclassent ce parc.</div>
+    <table class="comp-table"><thead><tr><th>Niche</th><th style="text-align:right">Sites FR</th><th style="text-align:right">DA médian</th><th style="text-align:right">Trafic médian</th><th style="text-align:right">Prix lien médian</th><th style="text-align:right">Âge médian</th></tr></thead><tbody>`;
+  NICHES.forEach(n=>{
+    const c = COMPETITORS[n.id]; if(!c) return;
+    const s = c.stats;
+    h += `<tr><td style="font-weight:600;color:var(${n.color})">${n.name}</td><td class="comp-num">${s.count.toLocaleString('fr-FR')}</td><td class="comp-num">${s.da_med}</td><td class="comp-num">${fmtN(s.traf_med)}</td><td class="comp-num">${s.prix_med.toFixed(0)}€</td><td class="comp-num">${s.age_med} ans</td></tr>`;
+  });
+  h += `</tbody></table></div>`;
+  root.insertAdjacentHTML('afterend', h);
+})();
+
+/* ===== FIN CONCURRENTS ===== */
+</script>
+</body>
+</html>

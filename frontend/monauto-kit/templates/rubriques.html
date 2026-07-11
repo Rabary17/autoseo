@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Toutes les rubriques — monauto</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/monauto.css">
+</head>
+<body>
+<!-- ▼▼ PARTIAL: header / app bar ▼▼ -->
+<header class="appbar">
+  <a class="appbar__logo" href="/" aria-label="monauto — accueil">
+    <img class="appbar__mark" src="../assets/mark.svg" alt="">
+    <span class="appbar__word">monauto<span class="dot">.</span></span>
+  </a>
+  <nav class="appbar__nav" aria-label="Rubriques">
+    <a class="chip" href="/categorie/entretien">Entretien</a>
+    <a class="chip" href="/categorie/pannes-diagnostic">Pannes</a>
+    <a class="chip" href="/categorie/essais-comparatifs">Essais</a>
+    <a class="chip" href="/categorie/electrique-hybride">Électrique</a>
+    <a class="chip" href="/rubriques">Toutes les rubriques</a>
+  </nav>
+  <div class="appbar__actions">
+    <button class="icon-btn" aria-label="Rechercher">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    </button>
+    <button class="icon-btn" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<!-- ▲▲ PARTIAL: header ▲▲ -->
+<main class="wrap">
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <ol><li><a href="/">Accueil</a></li><li><span aria-current="page">Rubriques</span></li></ol>
+  </nav>
+  <header style="padding:6px 0 8px">
+    <p class="eyebrow">Explorer</p>
+    <h1>Toutes les rubriques</h1>
+    <p style="color:var(--muted);margin:0;max-width:56ch">19 domaines d'expertise, de l'entretien courant aux démarches administratives. Choisissez votre sujet.</p>
+  </header>
+  <section class="section" style="margin-top:16px">
+    <div class="silo-grid">
+    <a class="silo" href="/categorie/entretien">
+      <span><span class="silo__name">Entretien & révision</span><span class="silo__desc" style="display:block">Tutos, prix et périodicités par modèle</span></span>
+      <span class="silo__count">1 800</span>
+    </a>
+    <a class="silo" href="/categorie/pannes-diagnostic">
+      <span><span class="silo__name">Pannes & diagnostic</span><span class="silo__desc" style="display:block">Voyants, codes défaut et symptômes</span></span>
+      <span class="silo__count">1 300</span>
+    </a>
+    <a class="silo" href="/categorie/marques-modeles">
+      <span><span class="silo__name">Marques & modèles</span><span class="silo__desc" style="display:block">Fiabilité, problèmes connus, entretien</span></span>
+      <span class="silo__count">1 400</span>
+    </a>
+    <a class="silo" href="/categorie/pieces-accessoires">
+      <span><span class="silo__name">Pièces & accessoires</span><span class="silo__desc" style="display:block">Guides pièce par marque, comparatifs</span></span>
+      <span class="silo__count">900</span>
+    </a>
+    <a class="silo" href="/categorie/essais-comparatifs">
+      <span><span class="silo__name">Essais & comparatifs</span><span class="silo__desc" style="display:block">Duels de modèles, guides par segment</span></span>
+      <span class="silo__count">800</span>
+    </a>
+    <a class="silo" href="/categorie/carte-grise-demarches">
+      <span><span class="silo__name">Carte grise & démarches</span><span class="silo__desc" style="display:block">Chaque démarche, cas par cas</span></span>
+      <span class="silo__count">450</span>
+    </a>
+    <a class="silo" href="/categorie/electrique-hybride">
+      <span><span class="silo__name">Électrique & hybride</span><span class="silo__desc" style="display:block">Fiches EV, recharge, autonomie</span></span>
+      <span class="silo__count">700</span>
+    </a>
+    <a class="silo" href="/categorie/assurance">
+      <span><span class="silo__name">Assurance auto</span><span class="silo__desc" style="display:block">Garanties, profils, sinistres</span></span>
+      <span class="silo__count">400</span>
+    </a>
+    <a class="silo" href="/categorie/permis-conduite">
+      <span><span class="silo__name">Permis & conduite</span><span class="silo__desc" style="display:block">Examens, points, infractions</span></span>
+      <span class="silo__count">400</span>
+    </a>
+    <a class="silo" href="/categorie/moto-scooter">
+      <span><span class="silo__name">Moto & scooter</span><span class="silo__desc" style="display:block">Fiches, équipement, entretien</span></span>
+      <span class="silo__count">500</span>
+    </a>
+    <a class="silo" href="/categorie/achat-neuf">
+      <span><span class="silo__name">Achat voiture neuve</span><span class="silo__desc" style="display:block">Guides achat, leasing, négociation</span></span>
+      <span class="silo__count">300</span>
+    </a>
+    <a class="silo" href="/categorie/occasion">
+      <span><span class="silo__name">Voiture occasion</span><span class="silo__desc" style="display:block">Achat, vente, cote, vices cachés</span></span>
+      <span class="silo__count">300</span>
+    </a>
+    <a class="silo" href="/categorie/velo-mobilites">
+      <span><span class="silo__name">Vélo & mobilités</span><span class="silo__desc" style="display:block">VAE, EDPM, réglementation</span></span>
+      <span class="silo__count">250</span>
+    </a>
+    <a class="silo" href="/categorie/camping-car-van">
+      <span><span class="silo__name">Camping-car & van</span><span class="silo__desc" style="display:block">Achat, aménagement, voyage</span></span>
+      <span class="silo__count">250</span>
+    </a>
+    <a class="silo" href="/categorie/road-trips">
+      <span><span class="silo__name">Road trips & voyage</span><span class="silo__desc" style="display:block">Itinéraires et pratique par pays</span></span>
+      <span class="silo__count">350</span>
+    </a>
+    <a class="silo" href="/categorie/sport-auto">
+      <span><span class="silo__name">Sport auto & passion</span><span class="silo__desc" style="display:block">Circuits, collection, tuning légal</span></span>
+      <span class="silo__count">250</span>
+    </a>
+    <a class="silo" href="/categorie/carburants-conso">
+      <span><span class="silo__name">Carburants & conso</span><span class="silo__desc" style="display:block">E85, GPL, éco-conduite</span></span>
+      <span class="silo__count">200</span>
+    </a>
+    <a class="silo" href="/categorie/mobilite-partagee">
+      <span><span class="silo__name">Mobilité partagée</span><span class="silo__desc" style="display:block">Covoiturage, location, VTC</span></span>
+      <span class="silo__count">250</span>
+    </a>
+    <a class="silo" href="/categorie/utilitaires-flottes">
+      <span><span class="silo__name">Utilitaires & flottes</span><span class="silo__desc" style="display:block">Choix, fiscalité, LLD pro</span></span>
+      <span class="silo__count">200</span>
+    </a>
+    </div>
+  </section>
+</main>
+<!-- ▼▼ PARTIAL: footer ▼▼ -->
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer__brand">monauto<span class="dot">.</span></p>
+    <p style="color:rgba(255,255,255,.7);max-width:38ch;margin:0">Le média expert de l'auto et de la mobilité. Guides testés, sourcés et mis à jour par notre rédaction.</p>
+    <div class="footer__cols">
+      <div><h4>Le média</h4><ul>
+        <li><a href="/a-propos">À propos</a></li>
+        <li><a href="/redaction">La rédaction</a></li>
+        <li><a href="/politique-editoriale">Politique éditoriale</a></li>
+        <li><a href="/politique-des-sources">Politique des sources</a></li>
+      </ul></div>
+      <div><h4>Rubriques</h4><ul>
+        <li><a href="/categorie/entretien">Entretien & révision</a></li>
+        <li><a href="/categorie/pannes-diagnostic">Pannes & diagnostic</a></li>
+        <li><a href="/categorie/electrique-hybride">Électrique & hybride</a></li>
+        <li><a href="/rubriques">Toutes les rubriques</a></li>
+      </ul></div>
+      <div><h4>Infos</h4><ul>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/politique-de-confidentialite">Confidentialité</a></li>
+      </ul></div>
+      <div><h4>Suivre</h4><ul>
+        <li><a href="#" rel="me">Instagram</a></li>
+        <li><a href="#" rel="me">YouTube</a></li>
+        <li><a href="#" rel="me">LinkedIn</a></li>
+      </ul></div>
+    </div>
+    <p class="footer__legal">© <span>{{ année }}</span> monauto — Tous droits réservés.</p>
+  </div>
+</footer>
+<!-- ▲▲ PARTIAL: footer ▲▲ -->
+<!-- ▼▼ PARTIAL: bottom-nav ▼▼ -->
+<nav class="bottomnav" aria-label="Navigation principale">
+  <a href="/" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+    Accueil
+  </a>
+  <a href="/rubriques">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    Rubriques
+  </a>
+  <a href="/recherche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    Recherche
+  </a>
+  <a href="/favoris">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+    Favoris
+  </a>
+</nav>
+<!-- ▲▲ PARTIAL: bottom-nav ▲▲ -->
+</body>
+</html>

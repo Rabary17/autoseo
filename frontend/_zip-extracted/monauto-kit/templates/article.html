@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{ post.title }} — monauto</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/monauto.css">
+</head>
+<body class="reading">
+<!-- ▼▼ PARTIAL: header / app bar ▼▼ -->
+<header class="appbar">
+  <a class="appbar__logo" href="/" aria-label="monauto — accueil">
+    <img class="appbar__mark" src="../assets/mark.svg" alt="">
+    <span class="appbar__word">monauto<span class="dot">.</span></span>
+  </a>
+  <!-- {{ liens de navigation — visibles sur desktop uniquement }} -->
+  <nav class="appbar__nav" aria-label="Rubriques">
+    <a class="chip" href="/categorie/entretien">Entretien</a>
+    <a class="chip" href="/categorie/pannes-diagnostic">Pannes</a>
+    <a class="chip" href="/categorie/essais-comparatifs">Essais</a>
+    <a class="chip" href="/categorie/electrique-hybride">Électrique</a>
+    <a class="chip" href="/rubriques">Toutes les rubriques</a>
+  </nav>
+  <div class="appbar__actions">
+    <button class="icon-btn" aria-label="Rechercher">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    </button>
+    <button class="icon-btn" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+<!-- ▲▲ PARTIAL: header ▲▲ -->
+<main class="wrap-wide">
+  <!-- ▼▼ PARTIAL: breadcrumb ▼▼ -->
+<nav class="breadcrumb" aria-label="Fil d'Ariane">
+  <ol>
+    <li><a href="/">Accueil</a></li>
+    <li><a href="/categorie/essais">Essais</a></li>
+    <li><span aria-current="page">{{ post.title }}</span></li>
+  </ol>
+</nav>
+<!-- ▲▲ PARTIAL: breadcrumb ▲▲ -->
+
+  <div class="layout">
+  <div class="col-main">
+
+  <article class="article">
+    <header class="article__head">
+      <p class="eyebrow">Essai</p>
+      <h1 class="article__title">{{ post.title }} — notre verdict après 800 km</h1>
+      <div class="article__byline">
+        <img class="avatar" src="https://i.pravatar.cc/72?img=13" alt="" width="36" height="36">
+        <span>Par <a href="/auteur/camille-roy" rel="author">Camille Roy</a> ·
+          <time datetime="2025-06-08">8 juin 2025</time>
+          · Mis à jour le <time datetime="2025-06-10">10 juin 2025</time></span>
+      </div>
+    </header>
+
+    <!-- image de une : LCP → priorité au chargement côté framework -->
+    <figure class="article__hero">
+      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=1200" alt="{{ media.alt }}" width="1200" height="750">
+    </figure>
+
+    <!-- TL;DR extractible par les moteurs et les IA -->
+    <aside class="tldr" aria-label="L'essentiel">
+      <h2>L'essentiel</h2>
+      <p>{{ post.acf.tldr }} — Confortable et sobre en ville, un peu juste sur autoroute. Bon rapport prestations/prix pour un usage quotidien.</p>
+    </aside>
+
+    <div class="prose">
+      <p>{{ post.content — HTML rendu par WordPress }}. Ce paragraphe d'introduction pose le contexte de l'essai et les conditions de test.</p>
+      <h2>Comportement routier</h2>
+      <p>Contenu…</p>
+      <h2>Consommation &amp; autonomie</h2>
+      <p>Contenu…</p>
+      <figure><img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1000" alt="" width="1000" height="640"><figcaption>Légende de l'image.</figcaption></figure>
+      <h2>Verdict</h2>
+      <p>Conclusion…</p>
+    </div>
+
+    <!-- EEAT : sources vérifiables -->
+    <footer class="sources">
+      <h2>Sources</h2>
+      <ol>
+        <li><a href="#" rel="external noopener">Fiche technique constructeur (PDF officiel)</a></li>
+        <li><a href="#" rel="external noopener">Données d'homologation WLTP</a></li>
+      </ol>
+    </footer>
+  </article>
+
+  <!-- maillage interne contextuel : {{ articles liés même catégorie/tag }} -->
+  <section class="section">
+    <div class="section__head"><h2>À lire aussi</h2></div>
+    <div class="stack">
+      <article class="card">
+  <a href="/hybride-vs-thermique" class="card__media" aria-hidden="true" tabindex="-1">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" alt="" loading="lazy" width="800" height="500">
+  </a>
+  <div class="card__body">
+    <p class="card__cat">Essai</p>
+    <h3 class="card__title"><a href="/hybride-vs-thermique">Version hybride vs thermique : laquelle amortir ?</a></h3>
+    <div class="card__meta"><time datetime="2025-06-01">2 juin</time><span>·</span><span>6 min</span></div>
+  </div>
+</article>
+      <article class="card">
+  <a href="/reduire-consommation" class="card__media" aria-hidden="true" tabindex="-1">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800" alt="" loading="lazy" width="800" height="500">
+  </a>
+  <div class="card__body">
+    <p class="card__cat">Pratique</p>
+    <h3 class="card__title"><a href="/reduire-consommation">Nos réglages pour réduire la consommation</a></h3>
+    <div class="card__meta"><time datetime="2025-06-01">29 mai</time><span>·</span><span>4 min</span></div>
+  </div>
+</article>
+    </div>
+  </section>
+  </div><!-- /col-main -->
+
+  <!-- ▼▼ PARTIAL: sidebar contextuelle (desktop = colonne sticky ; mobile = modules empilés) ▼▼ -->
+  <aside class="col-side" aria-label="Explorer">
+
+    <!-- Sous-catégories pertinentes autour du sujet -->
+    <section class="side-mod">
+      <p class="side-mod__title">Dans la rubrique Essais</p>
+      <ul class="subnav"><!-- {{ term.children — sous-catégories de la rubrique }} -->
+        <li><a href="/categorie/essais/suv">SUV &amp; crossover</a><span>42</span></li>
+        <li><a href="/categorie/essais/citadines">Citadines</a><span>28</span></li>
+        <li><a href="/categorie/essais/electriques">Électriques</a><span>35</span></li>
+        <li><a href="/categorie/essais/sportives">Sportives</a><span>17</span></li>
+        <li><a href="/categorie/essais/familiales">Familiales &amp; breaks</a><span>21</span></li>
+      </ul>
+    </section>
+
+    <!-- Les plus lus — rétention -->
+    <section class="side-mod">
+      <p class="side-mod__title">Les plus lus cette semaine</p>
+      <ol class="poplist"><!-- {{ posts triés par vues (meta ou endpoint stats) }} -->
+        <li><span class="rank">1</span><a href="/autonomie-test-hiver">Autonomie réelle : notre protocole de test hivernal</a></li>
+        <li><span class="rank">2</span><a href="/recharge-domicile">Recharge à domicile : ce qu'il faut savoir avant d'installer</a></li>
+        <li><span class="rank">3</span><a href="/occasion-t1">Le marché de l'occasion se tend au premier trimestre</a></li>
+        <li><span class="rank">4</span><a href="/break-familial">Break familial : lequel offre le meilleur volume utile ?</a></li>
+        <li><span class="rank">5</span><a href="/pneus-toutes-saisons">Pneus toutes saisons : le bon compromis ?</a></li>
+      </ol>
+    </section>
+
+    <!-- Sujets liés (tags) -->
+    <section class="side-mod">
+      <p class="side-mod__title">Sujets liés</p>
+      <div class="tagcloud"><!-- {{ post.tags }} -->
+        <a class="chip" href="/tag/hybride">Hybride</a>
+        <a class="chip" href="/tag/consommation">Consommation</a>
+        <a class="chip" href="/tag/suv">SUV</a>
+        <a class="chip" href="/tag/essai-longue-duree">Essai longue durée</a>
+      </div>
+    </section>
+
+    <!-- CTA newsletter -->
+    <section class="side-cta">
+      <p class="side-cta__title">La newsletter monauto</p>
+      <p class="side-cta__sub">Chaque semaine, nos essais et conseils auto. Zéro spam.</p>
+      <form action="#" method="post">
+        <input type="email" placeholder="Votre e-mail" aria-label="Adresse e-mail" required>
+        <button class="btn btn--primary" type="submit">S'inscrire</button>
+      </form>
+    </section>
+
+  </aside>
+  <!-- ▲▲ PARTIAL: sidebar contextuelle ▲▲ -->
+  </div><!-- /layout -->
+</main>
+<!-- ▼▼ PARTIAL: footer ▼▼ -->
+<footer class="footer">
+  <div class="wrap">
+    <p class="footer__brand">monauto<span class="dot">.</span></p>
+    <p style="color:rgba(255,255,255,.7);max-width:34ch;margin:0">Le magazine auto qui teste, explique et compare. Articles signés, sourcés et datés.</p>
+    <div class="footer__cols">
+      <div><h4>Le média</h4><ul>
+        <li><a href="/a-propos">À propos</a></li>
+        <li><a href="/redaction">La rédaction</a></li>
+        <li><a href="/politique-editoriale">Politique éditoriale</a></li>
+        <li><a href="/politique-des-sources">Politique des sources</a></li>
+      </ul></div>
+      <div><h4>Rubriques</h4><ul>
+        <li><a href="/categorie/essais">Essais</a></li>
+        <li><a href="/categorie/electrique">Électrique</a></li>
+        <li><a href="/categorie/pratique">Pratique &amp; entretien</a></li>
+        <li><a href="/categorie/marche">Marché &amp; actu</a></li>
+      </ul></div>
+      <div><h4>Infos</h4><ul>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/politique-de-confidentialite">Confidentialité</a></li>
+      </ul></div>
+      <div><h4>Suivre</h4><ul>
+        <li><a href="#" rel="me">Instagram</a></li>
+        <li><a href="#" rel="me">YouTube</a></li>
+        <li><a href="#" rel="me">LinkedIn</a></li>
+      </ul></div>
+    </div>
+    <p class="footer__legal">© <span>{{ année }}</span> monauto — Tous droits réservés.</p>
+  </div>
+</footer>
+<!-- ▲▲ PARTIAL: footer ▲▲ -->
+<!-- ▼▼ PARTIAL: bottom-nav (mobile, façon app) ▼▼ -->
+<nav class="bottomnav" aria-label="Navigation principale">
+  <a href="/" aria-current="page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+    Accueil
+  </a>
+  <a href="/rubriques">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    Rubriques
+  </a>
+  <a href="/recherche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+    Recherche
+  </a>
+  <a href="/favoris">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+    Favoris
+  </a>
+</nav>
+<!-- ▲▲ PARTIAL: bottom-nav ▲▲ -->
+</body>
+</html>

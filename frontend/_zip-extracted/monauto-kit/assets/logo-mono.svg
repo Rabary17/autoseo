@@ -1,0 +1,9 @@
+<svg width="230" height="56" viewBox="0 0 230 56" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="monauto">
+  <rect x="4" y="4" width="48" height="48" rx="13" fill="currentColor"></rect>
+  <g fill="#fff" transform="translate(4,4) scale(0.75)">
+    <rect x="13" y="19" width="28" height="4.5" rx="2.25"></rect>
+    <rect x="19" y="28.5" width="22" height="4.5" rx="2.25"></rect>
+    <rect x="24" y="38" width="17" height="4.5" rx="2.25"></rect>
+  </g>
+  <text x="66" y="38" font-family="&#39;Space Grotesk&#39;,Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="-1" fill="currentColor">monauto.</text>
+</svg>

@@ -1,0 +1,157 @@
+{
+  "updated": "2026",
+  "total": 10000,
+  "silos": [
+    {
+      "slug": "entretien",
+      "name": "Entretien & révision",
+      "desc": "Tutos, prix et périodicités par modèle",
+      "articles": 1800,
+      "children": [
+        "Vidange",
+        "Freins",
+        "Embrayage",
+        "Distribution",
+        "Climatisation",
+        "Géométrie"
+      ]
+    },
+    {
+      "slug": "pannes-diagnostic",
+      "name": "Pannes & diagnostic",
+      "desc": "Voyants, codes défaut et symptômes",
+      "articles": 1300,
+      "children": [
+        "Voyants",
+        "Codes OBD",
+        "Bruits & vibrations",
+        "Fumées",
+        "Démarrage"
+      ]
+    },
+    {
+      "slug": "marques-modeles",
+      "name": "Marques & modèles",
+      "desc": "Fiabilité, problèmes connus, entretien",
+      "articles": 1400,
+      "children": [
+        "Fiabilité",
+        "Problèmes connus",
+        "Quelle année acheter",
+        "Motorisations"
+      ]
+    },
+    {
+      "slug": "pieces-accessoires",
+      "name": "Pièces & accessoires",
+      "desc": "Guides pièce par marque, comparatifs",
+      "articles": 900,
+      "children": []
+    },
+    {
+      "slug": "essais-comparatifs",
+      "name": "Essais & comparatifs",
+      "desc": "Duels de modèles, guides par segment",
+      "articles": 800,
+      "children": []
+    },
+    {
+      "slug": "carte-grise-demarches",
+      "name": "Carte grise & démarches",
+      "desc": "Chaque démarche, cas par cas",
+      "articles": 450,
+      "children": []
+    },
+    {
+      "slug": "electrique-hybride",
+      "name": "Électrique & hybride",
+      "desc": "Fiches EV, recharge, autonomie",
+      "articles": 700,
+      "children": []
+    },
+    {
+      "slug": "assurance",
+      "name": "Assurance auto",
+      "desc": "Garanties, profils, sinistres",
+      "articles": 400,
+      "children": []
+    },
+    {
+      "slug": "permis-conduite",
+      "name": "Permis & conduite",
+      "desc": "Examens, points, infractions",
+      "articles": 400,
+      "children": []
+    },
+    {
+      "slug": "moto-scooter",
+      "name": "Moto & scooter",
+      "desc": "Fiches, équipement, entretien",
+      "articles": 500,
+      "children": []
+    },
+    {
+      "slug": "achat-neuf",
+      "name": "Achat voiture neuve",
+      "desc": "Guides achat, leasing, négociation",
+      "articles": 300,
+      "children": []
+    },
+    {
+      "slug": "occasion",
+      "name": "Voiture occasion",
+      "desc": "Achat, vente, cote, vices cachés",
+      "articles": 300,
+      "children": []
+    },
+    {
+      "slug": "velo-mobilites",
+      "name": "Vélo & mobilités",
+      "desc": "VAE, EDPM, réglementation",
+      "articles": 250,
+      "children": []
+    },
+    {
+      "slug": "camping-car-van",
+      "name": "Camping-car & van",
+      "desc": "Achat, aménagement, voyage",
+      "articles": 250,
+      "children": []
+    },
+    {
+      "slug": "road-trips",
+      "name": "Road trips & voyage",
+      "desc": "Itinéraires et pratique par pays",
+      "articles": 350,
+      "children": []
+    },
+    {
+      "slug": "sport-auto",
+      "name": "Sport auto & passion",
+      "desc": "Circuits, collection, tuning légal",
+      "articles": 250,
+      "children": []
+    },
+    {
+      "slug": "carburants-conso",
+      "name": "Carburants & conso",
+      "desc": "E85, GPL, éco-conduite",
+      "articles": 200,
+      "children": []
+    },
+    {
+      "slug": "mobilite-partagee",
+      "name": "Mobilité partagée",
+      "desc": "Covoiturage, location, VTC",
+      "articles": 250,
+      "children": []
+    },
+    {
+      "slug": "utilitaires-flottes",
+      "name": "Utilitaires & flottes",
+      "desc": "Choix, fiscalité, LLD pro",
+      "articles": 200,
+      "children": []
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan d'action — 10 000 articles Auto & mobilité (tâches ≤ 1h)</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c7:#f97316;--c4:#4f8ef7;--ok:#4caf7d;--warn:#f5a623}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 28px 80px}
+a{color:var(--c4)}
+.back{display:inline-block;font-size:11px;color:var(--text2);text-decoration:none;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;margin-bottom:22px}
+.back:hover{background:var(--bg4);color:var(--text)}
+.ey{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c7);margin-bottom:6px}
+h1{font-size:26px;font-weight:700;line-height:1.25;margin-bottom:10px}
+.lead{font-size:14px;color:var(--text2);max-width:800px;margin-bottom:26px}
+h2{font-size:18px;font-weight:700;margin:40px 0 6px;padding-top:18px;border-top:1px solid var(--border);color:var(--c7)}
+h3{font-size:13.5px;font-weight:700;margin:18px 0 4px;color:var(--text)}
+p{color:var(--text2);margin-bottom:10px;max-width:850px}
+strong{color:var(--text)}
+.srow{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.sc{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 18px;text-align:center;min-width:110px}
+.sv{font-size:22px;font-weight:700;color:var(--c7)}
+.sl{font-size:10px;color:var(--text3);margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0 22px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+th{text-align:left;padding:8px 10px;color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border2);background:var(--bg3)}
+td{padding:8px 10px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--text)}
+.tag{font-size:9.5px;background:var(--bg4);border-radius:10px;padding:1px 8px;color:var(--text3);white-space:nowrap}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:14px 18px;margin:14px 0}
+.box.blue{border-left-color:var(--c4)}
+.box.green{border-left-color:var(--ok)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:11.5px;color:var(--warn);font-family:Consolas,monospace}
+.total-row td{background:var(--bg3);font-weight:700;color:var(--text)}
+.chk{display:inline-flex;flex-wrap:wrap;gap:4px;max-width:520px}
+.chk input{width:15px;height:15px;accent-color:var(--c7);cursor:pointer}
+.prog{font-size:11px;color:var(--text3);white-space:nowrap}
+.prog b{color:var(--ok)}
+.phase-progress{position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5;border-bottom:1px solid var(--border);margin-bottom:6px}
+.pbar{height:8px;background:var(--bg3);border-radius:5px;overflow:hidden;margin-top:6px}
+.pbar-fill{height:100%;background:var(--c7);width:0%;transition:width .3s}
+li{margin-bottom:4px}
+ul{margin:0 0 12px 20px;color:var(--text2)}
+@media(max-width:768px){.wrap{padding:20px 14px 60px}table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="plan-auto-mobilite-10000.html">← Retour au plan complet</a>
+<div class="ey">Niche 7 · Auto & mobilité · Plan d'action détaillé</div>
+<h1>Plan d'action — toutes les tâches (≤ 1h chacune)</h1>
+<p class="lead">Découpage du plan complet en sessions de travail unitaires d'1h maximum. Chaque case cochée = une session terminée. La progression est sauvegardée automatiquement dans ce navigateur.</p>
+
+<div class="phase-progress">
+  <div class="srow" style="margin:0">
+    <div class="sc"><div class="sv" id="totalDone">0</div><div class="sl">Sessions faites</div></div>
+    <div class="sc"><div class="sv" id="totalAll">0</div><div class="sl">Sessions totales</div></div>
+    <div class="sc"><div class="sv" id="totalPct">0%</div><div class="sl">Avancement global</div></div>
+  </div>
+  <div class="pbar"><div class="pbar-fill" id="globalBar"></div></div>
+</div>
+
+<h2>P1 — Base de mots-clés (51 sessions ≈ 51h)</h2>
+<p>Par silo : expansion seed → autosuggest/PAA/concurrents → clustering par intention → dédup anti-cannibalisation → attribution silo/sous-cocon. 1 session ≈ 250 clusters de mots-clés.</p>
+<table id="tblP1">
+<thead><tr><th>Silo</th><th style="text-align:right">Clusters cibles</th><th style="text-align:right">Sessions</th><th>Sessions à cocher</th></tr></thead>
+<tbody></tbody>
+</table>
+
+<h2>P2 — Bases factuelles (22 sessions ≈ 22h)</h2>
+<p>Compilation + vérification web des données qui garantissent l'unicité de chaque page (prix, tarifs, specs, barèmes 2026).</p>
+<table id="tblP2">
+<thead><tr><th>Dataset</th><th style="text-align:right">Volume</th><th style="text-align:right">Sessions</th><th>Sessions à cocher</th></tr></thead>
+<tbody></tbody>
+</table>
+
+<h2>P3 — Mapping du maillage (5 sessions ≈ 5h)</h2>
+<p>Génération du fichier <code>maillage.json</code> (URL, hub, sous-hub, liens latéraux, ancres) avant toute rédaction.</p>
+<table id="tblP3">
+<thead><tr><th>Tâche</th><th style="text-align:right">Sessions</th><th>Sessions à cocher</th></tr></thead>
+<tbody></tbody>
+</table>
+
+<h2>P4 — Hubs & sous-hubs (22 sessions ≈ 22h)</h2>
+<p>130 pages hubs/sous-hubs à rédiger avant les articles. ~6 hubs/session (≈10 min/hub).</p>
+<table id="tblP4">
+<thead><tr><th>Lot</th><th style="text-align:right">Hubs/sous-hubs</th><th style="text-align:right">Sessions</th><th>Sessions à cocher</th></tr></thead>
+<tbody></tbody>
+</table>
+
+<h2>P5 — Production des 10 000 articles (440 sessions ≈ 440h)</h2>
+<p>Un silo à la fois (cocon complet). 1 session ≈ 25 articles (génération + QA unicité/liens/schema/méta). Coche au fur et à mesure des batchs publiés.</p>
+<table id="tblP5">
+<thead><tr><th>Silo</th><th style="text-align:right">Articles</th><th style="text-align:right">Sessions (×25 art.)</th><th>Progression</th></tr></thead>
+<tbody></tbody>
+</table>
+
+<h2>P6 — Indexation & itération (récurrent, hebdomadaire)</h2>
+<p>Pas des sessions de préparation mais un rituel hebdo tant que la publication est en cours (300–500 articles/semaine sur ~25 semaines).</p>
+<table>
+<thead><tr><th>Tâche hebdo</th><th>Détail</th><th style="text-align:right">Temps</th></tr></thead>
+<tbody>
+<tr><td>Générer/mettre à jour sitemap du silo publié</td><td>Sitemaps segmentés ≤ 2 000 URLs/silo</td><td class="num">15 min</td></tr>
+<tr><td>Soumettre à GSC</td><td>Nouveau sitemap + demande d'indexation des pages hubs</td><td class="num">10 min</td></tr>
+<tr><td>Vérifier indexation semaine précédente</td><td>Taux d'indexation, erreurs de crawl, couverture</td><td class="num">20 min</td></tr>
+<tr><td>Contrôle qualité aléatoire</td><td>5 articles tirés au sort : unicité, liens, affichage mobile</td><td class="num">20 min</td></tr>
+<tr><td>Revue des pages à 90 jours</td><td>Identifier pages sans clic/impression → liste de réécriture</td><td class="num">30 min</td></tr>
+</tbody>
+</table>
+
+<div class="box green">
+<strong>Ordre d'exécution recommandé :</strong> P1 et P2 peuvent démarrer en parallèle silo par silo. P3 ne peut se faire qu'une fois P1+P2 terminés pour un silo. P4 (hub du silo) se fait juste après P3 du silo. P5 (articles du silo) ne démarre qu'après son P4. P6 commence dès le premier silo publié et tourne en continu.</div>
+
+<script>
+const silos = [
+  ["🔧 Entretien & révision",1800],
+  ["🛠 Pannes & diagnostic",1300],
+  ["🏷 Marques & modèles",1400],
+  ["⚙️ Pièces détachées & accessoires",900],
+  ["🧪 Essais & comparatifs",800],
+  ["📄 Carte grise & démarches",450],
+  ["⚡ Électrique & hybride",700],
+  ["🛡 Assurance auto",400],
+  ["🎓 Permis & conduite",400],
+  ["🏍 Moto & scooter",500],
+  ["🚗 Achat voiture neuve",300],
+  ["🚙 Voiture d'occasion",300],
+  ["🚲 Vélo & nouvelles mobilités",250],
+  ["🚐 Camping-car & van",250],
+  ["🧳 Road trips & voyage auto",350],
+  ["🏁 Sport auto & passion",250],
+  ["⛽ Carburants & consommation",200],
+  ["🚌 Mobilité partagée & transports",250],
+  ["🛻 Utilitaires & flottes pro",200]
+];
+
+const p2 = [
+  ["25 prestations entretien × tarifs (fourchettes, temps MO)",25,1],
+  ["Croisement 25 prestations × 40 marques/modèles (mapping prix)",1000,1],
+  ["600 codes OBD (P0xxx/P2xxx) — lot 1/4",150,1],
+  ["600 codes OBD — lot 2/4",150,1],
+  ["600 codes OBD — lot 3/4",150,1],
+  ["600 codes OBD — lot 4/4",150,1],
+  ["80 voyants/messages tableau de bord",80,1],
+  ["450 modèles — fiabilité/pannes connues — lot 1/9",50,1],
+  ["450 modèles — lot 2/9",50,1],
+  ["450 modèles — lot 3/9",50,1],
+  ["450 modèles — lot 4/9",50,1],
+  ["450 modèles — lot 5/9",50,1],
+  ["450 modèles — lot 6/9",50,1],
+  ["450 modèles — lot 7/9",50,1],
+  ["450 modèles — lot 8/9",50,1],
+  ["450 modèles — lot 9/9 (dont EV + moto)",50,1],
+  ["20 familles de pièces × specs/équipementiers",20,1],
+  ["30 démarches carte grise/administratives × cas",30,1],
+  ["Barèmes assurance (garanties, profils, sinistres)",1,1],
+  ["Barèmes permis (points, infractions, examens 2026)",1,1],
+  ["Destinations road trip × péages/vignettes par pays",40,1],
+  ["Data EV (autonomie, recharge, bornes) + data moto (permis, équipement)",1,1]
+];
+
+const p3 = [
+  ["Script de génération du mapping (url, hub, sous-hub, ancres)",1],
+  ["Génération + QA mapping — silos 1 à 5",1],
+  ["Génération + QA mapping — silos 6 à 10",1],
+  ["Génération + QA mapping — silos 11 à 15",1],
+  ["Génération + QA mapping — silos 16 à 19",1]
+];
+
+const p4batches = [
+  ["Lot 1 (silos Entretien + Pannes)",7,2],
+  ["Lot 2 (silos Marques + Pièces)",6,1],
+  ["Lot 3 (silos Essais + Carte grise)",6,1],
+  ["Lot 4 (silos Électrique + Assurance)",6,1],
+  ["Lot 5 (silos Permis + Moto)",6,1],
+  ["Lot 6 (silos Achat neuf + Occasion)",6,1],
+  ["Lot 7 (silos Vélo + Camping-car)",6,1],
+  ["Lot 8 (silos Road trips + Sport auto)",6,1],
+  ["Lot 9 (silos Carburants + Mobilité partagée)",6,1],
+  ["Lot 10 (silo Utilitaires + réserve/révisions)",8,2]
+];
+
+function chunkCount(n, size){ return Math.ceil(n/size); }
+
+function buildChecks(containerId, count){
+  return count;
+}
+
+function renderChecksCell(prefix, count){
+  let html = '<span class="chk">';
+  for(let i=1;i<=count;i++){
+    html += `<input type="checkbox" data-id="${prefix}-${i}">`;
+  }
+  html += '</span> <span class="prog" data-progfor="'+prefix+'"></span>';
+  return html;
+}
+
+function renderTable(tblId, rows, sizePerSession){
+  const tbody = document.querySelector('#'+tblId+' tbody');
+  let html = '';
+  let totalSessions = 0;
+  rows.forEach((r,idx)=>{
+    const [label, volume] = r;
+    const sessions = chunkCount(volume, sizePerSession);
+    totalSessions += sessions;
+    const prefix = tblId+'-'+idx;
+    html += `<tr><td>${label}</td><td class="num">${volume.toLocaleString('fr-FR')}</td><td class="num">${sessions}</td><td>${renderChecksCell(prefix,sessions)}</td></tr>`;
+  });
+  html += `<tr class="total-row"><td>TOTAL</td><td></td><td class="num">${totalSessions}</td><td></td></tr>`;
+  tbody.innerHTML = html;
+}
+
+function renderP2(){
+  const tbody = document.querySelector('#tblP2 tbody');
+  let html='';
+  p2.forEach((r,idx)=>{
+    const [label, volume, sessions] = r;
+    const prefix = 'p2-'+idx;
+    html += `<tr><td>${label}</td><td class="num">${volume.toLocaleString('fr-FR')}</td><td class="num">${sessions}</td><td>${renderChecksCell(prefix,sessions)}</td></tr>`;
+  });
+  document.querySelector('#tblP2 tbody').innerHTML = html;
+}
+
+function renderP3(){
+  let html='';
+  p3.forEach((r,idx)=>{
+    const [label, sessions] = r;
+    const prefix = 'p3-'+idx;
+    html += `<tr><td>${label}</td><td class="num">${sessions}</td><td>${renderChecksCell(prefix,sessions)}</td></tr>`;
+  });
+  document.querySelector('#tblP3 tbody').innerHTML = html;
+}
+
+function renderP4(){
+  let html='';
+  p4batches.forEach((r,idx)=>{
+    const [label, hubs, sessions] = r;
+    const prefix = 'p4-'+idx;
+    html += `<tr><td>${label}</td><td class="num">${hubs}</td><td class="num">${sessions}</td><td>${renderChecksCell(prefix,sessions)}</td></tr>`;
+  });
+  document.querySelector('#tblP4 tbody').innerHTML = html;
+}
+
+// P1: 250 clusters/session
+renderTable('tblP1', silos, 250);
+renderP2();
+renderP3();
+renderP4();
+// P5: 25 articles/session
+renderTable('tblP5', silos, 25);
+
+// persistence + progress
+const KEY = 'autoseo-auto-mobilite-actions-v1';
+function loadState(){ try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){return {};} }
+function saveState(s){ localStorage.setItem(KEY, JSON.stringify(s)); }
+let state = loadState();
+
+function applyState(){
+  document.querySelectorAll('input[type=checkbox][data-id]').forEach(cb=>{
+    cb.checked = !!state[cb.dataset.id];
+  });
+  updateAllProgress();
+}
+
+function updateAllProgress(){
+  const groups = {};
+  document.querySelectorAll('input[type=checkbox][data-id]').forEach(cb=>{
+    const prefix = cb.dataset.id.split('-').slice(0,-1).join('-');
+    groups[prefix] = groups[prefix] || {done:0,total:0};
+    groups[prefix].total++;
+    if(cb.checked) groups[prefix].done++;
+  });
+  Object.keys(groups).forEach(prefix=>{
+    const el = document.querySelector(`[data-progfor="${prefix}"]`);
+    if(el) el.innerHTML = `<b>${groups[prefix].done}</b>/${groups[prefix].total}`;
+  });
+  const all = document.querySelectorAll('input[type=checkbox][data-id]');
+  const done = document.querySelectorAll('input[type=checkbox][data-id]:checked').length;
+  document.getElementById('totalDone').textContent = done;
+  document.getElementById('totalAll').textContent = all.length;
+  const pct = all.length ? Math.round(done/all.length*100) : 0;
+  document.getElementById('totalPct').textContent = pct+'%';
+  document.getElementById('globalBar').style.width = pct+'%';
+}
+
+document.addEventListener('change', e=>{
+  if(e.target.matches('input[type=checkbox][data-id]')){
+    state[e.target.dataset.id] = e.target.checked;
+    saveState(state);
+    updateAllProgress();
+  }
+});
+
+applyState();
+</script>
+
+</div>
+</body>
+</html>

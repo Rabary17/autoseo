@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan de production — 10 000 articles Auto & mobilité</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c7:#f97316;--c4:#4f8ef7;--ok:#4caf7d;--warn:#f5a623}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 28px 80px}
+a{color:var(--c4)}
+.back{display:inline-block;font-size:11px;color:var(--text2);text-decoration:none;background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:5px 12px;margin-bottom:22px}
+.back:hover{background:var(--bg4);color:var(--text)}
+.ey{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c7);margin-bottom:6px}
+h1{font-size:26px;font-weight:700;line-height:1.25;margin-bottom:10px}
+.lead{font-size:14px;color:var(--text2);max-width:800px;margin-bottom:26px}
+h2{font-size:18px;font-weight:700;margin:40px 0 6px;padding-top:18px;border-top:1px solid var(--border);color:var(--c7)}
+h3{font-size:14px;font-weight:700;margin:20px 0 6px}
+p{color:var(--text2);margin-bottom:10px;max-width:850px}
+ul{margin:0 0 12px 20px;color:var(--text2)}
+li{margin-bottom:5px}
+strong{color:var(--text)}
+.srow{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.sc{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:12px 18px;text-align:center;min-width:110px}
+.sv{font-size:22px;font-weight:700;color:var(--c7)}
+.sl{font-size:10px;color:var(--text3);margin-top:2px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin:12px 0 18px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+th{text-align:left;padding:8px 10px;color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border2);background:var(--bg3)}
+td{padding:8px 10px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--text)}
+.tag{font-size:9.5px;background:var(--bg4);border-radius:10px;padding:1px 8px;color:var(--text3);white-space:nowrap}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:14px 18px;margin:14px 0}
+.box.blue{border-left-color:var(--c4)}
+.box.green{border-left-color:var(--ok)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:11.5px;color:var(--warn);font-family:Consolas,monospace}
+.formula{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 14px;font-family:Consolas,monospace;font-size:12px;color:var(--text);margin:10px 0;overflow-x:auto}
+.total-row td{background:var(--bg3);font-weight:700;color:var(--text)}
+@media(max-width:768px){.wrap{padding:20px 14px 60px}table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<a class="back" href="pbn-taxonomy-complete.html">← Retour au fichier mère (PBN Taxonomy)</a>
+<div class="ey">Niche 7 · Auto & mobilité · Plan de production</div>
+<h1>Plan complet — 10 000 articles uniques Auto & mobilité</h1>
+<p class="lead">Basé sur la taxonomie enrichie du fichier mère (19 catégories, ~110 sous-catégories) et sur l'analyse des structures des concurrents leaders de la base ereferer : <strong>Vroomly</strong> (prestation × marque), <strong>iTurbo</strong> (pièce × marque), <strong>Turbo.fr</strong> (essai × segment + pages marques), <strong>Guichet Carte Grise</strong> (démarche × cas), <strong>Le Repaire des Motards</strong> (équipement × type), <strong>Motor1/Caroom</strong> (guides d'achat). Le marché : 1 472 sites FR concurrents, DA médian 16, trafic médian ~2 visites/mois — un site structuré en cocons avec du contenu réellement utile domine ce parc.</p>
+
+<div class="srow">
+  <div class="sc"><div class="sv">10 000</div><div class="sl">Articles cibles</div></div>
+  <div class="sc"><div class="sv">19</div><div class="sl">Silos (catégories)</div></div>
+  <div class="sc"><div class="sv">~110</div><div class="sl">Sous-cocons</div></div>
+  <div class="sc"><div class="sv">7</div><div class="sl">Moteurs programmatiques</div></div>
+  <div class="sc"><div class="sv">≤3</div><div class="sl">Clics de profondeur</div></div>
+</div>
+
+<h2>1. Architecture : 3 niveaux + allocation des 10 000 articles</h2>
+<p>Structure en <strong>cocon sémantique</strong> : <code>Accueil → Silo (hub) → Sous-cocon (sous-hub) → Articles</code>. Chaque silo a une page hub pilier (2 500–4 000 mots) qui cible le mot-clé de tête et distribue le jus vers ses sous-hubs. Chaque sous-cocon a un sous-hub (1 500–2 500 mots) qui liste et maille ses articles enfants.</p>
+<table>
+<thead><tr><th>Silo</th><th>Type de contenu dominant</th><th>Moteur principal</th><th style="text-align:right">Articles</th></tr></thead>
+<tbody>
+<tr><td>🔧 Entretien & révision</td><td>Tutos + pages prestation×marque×modèle</td><td><span class="tag">M1 Prestation×Véhicule</span></td><td class="num">1 800</td></tr>
+<tr><td>🛠 Pannes & diagnostic</td><td>Pages symptôme / voyant / code défaut</td><td><span class="tag">M2 Codes & symptômes</span></td><td class="num">1 300</td></tr>
+<tr><td>🏷 Marques & modèles</td><td>Fiches fiabilité / problèmes connus / entretien par modèle</td><td><span class="tag">M3 Fiche modèle</span></td><td class="num">1 400</td></tr>
+<tr><td>⚙️ Pièces détachées & accessoires</td><td>Pages pièce×marque + comparatifs accessoires</td><td><span class="tag">M4 Pièce×Marque</span></td><td class="num">900</td></tr>
+<tr><td>🧪 Essais & comparatifs</td><td>Comparatifs modèle vs modèle, guides segment</td><td><span class="tag">M5 Versus</span></td><td class="num">800</td></tr>
+<tr><td>📄 Carte grise & démarches</td><td>Guides démarche × cas particulier</td><td><span class="tag">M6 Démarche×Cas</span></td><td class="num">450</td></tr>
+<tr><td>⚡ Électrique & hybride</td><td>Guides + fiches modèle EV + recharge</td><td><span class="tag">M3 + édito</span></td><td class="num">700</td></tr>
+<tr><td>🛡 Assurance auto</td><td>Guides garanties, profils, sinistres</td><td><span class="tag">Édito + M6</span></td><td class="num">400</td></tr>
+<tr><td>🎓 Permis & conduite</td><td>Guides examens, points, infractions</td><td><span class="tag">Édito + M6</span></td><td class="num">400</td></tr>
+<tr><td>🏍 Moto & scooter</td><td>Guides + équipement + fiches moto</td><td><span class="tag">M3 + M4</span></td><td class="num">500</td></tr>
+<tr><td>🚗 Achat voiture neuve</td><td>Guides d'achat, leasing, négociation</td><td><span class="tag">Édito</span></td><td class="num">300</td></tr>
+<tr><td>🚙 Voiture d'occasion</td><td>Guides achat/vente/cote/vices cachés</td><td><span class="tag">Édito</span></td><td class="num">300</td></tr>
+<tr><td>🚲 Vélo & nouvelles mobilités</td><td>Comparatifs VAE/EDPM + réglementation</td><td><span class="tag">Édito + M5</span></td><td class="num">250</td></tr>
+<tr><td>🚐 Camping-car & van</td><td>Guides achat, aménagement, voyage</td><td><span class="tag">Édito</span></td><td class="num">250</td></tr>
+<tr><td>🧳 Road trips & voyage auto</td><td>Itinéraires × destination + pratique</td><td><span class="tag">M7 Itinéraire</span></td><td class="num">350</td></tr>
+<tr><td>🏁 Sport auto & passion</td><td>Guides circuits, collection, tuning légal</td><td><span class="tag">Édito</span></td><td class="num">250</td></tr>
+<tr><td>⛽ Carburants & consommation</td><td>Guides E85/GPL, éco-conduite</td><td><span class="tag">Édito</span></td><td class="num">200</td></tr>
+<tr><td>🚌 Mobilité partagée & transports</td><td>Guides covoiturage, location, VTC</td><td><span class="tag">Édito</span></td><td class="num">250</td></tr>
+<tr><td>🛻 Utilitaires & flottes pro</td><td>Guides choix, fiscalité, LLD pro</td><td><span class="tag">Édito</span></td><td class="num">200</td></tr>
+<tr class="total-row"><td>TOTAL</td><td></td><td>+ ~130 pages hubs/sous-hubs</td><td class="num">10 000</td></tr>
+</tbody>
+</table>
+
+<h2>2. Les 7 moteurs programmatiques (comment atteindre 10 000 sans dupliquer)</h2>
+<p>Un moteur programmatique = un <strong>template éditorial</strong> croisé avec une <strong>base de données factuelle</strong> (marques, modèles, prestations, codes, tarifs). Chaque page est unique parce que ses données le sont. C'est exactement le modèle des leaders crawlés (Vroomly : « Vidange Renault », « Vidange Peugeot »… ; iTurbo : « Turbo pour Audi », « Turbo pour BMW »…).</p>
+
+<h3>M1 — Prestation × Véhicule (entretien) → ~1 800 pages</h3>
+<div class="formula">25 prestations (vidange, freins, embrayage, distribution, clim, géométrie…) × 40 marques/modèles populaires ≈ 1 000 pages « prix & guide »<br>+ 800 tutos génériques et déclinaisons (quand, comment, soi-même vs garage, symptômes d'usure)</div>
+<ul><li>Données uniques par page : fourchette de prix, périodicité constructeur, temps de main-d'œuvre, spécificités du modèle (ex. courroie humide PureTech).</li><li>Requêtes cibles : <code>vidange [marque] prix</code>, <code>changement embrayage [modèle] coût</code>.</li></ul>
+
+<h3>M2 — Codes défaut, voyants & symptômes → ~1 300 pages</h3>
+<div class="formula">600 codes OBD courants (P0xxx/P2xxx…) + 80 voyants/messages tableau de bord × déclinaisons marque + 250 pages symptôme (« bruit », « fumée », « vibration » × contexte)</div>
+<ul><li>Template : signification → causes classées par probabilité → gravité (rouler ou pas) → coût réparation → procédure de diagnostic.</li><li>Trafic très qualifié, quasi zéro concurrence de qualité en FR sur la longue traîne des codes.</li></ul>
+
+<h3>M3 — Fiches modèle → ~1 700 pages (réparties silos Marques, EV, Moto)</h3>
+<div class="formula">~450 modèles (thermique + EV + motos) × 3–4 angles : « fiabilité & problèmes connus », « entretien & coûts », « occasion : quelle année acheter », « versions & motorisations à éviter »</div>
+
+<h3>M4 — Pièce × Marque → ~900 pages</h3>
+<div class="formula">20 familles de pièces (turbo, injecteurs, FAP, EGR, alternateur, embrayage…) × 40 marques + comparatifs équipementiers (Valeo vs LUK…)</div>
+
+<h3>M5 — Comparatifs « versus » & guides segment → ~800 pages</h3>
+<div class="formula">Duels de modèles concurrents (Clio vs 208…), segments × budget (« meilleur SUV à moins de 25 000 € »), classements annuels actualisables</div>
+
+<h3>M6 — Démarche × Cas particulier → ~700 pages (carte grise, assurance, permis)</h3>
+<div class="formula">30 démarches (cession, duplicata, import, malus, points…) × cas particuliers (héritage, divorce, véhicule étranger, leasing, mineur…) — modèle Guichet Carte Grise</div>
+
+<h3>M7 — Itinéraires road trip → ~350 pages</h3>
+<div class="formula">Destinations France/Europe × durée (week-end, 7 jours, 15 jours) + pages pratiques par pays (vignette, péages, règles)</div>
+
+<div class="box">
+<strong>Règle anti-cannibalisation :</strong> 1 mot-clé principal = 1 seule URL. Avant production, la base de mots-clés est dédupliquée par cluster (regroupement des variantes par intention identique dans un même article). Un article couvre un cluster de 5–15 variantes, jamais un mot-clé isolé. 10 000 articles = ~100 000 mots-clés de longue traîne couverts.</div>
+
+<h2>3. Maillage interne (à définir AVANT production)</h2>
+<p>Le maillage est calculé automatiquement à partir de la taxonomie — chaque article naît avec ses liens. Règles :</p>
+<table>
+<thead><tr><th>Type de lien</th><th>Règle</th><th>Volume par article</th></tr></thead>
+<tbody>
+<tr><td><strong>Montant (vers hub)</strong></td><td>Chaque article lie son sous-hub (ancre exacte du sous-cocon) et son hub silo (ancre élargie). Breadcrumb systématique <code>Accueil › Silo › Sous-cocon › Article</code>.</td><td class="num">2 + breadcrumb</td></tr>
+<tr><td><strong>Descendant (hub → enfants)</strong></td><td>Hub lie tous ses sous-hubs ; sous-hub lie tous ses articles (liste éditorialisée, pas un simple listing).</td><td class="num">10–40</td></tr>
+<tr><td><strong>Latéral (même cocon)</strong></td><td>3–5 liens contextuels dans le corps vers des articles frères du même sous-cocon. Sélection par proximité sémantique (même entité : modèle, prestation, code).</td><td class="num">3–5</td></tr>
+<tr><td><strong>Transversal (cocon → cocon)</strong></td><td>Max 1–2, uniquement si entité partagée (ex. fiche « Renault Clio » ← lien depuis « vidange Renault » et « assurance jeune conducteur »). Jamais de lien transversal aléatoire.</td><td class="num">0–2</td></tr>
+<tr><td><strong>Ancres</strong></td><td>Rotation : 40 % ancre exacte partielle, 30 % ancre naturelle longue, 20 % entité seule, 10 % générique. Jamais 2 fois la même ancre exacte vers la même URL depuis le même cocon.</td><td class="num">—</td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Profondeur ≤ 3 clics</strong> depuis l'accueil pour 100 % des 10 000 pages (garanti par la structure hub → sous-hub → article).</li>
+<li><strong>Pages money</strong> (comparatifs C/T à fort potentiel monétisation) reçoivent chacune ≥ 8 liens entrants internes depuis les pages info du même cocon.</li>
+<li>Le graphe de maillage est généré dans un fichier de mapping (CSV/JSON : <code>url, hub, sous_hub, liens_lateraux[], ancres[]</code>) <em>avant</em> la rédaction — chaque article est produit avec ses liens déjà résolus.</li>
+</ul>
+
+<h2>4. Unicité & qualité (se démarquer des 1 472 concurrents)</h2>
+<ul>
+<li><strong>Data d'abord</strong> : chaque template programmatique injecte des données factuelles propres (prix relevés, périodicités constructeur, specs, barèmes 2026). Deux pages du même template ne partagent aucune phrase — la structure varie (6–8 variantes de plan par template, rotation des angles d'introduction).</li>
+<li><strong>E-E-A-T</strong> : page auteur (profil mécanicien/journaliste auto), sources citées (constructeurs, Sécurité routière, service-public.fr), dates de mise à jour visibles, avis d'expert encadré par article.</li>
+<li><strong>Enrichissements</strong> : tableaux de prix, FAQ schema.org, encadrés « gravité/urgence », calculs (coût/an, rentabilité E85), images/schémas propres.</li>
+<li><strong>Quotas d'intention</strong> : ~65 % Info / 25 % Commercial / 10 % Transactionnel — profil naturel qui porte les pages money.</li>
+<li><strong>Longueurs variées</strong> : 800–1 200 mots (programmatique), 1 500–2 500 (guides), 2 500–4 000 (hubs). Pas de longueur uniforme.</li></ul>
+
+<h2>5. Pipeline de production en 6 phases</h2>
+<table>
+<thead><tr><th>Phase</th><th>Livrable</th><th>Détail</th></tr></thead>
+<tbody>
+<tr><td><strong>P1 — Base de mots-clés</strong></td><td>~100 000 kw clusterisés → 10 000 clusters</td><td>Expansion des 650 mots-clés seed du fichier mère (autosuggest, PAA, concurrents), clustering par intention, dédup anti-cannibalisation, attribution silo/sous-cocon.</td></tr>
+<tr><td><strong>P2 — Bases factuelles</strong></td><td>Datasets marques/modèles/prestations/codes/tarifs</td><td>Les 7 moteurs ont besoin de leurs données : 450 modèles, 25 prestations × tarifs, 600 codes OBD, 30 démarches. C'est ce qui garantit l'unicité.</td></tr>
+<tr><td><strong>P3 — Mapping maillage</strong></td><td>Fichier <code>maillage.json</code> (10 000 lignes)</td><td>URL, title, kw principal, cluster, hub, sous-hub, liens latéraux, ancres — généré par script depuis la taxonomie.</td></tr>
+<tr><td><strong>P4 — Hubs d'abord</strong></td><td>19 hubs + ~110 sous-hubs</td><td>Publiés en premier : le squelette du site existe avant les articles, chaque article publié a immédiatement ses parents.</td></tr>
+<tr><td><strong>P5 — Production par batchs</strong></td><td>Batchs de 100–250 articles / silo</td><td>Un silo à la fois (cocon complet publié d'un bloc), templates + données + maillage pré-résolus. QA automatique : unicité (similarité &lt; 20 %), liens valides, schema, méta.</td></tr>
+<tr><td><strong>P6 — Indexation & itération</strong></td><td>Sitemaps segmentés + monitoring</td><td>Sitemaps par silo (≤ 2 000 URLs), publication progressive 300–500 articles/semaine (un site neuf qui publie 10 000 pages en 1 jour grille son crawl budget), suivi indexation GSC, réécriture des pages à faible performance après 90 jours.</td></tr>
+</tbody>
+</table>
+
+<div class="box blue">
+<strong>Cadence recommandée :</strong> 400 articles/semaine → <strong>25 semaines (~6 mois)</strong> pour les 10 000. Rythme soutenable pour l'indexation d'un domaine neuf. Avec un domaine expiré à historique auto, on peut monter à 700/semaine (~4 mois).</div>
+
+<h2>6. Estimation du temps (pour moi, Claude)</h2>
+<table>
+<thead><tr><th>Tâche</th><th>Temps estimé</th><th>Remarque</th></tr></thead>
+<tbody>
+<tr><td>P1 — Génération + clustering des 10 000 clusters de mots-clés</td><td class="num">2–4 h</td><td>Par batchs par silo, en sessions successives.</td></tr>
+<tr><td>P2 — Bases factuelles (modèles, prestations, codes, démarches)</td><td class="num">3–5 h</td><td>Compilation + vérification web des tarifs/barèmes 2026.</td></tr>
+<tr><td>P3 — Script + fichier de maillage complet</td><td class="num">~1 h</td><td>Généré automatiquement depuis la taxonomie.</td></tr>
+<tr><td>P4 — 130 hubs & sous-hubs rédigés</td><td class="num">1–2 jours</td><td>~10 min/hub en batch.</td></tr>
+<tr><td>P5 — 10 000 articles</td><td class="num">~15–25 jours de génération effective</td><td>~2–3 min/article en pipeline parallèle (génération + QA). En pratique étalé sur 4–6 mois pour suivre la cadence d'indexation.</td></tr>
+<tr class="total-row"><td>Préparation complète (P1–P4) avant le 1er article</td><td class="num">~1 semaine de sessions</td><td>C'est la partie qui conditionne toute la qualité.</td></tr>
+</tbody>
+</table>
+
+<div class="box green">
+<strong>Prochaine étape concrète :</strong> lancer P1 sur les 2 premiers silos (Entretien & révision + Pannes & diagnostic = 3 100 articles, le cœur du trafic) : génération des clusters de mots-clés complets avec volumes estimés, puis P2 (base prestations × 40 marques + 600 codes OBD).</div>
+
+<p style="margin-top:30px;font-size:11px;color:var(--text3)">Sources concurrentielles : base ereferer 08/07/2026 (1 472 sites FR Auto & Moto / Transport & Véhicules) · structures crawlées : turbo.fr, vroomly.com, iturbo.fr, guichetcartegrise.com, lerepairedesmotards.com, fr.motor1.com, caroom.fr, autojournal.fr, insideevs.fr, automobile-sportive.com · Publithings SEO — 2026</p>
+</div>
+</body>
+</html>
