@@ -1,0 +1,82 @@
+[
+  {
+    "code": "P0500",
+    "libelle": "Circuit capteur de vitesse vehicule (VSS) - dysfonctionnement",
+    "causes_possibles": "Capteur de vitesse defaillant, cablage endommage, connecteur oxyde ; peut affecter compteur de vitesse, regulateur de vitesse et changements de rapports",
+    "gravite": "modere",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0505",
+    "libelle": "Systeme de controle du ralenti - dysfonctionnement",
+    "causes_possibles": "Probleme du systeme de controle du regime de ralenti, corps de papillon encrasse, capteur associe defaillant",
+    "gravite": "modere",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0560",
+    "libelle": "Tension du systeme - probleme general",
+    "causes_possibles": "Tension du systeme electrique hors plage (batterie, alternateur, cablage) — code EOBD standardise",
+    "gravite": "modere",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0562",
+    "libelle": "Tension systeme trop faible",
+    "causes_possibles": "Batterie faible ou defaillante, alternateur sous-charge, mauvaise connexion electrique",
+    "gravite": "severe",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0563",
+    "libelle": "Tension systeme trop elevee",
+    "causes_possibles": "Alternateur en surcharge, regulateur de tension defaillant",
+    "gravite": "severe",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0600",
+    "libelle": "Defaillance de la liaison de communication serie (bus de communication)",
+    "causes_possibles": "Tension batterie/charge basse ou instable (cause la plus frequente), module electronique deconnecte du reseau, cablage CAN endommage",
+    "gravite": "severe",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0700",
+    "libelle": "Defaillance systeme de controle de transmission (code informatif general)",
+    "causes_possibles": "Code generique du calculateur de boite automatique (TCM) indiquant un defaut general — necessite lecture des codes associes pour identifier la cause precise",
+    "gravite": "modere",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0705",
+    "libelle": "Circuit capteur position selecteur de vitesse (PRNDL) - dysfonctionnement",
+    "causes_possibles": "Capteur de position du selecteur defaillant, cablage, calibration",
+    "gravite": "modere",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0715",
+    "libelle": "Circuit capteur vitesse d'entree/turbine - dysfonctionnement",
+    "causes_possibles": "Capteur de vitesse d'entree defaillant (usure interne, chaleur), cablage endommage, corps de vanne (valve body) defaillant, capteur de temperature liquide de refroidissement, solenoides de passage de vitesse",
+    "gravite": "severe",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0720",
+    "libelle": "Circuit capteur vitesse de sortie - dysfonctionnement",
+    "causes_possibles": "Capteur de vitesse de sortie de boite defaillant, interruption du signal detectee par le calculateur (ECM/PCM)",
+    "gravite": "severe",
+    "source": "samsara.com, autozone.com, club.auto-doc.fr, mister-turbo.com, icarsoft.com, rohnertparktransmission.com, mytransmissionexperts.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  }
+]

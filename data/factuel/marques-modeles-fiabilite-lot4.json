@@ -1,0 +1,86 @@
+[
+  {
+    "modele": "Volvo XC40",
+    "score_fiabilite": "fiabilite mecanique correcte mais electronique fragile",
+    "pannes_courantes": "pannes electroniques frequentes (cle, systeme multimedia/infodivertissement — pannes completes, ecrans geles ; aides a la conduite) ; dilution de gazole dans l'huile sur versions diesel en usage urbain court (FAP qui ne regenere pas correctement) ; grincements de sieges et toit ouvrant ; usure rapide des freins",
+    "source": "iems.fr, auto-doc.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Volvo XC60 (2e generation)",
+    "score_fiabilite": "electronique sophistiquee generant des pannes ponctuelles frustrantes, mecanique jugee solide selon avis proprietaires",
+    "pannes_courantes": "capteur de niveau AdBlue affichant regulierement des erreurs fantomes (fausses alertes)",
+    "source": "piecesauto-pro.fr, caradisiac.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Suzuki Vitara (generation 4)",
+    "score_fiabilite": "tres fiable selon temoignage long terme (8 ans, 12-15000km/an, aucune panne)",
+    "pannes_courantes": "usure des freins signalee sur version boite automatique (pas un defaut majeur)",
+    "source": "caradisiac.com (avis proprietaire) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Suzuki (marque, plusieurs modeles Swift/Vitara/S-Cross)",
+    "score_fiabilite": "2e marque automobile la plus fiable selon Test Achats 2023 (derriere Lexus, devant Subaru)",
+    "pannes_courantes": "aucun defaut majeur recurrent signale par modele dans cette source",
+    "source": "suzuki.be (communication officielle relayant etude Test Achats) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda CR-V (moteur 2.0L i-MMD hybride, 2020+)",
+    "score_fiabilite": "relativement fiable, tres peu de pannes lourdes, pieces d'usure durables",
+    "pannes_courantes": "aucun defaut majeur recurrent signale sur cette motorisation recente",
+    "source": "autojournal.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Honda CR-V 4 (2012-2019)",
+    "score_fiabilite": "temoignages tres positifs (0 panne de 45 000 a 130 000km en usage quotidien intense selon un proprietaire)",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie dans les temoignages consultes",
+    "source": "caradisiac.com (avis proprietaire) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda CR-V (2007-2013, moteur 2.2 i-DTEC/CTDI diesel)",
+    "score_fiabilite": "fiabilite sans faille selon plusieurs temoignages longue duree (225 000km, 356 000km)",
+    "pannes_courantes": "aucune panne signalee hors usure normale",
+    "source": "fiches-auto.fr (temoignages) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda CR-V I (1995-2001, moteur essence serie B20)",
+    "score_fiabilite": "moteur reussi, mais probleme mecanique specifique documente",
+    "pannes_courantes": "mecanisme de direction moins durable pouvant provoquer des vibrations en conduite (probleme partage avec d'autres Honda de la meme periode)",
+    "source": "video YouTube (source moins formelle, a recouper) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mitsubishi ASX (moteur 2.0 MIVEC essence, 2010-2022)",
+    "score_fiabilite": "tres bonne",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie pour cette motorisation",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mitsubishi ASX Diesel 1.8 DI-D 150",
+    "score_fiabilite": "compact et fiable selon source specialisee",
+    "pannes_courantes": "aucun defaut majeur recurrent detaille dans l'extrait consulte",
+    "source": "carverif.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mitsubishi Outlander PHEV (hybride rechargeable 188-190ch cumules, 2014-2025)",
+    "score_fiabilite": "excellente selon guide d'achat",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie pour cette motorisation hybride",
+    "source": "vpn-autos.com, carverif.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mitsubishi Space Star (moteur 1.2 MIVEC essence 3 cylindres, 2013-2025)",
+    "score_fiabilite": "bonne",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie pour cette motorisation",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

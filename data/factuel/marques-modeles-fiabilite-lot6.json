@@ -1,0 +1,86 @@
+[
+  {
+    "modele": "Honda HR-V (2015-2022, moteurs 1.6/2.2 i-DTEC diesel)",
+    "score_fiabilite": "generalement fiable, quelques points d'attention rapportes",
+    "pannes_courantes": "batterie 12V a remplacer tous les 3-4 ans (semble sous-dimensionnee) ; reception radio aleatoire par temps humide ; pedale d'embrayage qui grince ; sonde admission air ; fuites d'huile au carter au-dela de 200 000km ; boite CVT prend du jeu avec le temps (conduite moins agreable sur autoroute)",
+    "source": "fiches-auto.fr, auto-land.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Honda HR-V (generation actuelle, hybride)",
+    "score_fiabilite": "avis positif sur le cote economique (consommation 5,2-5,4L/100km rapportee)",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie dans le temoignage consulte",
+    "source": "caradisiac.com (avis proprietaire) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Compass (moteur 1.4 MultiAir turbo)",
+    "score_fiabilite": "turbo reconnu comme point faible majeur",
+    "pannes_courantes": "pertes de puissance progressives, a-coups a l'acceleration a froid, defaillances turbo des 40 000-60 000km ; garantie constructeur parfois partielle (70% des frais pris en charge selon temoignages) ; chaine de distribution et phaseurs egalement signales comme sources de bruits",
+    "source": "garagevoltaire.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Jeep Compass 2 (temoignages divers)",
+    "score_fiabilite": "tres variable selon les temoignages, certains proprietaires tres insatisfaits",
+    "pannes_courantes": "ecran tactile qui se decolle (defaut de fabrication documente, devis concession 4500€ vs 700€ chez un specialiste independant), mise en securite du vehicule pour probleme de batterie des 4500km, panne Start&Stop des 5800km rapportees par un proprietaire",
+    "source": "caradisiac.com (avis proprietaires) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Renegade (temoignages positifs)",
+    "score_fiabilite": "bonne selon plusieurs temoignages long terme (100 000km+ sans souci majeur pour un proprietaire)",
+    "pannes_courantes": "aucun souci particulier rapporte par plusieurs proprietaires multi-Jeep (contredit partiellement les retours negatifs sur Compass — la fiabilite semble varier fortement selon modele/motorisation/exemplaire)",
+    "source": "forum-auto.matmut.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Land Rover Discovery Sport (moteur 2.0 TD4 150)",
+    "score_fiabilite": "moins bonne que l'Evoque sur le meme bloc mecanique",
+    "pannes_courantes": "casses moteur plus frequentes que sur l'Evoque (6 cas sur 29 avis analyses), problemes turbo moderes, pannes AdBlue mineures comparees a l'Evoque, peu de problemes electroniques",
+    "source": "iems.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Land Rover Range Rover Evoque (meme moteur 2.0 TD4 150)",
+    "score_fiabilite": "casses moteur moins rapportees que sur Discovery Sport, mais autres points faibles",
+    "pannes_courantes": "problemes turbo plus frequents que sur Discovery Sport, pannes AdBlue recurrentes et couteuses, soucis electroniques reguliers",
+    "source": "iems.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Land Rover Discovery Sport (temoignages divers)",
+    "score_fiabilite": "tres variable, d'excellent a deconseille selon les temoignages",
+    "pannes_courantes": "un proprietaire (88 000km, 9 ans) ne rapporte qu'un souci mineur (commande magnetique compresseur clim mal fixee) et une batterie changee ; d'autres temoignages deconseillent fermement la marque suite a des pannes multiples non detaillees",
+    "source": "forum-auto.matmut.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Land Rover (moteurs divers, temoignages fiches-auto.fr)",
+    "score_fiabilite": "variable, plusieurs pannes lourdes documentees",
+    "pannes_courantes": "turbo hors service (2.0 Sd4 240ch, 126 000km), turbo et chaine de distribution casses a 145 000km (2.0 TD4 150), probleme d'affichage boite de vitesses avec extinction/rallumage moteur (3.0 Td6 258ch)",
+    "source": "fiches-auto.fr (temoignages) — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Cupra Formentor (plateforme MQB)",
+    "score_fiabilite": "moins fiable que certains concurrents japonais/coreens selon la source, mais correct si bien entretenu",
+    "pannes_courantes": "plateforme et blocs moteur techniquement bien maitrises ; la majorite des pannes documentees viennent de la combinaison electronique complexe + entretien neglige plutot que d'un defaut mecanique intrinseque",
+    "source": "premiumcarsprovence.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "DS7 Crossback (diesel BlueHDi, systeme AdBlue)",
+    "score_fiabilite": "point de defaillance majeur identifie sur le systeme AdBlue",
+    "pannes_courantes": "cristallisation possible de l'uree dans le circuit d'injection AdBlue, pouvant empecher l'injection dans le systeme SCR et conduire a une immobilisation du vehicule sans alerte prealable — panne consideree comme l'une des plus redoutees par les proprietaires",
+    "source": "premiumcarsprovence.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "DS7 Crossback (moteur essence PureTech)",
+    "score_fiabilite": "correcte mais pas irreprochable",
+    "pannes_courantes": "ameliorations apportees sur les versions recentes concernant certains composants sensibles, mais problemes encore signales selon retours d'utilisateurs partages",
+    "source": "conseil-auto-moto.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

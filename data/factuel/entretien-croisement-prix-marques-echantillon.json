@@ -1,0 +1,43 @@
+{
+  "note_couverture": "Echantillon representatif du croisement '25 prestations x 40 marques/modeles' vise par le plan (1000 entrees). Ce fichier couvre 3 prestations x plusieurs marques/modeles a titre d'echantillon initial, pas l'exhaustivite. A completer par croisements supplementaires lors d'une session dediee.",
+  "budget_entretien_annuel_par_marque": [
+    {"marque": "Dacia", "budget_annuel_estime": "400-500€", "source": "lejournalauto.com — consulte 2026-07 (via Tavily)", "a_verifier": true},
+    {"marque": "Toyota", "budget_annuel_estime": "500-650€", "source": "lejournalauto.com — consulte 2026-07 (via Tavily)", "a_verifier": true},
+    {"marque": "Renault", "budget_annuel_estime": "550-700€", "source": "lejournalauto.com — consulte 2026-07 (via Tavily)", "a_verifier": true}
+  ],
+  "vidange": {
+    "prix_moyen_general": "90€ (source generaliste, tous modeles confondus)",
+    "frequence": "tous les ans (ou selon kilometrage constructeur)",
+    "note_specifique": "Dacia Sandero : revision classique generalement <200€ en garage independant (conception simple, moteurs essence atmospheriques/GPL reputes solides) ; Toyota Yaris Hybride : reconnue pour sa rentabilite a long terme et ses faibles couts d'entretien",
+    "source": "groupama.fr, autoplus.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  "plaquettes_de_frein": {
+    "prix_moyen_general": "100-150€ (source generaliste)",
+    "frequence": "tous les 30 000km",
+    "par_modele": [
+      {"modele": "Renault Clio IV 1.5 dCi 75ch", "prix_observe": "jeu de 4 plaquettes avant ~25-55€ (piece seule, hors MO, exemple Oscaro)", "source": "oscaro.com — consulte 2026-07 (via Tavily)", "a_verifier": true},
+      {"modele": "Dacia Sandero", "prix_observe": "prix moyen constate pour l'intervention complete (plaquettes avant, pose comprise) : 98,28€", "source": "idgarages.com — consulte 2026-07 (via Tavily)", "a_verifier": false}
+    ],
+    "source": "groupama.fr, oscaro.com, idgarages.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  "courroie_de_distribution": {
+    "prix_piece_seule_par_marque": [
+      {"marque": "Renault", "prix": "8€ a 73€ (courroie seule, hors kit complet et MO)"},
+      {"marque": "Peugeot", "prix": "10€ a 92€"},
+      {"marque": "Volkswagen", "prix": "10€ a 142€"},
+      {"marque": "BMW", "prix": "9€ a 103€"},
+      {"marque": "Toyota", "prix": "18€ a 164€"}
+    ],
+    "prix_intervention_complete_par_modele": [
+      {"modele": "Peugeot 308 HDi", "prix": "prix marche moyen 519€, fourchette basse via comparateur de devis 424€"},
+      {"modele": "Renault Clio III 1.5 dCi", "prix": "513€ a 632€"},
+      {"modele": "Peugeot/Citroen/Renault Clio (kit equipementier standard type Gates/Continental/SKF/Dayco)", "prix": "non chiffre precisement, presente comme 'abordable' comparativement au risque de destruction moteur (3000-8000€)"}
+    ],
+    "note_chaine_distribution": "Volkswagen generation EA211 (avant 2013) a chaine de distribution reconnue fragile — cout du kit de distribution revise en cas de defaillance : 1500€ a 2500€. VW a abandonne la chaine sur la generation EA211 suivante des 2013.",
+    "note_technique": "la pompe a eau est generalement entrainee par la courroie de distribution et son remplacement est presque toujours propose en meme temps que la courroie et les galets (deconseille de refuser cette option)",
+    "source": "blog.vpn-autos.com, chaine-courroie.com, la-piece-auto.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  }
+}

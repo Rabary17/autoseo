@@ -1,0 +1,100 @@
+{
+  "capital_points": {
+    "permis_normal": 12,
+    "permis_probatoire_classique_ou_conduite_supervisee": 6,
+    "permis_probatoire_apres_aac": 6,
+    "reconstitution_probatoire_classique": "+2 points par an pendant 3 ans si aucune infraction avec retrait",
+    "reconstitution_probatoire_aac": "+3 points par an pendant 2 ans si aucune infraction avec retrait (conduite accompagnee)",
+    "duree_probatoire_classique_ou_supervisee": "3 ans",
+    "duree_probatoire_aac": "2 ans",
+    "duree_probatoire_reduite": "18 mois si formation complementaire de 7h suivie entre le 6e et le 12e mois",
+    "interruption_reconstitution": "toute infraction avec retrait de points interrompt le compteur annuel de reconstitution jusqu'a la fin de la periode probatoire",
+    "source": "legipermis.com, ornikar.com, monpetitpermis.fr, permisapoints.fr — consulte 2026-07",
+    "a_verifier": false
+  },
+  "recuperation_points": {
+    "delai_recuperation_totale_infraction_mineure": "2 ans sans nouvelle infraction avec retrait",
+    "delai_recuperation_totale_infraction_grave": "3 ans sans nouvelle infraction avec retrait (infractions ayant entraine un retrait de plusieurs points ou delit)",
+    "recuperation_via_stage": "4 points restitues apres un stage de sensibilisation a la securite routiere (1 stage par an maximum, dans la limite du capital de 12 points)",
+    "source": "service-public.gouv.fr, securite-routiere.gouv.fr, mesamendes.fr — consulte 2026-07",
+    "a_verifier": false
+  },
+  "plafond_retrait_par_controle": {
+    "regle": "le retrait total de points est plafonne a 8 points par evenement/controle, sauf certains cumuls specifiques",
+    "source": "securite-routiere.gouv.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "bareme_infractions": [
+    {
+      "infraction": "Conduite sous l'emprise de l'alcool (taux delictuel, ou recidive)",
+      "points_retires": 6,
+      "notes": "delit, sanctions penales complementaires possibles (suspension, amende, peine de prison en cas de recidive ou taux tres eleve)",
+      "source": "service-public.gouv.fr, permisapoints.fr — consulte 2026-07",
+      "a_verifier": false
+    },
+    {
+      "infraction": "Conduite apres usage de stupefiants",
+      "points_retires": "6 a 9 (peut se cumuler avec l'alcool selon les sources)",
+      "notes": "delit, sanctions penales complementaires",
+      "source": "securite-routiere.gouv.fr, mesamendes.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Franchissement d'un feu rouge ou d'un stop",
+      "points_retires": 4,
+      "notes": "amende forfaitaire de 135€",
+      "source": "service-public.gouv.fr, legipermis.com — consulte 2026-07",
+      "a_verifier": false
+    },
+    {
+      "infraction": "Exces de vitesse (selon l'ampleur du depassement)",
+      "points_retires": "1 a 6",
+      "notes": "1 point si depassement <20km/h (agglo) ou <30km/h (hors agglo) ; jusqu'a 6 points pour depassement >=50km/h (grand exces de vitesse, delit)",
+      "source": "public.codesrousseau.fr, permisapoints.fr, securite-routiere.gouv.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Telephone tenu en main au volant",
+      "points_retires": 3,
+      "notes": "amende forfaitaire de 135€",
+      "source": "service-public.gouv.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Non-port de la ceinture de securite",
+      "points_retires": 3,
+      "notes": "amende forfaitaire de 135€",
+      "source": "service-public.gouv.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Non-respect des distances de securite",
+      "points_retires": 3,
+      "notes": "amende forfaitaire de 135€",
+      "source": "service-public.gouv.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Circulation ou stationnement dangereux sur bande d'arret d'urgence",
+      "points_retires": 3,
+      "notes": "amende forfaitaire de 135€",
+      "source": "service-public.gouv.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Depassement dangereux",
+      "points_retires": 3,
+      "notes": "amende forfaitaire de 135€",
+      "source": "service-public.gouv.fr — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "infraction": "Stage obligatoire en periode probatoire",
+      "points_retires": 0,
+      "notes": "toute infraction entrainant un retrait de 3 points ou plus impose un stage de sensibilisation obligatoire dans les 4 mois suivant la notification (periode probatoire uniquement)",
+      "source": "legipermis.com, service-public.gouv.fr — consulte 2026-07",
+      "a_verifier": false
+    }
+  ],
+  "note_generale": "Bareme complet des infractions non exhaustif ici (dataset compact P2, silo Permis & conduite). Pour un article detaille sur une infraction specifique, verifier le montant exact et le retrait de points sur service-public.gouv.fr ou securite-routiere.gouv.fr avant publication, les bareme precis par infraction n'ayant pas tous ete confirmes individuellement dans cette passe de recherche."
+}

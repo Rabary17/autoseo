@@ -1,0 +1,345 @@
+{
+  "silo": "Essais & comparatifs",
+  "seeds": {
+    "essai citadine polyvalente": {
+      "sub": "Essais par segment",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:00.622Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:02.056Z"
+    },
+    "essai SUV familial": {
+      "sub": "Essais par segment",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:03.429Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:04.495Z"
+    },
+    "essai berline routière": {
+      "sub": "Essais par segment",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:06.190Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:07.292Z"
+    },
+    "essai sportive compacte": {
+      "sub": "Essais par segment",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:08.879Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:09.945Z"
+    },
+    "essai micro-citadine": {
+      "sub": "Essais par segment",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:11.367Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:12.356Z"
+    },
+    "Peugeot 208 vs Renault Clio": {
+      "sub": "Comparatifs face-à-face",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:13.806Z",
+      "candidates": [
+        {
+          "keyword": "peugeot 208 vs renault clio 2018",
+          "volume": 10,
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio iv",
+          "volume": 10,
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio",
+          "volume": 10,
+          "competition": 0.0816,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 4",
+          "volume": 10,
+          "competition": 0.1429,
+          "source": "match"
+        },
+        {
+          "keyword": "citroën c3 vs peugeot 208 vs renault clio",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "pneus peugeot 208 vs renault clio",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "pneu peugeot 208 vs renault clio",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "nouvelle peugeot 208 vs renault clio",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 2021",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "essai comparatif peugeot 208 vs renault clio 4 vs volkswagen polo",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "essai comparatif peugeot 208 vs. renault clio 4 vs. volkswagen polo",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 2023",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio (2023)",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 2024",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 5",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 2013",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peugeot 208 vs renault clio 2025",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "citroen c3 vs peugeot 208 vs renault clio",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T06:37:15.027Z"
+    },
+    "Dacia Duster vs concurrence": {
+      "sub": "Comparatifs face-à-face",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:16.464Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:17.469Z"
+    },
+    "Tesla vs BYD comparatif": {
+      "sub": "Comparatifs face-à-face",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:18.900Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:19.913Z"
+    },
+    "SUV hybrides comparatif": {
+      "sub": "Comparatifs face-à-face",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:21.313Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:22.321Z"
+    },
+    "avis propriétaires fiabilité": {
+      "sub": "Avis long terme",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:23.719Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:24.721Z"
+    },
+    "essai longue durée bilan": {
+      "sub": "Avis long terme",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:26.114Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:27.119Z"
+    },
+    "coût entretien 100000 km": {
+      "sub": "Avis long terme",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:28.514Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:29.519Z"
+    },
+    "que vaut après 5 ans": {
+      "sub": "Avis long terme",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:30.925Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:31.944Z"
+    },
+    "nouveautés auto 2026": {
+      "sub": "Nouveautés & salons",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:33.407Z",
+      "candidates": [
+        {
+          "keyword": "nouveautés auto 2026",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T06:37:34.617Z"
+    },
+    "salon de l'auto calendrier": {
+      "sub": "Nouveautés & salons",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:36.120Z",
+      "candidates": [
+        {
+          "keyword": "salon de l auto calendrier",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T06:37:37.198Z"
+    },
+    "futurs modèles attendus": {
+      "sub": "Nouveautés & salons",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:38.602Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:39.652Z"
+    },
+    "restylage nouveautés gamme": {
+      "sub": "Nouveautés & salons",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:41.007Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:42.027Z"
+    },
+    "concept car dévoilé": {
+      "sub": "Concept-cars & anticipation",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:43.362Z",
+      "candidates": [
+        {
+          "keyword": "quel est le nom du dernier concept car dévoilé par dacia",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T06:37:44.558Z"
+    },
+    "future génération modèle": {
+      "sub": "Concept-cars & anticipation",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:46.044Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:47.067Z"
+    },
+    "plateforme électrique nouvelle": {
+      "sub": "Concept-cars & anticipation",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:48.483Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:49.479Z"
+    },
+    "technologies embarquées futures": {
+      "sub": "Concept-cars & anticipation",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T06:37:50.880Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T06:37:51.925Z"
+    }
+  }
+}

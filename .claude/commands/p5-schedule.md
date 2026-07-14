@@ -10,8 +10,8 @@ Applique les règles de [skills/wordpress-publication.md](../../skills/wordpress
 2. Pour chacune, vérifie la checklist de gating (section 5) : si une condition échoue, laisse en statut `en rédaction`/`draft` et liste le motif — ne jamais programmer un article qui échoue le gating.
 3. Pour celles qui passent le gating, assigne l'auteur selon le mapping silo → persona (section 4) si pas déjà fait.
 4. Trie la file selon l'ordre de priorité (section 6 : hubs > sous-hubs > volume de recherche décroissant > quota d'intention étalé > silo en cours avant silo suivant).
-5. Calcule `post_date` à raison de **5 articles maximum par jour** par site, jamais avant la date de publication de son hub/sous-hub parent, heures réparties dans la journée.
+5. Calcule `post_date` selon le système à 3 phases de [wordpress-publication.md](../../skills/wordpress-publication.md) section 6 : **10 pages/jour en phase 0** (homepage/hubs/sous-hubs), **aucune publication en phase 1** (pause indexation), **15 articles/jour maximum en phase 2** (rythme de croisière, un seul silo à la fois, palier à augmenter uniquement sur décision explicite de l'utilisateur) — jamais avant la date de publication de son hub/sous-hub parent, heures réparties dans la journée.
 6. Met à jour `post_status = future` et `post_date` sur les articles WordPress concernés (via WP REST API ou WP-CLI), et le statut `programmé` + `date_publication` dans `tracking-mots-cles.xlsx`.
-7. Termine par un résumé : nombre programmés, nombre bloqués (avec motifs), date du dernier article programmé de la file, et rappelle la conséquence arithmétique du plafond de 5/jour si le volume total dépasse plusieurs mois de file (voir [skills/wordpress-publication.md](../../skills/wordpress-publication.md) section 6).
+7. Termine par un résumé : nombre programmés, nombre bloqués (avec motifs), date du dernier article programmé de la file, et rappelle la conséquence arithmétique du plafond de 15/jour si le volume total dépasse plusieurs mois de file (voir [skills/wordpress-publication.md](../../skills/wordpress-publication.md) section 6).
 
 Ne jamais forcer `post_status = publish` pour contourner la planification.

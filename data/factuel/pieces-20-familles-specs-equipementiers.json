@@ -1,0 +1,162 @@
+[
+  {
+    "famille": "Plaquettes de frein",
+    "equipementiers_reconnus": ["Brembo", "Bosch", "Ferodo", "Valeo", "TRW"],
+    "specs_notes": "gammes organique/semi-metallique/ceramique selon usage (ville/sport) ; Brembo repere haute performance, Bosch semi-metallique repandu",
+    "prix_indicatif": "Valeo 25-60€, Bosch 35-85€ selon reference/gamme (jeu de plaquettes hors MO)",
+    "source": "la-piece-auto.com, biba-ricambi.eu, carter-cash.com, mister-auto.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "famille": "Amortisseurs",
+    "equipementiers_reconnus": ["Sachs", "Bilstein", "KYB", "Monroe"],
+    "specs_notes": "Bilstein/KYB positionnes entree/milieu de gamme pour vehicules courants, Bilstein B4 = remplacement OE typique ; ecarts de fermete/confort selon gamme",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "shockwarehouse.com, swedespeed.com, bilstein.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Kit d'embrayage",
+    "equipementiers_reconnus": ["LuK", "Sachs", "Valeo"],
+    "specs_notes": "kit complet = disque + butee + mecanisme (fourchette selon vehicule) ; adaptables LuK/Sachs/Valeo correspondent generalement aux specs d'origine, durabilite variable selon gamme",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "auto-doc.fr, piecesetpneus.com, mister-auto.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Kit de distribution (courroie + galets + pompe a eau)",
+    "equipementiers_reconnus": ["Gates", "Contitech", "Dayco"],
+    "specs_notes": "kit Gates ref. type PowerGrip, dimensions variables selon moteur (nombre de dents, largeur ~25,4mm typique)",
+    "prix_indicatif": "kit complet avec pompe a eau observe a 459,99€ (Gates KP35678XS-1, exemple Norauto)",
+    "source": "norauto.fr, oscaro.com, dayco.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "famille": "Batterie 12V",
+    "equipementiers_reconnus": ["Bosch", "Varta", "Yuasa"],
+    "specs_notes": "capacite exprimee en Ah (ex: 36-40 Ah pour citadine), CCA (Cold Cranking Amps) pour le demarrage a froid ; norme de marquage EU1103:2010 pour la capacite",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "boschaftermarket.com, yuasa.com, varta-automotive.com, parkers.co.uk — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Filtres (huile, air, habitacle, carburant)",
+    "equipementiers_reconnus": ["Mann-Filter", "Bosch", "Mahle"],
+    "specs_notes": "filtre habitacle Bosch Workshop annonce 99% d'efficacite a 3 microns ; Mann Frecious Plus = filtre 3 couches, poids 270g (le plus lourd d'un comparatif)",
+    "prix_indicatif": "filtre habitacle observe a ~18€ (Mann Frecious Plus, exemple)",
+    "source": "mahle-aftermarket.com, boschautoparts.com, mann-filter.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Bougies d'allumage",
+    "equipementiers_reconnus": ["NGK", "Bosch", "Denso"],
+    "specs_notes": "materiaux : iridium/ruthenium (NGK), platine/iridium (Bosch), iridium/platine (Denso) ; duree de vie moyenne 60 000-100 000 km selon materiau",
+    "prix_indicatif": "grande variabilite selon marche/reference, non chiffre precisement en euros dans cette recherche",
+    "source": "densoautoparts.com, getradingeg.com, ngk.com.au — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Pneus",
+    "equipementiers_reconnus": ["Michelin", "Continental", "Bridgestone", "Pirelli"],
+    "specs_notes": "indices de vitesse (ex: H) et de charge normalises, motifs de bande de roulement optimises traction/usure/tenue de route, gammes specifiques VE (compatibilite 'VE-Compatible' chez Continental)",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "utires.com, continental-tires.com, michelinman.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Turbo",
+    "equipementiers_reconnus": ["Garrett", "BorgWarner"],
+    "specs_notes": "Garrett propose des gammes reconditionnees 'Original Reman' (calibration standards d'origine) et 'Original MaxLife' ; specs techniques (taille de roue compresseur/turbine) variables selon modele",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "garrettmotion.com, borgwarner.com, br-turbo.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Injecteurs (essence et diesel)",
+    "equipementiers_reconnus": ["Bosch", "Denso", "Delphi"],
+    "specs_notes": "debit exprime en cc/min ou lb/hr selon reference ; Bosch souvent plus cher en zones a forte presence OEM, Denso competitif sur vehicules japonais, Delphi oriente flottes/poids lourds diesel ; reconditionnement possible pour reduire le cout",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "as-diesel.com, quickbitz.com.au, injector-rehab.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Echappement (silencieux, ligne complete, catalyseur)",
+    "equipementiers_reconnus": ["Bosal", "Walker"],
+    "specs_notes": "Bosal generalement legerement plus cher que Walker selon retours utilisateurs (forums), performance/durabilite jugees comparables",
+    "prix_indicatif": "environ 150€ pose comprise pour un silencieux (exemple forum, ordre de grandeur non officiel)",
+    "source": "forum-auto.caradisiac.com, pneusavantagesplus.com (sources forums, moins fiables que sites officiels) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Alternateur",
+    "equipementiers_reconnus": ["Valeo", "Bosch", "Denso"],
+    "specs_notes": "12V standard sur vehicules particuliers ; alternateurs reconditionnes Denso passent par un processus de reconditionnement complet (stators/redresseurs verifies)",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "oscaro.com, valeo.com, densoautoparts.com, denso-am.eu — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Demarreur",
+    "equipementiers_reconnus": ["Valeo", "Bosch", "Denso"],
+    "specs_notes": "puissance nominale courante 1,9-2 kW en 12V, nombre de dents variable (11-12 dents typique) selon application ; equivalents premier montage (memes equipementiers que constructeurs) recommandes en meilleur compromis qualite/prix",
+    "prix_indicatif": "demarreur Valeo observe entre 209€ et selon reference (exemples Oscaro/Trodo)",
+    "source": "piecesetpneus.com (blog), trodo.fr, oscaro.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "famille": "Radiateur et pompe a eau (systeme de refroidissement)",
+    "equipementiers_reconnus": ["Nissens", "Behr", "Valeo"],
+    "specs_notes": "differences principalement sur finitions (couleur du bouchon) selon retours utilisateurs ; Behr propose des radiateurs specifiques par modele",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "123comparer.fr, e46fanatics.com (forum), mister-auto.gf — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Phares / optiques (halogene, xenon, LED)",
+    "equipementiers_reconnus": ["Hella", "Valeo", "Osram"],
+    "specs_notes": "3 technologies principales : halogene, xenon (HID), LED ; gammes Osram Xenarc Cool Blue/Night Breaker annoncees jusqu'a +220% de luminosite vs minimum legal",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "valeoservice.us, osram.fr, osram.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Pare-brise et vitrage",
+    "equipementiers_reconnus": ["Saint-Gobain Sekurit", "Pilkington"],
+    "specs_notes": "ecarts de prix significatifs entre origine et equivalent (200-600€ pour une meme intervention selon compatibilite ADAS/calibration camera)",
+    "prix_indicatif": "200-600€ selon vehicule/technologie ADAS (fourchette generale de remplacement)",
+    "source": "mrbonplan.com, saint-gobain-sekurit.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Balais d'essuie-glace",
+    "equipementiers_reconnus": ["Bosch", "Valeo"],
+    "specs_notes": "tailles normalisees par vehicule (tableau de correspondance constructeur necessaire), Valeo propose plus de 150 moteurs d'essuie-glace pour systemes avant/arriere",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "boschwiperblades.com, valeoservice.fr, mister-auto.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Capteurs moteur (sonde lambda, debitmetre MAF)",
+    "equipementiers_reconnus": ["Bosch", "Denso", "NTK/NGK"],
+    "specs_notes": "sonde lambda a chauffage integre (code couleur des fils specifique par reference/marque), debitmetre MAF a insertion simple dans le conduit d'admission",
+    "prix_indicatif": "non chiffre precisement dans cette recherche",
+    "source": "denso-am.eu, boschaftermarket.com, denso-technic.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "famille": "Retroviseurs",
+    "equipementiers_reconnus": ["donnees insuffisantes dans cette passe de recherche"],
+    "specs_notes": "non recherche specifiquement dans cette session — a completer",
+    "prix_indicatif": "non recherche",
+    "source": "non recherche",
+    "a_verifier": true
+  },
+  {
+    "famille": "Radiateurs de climatisation / condenseurs",
+    "equipementiers_reconnus": ["donnees insuffisantes dans cette passe de recherche"],
+    "specs_notes": "non recherche specifiquement dans cette session — a completer (recouvre partiellement le radiateur moteur deja traite)",
+    "prix_indicatif": "non recherche",
+    "source": "non recherche",
+    "a_verifier": true
+  }
+]

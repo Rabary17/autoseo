@@ -4,10 +4,12 @@ Stack technique de référence pour les sites de la plateforme.
 
 ## 1. Répartition des rôles
 
-- **Backend : WordPress** — utilisé comme CMS de gestion de contenu (rédaction, custom post types par type de page : article, hub, sous-hub, fiche modèle...), stockage des données factuelles (via ACF ou champs custom), gestion des médias, et exposition via **WP REST API** (ou GraphQL si WPGraphQL installé).
-- **Front : NestJS** — consomme les données WordPress via l'API et sert les pages au visiteur. Ne pas afficher le thème WordPress natif en front public : NestJS gère le rendu, le routing, le cache et l'optimisation de performance (voir [design.md](design.md)).
+- **Backend : WordPress** — utilisé comme CMS de gestion de contenu (rédaction, catégories = silos/sous-cocons, ACF pour les champs factuels), stockage des médias, et exposition via **WP REST API**.
+- **Front : Next.js 15 (App Router), export 100 % statique** (`output: "export"`) — consomme les données WordPress via l'API **au moment du build**, jamais côté navigateur. Ne pas afficher le thème WordPress natif en front public : Next.js gère le rendu, le routing et l'optimisation de performance (voir [design.md](design.md)).
+  - **Décision du 2026-07-11** (test « monauto ») : remplace le choix initial NestJS de ce document. Un export statique pur (pas de SSR/ISR, pas de serveur Node à héberger) est plus rapide, moins coûteux à héberger et plus simple à maintenir sur un réseau de dizaines de sites, pour un contenu qui change rarement une fois publié. Voir [docs/architecture-headless.md](../docs/architecture-headless.md) pour l'implémentation complète et le détail de cette décision.
+  - Le site est reconstruit (`npm run build`) à chaque publication WordPress — automatisable via le webhook du mu-plugin `wp-content/mu-plugins/monauto-headless.php` branché sur le "build hook" de l'hébergeur statique choisi (Cloudflare Pages/Netlify).
 
-Ce découpage headless permet : vitesse (le front n'a pas le poids de WordPress au rendu), sécurité (admin WordPress non exposé publiquement au-delà de l'API), et réutilisation d'un même moteur NestJS pour plusieurs niches/sites du réseau.
+Ce découpage headless permet : vitesse (le visiteur ne reçoit que du HTML/CSS statique, aucun poids WordPress ni serveur Node au rendu), sécurité (admin WordPress non exposé publiquement, domaine WP marqué `noindex`), et réutilisation d'un même gabarit Next.js pour plusieurs niches/sites du réseau.
 
 ## 2. WordPress (backend)
 
@@ -27,6 +29,7 @@ Installation minimale, volontairement épurée — un site WordPress de ce rése
 |---|---|---|
 | **SEOPress** | `wp-seopress` | SEO on-page (titres, meta, sitemap, schema de base) — voir [seo.md](seo.md) section 5 |
 | **Advanced Custom Fields (ACF)** | `advanced-custom-fields` | Champs factuels structurés (prix, tarifs, specs, codes) — voir section 2 ci-dessus |
+| **Imagify** | `imagify` | Compression + conversion WebP des images à l'upload, sur les seules tailles réellement utilisées par le front (voir docs/architecture-headless.md section 9) — nécessite une clé API Imagify (gratuite, à créer et renseigner soi-même dans Réglages > Imagify, jamais par un agent) |
 
 Tout autre plugin présent par défaut sur un nouveau site/thème (page builder de type Elementor, WooCommerce, Yoast, formulaires, plugins marketing, plugins de démo du thème...) est **désinstallé** avant de démarrer la production de contenu — voir procédure de nettoyage ci-dessous. Ce sont soit des doublons fonctionnels (Yoast fait doublon avec SEOPress), soit hors du périmètre d'un site de contenu SEO/GEO headless (WooCommerce, Elementor).
 
@@ -47,22 +50,22 @@ Sur tout nouveau site WordPress rattaché à ce projet (test ou niche réelle), 
 - **Piège technique découvert en test** : l'endpoint REST des plugins (`/wp/v2/plugins/<dossier>/<fichier>`) attend un **slash littéral non encodé** dans l'URL entre le dossier et le fichier du plugin (ex. `elementor/elementor`). Un `encodeURIComponent()` qui transforme ce `/` en `%2F` fait échouer la requête avec `404 rest_plugin_not_found` alors que le plugin existe bien — ne jamais encoder ce slash précis.
 - La suppression de contenu (posts/pages/produits) nécessite `?force=true` dans l'URL de suppression pour un effacement définitif ; sans ce paramètre, WordPress met l'élément à la corbeille au lieu de le supprimer.
 
-## 3. NestJS (front)
+## 3. Next.js (front)
 
-- Récupère le contenu via un module dédié (service HTTP vers l'API WordPress), avec cache applicatif (Redis ou cache mémoire selon volume) pour éviter de retaper WordPress à chaque visite.
-- Rendu : privilégier du **SSG (Static Site Generation)** ou ISR (regénération incrémentale) plutôt que du SSR pur à chaque requête, vu que le contenu (10 000 pages) change rarement une fois publié — cohérent avec l'objectif de vitesse ([design.md](design.md)).
-- Un module NestJS par type de page (`ArticleModule`, `HubModule`, `SousHubModule`) qui applique son propre template et injecte le maillage résolu depuis `maillage.json` (voir [seo.md](seo.md) section 2 et [gestion-de-projet.md](gestion-de-projet.md)).
-- Génération des sitemaps segmentés par silo directement depuis NestJS (source de vérité = liste des pages publiées), synchronisés avec les règles de [seo.md](seo.md) (≤ 2 000 URLs/sitemap).
-- Génération du JSON-LD (schema.org) dans le rendu NestJS à partir des mêmes données WordPress, jamais dupliqué/désynchronisé entre les deux (voir [geo.md](geo.md)).
+- Récupère le contenu via `lib/wp.ts` (fetch vers l'API WordPress), exécuté **uniquement au build** — pas de cache applicatif nécessaire puisqu'il n'y a pas de requête runtime à WordPress une fois le site exporté.
+- Rendu : **export statique pur** (`output: "export"`), pas de SSR/ISR — cohérent avec l'objectif de vitesse ([design.md](design.md)) et plus simple à héberger (voir décision section 1).
+- Une route Next.js par type de page (`app/[slug]/page.tsx` pour article/page, `app/categorie/[slug]/page.tsx` pour hub/sous-hub, `app/auteur/[slug]/page.tsx`) qui applique son propre template et injecte le maillage résolu depuis `taxonomy.json`/`maillage.json` (voir [seo.md](seo.md) section 2 et [gestion-de-projet.md](gestion-de-projet.md)).
+- Génération du sitemap directement depuis Next.js (`app/sitemap.ts`, Next Metadata API), source de vérité = liste des pages publiées côté WordPress + `taxonomy.json` pour les hubs, synchronisés avec les règles de [seo.md](seo.md) (≤ 2 000 URLs/sitemap, à segmenter par silo au-delà).
+- Génération du JSON-LD (schema.org) dans le rendu Next.js (`lib/schema.ts`) à partir des mêmes données WordPress, jamais dupliqué/désynchronisé entre les deux (voir [geo.md](geo.md)).
 
 ## 4. Environnements et déploiement
 
-- Un environnement WordPress + une instance NestJS par niche, ou mutualisés si le volume le permet — à trancher au cas par cas selon l'hébergement.
-- Variables sensibles (clés API : Haloscan, WordPress, etc.) toujours en fichier `.env` non commité, jamais en dur dans le code ni exposées côté client (voir `.env` + `.gitignore` déjà en place à la racine du projet).
-- Toute clé API utilisée pour la génération de contenu (Haloscan, IA de rédaction...) reste **côté serveur uniquement** (scripts Node ou NestJS backend), jamais dans du JS servi au navigateur.
+- Un environnement WordPress + un export Next.js par niche/site, hébergement statique séparé (Cloudflare Pages/Netlify/GitHub Pages ou équivalent) — à trancher au cas par cas.
+- Variables sensibles (clés API : Haloscan, WordPress, etc.) toujours en fichier `.env`/`.env.local` non commité, jamais en dur dans le code ni exposées côté client (voir `.env` + `.gitignore` déjà en place à la racine du projet et dans `frontend/monauto/`).
+- Toute clé API utilisée pour la génération de contenu (Haloscan, IA de rédaction...) reste **côté serveur uniquement** (scripts Node), jamais dans du JS servi au navigateur. Le fetch WordPress du frontend Next.js (`lib/wp.ts`) ne lit que du contenu public déjà publié, sans clé d'API — il s'exécute au build, jamais dans le navigateur.
 
 ## 5. Anti-patterns à éviter
 
 - Ne pas afficher directement un thème WordPress classique en production publique si l'architecture headless est retenue — incohérence de stack et perte des gains de perf.
-- Ne pas dupliquer la logique de maillage à la fois dans WordPress (plugin de liens internes) et dans NestJS : une seule source de vérité (`maillage.json`), NestJS l'applique au rendu.
+- Ne pas dupliquer la logique de maillage à la fois dans WordPress (plugin de liens internes) et dans Next.js : une seule source de vérité (`taxonomy.json`/`maillage.json`), Next.js l'applique au rendu.
 - Ne pas faire d'appels API tiers (Haloscan, etc.) depuis le front NestJS exposé au navigateur — toujours depuis une couche serveur/scripts.

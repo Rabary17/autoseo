@@ -1,0 +1,3974 @@
+[
+  {
+    "url": "/permis-conduite/candidat-libre-permis-inscription",
+    "mot_cle_principal": "candidat libre permis inscription",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/auto-ecoles-financement",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/permis-1-euro-par-jour",
+      "/permis-conduite/auto-ecole-en-ligne-avis",
+      "/permis-conduite/cpf-permis-de-conduire-conditions"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "candidat libre permis inscription",
+      "naturelle_longue": "candidat libre permis inscription",
+      "entite_seule": "Auto-écoles & financement",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/auto-ecole-en-ligne-avis",
+    "mot_cle_principal": "auto-école en ligne avis",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/auto-ecoles-financement",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/cpf-permis-de-conduire-conditions",
+      "/permis-conduite/candidat-libre-permis-inscription",
+      "/permis-conduite/permis-1-euro-par-jour"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "auto-école en ligne avis",
+      "naturelle_longue": "tout savoir sur auto-école en ligne avis",
+      "entite_seule": "Auto-écoles & financement",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-1-euro-par-jour",
+    "mot_cle_principal": "permis 1 euro par jour",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/auto-ecoles-financement",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/auto-ecole-en-ligne-avis",
+      "/permis-conduite/candidat-libre-permis-inscription",
+      "/permis-conduite/cpf-permis-de-conduire-conditions"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis 1 euro par jour",
+      "naturelle_longue": "tout savoir sur permis 1 euro par jour",
+      "entite_seule": "Auto-écoles & financement",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/cpf-permis-de-conduire-conditions",
+    "mot_cle_principal": "CPF permis de conduire conditions",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/auto-ecoles-financement",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/auto-ecole-en-ligne-avis",
+      "/permis-conduite/candidat-libre-permis-inscription",
+      "/permis-conduite/permis-1-euro-par-jour"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "CPF permis de conduire conditions",
+      "naturelle_longue": "CPF permis de conduire conditions",
+      "entite_seule": "Auto-écoles & financement",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/passerelle-a2-vers-a",
+    "mot_cle_principal": "passerelle A2 vers A",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-moto-autres",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/permis-remorque-be-quand",
+      "/permis-conduite/permis-poids-lourd-financement-cpf",
+      "/permis-conduite/permis-a2-prix-formation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "passerelle A2 vers A",
+      "naturelle_longue": "tout savoir sur passerelle A2 vers A",
+      "entite_seule": "Permis moto & autres",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-a2-prix-formation",
+    "mot_cle_principal": "permis A2 prix formation",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-moto-autres",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/permis-remorque-be-quand",
+      "/permis-conduite/permis-poids-lourd-financement-cpf",
+      "/permis-conduite/passerelle-a2-vers-a"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis A2 prix formation",
+      "naturelle_longue": "tout savoir sur permis A2 prix formation",
+      "entite_seule": "Permis moto & autres",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-remorque-be-quand",
+    "mot_cle_principal": "permis remorque BE quand",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-moto-autres",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/passerelle-a2-vers-a",
+      "/permis-conduite/permis-a2-prix-formation",
+      "/permis-conduite/permis-poids-lourd-financement-cpf"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis remorque BE quand",
+      "naturelle_longue": "tout savoir sur permis remorque BE quand",
+      "entite_seule": "Permis moto & autres",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-poids-lourd-financement-cpf",
+    "mot_cle_principal": "permis poids lourd financement CPF",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-moto-autres",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/passerelle-a2-vers-a",
+      "/permis-conduite/permis-a2-prix-formation",
+      "/permis-conduite/permis-remorque-be-quand"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis poids lourd financement CPF",
+      "naturelle_longue": "permis poids lourd financement CPF",
+      "entite_seule": "Permis moto & autres",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/frein-moteur-utilisation",
+    "mot_cle_principal": "frein moteur utilisation",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/eco-conduite",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/consommation-ville-reduire",
+      "/permis-conduite/regulateur-adaptatif-consommation",
+      "/permis-conduite/eco-conduite-techniques-economies"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "frein moteur utilisation",
+      "naturelle_longue": "tout savoir sur frein moteur utilisation",
+      "entite_seule": "Éco-conduite",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/eco-conduite-techniques-economies",
+    "mot_cle_principal": "éco-conduite techniques économies",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/eco-conduite",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/frein-moteur-utilisation",
+      "/permis-conduite/regulateur-adaptatif-consommation",
+      "/permis-conduite/consommation-ville-reduire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "éco-conduite techniques économies",
+      "naturelle_longue": "éco-conduite techniques économies",
+      "entite_seule": "Éco-conduite",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/consommation-ville-reduire",
+    "mot_cle_principal": "consommation ville réduire",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/eco-conduite",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/regulateur-adaptatif-consommation",
+      "/permis-conduite/frein-moteur-utilisation",
+      "/permis-conduite/eco-conduite-techniques-economies"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "consommation ville réduire",
+      "naturelle_longue": "tout savoir sur consommation ville réduire",
+      "entite_seule": "Éco-conduite",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/regulateur-adaptatif-consommation",
+    "mot_cle_principal": "régulateur adaptatif consommation",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/eco-conduite",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/consommation-ville-reduire",
+      "/permis-conduite/eco-conduite-techniques-economies",
+      "/permis-conduite/frein-moteur-utilisation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "régulateur adaptatif consommation",
+      "naturelle_longue": "régulateur adaptatif consommation",
+      "entite_seule": "Éco-conduite",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/contestation-amende-radar",
+    "mot_cle_principal": "contestation amende radar",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/points-infractions",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/exces-de-vitesse-sanctions-bareme",
+      "/permis-conduite/permis-probatoire-perte-points",
+      "/permis-conduite/stage-recuperation-points-prix",
+      "/permis-conduite/consulter-solde-points-permis"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "contestation amende radar",
+      "naturelle_longue": "tout savoir sur contestation amende radar",
+      "entite_seule": "Points & infractions",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/stage-recuperation-points-prix",
+    "mot_cle_principal": "stage récupération points prix",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/points-infractions",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/consulter-solde-points-permis",
+      "/permis-conduite/permis-probatoire-perte-points",
+      "/permis-conduite/contestation-amende-radar",
+      "/permis-conduite/exces-de-vitesse-sanctions-bareme"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "stage récupération points prix",
+      "naturelle_longue": "stage récupération points prix",
+      "entite_seule": "Points & infractions",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-probatoire-perte-points",
+    "mot_cle_principal": "permis probatoire perte points",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/points-infractions",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/stage-recuperation-points-prix",
+      "/permis-conduite/contestation-amende-radar",
+      "/permis-conduite/exces-de-vitesse-sanctions-bareme",
+      "/permis-conduite/consulter-solde-points-permis"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis probatoire perte points",
+      "naturelle_longue": "permis probatoire perte points",
+      "entite_seule": "Points & infractions",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/consulter-solde-points-permis",
+    "mot_cle_principal": "consulter solde points permis",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/points-infractions",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/stage-recuperation-points-prix",
+      "/permis-conduite/exces-de-vitesse-sanctions-bareme",
+      "/permis-conduite/permis-probatoire-perte-points",
+      "/permis-conduite/contestation-amende-radar"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "consulter solde points permis",
+      "naturelle_longue": "tout savoir sur consulter solde points permis",
+      "entite_seule": "Points & infractions",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/exces-de-vitesse-sanctions-bareme",
+    "mot_cle_principal": "excès de vitesse sanctions barème",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/points-infractions",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/stage-recuperation-points-prix",
+      "/permis-conduite/permis-probatoire-perte-points",
+      "/permis-conduite/consulter-solde-points-permis",
+      "/permis-conduite/contestation-amende-radar"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "excès de vitesse sanctions barème",
+      "naturelle_longue": "excès de vitesse sanctions barème",
+      "entite_seule": "Points & infractions",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/angles-morts-poids-lourds",
+    "mot_cle_principal": "angles morts poids lourds",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/securite-routiere",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/distances-de-securite-regles",
+      "/permis-conduite/conduite-sur-neige-conseils",
+      "/permis-conduite/aquaplaning-reagir",
+      "/permis-conduite/alcool-au-volant-limites"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "angles morts poids lourds",
+      "naturelle_longue": "tout savoir sur angles morts poids lourds",
+      "entite_seule": "Sécurité routière",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/distances-de-securite-regles",
+    "mot_cle_principal": "distances de sécurité règles",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/securite-routiere",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/alcool-au-volant-limites",
+      "/permis-conduite/conduite-sur-neige-conseils",
+      "/permis-conduite/angles-morts-poids-lourds",
+      "/permis-conduite/aquaplaning-reagir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "distances de sécurité règles",
+      "naturelle_longue": "tout savoir sur distances de sécurité règles",
+      "entite_seule": "Sécurité routière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/conduite-sur-neige-conseils",
+    "mot_cle_principal": "conduite sur neige conseils",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/securite-routiere",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/distances-de-securite-regles",
+      "/permis-conduite/alcool-au-volant-limites",
+      "/permis-conduite/aquaplaning-reagir",
+      "/permis-conduite/angles-morts-poids-lourds"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "conduite sur neige conseils",
+      "naturelle_longue": "tout savoir sur conduite sur neige conseils",
+      "entite_seule": "Sécurité routière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/aquaplaning-reagir",
+    "mot_cle_principal": "aquaplaning réagir",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/securite-routiere",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/conduite-sur-neige-conseils",
+      "/permis-conduite/alcool-au-volant-limites",
+      "/permis-conduite/angles-morts-poids-lourds",
+      "/permis-conduite/distances-de-securite-regles"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "aquaplaning réagir",
+      "naturelle_longue": "tout savoir sur aquaplaning réagir",
+      "entite_seule": "Sécurité routière",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/alcool-au-volant-limites",
+    "mot_cle_principal": "alcool au volant limites",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/securite-routiere",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/angles-morts-poids-lourds",
+      "/permis-conduite/aquaplaning-reagir",
+      "/permis-conduite/conduite-sur-neige-conseils",
+      "/permis-conduite/distances-de-securite-regles"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "alcool au volant limites",
+      "naturelle_longue": "tout savoir sur alcool au volant limites",
+      "entite_seule": "Sécurité routière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/code-de-la-route-s-entrainer-gratuit",
+    "mot_cle_principal": "code de la route s'entraîner gratuit",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-b-code",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/conduite-accompagnee-aac-conditions",
+      "/permis-conduite/examen-permis-points-eliminatoires",
+      "/permis-conduite/permis-boite-automatique-b78",
+      "/permis-conduite/permis-b-prix-moyen"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "code de la route s'entraîner gratuit",
+      "naturelle_longue": "code de la route s'entraîner gratuit",
+      "entite_seule": "Permis B & code",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-b-prix-moyen",
+    "mot_cle_principal": "permis B prix moyen",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-b-code",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/examen-permis-points-eliminatoires",
+      "/permis-conduite/code-de-la-route-s-entrainer-gratuit",
+      "/permis-conduite/conduite-accompagnee-aac-conditions",
+      "/permis-conduite/permis-boite-automatique-b78"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis B prix moyen",
+      "naturelle_longue": "tout savoir sur permis B prix moyen",
+      "entite_seule": "Permis B & code",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/conduite-accompagnee-aac-conditions",
+    "mot_cle_principal": "conduite accompagnée AAC conditions",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-b-code",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/permis-boite-automatique-b78",
+      "/permis-conduite/permis-b-prix-moyen",
+      "/permis-conduite/code-de-la-route-s-entrainer-gratuit",
+      "/permis-conduite/examen-permis-points-eliminatoires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "conduite accompagnée AAC conditions",
+      "naturelle_longue": "conduite accompagnée AAC conditions",
+      "entite_seule": "Permis B & code",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/examen-permis-points-eliminatoires",
+    "mot_cle_principal": "examen permis points éliminatoires",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-b-code",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/conduite-accompagnee-aac-conditions",
+      "/permis-conduite/permis-b-prix-moyen",
+      "/permis-conduite/code-de-la-route-s-entrainer-gratuit",
+      "/permis-conduite/permis-boite-automatique-b78"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "examen permis points éliminatoires",
+      "naturelle_longue": "examen permis points éliminatoires",
+      "entite_seule": "Permis B & code",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/permis-conduite/permis-boite-automatique-b78",
+    "mot_cle_principal": "permis boîte automatique B78",
+    "silo": "Permis & conduite",
+    "sous_hub": "/permis-conduite/permis-b-code",
+    "hub": "/permis-conduite",
+    "liens_lateraux": [
+      "/permis-conduite/code-de-la-route-s-entrainer-gratuit",
+      "/permis-conduite/permis-b-prix-moyen",
+      "/permis-conduite/examen-permis-points-eliminatoires",
+      "/permis-conduite/conduite-accompagnee-aac-conditions"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis boîte automatique B78",
+      "naturelle_longue": "tout savoir sur permis boîte automatique B78",
+      "entite_seule": "Permis B & code",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-voiture-sans-permis",
+    "mot_cle_principal": "assurance voiture sans permis",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/assurances-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-voiture-collection-conditions",
+      "/assurance-auto/assurance-voiture-electrique-comparatif",
+      "/assurance-auto/assurance-temporaire-1-jour"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance voiture sans permis",
+      "naturelle_longue": "tout savoir sur assurance voiture sans permis",
+      "entite_seule": "Assurances spécifiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-voiture-collection-conditions",
+    "mot_cle_principal": "assurance voiture collection conditions",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/assurances-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-voiture-electrique-comparatif",
+      "/assurance-auto/assurance-temporaire-1-jour",
+      "/assurance-auto/assurance-voiture-sans-permis"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance voiture collection conditions",
+      "naturelle_longue": "assurance voiture collection conditions",
+      "entite_seule": "Assurances spécifiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-temporaire-1-jour",
+    "mot_cle_principal": "assurance temporaire 1 jour",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/assurances-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-voiture-collection-conditions",
+      "/assurance-auto/assurance-voiture-electrique-comparatif",
+      "/assurance-auto/assurance-voiture-sans-permis"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance temporaire 1 jour",
+      "naturelle_longue": "tout savoir sur assurance temporaire 1 jour",
+      "entite_seule": "Assurances spécifiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-voiture-electrique-comparatif",
+    "mot_cle_principal": "assurance voiture électrique comparatif",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/assurances-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-temporaire-1-jour",
+      "/assurance-auto/assurance-voiture-collection-conditions",
+      "/assurance-auto/assurance-voiture-sans-permis"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance voiture électrique comparatif",
+      "naturelle_longue": "assurance voiture électrique comparatif",
+      "entite_seule": "Assurances spécifiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/changer-assurance-auto-loi-hamon",
+    "mot_cle_principal": "changer assurance auto loi Hamon",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/comparer-les-offres",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/devis-assurance-auto-en-ligne",
+      "/assurance-auto/assurance-auto-pas-chere-2026",
+      "/assurance-auto/comparateur-assurance-auto"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "changer assurance auto loi Hamon",
+      "naturelle_longue": "changer assurance auto loi Hamon",
+      "entite_seule": "Comparer les offres",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/devis-assurance-auto-en-ligne",
+    "mot_cle_principal": "devis assurance auto en ligne",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/comparer-les-offres",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/changer-assurance-auto-loi-hamon",
+      "/assurance-auto/assurance-auto-pas-chere-2026",
+      "/assurance-auto/comparateur-assurance-auto"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "devis assurance auto en ligne",
+      "naturelle_longue": "tout savoir sur devis assurance auto en ligne",
+      "entite_seule": "Comparer les offres",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/comparateur-assurance-auto",
+    "mot_cle_principal": "comparateur assurance auto",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/comparer-les-offres",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/devis-assurance-auto-en-ligne",
+      "/assurance-auto/assurance-auto-pas-chere-2026",
+      "/assurance-auto/changer-assurance-auto-loi-hamon"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "comparateur assurance auto",
+      "naturelle_longue": "tout savoir sur comparateur assurance auto",
+      "entite_seule": "Comparer les offres",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-auto-pas-chere-2026",
+    "mot_cle_principal": "assurance auto pas chère 2026",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/comparer-les-offres",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/changer-assurance-auto-loi-hamon",
+      "/assurance-auto/devis-assurance-auto-en-ligne",
+      "/assurance-auto/comparateur-assurance-auto"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance auto pas chère 2026",
+      "naturelle_longue": "tout savoir sur assurance auto pas chère 2026",
+      "entite_seule": "Comparer les offres",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-au-kilometre-avis",
+    "mot_cle_principal": "assurance au kilomètre avis",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/profils-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/boitier-telematique-jeune-conducteur",
+      "/assurance-auto/assurance-jeune-conducteur-pas-chere",
+      "/assurance-auto/assurance-apres-resiliation",
+      "/assurance-auto/assurance-malusse-solutions"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance au kilomètre avis",
+      "naturelle_longue": "tout savoir sur assurance au kilomètre avis",
+      "entite_seule": "Profils spécifiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-apres-resiliation",
+    "mot_cle_principal": "assurance après résiliation",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/profils-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-malusse-solutions",
+      "/assurance-auto/assurance-jeune-conducteur-pas-chere",
+      "/assurance-auto/assurance-au-kilometre-avis",
+      "/assurance-auto/boitier-telematique-jeune-conducteur"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance après résiliation",
+      "naturelle_longue": "tout savoir sur assurance après résiliation",
+      "entite_seule": "Profils spécifiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-jeune-conducteur-pas-chere",
+    "mot_cle_principal": "assurance jeune conducteur pas chère",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/profils-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/boitier-telematique-jeune-conducteur",
+      "/assurance-auto/assurance-au-kilometre-avis",
+      "/assurance-auto/assurance-malusse-solutions",
+      "/assurance-auto/assurance-apres-resiliation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance jeune conducteur pas chère",
+      "naturelle_longue": "assurance jeune conducteur pas chère",
+      "entite_seule": "Profils spécifiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/assurance-malusse-solutions",
+    "mot_cle_principal": "assurance malussé solutions",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/profils-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-apres-resiliation",
+      "/assurance-auto/assurance-au-kilometre-avis",
+      "/assurance-auto/boitier-telematique-jeune-conducteur",
+      "/assurance-auto/assurance-jeune-conducteur-pas-chere"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance malussé solutions",
+      "naturelle_longue": "tout savoir sur assurance malussé solutions",
+      "entite_seule": "Profils spécifiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/boitier-telematique-jeune-conducteur",
+    "mot_cle_principal": "boîtier télématique jeune conducteur",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/profils-specifiques",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assurance-malusse-solutions",
+      "/assurance-auto/assurance-au-kilometre-avis",
+      "/assurance-auto/assurance-jeune-conducteur-pas-chere",
+      "/assurance-auto/assurance-apres-resiliation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "boîtier télématique jeune conducteur",
+      "naturelle_longue": "boîtier télématique jeune conducteur",
+      "entite_seule": "Profils spécifiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/calcul-bonus-malus-tableau",
+    "mot_cle_principal": "calcul bonus malus tableau",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/bonus-malus",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/malus-jeune-conducteur-surprime",
+      "/assurance-auto/recuperer-bonus-apres-malus",
+      "/assurance-auto/bonus-50-a-vie-avantage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "calcul bonus malus tableau",
+      "naturelle_longue": "tout savoir sur calcul bonus malus tableau",
+      "entite_seule": "Bonus-malus",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/recuperer-bonus-apres-malus",
+    "mot_cle_principal": "récupérer bonus après malus",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/bonus-malus",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/calcul-bonus-malus-tableau",
+      "/assurance-auto/malus-jeune-conducteur-surprime",
+      "/assurance-auto/bonus-50-a-vie-avantage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "récupérer bonus après malus",
+      "naturelle_longue": "tout savoir sur récupérer bonus après malus",
+      "entite_seule": "Bonus-malus",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/bonus-50-a-vie-avantage",
+    "mot_cle_principal": "bonus 50 à vie avantage",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/bonus-malus",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/recuperer-bonus-apres-malus",
+      "/assurance-auto/malus-jeune-conducteur-surprime",
+      "/assurance-auto/calcul-bonus-malus-tableau"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "bonus 50 à vie avantage",
+      "naturelle_longue": "tout savoir sur bonus 50 à vie avantage",
+      "entite_seule": "Bonus-malus",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/malus-jeune-conducteur-surprime",
+    "mot_cle_principal": "malus jeune conducteur surprime",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/bonus-malus",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/bonus-50-a-vie-avantage",
+      "/assurance-auto/calcul-bonus-malus-tableau",
+      "/assurance-auto/recuperer-bonus-apres-malus"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "malus jeune conducteur surprime",
+      "naturelle_longue": "malus jeune conducteur surprime",
+      "entite_seule": "Bonus-malus",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/voiture-vandalisee-assurance",
+    "mot_cle_principal": "voiture vandalisée assurance",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/sinistres-indemnisation",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/indemnisation-vehicule-epave",
+      "/assurance-auto/recours-tiers-responsable",
+      "/assurance-auto/delai-indemnisation-assurance",
+      "/assurance-auto/constat-amiable-remplir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voiture vandalisée assurance",
+      "naturelle_longue": "tout savoir sur voiture vandalisée assurance",
+      "entite_seule": "Sinistres & indemnisation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/delai-indemnisation-assurance",
+    "mot_cle_principal": "délai indemnisation assurance",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/sinistres-indemnisation",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/voiture-vandalisee-assurance",
+      "/assurance-auto/indemnisation-vehicule-epave",
+      "/assurance-auto/recours-tiers-responsable",
+      "/assurance-auto/constat-amiable-remplir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "délai indemnisation assurance",
+      "naturelle_longue": "tout savoir sur délai indemnisation assurance",
+      "entite_seule": "Sinistres & indemnisation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/constat-amiable-remplir",
+    "mot_cle_principal": "constat amiable remplir",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/sinistres-indemnisation",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/voiture-vandalisee-assurance",
+      "/assurance-auto/recours-tiers-responsable",
+      "/assurance-auto/indemnisation-vehicule-epave",
+      "/assurance-auto/delai-indemnisation-assurance"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "constat amiable remplir",
+      "naturelle_longue": "tout savoir sur constat amiable remplir",
+      "entite_seule": "Sinistres & indemnisation",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/indemnisation-vehicule-epave",
+    "mot_cle_principal": "indemnisation véhicule épave",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/sinistres-indemnisation",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/voiture-vandalisee-assurance",
+      "/assurance-auto/recours-tiers-responsable",
+      "/assurance-auto/delai-indemnisation-assurance",
+      "/assurance-auto/constat-amiable-remplir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "indemnisation véhicule épave",
+      "naturelle_longue": "tout savoir sur indemnisation véhicule épave",
+      "entite_seule": "Sinistres & indemnisation",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/recours-tiers-responsable",
+    "mot_cle_principal": "recours tiers responsable",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/sinistres-indemnisation",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/constat-amiable-remplir",
+      "/assurance-auto/indemnisation-vehicule-epave",
+      "/assurance-auto/voiture-vandalisee-assurance",
+      "/assurance-auto/delai-indemnisation-assurance"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "recours tiers responsable",
+      "naturelle_longue": "tout savoir sur recours tiers responsable",
+      "entite_seule": "Sinistres & indemnisation",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/tiers-ou-tous-risques-choisir",
+    "mot_cle_principal": "tiers ou tous risques choisir",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/formules-garanties",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/pret-volant-assurance",
+      "/assurance-auto/garantie-bris-de-glace-franchise",
+      "/assurance-auto/valeur-a-neuf-garantie",
+      "/assurance-auto/assistance-0-km-utilite"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "tiers ou tous risques choisir",
+      "naturelle_longue": "tout savoir sur tiers ou tous risques choisir",
+      "entite_seule": "Formules & garanties",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/garantie-bris-de-glace-franchise",
+    "mot_cle_principal": "garantie bris de glace franchise",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/formules-garanties",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assistance-0-km-utilite",
+      "/assurance-auto/valeur-a-neuf-garantie",
+      "/assurance-auto/pret-volant-assurance",
+      "/assurance-auto/tiers-ou-tous-risques-choisir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "garantie bris de glace franchise",
+      "naturelle_longue": "garantie bris de glace franchise",
+      "entite_seule": "Formules & garanties",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/assistance-0-km-utilite",
+    "mot_cle_principal": "assistance 0 km utilité",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/formules-garanties",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/garantie-bris-de-glace-franchise",
+      "/assurance-auto/pret-volant-assurance",
+      "/assurance-auto/tiers-ou-tous-risques-choisir",
+      "/assurance-auto/valeur-a-neuf-garantie"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assistance 0 km utilité",
+      "naturelle_longue": "tout savoir sur assistance 0 km utilité",
+      "entite_seule": "Formules & garanties",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/assurance-auto/valeur-a-neuf-garantie",
+    "mot_cle_principal": "valeur à neuf garantie",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/formules-garanties",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/garantie-bris-de-glace-franchise",
+      "/assurance-auto/assistance-0-km-utilite",
+      "/assurance-auto/tiers-ou-tous-risques-choisir",
+      "/assurance-auto/pret-volant-assurance"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "valeur à neuf garantie",
+      "naturelle_longue": "tout savoir sur valeur à neuf garantie",
+      "entite_seule": "Formules & garanties",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/assurance-auto/pret-volant-assurance",
+    "mot_cle_principal": "prêt volant assurance",
+    "silo": "Assurance auto",
+    "sous_hub": "/assurance-auto/formules-garanties",
+    "hub": "/assurance-auto",
+    "liens_lateraux": [
+      "/assurance-auto/assistance-0-km-utilite",
+      "/assurance-auto/garantie-bris-de-glace-franchise",
+      "/assurance-auto/tiers-ou-tous-risques-choisir",
+      "/assurance-auto/valeur-a-neuf-garantie"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prêt volant assurance",
+      "naturelle_longue": "tout savoir sur prêt volant assurance",
+      "entite_seule": "Formules & garanties",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/delai-carte-grise-apres-achat",
+    "mot_cle_principal": "délai carte grise après achat",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/changement-de-titulaire",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/carte-grise-prix-par-region",
+      "/carte-grise-demarches/carte-grise-ants-demarches",
+      "/carte-grise-demarches/code-de-cession-obtenir",
+      "/carte-grise-demarches/changement-titulaire-carte-grise-en-ligne"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "délai carte grise après achat",
+      "naturelle_longue": "tout savoir sur délai carte grise après achat",
+      "entite_seule": "Changement de titulaire",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/changement-titulaire-carte-grise-en-ligne",
+    "mot_cle_principal": "changement titulaire carte grise en ligne",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/changement-de-titulaire",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/code-de-cession-obtenir",
+      "/carte-grise-demarches/delai-carte-grise-apres-achat",
+      "/carte-grise-demarches/carte-grise-prix-par-region",
+      "/carte-grise-demarches/carte-grise-ants-demarches"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "changement titulaire carte grise en ligne",
+      "naturelle_longue": "changement titulaire carte grise en ligne",
+      "entite_seule": "Changement de titulaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/carte-grise-ants-demarches",
+    "mot_cle_principal": "carte grise ANTS démarches",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/changement-de-titulaire",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/code-de-cession-obtenir",
+      "/carte-grise-demarches/changement-titulaire-carte-grise-en-ligne",
+      "/carte-grise-demarches/carte-grise-prix-par-region",
+      "/carte-grise-demarches/delai-carte-grise-apres-achat"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carte grise ANTS démarches",
+      "naturelle_longue": "tout savoir sur carte grise ANTS démarches",
+      "entite_seule": "Changement de titulaire",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/carte-grise-prix-par-region",
+    "mot_cle_principal": "carte grise prix par région",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/changement-de-titulaire",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/changement-titulaire-carte-grise-en-ligne",
+      "/carte-grise-demarches/carte-grise-ants-demarches",
+      "/carte-grise-demarches/code-de-cession-obtenir",
+      "/carte-grise-demarches/delai-carte-grise-apres-achat"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carte grise prix par région",
+      "naturelle_longue": "tout savoir sur carte grise prix par région",
+      "entite_seule": "Changement de titulaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/code-de-cession-obtenir",
+    "mot_cle_principal": "code de cession obtenir",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/changement-de-titulaire",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/changement-titulaire-carte-grise-en-ligne",
+      "/carte-grise-demarches/carte-grise-prix-par-region",
+      "/carte-grise-demarches/carte-grise-ants-demarches",
+      "/carte-grise-demarches/delai-carte-grise-apres-achat"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "code de cession obtenir",
+      "naturelle_longue": "tout savoir sur code de cession obtenir",
+      "entite_seule": "Changement de titulaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/changement-adresse-carte-grise-gratuit",
+    "mot_cle_principal": "changement adresse carte grise gratuit",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/duplicata-modifications",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/duplicata-carte-grise-perte",
+      "/carte-grise-demarches/carte-grise-heritage-succession",
+      "/carte-grise-demarches/rectifier-erreur-carte-grise"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "changement adresse carte grise gratuit",
+      "naturelle_longue": "changement adresse carte grise gratuit",
+      "entite_seule": "Duplicata & modifications",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/duplicata-carte-grise-perte",
+    "mot_cle_principal": "duplicata carte grise perte",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/duplicata-modifications",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/changement-adresse-carte-grise-gratuit",
+      "/carte-grise-demarches/carte-grise-heritage-succession",
+      "/carte-grise-demarches/rectifier-erreur-carte-grise"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "duplicata carte grise perte",
+      "naturelle_longue": "tout savoir sur duplicata carte grise perte",
+      "entite_seule": "Duplicata & modifications",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/carte-grise-heritage-succession",
+    "mot_cle_principal": "carte grise héritage succession",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/duplicata-modifications",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/duplicata-carte-grise-perte",
+      "/carte-grise-demarches/rectifier-erreur-carte-grise",
+      "/carte-grise-demarches/changement-adresse-carte-grise-gratuit"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carte grise héritage succession",
+      "naturelle_longue": "carte grise héritage succession",
+      "entite_seule": "Duplicata & modifications",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/rectifier-erreur-carte-grise",
+    "mot_cle_principal": "rectifier erreur carte grise",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/duplicata-modifications",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/changement-adresse-carte-grise-gratuit",
+      "/carte-grise-demarches/carte-grise-heritage-succession",
+      "/carte-grise-demarches/duplicata-carte-grise-perte"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rectifier erreur carte grise",
+      "naturelle_longue": "tout savoir sur rectifier erreur carte grise",
+      "entite_seule": "Duplicata & modifications",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/cession-vehicule-pour-destruction",
+    "mot_cle_principal": "cession véhicule pour destruction",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/cession-achat",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/certificat-cession-cerfa-15776",
+      "/carte-grise-demarches/vendre-voiture-sans-controle-technique",
+      "/carte-grise-demarches/declaration-cession-vehicule-en-ligne"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "cession véhicule pour destruction",
+      "naturelle_longue": "cession véhicule pour destruction",
+      "entite_seule": "Cession & achat",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/vendre-voiture-sans-controle-technique",
+    "mot_cle_principal": "vendre voiture sans contrôle technique",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/cession-achat",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/certificat-cession-cerfa-15776",
+      "/carte-grise-demarches/declaration-cession-vehicule-en-ligne",
+      "/carte-grise-demarches/cession-vehicule-pour-destruction"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "vendre voiture sans contrôle technique",
+      "naturelle_longue": "vendre voiture sans contrôle technique",
+      "entite_seule": "Cession & achat",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/declaration-cession-vehicule-en-ligne",
+    "mot_cle_principal": "déclaration cession véhicule en ligne",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/cession-achat",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/cession-vehicule-pour-destruction",
+      "/carte-grise-demarches/vendre-voiture-sans-controle-technique",
+      "/carte-grise-demarches/certificat-cession-cerfa-15776"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "déclaration cession véhicule en ligne",
+      "naturelle_longue": "déclaration cession véhicule en ligne",
+      "entite_seule": "Cession & achat",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/certificat-cession-cerfa-15776",
+    "mot_cle_principal": "certificat cession cerfa 15776",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/cession-achat",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/cession-vehicule-pour-destruction",
+      "/carte-grise-demarches/vendre-voiture-sans-controle-technique",
+      "/carte-grise-demarches/declaration-cession-vehicule-en-ligne"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "certificat cession cerfa 15776",
+      "naturelle_longue": "certificat cession cerfa 15776",
+      "entite_seule": "Cession & achat",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/quitus-fiscal-vehicule-etranger",
+    "mot_cle_principal": "quitus fiscal véhicule étranger",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/immatriculation-import",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/certificat-conformite-europeen-coc",
+      "/carte-grise-demarches/immatriculer-vehicule-importe",
+      "/carte-grise-demarches/plaque-ww-provisoire-duree"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "quitus fiscal véhicule étranger",
+      "naturelle_longue": "quitus fiscal véhicule étranger",
+      "entite_seule": "Immatriculation & import",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/immatriculer-vehicule-importe",
+    "mot_cle_principal": "immatriculer véhicule importé",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/immatriculation-import",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/quitus-fiscal-vehicule-etranger",
+      "/carte-grise-demarches/plaque-ww-provisoire-duree",
+      "/carte-grise-demarches/certificat-conformite-europeen-coc"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "immatriculer véhicule importé",
+      "naturelle_longue": "tout savoir sur immatriculer véhicule importé",
+      "entite_seule": "Immatriculation & import",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/plaque-ww-provisoire-duree",
+    "mot_cle_principal": "plaque WW provisoire durée",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/immatriculation-import",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/immatriculer-vehicule-importe",
+      "/carte-grise-demarches/quitus-fiscal-vehicule-etranger",
+      "/carte-grise-demarches/certificat-conformite-europeen-coc"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "plaque WW provisoire durée",
+      "naturelle_longue": "tout savoir sur plaque WW provisoire durée",
+      "entite_seule": "Immatriculation & import",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/certificat-conformite-europeen-coc",
+    "mot_cle_principal": "certificat conformité européen COC",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/immatriculation-import",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/plaque-ww-provisoire-duree",
+      "/carte-grise-demarches/immatriculer-vehicule-importe",
+      "/carte-grise-demarches/quitus-fiscal-vehicule-etranger"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "certificat conformité européen COC",
+      "naturelle_longue": "certificat conformité européen COC",
+      "entite_seule": "Immatriculation & import",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/taxe-co2-vehicule-occasion",
+    "mot_cle_principal": "taxe CO2 véhicule occasion",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/malus-taxes",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/exoneration-malus-famille-nombreuse",
+      "/carte-grise-demarches/cheval-fiscal-prix-par-region",
+      "/carte-grise-demarches/calcul-malus-occasion-importee"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "taxe CO2 véhicule occasion",
+      "naturelle_longue": "tout savoir sur taxe CO2 véhicule occasion",
+      "entite_seule": "Malus & taxes",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/calcul-malus-occasion-importee",
+    "mot_cle_principal": "calcul malus occasion importée",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/malus-taxes",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/taxe-co2-vehicule-occasion",
+      "/carte-grise-demarches/cheval-fiscal-prix-par-region",
+      "/carte-grise-demarches/exoneration-malus-famille-nombreuse"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "calcul malus occasion importée",
+      "naturelle_longue": "calcul malus occasion importée",
+      "entite_seule": "Malus & taxes",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/exoneration-malus-famille-nombreuse",
+    "mot_cle_principal": "exonération malus famille nombreuse",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/malus-taxes",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/cheval-fiscal-prix-par-region",
+      "/carte-grise-demarches/taxe-co2-vehicule-occasion",
+      "/carte-grise-demarches/calcul-malus-occasion-importee"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "exonération malus famille nombreuse",
+      "naturelle_longue": "exonération malus famille nombreuse",
+      "entite_seule": "Malus & taxes",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/cheval-fiscal-prix-par-region",
+    "mot_cle_principal": "cheval fiscal prix par région",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/malus-taxes",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/calcul-malus-occasion-importee",
+      "/carte-grise-demarches/taxe-co2-vehicule-occasion",
+      "/carte-grise-demarches/exoneration-malus-famille-nombreuse"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "cheval fiscal prix par région",
+      "naturelle_longue": "tout savoir sur cheval fiscal prix par région",
+      "entite_seule": "Malus & taxes",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/controle-technique-points-verifies",
+    "mot_cle_principal": "contrôle technique points vérifiés",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/controle-technique",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/controle-technique-moto-2026",
+      "/carte-grise-demarches/contre-visite-delai-defauts",
+      "/carte-grise-demarches/ct-vehicule-electrique-specificites",
+      "/carte-grise-demarches/controle-technique-pas-cher-pres"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "contrôle technique points vérifiés",
+      "naturelle_longue": "contrôle technique points vérifiés",
+      "entite_seule": "Contrôle technique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/contre-visite-delai-defauts",
+    "mot_cle_principal": "contre-visite délai défauts",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/controle-technique",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/ct-vehicule-electrique-specificites",
+      "/carte-grise-demarches/controle-technique-points-verifies",
+      "/carte-grise-demarches/controle-technique-pas-cher-pres",
+      "/carte-grise-demarches/controle-technique-moto-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "contre-visite délai défauts",
+      "naturelle_longue": "tout savoir sur contre-visite délai défauts",
+      "entite_seule": "Contrôle technique",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/controle-technique-pas-cher-pres",
+    "mot_cle_principal": "contrôle technique pas cher près",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/controle-technique",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/contre-visite-delai-defauts",
+      "/carte-grise-demarches/ct-vehicule-electrique-specificites",
+      "/carte-grise-demarches/controle-technique-moto-2026",
+      "/carte-grise-demarches/controle-technique-points-verifies"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "contrôle technique pas cher près",
+      "naturelle_longue": "contrôle technique pas cher près",
+      "entite_seule": "Contrôle technique",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/ct-vehicule-electrique-specificites",
+    "mot_cle_principal": "CT véhicule électrique spécificités",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/controle-technique",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/controle-technique-pas-cher-pres",
+      "/carte-grise-demarches/controle-technique-points-verifies",
+      "/carte-grise-demarches/contre-visite-delai-defauts",
+      "/carte-grise-demarches/controle-technique-moto-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "CT véhicule électrique spécificités",
+      "naturelle_longue": "CT véhicule électrique spécificités",
+      "entite_seule": "Contrôle technique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/carte-grise-demarches/controle-technique-moto-2026",
+    "mot_cle_principal": "contrôle technique moto 2026",
+    "silo": "Carte grise & démarches",
+    "sous_hub": "/carte-grise-demarches/controle-technique",
+    "hub": "/carte-grise-demarches",
+    "liens_lateraux": [
+      "/carte-grise-demarches/ct-vehicule-electrique-specificites",
+      "/carte-grise-demarches/contre-visite-delai-defauts",
+      "/carte-grise-demarches/controle-technique-points-verifies",
+      "/carte-grise-demarches/controle-technique-pas-cher-pres"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "contrôle technique moto 2026",
+      "naturelle_longue": "tout savoir sur contrôle technique moto 2026",
+      "entite_seule": "Contrôle technique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/assurance-voiture-electrique-prix",
+    "mot_cle_principal": "assurance voiture électrique prix",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/cout-tco",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/electrique-vs-thermique-rentabilite",
+      "/electrique-hybride/entretien-voiture-electrique-cout",
+      "/electrique-hybride/revente-voiture-electrique-decote",
+      "/electrique-hybride/cout-reel-voiture-electrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance voiture électrique prix",
+      "naturelle_longue": "assurance voiture électrique prix",
+      "entite_seule": "Coût & TCO",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/cout-reel-voiture-electrique",
+    "mot_cle_principal": "coût réel voiture électrique",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/cout-tco",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/revente-voiture-electrique-decote",
+      "/electrique-hybride/assurance-voiture-electrique-prix",
+      "/electrique-hybride/electrique-vs-thermique-rentabilite",
+      "/electrique-hybride/entretien-voiture-electrique-cout"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "coût réel voiture électrique",
+      "naturelle_longue": "tout savoir sur coût réel voiture électrique",
+      "entite_seule": "Coût & TCO",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/entretien-voiture-electrique-cout",
+    "mot_cle_principal": "entretien voiture électrique coût",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/cout-tco",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/revente-voiture-electrique-decote",
+      "/electrique-hybride/cout-reel-voiture-electrique",
+      "/electrique-hybride/electrique-vs-thermique-rentabilite",
+      "/electrique-hybride/assurance-voiture-electrique-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "entretien voiture électrique coût",
+      "naturelle_longue": "entretien voiture électrique coût",
+      "entite_seule": "Coût & TCO",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/electrique-vs-thermique-rentabilite",
+    "mot_cle_principal": "électrique vs thermique rentabilité",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/cout-tco",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/cout-reel-voiture-electrique",
+      "/electrique-hybride/entretien-voiture-electrique-cout",
+      "/electrique-hybride/revente-voiture-electrique-decote",
+      "/electrique-hybride/assurance-voiture-electrique-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "électrique vs thermique rentabilité",
+      "naturelle_longue": "électrique vs thermique rentabilité",
+      "entite_seule": "Coût & TCO",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/revente-voiture-electrique-decote",
+    "mot_cle_principal": "revente voiture électrique décote",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/cout-tco",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/cout-reel-voiture-electrique",
+      "/electrique-hybride/electrique-vs-thermique-rentabilite",
+      "/electrique-hybride/entretien-voiture-electrique-cout",
+      "/electrique-hybride/assurance-voiture-electrique-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "revente voiture électrique décote",
+      "naturelle_longue": "revente voiture électrique décote",
+      "entite_seule": "Coût & TCO",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/tesla-model-3-vs-model-y",
+    "mot_cle_principal": "Tesla Model 3 vs Model Y",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/modeles-electriques",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/meilleure-voiture-electrique-2026",
+      "/electrique-hybride/suv-electrique-comparatif",
+      "/electrique-hybride/voiture-electrique-moins-chere",
+      "/electrique-hybride/citadine-electrique-autonomie",
+      "/electrique-hybride/voiture-electrique-chinoise-avis"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "Tesla Model 3 vs Model Y",
+      "naturelle_longue": "tout savoir sur Tesla Model 3 vs Model Y",
+      "entite_seule": "Modèles électriques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/voiture-electrique-moins-chere",
+    "mot_cle_principal": "voiture électrique moins chère",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/modeles-electriques",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-electrique-chinoise-avis",
+      "/electrique-hybride/citadine-electrique-autonomie",
+      "/electrique-hybride/meilleure-voiture-electrique-2026",
+      "/electrique-hybride/suv-electrique-comparatif",
+      "/electrique-hybride/tesla-model-3-vs-model-y"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voiture électrique moins chère",
+      "naturelle_longue": "voiture électrique moins chère",
+      "entite_seule": "Modèles électriques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/suv-electrique-comparatif",
+    "mot_cle_principal": "SUV électrique comparatif",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/modeles-electriques",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/meilleure-voiture-electrique-2026",
+      "/electrique-hybride/tesla-model-3-vs-model-y",
+      "/electrique-hybride/citadine-electrique-autonomie",
+      "/electrique-hybride/voiture-electrique-chinoise-avis",
+      "/electrique-hybride/voiture-electrique-moins-chere"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "SUV électrique comparatif",
+      "naturelle_longue": "tout savoir sur SUV électrique comparatif",
+      "entite_seule": "Modèles électriques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/meilleure-voiture-electrique-2026",
+    "mot_cle_principal": "meilleure voiture électrique 2026",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/modeles-electriques",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-electrique-chinoise-avis",
+      "/electrique-hybride/citadine-electrique-autonomie",
+      "/electrique-hybride/voiture-electrique-moins-chere",
+      "/electrique-hybride/suv-electrique-comparatif",
+      "/electrique-hybride/tesla-model-3-vs-model-y"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleure voiture électrique 2026",
+      "naturelle_longue": "meilleure voiture électrique 2026",
+      "entite_seule": "Modèles électriques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/citadine-electrique-autonomie",
+    "mot_cle_principal": "citadine électrique autonomie",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/modeles-electriques",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/suv-electrique-comparatif",
+      "/electrique-hybride/voiture-electrique-chinoise-avis",
+      "/electrique-hybride/voiture-electrique-moins-chere",
+      "/electrique-hybride/tesla-model-3-vs-model-y",
+      "/electrique-hybride/meilleure-voiture-electrique-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "citadine électrique autonomie",
+      "naturelle_longue": "tout savoir sur citadine électrique autonomie",
+      "entite_seule": "Modèles électriques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/voiture-electrique-chinoise-avis",
+    "mot_cle_principal": "voiture électrique chinoise avis",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/modeles-electriques",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-electrique-moins-chere",
+      "/electrique-hybride/tesla-model-3-vs-model-y",
+      "/electrique-hybride/meilleure-voiture-electrique-2026",
+      "/electrique-hybride/suv-electrique-comparatif",
+      "/electrique-hybride/citadine-electrique-autonomie"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voiture électrique chinoise avis",
+      "naturelle_longue": "voiture électrique chinoise avis",
+      "entite_seule": "Modèles électriques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/consommation-reelle-hybride-rechargeable",
+    "mot_cle_principal": "consommation réelle hybride rechargeable",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/hybride-rechargeable",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/meilleure-hybride-2026",
+      "/electrique-hybride/hybride-d-occasion-fiabilite",
+      "/electrique-hybride/full-hybrid-fonctionnement",
+      "/electrique-hybride/hybride-vs-hybride-rechargeable"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "consommation réelle hybride rechargeable",
+      "naturelle_longue": "consommation réelle hybride rechargeable",
+      "entite_seule": "Hybride & rechargeable",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/hybride-vs-hybride-rechargeable",
+    "mot_cle_principal": "hybride vs hybride rechargeable",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/hybride-rechargeable",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/meilleure-hybride-2026",
+      "/electrique-hybride/full-hybrid-fonctionnement",
+      "/electrique-hybride/hybride-d-occasion-fiabilite",
+      "/electrique-hybride/consommation-reelle-hybride-rechargeable"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "hybride vs hybride rechargeable",
+      "naturelle_longue": "hybride vs hybride rechargeable",
+      "entite_seule": "Hybride & rechargeable",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/meilleure-hybride-2026",
+    "mot_cle_principal": "meilleure hybride 2026",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/hybride-rechargeable",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/consommation-reelle-hybride-rechargeable",
+      "/electrique-hybride/hybride-vs-hybride-rechargeable",
+      "/electrique-hybride/full-hybrid-fonctionnement",
+      "/electrique-hybride/hybride-d-occasion-fiabilite"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleure hybride 2026",
+      "naturelle_longue": "tout savoir sur meilleure hybride 2026",
+      "entite_seule": "Hybride & rechargeable",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/full-hybrid-fonctionnement",
+    "mot_cle_principal": "full hybrid fonctionnement",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/hybride-rechargeable",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/hybride-d-occasion-fiabilite",
+      "/electrique-hybride/hybride-vs-hybride-rechargeable",
+      "/electrique-hybride/consommation-reelle-hybride-rechargeable",
+      "/electrique-hybride/meilleure-hybride-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "full hybrid fonctionnement",
+      "naturelle_longue": "tout savoir sur full hybrid fonctionnement",
+      "entite_seule": "Hybride & rechargeable",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/hybride-d-occasion-fiabilite",
+    "mot_cle_principal": "hybride d'occasion fiabilité",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/hybride-rechargeable",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/hybride-vs-hybride-rechargeable",
+      "/electrique-hybride/full-hybrid-fonctionnement",
+      "/electrique-hybride/meilleure-hybride-2026",
+      "/electrique-hybride/consommation-reelle-hybride-rechargeable"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "hybride d'occasion fiabilité",
+      "naturelle_longue": "tout savoir sur hybride d'occasion fiabilité",
+      "entite_seule": "Hybride & rechargeable",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/voiture-hydrogene-avantages-inconvenients",
+    "mot_cle_principal": "voiture hydrogène avantages inconvénients",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/technologies-d-avenir-retrofit",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/retrofit-electrique-prix-homologation",
+      "/electrique-hybride/e-carburant-voiture-thermique-avenir",
+      "/electrique-hybride/batterie-solide-voiture-electrique",
+      "/electrique-hybride/v2g-recharge-bidirectionnelle"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voiture hydrogène avantages inconvénients",
+      "naturelle_longue": "voiture hydrogène avantages inconvénients",
+      "entite_seule": "Technologies d'avenir & rétrofit",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/batterie-solide-voiture-electrique",
+    "mot_cle_principal": "batterie solide voiture électrique",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/technologies-d-avenir-retrofit",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-hydrogene-avantages-inconvenients",
+      "/electrique-hybride/e-carburant-voiture-thermique-avenir",
+      "/electrique-hybride/retrofit-electrique-prix-homologation",
+      "/electrique-hybride/v2g-recharge-bidirectionnelle"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "batterie solide voiture électrique",
+      "naturelle_longue": "batterie solide voiture électrique",
+      "entite_seule": "Technologies d'avenir & rétrofit",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/v2g-recharge-bidirectionnelle",
+    "mot_cle_principal": "V2G recharge bidirectionnelle",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/technologies-d-avenir-retrofit",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/batterie-solide-voiture-electrique",
+      "/electrique-hybride/retrofit-electrique-prix-homologation",
+      "/electrique-hybride/e-carburant-voiture-thermique-avenir",
+      "/electrique-hybride/voiture-hydrogene-avantages-inconvenients"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "V2G recharge bidirectionnelle",
+      "naturelle_longue": "tout savoir sur V2G recharge bidirectionnelle",
+      "entite_seule": "Technologies d'avenir & rétrofit",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/retrofit-electrique-prix-homologation",
+    "mot_cle_principal": "rétrofit électrique prix homologation",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/technologies-d-avenir-retrofit",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/v2g-recharge-bidirectionnelle",
+      "/electrique-hybride/voiture-hydrogene-avantages-inconvenients",
+      "/electrique-hybride/batterie-solide-voiture-electrique",
+      "/electrique-hybride/e-carburant-voiture-thermique-avenir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rétrofit électrique prix homologation",
+      "naturelle_longue": "rétrofit électrique prix homologation",
+      "entite_seule": "Technologies d'avenir & rétrofit",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/e-carburant-voiture-thermique-avenir",
+    "mot_cle_principal": "e-carburant voiture thermique avenir",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/technologies-d-avenir-retrofit",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/retrofit-electrique-prix-homologation",
+      "/electrique-hybride/batterie-solide-voiture-electrique",
+      "/electrique-hybride/voiture-hydrogene-avantages-inconvenients",
+      "/electrique-hybride/v2g-recharge-bidirectionnelle"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "e-carburant voiture thermique avenir",
+      "naturelle_longue": "e-carburant voiture thermique avenir",
+      "entite_seule": "Technologies d'avenir & rétrofit",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/batterie-voiture-electrique-duree-de-vie",
+    "mot_cle_principal": "batterie voiture électrique durée de vie",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/autonomie-batteries",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/degradation-batterie-kilometrage",
+      "/electrique-hybride/batterie-lfp-vs-nmc",
+      "/electrique-hybride/autonomie-reelle-voiture-electrique",
+      "/electrique-hybride/remplacer-batterie-voiture-electrique-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "batterie voiture électrique durée de vie",
+      "naturelle_longue": "batterie voiture électrique durée de vie",
+      "entite_seule": "Autonomie & batteries",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/autonomie-reelle-voiture-electrique",
+    "mot_cle_principal": "autonomie réelle voiture électrique",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/autonomie-batteries",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/batterie-voiture-electrique-duree-de-vie",
+      "/electrique-hybride/batterie-lfp-vs-nmc",
+      "/electrique-hybride/remplacer-batterie-voiture-electrique-prix",
+      "/electrique-hybride/degradation-batterie-kilometrage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "autonomie réelle voiture électrique",
+      "naturelle_longue": "autonomie réelle voiture électrique",
+      "entite_seule": "Autonomie & batteries",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/batterie-lfp-vs-nmc",
+    "mot_cle_principal": "batterie LFP vs NMC",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/autonomie-batteries",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/degradation-batterie-kilometrage",
+      "/electrique-hybride/batterie-voiture-electrique-duree-de-vie",
+      "/electrique-hybride/autonomie-reelle-voiture-electrique",
+      "/electrique-hybride/remplacer-batterie-voiture-electrique-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "batterie LFP vs NMC",
+      "naturelle_longue": "tout savoir sur batterie LFP vs NMC",
+      "entite_seule": "Autonomie & batteries",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/degradation-batterie-kilometrage",
+    "mot_cle_principal": "dégradation batterie kilométrage",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/autonomie-batteries",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/batterie-voiture-electrique-duree-de-vie",
+      "/electrique-hybride/remplacer-batterie-voiture-electrique-prix",
+      "/electrique-hybride/batterie-lfp-vs-nmc",
+      "/electrique-hybride/autonomie-reelle-voiture-electrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "dégradation batterie kilométrage",
+      "naturelle_longue": "dégradation batterie kilométrage",
+      "entite_seule": "Autonomie & batteries",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/remplacer-batterie-voiture-electrique-prix",
+    "mot_cle_principal": "remplacer batterie voiture électrique prix",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/autonomie-batteries",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/autonomie-reelle-voiture-electrique",
+      "/electrique-hybride/batterie-lfp-vs-nmc",
+      "/electrique-hybride/degradation-batterie-kilometrage",
+      "/electrique-hybride/batterie-voiture-electrique-duree-de-vie"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "remplacer batterie voiture électrique prix",
+      "naturelle_longue": "remplacer batterie voiture électrique prix",
+      "entite_seule": "Autonomie & batteries",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/planifier-trajet-voiture-electrique",
+    "mot_cle_principal": "planifier trajet voiture électrique",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-publique-itinerance",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/prix-recharge-autoroute",
+      "/electrique-hybride/carte-recharge-comparatif-badges",
+      "/electrique-hybride/superchargeur-tesla-ouverts-tous",
+      "/electrique-hybride/recharge-rapide-courbe-puissance"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "planifier trajet voiture électrique",
+      "naturelle_longue": "planifier trajet voiture électrique",
+      "entite_seule": "Recharge publique & itinérance",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/carte-recharge-comparatif-badges",
+    "mot_cle_principal": "carte recharge comparatif badges",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-publique-itinerance",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/planifier-trajet-voiture-electrique",
+      "/electrique-hybride/prix-recharge-autoroute",
+      "/electrique-hybride/superchargeur-tesla-ouverts-tous",
+      "/electrique-hybride/recharge-rapide-courbe-puissance"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carte recharge comparatif badges",
+      "naturelle_longue": "carte recharge comparatif badges",
+      "entite_seule": "Recharge publique & itinérance",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/prix-recharge-autoroute",
+    "mot_cle_principal": "prix recharge autoroute",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-publique-itinerance",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/carte-recharge-comparatif-badges",
+      "/electrique-hybride/recharge-rapide-courbe-puissance",
+      "/electrique-hybride/superchargeur-tesla-ouverts-tous",
+      "/electrique-hybride/planifier-trajet-voiture-electrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix recharge autoroute",
+      "naturelle_longue": "tout savoir sur prix recharge autoroute",
+      "entite_seule": "Recharge publique & itinérance",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/superchargeur-tesla-ouverts-tous",
+    "mot_cle_principal": "superchargeur Tesla ouverts tous",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-publique-itinerance",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/planifier-trajet-voiture-electrique",
+      "/electrique-hybride/carte-recharge-comparatif-badges",
+      "/electrique-hybride/recharge-rapide-courbe-puissance",
+      "/electrique-hybride/prix-recharge-autoroute"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "superchargeur Tesla ouverts tous",
+      "naturelle_longue": "superchargeur Tesla ouverts tous",
+      "entite_seule": "Recharge publique & itinérance",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/recharge-rapide-courbe-puissance",
+    "mot_cle_principal": "recharge rapide courbe puissance",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-publique-itinerance",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/prix-recharge-autoroute",
+      "/electrique-hybride/carte-recharge-comparatif-badges",
+      "/electrique-hybride/planifier-trajet-voiture-electrique",
+      "/electrique-hybride/superchargeur-tesla-ouverts-tous"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "recharge rapide courbe puissance",
+      "naturelle_longue": "recharge rapide courbe puissance",
+      "entite_seule": "Recharge publique & itinérance",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/prise-renforcee-green-up",
+    "mot_cle_principal": "prise renforcée green up",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-a-domicile",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/aide-installation-borne-credit-impot",
+      "/electrique-hybride/wallbox-7kw-comparatif",
+      "/electrique-hybride/borne-copropriete-droit-a-la-prise",
+      "/electrique-hybride/borne-recharge-maison-prix-pose",
+      "/electrique-hybride/recharge-heures-creuses-pilotage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prise renforcée green up",
+      "naturelle_longue": "tout savoir sur prise renforcée green up",
+      "entite_seule": "Recharge à domicile",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/wallbox-7kw-comparatif",
+    "mot_cle_principal": "wallbox 7kW comparatif",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-a-domicile",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/borne-copropriete-droit-a-la-prise",
+      "/electrique-hybride/aide-installation-borne-credit-impot",
+      "/electrique-hybride/prise-renforcee-green-up",
+      "/electrique-hybride/borne-recharge-maison-prix-pose",
+      "/electrique-hybride/recharge-heures-creuses-pilotage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "wallbox 7kW comparatif",
+      "naturelle_longue": "tout savoir sur wallbox 7kW comparatif",
+      "entite_seule": "Recharge à domicile",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/borne-recharge-maison-prix-pose",
+    "mot_cle_principal": "borne recharge maison prix pose",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-a-domicile",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/aide-installation-borne-credit-impot",
+      "/electrique-hybride/wallbox-7kw-comparatif",
+      "/electrique-hybride/recharge-heures-creuses-pilotage",
+      "/electrique-hybride/prise-renforcee-green-up",
+      "/electrique-hybride/borne-copropriete-droit-a-la-prise"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "borne recharge maison prix pose",
+      "naturelle_longue": "borne recharge maison prix pose",
+      "entite_seule": "Recharge à domicile",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/recharge-heures-creuses-pilotage",
+    "mot_cle_principal": "recharge heures creuses pilotage",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-a-domicile",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/aide-installation-borne-credit-impot",
+      "/electrique-hybride/borne-copropriete-droit-a-la-prise",
+      "/electrique-hybride/wallbox-7kw-comparatif",
+      "/electrique-hybride/borne-recharge-maison-prix-pose",
+      "/electrique-hybride/prise-renforcee-green-up"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "recharge heures creuses pilotage",
+      "naturelle_longue": "recharge heures creuses pilotage",
+      "entite_seule": "Recharge à domicile",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/aide-installation-borne-credit-impot",
+    "mot_cle_principal": "aide installation borne crédit impôt",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-a-domicile",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/borne-recharge-maison-prix-pose",
+      "/electrique-hybride/wallbox-7kw-comparatif",
+      "/electrique-hybride/recharge-heures-creuses-pilotage",
+      "/electrique-hybride/prise-renforcee-green-up",
+      "/electrique-hybride/borne-copropriete-droit-a-la-prise"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "aide installation borne crédit impôt",
+      "naturelle_longue": "aide installation borne crédit impôt",
+      "entite_seule": "Recharge à domicile",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/borne-copropriete-droit-a-la-prise",
+    "mot_cle_principal": "borne copropriété droit à la prise",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/recharge-a-domicile",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/borne-recharge-maison-prix-pose",
+      "/electrique-hybride/recharge-heures-creuses-pilotage",
+      "/electrique-hybride/prise-renforcee-green-up",
+      "/electrique-hybride/wallbox-7kw-comparatif",
+      "/electrique-hybride/aide-installation-borne-credit-impot"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "borne copropriété droit à la prise",
+      "naturelle_longue": "borne copropriété droit à la prise",
+      "entite_seule": "Recharge à domicile",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/voiture-autonome-niveau-3-france",
+    "mot_cle_principal": "voiture autonome niveau 3 France",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/voiture-autonome-connectee",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/conduite-autonome-comment-ca-marche",
+      "/electrique-hybride/voiture-connectee-donnees-personnelles",
+      "/electrique-hybride/mise-a-jour-ota-voiture",
+      "/electrique-hybride/aides-a-la-conduite-adas-liste"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voiture autonome niveau 3 France",
+      "naturelle_longue": "voiture autonome niveau 3 France",
+      "entite_seule": "Voiture autonome & connectée",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/conduite-autonome-comment-ca-marche",
+    "mot_cle_principal": "conduite autonome comment ça marche",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/voiture-autonome-connectee",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-autonome-niveau-3-france",
+      "/electrique-hybride/mise-a-jour-ota-voiture",
+      "/electrique-hybride/voiture-connectee-donnees-personnelles",
+      "/electrique-hybride/aides-a-la-conduite-adas-liste"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "conduite autonome comment ça marche",
+      "naturelle_longue": "conduite autonome comment ça marche",
+      "entite_seule": "Voiture autonome & connectée",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/aides-a-la-conduite-adas-liste",
+    "mot_cle_principal": "aides à la conduite ADAS liste",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/voiture-autonome-connectee",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-autonome-niveau-3-france",
+      "/electrique-hybride/mise-a-jour-ota-voiture",
+      "/electrique-hybride/conduite-autonome-comment-ca-marche",
+      "/electrique-hybride/voiture-connectee-donnees-personnelles"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "aides à la conduite ADAS liste",
+      "naturelle_longue": "aides à la conduite ADAS liste",
+      "entite_seule": "Voiture autonome & connectée",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/voiture-connectee-donnees-personnelles",
+    "mot_cle_principal": "voiture connectée données personnelles",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/voiture-autonome-connectee",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/aides-a-la-conduite-adas-liste",
+      "/electrique-hybride/mise-a-jour-ota-voiture",
+      "/electrique-hybride/voiture-autonome-niveau-3-france",
+      "/electrique-hybride/conduite-autonome-comment-ca-marche"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voiture connectée données personnelles",
+      "naturelle_longue": "voiture connectée données personnelles",
+      "entite_seule": "Voiture autonome & connectée",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/mise-a-jour-ota-voiture",
+    "mot_cle_principal": "mise à jour OTA voiture",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/voiture-autonome-connectee",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/voiture-connectee-donnees-personnelles",
+      "/electrique-hybride/voiture-autonome-niveau-3-france",
+      "/electrique-hybride/aides-a-la-conduite-adas-liste",
+      "/electrique-hybride/conduite-autonome-comment-ca-marche"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "mise à jour OTA voiture",
+      "naturelle_longue": "tout savoir sur mise à jour OTA voiture",
+      "entite_seule": "Voiture autonome & connectée",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/aides-voiture-electrique-2026",
+    "mot_cle_principal": "aides voiture électrique 2026",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/aides-fiscalite-ev",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/carte-grise-gratuite-electrique",
+      "/electrique-hybride/leasing-social-electrique-conditions",
+      "/electrique-hybride/avantage-nature-vehicule-electrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "aides voiture électrique 2026",
+      "naturelle_longue": "tout savoir sur aides voiture électrique 2026",
+      "entite_seule": "Aides & fiscalité EV",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/leasing-social-electrique-conditions",
+    "mot_cle_principal": "leasing social électrique conditions",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/aides-fiscalite-ev",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/avantage-nature-vehicule-electrique",
+      "/electrique-hybride/carte-grise-gratuite-electrique",
+      "/electrique-hybride/aides-voiture-electrique-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "leasing social électrique conditions",
+      "naturelle_longue": "leasing social électrique conditions",
+      "entite_seule": "Aides & fiscalité EV",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/electrique-hybride/carte-grise-gratuite-electrique",
+    "mot_cle_principal": "carte grise gratuite électrique",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/aides-fiscalite-ev",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/avantage-nature-vehicule-electrique",
+      "/electrique-hybride/leasing-social-electrique-conditions",
+      "/electrique-hybride/aides-voiture-electrique-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carte grise gratuite électrique",
+      "naturelle_longue": "carte grise gratuite électrique",
+      "entite_seule": "Aides & fiscalité EV",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/electrique-hybride/avantage-nature-vehicule-electrique",
+    "mot_cle_principal": "avantage nature véhicule électrique",
+    "silo": "Électrique & hybride",
+    "sous_hub": "/electrique-hybride/aides-fiscalite-ev",
+    "hub": "/electrique-hybride",
+    "liens_lateraux": [
+      "/electrique-hybride/leasing-social-electrique-conditions",
+      "/electrique-hybride/carte-grise-gratuite-electrique",
+      "/electrique-hybride/aides-voiture-electrique-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "avantage nature véhicule électrique",
+      "naturelle_longue": "avantage nature véhicule électrique",
+      "entite_seule": "Aides & fiscalité EV",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/assurance-moto-a2-prix",
+    "mot_cle_principal": "assurance moto A2 prix",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/assurance-reglementation-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/stationnement-moto-payant-paris",
+      "/moto-scooter/assurance-moto-hivernage-suspension",
+      "/moto-scooter/controle-technique-moto-obligations"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance moto A2 prix",
+      "naturelle_longue": "tout savoir sur assurance moto A2 prix",
+      "entite_seule": "Assurance & réglementation moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/stationnement-moto-payant-paris",
+    "mot_cle_principal": "stationnement moto payant Paris",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/assurance-reglementation-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/assurance-moto-a2-prix",
+      "/moto-scooter/controle-technique-moto-obligations",
+      "/moto-scooter/assurance-moto-hivernage-suspension"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "stationnement moto payant Paris",
+      "naturelle_longue": "stationnement moto payant Paris",
+      "entite_seule": "Assurance & réglementation moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/assurance-moto-hivernage-suspension",
+    "mot_cle_principal": "assurance moto hivernage suspension",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/assurance-reglementation-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/controle-technique-moto-obligations",
+      "/moto-scooter/stationnement-moto-payant-paris",
+      "/moto-scooter/assurance-moto-a2-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance moto hivernage suspension",
+      "naturelle_longue": "assurance moto hivernage suspension",
+      "entite_seule": "Assurance & réglementation moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/controle-technique-moto-obligations",
+    "mot_cle_principal": "contrôle technique moto obligations",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/assurance-reglementation-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/assurance-moto-a2-prix",
+      "/moto-scooter/assurance-moto-hivernage-suspension",
+      "/moto-scooter/stationnement-moto-payant-paris"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "contrôle technique moto obligations",
+      "naturelle_longue": "contrôle technique moto obligations",
+      "entite_seule": "Assurance & réglementation moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/scooter-electrique-equivalent-125",
+    "mot_cle_principal": "scooter électrique équivalent 125",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/scooter-125",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/scooter-3-roues-permis",
+      "/moto-scooter/formation-125-permis-b-7h",
+      "/moto-scooter/meilleur-scooter-125-2026",
+      "/moto-scooter/maxi-scooter-comparatif"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "scooter électrique équivalent 125",
+      "naturelle_longue": "scooter électrique équivalent 125",
+      "entite_seule": "Scooter & 125",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/maxi-scooter-comparatif",
+    "mot_cle_principal": "maxi scooter comparatif",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/scooter-125",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/scooter-3-roues-permis",
+      "/moto-scooter/formation-125-permis-b-7h",
+      "/moto-scooter/scooter-electrique-equivalent-125",
+      "/moto-scooter/meilleur-scooter-125-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maxi scooter comparatif",
+      "naturelle_longue": "tout savoir sur maxi scooter comparatif",
+      "entite_seule": "Scooter & 125",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/scooter-3-roues-permis",
+    "mot_cle_principal": "scooter 3 roues permis",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/scooter-125",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/meilleur-scooter-125-2026",
+      "/moto-scooter/maxi-scooter-comparatif",
+      "/moto-scooter/scooter-electrique-equivalent-125",
+      "/moto-scooter/formation-125-permis-b-7h"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "scooter 3 roues permis",
+      "naturelle_longue": "tout savoir sur scooter 3 roues permis",
+      "entite_seule": "Scooter & 125",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/meilleur-scooter-125-2026",
+    "mot_cle_principal": "meilleur scooter 125 2026",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/scooter-125",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/maxi-scooter-comparatif",
+      "/moto-scooter/scooter-3-roues-permis",
+      "/moto-scooter/scooter-electrique-equivalent-125",
+      "/moto-scooter/formation-125-permis-b-7h"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleur scooter 125 2026",
+      "naturelle_longue": "tout savoir sur meilleur scooter 125 2026",
+      "entite_seule": "Scooter & 125",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/formation-125-permis-b-7h",
+    "mot_cle_principal": "formation 125 permis B 7h",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/scooter-125",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/maxi-scooter-comparatif",
+      "/moto-scooter/scooter-3-roues-permis",
+      "/moto-scooter/meilleur-scooter-125-2026",
+      "/moto-scooter/scooter-electrique-equivalent-125"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "formation 125 permis B 7h",
+      "naturelle_longue": "tout savoir sur formation 125 permis B 7h",
+      "entite_seule": "Scooter & 125",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/cote-moto-occasion",
+    "mot_cle_principal": "cote moto occasion",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/choisir-sa-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/roadster-ou-sportive-choisir",
+      "/moto-scooter/moto-occasion-verifications",
+      "/moto-scooter/moto-a2-debutant-comparatif",
+      "/moto-scooter/meilleur-trail-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "cote moto occasion",
+      "naturelle_longue": "tout savoir sur cote moto occasion",
+      "entite_seule": "Choisir sa moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/moto-a2-debutant-comparatif",
+    "mot_cle_principal": "moto A2 débutant comparatif",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/choisir-sa-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/roadster-ou-sportive-choisir",
+      "/moto-scooter/cote-moto-occasion",
+      "/moto-scooter/moto-occasion-verifications",
+      "/moto-scooter/meilleur-trail-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "moto A2 débutant comparatif",
+      "naturelle_longue": "tout savoir sur moto A2 débutant comparatif",
+      "entite_seule": "Choisir sa moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/meilleur-trail-2026",
+    "mot_cle_principal": "meilleur trail 2026",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/choisir-sa-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/moto-occasion-verifications",
+      "/moto-scooter/roadster-ou-sportive-choisir",
+      "/moto-scooter/moto-a2-debutant-comparatif",
+      "/moto-scooter/cote-moto-occasion"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleur trail 2026",
+      "naturelle_longue": "tout savoir sur meilleur trail 2026",
+      "entite_seule": "Choisir sa moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/roadster-ou-sportive-choisir",
+    "mot_cle_principal": "roadster ou sportive choisir",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/choisir-sa-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/cote-moto-occasion",
+      "/moto-scooter/meilleur-trail-2026",
+      "/moto-scooter/moto-a2-debutant-comparatif",
+      "/moto-scooter/moto-occasion-verifications"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "roadster ou sportive choisir",
+      "naturelle_longue": "tout savoir sur roadster ou sportive choisir",
+      "entite_seule": "Choisir sa moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/moto-occasion-verifications",
+    "mot_cle_principal": "moto occasion vérifications",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/choisir-sa-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/moto-a2-debutant-comparatif",
+      "/moto-scooter/meilleur-trail-2026",
+      "/moto-scooter/cote-moto-occasion",
+      "/moto-scooter/roadster-ou-sportive-choisir"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "moto occasion vérifications",
+      "naturelle_longue": "tout savoir sur moto occasion vérifications",
+      "entite_seule": "Choisir sa moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/vidange-moto-frequence",
+    "mot_cle_principal": "vidange moto fréquence",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/entretien-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/pneus-moto-usure-temoin",
+      "/moto-scooter/hivernage-moto-etapes",
+      "/moto-scooter/tension-chaine-moto-regler"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "vidange moto fréquence",
+      "naturelle_longue": "tout savoir sur vidange moto fréquence",
+      "entite_seule": "Entretien moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/tension-chaine-moto-regler",
+    "mot_cle_principal": "tension chaîne moto régler",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/entretien-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/pneus-moto-usure-temoin",
+      "/moto-scooter/hivernage-moto-etapes",
+      "/moto-scooter/vidange-moto-frequence"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "tension chaîne moto régler",
+      "naturelle_longue": "tout savoir sur tension chaîne moto régler",
+      "entite_seule": "Entretien moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/pneus-moto-usure-temoin",
+    "mot_cle_principal": "pneus moto usure témoin",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/entretien-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/tension-chaine-moto-regler",
+      "/moto-scooter/vidange-moto-frequence",
+      "/moto-scooter/hivernage-moto-etapes"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pneus moto usure témoin",
+      "naturelle_longue": "tout savoir sur pneus moto usure témoin",
+      "entite_seule": "Entretien moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/hivernage-moto-etapes",
+    "mot_cle_principal": "hivernage moto étapes",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/entretien-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/tension-chaine-moto-regler",
+      "/moto-scooter/vidange-moto-frequence",
+      "/moto-scooter/pneus-moto-usure-temoin"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "hivernage moto étapes",
+      "naturelle_longue": "tout savoir sur hivernage moto étapes",
+      "entite_seule": "Entretien moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/equipement-moto-hiver",
+    "mot_cle_principal": "équipement moto hiver",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/equipement-pilote",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/gants-moto-homologues-obligation",
+      "/moto-scooter/norme-casque-ece-22-06",
+      "/moto-scooter/blouson-airbag-moto-avis",
+      "/moto-scooter/casque-moto-comparatif-securite"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "équipement moto hiver",
+      "naturelle_longue": "tout savoir sur équipement moto hiver",
+      "entite_seule": "Équipement pilote",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/casque-moto-comparatif-securite",
+    "mot_cle_principal": "casque moto comparatif sécurité",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/equipement-pilote",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/blouson-airbag-moto-avis",
+      "/moto-scooter/equipement-moto-hiver",
+      "/moto-scooter/norme-casque-ece-22-06",
+      "/moto-scooter/gants-moto-homologues-obligation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "casque moto comparatif sécurité",
+      "naturelle_longue": "casque moto comparatif sécurité",
+      "entite_seule": "Équipement pilote",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/gants-moto-homologues-obligation",
+    "mot_cle_principal": "gants moto homologués obligation",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/equipement-pilote",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/norme-casque-ece-22-06",
+      "/moto-scooter/equipement-moto-hiver",
+      "/moto-scooter/blouson-airbag-moto-avis",
+      "/moto-scooter/casque-moto-comparatif-securite"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "gants moto homologués obligation",
+      "naturelle_longue": "gants moto homologués obligation",
+      "entite_seule": "Équipement pilote",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/blouson-airbag-moto-avis",
+    "mot_cle_principal": "blouson airbag moto avis",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/equipement-pilote",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/equipement-moto-hiver",
+      "/moto-scooter/casque-moto-comparatif-securite",
+      "/moto-scooter/gants-moto-homologues-obligation",
+      "/moto-scooter/norme-casque-ece-22-06"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "blouson airbag moto avis",
+      "naturelle_longue": "tout savoir sur blouson airbag moto avis",
+      "entite_seule": "Équipement pilote",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/norme-casque-ece-22-06",
+    "mot_cle_principal": "norme casque ECE 22.06",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/equipement-pilote",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/equipement-moto-hiver",
+      "/moto-scooter/blouson-airbag-moto-avis",
+      "/moto-scooter/gants-moto-homologues-obligation",
+      "/moto-scooter/casque-moto-comparatif-securite"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "norme casque ECE 22.06",
+      "naturelle_longue": "tout savoir sur norme casque ECE 22.06",
+      "entite_seule": "Équipement pilote",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/road-trip-moto-france-itineraires",
+    "mot_cle_principal": "road trip moto France itinéraires",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/balades-voyage-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/moto-gps-tracker-antivol",
+      "/moto-scooter/cols-mythiques-moto-alpes",
+      "/moto-scooter/bagagerie-moto-voyage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "road trip moto France itinéraires",
+      "naturelle_longue": "road trip moto France itinéraires",
+      "entite_seule": "Balades & voyage moto",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/moto-scooter/cols-mythiques-moto-alpes",
+    "mot_cle_principal": "cols mythiques moto Alpes",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/balades-voyage-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/road-trip-moto-france-itineraires",
+      "/moto-scooter/moto-gps-tracker-antivol",
+      "/moto-scooter/bagagerie-moto-voyage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "cols mythiques moto Alpes",
+      "naturelle_longue": "tout savoir sur cols mythiques moto Alpes",
+      "entite_seule": "Balades & voyage moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/bagagerie-moto-voyage",
+    "mot_cle_principal": "bagagerie moto voyage",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/balades-voyage-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/cols-mythiques-moto-alpes",
+      "/moto-scooter/moto-gps-tracker-antivol",
+      "/moto-scooter/road-trip-moto-france-itineraires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "bagagerie moto voyage",
+      "naturelle_longue": "tout savoir sur bagagerie moto voyage",
+      "entite_seule": "Balades & voyage moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/moto-scooter/moto-gps-tracker-antivol",
+    "mot_cle_principal": "moto GPS tracker antivol",
+    "silo": "Moto & scooter",
+    "sous_hub": "/moto-scooter/balades-voyage-moto",
+    "hub": "/moto-scooter",
+    "liens_lateraux": [
+      "/moto-scooter/cols-mythiques-moto-alpes",
+      "/moto-scooter/road-trip-moto-france-itineraires",
+      "/moto-scooter/bagagerie-moto-voyage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "moto GPS tracker antivol",
+      "naturelle_longue": "tout savoir sur moto GPS tracker antivol",
+      "entite_seule": "Balades & voyage moto",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/permis-international-demande",
+    "mot_cle_principal": "permis international demande",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/conduite-a-l-etranger",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/assurance-carte-verte-etranger",
+      "/road-trips-voyage-auto/conduire-a-gauche-conseils",
+      "/road-trips-voyage-auto/location-voiture-etranger-caution"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis international demande",
+      "naturelle_longue": "tout savoir sur permis international demande",
+      "entite_seule": "Conduite à l'étranger",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/conduire-a-gauche-conseils",
+    "mot_cle_principal": "conduire à gauche conseils",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/conduite-a-l-etranger",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/location-voiture-etranger-caution",
+      "/road-trips-voyage-auto/permis-international-demande",
+      "/road-trips-voyage-auto/assurance-carte-verte-etranger"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "conduire à gauche conseils",
+      "naturelle_longue": "tout savoir sur conduire à gauche conseils",
+      "entite_seule": "Conduite à l'étranger",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/assurance-carte-verte-etranger",
+    "mot_cle_principal": "assurance carte verte étranger",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/conduite-a-l-etranger",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/conduire-a-gauche-conseils",
+      "/road-trips-voyage-auto/permis-international-demande",
+      "/road-trips-voyage-auto/location-voiture-etranger-caution"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance carte verte étranger",
+      "naturelle_longue": "assurance carte verte étranger",
+      "entite_seule": "Conduite à l'étranger",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/location-voiture-etranger-caution",
+    "mot_cle_principal": "location voiture étranger caution",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/conduite-a-l-etranger",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/conduire-a-gauche-conseils",
+      "/road-trips-voyage-auto/permis-international-demande",
+      "/road-trips-voyage-auto/assurance-carte-verte-etranger"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "location voiture étranger caution",
+      "naturelle_longue": "location voiture étranger caution",
+      "entite_seule": "Conduite à l'étranger",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/vignette-suisse-autoroute",
+    "mot_cle_principal": "vignette Suisse autoroute",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-europe",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/conduire-en-italie-ztl-amendes",
+      "/road-trips-voyage-auto/road-trip-portugal-voiture",
+      "/road-trips-voyage-auto/norvege-en-voiture-fjords",
+      "/road-trips-voyage-auto/road-trip-europe-voiture-itineraire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "vignette Suisse autoroute",
+      "naturelle_longue": "tout savoir sur vignette Suisse autoroute",
+      "entite_seule": "Road trips Europe",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/road-trip-europe-voiture-itineraire",
+    "mot_cle_principal": "road trip Europe voiture itinéraire",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-europe",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/conduire-en-italie-ztl-amendes",
+      "/road-trips-voyage-auto/norvege-en-voiture-fjords",
+      "/road-trips-voyage-auto/road-trip-portugal-voiture",
+      "/road-trips-voyage-auto/vignette-suisse-autoroute"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "road trip Europe voiture itinéraire",
+      "naturelle_longue": "road trip Europe voiture itinéraire",
+      "entite_seule": "Road trips Europe",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/conduire-en-italie-ztl-amendes",
+    "mot_cle_principal": "conduire en Italie ZTL amendes",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-europe",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/road-trip-portugal-voiture",
+      "/road-trips-voyage-auto/road-trip-europe-voiture-itineraire",
+      "/road-trips-voyage-auto/vignette-suisse-autoroute",
+      "/road-trips-voyage-auto/norvege-en-voiture-fjords"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "conduire en Italie ZTL amendes",
+      "naturelle_longue": "conduire en Italie ZTL amendes",
+      "entite_seule": "Road trips Europe",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/road-trip-portugal-voiture",
+    "mot_cle_principal": "road trip Portugal voiture",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-europe",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/conduire-en-italie-ztl-amendes",
+      "/road-trips-voyage-auto/road-trip-europe-voiture-itineraire",
+      "/road-trips-voyage-auto/norvege-en-voiture-fjords",
+      "/road-trips-voyage-auto/vignette-suisse-autoroute"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "road trip Portugal voiture",
+      "naturelle_longue": "tout savoir sur road trip Portugal voiture",
+      "entite_seule": "Road trips Europe",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/norvege-en-voiture-fjords",
+    "mot_cle_principal": "Norvège en voiture fjords",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-europe",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/conduire-en-italie-ztl-amendes",
+      "/road-trips-voyage-auto/road-trip-portugal-voiture",
+      "/road-trips-voyage-auto/vignette-suisse-autoroute",
+      "/road-trips-voyage-auto/road-trip-europe-voiture-itineraire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "Norvège en voiture fjords",
+      "naturelle_longue": "tout savoir sur Norvège en voiture fjords",
+      "entite_seule": "Road trips Europe",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/badge-telepeage-comparatif",
+    "mot_cle_principal": "badge télépéage comparatif",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/peages-vignettes",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/crit-air-commander-vignette",
+      "/road-trips-voyage-auto/eviter-peages-itineraire-calcul",
+      "/road-trips-voyage-auto/vignettes-obligatoires-europe-pays"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "badge télépéage comparatif",
+      "naturelle_longue": "tout savoir sur badge télépéage comparatif",
+      "entite_seule": "Péages & vignettes",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/eviter-peages-itineraire-calcul",
+    "mot_cle_principal": "éviter péages itinéraire calcul",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/peages-vignettes",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/badge-telepeage-comparatif",
+      "/road-trips-voyage-auto/crit-air-commander-vignette",
+      "/road-trips-voyage-auto/vignettes-obligatoires-europe-pays"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "éviter péages itinéraire calcul",
+      "naturelle_longue": "éviter péages itinéraire calcul",
+      "entite_seule": "Péages & vignettes",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/vignettes-obligatoires-europe-pays",
+    "mot_cle_principal": "vignettes obligatoires Europe pays",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/peages-vignettes",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/badge-telepeage-comparatif",
+      "/road-trips-voyage-auto/eviter-peages-itineraire-calcul",
+      "/road-trips-voyage-auto/crit-air-commander-vignette"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "vignettes obligatoires Europe pays",
+      "naturelle_longue": "vignettes obligatoires Europe pays",
+      "entite_seule": "Péages & vignettes",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/crit-air-commander-vignette",
+    "mot_cle_principal": "crit'air commander vignette",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/peages-vignettes",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/vignettes-obligatoires-europe-pays",
+      "/road-trips-voyage-auto/badge-telepeage-comparatif",
+      "/road-trips-voyage-auto/eviter-peages-itineraire-calcul"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "crit'air commander vignette",
+      "naturelle_longue": "tout savoir sur crit'air commander vignette",
+      "entite_seule": "Péages & vignettes",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/coffre-de-toit-comparatif",
+    "mot_cle_principal": "coffre de toit comparatif",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/equipement-preparation",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/equipements-obligatoires-voiture-europe",
+      "/road-trips-voyage-auto/porte-velos-attelage-choisir",
+      "/road-trips-voyage-auto/check-list-depart-vacances-voiture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "coffre de toit comparatif",
+      "naturelle_longue": "tout savoir sur coffre de toit comparatif",
+      "entite_seule": "Équipement & préparation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/equipements-obligatoires-voiture-europe",
+    "mot_cle_principal": "équipements obligatoires voiture Europe",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/equipement-preparation",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/porte-velos-attelage-choisir",
+      "/road-trips-voyage-auto/coffre-de-toit-comparatif",
+      "/road-trips-voyage-auto/check-list-depart-vacances-voiture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "équipements obligatoires voiture Europe",
+      "naturelle_longue": "équipements obligatoires voiture Europe",
+      "entite_seule": "Équipement & préparation",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/porte-velos-attelage-choisir",
+    "mot_cle_principal": "porte-vélos attelage choisir",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/equipement-preparation",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/check-list-depart-vacances-voiture",
+      "/road-trips-voyage-auto/equipements-obligatoires-voiture-europe",
+      "/road-trips-voyage-auto/coffre-de-toit-comparatif"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "porte-vélos attelage choisir",
+      "naturelle_longue": "tout savoir sur porte-vélos attelage choisir",
+      "entite_seule": "Équipement & préparation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/check-list-depart-vacances-voiture",
+    "mot_cle_principal": "check-list départ vacances voiture",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/equipement-preparation",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/equipements-obligatoires-voiture-europe",
+      "/road-trips-voyage-auto/porte-velos-attelage-choisir",
+      "/road-trips-voyage-auto/coffre-de-toit-comparatif"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "check-list départ vacances voiture",
+      "naturelle_longue": "check-list départ vacances voiture",
+      "entite_seule": "Équipement & préparation",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/road-trip-france-itineraires-mythiques",
+    "mot_cle_principal": "road trip France itinéraires mythiques",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-france",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/route-des-grandes-alpes-etapes",
+      "/road-trips-voyage-auto/road-trip-week-end-depart-paris",
+      "/road-trips-voyage-auto/cote-atlantique-en-voiture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "road trip France itinéraires mythiques",
+      "naturelle_longue": "road trip France itinéraires mythiques",
+      "entite_seule": "Road trips France",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/route-des-grandes-alpes-etapes",
+    "mot_cle_principal": "route des grandes alpes étapes",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-france",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/road-trip-week-end-depart-paris",
+      "/road-trips-voyage-auto/road-trip-france-itineraires-mythiques",
+      "/road-trips-voyage-auto/cote-atlantique-en-voiture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "route des grandes alpes étapes",
+      "naturelle_longue": "route des grandes alpes étapes",
+      "entite_seule": "Road trips France",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/cote-atlantique-en-voiture",
+    "mot_cle_principal": "côte atlantique en voiture",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-france",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/route-des-grandes-alpes-etapes",
+      "/road-trips-voyage-auto/road-trip-france-itineraires-mythiques",
+      "/road-trips-voyage-auto/road-trip-week-end-depart-paris"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "côte atlantique en voiture",
+      "naturelle_longue": "tout savoir sur côte atlantique en voiture",
+      "entite_seule": "Road trips France",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/road-trips-voyage-auto/road-trip-week-end-depart-paris",
+    "mot_cle_principal": "road trip week-end départ Paris",
+    "silo": "Road trips & voyage auto",
+    "sous_hub": "/road-trips-voyage-auto/road-trips-france",
+    "hub": "/road-trips-voyage-auto",
+    "liens_lateraux": [
+      "/road-trips-voyage-auto/route-des-grandes-alpes-etapes",
+      "/road-trips-voyage-auto/cote-atlantique-en-voiture",
+      "/road-trips-voyage-auto/road-trip-france-itineraires-mythiques"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "road trip week-end départ Paris",
+      "naturelle_longue": "road trip week-end départ Paris",
+      "entite_seule": "Road trips France",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/moteur-occasion-garantie",
+    "mot_cle_principal": "moteur occasion garantie",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/casse-occasion",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/pieces-reemploi-obligation-garagiste",
+      "/pieces-detachees-accessoires/casse-auto-en-ligne-pieces",
+      "/pieces-detachees-accessoires/demolisseur-agree-vhu"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "moteur occasion garantie",
+      "naturelle_longue": "tout savoir sur moteur occasion garantie",
+      "entite_seule": "Casse & occasion",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/casse-auto-en-ligne-pieces",
+    "mot_cle_principal": "casse auto en ligne pièces",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/casse-occasion",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/demolisseur-agree-vhu",
+      "/pieces-detachees-accessoires/moteur-occasion-garantie",
+      "/pieces-detachees-accessoires/pieces-reemploi-obligation-garagiste"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "casse auto en ligne pièces",
+      "naturelle_longue": "tout savoir sur casse auto en ligne pièces",
+      "entite_seule": "Casse & occasion",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/pieces-reemploi-obligation-garagiste",
+    "mot_cle_principal": "pièces réemploi obligation garagiste",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/casse-occasion",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/casse-auto-en-ligne-pieces",
+      "/pieces-detachees-accessoires/moteur-occasion-garantie",
+      "/pieces-detachees-accessoires/demolisseur-agree-vhu"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pièces réemploi obligation garagiste",
+      "naturelle_longue": "pièces réemploi obligation garagiste",
+      "entite_seule": "Casse & occasion",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/demolisseur-agree-vhu",
+    "mot_cle_principal": "démolisseur agréé VHU",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/casse-occasion",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/casse-auto-en-ligne-pieces",
+      "/pieces-detachees-accessoires/moteur-occasion-garantie",
+      "/pieces-detachees-accessoires/pieces-reemploi-obligation-garagiste"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "démolisseur agréé VHU",
+      "naturelle_longue": "tout savoir sur démolisseur agréé VHU",
+      "entite_seule": "Casse & occasion",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/turbo-reconditionne-ou-neuf",
+    "mot_cle_principal": "turbo reconditionné ou neuf",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-moteur",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/injecteurs-prix-remplacement",
+      "/pieces-detachees-accessoires/fap-remplacement-prix",
+      "/pieces-detachees-accessoires/vanne-egr-prix-piece",
+      "/pieces-detachees-accessoires/pompe-haute-pression-hs"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "turbo reconditionné ou neuf",
+      "naturelle_longue": "tout savoir sur turbo reconditionné ou neuf",
+      "entite_seule": "Pièces moteur",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/pompe-haute-pression-hs",
+    "mot_cle_principal": "pompe haute pression HS",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-moteur",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/injecteurs-prix-remplacement",
+      "/pieces-detachees-accessoires/vanne-egr-prix-piece",
+      "/pieces-detachees-accessoires/fap-remplacement-prix",
+      "/pieces-detachees-accessoires/turbo-reconditionne-ou-neuf"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pompe haute pression HS",
+      "naturelle_longue": "tout savoir sur pompe haute pression HS",
+      "entite_seule": "Pièces moteur",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/injecteurs-prix-remplacement",
+    "mot_cle_principal": "injecteurs prix remplacement",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-moteur",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/fap-remplacement-prix",
+      "/pieces-detachees-accessoires/pompe-haute-pression-hs",
+      "/pieces-detachees-accessoires/turbo-reconditionne-ou-neuf",
+      "/pieces-detachees-accessoires/vanne-egr-prix-piece"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "injecteurs prix remplacement",
+      "naturelle_longue": "tout savoir sur injecteurs prix remplacement",
+      "entite_seule": "Pièces moteur",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/fap-remplacement-prix",
+    "mot_cle_principal": "FAP remplacement prix",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-moteur",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/injecteurs-prix-remplacement",
+      "/pieces-detachees-accessoires/pompe-haute-pression-hs",
+      "/pieces-detachees-accessoires/vanne-egr-prix-piece",
+      "/pieces-detachees-accessoires/turbo-reconditionne-ou-neuf"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "FAP remplacement prix",
+      "naturelle_longue": "tout savoir sur FAP remplacement prix",
+      "entite_seule": "Pièces moteur",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/vanne-egr-prix-piece",
+    "mot_cle_principal": "vanne EGR prix pièce",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-moteur",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/injecteurs-prix-remplacement",
+      "/pieces-detachees-accessoires/fap-remplacement-prix",
+      "/pieces-detachees-accessoires/turbo-reconditionne-ou-neuf",
+      "/pieces-detachees-accessoires/pompe-haute-pression-hs"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "vanne EGR prix pièce",
+      "naturelle_longue": "tout savoir sur vanne EGR prix pièce",
+      "entite_seule": "Pièces moteur",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/carplay-sans-fil-adaptateur",
+    "mot_cle_principal": "CarPlay sans fil adaptateur",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/electronique-embarquee",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/meilleur-gps-voiture",
+      "/pieces-detachees-accessoires/chargeur-induction-voiture",
+      "/pieces-detachees-accessoires/camera-de-recul-installation",
+      "/pieces-detachees-accessoires/dashcam-comparatif-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "CarPlay sans fil adaptateur",
+      "naturelle_longue": "tout savoir sur CarPlay sans fil adaptateur",
+      "entite_seule": "Électronique embarquée",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/camera-de-recul-installation",
+    "mot_cle_principal": "caméra de recul installation",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/electronique-embarquee",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/dashcam-comparatif-2026",
+      "/pieces-detachees-accessoires/chargeur-induction-voiture",
+      "/pieces-detachees-accessoires/carplay-sans-fil-adaptateur",
+      "/pieces-detachees-accessoires/meilleur-gps-voiture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "caméra de recul installation",
+      "naturelle_longue": "tout savoir sur caméra de recul installation",
+      "entite_seule": "Électronique embarquée",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/chargeur-induction-voiture",
+    "mot_cle_principal": "chargeur induction voiture",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/electronique-embarquee",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/meilleur-gps-voiture",
+      "/pieces-detachees-accessoires/camera-de-recul-installation",
+      "/pieces-detachees-accessoires/carplay-sans-fil-adaptateur",
+      "/pieces-detachees-accessoires/dashcam-comparatif-2026"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "chargeur induction voiture",
+      "naturelle_longue": "tout savoir sur chargeur induction voiture",
+      "entite_seule": "Électronique embarquée",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/meilleur-gps-voiture",
+    "mot_cle_principal": "meilleur GPS voiture",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/electronique-embarquee",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/camera-de-recul-installation",
+      "/pieces-detachees-accessoires/carplay-sans-fil-adaptateur",
+      "/pieces-detachees-accessoires/dashcam-comparatif-2026",
+      "/pieces-detachees-accessoires/chargeur-induction-voiture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleur GPS voiture",
+      "naturelle_longue": "tout savoir sur meilleur GPS voiture",
+      "entite_seule": "Électronique embarquée",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/dashcam-comparatif-2026",
+    "mot_cle_principal": "dashcam comparatif 2026",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/electronique-embarquee",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/camera-de-recul-installation",
+      "/pieces-detachees-accessoires/meilleur-gps-voiture",
+      "/pieces-detachees-accessoires/chargeur-induction-voiture",
+      "/pieces-detachees-accessoires/carplay-sans-fil-adaptateur"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "dashcam comparatif 2026",
+      "naturelle_longue": "tout savoir sur dashcam comparatif 2026",
+      "entite_seule": "Électronique embarquée",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/tapis-voiture-sur-mesure",
+    "mot_cle_principal": "tapis voiture sur mesure",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/accessoires-interieur-confort",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/organiseur-coffre-pratique",
+      "/pieces-detachees-accessoires/siege-auto-bebe-crash-test",
+      "/pieces-detachees-accessoires/housses-siege-comparatif"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "tapis voiture sur mesure",
+      "naturelle_longue": "tout savoir sur tapis voiture sur mesure",
+      "entite_seule": "Accessoires intérieur & confort",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/housses-siege-comparatif",
+    "mot_cle_principal": "housses siège comparatif",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/accessoires-interieur-confort",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/tapis-voiture-sur-mesure",
+      "/pieces-detachees-accessoires/siege-auto-bebe-crash-test",
+      "/pieces-detachees-accessoires/organiseur-coffre-pratique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "housses siège comparatif",
+      "naturelle_longue": "tout savoir sur housses siège comparatif",
+      "entite_seule": "Accessoires intérieur & confort",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/organiseur-coffre-pratique",
+    "mot_cle_principal": "organiseur coffre pratique",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/accessoires-interieur-confort",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/siege-auto-bebe-crash-test",
+      "/pieces-detachees-accessoires/tapis-voiture-sur-mesure",
+      "/pieces-detachees-accessoires/housses-siege-comparatif"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "organiseur coffre pratique",
+      "naturelle_longue": "tout savoir sur organiseur coffre pratique",
+      "entite_seule": "Accessoires intérieur & confort",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/siege-auto-bebe-crash-test",
+    "mot_cle_principal": "siège auto bébé crash test",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/accessoires-interieur-confort",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/organiseur-coffre-pratique",
+      "/pieces-detachees-accessoires/housses-siege-comparatif",
+      "/pieces-detachees-accessoires/tapis-voiture-sur-mesure"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "siège auto bébé crash test",
+      "naturelle_longue": "tout savoir sur siège auto bébé crash test",
+      "entite_seule": "Accessoires intérieur & confort",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/pieces-auto-en-ligne-fiables",
+    "mot_cle_principal": "pièces auto en ligne fiables",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-d-usure",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/amortisseurs-prix-paire",
+      "/pieces-detachees-accessoires/kit-embrayage-marques-comparees",
+      "/pieces-detachees-accessoires/rotules-suspension-jeu",
+      "/pieces-detachees-accessoires/pieces-equivalentes-qualite-origine"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pièces auto en ligne fiables",
+      "naturelle_longue": "tout savoir sur pièces auto en ligne fiables",
+      "entite_seule": "Pièces d'usure",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/pieces-equivalentes-qualite-origine",
+    "mot_cle_principal": "pièces équivalentes qualité origine",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-d-usure",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/rotules-suspension-jeu",
+      "/pieces-detachees-accessoires/kit-embrayage-marques-comparees",
+      "/pieces-detachees-accessoires/pieces-auto-en-ligne-fiables",
+      "/pieces-detachees-accessoires/amortisseurs-prix-paire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pièces équivalentes qualité origine",
+      "naturelle_longue": "pièces équivalentes qualité origine",
+      "entite_seule": "Pièces d'usure",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/amortisseurs-prix-paire",
+    "mot_cle_principal": "amortisseurs prix paire",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-d-usure",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/pieces-auto-en-ligne-fiables",
+      "/pieces-detachees-accessoires/kit-embrayage-marques-comparees",
+      "/pieces-detachees-accessoires/rotules-suspension-jeu",
+      "/pieces-detachees-accessoires/pieces-equivalentes-qualite-origine"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "amortisseurs prix paire",
+      "naturelle_longue": "tout savoir sur amortisseurs prix paire",
+      "entite_seule": "Pièces d'usure",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/rotules-suspension-jeu",
+    "mot_cle_principal": "rotules suspension jeu",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-d-usure",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/pieces-equivalentes-qualite-origine",
+      "/pieces-detachees-accessoires/amortisseurs-prix-paire",
+      "/pieces-detachees-accessoires/kit-embrayage-marques-comparees",
+      "/pieces-detachees-accessoires/pieces-auto-en-ligne-fiables"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rotules suspension jeu",
+      "naturelle_longue": "tout savoir sur rotules suspension jeu",
+      "entite_seule": "Pièces d'usure",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/kit-embrayage-marques-comparees",
+    "mot_cle_principal": "kit embrayage marques comparées",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/pieces-d-usure",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/amortisseurs-prix-paire",
+      "/pieces-detachees-accessoires/pieces-auto-en-ligne-fiables",
+      "/pieces-detachees-accessoires/pieces-equivalentes-qualite-origine",
+      "/pieces-detachees-accessoires/rotules-suspension-jeu"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "kit embrayage marques comparées",
+      "naturelle_longue": "kit embrayage marques comparées",
+      "entite_seule": "Pièces d'usure",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/renover-phares-ternis",
+    "mot_cle_principal": "rénover phares ternis",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/carrosserie-optiques",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/pare-chocs-occasion-casse",
+      "/pieces-detachees-accessoires/peinture-rayure-retouche",
+      "/pieces-detachees-accessoires/pare-brise-impact-reparation",
+      "/pieces-detachees-accessoires/retroviseur-remplacement-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rénover phares ternis",
+      "naturelle_longue": "tout savoir sur rénover phares ternis",
+      "entite_seule": "Carrosserie & optiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/pare-brise-impact-reparation",
+    "mot_cle_principal": "pare-brise impact réparation",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/carrosserie-optiques",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/retroviseur-remplacement-prix",
+      "/pieces-detachees-accessoires/peinture-rayure-retouche",
+      "/pieces-detachees-accessoires/renover-phares-ternis",
+      "/pieces-detachees-accessoires/pare-chocs-occasion-casse"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pare-brise impact réparation",
+      "naturelle_longue": "tout savoir sur pare-brise impact réparation",
+      "entite_seule": "Carrosserie & optiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/peinture-rayure-retouche",
+    "mot_cle_principal": "peinture rayure retouche",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/carrosserie-optiques",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/renover-phares-ternis",
+      "/pieces-detachees-accessoires/pare-brise-impact-reparation",
+      "/pieces-detachees-accessoires/pare-chocs-occasion-casse",
+      "/pieces-detachees-accessoires/retroviseur-remplacement-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "peinture rayure retouche",
+      "naturelle_longue": "tout savoir sur peinture rayure retouche",
+      "entite_seule": "Carrosserie & optiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/retroviseur-remplacement-prix",
+    "mot_cle_principal": "rétroviseur remplacement prix",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/carrosserie-optiques",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/peinture-rayure-retouche",
+      "/pieces-detachees-accessoires/renover-phares-ternis",
+      "/pieces-detachees-accessoires/pare-brise-impact-reparation",
+      "/pieces-detachees-accessoires/pare-chocs-occasion-casse"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rétroviseur remplacement prix",
+      "naturelle_longue": "tout savoir sur rétroviseur remplacement prix",
+      "entite_seule": "Carrosserie & optiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/pieces-detachees-accessoires/pare-chocs-occasion-casse",
+    "mot_cle_principal": "pare-chocs occasion casse",
+    "silo": "Pièces détachées & accessoires",
+    "sous_hub": "/pieces-detachees-accessoires/carrosserie-optiques",
+    "hub": "/pieces-detachees-accessoires",
+    "liens_lateraux": [
+      "/pieces-detachees-accessoires/renover-phares-ternis",
+      "/pieces-detachees-accessoires/retroviseur-remplacement-prix",
+      "/pieces-detachees-accessoires/peinture-rayure-retouche",
+      "/pieces-detachees-accessoires/pare-brise-impact-reparation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pare-chocs occasion casse",
+      "naturelle_longue": "tout savoir sur pare-chocs occasion casse",
+      "entite_seule": "Carrosserie & optiques",
+      "generique": "cet article"
+    }
+  }
+]

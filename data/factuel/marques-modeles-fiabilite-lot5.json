@@ -1,0 +1,65 @@
+[
+  {
+    "modele": "Alfa Romeo (moteurs anciens 1.3/1.4/1.6 JTD-Multijet, temoignages)",
+    "score_fiabilite": "fiabilite variable, problemes recurrents sur certains organes",
+    "pannes_courantes": "chaine de distribution et turbo signales (1.3 JTD), direction assistee qui se bloque frequemment apres 200 000-220 000km (probleme recurrent sur plusieurs motorisations), probleme d'allumage et capteur miltiair (1.4 MPI)",
+    "source": "fiches-auto.fr (temoignages) — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Alfa Romeo Stelvio",
+    "score_fiabilite": "globalement bonne, 'bon eleve italien' selon la source, tres peu de problemes recurrents malgre une certaine variete de petits soucis",
+    "pannes_courantes": "les diesels presentent legerement plus de petits problemes que les essences (a relativiser selon la source), restylage 2023 avec ameliorations technologiques",
+    "source": "caradisiac.com, oovango.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Tesla Model Y",
+    "score_fiabilite": "note globale 16,3/20 (Caradisiac, 27 avis) mais retours contrastes",
+    "pannes_courantes": "un temoignage individuel signale une panne de direction assistee a 700km avec immobilisation de 3 semaines et fonctionnement aleatoire des essuie-glaces automatiques ; cas isole, pas necessairement representatif de la fiabilite generale",
+    "source": "automobile-propre.com, caradisiac.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mini Countryman (generation 1, R60)",
+    "score_fiabilite": "problemes recurrents documentes, generation deconseillee en occasion",
+    "pannes_courantes": "problemes de chaine de distribution, consommation d'huile excessive, defaillances de pompe haute pression — factures pouvant depasser la valeur residuelle du vehicule",
+    "source": "garagelorre.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Mini Countryman (generation 2, F60, depuis 2017)",
+    "score_fiabilite": "nettement superieure a la generation 1 selon la source, motorisations BMW plus robustes",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie pour cette generation dans la source consultee",
+    "source": "garagelorre.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mini Countryman (temoignage individuel, 2012)",
+    "score_fiabilite": "serie de pannes couteuses documentees sur un exemplaire individuel",
+    "pannes_courantes": "bobine d'allumage (514€), retroviseur electrique (509€), ouverture coffre arriere (302€), radiateur (524€), thermostat (1854€) — total de reparations tres eleve sur cet exemplaire, a ponderer (temoignage isole)",
+    "source": "caradisiac.com (avis proprietaire) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mini (moteurs B38/B48/B47, tableau synthetique, plusieurs modeles)",
+    "score_fiabilite": "bonne a excellente selon motorisation",
+    "pannes_courantes": "B38 (essence 3cyl, depuis 2014) : bonne a tres bonne fiabilite ; B48 (essence 4cyl turbo, depuis 2014) : excellente fiabilite ; B47 (diesel 4cyl, depuis 2015) : bonne fiabilite — aucun defaut majeur recurrent signale pour ces motorisations",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Forester (derniere decennie, generations recentes)",
+    "score_fiabilite": "generalement bonnes voitures fiables selon retours communautaires, avec quelques annees plus faibles (ex: 2011 cite comme moins bonne)",
+    "pannes_courantes": "aucun defaut majeur systematique identifie hors variations selon annee de production",
+    "source": "reddit.com/r/SubaruForester (discussion communautaire, a recouper avec source plus formelle) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Forester (boite CVT)",
+    "score_fiabilite": "garantie constructeur etendue a 10 ans/160 000km specifiquement en raison de la boite CVT (signal indirect d'un point d'attention sur ce composant)",
+    "pannes_courantes": "non detaille precisement, mais l'extension de garantie CVT suggere une fragilite historique de ce composant chez Subaru",
+    "source": "reddit.com/r/SubaruForester (discussion communautaire) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

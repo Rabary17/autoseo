@@ -1,0 +1,14 @@
+{
+  "name": "autoseo-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scripts serveur du projet autoseo (P1-P6 + pipeline de publication automatisée). Distinct de frontend/monauto/package.json (le site Next.js).",
+  "scripts": {
+    "autopublish": "node scripts/autopublish/run.js",
+    "autopublish:dry": "node scripts/autopublish/run.js --dry-run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.111.0",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -97,9 +97,36 @@ async function main() {
 
 <!-- wp:paragraph -->
 <p>Oui, avec un cric, des chandelles, un bac de vidange et l'huile préconisée par le carnet d'entretien. L'huile usagée doit être rapportée en déchetterie ou centre auto, jamais jetée dans les égouts ou la nature.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2>Questions fréquentes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Combien de temps dure une vidange ?</strong> Comptez environ 30 à 45 minutes en atelier, hors temps d'attente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Que se passe-t-il si on dépasse l'intervalle recommandé ?</strong> L'huile perd ses propriétés lubrifiantes, ce qui accélère l'usure du moteur et peut annuler la garantie constructeur.</p>
 <!-- /wp:paragraph -->`;
 
-  const article = await findOrCreate('posts', 'slug=vidange-guide', {
+  // FAQ : mêmes questions/réponses, mot pour mot, que dans articleContent
+  // ci-dessus (voir skills/geo.md section 3 — "questions dans le même ordre
+  // que dans le texte").
+  const faq = [
+    {
+      question: 'Combien de temps dure une vidange ?',
+      answer: "Comptez environ 30 à 45 minutes en atelier, hors temps d'attente.",
+    },
+    {
+      question: "Que se passe-t-il si on dépasse l'intervalle recommandé ?",
+      answer:
+        "L'huile perd ses propriétés lubrifiantes, ce qui accélère l'usure du moteur et peut annuler la garantie constructeur.",
+    },
+  ];
+
+  const articlePayload = {
     title: 'Vidange : périodicité, prix et quand la faire soi-même',
     slug: 'vidange-guide',
     status: 'publish',
@@ -110,11 +137,14 @@ async function main() {
     tags: [tag.id],
     acf: {
       tldr: 'Vidangez tous les 10 000 à 15 000 km (ou 1 fois/an) selon le type d\'huile. Comptez 70 à 150 € en atelier ; possible soi-même avec le bon équipement.',
-      sources: [
-        { label: 'Carnet d\'entretien constructeur', url: 'https://www.service-public.fr/particuliers/vosdroits/F2168' },
-      ],
+      sources: "Carnet d'entretien constructeur | https://www.service-public.fr/particuliers/vosdroits/F2168",
+      faq: faq.map(f => `${f.question} | ${f.answer}`).join('\n'),
     },
-  });
+  };
+  let article = await findOrCreate('posts', 'slug=vidange-guide', articlePayload);
+  // Article déjà existant : on le remet à jour (contenu/ACF) pour que le
+  // script reste utile après la première création, pas seulement à la création.
+  article = await wp.request(`/posts/${article.id}`, { method: 'POST', body: articlePayload });
   console.log('Article', article.id, article.slug, article.status);
 
   console.log('\nSeed terminé. Vérifier :');

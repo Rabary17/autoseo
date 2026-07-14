@@ -1,0 +1,107 @@
+[
+  {
+    "modele": "Mazda CX-5 (2e generation, moteurs 2.0/2.5 Skyactiv-G essence)",
+    "score_fiabilite": "tres fiable selon guide d'achat, l'un des SUV les plus recommandables du marche de l'occasion",
+    "pannes_courantes": "aucun defaut majeur recurrent sur les motorisations essence Skyactiv-G ; un temoignage individuel signale craquements de direction et voyant SBS intempestif mais attribue en partie a un entretien concessionnaire deficient",
+    "source": "vpn-autos.com, caradisiac.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mazda CX-5 (diesel 2.2 Skyactiv-D)",
+    "score_fiabilite": "necessite un suivi meticuleux",
+    "pannes_courantes": "vanne EGR et FAP a surveiller de pres",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "BMW Serie 1 (F40, generation actuelle)",
+    "score_fiabilite": "tres bon niveau, sans etre parfait",
+    "pannes_courantes": "problemes historiques de chaine diesel, volant moteur, circuit de refroidissement et boite de transfert resolus sur cette generation ; sources de problemes restantes surtout electroniques (reprogrammation, cartographie) plutot que mecaniques lourdes",
+    "source": "caradisiac.com, auto-moto.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "BMW Serie 3 (F30/F31, moteur diesel N47 avant restylage)",
+    "score_fiabilite": "fragilites connues avant 2011, corrigees ensuite",
+    "pannes_courantes": "probleme de chaine de distribution tres connu sur le moteur N47 debut de production ; BMW a ameliore guides/tendeurs et conception de la distribution a partir de 2011",
+    "source": "euroracingparts.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "BMW Serie 1 (probleme general toutes generations)",
+    "score_fiabilite": "variable selon generation",
+    "pannes_courantes": "dysfonctionnement de la fonction start-stop des 20 000-30 000 km, pompe a eau defectueuse",
+    "source": "auto-doc.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes Classe C (W206, generation actuelle)",
+    "score_fiabilite": "trop recente pour un retour de fiabilite a long terme, quelques points faibles deja identifies",
+    "pannes_courantes": "systeme MBUX pouvant ralentir/redemarrer (resolu par mise a jour logicielle, ~100-200€), dysfonctionnements camera de recul/vision 360 necessitant parfois un remplacement de module (~400-600€)",
+    "source": "autocadre.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Mercedes Classe C (moteur diesel ancien, temoignage individuel 470 000km)",
+    "score_fiabilite": "moteur repute tres solide selon retour d'experience individuel",
+    "pannes_courantes": "seul point connu signale : a-coups a froid lies a la pompe a injection, resolu une fois le moteur chaud",
+    "source": "caradisiac.com (temoignage) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes Classe A (W176 et generation 4)",
+    "score_fiabilite": "qualite d'assemblage critiquee, pannes electroniques couteuses possibles",
+    "pannes_courantes": "bruits parasites/grincements sur la W176 (qualite des plastiques) ; calculateur MBUX defaillant rapporte sur generation 4 (cout de remplacement ~2500€, generalement pris en charge sous garantie)",
+    "source": "euroracingparts.fr, caradisiac.com (temoignage) — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Audi A3 / A3 Sportback (depuis 2020)",
+    "score_fiabilite": "excellente depuis 2020, tres faible taux de panne selon guide d'achat",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie pour cette generation recente",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi A4 (toutes generations, notamment avant 2013)",
+    "score_fiabilite": "reputee pour sa qualite de fabrication, pas exempte de petits defauts techniques sur les generations plus anciennes",
+    "pannes_courantes": "problemes documentes principalement sur les modeles produits avant 2013 (details non precises dans l'extrait consulte)",
+    "source": "conseil-auto-moto.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Fabia (plusieurs motorisations, 8 moteurs a eviter selon la source)",
+    "score_fiabilite": "variable, certaines motorisations fortement deconseillees",
+    "pannes_courantes": "probleme chronique de distribution (chaine) sur plusieurs moteurs, consommation d'huile excessive non resolue structurellement, pompe a eau fragile (panne recurrente vers 60-80 000km), 1.4 TDI 90-105ch particulierement cite comme 'concentre de defauts diesel'",
+    "source": "oscar-racing.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Skoda (moteurs 1.0 TSI, 1.5 TSI, 2.0 TSI recents, tableau synthetique)",
+    "score_fiabilite": "tres bonne a excellente selon motorisation",
+    "pannes_courantes": "1.0 TSI (depuis 2016, Fabia/Scala/Kamiq) : tres bonne fiabilite ; 1.5 TSI (depuis 2017, Octavia/Karoq/Scala) : excellente fiabilite ; 2.0 TSI (depuis 2015, Superb/Kodiaq) : tres bonne fiabilite — aucun defaut majeur recurrent signale pour ces motorisations recentes",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Seat Leon (generation 2020, moteurs 1.5 TSI / 1.5 eTSI)",
+    "score_fiabilite": "7,8/10 selon avis d'experts (source francaise), mais enquete britannique plus severe avec 48% des proprietaires signalant des defauts (etude non francaise, a nuancer)",
+    "pannes_courantes": "moteurs 1.5 TSI/eTSI juges fiables mecaniquement ; systeme MIB3 connecte et aides a la conduite nombreuses (source potentielle de bugs electroniques selon l'enquete anglaise citee, non detaillee precisement)",
+    "source": "autoplus.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Seat Ibiza (2008-2017, divers moteurs)",
+    "score_fiabilite": "variable selon motorisation et age",
+    "pannes_courantes": "1.9 TDI 100ch : usure normale de peinture apres 10 ans (pas un defaut) ; 1.4 85ch : panne de fusible affectant la direction assistee ; 1.4 TDI 80ch : geometrie a revoir, boite qui craque en 3eme ; 1.2 TSI 90ch : fuite systeme de climatisation ; 2.0 TDI 143ch : capteur de FAP defaillant",
+    "source": "fiches-auto.fr (temoignages) — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Seat Leon (temoignage individuel, 30 000km)",
+    "score_fiabilite": "bon rapport qualite/prix mais quelques problemes signales tot",
+    "pannes_courantes": "sonde lambda, roulement, defaut d'allumage des feux (ne s'eteignent pas automatiquement) rapportes des 30 000km par un proprietaire",
+    "source": "gobriocar.com (avis client) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

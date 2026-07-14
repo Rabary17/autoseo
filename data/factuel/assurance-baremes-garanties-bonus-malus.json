@@ -1,0 +1,41 @@
+{
+  "bonus_malus": {
+    "nom_officiel": "Coefficient de Reduction-Majoration (CRM)",
+    "cadre_legal": "Articles A.121-1 et A.121-2 du Code des assurances, obligatoire pour tous les assureurs auto en France",
+    "coefficient_depart": 1.0,
+    "coefficient_min_bonus_max": 0.50,
+    "coefficient_max_malus_max": 3.50,
+    "regle_calcul": "chaque annee sans sinistre responsable reduit le coefficient de 5% (x0.95) ; chaque sinistre responsable l'augmente de 25% (x1.25)",
+    "duree_pour_bonus_max": "13 annees consecutives sans sinistre responsable pour atteindre le bonus 50 (coefficient 0.50)",
+    "periode_reference": "12 mois consecutifs se terminant 2 mois avant l'echeance annuelle du contrat (pas l'annee civile)",
+    "source": "lesfurets.com, l-assurance.fr, allianz.fr, service-public.gouv.fr — consulte 2026-07",
+    "a_verifier": false
+  },
+  "niveaux_de_garantie": [
+    {
+      "niveau": "Au tiers (formule minimale, garantie responsabilite civile obligatoire)",
+      "couverture": "Dommages causes aux tiers uniquement (corporels et materiels) ; ne couvre pas les dommages propres au vehicule assure",
+      "public_cible": "Vehicules anciens ou de faible valeur (Argus inferieure a ~3000-4000€)",
+      "prix_indicatif": "formule la moins chere du marche",
+      "source": "ornikar.com, lesfurets.com — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "niveau": "Intermediaire (tiers plus / tiers etendu)",
+      "couverture": "Responsabilite civile + garanties complementaires cle en main : vol, incendie, bris de glace, evenements climatiques",
+      "public_cible": "Vehicules de valeur intermediaire (entre ~4000€ et 10000€ Argus)",
+      "prix_indicatif": "environ 800€/an en moyenne (vs ~1050€/an en tous risques, ordre de grandeur marche, variable selon profil)",
+      "source": "lesfurets.com — consulte 2026-07",
+      "a_verifier": true
+    },
+    {
+      "niveau": "Tous risques (formule complete)",
+      "couverture": "Responsabilite civile + garanties intermediaires + dommages propres au vehicule assure meme en cas d'accident responsable",
+      "public_cible": "Vehicules neufs ou de valeur elevee, leasing/LOA (souvent exige par le contrat de financement)",
+      "prix_indicatif": "formule la plus chere du marche (~1050€/an en moyenne, ordre de grandeur)",
+      "source": "lesfurets.com — consulte 2026-07",
+      "a_verifier": true
+    }
+  ],
+  "note_generale": "Dataset compact P2 pour le silo Assurance auto (couvre l'essentiel du bareme bonus-malus et les 3 niveaux de garantie). Les montants moyens de primes sont des ordres de grandeur marche non garantis contractuellement, a presenter comme tels dans les articles (jamais comme un devis precis) — voir champs a_verifier."
+}

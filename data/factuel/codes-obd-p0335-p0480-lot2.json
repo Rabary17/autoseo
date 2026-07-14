@@ -1,0 +1,506 @@
+[
+  {
+    "code": "P0335",
+    "libelle": "Circuit capteur position vilebrequin A - panne",
+    "causes_possibles": "Capteur de vilebrequin defaillant, cablage endommage, roue phonique encrassee ou endommagee",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0336",
+    "libelle": "Capteur position vilebrequin A - plage/performance",
+    "causes_possibles": "Capteur hors plage, roue phonique endommagee, entrefer incorrect",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0337",
+    "libelle": "Capteur position vilebrequin A - signal faible",
+    "causes_possibles": "Capteur en court-circuit a la masse",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0338",
+    "libelle": "Capteur position vilebrequin A - signal eleve",
+    "causes_possibles": "Capteur en circuit ouvert",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0339",
+    "libelle": "Capteur position vilebrequin A - signal intermittent",
+    "causes_possibles": "Cablage ou connecteur instable",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0340",
+    "libelle": "Circuit capteur position arbre a cames (CMP) A - dysfonctionnement",
+    "causes_possibles": "Capteur d'arbre a cames defaillant, cablage, roue phonique distribution",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0341",
+    "libelle": "Capteur position arbre a cames A - plage/performance",
+    "causes_possibles": "Capteur hors plage, calage distribution incorrect",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0342",
+    "libelle": "Capteur position arbre a cames A - signal faible",
+    "causes_possibles": "Court-circuit a la masse",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0343",
+    "libelle": "Capteur position arbre a cames A - signal eleve",
+    "causes_possibles": "Circuit ouvert",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0344",
+    "libelle": "Capteur position arbre a cames A - signal intermittent",
+    "causes_possibles": "Cablage instable",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0345",
+    "libelle": "Circuit capteur position arbre a cames A (Banc 2) - dysfonctionnement",
+    "causes_possibles": "Capteur arbre a cames banc 2 defaillant",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0346",
+    "libelle": "Capteur position arbre a cames A (Banc 2) - plage/performance",
+    "causes_possibles": "Capteur hors plage banc 2",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0347",
+    "libelle": "Capteur position arbre a cames A (Banc 2) - signal faible",
+    "causes_possibles": "Court-circuit banc 2",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0348",
+    "libelle": "Capteur position arbre a cames A (Banc 2) - signal eleve",
+    "causes_possibles": "Circuit ouvert banc 2",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0349",
+    "libelle": "Capteur position arbre a cames A (Banc 2) - signal intermittent",
+    "causes_possibles": "Cablage instable banc 2",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0350",
+    "libelle": "Circuit primaire/secondaire bobine d'allumage - defaut general",
+    "causes_possibles": "Bobine d'allumage defaillante, cablage, calculateur",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0351",
+    "libelle": "Circuit bobine d'allumage A - defaut (cylindre 1)",
+    "causes_possibles": "Bobine d'allumage cylindre 1 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0352",
+    "libelle": "Circuit bobine d'allumage B - defaut (cylindre 2)",
+    "causes_possibles": "Bobine d'allumage cylindre 2 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0353",
+    "libelle": "Circuit bobine d'allumage C - defaut (cylindre 3)",
+    "causes_possibles": "Bobine d'allumage cylindre 3 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0354",
+    "libelle": "Circuit bobine d'allumage D - defaut (cylindre 4)",
+    "causes_possibles": "Bobine d'allumage cylindre 4 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0355",
+    "libelle": "Circuit bobine d'allumage E - defaut (cylindre 5)",
+    "causes_possibles": "Bobine d'allumage cylindre 5 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0356",
+    "libelle": "Circuit bobine d'allumage F - defaut (cylindre 6)",
+    "causes_possibles": "Bobine d'allumage cylindre 6 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0357",
+    "libelle": "Circuit bobine d'allumage G - defaut (cylindre 7)",
+    "causes_possibles": "Bobine d'allumage cylindre 7 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0358",
+    "libelle": "Circuit bobine d'allumage H - defaut (cylindre 8)",
+    "causes_possibles": "Bobine d'allumage cylindre 8 defaillante, cablage",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0370",
+    "libelle": "Circuit signal reference roue phonique A - defaut",
+    "causes_possibles": "Roue phonique endommagee, capteur, cablage",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0371",
+    "libelle": "Signal reference roue phonique A - trop de pulses",
+    "causes_possibles": "Roue phonique endommagee ou encrassee",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0372",
+    "libelle": "Signal reference roue phonique A - trop peu de pulses",
+    "causes_possibles": "Roue phonique endommagee, capteur mal positionne",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0373",
+    "libelle": "Signal reference roue phonique A - pulses intermittents",
+    "causes_possibles": "Cablage ou capteur instable",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0374",
+    "libelle": "Signal reference roue phonique A - pas de pulses",
+    "causes_possibles": "Capteur en panne, roue phonique cassee",
+    "gravite": "severe",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0400",
+    "libelle": "Debit de recirculation gaz d'echappement (EGR) - defaut general",
+    "causes_possibles": "Vanne EGR bloquee, encrassee, cablage, capteur EGR",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0401",
+    "libelle": "Debit EGR insuffisant",
+    "causes_possibles": "Vanne EGR bloquee fermee, conduits EGR encrasses/colmates",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0402",
+    "libelle": "Debit EGR excessif",
+    "causes_possibles": "Vanne EGR bloquee ouverte, calculateur",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0403",
+    "libelle": "Circuit de commande EGR - defaut electrique",
+    "causes_possibles": "Electrovanne EGR ou cablage defaillant",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0404",
+    "libelle": "Circuit de commande EGR - plage/performance",
+    "causes_possibles": "Vanne EGR partiellement bloquee, calibration",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0405",
+    "libelle": "Circuit capteur position EGR A - signal faible",
+    "causes_possibles": "Capteur de position EGR defaillant, cablage",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0406",
+    "libelle": "Circuit capteur position EGR A - signal eleve",
+    "causes_possibles": "Capteur de position EGR en circuit ouvert",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0407",
+    "libelle": "Circuit capteur position EGR B - signal faible",
+    "causes_possibles": "Capteur EGR secondaire defaillant",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0408",
+    "libelle": "Circuit capteur position EGR B - signal eleve",
+    "causes_possibles": "Capteur EGR secondaire en circuit ouvert",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0409",
+    "libelle": "Circuit capteur/electrovanne EGR - defaut",
+    "causes_possibles": "Electrovanne de commande EGR defaillante",
+    "gravite": "modere",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0410",
+    "libelle": "Systeme d'injection d'air secondaire - defaut",
+    "causes_possibles": "Pompe air secondaire defaillante, clapet, cablage",
+    "gravite": "mineure",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0411",
+    "libelle": "Systeme d'injection d'air secondaire - debit incorrect",
+    "causes_possibles": "Pompe ou clapet d'air secondaire defaillant",
+    "gravite": "mineure",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0412",
+    "libelle": "Circuit vanne commutation air secondaire A - defaut",
+    "causes_possibles": "Electrovanne de commutation defaillante",
+    "gravite": "mineure",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0413",
+    "libelle": "Circuit vanne commutation air secondaire A - circuit ouvert",
+    "causes_possibles": "Cablage coupe",
+    "gravite": "mineure",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0414",
+    "libelle": "Circuit vanne commutation air secondaire A - court-circuit",
+    "causes_possibles": "Cablage en court-circuit",
+    "gravite": "mineure",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0420",
+    "libelle": "Efficacite systeme catalytique sous le seuil (Banc 1)",
+    "causes_possibles": "Catalyseur encrasse/use, sondes lambda defaillantes, melange trop riche, injecteurs ou MAF defaillants, vanne EGR bloquee",
+    "gravite": "severe",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0421",
+    "libelle": "Efficacite catalyseur de demarrage a froid sous le seuil (Banc 1)",
+    "causes_possibles": "Catalyseur de demarrage a froid degrade",
+    "gravite": "severe",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0422",
+    "libelle": "Efficacite catalyseur principal sous le seuil (Banc 1)",
+    "causes_possibles": "Catalyseur principal degrade",
+    "gravite": "severe",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0430",
+    "libelle": "Efficacite systeme catalytique sous le seuil (Banc 2)",
+    "causes_possibles": "Catalyseur banc 2 encrasse/use, sondes lambda banc 2, melange trop riche",
+    "gravite": "severe",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0431",
+    "libelle": "Efficacite catalyseur de demarrage a froid sous le seuil (Banc 2)",
+    "causes_possibles": "Catalyseur de demarrage a froid banc 2 degrade",
+    "gravite": "severe",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0432",
+    "libelle": "Efficacite catalyseur principal sous le seuil (Banc 2)",
+    "causes_possibles": "Catalyseur principal banc 2 degrade",
+    "gravite": "severe",
+    "source": "carverif.fr, fixter.fr, mycarly.com, droxauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0440",
+    "libelle": "Systeme de controle des emissions evaporatives (EVAP) - defaut general",
+    "causes_possibles": "Bouchon de reservoir mal ferme, durite EVAP fissuree, electrovanne purge/mise a l'air",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0441",
+    "libelle": "EVAP - debit de purge incorrect",
+    "causes_possibles": "Electrovanne de purge defaillante, durite obstruee",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0442",
+    "libelle": "EVAP - fuite detectee (fuite moyenne)",
+    "causes_possibles": "Bouchon de reservoir mal serre, fissure sur durite ou reservoir",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0443",
+    "libelle": "Circuit electrovanne de purge EVAP - defaut",
+    "causes_possibles": "Electrovanne de purge en panne, cablage",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0446",
+    "libelle": "Circuit electrovanne de mise a l'air EVAP - defaut",
+    "causes_possibles": "Electrovanne de mise a l'air bloquee ou defaillante",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0449",
+    "libelle": "Electrovanne d'event EVAP - circuit defaut",
+    "causes_possibles": "Electrovanne d'event defaillante, cablage",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0455",
+    "libelle": "EVAP - fuite importante detectee",
+    "causes_possibles": "Bouchon de reservoir absent/mal ferme, durite deconnectee",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "code": "P0456",
+    "libelle": "EVAP - fuite mineure detectee",
+    "causes_possibles": "Micro-fuite sur le circuit EVAP, bouchon leg. desserre",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0460",
+    "libelle": "Circuit capteur niveau carburant - defaut general",
+    "causes_possibles": "Jauge de niveau carburant defaillante, cablage",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0461",
+    "libelle": "Capteur niveau carburant - plage/performance",
+    "causes_possibles": "Jauge hors plage, flotteur bloque",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0462",
+    "libelle": "Capteur niveau carburant - signal faible",
+    "causes_possibles": "Jauge en court-circuit",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0463",
+    "libelle": "Capteur niveau carburant - signal eleve",
+    "causes_possibles": "Jauge en circuit ouvert",
+    "gravite": "mineure",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "code": "P0480",
+    "libelle": "Circuit commande ventilateur de refroidissement 1 - defaut",
+    "causes_possibles": "Relais ou moteur de ventilateur defaillant, cablage, fusible",
+    "gravite": "modere",
+    "source": "club.auto-doc.fr/obd-codes, obd2.fr, fiche-auto.com — consulte 2026-07",
+    "a_verifier": true
+  }
+]

@@ -1,0 +1,1088 @@
+{
+  "silo": "Utilitaires & flottes pro",
+  "seeds": {
+    "meilleur utilitaire compact": {
+      "sub": "Choisir un utilitaire",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:36:46.849Z",
+      "candidates": [
+        {
+          "keyword": "meilleur utilitaire compact",
+          "volume": 20,
+          "competition": 0.13,
+          "source": "match"
+        },
+        {
+          "keyword": "meilleur utilitaire compact 2020",
+          "volume": 10,
+          "competition": 0.09,
+          "source": "match"
+        },
+        {
+          "keyword": "Quel est le meilleur utilitaire compact ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quel est le meilleur utilitaire compact ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quel est le meilleur utilitaire compact",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quel est le meilleur utilitaire compact en 2026 ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "véhicule utilitaire occasion pas cher",
+          "volume": 2400,
+          "competition": 0.23,
+          "source": "related"
+        },
+        {
+          "keyword": "camion utilitaire",
+          "volume": 1583,
+          "competition": 0.33,
+          "source": "related"
+        },
+        {
+          "keyword": "mdp utilitaire",
+          "volume": 1455,
+          "competition": 0.24,
+          "source": "related"
+        },
+        {
+          "keyword": "meilleure utilitaire",
+          "volume": 1455,
+          "competition": 0.24,
+          "source": "related"
+        },
+        {
+          "keyword": "petit utilitaire occasion",
+          "volume": 800,
+          "competition": 0.13,
+          "source": "related"
+        },
+        {
+          "keyword": "berlingo citroen utilitaire",
+          "volume": 800,
+          "competition": 0.19,
+          "source": "related"
+        },
+        {
+          "keyword": "utilitaire à éviter",
+          "volume": 700,
+          "competition": 0,
+          "source": "related"
+        },
+        {
+          "keyword": "véhicule utilitaire léger",
+          "volume": 500,
+          "competition": 0.11,
+          "source": "related"
+        },
+        {
+          "keyword": "comparatif dimension utilitaire",
+          "volume": 500,
+          "competition": 0.1,
+          "source": "related"
+        },
+        {
+          "keyword": "fiabilité utilitaire",
+          "volume": 480,
+          "competition": 0.07,
+          "source": "related"
+        },
+        {
+          "keyword": "utilitaire occasion à éviter",
+          "volume": 480,
+          "competition": 0.02,
+          "source": "related"
+        },
+        {
+          "keyword": "utilitaire comparatif",
+          "volume": 480,
+          "competition": 0.2,
+          "source": "related"
+        },
+        {
+          "keyword": "quel utilitaire choisir",
+          "volume": 300,
+          "competition": 0.1,
+          "source": "questions"
+        },
+        {
+          "keyword": "toyota utilitaire prix",
+          "volume": 140,
+          "competition": 0.28,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel est le meilleur utilitaire",
+          "volume": 140,
+          "competition": 0.13,
+          "source": "questions"
+        },
+        {
+          "keyword": "prix utilitaire neuf",
+          "volume": 140,
+          "competition": 0.29,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel vehicule utilitaire 5 places choisir",
+          "volume": 82,
+          "competition": 0.21,
+          "source": "questions"
+        },
+        {
+          "keyword": "forum quel utilitaire choisir motorisation fiabilité",
+          "volume": 50,
+          "competition": 0.05,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel utilitaire choisir pour aménager",
+          "volume": 40,
+          "competition": 0.06,
+          "source": "questions"
+        },
+        {
+          "keyword": "quelle taille d'utilitaire choisir",
+          "volume": 40,
+          "competition": 0.13,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel petit utilitaire choisir",
+          "volume": 30,
+          "competition": 0.06,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel utilitaire choisir occasion",
+          "volume": 30,
+          "competition": 0.1429,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel utilitaire choisir pour un particulier",
+          "volume": 30,
+          "competition": 0.03,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel fourgon utilitaire choisir",
+          "volume": 20,
+          "competition": 0.17,
+          "source": "questions"
+        },
+        {
+          "keyword": "prix utilitaire",
+          "volume": 15,
+          "competition": 0.27,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel utilitaire choisir en 2020",
+          "volume": 10,
+          "competition": 0.3333,
+          "source": "questions"
+        },
+        {
+          "keyword": "quel utilitaire fiable",
+          "volume": 10,
+          "competition": 0.1571,
+          "source": "questions"
+        }
+      ],
+      "enriched_at": "2026-07-12T17:36:48.969Z"
+    },
+    "fourgon 3m3 vs 6m3 usages": {
+      "sub": "Choisir un utilitaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:36:50.394Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:36:52.037Z"
+    },
+    "pick-up fiscalité avantage": {
+      "sub": "Choisir un utilitaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:36:53.781Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:36:54.854Z"
+    },
+    "utilitaire occasion kilométrage": {
+      "sub": "Choisir un utilitaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:36:56.351Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:36:57.382Z"
+    },
+    "utilitaire électrique autonomie réelle": {
+      "sub": "Utilitaires électriques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:36:58.775Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:36:59.792Z"
+    },
+    "aides utilitaire électrique pro": {
+      "sub": "Utilitaires électriques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:01.193Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:02.650Z"
+    },
+    "recharge flotte entreprise": {
+      "sub": "Utilitaires électriques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:04.232Z",
+      "candidates": [
+        {
+          "keyword": "installation borne recharge flotte entreprise",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T17:37:07.110Z"
+    },
+    "kangoo master électrique avis": {
+      "sub": "Utilitaires électriques",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:08.542Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:10.912Z"
+    },
+    "LLD utilitaire pro sans apport": {
+      "sub": "LLD & gestion de flotte",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:12.285Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:13.725Z"
+    },
+    "gestion flotte logiciel TPE": {
+      "sub": "LLD & gestion de flotte",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:15.095Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:16.167Z"
+    },
+    "carte carburant pro comparatif": {
+      "sub": "LLD & gestion de flotte",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:17.581Z",
+      "candidates": [
+        {
+          "keyword": "carburant",
+          "volume": 74818,
+          "competition": 0.02,
+          "source": "related"
+        },
+        {
+          "keyword": "prix carburant",
+          "volume": 11786,
+          "competition": 0,
+          "source": "questions"
+        },
+        {
+          "keyword": "prix du carburant aujourd'hui",
+          "volume": 11400,
+          "competition": 0.01,
+          "source": "questions"
+        },
+        {
+          "keyword": "carte total club",
+          "volume": 10083,
+          "competition": 0.03,
+          "source": "related"
+        },
+        {
+          "keyword": "auchan carburant",
+          "volume": 4909,
+          "competition": 0.09,
+          "source": "related"
+        },
+        {
+          "keyword": "prix du carburant aujourd'hui autour de moi",
+          "volume": 4800,
+          "competition": 0.01,
+          "source": "questions"
+        },
+        {
+          "keyword": "intermarche carburant",
+          "volume": 4154,
+          "competition": 0.02,
+          "source": "related"
+        },
+        {
+          "keyword": "total carburant",
+          "volume": 3800,
+          "competition": 0.07,
+          "source": "related"
+        },
+        {
+          "keyword": "intermarché carburant prix coûtant",
+          "volume": 1455,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "prix carburant super u aujourd'hui",
+          "volume": 1300,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "prix du carburant total access",
+          "volume": 1300,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "prix carburant autour de moi",
+          "volume": 1100,
+          "competition": 0.01,
+          "source": "questions"
+        },
+        {
+          "keyword": "total access prix carburant",
+          "volume": 1000,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "liste intermarché carburant prix coûtant 2022",
+          "volume": 880,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "super u carburant prix coûtant 2022",
+          "volume": 880,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "carburant à prix coûtant ce week-end 2022 leclerc",
+          "volume": 880,
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "carburant à prix coûtant ce week-end leclerc",
+          "volume": 720,
+          "competition": 0,
+          "source": "questions"
+        }
+      ],
+      "enriched_at": "2026-07-12T17:37:20.197Z"
+    },
+    "télématique flotte avantages": {
+      "sub": "LLD & gestion de flotte",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:21.613Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:22.670Z"
+    },
+    "aménagement utilitaire artisan": {
+      "sub": "Aménagement & équipement",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:24.208Z",
+      "candidates": [
+        {
+          "keyword": "aménagement utilitaire artisan",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "comment faire habillage bois utilitaire",
+          "volume": 10,
+          "competition": 0.2,
+          "source": "questions"
+        },
+        {
+          "keyword": "Comment habiller un véhicule utilitaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Comment faire un habillage bois utilitaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Comment fixer du contreplaqué dans un utilitaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Comment équiper son utilitaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Comment amenager un fourgon utilitaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Quel bois pour Casier utilitaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "mdp utilitaire",
+          "volume": 1455,
+          "competition": 0.24,
+          "source": "related"
+        },
+        {
+          "keyword": "comptoir de l'utilitaire",
+          "volume": 700,
+          "competition": 0.33,
+          "source": "related"
+        },
+        {
+          "keyword": "le comptoir de l'utilitaire",
+          "volume": 200,
+          "competition": 0.21,
+          "source": "related"
+        },
+        {
+          "keyword": "bbs aménagement",
+          "volume": 170,
+          "competition": 0.01,
+          "source": "related"
+        }
+      ],
+      "enriched_at": "2026-07-12T17:37:27.149Z"
+    },
+    "galerie et porte-échelle fourgon": {
+      "sub": "Aménagement & équipement",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:28.586Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:29.626Z"
+    },
+    "habillage bois utilitaire kit": {
+      "sub": "Aménagement & équipement",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:31.008Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:32.270Z"
+    },
+    "attelage utilitaire homologation": {
+      "sub": "Aménagement & équipement",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:34.000Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:35.593Z"
+    },
+    "TVS taxe véhicules société calcul": {
+      "sub": "Fiscalité véhicule pro",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:36.991Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:38.057Z"
+    },
+    "TVA récupérable utilitaire": {
+      "sub": "Fiscalité véhicule pro",
+      "intent": "I",
+      "volume": "NA",
+      "total_similar": 101,
+      "results": [
+        {
+          "similarity": 1,
+          "score": 44,
+          "p1_score": 10,
+          "allintitle": "NA",
+          "google_indexed": 116000,
+          "ads_volume": "NA",
+          "cpc": "NA",
+          "competition": "NA",
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 32,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": "NA",
+          "keyword": "tva récupérable utilitaire",
+          "word_count": 3,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7645,
+          "score": 28,
+          "p1_score": 7,
+          "allintitle": "NA",
+          "google_indexed": 246000,
+          "ads_volume": 70,
+          "cpc": 2.89,
+          "competition": 0.03,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 33,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 70,
+          "keyword": "comment récupérer la tva sur un véhicule utilitaire",
+          "word_count": 8,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7555,
+          "score": 27,
+          "p1_score": 7,
+          "allintitle": "NA",
+          "google_indexed": 108000,
+          "ads_volume": 50,
+          "cpc": "NA",
+          "competition": 0,
+          "si_info": "NA",
+          "si_nav": "NA",
+          "si_trans": "NA",
+          "si_comm": "NA",
+          "si_local": "NA",
+          "si_brand": "NA",
+          "kvi": 31,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 50,
+          "keyword": "vehicule utilitaire tva",
+          "word_count": 3,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.74,
+          "score": 22,
+          "p1_score": 8,
+          "allintitle": "NA",
+          "google_indexed": 1540000,
+          "ads_volume": 140,
+          "cpc": 0.64,
+          "competition": 0.09,
+          "si_info": false,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": true,
+          "si_brand": false,
+          "kvi": 31,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 140,
+          "keyword": "tva sur véhicule utilitaire",
+          "word_count": 4,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7345,
+          "score": 28,
+          "p1_score": 6,
+          "allintitle": "NA",
+          "google_indexed": 691000,
+          "ads_volume": 30,
+          "cpc": "NA",
+          "competition": 0.0508,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 31,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 30,
+          "keyword": "véhicule utilitaire tva",
+          "word_count": 3,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.733,
+          "score": 28,
+          "p1_score": 6,
+          "allintitle": "NA",
+          "google_indexed": 745000,
+          "ads_volume": 50,
+          "cpc": 3.28,
+          "competition": 0.03,
+          "si_info": "NA",
+          "si_nav": "NA",
+          "si_trans": "NA",
+          "si_comm": "NA",
+          "si_local": "NA",
+          "si_brand": "NA",
+          "kvi": 35,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 50,
+          "keyword": "récupération tva véhicule utilitaire",
+          "word_count": 4,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7282,
+          "score": 24,
+          "p1_score": 7,
+          "allintitle": "NA",
+          "google_indexed": 864000,
+          "ads_volume": "NA",
+          "cpc": "NA",
+          "competition": "NA",
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 31,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": "NA",
+          "keyword": "tva vehicule utilitaire",
+          "word_count": 3,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7191,
+          "score": 23,
+          "p1_score": 7,
+          "allintitle": "NA",
+          "google_indexed": 1400000,
+          "ads_volume": 50,
+          "cpc": "NA",
+          "competition": 0.01,
+          "si_info": "NA",
+          "si_nav": "NA",
+          "si_trans": "NA",
+          "si_comm": "NA",
+          "si_local": "NA",
+          "si_brand": "NA",
+          "kvi": 40,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 50,
+          "keyword": "tva utilitaire",
+          "word_count": 2,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7163,
+          "score": 26,
+          "p1_score": 6,
+          "allintitle": "NA",
+          "google_indexed": 39000,
+          "ads_volume": "NA",
+          "cpc": "NA",
+          "competition": "NA",
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 31,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": "NA",
+          "keyword": "comment récupérer la tva sur un véhicule utilitaire particulier",
+          "word_count": 9,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.71,
+          "score": 22,
+          "p1_score": 7,
+          "allintitle": "NA",
+          "google_indexed": 127000,
+          "ads_volume": 20,
+          "cpc": "NA",
+          "competition": 0.0197,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": true,
+          "si_brand": false,
+          "kvi": 20,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 20,
+          "keyword": "taux tva véhicule utilitaire",
+          "word_count": 4,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.7009,
+          "score": 21,
+          "p1_score": 7,
+          "allintitle": "NA",
+          "google_indexed": 93700,
+          "ads_volume": 20,
+          "cpc": "NA",
+          "competition": 0.02,
+          "si_info": "NA",
+          "si_nav": "NA",
+          "si_trans": "NA",
+          "si_comm": "NA",
+          "si_local": "NA",
+          "si_brand": "NA",
+          "kvi": 14,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 20,
+          "keyword": "taux tva vehicule utilitaire",
+          "word_count": 4,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.6945,
+          "score": 17,
+          "p1_score": 8,
+          "allintitle": "NA",
+          "google_indexed": 49,
+          "ads_volume": 170,
+          "cpc": 0.66,
+          "competition": 0.07,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": true,
+          "si_brand": false,
+          "kvi": 17,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 170,
+          "keyword": "tva véhicule utilitaire",
+          "word_count": 3,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.68,
+          "score": 22,
+          "p1_score": 6,
+          "allintitle": "NA",
+          "google_indexed": 114000,
+          "ads_volume": 50,
+          "cpc": "NA",
+          "competition": 0.04,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 31,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 50,
+          "keyword": "tva récupérable sur véhicule utilitaire",
+          "word_count": 5,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.6275,
+          "score": 23,
+          "p1_score": 4,
+          "allintitle": "NA",
+          "google_indexed": 499000,
+          "ads_volume": 170,
+          "cpc": "NA",
+          "competition": 0.07,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 33,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 170,
+          "keyword": "tva recuperable vehicule utilitaire 5 places",
+          "word_count": 6,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.5945,
+          "score": 17,
+          "p1_score": 5,
+          "allintitle": "NA",
+          "google_indexed": 73700,
+          "ads_volume": 140,
+          "cpc": 0.66,
+          "competition": 0.18,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 32,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 140,
+          "keyword": "tva récupérable véhicule utilitaire 5 places",
+          "word_count": 6,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.562,
+          "score": 14,
+          "p1_score": 5,
+          "allintitle": "NA",
+          "google_indexed": 111000,
+          "ads_volume": 20,
+          "cpc": "NA",
+          "competition": 0.1062,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 33,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 20,
+          "keyword": "vehicule utilitaire 5 places tva recuperable",
+          "word_count": 6,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.5473,
+          "score": 14,
+          "p1_score": 4,
+          "allintitle": "NA",
+          "google_indexed": 268000,
+          "ads_volume": "NA",
+          "cpc": "NA",
+          "competition": "NA",
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 32,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": "NA",
+          "keyword": "véhicule utilitaire 5 places tva récupérable",
+          "word_count": 6,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.547,
+          "score": 21,
+          "p1_score": 2,
+          "allintitle": "NA",
+          "google_indexed": 178000,
+          "ads_volume": 90,
+          "cpc": 2.1227,
+          "competition": 0.029,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 35,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 90,
+          "keyword": "tva récupérable véhicule particulier",
+          "word_count": 4,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.543,
+          "score": 22,
+          "p1_score": 2,
+          "allintitle": "NA",
+          "google_indexed": 80400,
+          "ads_volume": 20,
+          "cpc": 1.6427,
+          "competition": 0.2949,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 17,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 20,
+          "keyword": "pick-up utilitaire tva récupérable",
+          "word_count": 5,
+          "kgr": "NA"
+        },
+        {
+          "similarity": 0.5351,
+          "score": 16,
+          "p1_score": 3,
+          "allintitle": "NA",
+          "google_indexed": 332000,
+          "ads_volume": 260,
+          "cpc": 1.36,
+          "competition": 0.02,
+          "si_info": true,
+          "si_nav": false,
+          "si_trans": false,
+          "si_comm": false,
+          "si_local": false,
+          "si_brand": false,
+          "kvi": 45,
+          "redirects_to": "NA",
+          "suggested_spelling": "NA",
+          "spell_keyword": "NA",
+          "volume": 260,
+          "keyword": "comment récupérer la tva sur un véhicule",
+          "word_count": 7,
+          "kgr": "NA"
+        }
+      ],
+      "fetched_at": "2026-07-12T17:37:42.415Z",
+      "candidates": [
+        {
+          "keyword": "tva récupérable utilitaire particulier",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "tva récupérable utilitaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T17:37:44.113Z"
+    },
+    "amortissement véhicule société plafond": {
+      "sub": "Fiscalité véhicule pro",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:45.532Z",
+      "candidates": [],
+      "enriched_at": "2026-07-12T17:37:46.704Z"
+    },
+    "avantage en nature véhicule fonction": {
+      "sub": "Fiscalité véhicule pro",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-12T17:37:48.117Z",
+      "candidates": [
+        {
+          "keyword": "avantage en nature véhicule fonction publique territoriale",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-12T17:37:49.335Z"
+    }
+  }
+}

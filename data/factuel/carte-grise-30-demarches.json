@@ -1,0 +1,274 @@
+[
+  {
+    "demarche": "Changement de titulaire (achat vehicule d'occasion)",
+    "delai_legal": "1 mois apres l'achat (amende de 135€ a 750€ en cas de depassement)",
+    "delai_traitement_ants": "7 a 10 jours pour un dossier complet, envoi sous 3 a 5 jours ouvres apres validation",
+    "cout_indicatif": "13,76€ minimum (taxe fixe 11€ + redevance 2,76€) + taxe regionale au cheval fiscal ; cout moyen total 200-500€ selon region/vehicule",
+    "documents_requis": "Cerfa 13750*08, justificatif de domicile <6 mois, ancienne carte grise barree 'vendu', controle technique <6 mois si vehicule >4 ans",
+    "source": "immatriculation.ants.gouv.fr, guichet-ants.fr, pointimmat.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "demarche": "Duplicata pour perte, vol ou deterioration",
+    "delai_legal": "a effectuer des que possible",
+    "delai_traitement_ants": "quelques jours a 2 semaines selon dossier",
+    "cout_indicatif": "environ 13,76€ (meme bareme fixe que le changement de titulaire)",
+    "documents_requis": "declaration de perte/vol (Cerfa 13753) ou attestation sur l'honneur pour deterioration, piece d'identite, justificatif de domicile",
+    "source": "cartegrise.net, ornikar.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Succession / heritage (vehicule du defunt)",
+    "delai_legal": "non fixe mais recommande rapidement pour eviter blocage administratif",
+    "delai_traitement_ants": "variable selon complexite de la succession",
+    "cout_indicatif": "environ 13,76€ pour la nouvelle carte grise (hors frais de succession eventuels)",
+    "documents_requis": "certificat de deces, livret de famille complet, attestation signee par tous les heritiers (succession simple sans testament ni litige) ; declaration de cession prealable si le vehicule est vendu par les heritiers",
+    "note": "aucun duplicata possible au nom d'une personne decedee ; les heritiers doivent choisir entre conserver (mise a leur nom) ou ceder le vehicule",
+    "source": "portail-cartegrise.fr, cartegrise.net, cartegrisefrancaise.fr — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "demarche": "Changement d'adresse sur la carte grise",
+    "delai_legal": "1 mois apres le demenagement",
+    "delai_traitement_ants": "quelques jours",
+    "cout_indicatif": "gratuit dans plusieurs regions pour le simple changement d'adresse (variable selon region)",
+    "documents_requis": "justificatif de domicile <6 mois, carte grise actuelle",
+    "source": "guichet-ants.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Declaration de cession (vente entre particuliers)",
+    "delai_legal": "a remettre a l'acheteur immediatement, declaration en ligne dans les 15 jours",
+    "delai_traitement_ants": "immediat (declaration en ligne generant un code de cession)",
+    "cout_indicatif": "gratuit",
+    "documents_requis": "Cerfa 15776*02 (certificat de cession), signe par vendeur et acheteur",
+    "source": "service-public.fr (recoupe avec les sources ANTS generalistes) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Cession pour destruction (vehicule hors d'usage, VHU)",
+    "delai_legal": "des la remise du vehicule au centre agree",
+    "delai_traitement_ants": "immediat pour la declaration en ligne",
+    "cout_indicatif": "gratuit (remise a un centre VHU agree obligatoire, souvent gratuite voire remuneree pour le proprietaire)",
+    "documents_requis": "Cerfa 15776*02 (cession pour destruction), certificat de destruction remis par le centre agree",
+    "source": "service-public.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Immatriculation d'un vehicule importe (UE)",
+    "delai_legal": "1 mois apres l'importation",
+    "delai_traitement_ants": "variable, plus long que pour un vehicule francais (verifications douanieres/techniques)",
+    "cout_indicatif": "quitus fiscal gratuit si TVA deja acquittee dans le pays d'origine ; taxes + malus eventuels selon emissions CO2",
+    "documents_requis": "certificat de conformite europeen (COC) ou reception a titre isole (RTI), quitus fiscal des impots, facture d'achat, controle technique francais",
+    "source": "recoupement general ANTS/service-public (a verifier precisement) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Immatriculation d'un vehicule importe (hors UE)",
+    "delai_legal": "1 mois apres dedouanement",
+    "delai_traitement_ants": "plus long, dossier douanier prealable requis",
+    "cout_indicatif": "droits de douane + TVA a l'import + taxes/malus selon emissions",
+    "documents_requis": "quitus fiscal douanier (formulaire 846A), reception a titre isole (RTI) si vehicule non conforme UE, facture d'achat",
+    "source": "recoupement general douane/ANTS — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Rectification d'une erreur sur la carte grise",
+    "delai_legal": "des que l'erreur est constatee",
+    "delai_traitement_ants": "quelques jours",
+    "cout_indicatif": "gratuit si erreur imputable a l'administration, payant si erreur du demandeur",
+    "documents_requis": "justificatifs de la donnee correcte (facture, piece d'identite selon le champ concerne)",
+    "source": "recoupement general ANTS — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise au nom d'une societe (personne morale)",
+    "delai_legal": "1 mois apres l'achat",
+    "delai_traitement_ants": "similaire a un particulier",
+    "cout_indicatif": "meme bareme que particulier + TVS (taxe sur les vehicules de societe) potentiellement due",
+    "documents_requis": "Kbis de moins de 3 mois, justificatif d'identite du representant legal",
+    "source": "recoupement general ANTS — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise en co-titularite (plusieurs titulaires)",
+    "delai_legal": "1 mois apres l'achat",
+    "delai_traitement_ants": "similaire a un titulaire unique",
+    "cout_indicatif": "meme bareme, aucun surcout specifique identifie",
+    "documents_requis": "pieces d'identite et justificatifs de domicile de tous les co-titulaires",
+    "source": "recoupement general ANTS — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Certificat de non-gage (situation administrative du vehicule)",
+    "delai_legal": "a demander avant toute vente (obligatoire pour le vendeur)",
+    "delai_traitement_ants": "immediat, document telechargeable en ligne",
+    "cout_indicatif": "gratuit",
+    "documents_requis": "numero d'immatriculation et numero de formule de la carte grise",
+    "source": "recoupement general histovec/service-public — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Consultation Histovec (historique du vehicule avant achat)",
+    "delai_legal": "aucun, demarche volontaire recommandee avant achat d'occasion",
+    "delai_traitement_ants": "immediat",
+    "cout_indicatif": "gratuit",
+    "documents_requis": "code de cession fourni par le vendeur, numero d'immatriculation",
+    "source": "histovec.interieur.gouv.fr (service officiel) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Plaque d'immatriculation provisoire WW (vehicule neuf ou importe en attente de carte grise definitive)",
+    "delai_legal": "duree limitee (generalement 4 mois maximum)",
+    "delai_traitement_ants": "immediat via professionnel habilite",
+    "cout_indicatif": "variable selon professionnel",
+    "documents_requis": "facture d'achat, certificat de conformite provisoire",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Changement de carrosserie/carte grise apres transformation du vehicule (ex: VASP, camping-car amenage)",
+    "delai_legal": "des que la transformation est realisee",
+    "delai_traitement_ants": "variable, necessite reception a titre isole (RTI) ou attestation d'amenagement",
+    "cout_indicatif": "variable selon reception technique requise",
+    "documents_requis": "attestation d'amenageur agree ou proces-verbal de reception RTI, facture des travaux",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise apres changement de puissance fiscale (reprogrammation moteur declaree)",
+    "delai_legal": "des que la modification est effectuee et homologuee",
+    "delai_traitement_ants": "variable",
+    "cout_indicatif": "possible recalcul de la taxe regionale selon nouveaux chevaux fiscaux",
+    "documents_requis": "attestation d'homologation de la modification",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Exoneration de la taxe regionale carte grise (vehicules electriques)",
+    "delai_legal": "s'applique automatiquement selon la region au moment de la demande",
+    "delai_traitement_ants": "immediat (calcul automatique)",
+    "cout_indicatif": "exoneration totale ou partielle de la taxe regionale selon la region (variable, certaines regions exonerent 100% les vehicules 100% electriques)",
+    "documents_requis": "aucun document specifique, application automatique selon categorie de vehicule",
+    "source": "recoupement general regions/ACOSS — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise collection (vehicule de plus de 30 ans)",
+    "delai_legal": "des l'obtention de l'attestation FFVE",
+    "delai_traitement_ants": "variable",
+    "cout_indicatif": "tarif reduit specifique carte grise collection selon region",
+    "documents_requis": "attestation FFVE (Federation Francaise des Vehicules d'Epoque)",
+    "source": "recoupement general FFVE — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Changement de titulaire suite a donation",
+    "delai_legal": "1 mois apres la donation",
+    "delai_traitement_ants": "similaire a un changement de titulaire classique",
+    "cout_indicatif": "meme bareme que changement de titulaire standard",
+    "documents_requis": "acte de donation ou attestation sur l'honneur selon le lien de parente",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise apres divorce (partage du vehicule commun)",
+    "delai_legal": "1 mois apres l'attribution du vehicule",
+    "delai_traitement_ants": "similaire a un changement de titulaire",
+    "cout_indicatif": "meme bareme, possible exoneration ou tarif reduit selon jugement",
+    "documents_requis": "jugement de divorce ou convention de divorce mentionnant l'attribution du vehicule",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Vente d'un vehicule non roulant / en panne",
+    "delai_legal": "meme delai que cession standard",
+    "delai_traitement_ants": "immediat pour la declaration de cession",
+    "cout_indicatif": "gratuit pour la declaration de cession",
+    "documents_requis": "Cerfa 15776*02, mention de l'etat du vehicule recommandee dans l'annonce (obligation d'information de l'acheteur)",
+    "source": "recoupement general droit de la consommation — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Vente sans controle technique valide",
+    "delai_legal": "vente autorisee mais mention obligatoire dans l'annonce si CT >6 mois ou defavorable",
+    "delai_traitement_ants": "non applicable (CT non bloquant pour la cession, bloquant pour le changement de titulaire si vehicule >4 ans)",
+    "cout_indicatif": "non chiffrable",
+    "documents_requis": "mention explicite dans l'annonce de vente si absence de CT valide",
+    "source": "service-public.fr (recoupement general) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise vehicule gage (credit en cours)",
+    "delai_legal": "leve du gage necessaire avant toute cession",
+    "delai_traitement_ants": "variable selon organisme preteur",
+    "cout_indicatif": "non chiffrable (depend du solde du credit)",
+    "documents_requis": "attestation de main-levee du gage delivree par l'organisme financier",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Immatriculation d'un vehicule sans papiers d'origine (cas rare, vehicule tres ancien)",
+    "delai_legal": "non fixe, procedure exceptionnelle",
+    "delai_traitement_ants": "long, dossier prefecture specifique",
+    "cout_indicatif": "non chiffrable",
+    "documents_requis": "attestation FFVE ou expertise technique, declaration sur l'honneur",
+    "source": "recoupement general FFVE — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise apres saisie judiciaire du vehicule",
+    "delai_legal": "des la levee de la saisie",
+    "delai_traitement_ants": "variable selon decision de justice",
+    "cout_indicatif": "meme bareme que changement de titulaire standard",
+    "documents_requis": "decision de justice ou attestation de levee de saisie",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Duplicata suite a un changement de nom (mariage, etc.)",
+    "delai_legal": "des que possible apres le changement d'etat civil",
+    "delai_traitement_ants": "quelques jours",
+    "cout_indicatif": "gratuit ou tarif reduit selon les regions pour ce motif",
+    "documents_requis": "acte de mariage ou jugement de changement de nom, piece d'identite a jour",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise apres reprise du vehicule par le concessionnaire (reprise-vente)",
+    "delai_legal": "1 mois pour chaque transfert (double transaction)",
+    "delai_traitement_ants": "similaire a un changement de titulaire standard, en 2 etapes",
+    "cout_indicatif": "meme bareme applique 2 fois (reprise puis revente)",
+    "documents_requis": "2 Cerfa 15776*02 (un par transaction), bon de reprise du concessionnaire",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise pour vehicule de location longue duree (LLD) au terme du contrat (rachat)",
+    "delai_legal": "1 mois apres le rachat effectif",
+    "delai_traitement_ants": "similaire a un changement de titulaire standard",
+    "cout_indicatif": "meme bareme que changement de titulaire",
+    "documents_requis": "attestation de rachat du loueur, facture de rachat",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Modification du nombre de places (transformation utilitaire <-> VP)",
+    "delai_legal": "des que la transformation est homologuee",
+    "delai_traitement_ants": "necessite reception a titre isole (RTI)",
+    "cout_indicatif": "variable selon organisme de controle (DREAL/UTAC)",
+    "documents_requis": "proces-verbal de reception a titre isole",
+    "source": "recoupement general — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "demarche": "Carte grise apres changement de departement (sans demenagement, simple correction administrative)",
+    "delai_legal": "non applicable depuis la suppression du systeme departemental (SIV national depuis 2009)",
+    "delai_traitement_ants": "non applicable",
+    "cout_indicatif": "non applicable",
+    "documents_requis": "aucun (le numero d'immatriculation SIV ne change plus selon le departement depuis 2009)",
+    "note": "demarche obsolete depuis la reforme SIV (Systeme d'Immatriculation des Vehicules) de 2009, mentionnee ici pour eviter toute confusion frequente chez les usagers",
+    "source": "connaissance generale du systeme SIV (reforme documentee publiquement depuis 2009) — consulte 2026-07",
+    "a_verifier": false
+  }
+]

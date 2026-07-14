@@ -1,7 +1,20 @@
+export interface WpImageSize {
+  source_url: string;
+  width: number;
+  height: number;
+}
+
 export interface WpImage {
   source_url: string;
   alt_text: string;
-  media_details?: { width: number; height: number };
+  media_details?: {
+    width: number;
+    height: number;
+    // Uniquement les tailles enregistrées côté WP (monauto_card, monauto_hero,
+    // thumbnail, full) — voir wp-content/mu-plugins/monauto-headless.php
+    // section 0 et docs/architecture-headless.md section 9.
+    sizes?: Record<string, WpImageSize>;
+  };
 }
 
 export interface WpUser {
@@ -43,7 +56,7 @@ export interface WpPost {
   author: number;
   categories: number[];
   tags: number[];
-  acf?: { tldr?: string; sources?: string };
+  acf?: { tldr?: string; sources?: string; faq?: string };
   _embedded?: {
     author?: WpUser[];
     "wp:featuredmedia"?: WpImage[];
@@ -54,4 +67,9 @@ export interface WpPost {
 export interface Source {
   label: string;
   url: string;
+}
+
+export interface FaqItem {
+  question: string;
+  answer: string;
 }

@@ -1,0 +1,114 @@
+[
+  {
+    "modele": "Ford Puma (depuis 2019)",
+    "score_fiabilite": "fiabilite reconnue, pas de defaillance majeure signalee",
+    "pannes_courantes": "aucun probleme recurrent grave identifie ; herite de la plateforme Fiesta (fiabilite eprouvee), petits moteurs turbo mild-hybrid",
+    "source": "autojournal.fr, heycar.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Opel Corsa D",
+    "score_fiabilite": "reputation inegale selon generation/motorisation",
+    "pannes_courantes": "problemes connus de chaine de distribution sur la generation D",
+    "source": "careco.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Opel Astra (1.4 Turbo essence recommande en occasion)",
+    "score_fiabilite": "avis generalement favorables sur la durabilite avec entretien regulier",
+    "pannes_courantes": "1.4 Turbo essence = meilleur compromis fiabilite/performance selon la source ; diesels plus anciens (ex: 1.9 CDTI) rapportent des pannes multiples (pompe a eau, injecteurs, vanne EGR, FAP, catalyseur) selon temoignages forum",
+    "source": "bymycar.fr, largus.fr (forum) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat Panda / 500 (moteur 1.2 Fire 69, 2007-2021)",
+    "score_fiabilite": "tres bon, entretien simple",
+    "pannes_courantes": "mecanique fiable ; le principal point faible signale est la direction assistee (defaut le plus frequemment cite par les proprietaires)",
+    "source": "iems.fr, autoplus.fr, vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Fiat Panda (diesel 1.3 Multijet)",
+    "score_fiabilite": "consommation basse (~3,9L/100km) mais concentre le plus de pannes signalees",
+    "pannes_courantes": "vanne EGR encrassee, injecteurs qui grippent, embrayage sous-dimensionne qui s'use vite",
+    "source": "iems.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Fiat Panda (moteur 0.9 TwinAir turbo)",
+    "score_fiabilite": "correct mais exigeant (huile/usage)",
+    "pannes_courantes": "sensible a la qualite d'entretien (huile, usage) plus que les autres motorisations Panda",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai i10",
+    "score_fiabilite": "tres bonne, pas de defaut recurrent grave, garantie 5 ans de la marque citee comme gage de serieux",
+    "pannes_courantes": "usure prematuree de l'embrayage signalee par certains proprietaires (plus sur le moteur le moins puissant de la gamme) ; risque d'usure prematuree/asymetrique des pneus lie a un defaut de parallelisme",
+    "source": "caradisiac.com, autojournal.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Hyundai i20 (moteur 1.2 essence)",
+    "score_fiabilite": "avis tres positifs, fiabilite sur la duree avec vehicules depassant 150 000 km rapportes",
+    "pannes_courantes": "aucun probleme majeur recurrent identifie dans les retours consultes",
+    "source": "conseil-auto-moto.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Tucson (moteur 1.6 CRDi 115, 2015-2021)",
+    "score_fiabilite": "fragilites reelles, a eviter selon la source",
+    "pannes_courantes": "problemes de distribution et de turbo des 60 000-80 000 km, vanne EGR encrassee classique sur ce moteur",
+    "source": "auto-land.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Kia Sportage 4 (moteur 2.0L 185ch)",
+    "score_fiabilite": "fiabilite jugee incroyable/exemplaire par un proprietaire de longue duree (temoignage individuel)",
+    "pannes_courantes": "aucun probleme recurrent signale dans le temoignage consulte",
+    "source": "caradisiac.com (avis proprietaire) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Sportage (differentes motorisations, tableau synthetique)",
+    "score_fiabilite": "variable selon motorisation",
+    "pannes_courantes": "1.7 CRDi 115 (2011-2016) : probleme embrayage/volant moteur, a eviter ; 1.6 GDi 135 (2010-2015) : manque de puissance/conso eleve ; 2.0 CRDi 136 (2010-2018) : vanne EGR encrassee mais jugee fiable a l'achat ; 1.6 CRDi 136 (2018-2021) : fiabilite correcte ; boite DCT7 automatique (2016-2018) : risque de surchauffe/a-coups",
+    "source": "garageraymond.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Kia (moteurs 1.0/1.6 T-GDi et 1.6/2.0 CRDi Smartstream, plusieurs modeles Picanto/Ceed/Sportage)",
+    "score_fiabilite": "tres bonne a excellente selon motorisation (tableau synthetique constructeur/generation)",
+    "pannes_courantes": "aucun defaut majeur recurrent signale pour ces motorisations recentes (2016-2025) dans la source consultee",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Qashqai II (2013-2021, moteur 1.3 DIG-T)",
+    "score_fiabilite": "meilleur choix en occasion selon la source, fiabilite correcte",
+    "pannes_courantes": "aucun defaut majeur recurrent identifie ; moteur co-developpe avec le groupe Renault-Mercedes",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Qashqai III e-Power (depuis 2021)",
+    "score_fiabilite": "necessite un suivi attentif selon la source (technologie plus recente)",
+    "pannes_courantes": "non detaille precisement dans l'extrait consulte",
+    "source": "vpn-autos.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Juke (5 motorisations a eviter selon tableau synthetique)",
+    "score_fiabilite": "plusieurs motorisations jugees peu fiables selon periode",
+    "pannes_courantes": "1.6 DIG-T 190 (2010-2013) : surconsommation d'huile, turbo en surchauffe, capteurs, cout reparation 2000-4000€ ; 1.2 DIG-T 115 (2014-2018) : huile, chaine qui se detend, pertes de compression, cout 3000-5000€ ; 1.5 dCi 110 (2010-2012) : turbo, injecteurs, vanne EGR, bielles, cout 1800-3000€ ; 1.0 DIG-T 117 (2019-) : pompe haute pression, turbo precoce",
+    "source": "protoinsaclub.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Nissan Leaf (electrique 62 kWh, 217 ch)",
+    "score_fiabilite": "temoignage individuel signalant une panne de batterie sous garantie (immobilisation ~2 mois)",
+    "pannes_courantes": "cas isole de panne de batterie rapporte, pas generalisable sans donnees supplementaires",
+    "source": "fiches-auto.fr (temoignage) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

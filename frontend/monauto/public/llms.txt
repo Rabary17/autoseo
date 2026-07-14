@@ -1,0 +1,11 @@
+# monauto
+> Média indépendant français dédié à l'auto et à la mobilité : entretien, pannes,
+> marques, essais, démarches, électrique/hybride. Articles signés, sourcés,
+> datés, relus par une rédaction identifiée (voir /a-propos).
+
+## Pages clés
+- [À propos](/a-propos/) : mission et fonctionnement de la rédaction
+
+## Rubriques
+- [Entretien & révision](/categorie/entretien/) : tutos, prix et périodicités par modèle
+- [Toutes les rubriques](/rubriques/)

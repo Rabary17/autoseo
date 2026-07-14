@@ -1,7 +1,7 @@
 // Génération JSON-LD — un seul endroit, à partir des mêmes données que le
 // rendu visible (jamais dupliqué/désynchronisé, voir skills/geo.md section 3
 // et skills/developpement.md section 3 : "une seule source de vérité").
-import type { Source, WpPost, WpUser } from "./types";
+import type { FaqItem, Source, WpPost, WpUser } from "./types";
 import { SITE_NAME, SITE_URL } from "./site";
 
 export interface Crumb {
@@ -14,6 +14,15 @@ export const organizationSchema = () => ({
   "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
   url: SITE_URL,
+  // Requis par Google pour afficher le logo de la marque dans les résultats
+  // enrichis / le Knowledge Panel. Note : Google recommande un format raster
+  // (PNG/JPG/WebP) plutôt que SVG pour ce champ précis — à remplacer par un
+  // vrai logo raster avant mise en production réelle (même limitation que
+  // l'image Open Graph par défaut, voir docs/architecture-headless.md section 6).
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/logo.svg`,
+  },
 });
 
 export const websiteSchema = () => ({
@@ -61,7 +70,18 @@ export function articleSchema(post: WpPost, sources: Source[]) {
         datePublished: post.date,
         dateModified: post.modified,
         mainEntityOfPage: `${SITE_URL}/${post.slug}`,
-        image: media?.source_url,
+        // ImageObject avec dimensions (pas juste une URL nue) : requis par
+        // Google pour l'éligibilité aux images dans les résultats enrichis et
+        // Discover — largeur ≥ 696px recommandée (dépend de l'image uploadée
+        // dans WordPress, voir skills/wordpress-publication.md section 3).
+        image: media
+          ? {
+              "@type": "ImageObject",
+              url: media.source_url,
+              width: media.media_details?.width,
+              height: media.media_details?.height,
+            }
+          : undefined,
         articleSection: cat?.name,
         author: author
           ? { "@type": "Person", name: author.name, url: `${SITE_URL}/auteur/${author.slug}` }
@@ -81,4 +101,19 @@ export function breadcrumbLd(items: Crumb[]) {
 
 export function personLd(author: WpUser) {
   return { "@context": "https://schema.org", ...personSchema(author) };
+}
+
+// Un seul bloc FAQPage par page, questions dans le même ordre que le texte
+// visible (voir skills/geo.md section 3) — le composant appelant est
+// responsable d'afficher exactement les mêmes questions/réponses.
+export function faqPageLd(items: FaqItem[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
 }

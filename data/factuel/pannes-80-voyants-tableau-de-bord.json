@@ -1,0 +1,776 @@
+[
+  {
+    "voyant": "Voyant moteur (check engine)",
+    "couleur": "orange",
+    "signification": "Anomalie détectée par le calculateur moteur (gestion moteur, dépollution, capteurs)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Éviter les longs trajets et les hauts régimes, faire un diagnostic OBD dès que possible ; si le voyant clignote, s'arrêter immédiatement",
+    "source": "https://www.capcar.fr/blog/voyants-voiture-signification-de-tous-les-symboles-guide, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Pression d'huile moteur",
+    "couleur": "rouge",
+    "signification": "Pression d'huile insuffisante dans le circuit de lubrification du moteur",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "Arrêter le moteur immédiatement dès que possible et en sécurité, vérifier le niveau d'huile, ne pas redémarrer sans contrôle",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/ ; https://www.capcar.fr/blog/voyants-voiture-signification-de-tous-les-symboles-guide, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Température moteur (surchauffe)",
+    "couleur": "rouge",
+    "signification": "Température du liquide de refroidissement anormalement élevée, risque de surchauffe moteur",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "S'arrêter dès que possible, couper le moteur, laisser refroidir avant de vérifier le niveau de liquide de refroidissement",
+    "source": "https://www.capcar.fr/blog/voyants-voiture-signification-de-tous-les-symboles-guide, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Batterie / alternateur (charge)",
+    "couleur": "rouge",
+    "signification": "Problème de charge électrique : alternateur défaillant, batterie en fin de vie, ou courroie d'alternateur cassée",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "Couper les consommateurs électriques non essentiels, rejoindre un garage rapidement avant panne électrique totale (perte direction assistée, freinage assisté)",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Frein à main / frein de stationnement serré",
+    "couleur": "rouge",
+    "signification": "Frein de stationnement (à main ou électrique) engagé",
+    "gravite": "information",
+    "action_recommandee": "Desserrer le frein à main avant de rouler ; si le voyant reste allumé frein desserré, cela peut indiquer un problème de circuit de freinage",
+    "source": "https://www.ornikar.com/code/cours/mecanique-vehicule/tableau-bord/voyants-lumineux, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Niveau liquide de frein bas",
+    "couleur": "rouge",
+    "signification": "Niveau de liquide de frein insuffisant dans le réservoir, souvent lié à l'usure des plaquettes ou une fuite",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "S'arrêter dès que possible, vérifier le niveau, ne pas rouler avec un système de freinage dégradé, contacter un garage",
+    "source": "https://www.ornikar.com/code/cours/mecanique-vehicule/tableau-bord/voyants-lumineux, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "ABS (système antiblocage des roues)",
+    "couleur": "orange",
+    "signification": "Système antiblocage des freins désactivé ou en défaut (capteur de vitesse de roue, câblage, calculateur)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Le freinage reste possible mais sans assistance ABS ; conduire prudemment et faire contrôler dans la semaine",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "ESP / contrôle de stabilité (antipatinage)",
+    "couleur": "orange",
+    "signification": "Programme électronique de stabilité désactivé manuellement ou en défaut (capteur d'angle, de vitesse ou d'accélération)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Vérifier si le bouton ESP a été désactivé par inadvertance ; si le voyant reste allumé sans action de l'utilisateur, faire diagnostiquer",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Airbag (coussin gonflable)",
+    "couleur": "rouge",
+    "signification": "Dysfonctionnement du système de sécurité passive (airbags, prétensionneurs de ceinture)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Le véhicule roule normalement mais les airbags ne se déclencheront pas correctement en cas de choc ; faire diagnostiquer rapidement",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Ceinture de sécurité non bouclée",
+    "couleur": "rouge",
+    "signification": "Une ou plusieurs ceintures de sécurité ne sont pas bouclées",
+    "gravite": "information",
+    "action_recommandee": "Boucler la ceinture ; le voyant s'éteint automatiquement une fois toutes les ceintures attachées",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Niveau de carburant bas",
+    "couleur": "orange",
+    "signification": "Réserve de carburant atteinte, autonomie restante faible",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire le plein dès que possible pour éviter la panne sèche",
+    "source": "https://www.capcar.fr/blog/voyants-voiture-signification-de-tous-les-symboles-guide, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Niveau liquide lave-glace bas",
+    "couleur": "orange",
+    "signification": "Niveau insuffisant de liquide lave-glace dans le réservoir",
+    "gravite": "information",
+    "action_recommandee": "Faire l'appoint de liquide lave-glace dès que possible",
+    "source": "https://www.codeenpoche.fr/cours-de-code/la-mecanique-et-les-equipements/voyants-lumineux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Usure des plaquettes de frein",
+    "couleur": "orange",
+    "signification": "Épaisseur des plaquettes de frein sous le seuil d'usure minimal détecté par capteur",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire contrôler et remplacer les plaquettes (et disques si besoin) rapidement dans un garage",
+    "source": "https://www.fiches-auto.fr/articles-auto/voyants-et-temoins-lumineux/s-1896-comprendre-et-decrypter-les-voyants-et-temoins-lumineux.php, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Pression des pneus (TPMS)",
+    "couleur": "orange",
+    "signification": "Perte de pression détectée sur un ou plusieurs pneus, généralement un seuil d'environ 25% sous la pression nominale programmée",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Contrôler la pression des quatre pneus dès que possible (station-service), rechercher une crevaison lente",
+    "source": "https://carverif.fr/blogs/tutoriels/voyant-pression-pneus-tpms, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Niveau liquide de refroidissement bas",
+    "couleur": "rouge",
+    "signification": "Niveau insuffisant de liquide de refroidissement dans le circuit, risque de surchauffe",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "S'arrêter, laisser refroidir le moteur, vérifier et compléter le niveau, contrôler l'absence de fuite",
+    "source": "https://www.capcar.fr/blog/voyants-voiture-signification-de-tous-les-symboles-guide, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Filtre à particules (FAP) colmaté",
+    "couleur": "orange",
+    "signification": "Filtre à particules diesel encrassé, nécessite une régénération (combustion des particules accumulées)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Rouler quelques minutes sur route/voie rapide à régime soutenu pour permettre la régénération automatique ; si le voyant persiste, consulter un garage",
+    "source": "https://www.idgarages.com/fr-fr/voyants-voiture/voyant-tpms (contexte général FAP cité dans corpus), consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Préchauffage / post-chauffage diesel",
+    "couleur": "orange",
+    "signification": "Bougies de préchauffage en cours de mise en température des cylindres (normal au démarrage) ou anomalie si le voyant clignote/reste allumé",
+    "gravite": "information",
+    "action_recommandee": "Attendre l'extinction avant de démarrer par temps froid ; si le voyant clignote en roulant, faire contrôler le circuit de préchauffage",
+    "source": "https://www.ornikar.com/code/cours/mecanique-vehicule/tableau-bord/voyants-lumineux, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Direction assistée (défaut)",
+    "couleur": "rouge",
+    "signification": "Panne du système d'assistance de direction électrique ou hydraulique",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "La direction reste possible mais devient beaucoup plus dure ; conduire prudemment jusqu'au garage le plus proche",
+    "source": "https://www.mister-auto.com/blog/securite/pourquoi-les-voyants-abs-et-esp-sont-allumes/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Servotronic / assistance de direction variable",
+    "couleur": "orange",
+    "signification": "Défaut du système d'assistance de direction modulée selon la vitesse",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire contrôler le système, la direction peut devenir plus lourde ou plus légère qu'à l'accoutumée",
+    "source": "Standard constructeur (BMW/Volkswagen Servotronic), non vérifié via source dédiée en recherche web",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Niveau AdBlue bas",
+    "couleur": "orange",
+    "signification": "Niveau insuffisant d'AdBlue (solution d'urée) utilisée pour réduire les émissions d'oxydes d'azote des moteurs diesel SCR",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire l'appoint d'AdBlue rapidement ; si le niveau devient critique le voyant clignote puis reste fixe et le véhicule peut refuser de redémarrer",
+    "source": "recherche web synthèse AdBlue (idgarages/outilsobdfacile), consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Colmatage filtre à air",
+    "couleur": "orange",
+    "signification": "Filtre à air encrassé réduisant l'admission d'air moteur",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire remplacer le filtre à air lors du prochain entretien",
+    "source": "Standard constructeur, information générale non confirmée par une source web dédiée dans cette recherche",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Portière ouverte / mal fermée",
+    "couleur": "rouge",
+    "signification": "Une ou plusieurs portières ne sont pas correctement fermées",
+    "gravite": "information",
+    "action_recommandee": "Vérifier et refermer correctement la portière concernée avant de rouler",
+    "source": "https://www.codeenpoche.fr/cours-de-code/la-mecanique-et-les-equipements/voyants-lumineux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Coffre mal fermé",
+    "couleur": "rouge",
+    "signification": "Le coffre n'est pas correctement verrouillé",
+    "gravite": "information",
+    "action_recommandee": "Vérifier la fermeture du coffre avant de prendre la route",
+    "source": "https://www.codeenpoche.fr/cours-de-code/la-mecanique-et-les-equipements/voyants-lumineux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Capot moteur ouvert",
+    "couleur": "rouge",
+    "signification": "Le capot moteur n'est pas correctement verrouillé",
+    "gravite": "information",
+    "action_recommandee": "Vérifier et refermer le capot avant de démarrer",
+    "source": "https://www.codeenpoche.fr/cours-de-code/la-mecanique-et-les-equipements/voyants-lumineux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Feux de brouillard (avant/arrière)",
+    "couleur": "vert",
+    "signification": "Confirme l'activation des feux de brouillard avant ou arrière",
+    "gravite": "information",
+    "action_recommandee": "Utiliser uniquement par visibilité réduite (brouillard, forte pluie, neige)",
+    "source": "https://public.codesrousseau.fr/code-de-la-route/reviser-le-code/voyants-de-voiture-feux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Feux de route (pleins phares)",
+    "couleur": "bleu",
+    "signification": "Confirme l'activation des feux de route (pleins phares)",
+    "gravite": "information",
+    "action_recommandee": "Basculer en feux de croisement à l'approche d'un autre véhicule",
+    "source": "https://public.codesrousseau.fr/code-de-la-route/reviser-le-code/voyants-de-voiture-feux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Régulateur / limiteur de vitesse actif",
+    "couleur": "vert",
+    "signification": "Confirme que le régulateur ou le limiteur de vitesse est activé",
+    "gravite": "information",
+    "action_recommandee": "Vérifier la vitesse de consigne réglée avant de circuler",
+    "source": "https://www.ornikar.com/code/cours/mecanique-vehicule/tableau-bord/voyants-lumineux, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Aide au stationnement (radar de recul)",
+    "couleur": "orange",
+    "signification": "Défaut du système d'aide au stationnement (capteurs de proximité)",
+    "gravite": "information",
+    "action_recommandee": "Redoubler de vigilance en manœuvre, faire contrôler les capteurs si le défaut persiste",
+    "source": "Standard constructeur, information générale sur systèmes ADAS, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Détecteur d'angle mort",
+    "couleur": "orange",
+    "signification": "Défaut ou désactivation du système de surveillance des angles morts",
+    "gravite": "information",
+    "action_recommandee": "Redoubler de vigilance lors des changements de voie, faire contrôler le système si l'alerte persiste",
+    "source": "Standard constructeur ADAS, non confirmée par source dédiée dans cette recherche",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Alerte de franchissement de ligne",
+    "couleur": "orange",
+    "signification": "Défaut ou désactivation de l'assistance au maintien dans la voie",
+    "gravite": "information",
+    "action_recommandee": "Rester vigilant sur la trajectoire, faire contrôler le système de caméra/capteurs si nécessaire",
+    "source": "Standard constructeur ADAS, non confirmée par source dédiée dans cette recherche",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Alerte de distance de sécurité (collision)",
+    "couleur": "orange",
+    "signification": "Défaut du système de détection de distance avec le véhicule précédent (freinage d'urgence assisté)",
+    "gravite": "information",
+    "action_recommandee": "Conserver une distance de sécurité manuelle, faire contrôler le système si le défaut persiste",
+    "source": "Standard constructeur ADAS, non confirmée par source dédiée dans cette recherche",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Stop & Start désactivé",
+    "couleur": "vert/orange",
+    "signification": "Système d'arrêt-démarrage automatique désactivé manuellement ou indisponible (batterie faible, température moteur, capot ouvert)",
+    "gravite": "information",
+    "action_recommandee": "Vérifier les conditions nécessaires au fonctionnement (température moteur, charge batterie) si la désactivation n'est pas volontaire",
+    "source": "Fonctionnement standard Stop&Start, information générale, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Boîte automatique en mode dégradé",
+    "couleur": "orange",
+    "signification": "Anomalie électronique ou mécanique de la boîte de vitesses automatique, passage en mode de fonctionnement restreint (souvent bloquée sur un rapport)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Éviter les forts régimes, rejoindre un garage rapidement pour diagnostic de la transmission",
+    "source": "Standard constructeur, information générale sur boîtes automatiques, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Transmission intégrale (4x4/AWD) défaut",
+    "couleur": "orange",
+    "signification": "Anomalie du système de transmission intégrale (répartition du couple entre essieux)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Adapter la conduite selon l'adhérence disponible, faire contrôler le système rapidement",
+    "source": "Standard constructeur, information générale, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Différentiel (verrouillage/défaut)",
+    "couleur": "orange",
+    "signification": "Anomalie ou activation du verrouillage du différentiel (répartition du couple entre roues d'un même essieu)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire contrôler le système en garage si le voyant reste allumé de façon anormale",
+    "source": "Standard constructeur (véhicules 4x4/tout-terrain), non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "EGR (vanne de recirculation des gaz d'échappement)",
+    "couleur": "orange",
+    "signification": "Défaut de la vanne EGR, souvent encrassée, empêchant la bonne recirculation des gaz d'échappement",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire un diagnostic OBD, la vanne EGR encrassée est une cause fréquente d'allumage du voyant moteur",
+    "source": "recherche web sur causes d'allumage voyant moteur (EGR, sonde lambda), consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Turbo (défaut de suralimentation)",
+    "couleur": "orange",
+    "signification": "Anomalie du système de suralimentation par turbocompresseur (pression, capteur, actionneur)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Éviter les fortes accélérations, faire diagnostiquer le turbo rapidement",
+    "source": "recherche web sur causes d'allumage voyant moteur (turbo), consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut injecteurs",
+    "couleur": "orange",
+    "signification": "Anomalie détectée sur un ou plusieurs injecteurs de carburant",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire un diagnostic OBD dès que possible, éviter de forcer le moteur",
+    "source": "Standard constructeur, information générale sur diagnostic moteur, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Niveau huile de boîte de vitesses bas",
+    "couleur": "orange",
+    "signification": "Niveau insuffisant d'huile de boîte de vitesses (manuelle ou automatique)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire vérifier et compléter le niveau d'huile de boîte rapidement pour éviter une usure prématurée",
+    "source": "Standard constructeur, information générale, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Usure de l'embrayage",
+    "couleur": "orange",
+    "signification": "Usure avancée du disque d'embrayage détectée par capteur",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire contrôler et remplacer l'embrayage si nécessaire avant qu'il ne lâche complètement",
+    "source": "Standard constructeur, information générale, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Système de charge hybride/électrique (défaut)",
+    "couleur": "orange",
+    "signification": "Anomalie du système de gestion de la propulsion hybride ou électrique",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire diagnostiquer rapidement dans un réseau agréé compétent en haute tension",
+    "source": "https://www.guide-auto.com/temoins-lumineux-ve-et-hybride/, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Batterie haute tension (défaut)",
+    "couleur": "rouge",
+    "signification": "Anomalie grave du pack de batterie haute tension (400V à 800V selon véhicules) alimentant la propulsion électrique",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "S'arrêter en sécurité, couper le contact, ne pas manipuler la batterie soi-même, contacter une assistance qualifiée haute tension",
+    "source": "https://www.guideautoweb.com/articles/22019/voitures-hybrides-et-electriques-la-batterie-expliquee/, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Niveau d'autonomie électrique faible",
+    "couleur": "orange",
+    "signification": "Charge de la batterie de traction atteignant un niveau bas (environ 10-12% selon les modèles), autonomie restreinte",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Recharger le véhicule dès que possible, planifier un arrêt sur borne",
+    "source": "https://www.guide-auto.com/temoins-lumineux-ve-et-hybride/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Borne de recharge branchée / câble connecté",
+    "couleur": "vert",
+    "signification": "Confirme que le véhicule électrique/hybride rechargeable est correctement connecté à une borne de recharge",
+    "gravite": "information",
+    "action_recommandee": "Vérifier le bon déroulement de la charge sur l'écran ou l'application dédiée",
+    "source": "https://www.volkswagen.fr/fr/electriques-et-hybrides/faq/recharge/comment-se-recharge-la-batterie-12V-d-une-voiture-electrique.html, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Niveau de charge batterie (jauge)",
+    "couleur": "vert",
+    "signification": "Indication du niveau de charge actuel de la batterie de traction",
+    "gravite": "information",
+    "action_recommandee": "Surveiller le niveau pour anticiper les besoins de recharge",
+    "source": "https://www.guideautoweb.com/articles/22019/voitures-hybrides-et-electriques-la-batterie-expliquee/, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Préconditionnement thermique (habitacle/batterie)",
+    "couleur": "vert",
+    "signification": "Confirme l'activation du préconditionnement thermique de l'habitacle ou de la batterie avant utilisation ou charge",
+    "gravite": "information",
+    "action_recommandee": "Aucune action nécessaire, fonctionnalité de confort/optimisation activée",
+    "source": "Standard constructeur véhicules électriques, non confirmée par source dédiée dans cette recherche",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Mode Éco / conduite économique",
+    "couleur": "vert",
+    "signification": "Confirme que le mode de conduite économique (Eco) est activé, limitant la puissance pour réduire la consommation",
+    "gravite": "information",
+    "action_recommandee": "Aucune action nécessaire, désactiver le mode si plus de puissance est nécessaire",
+    "source": "Standard constructeur, information générale, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Toit ouvrant / glissière non verrouillé",
+    "couleur": "rouge",
+    "signification": "Toit ouvrant non correctement fermé ou verrouillé",
+    "gravite": "information",
+    "action_recommandee": "Vérifier et refermer complètement le toit ouvrant avant de circuler",
+    "source": "https://www.codeenpoche.fr/cours-de-code/la-mecanique-et-les-equipements/voyants-lumineux/, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Alerte de fatigue du conducteur",
+    "couleur": "orange",
+    "signification": "Le système détecte des signes de somnolence ou de baisse de vigilance du conducteur (analyse du comportement de conduite)",
+    "gravite": "information",
+    "action_recommandee": "S'arrêter dès que possible pour faire une pause, ne pas ignorer l'alerte",
+    "source": "https://www.ornikar.com/code/cours/mecanique-vehicule/tableau-bord/voyants-lumineux, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Capteur de pluie / essuie-glaces automatiques",
+    "couleur": "vert",
+    "signification": "Confirme l'activation du mode automatique des essuie-glaces piloté par capteur de pluie",
+    "gravite": "information",
+    "action_recommandee": "Aucune action nécessaire",
+    "source": "Standard constructeur, information générale, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Dégivrage lunette arrière",
+    "couleur": "orange",
+    "signification": "Confirme l'activation de la résistance chauffante de la lunette arrière (et rétroviseurs sur certains modèles)",
+    "gravite": "information",
+    "action_recommandee": "Penser à désactiver une fois le dégivrage terminé pour économiser l'énergie",
+    "source": "https://www.codeenpoche.fr/cours-de-code/la-mecanique-et-les-equipements/voyants-lumineux/, consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Climatisation activée",
+    "couleur": "vert",
+    "signification": "Confirme que le système de climatisation est en fonctionnement",
+    "gravite": "information",
+    "action_recommandee": "Aucune action nécessaire",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Filtre d'habitacle encrassé",
+    "couleur": "orange",
+    "signification": "Filtre d'habitacle (filtre à pollen) encrassé réduisant la qualité de l'air intérieur et le débit de ventilation",
+    "gravite": "information",
+    "action_recommandee": "Faire remplacer le filtre d'habitacle lors du prochain entretien",
+    "source": "Standard constructeur, entretien courant, non confirmée par source dédiée",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Sécurité enfant activée",
+    "couleur": "vert",
+    "signification": "Confirme l'activation de la sécurité enfant sur les portières arrière",
+    "gravite": "information",
+    "action_recommandee": "Aucune action nécessaire, vérifier que les portières concernées ne s'ouvrent que de l'extérieur",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Clé non détectée / carte mains libres",
+    "couleur": "orange",
+    "signification": "La clé ou carte mains libres n'est pas détectée dans l'habitacle",
+    "gravite": "information",
+    "action_recommandee": "Vérifier la présence de la clé, remplacer la pile de la carte si le problème persiste",
+    "source": "Standard constructeur, information générale sur systèmes mains libres",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Immobilisateur / antidémarrage",
+    "couleur": "rouge/orange",
+    "signification": "Système antidémarrage électronique actif ou en défaut, empêchant le démarrage du moteur",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Vérifier que la bonne clé est utilisée ; si le défaut persiste, faire appel à un professionnel (risque de vol ou panne électronique)",
+    "source": "Standard constructeur, information générale sur antidémarrage",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Alarme antivol (défaut/déclenchement)",
+    "couleur": "orange",
+    "signification": "Anomalie ou activation du système d'alarme antivol du véhicule",
+    "gravite": "information",
+    "action_recommandee": "Vérifier le bon fonctionnement de la fermeture centralisée, faire contrôler si des déclenchements intempestifs surviennent",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "GPS / système de navigation (défaut signal)",
+    "couleur": "orange",
+    "signification": "Perte du signal GPS ou anomalie du système de navigation embarqué",
+    "gravite": "information",
+    "action_recommandee": "Se fier temporairement à la signalisation routière, le signal revient généralement en sortant de zone couverte (tunnel, parking)",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Entretien / révision à prévoir (clé à molette)",
+    "couleur": "orange",
+    "signification": "Échéance d'entretien périodique atteinte (kilométrage ou durée), rappel de révision constructeur",
+    "gravite": "information",
+    "action_recommandee": "Planifier la révision chez un garage ou concessionnaire dans les meilleurs délais",
+    "source": "https://www.fiches-auto.fr/articles-auto/controle-technique/s-2175-voyants-qui-menent-a-une-contre-visite.php (contexte entretien/contrôle technique), consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Défaut d'ampoule / feu grillé",
+    "couleur": "orange",
+    "signification": "Une ampoule extérieure (feu de croisement, stop, clignotant) est détectée comme défectueuse ou grillée",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Remplacer l'ampoule concernée rapidement, un feu défaillant est sanctionnable et dangereux",
+    "source": "Standard constructeur, information générale sur signalisation",
+    "a_verifier": true
+  },
+  {
+    "voyant": "STOP générique (triangle rouge / point d'exclamation)",
+    "couleur": "rouge",
+    "signification": "Alerte générique de premier niveau signalant un dysfonctionnement majeur nécessitant l'arrêt immédiat du véhicule, souvent associée à un message précis à l'écran",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "S'arrêter dès que possible en sécurité et consulter le message associé ou le manuel du véhicule",
+    "source": "https://www.francemoteursutilitaires.com/2026/04/24/voyant-triangle-jaune-exclamation-sur-master-3-comprendre-cette-alerte-moteur/ (voyant générique d'alerte), consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Service constructeur générique (ex : Service Now, Maintenance Required)",
+    "couleur": "orange",
+    "signification": "Message d'alerte propriétaire du constructeur signalant qu'une intervention d'entretien ou de contrôle est requise",
+    "gravite": "information",
+    "action_recommandee": "Se référer au manuel du véhicule pour identifier la nature exacte de l'alerte et planifier l'intervention",
+    "source": "Terminologie propre à chaque constructeur (Mercedes, Toyota), non vérifiée précisément par source dédiée dans cette recherche",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Voyant zigzag (glissière / antipatinage route glissante)",
+    "couleur": "orange",
+    "signification": "Sur certains modèles (ex. Dacia), signale un risque d'adhérence réduite ou l'activation du contrôle de traction",
+    "gravite": "information",
+    "action_recommandee": "Adapter la conduite à l'état de la route, vérifier la pression des pneus",
+    "source": "https://www.outilsobdfacile.fr/blog/voyant-zigzag-orange-dacia-p178.html, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Triangle jaune avec point d'exclamation générique",
+    "couleur": "orange",
+    "signification": "Alerte générique multi-systèmes nécessitant de consulter l'écran d'information du véhicule pour identifier la nature précise du défaut",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Consulter le message détaillé affiché au tableau de bord et agir en conséquence",
+    "source": "https://www.francemoteursutilitaires.com/2026/04/24/voyant-triangle-jaune-exclamation-sur-master-3-comprendre-cette-alerte-moteur/, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Anti-démarrage / clé de contact non reconnue",
+    "couleur": "rouge",
+    "signification": "La clé de contact n'est pas reconnue par le calculateur, empêchant le démarrage du moteur",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Essayer une clé de secours, contacter le constructeur ou un serrurier automobile si le problème persiste",
+    "source": "Standard constructeur, information générale sur immobilisateur",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut capteur de vitesse",
+    "couleur": "orange",
+    "signification": "Anomalie du capteur de vitesse du véhicule, pouvant affecter le compteur, l'ABS ou la boîte automatique",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire un diagnostic OBD, ce défaut peut désactiver d'autres systèmes de sécurité dépendants",
+    "source": "Standard technique OBD, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut sonde lambda / capteur d'oxygène",
+    "couleur": "orange",
+    "signification": "Anomalie détectée sur la sonde lambda, affectant le dosage air/carburant et les émissions polluantes",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire un diagnostic OBD, une sonde défectueuse augmente la consommation et les émissions",
+    "source": "recherche web sur causes d'allumage voyant moteur (sonde lambda), consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "voyant": "Bouchon de réservoir de carburant mal fermé",
+    "couleur": "orange",
+    "signification": "Le calculateur détecte une fuite de pression dans le circuit d'évaporation de carburant, souvent liée à un bouchon mal vissé",
+    "gravite": "information",
+    "action_recommandee": "Vérifier que le bouchon de réservoir est correctement vissé jusqu'au clic",
+    "source": "Standard technique OBD (code EVAP), information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut boîte à fusibles / électronique générale",
+    "couleur": "orange",
+    "signification": "Anomalie électrique généralisée détectée par le réseau multiplexé du véhicule (CAN bus)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire diagnostiquer le réseau électrique du véhicule en garage",
+    "source": "Standard technique électronique automobile, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Contrôle technique à prévoir",
+    "couleur": "orange",
+    "signification": "Rappel de l'échéance du contrôle technique périodique obligatoire",
+    "gravite": "information",
+    "action_recommandee": "Planifier le passage au contrôle technique avant l'échéance réglementaire",
+    "source": "https://www.service-public.fr/particuliers/vosdroits/F2168, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Filtre à carburant colmaté / eau dans le gazole",
+    "couleur": "orange",
+    "signification": "Présence d'eau détectée dans le filtre à carburant diesel, ou colmatage du filtre",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire purger l'eau du filtre à carburant rapidement pour éviter d'endommager le système d'injection",
+    "source": "Standard technique diesel, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut boîte de vitesses manuelle robotisée",
+    "couleur": "orange",
+    "signification": "Anomalie du système de commande électronique d'une boîte de vitesses robotisée",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire diagnostiquer le système rapidement, la boîte peut se bloquer sur un rapport",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Assistance au freinage d'urgence (défaut)",
+    "couleur": "orange",
+    "signification": "Anomalie du système d'assistance au freinage d'urgence (détection de freinage brusque)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Conduire prudemment en anticipant le freinage, faire contrôler le système",
+    "source": "Standard constructeur ADAS, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Régénération FAP en cours",
+    "couleur": "vert/orange",
+    "signification": "Indique que le processus de régénération du filtre à particules est en cours",
+    "gravite": "information",
+    "action_recommandee": "Poursuivre la conduite sur route à régime soutenu jusqu'à la fin du cycle de régénération",
+    "source": "Standard constructeur diesel, information générale sur cycle FAP",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut capteur de niveau de carburant",
+    "couleur": "orange",
+    "signification": "Anomalie du capteur de niveau dans le réservoir de carburant, jauge peu fiable",
+    "gravite": "information",
+    "action_recommandee": "Surveiller la consommation au kilométrage en complément, faire contrôler le capteur",
+    "source": "Standard technique, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Anomalie du système de dépollution (SCR / catalyseur)",
+    "couleur": "orange",
+    "signification": "Dysfonctionnement du système de traitement des gaz d'échappement (catalyseur ou SCR)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Faire un diagnostic rapide, ce défaut peut mener à un refus au contrôle technique",
+    "source": "https://www.fiches-auto.fr/articles-auto/controle-technique/s-2175-voyants-qui-menent-a-une-contre-visite.php, consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut de la caméra de recul",
+    "couleur": "orange",
+    "signification": "Anomalie détectée sur la caméra de recul ou son affichage",
+    "gravite": "information",
+    "action_recommandee": "Redoubler de prudence en marche arrière, faire contrôler la caméra",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Suspension pneumatique (défaut)",
+    "couleur": "orange",
+    "signification": "Anomalie du système de suspension pneumatique (hauteur de caisse, compresseur)",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Éviter les charges lourdes et les routes dégradées, faire contrôler rapidement",
+    "source": "Standard constructeur (véhicules haut de gamme), information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut phares directionnels / adaptatifs",
+    "couleur": "orange",
+    "signification": "Anomalie du système d'éclairage directionnel suivant l'angle du volant",
+    "gravite": "information",
+    "action_recommandee": "Faire contrôler le système d'éclairage adaptatif",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut essuie-glace / lave-glace",
+    "couleur": "orange",
+    "signification": "Anomalie du moteur d'essuie-glace ou du circuit de lave-glace",
+    "gravite": "information",
+    "action_recommandee": "Faire contrôler le système, vérifier les fusibles associés",
+    "source": "Standard technique, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Alerte pression d'huile de boîte automatique (surchauffe)",
+    "couleur": "rouge",
+    "signification": "Température excessive de l'huile de la boîte de vitesses automatique",
+    "gravite": "urgence immédiate à l'arrêt",
+    "action_recommandee": "S'arrêter et laisser refroidir, éviter de forcer la transmission",
+    "source": "Standard constructeur, information générale sur boîtes automatiques",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut du limiteur/régulateur adaptatif (ACC)",
+    "couleur": "orange",
+    "signification": "Anomalie du régulateur de vitesse adaptatif (radar/caméra de détection de distance)",
+    "gravite": "information",
+    "action_recommandee": "Reprendre un contrôle manuel de la vitesse, faire contrôler le capteur radar",
+    "source": "Standard constructeur ADAS, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Voyant de rodage moteur (véhicule neuf)",
+    "couleur": "vert",
+    "signification": "Indique que le moteur est en période de rodage avec limitation de régime recommandée",
+    "gravite": "information",
+    "action_recommandee": "Respecter les préconisations de rodage du constructeur durant les premiers kilomètres",
+    "source": "Standard constructeur, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Défaut allumage / bougies d'allumage (essence)",
+    "couleur": "orange",
+    "signification": "Anomalie détectée sur le système d'allumage (bougies, bobines) pouvant provoquer des ratés moteur",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Si le voyant clignote (raté d'allumage), éviter de forcer le moteur et faire diagnostiquer rapidement pour protéger le catalyseur",
+    "source": "Standard technique moteur essence, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Voyant clignotants (défaut ampoule clignotant)",
+    "couleur": "vert",
+    "signification": "Clignotement anormalement rapide du témoin de clignotant signalant qu'une ampoule est grillée",
+    "gravite": "à faire vérifier rapidement",
+    "action_recommandee": "Remplacer l'ampoule de clignotant défectueuse rapidement pour rester visible et en conformité",
+    "source": "Standard technique électrique automobile, information générale",
+    "a_verifier": true
+  },
+  {
+    "voyant": "Système de surveillance de pression des pneus indisponible",
+    "couleur": "orange",
+    "signification": "Le système TPMS ne peut plus surveiller la pression, souvent après changement de roue non recalibré",
+    "gravite": "information",
+    "action_recommandee": "Recalibrer le système TPMS via le menu du véhicule après changement de pneus ou de roues",
+    "source": "https://carverif.fr/blogs/tutoriels/voyant-pression-pneus-tpms, consulté 2026-07",
+    "a_verifier": true
+  }
+]

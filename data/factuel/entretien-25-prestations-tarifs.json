@@ -1,0 +1,252 @@
+[
+  {
+    "prestation": "Vidange huile moteur + filtre à huile",
+    "prix_min_eur": 50,
+    "prix_max_eur": 180,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Prix vidange : combien coûte une vidange de voiture et quand la faire', consulté 2026-07 (https://www.vroomly.com/blog/combien-coute-une-vidange/) ; recoupé avec redk-motors.me et platiniumcar.fr",
+    "a_verifier": false,
+    "notes": "60-100 en centre auto (Norauto, Feu Vert, Midas), 70-120 en garage indépendant, 100-200 en concession. Vidange diesel généralement plus chère (80-150)."
+  },
+  {
+    "prestation": "Filtre à air",
+    "prix_min_eur": 15,
+    "prix_max_eur": 50,
+    "temps_mo_min_h": 0.25,
+    "temps_mo_max_h": 0.5,
+    "source": "Vroomly.com, 'Quel est le prix d'un filtre à air ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-filtre-a-air/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~28-30€ tout compris ; pièce ~10€, main d'œuvre ~15€ ; temps moyen d'intervention 17 min"
+  },
+  {
+    "prestation": "Filtre habitacle (pollen)",
+    "prix_min_eur": 25,
+    "prix_max_eur": 100,
+    "temps_mo_min_h": 0.25,
+    "temps_mo_max_h": 0.5,
+    "source": "Vroomly.com, 'Quel est le prix du changement de filtre d'habitacle ?', consulté 2026-07 (https://www.vroomly.com/blog/prix-du-changement-de-filtre-dhabitacle/) ; recoupé avec idgarages.com et goodmecano.com",
+    "a_verifier": false,
+    "notes": "Prix moyen réseau garages partenaires ~35-39€ (pièce+MO) ; fourchette large 25-100€ selon accessibilité du filtre. Temps de pose ~30 min."
+  },
+  {
+    "prestation": "Filtre à carburant (gasoil/essence)",
+    "prix_min_eur": 39,
+    "prix_max_eur": 130,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de filtre à gasoil ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-de-filtre-a-gasoil/)",
+    "a_verifier": false,
+    "notes": "Prix moyen ~50-53€ selon modèle, fourchette globale 39-130€ selon véhicule et garage. Filtre essence généralement moins cher que gasoil."
+  },
+  {
+    "prestation": "Plaquettes de frein avant (jeu)",
+    "prix_min_eur": 40,
+    "prix_max_eur": 200,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1.5,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de plaquettes de frein ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-de-plaquettes-de-frein/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~81€, fourchette globale 40-400€ toutes prestations plaquettes confondues (avant/arrière) ; pièces seules 15-200€ selon modèle."
+  },
+  {
+    "prestation": "Plaquettes de frein arrière (jeu)",
+    "prix_min_eur": 50,
+    "prix_max_eur": 200,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1.5,
+    "source": "AD.fr, 'Plaquette de Frein Arrière : Prix du Remplacement & Durée de Vie', consulté 2026-07 (https://www.ad.fr/guides/guide-conseil/freinage/plaquette-de-frein-arriere-prix-du-remplacement-et-duree-de-vie) ; recoupé avec Vroomly.com",
+    "a_verifier": false,
+    "notes": "Pièces seules 20-100€ (50-70 citadine, 70-90 berline, 90-100 SUV) ; total avec main d'œuvre généralement 100-200€ selon Vroomly."
+  },
+  {
+    "prestation": "Disques de frein avant (paire)",
+    "prix_min_eur": 40,
+    "prix_max_eur": 500,
+    "temps_mo_min_h": 1,
+    "temps_mo_max_h": 2,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de disque de frein ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-de-disque-de-frein/)",
+    "a_verifier": false,
+    "notes": "Prix moyen prestation complète ~159-187€ main d'œuvre incluse (à partir de 40€ chez certains garages, jusqu'à 500€ selon modèle). Pièces seules 25-80€/disque, 70-350€/essieu ; MO 25-100€/h selon garage."
+  },
+  {
+    "prestation": "Disques de frein arrière (paire)",
+    "prix_min_eur": 150,
+    "prix_max_eur": 400,
+    "temps_mo_min_h": 1,
+    "temps_mo_max_h": 2,
+    "source": "Vroomly.com / bymycar.fr, 'Quel est le prix des disques et plaquettes de frein ?', consulté 2026-07 (https://www.bymycar.fr/webzine/quel-est-le-prix-des-disques-et-plaquettes-de-frein/)",
+    "a_verifier": false,
+    "notes": "Remplacement disques + plaquettes arrière ensemble : 150-400€ selon modèle. Disques arrière généralement moins chers que les avant (diamètre plus petit)."
+  },
+  {
+    "prestation": "Courroie de distribution + kit (galets, pompe à eau)",
+    "prix_min_eur": 600,
+    "prix_max_eur": 800,
+    "temps_mo_min_h": 3,
+    "temps_mo_max_h": 5,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de courroie de distribution ?', consulté 2026-07 (https://www.vroomly.com/blog/combien-coute-un-changement-de-courroie-de-distribution/) ; recoupé avec ad.fr",
+    "a_verifier": false,
+    "notes": "Kit distribution seul (citadine) 200-400€ ; kit + pompe à eau + courroie accessoires + MO complète : 600-800€. Exemples pièces seules : Peugeot 208 ~300€, Clio ~250-350€ selon génération."
+  },
+  {
+    "prestation": "Courroie d'accessoires",
+    "prix_min_eur": 60,
+    "prix_max_eur": 150,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Combien coûte un changement de courroie d'accessoire ?', consulté 2026-07 (https://www.vroomly.com/blog/combien-coute-un-changement-de-courroie-daccessoire/)",
+    "a_verifier": false,
+    "notes": "Kit courroie d'accessoire seul 25-40€, courroie alternateur seule 17-21€ ; exemple prix total Renault Clio 4 ~97€. Temps moyen d'intervention 34 min."
+  },
+  {
+    "prestation": "Kit d'embrayage (mécanisme + disque + butée)",
+    "prix_min_eur": 300,
+    "prix_max_eur": 1700,
+    "temps_mo_min_h": 3,
+    "temps_mo_max_h": 6,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement d'embrayage ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-embrayage/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~651€. Kit seul 250-1100€ selon type (monodisque, multidisque, diaphragme, hydraulique). Souvent accompagné du remplacement du volant moteur."
+  },
+  {
+    "prestation": "Batterie 12V",
+    "prix_min_eur": 100,
+    "prix_max_eur": 300,
+    "temps_mo_min_h": 0.25,
+    "temps_mo_max_h": 0.5,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de batterie de voiture ?', consulté 2026-07 (https://www.vroomly.com/blog/changer-sa-batterie-de-voiture-combien-ca-coute/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~102€ pour le changement (hors coût pièce parfois non inclus). Batterie seule à partir de 60€, jusqu'à 150€+ selon capacité/marque."
+  },
+  {
+    "prestation": "Pneus (jeu de 4, entrée de gamme, avec pose)",
+    "prix_min_eur": 250,
+    "prix_max_eur": 330,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "garage-caussade-pneus.com, 'Tarifs montage pneus en 2026', consulté 2026-07 (https://garage-caussade-pneus.com/pneus-pneumatiques/tarifs-montage-pneus/) ; recoupé avec 1001pneus.fr et mister-auto.com",
+    "a_verifier": false,
+    "notes": "Pneus entrée de gamme (Nankang, Kumho) ~43€/unité pour dimension standard 205/55 R16, soit ~172€ le jeu ; montage 8-40€/roue. Total pneus+pose ~250-330€ pour un jeu complet en entrée de gamme."
+  },
+  {
+    "prestation": "Équilibrage / géométrie (parallélisme)",
+    "prix_min_eur": 60,
+    "prix_max_eur": 150,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Quel est le prix du parallélisme d'une voiture ?', consulté 2026-07 (https://www.vroomly.com/blog/combien-coute-un-parallelisme-de-voiture/)",
+    "a_verifier": true,
+    "notes": "Prix moyen géométrie/parallélisme constaté ~108€ (source Vroomly), mais fourchette précise et prix d'un équilibrage seul non détaillés clairement dans les sources disponibles ; à confirmer avec un devis centre auto (Feu Vert/Norauto/Midas)."
+  },
+  {
+    "prestation": "Amortisseurs (paire, avant ou arrière)",
+    "prix_min_eur": 200,
+    "prix_max_eur": 350,
+    "temps_mo_min_h": 1,
+    "temps_mo_max_h": 2,
+    "source": "Vroomly.com, 'Prix du changement d'amortisseurs de voiture', consulté 2026-07 (https://www.vroomly.com/blog/combien-coute-un-changement-damortisseurs/)",
+    "a_verifier": false,
+    "notes": "Prix moyen changement amortisseurs avant ~290€, arrière ~174€ (par paire). Pièces seules 100-300€/amortisseur, coupelles 40-70€, main d'œuvre 70-150€."
+  },
+  {
+    "prestation": "Bougies d'allumage (jeu, moteur 4 cylindres)",
+    "prix_min_eur": 65,
+    "prix_max_eur": 440,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de bougie d'allumage ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-de-bougie-dallumage/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~42€ (variable selon marque : Peugeot 208 ~32€, Renault ~50€, Toyota ~54€) ; coût total incluant 4 bougies + MO : 65-440€ selon modèle. Bougie seule 10-60€/unité."
+  },
+  {
+    "prestation": "Bougies de préchauffage (diesel, jeu)",
+    "prix_min_eur": 65,
+    "prix_max_eur": 420,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1.5,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de bougie de préchauffage ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-de-bougie-de-prechauffage/)",
+    "a_verifier": false,
+    "notes": "Coût total (main d'œuvre + pièces) 65-420€ selon nombre de cylindres et modèle. Vroomly recommande de remplacer toutes les bougies en même temps."
+  },
+  {
+    "prestation": "Liquide de refroidissement (vidange complète)",
+    "prix_min_eur": 56,
+    "prix_max_eur": 124,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Quel est le prix d'une vidange de liquide de refroidissement ?', consulté 2026-07 (https://www.vroomly.com/blog/prix-dune-vidange-de-liquide-de-refroidissement/)",
+    "a_verifier": false,
+    "notes": "Prix moyen ~98€ (variable par marque : Honda ~56€, Peugeot ~96€, BMW ~108€, Renault ~124€). Liquide seul 5-15€/bidon ; prestation inclut vidange + remplissage + purge du circuit."
+  },
+  {
+    "prestation": "Liquide de frein (purge/vidange)",
+    "prix_min_eur": 50,
+    "prix_max_eur": 300,
+    "temps_mo_min_h": 1,
+    "temps_mo_max_h": 2,
+    "source": "Vroomly.com, 'Quel est le prix d'un changement de liquide de frein ?', consulté 2026-07 (https://www.vroomly.com/blog/quel-est-le-prix-dun-changement-de-liquide-de-frein/)",
+    "a_verifier": false,
+    "notes": "Fourchette globale 50-300€ (MO + liquide) ; exemple Renault Scénic 3 ~63€. Prestation recommandée tous les 2-4 ans ou 50 000 km, dure 1-2h."
+  },
+  {
+    "prestation": "Climatisation (recharge de gaz)",
+    "prix_min_eur": 50,
+    "prix_max_eur": 300,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1,
+    "source": "Vroomly.com, 'Combien coûte l'entretien de ma climatisation de voiture ?', consulté 2026-07 (https://www.vroomly.com/blog/combien-coute-lentretien-de-ma-climatisation-de-voiture/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~70€ (fourchette basse 50-100€ selon garage), mais forfaits plus complets jusqu'à 200-300€ selon type de gaz et état du circuit. Recharge recommandée tous les 2-3 ans."
+  },
+  {
+    "prestation": "Balais d'essuie-glace (jeu de 2)",
+    "prix_min_eur": 20,
+    "prix_max_eur": 60,
+    "temps_mo_min_h": 0.1,
+    "temps_mo_max_h": 0.25,
+    "source": "Vroomly.com / mister-auto.com, 'Quel est le prix pour changer vos balais d'essuie-glaces ?', consulté 2026-07 (https://www.mister-auto.com/blog/securite/quel-est-le-prix-pour-changer-vos-balais-dessuie-glace/)",
+    "a_verifier": false,
+    "notes": "Pièces seules 20-40€ le jeu de 2 ; pose souvent offerte en centre auto, sinon ~50€ de MO si intervention par un professionnel en plus de la pièce. Remplacement recommandé tous les 6-12 mois."
+  },
+  {
+    "prestation": "Ampoules/phares (remplacement ampoule)",
+    "prix_min_eur": 5,
+    "prix_max_eur": 200,
+    "temps_mo_min_h": 0.1,
+    "temps_mo_max_h": 0.5,
+    "source": "Vroomly.com, 'Ampoule de phare : rôle, types, changement et prix', consulté 2026-07 (https://www.vroomly.com/blog/ampoule-de-phare-role-types-changement-et-prix/)",
+    "a_verifier": true,
+    "notes": "Prix pièce seule très variable selon technologie : halogène H7 5-20€, xénon 30-80€, LED d'origine 50-200€. Coût main d'œuvre variable selon accessibilité du phare, non détaillé précisément dans les sources — fourchette globale à confirmer par devis garage."
+  },
+  {
+    "prestation": "Échappement (silencieux/ligne complète)",
+    "prix_min_eur": 100,
+    "prix_max_eur": 400,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 1.5,
+    "source": "Vroomly.com, 'Silencieux d'échappement : fonctionnement, entretien et prix', consulté 2026-07 (https://www.vroomly.com/blog/silencieux-dechappement-fonctionnement-entretien-et-prix/)",
+    "a_verifier": false,
+    "notes": "Pièce partie centrale/arrière 100-150€ ; catalyseur jusqu'à 400€ (hors MO). Temps moyen de changement ~32 min sur véhicule courant, ~37 min sur Citroën. Prix final dépend fortement de la partie remplacée (silencieux seul vs ligne complète avec catalyseur)."
+  },
+  {
+    "prestation": "Contrôle technique",
+    "prix_min_eur": 45,
+    "prix_max_eur": 150,
+    "temps_mo_min_h": 0.5,
+    "temps_mo_max_h": 0.75,
+    "source": "Groupama.fr, 'Quel est le prix d'un contrôle technique en 2026 ?', consulté 2026-07 (https://www.groupama.fr/assurance-auto/conseils/prix-controle-technique/) ; recoupé avec lejournalauto.com et moncontroletechnique.fr",
+    "a_verifier": false,
+    "notes": "Prix moyen national ~78€ pour véhicule léger thermique. Tarifs libres, écarts 45-150€ selon centre et région (Île-de-France souvent >90€). Véhicules électriques/hybrides ~85-100€."
+  },
+  {
+    "prestation": "Révision complète constructeur (forfait périodique)",
+    "prix_min_eur": 125,
+    "prix_max_eur": 180,
+    "temps_mo_min_h": 1,
+    "temps_mo_max_h": 2,
+    "source": "Vroomly.com, 'Quel est le prix d'une révision ?', consulté 2026-07 (https://www.vroomly.com/blog/prix-dune-revision/)",
+    "a_verifier": false,
+    "notes": "Prix moyen constaté ~155€, fourchette 125-180€ pour une révision de base (hors pièces spécifiques additionnelles type freins ou distribution). Il n'est plus obligatoire de faire la révision en concession pour conserver la garantie constructeur ; centres auto/garages indépendants souvent moins chers."
+  }
+]

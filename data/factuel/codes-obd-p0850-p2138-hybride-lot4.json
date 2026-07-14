@@ -1,0 +1,82 @@
+[
+  {
+    "code": "P0850",
+    "libelle": "Circuit d'entree du contacteur Park/Neutre - dysfonctionnement",
+    "causes_possibles": "Signal du contacteur Park/Neutre (PNP) hors specification constructeur ; s'applique aux boites automatiques (securite empechant le demarrage hors Park/Neutre)",
+    "gravite": "modere",
+    "source": "yourmechanic.com, obd-en.avto.pro, nextgendiesel.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0871",
+    "libelle": "Circuit de pression de surmultiplication (overdrive) - probleme de rationalite",
+    "causes_possibles": "Pressostat de surmultiplication active a un moment inapproprie dans le boitier de solenoides, courant sur boites automatiques type 68RFE/66RFE/65RFE (Chrysler) mais applicable plus largement en generique",
+    "gravite": "severe",
+    "source": "yourmechanic.com, obd-en.avto.pro, nextgendiesel.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0894",
+    "libelle": "Glissement de l'embrayage/composant de transmission detecte",
+    "causes_possibles": "Usure des composants d'embrayage internes de la boite automatique, probleme hydraulique",
+    "gravite": "severe",
+    "source": "yourmechanic.com, obd-en.avto.pro, nextgendiesel.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2096",
+    "libelle": "Correction de richesse post-catalyseur trop pauvre (Banc 1)",
+    "causes_possibles": "Sonde lambda aval defaillante, manque de carburant dans le systeme, fuite d'echappement en amont de la sonde",
+    "gravite": "modere",
+    "source": "autozone.com, partsavatar.ca, kbb.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2097",
+    "libelle": "Correction de richesse post-catalyseur trop riche (Banc 1)",
+    "causes_possibles": "Catalyseur inutilisable, debitmetre MAF ou capteur MAP defaillant, sonde(s) lambda defaillante(s), cablage endommage",
+    "gravite": "modere",
+    "source": "autozone.com, partsavatar.ca, kbb.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2135",
+    "libelle": "Correlation tension capteurs TPS/APP (position papillon/pedale accelerateur)",
+    "causes_possibles": "Divergence entre les 2 signaux du capteur de position papillon, cablage, calibration du boitier papillon",
+    "gravite": "severe",
+    "source": "autozone.com, partsavatar.ca, kbb.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2138",
+    "libelle": "Correlation tension capteurs pedale accelerateur D/E",
+    "causes_possibles": "Divergence entre les signaux du capteur de pedale d'accelerateur, cablage, capteur defaillant",
+    "gravite": "severe",
+    "source": "autozone.com, partsavatar.ca, kbb.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0A80",
+    "libelle": "Remplacer le pack de batterie hybride",
+    "causes_possibles": "Code hybride le plus courant sur Toyota Prius/Camry Hybrid/Highlander Hybrid ; degradation du pack de batterie lui-meme (cellules vieillissantes), plus reparable par simple entretien",
+    "gravite": "severe",
+    "source": "hybridbatteryswap.com, a3global.com, hybrid2go.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0AA6",
+    "libelle": "Defaut d'isolement du systeme haute tension (batterie hybride/electrique)",
+    "causes_possibles": "Perte d'isolement entre le circuit haute tension et le chassis/circuit basse tension du vehicule, souvent cablage endommage ou fuite d'electrolyte d'un module de batterie ; frequent sur Toyota/Lexus hybrides (Camry, Highlander) — code a haut risque, arret du vehicule recommande si le voyant apparait",
+    "gravite": "severe",
+    "source": "hybridbatteryswap.com, a3global.com, hybrid2go.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0A0F",
+    "libelle": "Performance reduite du systeme hybride/electrique",
+    "causes_possibles": "Code generique de performance degradee du systeme hybride, necessite un diagnostic specialise",
+    "gravite": "severe",
+    "source": "hybridbatteryswap.com, a3global.com, hybrid2go.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

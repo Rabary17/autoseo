@@ -1,7 +1,12 @@
 # monauto — kit graphique & template parts
 
-Kit de front statique **mobile-first (façon application)** à dynamiser sur
-WordPress headless + Next.js (voir le document d'architecture).
+Kit de front statique **mobile-first (façon application)**, dynamisé sur
+WordPress headless + Next.js. Implémentation réelle : voir
+[../monauto/](../monauto/) (projet Next.js) et
+[../../docs/architecture-headless.md](../../docs/architecture-headless.md)
+(document d'architecture). Ce dossier (`monauto-kit`) reste la référence
+graphique source (CSS, logos, structure HTML de départ) — les templates HTML
+ci-dessous ont servi de base aux composants React de `frontend/monauto/`.
 
 ## Contenu
 ```

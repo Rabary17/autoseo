@@ -1,0 +1,71 @@
+{
+  "data_ev": {
+    "ecart_autonomie_wltp_vs_reelle": {
+      "ecart_general": "10 a 25% inferieur au chiffre WLTP annonce selon conditions (temperature, vitesse, style de conduite) — variation globale citee de 10 a 30%",
+      "ecart_hiver": "perte supplementaire de 20 a 30% par grand froid (batterie moins efficace + chauffage habitacle), pouvant atteindre 30% sur autoroute en hiver",
+      "source": "como.fr, 2nd-world.fr, myleasing.fr — consulte 2026-07",
+      "a_verifier": false
+    },
+    "temps_de_recharge_par_puissance": [
+      {"type_borne": "Wallbox domicile 7-11 kW", "duree_indicative": "6 a 10 heures pour une charge complete", "usage": "recharge de nuit a domicile"},
+      {"type_borne": "Borne rapide 50-150 kW", "duree_indicative": "30 a 60 minutes (10-80%)", "usage": "recharge sur trajet, aires d'autoroute, parkings publics"},
+      {"type_borne": "Superchargeur/ultra-rapide 250-350 kW", "duree_indicative": "15 a 25 minutes (10-80%)", "usage": "recharge tres rapide, reseaux dedies (ex: Tesla Supercharger, Ionity)"}
+    ],
+    "temps_recharge_source": "myleasing.fr, expertise-auto.com — consulte 2026-07",
+    "temps_recharge_a_verifier": false,
+    "infrastructure_bornes_france_2026": {
+      "nombre_points_recharge_publics": "plus de 150 000 points de recharge publics en France en 2026",
+      "espacement_bornes_rapides_autoroute": "stations de recharge rapide tous les 50 a 100 km sur les principaux axes, espacement moyen cite de 60 a 80 km",
+      "source": "l-itineraire.com, myleasing.fr — consulte 2026-07",
+      "a_verifier": true
+    }
+  },
+  "data_moto": {
+    "categories_permis": [
+      {
+        "categorie": "A1",
+        "age_minimum": 16,
+        "limite_cylindree_puissance": "125 cm3 maximum, 11 kW (15 ch) maximum",
+        "source": "digischool.fr, bonplanpermis.fr — consulte 2026-07",
+        "a_verifier": false
+      },
+      {
+        "categorie": "A2",
+        "age_minimum": 18,
+        "limite_cylindree_puissance": "35 kW (environ 47 ch) maximum quelle que soit la cylindree ; rapport puissance/poids max 0,2 kW/kg ; si moto bridee, puissance d'origine ne doit pas depasser 70 kW",
+        "source": "digischool.fr, delmotos.com — consulte 2026-07",
+        "a_verifier": false
+      },
+      {
+        "categorie": "A",
+        "age_minimum": "20 ans avec 2 ans de A2, ou 24 ans directement",
+        "limite_cylindree_puissance": "aucune limite de puissance ni de cylindree",
+        "passerelle_A2_vers_A": "formation de 7 heures apres 2 ans de detention du A2, sans examen, attestation de fin de formation suffisante pour mise a jour du permis",
+        "source": "digischool.fr, monpetitpermis.fr, securite-routiere.gouv.fr — consulte 2026-07",
+        "a_verifier": false
+      }
+    ],
+    "equipement_obligatoire": [
+      {
+        "equipement": "Casque",
+        "obligation": "homologue norme ECE 22.05 ou 22.06 (integral ou jet), obligatoirement attache",
+        "source": "boutique-biker.com (recoupement general reglementation moto) — consulte 2026-07",
+        "a_verifier": false
+      },
+      {
+        "equipement": "Gants",
+        "obligation": "obligatoires depuis novembre 2016, certifies CE avec homologation EN 13594",
+        "sanction_si_absence": "amende de 68€ et retrait d'1 point sur le permis de conduire",
+        "source": "boutique-biker.com — consulte 2026-07",
+        "a_verifier": false
+      },
+      {
+        "equipement": "Gilet haute visibilite",
+        "obligation": "pas obligatoire a porter en roulant, mais doit etre present sur soi ou dans un rangement du vehicule, a utiliser en cas d'arret d'urgence",
+        "source": "boutique-biker.com — consulte 2026-07",
+        "a_verifier": true
+      }
+    ]
+  },
+  "note_generale": "Dataset compact combinant 2 sous-datasets P2 (silos Electrique & hybride, et Moto & scooter). A completer si besoin avec des donnees par modele specifique (autonomie par vehicule, tableau complet des sanctions moto) lors d'une session ulterieure dediee."
+}

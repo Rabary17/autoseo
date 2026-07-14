@@ -1,0 +1,100 @@
+[
+  {
+    "modele": "Renault Clio (generation recente)",
+    "score_fiabilite": "non chiffre par une note unique dans cette recherche",
+    "pannes_courantes": "motorisation hybride E-Tech (145 ch) combine essence + 2 moteurs electriques ; version essence/diesel jugees globalement fiables (blocs 3 cylindres reconnus)",
+    "source": "piecesetpneus.com (blog), caradisiac.com, largus.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 208",
+    "score_fiabilite": "non chiffre par une note unique dans cette recherche",
+    "pannes_courantes": "moteur PureTech (3 cylindres essence, 75-130 ch) reconnu pour sa fiabilite et ses couts d'entretien maitrises sur cette generation",
+    "source": "piecesetpneus.com (blog), largus.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C3",
+    "score_fiabilite": "non chiffre par une note unique dans cette recherche",
+    "pannes_courantes": "moteur PureTech (82-110 ch) partage avec 208, memes caracteristiques de fiabilite reconnues",
+    "source": "piecesetpneus.com (blog), caradisiac.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C4 (generation III, 2020-present)",
+    "score_fiabilite": "7,0/10 (AutoScore), fiabilite globale jugee 'Bon'",
+    "pannes_courantes": "1 panne grave recensee sur cette generation (source AutoScore, non detaillee)",
+    "source": "autoscore.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 308 (generation T9, 2013-2021)",
+    "score_fiabilite": "6,5/10 (AutoScore), fiabilite globale jugee 'Moyenne'",
+    "pannes_courantes": "1 panne grave recensee sur cette generation (source AutoScore, non detaillee)",
+    "source": "autoscore.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Megane 4",
+    "score_fiabilite": "consideree comme une voiture fiable, plus aboutie que la generation precedente",
+    "pannes_courantes": "pas de probleme majeur recurrent identifie selon la source ; qualite de finition et aides a la conduite ameliorees",
+    "source": "elite-auto.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Golf 7 (2012-2020)",
+    "score_fiabilite": "reputation de solidite globale, non exempte de problemes specifiques selon motorisation",
+    "pannes_courantes": "moteur 1.6 TDI : soucis de turbo signales",
+    "source": "bymycar.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Golf 5",
+    "score_fiabilite": "fiabilite variable selon motorisation, prudence recommandee sur certains diesels",
+    "pannes_courantes": "1.9 TDI 105 : problemes frequents de volant moteur bimasse et d'injecteurs (achat prudent recommande, verifier factures de reparation) ; 2.0 TDI 136/140 : moteur repute plus sollicite en usage professionnel",
+    "source": "autoplus.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Volkswagen (moteur 1.4 TSI, plusieurs modeles)",
+    "score_fiabilite": "fiabilite correcte sous reserve d'un entretien rigoureux",
+    "pannes_courantes": "necessite des vidanges frequentes (15 000 km max, voire 10 000 km en usage urbain, huile aux normes VW 504 00/507 00) ; surveillance de la distribution par chaine recommandee tous les 60 000 km sur modeles anterieurs a 2013 (bruits suspects au demarrage a froid)",
+    "source": "auto-platinium.com — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Toyota Yaris (generation 4, 2020-present)",
+    "score_fiabilite": "8,8/10 (AutoScore), fiabilite jugee 'Excellent'",
+    "pannes_courantes": "version hybride 1.5 (116 ch) : bruit de fonctionnement du variateur CVT a l'acceleration, batterie 12V a surveiller si vehicule immobilise longtemps ; version essence 1.5 (125 ch) : peu de retours negatifs",
+    "source": "autoscore.fr, fiches-auto.fr (58 temoignages), careco.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Toyota RAV4 (5e generation)",
+    "score_fiabilite": "reputation de fiabilite forte selon retours proprietaires (source qualitative, pas de note chiffree officielle trouvee)",
+    "pannes_courantes": "aucune panne majeure signalee dans les temoignages consultes ; consommation reelle citee autour de 5,4-5,7L/100km en usage hybride efficient",
+    "source": "caradisiac.com (avis proprietaires) — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Sandero (moteur SCe 75, sans turbo)",
+    "score_fiabilite": "bonne fiabilite, pannes graves rares (absence de turbo = principal facteur de defaillance supprime)",
+    "pannes_courantes": "apres 80 000 km : suintements d'huile possibles au niveau des joints de carter/couvre-culasse (generalement sans consequence grave)",
+    "source": "careco.fr, bodemerauto.com (note moyenne 4,1/5 sur la marque Dacia) — consulte 2026-07 (via Tavily)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Dacia Sandero (moteur TCe 90, generation 3)",
+    "score_fiabilite": "fiable sur les exemplaires recents, problemes corriges apres 2022",
+    "pannes_courantes": "millesimes 2020-2021 : passages de rapports imprecis / difficultes a engager certaines vitesses sur boite manuelle (probleme corrige par Dacia par la suite)",
+    "source": "encyclautomobile.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Duster",
+    "score_fiabilite": "reputation de robustesse selon la marque, pannes recurrentes documentees par la presse specialisee malgre le positionnement economique",
+    "pannes_courantes": "details non precises dans l'extrait consulte — necessite une recherche complementaire pour lister les pannes specifiques",
+    "source": "careco.fr — consulte 2026-07 (via Tavily)",
+    "a_verifier": true
+  }
+]

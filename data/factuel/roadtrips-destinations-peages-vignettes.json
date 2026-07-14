@@ -1,0 +1,142 @@
+[
+  {
+    "pays": "Suisse",
+    "systeme_peage": "vignette obligatoire (pas de peage a la barriere)",
+    "prix_indicatif": "44,50€ (vignette annuelle 2026, valable du 1er decembre 2025 au 31 janvier 2027)",
+    "vehicules_concernes": "vehicules a moteur, remorques et caravanes jusqu'a 3,5 tonnes",
+    "amende_si_absente": "non chiffree precisement dans cette recherche",
+    "particularites": "vignette physique (autocollant) achetee avant le trajet, controle routier",
+    "source": "ch.ch, mobiliteclub.fr — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Autriche",
+    "systeme_peage": "vignette obligatoire (autoroutes), + peages specifiques sur certains tunnels/cols",
+    "prix_indicatif": "vignette annuelle valable 14 mois (1er decembre 2025 au 31 janvier 2027), montant exact non confirme dans cette recherche",
+    "vehicules_concernes": "vehicules de moins de 3,5 tonnes",
+    "amende_si_absente": "non chiffree precisement dans cette recherche",
+    "particularites": "vignette 100% electronique/numerique depuis 2023 (plus de vignette physique a coller), tunnels a peage separe (ex: Brenner) meme avec vignette",
+    "source": "austria.info, tolltickets.com, winiety24.eu — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Slovenie",
+    "systeme_peage": "vignette obligatoire sur toutes les autoroutes",
+    "prix_indicatif": "16€/semaine, 32€/mois (tarifs 2026)",
+    "vehicules_concernes": "vehicules legers",
+    "amende_si_absente": "300€",
+    "particularites": "vignette electronique liee a la plaque d'immatriculation",
+    "source": "slovenie-secrete.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Italie",
+    "systeme_peage": "peage classique au kilometre sur autoroutes + zones ZTL (Zone a Traffico Limitato) dans les centres historiques",
+    "prix_indicatif": "peage variable selon distance ; ZTL non payante mais interdite sans autorisation",
+    "vehicules_concernes": "tous vehicules",
+    "amende_si_absente": "amende ZTL : 80 a 160€ par infraction + 50 a 100€ de frais de dossier de l'agence de recouvrement ; plusieurs amendes possibles si entree multiple le meme jour",
+    "particularites": "environ 300 villes italiennes ont des zones ZTL (Rome, Florence, Milan, Bologne, Naples, Turin, Verone, Pise, Genes, etc.) ; cameras automatiques, amende transmise en France via cooperation transfrontaliere europeenne, parfois plusieurs mois apres ; si hebergement dans une ZTL, demander a l'hotelier d'enregistrer la plaque",
+    "source": "allerenitalie.com, europe-consommateurs.eu, lebaladin.fr, lejournalauto.com — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Espagne",
+    "systeme_peage": "peage classique sur certaines autoroutes (AP) + zones a faibles emissions (ZBE) obligatoires depuis 2023",
+    "prix_indicatif": "peage variable selon tronçon ; ZBE non payante mais restrictions d'acces selon vignette environnementale du vehicule",
+    "vehicules_concernes": "tous vehicules pour le peage ; ZBE selon classe environnementale (equivalent Crit'Air espagnol)",
+    "amende_si_absente": "non chiffree precisement dans cette recherche",
+    "particularites": "ZBE generalisees dans toutes les communes de plus de 50 000 habitants depuis 2023 (Madrid, Barcelone, Seville, Valence, Saragosse...), chaque ville a ses propres horaires et criteres d'acces",
+    "source": "lebaladin.fr (recoupement general ZBE Espagne) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Portugal",
+    "systeme_peage": "peage classique, certains troncons en telepeage obligatoire uniquement (sans barriere physique)",
+    "prix_indicatif": "variable selon troncon",
+    "vehicules_concernes": "tous vehicules",
+    "amende_si_absente": "amende en cas de non-paiement des troncons en telepeage obligatoire (montant non confirme dans cette recherche)",
+    "particularites": "necessite un dispositif de telepeage ou un paiement en ligne a posteriori pour les autoroutes 'sans barriere' (ex-SCUT), a verifier avant depart pour eviter les amendes automatiques",
+    "source": "recoupement general non individuellement verifie pour ce pays — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "France (pour reference/comparaison)",
+    "systeme_peage": "peage classique au kilometre sur autoroutes concedees",
+    "prix_indicatif": "variable selon societe concessionnaire et distance",
+    "vehicules_concernes": "tous vehicules, classe tarifaire selon gabarit",
+    "amende_si_absente": "non applicable (paiement a la barriere ou telepeage, pas de vignette forfaitaire)",
+    "particularites": "badge telepeage (liber-t) accepte dans plusieurs pays limitrophes (Espagne, Portugal, Italie selon operateurs)",
+    "source": "connaissance generale du reseau autoroutier francais — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Allemagne",
+    "systeme_peage": "pas de peage ni vignette pour les vehicules legers sur les autoroutes (Autobahn)",
+    "prix_indicatif": "gratuit pour vehicules legers",
+    "vehicules_concernes": "vehicules legers exoneres ; poids lourds soumis a la LKW-Maut",
+    "amende_si_absente": "non applicable pour vehicules legers",
+    "particularites": "pas de limitation de vitesse generale sur de nombreux troncons d'Autobahn (zones sans limite recommandee a 130km/h)",
+    "source": "connaissance generale largement documentee (absence de vignette/peage leger en Allemagne) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Croatie",
+    "systeme_peage": "peage classique au kilometre sur autoroutes",
+    "prix_indicatif": "variable selon distance",
+    "vehicules_concernes": "tous vehicules",
+    "amende_si_absente": "non applicable (paiement direct au peage)",
+    "particularites": "pas de vignette forfaitaire contrairement a la Slovenie voisine",
+    "source": "recoupement general non individuellement verifie pour ce pays — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Norvege",
+    "systeme_peage": "peages urbains automatiques (couronnes de peage autour des grandes villes) + certains tunnels/ponts a peage",
+    "prix_indicatif": "variable selon zone, facturation automatique par plaque",
+    "vehicules_concernes": "tous vehicules",
+    "amende_si_absente": "facturation a posteriori automatique (pas d'amende a proprement parler si le systeme AutoPASS transfrontalier fonctionne, sinon frais de recouvrement)",
+    "particularites": "systeme AutoPASS de reconnaissance de plaque, facturation possible directement au loueur/proprietaire du vehicule apres le sejour",
+    "source": "recoupement general non individuellement verifie pour ce pays — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Pays-Bas",
+    "systeme_peage": "pas de vignette ni de peage generalise pour les voitures particulieres",
+    "prix_indicatif": "gratuit pour vehicules legers",
+    "vehicules_concernes": "vehicules legers exoneres ; peage poids lourds base sur la distance en vigueur depuis le 1er juillet 2026 pour vehicules >3,5t sur autoroutes, routes nationales et la plupart des routes regionales",
+    "amende_si_absente": "non applicable pour vehicules legers",
+    "particularites": "reseau autoroutier gratuit pour les particuliers",
+    "source": "dkv-mobility.com, moniteurautomobile.be — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Belgique",
+    "systeme_peage": "pas de vignette ni de peage generalise",
+    "prix_indicatif": "gratuit, sauf tunnel de Liefkenshoek (Anvers)",
+    "vehicules_concernes": "vehicules legers exoneres sur le reseau general",
+    "amende_si_absente": "non applicable",
+    "particularites": "seul le tunnel de Liefkenshoek pres d'Anvers est a peage pour le transport de personnes",
+    "source": "moniteurautomobile.be, touring.be — consulte 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Royaume-Uni",
+    "systeme_peage": "autoroutes gratuites en regle generale",
+    "prix_indicatif": "gratuit (hors quelques ponts/tunnels et peages urbains type Congestion Charge Londres)",
+    "vehicules_concernes": "tous vehicules pour le reseau autoroutier general",
+    "amende_si_absente": "non applicable pour le reseau general ; amendes specifiques possibles pour les zones urbaines a peage (Londres) non couvertes par cette recherche",
+    "particularites": "conduite a gauche, permis international non obligatoire pour les Francais (permis rose UE accepte)",
+    "source": "touring.be (recoupement general) — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Grece",
+    "systeme_peage": "peage classique a barriere sur les autoroutes",
+    "prix_indicatif": "variable selon troncon",
+    "vehicules_concernes": "tous vehicules, y compris motos avec tarif differencie (comme en France)",
+    "amende_si_absente": "non applicable (paiement direct a la barriere)",
+    "particularites": "systeme de peage similaire au modele francais (barrieres physiques)",
+    "source": "touring.be, roadnride.com — consulte 2026-07",
+    "a_verifier": false
+  }
+]

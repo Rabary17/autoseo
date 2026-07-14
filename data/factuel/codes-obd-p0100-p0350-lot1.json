@@ -1,0 +1,1104 @@
+[
+  {
+    "code": "P0100",
+    "libelle": "Circuit du débitmètre d'air (MAF) - dysfonctionnement",
+    "causes_courantes": "Débitmètre MAF encrassé ou défaillant, connecteur ou câblage endommagé, fuite d'admission d'air, filtre à air très encrassé",
+    "source": "yourmechanic.com, 'P0100 OBD-II Trouble Code: Mass Airflow (MAF) Circuit Problem', consulté 2026-07 (https://www.yourmechanic.com/article/p0100-obd-ii-trouble-code-mass-airflow-maf-circuit-problem-by-john-nelson)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0101",
+    "libelle": "Circuit du débitmètre d'air (MAF) - plage/performance",
+    "causes_courantes": "Débitmètre MAF encrassé, fuite d'admission, filtre à air colmaté, câblage ou connecteur défectueux",
+    "source": "carparts.com, 'P0101 Code: Mass or Volume Air Flow A Circuit Range/Performance', consulté 2026-07 (https://www.carparts.com/blog/p0101-code-mass-or-volume-air-flow-a-circuit-range-performance/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0102",
+    "libelle": "Circuit du débitmètre d'air (MAF) - signal bas",
+    "causes_courantes": "Câblage coupé ou court-circuité, connecteur MAF débranché ou corrodé, débitmètre défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0103",
+    "libelle": "Circuit du débitmètre d'air (MAF) - signal haut",
+    "causes_courantes": "Court-circuit du câblage vers l'alimentation, débitmètre défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0104",
+    "libelle": "Circuit du débitmètre d'air (MAF) - signal intermittent",
+    "causes_courantes": "Connecteur MAF lâche ou corrodé, câblage endommagé par intermittence, débitmètre défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0105",
+    "libelle": "Circuit du capteur de pression collecteur (MAP)/pression atmosphérique - dysfonctionnement",
+    "causes_courantes": "Capteur MAP défaillant, durite de dépression fissurée ou débranchée, câblage ou connecteur défectueux",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0106",
+    "libelle": "Circuit du capteur MAP/pression atmosphérique - plage/performance",
+    "causes_courantes": "Fuite ou obstruction de la durite de dépression du capteur MAP, capteur MAP défaillant, fuite d'admission",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0107",
+    "libelle": "Circuit du capteur MAP/pression atmosphérique - signal bas",
+    "causes_courantes": "Durite de dépression débranchée ou percée, capteur MAP défaillant, câblage court-circuité à la masse",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0108",
+    "libelle": "Circuit du capteur MAP/pression atmosphérique - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur MAP défaillant, connecteur endommagé",
+    "source": "carparts.com, 'P0108 Code: Manifold Absolute Pressure/Barometric Pressure High', consulté 2026-07 (https://www.carparts.com/blog/p0108-code-manifold-absolute-pressure-barometric-pressure-high/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0109",
+    "libelle": "Circuit du capteur MAP/pression atmosphérique - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, durite de dépression fissurée par intermittence, capteur MAP défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0110",
+    "libelle": "Circuit du capteur de température d'air admission (IAT) 1",
+    "causes_courantes": "Capteur IAT défaillant, câblage ou connecteur endommagé, court-circuit du circuit",
+    "source": "repairpal.com, 'P0110 OBD-II: Intake Air Temperature Sensor 1 Circuit', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0110)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0111",
+    "libelle": "Circuit du capteur IAT 1 - plage/performance",
+    "causes_courantes": "Capteur IAT encrassé ou dégradé, câblage endommagé, connecteur corrodé",
+    "source": "yourmechanic.com, 'P0111 OBD-II Trouble Code: IAT sensor circuit range or performance problem', consulté 2026-07 (https://www.yourmechanic.com/article/p0111-obd-ii-trouble-code-iat-sensor-circuit-range-or-performance-problem-by-jay-safford)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0112",
+    "libelle": "Circuit du capteur IAT 1 - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur IAT défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0113",
+    "libelle": "Circuit du capteur IAT 1 - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur IAT défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0114",
+    "libelle": "Circuit du capteur IAT 1 - signal intermittent/erratique",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur IAT défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0115",
+    "libelle": "Circuit du capteur de température liquide de refroidissement (ECT)",
+    "causes_courantes": "Capteur ECT défaillant, câblage ou connecteur endommagé, niveau de liquide de refroidissement bas",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0116",
+    "libelle": "Circuit du capteur ECT - plage/performance",
+    "causes_courantes": "Thermostat défaillant, capteur ECT dégradé, niveau ou circulation de liquide de refroidissement anormal",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0117",
+    "libelle": "Circuit du capteur ECT - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur ECT défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0118",
+    "libelle": "Circuit du capteur ECT - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur ECT défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0119",
+    "libelle": "Circuit du capteur ECT - signal intermittent/erratique",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur ECT défaillant",
+    "source": "repairpal.com, 'Engine Coolant Temperature Sensor 1 Circuit Intermittent', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0119)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0120",
+    "libelle": "Circuit du capteur de position papillon/pédale (TPS) A",
+    "causes_courantes": "Capteur TPS défaillant, câblage ou connecteur endommagé, boîtier papillon encrassé",
+    "source": "obd-codes.com, 'P0120 Throttle Position Sensor/Switch (TPS) A Circuit Malfunction', consulté 2026-07 (https://www.obd-codes.com/p0120)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0121",
+    "libelle": "Circuit du capteur TPS A - plage/performance",
+    "causes_courantes": "Capteur TPS dégradé, boîtier papillon encrassé, câblage endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0122",
+    "libelle": "Circuit du capteur TPS A - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur TPS défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0123",
+    "libelle": "Circuit du capteur TPS A - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur TPS défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0124",
+    "libelle": "Circuit du capteur TPS A - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur TPS défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0125",
+    "libelle": "Température liquide de refroidissement insuffisante pour boucle fermée",
+    "causes_courantes": "Thermostat bloqué ouvert, capteur ECT défaillant, sous-refroidissement chronique du moteur",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0126",
+    "libelle": "Température liquide de refroidissement insuffisante pour fonctionnement stable",
+    "causes_courantes": "Thermostat bloqué ouvert, capteur ECT défaillant, circuit de refroidissement défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0128",
+    "libelle": "Thermostat - température en dessous de la température de régulation",
+    "causes_courantes": "Thermostat bloqué ouvert ou défaillant, capteur ECT défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0130",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 1) - dysfonctionnement",
+    "causes_courantes": "Sonde lambda défaillante ou encrassée, câblage ou connecteur endommagé, fuite d'échappement en amont de la sonde",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0131",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 1) - signal bas",
+    "causes_courantes": "Sonde lambda défaillante, mélange trop pauvre, fuite d'échappement en amont de la sonde, câblage court-circuité à la masse",
+    "source": "obd-codes.com, 'P0131 Oxygen O2 Sensor Low Voltage (Bank1, Sensor1)', consulté 2026-07 (https://www.obd-codes.com/p0131)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0132",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 1) - signal haut",
+    "causes_courantes": "Sonde lambda défaillante, mélange trop riche, câblage court-circuité à l'alimentation",
+    "source": "carparts.com, 'P0131: O2 Sensor Circuit Low Voltage (Bank 1, Sensor 1)', consulté 2026-07 (https://www.carparts.com/blog/p0131-o2-sensor-circuit-low-voltage-bank-1-sensor-1/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0133",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 1) - réponse lente",
+    "causes_courantes": "Sonde lambda vieillissante ou encrassée, fuite d'admission, injecteur défaillant",
+    "source": "fixdapp.com, 'P0133 Engine Code | Oxygen O2 Sensor Circuit Slow Response (Bank 1, Sensor 1)', consulté 2026-07 (https://www.fixdapp.com/blog/p0133-code)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0134",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 1) - pas d'activité détectée",
+    "causes_courantes": "Sonde lambda défaillante ou en circuit ouvert, câblage coupé, connecteur débranché",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0135",
+    "libelle": "Circuit de chauffage sonde lambda (banc 1, capteur 1) - dysfonctionnement",
+    "causes_courantes": "Élément chauffant de la sonde lambda grillé, fusible ou relais défaillant, câblage endommagé",
+    "source": "ericthecarguy.com, 'P0141, P0135, P0147, P0155, P0161, P0167 O2 Sensor Heater Circuit Malfunction', consulté 2026-07 (https://www.ericthecarguy.com/p0141-p0135-p0147-p0155-p0161-p0167-02-sensor-heater-circuit-malfunction/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0136",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 2) - dysfonctionnement",
+    "causes_courantes": "Sonde lambda aval défaillante, câblage ou connecteur endommagé, fuite d'échappement",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0137",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 2) - signal bas",
+    "causes_courantes": "Sonde lambda aval défaillante, catalyseur endommagé, câblage court-circuité à la masse",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0138",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 2) - signal haut",
+    "causes_courantes": "Sonde lambda aval défaillante, câblage court-circuité à l'alimentation, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0139",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 2) - réponse lente",
+    "causes_courantes": "Sonde lambda aval vieillissante, câblage endommagé, connecteur corrodé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0140",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 2) - pas d'activité détectée",
+    "causes_courantes": "Sonde lambda aval défaillante ou en circuit ouvert, câblage coupé, connecteur débranché",
+    "source": "carparts.com, 'P0140 Code: Oxygen Sensor Circuit No Activity Detected (Bank 1, Sensor 2)', consulté 2026-07 (https://www.carparts.com/blog/p0140-code-oxygen-sensor-circuit-no-activity-detected-bank-1-sensor-2/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0141",
+    "libelle": "Circuit de chauffage sonde lambda (banc 1, capteur 2) - dysfonctionnement",
+    "causes_courantes": "Élément chauffant de la sonde lambda aval grillé, fusible ou relais défaillant, câblage endommagé",
+    "source": "carparts.com, 'P0141 Code: Oxygen Sensor Heater Circuit Malfunction (Bank 1, Sensor 2)', consulté 2026-07 (https://www.carparts.com/blog/p0141-code-oxygen-sensor-heater-circuit-malfunction-bank-1-sensor-2/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0142",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 3) - dysfonctionnement",
+    "causes_courantes": "Sonde lambda supplémentaire défaillante, câblage ou connecteur endommagé (véhicules à 3 sondes par banc)",
+    "source": "kbb.com, 'P0142 Code - O2 Sensor Circuit - Bank 1 Sensor 3', consulté 2026-07 (https://www.kbb.com/obd-ii/p0142/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0143",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 3) - signal bas",
+    "causes_courantes": "Sonde lambda défaillante, câblage court-circuité à la masse, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0144",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 3) - signal haut",
+    "causes_courantes": "Sonde lambda défaillante, câblage court-circuité à l'alimentation, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0145",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 3) - réponse lente",
+    "causes_courantes": "Sonde lambda vieillissante, câblage endommagé, connecteur corrodé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0146",
+    "libelle": "Circuit sonde lambda (banc 1, capteur 3) - pas d'activité détectée",
+    "causes_courantes": "Sonde lambda défaillante ou en circuit ouvert, câblage coupé, connecteur débranché",
+    "source": "repairpal.com, 'P0146 OBD-II: O2 Sensor Circuit no Activity Detected', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0146)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0147",
+    "libelle": "Circuit de chauffage sonde lambda (banc 1, capteur 3) - dysfonctionnement",
+    "causes_courantes": "Élément chauffant grillé, fusible ou relais défaillant, câblage endommagé",
+    "source": "ericthecarguy.com, 'P0141, P0135, P0147, P0155, P0161, P0167 O2 Sensor Heater Circuit Malfunction', consulté 2026-07 (https://www.ericthecarguy.com/p0141-p0135-p0147-p0155-p0161-p0167-02-sensor-heater-circuit-malfunction/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0150",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 1) - dysfonctionnement",
+    "causes_courantes": "Sonde lambda du banc 2 défaillante, câblage ou connecteur endommagé, fuite d'échappement",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0151",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 1) - signal bas",
+    "causes_courantes": "Sonde lambda défaillante, mélange trop pauvre banc 2, câblage court-circuité à la masse",
+    "source": "jeepforum.com, 'Codes p0152, p0153, p0154 and p0155', consulté 2026-07 (https://www.jeepforum.com/threads/codes-p0152-p0153-p0154-and-p0155.4313005/latest)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0152",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 1) - signal haut",
+    "causes_courantes": "Sonde lambda défaillante, mélange trop riche banc 2, câblage court-circuité à l'alimentation",
+    "source": "carparts.com, 'P0152 Code: O2 Sensor Circuit High Voltage (Bank 2, Sensor 1)', consulté 2026-07 (https://www.carparts.com/blog/p0152-code-o2-sensor-circuit-high-voltage-bank-2-sensor-1/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0153",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 1) - réponse lente",
+    "causes_courantes": "Sonde lambda vieillissante ou encrassée, fuite d'admission banc 2, injecteur défaillant",
+    "source": "carparts.com, 'P0153 Code: O2 Sensor Circuit Slow Response (Bank 2, Sensor 1)', consulté 2026-07 (https://www.carparts.com/blog/p0153-code-o2-sensor-circuit-slow-response-bank-2-sensor-1/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0154",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 1) - pas d'activité détectée",
+    "causes_courantes": "Sonde lambda défaillante ou en circuit ouvert, câblage coupé, connecteur débranché",
+    "source": "jeepforum.com, 'Codes p0152, p0153, p0154 and p0155', consulté 2026-07 (https://www.jeepforum.com/threads/codes-p0152-p0153-p0154-and-p0155.4313005/latest)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0155",
+    "libelle": "Circuit de chauffage sonde lambda (banc 2, capteur 1) - dysfonctionnement",
+    "causes_courantes": "Élément chauffant grillé, fusible ou relais défaillant, câblage endommagé",
+    "source": "ericthecarguy.com, 'P0141, P0135, P0147, P0155, P0161, P0167 O2 Sensor Heater Circuit Malfunction', consulté 2026-07 (https://www.ericthecarguy.com/p0141-p0135-p0147-p0155-p0161-p0167-02-sensor-heater-circuit-malfunction/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0156",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 2) - dysfonctionnement",
+    "causes_courantes": "Sonde lambda aval banc 2 défaillante, câblage ou connecteur endommagé, fuite d'échappement",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0157",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 2) - signal bas",
+    "causes_courantes": "Sonde lambda aval défaillante, catalyseur endommagé banc 2, câblage court-circuité à la masse",
+    "source": "repairpal.com, 'P0157 OBD-II: O2 Sensor Circuit Low Voltage', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0157)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0158",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 2) - signal haut",
+    "causes_courantes": "Sonde lambda aval défaillante, câblage court-circuité à l'alimentation, connecteur endommagé",
+    "source": "carparts.com, 'P0158 Code: O2 Sensor Circuit High Voltage (Bank 2, Sensor 2)', consulté 2026-07 (https://www.carparts.com/blog/p0158-code-o2-sensor-circuit-high-voltage-bank-2-sensor-2/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0159",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 2) - réponse lente",
+    "causes_courantes": "Sonde lambda aval vieillissante, câblage endommagé, connecteur corrodé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0160",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 2) - pas d'activité détectée",
+    "causes_courantes": "Sonde lambda aval défaillante ou en circuit ouvert, câblage coupé, connecteur débranché",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0161",
+    "libelle": "Circuit de chauffage sonde lambda (banc 2, capteur 2) - dysfonctionnement",
+    "causes_courantes": "Élément chauffant grillé, fusible ou relais défaillant, câblage endommagé",
+    "source": "ericthecarguy.com, 'P0141, P0135, P0147, P0155, P0161, P0167 O2 Sensor Heater Circuit Malfunction', consulté 2026-07 (https://www.ericthecarguy.com/p0141-p0135-p0147-p0155-p0161-p0167-02-sensor-heater-circuit-malfunction/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0162",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 3) - dysfonctionnement",
+    "causes_courantes": "Sonde lambda supplémentaire défaillante, câblage ou connecteur endommagé (véhicules à 3 sondes par banc)",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0163",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 3) - signal bas",
+    "causes_courantes": "Sonde lambda défaillante, câblage court-circuité à la masse, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0164",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 3) - signal haut",
+    "causes_courantes": "Sonde lambda défaillante, câblage court-circuité à l'alimentation, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0165",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 3) - réponse lente",
+    "causes_courantes": "Sonde lambda vieillissante, câblage endommagé, connecteur corrodé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0166",
+    "libelle": "Circuit sonde lambda (banc 2, capteur 3) - pas d'activité détectée",
+    "causes_courantes": "Sonde lambda défaillante ou en circuit ouvert, câblage coupé, connecteur débranché",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0167",
+    "libelle": "Circuit de chauffage sonde lambda (banc 2, capteur 3) - dysfonctionnement",
+    "causes_courantes": "Élément chauffant grillé, fusible ou relais défaillant, câblage endommagé",
+    "source": "ericthecarguy.com, 'P0141, P0135, P0147, P0155, P0161, P0167 O2 Sensor Heater Circuit Malfunction', consulté 2026-07 (https://www.ericthecarguy.com/p0141-p0135-p0147-p0155-p0161-p0167-02-sensor-heater-circuit-malfunction/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0170",
+    "libelle": "Correction de richesse défectueuse (banc 1)",
+    "causes_courantes": "Fuite d'admission d'air, débitmètre MAF défaillant, sonde lambda défectueuse, injecteur bouché ou fuyant, pression de carburant anormale",
+    "source": "obd-codes.com, 'P0170 Fuel Trim Malfunction (Bank 1)', consulté 2026-07 (https://www.obd-codes.com/p0170)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0171",
+    "libelle": "Mélange trop pauvre (banc 1)",
+    "causes_courantes": "Fuite d'admission d'air, débitmètre (MAF) encrassé ou défaillant, sonde lambda défectueuse, injecteur bouché, pompe à carburant faible, filtre à carburant colmaté",
+    "source": "oreillyauto.com, 'Check Engine Light Code P0171 and P0174 Fuel Trim System Lean', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-code-p0171-and-p0174-fuel-trim-system-lean)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0172",
+    "libelle": "Mélange trop riche (banc 1)",
+    "causes_courantes": "Injecteur défaillant ou bloqué ouvert, sonde lambda défectueuse, débitmètre MAF défaillant, régulateur de pression carburant HS, filtre à air très encrassé",
+    "source": "repairpal.com, 'P0172 OBD-II: System Too Rich', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0172-and-p0175)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0173",
+    "libelle": "Correction de richesse défectueuse (banc 2)",
+    "causes_courantes": "Fuite d'admission d'air côté banc 2, débitmètre MAF défaillant, sonde lambda défectueuse, injecteur bouché ou fuyant",
+    "source": "repairpal.com, 'P0173 OBD-II: Fuel Trim', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0173)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0174",
+    "libelle": "Mélange trop pauvre (banc 2)",
+    "causes_courantes": "Fuite d'admission d'air, débitmètre MAF encrassé, sonde lambda défectueuse, injecteur bouché, pompe à carburant faible",
+    "source": "oreillyauto.com, 'Check Engine Light Code P0171 and P0174 Fuel Trim System Lean', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-code-p0171-and-p0174-fuel-trim-system-lean)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0175",
+    "libelle": "Mélange trop riche (banc 2)",
+    "causes_courantes": "Injecteur défaillant ou bloqué ouvert banc 2, sonde lambda défectueuse, débitmètre MAF défaillant, régulateur de pression carburant HS",
+    "source": "tomorrowstechnician.com, 'LTF and STF Fuel Trim Codes P0170, P0175, P0172, P0174', consulté 2026-07 (https://www.tomorrowstechnician.com/ltf-and-stf-fuel-trim-codes-p0170-p0175-p0172-p0174/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0176",
+    "libelle": "Circuit capteur de composition du carburant - dysfonctionnement",
+    "causes_courantes": "Capteur de composition carburant (flex-fuel) défaillant, câblage ou connecteur endommagé",
+    "source": "carparts.com, 'P0176 Code: Fuel Composition Sensor Circuit', consulté 2026-07 (https://www.carparts.com/blog/p0176-code-fuel-composition-sensor-circuit/)",
+    "a_verifier": false,
+    "notes": "Concerne principalement les véhicules flex-fuel (E85), rare en Europe"
+  },
+  {
+    "code": "P0177",
+    "libelle": "Circuit capteur de composition du carburant - plage/performance",
+    "causes_courantes": "Capteur de composition carburant dégradé, câblage endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false,
+    "notes": "Concerne principalement les véhicules flex-fuel (E85), rare en Europe"
+  },
+  {
+    "code": "P0178",
+    "libelle": "Circuit capteur de composition du carburant - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0178 OBD-II: Fuel Composition Sensor Circuit Low', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0178-fuel-composition-sensor-circuit-low)",
+    "a_verifier": false,
+    "notes": "Concerne principalement les véhicules flex-fuel (E85), rare en Europe"
+  },
+  {
+    "code": "P0179",
+    "libelle": "Circuit capteur de composition du carburant - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur défaillant, connecteur endommagé",
+    "source": "carparts.com, 'P0179 Code: Fuel Composition Sensor High Input', consulté 2026-07 (https://www.carparts.com/blog/p0179-code-fuel-composition-sensor-high-input/)",
+    "a_verifier": false,
+    "notes": "Concerne principalement les véhicules flex-fuel (E85), rare en Europe"
+  },
+  {
+    "code": "P0180",
+    "libelle": "Circuit capteur de température carburant A - dysfonctionnement",
+    "causes_courantes": "Capteur de température carburant défaillant, câblage ou connecteur endommagé",
+    "source": "troublecodes.net, 'P0180 - Fuel temperature sensor A - circuit malfunction', consulté 2026-07 (https://www.troublecodes.net/pcodes/p0180/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0181",
+    "libelle": "Circuit capteur de température carburant A - plage/performance",
+    "causes_courantes": "Capteur de température carburant dégradé, câblage endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0182",
+    "libelle": "Circuit capteur de température carburant A - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0182 OBD-II: Fuel Temperature Sensor A Circuit Low', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0182-fuel-temperature-sensor-a-circuit-low)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0183",
+    "libelle": "Circuit capteur de température carburant A - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0184",
+    "libelle": "Circuit capteur de température carburant A - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0185",
+    "libelle": "Circuit capteur de température carburant B - dysfonctionnement",
+    "causes_courantes": "Capteur de température carburant (second circuit) défaillant, câblage ou connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0186",
+    "libelle": "Circuit capteur de température carburant B - plage/performance",
+    "causes_courantes": "Capteur de température carburant dégradé, câblage endommagé",
+    "source": "troublecodes.net, 'P0186 - Fuel temperature sensor B - range/performance problem', consulté 2026-07 (https://www.troublecodes.net/pcodes/p0186/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0187",
+    "libelle": "Circuit capteur de température carburant B - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur défaillant, connecteur endommagé",
+    "source": "troublecodes.net, 'P0187 - Fuel temperature sensor B - low input', consulté 2026-07 (https://www.troublecodes.net/pcodes/p0187/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0188",
+    "libelle": "Circuit capteur de température carburant B - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur défaillant, connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0189",
+    "libelle": "Circuit capteur de température carburant B - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0190",
+    "libelle": "Circuit capteur de pression rampe d'injection A - dysfonctionnement",
+    "causes_courantes": "Capteur de pression rail défaillant, câblage ou connecteur endommagé, pompe haute pression défectueuse",
+    "source": "carparts.com, 'P0190 Code: Fuel Rail Pressure Sensor A Circuit', consulté 2026-07 (https://www.carparts.com/blog/p0190-code-fuel-rail-pressure-sensor-a-circuit/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0191",
+    "libelle": "Circuit capteur de pression rampe d'injection A - plage/performance",
+    "causes_courantes": "Capteur de pression rail dégradé, pompe haute pression défectueuse, régulateur de pression défaillant",
+    "source": "carparts.com, 'P0191 Code: Fuel Rail Pressure Sensor A Circuit Range/Performance', consulté 2026-07 (https://www.carparts.com/blog/p0191-code-fuel-rail-pressure-sensor-a-circuit-range-performance/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0192",
+    "libelle": "Circuit capteur de pression rampe d'injection A - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur défaillant, pompe haute pression faible",
+    "source": "repairpal.com, 'P0192 OBD-II: Fuel Rail Pressure Sensor A Circuit Low', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0192-fuel-rail-pressure-sensor-a-circuit-low)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0193",
+    "libelle": "Circuit capteur de pression rampe d'injection A - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur défaillant, régulateur de pression défaillant",
+    "source": "repairpal.com, 'P0193 - Fuel Rail Pressure Sensor A Circuit High', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0193)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0194",
+    "libelle": "Circuit capteur de pression rampe d'injection A - signal intermittent/erratique",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur défaillant",
+    "source": "kbb.com, 'P0194 Code - Fuel Rail Pressure Sensor A Circuit Intermittent/Erratic', consulté 2026-07 (https://www.kbb.com/obd-ii/p0194/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0195",
+    "libelle": "Capteur de température d'huile moteur - dysfonctionnement",
+    "causes_courantes": "Capteur de température d'huile défaillant, câblage ou connecteur endommagé",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0196",
+    "libelle": "Capteur de température d'huile moteur - plage/performance",
+    "causes_courantes": "Capteur de température d'huile dégradé, niveau d'huile anormal, câblage endommagé",
+    "source": "repairpal.com, 'P0196 - Engine Oil Temperature Sensor Range/Performance', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0196-engine-oil-temperature-sensor-range-performance)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0197",
+    "libelle": "Circuit capteur de température d'huile moteur - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0197 - Engine Oil Temperature Sensor Circuit Low', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0197-engine-oil-temperature-sensor-circuit-low)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0198",
+    "libelle": "Circuit capteur de température d'huile moteur - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0198 OBD-II: Engine Oil Temperature Sensor Circuit High', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0198-engine-oil-temperature-sensor-circuit-high)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0199",
+    "libelle": "Circuit capteur de température d'huile moteur - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur défaillant",
+    "source": "obd-codes.com, 'P01xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p01-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0200",
+    "libelle": "Circuit d'injecteur - dysfonctionnement général",
+    "causes_courantes": "Injecteur défaillant, câblage endommagé, connecteur corrodé, module de commande d'injection défectueux",
+    "source": "yourmechanic.com, 'P0200 OBD-II Trouble Code: Injector Circuit Malfunction', consulté 2026-07 (https://www.yourmechanic.com/article/p0200-obd-ii-trouble-code-injector-circuit-malfunction-by-spencer-clayton)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0201",
+    "libelle": "Circuit injecteur cylindre 1 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 1 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0202",
+    "libelle": "Circuit injecteur cylindre 2 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 2 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "advanceautoparts.com, 'P0202 OBD-II Trouble Code (Fuel Injector 2 Control Circuit Malfunction)', consulté 2026-07 (https://shop.advanceautoparts.com/r/advice/car-maintenance/p0202-obd-ii-trouble-code-fuel-injector-2-control-circuit-malfunction)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0203",
+    "libelle": "Circuit injecteur cylindre 3 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 3 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0204",
+    "libelle": "Circuit injecteur cylindre 4 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 4 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0205",
+    "libelle": "Circuit injecteur cylindre 5 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 5 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0206",
+    "libelle": "Circuit injecteur cylindre 6 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 6 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0207",
+    "libelle": "Circuit injecteur cylindre 7 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 7 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0208",
+    "libelle": "Circuit injecteur cylindre 8 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 8 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "hotshotsecret.com, 'Diagnostic Trouble Codes P0201-P0208: Injector Circuit Open', consulté 2026-07 (https://www.hotshotsecret.com/diagnostic-trouble-code-p0201-p0208/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0209",
+    "libelle": "Circuit injecteur cylindre 9 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 9 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs à 9 cylindres ou plus (rare, gros V)"
+  },
+  {
+    "code": "P0210",
+    "libelle": "Circuit injecteur cylindre 10 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 10 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V10 (rare)"
+  },
+  {
+    "code": "P0211",
+    "libelle": "Circuit injecteur cylindre 11 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 11 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V12 (rare)"
+  },
+  {
+    "code": "P0212",
+    "libelle": "Circuit injecteur cylindre 12 - dysfonctionnement",
+    "causes_courantes": "Injecteur cylindre 12 défaillant, câblage coupé ou court-circuité, connecteur corrodé",
+    "source": "repairpal.com, 'P0212 OBD-II: Injector Circuit/Open - Cylinder 12', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0212-injector-circuit-open---cylinder-12)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V12 (rare)"
+  },
+  {
+    "code": "P0213",
+    "libelle": "Injecteur de démarrage à froid 1 - dysfonctionnement",
+    "causes_courantes": "Injecteur de démarrage à froid défaillant, câblage endommagé, thermocontact défaillant",
+    "source": "repairpal.com, 'P0213 OBD-II: Cold Start Injector 1', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0213-cold-start-injector-1)",
+    "a_verifier": false,
+    "notes": "Système ancien (injection mécanique/K-Jetronic), rare sur véhicules récents"
+  },
+  {
+    "code": "P0214",
+    "libelle": "Injecteur de démarrage à froid 2 - dysfonctionnement",
+    "causes_courantes": "Injecteur de démarrage à froid défaillant, câblage endommagé, thermocontact défaillant",
+    "source": "repairpal.com, 'P0214 Code: Troubleshoot Cold Start Injector Malfunction', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0214-cold-start-injector-2)",
+    "a_verifier": false,
+    "notes": "Système ancien, rare sur véhicules récents"
+  },
+  {
+    "code": "P0215",
+    "libelle": "Électrovanne de coupure moteur - dysfonctionnement",
+    "causes_courantes": "Solénoïde de coupure défaillant, câblage endommagé, relais défectueux",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0216",
+    "libelle": "Circuit de commande de calage d'injection - dysfonctionnement",
+    "causes_courantes": "Capteur ou actionneur de calage d'injection défaillant (diesel), câblage endommagé",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0217",
+    "libelle": "Condition de surchauffe moteur",
+    "causes_courantes": "Niveau de liquide de refroidissement bas, thermostat bloqué fermé, pompe à eau défaillante, radiateur colmaté, ventilateur en panne",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0218",
+    "libelle": "Condition de surchauffe de la transmission",
+    "causes_courantes": "Niveau d'huile de boîte bas, refroidisseur de boîte colmaté, conduite en charge excessive prolongée",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0219",
+    "libelle": "Condition de survitesse moteur",
+    "causes_courantes": "Rétrogradage intempestif, embrayage ou boîte défaillante, glissement excessif du convertisseur",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0220",
+    "libelle": "Circuit du capteur de position papillon/pédale (TPS) B - dysfonctionnement",
+    "causes_courantes": "Capteur TPS B défaillant, câblage ou connecteur endommagé, boîtier papillon encrassé",
+    "source": "repairpal.com, 'P0220 - Throttle/Pedal Position Sensor/Switch B Circuit', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0220)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0221",
+    "libelle": "Circuit du capteur TPS B - plage/performance",
+    "causes_courantes": "Capteur TPS B dégradé, boîtier papillon encrassé, câblage endommagé",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0222",
+    "libelle": "Circuit du capteur TPS B - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur TPS B défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0222 - Throttle/Pedal Position Sensor/Switch B Circuit Low', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0222)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0223",
+    "libelle": "Circuit du capteur TPS B - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur TPS B défaillant, connecteur endommagé",
+    "source": "dmv.de.gov, 'ON-Board Diagnostic Trouble Codes', consulté 2026-07 (https://dmv.de.gov/VehicleServices/inspections/pdfs/dtc_list.pdf)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0224",
+    "libelle": "Circuit du capteur TPS B - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur TPS B défaillant",
+    "source": "repairpal.com, 'P0224 - Throttle/Pedal Position Sensor/Switch B Circuit Intermittent', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0224)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0225",
+    "libelle": "Circuit du capteur de position papillon/pédale (TPS) C - dysfonctionnement",
+    "causes_courantes": "Capteur TPS C défaillant, câblage ou connecteur endommagé",
+    "source": "obd-codes.com, 'P02xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p02-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0226",
+    "libelle": "Circuit du capteur TPS C - plage/performance",
+    "causes_courantes": "Capteur TPS C dégradé, câblage endommagé",
+    "source": "obd-codes.com, 'P02xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p02-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0227",
+    "libelle": "Circuit du capteur TPS C - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur TPS C défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0227 - Throttle/Pedal Position Sensor/Switch C Circuit Low', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0227-throttle-pedal-position-sensor-switch-c-circuit-low)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0228",
+    "libelle": "Circuit du capteur TPS C - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, capteur TPS C défaillant, connecteur endommagé",
+    "source": "repairpal.com, 'P0228 - Throttle/Pedal Position Sensor/Switch C Circuit High', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0228-throttle-pedal-position-sensor-switch-c-circuit-high)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0230",
+    "libelle": "Circuit primaire de la pompe à carburant - dysfonctionnement",
+    "causes_courantes": "Relais de pompe à carburant défaillant, câblage endommagé, pompe à carburant défectueuse",
+    "source": "autobarn.net, 'P0230 Code: The engine computer detects a problem in the primary...', consulté 2026-07 (https://www.autobarn.net/specs/obd-codes/p0230)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0231",
+    "libelle": "Circuit secondaire de la pompe à carburant - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse ou coupé, module de contrôle de pompe défaillant, pompe à carburant défectueuse",
+    "source": "kbb.com, 'P0231 Code - Fuel Pump Secondary Circuit Low', consulté 2026-07 (https://www.kbb.com/obd-ii/p0231/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0232",
+    "libelle": "Circuit secondaire de la pompe à carburant - signal haut",
+    "causes_courantes": "Câblage court-circuité à l'alimentation, module de contrôle de pompe défaillant",
+    "source": "obd-codes.com, 'P02xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p02-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0233",
+    "libelle": "Circuit secondaire de la pompe à carburant - signal intermittent",
+    "causes_courantes": "Connecteur lâche ou corrodé, câblage endommagé par intermittence, module de contrôle de pompe défaillant",
+    "source": "obd-codes.com, 'P02xx OBD-II Powertrain DTC Trouble Codes', consulté 2026-07 (https://www.obd-codes.com/p02-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0234",
+    "libelle": "Condition de surpression turbo/compresseur (overboost)",
+    "causes_courantes": "Wastegate bloquée fermée ou défaillante, électrovanne de commande de wastegate défectueuse, durite de dépression débranchée",
+    "source": "obd-codes.com, 'P0234 Turbocharger/Supercharger Overboost Condition DTC', consulté 2026-07 (https://www.obd-codes.com/p0234)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0235",
+    "libelle": "Circuit du capteur de pression de suralimentation A - dysfonctionnement",
+    "causes_courantes": "Capteur de pression de suralimentation défaillant, câblage ou connecteur endommagé, durite de dépression percée",
+    "source": "go-parts.com, 'OBD-II Code P0235: Turbocharger/Supercharger Boost Sensor A Circuit Malfunction', consulté 2026-07 (https://www.go-parts.com/garage/obd-p0235)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0236",
+    "libelle": "Circuit du capteur de pression de suralimentation A - plage/performance",
+    "causes_courantes": "Capteur de pression de suralimentation dégradé donnant un signal incohérent avec le régime moteur, câblage endommagé",
+    "source": "repairpal.com, 'P0236 - Turbocharger/Supercharger Boost Sensor A Circuit', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0236-turbocharger-supercharger-boost-sensor-a-circuit)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0237",
+    "libelle": "Circuit du capteur de pression de suralimentation A - signal bas",
+    "causes_courantes": "Câblage court-circuité à la masse, capteur défaillant ou mort",
+    "source": "repairpal.com, 'P0237 OBD-II Code: Turbocharger Boost Sensor Low Circuit', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0237-turbocharger-supercharger-boost-sensor-a-circuit-low)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0238",
+    "libelle": "Circuit du capteur de pression de suralimentation A - signal haut",
+    "causes_courantes": "Câblage court-circuité à la ligne de référence 5V, capteur défaillant",
+    "source": "icarsoft.com, 'P0238 Code: Turbo Boost Sensor A Circuit High — Causes & Fix', consulté 2026-07 (https://www.icarsoft.com/Article/s-191-191.html)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0299",
+    "libelle": "Condition de sous-pression turbo/compresseur (underboost)",
+    "causes_courantes": "Wastegate bloquée ouverte, fuite dans le circuit d'admission ou les durites de suralimentation, turbo usé, électrovanne de commande défectueuse",
+    "source": "obd-codes.com, 'P0299 Turbocharger/Supercharger A Underboost Condition', consulté 2026-07 (https://www.obd-codes.com/p0299)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0300",
+    "libelle": "Ratés d'allumage aléatoires/multiples détectés",
+    "causes_courantes": "Bougies d'allumage usées, bobines d'allumage défaillantes, fuite de vacuum/admission, injecteurs encrassés, problème mécanique (joint de culasse, distribution)",
+    "source": "carparts.com, 'P0300 Code: Random or Multiple Cylinder Misfire Detected', consulté 2026-07 (https://www.carparts.com/blog/p0300-code-random-or-multiple-cylinder-misfire-detected/)",
+    "a_verifier": false,
+    "notes": "Un allumage clignotant du voyant moteur signale des ratés sévères pouvant endommager le catalyseur"
+  },
+  {
+    "code": "P0301",
+    "libelle": "Raté d'allumage détecté cylindre 1",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 1 défaillante, injecteur du cylindre 1 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0302",
+    "libelle": "Raté d'allumage détecté cylindre 2",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 2 défaillante, injecteur du cylindre 2 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0303",
+    "libelle": "Raté d'allumage détecté cylindre 3",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 3 défaillante, injecteur du cylindre 3 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0304",
+    "libelle": "Raté d'allumage détecté cylindre 4",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 4 défaillante, injecteur du cylindre 4 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0305",
+    "libelle": "Raté d'allumage détecté cylindre 5",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 5 défaillante, injecteur du cylindre 5 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0306",
+    "libelle": "Raté d'allumage détecté cylindre 6",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 6 défaillante, injecteur du cylindre 6 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0307",
+    "libelle": "Raté d'allumage détecté cylindre 7",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 7 défaillante, injecteur du cylindre 7 bouché, faible compression sur ce cylindre",
+    "source": "repairpal.com, 'P0307 OBD-II: Cylinder 7 Misfire Detected', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0307)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs à 8 cylindres ou plus"
+  },
+  {
+    "code": "P0308",
+    "libelle": "Raté d'allumage détecté cylindre 8",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 8 défaillante, injecteur du cylindre 8 bouché, faible compression sur ce cylindre",
+    "source": "partsofacarengine.com, 'P0308 Code: Cylinder #8 Misfire Detected', consulté 2026-07 (https://www.partsofacarengine.com/p0308/)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V8 et plus"
+  },
+  {
+    "code": "P0309",
+    "libelle": "Raté d'allumage détecté cylindre 9",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 9 défaillante, injecteur du cylindre 9 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs à 9 cylindres ou plus (rare)"
+  },
+  {
+    "code": "P0310",
+    "libelle": "Raté d'allumage détecté cylindre 10",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 10 défaillante, injecteur du cylindre 10 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V10 (rare)"
+  },
+  {
+    "code": "P0311",
+    "libelle": "Raté d'allumage détecté cylindre 11",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 11 défaillante, injecteur du cylindre 11 bouché, faible compression sur ce cylindre",
+    "source": "oreillyauto.com, 'Check Engine Light Codes P0301 to P0312 Cylinder Misfire', consulté 2026-07 (https://www.oreillyauto.com/check-engine-light-codes-p0301-to-p0312-cylinder-misfire)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V12 (rare)"
+  },
+  {
+    "code": "P0312",
+    "libelle": "Raté d'allumage détecté cylindre 12",
+    "causes_courantes": "Bougie ou bobine d'allumage du cylindre 12 défaillante, injecteur du cylindre 12 bouché, faible compression sur ce cylindre",
+    "source": "partsofacarengine.com, 'P0312 Code: Cylinder #12 Misfire Detected', consulté 2026-07 (https://www.partsofacarengine.com/p0312/)",
+    "a_verifier": false,
+    "notes": "Concerne les moteurs V12 (rare)"
+  },
+  {
+    "code": "P0313",
+    "libelle": "Raté d'allumage détecté avec niveau de carburant bas",
+    "causes_courantes": "Niveau de carburant très bas provoquant des ratés, pompe à carburant aspirant de l'air en fin de réservoir",
+    "source": "underhoodservice.com, 'P0300, P0301-P0312 and P0313+P0314 Misfire Codes', consulté 2026-07 (https://www.underhoodservice.com/misfire-codes-p0300-p0301-p0312-and-p0313p0314/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0314",
+    "libelle": "Raté d'allumage sur cylindre non spécifié",
+    "causes_courantes": "Raté détecté mais cylindre exact non identifiable par le calculateur, bougie/bobine/injecteur en cause sur un cylindre indéterminé",
+    "source": "yourmechanic.com, 'P0314 OBD-II Trouble Code: Single Cylinder Misfire (Cylinder not Specified)', consulté 2026-07 (https://www.yourmechanic.com/article/p0314-obd-ii-trouble-code-single-cylinder-misfire-cylinder-not-specified-by-cheryl-knight)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0315",
+    "libelle": "Variation du système de position vilebrequin non apprise",
+    "causes_courantes": "Capteur de position vilebrequin défaillant ou signal absent, procédure d'apprentissage non effectuée après remplacement du capteur ou du volant moteur",
+    "source": "underhoodservice.com, 'P0300, P0301-P0312 and P0313+P0314 Misfire Codes', consulté 2026-07 (https://www.underhoodservice.com/misfire-codes-p0300-p0301-p0312-and-p0313p0314/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0316",
+    "libelle": "Raté d'allumage détecté au démarrage (1000 premiers tours)",
+    "causes_courantes": "Bougies usées, faible compression au démarrage à froid, capteur de position vilebrequin/arbre à cames défaillant",
+    "source": "obd-codes.com, 'P0316 Engine Misfire Detected on Startup (First 1000 Revolutions)', consulté 2026-07 (https://www.obd-codes.com/p0316)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0320",
+    "libelle": "Circuit du capteur de régime moteur (allumage/distributeur) - dysfonctionnement",
+    "causes_courantes": "Capteur de régime moteur défaillant, câblage ou connecteur endommagé",
+    "source": "obd-codes.com, 'P03xx OBD-II Trouble Codes Ignition and Misfire', consulté 2026-07 (https://www.obd-codes.com/p03-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0321",
+    "libelle": "Circuit du capteur de régime moteur - plage/performance",
+    "causes_courantes": "Capteur de régime moteur dégradé, roue phonique endommagée, câblage endommagé",
+    "source": "obd-codes.com, 'P03xx OBD-II Trouble Codes Ignition and Misfire', consulté 2026-07 (https://www.obd-codes.com/p03-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0322",
+    "libelle": "Circuit du capteur de régime moteur - absence de signal",
+    "causes_courantes": "Capteur de régime moteur en circuit ouvert ou défaillant, câblage coupé, roue phonique endommagée",
+    "source": "obd-codes.com, 'P03xx OBD-II Trouble Codes Ignition and Misfire', consulté 2026-07 (https://www.obd-codes.com/p03-codes)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0325",
+    "libelle": "Circuit du capteur de cliquetis 1 - dysfonctionnement (banc 1 ou capteur unique)",
+    "causes_courantes": "Capteur de cliquetis défaillant, câblage ou connecteur endommagé, fixation du capteur desserrée",
+    "source": "carparts.com, 'P0325 Code: Knock Sensor Malfunction (Sensor 1, Bank 1)', consulté 2026-07 (https://www.carparts.com/blog/p0325-code-knock-sensor-malfunction-sensor-1-bank-1/)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0326",
+    "libelle": "Circuit du capteur de cliquetis 1 - plage/performance (banc 1 ou capteur unique)",
+    "causes_courantes": "Capteur de cliquetis dégradé, fixation desserrée, câblage endommagé, bruit parasite du moteur",
+    "source": "repairpal.com, 'P0326 OBD-II: Knock Sensor 1 Circuit Range/Performance', consulté 2026-07 (https://repairpal.com/obd-ii-code-p0326-knock-sensor-1-circuit-range-performance)",
+    "a_verifier": false
+  }
+]

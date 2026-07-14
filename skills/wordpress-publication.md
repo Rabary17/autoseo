@@ -39,7 +39,7 @@ WordPress est administré via **Gutenberg**. Tout contenu généré doit être �
 ## 3. Image à la une (featured image native)
 
 - Chaque article, hub et sous-hub a une image à la une, uploadée via `POST /wp/v2/media` puis liée avec `featured_media` sur le post.
-- Format WebP, compressée, dimensions cohérentes avec le thème (éviter l'upload d'un original 4000px non redimensionné).
+- Compression et conversion WebP gérées automatiquement par **Imagify** à l'upload (voir [developpement.md](developpement.md) et [../docs/architecture-headless.md](../docs/architecture-headless.md) section 9) — uploader directement l'image, pas besoin de la compresser/convertir manuellement avant. Éviter tout de même les originaux inutilement énormes (>2000px) : Imagify redimensionne automatiquement au-delà de 1600px, mais un original déjà raisonnable économise du temps de traitement.
 - Alt text obligatoire et descriptif, incluant l'entité de la page (ex. "plaquettes de frein usées gros plan", pas "image1.jpg").
 - Pas d'images génériques dupliquées entre plusieurs articles du même template : au minimum varier l'image par entité (marque/modèle/prestation) même si le style visuel reste cohérent.
 - Jamais d'image protégée par droit d'auteur sans licence claire (banques d'images libres de droits, génération IA, ou photos propres).
