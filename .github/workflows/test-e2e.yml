@@ -23,24 +23,31 @@ jobs:
 
       - run: npm install
 
-      - name: Diagnostic auth WordPress (n'affiche aucune valeur secrète)
+      - name: Diagnostic auth WordPress (même client Node que le pipeline, aucune valeur secrète affichée)
         env:
           WP_URL: ${{ secrets.WP_URL }}
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: |
-          echo "Schéma WP_URL : $(echo "$WP_URL" | grep -oE '^https?')"
-          STATUS=$(curl -s -o /tmp/auth_test.json -w "%{http_code}" -u "$WP_USER:$WP_APP_PASSWORD" "$WP_URL/?rest_route=/wp/v2/users/me")
-          echo "Code HTTP sur /wp/v2/users/me (authentifié) : $STATUS"
-          node -e "
-            const fs = require('fs');
-            try {
-              const j = JSON.parse(fs.readFileSync('/tmp/auth_test.json', 'utf8'));
-              console.log('id utilisateur authentifié :', j.id, '— slug :', j.slug, '— roles :', JSON.stringify(j.roles));
-            } catch (e) {
-              console.log('Réponse non-JSON ou vide (authentification probablement refusée avant même WordPress).');
-            }
-          "
+          cat > /tmp/wp-auth-check.js <<'EOF'
+          const origin = (process.env.WP_URL || '').replace(/\/$/, '');
+          const url = `${origin}/?rest_route=/wp/v2/users/me`;
+          const auth = 'Basic ' + Buffer.from(`${process.env.WP_USER}:${process.env.WP_APP_PASSWORD}`).toString('base64');
+          console.log('URL testée (schéma + hôte uniquement) :', url.split('?')[0]);
+          fetch(url, { headers: { Authorization: auth, 'content-type': 'application/json' } })
+            .then(async (res) => {
+              const text = await res.text();
+              console.log('Code HTTP (Node fetch, même client que wp-client.js) :', res.status);
+              try {
+                const j = JSON.parse(text);
+                console.log('id utilisateur authentifié :', j.id, '- slug :', j.slug, '- roles :', JSON.stringify(j.roles));
+              } catch (e) {
+                console.log('Réponse non-JSON, premiers 300 caractères :', text.slice(0, 300));
+              }
+            })
+            .catch((e) => console.log('Erreur réseau :', e.message));
+          EOF
+          node /tmp/wp-auth-check.js
 
       - name: Test end-to-end (génération, relecture, image, écriture WP)
         env:
