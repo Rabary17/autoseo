@@ -51,25 +51,40 @@ function buildUrl(pathAndQuery) {
 
 // 2 tentatives, backoff court fixe — cohérent avec le choix déjà fait dans
 // frontend/monauto/lib/wp.ts (un vrai serveur répond vite dans un sens ou
-// l'autre ; un backoff long ne répare rien).
+// l'autre ; un backoff long ne répare rien). Ne retente QUE les erreurs
+// réseau et les statuts 429/5xx — un 400/401/403/404 ne se corrige jamais en
+// réessayant, retenter dans ce cas ne fait que perdre 1-2s pour rien.
 async function request(pathAndQuery, { method = 'GET', body, retries = 2 } = {}) {
   let lastErr;
   for (let attempt = 0; attempt <= retries; attempt++) {
+    let res;
     try {
-      const res = await fetch(buildUrl(pathAndQuery), {
+      res = await fetch(buildUrl(pathAndQuery), {
         method,
         headers: { Authorization: AUTH, 'content-type': 'application/json' },
         body: body ? JSON.stringify(body) : undefined,
       });
-      const json = await res.json().catch(() => ({}));
-      if (!res.ok) {
-        throw new Error(`WP ${method} ${pathAndQuery} -> ${res.status}: ${JSON.stringify(json)}`);
-      }
-      return json;
     } catch (e) {
       lastErr = e;
-      if (attempt < retries) await new Promise(r => setTimeout(r, 500));
+      if (attempt < retries) {
+        await new Promise(r => setTimeout(r, 500));
+        continue;
+      }
+      throw lastErr;
     }
+
+    if (res.ok) return res.json().catch(() => ({}));
+
+    const json = await res.json().catch(() => ({}));
+    const err = new Error(`WP ${method} ${pathAndQuery} -> ${res.status}: ${JSON.stringify(json)}`);
+    err.status = res.status;
+    const retryable = res.status === 429 || res.status >= 500;
+    if (retryable && attempt < retries) {
+      lastErr = err;
+      await new Promise(r => setTimeout(r, 500));
+      continue;
+    }
+    throw err;
   }
   throw lastErr;
 }
@@ -78,7 +93,7 @@ async function request(pathAndQuery, { method = 'GET', body, retries = 2 } = {})
 
 async function findBySlug(type, slug) {
   const items = await request(`/${type}?slug=${encodeURIComponent(slug)}&status=any`);
-  return items[0] ?? null;
+  return Array.isArray(items) && items[0] ? items[0] : null;
 }
 
 async function createPost(payload) {
@@ -99,7 +114,7 @@ async function updatePage(id, payload) {
 
 async function findOrCreateTerm(taxonomy, slug, payload) {
   const existing = await request(`/${taxonomy}?slug=${encodeURIComponent(slug)}`);
-  if (existing.length) return existing[0];
+  if (Array.isArray(existing) && existing.length) return existing[0];
   return request(`/${taxonomy}`, { method: 'POST', body: payload });
 }
 

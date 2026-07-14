@@ -31,13 +31,19 @@ function fmtIso(date) {
   return date.toISOString().replace(/\.\d{3}Z$/, '');
 }
 
+// Contrairement à run.js (où un échec WP par pièce est isolé), ici il n'y a
+// que deux requêtes globales (posts, pages) — un échec doit être signalé
+// explicitement dans l'e-mail plutôt que silencieusement rendu comme "rien
+// publié" (qui serait trompeur : on ne SAIT pas, on n'a pas pu vérifier).
 async function fetchWindow(afterDate, beforeDate) {
   const query = `_fields=id,link,title,date_gmt,status,type&status=publish,future&per_page=100&orderby=date&order=asc&after=${encodeURIComponent(fmtIso(afterDate))}Z&before=${encodeURIComponent(fmtIso(beforeDate))}Z`;
+  const errors = [];
   const [posts, pages] = await Promise.all([
-    wp.request(`/posts?${query}`).catch(() => []),
-    wp.request(`/pages?${query}`).catch(() => []),
+    wp.request(`/posts?${query}`).catch(e => { errors.push(`/posts : ${e.message}`); return []; }),
+    wp.request(`/pages?${query}`).catch(e => { errors.push(`/pages : ${e.message}`); return []; }),
   ]);
-  return [...posts, ...pages].sort((a, b) => new Date(a.date_gmt) - new Date(b.date_gmt));
+  const items = [...posts, ...pages].sort((a, b) => new Date(a.date_gmt) - new Date(b.date_gmt));
+  return { items, errors };
 }
 
 function itemLine(item) {
@@ -59,7 +65,11 @@ async function main() {
 
   const state = stateLib.loadState();
 
-  const window = await fetchWindow(today0, weekEnd0);
+  const { items: window, errors } = await fetchWindow(today0, weekEnd0);
+
+  const errorBanner = errors.length
+    ? `<p style="background:#fdecea;border:1px solid #f5c2c0;padding:8px 12px;color:#611a15;"><strong>⚠️ Impossible de contacter WordPress pour une partie de ce rapport</strong> — les sections ci-dessous peuvent être incomplètes, ne pas les interpréter comme "rien publié" :<br>${errors.map(e => `- ${e}`).join('<br>')}</p>`
+    : '';
 
   const publishedToday = window.filter(i => i.status === 'publish' && new Date(i.date_gmt) >= today0 && new Date(i.date_gmt) < tomorrow0);
   const laterToday = window.filter(i => i.status === 'future' && new Date(i.date_gmt) >= today0 && new Date(i.date_gmt) < tomorrow0);
@@ -80,7 +90,7 @@ async function main() {
   const html = `
 <h2>Rapport quotidien monauto — ${fmtDay(now)}</h2>
 <p>Phase courante : <strong>${state.phase}</strong>${state.silo_en_cours ? ` — silo en cours : <strong>${state.silo_en_cours}</strong>` : ''}. Dernier run autopublish : ${state.derniere_execution ?? 'jamais'}.</p>
-
+${errorBanner}
 ${section('Publié aujourd\'hui', publishedToday, 'Rien publié aujourd\'hui pour l\'instant.')}
 ${section('Prévu plus tard aujourd\'hui', laterToday, 'Rien d\'autre prévu aujourd\'hui.')}
 ${section('Prévu demain', tomorrow, 'Rien de programmé demain pour l\'instant.')}
@@ -95,6 +105,7 @@ ${upcomingHtml}
   fs.writeFileSync(OUTPUT_PATH, html, 'utf8');
   console.log(`Rapport écrit : ${OUTPUT_PATH}`);
   console.log(`Publiés aujourd'hui : ${publishedToday.length} — demain : ${tomorrow.length} — total fenêtre 8j : ${window.length}`);
+  if (errors.length) console.warn(`Erreurs WordPress rencontrées : ${errors.join(' | ')}`);
 }
 
 main().catch(e => {

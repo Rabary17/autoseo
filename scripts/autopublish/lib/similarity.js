@@ -45,10 +45,19 @@ function indexPath(silo, sousCocon) {
   return path.join(INDEX_DIR, `${slugifyPart(silo)}__${slugifyPart(sousCocon || 'general')}.json`);
 }
 
+// Un index corrompu (écriture interrompue, disque plein) ne doit jamais
+// bloquer tout le silo/sous-cocon indéfiniment — on le traite comme vide et
+// on avertit, plutôt que de laisser JSON.parse crasher gating.js pour chaque
+// pièce suivante du même silo tant que le fichier n'est pas réparé à la main.
 function loadIndex(silo, sousCocon) {
   const p = indexPath(silo, sousCocon);
   if (!fs.existsSync(p)) return [];
-  return JSON.parse(fs.readFileSync(p, 'utf8'));
+  try {
+    return JSON.parse(fs.readFileSync(p, 'utf8'));
+  } catch (e) {
+    console.warn(`similarity: index illisible ignoré (${p}) : ${e.message}`);
+    return [];
+  }
 }
 
 function saveIndex(silo, sousCocon, entries) {

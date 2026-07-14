@@ -14,9 +14,15 @@ function escapeRegExp(s) {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
+// Deux causes de blocage bien distinctes, jamais confondues dans le rapport :
+// - "draft"  : le contenu a été généré et relu, mais a échoué une règle de
+//              gating qualité (section 5) — normal, fait partie du processus.
+// - "erreur" : un maillon technique a levé une exception (API, WordPress,
+//              fichier corrompu...) — anormal, mérite l'attention de l'utilisateur.
 function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
   const published = items.filter(i => i.status === 'publie');
-  const blocked = items.filter(i => i.status === 'draft');
+  const draft = items.filter(i => i.status === 'draft');
+  const erreur = items.filter(i => i.status === 'erreur');
 
   const lines = [
     `# Rapport autopublish — ${runDate}${dryRun ? ' (dry-run)' : ''}`,
@@ -25,15 +31,16 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
     `- Silo en cours : ${silo ?? '—'}`,
     `- Pièces traitées : ${items.length}`,
     `- Programmées : ${published.length}`,
-    `- Bloquées (draft) : ${blocked.length}`,
+    `- Bloquées par le gating qualité (draft) : ${draft.length}`,
+    `- Échecs techniques (erreur) : ${erreur.length}${erreur.length ? ' — À VÉRIFIER' : ''}`,
     '',
     '## Détail',
     '',
-    ...items.map(i =>
-      i.status === 'publie'
-        ? `- [x] ${i.slug} (${i.contentType}) — programmé pour ${i.postDate}`
-        : `- [ ] ${i.slug} (${i.contentType}) — bloqué : ${(i.reasons || []).join('; ')}`
-    ),
+    ...items.map(i => {
+      if (i.status === 'publie') return `- [x] ${i.slug} (${i.contentType}) — programmé pour ${i.postDate}`;
+      if (i.status === 'erreur') return `- [!] ${i.slug} (${i.contentType}) — ERREUR TECHNIQUE : ${(i.reasons || []).join('; ')}`;
+      return `- [ ] ${i.slug} (${i.contentType}) — bloqué (gating) : ${(i.reasons || []).join('; ')}`;
+    }),
     '',
     '## Coût du run (cumul des appels Messages API, génération + relecture)',
     '',
@@ -54,7 +61,8 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
     phase,
     silo,
     publishedCount: published.length,
-    blockedCount: blocked.length,
+    blockedCount: draft.length,
+    errorCount: erreur.length,
     lastScheduledDate: published.length ? published[published.length - 1].postDate : null,
     reportRelPath: `logs/autopublish/${runDate}.md`,
   });
@@ -62,7 +70,7 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
   return reportPath;
 }
 
-function updateStateMd({ runDate, dryRun, phase, silo, publishedCount, blockedCount, lastScheduledDate, reportRelPath }) {
+function updateStateMd({ runDate, dryRun, phase, silo, publishedCount, blockedCount, errorCount, lastScheduledDate, reportRelPath }) {
   if (!fs.existsSync(STATE_MD_PATH)) return;
   const content = fs.readFileSync(STATE_MD_PATH, 'utf8');
 
@@ -71,7 +79,7 @@ function updateStateMd({ runDate, dryRun, phase, silo, publishedCount, blockedCo
     `## Autopublish — dernier run : ${runDate}${dryRun ? ' (dry-run)' : ''}`,
     '',
     `- Phase : ${phase} — silo en cours : ${silo ?? '—'}`,
-    `- Programmées : ${publishedCount} — bloquées (draft) : ${blockedCount}`,
+    `- Programmées : ${publishedCount} — bloquées (draft) : ${blockedCount} — erreurs techniques : ${errorCount}${errorCount ? ' ⚠️' : ''}`,
     lastScheduledDate ? `- Dernier article programmé pour : ${lastScheduledDate}` : null,
     `- Détail complet : [${reportRelPath}](${reportRelPath})`,
     MARKER_END,

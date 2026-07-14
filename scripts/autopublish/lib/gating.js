@@ -58,13 +58,13 @@ function checkSimilarity(content, silo, sousCocon) {
 }
 
 function checkFactsNotInvented(content, factsProvided) {
-  const text = stripHtmlToText(content.content_gutenberg) + ' ' + content.faq.map(f => f.answer).join(' ');
+  const text = stripHtmlToText(content.content_gutenberg) + ' ' + (content.faq || []).map(f => f.answer).join(' ');
   const hasClaim = hasNumericClaim(text);
   if (!hasClaim) return { ok: true };
   if (!factsProvided || factsProvided.length === 0) {
     return { ok: false, reason: 'Donnée chiffrée présente dans le texte alors qu\'aucun fait n\'a été fourni au prompt.' };
   }
-  if (content.sources.length === 0) {
+  if ((content.sources || []).length === 0) {
     return { ok: false, reason: 'Donnée chiffrée présente mais aucune source citée dans sources[].' };
   }
   return { ok: true };
@@ -77,7 +77,7 @@ function checkFactsNotInvented(content, factsProvided) {
 function checkFaqMirror(content) {
   const text = stripHtmlToText(content.content_gutenberg).toLowerCase();
   let lastIndex = -1;
-  for (const item of content.faq) {
+  for (const item of content.faq || []) {
     const idx = text.indexOf(item.question.toLowerCase());
     if (idx === -1) return { ok: false, reason: `Question FAQ absente du texte visible : "${item.question}"` };
     if (idx < lastIndex) return { ok: false, reason: `Question FAQ hors ordre par rapport au texte : "${item.question}"` };
@@ -102,7 +102,7 @@ function checkLength(content, contentType, lengthRangeOverride) {
 
 function checkYmylSource(content, silo) {
   if (!persona.isYmylSilo(silo)) return { ok: true };
-  return { ok: content.sources.length > 0, reason: 'Silo YMYL sans source officielle citée dans sources[].' };
+  return { ok: (content.sources || []).length > 0, reason: 'Silo YMYL sans source officielle citée dans sources[].' };
 }
 
 function checkMaillageResolved(contentType, maillageEntry, childLinksCount) {

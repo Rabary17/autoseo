@@ -37,7 +37,12 @@ const LEDGER_PATH = path.join(__dirname, '..', '..', '..', 'data', 'autopublish-
 
 function loadLedger() {
   if (!fs.existsSync(LEDGER_PATH)) return {};
-  return JSON.parse(fs.readFileSync(LEDGER_PATH, 'utf8'));
+  try {
+    return JSON.parse(fs.readFileSync(LEDGER_PATH, 'utf8'));
+  } catch (e) {
+    console.warn(`images: ledger illisible ignoré (${LEDGER_PATH}) : ${e.message}`);
+    return {};
+  }
 }
 
 function saveLedger(ledger) {

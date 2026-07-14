@@ -16,9 +16,18 @@ const DEFAULT_REVIEW_MODEL = 'claude-sonnet-5';
 const DEFAULT_THINKING = { type: 'adaptive' };
 const DEFAULT_EFFORT = 'medium';
 
+// `slug` alimente un nom de fichier — normalement toujours un slug propre
+// (persona.js/scheduler.js le construisent ainsi), mais on neutralise ici tout
+// caractère qui casserait le chemin (`/`, `..`) plutôt que de faire confiance
+// aveuglément à l'appelant.
+function safeFileSlug(slug) {
+  return String(slug).replace(/[^a-zA-Z0-9-_]/g, '-');
+}
+
 function writeReviewLog({ runDate, slug, contentType, silo, conforme, justification, corrections }) {
   const dir = path.join(LOGS_ROOT, runDate);
   fs.mkdirSync(dir, { recursive: true });
+  slug = safeFileSlug(slug);
   const lines = [
     `# Relecture — ${slug}`,
     '',
@@ -67,7 +76,7 @@ async function reviewContent({
     effort,
   });
 
-  const { conforme, justification, corrections_appliquees: corrections, content } = result.parsed;
+  const { conforme, justification, corrections_appliquees: corrections = [], content } = result.parsed;
 
   writeReviewLog({ runDate, slug, contentType, silo, conforme, justification, corrections });
 

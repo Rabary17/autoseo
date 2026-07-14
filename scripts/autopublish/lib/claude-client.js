@@ -49,6 +49,11 @@ async function callClaude({ model, system, messages, schema, thinking, effort, m
   if (response.stop_reason === 'refusal') {
     throw new Error(`claude-client: refus du modèle (stop_reason=refusal) pour le schéma "${schema.name}"`);
   }
+  if (response.stop_reason === 'max_tokens') {
+    throw new Error(
+      `claude-client: réponse tronquée (stop_reason=max_tokens, maxTokens=${maxTokens}) pour "${schema.name}" — le JSON est probablement incomplet ; augmenter maxTokens si ce type de contenu le nécessite structurellement.`
+    );
+  }
 
   const textBlock = response.content.find(b => b.type === 'text');
   if (!textBlock) {
