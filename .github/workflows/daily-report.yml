@@ -1,0 +1,41 @@
+name: Rapport quotidien monauto
+
+# Aucun appel à l'API Claude ici — juste une lecture WordPress (source de
+# vérité) puis un envoi d'e-mail. Coût quasi nul, peut tourner tous les jours
+# sans conflit avec l'économie de tokens du pipeline de génération
+# (.github/workflows/autopublish.yml, lui hebdomadaire).
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  daily-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Générer le rapport
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: npm run daily-report
+
+      - name: Envoyer l'e-mail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.GMAIL_USER }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          subject: "monauto — rapport quotidien"
+          to: andrianina.rabarivelo@gmail.com
+          from: monauto autopublish <${{ secrets.GMAIL_USER }}>
+          html_body: file://logs/autopublish/daily-report-latest.html

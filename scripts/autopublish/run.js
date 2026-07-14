@@ -222,8 +222,9 @@ async function runPhase0(state, runDate, usageAcc) {
   }
 
   const hubScheduled = scheduler.computeSchedule({
-    phase: 0, phaseStartDate: state.phase_start_date, queue: hubGatingPassed, capacityOverride: capacity,
-  }).map((h, i) => ({ ...h, queueIndex: state.items_scheduled_in_phase + i }));
+    phase: 0, phaseStartDate: state.phase_start_date, queue: hubGatingPassed,
+    capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
+  });
   state.items_scheduled_in_phase += hubScheduled.length;
 
   for (const hub of hubScheduled) {
@@ -276,7 +277,8 @@ async function runPhase0(state, runDate, usageAcc) {
   }
 
   const sousHubScheduled = scheduler.computeSchedule({
-    phase: 0, phaseStartDate: state.phase_start_date, queue: sousHubGatingPassed, capacityOverride: capacity,
+    phase: 0, phaseStartDate: state.phase_start_date, queue: sousHubGatingPassed,
+    capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
   });
   state.items_scheduled_in_phase += sousHubScheduled.length;
 
@@ -409,7 +411,8 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
   }
 
   const scheduled = scheduler.computeSchedule({
-    phase: 2, phaseStartDate: state.silo_start_date, queue: gatingPassed, capacityOverride: capacity,
+    phase: 2, phaseStartDate: state.silo_start_date, queue: gatingPassed,
+    capacityOverride: capacity, startIndex: state.items_scheduled_for_silo,
   });
 
   for (const art of scheduled) {

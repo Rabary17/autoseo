@@ -26,14 +26,21 @@ function timeOfDayForSlot(slotIndexInDay, capacityPerDay) {
 // dans run.js — hubs > sous-hubs > volume décroissant > quota d'intention
 // étalé). Chaque item peut porter un `parentDate` (Date | ISOString | null) :
 // la date calculée est décalée d'au moins 1 jour après si nécessaire.
-function computeSchedule({ phase, phaseStartDate, queue, capacityOverride }) {
+//
+// `startIndex` : position déjà atteinte dans la file avant ce run (voir
+// state.items_scheduled_in_phase / items_scheduled_for_silo) — indispensable
+// pour qu'un run hebdomadaire continue l'espacement des dates là où le
+// précédent s'est arrêté, au lieu de recalculer depuis le jour 0 à chaque
+// fois (ce qui écraserait les dates déjà attribuées la semaine précédente).
+function computeSchedule({ phase, phaseStartDate, queue, capacityOverride, startIndex = 0 }) {
   const capacity = capacityOverride ?? PHASE_CAPACITY_PER_DAY[phase];
   if (!capacity) {
     throw new Error(`scheduler: aucune capacité de publication pour la phase ${phase} (pause ou phase inconnue).`);
   }
   const start = new Date(phaseStartDate);
 
-  return queue.map((item, i) => {
+  return queue.map((item, localIndex) => {
+    const i = startIndex + localIndex;
     const dayOffset = Math.floor(i / capacity);
     const slotInDay = i % capacity;
     const { h, m } = timeOfDayForSlot(slotInDay, capacity);

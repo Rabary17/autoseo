@@ -88,4 +88,8 @@ module.exports = {
   // wordpress-publication.md section 6) — approximatifs, appliqués au budget
   // hebdomadaire courant plutôt qu'en dur, pour rester valides si le budget change.
   INTENT_QUOTA: { Info: 0.65, Commercial: 0.25, Transactionnel: 0.10 },
+
+  // Destinataire du rapport quotidien (voir daily-report.js + .github/workflows/daily-report.yml).
+  // Ce n'est pas une donnée sensible — laissé en clair ici plutôt qu'en secret.
+  DAILY_REPORT_RECIPIENT: 'andrianina.rabarivelo@gmail.com',
 };

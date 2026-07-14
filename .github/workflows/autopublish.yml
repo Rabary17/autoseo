@@ -1,0 +1,73 @@
+name: Autopublish monauto
+
+# Hebdomadaire : le calendrier post_date/post_status=future (voir
+# skills/wordpress-publication.md section 6) fait que WordPress publie seul
+# chaque jour aux dates prévues — un seul run par semaine suffit à programmer
+# toute la semaine à venir. workflow_dispatch permet un test manuel (--dry-run)
+# sans attendre le lundi.
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry-run (n'écrit rien dans WP/xlsx, écrit seulement le rapport)"
+        type: boolean
+        default: false
+
+# Empêche deux runs simultanés (écritures concurrentes WP + xlsx + commit).
+concurrency:
+  group: autopublish
+  cancel-in-progress: false
+
+jobs:
+  autopublish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Run autopublish
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          RI_PEXELS_KEY: ${{ secrets.RI_PEXELS_KEY }}
+          RI_UNSPLASH_KEY: ${{ secrets.RI_UNSPLASH_KEY }}
+          RI_PIXABAY_KEY: ${{ secrets.RI_PIXABAY_KEY }}
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            npm run autopublish:dry
+          else
+            npm run autopublish
+          fi
+
+      - name: Commit les fichiers mis à jour
+        run: |
+          git config user.name "autopublish-bot"
+          git config user.email "autopublish-bot@users.noreply.github.com"
+          git add data/keywords/tracking-mots-cles.xlsx data/autopublish-state.json \
+                  data/similarity-index/ data/autopublish-image-ledger.json \
+                  logs/autopublish/ STATE.md 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "autopublish: run $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "Rien à committer (dry-run ou aucune pièce traitée)."
+          fi
+
+      - name: Publier le rapport en résumé de run
+        if: always()
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          if [ -f "logs/autopublish/$DATE.md" ]; then
+            cat "logs/autopublish/$DATE.md" >> "$GITHUB_STEP_SUMMARY"
+          fi

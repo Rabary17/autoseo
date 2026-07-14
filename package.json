@@ -5,7 +5,10 @@
   "description": "Scripts serveur du projet autoseo (P1-P6 + pipeline de publication automatisée). Distinct de frontend/monauto/package.json (le site Next.js).",
   "scripts": {
     "autopublish": "node scripts/autopublish/run.js",
-    "autopublish:dry": "node scripts/autopublish/run.js --dry-run"
+    "autopublish:dry": "node scripts/autopublish/run.js --dry-run",
+    "daily-report": "node scripts/autopublish/daily-report.js",
+    "create-missing-authors": "node scripts/autopublish/create-missing-authors.js",
+    "test:e2e": "node scripts/autopublish/test-e2e.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.111.0",
