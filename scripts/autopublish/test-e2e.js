@@ -26,13 +26,16 @@ function writeLog(lines) {
   fs.writeFileSync(LOG_PATH, lines.join('\n') + '\n', 'utf8');
 }
 
-async function main() {
-  const steps = [];
-  const log = msg => {
-    console.log(msg);
-    steps.push(msg);
-  };
+// Portée module (pas locale à main()) : si main() rejette en cours de route,
+// le gestionnaire .catch() tout en bas doit pouvoir écrire ce qui a déjà été
+// accompli plutôt que de ne laisser aucune trace du point d'échec.
+const steps = [];
+function log(msg) {
+  console.log(msg);
+  steps.push(msg);
+}
 
+async function main() {
   log(`# Test end-to-end autopublish — ${new Date().toISOString()}`);
   log('');
   log('Test isolé : aucune modification de data/autopublish-state.json ni tracking-mots-cles.xlsx.');
@@ -126,12 +129,26 @@ async function main() {
   log(`- À supprimer manuellement depuis wp-admin une fois la vérification faite.`);
   log(`- Le prochain rapport quotidien (daily-report.js) doit lister cet article dans "Publié aujourd'hui".`);
   log(`- Coût de ce test : génération ${JSON.stringify(genResult.usage)}, relecture ${JSON.stringify(reviewResult.usage)}.`);
-
-  writeLog(steps);
-  console.log(`\nLog écrit : ${LOG_PATH}`);
 }
 
-main().catch(e => {
-  console.error(e);
-  process.exit(1);
-});
+// Le log doit être écrit même si le test échoue en cours de route (ex.
+// écriture WP en échec à l'étape 5/6) — sinon un run raté ne laisse AUCUNE
+// trace du point où il s'est arrêté, obligeant à rejouer aveuglément (voir le
+// durcissement équivalent dans run.js).
+main()
+  .then(() => {
+    writeLog(steps);
+    console.log(`\nLog écrit : ${LOG_PATH}`);
+  })
+  .catch((e) => {
+    console.error(e);
+    log('');
+    log(`## ÉCHEC — ${e.message}`);
+    log('');
+    log('```');
+    log(String(e.stack || e));
+    log('```');
+    writeLog(steps);
+    console.log(`\nLog écrit (échec) : ${LOG_PATH}`);
+    process.exit(1);
+  });
