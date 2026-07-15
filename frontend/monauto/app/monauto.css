@@ -173,9 +173,11 @@ h3{font-size:20px}
 .breadcrumb [aria-current="page"]{color:var(--ink)}
 
 /* ---------- Article ---------- */
-/* Pages de lecture : fond blanc plein écran (confort de lecture) */
-body.reading{background:var(--paper)}
-.article{background:var(--paper)}
+/* Pas de fond --paper dédié ici : sur un fond --surface déjà proche du blanc
+   en clair, l'écart entre les deux était mineur mais visible ; en sombre,
+   --paper (plus clair que --surface) créait un bandeau ni franchement noir
+   ni blanc, cassant le rendu. L'article hérite donc du fond --surface de la
+   page comme le reste du site — une seule couleur de fond, pas de couture. */
 body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc(var(--gutter)*-1)}
 .article__head{padding:8px 0 4px}
 .article__title{margin:6px 0 12px}
