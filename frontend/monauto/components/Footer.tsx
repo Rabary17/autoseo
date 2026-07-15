@@ -14,7 +14,7 @@ export default function Footer() {
         </p>
         <div className="footer__cols">
           <div>
-            <h4>Le média</h4>
+            <h2>Le média</h2>
             <ul>
               <li>
                 <Link href="/a-propos/">À propos</Link>
@@ -22,7 +22,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Rubriques</h4>
+            <h2>Rubriques</h2>
             <ul>
               <li>
                 <Link href="/categorie/entretien/">Entretien &amp; révision</Link>

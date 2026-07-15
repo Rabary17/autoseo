@@ -298,7 +298,11 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .footer__brand{font-family:var(--font-display);font-weight:700;font-size:22px;margin:0 0 4px}
 .footer__brand .dot{color:var(--accent)}
 .footer__cols{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px;margin:22px 0}
-.footer h4{color:#fff;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;opacity:.6}
+/* h2 (pas h4) : voir components/Footer.tsx — un pied de page peut redémarrer
+   sa propre hiérarchie de titres sans "sauter" de niveau (h4 après un contenu
+   principal qui ne dépasse souvent pas h2 cassait l'ordre séquentiel, signalé
+   par l'audit d'accessibilité). Le style visuel (petit, discret) est inchangé. */
+.footer h2{color:#fff;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 10px;opacity:.6}
 .footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
 .footer__legal{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;
   font-size:12.5px;color:rgba(255,255,255,.55)}
@@ -329,12 +333,19 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 
 /* =========================================================================
    Mode sombre — data-theme posé sur <html> par le script anti-FOUC
-   (app/layout.tsx) et basculé par components/ThemeToggle.tsx. On ne
-   redéfinit que les neutres : --accent et --brand restent identiques (le
-   bleu d'accent et les fonds "toujours sombres" — hero, footer — fonctionnent
-   déjà tels quels sur fond sombre).
+   (app/layout.tsx) et basculé par components/ThemeToggle.tsx. --brand reste
+   identique (le fond "toujours sombre" du hero/footer fonctionne tel quel).
+   --accent EST redéfini : le bleu #1B54FF, conçu pour du texte sur fond
+   blanc, tombe à 3.0-3.3:1 sur les fonds sombres ci-dessous (WCAG AA exige
+   4.5:1 pour du texte normal) — #6C93FF est la même teinte éclaircie pour
+   repasser à 5.8-6.4:1 (vérifié par calcul, voir historique de session).
    ========================================================================= */
 :root[data-theme="dark"]{
+  --accent:   #6C93FF;
+  /* Le bleu éclairci ci-dessus redevient trop clair pour porter du texte
+     blanc (.btn--primary) — inversé en texte sombre sur ce fond, toujours
+     ≥4.5:1 (vérifié par calcul). Seul .btn--primary utilise --on-accent. */
+  --on-accent:#14171C;
   --paper:    #1A1D23;
   --surface:  #121417;
   --surface-2:#22262E;
