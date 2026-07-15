@@ -265,6 +265,45 @@ export const getPostsByCategory = (id: number, page = 1) =>
 export const getPostsByTag = (id: number, page = 1) =>
   getPosts(page, 12, `&tags=${id}`);
 
+// Recherche plein texte WP native (paramètre core `search`) — même forme de
+// retour (posts/total/totalPages) que getPosts, réutilisable telle quelle par
+// la page de résultats ET par la route API de recherche instantanée.
+export const searchPosts = (query: string, page = 1, perPage = 10) =>
+  getPosts(page, perPage, `&search=${encodeURIComponent(query)}`);
+
+// Toutes les pages, potentiellement > 100 (per_page max de WP REST) — même
+// pattern de pagination que getAllPosts, nécessaire pour un sitemap complet
+// et fiable même quand le nombre de pages statiques grandit.
+export async function getAllPagesFull(): Promise<WpPage[]> {
+  const all: WpPage[] = [];
+  let page = 1;
+  while (true) {
+    const res = await wpFetch(`/pages?per_page=100&status=publish&page=${page}`);
+    const pages = (await res.json()) as WpPage[];
+    all.push(...pages);
+    const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? 0);
+    if (page >= totalPages || pages.length === 0) break;
+    page += 1;
+  }
+  return all;
+}
+
+// Tags réellement utilisés (hide_empty) — potentiellement > 100 à terme (2-5
+// tags par article sur 10 000 articles), donc paginé comme getAllPosts.
+export async function getAllTags(): Promise<WpTerm[]> {
+  const all: WpTerm[] = [];
+  let page = 1;
+  while (true) {
+    const res = await wpFetch(`/tags?per_page=100&hide_empty=true&page=${page}`);
+    const terms = ((await res.json()) as WpTerm[]).map(decodeTerm);
+    all.push(...terms);
+    const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? 0);
+    if (page >= totalPages || terms.length === 0) break;
+    page += 1;
+  }
+  return all;
+}
+
 /* ---------- Parsing des champs ACF texte (ACF Free : pas de Repeater) ---------- */
 
 // "Libellé | URL" par ligne → [{ label, url }]

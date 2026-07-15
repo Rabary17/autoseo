@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
@@ -191,9 +192,9 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
               <p className="side-mod__title">Sujets liés</p>
               <div className="tagcloud">
                 {tags.map((t) => (
-                  <span key={t.slug} className="chip">
+                  <Link key={t.slug} className="chip" href={`/tag/${t.slug}/`}>
                     {t.name}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </section>

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllPosts, getPageBySlug } from "@/lib/wp";
+import { getAllAuthors, getAllPagesFull, getAllPosts, getAllTags } from "@/lib/wp";
 import { SILOS } from "@/lib/taxonomy";
 import { SITE_URL } from "@/lib/site";
 
@@ -12,27 +12,58 @@ import { SITE_URL } from "@/lib/site";
 export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dégradation gracieuse (inspiré de next-wp/lib/wordpress.ts, voir
-  // app/[slug]/page.tsx) : un sitemap partiel (sans les articles) plutôt
-  // qu'un déploiement bloqué si WP est temporairement injoignable — il sera
-  // complété à la prochaine revalidation (max 1h, voir plus haut).
-  const [posts, aPropos] = await Promise.all([
+  // app/[slug]/page.tsx) : un sitemap partiel (sans la ressource en échec)
+  // plutôt qu'un déploiement bloqué si WP est temporairement injoignable — il
+  // sera complété à la prochaine revalidation (max 1h, voir plus haut).
+  const [posts, pages, authors, tags] = await Promise.all([
     getAllPosts().catch((e) => {
       console.warn(`[sitemap] échec du fetch getAllPosts, fallback sur []: ${e}`);
       return [];
     }),
-    getPageBySlug("a-propos").catch(() => null),
+    getAllPagesFull().catch((e) => {
+      console.warn(`[sitemap] échec du fetch getAllPagesFull, fallback sur []: ${e}`);
+      return [];
+    }),
+    getAllAuthors().catch((e) => {
+      console.warn(`[sitemap] échec du fetch getAllAuthors, fallback sur []: ${e}`);
+      return [];
+    }),
+    getAllTags().catch((e) => {
+      console.warn(`[sitemap] échec du fetch getAllTags, fallback sur []: ${e}`);
+      return [];
+    }),
   ]);
 
   const staticUrls: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "daily", priority: 1 },
     { url: `${SITE_URL}/rubriques/`, changeFrequency: "weekly", priority: 0.8 },
-    ...(aPropos ? [{ url: `${SITE_URL}/a-propos/`, changeFrequency: "monthly" as const, priority: 0.3 }] : []),
   ];
 
   const categoryUrls: MetadataRoute.Sitemap = SILOS.map((s) => ({
     url: `${SITE_URL}/categorie/${s.slug}/`,
     changeFrequency: "weekly",
     priority: 0.7,
+  }));
+
+  const tagUrls: MetadataRoute.Sitemap = tags.map((t) => ({
+    url: `${SITE_URL}/tag/${t.slug}/`,
+    changeFrequency: "weekly",
+    priority: 0.4,
+  }));
+
+  const authorUrls: MetadataRoute.Sitemap = authors.map((a) => ({
+    url: `${SITE_URL}/auteur/${a.slug}/`,
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
+
+  // Toutes les pages WP statiques (pas seulement "à propos" en dur) — chaque
+  // page publiée dans WP doit apparaître ici sans intervention manuelle.
+  const pageUrls: MetadataRoute.Sitemap = pages.map((p) => ({
+    url: `${SITE_URL}/${p.slug}/`,
+    lastModified: p.modified,
+    changeFrequency: "monthly",
+    priority: 0.3,
   }));
 
   const postUrls: MetadataRoute.Sitemap = posts.map((p) => ({
@@ -42,5 +73,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticUrls, ...categoryUrls, ...postUrls];
+  return [...staticUrls, ...categoryUrls, ...tagUrls, ...authorUrls, ...pageUrls, ...postUrls];
 }

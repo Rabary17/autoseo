@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
+import Pagination from "@/components/Pagination";
 import { getAllAuthors, getAuthorBySlug, getPostsByAuthor } from "@/lib/wp";
 import { personLd } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo-meta";
@@ -22,7 +23,7 @@ export async function generateStaticParams() {
   }
 }
 
-type Props = { params: Promise<{ slug: string }> };
+type Props = { params: Promise<{ slug: string }>; searchParams: Promise<{ page?: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const author = await getAuthorBySlug((await params).slug);
@@ -34,11 +35,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-export default async function AuthorPage({ params }: Props) {
+export default async function AuthorPage({ params, searchParams }: Props) {
   const { slug } = await params;
   const author = await getAuthorBySlug(slug);
   if (!author) notFound();
-  const { posts } = await getPostsByAuthor(author.id);
+  const page = Math.max(1, Number((await searchParams).page) || 1);
+  const { posts, totalPages } = await getPostsByAuthor(author.id, page);
 
   return (
     <div className="wrap">
@@ -54,11 +56,12 @@ export default async function AuthorPage({ params }: Props) {
         <div className="section__head">
           <h2>Ses articles</h2>
         </div>
-        <div className="rail">
+        <div className="stack">
           {posts.map((p) => (
             <ArticleCard key={p.id} post={p} />
           ))}
         </div>
+        <Pagination currentPage={page} totalPages={totalPages} basePath={`/auteur/${author.slug}/`} />
       </section>
 
       <JsonLd data={personLd(author)} />

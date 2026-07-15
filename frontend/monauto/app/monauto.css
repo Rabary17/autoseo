@@ -319,9 +319,61 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
   .prose{font-size:18px}
   .article__hero{margin:0 0 24px;border-radius:var(--r-lg);overflow:hidden}
   .footer__cols{grid-template-columns:repeat(4,1fr)}
+  .searchbox input{width:220px}
 }
 @media (max-width:767px){.appbar__nav{display:none}}
 
 /* Accessibilité */
 :focus-visible{outline:3px solid color-mix(in srgb,var(--accent) 60%,#fff);outline-offset:2px;border-radius:6px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* =========================================================================
+   Mode sombre — data-theme posé sur <html> par le script anti-FOUC
+   (app/layout.tsx) et basculé par components/ThemeToggle.tsx. On ne
+   redéfinit que les neutres : --accent et --brand restent identiques (le
+   bleu d'accent et les fonds "toujours sombres" — hero, footer — fonctionnent
+   déjà tels quels sur fond sombre).
+   ========================================================================= */
+:root[data-theme="dark"]{
+  --paper:    #1A1D23;
+  --surface:  #121417;
+  --surface-2:#22262E;
+  --line:     #2B2F37;
+  --ink:      #EDEFF2;
+  --muted:    #9BA3AF;
+  --accent-soft: color-mix(in srgb, var(--accent) 20%, #1A1D23);
+  --shadow-1:0 1px 2px rgba(0,0,0,.3), 0 1px 8px rgba(0,0,0,.2);
+  --shadow-2:0 4px 16px rgba(0,0,0,.4);
+}
+:root[data-theme="dark"] .appbar{background:color-mix(in srgb,var(--paper) 86%,transparent)}
+:root[data-theme="dark"] .bottomnav{background:color-mix(in srgb,var(--paper) 92%,transparent)}
+:root[data-theme="dark"] .prose{color:var(--ink)}
+
+/* ---------- Pagination ---------- */
+.pagination{display:flex;align-items:center;justify-content:center;gap:6px;
+  margin:32px 0;flex-wrap:wrap;font-family:var(--font-display);font-size:14px}
+.pagination a,.pagination span{display:inline-flex;align-items:center;justify-content:center;
+  min-width:36px;height:36px;padding:0 10px;border-radius:var(--r-md);color:var(--ink);text-decoration:none}
+.pagination a:hover{background:var(--surface-2);text-decoration:none}
+.pagination [aria-current="page"]{background:var(--brand);color:#fff;font-weight:700}
+.pagination [aria-disabled="true"]{color:var(--line);pointer-events:none}
+.pagination__pages{display:flex;gap:4px}
+.pagination__ellipsis{padding:0 4px;color:var(--muted);min-width:auto}
+
+/* ---------- Recherche ---------- */
+.appbar__actions{display:flex;align-items:center;gap:6px}
+.searchbox{position:relative}
+.searchbox input{height:38px;width:130px;border-radius:var(--r-pill);border:1px solid var(--line);
+  padding:0 14px;font:400 14px var(--font-text);background:var(--surface);color:var(--ink)}
+.searchbox input:focus{outline:none;border-color:var(--accent)}
+.searchbox__panel{position:absolute;top:calc(100% + 8px);right:0;width:320px;max-width:80vw;
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r-md);
+  box-shadow:var(--shadow-2);padding:8px;z-index:60}
+.searchbox__panel ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.searchbox__panel a{display:block;padding:8px 10px;border-radius:var(--r-sm);color:var(--ink);font-size:14px}
+.searchbox__panel a:hover{background:var(--surface-2);text-decoration:none}
+.searchbox__cat{display:block;font-size:11px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+.searchbox__hint{padding:8px 10px;color:var(--muted);font-size:13px;margin:0}
+.searchbox__all{display:block;text-align:center;padding:10px;font-weight:600;font-size:13px;
+  color:var(--accent);border-top:1px solid var(--line);margin-top:4px}

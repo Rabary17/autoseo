@@ -45,9 +45,18 @@ export const viewport: Viewport = {
   themeColor: "#14171C",
 };
 
+// Anti-FOUC : posé en tête de <head>, avant tout CSS/hydratation, pour que
+// data-theme soit déjà correct au premier paint (sinon flash du thème clair
+// par défaut avant que React ne s'hydrate). Lit la préférence mémorisée, sinon
+// prefers-color-scheme système. Voir components/ThemeToggle.tsx pour la bascule.
+const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('monauto-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body>
         <Header />
         <main>{children}</main>

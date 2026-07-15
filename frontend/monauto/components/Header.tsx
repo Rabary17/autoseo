@@ -1,4 +1,6 @@
 import Link from "next/link";
+import SearchBox from "@/components/SearchBox";
+import ThemeToggle from "@/components/ThemeToggle";
 import { SILOS } from "@/lib/taxonomy";
 
 const NAV_SLUGS = ["entretien", "pannes-diagnostic", "essais-comparatifs", "electrique-hybride"];
@@ -24,6 +26,10 @@ export default function Header() {
           Toutes les rubriques
         </Link>
       </nav>
+      <div className="appbar__actions">
+        <SearchBox />
+        <ThemeToggle />
+      </div>
     </header>
   );
 }
