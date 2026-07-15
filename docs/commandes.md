@@ -4,6 +4,8 @@ Commandes slash disponibles dans `.claude/commands/`, une par étape du pipeline
 
 Chaque commande respecte la règle de [skills/gestion-de-projet.md](../skills/gestion-de-projet.md) : jamais de run massif sans confirmation, mise à jour systématique de [STATE.md](../STATE.md) en fin d'exécution.
 
+**Ces commandes sont pilotées manuellement (session interactive).** Distinct de ça, un pipeline **automatisé** (API Anthropic directe, sans session interactive, exécuté par GitHub Actions selon un calendrier) prend le relais à partir de la rédaction (hubs/sous-hubs/articles) et de la publication planifiée — voir [docs/architecture-autopublish.md](architecture-autopublish.md). Les deux partagent les mêmes fichiers de données (`tracking-mots-cles.xlsx`, `maillage.json`, `data/factuel/*.json`) et la même politique de gating ([skills/wordpress-publication.md](../skills/wordpress-publication.md)).
+
 ## Vue d'ensemble
 
 | Commande | Rôle | Prérequis | Écrit dans |

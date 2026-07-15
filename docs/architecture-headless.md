@@ -1,52 +1,58 @@
 # Architecture headless — WordPress + Next.js (monauto)
 
 Documentation de la dynamisation front/back mise en place le 2026-07-11 sur le
-silo « Auto & mobilité ». Complète [skills/developpement.md](../skills/developpement.md)
-(qui reste la référence pour les règles générales) — ce document décrit ce qui
-a été **réellement implémenté** pour ce test.
+silo « Auto & mobilité », **et de la bascule d'architecture du 2026-07-14**
+(export statique → ISR/Vercel, voir section 1). Complète
+[skills/developpement.md](../skills/developpement.md) (qui reste la référence
+pour les règles générales) — ce document décrit ce qui a été **réellement
+implémenté**.
 
 ## 1. Vue d'ensemble
 
 ```
-WordPress (thermotowel.local)          Next.js 15 (frontend/monauto)         CDN / hébergement statique
-─────────────────────────────          ──────────────────────────────        ──────────────────────────
-Rédaction en Gutenberg                  npm run build (à chaque              Fichiers HTML/CSS 100 % statiques
-+ ACF (tldr, sources, job_title)  ───▶  publication WP) :                ───▶ (Cloudflare Pages, Netlify,
-+ catégories = silos                    fetch wp-json → generateStatic      GitHub Pages, ou tout serveur
-+ tags = entités transversales          Params → HTML pré-rendu              de fichiers statiques)
-+ REST API (/wp-json/wp/v2/...)         + JSON-LD + sitemap.xml
+WordPress (mntdev.passion4humanity.com)   Next.js 15 (frontend/monauto)        Vercel (ISR)
+────────────────────────────────────      ──────────────────────────────      ──────────────────────────
+Rédaction en Gutenberg                     Page générée à la demande au        Cache indéfini par page,
++ ACF (tldr, sources, faq, job_title) ───▶ premier accès (ISR), pas de     ───▶ régénérée UNIQUEMENT sur
++ catégories = silos                       rebuild global                      appel ciblé de /api/revalidate
++ tags = entités transversales
++ REST API (?rest_route=/wp/v2/...)   ◀─── mu-plugin : POST /api/revalidate à chaque publication/
+                                             dépublication/changement de catégorie ou de profil auteur
 ```
 
-**Différence avec la spec initiale** ([Architecture Blog Headless.dc (1).html](../Architecture%20Blog%20Headless.dc%20(1).html)) :
-ce document prévoyait du SSR/ISR avec revalidation par webhook (Next.js server
-qui tourne en continu). On a choisi un **export 100 % statique**
-(`output: "export"` dans `next.config.ts`) à la place :
+**Décision du 2026-07-14 : ISR sur Vercel, remplace l'export 100 % statique
+retenu le 2026-07-11.** Un export statique pur régénère TOUTES les pages à
+chaque build — à l'échelle visée (jusqu'à 15 articles/jour en rythme de
+croisière, ~10 000 pages à terme, voir
+[skills/wordpress-publication.md](../skills/wordpress-publication.md) section
+6), même un rebuild quotidien devient inutilement coûteux/lent puisqu'il
+régénère aussi les ~9 990 pages qui n'ont pas changé. Avec l'**ISR**
+(Incremental Static Regeneration) :
 
-- Cohérent avec [skills/developpement.md](../skills/developpement.md) section 3
-  ("privilégier du SSG plutôt que du SSR pur").
-- Pas de serveur Node à héberger/maintenir en production : juste des fichiers
-  statiques, hébergeables gratuitement ou presque (Cloudflare Pages/Netlify),
-  ce qui compte pour un réseau de plusieurs dizaines de sites.
-- Plus rapide qu'ISR : aucune requête serveur au moment de la visite, tout est
-  déjà généré.
-- Contrepartie : il faut relancer un `npm run build` après chaque publication
-  WordPress pour que le site public reflète le changement (voir section 4).
+- Chaque page article/hub/sous-hub/auteur est générée à la demande au premier
+  accès puis mise en cache indéfiniment (`revalidate = 900` en filet de
+  sécurité passif sur les listings, voir `app/page.tsx`).
+- **Régénération ciblée** : le mu-plugin WordPress (`monauto_send_revalidation`,
+  throttlé, réglages dans wp-admin → Réglages > Revalidation Next.js) appelle
+  `POST https://<site>.vercel.app/api/revalidate` avec les chemins exacts
+  concernés (`revalidatePath`) à chaque publication, dépublication, mise à la
+  corbeille, changement de catégorie ou de profil auteur — jamais de rebuild
+  global. Authentifié par secret partagé (`REVALIDATE_SECRET`, identique côté
+  Vercel et wp-admin). Mécanisme directement inspiré du plugin
+  "next-revalidate" du projet de référence
+  [next-wp](https://github.com/9d8dev/next-wp).
+- **Aucun rebuild programmé n'est plus nécessaire** : la tâche planifiée
+  Windows `monauto-rebuild-quotidien` (rebuild quotidien à 3h, voir
+  l'historique en section 4.1) est abandonnée avec cette décision.
+- Reste 100 % gratuit sur le plan **Vercel Hobby** (l'ISR fait partie du
+  forfait, contrairement à l'optimiseur d'image — voir section 3.3).
+- Site déployé sur Vercel (`monauto-tau.vercel.app` à ce stade) ; WordPress
+  réel sur `mntdev.passion4humanity.com` (voir blocage d'authentification
+  documenté dans [STATE.md](../STATE.md) et
+  [docs/setup-wordpress-vierge.md](setup-wordpress-vierge.md)).
 
-**Décision du 2026-07-11 (suite)** : le rebuild n'est **pas** déclenché à
-chaque publication. Un export statique régénère TOUTES les pages du site à
-chaque build — avec jusqu'à 15 articles/jour en rythme de croisière (voir
-[skills/wordpress-publication.md](../skills/wordpress-publication.md)
-section 6), un rebuild par publication ferait jusqu'à 15 builds complets par
-jour, inutilement coûteux/lent à mesure que le site grossit (jusqu'à ~10 000
-pages à terme). Le contenu étant publié de façon planifiée (pas de
-l'actualité chaude), un délai de mise à jour n'a aucun impact SEO.
-
-**Rebuild automatique retenu : une fois par jour, à 3h du matin**, via une
-tâche planifiée Windows (`monauto-rebuild-quotidien`, voir section 4). Le
-mu-plugin garde tout de même la fonction `monauto_notify_frontend_rebuild`
-disponible mais **non accrochée** à `publish_post`/`save_post` par défaut — à
-ne réactiver manuellement qu'en cas de besoin ponctuel de mise à jour
-immédiate (ex. correction urgente d'un article déjà en ligne).
+`next.config.ts` : `trailingSlash: true`, `images.unoptimized: true` — **pas**
+`output: "export"` (retiré avec cette décision).
 
 ## 2. Côté WordPress
 
@@ -100,27 +106,34 @@ catégories/silos côté WordPress (la nav/l'accueil les affichent déjà via
 ```
 frontend/monauto/
 ├── app/
-│   ├── layout.tsx                 # Header/Footer/BottomNav, CSS global, métadonnées (+OG/Twitter par défaut)
-│   ├── page.tsx                   # Accueil (grille des 19 silos + derniers articles WP + newsletter)
-│   ├── not-found.tsx              # 404 brandée, vrai code HTTP
-│   ├── rubriques/page.tsx         # Index des 19 rubriques
-│   ├── categorie/[slug]/page.tsx  # Hub de silo (généré pour les 19 silos)
-│   ├── [slug]/page.tsx            # Article (+FAQ) OU page statique WP (essaie post, puis page)
-│   ├── auteur/[slug]/page.tsx     # Page auteur (schema Person)
-│   ├── sitemap.ts / robots.ts     # Générés au build (Next Metadata API)
-│   └── monauto.css                # Repris de frontend/monauto-kit/assets/
-├── components/                    # Header, Footer, BottomNav, ArticleCard, Breadcrumb, JsonLd,
-│                                   # NewsletterForm (seul Client Component du site)
+│   ├── layout.tsx                     # Header/Footer/BottomNav, CSS global, script anti-FOUC dark mode, métadonnées
+│   ├── page.tsx                       # Accueil (grille des 19 silos + derniers articles WP + newsletter), revalidate=900
+│   ├── not-found.tsx                  # 404 brandée, vrai code HTTP
+│   ├── rubriques/page.tsx             # Index des 19 rubriques
+│   ├── categorie/[slug]/page.tsx      # Hub de silo (19 silos) + pagination (?page=N)
+│   ├── auteur/[slug]/page.tsx         # Page auteur (schema Person) + pagination
+│   ├── tag/[slug]/page.tsx            # Entité transversale (marque/pièce/prestation) + pagination — pas de generateStaticParams, ISR pur
+│   ├── [slug]/page.tsx                # Article (+FAQ) OU page statique WP (essaie post, puis page)
+│   ├── [slug]/opengraph-image.tsx     # OG dynamique par article/page (next/og, runtime: "nodejs")
+│   ├── opengraph-image.tsx            # OG générique du site
+│   ├── recherche/page.tsx             # Résultats de recherche (noindex) + pagination
+│   ├── api/search/route.ts            # Proxy recherche WP (toujours 200, {results:[]} si WP indisponible)
+│   ├── api/revalidate/route.ts        # Webhook appelé par le mu-plugin WordPress (voir section 1)
+│   ├── sitemap.ts / robots.ts         # sitemap : posts + catégories + auteurs + tags + toutes les pages WP
+│   └── monauto.css                    # Repris de frontend/monauto-kit/assets/, + variables mode sombre
+├── components/                        # Header, Footer, BottomNav, ArticleCard, Breadcrumb, JsonLd, Pagination,
+│                                       # SearchBox (client, debounce 300ms), ThemeToggle (client),
+│                                       # NewsletterForm (client)
 ├── lib/
-│   ├── wp.ts                      # Fetch wp-json (build uniquement) + parsing ACF + decodeEntities
-│   ├── schema.ts                  # JSON-LD (Article, Person, BreadcrumbList, WebSite, Organization, FAQPage)
-│   ├── seo-meta.ts                # Canonical + Open Graph + Twitter Card, réutilisé par toutes les pages
-│   ├── taxonomy.ts                # Lit data/taxonomy.json (19 silos — nav/accueil/hubs)
-│   ├── site.ts                    # SITE_URL / SITE_NAME (variables d'env, build uniquement)
-│   └── public-env.ts              # NEXT_PUBLIC_WP_SITE_URL (seule variable exposée au navigateur)
-├── data/taxonomy.json             # Copie de frontend/monauto-kit/data/taxonomy.json
-├── public/                        # logo/mark/favicon (repris du kit), llms.txt
-└── next.config.ts                 # output: "export", images.unoptimized
+│   ├── wp.ts                          # Fetch WP (build + à la demande via ISR) + parsing ACF + decodeEntities
+│   ├── schema.ts                      # JSON-LD (Article, Person, BreadcrumbList, WebSite, Organization, FAQPage)
+│   ├── seo-meta.ts                    # Canonical + Open Graph + Twitter Card, réutilisé par toutes les pages
+│   ├── taxonomy.ts                    # Lit data/taxonomy.json (19 silos — nav/accueil/hubs)
+│   ├── site.ts                        # SITE_URL / SITE_NAME (variables d'env)
+│   └── public-env.ts                  # NEXT_PUBLIC_WP_SITE_URL (seule variable exposée au navigateur)
+├── data/taxonomy.json                 # Copie de frontend/monauto-kit/data/taxonomy.json
+├── public/                            # logo/mark/favicon (repris du kit), llms.txt
+└── next.config.ts                     # trailingSlash, images.unoptimized (pas de output:"export", voir section 1)
 ```
 
 ### 3.1 Pourquoi deux sources de données (WordPress et `taxonomy.json`) ?
@@ -155,68 +168,60 @@ sans-serif`) :
    Google Fonts (réseau indisponible pendant `next build` sur cette machine).
    Éviter `next/font/google` supprime ce risque d'échec de build.
 
-### 3.3 Images
+### 3.3 Images — pourquoi WordPress + Imagify plutôt que `next/image`
 
-Pas de `next/image` : en export statique, l'API d'optimisation d'image de
-Next.js n'est pas disponible (`images.unoptimized: true`), donc autant utiliser
-directement `<img>` avec largeur/hauteur explicites (fournies par
-`media_details` de WordPress) — zéro CLS, zéro dépendance supplémentaire,
-cohérent avec [skills/design.md](../skills/design.md) section 3.
+**Décision confirmée le 2026-07-15**, après lecture du projet de référence
+[next-wp](https://github.com/9d8dev/next-wp) qui utilise `next/image` +
+`remotePatterns` pour toute l'optimisation d'image (pas de plugin WordPress).
+Monauto garde l'inverse — `images.unoptimized: true`, WordPress + Imagify fait
+tout le travail à l'upload (voir section 9) — pour une raison de coût
+spécifique à l'échelle visée : **l'optimiseur d'image de Vercel facture par
+image source unique optimisée** (au-delà du quota gratuit du plan Hobby).
+À 10 000 articles, avec potentiellement une image unique par article, ce
+modèle de facturation devient défavorable comparé à une optimisation
+one-shot à l'upload côté WordPress (coût fixe, indépendant du nombre
+d'articles). `<img>` avec largeur/hauteur explicites (`media_details` de
+WordPress) reste donc utilisé directement — zéro CLS, cohérent avec
+[skills/design.md](../skills/design.md) section 3.
 
 ## 4. Cycle de publication → mise en ligne
 
 1. Rédaction/import de l'article dans WordPress (Gutenberg + ACF + catégorie/
    tag + auteur), statut `publish` (ou `future`, voir
-   [skills/wordpress-publication.md](../skills/wordpress-publication.md)).
-2. **Rebuild automatique une fois par jour à 3h du matin** (voir décision
-   section 1) via une tâche planifiée Windows :
-   - Nom de la tâche : `monauto-rebuild-quotidien` (`schtasks`/Task Scheduler).
-   - Script exécuté : [scripts/rebuild-monauto.ps1](../scripts/rebuild-monauto.ps1).
-   - Journal : [logs/rebuild-monauto.log](../logs/rebuild-monauto.log) (append à
-     chaque exécution — à consulter en cas de doute sur le dernier rebuild).
-   - Un article publié dans la journée n'apparaît sur le site public qu'au
-     rebuild suivant (délai maximal 24h).
-3. Déploiement de `frontend/monauto/out/` sur l'hébergeur choisi (à définir —
-   Cloudflare Pages ou Netlify sont les plus simples). Tant que l'hébergement
-   n'est pas choisi, le script se contente de reconstruire localement ; une
-   fois l'hébergeur en place, il faudra ajouter l'étape de déploiement à la
-   fin de `rebuild-monauto.ps1` (upload du dossier `out/`, ou appel du "Build
-   Hook" de l'hébergeur si celui-ci reconstruit lui-même depuis un dépôt Git).
+   [skills/wordpress-publication.md](../skills/wordpress-publication.md)) —
+   piloté soit manuellement, soit par le pipeline automatisé (voir
+   [docs/architecture-autopublish.md](architecture-autopublish.md)).
+2. **Revalidation ciblée immédiate** (décision du 2026-07-14, remplace le
+   rebuild quotidien décrit dans les versions précédentes de ce document) :
+   le mu-plugin WordPress détecte l'événement (`publish_post`,
+   `publish_page`, `trashed_post`, changement de catégorie, mise à jour de
+   profil auteur) et appelle `POST /api/revalidate` avec les chemins exacts
+   concernés. Next.js régénère uniquement ces pages — pas de build complet,
+   pas de délai de 24h : la page publique reflète le changement en quelques
+   secondes.
+3. Filet de sécurité passif : `revalidate = 900` sur les pages de listing
+   (accueil, catégories) au cas où un webhook de revalidation échouerait
+   silencieusement (throttle actif, secret mal configuré, etc.) — voir le
+   journal des tentatives dans wp-admin → Réglages > Revalidation Next.js.
+4. Déploiement : push sur `main` → build Vercel automatique (voir
+   [.github/workflows/ci.yml](../.github/workflows/ci.yml) pour la
+   vérification de build en amont, indépendante du déploiement Vercel
+   lui-même).
 
-### 4.1 Robustesse du script planifié — problèmes réels rencontrés et corrigés
-
-Deux bugs concrets ont été rencontrés en testant `rebuild-monauto.ps1` de
-bout en bout (utile si le rebuild automatique se remet à échouer un jour) :
-
-1. **Process `node.exe` zombie qui verrouille un fichier de `out/`.** Un
-   build précédent interrompu (plantage, arrêt forcé) peut laisser un
-   processus `node.exe` actif qui garde un handle ouvert sur un fichier —
-   le build suivant échoue alors avec une erreur `EPERM`/`lstat` qui *ressemble*
-   à un blocage antivirus mais n'en est pas un (vérifié : le problème
-   persistait après désactivation de l'antivirus, et disparaissait après
-   avoir tué les process `node.exe` résiduels via `Get-CimInstance
-   Win32_Process`). Le script tue maintenant systématiquement tout
-   `node.exe` dont la ligne de commande référence `monauto` avant de
-   nettoyer `out/`/`.next/` et relancer le build.
-2. **Le serveur WordPress local (Local by Flywheel) sature sous requêtes
-   concurrentes.** Purement lié à l'environnement de test sur cette machine
-   (PHP-FPM à faible concurrence) : Next.js envoie plusieurs requêtes
-   `wp-json` en parallèle pendant l'export des 19 pages de catégorie, ce qui
-   peut faire échouer certaines requêtes (`fetch failed`). Corrigé par un
-   limiteur de concurrence côté Next.js (`MAX_CONCURRENT = 2` dans
-   `lib/wp.ts`) + retry avec backoff, et par une boucle de nouvelles
-   tentatives (jusqu'à 5) dans le script PowerShell avec une pause de 15s
-   entre chaque. À réévaluer une fois hébergé sur une vraie instance
-   WordPress (qui tiendra sans doute une concurrence plus élevée sans
-   ajustement).
+> **Historique (obsolète)** : ce document décrivait auparavant un rebuild
+> complet quotidien via une tâche planifiée Windows
+> (`monauto-rebuild-quotidien`, script `scripts/rebuild-monauto.ps1`) — utile
+> le temps de l'export statique pur (2026-07-11 à 2026-07-14), abandonné avec
+> le passage à l'ISR/Vercel. Le script et son historique de bugs restent dans
+> le dépôt à titre de référence mais ne sont plus exécutés.
 
 ## 5. Lancer le projet en local
 
 ```
 cd frontend/monauto
 npm install
-npm run dev        # http://localhost:3000 — lecture directe de thermotowel.local
-# ou, pour tester l'export statique final :
+npm run dev        # http://localhost:3000
+# ou, pour tester le build de production (ISR) :
 npm run build && npm run start
 ```
 
@@ -246,14 +251,18 @@ dans la foulée (colonne "Statut" = état après cet audit, pas avant).
 | `llms.txt` | ✅ (`public/llms.txt`, à étoffer à mesure des rubriques) |
 | Zéro dépendance JS lourde, polices système | ✅ |
 | Images dimensionnées (zéro CLS) | ✅ (`width`/`height` natifs depuis `media_details`) |
-| Sitemap | ✅ (`app/sitemap.ts`, un seul fichier pour l'instant — à segmenter par silo au-delà de 2 000 URLs, voir skills/seo.md section 5) |
+| Sitemap complet | ✅ **complété le 2026-07-15** (`app/sitemap.ts` : posts + catégories + auteurs + tags + toutes les pages WP, auparavant seule "à-propos" en dur) — à segmenter par silo au-delà de 2 000 URLs, voir skills/seo.md section 5 |
 | WordPress non indexé (headless) | ✅ (mu-plugin : `noindex` global sur le domaine WP) |
 | **Formulaires : entrées récupérables** | ✅ **ajouté** — newsletter fonctionnelle, voir section 8 |
+| Recherche interne | ✅ **ajouté le 2026-07-15** (`components/SearchBox.tsx` debounce 300ms + `/recherche` + `app/api/search/route.ts`) |
+| Pagination crawlable (accueil/catégorie/auteur/tag/recherche) | ✅ **ajouté le 2026-07-15** (`components/Pagination.tsx`, `?page=N`) |
+| Page tag dédiée (entités transversales) | ✅ **ajouté le 2026-07-15** (`app/tag/[slug]/page.tsx`) |
+| Image OG dynamique par page | ✅ **ajouté le 2026-07-15** (`next/og`/`ImageResponse` — une carte générique + une par article/page, `runtime: "nodejs"`) |
+| Mode sombre | ✅ **ajouté le 2026-07-15** (`ThemeToggle.tsx`, anti-FOUC, contraste WCAG vérifié) |
+| CI (build + vérification avant push/PR) | ✅ **ajouté le 2026-07-15** (`.github/workflows/ci.yml`) |
 | Google Search Console / Bing Webmaster Tools | ⬜ pas fait — nécessite un domaine public réel, à faire au moment du déploiement |
 | Test réel Core Web Vitals (PageSpeed Insights/Lighthouse) | ⬜ pas fait — nécessite une URL publique, à refaire une fois hébergé |
-| Image OG par défaut (pages sans image à la une) | ⬜ pas fait — nécessite un vrai visuel de marque (tâche design, pas code) |
 | `apple-touch-icon` / icônes PNG multi-tailles | ⬜ pas fait — favicon SVG seul suffit pour la plupart des navigateurs modernes, mais Safari/iOS bénéficient d'un PNG dédié |
-| Pagination crawlable des catégories (`/categorie/x/page/2`) | ⬜ pas fait — inutile tant qu'une catégorie n'a qu'une poignée d'articles, à ajouter avant la montée en volume réelle |
 | HowTo schema | ⬜ pas fait — pas de page candidate dans ce lot de test (pertinent pour un futur guide "étapes" type tuto démarches) |
 | **`Organization.logo`** (rich results / Knowledge Panel) | ✅ **ajouté le 2026-07-11** (`lib/schema.ts`) — pointe vers `logo.svg` ; Google préfère un format raster (PNG/JPG/WebP), même limitation que l'image OG par défaut (section 7) |
 | **`max-image-preview:large`** (éligibilité Google Discover) | ✅ **ajouté le 2026-07-11** (`app/layout.tsx` → `metadata.robots.googleBot`) — sans ça, Google plafonne la taille des images en résultats de recherche et exclut de fait des cartes Discover (qui exigent des images pleine largeur) |
@@ -270,21 +279,25 @@ dans la foulée (colonne "Statut" = état après cet audit, pas avant).
   fond uni, pas une vraie photo) — suffisant pour valider la chaîne technique
   (tailles WP, JSON-LD, OG/Twitter), à remplacer par un vrai visuel avant
   publication réelle (voir section 9).
-- Webhook de rebuild écrit mais non branché à un hébergeur réel (à faire au
-  moment du choix d'hébergement).
 - ACF Free (pas Pro) : champs "liste" stockés en texte ligne-par-ligne plutôt
   qu'en vrai Repeater (voir section 2.1) — s'applique aussi au nouveau champ `faq`.
-- Les points ⬜ de la checklist ci-dessus (image OG par défaut, icônes PNG,
-  pagination, GSC/Bing, Lighthouse réel) nécessitent soit un asset design,
-  soit un domaine public — pas bloquants pour continuer la production de
-  contenu, à traiter avant un vrai lancement public.
+- Les points ⬜ restants de la checklist ci-dessus (icônes PNG, GSC/Bing,
+  Lighthouse réel, `Organization.sameAs`) nécessitent soit un asset design,
+  soit un domaine/profil social réel — pas bloquants pour continuer la
+  production de contenu, à traiter avant un vrai lancement public.
+- **Blocage réel actuel, sans rapport avec le frontend** : le pipeline
+  automatisé de génération/publication (voir
+  [docs/architecture-autopublish.md](architecture-autopublish.md)) est prêt
+  mais ne peut pas encore écrire dans WordPress — voir
+  [STATE.md](../STATE.md) (2026-07-15) pour le diagnostic complet.
 
 ## 8. Formulaires — newsletter (2026-07-11)
 
-Le frontend étant un export 100 % statique (aucun serveur Next.js en
-production), un formulaire ne peut pas être traité par une route API Next —
-il poste **directement vers WordPress**, seul serveur réel de cette
-architecture.
+Le formulaire newsletter poste **directement vers WordPress** (et non via une
+route API Next.js) — choix conservé après le passage à l'ISR/Vercel (section
+1) pour rester cohérent avec le principe "WordPress = seule source
+d'écriture" de cette architecture, même si une route API Next serait
+techniquement possible depuis cette bascule.
 
 ### 8.1 Côté WordPress (mu-plugin, section 5)
 

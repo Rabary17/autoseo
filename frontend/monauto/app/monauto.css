@@ -6,7 +6,12 @@
    ========================================================================= */
 :root{
   --brand:  #14171C;   /* 1 — couleur primaire : texte, barres, logo        */
-  --accent: #1B54FF;   /* 2 — couleur d'accent : liens, boutons, état actif */
+  /* 2 — couleur d'accent demandée : #f70500. Utilisée telle quelle légèrement
+     assombrie (#E20500) pour rester ≥4.5:1 en texte sur fond clair (liens,
+     eyebrows) — #f70500 pur échoue de justesse (4.22:1 sur blanc, 3.87:1 sur
+     --surface). Le rouge pur reste utilisable tel quel partout ailleurs
+     (gros aplats, décoratif) où le seuil est 3:1 seulement. */
+  --accent: #E20500;
 
   /* Neutres dérivés (ne pas toucher en général) */
   --paper:   #FFFFFF;
@@ -16,7 +21,16 @@
   --ink:     var(--brand);
   --muted:   #626976;
   --on-accent:#FFFFFF;
-  --accent-soft: color-mix(in srgb, var(--accent) 10%, #fff);
+  /* 5 % (pas 10 %) : avec un rouge, un mix à 10 % assombrit trop le fond pour
+     que le texte --accent posé dessus (silo__count, trust__ic) garde 4.5:1 —
+     vérifié par calcul (10 % → 4.14:1, 5 % → 4.54:1). */
+  --accent-soft: color-mix(in srgb, var(--accent) 5%, #fff);
+  /* Variante fixe (même valeur dans les deux thèmes) pour le texte --accent
+     posé sur un fond --brand (toujours sombre, quel que soit le thème actif) :
+     .chero .eyebrow et .footer__brand .dot. Un rouge assez sombre pour
+     contraster sur blanc (--accent ci-dessus) est illisible sur --brand
+     (3.64:1) — il faut la version claire, vérifiée à 5.29:1 sur --brand. */
+  --accent-on-dark: #FF4541;
 
   /* Rayons & ombres — vocabulaire « app » */
   --r-sm:8px; --r-md:14px; --r-lg:20px; --r-pill:999px;
@@ -238,8 +252,13 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 }
 
 /* ---------- Accueil corporate ---------- */
-.chero{background:var(--brand);color:#fff;padding:40px 0 44px;margin-bottom:8px}
-.chero .eyebrow{color:var(--accent)}
+.chero{position:relative;overflow:hidden;background:var(--brand);color:#fff;padding:40px 0 44px;margin-bottom:8px}
+.chero__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:0}
+.chero__scrim{position:absolute;inset:0;
+  background:linear-gradient(100deg,var(--brand) 32%,color-mix(in srgb,var(--brand) 55%,transparent) 70%,color-mix(in srgb,var(--brand) 30%,transparent) 100%);
+  z-index:1}
+.chero .wrap{position:relative;z-index:2}
+.chero .eyebrow{color:var(--accent-on-dark)}
 .chero__title{font-family:var(--font-display);font-weight:700;color:#fff;
   font-size:clamp(30px,8vw,52px);line-height:1.04;letter-spacing:-.03em;margin:6px 0 14px;max-width:15ch}
 .chero__sub{font-size:clamp(15px,3.6vw,19px);line-height:1.55;color:rgba(255,255,255,.76);max-width:48ch;margin:0 0 24px}
@@ -296,7 +315,7 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .footer{background:var(--brand);color:#fff;margin-top:40px;padding:32px 0 40px}
 .footer a{color:rgba(255,255,255,.78)}.footer a:hover{color:#fff}
 .footer__brand{font-family:var(--font-display);font-weight:700;font-size:22px;margin:0 0 4px}
-.footer__brand .dot{color:var(--accent)}
+.footer__brand .dot{color:var(--accent-on-dark)}
 .footer__cols{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px;margin:22px 0}
 /* h2 (pas h4) : voir components/Footer.tsx — un pied de page peut redémarrer
    sa propre hiérarchie de titres sans "sauter" de niveau (h4 après un contenu
@@ -341,8 +360,12 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
    repasser à 5.8-6.4:1 (vérifié par calcul, voir historique de session).
    ========================================================================= */
 :root[data-theme="dark"]{
-  --accent:   #6C93FF;
-  /* Le bleu éclairci ci-dessus redevient trop clair pour porter du texte
+  /* #E20500 (variante claire du rouge demandé, --accent-on-dark ci-dessus)
+     redevient trop sombre sur les fonds sombres (4.00:1 sur --paper sombre,
+     sous le seuil 4.5:1) — éclairci en #FF4541 pour ce thème, vérifié
+     ≥4.5:1 sur --paper ET --surface sombres. */
+  --accent:   #FF4541;
+  /* Le rouge éclairci ci-dessus redevient trop clair pour porter du texte
      blanc (.btn--primary) — inversé en texte sombre sur ce fond, toujours
      ≥4.5:1 (vérifié par calcul). Seul .btn--primary utilise --on-accent. */
   --on-accent:#14171C;
@@ -352,7 +375,10 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
   --line:     #2B2F37;
   --ink:      #EDEFF2;
   --muted:    #9BA3AF;
-  --accent-soft: color-mix(in srgb, var(--accent) 20%, #1A1D23);
+  /* 8 % (pas 20 %) : même raison qu'en thème clair — un mix plus fort réduit
+     le contraste entre le texte --accent et son propre fond --accent-soft
+     (vérifié par calcul : 20 % → 3.93:1, 8 % → 4.61:1). */
+  --accent-soft: color-mix(in srgb, var(--accent) 8%, #1A1D23);
   --shadow-1:0 1px 2px rgba(0,0,0,.3), 0 1px 8px rgba(0,0,0,.2);
   --shadow-2:0 4px 16px rgba(0,0,0,.4);
 }

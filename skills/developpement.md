@@ -5,11 +5,14 @@ Stack technique de référence pour les sites de la plateforme.
 ## 1. Répartition des rôles
 
 - **Backend : WordPress** — utilisé comme CMS de gestion de contenu (rédaction, catégories = silos/sous-cocons, ACF pour les champs factuels), stockage des médias, et exposition via **WP REST API**.
-- **Front : Next.js 15 (App Router), export 100 % statique** (`output: "export"`) — consomme les données WordPress via l'API **au moment du build**, jamais côté navigateur. Ne pas afficher le thème WordPress natif en front public : Next.js gère le rendu, le routing et l'optimisation de performance (voir [design.md](design.md)).
-  - **Décision du 2026-07-11** (test « monauto ») : remplace le choix initial NestJS de ce document. Un export statique pur (pas de SSR/ISR, pas de serveur Node à héberger) est plus rapide, moins coûteux à héberger et plus simple à maintenir sur un réseau de dizaines de sites, pour un contenu qui change rarement une fois publié. Voir [docs/architecture-headless.md](../docs/architecture-headless.md) pour l'implémentation complète et le détail de cette décision.
-  - Le site est reconstruit (`npm run build`) à chaque publication WordPress — automatisable via le webhook du mu-plugin `wp-content/mu-plugins/monauto-headless.php` branché sur le "build hook" de l'hébergeur statique choisi (Cloudflare Pages/Netlify).
+- **Front : Next.js 15 (App Router), ISR (Incremental Static Regeneration) sur Vercel** — consomme les données WordPress via l'API, chaque page étant générée à la demande au premier accès puis mise en cache indéfiniment (pas de requête WordPress au moment de la visite une fois la page en cache). Ne pas afficher le thème WordPress natif en front public : Next.js gère le rendu, le routing et l'optimisation de performance (voir [design.md](design.md)).
+  - **Décision du 2026-07-14** (remplace le choix export 100 % statique du 2026-07-11, qui remplaçait lui-même le choix initial NestJS) : à l'échelle visée (jusqu'à 15 articles/jour en continu, ~10 000 pages), un export/rebuild complet régénère inutilement toutes les pages à chaque changement. L'ISR ne régénère que la page concernée, sur appel ciblé (`POST /api/revalidate`) déclenché par le mu-plugin WordPress à la publication — voir [docs/architecture-headless.md](../docs/architecture-headless.md) pour l'implémentation complète et le détail de cette décision.
+  - Déploiement : Vercel, déclenché par push sur `main` (voir `.github/workflows/ci.yml` pour la vérification de build en amont — un garde-fou indépendant du déploiement Vercel lui-même, pas obligatoire pour merger).
+  - Images : `next/image` volontairement **non utilisé** (`images.unoptimized: true`) — l'optimiseur d'image Vercel facture par image source unique, défavorable à l'échelle de 10 000 articles. WordPress + Imagify optimise une fois à l'upload (coût fixe) — voir [docs/architecture-headless.md](../docs/architecture-headless.md) section 3.3.
 
-Ce découpage headless permet : vitesse (le visiteur ne reçoit que du HTML/CSS statique, aucun poids WordPress ni serveur Node au rendu), sécurité (admin WordPress non exposé publiquement, domaine WP marqué `noindex`), et réutilisation d'un même gabarit Next.js pour plusieurs niches/sites du réseau.
+Ce découpage headless permet : vitesse (le visiteur reçoit une page déjà générée, sans dépendre de WordPress au moment de la visite), sécurité (admin WordPress non exposé publiquement, domaine WP marqué `noindex`), et réutilisation d'un même gabarit Next.js pour plusieurs niches/sites du réseau.
+
+Le pipeline de **production automatisée de contenu** (génération + relecture via l'API Anthropic, gating programmatique, publication planifiée), distinct de ce découpage front/back, est documenté dans [docs/architecture-autopublish.md](../docs/architecture-autopublish.md).
 
 ## 2. WordPress (backend)
 
@@ -52,8 +55,8 @@ Sur tout nouveau site WordPress rattaché à ce projet (test ou niche réelle), 
 
 ## 3. Next.js (front)
 
-- Récupère le contenu via `lib/wp.ts` (fetch vers l'API WordPress), exécuté **uniquement au build** — pas de cache applicatif nécessaire puisqu'il n'y a pas de requête runtime à WordPress une fois le site exporté.
-- Rendu : **export statique pur** (`output: "export"`), pas de SSR/ISR — cohérent avec l'objectif de vitesse ([design.md](design.md)) et plus simple à héberger (voir décision section 1).
+- Récupère le contenu via `lib/wp.ts` (fetch vers l'API WordPress) — au build pour les pages pré-générées, à la demande pour l'ISR (voir ci-dessous), jamais côté navigateur.
+- Rendu : **ISR** (`revalidate` + régénération ciblée via `/api/revalidate`) — cohérent avec l'objectif de vitesse ([design.md](design.md)) et hébergé sur Vercel (voir décision section 1).
 - Une route Next.js par type de page (`app/[slug]/page.tsx` pour article/page, `app/categorie/[slug]/page.tsx` pour hub/sous-hub, `app/auteur/[slug]/page.tsx`) qui applique son propre template et injecte le maillage résolu depuis `taxonomy.json`/`maillage.json` (voir [seo.md](seo.md) section 2 et [gestion-de-projet.md](gestion-de-projet.md)).
 - Génération du sitemap directement depuis Next.js (`app/sitemap.ts`, Next Metadata API), source de vérité = liste des pages publiées côté WordPress + `taxonomy.json` pour les hubs, synchronisés avec les règles de [seo.md](seo.md) (≤ 2 000 URLs/sitemap, à segmenter par silo au-delà).
 - Génération du JSON-LD (schema.org) dans le rendu Next.js (`lib/schema.ts`) à partir des mêmes données WordPress, jamais dupliqué/désynchronisé entre les deux (voir [geo.md](geo.md)).

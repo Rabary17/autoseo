@@ -31,6 +31,22 @@ export default async function HomePage() {
   return (
     <>
       <section className="chero">
+        {/* Photo libre de droits (licence Pexels, aucune attribution requise) —
+            "Rustic Car Workshop with Tools and Machinery", pexels.com/photo/34337558.
+            Pré-optimisée en WebP à 2 largeurs (800/1920) via scripts sharp locaux,
+            pas de service d'optimisation à la volée (voir docs/architecture-headless.md
+            section 3.3 — même raison de coût que le choix WordPress+Imagify). */}
+        <img
+          className="chero__bg"
+          src="/images/accueil-hero-1920.webp"
+          srcSet="/images/accueil-hero-800.webp 800w, /images/accueil-hero-1920.webp 1920w"
+          sizes="100vw"
+          width={1920}
+          height={1440}
+          alt="Atelier de mécanique automobile, outillage et pont élévateur"
+          fetchPriority="high"
+        />
+        <div className="chero__scrim" aria-hidden="true" />
         <div className="wrap">
           <p className="eyebrow">Média indépendant · Auto &amp; mobilité</p>
           <h1 className="chero__title">L&apos;auto expliquée, testée et comparée.</h1>
