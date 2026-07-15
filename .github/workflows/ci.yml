@@ -1,0 +1,53 @@
+name: CI
+
+# Garde-fou léger : build Next.js + vérification syntaxique des scripts Node,
+# sur chaque push vers main et sur toute pull request. N'exige PAS de PR pour
+# pousser sur main (les commits directs, humains ou du bot autopublish,
+# continuent de fonctionner) — sert uniquement à détecter une régression tôt.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/monauto/package-lock.json
+
+      - name: Installer les dépendances (frontend/monauto)
+        working-directory: frontend/monauto
+        run: npm ci
+
+      - name: Build Next.js
+        working-directory: frontend/monauto
+        run: npm run build
+
+  check-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Installer les dépendances (scripts autopublish)
+        run: npm ci
+
+      - name: Vérifier la syntaxe de tous les scripts .js
+        run: |
+          status=0
+          for f in $(find scripts -name '*.js'); do
+            node --check "$f" || status=1
+          done
+          exit $status
