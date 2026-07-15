@@ -67,6 +67,8 @@ scripts/autopublish/
    g. Succès → `scheduler.js` calcule `post_date`, `images.js` cherche une image (ou repli sur image par défaut du silo), insertion WP en `future`, xlsx → `programmé`.
 4. `report.js` écrit `logs/autopublish/<date>.md` (traités/pass/fail/motifs/coût réel via `response.usage`) et un bloc dédié dans `STATE.md`.
 
+**`--dry-run` totalement indépendant de WordPress (2026-07-15)** : `resolveAuthorId`/`resolveCategoryId`/`resolveTagIds` court-circuitent désormais aussi en dry-run (comme `resolveFeaturedMedia` déjà avant) — plus aucun appel WP, lecture ou écriture, pendant un dry-run. Avant ce correctif, la résolution des catégories (`wp.findOrCreateTerm`) s'exécutait quand même et tentait une **création** réelle si la catégorie n'existait pas encore, ce qui aurait échoué sur l'hébergement WP actuellement bloqué (voir section 8) même en mode dry-run. Un dry-run valide donc maintenant génération + relecture + gating + planification en isolation complète — utile pour continuer à tester le pipeline pendant que le blocage WordPress est résolu séparément.
+
 ## 4. Génération + relecture obligatoire (2 appels, jamais plus)
 
 Après toute génération, un **second appel Messages API dédié** (`review.js`) reçoit l'enveloppe générée, le skill complet de l'auteur, et les contraintes de gating pertinentes. Il doit :
