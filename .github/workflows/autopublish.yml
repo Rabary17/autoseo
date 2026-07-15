@@ -64,6 +64,11 @@ jobs:
                   logs/autopublish/ STATE.md 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "autopublish: run $(date -u +%Y-%m-%d)"
+            # main a pu avancer depuis le checkout (push concurrent depuis un
+            # autre poste/session) — rebase avant de pousser plutôt que
+            # d'échouer sèchement en non-fast-forward.
+            git fetch origin main
+            git rebase origin/main
             git push
           else
             echo "Rien à committer (dry-run ou aucune pièce traitée)."

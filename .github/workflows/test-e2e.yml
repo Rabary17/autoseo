@@ -94,5 +94,10 @@ jobs:
           git add logs/autopublish/test-e2e-latest.md data/autopublish-image-ledger.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "test-e2e: run $(date -u +%Y-%m-%dT%H-%M)"
+            # main a pu avancer entre le checkout et ce commit (push concurrent
+            # depuis un autre poste/session) — rebase sur la dernière version
+            # avant de pousser plutôt que d'échouer sèchement en non-fast-forward.
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
