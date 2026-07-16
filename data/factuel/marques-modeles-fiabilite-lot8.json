@@ -1,0 +1,156 @@
+[
+  {
+    "modele": "Toyota Corolla (hybride, generations 2019+ et 2002-2007 thermique)",
+    "score_fiabilite": "l'un des modeles les plus fiables du marche selon plusieurs sources, kilometrages depassant souvent 300 000km sans intervention majeure sur les versions hybrides recentes",
+    "pannes_courantes": "generation 2002-2007 (diesel 2.0 D4D) : pompe a injection tres fragile, boite mecanique 5 rapports peu endurante, alternateur fragile, roulements de roue fragiles ; generation hybride 2019+ : pannes generalement mineures (hayon electrique, usure irreguliere des pneus) ; la panne la plus frequemment rapportee sur l'hybride recent concerne la petite batterie 12V (et non la batterie de traction), avec electronique de veille et accessoires a surveiller",
+    "source": "fiches-auto.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Toyota C-HR (hybride, 2016-2024)",
+    "score_fiabilite": "fiabilite tres correcte, systeme hybride capable d'atteindre 300 000km selon plusieurs sources",
+    "pannes_courantes": "batterie 12V pouvant se decharger de maniere inattendue, notamment sur les versions hybrides commercialisees entre 2016 et 2020 (changements repetes rapportes par certains proprietaires) ; unite de commande electronique (ECU) sur les modeles produits entre 2017 et 2019 : bugs d'affichage, avertissements erronés au tableau de bord ; systeme multimedia sujet a des ralentissements et deconnexions Bluetooth intempestives",
+    "source": "fiches-auto.fr, ovoko.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 2008 (1ere et 2e generation, moteur 1.2 PureTech et diesel BlueHDi)",
+    "score_fiabilite": "point faible identifie sur le PureTech avant 2018, versions diesel BlueHDi et modeles posterieurs a 2017 juges globalement fiables",
+    "pannes_courantes": "1.2 PureTech (82/110/130 ch, avant 2018) : courroie de distribution baignant dans l'huile, degradation prematuree possible des 40 000km pouvant mener a une casse moteur en cas d'entretien neglige ; versions diesel : reservoir AdBlue sujet a des defauts de capteur ou souci electronique interne ; systeme d'infodivertissement (ecran tactile, navigation, Bluetooth) : bugs recurrents, plantages, ecran noir ; boite auto EAT6 : soucis ponctuels rapportes",
+    "source": "auto-doc.fr, fiches-auto.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 508 (1ere generation 2011-2017, moteur 1.6 THP et 1.6 BlueHDi 120)",
+    "score_fiabilite": "correcte dans l'ensemble, le 1.6 THP 156 avant restylage presentant des defauts de fiabilite resolus sur le 165ch apres restylage",
+    "pannes_courantes": "1.6 THP 165 : consommation d'huile et remplacement de turbo rapportes des 40 000km selon certains temoignages, dysfonctionnements electroniques et de connectivite ; 1.6 BlueHDi 120 : soucis specifiques au systeme antipollution (reservoir AdBlue, injecteur SCR, sonde NOx, risque de cristallisation de l'uree perturbant le dosage) ; problemes generaux toutes motorisations : deconnexions Bluetooth intempestives, leve-vitres arriere electriques defaillants",
+    "source": "caradisiac.com, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C3 Aircross (moteur essence PureTech, 2017+)",
+    "score_fiabilite": "point faible connu sur le PureTech (partage avec d'autres modeles Stellantis), electronique et boite auto egalement citees comme fragiles",
+    "pannes_courantes": "courroie de distribution baignant dans l'huile : usure prematuree pouvant se dechirer avant l'intervalle de remplacement recommande, bruits metalliques au demarrage, consommation d'huile excessive, calages moteur rapportes ; boite automatique : changements de vitesse saccades et bruits inhabituels des 15 000-25 000km selon certaines sources ; aide au stationnement et Bluetooth/CarPlay capricieux ; modules LED de phares tombant en panne apres une moyenne de 30 000km (remplacement complet du bloc necessaire, LED non remplacables individuellement)",
+    "source": "auto-doc.fr, icarsoft-france.fr, piecesauto-pro.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Twingo 3 (2014+, moteurs SCe 65/70 et TCe 90)",
+    "score_fiabilite": "correcte a bonne, dans la moyenne des citadines ; le SCe atmospherique juge plus fiable que le TCe turbo",
+    "pannes_courantes": "TCe 90 turbo : turbo fragile, chaine de distribution s'usant des 40 000km selon certaines sources, surtout sur les modeles avant 2019 (phase 2 restylee en 2019 corrigeant une grande partie des defauts) ; climatisation : compresseur pouvant lacher ou tuyaux perdant leur etancheite a partir de 50 000km ; batterie 12V auxiliaire : panne frequente mais peu couteuse a corriger ; electronique generale citee comme point faible (voyants intempestifs, capteurs)",
+    "source": "fiches-auto.fr, auto-doc.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Zoe (1ere generation Q210/R240, electrique)",
+    "score_fiabilite": "globalement fiable pour un vehicule electrique mais pannes de recharge documentees comme point faible principal",
+    "pannes_courantes": "chargeur embarque Cameleon : taux de panne premature eleve avant 100 000km selon les retours de forums, remplacement couteux estime entre 3000 et 4000€ selon certains temoignages (chiffre non recoupe par une source primaire) ; batterie : perte de capacite de l'ordre de 10 a 20% rapportee apres 5 ans d'usage normal, version 41kWh jugee plus performante en longevite que la version 22kWh initiale ; boitier TCU : defaillances prematurees constatees sur certains vehicules a moins de 50 000km, empechant la recharge et provoquant la decharge de la batterie 12V",
+    "source": "fiches-auto.fr, carverif.fr, autoscore.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Jogger (2021+, moteur essence TCe 110 et hybride)",
+    "score_fiabilite": "avis mitiges des proprietaires, moteur juge globalement robuste mais boite de vitesses et systeme hybride cites comme points de vigilance",
+    "pannes_courantes": "systeme hybride : problemes rapportes des 15 000-25 000km (ralenti instable, acceleration saccadee, hausse de consommation) ; TCe 110 (premiers exemplaires produits entre janvier et avril 2022) : vibrations excessives et boite de vitesses imprecise rapportees ; alternateur : taux de defaillance juge anormalement eleve sur les versions essence TCe 110, pannes parfois des 50 000km selon certaines sources ; version GPL : problemes moins frequents sur les versions recentes",
+    "source": "ovoko.fr, auto-doc.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Spring (electrique, Electric 45, 2021+)",
+    "score_fiabilite": "a verifier — rappel officiel confirme sur le chargeur embarque, defauts electroniques documentes sur les premiers millesimes",
+    "pannes_courantes": "chargeur embarque : plus de 5900 vehicules rappeles en France pour un defaut technique (oscillation d'un signal en sortie de microprocesseur pouvant engendrer une surintensite au niveau du convertisseur DC/DC, avec risque pour le systeme de deconnexion de la batterie utilise par les pompiers) ; electronique de bord : erreurs systeme sans cause identifiee, voyants moteur/batterie intempestifs, logiciel de gestion de la batterie (BMS) instable ; corrosion signalee sur la traverse et le carter inferieur protegeant la batterie (note technique de fevrier 2025 evoquant un defaut de traitement anticorrosion) ; millesimes 2021-2022 juges plus problematiques que 2023-2024",
+    "source": "largus.fr, fiches-auto.fr, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Tiguan (1ere et 2e generation, moteurs TSI et TDI)",
+    "score_fiabilite": "variable selon motorisation ; versions posterieures a 2019 (2e generation) jugees nettement plus fiables",
+    "pannes_courantes": "chaine de distribution TSI : probleme de tendeur pouvant mener a une destruction moteur des 80 000km sur certains modeles 2017-2019 selon certaines sources ; 2.0 TDI : volant moteur, vanne EGR, FAP, pompe a eau, injecteurs et turbo cites comme fragiles, pertes de puissance et voyants sur trajets courts ; fuites au niveau de la pompe a eau rapportees sur les deux motorisations ; embrayage a duree de vie limitee, remplacement parfois necessaire des 80 000km ; motorisations a eviter identifiees : 1.4 TSI 122ch et 2.0 TDI 140/170ch (1ere generation), 1.2 TSI 110ch et 2.0 TDI 150ch premiere version (2e generation)",
+    "source": "oscar-racing.fr, fiches-auto.fr, larevueautomobile.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen T-Roc (2017+, moteurs 1.5 TSI et 1.6 TDI, boite DSG7)",
+    "score_fiabilite": "parmi les bons eleves de sa categorie sans defaut majeur clairement documente, mais la version 1.6 TDI 115 et la boite DSG7 concentrent le plus de retours negatifs",
+    "pannes_courantes": "1.6 TDI 115 : probleme chronique de pompe a eau, cite comme la motorisation la plus a risque de la gamme ; 1.5 TSI 150 (premieres versions) : a-coups a basse vitesse, coupures moteur au demarrage, consommation d'huile pouvant atteindre 1L/5000km selon certains temoignages ; boite DSG7 : patinage avec bruit metallique, changements de rapport rudes, marche arriere defaillante en cote et a chaud ; turbo : fuites d'huile rapportees des 90 000km ; restylage 2022 (1.5 TSI 150 ou 2.0 TDI 150 en boite manuelle) juge nettement plus fiable",
+    "source": "fiches-auto.fr, oscar-racing.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Polo VI (2017+, moteurs 1.0 TSI et 1.2 TSI)",
+    "score_fiabilite": "globalement favorable sur les versions posterieures a 2019, defauts de jeunesse documentes sur le 1.0 TSI 2017-2018",
+    "pannes_courantes": "vanne EGR fragile et FAP a changer regulierement, cites comme problemes recurrents sur les motorisations TSI ; 1.2 TSI 90 : problemes de distribution, consommation d'huile elevee, joints de filtre a eau s'usant rapidement, filtres a particules pouvant causer perte de puissance et encrassement moteur ; 1.0 TSI (2017-2018) : vibrations anormales et surconsommation d'huile rapportees, corrigees sur les versions posterieures a 2019 ; a partir de 60 000km, pertes de puissance occasionnelles et soucis de turbo rapportes par certains proprietaires sur le 1.0 TSI",
+    "source": "auto-doc.fr, carverif.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi Q3 (1ere et 2e generation, moteurs 1.4/1.5 TFSI et 2.0 TDI)",
+    "score_fiabilite": "variable selon motorisation, le 2.0 TDI 177ch (apres 2015) juge le plus robuste sur la 1ere generation",
+    "pannes_courantes": "1.4 TFSI 150 : ralenti irregulier, perte de puissance, consommation d'huile accrue, chaine de distribution montrant des signes d'usure des 80 000-120 000km, pompe haute pression tombant generalement en panne apres 100 000-150 000km selon certaines sources ; 1.5 TFSI 150 (nouvelle generation) : a-coups a l'acceleration en ville et sur trajets courts, parfois accompagnes de surconsommation d'huile ; 2.0 TDI 140 (premieres generations) : 31% des interventions rapportees liees aux injecteurs et 22% a la vanne EGR selon une source ; 2.0 TDI general : fumees noires a l'echappement, baisse de performance, surconsommation de carburant",
+    "source": "auto-doc.fr, fiches-auto.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW X1 (F48, 2015-2022, moteurs diesel 18d/20d et essence xDrive20i)",
+    "score_fiabilite": "note de fiabilite rapportee autour de 6,8/10, en dessous de certains concurrents directs selon une source",
+    "pannes_courantes": "moteurs diesel 18d/20d : taux de pannes eleve rapporte sur la vanne EGR et le turbo, difficultes du systeme de depollution apparaissant vers 150 000km, remplacement de vanne EGR couteux ; moteur essence xDrive20i : turbo cite entre 120 000 et 150 000km, boite automatique vers 180 000km, fuites d'huile vers 100 000km ; versions essence generalement jugees moins sujettes a des pannes graves que les diesel, avec neanmoins des fuites d'huile ponctuelles et un ralenti irregulier rapportes",
+    "source": "carverif.fr, quadoccaz.com, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes GLC (1ere et 2e generation, versions hybride rechargeable 350e/300e et diesel 220d)",
+    "score_fiabilite": "correcte sur les motorisations thermiques classiques, la version hybride rechargeable etant rapportee comme la moins fiable du catalogue selon une source",
+    "pannes_courantes": "GLC 350e hybride rechargeable : batterie haute tension citee comme composant le plus problematique, remplacement complet rapporte par plusieurs proprietaires parfois peu apres la fin de garantie ; mises a jour a distance video la batterie 12V sur les GLC hybrides recents selon des retours de concessions ; suspension : silentblocs des triangles avant fragiles (grincements, jeu), coussins d'air et compresseur de la suspension pneumatique a duree de vie limitee (souvent moins de 100 000km) ; rappel constructeur sur les vehicules produits entre le 02/03/2022 et le 23/07/2025 concernant un defaut de fabrication de l'attelage de direction ; version 220d : sondes NOx tombant regulierement en panne, declenchant le voyant moteur",
+    "source": "fiches-auto.fr, etoilecollections.fr, defauts.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Octavia (generations 2004-2012, 2013-2019 et 2019+, moteurs TSI et TDI)",
+    "score_fiabilite": "variable selon generation et motorisation, le 1.6 TDI identifie comme le moteur a eviter absolument, les blocs TSI recents jugees globalement fiables",
+    "pannes_courantes": "1.6 TDI : pompe a eau en plastique lachant entre 80 000 et 120 000km, turbo a geometrie variable grippant, vanne EGR s'encrassant rapidement ; anciens 1.2 TSI et 1.4 TSI (avant 2012) : chaine de distribution faiblarde, tendeur se detendant au demarrage, consommation d'huile ; 1.8 TSI : appetence a l'huile et fuites recurrentes au boitier d'eau/thermostat ; boite DSG : problemes possibles en cas d'entretien non rigoureux ; suspension : usure de biellettes et silentblocs rapportee ; modeles recommandes cites par une source : 1.9 TDI 105 (Octavia II), 2.0 TDI 150 EVO ou 1.5 TSI 150 (Octavia III)",
+    "source": "fiches-auto.fr, oscar-racing.fr, protoinsaclub.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Kodiaq (2016+, moteurs 1.4/1.5 TSI, 2.0 TSI/TDI, boite DSG)",
+    "score_fiabilite": "amelioree sur les millesimes 2021 et plus recents selon plusieurs sources, le 1.4 TSI cite comme le choix le plus risque",
+    "pannes_courantes": "boite DSG : a-coups au demarrage, temps de reponse aux changements de vitesse, changements de rapport irreguliers en embouteillage, plus frequents sur les versions 2.0 TSI 190 et 2.0 TDI 150 des 15 000-25 000km selon une source ; 1.4 TSI : consommation d'huile excessive citee comme defaut principal ; chaine de distribution des 1.4/1.5 TSI montrant des signes d'usure des 60 000-80 000km selon certaines sources ; disques de frein avant : usure prematuree des 30 000-40 000km sur les versions AWD lourdes ; systeme AdBlue : messages de demarrage impossible, voyant moteur, consommation excessive d'additif ; frein de stationnement electrique : dysfonctionnements frequents sur les vehicules construits entre 2017 et 2019",
+    "source": "fiches-auto.fr, oscar-racing.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Mokka (1ere generation 2012-2016+, moteurs essence dont 1.2 PureTech)",
+    "score_fiabilite": "avis partages, defauts specifiques selon generation et motorisation",
+    "pannes_courantes": "chaine de distribution citee comme point faible sur la 1ere generation, pannes de turbo egalement rapportees ; climatisation : capacite de refroidissement insuffisante voire panne complete apres 50 000-80 000km, surtout sur la 1ere generation a partir de 2015 ; transmission automatique : changements de vitesse saccades, retards ou defaillance complete entre 40 000 et 70 000km selon certaines sources ; systeme Start-Stop (Mokka X) : dysfonctionnements frequents des 20 000-30 000km sur les modeles a partir de 2018 selon une source ; embrayage et pompe a eau egalement cites comme points de fragilite",
+    "source": "auto-doc.fr, piecesauto-pro.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Kuga (moteurs essence EcoBoost 1.5/1.6, boite Powershift)",
+    "score_fiabilite": "point faible majeur documente sur les blocs EcoBoost de la premiere moitie des annees 2010, versions TDCi/hybrides recentes jugees plus fiables si bien entretenues",
+    "pannes_courantes": "moteurs EcoBoost 1.5/1.6 : defaut de conception du circuit de refroidissement provoquant des surchauffes ponctuelles, joint de culasse endommage surtout sur les millesimes 2013-2015 (culasse se deformant sous la chaleur, infiltration de liquide de refroidissement dans les cylindres, casse moteur possible dans les cas graves) ; boite a double embrayage Powershift : necessite une vidange stricte (filtre compris) tous les 60 000km maximum, au-dela l'huile se charge en limaille et bloque les solenoides du bloc hydraulique ; diesels : encrassement du FAP rapporte comme point de vigilance",
+    "source": "iems.fr, sportscarparts.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Kona (2017-2023, moteur essence 1.0 T-GDi et version electrique)",
+    "score_fiabilite": "correcte sur le thermique 1.0 T-GDi, la version electrique rapportee comme la plus satisfaisante en fiabilite",
+    "pannes_courantes": "batterie 12V : decharges frequentes rapportees sur les modeles 2018-2019 entre 20 000 et 40 000km, duree de vie de la batterie d'origine souvent limitee a 2-3 ans au lieu des 4-5 ans attendus ; climatisation : perte de capacite de refroidissement entre 25 000 et 60 000km, particulierement sur le 1.0 T-GDi ; boite a double embrayage : changements de vitesse saccades et retards au demarrage entre 40 000 et 80 000km ; systemes electroniques : defauts rapportes sur la camera de recul et l'infodivertissement ; version electrique : fiabilite tres satisfaisante rapportee, couts d'entretien reduits, degradation de batterie maitrisee sur les premiers 100 000km",
+    "source": "auto-doc.fr, fiches-auto.fr, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Niro (hybride 1.6 GDi, 2016-2022)",
+    "score_fiabilite": "moyenne haute du segment SUV compact hybride, note de 7,5/10 rapportee par une source, 150 000km atteignables sans panne majeure avec entretien rigoureux",
+    "pannes_courantes": "fuite de liquide de refroidissement : signalement le plus frequent, circuit thermique mal dimensionne sur certaines productions, pompe a eau electrique defectueuse sur les modeles fabriques avant fevrier 2019 pouvant provoquer une surchauffe moteur ; batterie lithium-ion (1,56kWh) du systeme hybride : degradation plus rapide que prevu sur certaines unites 2016-2021, deséquilibre de charge entre modules entrainant une usure inegale et une baisse de capacite effective ; compresseur de climatisation : pannes frequentes entre 50 000 et 70 000km, surtout sur les millesimes 2017-2019 ; les modeles produits entre mi-2019 et fin 2021 juges offrir le meilleur equilibre",
+    "source": "fiches-auto.fr, carverif.fr, premiumcarsprovence.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mazda 3 (2013-2019 et 2019+, moteurs Skyactiv-G, Skyactiv-X et Skyactiv-D)",
+    "score_fiabilite": "Skyactiv-G (essence atmospherique) juge le plus fiable de la gamme, Skyactiv-D (diesel) le plus problematique",
+    "pannes_courantes": "Skyactiv-G 120 : bon rapport consommation/robustesse, duree de vie depassant 200 000km avec entretien suivi selon une source, quelques retours ponctuels sur batterie, Start-Stop, climatisation et capteurs ; Skyactiv-X : a-coups a bas regime lies a la transition d'allumage SPCCI, usure prematuree de bougies specifiques, dysfonctionnements du systeme M-Hybrid rapportes, la plupart des pannes recensees ayant une origine electronique/logicielle corrigee par mises a jour selon une source ; 2.2 Skyactiv-D 150 : regenerations de FAP ratees, huile polluee par la limaille, risque de culasse fissuree cite comme le point le plus problematique de la gamme ; climatisation (condenseur, radiateur, evaporateur, commande) citee comme fragile sur cette generation",
+    "source": "fiches-auto.fr, oscar-racing.fr, horizonmoteur.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

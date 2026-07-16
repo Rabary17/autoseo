@@ -1,0 +1,330 @@
+[
+  {
+    "code": "P0620",
+    "libelle": "Circuit de commande du generateur (alternateur) - dysfonctionnement",
+    "causes_possibles": "Alternateur ou regulateur de tension defaillant, cablage ou connecteur du circuit de commande endommage, calculateur (PCM) defaillant",
+    "gravite": "severe",
+    "source": "obd-codes.com, carparts.com, yourmechanic.com, repairpal.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0621",
+    "libelle": "Circuit du temoin generateur / borne L - dysfonctionnement",
+    "causes_possibles": "Circuit ouvert ou court-circuite sur le fil de la borne L (temoin de charge au tableau de bord), alternateur ou regulateur defaillant",
+    "gravite": "modere",
+    "source": "repairpal.com, defydiagnostics.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0622",
+    "libelle": "Circuit de commande du champ generateur (borne F) - dysfonctionnement",
+    "causes_possibles": "Bobine de champ du generateur (alternateur) defaillante, cablage ou connecteur du circuit de commande du champ endommage, calculateur (PCM) defaillant",
+    "gravite": "severe",
+    "source": "obd-codes.com, yourmechanic.com, repairpal.com, ecufiles.com, autocodes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0625",
+    "libelle": "Circuit du champ generateur / borne F - signal bas",
+    "causes_possibles": "Cablage du circuit de champ corrode ou coupe, module de commande PCM defaillant, connecteurs oxydes, defaut interne de l'alternateur",
+    "gravite": "severe",
+    "source": "carparts.com, obd-codes.com, repairpal.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2139",
+    "libelle": "Correlation tension capteurs position papillon/pedale (TPS/APP) D/F",
+    "causes_possibles": "Divergence entre les signaux des capteurs D et F de position papillon/pedale accelerateur (voltage hors tolerance), cablage ou connecteur endommage, boitier papillon ou capteur de pedale defaillant",
+    "gravite": "severe",
+    "source": "yourmechanic.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2140",
+    "libelle": "Correlation tension capteurs position papillon/pedale (TPS/APP) E/F",
+    "causes_possibles": "Divergence entre les signaux des capteurs E et F (les deux canaux doivent rester dans une tolerance d'environ 0,2 V l'un de l'autre), cablage endommage, capteur de pedale ou boitier papillon defaillant",
+    "gravite": "severe",
+    "source": "yourmechanic.com, repairpal.com, obd-codes.com, fs1inc.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2159",
+    "libelle": "Capteur de vitesse vehicule B - plage/performance",
+    "causes_possibles": "Capteur de vitesse (souvent capteur roue ABS utilise comme reference vitesse) defaillant dans plus de 50% des cas, cablage/connecteur corrode ou endommage, couronne (tone ring) ABS fissuree ou encrassee",
+    "gravite": "modere",
+    "source": "yourmechanic.com, carparts.com, obd-codes.com, repairpal.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2183",
+    "libelle": "Capteur de temperature liquide de refroidissement (ECT) 2 - plage/performance",
+    "causes_possibles": "Divergence entre capteur ECT 2 et capteur ECT 1 lors d'un demarrage a froid (les deux doivent rester proches de la temperature ambiante et de l'IAT a environ 3 degres C pres), thermostat bloque ouvert, niveau de liquide de refroidissement bas ou presence de bulles d'air, cablage/connecteur du capteur ECT 2 endommage ou corrode",
+    "gravite": "modere",
+    "source": "repairpal.com, obd-codes.com, go-parts.com, engine-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2185",
+    "libelle": "Capteur de temperature liquide de refroidissement (ECT) 2 - signal eleve",
+    "causes_possibles": "Cablage du capteur ECT 2 court-circuite a l'alimentation, connecteur endommage/corrode, capteur ECT 2 defaillant",
+    "gravite": "modere",
+    "source": "carparts.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2195",
+    "libelle": "Signal sonde lambda fige/decale trop pauvre (Banc 1, capteur 1)",
+    "causes_possibles": "Sonde lambda amont ne fluctuant plus normalement (signal fige hors plage), fuite d'admission d'air, probleme de systeme carburant, sonde encrassee ou vieillissante",
+    "gravite": "modere",
+    "source": "obd-codes.com, autozone.com, repairpal.com, kbb.com, jegs.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2196",
+    "libelle": "Signal sonde lambda fige/decale trop riche (Banc 1, capteur 1)",
+    "causes_possibles": "Sonde lambda amont fige en position riche, injecteur fuyant ou bloque ouvert, regulateur de pression carburant defaillant, sonde vieillissante",
+    "gravite": "modere",
+    "source": "obd-codes.com, repairpal.com, partsofacarengine.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2197",
+    "libelle": "Signal sonde lambda fige/decale trop pauvre (Banc 2, capteur 1)",
+    "causes_possibles": "Meme famille de causes que P2195 mais appliquee au banc 2 : sonde lambda amont banc 2 figee/decalee, fuite d'admission cote banc 2, probleme carburant",
+    "gravite": "modere",
+    "source": "obd-codes.com, autozone.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2198",
+    "libelle": "Signal sonde lambda fige/decale trop riche (Banc 2, capteur 1)",
+    "causes_possibles": "Meme famille de causes que P2196 mais appliquee au banc 2 : sonde lambda amont banc 2 figee en position riche, injecteur banc 2 defaillant",
+    "gravite": "modere",
+    "source": "obd-codes.com, autozone.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2237",
+    "libelle": "Circuit courant positif sonde lambda - circuit ouvert (Banc 1, capteur 1)",
+    "causes_possibles": "Sonde lambda amont (a large bande/air-fuel ratio) defaillante, cablage du circuit de courant positif endommage ou en circuit ouvert, fuite d'echappement en amont de la sonde",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com, yourmechanic.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2238",
+    "libelle": "Circuit courant positif sonde lambda - signal bas (Banc 1, capteur 1)",
+    "causes_possibles": "Tension anormalement basse sur le circuit de courant positif de la sonde lambda a large bande, cablage court-circuite, sonde defaillante",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2262",
+    "libelle": "Pression de suralimentation (turbo/compresseur) non detectee - defaut mecanique",
+    "causes_possibles": "Le calculateur ne detecte pas la pression de suralimentation demandee : turbocompresseur ou compresseur defaillant, fuite d'admission d'air sous pression, wastegate bloquee, capteur de pression de suralimentation defaillant",
+    "gravite": "severe",
+    "source": "yourmechanic.com, repairpal.com, obdfree.com, icarsoft-us.com, tat.net.au — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2263",
+    "libelle": "Performance du systeme de suralimentation (turbo/compresseur)",
+    "causes_possibles": "Turbocompresseur defaillant, capteur de pression de suralimentation defectueux, wastegate defaillante, fuite dans le circuit d'admission sous pression",
+    "gravite": "severe",
+    "source": "carparts.com, repairpal.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2270",
+    "libelle": "Signal sonde lambda fige/decale trop pauvre (Banc 1, capteur 2)",
+    "causes_possibles": "Sonde lambda avale (post-catalyseur) figee en position pauvre, ne fluctue plus normalement ; sans impact direct sur l'agrement de conduite mais fait echouer le controle antipollution",
+    "gravite": "mineure",
+    "source": "obd-codes.com, carparts.com, repairpal.com, kbb.com, jegs.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2271",
+    "libelle": "Signal sonde lambda fige/decale trop riche (Banc 1, capteur 2)",
+    "causes_possibles": "Sonde lambda avale (post-catalyseur) figee en position riche, catalyseur degrade, meme absence d'impact sur la conduite que P2270",
+    "gravite": "mineure",
+    "source": "obd-codes.com, carparts.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2272",
+    "libelle": "Signal sonde lambda fige/decale trop pauvre (Banc 2, capteur 2)",
+    "causes_possibles": "Meme famille de causes que P2270 mais appliquee au banc 2 : sonde lambda avale banc 2 figee/decalee en position pauvre",
+    "gravite": "mineure",
+    "source": "repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2273",
+    "libelle": "Signal sonde lambda fige/decale trop riche (Banc 2, capteur 2)",
+    "causes_possibles": "Meme famille de causes que P2271 mais appliquee au banc 2 : sonde lambda avale banc 2 figee en position riche",
+    "gravite": "mineure",
+    "source": "repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2279",
+    "libelle": "Fuite dans le systeme d'admission d'air",
+    "causes_possibles": "Air non mesure entrant apres le debitmetre (MAF) et avant les sondes lambda avales : durite ou conduit d'admission fissure/debranche, joint d'injecteur defaillant, boitier papillon ou capteur IAT non etanche, durite/clapet de reniflard (PCV) fuyard",
+    "gravite": "modere",
+    "source": "yourmechanic.com, obd-codes.com, kbb.com, ancel.com, fixter.co.uk — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2300",
+    "libelle": "Circuit primaire bobine d'allumage A - signal bas",
+    "causes_possibles": "Tension anormalement basse detectee sur le circuit primaire de la bobine d'allumage A, cablage ou connecteur endommage, bobine defaillante",
+    "gravite": "severe",
+    "source": "obd-codes.com, go-parts.com, yourmechanic.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2301",
+    "libelle": "Circuit primaire bobine d'allumage A - signal eleve",
+    "causes_possibles": "Tension anormalement elevee sur le circuit primaire de la bobine A, cablage court-circuite a l'alimentation, bobine defaillante ; un echange de bobine avec le cylindre voisin permet de confirmer si le defaut suit la bobine ou reste sur le cablage",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2303",
+    "libelle": "Circuit primaire bobine d'allumage B - signal bas",
+    "causes_possibles": "Tension anormalement basse sur le circuit primaire de la bobine d'allumage B (cylindre 2), cablage ou connecteur endommage, bobine defaillante",
+    "gravite": "severe",
+    "source": "repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2304",
+    "libelle": "Circuit primaire bobine d'allumage B - signal eleve",
+    "causes_possibles": "Tension anormalement elevee sur le circuit primaire de la bobine B, cablage court-circuite, bobine defaillante",
+    "gravite": "severe",
+    "source": "go-parts.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2401",
+    "libelle": "Circuit de commande pompe de detection de fuite EVAP - signal bas",
+    "causes_possibles": "Module/pompe de detection de fuite du circuit EVAP defaillant (demande une tension trop basse), cablage endommage, connecteur corrode ; n'affecte generalement pas la conduite mais fait echouer le controle antipollution",
+    "gravite": "mineure",
+    "source": "yourmechanic.com, repairpal.com, go-parts.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2402",
+    "libelle": "Circuit de commande pompe de detection de fuite EVAP - signal eleve",
+    "causes_possibles": "Module/pompe de detection de fuite EVAP defaillant (demande une tension trop elevee), cablage court-circuite, connecteur endommage",
+    "gravite": "mineure",
+    "source": "kbb.com, yourmechanic.com, obd2.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2413",
+    "libelle": "Performance du systeme EGR (recirculation des gaz d'echappement)",
+    "causes_possibles": "Conduits EGR encrasses par la calamine, vanne EGR bloquee ne repondant pas comme attendu a la commande du calculateur, capteur EGR ou capteur MAP/IAT defaillant, durite de depression endommagee",
+    "gravite": "modere",
+    "source": "obd-codes.com, ecufiles.com, repairpal.com, partsavatar.ca, eobdcode.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2440",
+    "libelle": "Vanne de commutation du systeme d'air secondaire bloquee ouverte (Banc 1)",
+    "causes_possibles": "Clapets anti-retour defaillants (cause la plus frequente), vanne de commutation d'air secondaire defaillante, durite de depression debranchee, pompe d'air secondaire defaillante ; peut provoquer calages/hesitations",
+    "gravite": "severe",
+    "source": "yourmechanic.com, carparts.com, kbb.com, tundratalk.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2441",
+    "libelle": "Vanne de commutation du systeme d'air secondaire bloquee fermee (Banc 1)",
+    "causes_possibles": "Meme famille de causes que P2440 mais vanne bloquee fermee : clapet ou vanne de commutation d'air secondaire defaillant, pompe d'air secondaire HS",
+    "gravite": "severe",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2442",
+    "libelle": "Vanne de commutation du systeme d'air secondaire bloquee ouverte (Banc 2)",
+    "causes_possibles": "Humidite infiltree dans la pompe d'air secondaire (cause la plus frequente), clapets anti-retour defaillants ; ce code apparait souvent en meme temps que P2440 car ils partagent la meme cause racine (pompe defaillante)",
+    "gravite": "severe",
+    "source": "yourmechanic.com, carparts.com, go-parts.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2452",
+    "libelle": "Circuit capteur de pression du filtre a particules (FAP/DPF) A",
+    "causes_possibles": "Durite ou raccord du capteur de pression FAP bouche/endommage, exces de suie ou de cendres dans le FAP, capteur de pression defaillant, cablage/connecteur corrode (moteurs diesel)",
+    "gravite": "severe",
+    "source": "carparts.com, suncentauto.com, xenons4u.co.uk, ziptuning.com, valleyfilters.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2453",
+    "libelle": "Circuit capteur de pression FAP A - plage/performance",
+    "causes_possibles": "Meme famille de causes que P2452 (probleme de plage/coherence plutot que de circuit pur) : capteur de pression FAP defaillant, conduit de prise de pression bouche",
+    "gravite": "severe",
+    "source": "xenons4u.co.uk, suncentauto.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2454",
+    "libelle": "Circuit capteur de pression FAP A - signal bas",
+    "causes_possibles": "Signal du capteur de pression FAP anormalement bas ou fige bas, cablage court-circuite a la masse, capteur defaillant",
+    "gravite": "severe",
+    "source": "suncentauto.com, icarsoft.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2455",
+    "libelle": "Circuit capteur de pression FAP A - signal eleve",
+    "causes_possibles": "Signal du capteur de pression FAP anormalement eleve ou fige haut, cablage court-circuite a l'alimentation, capteur defaillant",
+    "gravite": "severe",
+    "source": "suncentauto.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2463",
+    "libelle": "Restriction du filtre a particules (FAP/DPF) - accumulation excessive de suie",
+    "causes_possibles": "Accumulation de suie due a des regenerations incompletes/trop courtes (trajets courts repetes), capteurs de pression d'echappement defaillants, AdBlue/FAP bas ou de mauvaise qualite ; le calculateur passe en mode degrade et desactive l'EGR pour limiter l'encrassement supplementaire",
+    "gravite": "severe",
+    "source": "valleyfilters.com, dailymotoring.com, repairpal.com, obd-codes.com, hotshotsecret.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2500",
+    "libelle": "Circuit du temoin generateur / borne L - signal bas",
+    "causes_possibles": "Resistance anormale dans le cablage du circuit du temoin de charge, temoin lui-meme grille, regulateur de l'alternateur defaillant, defaut de communication avec le module de commande",
+    "gravite": "modere",
+    "source": "obd-codes.com, carparts.com, yourmechanic.com, repairpal.com, ecufiles.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2502",
+    "libelle": "Tension du systeme de charge - defaut",
+    "causes_possibles": "Tension batterie tombant sous environ 10 V pendant plus de 8 secondes moteur tournant : alternateur defaillant, batterie en fin de vie, cablage de charge endommage",
+    "gravite": "severe",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3400",
+    "libelle": "Systeme de desactivation de cylindres (Banc 1) - dysfonctionnement",
+    "causes_possibles": "Niveau ou pression d'huile moteur bas (cause la plus frequente), electrovanne de desactivation de cylindre defaillante, cablage endommage ; concerne les moteurs a gestion de cylindree variable (V6/V8 Honda, Chrysler, GM notamment)",
+    "gravite": "modere",
+    "source": "yourmechanic.com, carparts.com, obd-codes.com, ecufiles.com, tpautorepair.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P3401",
+    "libelle": "Cylindre 1 - circuit de commande de desactivation/soupape d'admission ouvert",
+    "causes_possibles": "Niveau d'huile moteur bas, electrovanne de desactivation du cylindre 1 defaillante, cablage en circuit ouvert",
+    "gravite": "modere",
+    "source": "yourmechanic.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "modele": "Peugeot 207 (2006-2012, moteurs 1.4 HDi et 1.6 HDi)",
+    "score_fiabilite": "fiabilite globale du 1.6 HDi rapportee a 6/10 selon les evaluations techniques ; le 1.6 HDi 90 decrit comme le meilleur compromis diesel de la gamme, superieur au 110ch et evitant les ecueils du modeste 1.4 HDi",
+    "pannes_courantes": "1.4 HDi 68/70ch : moteur sobre, sujet a l'encrassement de la vanne EGR en usage urbain mais profil de risque le plus faible rapporte (environ 12% d'interventions majeures selon une source) ; 1.6 HDi 90/92ch : injecteurs et joints d'injecteurs, EGR, turbo, distribution et capteurs de depollution exposes, une calamine issue d'un joint d'injecteur fuyard pouvant contaminer l'huile et reduire le graissage du turbo ; 1.6 HDi 110ch decrit comme le diesel le plus delicat de la gamme, cumul possible de joints d'injecteurs, turbo, EGR, FAP, volant moteur et embrayage ; injecteurs notes 4/10 avec usure rapportee vers 120 000km ; courroie de distribution a changer tous les 240 000km ou 10 ans selon le constructeur, vidange et filtres recommandes tous les 20 000km maximum par prudence",
+    "source": "fiches-auto.fr, autolisa.fr, carverif.fr, autocadre.com, careco.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C4 Picasso / Grand C4 Picasso (2013-2020, moteur 1.6 BlueHDi)",
+    "score_fiabilite": "fiabilite moyenne globale rapportee a 6/10 pour le 1.6 BlueHDi 120ch, bloc moteur juge robuste mais organes peripheriques (AdBlue, injecteurs) plus problematiques",
+    "pannes_courantes": "systeme AdBlue identifie comme le point faible majeur, avec des pannes rapportees sur environ 19% des exemplaires suivis selon une source (pompe, reservoir puis injecteur pouvant defaillir en cascade, certains proprietaires ayant fait desactiver le systeme) ; injecteurs rapportes sur une part significative des exemplaires ; turbo fragile et EGR encrassee frequemment cites sur les moteurs HDi, avec fumees anormales ou perte de puissance et reparations couteuses au-dela de 100 000km ; embrayage sous-dimensionne pour le gabarit du vehicule, usure acceleree sur les versions diesel avec remplacement souvent avant 120 000km ; systeme keyless tombant frequemment en panne entre 40 000 et 60 000km (capteurs defectueux ou pile de la cle) ; la version BlueHDi 150ch a partir de 2016 corrige une partie des defauts anterieurs grace a un systeme SCR ameliore",
+    "source": "fiches-auto.fr, carverif.fr, starter-autoecole.fr, auto-doc.fr, auto-land.fr, iodines.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Laguna III (2007-2015, moteur 2.0 dCi 150/180ch)",
+    "score_fiabilite": "fiabilite mecanique generale rapportee a 7/10 pour le 2.0 dCi 150ch ; versions post-restylage 2011-2015 ameliorees, notees 7/10 globalement ; millesimes 2010-2013 consideres comme les plus fiables",
+    "pannes_courantes": "filtre a particules (FAP) source de problemes recurrents notes 6/10, encrassement frequent en usage urbain necessitant nettoyage ou remplacement autour de 150 000km ; coussinets de bielles plus a risque sur les millesimes avant 2010 ; turbocompresseur pouvant defaillir apres 150 000km, remplacement estime entre 1 200 et 2 000€ ; vanne EGR et injecteurs egalement cites comme points de vigilance, ameliores sur les versions 2010-2013 ; esperance de vie du bloc 2.0 dCi 150ch rapportee a 250 000km avec un entretien rigoureux",
+    "source": "carverif.fr, fiches-auto.fr, largus.fr, larevueautomobile.com, planeterenault.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Koleos II (2017+, moteur 2.0 dCi 4x4, boite X-Tronic)",
+    "score_fiabilite": "note moyenne proprietaires rapportee a 7,1/10 sur un panel de 46 temoignages compiles entre 2022 et 2024, kilometrage median rapporte a 145 000km",
+    "pannes_courantes": "vanne EGR colmatee rapportee sur 7 cas sur 14 exemplaires audites entre 70 000 et 130 000km selon une source, cout moyen estime 550-750€ ; filtre a particules (FAP) bouche rapporte sur 3 cas avant 120 000km, facture estimee 1200-1800€ ; turbo a geometrie variable montrant des signes de defaillance sur 2 exemplaires selon une source, facture estimee 1500-2200€ ; boite automatique X-Tronic decrite comme decevante en fiabilite et agrement, avec apparition typique de problemes entre 60 000 et 100 000km et facture estimee 3000-5000€ en cas de remplacement ; recommandation rapportee d'eviter le 1.6 dCi 130ch juge trop fragile et la transmission X-Tronic en general",
+    "source": "carverif.fr, fiches-auto.fr, oscar-racing.fr, gobriocar.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Mondeo (Mk3 2007-2014 et Mk4 2014-2022, moteurs 2.0/2.2 TDCi)",
+    "score_fiabilite": "a verifier — pas de note globale chiffree consolidee identifiee, plusieurs points faibles recurrents documentes par motorisation selon les sources",
+    "pannes_courantes": "filtre a particules diesel (DPF) sujet a colmatage entre 80 000 et 120 000km, particulierement en usage urbain ou trajets courts (temperature de regeneration d'environ 600°C non atteinte) ; transmission a double embrayage PowerShift presentant des faiblesses des 60 000km (changements de vitesse saccades, retardes ou inattendus), vehicules construits entre 2014 et 2018 particulierement touches par une usure prematuree des embrayages a sec ; systeme d'injection identifie comme le probleme le plus frequemment rapporte, injecteurs pouvant dysfonctionner des 100 000km (a-coups, perte de puissance, difficultes de demarrage) ; durite de turbo citee comme panne recurrente vers 70 000km (voyant defaut moteur) ; sur le 2.0 TDCi 180ch, vanne EGR, pompe d'injection, pompe a eau, alternateur et distribution egalement signales, une EGR encrassee pouvant perturber la gestion de la boite automatique",
+    "source": "auto-doc.fr, fiches-auto.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Insignia A (2008-2017, moteur 2.0 CDTI)",
+    "score_fiabilite": "fiabilite globale rapportee a 6/10 selon les evaluations techniques ; moteur note 7/10 pour ses performances, transmission et electronique notees 6/10 ; versions post-restylage 2013-2017 rapportees avec environ 15% de pannes en moins que les millesimes 2008-2012",
+    "pannes_courantes": "soucis de turbocompresseur et usure prematuree de l'emetteur et de la butee d'embrayage, pertes de puissance en 1ere et 2eme vitesse rapportees des 120 000km ; boite manuelle 6 vitesses notee 6/10 avec usure de butee vers 130 000km ; boite automatique 6 vitesses presentant des a-coups en 1ere et 2eme vitesse sur environ 20% des unites selon une source ; bugs GPS, climatisation asymetrique (chaud d'un cote, froid de l'autre) et cas de calage moteur en circulation rapportes ; millesimes 2008-2012 associes a des problemes d'airbags et de turbo fragile selon une source ; au-dela de 150 000km, pannes de turbo et d'injecteurs se multipliant selon les retours",
+    "source": "carverif.fr, fiches-auto.fr, caradisiac.com, autokoo.com, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Touran (1ere generation, 2003-2010, moteurs 1.9 TDI et 2.0 TDI)",
+    "score_fiabilite": "fiabilite globale jugee satisfaisante pour le 1.9 TDI 105ch avec de nombreux exemplaires depassant 200 000km selon une source, sous reserve d'interventions regulieres",
+    "pannes_courantes": "volant moteur identifie comme le point faible le plus recurrent (34 defaillances rapportees sur 151 avis selon une source), suivi de l'embrayage (32 cas) et du systeme de refroidissement ; pompe a eau frequemment citee comme source de panne ; vanne EGR fragile, sensible a l'encrassement des injecteurs ; le 1.9 TDI 105ch particulierement associe a un systeme d'injection fragile et un turbo capricieux, avec pres de 40% d'operations lourdes rapportees sur ces organes apres 100 000km selon une source portant sur 100 vehicules ; courroie de distribution a remplacer imperativement tous les 120 000km (800-1200€), le non-respect exposant a une casse moteur irreversible ; millesimes 2003-2005 les plus exposes aux pannes de turbo, injecteurs et volant moteur",
+    "source": "fiches-auto.fr, auto-doc.fr, carverif.fr, oscar-racing.fr, piecesauto-pro.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Auris (1ere generation 2007-2012 et 2e generation 2012-2018, moteur diesel 1.4 D-4D et version hybride)",
+    "score_fiabilite": "note de fiabilite globale rapportee a 7/10 pour la 2e generation 1.4 D-4D ; blocs essence decrits comme epargnes par les gros soucis mecaniques, contrairement aux versions diesel plus sujettes a problemes selon une source",
+    "pannes_courantes": "1.4 D-4D : defaut principal rapporte sur l'echangeur intercooler fuyant de l'huile, ayant conduit a un rappel constructeur d'environ 62 000 vehicules assembles entre 2008 et 2014 ; soucis d'injecteurs regulierement signales sur les motorisations D-4D ; probleme electronique de jauge de carburant rapporte vers 90 000km ; version hybride : duree de vie des onduleurs hybrides rapportee entre 180 000 et 220 000km, la surchauffe etant la cause de defaillance la plus frequente selon une source ; cas de batterie hybride en panne des 80 000km rapporte, avec un cout de reparation estime a 3000€ ; proprietaires rapportant par ailleurs une bonne longevite mecanique jusqu'a 130-150 000km avec un entretien regulier",
+    "source": "fiches-auto.fr, auto-doc.fr, carverif.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Hilux (8e generation, 2016+, moteurs 2.4 D-4D et 2.8 D-4D)",
+    "score_fiabilite": "fiabilite globale rapportee a 7,5/10 pour le 2.4 D-4D, robustesse mecanique notee 9/10 selon une source ; systeme d'echappement avec FAP et injecteurs notes 6/10",
+    "pannes_courantes": "filtre a particules (FAP) pose des problemes recurrents des 40 000km selon une source citant 60 Millions de Consommateurs, remplacement estime entre 1500 et 2000€ ; injecteurs pouvant necessiter un remplacement unitaire entre 400 et 600€ ; disques de frein voiles rapportes vers 50 000km sur certains exemplaires (pris en garantie selon un temoignage) ; periode critique rapportee entre 40 000 et 100 000km notamment pour le FAP et les injecteurs, fiabilite jugee satisfaisante au-dela avec un entretien approprie ; versions post-2017 rapportees avec une fiabilite FAP amelioree ; avis mitises sur les generations plus recentes, certains proprietaires signalant vibrations et pannes electriques",
+    "source": "carverif.fr, forum4x4.org, pickup-mania.com, caradisiac.com, moniteurautomobile.be — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Dokker (2012-2021, moteur 1.5 dCi 75/90/110ch, utilitaire/familiale)",
+    "score_fiabilite": "fiabilite globale rapportee a 7/10 pour le 1.5 dCi 90 ; moteur K9K eprouve chez Renault-Nissan, durabilite rapportee solide jusqu'a 120 000km sans pannes majeures selon de nombreux proprietaires",
+    "pannes_courantes": "electronique et turbo notes 6/10 selon une source ; filtre a particules s'encrassant regulierement du fait de trajets courts frequents ; durites de turbo a surveiller particulierement, remplacement preventif d'un cout modere (environ 200€) permettant d'eviter la panne brutale ; le 1.5 dCi 110ch, tres repandu, longtemps associe a des problemes d'injecteurs generant pertes de puissance et surconsommation ; avis proprietaires globalement positifs, cout d'entretien juge tres raisonnable et pieces faciles a trouver ; au-dela de 120 000km, surveillance recommandee du turbo et de l'electronique",
+    "source": "carverif.fr, caradisiac.com, largus.fr, quadoccaz.com, communaute.dacia.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Suzuki Jimny (4e generation, depuis 2018, moteur essence 1.5 atmospherique)",
+    "score_fiabilite": "a verifier — moteur essence decrit comme tres fiable et le vehicule qualifie d'extremement fiable par plusieurs sources, sans note chiffree consolidee identifiee ; exemplaires rapportes en circulation a 350 000km avec le bloc moteur d'origine",
+    "pannes_courantes": "bruits inhabituels en tournant le volant rapportes depuis le lancement de la generation actuelle fin 2018, probleme recurrent malgre trois modifications successives apportees par le constructeur selon une source ; boite de vitesses automatique identifiee comme l'un des points faibles les plus courants, symptomes allant de changements de vitesse saccades a des pannes completes, situation rapportee comme plus critique entre 80 000 et 120 000km ; chaine de distribution et jeu des soupapes a controler regulierement apres 100 000-150 000km selon une source (portant toutefois sur un moteur 1.3, a verifier pour le 1.5 de la generation actuelle) ; avis proprietaires mitiges, certains rapportant de bons retours d'habitabilite sans souci, d'autres des frais d'entretien importants",
+    "source": "auto-doc.fr, caradisiac.com, largus.fr, jimny.superforum.fr, forum4x4.org — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Tesla Model 3 (2019+, electrique, versions Standard Range Plus et Long Range)",
+    "score_fiabilite": "fiabilite globale jugee correcte par plusieurs sources francaises, avec des reserves plus marquees sur les millesimes 2019-2020 ; taux de contre-visite technique en France rapporte a 9,32% en 2024, superieur a la moyenne nationale des vehicules de moins de 4 ans mais nettement inferieur au taux de 23% observe au Danemark selon une etude citee",
+    "pannes_courantes": "poignees de porte retractables sujettes a panne, souvent entre 40 000 et 60 000km ; triangles de suspension avant pouvant developper un grincement caracteristique du a une usure prematuree des silentblocs ; problemes de qualite de fabrication rapportes (assemblage, peinture, finitions interieures), plus frequents sur les tout premiers exemplaires ; pannes electroniques citees comme la categorie la plus frequente, avec bugs de l'ecran central et plantages ; infiltrations d'eau rapportees sur les exemplaires 2019-2020 lies a des defauts d'ajustement de carrosserie",
+    "source": "fiches-auto.fr, monoccasgarantie.fr, auto-doc.fr, carverif.fr, icarsoft-france.fr, larevueautomobile.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes Classe B (W246, 2011-2018, moteur diesel 1.5/2.1 CDI, boite 7G-DCT)",
+    "score_fiabilite": "fiabilite globale decrite comme correcte selon une source, avec une bonne habitabilite et un confort de roulage juge typique de la marque ; versions post-2014 rapportees avec une fiabilite nettement amelioree sur la boite 7G-DCT et l'electronique",
+    "pannes_courantes": "boite automatique 7G-DCT pouvant poser des soucis vers 100 000km, surtout sur les millesimes anterieurs a 2014 ; injecteurs diesel, notamment sur le 1.5 CDI, pouvant defaillir vers 120 000-150 000km (cout unitaire estime 400-600€) ; chaines de distribution rapportees comme fragiles sur les moteurs CDI 2011-2013, avec un risque de casse moteur franche selon une source ; suspensions avant s'usant normalement vers 100 000km (600-800€ pour un remplacement complet) ; usure rapide des plaquettes de frein rapportee par plusieurs proprietaires ; dysfonctionnements electroniques chroniques cites, notamment un toit ouvrant pouvant se bloquer puis repartir (signe d'un defaut d'apprentissage, de moteur ou de capteur de position) ; budget d'entretien annuel estime entre 800 et 1200€ selon le kilometrage",
+    "source": "autocadre.com, fiches-auto.fr, icarsoft-france.fr, carverif.fr, gp-auto-magasins.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat Ducato III / Peugeot Boxer III / Citroen Jumper III (plateforme Sevel commune, moteur 2.3 Multijet/BlueHDi, utilitaire)",
+    "score_fiabilite": "a verifier — bloc moteur decrit comme pouvant atteindre au-dela de 400 000km avec un entretien regulier selon une source, et au moins 200 000km sans probleme majeur avec un bon suivi ; les trois vehicules partagent la meme plateforme et les memes moteurs FPT, les pannes etant rapportees comme strictement identiques d'une marque a l'autre",
+    "pannes_courantes": "sur 47 temoignages compiles selon une source, environ 65% des pannes documentees au-dela de 60 000km concernent l'injection ou la vanne EGR ; vanne EGR identifiee comme le composant posant le plus de soucis, s'encrassant progressivement notamment en usage urbain ou sur trajets courts ; injecteurs diesel points sensibles apres 80 000km, les injecteurs solenoides du moteur F1A etant reparables pour environ 450€ l'unite selon une source ; joint de culasse particulierement expose sur les moteurs produits avant 2016 ; filtre a particules (FAP) pouvant s'encrasser des 80 000km en cas de trajets courts dominants",
+    "source": "carverif.fr, plan-relance-autoroutier.fr, starter-autoecole.fr, solidarauto49.fr, zonerupteur.fr, stradibus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Enyaq iV (2021+, electrique 62/77/82 kWh)",
+    "score_fiabilite": "a verifier — pas de note chiffree consolidee identifiee ; problemes electroniques et logiciels rapportes comme la principale source de plaintes sur les premiers millesimes 2021-2022, avec des corrections rapportees sur les annees-modeles suivantes ; batteries decrites comme conservant environ 90% de leur capacite initiale a 100 000km selon une source",
+    "pannes_courantes": "trappe de recharge sujette a dysfonctionnement, ne s'ouvrant pas automatiquement lors de la recharge, souvent entre 2000 et 5000km, pour des causes mecaniques ou electriques ; certains exemplaires ayant refuse de se recharger, immobilisant le vehicule plusieurs jours selon des temoignages rapportes ; probleme de perte de performance rapporte sur la batterie 85 kWh apres quelques mois d'usage selon plusieurs proprietaires ; bugs logiciels pouvant entrainer des plantages systeme, un ecran tactile non reactif ou des aides a la conduite defaillantes, necessitant mises a jour ou intervention concessionnaire ; batterie 12V auxiliaire pouvant se decharger de maniere inattendue, notamment sur vehicules stationnes longuement ; usure des pneus d'origine rapportee sous 20 000km par certains proprietaires en raison du poids eleve du vehicule (1900-2200kg)",
+    "source": "auto-doc.fr, carverif.fr, 300000km.be, fiches-auto.fr, mycarly.com, iems.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

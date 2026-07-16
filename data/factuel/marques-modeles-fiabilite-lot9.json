@@ -1,0 +1,233 @@
+[
+  {
+    "modele": "Volkswagen Passat (generations B6/B7/B8, moteurs TDI et TSI, boite DSG)",
+    "score_fiabilite": "fondamentalement solide selon plusieurs sources, mais boite DSG, turbo TSI et electronique cites comme points de vigilance recurrents",
+    "pannes_courantes": "vanne EGR s'encrassant sur pratiquement tous les moteurs TDI quelle que soit la generation ; pompe a eau fragile, tombant souvent en panne entre 80 000 et 120 000km (surchauffe, perte de liquide de refroidissement) ; consommation d'huile anormale citee comme le probleme le plus frequemment rapporte, avec un volant moteur bi-masse n'ayant pas toujours atteint la robustesse attendue ; boite a double embrayage DSG source frequente de panne ces dernieres annees ; disques de frein pouvant se voiler ou se marquer prematurement (vibrations au freinage, bruit metallique)",
+    "source": "fiches-auto.fr, carverif.fr, auto-doc.fr, oscar-racing.fr, motointegrator.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi Q5 (1ere generation 8R, moteur 2.0 TDI 143/170ch, boite S-Tronic)",
+    "score_fiabilite": "note globale rapportee autour de 6/10, penalisee par l'injection/distribution et des couts d'entretien eleves ; le 2.0 TDI reste toutefois la motorisation de reference en fiabilite sur ce modele si l'on evite les 143/170ch de premiere generation",
+    "pannes_courantes": "volant moteur bi-masse arrivant en fin de vie vers 80 000-100 000km, vanne EGR et FAP entre 100 000 et 150 000km, boite S-Tronic vers 90 000-120 000km, turbo et chaine de distribution au-dela de 130 000km selon une source ; injecteurs, pompe a carburant et chaine de distribution cites comme problemes recurrents sur le 2.0 TDI 170ch ; consommation d'huile parfois excessive (jusqu'a 1L/1000km dans les cas extremes) liee a une segmentation defaillante, maladie connue du groupe VAG ; recommandation d'achat : viser moins de 120 000km pour limiter le risque volant moteur",
+    "source": "carverif.fr, fiches-auto.fr, iodines.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW X3 (F25, 2010-2017, moteur diesel xDrive20d)",
+    "score_fiabilite": "fiabilite globale rapportee a 7/10 (7,5/10 apres restylage LCI 2014), electronique embarquee plus en retrait a 6/10 avec des modules parfois defaillants",
+    "pannes_courantes": "injecteurs devenant bruyants apres 150 000km, remplacement estime a 2000€ ; turbo fragile, vannes EGR s'encrassant regulierement, soucis de FAP et poulie damper peu endurante ; chaine de distribution : tous les moteurs diesel concernes par une eventuelle detente du tendeur ; millesimes 2010-2012 rapportes avec plus de soucis electroniques et une suspension jugee ferme ; moteur 2.0 TwinPower diesel capable d'atteindre 250 000-300 000km avec entretien rigoureux, budget entretien annuel estime entre 1200 et 1800€ hors pannes majeures",
+    "source": "carverif.fr, fiches-auto.fr, auto-doc.fr, iodines.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes GLA (1ere generation X156, 2013-2019/2020)",
+    "score_fiabilite": "fiabilite globale estimee autour de 7/10 selon les retours proprietaires, les millesimes 2016 et posterieurs nettement plus fiables que les premieres series 2013-2015",
+    "pannes_courantes": "boite automatique 7G-DCT identifiee comme point faible majeur : dysfonctionnements entre 60 000 et 100 000km (craquements, passages de rapports hesitants, blocages ponctuels) ; electronique/capteurs pouvant provoquer voyants multiples, Parktronic detectant un obstacle inexistant, capteurs de roue en defaut ; optiques avant Xenon sujets a une infiltration d'eau rapportee sur une part significative du parc, condensation persistante reduisant l'efficacite lumineuse ; moteur essence 1.6 turbo M270 rapporte comme sensible aux pannes d'allumage (bobines) ; transmission integrale 4Matic rapportee avec un taux de pannes plus eleve que les versions traction (differentiel arriere) ; budget entretien annuel estime entre 1000 et 1500€",
+    "source": "fiches-auto.fr, auto-doc.fr, iodines.fr, etoilecollections.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Karoq (2017+, moteurs 1.0 TSI, 1.5 TSI, 2.0 TSI/TDI, boite DSG)",
+    "score_fiabilite": "fiabilite mecanique globalement satisfaisante rapportee (note de 9/10 selon une source), moteurs 1.0 TSI et 2.0 TDI juges eprouves et robustes",
+    "pannes_courantes": "boite DSG : changements de vitesse saccades, temps de reponse lents, bruits inhabituels, en particulier sur les versions 1.5 TSI DSG et 2.0 TSI 4x4 DSG des 30 000km selon une source ; systeme Start-Stop : dysfonctionnements sur 1.0 TSI et 1.6 TDI des 20 000-35 000km (arrets/demarrages irreguliers) ; verrouillage centralise : messages d'erreur type cle non reconnue apres 25 000-45 000km ; electronique/multimedia : anomalies ponctuelles generalement corrigees par mises a jour logicielles ; 1.5 TSI 150 : demarrages hesitants, a-coups ou surconsommation rapportes",
+    "source": "auto-doc.fr, fiches-auto.fr, quadoccaz.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Seat Arona (2017+, moteurs 1.0 TSI et 1.5 TSI, boite DSG)",
+    "score_fiabilite": "fiabilite globalement jugee correcte, consommation raisonnable et robustesse soulignees, avec des defauts de jeunesse plus marques sur les millesimes 2017-2018",
+    "pannes_courantes": "systeme Start-Stop : defaillances sur le 1.0 TSI des 15 000-25 000km ; boite DSG : changements de vitesse saccades et retards des 20 000-30 000km sur 1.0 TSI et 1.5 TSI ; climatisation : pannes apres 40 000-60 000km (compresseur defectueux ou fuite de refrigerant) ; electronique/infodivertissement : ecrans geles, tactile non reactif, Bluetooth capricieux des 30 000-50 000km ; turbo : panne rapportee sur environ 10% des unites 2017-2018 avant 90 000km (remplacement estime a 1200€), taux de panne rapporte sous 2% sur les versions 2020-2023",
+    "source": "auto-doc.fr, fiches-auto.fr, carverif.fr, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Grandland (X, 2017+, moteur 1.2 PureTech/Turbo)",
+    "score_fiabilite": "fiabilite globale rapportee a 6,5/10, en retrait par rapport aux standards attendus sur ce segment",
+    "pannes_courantes": "courroie de distribution baignant dans l'huile (\"bain d'huile\") susceptible de se degrader prematurement, particules pouvant obstruer le circuit de lubrification, remplacement rapporte apres 60 000km pour un cout de 800 a 1200€, souvent hors garantie constructeur ; pompe a huile defaillante, fuites d'huile multiples (joint de culasse notamment), bougies defectueuses et echangeur problematique documentes sur 30 a 40% des modeles 2017-2022 selon une source ; rappel 2023 sur la pompe a vide (vehicules produits entre avril 2017 et aout 2018) pour risque de rupture affectant l'assistance au freinage",
+    "source": "carverif.fr, carblog.fr, fiches-auto.fr, caradisiac.com, iodines.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Focus (3e generation 2011-2018 et 4e generation 2018+, moteurs EcoBoost, boite Powershift)",
+    "score_fiabilite": "3e generation marquee par des problemes notoires de boite Powershift et de moteur 1.0 EcoBoost ; 4e generation (boite 8 rapports classique) rapportee avec une fiabilite nettement amelioree",
+    "pannes_courantes": "boite a double embrayage Powershift (2011-2016) : passages de rapports saccades, a-coups au demarrage, pannes severes rapportees ; moteur 1.0 EcoBoost : courroie de distribution baignant dans l'huile se degradant avec le temps et la chaleur, pouvant entrainer une casse moteur ; fuites de liquide de refroidissement frequentes, souvent dues a une durite fragile ou une culasse fissuree ; les versions produites depuis 2019-2020, passees a la chaine de distribution, rapportees comme beaucoup plus fiables",
+    "source": "b-gconduite.fr, fiches-auto.fr, autocadre.com, megaturbo.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat Tipo (2016+, moteur 1.4/1.6 essence et diesel MultiJet)",
+    "score_fiabilite": "note globale de 7/10 rapportee sur la version essence 1.4, avec une fiabilite electronique plus faible (6/10) ; particulierement fiable durant les 30 000 premiers km selon une source",
+    "pannes_courantes": "consommation d'huile citee comme probleme le plus frequent (21 cas signales dans un panel) ; embrayage (7 cas sur 110 avis dans le meme panel) ; problemes electriques cites comme la plainte la plus frequente sur plusieurs plateformes ; entre 60 000 et 100 000km, usure d'embrayage, bruits de suspension, soucis d'alternateur ou de demarreur plus frequemment rapportes ; courroie de distribution a remplacer tous les 120 000km ou 6 ans (intervention couteuse a anticiper)",
+    "source": "fiches-auto.fr, carverif.fr, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Ceed (generations 2007-2012, 2012-2018 et 2018+, moteurs T-GDI et CRDi)",
+    "score_fiabilite": "satisfaction globale rapportee elevee (87% des utilisateurs signalant peu ou pas de pannes majeures apres 5 ans selon une source), les versions posterieures a 2018 (1.4 T-GDi ou 1.6 CRDi) jugees les plus fiables",
+    "pannes_courantes": "moteur 1.0 T-GDI : chaine de distribution presentant des defauts frequents, cliquetis typique au demarrage a froid des 40 000-60 000km ; embrayage : usure prematuree necessitant une intervention plus tot que prevu ; systeme electrique : dysfonctionnements des feux avant/arriere, anomalies de navigation ou climatisation ; diesel 1.6 CRDi : problemes d'injecteurs et de FAP, encrassement de vanne EGR necessitant nettoyages/remplacements reguliers ; compresseur de climatisation defaillant souvent apres 70 000-90 000km ; disques de frein avant atteignant leur limite d'usure des 40 000-50 000km",
+    "source": "fiches-auto.fr, auto-doc.fr, oscar-racing.fr, 26-auto.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan X-Trail (T30 2001-2013, T31 2014-2022, moteurs dCi diesel)",
+    "score_fiabilite": "fiabilite globale du T31 2.0 dCi rapportee a 7/10, fiabilite jugee au rendez-vous si les intervalles d'entretien sont respectes",
+    "pannes_courantes": "FAP se colmatant regulierement sur courts trajets entre 60 000 et 100 000km, particulierement sur 1.7 dCi et 2.2 dCi ; turbocompresseur : defaillances frequentes entre 100 000 et 150 000km sur 2.0 dCi et 2.2 dCi ; moteur 1.6 dCi 130 : probleme de fiabilite recurrent sur le turbo a geometrie variable des 40 000km et sur la chaine de distribution ; compresseur de climatisation defaillant apres 60 000-90 000km en usage intensif ; fuites du boitier de direction apres 100 000-140 000km ; grippage des etriers de frein arriere apres 70 000-100 000km",
+    "source": "fiches-auto.fr, carverif.fr, auto-doc.fr, carnews.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mazda CX-30 (2019+, moteur Skyactiv-G 2.5)",
+    "score_fiabilite": "fiabilite globale jugee satisfaisante par rapport aux autres SUV compacts du segment, conception serieuse et peu de problemes structurels/chassis rapportes",
+    "pannes_courantes": "batterie : motif de consultation frequent, messages d'alerte ou comportements electriques inhabituels parfois des un kilometrage modere ; systeme d'infodivertissement : blocages, temps de reponse lents, pannes completes rapportees des 5 000-10 000km ; hayon electrique : defauts possibles des 8 000-12 000km (impossibilite d'ouverture par telecommande ou defaillance complete de l'entrainement) ; boite automatique : changements de vitesse saccades ou retardes entre 15 000 et 25 000km ; moteur Skyactiv-G 2.5 : perte de puissance et ralenti irregulier apres 30 000-40 000km, principalement lie a la cokefaction des soupapes d'admission",
+    "source": "ovoko.fr, fiches-auto.fr, auto-doc.fr, iodines.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Prius (3e generation 2009-2015 et 4e generation 2016-2023, hybride HSD)",
+    "score_fiabilite": "fiabilite globale de la Prius IV rapportee a 7/10, durabilite mecanique a 9/10 grace a la maturite du systeme hybride HSD, electronique plus en retrait a 6/10 ; millesimes 2016-2018 rapportes avec plus de soucis electroniques sur l'onduleur, ameliores a partir de 2019 (reduction de pannes rapportee de 30%)",
+    "pannes_courantes": "batterie hybride : plainte frequente, premiers signes de perte de performance rapportes apres 150 000km ; onduleur : dysfonctionnement possible apres 200 000-250 000km, reduisant les performances hybrides (surchauffe citee comme cause frequente) ; capteurs ABS tombant en panne apres 80 000-120 000km sur les 1ere/2e generations (contamination, corrosion) ; pompe a eau electrique du circuit de refroidissement montrant des faiblesses apres 120 000-180 000km (surchauffe, perte de liquide) ; batterie 12V : duree de vie rapportee de 2 a 3 ans, remplacement Toyota estime entre 200 et 250€",
+    "source": "fiches-auto.fr, auto-doc.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda Civic (generations diverses 1995-2022, moteurs essence dont 1.0 i-VTEC Turbo, diesel, boite CVT)",
+    "score_fiabilite": "fiabilite generale rapportee comme tres bonne, reputation de durabilite et faible cout d'entretien, temoignages long terme globalement favorables",
+    "pannes_courantes": "moteur 1.0 i-VTEC Turbo : courroie de distribution baignant dans l'huile pouvant se desagreger et boucher le circuit de lubrification ; moteurs diesel : injecteurs et turbo sujets a pannes, surtout sur modeles plus anciens ; boite CVT : fiabilite rapportee comme nettement inferieure a celle des transmissions automatiques classiques, nombreuses plaintes des conducteurs ; compresseur de climatisation tombant en panne entre 80 000 et 120 000km ; leve-vitres electriques (portes arriere) defaillants apres 80 000-100 000km ; sondes lambda en panne apres 120 000-150 000km, entrainant une surconsommation",
+    "source": "auto-doc.fr, fiches-auto.fr, largus.fr, larevueautomobile.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot e-208 (electrique 50kWh, 2020+)",
+    "score_fiabilite": "a_verifier — defaut constructeur reconnu et pris en charge par Stellantis sur le chargeur embarque, ecart important rapporte entre autonomie homologuee et reelle",
+    "pannes_courantes": "chargeur embarque 11kW (fournisseur Mahle, vehicules produits jusqu'au 1er novembre 2022) pouvant interrompre la charge ou refuser de la lancer, defaut reconnu par Stellantis qui finance le remplacement par un chargeur d'un autre fournisseur pour les vehicules de moins de 4 ans, kilometrage illimite ; batterie 12V de servitude rendant l'ame avant terme sur de nombreux exemplaires (impossibilite de demarrer, plantage des ecrans, alertes EPS/ABS), phenomene touchant tous les millesimes et s'aggravant en cas de faible usage ; recommandation d'achat : privilegier les millesimes 2022-2024, exiger un certificat d'etat de sante batterie superieur a 90%",
+    "source": "carverif.fr, largus.fr, automobile-propre.com, actuauto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot e-2008 (electrique 50kWh, 2020+)",
+    "score_fiabilite": "bilan contrasse selon une source malgre une mecanique simplifiee et une degradation batterie tres moderee (inferieure a 5% apres 80 000km rapportee) ; fiabilite jugee point d'amelioration majeur pour ce modele",
+    "pannes_courantes": "pannes liees au systeme de traction electrique rapportees par de nombreux utilisateurs, pouvant mener a des immobilisations ; defauts rapportes sur le chargeur embarque, la prise, la batterie de traction et le moteur electrique ; pannes majoritairement d'origine electronique plutot que mecanique, dysfonctionnements du systeme multimedia rapportes vers 40 000-60 000km necessitant mise a jour logicielle ou remplacement d'ecran (800-1200€) ; garantie batterie de 8 ans/160 000km ; recommandation : privilegier finition Allure 2020-2021 minimum, eviter les versions de lancement 2019 (defauts de jeunesse logiciels)",
+    "source": "autocadre.com, carverif.fr, automobile-propre.com, forum-peugeot.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Megane E-Tech Electric (2022+)",
+    "score_fiabilite": "fiabilite prometteuse rapportee pour un modele recent malgre des defauts de jeunesse typiques des nouvelles technologies, avis proprietaires mitiges",
+    "pannes_courantes": "batterie de traction generalement rapportee comme fiable, mais cas isoles de remplacement signales (dont un cas rapporte a seulement 11 mois d'usage et un autre apres a peine 2 ans, non recoupes par une source primaire) ; systeme d'infodivertissement OpenR Link (Android Automotive) sujet a des freezes complets, redemarrages intempestifs, ecrans noirs et pertes ponctuelles de navigation/radio/camera de recul, corrige en partie par mises a jour ; trappe de charge rapportee difficile a ouvrir sur certains exemplaires, cas de trappe cassee a 2 mois ; cas isoles de cardans HS a 90 000km et de roulements de moteur electrique HS a 115 000km rapportes ; garantie batterie de 8 ans citee comme rassurante",
+    "source": "fiches-auto.fr, autocadre.com, communaute-etech.renault.fr, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Ioniq 5 (2021+, electrique 58/72/77kWh)",
+    "score_fiabilite": "considere comme un vehicule globalement fiable selon les evaluations d'instituts europeens et les retours proprietaires, avis neanmoins mitiges au niveau individuel",
+    "pannes_courantes": "ICCU (unite de controle de charge integree) identifiee comme l'un des defauts recurrents les plus documentes : messages d'erreur EV, refus de recharge AC, decharge anormale de la batterie auxiliaire, perte de puissance moteur pouvant immobiliser le vehicule ; batterie 12V : decharge spontanee rapportee sans alerte prealable, empechant le demarrage alors que la batterie de traction reste chargee ; rappel de securite 2024 sur les modeles fabriques entre janvier 2021 et fevrier 2024 (chargeur de la batterie 12V pouvant dysfonctionner et provoquer un mode de secours avec perte totale de puissance) ; recommandation d'achat : privilegier les millesimes 2022-2024, eviter 2021",
+    "source": "fiches-auto.fr, carverif.fr, guideautoweb.com, automobile-magazine.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia EV6 (2021+, electrique 58/77kWh)",
+    "score_fiabilite": "classe au premier rang pour la sante de sa batterie principale parmi les vehicules 100% electriques selon une etude citee, mais probleme generalise reconnu par Kia sur la batterie 12V",
+    "pannes_courantes": "batterie auxiliaire 12V : Kia a reconnu que le probleme touchant le millesime 2022 est generalise (qualite insuffisante pour alimenter les vehicules de maniere fiable), rappel de plus de 10 000 exemplaires en France pour corriger les decharges et les allumages intempestifs du voyant principal ; ICCU (unite de controle de charge integree) pouvant se deteriorer avec le temps (haute tension, variations de temperature), rappel sur les vehicules fabriques entre le 20/04/2021 et le 28/02/2024, risque de decharge progressive et de reduction de puissance ; defauts de charge recurrents et bugs multimedia rapportes par certains proprietaires ; reconnaissance des panneaux de vitesse rapportee comme peu fiable (lectures erronees, annonces sonores repetees)",
+    "source": "fiches-auto.fr, carverif.fr, kiaevforums.com, largus.fr, roulezelectrique.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat 500e (electrique, 2020+)",
+    "score_fiabilite": "note de fiabilite rapportee a 3,8/5, niveau juge acceptable avec marge d'amelioration",
+    "pannes_courantes": "garantie batterie de 8 ans/160 000km, la plupart des defaillances observees survenant entre 5 000 et 50 000km selon une source ; risque documente de materiaux contamines dans la batterie de traction sur les vehicules produits entre octobre 2020 et juillet 2021 (risque d'incendie) ; cout de remplacement d'une batterie defectueuse rapporte jusqu'a 13 000€ (plus de la moitie du prix d'une 500 RED neuve 42,24kWh) ; systeme multimedia Uconnect pouvant se figer, redemarrer ou perdre temporairement navigation/radio ; cas de recharge AC refusee, interrompue ou a puissance limitee rapportes, lies au chargeur embarque ou a sa gestion electronique",
+    "source": "fiches-auto.fr, italpassion.fr, carverif.fr, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "MG4 (electrique, 2023+, batterie LFP 64kWh)",
+    "score_fiabilite": "avancees et corrections logicielles rapportees mais zones de vigilance persistantes sur l'electronique et la qualite interieure ; service apres-vente cite comme point faible sur les forums specialises",
+    "pannes_courantes": "decharges anormales de la batterie 12V rapportees, avec messages d'erreur multiples, difficultes d'ouverture ou de mise en route des systemes, voire immobilisation ; cas de recharge AC refusee, interrompue ou capricieuse, lies au chargeur embarque ou a sa gestion logicielle ; bugs de l'ecran central : interface figee, redemarrages ou ecran noir pouvant entrainer perte temporaire de camera/navigation/reglages ; cas de climatisation inefficace ou inoperante rapportes, notamment sur versions a pompe a chaleur",
+    "source": "fiches-auto.fr, carverif.fr, chauffeurs-independants.fr, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "MG ZS EV (electrique, 2020+)",
+    "score_fiabilite": "globalement fiable avec 2-3 ans de recul selon une source, peu de pannes majeures rapportees, mais fiabilite jugee seulement acceptable pour une marque en phase d'implantation europeenne",
+    "pannes_courantes": "decharge rapide de la batterie 12V relevee sur certains exemplaires (impossibilite de demarrer les systemes, messages multiples au combine) ; dysfonctionnements de recharge de la batterie haute tension rapportes comme un probleme recurrent touchant une part significative du parc selon une source (non recoupe par une statistique officielle) ; fausses alertes TPMS des 10 000-15 000km, liees a des capteurs defaillants ou un defaut de calibrage ; cas de pompe a chaleur defaillante pris en charge sous garantie ; avis des proprietaires tres contrastes, certains signalant des problemes de service apres-vente",
+    "source": "fiches-auto.fr, carverif.fr, tesla-mag.com, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW i3 (I01, 2013+, electrique 60Ah/94Ah, avec/sans REx)",
+    "score_fiabilite": "fiabilite generale rapportee a 7/10 (7,5/10 pour la mecanique), plusieurs temoignages long terme evoquant 180 000-200 000km sans panne majeure",
+    "pannes_courantes": "batterie haute tension : degradation moyenne rapportee de 8-12% apres 100 000km, note de fiabilite 6/10 ; batterie 12V : point le plus fragile du vehicule, note de 4,5/10, duree de vie rapportee de seulement 3 ans ; recharge parfois instable ; bugs multimedia (Bluetooth, navigation) rapportes ; versions REx (prolongateur d'autonomie) pouvant passer en mode degrade avec voyants moteur ; pannes generalement rapportees a partir de 60 000km, principalement sur l'electronique et le systeme de recharge ; garantie batterie etendue a 160 000km en Europe",
+    "source": "fiches-auto.fr, ovoko.fr, carverif.fr, roulezelectrique.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Ariya (electrique 63/87kWh, 2022+)",
+    "score_fiabilite": "note globale de fiabilite rapportee a 7/10, positionnement dans la moyenne haute du segment SUV electrique, bon bilan rapporte y compris a l'international",
+    "pannes_courantes": "premiers modeles 2023 rapportant quelques defaillances de batterie 12V, defauts occasionnels du systeme electrique et problemes logiciels ; problemes graves de batterie haute tension rapportes comme rares a ce stade, la batterie haute tension et les moteurs n'apparaissant pas comme des points faibles systemiques (contrairement aux systemes de support comme la batterie 12V) ; proprietaires de modeles 2023 (batterie 87kWh) rapportant 20 000 a 70 000 miles sans baisse notable d'autonomie selon des temoignages non recoupes par une etude independante ; garantie batterie de 8 ans/160 000km",
+    "source": "carverif.fr, automobile-propre.com, recharged.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen ID.3 (electrique, 2020+)",
+    "score_fiabilite": "fiabilite de la batterie elle-meme rapportee comme exemplaire (degradation tres lente, capacite restante souvent entre 90 et 95% autour de 100 000km) ; principaux points de vigilance concentres sur le logiciel plutot que sur la mecanique/batterie",
+    "pannes_courantes": "bugs logiciels et plantages d'infodivertissement sur les premiers millesimes 2020-2021 (architecture logicielle inachevee a la sortie) : ecrans qui figent ou redemarrent, deconnexions intempestives de l'application We Connect ID, refus de demarrage rapportes, en grande partie resolus par mises a jour ulterieures ; recharge parfois irreguliere (charge ne demarrant pas, session interrompue, programmation horaire non respectee), en partie resolue par logiciel, necessitant parfois le remplacement du chargeur embarque ou du calculateur de charge sous garantie ; recommandation d'achat : privilegier les millesimes 2022-2024, eviter 2020",
+    "source": "fiches-auto.fr, carverif.fr, ecomotorsnews.com, monoccasgarantie.fr, moteurnature.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen ID.4 (electrique, 2021+)",
+    "score_fiabilite": "fiabilite generale qualifiee de moyenne — pas un vehicule a fuir mais meritant une attention particuliere des acheteurs exigeants selon une source",
+    "pannes_courantes": "faiblesses logicielles rapportees dans diverses situations de conduite : ecran tactile central pouvant ralentir, se bloquer ou redemarrer intempestivement, interferant avec navigation/climatisation/reglages ; problemes de charge pouvant survenir des moins de 10 000km (charge lente, erreurs de charge, decharge inegale), notamment lors de charge rapide DC ; deux rappels distincts emis en janvier 2025 concernant la batterie haute tension (risque de surchauffe lie a une combinaison de defaillance materielle et de lacune logicielle) ; la plupart des soucis de jeunesse sur les millesimes 2020-2022 rapportes comme resolus par mises a jour logicielles ou rappels constructeur",
+    "source": "auto-doc.fr, monoccasgarantie.fr, actuauto.fr, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Yamaha MT-07 (moteur bicylindre CP2 689cm3)",
+    "score_fiabilite": "moto globalement solide et relativement fiable selon plusieurs sources, moteur CP2 repute sans vice de conception connu menant a une casse prematuree",
+    "pannes_courantes": "retours de pannes graves sur le bloc moteur CP2 rapportes comme extremement rares, 100 000km atteignables selon une source a condition de respecter scrupuleusement les intervalles d'entretien ; suspensions jugees un peu molles d'origine, amelioration souvent budgetee par les proprietaires en occasion ; boite de vitesses pouvant claquer ; coupure moteur au demarrage ou au retrogradage a basse vitesse rapportee sur tous les millesimes",
+    "source": "sympathyforthevinyl.fr, baladedes3milles.jimdoweb.com, mt-07.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda CB500F (bicylindre 500cm3)",
+    "score_fiabilite": "reputation de robustesse forte, retours d'utilisateurs depassant les 150 000km sans panne mecanique majeure rapportes ; philosophie Honda de moteurs simples et eprouves soulignee",
+    "pannes_courantes": "problemes de demarrage lies a des defaillances de batterie rapportes ; problemes d'alimentation du systeme de pompe a essence signales ; pannes electroniques liees a des soucis de connectique electrique ; cote positif rapporte, l'entretien preventif reste simple et le cout d'usage maitrise, la CB500F conservant une bonne cote a la revente",
+    "source": "toutpourlamoto.fr, defauts.fr, lerepairedesmotards.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kawasaki Z650 (bicylindre 650cm3)",
+    "score_fiabilite": "mecanique solide beneficiant de la reputation de fiabilite de la marque Kawasaki, peu de surprises rapportees cote mecanique",
+    "pannes_courantes": "problemes electriques rapportes dans 8 cas sur 10 selon une source (combo batterie faible/fusibles/connexions) ; connecteurs allant a l'ECU pouvant se corroder sous l'effet de l'humidite, simulant une panne electronique ; pertes de pression frequentes a l'arriere du systeme de freinage, systeme KIBS/ABS pouvant presenter des defauts electroniques internes avec le temps ; recommandation d'entretien pour les modeles d'occasion (2017-2020) : changer systematiquement la batterie si elle a plus de 3 ans ; modeles post-2020 rapportes avec une meilleure etancheite des connecteurs",
+    "source": "sympathyforthevinyl.fr, diag-engine.fr, lerepairedesmotards.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Yamaha Tmax (scooter GT 530/560, transmission variateur)",
+    "score_fiabilite": "considere comme la reference du segment maxi-scooter selon une source, avis proprietaires globalement tres positifs sur le long terme avec entretien annuel suivi",
+    "pannes_courantes": "pompe a essence : difficultes regulierement rapportees, source de pertes de puissance ou de demarrage difficile ; problemes electriques : soucis d'allumage lies aux fusibles ou a la batterie frequemment signales ; transmission (courroie, galets, variateur) identifiee comme le point critique du TMAX, une defaillance ici pouvant entrainer perte de performance, de fiabilite voire une casse ; non-respect des intervalles de service ou utilisation de pieces inadaptees cites comme facteurs aggravants",
+    "source": "forum-auto.matmut.fr, tmax560.net, planete-yam.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda PCX125 (scooter 125cm3, injection)",
+    "score_fiabilite": "l'un des scooters 125 les plus fiables du marche selon plusieurs sources, beneficiant de la reputation de fiabilite Honda",
+    "pannes_courantes": "codes de panne courants lies aux capteurs et au systeme de gestion moteur (capteur d'oxygene, capteur de position papillon, systemes de controle d'allumage) ; quelques problemes de pompe a essence rapportes ; vibrations a l'avant du carenage sur routes degradees, defaut confirme par Honda selon une source ; consommation d'huile excessive rapportee par certains proprietaires ; courroie de transmission a changer en moyenne tous les 15 000 a 20 000km (jusqu'a 25 000km sur exemplaire bien entretenu)",
+    "source": "pcx125.com, moto125cc.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Piaggio Vespa (gammes LX/ET4/PX, 2 et 4 temps)",
+    "score_fiabilite": "fiabilite rapportee comme dependant a 90% de la rigueur de la revision selon une source, moteurs au caractere pris mais demandant de l'attention",
+    "pannes_courantes": "pannes recurrentes touchant le carburateur, la bougie, la courroie et le pot d'echappement, particulierement sur les versions 2 temps (LX 50) ; nettoyage du carburateur recommande tous les 2 ans ou 5000km en usage urbain ; bougie a changer chaque annee, filtre a air a nettoyer/changer regulierement ; une fois correctement entretenu, entretien courant rapporte comme tres faible",
+    "source": "sympathyforthevinyl.fr, univers-du-scooter.com, scootentole.org — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Piaggio Liberty (50 et 125cc, moteur iGet 4T)",
+    "score_fiabilite": "bon compagnon de ville rapporte comme fiable si entretenu correctement, plusieurs temoignages evoquant plusieurs annees d'utilisation sans panne technique",
+    "pannes_courantes": "environ 90% des soucis rapportes proviennent de l'embrayage/variateur ou de l'allumage selon une source, generalement resolus par nettoyage ou changement de pieces usees ; points de vigilance sur patins d'embrayage, variateur, bougie et filtre a air sur les modeles kilometres ou mal entretenus ; difficulte rapportee pour ouvrir electriquement le siege afin d'acceder a la batterie ; moteur monocylindre iGet 4T (distribution 3 soupapes, injection) juge sobre (environ 1L/40km) et peu polluant",
+    "source": "sympathyforthevinyl.fr, forum-auto.matmut.fr, moto125cc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

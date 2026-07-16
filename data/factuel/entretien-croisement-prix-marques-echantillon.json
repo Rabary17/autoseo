@@ -1,5 +1,5 @@
 {
-  "note_couverture": "Echantillon representatif du croisement '25 prestations x 40 marques/modeles' vise par le plan (1000 entrees). Ce fichier couvre 3 prestations x plusieurs marques/modeles a titre d'echantillon initial, pas l'exhaustivite. A completer par croisements supplementaires lors d'une session dediee.",
+  "note_couverture": "Echantillon representatif du croisement '25 prestations x 40 marques/modeles' vise par le plan (1000 entrees). Ce fichier couvre desormais 25/25 prestations visees par le plan (vidange, plaquettes_de_frein, courroie_de_distribution, batterie, embrayage, amortisseurs_suspension, bougies_allumage_prechauffage, pneus, disques_de_frein, echappement_silencieux, climatisation, turbo, essuie_glaces, radiateur_pompe_a_eau, alternateur, demarreur, controle_technique, liquide_de_refroidissement, huile_boite_de_vitesses, courroie_accessoires_galet_tendeur, joint_de_culasse, pare_brise, rotule_direction_suspension, roulement_de_roue, injecteurs). Attention : le niveau de couverture 25/25 concerne uniquement la liste des prestations traitees — le volume d'entrees par prestation reste un echantillon (quelques marques/modeles chacune), pas les 1000 entrees visees a terme par le plan. Un complement de volume (plus de marques/modeles par prestation) reste a faire lors de sessions ulterieures.",
   "budget_entretien_annuel_par_marque": [
     {"marque": "Dacia", "budget_annuel_estime": "400-500€", "source": "lejournalauto.com — consulte 2026-07 (via Tavily)", "a_verifier": true},
     {"marque": "Toyota", "budget_annuel_estime": "500-650€", "source": "lejournalauto.com — consulte 2026-07 (via Tavily)", "a_verifier": true},
@@ -17,7 +17,10 @@
     "frequence": "tous les 30 000km",
     "par_modele": [
       {"modele": "Renault Clio IV 1.5 dCi 75ch", "prix_observe": "jeu de 4 plaquettes avant ~25-55€ (piece seule, hors MO, exemple Oscaro)", "source": "oscaro.com — consulte 2026-07 (via Tavily)", "a_verifier": true},
-      {"modele": "Dacia Sandero", "prix_observe": "prix moyen constate pour l'intervention complete (plaquettes avant, pose comprise) : 98,28€", "source": "idgarages.com — consulte 2026-07 (via Tavily)", "a_verifier": false}
+      {"modele": "Dacia Sandero", "prix_observe": "prix moyen constate pour l'intervention complete (plaquettes avant, pose comprise) : 98,28€", "source": "idgarages.com — consulte 2026-07 (via Tavily)", "a_verifier": false},
+      {"modele": "Peugeot 208", "prix_observe": "prix moyen constate pour le changement des plaquettes de frein avant : 95€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf (selon generation)", "prix_observe": "Golf 3 : 80€ ; Golf 3 Cabriolet : 79€ ; Golf Sportsvan : 118€ ; Golf 8 : 225€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3", "prix_observe": "prix moyen constate pour le changement des plaquettes de frein avant : 125€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
     ],
     "source": "groupama.fr, oscaro.com, idgarages.com — consulte 2026-07 (via Tavily)",
     "a_verifier": false
@@ -39,5 +42,326 @@
     "note_technique": "la pompe a eau est generalement entrainee par la courroie de distribution et son remplacement est presque toujours propose en meme temps que la courroie et les galets (deconseille de refuser cette option)",
     "source": "blog.vpn-autos.com, chaine-courroie.com, la-piece-auto.com — consulte 2026-07 (via Tavily)",
     "a_verifier": false
+  },
+  "batterie": {
+    "prix_moyen_general": "intervention complete generalement 100€ a 350€ selon marque/modele (piece + main d'oeuvre) ; main d'oeuvre seule 30€ a 80€ en garage independant, jusqu'a 150-350€ chez certains reseaux/concessions selon complexite d'acces et necessite d'enregistrement electronique de la nouvelle batterie",
+    "frequence": "duree de vie moyenne 4 a 5 ans, remplacement au constat de faiblesse (demarrage difficile, voyant batterie)",
+    "par_modele": [
+      {"modele": "Peugeot 208 / 308", "prix_observe": "main d'oeuvre 30€ a 80€ (hors piece) ; budget total constate 110€ a 180€", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Duster", "prix_observe": "prix moyen constate pour l'intervention complete : 99€ (idgarages/vroomly) ; main d'oeuvre seule estimee 150€ a 350€ par GoodMecano (fourchettes non totalement coherentes entre sources)", "source": "idgarages.com, vroomly.com, goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Sandero", "prix_observe": "prix moyen constate pour l'intervention complete : 123€ (Sandero recente) a 174€ (Sandero 2, plus ancienne)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf", "prix_observe": "prix moyen de la batterie seule ~182€ ; main d'oeuvre 150€ a 350€ selon generation (Golf 7 : 180-300€ ; Golf 3/Golf 5 Variant : 150-350€)", "source": "mecazen.fr, goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3", "prix_observe": "prix moyen de la batterie seule ~305€ (fourchette 106€ a 453€ selon motorisation) ; prix moyen constate pour l'intervention complete evoque separement a 171€ (sources partiellement incoherentes entre elles, a fiabiliser)", "source": "vroomly.com, idgarages.com, mecazen.fr — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_specifique": "sur de nombreux vehicules recents (BSI, Stop & Start), le remplacement de la batterie necessite un enregistrement/codage via l'outil de diagnostic du garage pour eviter une usure prematuree — cout et duree d'intervention plus eleves que sur une simple pose",
+    "source": "goodmecano.com, idgarages.com, vroomly.com, mecazen.fr, peugeot.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "embrayage": {
+    "prix_moyen_general": "intervention complete (kit + main d'oeuvre) generalement 550€ a 1700€ selon marque/modele et complexite (boite manuelle vs automatique)",
+    "frequence": "generalement entre 150 000 et 200 000 km selon usage (conduite urbaine/embouteillages use plus vite l'embrayage)",
+    "par_modele": [
+      {"modele": "Peugeot 208", "prix_observe": "kit d'embrayage seul ~385€ (des 309€) ; intervention complete en moyenne 705€, fourchette generale Peugeot 550€ a 1300€ hors pieces citee par certaines sources ; duree moyenne 6h08", "source": "vroomly.com, auto-doc.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 308 1.6 HDi", "prix_observe": "kit seul ~470€ ; main d'oeuvre 400€ a 600€ ; total 600€ a 1050€", "source": "revue-technique-auto.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio", "prix_observe": "Clio 1 : intervention complete en moyenne 516€ ; plus generalement, cout de remplacement embrayage Renault (2025) entre 800€ et 2200€ selon modele/annee", "source": "vroomly.com, auto-doc.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Sandero", "prix_observe": "intervention complete en moyenne 550€ (~6h) ; main d'oeuvre 180€ a 380€ ; version 1.5 dCi : 452€", "source": "vroomly.com, autoagi.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf", "prix_observe": "Golf V/VI : 750€ a 1000€ ; Golf VII : 850€ a 1150€ ; main d'oeuvre seule 400€ a 800€", "source": "auto-doc.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3", "prix_observe": "moyenne generale 767€ ; pour E90/F30 specifiquement 1250€ a 1700€ (11-15h de main d'oeuvre) ; a partir de 1011€ chez les garages les moins chers", "source": "vroomly.com, mecazen.fr — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "le temps de main d'oeuvre varie fortement selon l'accessibilite de la boite de vitesses (2h a 7h+ selon modele/transmission manuelle ou automatique), ce qui explique les grands ecarts de prix entre marques",
+    "source": "vroomly.com, auto-doc.fr, mecazen.fr, revue-technique-auto.fr, autoagi.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "amortisseurs_suspension": {
+    "prix_moyen_general": "changement d'un jeu d'amortisseurs (train avant ou arriere, piece + main d'oeuvre) generalement 100€ a 460€ selon marque/modele ; parallelisme parfois necessaire en complement",
+    "frequence": "generalement tous les 80 000 a 100 000 km (ou constat d'usure : tenue de route degradee, bruit, usure irreguliere des pneus)",
+    "par_modele": [
+      {"modele": "Peugeot 208 (train avant)", "prix_observe": "main d'oeuvre 180€ a 320€ (hors piece) ; prix moyen constate du changement complet AV : 314€ ; paire d'amortisseurs seule ~463€ ; duree 2h30 a 3h30", "source": "goodmecano.com, idgarages.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Sandero (train avant)", "prix_observe": "prix moyen constate du changement AV : 167€ (generation recente, Sandero 3, a partir de 299€) ; paire d'amortisseurs arriere ~203€ ; duree moyenne 1h24", "source": "vroomly.com, mecazen.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio 3 (train avant)", "prix_observe": "a partir de 96€ (prix minimum constate, hors options/parallelisme)", "source": "mecazen.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf (train avant)", "prix_observe": "a partir de 244€ pour le remplacement ; prix moyen par amortisseur ~145€ (varie selon Golf/Polo/Passat et type d'amortisseur)", "source": "idgarages.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Mercedes Classe A (train avant)", "prix_observe": "prix moyen constate du changement AV : 361€ (tres variable selon version du modele)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "les offres 'amortisseurs' incluent generalement les jambes de force (paire) et les coupelles ; un controle/reglage du parallelisme est souvent recommande en complement et facture a part",
+    "source": "goodmecano.com, idgarages.com, vroomly.com, mecazen.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "bougies_allumage_prechauffage": {
+    "prix_moyen_general": "bougies d'allumage (essence) : generalement 30€ a 150€ pour l'intervention complete selon modele (piece 2€ a 25€/bougie, main d'oeuvre 25 a 45 min) ; bougies de prechauffage (diesel) : generalement 40€ a 200€ selon modele (main d'oeuvre 60€ a 150€, 1 a 2h)",
+    "frequence": "bougies d'allumage : tous les 30 000 a 60 000 km selon constructeur ; bougies de prechauffage : au constat de panne (demarrage a froid difficile), pas de peridiocite fixe universelle",
+    "par_modele": [
+      {"modele": "Peugeot 208 (essence, bougies d'allumage)", "prix_observe": "prix moyen constate du changement : 32€ a 42€ selon generation (208 vs 208 2) ; jeu de bougies seul ~94€ ; fourchette generale 74€ a 89€ ; duree moyenne 19 min", "source": "vroomly.com, goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio 3 (diesel, bougies de prechauffage)", "prix_observe": "prix moyen constate du changement : 57€ (une source) mais d'autres sources evoquent 100€ a 200€, voire 120€ a 150€ sur Clio dCi plus recente — ecarts importants entre sources", "source": "vroomly.com, mecazen.fr, ad.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Duster (diesel, bougies de prechauffage)", "prix_observe": "prix moyen constate du changement : 43€ (une source) ; jeu de bougies seul ~158€ (85€ a 169€ selon motorisation 1.5 dCi 110/115 ch) — ecarts importants entre sources", "source": "vroomly.com, mecazen.fr, goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf 7 (essence, bougies d'allumage)", "prix_observe": "main d'oeuvre 180€ a 320€ (hors piece) selon taux horaire du garage", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3 (essence, bougies d'allumage)", "prix_observe": "aucun prix specifique fiable trouve lors de cette recherche ; se referer a la fourchette generale 80€ a 400€ (50€ a 150€ selon modele) en attendant une donnee dediee", "source": "vroomly.com (fourchette generale, non specifique BMW) — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "meme si une seule bougie est defaillante, le remplacement se fait generalement par jeu complet pour eviter un desequilibre a l'allumage/combustion",
+    "source": "vroomly.com, goodmecano.com, mecazen.fr, ad.fr, auto-doc.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "pneus": {
+    "prix_moyen_general": "jeu de 4 pneus neufs (piece + montage/equilibrage/valves/recyclage) generalement 340€ a 500€ pour une berline milieu de gamme (pneus seuls 260-380€ selon dimension/gamme + montage 80-120€) ; main d'oeuvre seule (hors pneus, si le client apporte ses pneus) generalement 120€ a 280€ pour un jeu de 4 selon modele",
+    "frequence": "duree de vie moyenne 40 000 a 50 000km selon usage/style de conduite/gonflage ; temoin d'usure legal a 1,6mm (remplacement obligatoire), recommandation professionnels de ne pas descendre sous 3mm (ete) / 4mm (hiver)",
+    "par_modele": [
+      {"modele": "Citroën C3 (tole ou alu)", "prix_observe": "main d'oeuvre seule (hors pieces) pour le remplacement des 4 pneus : 120€ a 280€", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Nissan Qashqai", "prix_observe": "montage seul (hors achat des pneus) : 10 a 20€ par pneu, soit jusqu'a 80€ pour les 4", "source": "idgarages.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (gamme generale)", "prix_observe": "montage seul (hors achat des pneus) : 10 a 20€ par pneu", "source": "idgarages.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW (gamme generale)", "prix_observe": "montage seul (hors achat des pneus) : 10 a 15€ par pneu (legerement moins que la moyenne des autres marques constatees, ecart non explique avec certitude)", "source": "idgarages.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault (gamme generale)", "prix_observe": "montage seul (hors achat des pneus) : 10 a 20€ par pneu", "source": "idgarages.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "contrairement aux autres prestations de ce fichier, le prix d'un jeu de pneus depend avant tout de la dimension/gamme du pneu (ete/hiver/4 saisons, budget/qualite/premium) et non directement de la marque du vehicule — les frais de montage constates par idGarages restent tres proches d'une marque a l'autre (10-20€/pneu). Aucune source consultee ne donne un prix total (pieces+MO) fiable et distinct par marque/modele pour un jeu de 4 pneus complet — a verifier via un comparateur de pneus (dimension exacte du vehicule) plutot que par marque generique",
+    "source": "expertpneu.com, mister-auto.com, idgarages.com, goodmecano.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "disques_de_frein": {
+    "prix_moyen_general": "intervention complete (train avant, piece + main d'oeuvre) en moyenne 187€ (fourchette generale 60€ a 345€) ; pieces 70€ a 350€ par essieu, main d'oeuvre 50€ a 300€ selon taux horaire du garage",
+    "frequence": "generalement tous les 60 000 a 80 000km (duree de vie constatee 40 000 a 115 000km selon usage/conduite/etat des routes) ; controle recommande des 60 000km",
+    "par_modele": [
+      {"modele": "Renault (gamme generale)", "prix_observe": "prix moyen constate : 190€", "source": "vroomly.com — consulte 2026-07", "a_verifier": false},
+      {"modele": "Peugeot (gamme generale)", "prix_observe": "prix moyen constate : 200€", "source": "vroomly.com — consulte 2026-07", "a_verifier": false},
+      {"modele": "Nissan (gamme generale)", "prix_observe": "prix moyen constate : 196€", "source": "vroomly.com — consulte 2026-07", "a_verifier": false},
+      {"modele": "Volkswagen (gamme generale)", "prix_observe": "prix moyen constate : 243€", "source": "vroomly.com — consulte 2026-07", "a_verifier": false},
+      {"modele": "Citroën C3 (selon generation)", "prix_observe": "de 126€ (C3 Aircross) a 240€ (C3 Aircross 2), en passant par 167€ (C3 1), 174€ (C3 3), 222€ (C3 Picasso) et 229€ (C3 2) — ecart important selon generation", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Ford Fiesta (selon generation)", "prix_observe": "de 132€ (Fiesta 3) a 336€ (Fiesta 7), en passant par 151€ (Fiesta 4), 158€ (Fiesta 5) et 198€ (Fiesta 6)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Audi A3", "prix_observe": "prix moyen constate : 260€ (Sportback 305€, Limousine 314€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Skoda Octavia", "prix_observe": "prix moyen constate : 260€ (identique pour la version Combi)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "prestation distincte des plaquettes de frein deja couvertes dans ce fichier — un changement de disques implique presque toujours le remplacement simultane des plaquettes (l'inverse n'est pas vrai), ce qui explique un cout plus eleve",
+    "source": "vroomly.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "echappement_silencieux": {
+    "prix_moyen_general": "changement du silencieux arriere (piece + main d'oeuvre) en moyenne 189€ a 199€ (reseau idGarages) ; duree d'intervention generalement 1 a 2h",
+    "frequence": "silencieux a changer generalement tous les 80 000km (indication Skoda) ; controle de la ligne d'echappement recommande tous les 20 000km",
+    "par_modele": [
+      {"modele": "Citroën C3 (selon generation)", "prix_observe": "de 229€ (C3 Pluriel) a 316€ (C3 2), en passant par 259€ (C3 1), 262€ (C3 Aircross), 296€ (C3 3), 302€ (C3 Aircross 2) et 306€ (C3 Picasso)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Ford Fiesta (selon generation)", "prix_observe": "de 209€ (Fiesta 3) a 281€ (Fiesta 7), en passant par 212€ (Fiesta 4) et 228€ (Fiesta 5)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Skoda Octavia", "prix_observe": "prix moyen constate : 299€ ; temps moyen de main d'oeuvre 42 minutes", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Audi A3", "prix_observe": "prix moyen constate : 305€ (Sportback 309€, Limousine 280€) ; temps moyen de main d'oeuvre 34 minutes", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio (selon generation)", "prix_observe": "de 190€ (Clio 1) a 334€ (Clio 5), en passant par 212€ (Clio 2), 232€ (Clio 3), 285€ (Clio 4) et 227€ (Clio Estate)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 208 (selon generation)", "prix_observe": "310€ (208 1ere generation) ; 290€ (208 2)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf (selon generation)", "prix_observe": "de 186€ (Golf 3 Cabriolet) a 289€ (Golf 1 Cabriolet), avec Golf 3 : 241€, Golf 1 : 249€, Golf 7 : 275€, Golf Sportsvan : 274€, Golf 4 Variant : 279€, Golf 8 : 277€ ; moyenne Volkswagen toutes generations : 295€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Sandero / Duster (selon generation)", "prix_observe": "Sandero (1ere generation) : 215€ ; Sandero 2 : 284€ ; Sandero 3 : 291€ ; Duster : 259€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "le perimetre exact de l'intervention (silencieux arriere seul vs ligne complete avec catalyseur/FAP) n'est pas toujours precise par les sources consultees, ce qui peut expliquer une partie des ecarts de prix constates entre generations d'un meme modele",
+    "source": "idgarages.com, vroomly.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "climatisation": {
+    "prix_moyen_general": "recharge de gaz simple (avec controle du circuit) generalement 49€ a 65€ pour un vehicule ancien au gaz R134a (avant 2017) ; 99€ a 190€ pour un vehicule recent au gaz R1234yf (norme obligatoire depuis 2017, produit plus couteux) ; forfait avec remplacement du filtre d'habitacle 95€ a 180€ selon type de filtre/gaz",
+    "frequence": "recharge generalement necessaire tous les 2 a 3 ans (le circuit perd naturellement du gaz avec le temps, meme etanche)",
+    "par_modele": [
+      {"modele": "Ford (gamme generale)", "prix_observe": "prix moyen affiche : 209€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Audi (gamme generale)", "prix_observe": "prix moyen affiche : 209€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Skoda (gamme generale)", "prix_observe": "prix moyen affiche : 209€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Nissan (gamme generale)", "prix_observe": "prix moyen affiche : 209€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_specifique": "point de vigilance : Vroomly affiche exactement le meme chiffre (209€) pour Ford, Audi, Skoda et Nissan sur cette prestation — contrairement aux autres prestations de ce fichier (ex. disques de frein, echappement) ou les prix Vroomly varient clairement par marque. Ce chiffre ressemble donc a une moyenne generale plutot qu'a un prix reellement differencie par marque — a traiter avec prudence, marque a_verifier pour ces 4 entrees. Le facteur de prix qui varie reellement, selon idGarages, est le type de gaz refrigerant (R134a vs R1234yf) plutot que la marque du vehicule",
+    "source": "idgarages.com, vroomly.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "turbo": {
+    "prix_moyen_general": "remplacement complet (piece + main d'oeuvre) generalement 350€ a 700€ en moyenne generaliste, mais la fourchette reelle est beaucoup plus large (800€ a 3000€+) selon la complexite du moteur : entree de gamme (Renault/Peugeot/Citroen) 800€ a 1200€ ; milieu de gamme (Volkswagen/BMW/Ford/Skoda) 1200€ a 2000€ ; haut de gamme (Audi/Mercedes/Porsche) 2000€ a 4500€ voire plus",
+    "frequence": "pas de periodicite fixe — remplacement au constat de panne (perte de puissance, fumee, sifflement anormal) ; risque accru au-dela de 150 000-200 000km ou en cas d'entretien huile neglige (le turbo est lubrifie et refroidi par l'huile moteur)",
+    "par_modele": [
+      {"modele": "Ford Galaxy (diesel)", "prix_observe": "main d'oeuvre seule (hors piece) : 180€ a 400€", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Audi A3 (diesel)", "prix_observe": "a partir de 200€ affiche par le simulateur (chiffre de depart, probablement partiel/non representatif du cout total) ; a titre de comparaison, Audi A4 (modele proche) : main d'oeuvre seule 220€ a 450€", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Skoda Fabia", "prix_observe": "fourchette tres large et peu exploitable telle quelle : 84€ a 687€ (prix moyen constate affiche par le simulateur, sans distinction claire piece/MO/motorisation)", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Segment milieu de gamme (Volkswagen/BMW/Ford/Skoda, generique)", "prix_observe": "800€ a 2000€ pour l'intervention complete selon motorisation", "source": "alsapieces.fr, icarsoft-france.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Segment haut de gamme (Audi/Mercedes/Porsche, generique)", "prix_observe": "2000€ a 4500€ pour l'intervention complete, davantage pour les moteurs les plus complexes", "source": "alsapieces.fr, icarsoft-france.fr — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "le turbo neuf seul (piece) coute generalement 200€ a 900€ selon le constructeur, jusqu'a 3000-6000€ pour des vehicules sportifs/competition ; main d'oeuvre generalement 4 a 8h ; le diagnostic prealable est important car un turbo parfois reparable (plutot que remplace) peut fortement reduire la facture",
+    "source": "vroomly.com, goodmecano.com, alsapieces.fr, icarsoft-france.fr, mister-turbo.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "essuie_glaces": {
+    "prix_moyen_general": "jeu de 2 balais avant (piece seule) generalement 20€ a 40€ (5€ a 15€ pour un balai classique, 15€ a 30€ pour un balai plat, 20€ a 40€+ pour un modele hybride/premium type Bosch Aerotwin ou Valeo Silencio) ; pose chez un professionnel (piece + main d'oeuvre) generalement 30€ a 80€ selon garage, la pose etant parfois offerte a l'achat du jeu",
+    "frequence": "remplacement recommande tous les 6 a 12 mois, idealement au printemps et a l'automne (ou des les premiers signes d'usure : stries, bruit, zones non essuyees)",
+    "par_modele": [
+      {"modele": "Renault Clio IV", "prix_observe": "forfait 'jeu essuie-glace avant' (piece + pose) affiche a partir de 150€ par le simulateur GoodMecano", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 208 / 308", "prix_observe": "forfait 'jeu essuie-glace avant' affiche a partir de 150€ par le simulateur GoodMecano", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën C3", "prix_observe": "forfait 'jeu essuie-glace avant' affiche a partir de 150€ par le simulateur GoodMecano", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf 7", "prix_observe": "forfait 'jeu essuie-glace avant' affiche a partir de 150€ par le simulateur GoodMecano", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Megane", "prix_observe": "forfait 'jeu essuie-glace avant' affiche a partir de 150€ par le simulateur GoodMecano", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_specifique": "point de vigilance similaire a la prestation climatisation deja notee dans ce fichier : le simulateur GoodMecano affiche exactement le meme chiffre (a partir de 150€) pour Renault Clio IV, Peugeot 208/308, Citroën C3, Volkswagen Golf 7 et Renault Megane sur le forfait 'jeu essuie-glace avant' — ce montant ressemble a un prix plancher generique de la plateforme plutot qu'a un prix reellement differencie par modele, et il est en outre nettement superieur a la fourchette generaliste (30-80€ pose comprise) trouvee ailleurs pour la meme prestation, sans qu'on puisse etre certain que le perimetre exact (bras + balais + reglage vs balais seuls) soit identique. A ne pas confondre avec le 'remplacement du moteur d'essuie-glace' (piece mecanique distincte, beaucoup plus chere : main d'oeuvre seule 160€ a 320€ selon GoodMecano, ex. Dacia Dokker, Renault Clio IV/Megane, Peugeot 208), qui est une panne electromecanique differente du simple remplacement des balais",
+    "source": "vroomly.com, bymycar.fr, goodmecano.com, mister-auto.com, mondialparebrise.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "radiateur_pompe_a_eau": {
+    "prix_moyen_general": "radiateur de refroidissement : intervention complete (piece + main d'oeuvre) generalement 250€ a 1000€ (piece seule 100€ a 600€, main d'oeuvre 150€ a 400€ selon garage) ; pompe a eau : intervention complete generalement plusieurs centaines d'euros (piece seule 40€ a 120€, main d'oeuvre 200€ a 500€, duree 3 a 5h selon accessibilite) ; le remplacement simultane avec la courroie de distribution (frequemment recommande, cf. prestation courroie_de_distribution de ce fichier) porte le total a 600€ a 1200€",
+    "frequence": "pas de periodicite fixe universelle pour le radiateur (remplacement au constat de fuite/surchauffe) ; la pompe a eau est generalement changee en meme temps que la courroie de distribution, selon la periodicite constructeur de cette derniere",
+    "par_modele": [
+      {"modele": "Renault Clio (radiateur, toutes generations)", "prix_observe": "fourchette globale constatee 150€ a 766€ selon motorisation/generation ; piece neuve seule 40€ a 200€", "source": "vroomly.com, fixter.fr, mister-auto.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 208 (radiateur)", "prix_observe": "prix moyen propose pour un changement de radiateur : 145€ a 501€", "source": "fixter.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën C3 (radiateur moteur)", "prix_observe": "main d'oeuvre seule (hors piece) : 180€ a 320€ ; duree moyenne 2h a 3h30", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3 (radiateur moteur)", "prix_observe": "page dediee existante chez GoodMecano mais sans montant chiffre obtenu lors de cette recherche ; a defaut, se referer a la fourchette generale 250€ a 1000€", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 208 (pompe a eau)", "prix_observe": "main d'oeuvre seule (hors piece) : 180€ a 320€ ; duree 2h a 3h30 selon motorisation/accessibilite", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio / Dacia Sandero-Duster (pompe a eau)", "prix_observe": "pages dediees GoodMecano existantes par generation, sans montant chiffre distinct obtenu lors de cette recherche ; a titre de comparaison, prestations proches (Megane, Clio IV) affichees 'a partir de 180€' de main d'oeuvre", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "comme deja signale pour la courroie de distribution dans ce fichier, la pompe a eau est frequemment entrainee par cette meme courroie et son remplacement isole (sans la courroie) est rare en pratique — la plupart des devis constates concernent un remplacement conjoint, ce qui rend difficile l'isolement d'un prix 'pompe a eau seule' fiable par modele",
+    "source": "vroomly.com, idgarages.com, goodmecano.com, fixter.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "alternateur": {
+    "prix_moyen_general": "changement complet (piece + main d'oeuvre) generalement 150€ a 600€ selon fourchette generaliste Vroomly ; toutefois les prix moyens constates par marque sur Vroomly sont nettement plus eleves (600€ a 660€ toutes marques generalistes/premium confondues) — les deux chiffres proviennent de la meme source et l'ecart n'est pas explique avec certitude (moyenne 'simulateur generaliste' vs moyenne 'par marque'), a verifier",
+    "frequence": "pas de periodicite fixe — remplacement au constat de panne (voyant batterie allume moteur tournant, sous-charge, bruit de roulement)",
+    "par_modele": [
+      {"modele": "Renault (gamme generale)", "prix_observe": "prix moyen constate : 632€ (detail par modele : Clio 1 544€, Clio 3 613€, Renault 21 528€, Renault 4 530€, Fluence 677€, Scenic 3 707€, Megane 2 716€) ; duree moyenne 1h59", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (gamme generale)", "prix_observe": "prix moyen constate : 611€ (detail par modele : 208 632€, 308 614€, 2008 603€, 206 592€, 207 589€, 5008 667€, Expert 528€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW (gamme generale)", "prix_observe": "prix moyen constate : 658€ (detail par modele : Serie 1 759€, Serie 3 660€, Serie 1 Coupe 594€, X3 585€, X4 598€, Serie 4 Coupe 709€) ; duree moyenne 1h36", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën (gamme generale)", "prix_observe": "prix moyen constate : 649€ (detail par modele : C1 577€, C1 2 557€, C3 1 562€, C3 3 573€, C4 1 586€, C6 766€, C15 537€) ; duree moyenne 1h42", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_specifique": "en complement, courroie d'accessoire (courroie d'alternateur) seule : generalement 120€ a 160€ ; poulie d'alternateur seule : 30€ a 60€ — a ne pas confondre avec le remplacement complet de l'alternateur",
+    "source": "vroomly.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "demarreur": {
+    "prix_moyen_general": "intervention complete (piece + main d'oeuvre) generalement 120€ a 625€ selon vehicule (piece seule 75€ a 400€+, main d'oeuvre 40€ a 150€) ; prix moyen constate 229€ tout compris sur le reseau idGarages, contre 435€ toutes marques confondues sur Vroomly — ecart important entre les deux plateformes, methodologies de calcul probablement differentes, a verifier",
+    "frequence": "pas de periodicite fixe — remplacement au constat de panne (demarrage impossible ou difficile, bruit de grincement/claquement au demarrage)",
+    "par_modele": [
+      {"modele": "Renault (gamme generale)", "prix_observe": "prix moyen constate : 510€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (gamme generale)", "prix_observe": "prix moyen constate : 390€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen (gamme generale)", "prix_observe": "prix moyen constate : 487€ (detail par modele : Golf Sportsvan 460€, Passat Variant 477€, Passat 476€, Beetle 451€, Crafter 453€, Transporter 5 Camionnette 428€, Multivan 428€) ; duree moyenne 1h03", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Sandero / Duster / Logan (gamme generale)", "prix_observe": "pages dediees idGarages existantes par modele mais sans montant chiffre distinct obtenu lors de cette recherche ; a defaut, se referer a la moyenne generale idGarages toutes marques (229€)", "source": "idgarages.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW (gamme generale)", "prix_observe": "aucun chiffre moyen par marque trouve avec certitude lors de cette recherche ; Vroomly indique seulement, en tendance generale, que les demarreurs BMW/Audi/Mercedes sont 'plus chers que ceux des citadines' type Renault/Peugeot, sans montant precis associe", "source": "vroomly.com (blog, tendance generale non chiffree pour BMW) — consulte 2026-07", "a_verifier": true}
+    ],
+    "source": "vroomly.com, idgarages.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "controle_technique": {
+    "prix_moyen_general": "moyenne nationale environ 78€ a 78,50€ pour un vehicule leger essence ; environ 88€ pour un diesel (avec volet pollution) ; fourchette globale constatee en France : 45€ (le moins cher) a 130€ (le plus cher) ; tarif libre, non reglemente par l'Etat (fixe par chaque centre de controle) ; prix hors reparations en cas de contre-visite",
+    "frequence": "premier controle obligatoire 4 ans apres la premiere mise en circulation, puis renouvellement tous les 2 ans (vehicules legers particuliers)",
+    "par_modele": [
+      {"modele": "Vehicule essence (generique, toutes marques)", "prix_observe": "moyenne nationale ~78€ (fourchette generaliste 50€ a 75€ selon les sources)", "source": "cartest.fr, groupama.fr, lelynx.fr — consulte 2026-07", "a_verifier": false},
+      {"modele": "Vehicule diesel (generique, toutes marques)", "prix_observe": "moyenne nationale ~88€ avec visite pollution (fourchette generaliste 50€ a 85€ selon les sources)", "source": "cartest.fr, groupama.fr, lelynx.fr — consulte 2026-07", "a_verifier": false},
+      {"modele": "Vehicule electrique (generique, toutes marques)", "prix_observe": "moyenne ~88€ a 90€ (controle allege, sans volet pollution moteur thermique)", "source": "cartest.fr, lelynx.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Vehicule hybride (generique, toutes marques)", "prix_observe": "moyenne ~87€", "source": "cartest.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Vehicule GPL (generique, toutes marques)", "prix_observe": "moyenne ~95€", "source": "cartest.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Region Ile-de-France / Haute-Savoie / Corse-du-Sud (toutes marques, zones les plus cheres)", "prix_observe": "generalement >90€ (Haute-Savoie 99,42€, Corse-du-Sud 92,90€, Paris 89,53€)", "source": "lelynx.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Region Loiret / Moselle / Loire (toutes marques, zones les moins cheres)", "prix_observe": "generalement 65€ a 70€ (Loiret 67,24€, Moselle 68,97€, Loire 69,49€)", "source": "lelynx.fr — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_specifique": "contrairement aux autres prestations de ce fichier, le controle technique n'est PAS croise par marque/modele de vehicule : selon l'ensemble des sources consultees, la marque du vehicule n'a aucune incidence sur le tarif. Les deux seuls facteurs de variation identifies sont (1) la motorisation/energie du vehicule (essence/diesel/electrique/hybride/GPL) et (2) la region/departement du centre de controle. A utiliser en remplacement d'un croisement par marque pour cette prestation specifique",
+    "source": "cartest.fr, lelynx.fr, groupama.fr, lacentrale.fr, rxautomobiles.com, autohero.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "liquide_de_refroidissement": {
+    "prix_moyen_general": "vidange/purge complete du liquide de refroidissement (piece + main d'oeuvre) en moyenne 98€ (Vroomly) ; fourchette generaliste 50€ a 150€ selon garages (une autre source situe la fourchette a 60-120€) ; le liquide seul coute environ 5€ a 15€ le bidon",
+    "frequence": "purge/remplacement generalement recommande tous les 2 a 5 ans selon prescriptions constructeur (le liquide perd ses proprietes anti-corrosion/anti-gel avec le temps meme si le circuit reste etanche) ; appoint simple possible en cas de niveau bas sans fuite",
+    "par_modele": [
+      {"modele": "Audi (gamme generale)", "prix_observe": "prix moyen constate : 115€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën (gamme generale)", "prix_observe": "prix moyen constate : 89€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (gamme generale)", "prix_observe": "prix moyen constate : 96€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Honda (gamme generale)", "prix_observe": "prix moyen constate : 56€ (nettement sous la moyenne generale, a confirmer)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Seat (gamme generale)", "prix_observe": "prix moyen constate : 84€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Toyota (gamme generale)", "prix_observe": "prix moyen constate : 85€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "duree moyenne d'intervention environ 48 minutes ; a ne pas confondre avec le remplacement du radiateur ou de la pompe a eau (deja couverts dans ce fichier sous 'radiateur_pompe_a_eau'), qui sont des pieces distinctes du circuit de refroidissement",
+    "source": "vroomly.com, idgarages.com, ad.fr, auto-doc.fr, goodmecano.com, autobutler.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "huile_boite_de_vitesses": {
+    "prix_moyen_general": "boite manuelle : vidange complete (piece + main d'oeuvre) en moyenne 68€ selon Vroomly (fourchette generale 40€ a 80€), mais d'autres sources situent la fourchette plus haut, entre 50€ et 150€ (voire 80-200€ selon une source) — ecart notable entre sources, a verifier ; boite automatique : nettement plus chere, generalement 350€ a 700€ (une source va jusqu'a 360-900€ voire 399-799€ selon garage/vehicule), l'huile specifique etant plus couteuse",
+    "frequence": "pas de periodicite universelle fixe — depend de la prescription constructeur (certaines boites manuelles annoncees 'a vie', d'autres tous les 60 000 a 100 000km ; boites automatiques generalement tous les 60 000 a 120 000km selon modele)",
+    "par_modele": [
+      {"modele": "Renault (gamme generale, boite manuelle)", "prix_observe": "prix moyen constate : 79€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën (gamme generale, boite manuelle)", "prix_observe": "prix moyen constate : 74€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (gamme generale, boite manuelle)", "prix_observe": "prix moyen constate : 68€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW (gamme generale, boite manuelle)", "prix_observe": "prix moyen constate : 63€ (etonnamment bas compte tenu du positionnement premium de la marque, a confirmer)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Audi (gamme generale, boite manuelle)", "prix_observe": "prix moyen constate : 85€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "l'huile de boite coute generalement 6€ a 8€ le litre, pour un volume de 2 a 3,5L selon boite (soit 18-28€ de fluide) ; duree moyenne d'intervention environ 28 minutes pour une boite manuelle ; les chiffres Vroomly par marque (boite manuelle) semblent nettement inferieurs aux fourchettes generalistes trouvees ailleurs (AD.fr, TotalEnergies) — a fiabiliser",
+    "source": "vroomly.com, ad.fr, points.fr, feuvert.fr, bymycar.fr, totalenergies.fr, idgarages.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "courroie_accessoires_galet_tendeur": {
+    "prix_moyen_general": "changement de la courroie d'accessoire seule (piece + main d'oeuvre) en moyenne 72€ selon Vroomly ; l'intervention complete incluant les galets tendeurs (quasi systematiquement changes en meme temps) coute generalement 30€ a 217€ selon modele (une autre source, GoodMecano, situe la fourchette plus haut a 100-300€, voire 150-400€ selon complexite d'acces au moteur) ; courroie seule 5€ a 17€, galets tendeurs 25€ a 120€ (piece), main d'oeuvre 25€ a 200€ (1 a 2h)",
+    "frequence": "generalement tous les 70 000 a 100 000km, ou au constat d'usure (bruit de sifflement, craquement, fissures visibles sur la courroie)",
+    "par_modele": [
+      {"modele": "Citroën (C1, C3, gamme generale)", "prix_observe": "25€ a 152€ selon modele (C1 : 59-102€ ; C3 : 51-143€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (206, 208, 308)", "prix_observe": "25€ a 171€ selon modele (206 : 37-70€ ; 308 : 38-59€ ; 208 : 93-171€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault (Clio, Megane, Scenic)", "prix_observe": "28€ a 151€ selon modele (Clio : 35-147€ ; Megane : 60-104€ ; Scenic : 55-104€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen (Golf, New Beetle)", "prix_observe": "18€ a 121€ selon modele (Golf : 18-103€ ; New Beetle : 76-121€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia (Sandero, Duster)", "prix_observe": "48€ a 103€ selon modele (Sandero : 48-93€ ; Duster : 77-103€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "les galets tendeurs sont systematiquement remplaces en meme temps que la courroie d'accessoire lors de cette intervention ; cette prestation est distincte de la courroie de distribution deja couverte dans ce fichier (la courroie d'accessoire entraine l'alternateur, la direction assistee et le compresseur de climatisation, pas les organes internes du moteur)",
+    "source": "vroomly.com, goodmecano.com, courroie-distribution.fr, idgarages.com, kit-embrayage.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "joint_de_culasse": {
+    "prix_moyen_general": "ecart important entre sources sur cette prestation : Vroomly situe le remplacement complet (piece + main d'oeuvre) entre 150€ et 700€, tandis que d'autres sources (idGarages, Auto-Doc) l'estiment plutot a 700€ a 1800€ en moyenne (voire 500€ a 2000€, jusqu'a plus de 3000€ sur vehicules complexes) — en cas de culasse deformee necessitant rectification/surfaçage, compter 1200€ a 2500€, et jusqu'a 2500€-5000€+ pour un remplacement complet de culasse ; le joint seul coute 20€ a 100€ (jusqu'a 200€ selon marque/modele)",
+    "frequence": "pas de periodicite fixe — remplacement au constat de panne (surchauffe moteur, melange huile/liquide de refroidissement, fumee blanche a l'echappement, perte de puissance)",
+    "par_modele": [
+      {"modele": "Peugeot 206 (essence/diesel)", "prix_observe": "500€ a 900€ selon motorisation et garage choisi ; piece seule 40€ a 80€, main d'oeuvre 4 a 6h", "source": "les-as-du-volant.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio III / Clio IV", "prix_observe": "main d'oeuvre seule (hors piece) : 180€ a 400€ ; piece seule 35€ a 65€ ; intervention 3 a 5h selon motorisation", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Megane", "prix_observe": "main d'oeuvre seule (hors piece) : 200€ a 450€", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf (TDI diesel)", "prix_observe": "piece seule 35€ a 65€ ; intervention complete generalement 350€ a 1000€ pour une motorisation standard, 1000€ a 2000€ pour un moteur turbo/injection directe recent ; main d'oeuvre 8 a 15h selon complexite/organes peripheriques (turbo, courroies)", "source": "passion-auto.fr, goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW / Audi / Mercedes (segment premium, gamme generale)", "prix_observe": "piece seule 100€ a 200€ selon modele ; intervention complete 2500€ a 3500€ ou plus sur versions sportives (S/RS/AMG)", "source": "passion-auto.fr — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "prestation a cout tres variable et sources partiellement contradictoires (fourchette generale Vroomly nettement inferieure aux autres sources consultees) — le facteur principal reste le temps de main d'oeuvre (demontage complet de la partie haute du moteur), avec un taux horaire garage de 45€ a 120€/h selon region et type d'atelier (independant vs concession)",
+    "source": "vroomly.com, idgarages.com, auto-doc.fr, btobjob.com, monpotfrancais.fr, les-as-du-volant.com, goodmecano.com, passion-auto.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "pare_brise": {
+    "prix_moyen_general": "remplacement complet (piece + main d'oeuvre, hors calibrage ADAS) generalement 300€ a 1000€, moyenne generaliste situee entre 300€ et 500€ selon Vroomly (une autre source cite une moyenne francaise ~520€) ; le pare-brise seul coute de 50€ (entree de gamme, anti-lacerant) a 450€ (chauffant) selon le type de vitrage (anti-lacerant 50-100€, athermique 100-150€, chauffant 350-450€) ; main d'oeuvre 2 a 3h",
+    "frequence": "au constat d'impact non reparable (fissure >30cm, impact dans le champ de vision du conducteur, ou trop pres du bord du pare-brise)",
+    "par_modele": [
+      {"modele": "Renault Clio 4/5", "prix_observe": "350€ a 800€ selon generation/options ; Clio 5 recente avec ADAS/capteurs jusqu'a 800-900€ ; exemple concret : ~420€ chez un reseau independant contre ~580€ chez un grand reseau national pour une Clio 4", "source": "latelierbylautomobileorleans.fr, speedparebrisefrance.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 208", "prix_observe": "400€ a 900€ selon finition ; version d'entree de gamme 400-550€ ; version GT avec camera/capteurs 850-950€", "source": "speedparebrisefrance.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën C3 (comparaison qualitative)", "prix_observe": "cite comme 'moins cher' qu'une BMW Serie 5 ou qu'un vehicule premium equivalent, mais aucun montant chiffre precis trouve pour ce modele lors de cette recherche", "source": "latelierbylautomobileorleans.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf", "prix_observe": "300€ a 500€ hors main d'oeuvre pour un vitrage standard ; Golf 7 avec vitrage acoustique/athermique : 800€ a 1100€ pose comprise", "source": "origin-jantes.com, autoparebrise.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3", "prix_observe": "aucun montant chiffre specifique a la Serie 3 trouve lors de cette recherche ; a defaut, se referer a la fourchette generale constatee pour BMW (300€ a 800€, ~25% plus cher que la moyenne toutes marques)", "source": "heartgalerie.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Dacia Sandero", "prix_observe": "220€ a 400€ selon version/options (capteur de pluie, ADAS, vitrage acoustique) selon une source ; une autre source situe plutot la moyenne a 470€-620€ — ecart important entre sources", "source": "franceparebrise.fr, redk-motors.me — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "le calibrage ADAS (camera/capteurs lies au pare-brise sur vehicules recents) est facture en supplement, generalement 100€ a 400€ (120€ a 300€ pour une Renault Clio par exemple) — de nombreux vehicules recents necessitent desormais ce recalibrage obligatoire apres tout remplacement de pare-brise ; l'option bris de glace de l'assurance auto permet generalement une prise en charge sans avance de frais",
+    "source": "vroomly.com, carglass.fr, latelierbylautomobileorleans.fr, speedparebrisefrance.fr, franceparebrise.fr — consulte 2026-07",
+    "a_verifier": true
+  },
+  "rotule_direction_suspension": {
+    "prix_moyen_general": "rotule de direction : remplacement complet (piece + main d'oeuvre) en moyenne 133€ selon Vroomly (piece seule 5€ a 25€, main d'oeuvre 50€ a 200€, total 55€ a 225€ par rotule, parallelisme souvent inclus) ; rotule de suspension : en moyenne 135€ selon Vroomly (piece seule 11€ a 60€, main d'oeuvre 25€ a 200€)",
+    "frequence": "pas de periodicite fixe universelle — remplacement au constat d'usure/jeu detecte au controle technique ou lors d'une revision (bruit de cliquetis dans les virages, tenue de route degradee, usure irreguliere des pneus)",
+    "par_modele": [
+      {"modele": "Renault (rotule de direction, gamme generale)", "prix_observe": "prix moyen constate : 129€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (rotule de direction, gamme generale)", "prix_observe": "prix moyen constate : 135€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën (rotule de direction, gamme generale)", "prix_observe": "prix moyen constate : 139€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW (rotule de direction, gamme generale)", "prix_observe": "prix moyen constate : 180€ (nettement au-dessus de la moyenne generale de 133€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault (rotule de suspension, gamme generale)", "prix_observe": "prix moyen constate : 113€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (rotule de suspension, gamme generale)", "prix_observe": "prix moyen constate : 182€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Mercedes-Benz (rotule de suspension, gamme generale)", "prix_observe": "prix moyen constate : 192€ (le plus eleve des marques constatees sur cette prestation)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "la rotule de direction relie la biellette/le boitier de direction a la fusee de roue, tandis que la rotule de suspension relie le triangle de suspension a la fusee — deux pieces distinctes, souvent confondues, avec des prix moyens Vroomly proches (133€ vs 135€) mais des variations par marque parfois inversees entre les deux prestations (ex. Peugeot moins chere que la moyenne en rotule de direction mais au-dessus en rotule de suspension)",
+    "source": "vroomly.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "roulement_de_roue": {
+    "prix_moyen_general": "remplacement complet (piece + main d'oeuvre) generalement 55€ a 250€ selon Vroomly (piece seule 60€ a 150€, main d'oeuvre 50€ a 80€) ; idGarages situe une fourchette plus large et plus elevee, 135€ a 560€ selon modele (citadine type Clio ~220€, SUV jusqu'a 475€) ; GoodMecano evoque 100€ a 350€ par roue (piece 20€ a 80€, 1 a 2h de main d'oeuvre specialisee avec presse hydraulique) — ecarts notables entre plateformes, a verifier",
+    "frequence": "pas de periodicite fixe universelle — remplacement au constat de bruit de roulement (grondement croissant avec la vitesse), de jeu detecte au controle technique, ou de vibration anormale",
+    "par_modele": [
+      {"modele": "Citroën C3 (1ere generation)", "prix_observe": "prix moyen constate : 331€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio (1ere generation)", "prix_observe": "prix moyen constate : 282€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot 208", "prix_observe": "prix moyen constate : 351€ (Vroomly) ; a comparer avec un devis GoodMecano 'a partir de 140€' pour le meme modele — ecart important entre les deux sources, perimetre de l'intervention (roue seule vs plusieurs roues, essieu avant vs arriere) non clairement precise", "source": "vroomly.com, goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Renault Clio IV", "prix_observe": "devis GoodMecano affiche 'a partir de 160€'", "source": "goodmecano.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen Golf (selon generation)", "prix_observe": "Golf 4 : 273€ ; Golf 3 : 312€ ; Golf Plus : 367€ ; Golf 7 Break : 434€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "BMW Serie 3", "prix_observe": "prix moyen constate : 328€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Ford Fiesta (selon generation)", "prix_observe": "Fiesta 4 : 248€ ; Fiesta 3 : 249€ ; Fiesta 5 : 256€", "source": "vroomly.com — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "necessite generalement une presse hydraulique pour l'extraction/pose du roulement, ce qui justifie une main d'oeuvre specialisee ; des ecarts de prix importants sont constates entre les plateformes consultees (Vroomly, idGarages, GoodMecano) pour des modeles proches, sans que le perimetre exact de chaque devis (1 roue vs train complet) soit toujours precise — a fiabiliser au cas par cas",
+    "source": "vroomly.com, idgarages.com, goodmecano.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  "injecteurs": {
+    "prix_moyen_general": "changement d'un injecteur : prix moyen general 177€ selon Vroomly, mais fourchette tres large ailleurs (100€ a 500€ pour un injecteur, pieces et main d'oeuvre incluses) ; specifiquement diesel : injecteur seul 230€ a 400€, remplacement complet 250€ a 700€ par injecteur (jusqu'a 500-1500€ pour l'ensemble d'un moteur) ; essence : injecteur seul 100€ a 300€ ; nettoyage seul (sans remplacement) : nettoyage en rampe 60€ a 120€, nettoyage ultrasonique 50€ a 80€ par injecteur, nettoyage externe specialise 150€ a 250€",
+    "frequence": "pas de periodicite fixe universelle — nettoyage preventif parfois recommande tous les 30 000 a 60 000km (surtout diesel), remplacement au constat de panne (perte de puissance, demarrage difficile, fumee, voyant moteur)",
+    "par_modele": [
+      {"modele": "Renault (Twingo 1, Clio 2, Laguna 2)", "prix_observe": "45€ a 248€ selon modele (Twingo 1 : 51-68€ ; Clio 2 : 147-246€ ; Laguna 2 : 134-167€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Peugeot (206 CC, 208, 3008)", "prix_observe": "46€ a 439€ selon modele (206 CC : 46-68€ ; 208 : 322-439€ ; 3008 : 248-343€) ; a titre de comparaison, une autre source situe le 3008 plutot a 200-600€ tous injecteurs confondus", "source": "vroomly.com, autolisa.fr — consulte 2026-07", "a_verifier": true},
+      {"modele": "Citroën (C15, C2, DS4)", "prix_observe": "48€ a 506€ selon modele (C15 : 48-70€ ; C2 : 220-302€ ; DS4 : 361-506€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Volkswagen (Golf 1, Golf 5)", "prix_observe": "44€ a 258€ selon modele (Golf 1 : 44-56€ ; Golf 5 : 224-256€)", "source": "vroomly.com — consulte 2026-07", "a_verifier": true},
+      {"modele": "Mercedes Classe C (berline premium)", "prix_observe": "140€ a 800€ selon motorisation/complexite, fourchette nettement plus large que les autres modeles cites", "source": "autolisa.fr — consulte 2026-07", "a_verifier": true}
+    ],
+    "note_technique": "les prix Vroomly par marque/modele semblent correspondre a un perimetre variable (parfois proche du nettoyage/diagnostic pour les montants bas type Twingo 1 a 51-68€, parfois proche du remplacement complet pour les montants eleves type DS4 a 361-506€) — la marque d'injecteur (Bosch, Delphi, Denso, Siemens/VDO) et la technologie (common rail haute pression en diesel) influencent aussi fortement le cout ; a fiabiliser en distinguant clairement nettoyage vs remplacement dans une prochaine passe",
+    "source": "vroomly.com, injecteurs-diesel.com, injecteurland.com, autolisa.fr, mecazen.fr, idgarages.com, ad.fr — consulte 2026-07",
+    "a_verifier": true
   }
 }

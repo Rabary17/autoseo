@@ -1,0 +1,242 @@
+[
+  {
+    "code": "P0243",
+    "libelle": "Electrovanne de wastegate turbo/compresseur A - dysfonctionnement",
+    "causes_possibles": "Electrovanne de commande de suralimentation defaillante (bobine degradee par la chaleur), cablage ou connecteur corrode, durite de depression fissuree, fusible grille",
+    "gravite": "severe",
+    "source": "obd-codes.com, go-parts.com, carparts.com, repairpal.com, obd2pros.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0244",
+    "libelle": "Electrovanne de wastegate turbo/compresseur A - plage/performance",
+    "causes_possibles": "Wastegate ne s'ouvrant/fermant pas comme attendu, electrovanne partiellement bloquee (gel par temps froid ou encrassement), durite de depression endommagee",
+    "gravite": "severe",
+    "source": "autobarn.net, icarsoft-us.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0245",
+    "libelle": "Electrovanne de wastegate turbo/compresseur A - signal bas",
+    "causes_possibles": "Court-circuit a la masse du cablage de l'electrovanne, electrovanne defaillante, connecteur endommage",
+    "gravite": "severe",
+    "source": "repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0246",
+    "libelle": "Electrovanne de wastegate turbo/compresseur A - signal eleve",
+    "causes_possibles": "Court-circuit a l'alimentation du cablage de l'electrovanne, electrovanne defaillante, connecteur endommage",
+    "gravite": "severe",
+    "source": "yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0327",
+    "libelle": "Circuit capteur de cliquetis 1 (Banc 1) - signal bas",
+    "causes_possibles": "Capteur de cliquetis defaillant ou court-circuite a la masse, serrage incorrect du capteur (couple non respecte, ecrase le cristal piezoelectrique), cablage endommage ; sur certains V8 GM/Subaru, capteur noye par infiltration d'eau dans la vallee moteur",
+    "gravite": "modere",
+    "source": "obd-codes.com, go-parts.com, autodtcs.com, repairpal.com, carparts.com, cartreatments.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0328",
+    "libelle": "Circuit capteur de cliquetis 1 (Banc 1) - signal eleve",
+    "causes_possibles": "Cablage en circuit ouvert (fil coupe), connecteur endommage, capteur de cliquetis defaillant",
+    "gravite": "modere",
+    "source": "diycarexpert.com, icarsoft.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0330",
+    "libelle": "Circuit capteur de cliquetis 2 (Banc 2) - dysfonctionnement",
+    "causes_possibles": "Capteur de cliquetis banc 2 defaillant, cablage ou connecteur corrode, calculateur (PCM) defaillant",
+    "gravite": "modere",
+    "source": "carparts.com, yourmechanic.com, kbb.com, obd-codes.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0331",
+    "libelle": "Circuit capteur de cliquetis 2 (Banc 2) - plage/performance",
+    "causes_possibles": "Capteur de cliquetis banc 2 hors plage, serrage incorrect du capteur, cablage degrade",
+    "gravite": "modere",
+    "source": "carparts.com, mavyn.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0332",
+    "libelle": "Circuit capteur de cliquetis 2 (Banc 2) - signal bas",
+    "causes_possibles": "Court-circuit a la masse du cablage banc 2, capteur de cliquetis defaillant, connecteur corrode (infiltration d'eau dans la vallee moteur sur certains V8)",
+    "gravite": "modere",
+    "source": "instantcarfix.com, automotivesimple.com, autocodes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0415",
+    "libelle": "Circuit vanne de commutation air secondaire B - dysfonctionnement",
+    "causes_possibles": "Bobine de l'electrovanne de commutation banc 2 en circuit ouvert, infiltration d'eau dans la vanne par temps froid via un clapet anti-retour defaillant, cablage endommage par la chaleur d'echappement",
+    "gravite": "mineure",
+    "source": "obd-codes.com, hewitt-tech.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0418",
+    "libelle": "Circuit relais systeme d'air secondaire A - dysfonctionnement",
+    "causes_possibles": "Circuit ouvert ou court-circuit sur l'un des relais de pompe d'air secondaire, relais defaillant, cablage endommage par la chaleur d'echappement",
+    "gravite": "mineure",
+    "source": "yourmechanic.com, repairpal.com, obd-codes.com, go-parts.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0419",
+    "libelle": "Circuit relais systeme d'air secondaire B - dysfonctionnement",
+    "causes_possibles": "Relais B (second relais du systeme, quand il y en a plusieurs) defaillant, cablage endommage, fusible grille par circuit surcharge",
+    "gravite": "mineure",
+    "source": "obd-codes.com, hewitt-tech.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0450",
+    "libelle": "Capteur de pression du systeme EVAP - dysfonctionnement",
+    "causes_possibles": "Capteur de pression differentielle du reservoir defaillant, circuit ouvert ou court-circuite avec connecteur desserre, bouchon de reservoir mal ferme",
+    "gravite": "mineure",
+    "source": "carparts.com, obd-codes.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0451",
+    "libelle": "Capteur de pression du systeme EVAP - plage/performance",
+    "causes_possibles": "Capteur de pression EVAP hors plage attendue, durites fissurees/rongees par le chaud et le froid, bouchon de reservoir mal serre",
+    "gravite": "mineure",
+    "source": "carparts.com, autozone.com, autonationmobileservice.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0452",
+    "libelle": "Capteur de pression du systeme EVAP - signal bas",
+    "causes_possibles": "Cablage court-circuite a la masse, connecteur desserre ou corrode, capteur de pression differentielle defaillant",
+    "gravite": "mineure",
+    "source": "obd-codes.com, mitsubishitechinfo.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0453",
+    "libelle": "Capteur de pression du systeme EVAP - signal eleve",
+    "causes_possibles": "Cablage court-circuite a l'alimentation, capteur de pression defaillant, connecteur endommage",
+    "gravite": "mineure",
+    "source": "carparts.com, kbb.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0454",
+    "libelle": "Capteur de pression du systeme EVAP - signal intermittent",
+    "causes_possibles": "Connecteur lache ou corrode, cablage endommage par intermittence, capteur de pression differentielle vieillissant",
+    "gravite": "mineure",
+    "source": "carparts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0464",
+    "libelle": "Circuit capteur de niveau carburant - signal intermittent",
+    "causes_possibles": "Bobine de resistance du capteur encrassee par des residus de carburant/eau (signal qui fluctue), cablage/connecteur corrode, tension systeme instable (batterie/alternateur), usure localisee de la piste du flotteur sur reservoir souvent roule peu rempli",
+    "gravite": "mineure",
+    "source": "troublecodes.net, fs1inc.com, obd-codes.com, go-parts.com, ecufiles.com, partsavatar.ca — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0501",
+    "libelle": "Circuit capteur de vitesse vehicule (VSS) A - plage/performance",
+    "causes_possibles": "Capteur de vitesse (VSS) ou capteur de roue defaillant, cablage ou connecteur incomplet/endommage, couronne (reluctor ring) endommagee, calculateur (PCM) defaillant",
+    "gravite": "modere",
+    "source": "kbb.com, carparts.com, obd-codes.com, repairpal.com, eobdcode.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0503",
+    "libelle": "Circuit capteur de vitesse vehicule (VSS) A - signal intermittent/erratique/eleve",
+    "causes_possibles": "Connecteur desserre ou cablage endommage (cause la plus probable, signal qui saute de facon aleatoire), capteur de vitesse defaillant ; peut deregler les passages de vitesse et faire sauter le compteur",
+    "gravite": "modere",
+    "source": "obd-codes.com, icarsoft-us.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0506",
+    "libelle": "Systeme de controle du ralenti - regime inferieur a l'attendu",
+    "causes_possibles": "Fuite au niveau de l'admission (durite ou joint), vanne PCV defaillante, boitier papillon encrasse ou endommage, conduit d'air restreint",
+    "gravite": "modere",
+    "source": "autozone.com, fs1inc.com, carid.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0507",
+    "libelle": "Systeme de controle du ralenti - regime superieur a l'attendu",
+    "causes_possibles": "Entree d'air non mesuree (fuite d'admission, cause la plus frequente), vanne de commande de ralenti (IAC) encrassee ou bloquee, boitier papillon electronique avec controle de position erratique",
+    "gravite": "modere",
+    "source": "autozone.com, carparts.com, edmunds.com, yourmechanic.com, apextechnation.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0711",
+    "libelle": "Circuit capteur de temperature liquide de transmission A - plage/performance",
+    "causes_possibles": "Capteur de temperature de liquide de transmission (TFT) defaillant donnant une lecture erratique ou figee, cablage corrode/court-circuite/en circuit ouvert",
+    "gravite": "modere",
+    "source": "icarsoft-us.com, kbb.com, transmissionrepaircostguide.com, yourmechanic.com, ziptuning.com, obd-codes.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0712",
+    "libelle": "Circuit capteur de temperature liquide de transmission A - signal bas",
+    "causes_possibles": "Court-circuit dans le cablage du capteur TFT (cause la plus frequente), capteur de mauvaise qualite ou vieillissant donnant un signal inexact",
+    "gravite": "modere",
+    "source": "kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0713",
+    "libelle": "Circuit capteur de temperature liquide de transmission A - signal eleve",
+    "causes_possibles": "Circuit ouvert dans le cablage du capteur TFT (signal haut alors qu'un signal bas est attendu), capteur TFT defaillant, probleme de transmission associe",
+    "gravite": "modere",
+    "source": "ziptuning.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0601",
+    "libelle": "Erreur de somme de controle (checksum) de la memoire du calculateur",
+    "causes_possibles": "Defaillance interne du calculateur (PCM/ECM) a verifier l'integrite de sa memoire, corruption logicielle, calculateur a reflasher ou remplacer",
+    "gravite": "severe",
+    "source": "carparts.com, repairpal.com, tat.net.au — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0602",
+    "libelle": "Erreur de programmation du calculateur",
+    "causes_possibles": "Calculateur non programme ou programmation incomplete/corrompue, necessite generalement une reprogrammation (flash) du calculateur",
+    "gravite": "severe",
+    "source": "carparts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0603",
+    "libelle": "Erreur de memoire vive maintenue (KAM) du calculateur",
+    "causes_possibles": "Defaut de la memoire keep-alive (parametres appris perdus, ex. corrections de richesse), coupure batterie repetee, calculateur defaillant",
+    "gravite": "severe",
+    "source": "obd-codes.com, eobdcode.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0605",
+    "libelle": "Erreur de memoire morte (ROM) du calculateur",
+    "causes_possibles": "Defaut 'dur' du logiciel embarque en memoire morte (par opposition a un defaut intermittent de RAM), calculateur generalement a reflasher ou remplacer",
+    "gravite": "severe",
+    "source": "obd-codes.com, carparts.com, eobdcode.com, go-parts.com, carcarehacks.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0606",
+    "libelle": "Defaut du processeur du calculateur (PCM/ECM)",
+    "causes_possibles": "Defaillance du processeur interne du calculateur (distinct d'un defaut de memoire ROM/RAM), calculateur generalement a remplacer",
+    "gravite": "severe",
+    "source": "eobdcode.com, obd-codes.com, carcarehacks.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  }
+]

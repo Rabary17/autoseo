@@ -1,0 +1,322 @@
+[
+  {
+    "code": "P0721",
+    "libelle": "Circuit capteur de vitesse de sortie - defaut de plage/performance",
+    "causes_possibles": "Capteur de vitesse de sortie deteriore ou mal aligne, entrefer incorrect, roue dentee endommagee, cablage endommage",
+    "gravite": "severe",
+    "source": "ziptuning.com, icarsoft-us.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0722",
+    "libelle": "Circuit capteur de vitesse de sortie - absence de signal",
+    "causes_possibles": "Capteur de vitesse de sortie defaillant ou deconnecte, cablage coupe, connecteur corrode",
+    "gravite": "severe",
+    "source": "obd-codes.com, dot.report, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0723",
+    "libelle": "Circuit capteur de vitesse de sortie - signal intermittent",
+    "causes_possibles": "Signal du capteur de vitesse de sortie instable ou faible, cablage endommage, connecteur oxyde",
+    "gravite": "severe",
+    "source": "transmissionrepaircostguide.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0729",
+    "libelle": "Rapport de 6eme vitesse incorrect",
+    "causes_possibles": "Niveau de liquide de transmission bas ou liquide degrade, electrovanne de passage de vitesse defaillante, defaillance interne de la boite (embrayages/bandes uses)",
+    "gravite": "severe",
+    "source": "obd-codes.com, transmissionrepaircostguide.com, carparts.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0730",
+    "libelle": "Rapport de vitesse incorrect (code generique)",
+    "causes_possibles": "Liquide de transmission bas ou sale, electrovanne de passage de vitesse defaillante — code generique necessitant verification du liquide avant diagnostic approfondi",
+    "gravite": "severe",
+    "source": "carparts.com, yourmechanic.com, obd-codes.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0731",
+    "libelle": "Rapport de 1ere vitesse incorrect",
+    "causes_possibles": "Difference de regime entre capteur d'entree et capteur de sortie ne correspondant pas au rapport attendu en 1ere vitesse ; liquide bas/sale, electrovanne defaillante, usure interne de la boite",
+    "gravite": "severe",
+    "source": "transmissionrepaircostguide.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0732",
+    "libelle": "Rapport de 2eme vitesse incorrect",
+    "causes_possibles": "Difference de regime entree/sortie incoherente en 2eme vitesse ; defaillance interne de boite, probleme de corps de vanne, liquide de transmission bas ou sale",
+    "gravite": "severe",
+    "source": "obd-codes.com, carparts.com, yourmechanic.com, ziptuning.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0733",
+    "libelle": "Rapport de 3eme vitesse incorrect",
+    "causes_possibles": "Liquide de transmission bas ou sale, electrovannes de passage defaillantes, capteur de vitesse defaillant, usure severe du paquet d'embrayage de 3eme",
+    "gravite": "severe",
+    "source": "carparts.com, repairpal.com, yourmechanic.com, ziptuning.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0734",
+    "libelle": "Rapport de 4eme vitesse incorrect",
+    "causes_possibles": "Liquide de transmission bas ou sale, defaillance interne (embrayages/bandes uses), electrovanne de passage de vitesse defaillante",
+    "gravite": "severe",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0735",
+    "libelle": "Rapport de 5eme vitesse incorrect",
+    "causes_possibles": "Defaillance interne de la transmission, PCM/TCM defaillant, liquide de transmission bas ou contamine",
+    "gravite": "severe",
+    "source": "yourmechanic.com, carparts.com, obd-codes.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0736",
+    "libelle": "Rapport de marche arriere incorrect",
+    "causes_possibles": "Liquide de transmission bas ou contamine, defaillance mecanique, electrovanne de transmission defaillante, embrayage use, probleme de corps de vanne — conduite prolongee avec ce code risque une surchauffe et des dommages internes",
+    "gravite": "severe",
+    "source": "obd-codes.com, icarsoft-us.com, yourmechanic.com, autocodes.com, ziptuning.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0740",
+    "libelle": "Circuit d'embrayage de convertisseur de couple - defaillance",
+    "causes_possibles": "Liquide de transmission bas ou sale, electrovanne d'embrayage de convertisseur (TCC) defaillante, faisceau ou connecteur endommage, TCM defaillant",
+    "gravite": "severe",
+    "source": "autozone.com, transmissionrepaircostguide.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0741",
+    "libelle": "Circuit d'embrayage de convertisseur - performance/bloque desactive",
+    "causes_possibles": "Convertisseur de couple ne s'applique pas ou glisse plus que prevu, electrovanne TCC defaillante, liquide de transmission bas ou sale",
+    "gravite": "severe",
+    "source": "kbb.com, carparts.com, obd2pros.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0742",
+    "libelle": "Circuit d'embrayage de convertisseur - bloque active",
+    "causes_possibles": "Embrayage du convertisseur reste verrouille (bloque en position ON), connexion haute resistance/corrosion sur le fil TCM-solenoide, corps de vanne use laissant le liquide contourner le solenoide",
+    "gravite": "severe",
+    "source": "yourmechanic.com, repairpal.com, carparts.com, obd-codes.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0743",
+    "libelle": "Circuit d'embrayage de convertisseur - electrique",
+    "causes_possibles": "Court-circuit ou circuit ouvert dans le circuit de l'electrovanne TCC, connecteur endommage, chaleur excessive pouvant provoquer le verrouillage du convertisseur",
+    "gravite": "severe",
+    "source": "carparts.com, a1-diagnostics.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0744",
+    "libelle": "Circuit d'embrayage de convertisseur - intermittent",
+    "causes_possibles": "Degradation interne de la bobine du solenoide TCC, connecteur ou broches corrodes, liquide de transmission bas ou sale affectant la pression hydraulique",
+    "gravite": "severe",
+    "source": "carparts.com, transmissionrepaircostguide.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0750",
+    "libelle": "Electrovanne de passage de vitesse A - defaillance",
+    "causes_possibles": "Electrovanne de passage A defaillante, defaillance interne de la transmission, obstruction hydraulique, liquide de transmission bas ou sale",
+    "gravite": "severe",
+    "source": "obd-codes.com, carparts.com, transmissionrepaircostguide.com, yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0751",
+    "libelle": "Electrovanne de passage A - performance/bloquee desactivee",
+    "causes_possibles": "Electrovanne A commandee par le TCM mais transmission ne change pas de rapport, obstruction mecanique du piston, blocage hydraulique dans le corps de vanne",
+    "gravite": "severe",
+    "source": "kbb.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0752",
+    "libelle": "Electrovanne de passage A - bloquee activee",
+    "causes_possibles": "Matiere etrangere obstruant la partie mecanique du solenoide ou le passage du liquide dans le corps de vanne, filtre de transmission colmate, cablage ou connecteur endommage",
+    "gravite": "severe",
+    "source": "kbb.com, yourmechanic.com, obd-codes.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0753",
+    "libelle": "Electrovanne de passage A - electrique",
+    "causes_possibles": "Cablage ou connecteur endommage/corrode sur le circuit de l'electrovanne A, tension d'alimentation insuffisante (batterie/alternateur), TCM ou PCM defaillant",
+    "gravite": "severe",
+    "source": "yourmechanic.com, kbb.com, obd-codes.com, autocodes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0754",
+    "libelle": "Electrovanne de passage A - intermittente",
+    "causes_possibles": "Broches corrodees ou connexions desserrees provoquant une tension instable, bobine du solenoide degradee, matiere etrangere obstruant le corps de vanne, infiltration d'eau dans le connecteur",
+    "gravite": "severe",
+    "source": "yourmechanic.com, transmissionrepaircostguide.com, obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0755",
+    "libelle": "Electrovanne de passage de vitesse B - defaillance",
+    "causes_possibles": "Electrovanne B defaillante, liquide de transmission bas ou sale, cablage ou connecteur endommage",
+    "gravite": "severe",
+    "source": "carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0756",
+    "libelle": "Electrovanne de passage B - performance/bloquee desactivee",
+    "causes_possibles": "Liquide de transmission bas ou sale (pouvant colmater un passage interne), filtre colmate, electrovanne B defaillante, TCM defaillant, cablage ou connecteur defaillant",
+    "gravite": "severe",
+    "source": "kbb.com, carparts.com, obd-codes.com, yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0760",
+    "libelle": "Electrovanne de passage de vitesse C - defaillance",
+    "causes_possibles": "Electrovanne C defaillante, defaillance interne de la transmission, passages hydrauliques restreints",
+    "gravite": "severe",
+    "source": "carparts.com, obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0761",
+    "libelle": "Electrovanne de passage C - performance/bloquee desactivee",
+    "causes_possibles": "Bobine ou clapet de l'electrovanne C bloque et ne s'active pas quand commande, liquide de transmission bas ou sale, cablage ou connecteur endommage entre TCM et electrovanne C, corps de vanne colle",
+    "gravite": "severe",
+    "source": "yourmechanic.com, carparts.com, obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0765",
+    "libelle": "Electrovanne de passage de vitesse D - defaillance",
+    "causes_possibles": "Corps de vanne (valve body) defaillant, filtre de transmission colmate, electrovanne D defaillante, probleme de cablage",
+    "gravite": "severe",
+    "source": "carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0766",
+    "libelle": "Electrovanne de passage D - performance/bloquee desactivee",
+    "causes_possibles": "Niveau de liquide de transmission bas, electrovanne D defaillante, probleme de cablage, TCM defaillant, corrosion empechant la tension d'atteindre le solenoide",
+    "gravite": "severe",
+    "source": "carparts.com, kbb.com, obd-codes.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0780",
+    "libelle": "Defaillance de passage de vitesse (code generique)",
+    "causes_possibles": "Obstruction des passages de liquide dans la transmission, defaillance mecanique de la transmission, electrovanne de passage defaillante, liquide de transmission bas ou sale",
+    "gravite": "severe",
+    "source": "eeuroparts.com, repairpal.com, carparts.com, tat.net.au — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0781",
+    "libelle": "Passage 1-2 defaillant",
+    "causes_possibles": "Blocage hydraulique, electrovanne de pression de ligne defaillante, faisceau de l'electrovanne ouvert ou court-circuite, connexions electriques degradees",
+    "gravite": "severe",
+    "source": "go-parts.com, troublecodes.net, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0782",
+    "libelle": "Passage 2-3 defaillant",
+    "causes_possibles": "Meme famille de causes que le passage 1-2 (pression hydraulique basse, liquide degrade, electrovanne de passage defaillante) mais appliquee au passage 2-3",
+    "gravite": "severe",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0783",
+    "libelle": "Passage 3-4 defaillant",
+    "causes_possibles": "Electrovanne de passage defaillante, niveau de liquide de transmission bas ou degrade, corps de vanne defectueux, cablage ou connecteurs endommages",
+    "gravite": "severe",
+    "source": "yourmechanic.com, autocodes.com, transmissionrepaircostguide.com, obd-codes.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0784",
+    "libelle": "Passage 4-5 defaillant",
+    "causes_possibles": "PCM, TCM ou electrovanne defaillante, liquide de transmission bas ou sale",
+    "gravite": "severe",
+    "source": "yourmechanic.com, a1-diagnostics.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0801",
+    "libelle": "Circuit d'inhibition de marche arriere - defaillance",
+    "causes_possibles": "Interrupteur d'inhibition de marche arriere defaillant, fusible grille, cablage endommage, TCM defaillant",
+    "gravite": "modere",
+    "source": "yourmechanic.com, obd-codes.com, autocodes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0830",
+    "libelle": "Circuit interrupteur de pedale d'embrayage A",
+    "causes_possibles": "Interrupteur de pedale d'embrayage defaillant ou mal regle, cablage endommage, circuit ouvert (transmission manuelle uniquement)",
+    "gravite": "modere",
+    "source": "obd-codes.com, ecufiles.com, repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0831",
+    "libelle": "Circuit interrupteur de pedale d'embrayage A - signal bas",
+    "causes_possibles": "Tension anormalement basse sur le circuit de l'interrupteur A, cablage court-circuite a la masse, interrupteur defaillant",
+    "gravite": "modere",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0833",
+    "libelle": "Circuit interrupteur de pedale d'embrayage B",
+    "causes_possibles": "Interrupteur de pedale d'embrayage B defaillant, cablage endommage — code present uniquement sur transmission manuelle",
+    "gravite": "modere",
+    "source": "obd-codes.com, ecufiles.com, yourmechanic.com, engine-codes.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0834",
+    "libelle": "Circuit interrupteur de pedale d'embrayage B - signal bas",
+    "causes_possibles": "Tension anormalement basse sur le circuit de l'interrupteur B, cablage court-circuite, interrupteur defaillant",
+    "gravite": "modere",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0836",
+    "libelle": "Circuit du commutateur 4 roues motrices (4WD)",
+    "causes_possibles": "Tension ou resistance anormale dans le circuit du commutateur 4WD, cablage/faisceau/connecteurs endommages ou corrodes",
+    "gravite": "modere",
+    "source": "obd-codes.com, ecufiles.com, yourmechanic.com, mycarspecs.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0837",
+    "libelle": "Circuit du commutateur 4WD - plage/performance",
+    "causes_possibles": "Tension ou resistance hors plage attendue dans le circuit du commutateur 4WD, cablage endommage",
+    "gravite": "modere",
+    "source": "yourmechanic.com, obd-codes.com, ecufiles.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0838",
+    "libelle": "Circuit du commutateur 4WD - signal bas",
+    "causes_possibles": "Tension ou resistance trop basse dans le circuit du commutateur 4WD, commutateur ou actionneur defaillant, cablage ou connecteur defaillant",
+    "gravite": "modere",
+    "source": "obd-codes.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  }
+]

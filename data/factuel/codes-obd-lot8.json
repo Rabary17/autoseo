@@ -1,0 +1,215 @@
+[
+  {
+    "code": "P0457",
+    "libelle": "Fuite systeme EVAP detectee (bouchon de reservoir desserre/absent)",
+    "causes_possibles": "Bouchon de reservoir de carburant desserre, absent ou fissure, joint du bouchon endommage ou encrasse, durite ou reservoir de carburant fissure par vieillissement, electrovanne de purge (purge valve) bloquee ouverte creant une fuite permanente",
+    "gravite": "leger",
+    "source": "carparts.com, repairpal.com, ziptuning.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false,
+    "notes": "Un des codes les plus frequents et les plus simples a resoudre (souvent juste resserrer le bouchon)"
+  },
+  {
+    "code": "P0508",
+    "libelle": "Circuit du regulateur de ralenti (IAC) - signal bas",
+    "causes_possibles": "Moteur ou valve IAC (Idle Air Control) defaillant, fuite de vaccum au niveau du moteur, cablage ou connecteur du circuit IAC en court-circuit, calamine/depots de carbone dans le boitier papillon ou la valve IAC, PCM defaillant",
+    "gravite": "modere",
+    "source": "obd-codes.com, repairpal.com, kbb.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0509",
+    "libelle": "Circuit du regulateur de ralenti (IAC) - signal haut",
+    "causes_possibles": "Court-circuit ou circuit ouvert interne a la valve IAC, cablage/connecteur endommage ou corrode, probleme de masse du PCM/ECM, boitier papillon encrasse par la calamine genant le mouvement de la valve",
+    "gravite": "modere",
+    "source": "obd-codes.com, yourmechanic.com, obd2.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0561",
+    "libelle": "Tension systeme instable",
+    "causes_possibles": "Batterie affaiblie ou en fin de vie, regulateur de tension de l'alternateur defaillant (tension hors de la plage 13,5-14,8V), cablage/cosses de batterie ou de masse corrodes ou desserres provoquant des chutes de tension, circuit de reference de tension interne a un module de commande degrade",
+    "gravite": "modere",
+    "source": "fs1inc.com, obd-codes.com, repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0630",
+    "libelle": "VIN non programme ou incompatible - ECM/PCM",
+    "causes_possibles": "ECM/PCM remplace sans programmation du VIN chez un concessionnaire/atelier equipe, VIN non programme en usine, module ECM/PCM recupere sur un autre vehicule et jamais reprogramme, corruption de la memoire non volatile stockant le VIN (surtension, infiltration d'eau), defaut de communication avec le boitier antidemarrage",
+    "gravite": "modere",
+    "source": "obd-codes.com, fs1inc.com, repairpal.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0641",
+    "libelle": "Circuit de tension de reference des capteurs A - circuit ouvert",
+    "causes_possibles": "Cablage ou connecteur endommage/corrode sur le circuit de reference 5V, capteur alimente par ce circuit defaillant en interne, infiltration d'eau ou fatigue des soudures degradant le regulateur interne du PCM, fusible ou lien fusible grille",
+    "gravite": "modere",
+    "source": "kbb.com, fs1inc.com, ziptuning.com, repairpal.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0685",
+    "libelle": "Circuit de commande du relais d'alimentation ECM/PCM - circuit ouvert",
+    "causes_possibles": "Relais d'alimentation du PCM defaillant, fusible grille, court-circuit sur le circuit d'alimentation, cosse de batterie ou sangle de masse corrodee/desserree, plus rarement PCM/ECM defaillant en interne",
+    "gravite": "severe",
+    "source": "fs1inc.com, yourmechanic.com, obd-codes.com, partsavatar.ca — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0703",
+    "libelle": "Circuit du contacteur de frein B - dysfonctionnement",
+    "causes_possibles": "Contacteur de pedale de frein defaillant ou mal ajuste (poussoir plastique casse), fusible grille, cablage ou connecteur du circuit corrode/endommage (point de defaillance frequent sous le tableau de bord), ampoules LED apres-vente changeant la resistance electrique du circuit, contacts internes du contacteur encrasses",
+    "gravite": "modere",
+    "source": "kbb.com, icarsoft-us.com, ziptuning.com, fs1inc.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0716",
+    "libelle": "Capteur de vitesse d'entree/turbine A - plage/performance",
+    "causes_possibles": "Capteur de vitesse turbine defaillant, cablage ou connecteurs corrodes, niveau de liquide de transmission bas ou fluide sale/degrade endommageant le cablage",
+    "gravite": "modere",
+    "source": "ziptuning.com, transmissionrepaircostguide.com, obd-codes.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0717",
+    "libelle": "Capteur de vitesse d'entree/turbine A - absence de signal",
+    "causes_possibles": "Element interne du capteur de vitesse turbine en panne (aucune tension produite), broches corrodees ou fils casses interrompant le signal, convertisseur analogique-numerique ou etage de commande interne au TCM defaillant, fusible grille ou masse a haute impedance",
+    "gravite": "modere",
+    "source": "fs1inc.com, dot.report, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0757",
+    "libelle": "Electrovanne de passage de vitesse B - bloquee en position ouverte (stuck on)",
+    "causes_possibles": "Niveau de liquide de transmission bas, filtre de transmission colmate, corps de vanne (valve body) defaillant, passages hydrauliques obstrues, panne interne de la transmission",
+    "gravite": "severe",
+    "source": "carparts.com, automotivesimple.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0758",
+    "libelle": "Electrovanne de passage de vitesse B - defaut electrique",
+    "causes_possibles": "Cablage de l'electrovanne B ouvert ou en court-circuit, bobine de l'electrovanne en panne, TCM ne delivrant pas la tension correcte, connecteur endommage ou corrode, niveau de liquide de transmission bas",
+    "gravite": "severe",
+    "source": "repairpal.com, obd-codes.com, transmissioncoolerguide.com, ecufiles.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0791",
+    "libelle": "Capteur de vitesse d'arbre intermediaire A - circuit",
+    "causes_possibles": "Capteur d'arbre intermediaire endommage (usure mecanique, expose a une fuite de liquide), cablage corrode ou en court-circuit pres du carter de transmission, liquide de transmission sale ne permettant plus une lecture precise, defaillance du circuit d'entree du TCM",
+    "gravite": "modere",
+    "source": "transmissionrepaircostguide.com, fs1inc.com, yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0792",
+    "libelle": "Capteur de vitesse d'arbre intermediaire A - plage/performance",
+    "causes_possibles": "Signal errone ou intermittent du capteur d'arbre intermediaire, connecteurs oxydes creant une resistance qui deforme le signal, liquide de transmission degrade, comparateur/diviseur de tension interne au TCM defaillant",
+    "gravite": "modere",
+    "source": "transmissionrepaircostguide.com, carparts.com, 200forums.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0826",
+    "libelle": "Circuit du contacteur de passage de vitesse manuel (up/down shift switch)",
+    "causes_possibles": "Liquide renverse sur le contacteur up/down (accessible depuis l'habitacle) court-circuitant le circuit, cablage ou connecteur endommage/deconnecte, palettes au volant defaillantes n'envoyant pas le bon signal, logiciel TCM/ECM obsolete",
+    "gravite": "leger",
+    "source": "suntransmissions.com, kbb.com, yourmechanic.com, icarsoft-us.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0481",
+    "libelle": "Circuit de commande du ventilateur de refroidissement 2",
+    "causes_possibles": "Relais de commande du ventilateur 2 defaillant, moteur du ventilateur 2 en panne, cablage ou connecteur endommage sur le circuit du ventilateur, capteur de temperature de liquide de refroidissement problematique, ECM defaillant",
+    "gravite": "modere",
+    "source": "obdguide.com, repairpal.com, icarsoft-us.com, fs1inc.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true,
+    "notes": "Se presente rarement seul: verifier aussi P0480 (ventilateur 1) et P0526 (capteur vitesse ventilateur)"
+  },
+  {
+    "code": "P0532",
+    "libelle": "Circuit du capteur de pression de refrigerant climatisation A - signal bas",
+    "causes_possibles": "Manque de refrigerant dans le systeme de climatisation (fuite, cause dans plus de 80% des cas), circuit du capteur de pression ouvert ou en court-circuit a la masse, connexion electrique corrodee ou pastille de connecteur desserree, capteur endommage en interne (diaphragme ou contamination)",
+    "gravite": "leger",
+    "source": "yourmechanic.com, fs1inc.com, carparts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0533",
+    "libelle": "Circuit du capteur de pression de refrigerant climatisation A - signal haut",
+    "causes_possibles": "Systeme de climatisation surcharge en refrigerant, connexion electrique du capteur endommagee provoquant un court-circuit vers l'alimentation, humidite libre dans le circuit gelant ou bloquant le detendeur",
+    "gravite": "leger",
+    "source": "yourmechanic.com, carparts.com, troublecodes.net, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0035",
+    "libelle": "Circuit du capteur de vitesse de roue avant gauche",
+    "causes_possibles": "Capteur de vitesse de roue endommage ou encrasse, cablage ou connecteur du circuit corrode/endommage, dents de la couronne dentee (reluctor) ebrechees, roulement de roue use, probleme de masse commun au module ABS/ESC",
+    "gravite": "severe",
+    "source": "obd2pros.com, cartreatments.com, defydiagnostics.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true,
+    "notes": "Code chassis (C), affecte l'ABS/ESC — desactive potentiellement l'assistance au freinage"
+  },
+  {
+    "code": "C0040",
+    "libelle": "Circuit du capteur de vitesse de roue avant droite",
+    "causes_possibles": "Cablage ou connecteur defaillant/desserre, dents de la couronne dentee (reluctor) ebrechees, roulement de roue use, mauvaise connexion de masse au niveau du capteur",
+    "gravite": "severe",
+    "source": "ancel.com, repairpal.com, carparts.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true,
+    "notes": "Code chassis (C); si C0035 et C0040 apparaissent ensemble, suspecter un probleme d'alimentation/masse commun ou le module ABS plutot que 2 capteurs en panne simultanement"
+  },
+  {
+    "code": "P0502",
+    "libelle": "Capteur de vitesse vehicule (VSS) A - signal bas",
+    "causes_possibles": "Sur les vehicules recents sans VSS dedie, capteur de vitesse de roue (ABS) defaillant ou module ABS en panne, limaille metallique issue de l'usure de la transmission encrassant l'extremite magnetique du capteur et bloquant la lecture de la couronne dentee, cablage endommage",
+    "gravite": "modere",
+    "source": "icarsoft.com, go-parts.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0261",
+    "libelle": "Circuit injecteur cylindre 1 - signal bas",
+    "causes_possibles": "Connecteur electrique de l'injecteur desserre ou corrode, injecteur encrasse ou defaillant, fusible d'alimentation des injecteurs grille, fils pinces ou isolation fissuree creant de la resistance, ressort de rappel interne de l'injecteur casse ou affaibli",
+    "gravite": "severe",
+    "source": "kbb.com, carparts.com, ziptuning.com, repairpal.com, fs1inc.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0262",
+    "libelle": "Circuit injecteur cylindre 1 - signal haut",
+    "causes_possibles": "Injecteur defaillant en interne (court-circuit), cablage ou connecteur en court-circuit vers l'alimentation, PCM defaillant (rare)",
+    "gravite": "severe",
+    "source": "kbb.com, carparts.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0706",
+    "libelle": "Capteur de position du selecteur de vitesse (TR) A - plage/performance",
+    "causes_possibles": "Usure interne, contamination ou regulateur de tension casse dans le capteur de position du selecteur (TR), corrosion/broches cassees/fils ecrases introduisant de la resistance sur le circuit, probleme de linkage mecanique du selecteur, defaut du circuit d'entree du TCM ou firmware corrompu",
+    "gravite": "modere",
+    "source": "carparts.com, fs1inc.com, ziptuning.com, repairpal.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true,
+    "notes": "Peut faire demarrer le moteur hors position Park/Neutre et declencher le mode degrade (limp mode)"
+  },
+  {
+    "code": "P0748",
+    "libelle": "Electrovanne de regulation de pression A - defaut electrique",
+    "causes_possibles": "Liquide de transmission sale ou niveau bas, electrovanne de pression de ligne A defaillante (bobine en court-circuit ou circuit ouvert), cablage ou connecteur endommage, defaut du circuit de commande du TCM, logiciel corrompu",
+    "gravite": "severe",
+    "source": "carparts.com, yourmechanic.com, kbb.com, fs1inc.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0842",
+    "libelle": "Capteur/contacteur de pression du liquide de transmission A - signal bas",
+    "causes_possibles": "Capteur/contacteur de pression du liquide de transmission A defaillant en interne ou contamine, cablage ou connecteur corrode/endommage, niveau de liquide de transmission bas (fuite ou remplissage insuffisant), liquide de transmission sale ou degrade provoquant des fluctuations de pression, probleme mecanique interne a la transmission (embrayages uses, corps de vanne)",
+    "gravite": "modere",
+    "source": "yourmechanic.com, carid.com, obd-codes.com, repairpal.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

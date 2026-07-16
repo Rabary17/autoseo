@@ -1,0 +1,149 @@
+[
+  {
+    "modele": "Renault Espace 6 (E-Tech Full Hybrid 200/300, 2023+)",
+    "score_fiabilite": "fiabilite globale rapportee a 6/10, systeme hybride note plus faiblement (5/10), defauts de jeunesse marques entre 10 000 et 30 000km",
+    "pannes_courantes": "dysfonctionnements electroniques de gestion de la motorisation hybride cites comme le probleme dominant, suivis par des pannes de batterie et des pertes de puissance rapportees comme dangereuses sur autoroute ; cas isoles de casse moteur electrique et boite de vitesses des 1 800km rapportes sur des exemplaires 2025 (non recoupes par une source primaire) ; rappel constructeur touchant environ 154 000 vehicules produits entre avril 2020 et avril 2023 pour une rondelle dite Onduflex pouvant declencher une alerte panne electrique danger et une perte de puissance ; second rappel concernant une etancheite defaillante du joint torique d'arbre primaire creux du moteur electrique, avec risque d'infiltration d'huile dans le moteur electrique",
+    "source": "fiches-auto.fr, carverif.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Talisman (1.6 dCi 130/160, boite EDC)",
+    "score_fiabilite": "fiabilite globale moyenne, se degradant nettement au-dela de 60 000km avec l'apparition de problemes de turbo et de boite EDC",
+    "pannes_courantes": "turbo fragile, fuites de liquide de refroidissement et d'huile cote distribution, defauts de vanne EGR ; FAP colmate entre 25 000 et 40 000km en usage majoritairement urbain ; pompe haute pression pouvant tomber en panne entre 60 000 et 100 000km (a-coups de regime, difficultes de demarrage) ; boite automatique EDC : changements de vitesse saccades, demarrages retardes et rapports irreguliers des 30 000-50 000km, points de patinage a l'embrayage rapportes comme frequents sur cette version ; pannes electriques aleatoires (systeme multimedia, capteurs de stationnement)",
+    "source": "carverif.fr, fiches-auto.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Austral (E-Tech Full Hybrid 200, 2022+)",
+    "score_fiabilite": "a verifier — millesime 2022 a mi-2023 (avant reprogrammation OTS des six calculateurs) identifie comme le plus expose selon une source",
+    "pannes_courantes": "boite E-Tech a crabots presentant des a-coups importants lors des passages de rapports, trous a l'acceleration et temps de latence rapportes lors de depassements ; motorisation 1.2 E-Tech Hybride 200ch concentrant les soucis les plus lourds selon une source : injection, casse moteur, bougies, turbo, fuite d'huile, boite electrifiee et batterie de traction (vehicules produits jusqu'au 31/12/2023) ; message injection a controler pouvant s'afficher lorsque le niveau d'eau baisse anormalement ; recommandation d'achat : privilegier les versions post-aout 2023 avec mise a jour OTS deployee et rappel pompe a eau effectue",
+    "source": "carverif.fr, fiches-auto.fr, profauto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C4 Cactus (2014-2020, moteurs 1.2 PureTech et 1.5/1.6 BlueHDi)",
+    "score_fiabilite": "fiabilite jugee faible sur le 1.2 PureTech (2/5 selon une source), le 1.6 BlueHDi en derniere version rapporte comme nettement plus fiable et capable de depasser 300 000km si bien entretenu",
+    "pannes_courantes": "1.2 PureTech : courroie de distribution baignant dans l'huile moteur sujette a une usure prematuree et une desagregation, des morceaux pouvant obstruer la crepine de la pompe a huile (mauvaise lubrification, casse moteur dans les cas graves) ; problemes apparaissant generalement entre 30 000 et 60 000km (encrassement moteur, bobines d'allumage), s'intensifiant entre 60 000 et 90 000km ; 1.5 BlueHDi : rappel sur les vehicules produits entre le 12/12/2017 et le 06/10/2020 pour un risque de rupture de la chaine reliant les arbres a cames (carbonisation d'huile) ; toutes motorisations diesel : systeme AdBlue sujet a des injecteurs et reservoirs bouches",
+    "source": "fiches-auto.fr, auto-doc.fr, carverif.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen e-C4 / C4 III (electrique 50kWh et thermique, 2021+)",
+    "score_fiabilite": "fiabilite generale de la version electrique 50kWh evaluee a 6/10, l'electronique embarquee etant le point le plus faible (4/10) en raison de defaillances recurrentes de l'ECU, la batterie obtenant 7,5/10",
+    "pannes_courantes": "traction electrique identifiee comme le defaut le plus inquietant selon les retours forums : message au tableau de bord, immobilisation, diagnostic long, parfois attente de batterie ou de composant haute tension ; GPS presentant des bugs intermittents, climatisation rapportee comme defaillante lors de fortes chaleurs ; environ 25% des proprietaires de la e-C4 auraient signale des problemes lies a l'autonomie de la batterie dans les six premiers mois selon une source (non recoupe par une etude independante) ; rappel 2026 sur les vehicules produits entre le 04/10/2023 et le 12/01/2026 pour un risque d'incendie (arc electrique possible entre le tube du FAP essence et son capuchon de protection en conditions humides)",
+    "source": "carverif.fr, fiches-auto.fr, moteurfrancais.com, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi A6 (C7 2011-2018 et C8 2018+, moteurs 2.0 TDI et 3.0 TDI)",
+    "score_fiabilite": "3.0 TDI note a 7,2/10 selon une source, duree de vie moyenne rapportee jusqu'a 320 000km avec un entretien rigoureux, mais penalise par plusieurs pannes majeures a partir de 80 000-150 000km",
+    "pannes_courantes": "2.0 TDI (C7) : FAP sature en usage urbain (26% des cas rapportes sur un panel de 104 temoignages selon une source), raccords plastiques du circuit de refroidissement fuyant des 80 000km, suspension pneumatique perdant de l'air sur les versions Avus/Competition ; seuil de 90 000-130 000km concentrant les pannes de FAP, vanne EGR et refroidissement ; 3.0 TDI : fuites de liquide de refroidissement recurrentes (souvent liees a une durite fissuree), FAP entre 120 000 et 150 000km, vanne EGR entre 100 000 et 140 000km",
+    "source": "carverif.fr, fiches-auto.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi Q7 (2006-2015 et generation 2015+, moteur 3.0 TDI)",
+    "score_fiabilite": "note globale rapportee a 6,2/10 pour le 3.0 TDI 233ch, taux de panne majeure cumule (chaine de distribution + turbo + FAP) atteignant 45% selon une source entre 120 000 et 150 000km",
+    "pannes_courantes": "tendeur de chaine de distribution fatigue, circuit AdBlue s'encrassant ; defaut de conception connu sur le collecteur d'admission ; turbo fragile a haut kilometrage, soupapes d'admission defaillantes ; fuites au niveau des joints d'injecteurs, FAP colmate ; au-dela de 180 000km sans historique documente de remplacement chaine/turbo, risque de facture superieure a 5000€ dans les 12 mois estime a plus de 60% selon une source ; recommandation d'achat : privilegier les exemplaires pre-2013 sous 120 000km avec carnet d'entretien Audi complet",
+    "source": "carverif.fr, fiches-auto.fr, ovoko.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW Serie 5 (F10 2010-2016, moteur 520d)",
+    "score_fiabilite": "fiabilite globale rapportee a seulement 4,1/10 selon une source (\"achat non recommande sans expertise independante\")",
+    "pannes_courantes": "chaine de distribution N47 identifiee comme le defaut le plus grave : le tendeur fatigue et la chaine s'allonge jusqu'au saut de dents voire a la rupture, synonyme de casse moteur (cas documentes de rupture vers 99 000, 125 000 et 145 000km sur des taxis) ; suspension pneumatique arriere des breaks Touring rapportee comme un point faible recurrent (boudins poreux, compresseur sollicite, affaissement apres stationnement) ; version 184ch cumulant chaine de distribution, FAP, turbo, embrayage, volant moteur, injecteurs et pompe a eau selon une source",
+    "source": "carverif.fr, fiches-auto.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW Serie 5 (G30, 2017+, moteur 520d)",
+    "score_fiabilite": "fiabilite globale rapportee a 7/10, nette amelioration par rapport a la generation F10 precedente",
+    "pannes_courantes": "periode critique situee autour de 100 000km ou certains composants majeurs commencent a montrer des signes de faiblesse, notamment les injecteurs et le systeme de filtre a particules ; insonorisation et discretion du moteur au ralenti saluees comme points forts ; recommandation d'achat : privilegier les modeles posterieurs a 2019, ayant beneficie des premieres corrections apportees aux series initiales",
+    "source": "carverif.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW X5 (generations F15/G05, moteur xDrive30d)",
+    "score_fiabilite": "le 30d rapporte generation apres generation comme le choix le plus equilibre de la gamme (performance/sobriete/fiabilite) selon une source",
+    "pannes_courantes": "vanne EGR et son refroidisseur cites comme points de fragilite, rappel mondial 2018 touchant 1,6 million de vehicules (dont le X5 xDrive30d) pour corriger un defaut logiciel lie a la recirculation des gaz d'echappement ; suspension pneumatique presentant des defauts frequents des 80 000km (compresseurs et boudins d'air defaillants, hauteur de caisse inegale) ; FAP du bloc 3.0 diesel se colmatant des 60 000km, entrainant perte de puissance et mode degrade ; plusieurs temoignages proprietaires neanmoins tres positifs sur le long terme (pas de panne majeure rapportee, bon vieillissement)",
+    "source": "fiches-auto.fr, etoilecollections.fr, garage-auto-benet.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes Classe E (W213, 2016-2023, moteur diesel E220d)",
+    "score_fiabilite": "fiabilite mecanique globale rapportee a 7,5/10, moteur diesel 2.0L note a 8,5/10, electronique en retrait a 6,5/10",
+    "pannes_courantes": "pompe a eau defaillante des 95 000km sur les millesimes 2016-2017, remplacement estime entre 450 et 650€ ; capteurs NOx/AdBlue et tube de remplissage carburant cites parmi les pannes rapportees ; bras de suspension identifies comme point recurrent, associes aux sondes NOx, reservoirs et pompes AdBlue ; moteur diesel 194ch capable de depasser 200 000km sans panne majeure sur de nombreux exemplaires selon une source, versions posterieures a 2018 rapportees plus robustes ; boite 9G-Tronic notee 7,8/10, sans panne majeure documentee",
+    "source": "carverif.fr, fiches-auto.fr, forum-mercedes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes GLE (W166 diesel 350d et V167 hybride rechargeable 350de)",
+    "score_fiabilite": "GLE 350d diesel (W166, 2015-2019) note a 7/10 ; version hybride rechargeable 350de (V167) nettement moins bien notee (5,6/10 selon une source)",
+    "pannes_courantes": "350de hybride : perte de capacite batterie rapportee entre -10 et -15% des 2,5 ans, calculateurs lents a se reapprovisionner (immobilisations de 3 a 6 semaines signalees selon une source), corrosion des vis de direction en aluminium vers 30 000km ; 350d diesel : systeme de refroidissement du V6 necessitant un remplacement de composants entre 60 000 et 100 000km, usure prematuree de l'embrayage, problemes electroniques divers (phares, climatisation, multimedia) apparaissant generalement apres 80 000km ; rappel de novembre 2021 sur les vehicules produits entre septembre 2018 et mars 2021 pour une soudure de plancher/chassis potentiellement fragile laissant infiltrer l'eau",
+    "source": "carverif.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Superb (generations 2008-2015 et 2015-2024, moteurs 2.0 TDI et TSI)",
+    "score_fiabilite": "correcte dans l'ensemble, quelques points de vigilance recurrents sur les blocs diesel et essence les plus puissants",
+    "pannes_courantes": "2.0 TDI 150 : consommation d'huile, soucis de volant moteur bimasse (claquements au demarrage, vibrations en fin de vie), pompe a eau et systeme AdBlue (injecteurs bouches ou pompe en panne generalement entre 80 000 et 120 000km sur les moteurs produits entre 2009 et 2018) ; 2.0 TDI 190 : pertes de liquide de refroidissement, vanne EGR encrassee provoquant voyant moteur et mode degrade, soucis d'injection ; 1.8 TSI : sensible aux defauts de boitier de refroidissement et de pompe a eau (fuite ou thermostat mal pilote pouvant entrainer une surchauffe) ; 2.0 TSI 280 : consommation d'huile plus elevee, liee a la conception du moteur selon une source, necessitant une surveillance reguliere du niveau",
+    "source": "fiches-auto.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Seat Ateca (2016+, moteurs 1.5 TSI et 2.0 TDI)",
+    "score_fiabilite": "2.0 TDI 150 note a 7/10 (fiabilite mecanique estimee a 7,5/10), electronique en retrait (6/10)",
+    "pannes_courantes": "1.5 TSI : problemes de chaine de distribution et de turbocompresseur rapportes des 60 000-80 000km (bruits metalliques au demarrage, perte de puissance evoquant une usure interne) ; 2.0 TDI 150 : defauts AdBlue, soucis de pompe a eau, consommation d'huile ; 2.0 TDI 190 : plus expose aux problemes de refroidissement et de transmission, le couple plus eleve sollicitant fortement la boite DSG et le systeme Haldex, pompe a eau a surveiller en cas de baisse reguliere du niveau de liquide ; capteur Front Assist identifie comme le defaut electronique le plus frequent, suivi de soucis ponctuels d'infodivertissement ; FAP s'encrassant frequemment en usage urbain des 25 000-40 000km",
+    "source": "fiches-auto.fr, carverif.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Corolla Touring Sports (hybride, 2019+, moteurs 1.8 et 2.0 Hybrid)",
+    "score_fiabilite": "chaine hybride Toyota jugee sobre et sans embrayage ni turbo fragile a surveiller ; le 2.0 Hybrid 196 recoit toutefois une note globale plus reservee (5,5/10 selon une source, achat non recommande sans expertise independante concernant la batterie 12V et la veille electronique)",
+    "pannes_courantes": "batterie 12V (et non la batterie de traction) identifiee comme la panne la plus banale de la gamme hybride Toyota selon une source ; recommandation de controle : mesurer la tension avant demarrage, verifier l'age de la batterie et l'usage (vehicule dormant longtemps avec cle a proximite ou accessoires branches favorisant sa decharge) ; rappel constructeur sur la pompe haute pression concernant les vehicules produits avant fin 2022 (risque de fuite de carburant et donc d'incendie)",
+    "source": "carverif.fr, icarsoft-france.fr, toyota.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Bayon (2021+, moteur 1.0 T-GDi)",
+    "score_fiabilite": "note de fiabilite rapportee a 7/10, taux de panne serieuse estime a moins de 8% sur les trois premieres annees selon une source",
+    "pannes_courantes": "systeme Start-Stop et batterie 12V identifies comme points de vigilance electroniques, batterie s'usant en moins de 3 ans selon une source ; dysfonctionnements des capteurs d'aide a la collision frontale rapportes des 10 000km ; usure des disques de frein avant superieure a la moyenne, premiers signes apparaissant souvent des 25 000km ; problemes de controle moteur et de systeme start-stop rapportes sur les blocs 1.0 et 1.2L (reduction de performance, hausse de consommation) des 20 000-30 000km",
+    "source": "carverif.fr, fiches-auto.fr, ovoko.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Sportage (5e generation NQ5, hybride 1.6 T-GDi HEV, 2021+)",
+    "score_fiabilite": "fiabilite mecanique globale rapportee a 6/10 (7,5/10 pour la partie hybride a partir des ameliorations de 2023 selon une source)",
+    "pannes_courantes": "poulie de l'alterno-demarreur identifiee comme le probleme majeur : blocage frequent avec risque de casse moteur, touchant environ 15% des unites selon une source des 80 000km, cout de reparation estime entre 1500 et 2500€ ; refroidissement du systeme hybride note faiblement (4/10) ; batterie hybride 1,49kWh garantie 7 ans/150 000km ; moteur hybride capable d'atteindre 250 000 a 300 000km avec un entretien regulier selon une source ; recommandation d'achat : privilegier les unites posterieures a la mise a jour corrigeant le defaut de poulie (millesimes 2022 precoces plus a risque)",
+    "source": "carverif.fr, fiches-auto.fr, ct-auto-63.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volvo V60 (generation 2018+, moteurs diesel D3/D4 et essence T5)",
+    "score_fiabilite": "fiabilite jugee adequate sur le diesel D4, qui reste le plus repandu sur le marche de l'occasion selon une source, de nombreux exemplaires depassant 200 000km sans panne majeure",
+    "pannes_courantes": "moteurs diesel 2.0 (D3/D4/D5) : problemes d'injection a partir de 100 000-150 000km, injecteurs encrasses et pompe haute pression defectueuse lies a une qualite de carburant insuffisante, entrainant fonctionnement irregulier et surconsommation ; vanne EGR defectueuse citee comme plainte recurrente sur la premiere generation V60 ; hayon electrique presentant des dysfonctionnements (panne complete, mouvement saccade, fermeture incomplete) des 20 000-40 000km, particulierement sur les millesimes 2019-2020 ; T5/T6 essence : climatisation en perte de fluide et compresseur defaillant des 50 000km ; FAP diesel se colmatant frequemment sur les trajets courts (mode degrade, remplacement couteux)",
+    "source": "auto-doc.fr, carnews.fr, fiches-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volvo S60 (generation 2018+, moteurs mild-hybrid B4/B5 48V)",
+    "score_fiabilite": "a verifier — donnees specifiques a la generation 2018+ peu documentees par les sources francophones consultees, la plupart des retours fiches-auto.fr/largus.fr portant sur la generation precedente 2010-2017",
+    "pannes_courantes": "systeme mild-hybrid 48V (B4/B5) : batterie 48V perdant en capacite apres 50 000-80 000km, messages d'erreur plus frequents rapportes en consequence ; alterno-demarreur integre (ISG) pouvant presenter une usure de roulement et tomber en panne entre 80 000 et 120 000km selon des sources anglophones ; convertisseur DC/DC (liaison entre le reseau 48V et le reseau 12V du vehicule) cite parmi les points de defaillance ; pannes de batterie rapportees sur les versions micro-hybrides B4 diesel et essence, avec des delais de diagnostic et reparation en concession parfois superieurs a un mois selon une source ; recommandation : verification reguliere de la tension et mises a jour logicielles tous les 15 000km pour les composants du systeme 48V",
+    "source": "fiches-auto.fr, go-parts.com (source anglophone recoupee) — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 408 (2023+, versions Hybrid 136/180 et PureTech)",
+    "score_fiabilite": "fiabilite globalement satisfaisante rapportee sur les systemes hybrides et electriques, batterie principale conservant 80% de sa capacite apres 200 000km selon une source ; a nuancer par des rappels constructeur sur les calculateurs hybrides en 2023",
+    "pannes_courantes": "hybrides rechargeables : defauts rapportes de batterie 12V, de charge, de mode electrique et de peripheriques moteur ; batterie auxiliaire trop faible pouvant empecher l'activation du mode electrique, necessite de controler rapidement culasse, linguets ou alternateur en cas de defaut associe ; ecran multifonction devenant noir par moments, avec suspension du boitier BSI rapportee dans certains cas serieux ; cas isoles de refus de demarrage et de defaut de traction electrique des 9 800km, et de casse moteur apres 3 mois d'utilisation rapportes par des proprietaires (non recoupes par une source primaire) ; ces cas coexistent avec des retours globalement conformes aux standards actuels de la marque selon une source, en particulier avec un entretien serieux et une reaction rapide aux alertes",
+    "source": "fiches-auto.fr, ovoko.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Fiesta (generations 2008-2017 et 2017+, moteur 1.0 EcoBoost)",
+    "score_fiabilite": "fiabilite globale rapportee a 7,2/10 pour le 1.0 EcoBoost 100, duree de vie moyenne estimee entre 180 000 et 220 000km si l'entretien est rigoureux",
+    "pannes_courantes": "perte de liquide de refroidissement, surchauffe et endommagement du joint de culasse pouvant survenir des 40 000-60 000km ; durite fragile sujette a fissuration entrainant une perte de liquide de refroidissement, concernant surtout les modeles produits entre 2011 et 2013 (EcoBoost 125ch en premier lieu) ; courroie de distribution baignant dans l'huile pouvant s'oxyder et s'effriter, les copeaux bouchant la crepine et le circuit de lubrification (casse moteur possible) ; pannes critiques rapportees plus frequemment entre 90 000 et 120 000km sur les millesimes 2012-2016 ; amelioration notable sur les versions recentes ou Ford a remplace la courroie humide par une chaine de distribution",
+    "source": "fiches-auto.fr, auto-doc.fr, auto-land.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

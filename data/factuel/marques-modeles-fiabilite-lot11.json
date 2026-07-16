@@ -1,0 +1,142 @@
+[
+  {
+    "modele": "Citroen C5 X (2022+, motorisations PureTech essence et Hybrid rechargeable)",
+    "score_fiabilite": "a verifier — echantillon encore reduit (22 temoignages sur fiches-auto.fr), avis proprietaires contrastes : plusieurs rapportent aucun probleme apres 3 ans d'un vehicule juge tres confortable et silencieux, d'autres signalent des pannes prematurees sur des exemplaires recents peu kilometres",
+    "pannes_courantes": "bugs electroniques mineurs rapportes : ecran qui devient noir en roulant, detection Apple CarPlay inconstante, bugs de la tablette centrale avec retablissement quasi instantane ; deux campagnes de rappel constructeur identifiees pour un risque d'incendie lie a la canalisation de carburant haute pression entre la pompe et le rail (vehicules produits entre le 27/10/2022 et le 13/05/2025, puis un second rappel pour les vehicules produits entre le 17/08/2023 et le 25/08/2024 concernant le raccord d'accouplement rapide de la pompe haute pression)",
+    "source": "fiches-auto.fr, planete-citroen.com, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat 500X (2014+, moteurs 1.3/1.0 FireFly essence turbo, boite DCT)",
+    "score_fiabilite": "a verifier — avaries mecaniques graves rapportees comme plutot rares mais defauts electroniques frequents selon plusieurs sources (fiches-auto.fr, auto-doc.fr)",
+    "pannes_courantes": "consommation de carburant reelle nettement superieure au WLTP officiel sur le moteur FireFly (+25 a +35%, pointes a 8,5-9L/100 en ville a froid avec climatisation) ; boite double embrayage DCT presentant des a-coups a basse vitesse, hesitations au retrogradage et difficultes d'engagement de la marche arriere (parfois resolu par mise a jour du calculateur TCM, parfois necessitant le remplacement de l'embrayage ou du mecatronique) ; systeme start-stop pose souci a de nombreux proprietaires, batterie montrant des premiers signes de faiblesse des 15 000-25 000km ; bobines d'allumage pouvant tomber en panne entre 50 000 et 80 000km provoquant des rates d'allumage",
+    "source": "fiches-auto.fr, auto-doc.fr, protoinsaclub.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Alfa Romeo Giulia (2016+, moteurs diesel 2.2 et essence 2.0 Turbo)",
+    "score_fiabilite": "fiabilite mecanique des moteurs diesel et essence rapportee comme excellente a l'usage selon plusieurs sources ; les principaux soucis identifies sont d'ordre electronique et lies a une batterie 12V d'origine jugee sous-dimensionnee",
+    "pannes_courantes": "diesel 2.2 : filtre a particules (FAP) s'encrassant rapidement en usage a trajets courts, colmatage rapporte entre 30 000 et 50 000km sans phases de regeneration a regime soutenu ; essence 2.0 Turbo : turbocompresseur fragilise apres 40 000-60 000km (perte de puissance, bruits inhabituels, hausse de consommation d'huile) ; systeme d'infodivertissement se bloquant ou ne repondant pas au tactile, notamment apres mises a jour logicielles, des 10 000-15 000km ; systeme Start-Stop presentant des dysfonctionnements des 15 000-20 000km ; climatisation rapportee comme defaillante en particulier sur les versions 2.2 diesel des 25 000-30 000km ; recommandation d'achat : privilegier l'essence 2.0 Turbo 200ch millesime 2020 ou posterieur (CarPlay integre, moins de soucis d'infodivertissement)",
+    "source": "fiches-auto.fr, auto-doc.fr, iems.fr, garagevoltaire.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Alfa Romeo Tonale (2022+, moteurs mild-hybrid 1.5 MHEV et hybride rechargeable 1.3 PHEV Q4)",
+    "score_fiabilite": "a verifier — millesimes 2022 et une partie de 2023 identifies comme demandant une prudence forte selon une source, un millesime 2024 sous garantie juge plus rassurant",
+    "pannes_courantes": "defaillances de la batterie 12V entrainant messages d'erreur, bugs electroniques et dysfonctionnements du systeme multimedia ; sur la version hybride rechargeable (PHEV Q4), cas de recharge refusee, interrompue ou anormalement lente rapportes, accompagnes de messages d'erreur du systeme hybride ; sur les versions 1.5 MHEV a boite TCT, a-coups et hesitations a basse vitesse remontes par des utilisateurs (certains les jugeant insupportables, d'autres ne rapportant aucun probleme depuis 2024) ; 3 rappels officiels recenses en 2024, principalement lies aux pedales de frein et aux systemes electroniques",
+    "source": "ovoko.fr, fiches-auto.fr, carverif.fr, forum-auto.matmut.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mini Cooper (F56, 2014+, moteur essence 1.5 3 cylindres turbo 136ch)",
+    "score_fiabilite": "fiabilite globale rapportee a 7,8/10 selon des statistiques ADAC et retours forums, duree de vie moyenne estimee a 220 000km avant grosse revision ; versions post-2017 jugees plus abouties, le 3 cylindres 1.5 turbo etant considere comme reussi et depourvu des defauts des versions precedentes",
+    "pannes_courantes": "pompe a eau : premieres pannes serieuses rapportees des 80 000km ; turbocompresseur presentant des signes d'usure entre 80 000 et 120 000km (perte de puissance, bruits inhabituels) ; boite automatique developpant des problemes entre 60 000 et 100 000km (marche arriere ne s'engageant pas, passages de vitesses erratiques)",
+    "source": "carverif.fr, universauto.fr, ovoko.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Suzuki Swift IV (2017+, moteur 1.2 Dualjet essence et hybride SHVS)",
+    "score_fiabilite": "fiabilite globale rapportee a 8/10 (fiabilite mecanique 8,5/10) selon carverif.fr ; architecture simple a chaine de distribution (pas de courroie) et systeme micro-hybride SHVS minimaliste juges limiter les risques de panne, entretien regulier permettant d'atteindre 200 000 a 250 000km sans panne majeure selon une source",
+    "pannes_courantes": "batterie lithium-ion du systeme SHVS commencant a se degrader entre 80 000 et 130 000km ou apres 5 a 7 ans d'usage ; fuites de liquide de refroidissement recurrentes mais gerables avec un entretien preventif adapte ; systeme hybride presentant des faiblesses (dysfonctionnement de la batterie, problemes de calculateur) generalement entre 60 000 et 100 000km",
+    "source": "carverif.fr, larevueautomobile.com, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Suzuki S-Cross (2022+, moteur 1.4 Boosterjet mild-hybrid 48V)",
+    "score_fiabilite": "reputation plutot positive rapportee, moteur juge souple et rarement sujet a des pannes majeures lorsque correctement entretenu ; pas de defaut chronique massif identifie sur ce bloc selon les sources consultees",
+    "pannes_courantes": "moteur a chaine de distribution (non a courroie), point juge rassurant pour la longevite ; proprietaires rapportant regulierement des kilometrages depassant 200 000km sans intervention majeure ; problemes mineurs mentionnes (bugs electroniques, capteurs) sans remise en cause de la solidite du bloc moteur lui-meme selon les sources consultees",
+    "source": "conseil-auto-moto.fr, carverif.fr, iems.fr, etoilecollections.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Land Rover Defender (generation actuelle depuis 2020, moteurs Ingenium diesel et essence)",
+    "score_fiabilite": "fiabilite globale rapportee a 6/10 pour un Defender ancien generation 2.4 Td4 (a distinguer du modele actuel) ; la famille de moteurs Ingenium 2.0L fait l'objet de critiques recurrentes selon plusieurs sources, avec des cas de casse moteur prematuree signales parfois avant 30 000km",
+    "pannes_courantes": "moteurs diesel TD4/TD5 (anciennes generations) : problemes d'injection et de turbocompresseur des 80 000-120 000km, vanne EGR, injecteurs Delphi, fuites d'huile au joint de culasse des 150 000km sans maintenance preventive ; suspension pneumatique identifiee comme un point faible recurrent, pannes generalement rapportees des 60 000-80 000km ; moteurs Ingenium 2.0L (generation actuelle) : plusieurs temoignages de proprietaires rapportant des remplacements moteur repetes en moins de 100 000km selon une source — donnee a recouper specifiquement pour le Defender recent, les sources melangeant plusieurs generations Land Rover",
+    "source": "auto-doc.fr, carverif.fr, proxiauto.fr, fiches-auto.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jaguar F-Type (moteur essence V6 3.0 AJ126, 340ch)",
+    "score_fiabilite": "moteur V6 AJ126 3.0L decrit comme la partie la plus fiable de l'ensemble, stabilite remarquable jusqu'a 100 000km avec une degradation progressive liee a l'age des composants electroniques ; achat recommande entre 50 000 et 80 000km pour un bon equilibre prix/fiabilite selon une source",
+    "pannes_courantes": "pannes les plus courantes touchant le systeme electrique complexe et des bugs electroniques divers ; fuites de differentiel et problemes de refroidissement apparaissant apres 80 000km ; moteur V6 lui-meme reste robuste sans defaillance majeure rapportee selon les sources consultees ; revision annuelle estimee entre 800 et 1 200€, pieces detachees premium pouvant couter plusieurs milliers d'euros pour des reparations electroniques ; au-dela de 100 000km, verifier specifiquement les guides de chaine de distribution et les fuites de differentiel",
+    "source": "carverif.fr, largus.fr, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jaguar XF (moteur diesel Ingenium 2.0D, 180ch)",
+    "score_fiabilite": "note de fiabilite globale rapportee a 5/10 selon carverif.fr, problemes recurrents signales apres 60 000km",
+    "pannes_courantes": "pannes de turbo avec sifflements anormaux et risque de casse liee a la distribution, generalement entre 60 000 et 90 000km ; consommation excessive d'huile rapportee, jusqu'a 6,5L/100km chez certains proprietaires ; dilution de l'huile moteur liee a une regeneration incomplete du filtre a particules (FAP), entrainant une lubrification insuffisante et un allongement de la chaine de distribution ; soucis electroniques pouvant apparaitre des 30 000km ; entretien annuel depassant 1 500€ au-dela de 100 000km en raison des reparations turbo/distribution ; inspection approfondie recommandee au-dela de 90 000km avant achat d'occasion",
+    "source": "carverif.fr, jaguarforum.com, proxiauto.fr, apexengines.co.uk — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lexus UX 250h (hybride, 2018+)",
+    "score_fiabilite": "avis globalement positifs rapportes, retours proprietaires apres 5 ans d'exploitation juges excellents avec peu de pannes signalees ; motorisation hybride heritee du groupe Toyota, reputee pour sa longevite",
+    "pannes_courantes": "quelques soucis isoles rapportes : difficulte de demarrage necessitant plusieurs interventions de depannage apres une periode de non-utilisation chez un proprietaire, problemes de finition et de vanne EGR mentionnes par certains utilisateurs, consommation de carburant parfois jugee superieure aux chiffres annonces ; la majorite des retours restent tres positifs, un proprietaire rapportant 90 000km sans aucun probleme avec tous les elements d'origine",
+    "source": "caradisiac.com, automobile-propre.com, forum.clublexus.fr, forum-auto.matmut.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mazda 2 (DJ, 2015+, moteur essence 1.5 Skyactiv-G 90ch)",
+    "score_fiabilite": "note de fiabilite de 7/10 rapportee par carverif.fr ; sur un panel de 49 avis, aucun cas de casse moteur ou de boite de vitesses recense, un seul cas de vanne EGR note, aucun souci FAP/AdBlue (moteur essence atmospherique simple)",
+    "pannes_courantes": "encrassement moteur pouvant entrainer une perte de puissance et de nervosite avec demarrages plus difficiles ; systeme d'alimentation en carburant presentant des faiblesses entre 100 000 et 140 000km (pompe a carburant defectueuse, filtre bouche, injecteurs encrasses provoquant demarrage difficile, fonctionnement irregulier voire panne complete) ; defaillance du compresseur de climatisation generalement apres 80 000-100 000km, moteurs de leve-vitres electriques defectueux apres 50 000-70 000km, usure prematuree des disques de frein apres 40 000-60 000km, fuites d'amortisseurs apres 70 000-90 000km ; cout d'entretien annuel juge bas (environ 400€ assurance tous risques comprise), pas de FAP ni AdBlue",
+    "source": "carverif.fr, fiches-auto.fr, my-procar.com, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mazda CX-3 (2015+, moteurs 1.5 Skyactiv-D diesel 105ch et 2.0 Skyactiv-G essence 150ch)",
+    "score_fiabilite": "diesel 1.5 Skyactiv-D 105ch note a 8,2/10 (fiabilite superieure a la moyenne du segment B-SUV selon carverif.fr) ; essence 2.0 Skyactiv-G 150 note a 7,2/10 ; millesimes 2015-2016 a eviter (soucis initiaux de FAP sensible a une essence de mauvaise qualite, jusqu'a 1 200€ de reparation), versions post-restylage 2018 avec taux de panne rapporte en baisse de 40%, millesimes 2019-2021 recommandes pour une fiabilite optimale",
+    "pannes_courantes": "diesel : filtre a particules (FAP) s'encrassant apres 120 000km en usage urbain intensif, turbo a geometrie variable montrant des signes d'usure vers 180 000km (remplacement estime a 1 800€), systeme d'injection identifie comme le point faible principal (injecteurs vulnerables) ; essence : ralenti instable rapporte sur le 2.0, dysfonctionnements electroniques (GPS, retroviseurs), pompe a carburant basse pression dont l'impulseur peut se fissurer et provoquer un arret moteur",
+    "source": "carverif.fr, fiches-auto.fr, auto-land.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda Jazz IV (2020+, hybride e:HEV 1.5, 109ch)",
+    "score_fiabilite": "note de fiabilite rapportee a 7,8/10 sur le marche de l'occasion francais selon carverif.fr, profil juge nettement meilleur que la moyenne des citadines hybrides ; un proprietaire avec plus de 3 ans d'usage rapporte l'absence de probleme moteur, d'alerte liee a la batterie hybride ou de defaillance electronique",
+    "pannes_courantes": "premiers signes de vieillissement de la batterie hybride rapportes entre 100 000 et 150 000km (reduction de l'autonomie electrique, hausse de consommation) ; silencieux central pouvant rouiller entre 60 000 et 80 000km ; moteur d'essuie-glace pouvant tomber en panne apres 50 000-70 000km, serrures de porte se bloquant parfois apres 40 000-60 000km ; recommandation d'entretien : controle regulier de la climatisation, des capteurs et de la batterie 12V meme sur un exemplaire peu kilometre",
+    "source": "carverif.fr, mininches.com, fiches-auto.fr, ovoko.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Impreza (moteur boxer essence 2.0L, boite CVT, generations 2000s-2010s)",
+    "score_fiabilite": "note globale de fiabilite rapportee a 7/10 pour la generation III (carverif.fr) ; longevite mecanique du bloc boxer 2.0 essence jugee comme une reference du segment, un entretien basique suffisant selon une source a depasser les 250 000km",
+    "pannes_courantes": "joints de culasse identifies comme l'un des defauts les plus courants sur les moteurs boxer 2.0L des annees 2000-2009, se manifestant generalement entre 80 000 et 120 000km (fumee blanche a l'echappement, perte de liquide de refroidissement sans fuite visible, decoloration laiteuse de l'huile) ; turbocompresseur (versions turbo) pouvant tomber en panne des 60 000-80 000km avec perte de puissance importante ; boite CVT presentant des problemes caracteristiques a partir d'environ 100 000km (accelerations saccadees, passages de rapport irreguliers, difficultes de demarrage en cas de blocage), chaine et poulies de la courroie particulierement sensibles a une conduite agressive ou un entretien irregulier, liquide CVT specifique a changer tous les 100 000km",
+    "source": "carverif.fr, auto-doc.fr, largus.fr, kit-ethanol-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru XV (moteurs boxer essence 2.0L, diesel 2.0D et hybride e-Boxer)",
+    "score_fiabilite": "a verifier — ecart important selon les temoignages rapportes par une source : certains proprietaires du bloc essence depassent 300 000km sans ouvrir le moteur, d'autres proprietaires du diesel boxer rapportent des pannes a repetition avant 150 000km",
+    "pannes_courantes": "essence 2.0L : consommation d'huile accrue entre 60 000 et 80 000km se manifestant par une fumee d'echappement bleutee, sinon longevite mecanique jugee comme une reference du segment ; diesel 2.0D : injection common rail Denso et gestion du FAP jugee problematique sur les premieres annees, durites d'intercooler fendues et roulements arriere vers 100 000km rapportes comme problemes courants ; hybride e-Boxer : presente comme plus performant et plus economique que l'ancien bloc essence 1.6i selon une source, peu de recul disponible ; compresseur de climatisation tombant souvent en panne apres 70 000-90 000km ; boite CVT presentant des defauts a kilometrage eleve (acceleration saccadee, bruits inhabituels), commun a la gamme Subaru de cette periode",
+    "source": "auto-doc.fr, kit-ethanol-auto.fr, forum-subaru-diesel.soforums.com, heycar.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volvo XC90 (2e generation depuis 2015, moteurs D5 diesel bi-turbo et T8 hybride rechargeable)",
+    "score_fiabilite": "a verifier — millesimes 2016 a eviter en priorite selon une source, vigilance particuliere recommandee sur les D5 2016-2018 et les T8 hybrides 2020-2022",
+    "pannes_courantes": "D5 diesel : les deux turbocompresseurs (bi-turbo) fonctionnant a haute pression peuvent subir une perte de puissance voire une destruction en cas de lubrification degradee, fuite d'admission ou gestion electronique incoherente ; systeme AdBlue pouvant immobiliser le vehicule si le reservoir, la pompe ou l'injecteur SCR ne dosent plus correctement l'uree ; durites de turbo identifiees comme point de faiblesse recurrent pouvant necessiter une depanneuse ; usure prematuree des segments moteur entrainant une consommation d'huile elevee sur les millesimes anterieurs a 2018 (corrige par Volvo depuis) ; T8 hybride rechargeable : bugs electroniques, defauts du moteur electrique et de la batterie haute tension rapportes, perte de puissance ou desactivation du mode 4x4 possible en cas d'incoherence entre calculateurs ; baisse de capacite de la batterie de traction pouvant reduire fortement l'autonomie electrique sur les versions T8 2020-2022 ; ordinateur de bord pouvant tomber en panne ou afficher des informations erronees, tous moteurs confondus",
+    "source": "fiches-auto.fr, largus.fr, piecesauto24.com, actuauto.fr, moniteurautomobile.be — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Arkana (2021+, hybride E-Tech 1.6, 145/140ch)",
+    "score_fiabilite": "fiabilite globale rapportee a 6/10 (carverif.fr), le systeme hybride E-Tech recevant une note de 4/10 en raison de sa complexite ; versions restylees depuis mi-2022 rapportees comme beneficiant d'ameliorations notables et d'une fiabilite accrue",
+    "pannes_courantes": "transmission multimode pouvant presenter de legers a-coups ou un effet de moulinage a faible vitesse, probleme decrit comme isole et rarement synonyme de panne lourde ; rappel constructeur touchant 150 000 vehicules Renault produits entre 2020 et janvier 2024 pour un defaut d'etancheite du joint torique d'arbre primaire creux, pouvant entrainer surchauffe du moteur electrique ou perte de traction (meme defaut que sur Espace 6/Austral) ; dependance logicielle forte du systeme E-Tech, certains conducteurs rapportant des recalibrages ou mises a jour necessaires pour corriger des alertes hybrides temporaires ; pannes occasionnelles du chauffage/climatisation, bugs de l'ecran multimedia, dysfonctionnements des aides a la conduite cites comme defauts les plus frequents ; entretien annuel estime entre 300 et 600€, batterie hybride garantie 8 ans/160 000km",
+    "source": "carverif.fr, ovoko.fr, fiches-auto.fr, auto-land.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Aygo X (2022+, moteur essence 1.0 VVT-i 72ch)",
+    "score_fiabilite": "frequence de panne rapportee a 0,4 panne/an sur 30 000km selon une source (avis 2023-2025), decrite comme la plus basse du segment citadine essence en France ; problemes rapportes majoritairement lies au confort, a l'ergonomie ou a des bugs logiciels plutot qu'a des pannes mecaniques",
+    "pannes_courantes": "recommandation d'eviter les tout premiers exemplaires du millesime 2022 (premier lot de production) en raison de mises a jour calculateur necessaires ; codes defaut les plus frequents rapportes : P0016 (decalage arbre a cames/vilebrequin lie au capteur PMH), P0300 (rates d'allumage sur bougies en fin de vie), P0171 (melange pauvre en cas de sonde lambda fatiguee) ; silent-blocs avant changes sous garantie rapportes des 40 000km, sonde lambda a surveiller preventivement vers 50 000km ; rappel de securite sur la cosse de batterie de servitude, potentiellement defectueuse (risque de desactivation de la direction assistee et de surchauffe de la borne a basse vitesse)",
+    "source": "fiches-auto.fr, carverif.fr, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "DS 3 Crossback (2019+, moteurs PureTech 1.2 essence et BlueHDi 1.5 diesel)",
+    "score_fiabilite": "a verifier — recommandation d'achat rapportee : version PureTech 155 EAT8 des millesimes 2021-2022 jugee offrir le meilleur compromis fiabilite/equipement/performances ; a eviter selon une source : PureTech 130 EAT8 des millesimes 2019-2020, BlueHDi 100 quelle que soit l'annee, et les toutes premieres versions de lancement 2019 hors garantie",
+    "pannes_courantes": "PureTech 1.2 : courroie de distribution humide (fonctionnant dans l'huile moteur, produite jusqu'au 20/06/2022) sujette a une usure prematuree et une dilution d'huile, pouvant entrainer perte de puissance, a-coups, hausse de consommation, allumage du voyant moteur et parfois un mode degrade ; surconsommation d'huile rapportee par certains utilisateurs, avec risque de manque de lubrification et de casse moteur si non detectee a temps ; BlueHDi 1.5 : casses de la petite chaine reliant les deux arbres a cames rapportees sur les modeles recents, piece renforcee par Stellantis (epaisseur passee de 7mm a 8mm) sur les vehicules produits apres 2023 ; reservoir AdBlue parfois capricieux (problemes de pompe et de jauge)",
+    "source": "fiches-auto.fr, conseil-auto-moto.fr, e-driver.fr, iems.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

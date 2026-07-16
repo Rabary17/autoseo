@@ -1,0 +1,170 @@
+[
+  {
+    "modele": "Peugeot 3008 (1ere generation, 2009-2016)",
+    "score_fiabilite": "fiabilite moyenne, nombreux points faibles rapportes (767 temoignages recenses : 67 avis negatifs contre 47 positifs sur la fiabilite)",
+    "pannes_courantes": "injecteurs (103 cas declares), embrayage (84 cas), electronique (67 cas), distribution (54 cas), consommation excessive d'huile (50 cas) ; moteur 1.2 PureTech 130 (millesimes 2016-2018) : courroie de distribution baignant en permanence dans l'huile moteur, degradation acceleree ; HDi de premiere generation : turbo fragile, FAP sensible a l'usage urbain ; moteur essence THP 156 cite parmi les moins fiables de la gamme PSA de l'epoque",
+    "source": "fiches-auto.fr, bikeloc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Peugeot 3008 (2e generation, 2016-2024, boite automatique EAT8)",
+    "score_fiabilite": "globalement correcte, defauts de jeunesse sur la boite EAT8 en debut de commercialisation",
+    "pannes_courantes": "boite EAT8 (a partir de 2019) : anomalies logicielles ayant touche environ 12 000 vehicules dans les premiers mois, corrigees par mises a jour constructeur (EAT8 a partir de 2020 nettement plus fiable) ; i-Cockpit et ecran tactile central : bugs recurrents (redemarrage en roulant, capteurs de stationnement defaillants, perte des parametres utilisateur apres deconnexion de la batterie)",
+    "source": "fiches-auto.fr, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Peugeot 5008 (1ere generation, moteur 1.6 HDi diesel)",
+    "score_fiabilite": "debuts difficiles, nombreux petits et gros soucis rapportes apres la periode de garantie",
+    "pannes_courantes": "1.6 HDi : systeme d'injection chroniquement fragile, remplacement complet des injecteurs pouvant atteindre 2000€ selon temoignages ; capot sujet a des vibrations/deformations a haute vitesse (au-dela de 120km/h), surtout par vent lateral fort, rapporte par la quasi-totalite des proprietaires interroges ; bugs GPS/Bluetooth (ecran noir, perte de fonction, lenteur, blocage)",
+    "source": "caradisiac.com, starting-auto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Peugeot 5008 (2e generation, a partir de 2018)",
+    "score_fiabilite": "bonne fiabilite generale saluee par plusieurs sources, nette amelioration par rapport a la 1ere generation",
+    "pannes_courantes": "versions diesel AdBlue : fuites possibles du reservoir ou defaillances du module de dosage, declenchant parfois un mode degrade ; quelques bruits/craquements signales au niveau du tableau de bord et des contre-portes",
+    "source": "caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Kadjar (moteur 1.6 dCi 130, bloc R9M)",
+    "score_fiabilite": "globalement fiable si bien entretenu, peut depasser 250 000km sans panne majeure",
+    "pannes_courantes": "vanne EGR encrassee et FAP bouche en usage urbain (perte de puissance, mode degrade), reparation typique estimee entre 300 et 600€ ; turbo fatigue et injecteurs (remplacement 250-400€ par injecteur) surtout en cas d'usage intensif ou d'entretien neglige ; boite EDC (double embrayage) : a-coups et vibrations quand l'entretien est neglige",
+    "source": "conseil-auto-moto.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Renault Captur (moteur essence 1.2 TCe 120)",
+    "score_fiabilite": "point faible identifie sur cette motorisation essence, avis a nuancer selon les sources",
+    "pannes_courantes": "chaine de distribution montrant des signes d'usure des 40 000-60 000km selon plusieurs temoignages ; consommation d'huile excessive liee a une usure prematuree des segments de piston (jusqu'a 1L/1000km rapporte par certains utilisateurs), pouvant mener a une casse moteur des 50 000km ; boite EDC6 : a-coups, bruits metalliques et patinage rapportes des 60 000km, usure rapide des embrayages internes (remise a neuf de l'ordre de 5000€ selon certains temoignages, chiffre non recoupe par une source primaire)",
+    "source": "auto-doc.fr, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Scenic (generations 2 a 4, diesel 1.7/1.9/2.0 dCi)",
+    "score_fiabilite": "variable selon generation et motorisation ; largus.fr recense les pannes par categorie et par generation",
+    "pannes_courantes": "1.7 dCi : pertes de puissance, turbocompresseur, vanne EGR ; incidents electroniques (tableau de bord, sonde NOx) ; suspension avant ; frein de stationnement electrique et fuites de carburant signales sur certains temoignages ; un cas de rupture de courroie de distribution a faible kilometrage (70 000km) rapporte ; infiltrations d'eau dans l'habitacle mentionnees sur plusieurs generations",
+    "source": "largus.fr (forum-auto), auto-search.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C5 Aircross (moteur essence 1.2 PureTech)",
+    "score_fiabilite": "point faible connu sur ce bloc essence, partage avec d'autres modeles du groupe Stellantis",
+    "pannes_courantes": "courroie de distribution baignant dans l'huile moteur, usure prematuree ; des morceaux de courroie peuvent obstruer la crepine de la pompe a huile et provoquer une mauvaise lubrification, voire une casse moteur dans les cas les plus graves ; decalaminage souvent necessaire des 40 000km",
+    "source": "fiches-auto.fr, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Citroen C5 Aircross (moteur diesel 1.5 BlueHDi)",
+    "score_fiabilite": "a connu des campagnes de rappel importantes",
+    "pannes_courantes": "problemes de chaine de distribution (arbre a cames) ; systeme AdBlue : blocages au niveau de l'injecteur et du reservoir ; electronique embarquee capricieuse necessitant des redemarrages, capteurs (pluie, camera de recul) defaillants prematurement, ecran tactile peu reactif",
+    "source": "auto-doc.fr, fiabauto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Porsche Macan (moteur essence 2.0 TFSI et diesel 3.0 TDI)",
+    "score_fiabilite": "avis contrastes selon les proprietaires, note globale rapportee autour de 7,6/10 par une source",
+    "pannes_courantes": "boite PDK : changements de vitesse saccades, retards, messages d'erreur, bruits inhabituels (un cas de devis hors garantie autour de 20 000€ rapporte) ; climatisation : fuite du compresseur par usure des joints des 50 000-70 000km ; suspension pneumatique : hauteur inegale des 40 000-60 000km (compresseur et soufflets en cause) ; moteur 2.0 TFSI : chaine de distribution, cliquetis metallique a froid des 80 000-100 000km ; diesel 3.0 TDI : FAP, fuites d'huile, vanne EGR, dysfonctionnements AdBlue",
+    "source": "fiches-auto.fr, auto-doc.fr, forum-macan.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Porsche Cayenne (generation 958, moteur 3.0 V6 TDI d'origine Audi/VAG)",
+    "score_fiabilite": "diesel considere comme robuste ; generation 958 (2010-2018, surtout les exemplaires apres 2011) jugee comme le meilleur compromis fiabilite/prix sur le marche de l'occasion selon plusieurs sources",
+    "pannes_courantes": "colmatage du FAP des 120 000km (perte de puissance, surconsommation) ; vanne EGR concernee par des mises a jour logicielles liees au Dieselgate ; injecteurs et pompe a injection pouvant se degrader et polluer l'ensemble du circuit d'alimentation",
+    "source": "auto-doc.fr, autoliva.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jaguar F-Pace (diesel 2.0D Ingenium 180)",
+    "score_fiabilite": "fiabilite jugee en dessous de la moyenne du segment premium (note autour de 6/10 selon une source), millesimes 2016-2017 les plus a risque (defauts de jeunesse)",
+    "pannes_courantes": "turbocompresseur : defaillances recurrentes rapportees autour de 59 000km ; FAP colmate en usage urbain frequent ; electronique : GPS/Bluetooth capricieux, frein de parking electronique defaillant generalement entre 30 000 et 80 000km ; boite automatique : changements de vitesse saccades entre 60 000 et 100 000km ; pompe a carburant defectueuse entre 70 000 et 100 000km ; fuites de toit panoramique des 40 000km ; usure prematuree des disques de frein des 30 000-50 000km ; les versions essence sont rapportees comme systematiquement plus fiables que les diesel",
+    "source": "carverif.fr, icarsoft-france.fr, larevueautomobile.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jaguar XE (diesel 2.0D Ingenium)",
+    "score_fiabilite": "moteur Ingenium diesel ayant connu des problemes de jeunesse a son lancement, pouvant aller jusqu'a la casse dans certains cas",
+    "pannes_courantes": "pannes de turbo avec sifflement anormal, degradation acceleree entre 60 000 et 90 000km ; risque de casse lie a un defaut de distribution ; consommation d'huile excessive rapportee chez certains proprietaires (jusqu'a 6,5L/100km cite) ; refroidisseur de carburant pouvant presenter un defaut et fuir ; en usage urbain frequent, dilution d'huile et regenerations de FAP a surveiller de pres",
+    "source": "proxiauto.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lexus NX 300h (hybride)",
+    "score_fiabilite": "l'un des SUV hybrides les plus fiables de sa categorie, tres peu de pannes repertoriees dans les sources consultees",
+    "pannes_courantes": "consommation reelle parfois decevante sur autoroute (entre 8 et 12L/100km rapporte par des utilisateurs, alors qu'un hybride est attendu plus sobre) ; batterie 12V de demarrage pouvant se decharger par consommation fantome vehicule eteint ; systeme multimedia juge peu ergonomique et complexe, en particulier sur les versions anterieures a 2020",
+    "source": "fiches-auto.fr, ovoko.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lexus RX 450h (hybride)",
+    "score_fiabilite": "bonne fiabilite generale rapportee, quelques defauts signales sur le moteur thermique et le systeme hybride",
+    "pannes_courantes": "surchauffe possible par pompe a eau defaillante ou fuite de liquide de refroidissement ; radiateur principal : reservoirs plastiques devenant poreux avec le temps et les cycles thermiques ; systeme hybride : degradation de la batterie haute tension, defaillances de l'onduleur (soudures de transistor du module de puissance pouvant se degrader et declencher un mode secours avec limitation de puissance) ; supports moteur hydrauliques fortement sollicites par les demarrages/arrets frequents du moteur thermique, vibrations au ralenti et claquements a l'acceleration",
+    "source": "ovoko.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Captiva (moteur 2.2 diesel)",
+    "score_fiabilite": "points faibles identifies notamment en usage urbain",
+    "pannes_courantes": "chaine de distribution pouvant s'user prematurement en cas d'entretien irregulier (jusqu'a empecher le demarrage du vehicule) ; FAP et vanne EGR : points noirs en ville, encrassement rapide et pertes de puissance ; injecteurs et turbo egalement cites parmi les points de fragilite",
+    "source": "fiches-auto.fr, auto-repare.com, conseil-auto-moto.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Cruze (diesel 2.0 VCDi 163, le plus sensible de la gamme)",
+    "score_fiabilite": "diesel le plus fragile de la gamme Cruze selon les temoignages consultes",
+    "pannes_courantes": "FAP : point faible majeur, mise en securite moteur si les regenerations echouent ; boite de vitesses : accrochage/blocage de certains rapports, synchros fragiles notamment en 2e vitesse ; pannes de direction assistee/pompe hydraulique signalees ; FAP, EGR, turbo, durite d'intercooler, injection et consommation d'huile cites ensemble comme points sensibles du 2.0 VCDi 163",
+    "source": "fiches-auto.fr, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chrysler 300C",
+    "score_fiabilite": "pas de pannes lourdes recurrentes identifiees dans les sources consultees, retours en garantie faibles rapportes (notamment via des flottes de taxis)",
+    "pannes_courantes": "usure prematuree et jeu dans les rotules de direction, remplacement parfois necessaire ; sur certains diesel CRD : soucis de regeneration du FAP ou degagement de fumee durant celle-ci, surtout sur vehicules peu roules ; rares cas de fuites au niveau des amortisseurs sur les premieres series CRD",
+    "source": "caradisiac.com, larevueautomobile.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen Berlingo (2e generation, 2008-2018, diesel HDi)",
+    "score_fiabilite": "correcte avec des points de vigilance recurrents",
+    "pannes_courantes": "rappel 2023 sur les modeles produits entre le 28/11/2014 et le 09/07/2018 concernant une possible non-conformite du boitier a fusibles ; defaut de conception de la pompe a vide pouvant entrainer une perte d'assistance au freinage ; embrayage : faiblesse connue sur les diesel 2008-2015, usure prematuree ; climatisation/ventilation : pannes frequentes (ventilateur en panne ou ne fonctionnant qu'a certaines vitesses) ; turbo (1.6 HDi et 2.0 HDi) : defaillances par accumulation de depots, perte de performance",
+    "source": "fiches-auto.fr, icarsoft-france.fr, comptoir-utilitaire.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Citroen Berlingo (3e generation, 2018-, moteur 1.5 BlueHDi)",
+    "score_fiabilite": "a verifier — rappel recent identifie sur un point de production limite dans le temps",
+    "pannes_courantes": "rappel officiel lance en avril 2026 (code GX8) concernant les vehicules produits entre le 15/10/2025 et le 02/03/2026 : la poulie de pompe a eau peut ne pas rester correctement fixee a son axe, avec un risque de desalignement de la distribution",
+    "source": "comptoir-utilitaire.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Trafic (3e generation, moteurs 1.6 dCi et 2.0 dCi, utilitaire)",
+    "score_fiabilite": "globalement fiable et apprecie malgre des problemes recurrents identifies",
+    "pannes_courantes": "vanne EGR : encrassement entrainant une perte de puissance ; turbocompresseur : pannes avec sifflement anormal et fumee noire, encrassement provoquant aussi une consommation d'huile excessive ; injecteurs : encrassement ou panne lies a la qualite du carburant ou a un entretien insuffisant, a-coups moteur ; fuites d'huile au niveau des joints ; pannes electriques affectant la fermeture centralisee et les leve-vitres rapportees sur le 1.6 dCi 120",
+    "source": "ovoko.fr, francemoteursutilitaires.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Kangoo (moteur 1.5 dCi, generations 1 et 2, utilitaire)",
+    "score_fiabilite": "variable selon millesime et version d'injection",
+    "pannes_courantes": "calculateur moteur : defaillances sur les 1.5 dCi produits entre 2008 et 2013 ; Kangoo 1 (1.5 dCi produit entre 2001 et 2005) : risque de casse des coussinets de bielle ; toutes versions equipees d'injection Delphi avant 2006 : contamination du circuit par limaille metallique ; versions produites entre 2009 et 2011 : problemes de courroie de distribution ; embrayage (Kangoo 2) : pedale molle, point de patinage de plus en plus difficile a identifier ; amortisseurs avant uses prematurement des 80 000km en usage charge ; vanne EGR et FAP s'encrassant plus vite en usage urbain",
+    "source": "auto-doc.fr, piecesauto-pro.fr, gk-perf.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot Partner (2e generation, moteur 1.6 HDi, utilitaire)",
+    "score_fiabilite": "fiabilite globale evaluee autour de 6/10 par une source, 200 000km atteignables avec un entretien rigoureux",
+    "pannes_courantes": "courroie de distribution : phase critique entre 80 000 et 120 000km ; injecteurs : panne pouvant entrainer perte de puissance et surconsommation de carburant ; vanne EGR s'encrassant et reduisant les performances moteur ; embrayage s'usant prematurement autour de 100 000km (remplacement estime entre 700 et 950€)",
+    "source": "carverif.fr, 100pour100equitable.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot Expert / Citroen Jumpy (moteur BlueHDi, plateforme commune, utilitaire)",
+    "score_fiabilite": "motorisations BlueHDi recentes (2016-2023, notamment 1.5 BlueHDi) plus a risque que les anciens 2.0 HDi (2007-2015) juges eprouves",
+    "pannes_courantes": "systeme AdBlue : pannes recurrentes sur les modeles 2016-2022 Euro 6 ; boite de vitesses : lenteur des changements de rapport, bruits de craquement, rapports qui passent mal, plus frequent entre 60 000 et 100 000km ; FAP : messages d'avertissement, perte de performance, surconsommation ; le Citroen Jumpy partage la meme plateforme et les memes motorisations que le Peugeot Expert — les memes points de vigilance sont probables mais n'ont pas ete verifies specifiquement pour ce modele dans les sources consultees",
+    "source": "moteur-mag.com, automobilite-avenir.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

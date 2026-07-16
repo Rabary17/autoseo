@@ -1,0 +1,251 @@
+[
+  {
+    "code": "P0127",
+    "libelle": "Circuit capteur temperature air admission (IAT) - temperature trop elevee",
+    "causes_possibles": "Capteur IAT defaillant ou deporte, debitmetre MAF defaillant (IAT integre au meme boitier), cablage/connecteur endommage, air d'admission anormalement rechauffe (proximite d'une source de chaleur, fuite pres du collecteur d'echappement)",
+    "gravite": "modere",
+    "source": "repairpal.com, mycarly.com, obd-en.avto.pro — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0129",
+    "libelle": "Circuit capteur pression barometrique - pression trop basse",
+    "causes_possibles": "Capteur MAP/BARO defaillant, encrasse ou use, cablage/connecteur corrode, fuite d'admission, catalyseur colmate perturbant indirectement la mesure, misfire chronique",
+    "gravite": "modere",
+    "source": "emanualonline.com, mycarly.com, obd2pros.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0169",
+    "libelle": "Composition du carburant incorrecte",
+    "causes_possibles": "Carburant contamine ou mal adapte au vehicule (E85 dans un moteur non flex-fuel, gazole dans un moteur essence, eau dans le reservoir), capteur de composition carburant defaillant ou encrasse, sonde lambda paresseuse faussant le calcul du taux d'ethanol, cablage/connecteur endommage, pompe ou filtre a carburant restreignant le debit",
+    "gravite": "modere",
+    "source": "dot.report, repairpal.com, fs1inc.com, go-parts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false,
+    "notes": "Concerne surtout les vehicules flex-fuel (E85), rare en Europe"
+  },
+  {
+    "code": "P2015",
+    "libelle": "Circuit capteur de position des volets d'admission variable (IMRC) - plage/performance (Banc 1)",
+    "causes_possibles": "Calamine et depots de carbone dans le collecteur d'admission genant le mouvement des volets, capteur de position IMRC defaillant, actionneur/electrovanne IMRC degrade, cablage ou connecteur endommage",
+    "gravite": "modere",
+    "source": "kbb.com, ziptuning.com, carparts.com, repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0239",
+    "libelle": "Circuit capteur de pression de suralimentation B - dysfonctionnement",
+    "causes_possibles": "Defaut electrique general (circuit ouvert ou court-circuit) sur le capteur de pression de suralimentation B, cablage ou connecteur endommage, capteur defaillant",
+    "gravite": "severe",
+    "source": "repairpal.com, go-parts.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0240",
+    "libelle": "Circuit capteur de pression de suralimentation B - plage/performance",
+    "causes_possibles": "Signal du capteur B present mais incoherent (defaut de rationalite plutot qu'electrique pur), capteur de pression de suralimentation degrade, fuite ou obstruction du circuit d'admission sous pression",
+    "gravite": "severe",
+    "source": "go-parts.com, yourmechanic.com, autodtcs.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0241",
+    "libelle": "Circuit capteur de pression de suralimentation B - signal bas",
+    "causes_possibles": "Tension du circuit B constamment sous le seuil attendu (court-circuit a la masse), capteur de pression de suralimentation defaillant, cablage endommage",
+    "gravite": "severe",
+    "source": "repairpal.com, go-parts.com, obd2.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0242",
+    "libelle": "Circuit capteur de pression de suralimentation B - signal eleve",
+    "causes_possibles": "Tension du circuit B constamment au-dessus du seuil attendu (court-circuit a l'alimentation), capteur defaillant, connecteur endommage",
+    "gravite": "severe",
+    "source": "yourmechanic.com, torquebot.io, autodtcs.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0247",
+    "libelle": "Electrovanne de wastegate turbo/compresseur B - dysfonctionnement",
+    "causes_possibles": "Lectures anormales du calculateur (PCM) sur l'electrovanne de wastegate B, electrovanne defaillante, cablage ou connecteur endommage",
+    "gravite": "severe",
+    "source": "yourmechanic.com, repairpal.com, obd-codes.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0248",
+    "libelle": "Electrovanne de wastegate turbo/compresseur B - plage/performance",
+    "causes_possibles": "Signal du circuit de l'electrovanne B hors des valeurs constructeur attendues, electrovanne ne controlant pas correctement la wastegate, cablage degrade ; le PCM peut desactiver le turbo/compresseur par securite",
+    "gravite": "severe",
+    "source": "yourmechanic.com, repairpal.com, ecufiles.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0298",
+    "libelle": "Temperature d'huile moteur excessive",
+    "causes_possibles": "Surchauffe moteur (niveau de liquide de refroidissement bas, ventilateur, thermostat ou radiateur defaillant, culasse fissuree), niveau d'huile bas, refroidisseur d'huile defaillant, capteur de temperature d'huile defaillant donnant une lecture erronee, conduite prolongee en charge elevee (remorquage, cote, forte chaleur)",
+    "gravite": "severe",
+    "source": "yourmechanic.com, fs1inc.com, go-parts.com, obd-codes.com, autobarn.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0333",
+    "libelle": "Circuit capteur de cliquetis 2 (Banc 2) - signal eleve",
+    "causes_possibles": "Capteur de cliquetis banc 2 defaillant, cablage ou connecteur endommage/corrode (cause la plus frequente selon les mecaniciens), calculateur (PCM) defaillant",
+    "gravite": "modere",
+    "source": "obd-codes.com, yourmechanic.com, carparts.com, automotivesimple.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0510",
+    "libelle": "Contacteur de papillon en position fermee - dysfonctionnement",
+    "causes_possibles": "Contacteur de papillon (throttle switch) defaillant en position fermee/bloque, cablage/faisceau endommage, vis de reglage du ralenti deplacee ou boitier papillon mal calibre, corrosion ou fils denudes creant un circuit ouvert",
+    "gravite": "modere",
+    "source": "carparts.com, yourmechanic.com, fs1inc.com, repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0520",
+    "libelle": "Circuit capteur/contacteur de pression d'huile moteur - dysfonctionnement",
+    "causes_possibles": "Valeur du capteur/contacteur de pression d'huile hors plage normale, defaut electrique du circuit (cablage endommage, connecteur corrode), capteur de pression d'huile ou pompe a huile defaillante",
+    "gravite": "severe",
+    "source": "kbb.com, obd-codes.com, autozone.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0521",
+    "libelle": "Circuit capteur/contacteur de pression d'huile moteur - plage/performance",
+    "causes_possibles": "Valeur inattendue du capteur de pression d'huile (hors plage ou signal fige alors qu'il devrait varier), defaut electrique du circuit, capteur ou pompe a huile degrade",
+    "gravite": "severe",
+    "source": "obd-codes.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0522",
+    "libelle": "Circuit capteur/contacteur de pression d'huile moteur - signal bas",
+    "causes_possibles": "Lecture de pression d'huile anormalement basse detectee par le PCM, cablage court-circuite a la masse, capteur de pression d'huile defaillant, pompe a huile ou niveau d'huile insuffisant",
+    "gravite": "severe",
+    "source": "kbb.com, obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0523",
+    "libelle": "Circuit capteur/contacteur de pression d'huile moteur - signal eleve",
+    "causes_possibles": "Lecture de pression d'huile anormalement elevee detectee par le PCM, cablage court-circuite a l'alimentation, capteur de pression d'huile defaillant, connecteur endommage",
+    "gravite": "severe",
+    "source": "carparts.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0524",
+    "libelle": "Pression d'huile moteur trop basse",
+    "causes_possibles": "Niveau d'huile insuffisant, pompe a huile usee ou defaillante, filtre a huile colmate, capteur de pression d'huile defaillant donnant une fausse lecture basse, usure moteur importante (jeu aux paliers)",
+    "gravite": "severe",
+    "source": "kbb.com, servicebuddy.help, edmunds.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0530",
+    "libelle": "Circuit capteur de pression de refrigerant climatisation A - dysfonctionnement",
+    "causes_possibles": "Capteur de pression de refrigerant (A/C) defaillant, cablage/connecteur endommage ou corrode, niveau de refrigerant bas suite a une fuite",
+    "gravite": "mineure",
+    "source": "fs1inc.com, repairpal.com, yourmechanic.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0550",
+    "libelle": "Circuit capteur/contacteur de pression direction assistee - dysfonctionnement",
+    "causes_possibles": "Capteur de pression de direction assistee defaillant (cause la plus frequente), cablage ou connecteur endommage/corrode, pompe de direction assistee ne generant pas une pression suffisante",
+    "gravite": "severe",
+    "source": "yourmechanic.com, engine-codes.com, repairpal.com, carparts.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0810",
+    "libelle": "Erreur de commande de position d'embrayage",
+    "causes_possibles": "Signal incorrect du capteur de position de pedale d'embrayage detecte par le PCM, cablage ou connecteur endommage, capteur de position d'embrayage defaillant (transmission manuelle/robotisee)",
+    "gravite": "severe",
+    "source": "emanualonline.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0811",
+    "libelle": "Patinage excessif de l'embrayage",
+    "causes_possibles": "Usure du disque d'embrayage au-dela des limites acceptables, defaut hydraulique ou d'engagement de l'embrayage, capteur de position associe defaillant ; concerne uniquement les transmissions manuelles/robotisees",
+    "gravite": "severe",
+    "source": "carpm.in, yourmechanic.com, repairpal.com, emanualonline.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2004",
+    "libelle": "Systeme de commande des volets d'admission variable (IMRC) - bloque ouvert (Banc 1)",
+    "causes_possibles": "Calamine et depots de carbone sur les volets/papillons du collecteur d'admission (favorises par les trajets courts et la conduite en ville), electrovanne/actionneur IMRC defaillant, volets grippes mecaniquement, capteur de position deforme, cablage endommage",
+    "gravite": "modere",
+    "source": "autozone.com, ziptuning.com, kbb.com, carparts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2100",
+    "libelle": "Circuit moteur de commande du papillon electronique A - circuit ouvert",
+    "causes_possibles": "Defaut electrique (circuit ouvert) sur le moteur de commande du boitier papillon electronique A, probleme au niveau du bloc pedale accelerateur (APP), capteur de position papillon defaillant",
+    "gravite": "modere",
+    "source": "kbb.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2101",
+    "libelle": "Circuit moteur de commande du papillon electronique A - plage/performance",
+    "causes_possibles": "Ecart entre la position reelle du papillon et la position attendue par le PCM, capteur de position papillon ou pedale accelerateur defaillant, boitier papillon encrasse, cablage a resistance elevee ou en court-circuit",
+    "gravite": "modere",
+    "source": "kbb.com, icarsoft-us.com, ziptuning.com, carparts.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2122",
+    "libelle": "Circuit capteur position papillon/pedale (TPS/APP) D - signal bas",
+    "causes_possibles": "Tension du capteur D anormalement basse (sous environ 0,17 V selon constructeur), capteur ou boitier papillon defaillant, cablage/connecteur endommage sur le circuit du systeme de commande electronique du papillon (ETCS)",
+    "gravite": "severe",
+    "source": "kbb.com, repairpal.com, carparts.com, obd-codes.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2123",
+    "libelle": "Circuit capteur position papillon/pedale (TPS/APP) D - signal eleve",
+    "causes_possibles": "Tension du capteur D anormalement elevee, cablage court-circuite a l'alimentation, capteur de position papillon/pedale defaillant",
+    "gravite": "severe",
+    "source": "carparts.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2127",
+    "libelle": "Circuit capteur position papillon/pedale (TPS/APP) E - signal bas",
+    "causes_possibles": "Tension du capteur E (circuit redondant du systeme de commande electronique du papillon) sous le seuil minimal constructeur (typiquement 0,2-0,5 V), cablage/connecteur endommage, capteur defaillant",
+    "gravite": "severe",
+    "source": "kbb.com, carparts.com, yourmechanic.com, repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2128",
+    "libelle": "Circuit capteur position papillon/pedale (TPS/APP) E - signal eleve",
+    "causes_possibles": "Tension du capteur E anormalement elevee par rapport a l'attendu du PCM, cablage court-circuite a l'alimentation, capteur defaillant",
+    "gravite": "severe",
+    "source": "carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2229",
+    "libelle": "Circuit capteur de pression barometrique A - signal eleve",
+    "causes_possibles": "Fil de masse coupe ou court-circuit a l'alimentation dans le faisceau du capteur (cause la plus frequente), capteur barometrique en court-circuit interne",
+    "gravite": "modere",
+    "source": "carparts.com, repairpal.com, fs1inc.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2A00",
+    "libelle": "Circuit sonde lambda - plage/performance (Banc 1, capteur 1)",
+    "causes_possibles": "Sonde lambda amont defaillante ou contaminee, fuite d'echappement en amont de la sonde, catalyseur endommage, rate-allumage moteur, fuite du circuit de depression, chute de pression carburant (variation de plus de 10% du signal declenche le code)",
+    "gravite": "modere",
+    "source": "yourmechanic.com, jegs.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

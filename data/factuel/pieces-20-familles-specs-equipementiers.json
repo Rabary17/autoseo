@@ -145,18 +145,18 @@
   },
   {
     "famille": "Retroviseurs",
-    "equipementiers_reconnus": ["donnees insuffisantes dans cette passe de recherche"],
-    "specs_notes": "non recherche specifiquement dans cette session — a completer",
-    "prix_indicatif": "non recherche",
-    "source": "non recherche",
+    "equipementiers_reconnus": ["Magneti Marelli", "Van Wezel", "Hella", "Melchioni", "Valeo"],
+    "specs_notes": "retroviseurs exterieurs disponibles en versions manuel/electrique, rabattement electrique, degivrage/chauffant, clignotant integre, et versions plus recentes avec camera integree + preparation avertisseur d'angle mort (ex. reference Van Wezel 3391827 : camera, pret pour detecteur angle mort, rabattable electriquement, chauffant) ; vitre de glace seule egalement disponible en piece detachee",
+    "prix_indicatif": "Magneti Marelli observe entre 11€ et 250€ selon vehicule/equipement (manuel a camera+angle mort) ; verre/vitre seule Melchioni ~59€ (ex. VW Caddy) ; raccord/connecteur Hella ~40€ ; gamme complete tres variable selon niveau d'equipement",
+    "source": "piecesauto24.com, auto-doc.fr, oscaro.com, alvadi.fr, carter-cash.com, piecesauto-pro.fr — consulte 2026-07 (via WebSearch)",
     "a_verifier": true
   },
   {
-    "famille": "Radiateurs de climatisation / condenseurs",
-    "equipementiers_reconnus": ["donnees insuffisantes dans cette passe de recherche"],
-    "specs_notes": "non recherche specifiquement dans cette session — a completer (recouvre partiellement le radiateur moteur deja traite)",
-    "prix_indicatif": "non recherche",
-    "source": "non recherche",
+    "famille": "Condenseurs de climatisation",
+    "equipementiers_reconnus": ["Nissens", "NRF", "Behr Hella Service", "Denso", "Valeo"],
+    "specs_notes": "corps en aluminium, remplis a l'azote, livres avec joints/pieces de montage (\"Easy Fit\" chez NRF) ; compatibilite selon reference avec fluide R134a et/ou R1234yf (certains modeles \"sans deshydrateur\" integre, le deshydrateur etant alors un composant separe / integre au bocal recepteur-deshydrateur) ; gamme NRF couvre environ 900 references pour plus de 4600 references OE et ~95% du parc automobile europeen",
+    "prix_indicatif": "Nissens observe entre ~65€ et 120€ selon reference (ex. 94684: 65,49€ ; 94826: 101,27€ ; 940734: 120,19€) ; NRF observe entre ~58€ et 68€ selon reference (ex. 35795: 66,19€ ; 35968: 68,09€ ; 35779: 58,15€ en promo vs PVC affiche 254,99€, ecart aftermarket/PVC important)",
+    "source": "oscaro.com, piecesetpneus.com, auto-doc.fr, nrf.eu, partauto.fr, mister-auto.com — consulte 2026-07 (via WebSearch)",
     "a_verifier": true
   }
 ]

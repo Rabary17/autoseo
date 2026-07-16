@@ -1,0 +1,142 @@
+[
+  {
+    "modele": "Peugeot 108 (2014-2021, moteur 1.0 VTi essence et 1.2 PureTech)",
+    "score_fiabilite": "a verifier — 72 temoignages recenses sur fiches-auto.fr, fiabilite generalement jugee correcte pour une citadine mais plusieurs points faibles recurrents identifies selon les sources",
+    "pannes_courantes": "embrayage identifie comme le point faible le plus visible, avec surchauffe, broutage ou remplacement precoce parfois apres un usage urbain normal (disque et mecanisme supportant mal les demarrages repetes et les manoeuvres en cote) ; boite de vitesses pouvant grincher avec marche arriere difficile, premiers rapports mal synchronises ou fuites d'huile de boite, et sur la version automatique ETG, actionneurs et apprentissage d'embrayage pouvant generer des a-coups ou hesitations de passage ; freinage : disques voiles, vibrations voire blocage intermittent des freins rapportes ; electronique : voyants moteur/ABS/pression des pneus, remplacement du compteur ou pannes de centralisation rapportes, sonde d'echappement/calculateur/capteur de roue pouvant declencher plusieurs alertes simultanement ; rappel constructeur de mars 2019 pour reservoir de carburant fragile pouvant se fissurer (risque de fuite et d'incendie) sur les vehicules produits entre aout 2018 et aout 2019",
+    "source": "fiches-auto.fr, auto-doc.fr, largus.fr, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen C1 (3e generation, 2014-2021, moteurs 1.0 VTi et 1.2 PureTech)",
+    "score_fiabilite": "a verifier — 43 temoignages recenses sur fiches-auto.fr pour la 3e generation (225 pour la generation precedente 2005-2014), recommandation d'achat rapportee : privilegier le 1.0 VTi 72ch millesime 2019+ ; le 1.4 HDi et le 1.2 PureTech signales comme motorisations a eviter selon une source",
+    "pannes_courantes": "moteur 1.0 VTi 69ch : embrayages fragiles et consommation d'huile reguliere pouvant entrainer une defaillance moteur ; moteur 1.2 PureTech : courroie de distribution defaillante et consommation d'huile excessive jusqu'a la fin de production, Citroen ayant du accorder une extension de garantie de 10 ans ou 175 000km sur ce point ; pompe a eau pouvant connaitre des defaillances critiques ; boite semi-automatique SensoDrive presentant des faiblesses (changements de vitesse saccades, defaillance complete rapportee) ; direction assistee electrique montrant des signes de faiblesse entre 40 000 et 80 000km (direction molle, pannes intermittentes) ; climatisation defaillante entre 60 000 et 90 000km",
+    "source": "fiches-auto.fr, auto-doc.fr, oscar-racing.fr, piecesauto-pro.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Aygo (1ere generation 2005-2014 et 2e generation 2014-2021, avant Aygo X, moteur 1.0 VVT-i)",
+    "score_fiabilite": "note de fiabilite globale rapportee a 7/10 pour la 2e generation (carverif.fr) ; amelioration significative rapportee entre les deux generations, avec un taux de defaillance divise par trois selon une source",
+    "pannes_courantes": "premieres defaillances apparaissant generalement entre 40 000 et 60 000km, principalement sur l'embrayage (usure prematuree du disque) et la pompe a eau (risque de surchauffe moteur, fuite de liquide de refroidissement dans les cylindres, probleme de segmentation en cas de defaillance non traitee) ; consommation d'huile excessive signalee par plusieurs proprietaires, controle regulier recommande tous les 1 000-2 000km ; infiltrations d'eau et serrure de coffre bloquee rapportees ; boite de vitesses robotisee (versions equipees) presentant une electronique defaillante generatrice de pannes recurrentes, cout d'intervention depassant frequemment 1 500€ ; au-dela de 100 000km, entretien renforce recommande notamment sur l'embrayage et la pompe a eau",
+    "source": "fiches-auto.fr, carverif.fr, oscar-racing.fr, iodines.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Twingo 2 (2007-2014, moteurs 1.2 16v essence et 1.5 dCi diesel)",
+    "score_fiabilite": "fiabilite globale rapportee comme bonne, base technique jugee eprouvee avec des soucis epars et souvent peu graves quoique parfois agacants ; le 1.2 16v 75ch decrit comme supportant bien les kilometrages eleves, pouvant depasser 200 000km avec un entretien suivi",
+    "pannes_courantes": "1.5 dCi : pompe a eau pouvant defaillir avant 30 000km (250-400€), joint de culasse pouvant poser probleme (800-1 200€) ; vanne EGR s'encrassant regulierement apres 120 000km provoquant perte de puissance et ralenti instable (nettoyage ~150€, remplacement 300-450€) ; bruits de claquement au niveau des injecteurs rapportes, notamment sur la version 85ch ; distribution par courroie necessitant un remplacement tous les 120 000km (400-600€) ; turbo fatigue pouvant entrainer perte de puissance ou consommation d'huile ; au-dela de 200 000km, le bloc diesel reste viable mais le cumul des usures peut accelerer l'apparition de nouvelles pannes",
+    "source": "fiches-auto.fr, carverif.fr, caradisiac.com, oscar-racing.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Up! (2011+, moteur essence 1.0 MPI atmospherique)",
+    "score_fiabilite": "0,5 panne/an rapporte sur 60 000km selon une source, cout d'entretien cumule moyen estime a 1 650€ entre 60 000 et 150 000km ; mecanique globale jugee solide, le 1.0 MPI etant reputee pour sa robustesse et son faible entretien",
+    "pannes_courantes": "circuit de refroidissement pose regulierement probleme : thermostat presentant une tendance a se bloquer en position fermee (risque de surchauffe moteur), durites vieillissant prematurement, pompe a eau presentant des fuites au niveau du joint et des roulements bruyants des 80 000km ; sonde lambda vieillissante pouvant fausser la mesure de richesse et allumer le voyant moteur ; codes P0300 (rates d'allumage, bougies fatiguees) et P0171 (melange pauvre, sonde lambda ou fuite d'admission) rapportes dans une part importante des diagnostics sur exemplaires vieillissants selon une source ; cas de boite manuelle defectueuse signale des 25 000km (defaut de synchros d'origine) sur certains exemplaires",
+    "source": "carverif.fr, fiches-auto.fr, euroracingparts.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Seat Mii (2012-2021, moteur essence 1.0)",
+    "score_fiabilite": "peu de soucis de fiabilite rapportes, a l'image des cousines de plateforme Up!/Citigo ; quelques defauts a relever mais rien de redhibitoire selon les sources",
+    "pannes_courantes": "boite de vitesses identifiee comme le principal probleme, seul defaut vraiment grave et recurrent selon une source (2 cas sur 12 avis analyses) — boite claquant au relachement de l'embrayage, difficultes pour passer la 1ere ou la marche arriere ; Seat rapporte avoir remplace la quasi-totalite des pieces concernees sous garantie ; autres problemes moins graves : amortisseur arriere HS des 5 000km, leve-vitres avant electriques HS des 20 000km (cas isoles) ; version electrique (e-Mii) : rappel de decembre 2020 pour risque de court-circuit interne a la batterie sur les vehicules fabriques entre mai et juin 2020",
+    "source": "fiches-auto.fr, caradisiac.com, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Citigo (2012-2020, moteur essence 1.0 MPI)",
+    "score_fiabilite": "peu de soucis de fiabilite rapportes globalement ; le 1.0 MPI conserve une bonne maniabilite et des performances jugees acceptables jusqu'a 150 000km, avec un taux de panne moteur minimal selon une source",
+    "pannes_courantes": "boite de vitesses manuelle identifiee comme le probleme le plus grave et recurrent : passages difficiles et craquements en marche arriere par temps froid, la boite 5 rapports commencant a craquer a froid vers 95 000km (facture moyenne rapportee autour de 1 200€) ; systeme de climatisation presentant generalement des faiblesses (baisse de performance de refroidissement voire panne complete) se manifestant entre 30 000 et 50 000km ; defauts mecaniques des serrures de porte survenant souvent apres 35 000-50 000km ; moteur d'essuie-glace pouvant tomber en panne apres 45 000-65 000km",
+    "source": "caradisiac.com, carverif.fr, auto-doc.fr, icarsoft-france.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Adam (2012-2019, moteurs 1.0 116ch et 1.4 turbo 87/101/150ch)",
+    "score_fiabilite": "a verifier — sources evoquant des problemes electroniques, des vibrations et des cas de casse moteur, sans note globale chiffree consolidee identifiee",
+    "pannes_courantes": "moteurs 1.4 turbo (87, 101 et 150ch) : chaine de distribution identifiee comme point faible recurrent, se manifestant par des bruits de cliquetis caracteristiques au demarrage a froid ; petit turbocompresseur du 1.0 116ch pouvant montrer des signes d'usure des 80 000-100 000km, surtout en conduite sportive ; pompe a carburant electrique pouvant perdre en fiabilite apres 50 000km (problemes de demarrage sporadiques, moteur pouvant ne plus demarrer ou caler en roulant a un stade avance) ; ralenti aleatoire et rates rapportes, capteur d'oxygene (sonde lambda) susceptible de dysfonctionner",
+    "source": "auto-doc.fr, fiches-auto.fr, compar-auto.fr, diagnostic-obd.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Karl (2015-2019, moteur essence 1.0)",
+    "score_fiabilite": "a verifier — citadine jugee fiable pour un usage urbain avec un entretien soigne selon une source, mais la fiabilite n'est pas decrite comme un point fort ; degradation rapportee apres 40 000km",
+    "pannes_courantes": "fuites d'huile et defaillances du systeme de freinage rapportees comme necessitant une vigilance particuliere ; calage moteur et perte de puissance signales ; problemes de demarrage lies a un dysfonctionnement du demarreur ou du circuit d'allumage, remplacement de batterie parfois necessaire ; pannes de tableau de bord (ecrans figes, compteurs erratiques) liees a des faux contacts ou circuits imprimes defaillants ; portes et vitres electriques pouvant presenter des moteurs bloques ou connecteurs corrodes",
+    "source": "fiches-auto.fr, ovoko.fr, mecazen.fr, passion-bagnole.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Ka (2e generation, 2008-2016, moteurs essence et 1.3 TDCi diesel)",
+    "score_fiabilite": "a verifier — 102 temoignages recenses sur fiches-auto.fr ; les millesimes 2011-2014 rapportes comme offrant une meilleure fiabilite au sein de cette generation",
+    "pannes_courantes": "moteur 1.3 TDCi (base Fiat) : encrassements frequents du FAP et de la vanne EGR causant pertes de puissance et a-coups a l'acceleration en usage urbain, regeneration ou nettoyage estime entre 600€ et 1 000€ ; defaillances electriques precoces rapportees (capteurs de temperature/pression, calculateurs necessitant des reinitialisations frequentes, climatisation en panne recurrente, leve-vitres electriques a fiabilite discutable) ; problemes egalement signales sur embrayage, suspensions, boite de vitesses et joint de culasse ; modeles 2008-2010 concernes par des problemes electroniques de direction assistee electrique (pannes soudaines de l'assistance) ; millesime 2009 particulierement touche par des problemes de systeme start-stop des 40 000-60 000km",
+    "source": "fiches-auto.fr, lpddconseil.fr, auto-doc.fr, marcel-autos-38.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Micra (K14, 2017+, moteurs essence turbo)",
+    "score_fiabilite": "a verifier — 53 temoignages recenses sur fiches-auto.fr pour cette generation ; millesimes 2017-2018 signales comme a eviter en priorite (defauts de mise au point de lancement selon une source)",
+    "pannes_courantes": "systeme de freinage avant montrant une usure prematuree des plaquettes et disques des 30 000km (grincements caracteristiques, fuites de liquide au niveau des etriers dans certains cas) ; dispositif d'aide a la conduite Safety Shield pose des problemes de fiabilite rapportes, avec des freinages d'urgence intempestifs sans obstacle reel signales par plusieurs proprietaires ; batterie et alternateur : demarrages laborieux, voyants du tableau de bord instables, decharges completes apres quelques jours d'immobilisation, alternateur lachant parfois des 50 000km ; pannes electroniques generales et turbocompresseur fragile egalement rapportes selon une source ; budget preventif conseille par une source : 1 000-1 500€ de reparations a anticiper sur un exemplaire a 60 000km",
+    "source": "fiches-auto.fr, icarsoft-france.fr, pricelub.com, largus.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai i30 (generations 2007-2012, 2012-2017 et 2017-2024, moteurs 1.6 CRDi diesel, 1.6 GDI et 1.0 T-GDi essence)",
+    "score_fiabilite": "vehicule decrit comme fondamentalement fiable et de bonne qualite a long terme, avec des points faibles specifiques necessitant une attention reguliere ; le 1.0 T-GDi 120 juge globalement bon, sans defaut structurel majeur connu a ce jour selon les retours disponibles",
+    "pannes_courantes": "chaine de distribution des moteurs diesel 1.6 CRDi presentant souvent des problemes entre 80 000 et 120 000km (claquement metallique au demarrage a froid disparaissant apres quelques secondes, allongement de la chaine par usure pouvant aller jusqu'a la rupture) — vehicules construits entre 2009 et 2013 particulierement concernes ; systeme start-stop peu fiable et sujet a des dysfonctionnements frequents sur les vehicules construits a partir de 2013, en particulier sur les moteurs essence 1.6 GDI et 1.4 ; sur le 1.6 CRDi 110ch : vanne EGR fragile en usage urbain, capteurs electroniques sensibles (pression turbo, temperature), FAP pouvant s'encrasser sur petits trajets ; boite de vitesses a double embrayage identifiee comme point critique necessitant un entretien preventif",
+    "source": "auto-doc.fr, fiches-auto.fr, conseil-auto-moto.fr, premiumcarsprovence.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Picanto (3e generation, 2017-2023, moteurs 1.0 MPI, 1.2 MPI et 1.0 T-GDi)",
+    "score_fiabilite": "3e generation jugee nettement plus fiable que les precedentes, avec peu de pannes recurrentes signalees par proprietaires et professionnels selon une source ; versions atmospheriques MPI (1.0 et 1.2) les plus recommandees pour leur fiabilite et couts d'entretien maitrises",
+    "pannes_courantes": "version 1.0 T-GDi (turbo) : problemes rapportes d'injecteurs et de filtre a particules, motorisation decrite comme plus sensible que les blocs atmospheriques ; direction assistee electrique (DAE) posant un reel probleme de fiabilite sur la generation precedente 2011-2017 (petit moteur electrique fixe sur la cremaillere pouvant lacher sans avertissement) — a surveiller egalement sur exemplaires plus anciens en occasion ; electronique de plus en plus complexe sur les versions recentes, source de pannes variees et parfois inexplicables ; systeme multimedia (ecran tactile) sujet a des bugs frequents sur la 3e generation",
+    "source": "fiches-auto.fr, auto-doc.fr, oscar-racing.fr, garagevoltaire.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Rio (4e generation, 2017+, moteurs 1.0 T-GDi essence et diesel CRDi)",
+    "score_fiabilite": "citadine/berline compacte appreciee pour sa fiabilite et son rapport qualite-prix rapportes comme bons ; tres fiable dans ses premieres annees d'utilisation selon une source, des problemes commencant a apparaitre entre 60 000 et 100 000km",
+    "pannes_courantes": "chaine de distribution du moteur 1.0 T-GDI presentant des signes d'usure meme a kilometrage relativement faible, bruits de cliquetis caracteristiques au demarrage a froid ; versions diesel : vanne EGR encrassee provoquant perte de puissance, filtre a particules se saturant en conduite urbaine, injecteurs uses causant demarrages difficiles et vibrations ; transmission automatique (modeles 2012-2017 notamment) presentant des a-coups lors des changements de rapport, secousses au passage de la 1ere a la 2e ; fuites de gaz refrigerant frequentes au niveau du compresseur de climatisation et des joints d'etancheite ; freins, embrayage et roulements a surveiller particulierement entre 60 000 et 100 000km ; rappel constructeur anterieur (modeles 2009-2011, generation differente) pour fuite de liquide de frein pouvant provoquer des courts-circuits ABS/ESC, mentionne a titre de contexte marque",
+    "source": "fiches-auto.fr, caradisiac.com, ovoko.fr, auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot Rifter (2019+, moteurs 1.2 PureTech essence et 1.5 BlueHDi diesel)",
+    "score_fiabilite": "a verifier — 69 temoignages recenses sur fiches-auto.fr ; le 1.5 BlueHDi 130ch decrit comme concentrant les problemes les plus lourds du modele selon une source (chaine d'arbres a cames, AdBlue, FAP, catalyseur, turbo, injection)",
+    "pannes_courantes": "rappel constructeur concernant les vehicules produits entre le 02/10/2017 et le 31/01/2023 : carbonisation de l'huile pouvant provoquer la rupture de la chaine d'arbre a cames de 7mm et une panne moteur (piece renforcee depuis) ; filtre a particules diesel se colmatant souvent des 30 000km sur petits trajets (perte de puissance, hausse de consommation) ; systeme AdBlue presentant frequemment des defauts des les premieres annees d'utilisation, en particulier sur le 1.5 BlueHDi 130 ; usure du turbocompresseur generalement apres 100 000-120 000km liee a des depots de carbone dans l'huile ; version essence 1.2 PureTech : usure prematuree de la courroie de distribution generalement entre 80 000 et 100 000km (contre 120 000km prevus par le constructeur), culasse decrite comme fragile",
+    "source": "fiches-auto.fr, auto-doc.fr, iodines.fr, peugeot.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Land Cruiser (serie 150, depuis 2009, moteur diesel 3.0 D-4D et 2.8 D-4D)",
+    "score_fiabilite": "fiabilite globale du moteur 3.0 D-4D rapportee a 7,5/10 selon une source technique, chassis et transmission notes 9/10 pour leur robustesse, systemes d'injection et de depollution notes 6/10 en raison de defaillances recurrentes",
+    "pannes_courantes": "problemes de turbocompresseur rapportes des 120 000-150 000km (fumee noire, perte de puissance) ; defaillance de la vanne EGR frequente apres 150 000km (perte de puissance, difficultes au demarrage, hausse de consommation) ; encrassement ou defaillance des injecteurs provoquant a-coups, fumees noires et surconsommation, particulierement documente sur le 2.8 D-4D ; colmatage du FAP en usage urbain necessitant regeneration forcee ou remplacement ; moteur 1KD-FTV pouvant atteindre 500 000km avec un entretien rigoureux (vidange tous les 10 000km selon une source), cas extremes rapportes au-dela de 700 000km en usage tout-terrain modere",
+    "source": "carverif.fr, auto-doc.fr, avantachat.com, fiche-auto.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mitsubishi L200 (generations recentes, moteur diesel 2.5 Di-D)",
+    "score_fiabilite": "vehicule de travail decrit comme fondamentalement robuste, points faibles specifiques necessitant une attention reguliere selon les sources ; avec un entretien exemplaire, capable de largement depasser les 300 000km, plusieurs temoignages rapportant plus de 400 000km",
+    "pannes_courantes": "filtre a particules diesel identifie comme la plainte la plus frequente, en particulier sur les moteurs 2.5 Di-D 136 et 178ch (colmatage regulier, reduction des performances, hausse de consommation, voyant moteur) ; pompe a carburant presentant des points faibles recurrents sur vehicules a kilometrage eleve (problemes de demarrage, perte de puissance, fonctionnement irregulier) ; thermostat d'eau se bloquant frequemment en position fermee, empechant la circulation normale du liquide de refroidissement ; disques de frein s'usant prematurement, notamment en usage utilitaire/remorquage ; systeme de transmission integrale presentant des defauts frequents au niveau du controle electronique (voyant 4x4 allume, traction limitee)",
+    "source": "auto-doc.fr, icarsoft-france.fr, carverif.fr, piecesauto-pro.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Ranger (generation T6, moteurs diesel 2.2 TDCi et 3.2 TDCi)",
+    "score_fiabilite": "fiabilite globale du 2.2 TDCi 150ch rapportee a 6/10, celle du 3.2 TDCi a 7/10 selon des analyses techniques",
+    "pannes_courantes": "pompe a huile pouvant casser apres 80 000-100 000km, entrainant des factures rapportees jusqu'a 8 000€ pour moteur et turbo dans les cas les plus graves ; vanne EGR encrassee provoquant des a-coups moteur des 50 000km sur le T6 2.2 TDCi (nettoyage ~500€ tous les 40 000km) et defaillant apres 80 000km sur le 3.2 TDCi ; injecteurs s'encrassant vers 100 000km selon les forums ; joints spi de vilebrequin posant probleme des avant 100 000km sur le 3.2 TDCi (defaut d'assemblage rapporte) ; filtre a particules se colmatant souvent des 25 000-40 000km sur les moteurs 2.2 TDCi et 3.0 TDCi ; systeme AdBlue presentant des pannes frequentes entre 30 000 et 50 000km (conduites bouchees, capteurs defectueux, unite de dosage), affectant 2.2 TDCi et 2.0 EcoBlue",
+    "source": "carverif.fr, voiture-unique.com, bugatti100p.com, defauts.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Isuzu D-Max (moteurs diesel 1.9L, 2.0L et 3.0 TD)",
+    "score_fiabilite": "fiabilite generalement rapportee comme au rendez-vous, moteurs diesel depassant souvent 300 000 a 400 000km selon une source ; le 3.0 TD 163ch du D-Max I decrit comme exemplaire, de nombreux exemplaires depassant 400 000km sans intervention majeure",
+    "pannes_courantes": "vanne EGR et FAP pouvant s'encrasser et generer des pannes (voyant moteur allume, mode degrade) en cas d'usage principalement urbain ou de regenerations incompletes ; injecteurs presentant des soucis de fiabilite (fuites internes, usure prematuree) sur certains millesimes plus anciens (avant 2008) ; turbos relativement solides mais une huile inadaptee ou des vidanges trop espacees peuvent mener a des casses onereuses ; trajets courts particulierement penalisants (temperature optimale rarement atteinte, combustion moins complete, accumulation de suie, organes de depollution davantage sollicites) ; entretien regulier recommande (vidange tous les 10 000-15 000km, qualite d'huile adaptee)",
+    "source": "larevueautomobile.com, carverif.fr, ovoko.fr, my-procar.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Logan (1ere generation 2005-2012 et 2e generation 2012-2020, moteurs 1.4/1.6 MPI essence, 0.9 TCe, 1.2 TCe et 1.5 dCi diesel)",
+    "score_fiabilite": "fiabilite globale de la 1ere generation diesel 1.5 dCi 70 rapportee a 7/10, reposant sur la simplicite mecanique et la maturite du moteur K9K de Renault selon une source",
+    "pannes_courantes": "moteurs essence MPI (1.4 et 1.6) : fiabilite jugee correcte jusqu'a 60 000km, au-dela un risque de casse moteur rapporte sur 15 a 20% des exemplaires selon une source, problemes de demarrage par temps froid typiquement apres 40 000-50 000km ; moteurs diesel 1.5 dCi (70/85ch) : injecteurs, pompe d'injection Delphi, turbo, EGR et parfois courroie d'accessoires pouvant poser probleme — injecteurs a partir de 150 000km, pompes d'injection defectueuses sur certaines series, turbo et FAP en souci apres 180 000km ; moteur 0.9 TCe : joint de calorstat defaillant pouvant provoquer une surchauffe moteur et une casse complete, defaut identifie comme sournois ; moteur 1.2 TCe : action UFC-Que Choisir en 2018 pour vice cache revelant des problemes de segmentation graves et une surconsommation d'huile chronique menant a la casse moteur ; courroie de distribution a remplacer tous les 60 000 a 120 000km selon le modele",
+    "source": "fiches-auto.fr, carverif.fr, sovab-renault-batilly.fr, top-garage-classic.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]
