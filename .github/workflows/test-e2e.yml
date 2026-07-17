@@ -33,6 +33,13 @@ jobs:
           const origin = (process.env.WP_URL || '').replace(/\/$/, '');
           const url = `${origin}/?rest_route=/wp/v2/users/me`;
           const auth = 'Basic ' + Buffer.from(`${process.env.WP_USER}:${process.env.WP_APP_PASSWORD}`).toString('base64');
+          const u = process.env.WP_USER || '';
+          const p = process.env.WP_APP_PASSWORD || '';
+          console.log('--- Forme des identifiants (aucune valeur brute, non masquable) ---');
+          console.log('WP_URL commence par https:// ?', origin.startsWith('https://'), '| longueur URL :', origin.length);
+          console.log('WP_USER -> longueur :', u.length, '| contient @ :', u.includes('@'), '| 1er caractère :', JSON.stringify(u[0] || ''), '| espaces en trop :', u !== u.trim());
+          console.log('WP_APP_PASSWORD -> longueur :', p.length, '| nb espaces :', (p.match(/ /g) || []).length);
+          console.log('   (attendu : WP_USER longueur ~31 avec @ ; sinon c\'est « Andrianina » = mauvais identifiant)');
           console.log('URL testée (schéma + hôte uniquement) :', url.split('?')[0]);
           fetch(url, { headers: { Authorization: auth, 'content-type': 'application/json' } })
             .then(async (res) => {
