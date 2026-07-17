@@ -1,0 +1,200 @@
+[
+  {
+    "code": "P2009",
+    "libelle": "Commande soupape admission air malfonctionnement",
+    "causes_possibles": "Soupape d'admission d'air défaillante, électrovanne d'air bloquée, durite d'air endommagée, connecteur corrodé, câblage en circuit ouvert ou court-circuité",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2010",
+    "libelle": "Commande soupape admission air malfonctionnement circuit ouvert",
+    "causes_possibles": "Connecteur soupape d'air endommagé ou débranché, câblage en circuit ouvert, relais défaillant, electrovanne défaillante, calculateur défaillant",
+    "source": "obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2011",
+    "libelle": "Soupape système air secondaire banc 1 coincée ouverte",
+    "causes_possibles": "Soupape air secondaire bloquée, électrovanne défaillante, durite endommagée, connecteur corrodé, tuyauterie obstruée, calculateur défaillant",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2012",
+    "libelle": "Soupape système air secondaire banc 1 coincée fermée",
+    "causes_possibles": "Soupape air secondaire bloquée en position fermée, connecteur endommagé, câblage en circuit ouvert, tuyauterie colmatée, calculateur défaillant",
+    "source": "obd-codes.com, go-parts.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2013",
+    "libelle": "Soupape système air secondaire banc 2 coincée ouverte",
+    "causes_possibles": "Soupape air secondaire banc 2 bloquée, électrovanne défaillante, connecteur lâche, durite d'air endommagée, clapet de retenue défaillant",
+    "source": "troublecodes.net, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2014",
+    "libelle": "Soupape système air secondaire banc 2 coincée fermée",
+    "causes_possibles": "Soupape air secondaire banc 2 bloquée, électrovanne défaillante, connecteur corrodé, câblage en circuit ouvert, tuyauterie obstruée",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2016",
+    "libelle": "Capteur température collecteur intake malfonctionnement",
+    "causes_possibles": "Capteur température intake défaillant ou endommagé, connecteur corrodé, câblage en circuit ouvert ou court-circuité, connecteur lâche",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2017",
+    "libelle": "Commande capteur température intake signal bas",
+    "causes_possibles": "Câblage capteur en circuit ouvert, connecteur débranché ou corrodé, alimentation insuffisante, capteur défaillant, calculateur défaillant",
+    "source": "obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2020",
+    "libelle": "Système carburant vapeur purge commande malfonctionnement",
+    "causes_possibles": "Électrovanne purgation EVAP défaillante, connecteur endommagé, câblage en circuit ouvert, tuyauterie endommagée, filtre charbon encrassé",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2025",
+    "libelle": "Soupape recirculation EGR coinc fermée",
+    "causes_possibles": "Soupape EGR coincée ou bloquée, joint usé, carbone accumulé, tube EGR obstrué, connecteur endommagé, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2030",
+    "libelle": "Capteur température catalyseur banc 1 malfonctionnement signal bas",
+    "causes_possibles": "Câblage capteur en circuit ouvert, connecteur débranché, alimentation insuffisante, capteur défaillant, isolement compromis, calculateur défaillant",
+    "source": "yourmechanic.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2031",
+    "libelle": "Capteur température gaz échappement banc 1 capteur 2 malfonctionnement",
+    "causes_possibles": "Capteur EGT défaillant ou endommagé, connecteur corrodé, câblage en circuit ouvert ou court-circuité, isolement thermique compromis",
+    "source": "obd-codes.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2032",
+    "libelle": "Capteur température gaz échappement banc 1 capteur 2 signal bas",
+    "causes_possibles": "Câblage EGT en circuit ouvert, connecteur débranché ou corrodé, alimentation insuffisante, capteur défaillant, soudure froide",
+    "source": "yourmechanic.com, go-parts.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2033",
+    "libelle": "Capteur température gaz échappement banc 1 capteur 2 signal haut",
+    "causes_possibles": "Court-circuit du câblage vers alimentation, connecteur endommagé, capteur défaillant, isolation thermique excessive, calculateur défaillant",
+    "source": "troublecodes.net, obd-codes.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2034",
+    "libelle": "Capteur pression carburant rail signal intermittent",
+    "causes_possibles": "Connecteur capteur pression lâche ou corrodé, câblage intermittent, capteur défaillant, soudure froide, alimentation insuffisante",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2035",
+    "libelle": "Système injection air secondaire banc 1 malfonctionnement",
+    "causes_possibles": "Pompe air secondaire défaillante, électrovanne bloquée, durite endommagée, connecteur corrodé, clapet défaillant, calculateur défaillant",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3001",
+    "libelle": "Unité de contrôle batterie véhicule hybride malfonctionnement",
+    "causes_possibles": "Calculateur batterie hybride défaillant, connecteur endommagé, câblage batterie cassé, tension batterie anormale, fusible batterie grillé",
+    "source": "hybridvehicles.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3031",
+    "libelle": "Interface batterie hybride/électrique malfonctionnement module 1",
+    "causes_possibles": "Module interface batterie défaillant, connecteur corrodé, câblage endommagé, batterie défaillante, isolement électrique compromis",
+    "source": "hybridvehicles.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3100",
+    "libelle": "Injecteur carburant haute pression malfonctionnement circuit ouvert",
+    "causes_possibles": "Injecteur haute pression défaillant, connecteur endommagé, câblage en circuit ouvert, relais injecteur défaillant, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3101",
+    "libelle": "Injecteur carburant haute pression cylindre 1 circuit bas côté bas",
+    "causes_possibles": "Injecteur haute pression cylindre 1 défaillant, connecteur endommagé, câblage en circuit ouvert, pression carburant insuffisante, calculateur défaillant",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3102",
+    "libelle": "Injecteur carburant haute pression cylindre 2 circuit bas côté bas",
+    "causes_possibles": "Injecteur haute pression cylindre 2 défaillant, connecteur débranché ou corrodé, câblage en circuit ouvert, débit carburant insuffisant, calculateur défaillant",
+    "source": "obd-codes.com, go-parts.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3200",
+    "libelle": "Compensation charge moteur banc 1 malfonctionnement",
+    "causes_possibles": "Capteur charge moteur défaillant, connecteur endommagé, câblage en circuit ouvert, calculateur défaillant, étalonnage incorrect",
+    "source": "troublecodes.net, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3300",
+    "libelle": "Système turbocompresseur banc 1 malfonctionnement",
+    "causes_possibles": "Turbo défaillant ou endommagé, connecteur turbo corrodé, câblage turbo en circuit ouvert, durite turbo endommagée, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3350",
+    "libelle": "Système contrôle couple moteur malfonctionnement",
+    "causes_possibles": "Capteur couple moteur défaillant, connecteur endommagé, câblage cassé, calculateur défaillant, étalonnage capteur incorrect",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3409",
+    "libelle": "Système désactivation cylindres banc 1 malfonctionnement",
+    "causes_possibles": "Soupape désactivation cylindres défaillante, collecteur d'huile obstrué, connecteur endommagé, câblage cassé, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3451",
+    "libelle": "Contrôle carburant injection banc 2 malfonctionnement",
+    "causes_possibles": "Injecteur banc 2 défaillant, pression carburant insuffisante, connecteur corrodé, câblage endommagé, calculateur défaillant",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P3501",
+    "libelle": "Système de refroidissement batterie hybride malfonctionnement",
+    "causes_possibles": "Pompe refroidissement batterie défaillante, connecteur endommagé, câblage coupé, liquide refroidissement insuffisant, électrovanne bloquée",
+    "source": "hybridvehicles.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0002",
+    "libelle": "Perte communication contrôle moteur",
+    "causes_possibles": "Connecteur CAN bus débranché, câblage CAN cassé ou court-circuité, calculateur moteur défaillant, fusible CAN grillé, batterie insuffisante",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0011",
+    "libelle": "Perte communication système transmission",
+    "causes_possibles": "Bus CAN endommagé, connecteur transmission débranché, calculateur transmission défaillant, câblage en circuit ouvert, fusible réseau grillé",
+    "source": "troublecodes.net, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0031",
+    "libelle": "Perte communication système freinage ABS",
+    "causes_possibles": "Module ABS défaillant, connecteur ABS endommagé, câblage réseau cassé ou court-circuité, bus CAN défaillant, calculateur ABS corrompu",
+    "source": "obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0052",
+    "libelle": "Perte communication unité direction assistée",
+    "causes_possibles": "Module direction assistée défaillant, connecteur CAN débranché, câblage réseau endommagé, bus CAN dégradé, calculateur direction défaillant",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0062",
+    "libelle": "Perte communication système suspension active",
+    "causes_possibles": "Module suspension défaillant, connecteur CAN lâche ou corrodé, câblage réseau cassé, électrovanne suspension bloquée, bus CAN défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0065",
+    "libelle": "Perte communication unité chauffage climatisation",
+    "causes_possibles": "Module climatisation défaillant, connecteur CAN endommagé, câblage réseau en circuit ouvert, compresseur défaillant, bus CAN défaillant",
+    "source": "yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  }
+]

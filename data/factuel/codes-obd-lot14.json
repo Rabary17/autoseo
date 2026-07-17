@@ -1,0 +1,194 @@
+[
+  {
+    "code": "P0100",
+    "libelle": "Débitmètre d'air — circuit dysfonctionnement",
+    "causes_possibles": "Capteur débit massique air (MAF) défaillant ou endommagé, connecteur corrodé ou desserré, câblage en circuit ouvert ou court-circuité, filtre à air très encrassé, prise d'air endommagée",
+    "source": "carverif.fr, club.auto-doc.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0101",
+    "libelle": "Débitmètre d'air — plage/performance circuit",
+    "causes_possibles": "Capteur MAF défaillant donnant un signal hors plage, connecteur lâche créant une résistance intermittente, câblage endommagé, filtre à air encrassé, orifice capteur sale",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0102",
+    "libelle": "Débitmètre d'air — signal bas circuit entrée",
+    "causes_possibles": "Tension circuit anormalement basse, câblage court-circuité à la masse, capteur MAF défaillant, connecteur corrodé, alimentation insuffisante au capteur",
+    "source": "pricelub.com, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0103",
+    "libelle": "Débitmètre d'air — signal haut circuit entrée",
+    "causes_possibles": "Tension circuit anormalement élevée, câblage court-circuité à l'alimentation, connecteur endommagé, capteur MAF défaillant, surenrichissement du mélange",
+    "source": "carverif.fr, club.auto-doc.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0104",
+    "libelle": "Débitmètre d'air — signal intermittent circuit",
+    "causes_possibles": "Connecteur lâche créant une connexion instable, câblage endommagé par intermittence, capteur MAF vieillissant produisant signal instable, soudure froide",
+    "source": "carverif.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0105",
+    "libelle": "Pression absolue collecteur — circuit dysfonctionnement",
+    "causes_possibles": "Capteur pression absolue collecteur (MAP) défaillant ou endommagé, connecteur débranché ou corrodé, câblage en circuit ouvert, tuyauterie capteur bouchée, calculateur défaillant",
+    "source": "carverif.fr, club.auto-doc.fr, eobdcode.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0106",
+    "libelle": "Pression absolue collecteur — plage/performance circuit",
+    "causes_possibles": "Capteur MAP donnant signal hors plage, tuyauterie capteur obstruée, connecteur lâche, câblage résistant, calculateur défaillant, niveau vide moteur erratique",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0107",
+    "libelle": "Pression absolue collecteur — signal bas circuit entrée",
+    "causes_possibles": "Tension circuit anormalement basse, câblage court-circuité à la masse, capteur MAP défaillant, connecteur corrodé ou desserré, tuyauterie détachée du capteur",
+    "source": "pricelub.com, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0108",
+    "libelle": "Pression absolue collecteur — signal haut circuit entrée",
+    "causes_possibles": "Tension circuit anormalement élevée, court-circuit à l'alimentation, connecteur endommagé, capteur MAP en défaut, calculateur défaillant",
+    "source": "club.auto-doc.fr, eobdcode.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0109",
+    "libelle": "Pression absolue collecteur — signal intermittent circuit",
+    "causes_possibles": "Signal pression instable ou erratique, connecteur lâche ou corrodé, câblage intermittent, capteur MAP défaillant, calculateur défaillant",
+    "source": "carverif.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0110",
+    "libelle": "Température air admission — circuit dysfonctionnement",
+    "causes_possibles": "Capteur température air admission (IAT) défaillant ou endommagé, connecteur débranché ou corrodé, câblage en circuit ouvert ou court-circuité, boîtier capteur endommagé",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0111",
+    "libelle": "Température air admission — plage/performance circuit",
+    "causes_possibles": "Capteur IAT donnant signal hors plage, connecteur lâche créant résistance instable, câblage endommagé, capteur vieillissant, étalonnage défaillant",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0112",
+    "libelle": "Température air admission — signal bas circuit entrée",
+    "causes_possibles": "Tension circuit anormalement basse, câblage court-circuité à la masse, connecteur corrodé, capteur IAT défaillant, alimentation insuffisante",
+    "source": "club.auto-doc.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0113",
+    "libelle": "Température air admission — signal haut circuit entrée",
+    "causes_possibles": "Tension circuit anormalement élevée, court-circuit à l'alimentation, connecteur endommagé, capteur IAT défaillant, problème de masse du circuit",
+    "source": "club.auto-doc.fr, carverif.fr, eobdcode.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0114",
+    "libelle": "Température air admission — signal intermittent circuit",
+    "causes_possibles": "Signal température instable ou intermittent, connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur IAT défaillant, soudure froide",
+    "source": "pricelub.com, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0115",
+    "libelle": "Température liquide refroidissement — circuit dysfonctionnement",
+    "causes_possibles": "Capteur température liquide (ECT) défaillant ou endommagé, connecteur débranché ou corrodé, câblage en circuit ouvert ou court-circuité, niveau liquide bas, thermostat bloqué",
+    "source": "club.auto-doc.fr, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0116",
+    "libelle": "Température liquide refroidissement — plage/performance circuit",
+    "causes_possibles": "Capteur ECT donnant signal hors plage, thermostat défaillant ou bloqué, connecteur lâche, câblage à résistance élevée, liquide de refroidissement problématique",
+    "source": "club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0117",
+    "libelle": "Température liquide refroidissement — signal bas circuit",
+    "causes_possibles": "Tension circuit anormalement basse, câblage court-circuité à la masse, capteur ECT défaillant, connecteur corrodé, alimentation insuffisante",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0118",
+    "libelle": "Température liquide refroidissement — signal haut circuit",
+    "causes_possibles": "Tension circuit anormalement élevée, court-circuit à l'alimentation, connecteur endommagé, capteur ECT défaillant, problème de masse, thermostat coincé ouvert",
+    "source": "club.auto-doc.fr, mycarly.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0119",
+    "libelle": "Température liquide refroidissement — signal intermittent circuit",
+    "causes_possibles": "Signal température intermittent ou erratique, connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur ECT défaillant, soudure froide",
+    "source": "carverif.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0120",
+    "libelle": "Position papillon d'accélération — circuit dysfonctionnement",
+    "causes_possibles": "Capteur position papillon (TPS) défaillant ou endommagé, connecteur débranché ou corrodé, câblage en circuit ouvert ou court-circuité, papillon encrasse ou grippe",
+    "source": "club.auto-doc.fr, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0121",
+    "libelle": "Position papillon d'accélération — plage/performance circuit",
+    "causes_possibles": "Capteur TPS donnant signal hors plage, connecteur lâche créant résistance, câblage endommagé, papillon bloqué, capteur mal étalonné",
+    "source": "carverif.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0122",
+    "libelle": "Position papillon d'accélération — signal bas circuit",
+    "causes_possibles": "Tension circuit anormalement basse, câblage court-circuité à la masse, capteur TPS défaillant, connecteur corrodé, alimentation insuffisante",
+    "source": "club.auto-doc.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0123",
+    "libelle": "Position papillon d'accélération — signal haut circuit",
+    "causes_possibles": "Tension circuit anormalement élevée, court-circuit à l'alimentation, connecteur endommagé, capteur TPS défaillant, problème de masse du circuit",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0124",
+    "libelle": "Position papillon d'accélération — signal intermittent circuit",
+    "causes_possibles": "Signal position intermittent ou erratique, connecteur lâche ou corrodé, câblage endommagé par intermittence, capteur TPS défaillant, soudure froide",
+    "source": "pricelub.com, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0125",
+    "libelle": "Temps de préchauffage système — dysfonctionnement",
+    "causes_possibles": "Contacteur de démarrage défaillant, relais préchauffage diesel défaillant, résistance de préchauffage endommagée, connecteur endommagé, contrôleur thermique défaillant",
+    "source": "club.auto-doc.fr, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0126",
+    "libelle": "Temps de préchauffage système — performance insuffisante",
+    "causes_possibles": "Bougies de préchauffage usées ou défaillantes, relais de préchauffage intermittent, câblage défaillant, batterie faible, contrôleur thermique défaillant",
+    "source": "carverif.fr, pricelub.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0127",
+    "libelle": "Température air admission — trop élevée",
+    "causes_possibles": "Capteur IAT signalant température excessive, air d'admission anormalement chaud, carter moteur surchauffé, circuit ventilation défaillant, problème thermostat",
+    "source": "club.auto-doc.fr, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0128",
+    "libelle": "Thermostat température liquide refroidissement — mauvaise performance",
+    "causes_possibles": "Thermostat défaillant ou bloqué ouvert, capteur ECT défaillant, système de refroidissement inefficace, ventilateur moteur défaillant, liquide de refroidissement problématique",
+    "source": "club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0129",
+    "libelle": "Pression barométrique — signal intermittent circuit",
+    "causes_possibles": "Capteur pression barométrique défaillant, connecteur lâche ou corrodé, câblage endommagé par intermittence, tuyauterie de prise air intermittente, calculateur défaillant",
+    "source": "pricelub.com, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0200",
+    "libelle": "Circuit injecteur carburant — dysfonctionnement général",
+    "causes_possibles": "Injecteur carburant défaillant, connecteur injecteur endommagé ou desserré, câblage injecteur en circuit ouvert, relais injecteur défaillant, calculateur défaillant",
+    "source": "club.auto-doc.fr, carverif.fr — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P0201",
+    "libelle": "Circuit injecteur cylindre 1 — dysfonctionnement",
+    "causes_possibles": "Injecteur cylindre 1 défaillant ou endommagé, connecteur endommagé ou desserré, câblage en circuit ouvert ou court-circuité, relais injecteur défaillant, calculateur défaillant",
+    "source": "carverif.fr, club.auto-doc.fr — consulté 2026-07 (via WebSearch)"
+  }
+]

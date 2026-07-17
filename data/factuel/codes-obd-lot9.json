@@ -1,0 +1,184 @@
+[
+  {
+    "code": "P0725",
+    "libelle": "Circuit capteur vitesse moteur (engine speed input) - dysfonctionnement",
+    "causes_courantes": "Capteur de vitesse moteur (RPM sensor) defaillant, roue phonique endommagee ou encrassee, cablage ou connecteur du circuit de capteur endommage, entrefer incorrect du capteur",
+    "source": "yourmechanic.com, obd-codes.com, repairpal.com, go-parts.com, torquebot.io — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0726",
+    "libelle": "Circuit capteur vitesse moteur - plage/performance",
+    "causes_courantes": "Capteur de vitesse moteur hors plage donnant un signal erratique/incoherent, roue phonique endommagee, capteur mal aligne ou entrefer incorrect, cablage a resistance elevee",
+    "source": "obd-codes.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0727",
+    "libelle": "Circuit capteur vitesse moteur - pas de signal",
+    "causes_courantes": "Capteur de vitesse moteur defaillant ou deconnecte (absence totale de tension produite), cablage coupe ou en circuit ouvert, connecteur corrode ou broches cassees, roue phonique completement cassee ou debranchee",
+    "source": "ecufiles.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0728",
+    "libelle": "Circuit capteur vitesse moteur - signal intermittent/erratique",
+    "causes_courantes": "Connecteur lache ou corrodé creant une resistance intermittente, cablage endommage par intermittence, capteur vieillissant produisant un signal instable, roue phonique partiellement endommagee",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0860",
+    "libelle": "Circuit du module de commutation de vitesses (Gear Shift Module) A - dysfonctionnement",
+    "causes_possibles": "Electrovanne ou actionneur de commutation defaillant, cablage ou connecteur endommage, module de commutation d'engrenage debranche, systeme de transmission a commutation manuelle ou robotisee affecte",
+    "source": "repairpal.com, partsavatar.ca — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0861",
+    "libelle": "Circuit du module de commutation de vitesses A - signal bas",
+    "causes_possibles": "Tension du circuit de commutation anormalement basse (court-circuit vers la masse), cablage endommage, connecteur corrode, module de commutation defaillant",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0862",
+    "libelle": "Circuit du module de commutation de vitesses A - signal haut",
+    "causes_possibles": "Tension du circuit de commutation anormalement elevee (court-circuit vers l'alimentation), cablage en court-circuit, connecteur endommage, module de commutation defaillant",
+    "source": "repairpal.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0863",
+    "libelle": "Circuit de communication du module de commande transmission (TCM)",
+    "causes_possibles": "Perte de communication entre TCM (Transmission Control Module) et PCM/ECM ou autres modules, cablage CAN ou bus de communication endommage, connecteur debranche, TCM ou PCM defaillant",
+    "source": "repairpal.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0875",
+    "libelle": "Circuit capteur/contacteur de pression liquide de transmission D - dysfonctionnement",
+    "causes_possibles": "Capteur de pression liquide transmission D defaillant, cablage ou connecteur endommage, niveau ou etat du liquide de transmission problematique, defaillance interne de la transmission",
+    "source": "yourmechanic.com, repairpal.com, transmissionrepaircostguide.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0876",
+    "libelle": "Circuit capteur/contacteur de pression transmission D - plage/performance",
+    "causes_possibles": "Capteur de pression D hors plage donnant un signal erratique ou fige, liquide de transmission bas ou degrade, capteur de pression defaillant, probleme de circuit de pression hydraulique interne",
+    "source": "yourmechanic.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0877",
+    "libelle": "Circuit capteur/contacteur de pression transmission D - signal bas",
+    "causes_possibles": "Tension du circuit anormalement basse, cablage court-circuite a la masse, capteur defaillant, connecteur corrode ou desserre, pompe hydraulique de transmission insuffisante",
+    "source": "repairpal.com, yourmechanic.com, ecufiles.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0878",
+    "libelle": "Circuit capteur/contacteur de pression transmission D - signal haut",
+    "causes_possibles": "Tension du circuit anormalement elevee, cablage court-circuite vers l'alimentation, capteur defaillant, connecteur endommage, probleme de masse du circuit",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0880",
+    "libelle": "Circuit de signal d'entree alimentation TCM (Transmission Control Module)",
+    "causes_possibles": "Relais d'alimentation TCM defaillant, fusible grille, tension d'alimentation du TCM insuffisante, connecteur d'alimentation desserre ou corrode, cablage d'alimentation endommage",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0890",
+    "libelle": "Circuit relais d'alimentation TCM - signal bas",
+    "causes_possibles": "Relais d'alimentation TCM defaillant (contacts uses ou internes oxydes), cablage ou connecteur court-circuite vers la masse, capteur de tension d'alimentation defaillant, alimentation du TCM insuffisante",
+    "source": "yourmechanic.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0891",
+    "libelle": "Circuit relais d'alimentation TCM - signal haut",
+    "causes_possibles": "Cablage ou connecteur court-circuite vers l'alimentation, relais ou capteur de tension defaillant, tension de batterie excessive",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0892",
+    "libelle": "Circuit relais d'alimentation TCM - signal intermittent",
+    "causes_possibles": "Connecteur lache ou corrodé creant une connexion instable, cablage endommage par intermittence, relais defaillant produisant un signal instable, broches corrodees",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0893",
+    "libelle": "Plusieurs rapports engages simultanement (multiple gears engaged)",
+    "causes_possibles": "Electrovannes de passage de vitesse bloquees ouvertes simultanement, corps de vanne (valve body) defaillant, cablage de l'electrovanne endommagé, defaillance du TCM favorisant les engrenages multiples",
+    "source": "transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0895",
+    "libelle": "Temps de passage de vitesse trop court (shift time too short)",
+    "causes_possibles": "Transmission se changeant plus rapidement que prevu, defaillance interne des embrayages ou de la pompe hydraulique, liquide de transmission problematique, TCM envoie des ordres non coherents",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2005",
+    "libelle": "Volets admission variable (IMRC) bloques ouverts (Banc 2)",
+    "causes_possibles": "Calamine et depots de carbone sur les volets du collecteur d'admission, electrovanne/actionneur IMRC defaillant, volets grippes mecaniquement, capteur de position IMRC defaillant, cablage endommage",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2006",
+    "libelle": "Volets admission variable (IMRC) bloques fermes (Banc 1)",
+    "causes_possibles": "Calamine encrassant les passages d'air, electrovanne IMRC bloquee en position fermee, actuateur IMRC defaillant, capteur de position defaillant, cablage ou connecteur endommage",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2007",
+    "libelle": "Volets admission variable (IMRC) bloques fermes (Banc 2)",
+    "causes_possibles": "Meme famille de causes que P2006 appliquee au banc 2 : calamine, electrovanne defaillante, mecanisme de volet grippe, capteur de position endommage",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2008",
+    "libelle": "Circuit de commande volets admission variable (IMRC) - circuit ouvert (Banc 1)",
+    "causes_possibles": "Cablage du circuit IMRC coupe, connecteur debranche ou endommagé, electrovanne IMRC en circuit ouvert, fusible grille, capteur ou actuateur defaillant",
+    "source": "go-parts.com, icarsoft-us.com, yourmechanic.com, partsavatar.ca, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P0914",
+    "libelle": "Circuit de position du selecteur de vitesses (Gear Shift Position) - dysfonctionnement",
+    "causes_possibles": "Capteur de position du levier de vitesses defaillant, cablage ou connecteur endommage, mecanisme de selecteur grippe ou degrade, liquide renverse sur le capteur court-circuitant le circuit",
+    "source": "transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P0915",
+    "libelle": "Circuit de position du selecteur de vitesses - plage/performance",
+    "causes_possibles": "Capteur de position du selecteur donnant un signal hors plage ou erratique, cablage a resistance elevee, connecteur corrodé, liaison mecanique du selecteur defaillante",
+    "source": "repairpal.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3402",
+    "libelle": "Circuit de commande desactivation cylindre 1 / soupape d'admission - plage/performance",
+    "causes_possibles": "Electrovanne de desactivation cylindre 1 testee electriquement correcte mais mecaniquement bloquee ou figee, niveau d'huile bas, soupape de desactivation ne repondant pas normalement a la commande du PCM",
+    "source": "go-parts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3403",
+    "libelle": "Circuit de commande desactivation cylindre 1 / soupape d'admission - signal bas",
+    "causes_possibles": "Tension du circuit anormalement basse (court-circuit vers la masse), cablage endommage, connecteur corrode, electrovanne defaillante, niveau d'huile moteur insuffisant",
+    "source": "repairpal.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

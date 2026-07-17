@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Architecture headless — autoseo</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c4:#4f8ef7;--c7:#f97316;--ok:#4caf7d;--warn:#f5a623;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 28px 80px}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--text2);margin-bottom:20px}
+.breadcrumb a{color:var(--c4);text-decoration:none}
+h1{font-size:28px;font-weight:700;margin-bottom:8px}
+.lead{font-size:14px;color:var(--text2);margin-bottom:28px;max-width:800px}
+h2{font-size:18px;font-weight:700;margin:40px 0 6px;padding-top:18px;border-top:1px solid var(--border);color:var(--c7)}
+h3{font-size:14px;font-weight:700;margin:18px 0 8px}
+p{color:var(--text2);margin-bottom:10px}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:16px;margin:16px 0}
+.box.info{border-left-color:var(--c4)}
+.diagram{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:20px;margin:20px 0;font-family:Consolas,monospace;font-size:12px;color:#60a5fa;overflow-x:auto;line-height:1.8}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:11px;color:var(--warn);font-family:Consolas,monospace}
+ul{margin:12px 0 12px 20px;color:var(--text2)}
+li{margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin:16px 0;background:var(--bg2);border:1px solid var(--border);border-radius:8px}
+th{text-align:left;padding:10px 12px;color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border2);background:var(--bg3);font-weight:600}
+td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.btn{display:inline-block;padding:8px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none;font-size:12px;margin-top:20px}
+.btn:hover{background:var(--c4);color:#000}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="breadcrumb">
+  <a href="FEATURES.html">← Plus-values</a>
+  <span>›</span>
+  <span>Architecture headless</span>
+</div>
+
+<h1>🏗️ Architecture headless</h1>
+<p class="lead">Séparation complète entre le CMS WordPress (données) et le frontend Next.js (présentation). Déploiement sur Vercel avec revalidation ISR automatique.</p>
+
+<h2>Vue d'ensemble</h2>
+
+<div class="diagram">
+┌─────────────────────────────────────────────────────────┐
+│                   ARCHITECTURE HEADLESS                  │
+├─────────────────────────────────────────────────────────┤
+│                                                           │
+│  WordPress CMS          REST API        Next.js Frontend │
+│  ─────────────────      ──────────      ─────────────── │
+│  ├─ Posts              /wp-json/        ├─ SSG pages    │
+│  ├─ Pages        ←────────→ v1/         ├─ ISR cache    │
+│  ├─ Authors                             ├─ Images OG    │
+│  ├─ Categories                          └─ Search       │
+│  ├─ Tags                                                 │
+│  └─ Images                                               │
+│                                              ↓            │
+│                    mntdev.passion4humanity  Vercel Hobby │
+│                    (nouvel hébergement)     monauto-tau   │
+│                                                           │
+└─────────────────────────────────────────────────────────┘
+</div>
+
+<h2>Stack technique</h2>
+
+<table>
+<thead>
+<tr><th>Composant</th><th>Technologie</th><th>Justification</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>CMS</strong></td><td>WordPress + mu-plugin maison</td><td>Familiariré, écosystème, REST API native</td></tr>
+<tr><td><strong>Champs personnalisés</strong></td><td>ACF Free (texte/textarea)</td><td>Pas de Repeater (free), pas de dépendance premium</td></tr>
+<tr><td><strong>Frontend</strong></td><td>Next.js 15 (App Router)</td><td>SSG/ISR, build rapide, déploiement trivial</td></tr>
+<tr><td><strong>Hosting frontend</strong></td><td>Vercel (plan Hobby)</td><td>Gratuit, ISR natif, CDN inclus</td></tr>
+<tr><td><strong>Images</strong></td><td>WordPress + Imagify</td><td>Optimisation à l'upload, WebP, pas de CDN tiers</td></tr>
+<tr><td><strong>Polices</strong></td><td>Stack système</td><td>Pas de Google Fonts (réseau indisponible ici)</td></tr>
+<tr><td><strong>Revalidation</strong></td><td>Webhook WordPress → ISR</td><td>Ciblée, économe, automatique à la publication</td></tr>
+</tbody>
+</table>
+
+<h2>Flux de données</h2>
+
+<h3>1️⃣ Rédacteur publie un article</h3>
+<ul>
+<li>Article rédigé dans WordPress (Gutenberg obligatoire)</li>
+<li>Métadonnées : catégorie = cocon, tags = entités, image à la une native</li>
+<li>Clic « Publier » dans wp-admin</li>
+</ul>
+
+<h3>2️⃣ Webhook WordPress déclenché</h3>
+<ul>
+<li>Hook WordPress <code>publish_post</code> exécute le mu-plugin</li>
+<li>Envoi POST à <code>https://monauto-tau.vercel.app/api/revalidate</code> avec le slug de l'article</li>
+<li>Authentification : <code>Authorization: Bearer NEXT_REVALIDATE_SECRET</code></li>
+</ul>
+
+<h3>3️⃣ ISR revalide la page Next.js</h3>
+<ul>
+<li>Endpoint <code>/api/revalidate</code> (Next.js natif) appelle <code>revalidatePath(path)</code></li>
+<li>La page de l'article est retirée du cache ISR</li>
+<li>Catégorie parente aussi revalidée (la liste des articles mise à jour)</li>
+<li>Réponse immédiate au webhook</li>
+</ul>
+
+<h3>4️⃣ Visiteur accède à la page</h3>
+<ul>
+<li>Si page en cache ISR : servie en &lt;100ms (statique)</li>
+<li>Si cache expiré ou revalidée : requête à l'API WordPress, génération, re-cache (ISR)</li>
+<li>Durée de cache : 900s (15 min) — filet de sécurité</li>
+</ul>
+
+<h2>Points clés</h2>
+
+<div class="box info">
+  <h3 style="margin-top:0">Avantages de cette archi</h3>
+  <ul>
+    <li><strong>Pas de coupling :</strong> WordPress peut être remplacé, migré, mis en maintenance sans impact frontend</li>
+    <li><strong>Performance :</strong> Pages statiques/cachées = temps de réponse &lt;100ms (vs WordPress ~300-500ms)</li>
+    <li><strong>Scalabilité :</strong> Vercel gère les pics sans infrastructure coûteuse</li>
+    <li><strong>SEO natif :</strong> Next.js génère sitemap.xml, robots.txt, JSON-LD automatiques</li>
+    <li><strong>Déploiement simplifié :</strong> Frontend sur Vercel (git-based), WordPress sur n'importe quel hébergement</li>
+  </ul>
+</div>
+
+<div class="box info">
+  <h3 style="margin-top:0">Challenges résolus</h3>
+  <ul>
+    <li><strong>Images :</strong> WordPress Imagify (compression/WebP à l'upload) plutôt que <code>next/image</code> (trop coûteux à 10k articles)</li>
+    <li><strong>Polices :</strong> Stack système (pas Google Fonts — réseau indisponible ici)</li>
+    <li><strong>Revalidation :</strong> Webhook au lieu de rebuild quotidien (économie 10x)</li>
+    <li><strong>ACF :</strong> Free tier utilisé (pas de Repeater — structuration simple : texte sur 1 ligne par entrée)</li>
+  </ul>
+</div>
+
+<h2>Fichiers clés</h2>
+
+<table>
+<thead>
+<tr><th>Fichier</th><th>Rôle</th></tr>
+</thead>
+<tbody>
+<tr><td><code>wordpress/mu-plugins/monauto-headless.php</code></td><td>Exposure REST, réglages revalidation, newsletter endpoint</td></tr>
+<tr><td><code>frontend/monauto/app/layout.tsx</code></td><td>Root layout, SEO meta, script anti-FOUC</td></tr>
+<tr><td><code>frontend/monauto/lib/wp.ts</code></td><td>Client REST WordPress typé (fetch + cache)</td></tr>
+<tr><td><code>frontend/monauto/app/api/revalidate/route.ts</code></td><td>Endpoint ISR (webhook target)</td></tr>
+<tr><td><code>frontend/monauto/next.config.ts</code></td><td><code>images.unoptimized: true</code> (pas d'optimisation Vercel)</td></tr>
+</tbody>
+</table>
+
+<div class="box">
+  <h3 style="margin-top:0">Prochaine étape</h3>
+  <p>Installer un nouveau WordPress fonctionnel (la version actuelle bloque sur <code>current_user_can</code>). Checklist : <code>docs/setup-wordpress-vierge.md</code>.</p>
+</div>
+
+<a href="FEATURES.html" class="btn">← Retour aux plus-values</a>
+
+</div>
+</body>
+</html>

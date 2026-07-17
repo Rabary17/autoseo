@@ -1,0 +1,156 @@
+[
+  {
+    "modele": "BYD Yuan Plus (électrique, 2024+, batterie NMC/LFP)",
+    "score_fiabilite": "données à confirmer pour marché européen",
+    "pannes_courantes": "rappels en Chine pour risque d'incendie batterie (2024) sur 97 000 unités ; garantie 5 ans/150 000 km annoncée ; fiabilité moyen-terme en Europe non documentée",
+    "source": "fiches-auto.fr, caradisiac.com, largus.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BYD Song (versions essence, hybrid, électrique 2024+)",
+    "score_fiabilite": "fiable globalement selon forum automobiles asiatiques",
+    "pannes_courantes": "gestion thermique batterie hybride/électrique sur les variantes, système électronique embarqué complexe, pannes éventuelles d'électronique embarquée rapportées par certains propriétaires",
+    "source": "caradisiac.com, fiches-auto.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "XPeng G6 (électrique, 75 kWh LFP / 87.5 kWh NMC, 2024+)",
+    "score_fiabilite": "très bonnes performances recharge, comportement général positif en Europe",
+    "pannes_courantes": "aides à la conduite (pilot autonome) peuvent être instables (freinages intempestifs, déconnexions maintien voie) ; batterie LFP 2025 plus sûre que NMC ; système logiciel à surveiller",
+    "source": "automobile-propre.com, largus.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "XPeng G6 Long Range (électrique, recharge ultra-rapide 280 kW)",
+    "score_fiabilite": "excellentes vitesses de recharge 10-80% en 12-13 minutes démontrées",
+    "pannes_courantes": "pas de problème majeur documenté en phase d'utilisation réelle en Europe ; système de batterie et refroidissement à surveiller sur durée",
+    "source": "automobile-propre.com — consulté 2026-07 (via WebSearch, supertest)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nio ES6 / EL6 (électrique, batterie 75/100 kWh, 2024+)",
+    "score_fiabilite": "service batterie par swapping unique (5 min) ; garantie 5 ans/150 000 km",
+    "pannes_courantes": "historique rappels incendie batterie Nio en 2019 (résolu depuis) ; pas de retour européen massivement documenté ; service SAV Nio très limité en France (27 stations swap en Europe seulement)",
+    "source": "automobile-propre.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "GAC Aion V Plus (électrique, 400-500+ km autonomie, <20 000€)",
+    "score_fiabilite": "entrée de gamme électrique chinoise agressif ; très peu de retours utilisateurs en France",
+    "pannes_courantes": "aucun SAV établi en France ; fiabilité à long terme inconnue sur marché français ; pas de données pannes spécifiques",
+    "source": "automobile-propre.com, jtgeek.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Cruze 1.6 essence 124 ch (2009-2015)",
+    "score_fiabilite": "mécanique simple, fiable sur motorisation essence",
+    "pannes_courantes": "étincelles, bobines d'allumage, injecteurs, corps papillon ; thermostat et fuites liquide de refroidissement ; problèmes électriques récurrents",
+    "source": "fiches-auto.fr, carverif.fr, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Cruze 2.0 VCDI diesel 125-163 ch (2009-2015)",
+    "score_fiabilite": "mécanique diesel fiable si entretien régulier",
+    "pannes_courantes": "filtre à particules (FAP) encrassé sur trajets courts (problème récurrent), vanne EGR, turbocompresseur (sifflements, changement ~400€), injecteurs (2800€), volant bi-masse (jeu progressif)",
+    "source": "fiches-auto.fr, carverif.fr, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Captiva 2.2 diesel (2006-2015, multiples générations)",
+    "score_fiabilite": "mitigée, dépendant fortement de l'entretien",
+    "pannes_courantes": "chaîne de distribution : tendeur défaillant (risque casse moteur, bruit cliquetis froid), filtre à particules FAP encrassé (trajets courts pénalisants), vanne EGR, injecteurs, turbo ; transmission automatique 6 rapports exige vidange ATF tous les 60 000 km",
+    "source": "largus.fr, caradisiac.com, car-recalls.eu — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Spark 1.0 68 ch essence (2009-2015, anciennes générations)",
+    "score_fiabilite": "excellente, moteur simple et robuste, >200 000 km courant",
+    "pannes_courantes": "léger surplus consommation d'huile après 70 000 km ; fiabilité électronique à améliorer (fenêtres, éclairage) ; un exemplaire à 270 000 km aucun problème moteur",
+    "source": "carverif.fr, fiches-auto.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Spark 1.2 81 ch essence (2009-2015)",
+    "score_fiabilite": "fiable, entretien économique, intervalles bien définis",
+    "pannes_courantes": "vidange annuelle ou 15 000 km, service intermédiaire 30 000 km, révision 60 000 km ; électronique moins fiable que mécanique",
+    "source": "fiches-auto.fr, carverif.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Cadillac Escalade V8 6.2L (2021-2024, génération IV+)",
+    "score_fiabilite": "globalement solide, rappel majeur affecte la fiabilité moteur",
+    "pannes_courantes": "RAPPEL CRITIQUE : V8 6.2L L87 — défaut bielle/vilebrequin risquant autodestruction moteur (597 571 unités affectées) ; transmission automatique : rappel valve commande risquant blocage roues arrière ; révision transmission si vidanges ATF négligées",
+    "source": "carverif.fr, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lincoln MKZ 2.0 EcoBoost turbo (2017-2019, 2020+)",
+    "score_fiabilite": "score 3/10 (RepairPal), maintenance fréquente requise",
+    "pannes_courantes": "transmission : changements brutaux, rebuild/remplacement ; turbo EcoBoost 2.0 : gasket issues (2017-2019) ; turbocompresseurs moins durables qu'atmosphérique ; embrayage prématuré, convertisseur couple défaillant",
+    "source": "repairpal.com, consumerreports.org, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Acura MDX V6 3.5L 290 ch (2024+, génération actuelle)",
+    "score_fiabilite": "score fiabilité 79/100, 1 rappel, 30 plaintes propriétaires",
+    "pannes_courantes": "système électrique (problèmes les plus courants), freins de service, transmission automatique 10 rapports : remplacement complet signalé pour bruits en conduite ; générations 3 antérieures avaient transmission ZF 9 vitesses plus problématique",
+    "source": "consumerreports.org, guideautoweb.com, motorverso.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Acura MDX Type S Ultra V6 turbo 3.0L 355 ch (2024+)",
+    "score_fiabilite": "plus puissant, transmission 10 rapports identique au 3.5L",
+    "pannes_courantes": "transmission automatique même que 3.5L ; turbocompresseur 3.0L : données limitées (version récente) ; suivi à faire sur durée de vie",
+    "source": "consumerreports.org, guideautoweb.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda CR-Z IMA hybrid 1.5L essence + moteur électrique 15 ch (2010-2016)",
+    "score_fiabilite": "excellente, Honda réputée, >300 000 km courant avec entretien",
+    "pannes_courantes": "aucun problème moteur majeur rapporté ; système hybride IMA peut tomber en panne sans bloquer conduite (voiture continue en essence pur) ; frein régénérative : plaquettes avant changées ~70 000 km",
+    "source": "automobile-propre.com, garagegine.fr, caradisiac.com, forum-auto.matmut.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Tata Nexon diesel (2017+, moteur mHawk 1.2L / 1.5L)",
+    "score_fiabilite": "5 étoiles test crash, mécanique diesel reconnu fiable, finition supérieure",
+    "pannes_courantes": "cliquetis moteur forts, problèmes vilebrequin même après quelques mois ; système électrique défectueux (verrouillage centralisé, infodivertissement, vitres électriques) ; SAV Tata Motors réputé faible",
+    "source": "opiniozone.com, motoroctane.com, cardekho.com, cartoq.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mahindra XUV500 2.2L diesel mHawk 140 BHP (2012-2022, génération 1)",
+    "score_fiabilite": "globalement positive, qualité construction louée, >5 ans sans panne courant",
+    "pannes_courantes": "transmission manuelle 6 vitesses : courses longues, changements pas fluides ; disque d'embrayage problématique rapporté par certains ; moteur diesel au refroidissement affiné, peu de décalage ressenti",
+    "source": "cardekho.com, zigwheels.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Isuzu D-Max 2.5 TD diesel 136-161 ch (générations multiples, tous modèles)",
+    "score_fiabilite": "réputée très robuste, >300 000-400 000 km dépassés régulièrement",
+    "pannes_courantes": "encrassement moteur (trajets courts pénalisants), filtre à particules FAP, vanne EGR ; boîte transmission : surchauffe ou problèmes agrément ; moteur 'bon' en utilisation pick-up, 'contraignant' urbain court-trajet",
+    "source": "ovoko.fr, caradisiac.com, pickup-mania.com, larevueautomobile.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mitsubishi L200 2.5 DI-D diesel 136-175 ch (IV, 2006-2015+)",
+    "score_fiabilite": "moteur robustesse éprouvée, >300 000 km régulier si entretien scrupuleux",
+    "pannes_courantes": "transmission automatique (versions équipées) : changement vitesse problématique 50 000-70 000 km, vidange ATF 60 000 km obligatoire ; filtre à particules diesel colmate régulier (moteur 2.5 DI-D surtout), réduction performance, surconsommation ; unité contrôle moteur défaillance >100 000 km",
+    "source": "auto-doc.fr, carverif.fr, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Impreza 2.0 essence atmosphérique (générations I-III, avant 2017)",
+    "score_fiabilite": "excellente, >300 000-400 000 km sans casse moteur quasi inexistant",
+    "pannes_courantes": "traction intégrale (4x4) permanent : modèle d'efficacité, jamais problématique ; moteur boxer fiable essence pur ; codes erreur système allumage possibles, filtration",
+    "source": "caradisiac.com, kit-ethanol-auto.fr, carbudget.fr, carverif.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Impreza 2.0 diesel boxer (générations I-III)",
+    "score_fiabilite": "réputation contrastée, moins fiable qu'essence",
+    "pannes_courantes": "FAP et EGR calvaire habituel diesel moderne, amplifié : moteur chauffe lentement, combustion incomplète, suie accumule, dépollution souffre ; usage urbain : bombe à retardement ; trajectes longs seulement acceptables",
+    "source": "kit-ethanol-auto.fr, carbudget.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

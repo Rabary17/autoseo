@@ -1,0 +1,282 @@
+[
+  {
+    "code": "U0001",
+    "libelle": "CAN-bus haute vitesse - circuit de communication défaillant",
+    "causes_courantes": "Module de communication CAN défaillant, câblage CAN endommagé ou en court-circuit, connecteur endommagé, calculateur (ECU) défaillant",
+    "source": "obd-codes.com, yourmechanic.com, icarsoft.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0010",
+    "libelle": "CAN-bus haute vitesse - aucune activité détectée",
+    "causes_courantes": "Bus CAN inactif ou défaillant, tous les modules de communication hors ligne, circuit de communication ouvert ou en court-circuit",
+    "source": "carparts.com, repairpal.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0100",
+    "libelle": "Module de moteur (ECM/PCM) - perte de communication",
+    "causes_courantes": "Défaillance ECM/PCM, câblage CAN endommagé, problème de masse électrique, fusible défaillant",
+    "source": "yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0101",
+    "libelle": "Module de transmission (TCM) - perte de communication",
+    "causes_courantes": "Module de boîte de vitesses défaillant, câblage CAN endommagé, connecteur TCM corrodé ou débranché, batterie faible",
+    "source": "repairpal.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0110",
+    "libelle": "Module de carrosserie (BCM) - perte de communication",
+    "causes_courantes": "Module de carrosserie défaillant, câblage CAN rompu, connecteur BCM problématique, alimentation électrique insuffisante",
+    "source": "obd-codes.com, icarsoft.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0129",
+    "libelle": "Module d'affichage d'instrument (IPC) - perte de communication",
+    "causes_courantes": "Tableau de bord défaillant, câblage CAN abîmé, connecteur IPC lâche ou corrodé, batterie faible créant une chute de tension",
+    "source": "yourmechanic.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0131",
+    "libelle": "Module d'airbag (RCM) - perte de communication",
+    "causes_courantes": "Centrale d'airbag défaillante, câblage CAN endommagé, connecteur RCM problématique, batterie déchargée",
+    "source": "repairpal.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0137",
+    "libelle": "Module d'éclairage (LCM) - perte de communication",
+    "causes_courantes": "Module d'éclairage défaillant, câblage CAN des phares endommagé, connecteur lâche, fusible d'éclairage grillé",
+    "source": "carparts.com, icarsoft.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0155",
+    "libelle": "Module de climatisation (HVAC) - perte de communication",
+    "causes_courantes": "Calculateur climatisation défaillant, câblage CAN climatisation abîmé, connecteur HVAC débranché, batterie faible",
+    "source": "yourmechanic.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0200",
+    "libelle": "CAN-bus basse vitesse - perte de communication",
+    "causes_courantes": "Bus de communication basse vitesse défaillant, module d'accessoires non disponible, rupture câblage réseau, calculateur hors ligne",
+    "source": "obd-codes.com, carparts.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "B0010",
+    "libelle": "Vitres électriques - moteur droit avant dysfonctionnement",
+    "causes_courantes": "Moteur vitre défaillant, connecteur débranché ou corrodé, câblage endommagé, mécanisme de régulation usé",
+    "source": "obd-codes.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "B0020",
+    "libelle": "Vitres électriques - moteur gauche avant dysfonctionnement",
+    "causes_courantes": "Moteur vitre défaillant, contacteur bouton vitre usé, câblage court-circuité ou coupé, batterie faible",
+    "source": "yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "B0030",
+    "libelle": "Serrures électriques - circuit avant droit dysfonctionnement",
+    "causes_courantes": "Actionneur de serrure défaillant, câblage endommagé, connecteur lâche, mécanisme de verrou usé ou coincé",
+    "source": "carparts.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "B0040",
+    "libelle": "Serrures électriques - circuit avant gauche dysfonctionnement",
+    "causes_courantes": "Actionneur de serrure défaillant, connecteur corrodé, câblage en court-circuit, batterie insuffisante",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "B0050",
+    "libelle": "Vitres électriques - moteur droit arrière dysfonctionnement",
+    "causes_courantes": "Moteur vitre arrière défaillant, mécanisme lève-vitre cassé, câblage interrupteur endommagé, batterie faible",
+    "source": "repairpal.com, carparts.com, icarsoft.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0030",
+    "libelle": "Capteur d'accélération latérale ABS - signal incorrect",
+    "causes_courantes": "Capteur d'accélération latérale défaillant, câblage endommagé, connecteur débranché ou corrodé, montage défaillant du capteur",
+    "source": "repairpal.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0045",
+    "libelle": "Capteur de vitesse de roue arrière droit ABS - dysfonctionnement",
+    "causes_courantes": "Capteur ABS défaillant, roue de cible ABS endommagée ou usée, câblage ou connecteur problématique, entrefer incorrect",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0050",
+    "libelle": "Capteur de vitesse de roue arrière gauche ABS - dysfonctionnement",
+    "causes_courantes": "Capteur ABS arrière gauche défaillant, cible ABS usée ou cassée, connecteur endommagé, câblage en court-circuit",
+    "source": "carparts.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0065",
+    "libelle": "Modulation pression freinage - circuit hydraulique défaillant",
+    "causes_courantes": "Module ABS/modulation pression défaillant, fuite liquide freins, pompe ABS défaillante, câblage ou connecteur endommagé",
+    "source": "yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0100",
+    "libelle": "Contrôle traction - dysfonctionnement général",
+    "causes_courantes": "Module de contrôle traction défaillant, capteur de dynamique véhicule endommagé, câblage du système endommagé",
+    "source": "carparts.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0110",
+    "libelle": "Stabilité latérale - capteur de vitesse de lacet dysfonctionnement",
+    "causes_courantes": "Capteur de vitesse angulaire défaillant, connecteur lâche ou corrodé, câblage endommagé, étalonnage défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0120",
+    "libelle": "Capteur d'accélération longitudinale (X) - dysfonctionnement",
+    "causes_courantes": "Capteur d'accélération longitudinale défaillant, connecteur lâche ou corrodé, câblage en court-circuit, étalonnage incorrect",
+    "source": "repairpal.com, carparts.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1333",
+    "libelle": "Chauffage sonde lambda (banc 1, capteur 2) - tension insuffisante",
+    "causes_courantes": "Sonde lambda défaillante ou circuit de chauffage ouvert, résistance chauffage dégradée, câblage endommagé, batterie faible",
+    "source": "yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1502",
+    "libelle": "Variable valve timing (VVT) - divergence banc 1 / banc 2",
+    "causes_courantes": "Huile moteur sale ou de mauvaise viscosité, capteur de position arbre à cames défaillant, chaîne de distribution usée, électrovanne VVT encrassée",
+    "source": "repairpal.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P1600",
+    "libelle": "Système de commande PCM - perte de signal",
+    "causes_courantes": "Batterie faible ou déconnectée, câblage d'alimentation endommagé, fusible PCM défaillant, module PCM défaillant",
+    "source": "obd-codes.com, yourmechanic.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1700",
+    "libelle": "Transmission - dysfonctionnement de sélection",
+    "causes_courantes": "Câblage sélecteur défaillant, commutateur de position de sélecteur (PRNDL) endommagé, connecteur de transmission défaillant",
+    "source": "repairpal.com, yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1800",
+    "libelle": "Système de commande du turbo - dysfonctionnement du circuit",
+    "causes_courantes": "Électrovanne de boost défaillante, connecteur turbo endommagé, tuyauterie suralimentation fissurée, calculateur défaillant",
+    "source": "carparts.com, obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2141",
+    "libelle": "Sonde lambda (O2) banc 1 capteur 1 - étalonnage impossible",
+    "causes_courantes": "Sonde lambda dépassée ou défaillante, connecteur endommagé, câblage oxydé, réchauffage de sonde défaillant",
+    "source": "yourmechanic.com, carparts.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2154",
+    "libelle": "Sonde lambda (O2) banc 2 capteur 1 - réaction lente",
+    "causes_courantes": "Sonde lambda usée ou empoisonnée, connecteur lâche, câblage en court-circuit, capteur de température défaillant",
+    "source": "repairpal.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2167",
+    "libelle": "Système injection carburant - pression insuffisante banc 2",
+    "causes_courantes": "Pompe carburant défaillante, filtre carburant bouché, détecteur de pression défaillant, tuyauterie fissurée",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2251",
+    "libelle": "Système injection air secondaire - dysfonctionnement banc 2",
+    "causes_courantes": "Pompe air secondaire défaillante, tuyauterie endommagée, électrovanne de commutation bloquée, cablage endommagé",
+    "source": "carparts.com, repairpal.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2158",
+    "libelle": "Capteur de position papillon (TPS) B - signal élevé",
+    "causes_courantes": "Capteur TPS secondaire en circuit ouvert, connecteur débranché, câblage en court-circuit à l'alimentation, capteur défaillant",
+    "source": "carparts.com, yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2627",
+    "libelle": "Soupape EGR (recirculation gaz échappement) - position électrovanne A",
+    "causes_courantes": "Électrovanne EGR encrassée ou défaillante, tuyauterie EGR bouchée, câblage endommagé, dépôt carbone excessif",
+    "source": "yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2700",
+    "libelle": "Changement de rapport boîte automatique - dysfonctionnement général",
+    "causes_courantes": "Hydraulique boîte faible ou sale, électrovanne de changement défaillante, capteur de pression défaillant, câblage TCM endommagé",
+    "source": "repairpal.com, carparts.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2799",
+    "libelle": "Marche forcée (limp-home) boîte automatique activée",
+    "causes_courantes": "Réduction de cylindrée, défaut TCM temporaire, capteur de pression défaillant, électrovanne encrassée",
+    "source": "obd-codes.com, yourmechanic.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1320",
+    "libelle": "Détecteur de cliquetis (KS) - signal absent",
+    "causes_courantes": "Capteur de cliquetis défaillant, connecteur endommagé, câblage en circuit ouvert, mauvaise connexion à la masse",
+    "source": "yourmechanic.com, obd-codes.com, carparts.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1350",
+    "libelle": "Capteur inductif signal moteur (RPM) - dysfonctionnement",
+    "causes_courantes": "Capteur régime moteur défaillant, entrefer incorrect du capteur, connecteur endommagé, câblage en circuit ouvert ou en court-circuit",
+    "source": "yourmechanic.com, obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1455",
+    "libelle": "Système EVAP - fuite importante détectée",
+    "causes_courantes": "Durite EVAP fissurée ou détachée, bouchon carburant défaillant, canister endommagé, connecteur loose sur l'électrovanne",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1890",
+    "libelle": "Commutateur de marche arrière - dysfonctionnement",
+    "causes_courantes": "Commutateur de marche arrière défaillant, connecteur endommagé, câblage en circuit ouvert ou en court-circuit, capteur de position collé",
+    "source": "carparts.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0140",
+    "libelle": "Capteur de position de direction (SAS) - dysfonctionnement",
+    "causes_courantes": "Capteur d'angle de braquage défaillant, connecteur endommagé, câblage en court-circuit, capteur non étalonné",
+    "source": "yourmechanic.com, obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

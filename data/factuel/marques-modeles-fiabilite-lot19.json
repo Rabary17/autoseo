@@ -1,0 +1,212 @@
+[
+  {
+    "modele": "Ford Fiesta (2020+, 1.0 EcoBoost, 1.5 EcoBoost, 6-vitesses auto)",
+    "score_fiabilite": "7/10 — fiabilité correcte, nettement améliorée post-2020",
+    "pannes_courantes": "Fiesta Mk7 (2011-2017): défaillances boîte Powershift, problèmes électriques Sync 3 ; Mk8 (2020+): électronique infotainment, usure suspension arrière, coûts réparation boîte auto €2000-3000",
+    "source": "repairpal.com, whatcar.com, carparts.com, consumerreports.org — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Focus (2018-2025, 1.0 EcoBoost wet belt, 1.5 EcoBoost, motorisation diesel DPF)",
+    "score_fiabilite": "5.5/10 — très peu fiable, classé 26ème/30 family cars",
+    "pannes_courantes": "Moteur 1.0 EcoBoost: courroie distribution humidifiée par huile (avant 2019), rupture 40000-80000 km ; boîte PowerShift défaillance fréquente ; problèmes électriques infotainment ; diesels: encrassement DPF trajets courts",
+    "source": "whatcar.com, carparts.com, endurancewarranty.com, whocanfixmycar.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Fiat Punto (2009+, 1.2 essence, 1.4 T-JET, 1.9 Multijet)",
+    "score_fiabilite": "5/10 — fiabilité variable selon génération et motorisation",
+    "pannes_courantes": "Modèles pré-2009: boîte vitesses fragile, électronique défaillante, direction assistée capricieuse ; génération post-2009 (1.4 T-JET recommandé): démarrage difficile temps froid 60000+ km, problèmes électroniques 40000+ km, coûts remplacement bobines allumage €300-500",
+    "source": "auto-doc.fr, fiches-auto.fr, oscar-racing.fr, largus.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Fiat Panda (2003-2012 et Gen3 2012+, 1.1 FIRE, 1.2 69ch, TwinAir, 1.3 MultiJet)",
+    "score_fiabilite": "4.5/10 — fiabilité modérée, défauts récurrents documentés",
+    "pannes_courantes": "Moteur 1.1 FIRE: joint culasse défaut surcharge/perte huile ; TwinAir: surconsommation huile 1L/5000km ; démarreurs prématurés 40000-60000 km ; rouille corps caisse génération 2003-2012 ; fuites carburant corps moteur défaut conception ; fenêtres électriques 45000-65000 km, capteurs ABS 60000-80000 km",
+    "source": "auto-doc.fr, fiches-auto.fr, largus.fr, garage-voltaire.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Nissan Micra Gen5 K14 (2017-2020+, 1.0 turbo 100-117ch, 1.5 dCi, 1.0 82ch)",
+    "score_fiabilite": "7/10 — bonne fiabilité globale, défauts électroniques mineurs",
+    "pannes_courantes": "Moteur 1.0 turbo (post-2019): meilleur choix fiabilité ; électronique multimédia dysfonctionnements récurrents, caméra recul défaut, capteurs ADAS faux positifs ; système sans clé problèmes ; stop-start défaillant ; taux défauts 2020 = 8.8/1000 selon données françaises",
+    "source": "fiches-auto.fr, caradisiac.com, auto-doc.fr, oscar-racing.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Honda Jazz (2015-2020 et 2020+, 1.3 L-series essence, CVT automatique)",
+    "score_fiabilite": "8.5/10 — très bonne fiabilité, l'une des meilleures du marché",
+    "pannes_courantes": "2020+ remarquablement fiable, problèmes mineurs électronique/infotainment, climatisation occasionnelle ; rappel 2020 CVT surchauffe composants défectueux (inspection/remplacement effectués) ; chaîne distribution (pas courroie) très durable ; transmission CVT gearbox fluid change tous 2 ans recommandé",
+    "source": "whatcar.com, autocar.co.uk, whocanfixmycar.com, nortonway.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BYD Tang EV (2020+, 108.8 kWh batterie Blade LFP, électrique)",
+    "score_fiabilite": "7.5/10 — fiabilité batterie excellente, logiciel à surveiller",
+    "pannes_courantes": "Batterie Blade LFP: 6 ans/150000km garantie constructeur, batterie à vie propriétaire initial ; problèmes logiciels infotainment récurrents (mises à jour solutionnent) ; dégradation batterie <5% 150000+ km ; coûts maintenance réduits absence moteur combustion interne ; système démarrage/arrêt aucun problème",
+    "source": "archyde.com, motorwatt.com, evsearch.ca, byd.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai i30 (2020+, 1.5 T-GDI 160PS, 1.6 CRDi diesel 85-100kW, 2.0 T-GDI N)",
+    "score_fiabilite": "7.5/10 — fiabilité correcte, moteur 1.5 T-GDI succès particulier",
+    "pannes_courantes": "Moteur 1.5 T-GDI: excellent choix sans problèmes série majeure, puissance régulière larges tours ; diesel 1.6 CRDi fiable, consommation basse 4.1-4.6L/100km ; chaîne distribution durable (tous moteurs timing chain) ; rappel 7293 i30 N (2017-2022) pompe carburant défaut risque calage moteur",
+    "source": "autodoc.co.uk, whatcar.com, carsguide.com.au, topgear.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Picanto Gen3 (2017+, 1.0 62/75ch, 1.1 CRDI diesel, boîte auto CVT)",
+    "score_fiabilite": "5.5/10 — fiabilité acceptable, défauts transmission notables",
+    "pannes_courantes": "Gen1-Gen2 (pré-2017): risque rupture vilebrequin moteur 1.1 CRDi, problèmes vis crankshaft pulley ; Gen3 (post-2017) beaucoup plus fiable ; embrayage problématique 70000-90000 km Gen2 ; boîte automatique CVT changements irréguliers 60000+ km, retards engrenage ; air conditionné défaut 40000-80000 km ; usure prématurée plaquettes frein 25000-35000 km",
+    "source": "auto-doc.fr, fiches-auto.fr, oscar-racing.fr, automobile-magazine.net — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Renault Twingo Gen3 (2014+, 0.9 TCe turbo, 1.0 SCe atmosphérique, électrique)",
+    "score_fiabilite": "6.5/10 — fiabilité correcte, électronique talon faible",
+    "pannes_courantes": "Moteur 0.9 TCe: turbo défaillance prématurée avant 60000 km (remplacement €2200-2500), chaîne distribution usure anormale 40000-60000 km ; moteur 1.0 SCe atmosphérique: meilleur choix fiabilité longévité ; électronique écran tactile bugs affichage, témoins lumineux sans raison, problèmes démarrage capteurs ; coûts entretien annuel €200-400 (économique)",
+    "source": "minitracks.fr, carverif.fr, oscar-racing.fr, twingoaddict.forumactif.org — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Renault Captur (2013+ Gen1, 2020+ Gen2, 1.0 TCe 90/100, 1.3 TCe 130/155, E-Tech hybride)",
+    "score_fiabilite": "6/10 — fiabilité inégale selon motorisation et génération",
+    "pannes_courantes": "TCe 130/155 essence: surconsommation réelle vs annoncée ; E-Tech hybride (2020-2021): électronique gestion hybride temperamentale, transitions essence-électrique imprécises, mises à jour logiciel améliorent ; 1.0 TCe 90/100: choix fiable compacité urbaine ; 1.3 TCe post-2022: corrections apportées versions antérieures ; écran tactile bugs affichage, écrans noirs démarrage (updates logiciel résolvent généralement)",
+    "source": "auto-doc.fr, oscar-racing.fr, obd2.fr, carverif.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 2008 Gen1 (2013-2019, 1.2 PureTech 82/110/130, 1.6 BlueHDi diesel)",
+    "score_fiabilite": "6/10 — fiabilité compromise par défauts moteur conception",
+    "pannes_courantes": "Moteur 1.2 PureTech (avant 2018): courroie distribution immergée huile dégradation prématurée 40000+ km (rupture catastrophique possible) ; post-2018 amélioration courroie ; système AdBlue diesel défaillance coûteuse capteurs ; géométrie suspension avant usure amortisseurs prématurée 25000-50000 km Gen1 ; écran infotainment bugs crashes écrans noirs, remplacement >€800 hors garantie ; avec entretien rigoureux peut dépasser 200000 km",
+    "source": "auto-doc.fr, largus.fr, fiches-auto.fr, careco.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Ford Mondeo (2014-2022, 1.5 EcoBoost 165ch, 2.0 TDI diesel, boîte auto 6/8-vitesses)",
+    "score_fiabilite": "6.5/10 — fiabilité acceptable moteur 1.5 EcoBoost, transmission variable",
+    "pannes_courantes": "Moteur 1.5 EcoBoost: relativement fiable sans surcharge refroidissement contrairement 1.6 EcoBoost, consommation réelle ~50mpg ; propriétaires rapportent défaillances récurrentes âge voiture (suspension, électrique warning lights) ; diesels: problèmes FAP coûteux ; rouille tableau bord commune, poignée frein main défaut, capteur pression pneus, dégradation garnissage toit (headlining)",
+    "source": "topgear.com, motorreviewer.com, carmechanicsmag.co.uk, whatcar.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Octavia Gen4 Mk4 (2020+, 1.5 eTSI mild-hybrid, 1.0 TSI turbo, diesel 2.0 TDI)",
+    "score_fiabilite": "7.5/10 — très bonne fiabilité, moteurs TSI sophistiqués",
+    "pannes_courantes": "Moteur 1.5 eTSI mild-hybrid: meilleur essence génération, développement années, performances consommation équilibrées, haute fiabilité ; 1.0 TSI: généralement fiable, petits turbos aucune défaillance mécanique largement documentées (surconsommation huile isolée versions puissantes) ; moteurs essence Mk4 généralement exempts reproches ; problèmes pompe eau prématurée possible ; kangarooing démarrage froid pré-2023 (bugs infotainment MIB3 résolus post-2023 EVO2)",
+    "source": "whocanfixmycar.com, autodoc.co.uk, carchecker.pro, justanswer.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Seat Leon (2020+, 1.0 TSI turbo, 1.5 TSI, 1.6 TDI, boîte manuelle/auto DSG/CVT)",
+    "score_fiabilite": "5/10 — peu fiable, 27ème/30 family cars 2025 What Car?",
+    "pannes_courantes": "Fiabilité globale 74.2% (très basse) ; infotainment sat-nav dysfonctionnements, électronique non-moteur, carrosserie problèmes (62% réparations >1 semaine) ; embrayage/volant bimasse défaut coincage vitesse 2 ; propriétaires hybrides: défaillances système batterie gestion électronique plus probables ; climatisation dysfonctionnements surtout modèles toit panoramique ; diesels 2.0 TDI 150PS: défauts 60000+ km encrassement DPF, soupapes EGR, injecteurs ; Seat couvre 97% réparations mais diagnostics lents, délais pièces frustrants",
+    "source": "clickmechanic.com, whatcar.com, breakerlink.com, autodoc.co.uk — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Suzuki Swift (2005+ générations variées, 1.2 VVT 1.2 DualJet, 1.3 essence, 1.3 DDiS diesel)",
+    "score_fiabilite": "6.5/10 — bonne fiabilité essence, diesels à éviter",
+    "pannes_courantes": "Moteur 1.2 VVT/DualJet: K12B fiable, consommation faible, coûts entretien modérés, encaisse kilomètres robustement ; moteur 1.3 essence ancien générations: fiabilité basique aucuns défauts majeurs documentés ; diesel 1.3 DDiS (Fiat origine): PIRE motorisation encrassement vanne EGR, injecteurs fragiles, turbo capricieux, chaîne distribution problèmes ; boîte CVT automatique: défaillance saccadée, comportement creux, changements retardés, bruit métallique vibrations accélération, fiabilité réduite groupe motopropulseur",
+    "source": "oscar-racing.fr, larevueautomobile.com, autodoc.fr, iems.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat 500 Gen1 (2007-2015, 1.2 essence 69-100ch, 1.3 Multijet diesel, boîte manuelle/auto)",
+    "score_fiabilite": "4/10 — fiabilité faible, taux défaillance documentés élevés",
+    "pannes_courantes": "2007-2015: embrayage slippage glissement difficile engrenage 50000+ km (réparation €800-1200) ; diesel 1.3 Multijet taux défaillance 25% dès 80000 km (saisie moteur possible, réparation €5000) ; essence 1.2/1.4 (pré-2012): taux défaillance 18%, embrayage défaut 50000+ km, rouille caisse prématurée ; problèmes système start-stop, injecteurs, amortisseurs, boîte vitesses ; transmission shaft droit 2H2018: vibrations importantes. 500e électrique: plus fiable élimine embrayage injection problèmes",
+    "source": "auto-doc.fr, piecesauto24.com, garagepremium.fr, fiches-auto.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Citroën C5 Aircross (2018-2025, 1.2 PureTech 130, 1.3 PureTech 130, hybride, BlueHDi 2.0 180)",
+    "score_fiabilite": "4.5/10 — fiabilité faible, coûts cumulés réparation très élevés",
+    "pannes_courantes": "Moteur 1.2 PureTech (2018-2020): courroie distribution désintègre dans huile destruction moteur 60000-100000 km (défaut conception majeur) ; système hybride fiabilité très basse: batterie haute tension perte capacité 30000-50000 km, chargeur embarqué défaut €2500, calculateur gestion énergie bugs arrêts moteur involontaires, batterie dégradation 120000+ km remplacement €8000-12000 ; diesel AdBlue système fréquemment défaillant (action consommateurs) ; électronique infotainment écran tactile figé redémarrages inattendus, hayon électrique blocage, capteurs ADAS défaut ; coûts réparation cumulés 150000km possible >€20000. Moteurs recommandés: 1.3 PureTech post-2020 courroie renforcée, 2.0 BlueHDi 180, 1.6 PureTech 180",
+    "source": "premiumcarsprovence.fr, auto-doc.fr, fiches-auto.fr, oscar-racing.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "modele": "Opel Astra Gen5 (2015-2022, 1.4 Turbo, 1.5 diesel, essence divers, boîte auto)",
+    "score_fiabilite": "7/10 — bonne fiabilité, moteurs essence presque sans critique",
+    "pannes_courantes": "Meilleur essence: 1.4 Turbo compromis performance/consommation excellent aucun problème mécanique majeur ; 1.0/1.2 Turbo: usure prématurée turbocompresseur possible ; diesel 1.7 CDTI (générations anciennes) vigilance recommandée, diesels plus problématiques essence ; 1.6 CDTI 136PS: défauts système injection démarrage irrégulier 80000-120000 km ; Astra L (plus récente): controverse moteur PSA 1.2 PureTech 110/130ch problèmes courroie distribution, obstruction pompe vide frein, rupture possible. Fiabilité dépend largement entretien régulier carnet obligatoire.",
+    "source": "bymycar.fr, caradisiac.com, auto-doc.fr, autocadre.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Master 3 Van (2010+, 2.3 dCi 120/125/145ch, 2.5 dCi variantes, boîte manuelle)",
+    "score_fiabilite": "6.5/10 — fiabilité modérée, utilisation professionnelle possible >500000km",
+    "pannes_courantes": "Moteur 2.3 dCi score 7.2/10 professionnel ; vanne EGR encrassement notamment usage urbain >150000km (nettoyage préventif 80000km évite dégâts) ; FAP encrassement usage urbain régénération 300km distance, débitmètre air sensible suie perte puissance 100000km ; capteurs pression turbo défaillance récurrente ; embrayage usure prématurée 90000+ km (remplacement ~€800), slippage 120000km usage intensif ; intégrateur récent Master 2022+ <150000km usage autoroute maintenance documentée achat recommandé",
+    "source": "largus.fr, francemoteursutilitaires.com, iodines.fr, carverif.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 3008 Gen1 (2009-2016, 1.2 PureTech, 1.6 BlueHDi, 1.6 HDI) Gen2 (2017+)",
+    "score_fiabilite": "6/10 — fiabilité compromise moteur PureTech post-2018 améliorations",
+    "pannes_courantes": "Moteur 1.2 PureTech (avant 2018): courroie distribution immergée lubrifiant dégradation libère débris abrasifs circuit huile complet, surconsommation huile 1L/2000km possible ; post-2018 (surtout post-2020): courroie redessinée meilleure fiabilité, plus agréable conduite ; autres défaillances bobines allumage, injecteurs, turbo possibles ; Stellantis PureTech (Peugeot/Citroën/Opel/DS/Fiat) significativement amélioré depuis 2020 ; entretien rigoureux essentiel, vérification historique maintenance obligatoire pre-achat",
+    "source": "conseil-auto-moto.fr, mv-performance.fr, bikeloc.fr, manouvellevoiture.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Qashqai (2007-2013 Gen1, 2014-2021 Gen2, 1.6 dCi 130PS diesel, essence variées)",
+    "score_fiabilite": "7/10 — fiabilité correcte diesel, moteur 1.6 dCi plus fiable efficient",
+    "pannes_courantes": "Moteur 1.6 dCi (130ch): moteur robuste génération meilleur fiable, consommation test 4.2-4.8L/100km excellent, longévité souvent >150000 miles entretien régulier ; défauts 1.6 dCi: fume noire échappement perte puissance 50000-80000km conditions défavorables ; système EGR problèmes, filtre DPF colmatage, pompe injection haute pression ; dépend fortement style conduite et qualité carburant diesel ; problèmes majeurs surtout trajets courts DPF ne régénère insuffisamment",
+    "source": "autodoc.co.uk, alibaba.com, qashqaiforums.co.uk, greencarguide.co.uk — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Scenic Gen4 (2016-présent, 1.3 TCe 160PS, 1.7 Blue dCi, transmission DP0 auto)",
+    "score_fiabilite": "5/10 — fiabilité faible, défauts électronique/transmission majeurs",
+    "pannes_courantes": "Moteur 1.3 TCe (2016-2018): surconsommation huile excessive 0.5L/1000km, cognement moteur, perte puissance, intolérant entretien négligé ; 1.7 Blue dCi problèmes système SCR (AdBlue): capteurs NOx, injecteurs, réservoirs défectueux immobilisations fréquentes ; transmission DP0 automatique: fragilité chronique affectant toutes motorisations sans exception ; eau infiltration problème chronique (Scenic 2/3 agravé): drainage cloché base pare-brise pluie lourde intérieur transformation piscine moisissure odeurs persistantes ; suspension usure prématurée choc amortisseurs capoter danger, articulations rotules direction usure fréquente ; tableau bord électronique défaillant largement connu et cher",
+    "source": "fiches-auto.fr, oscar-racing.fr, auto-search.fr, largus.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai i20 Gen1-Gen3 (2008-2020, 1.2 77/85ch, 1.0 T-GDi 100PS, diesel 1.1 CRDi variantes)",
+    "score_fiabilite": "6.5/10 — fiabilité correcte essence, T-GDi excellent choix récent",
+    "pannes_courantes": "Gen1 (2009-2014) 1.2 77ch: défaut conception admission soupapes encrassement prématuré perte puissance ratés moteur, rappel Hyundai 2010 correction ; Gen1 restylé 1.2 85ch: corrige défauts 77ch, mécanique simple faible coûts entretien aucuns grands pannes ; Gen2 1.2 84ch: choix fiable ville/banlieue sobre régulier ; Gen3 1.0 T-GDi 100PS: fiabilité 7.5/10 robustesse prouvée modèles Hyundai-Kia, pannes mécaniques majeures rares ; longévité généralement 150000-200000km entretien régulier urbain modéré ; absence turbo FAP systèmes complexes réduit risques réparations majeures budgetisation annuelle facile",
+    "source": "conseil-auto-moto.fr, oscar-racing.fr, carverif.fr, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Ranger (2011+, 2.0 EcoBlue turbo diesel, 2.2 diesel, variantes essence)",
+    "score_fiabilite": "6.5/10 — moteur 2.0 EcoBlue bon choix, problèmes courroie timing humidifiée",
+    "pannes_courantes": "Moteur 2.0 EcoBlue: meilleur diesel disponible actuellement, performances consommation raffinement excellents ; problèmes courroie timing (wet belt system huile lubrifie) défaut long-terme ~70000 miles, lubrification huile change intervalles étendus contaminants accumulation rupture possible antérieure prévu ; pompe huile défaillance 60000-80000km lubrification insuffisante possible endommagement moteur ; filtre particules diesel (FAP) colmatage 25000-40000km notamment trajets courts ; systèmes post-traitement diesel gérance experte mesures préventives longévité véhicule",
+    "source": "allthingsmotoringinternational.com, autopartswd.com, whocanfixmycar.com, carsguide.com.au — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Sportage Gen5 (2020+, 2.4L essence 4-cylindres, turbocharged variantes)",
+    "score_fiabilite": "7/10 — fiabilité acceptable moyenne, véhicule bien équilibré",
+    "pannes_courantes": "Fiabilité 2020 note A- (88/100) véhicule compact SUV arrondi, valeur exceptionnelle ; surconsommation huile moteur propriétaires signalé remplacement CVVT, brûlure huile quart semaine 1.5 quarts ; électronique climatisation composants électriques problèmes construction ; rappels NHTSA 2 fois ; consensus: 2020+ Sportage fiable valeur raisonnablement avec problèmes mécaniques électriques isolés propriétaires individuels signalés",
+    "source": "consumerreports.org, jdpower.com, cars.com, kbb.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroën Berlingo Gen2-Gen3 (2008-2018 Gen2, 2018+ Gen3, 1.6 HDi diesel, 1.5 BlueHDi, essence)",
+    "score_fiabilite": "5.5/10 — fiabilité modérée, génération 2 problématique, système climatique faible",
+    "pannes_courantes": "Système chauffage climatisation problèmes 60000+ km défaut valves chauffage, radiateur encrassé, moteur ventilateur défectueux ; motorisation 1.6 HDi (75/90/92/110ch) A ÉVITER problèmes répétitifs coûteux nombreux, turbo faiblesse 1.6 HDi 110 très affecté ; Gen3 chaîne distribution défaillances documentées ; essuie-glaces défaillance 50000+ km moteur défectueux, liaisons usées ; cornes défaillance 60000-80000km contacts corrodés commutateur klaxon défectueux ; Gen2 PLUS problématique: climatisation tempéramentale, crémaillère direction bruyante, amortisseurs fragiles, motorisations pannes répétées ; problèmes fréquents concernent confort systèmes, design solide mais maintenance électronique attention requise",
+    "source": "auto-doc.fr, fiches-auto.fr, comptoir-utilitaire.com, largus.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW X1 (2012-2026, 2.0L TwinPower Turbo 241ch, variantes essence/diesel)",
+    "score_fiabilite": "6.5/10 — fiabilité moyenne, turbo et chaîne distribution surveiller",
+    "pannes_courantes": "Moteur 2.0L TwinPower Turbo 241ch dernier génération : turbocompresseur défaillance possible mileage élevé (symptômes: perte puissance, fume excessive échappement, bruits sifflement) ; chaîne distribution rupture préoccupation significative modèles antérieurs ; transmission automatique dual-clutch (DCT) 7-vitesses : défaillances rapportées retards froids, à-coups ; fiabilité varie génération, modèles antérieurs plus sujets problèmes, récent amélioration ; maintenance programmée approfondie garantit fonctionnement exact tel engineré ; 2026 X1 fiable si équipé/entretenu",
+    "source": "bmwofmilwaukeenorth.com, breakerlink.com, consumerreports.org, edmunds.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes-Benz GLA (2014-2025, moteurs essence turbo variés, transmission 7G-DCT)",
+    "score_fiabilite": "6.5/10 — fiabilité acceptable globale, défauts électroniques/transmission",
+    "pannes_courantes": "GLA fiabilité 94.1% sondage 2023, 3ème compact SUV fiable ; Mercedes marque 27ème 30 brands 75.1% score ; soupape camshaft défaillance unités juillet-septembre 2015 (remplacement concessionnaire) ; transmission 7G-DCT modèles GLA200/GLA180: à-coups retards changement 60000-100000km surtout démarrage froid ; freins problèmes majeurs potentiellement dangereux si négligence ; caméra recul défaillance modèles H247 30000+ km (erreurs logiciel connexions câble défectueux) ; portière électrique fermeture défaut 50000+ km broyage rupture messages erreur ; années éviter: 2015, 2017, 2018 pire historique ; rappels sécurité: déploiement airbag passager frontal certains véhicules périodes construction",
+    "source": "whatcar.com, copilotsearch.com, consumerreports.org, glaowners.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Piaggio Vespa (GTS300, GTS250, GTV, électrique Vespa Elettrica, variantes scooters)",
+    "score_fiabilite": "7.5/10 — fiabilité excellente entretien régulier, design iconique robuste",
+    "pannes_courantes": "Vespa fiable surtout maintenance appropriée, longévité 10-20 ans capacité 50000+ km possible ; modèle GTS 300 parmi meilleure qualité scooters midi fiable si soigné aucuns problèmes majeurs préoccupation excessive propriétaires ; ingénierie italienne design robuste favori cyclistes urbains ; économie carburant impressionnante coût-efficacité quotidienne ; maintenance: respecter intervalles service recommandés, pièces Vespa genuine huiles recommandées améliorent performance longévité significativement ; variante électrique Vespa Elettrica combine design classique technologie électrique moderne",
+    "source": "mouthshut.com, modernvespa.com, maxximmotorsports.com, motorcyclenews.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

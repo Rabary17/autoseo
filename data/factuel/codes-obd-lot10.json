@@ -1,0 +1,254 @@
+[
+  {
+    "code": "P1101",
+    "libelle": "Probleme de rapport air/carburant massique ou volumetrique - plage/performance",
+    "causes_courantes": "Debitmetre MAF (mass airflow) defaillant, fuite d'admission d'air, injecteur encrassé, filtre a air tres encrassé, capteur d'oxygene defaillant, pression carburant anormale",
+    "source": "obd-codes.com, yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P1102",
+    "libelle": "Systeme de diagnostic - circuit moteur insuffisant",
+    "causes_courantes": "Capteur en circuit ouvert ou defaillant, cablage endommagé, connecteur corrode, calculateur defaillant",
+    "source": "obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1111",
+    "libelle": "Capteur de temperature d'air admission (IAT) - signal intermittent",
+    "causes_courantes": "Connecteur lache ou corrode, cablage endommage par intermittence, capteur IAT vieillissant",
+    "source": "yourmechanic.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1117",
+    "libelle": "Capteur ECT (temperature liquide refroidissement) - correlation problematique",
+    "causes_courantes": "Divergence entre capteur ECT et capteur IAT hors tolerance, thermostat bloqué, cablage endommagé",
+    "source": "repairpal.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1131",
+    "libelle": "Sonde lambda (banc 1) - signal intermittent ou erratique",
+    "causes_courantes": "Sonde lambda vieillissante, connecteur lache ou corrode, cablage endommagé, fuite d'echappement",
+    "source": "obd-codes.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P1151",
+    "libelle": "Sonde lambda (banc 2) - signal intermittent ou erratique",
+    "causes_courantes": "Sonde lambda banc 2 vieillissante ou defaillante, cablage ou connecteur instable",
+    "source": "yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1157",
+    "libelle": "Chauffage sonde lambda (banc 2, capteur 2) - signal erratique",
+    "causes_courantes": "Sonde lambda aval banc 2 chauffage intermittent, connecteur ou cablage defaillant",
+    "source": "carparts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1170",
+    "libelle": "Debit air moteur (MAF) - signal hors tolerances ou erratique",
+    "causes_courantes": "Debitmetre MAF encrassé par les depots, cablage a haute resistance, connecteur endommagé",
+    "source": "yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P1192",
+    "libelle": "Systeme de pompe a carburant - signal bas",
+    "causes_courantes": "Pompe a carburant affaiblie ou en panne, relais de pompe defaillant, cablage court-circuité",
+    "source": "repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1201",
+    "libelle": "Injecteur cylindre 1 - circuit ouvert ou defaut electrique",
+    "causes_courantes": "Injecteur defaillant, connecteur endommagé, cablage coupe, driver d'injecteur du PCM defaillant",
+    "source": "obd-codes.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1205",
+    "libelle": "Injecteur cylindre 5 - circuit ouvert ou defaut electrique",
+    "causes_courantes": "Injecteur cylindre 5 defaillant, connecteur endommagé, cablage coupe",
+    "source": "repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P1220",
+    "libelle": "Papillon electronique (electronic throttle) - plage/performance",
+    "causes_courantes": "Papillon encrasse, capteur de position defaillant, cablage ou connecteur corrode, boitier papillon degrade",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P1250",
+    "libelle": "Systeme d'injection de carburant - pression insuffisante ou erratique",
+    "causes_courantes": "Pompe a carburant faible, regulateur de pression defaillant, filtre carburant colmate, capteur de pression defaillant",
+    "source": "obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P1400",
+    "libelle": "Lecteur de code d'erreur manquant ou defaillant (absence de reponse du calculateur)",
+    "causes_courantes": "Calculateur (PCM/ECM) defaillant ou mal alimente, defaut de communication CAN-bus",
+    "source": "yourmechanic.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3404",
+    "libelle": "Cylindre 2 - circuit de commande de desactivation/soupape d'admission ouvert",
+    "causes_courantes": "Niveau d'huile bas, electrovanne de desactivation cylindre 2 defaillante, cablage en circuit ouvert",
+    "source": "yourmechanic.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3405",
+    "libelle": "Cylindre 3 - circuit de commande de desactivation/soupape d'admission ouvert",
+    "causes_courantes": "Niveau d'huile bas, electrovanne de desactivation cylindre 3 defaillante, cablage endommage",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3406",
+    "libelle": "Cylindre 4 - circuit de commande de desactivation/soupape d'admission ouvert",
+    "causes_courantes": "Electrovanne de desactivation cylindre 4 defaillante, cablage en circuit ouvert, niveau d'huile bas",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3407",
+    "libelle": "Cylindre 5 - circuit de commande de desactivation/soupape d'admission ouvert",
+    "causes_courantes": "Defaut de commande cylindre 5 (VVT - Variable Valve Timing), electrovanne defaillante, cablage",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3408",
+    "libelle": "Cylindre 6 - circuit de commande de desactivation/soupape d'admission ouvert",
+    "causes_courantes": "Electrovanne de desactivation cylindre 6 defaillante, cablage endommage",
+    "source": "carparts.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3450",
+    "libelle": "Systeme de desactivation de cylindres (Banc 2) - dysfonctionnement",
+    "causes_courantes": "Niveau ou pression d'huile bas, electrovanne de desactivation cylindres banc 2 defaillante, cablage endommage",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3500",
+    "libelle": "Systeme de distribution variable soupape d'admission (VVT-i/CVVT Banc 1) - dysfonctionnement",
+    "causes_courantes": "Liquide de distribution degrade ou niveau bas, electrovannes de calage variable defaillantes, cablage ou connecteur endommagé, chaine de distribution allongee",
+    "source": "yourmechanic.com, carparts.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P3505",
+    "libelle": "Systeme de distribution variable soupape d'echappement (VVT-e, CVVT Banc 1 echappement) - dysfonctionnement",
+    "causes_courantes": "Electroniquement : capteur de position arbre a cames echappement defaillant ou cablage, mecaniquement : verouillage defaillant, chaine ou courroie allongee",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3510",
+    "libelle": "Systeme de distribution variable soupape d'admission (VVT Banc 2) - dysfonctionnement",
+    "causes_courantes": "Calage variable des soupapes banc 2 defaillant, electrovannes banc 2 defaillantes, liquide de distribution bas",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3600",
+    "libelle": "Pompe a eau entrainte par la transmission (hybrid) - dysfonctionnement",
+    "causes_courantes": "Pompe a eau electrique defaillante (sur vehicules hybrides), cablage ou connecteur endommagé, systeme de refroidissement defaillant",
+    "source": "yourmechanic.com, hybrid2go.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3700",
+    "libelle": "Chauffage catacytique post-combustion - dysfonctionnement",
+    "causes_courantes": "Catalyseur de post-combustion degrade, injecteur de carburant post-combustion defaillant, cablage ou connecteur de commande endommagé, allumage retarde non execute",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3800",
+    "libelle": "Systeme de confinement de vapeurs de carburant (EVAP II) - pression excessive dans le reservoir",
+    "causes_courantes": "Electrovanne de mise a l'air EVAP bloquee fermee, filtre a charbon sature ou defaillant, prise d'air obstruee, systeme pressurise anormalement",
+    "source": "carparts.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3900",
+    "libelle": "Systeme de suspension pneumatique - dysfonctionnement",
+    "causes_courantes": "Compresseur de suspension pneumatique defaillant, electrovannes de commande d'amortissement defaillantes, cablage ou connecteur endommage, fuites de gaz dans les ressorts pneumatiques",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4000",
+    "libelle": "Systeme de recuperation de chaleur d'echappement - dysfonctionnement",
+    "causes_courantes": "Vanne de derivation d'echappement defaillante, capteur de temperature d'echappement defaillant, cablage endommagé, echangeur thermique colmate",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4100",
+    "libelle": "Actionneur commande du volume de l'admission - circuit ouvert (Banc 1)",
+    "causes_courantes": "Actionneur d'admission variable defaillant, cablage en circuit ouvert, connecteur debranche, fusible grille",
+    "source": "carparts.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4200",
+    "libelle": "Systeme de surcharge pneumatique moteur (air spring) - dysfonctionnement",
+    "causes_courantes": "Compresseur de surcharge pneumatique defaillant, reservoir de pression vide ou fuite, electrovanne de commande defaillante, cablage ou connecteur endommagé",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4300",
+    "libelle": "Sonde d'echappement (exhaust sensor) banc 1 - dysfonctionnement",
+    "causes_courantes": "Sonde de temperature d'echappement defaillante, cablage ou connecteur endommagé, fuite ou fracture du conduit d'echappement",
+    "source": "yourmechanic.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4400",
+    "libelle": "Pompe de circulation de liquide moteur - circuit ouvert ou defaillance",
+    "causes_courantes": "Pompe de circulation de liquide moteur defaillante (notamment sur moteurs avec composants complexes), cablage endommagé, relais defaillant, moteur de pompe usé",
+    "source": "yourmechanic.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4500",
+    "libelle": "Commande de cylindre (Selective Cylinder Deactivation) - signal erratique",
+    "causes_courantes": "Electrovanne de desactivation cylindre defaillante, cablage instable, signal du calculateur erratique, pression d'huile insuffisante",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4600",
+    "libelle": "Papillon 2 (secondary throttle) - circuit dysfonctionnement",
+    "causes_courantes": "Papillon secondaire encrasse ou bloque, capteur de position defaillant, actionneur defaillant, cablage ou connecteur endommage",
+    "source": "carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4700",
+    "libelle": "Systeme de freinage moteur (engine braking system) - dysfonctionnement",
+    "causes_courantes": "Electrovanne de freinage moteur defaillante, cablage endommagé, capteur de position defaillant, niveau de liquide hydraulique bas",
+    "source": "yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P4800",
+    "libelle": "Demarrage du moteur - signal incorrect ou temps de demarrage excessif",
+    "causes_courantes": "Demarreur usé ou defaillant, batterie affaiblie, connecteur de batterie corrode, alternateur defaillant, calculateur defaillant",
+    "source": "yourmechanic.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  }
+]

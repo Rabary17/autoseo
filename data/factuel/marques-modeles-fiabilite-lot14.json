@@ -1,0 +1,149 @@
+[
+  {
+    "modele": "Tesla Model S (2020+, versions Dual Motor et Plaid)",
+    "score_fiabilite": "fiabilite globale jugee correcte, taux de pannes Tesla moins de 2% par an selon Impact Report 2024 ; cependant le Model S affiche des retours utilisateurs plus nuances que Model 3",
+    "pannes_courantes": "hayon motorise sujet a defaillances de verins, capteurs de position ou systeme de fermeture assistee, avec coffre mal qui s'ouvre de travers ou s'arrete en cours de mouvement ; problemes climatisation avec perte de froid ou compresseur defaillant ; bugs logiciels courants incluant redemarrages de l'ecran central 15 pouces (1-2 fois par mois selon retours) et freinages fantomes de l'Autopilot signales sur 0,5% des trajets environ ; infiltrations d'eau sur premiers millesimes 2019-2020 dues a defauts d'ajustement de carrosserie",
+    "source": "fiches-auto.fr, model-sport.com, rouleur-electrique.fr, carverif.fr, larevueautomobile.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Tesla Model X (2020+, versions Dual Motor et Plaid)",
+    "score_fiabilite": "note moyenne propriaires rapportee a 6,5/10 sur retours consultes ; consideree comme le modele Tesla le moins fiable selon plusieurs sources ; versions Dual Motor connaissent vibrations marquees a l'acceleration",
+    "pannes_courantes": "portes Falcon Wing et leurs capteurs source majeure de problemes selon propriaires ; vibrations et tremblements a l'acceleration lies a usure prematuree des demi-arbres de transmission avant sur versions Dual Motor ; suspension pneumatique fragile avec defaillances de capteurs de hauteur, blocs de valves ou compresseur (affaissement lateral ou voiture qui monte mal) ; train avant avec jeu ou usure prematuree sur bras superieurs, triangles et rotules causant claquements sur bosses et grincements ; bugs logiciels et redemarrages d'ecran central frequents ; usure batterie precoce signalee par certains proprietaires apres 100 000km",
+    "source": "caradisiac.com, fiches-auto.fr, carverif.fr, model-sport.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Polestar 2 (2020+, versions Single Motor et Dual Motor, 62/77 kWh)",
+    "score_fiabilite": "fiabilite globale decrite comme correcte selon retours propriaires ; batteries decrites comme conservant environ 90% de capacite initiale a 100 000km ; versions post-2023 ameliorees suite au restylage de mi-2023",
+    "pannes_courantes": "module TCAM (Telematics and Connectivity Antenna Module) identifie comme le principal probleme connu, pouvant necessiter remplacement chez concessionnaire ; freezes complets de l'ecran d'infodivertissement signales par certains proprietaires ; versions anterieures a 2023 avec plus de pannes rapportees qu'apres le restylage ; batterie jugee fiable avec garantie 8 ans ou 160 000km ; moteurs et systeme de propulsion rarement problematiques",
+    "source": "monoccasgarantie.fr, polestar-forum.com, actumecanique.fr, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Polestar 3 (2023+, electrique, 111/111 kWh)",
+    "score_fiabilite": "fiabilite globale consideree comme satisfaisante ; plateforme Volvo apportant credibilite technique ; soucis logiciels rapportes mais resolus via mises a jour selon sources",
+    "pannes_courantes": "a verifier en nombre de cas — problemes logiciels identifes comme principaux soucis rapportes, corriges lors de mises a jour ; donnees limitees sur pannes specifiques en France, modele relativement recent avec base clientele plus reduite que Polestar 2",
+    "source": "caradisiac.com, polestar-forum.com, actumecanique.fr, vivacar.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Genesis GV60 (2022+, electrique, 62/77 kWh)",
+    "score_fiabilite": "fiabilite en milieu de gamme selon Consumer Reports 2025 ; Genesis classe 14e sur 22 marques en fiabilite, ameliorant sa position de 18e en 2024",
+    "pannes_courantes": "ecrans du tableau de bord et infodivertissement sujets a arrets ou redemarrages inattendus en roulant selon rappel Genesis 2025 (defaut logiciel) ; systeme de chauffage pouvant s'arreter avec delais d'attente longs pour pieces de remplacement, particulierement problematique en regions froides ; problemes ICCU (Integrated Charging Control Unit) apparus sur plusieurs modeles E-GMP, affectant charge et mise en route du vehicule ; fiabilite batterie jugee satisfaisante selon donnees disponibles",
+    "source": "caradisiac.com, guideautoweb.com, jdpower.com, recharged.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Daihatsu Terios (generations recentes, moteur 1.3 essence 3 cylindres)",
+    "score_fiabilite": "a verifier — moteur essence decrit comme tres fiable globalement, vehicule qualifie d'extremement fiable par sources francaises sur longue duree",
+    "pannes_courantes": "moteur non compatible avec carburant E10 95 (SP95-E10), pouvant causer problemes selon retours ; problemes de ratés de cylindres rapportes sur forums ; sonde lambda sujette a defaillance ; voyant de graissage (pression huile) rapporte sur certains exemplaires, particulierement apres 100 000km ; donnees limitees sur pannes specifiques en France comparees a autres marques, modele peu repandu en marche francais",
+    "source": "largus.fr, auto-doc.fr, my-procar.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ssangyong Tivoli (toutes generations, moteurs essence et diesel 1.6 e-XDi)",
+    "score_fiabilite": "fiabilite globale notee 8/10 par sources ; avis proprietaires mitiges avec 66,67% envisageant reprendre meme modele, laissant supposer une fiabilite acceptable malgre quelques soucis",
+    "pannes_courantes": "systeme de demarrage sans contact fragile, problemes frequemment resolus par changement des piles des cles electroniques ; mises a jour systeme navigation necessitant regulierement reprogrammation via carte SD ; injecteurs, FAP, culasse et sonde regime moteur rapportes sur proportion significative selon temoignages ; coffre ne se ferme plus correctement cite par certains proprietaires ; simplicite construction permettant reparations chez mecanicien generaliste sans acces concessionnairespecialise ; rappels en 2018 avec 2 defauts identifies",
+    "source": "caradisiac.com, largus.fr, dailydriven.ro, my-procar.com, club.auto-doc.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi Q4 e-tron (2021+, electrique, versions eDrive/Quattro, 55/60/82 kWh)",
+    "score_fiabilite": "note legrement en dessous de moyenne selon Consumer Reports 2024 ; fiabilite variable selon millesimes avec ameliorations rapportees apres 2024",
+    "pannes_courantes": "rappel 2024 sur moteur pompe unite de stabilisation electronique pouvant manquer vis (25.03-23.04.2024) entrainant detachement moteur et panne frein hydraulique ; problemes logiciels des feux avant, selecteur de vitesse, chargeur 12V instable ; infotainment et connectivite application instables causant pertes d'historique navigation et reinitialisations spontanees de l'ecran en roulant ; defauts materiaux avec finitions insuffisantes, portes qui ferment mal, attentes liees recharge et deception autonomie ; tests independants revelent peu defauts mecaniques graves, problemes surtout electroniques et logiciels",
+    "source": "fiches-auto.fr, icarsoft-france.fr, consumerreports.org, carverif.fr, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Porsche Taycan (2019+, electrique, versions base/Turbo/Turbo S)",
+    "score_fiabilite": "fiabilite amelioree substantiellement a partir de 2021 ; versions 2023-2024 considerees comme les plus affinees avec meilleure infotainment ; retours proprietaires mitiges entre avis tres positifs et pannes inattendues peu communes chez Porsche",
+    "pannes_courantes": "rappels multiples couvrant court-circuits dans modules batterie haute tension sur production 2020-2024 entrainant risque incendie, affectant plus 3500 exemplaires en France ; probleme batterie traction publie affectant assemblage 03.07.2018-04.03.2024 ; defauts majeurs par categorie : Electrique (14), Freins (11), Batterie (11), Sieges (8), Suspension (5), Boite Automatique (3), Lumieres (3) ; 2025 a enregistre 2 problemes freins/systeme electrique ; millesimes pre-2021 avec defauts plus frequents, versions modernes beaucoup plus stables ; agrements de conduite juges excellents par proprietaires satisfaits",
+    "source": "defauts.fr, caradisiac.com, automobile-propre.com, tacticengineering.com, ownerkeep.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW iX et iX1 (2021+, electrique, versions 55/82 kWh)",
+    "score_fiabilite": "BMW iX1 note 7,3/10 ; BMW dans ensemble se porte bien en fiabilite recemment selon retours ; versions 2023-2024 bonnes fenetres achat en garantie avec carnet numerique et mises a jour appliquees",
+    "pannes_courantes": "problemes recharge notamment defaillances systeme charge 'plug and charge' sur bornes publiques ; bugs logiciels frequents : CarPlay dysfonctionnant, cadran s'eteint en roulant, conduite autonome se coupe sans raison, problemes logiciels generalises ; servo-frein rapporte defaillant chez certains proprietaires ; dysfonctionnement phares automatiques, trappe recharge electrique entrant seulement partiellement ; retours proprietaires francais evoquent ecran principal se reinitialisant seul causant perte historique navigation, finitions insuffisantes, portes fermant mal",
+    "source": "carverif.fr, caradisiac.com, automobile-propre.com, consumerreports.org, ma-bmw.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes-Benz EQE (2021+, electrique, versions eDrive/AMG, 77/107 kWh)",
+    "score_fiabilite": "fiabilite variable selon proprietaires ; avis contrastes entre ceux la jugeant fiable/confortable et autres rapportant pannes precoces apres peu kilometrage ; fiabilite Mercedes progresse 2025 selon donnees disponibles",
+    "pannes_courantes": "pannes batterie rapportees chez certains proprietaires avec inquietudes concernant defaillances lors trajets ; suspension Airmatic reste probleme recurrent particulierement sur EQE comme sur autres Mercedes (compresseur air ou amortisseurs pneumatiques fatiguant) ; donnees limitees sur pannes specifiques en France comparees a autres marques premium ; modele relativement recent avec nombre de cas documente moins important que generalistions plus anciennes",
+    "source": "caradisiac.com, icarsoft-france.fr, delivauto.fr, automobile-propre.com, forum-mercedes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW i4 (2021+, electrique, versions eDrive40/M50)",
+    "score_fiabilite": "fiabilite globale decrite comme satisfaisante selon retours proprietaires ; peu de problemes majeures rapportes apres dizaines milliers km ; BMW globalement en bonne position fiabilite recemment",
+    "pannes_courantes": "climatisation tombee en panne une semaine apres achat chez quelques proprietaires, necessitant remplacement compresseur puis evaporateur ; rappels 2024 : fissure poutre chassis possible (1150 exemplaires i4 Gran Coupe, i4 eDrive40/xDrive40/M50 specifications americaines principalement) ; rappel fevrier 2024 pour 4 voitures batterie haute tension surchauffant ; batterie garantie 8 ans ou 160 000km ; retours majoritairement positifs avec bonnes finitions et absence problemes majeurs rapportees",
+    "source": "icarsoft-france.fr, defauts.fr, i4talk.com, motor1.com, forumbmw.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Ioniq 6 (2022+, electrique, versions Standard/Long Range, 62/77 kWh)",
+    "score_fiabilite": "a verifier — modele relativement nouveau avec donnees limitees ; retours 7 temoignages sur fiches-auto.fr consultee, donnees moins consolidees que modeles etablis",
+    "pannes_courantes": "rappel majeur 2024 : defaillance ICCU (Integrated Charging Control Unit) et batterie 12V pouvant s'arreter ou ne pas se maintenir correctement, bloquant vehicule meme batterie haute tension suffisante (affects Ioniq 5/6 et Kia EV6) ; recharge AC pouvant ralentir ou s'interrompre notamment borne 11kW ; panneau exterieur port recharge ne fixe correctement et risque detachement roulant ; problemes cables vitres electriques ayant casse rapportes ; alertes vitesses et panneaux limitation bippant continuellement selon certains ; reprogrammation obligatoire concession pour rappel, livraisons temporairement suspendues pour mise a jour avant livraison",
+    "source": "fiches-auto.fr, icarsoft-france.fr, lavoiturehybride.com, kiaevforums.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia EV9 (2023+, electrique, 3 rangees, 76/99 kWh)",
+    "score_fiabilite": "a verifier — modele 2023+ avec donnees de fiabilite limitees en France, population proprietaires moins importante que modeles etablis",
+    "pannes_courantes": "batterie 12V : probleme recurrent rapporte par proprietaires ; dysfonctionnements application acces vehicule et limitations technologie NFC (une seule carte par vehicule) ; rappel 2024 majeur pour 6 defauts identifies amenageant concessionnairevisites ; certains proprietaires rapportent pannes importantes peu temps apres achat entrainant regrets, d'autres satisfaits apres plusieurs mois utilisation ; donnees spécifiques limitees sur pannes courantes comparees a modeles plus etablis",
+    "source": "defauts.fr, icarsoft-france.fr, caradisiac.com, kiaevforums.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Solterra (2022+, electrique, version base, 71/82 kWh)",
+    "score_fiabilite": "fiabilite laisse a desirer selon retours consultes, contrairement productions Subaru anterieures ; evaluations sous moyenne pour vehicule electrique partageant plateforme Toyota BZ4X",
+    "pannes_courantes": "phares adaptatifs fonctionnant aleatoirement ; chargeur sans fil cessant fonctionner sans raison apparente ; incidents graves rapportes dont roues se desserrant spontanement ; batterie 12V auxiliaire se dechargeant inattendue notamment vehicles stationnees longuement, avec symptomes voiture completement non-reactive apres 1-2 jours ; bugs HVAC logiciels pouvant desactiver compresseur et crippler degivre pare-brise conditions froides ; lenteurs systeme infotainment, coupures Bluetooth aleatoires, bruits suspects, problemes materiels (miroirs vibrantes, trappe charge collante) ; usure pneus d'origine rapportee sous 20 000km sur certains exemplaires du fait poids eleve (1900-2200kg)",
+    "source": "caradisiac.com, icarsoft-france.fr, recharged.com, matscarlux.fr, rpmweb.ca — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Cupra Born (2021+, electrique, 62L/82L kWh)",
+    "score_fiabilite": "fiabilite jugee correcte pour vehicule electrique innovant moderne, mais faiblesses importantes niveau electronique et logiciels selon retours",
+    "pannes_courantes": "systeme infodivertissement presentant blocages, redemarrages, lenteurs ou pertes temporaires fonctions (navigation, radio, reglages) rendant certaines fonctions indisponibles jusqu redemarrage ou mises a jour ; defaillances climatisation avec perte froid, desembuage moins efficace, chauffage insuffisant ; caamera recul affichant ecran noir, image figeee ou indisponible avec parfois aides stationnement simultanement indisponibles ; capteurs tactiles poignees porte tombant en panne apres 12 000-18 000km particulierement conditions humides ; rappel 2026 pour module defectueux batterie haute tension (09.02.2023-30.12.2025) risquant surchauffe et incendie",
+    "source": "auto-doc.fr, icarsoft-france.fr, fiches-auto.fr, automobile-propre.com, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen ID.5 (2021+, electrique, 62/77/82 kWh)",
+    "score_fiabilite": "fiabilite globale satisfaisante apres 4 ans commercialisation selon sources ; gamme ID. affichant fiabilite globalement satisfaisante avec premiers modeles ayant connu quelques bugs logiciels",
+    "pannes_courantes": "donnees limitees specifiques ID.5 France ; partage base technique ID.4 suggerant que certains problemes ID.4 pourraient s'appliquer ; les problemes logiciels etant principal probleme sur premieres generations ID. avant corrections ; donnees specifiques insiffisant pour etablir liste pannes courantes consolidee pour ce modele specifique",
+    "source": "icarsoft-france.fr, caradisiac.com, ev-market.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi e-tron S (2018+, electrique, 95 kWh)",
+    "score_fiabilite": "retours proprietaires montrant bonne fiabilite chez quelques proprietaires (ex. e-tron Q8 2019 : 175 000km sans problemes) ; fiabilite variable selon exemplaires et conditions utilisation",
+    "pannes_courantes": "rappel 2024 Q4 e-tron identique base : moteur pompe stabilisation electronique pouvant manquer vis (impact potentiel freinage) ; infltrations eau batterie rapportees sur certain exemplaires ; cables recharge domestique 30A necessitant changement chez certains proprietaires ; SAV Audi decrit insuffisant par certains clients avec pannes non resolues et aucune solution proposee ; donnees specifiques e-tron S limitees comparees a variantes Q4/Q8 plus commercialisees ; fiabilite globale acceptable selon temoignages disponibles avec reservations SAV",
+    "source": "icarsoft-france.fr, automobile-propre.com, audipassion.com, carverif.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroen ë-C3 (2024+, electrique, 44/50 kWh)",
+    "score_fiabilite": "fiabilite insuffisante selon retours ; vehicule commercialise trop tot selon sources specialisees, bugs et pannes s'enchainant rapidement apres livraison",
+    "pannes_courantes": "problemes charge ne se lancant pas ; voitures refusant demarrer lendemain livraison avec voyant rouge defaut batterie peu kilometrage (24km rapportes) ; risques arret soudain avec blocage roues plusieurs dizaines minutes et impossibilite recharger selon temoignages ; pannes logicielles multiples rapportees phase demarrage commercialisation ; Citroen a engage campagne mises a jour premiere serie e-C3 livrees France suite aux dysfonctionnements nombreux et bloquants ; notes livraisons precipitees fin septembre 2024 pour respecter echeances leasing social sans correction complete bugs anterieurs ; modele presente situation difficile lors lancement 2024",
+    "source": "largus.fr, fiches-auto.fr, lesvoitures.fr, caradisiac.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat 600e (2023+, electrique, 44/54 kWh)",
+    "score_fiabilite": "fiabilite insuffisante selon retours consultes ; cas pannes graves concernent particulierement premieres series production ; qualite controle amelioree sur modeles commercialises depuis mi-2024 avec moins problemes rapportes",
+    "pannes_courantes": "defauts traction electrique avec panne moteur electrique, direction bloquee, passage force position parking ou immobilisation complete ; systeme climatisation defaillances recurentes rapportees ; traction electrique persistant malgre mises a jour sur certains exemplaires ; ecrans defaillants avec pieces remplacement non produites usine causant immobilisations prolongees ; delais reparation tres longs avec absence information precise sur nature panne ou duree reparation rapportees sur certains cas ; 19 temoignages pannes enregistres fiches-auto.fr dont plusieurs immobilisations plusieurs mois ; qualite construction amelioree partir mi-2024 selon sources, premiere serie problematique",
+    "source": "fiches-auto.fr, iodines.fr, club.auto-doc.fr, automobile-propre.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault 5 E-Tech (2024+, electrique, 52/87 kWh)",
+    "score_fiabilite": "fiabilite insuffisante pour phase lancement 2024-2025 ; modele comportant problemes recurrents affectant grande partie premiere serie production",
+    "pannes_courantes": "probleme majeur immobilisation vehicule rendant impossible passage mode conduite (D ou R), vehicule bloque sur mode neutre (N) rapporte comme le dysfonctionnement le plus frequent ; 15 722 modeles assembles 01.09-23.12.2024 Douai potentiellement affectes par ce probleme representant quasi totalite modeles livres periode ; rappel Renault concernant risque non-demarrage affectant production 2024, necessitant reprogrammation calculateur onduleur moteur electrique ; rappel 2026 anomalie production pouvant provoquer delaminage anode entrainant court-circuit interne, perte autonomie, impossibilite recharge ou fuite thermique risquant incendie sur certains exemplaires ; Renault travaille resolution via mise a jour OTA sinon intervention atelier requise 100% prise charge ; ventes faibles initialement affectees par problemes production",
+    "source": "largus.fr, fiches-auto.fr, icarsoft-france.fr, evomag.fr, clubr5.fr — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

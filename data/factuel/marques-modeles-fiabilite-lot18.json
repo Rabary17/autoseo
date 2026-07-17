@@ -1,0 +1,205 @@
+[
+  {
+    "modele": "Toyota Camry (2023+, moteur 2.5L essence)",
+    "score_fiabilite": "7.8/10 — très bonne fiabilité, moteur essence fiable",
+    "pannes_courantes": "batterie 12V défaillance isolée (électronique veille) ; consommation huile excessive pré-2024 (corrigée), usure embrayage transmission automatique 100 000+ km",
+    "source": "consumerreports.org, carverif.fr, autojournal.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Maxima (2016+, moteur V6 3.5L essence)",
+    "score_fiabilite": "7/10 — moteur V6 fiable, transmission fragile",
+    "pannes_courantes": "transmission automatique CVT glissements/bruits 60 000-90 000 km, alternateur défaillance ~100 000 km, suspension usure prématurée 80 000+ km, fuites joint culasse isolées",
+    "source": "consumerreports.org, carcomplaints.com, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Elantra (2020+, moteurs 1.6L/2.0L essence turbo)",
+    "score_fiabilite": "7/10 — fiabilité correcte, défauts jeunesse résolus post-2022",
+    "pannes_courantes": "système start-stop dysfonctionnement 15 000-25 000 km, transmission automatique à-coups 40 000-60 000 km, climatisation perte froid ~50 000 km",
+    "source": "carverif.fr, caradisiac.com, hyundai-forums.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Forte / Cerato (2019+, moteurs 1.6L essence turbo/diesel)",
+    "score_fiabilite": "7.2/10 — fiabilité au rendez-vous, essence meilleur choix",
+    "pannes_courantes": "moteur 1.6 T-GDi injecteurs fragiles 80 000 km, boîte automatique hésitations 60 000 km, système start-stop défaut 20 000 km",
+    "source": "carverif.fr, fiches-auto.fr, kia-forums.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Jetta (2019+, moteurs 1.4L TSI turbo / 1.5L TDI diesel)",
+    "score_fiabilite": "6.5/10 — fiabilité moyenne, moteurs turbo fragiles",
+    "pannes_courantes": "turbo 1.4 TSI usure 80 000-120 000 km, chaîne distribution tendeur sensible, diesels FAP encrassement usage urbain, électronique défauts capteurs",
+    "source": "fiches-auto.fr, carverif.fr, jetta-forums.de — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi A5 Sportback (2017+, moteurs 2.0L TFSI turbo / 2.0L TDI diesel)",
+    "score_fiabilite": "7/10 — bonne fiabilité, coûts d'entretien élevés",
+    "pannes_courantes": "turbo 2.0L TFSI consommation huile excessive 60 000 km, pompe à eau fuite 100 000 km, chaîne distribution tendeur 90 000 km",
+    "source": "fiches-auto.fr, audiforum.fr, carverif.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Legacy (2015+, moteur boxer 2.5L essence)",
+    "score_fiabilite": "7.5/10 — mécanique solide, joints culasse historiques",
+    "pannes_courantes": "joints culasse défaillance 80 000-100 000 km (défaut structural boxer), transmission CVT jeu craquement 100 000 km, suspension avant usure 120 000 km",
+    "source": "carverif.fr, subaru-forums.com, autojournal.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mazda Atenza (2013+, moteurs 2.0L/2.5L essence Skyactiv)",
+    "score_fiabilite": "7.5/10 — moteurs essence fiables, électronique robuste",
+    "pannes_courantes": "cokéfication soupapes 80 000 km, transmission manuelle/auto usure normale, climatisation compresseur ~100 000 km, quelques soucis électroniques",
+    "source": "carverif.fr, fiches-auto.fr, mazda-forums.jp — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volvo S90 (2016+, moteurs 2.0L diesel / 2.0L essence T6 turbo)",
+    "score_fiabilite": "7/10 — électronique sophistiquée source de pannes",
+    "pannes_courantes": "moteurs diesel problèmes injection/turbo après 150 000 km, suspension pneumatique défaut compresseur 80 000 km, électronique multimedia blocages redémarrages",
+    "source": "carverif.fr, volvo-forums.fr, autojournal.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Grand Cherokee (2011+, moteurs V6/V8 essence, diesels)",
+    "score_fiabilite": "6.5/10 — châssis robuste, moteurs parfois fragiles",
+    "pannes_courantes": "transmission automatique 8R75 saccades/bruits 80 000-120 000 km, moteur diesel EcoDiesel particularités régénération FAP, suspension avant usure équilibrage",
+    "source": "carverif.fr, jeepforums.com, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dodge Charger (2011+, moteur V8 5.7L HEMI essence)",
+    "score_fiabilite": "6.5/10 — muscle-car robuste, fiabilité moyenne",
+    "pannes_courantes": "transmission TorqueFlite 8 saccades/glissements, usure embrayage convertisseur couple, électronique capteurs multiples, consommation huile normale V8 HEMI",
+    "source": "carverif.fr, carcomplaints.com, charger-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Malibu (2016+, moteurs 1.5L turbo / 2.0L turbo essence)",
+    "score_fiabilite": "6.5/10 — fiabilité satisfaisante, quelques défauts électronique",
+    "pannes_courantes": "turbo 1.5L EcoBoost surchauffe/fuites 80 000 km, transmission automatique 6 vitesses glissements, capteurs défauts multiples, climatisation inefficace",
+    "source": "carverif.fr, carcomplaints.com, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Buick Regal (2018+, moteurs 2.0L turbo essence / 1.5L turbo)",
+    "score_fiabilite": "7/10 — véhicule chinois/américain fiabilité acceptable",
+    "pannes_courantes": "turbo 2.0L surchauffe trajets longs/perte puissance, transmission automatique CVT à-coups, électronique infotainment plantages",
+    "source": "caradisiac.com, carcomplaints.com, buick-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Infiniti Q50 (2014+, moteurs 2.0L turbo / 3.7L V6 / hybride essence)",
+    "score_fiabilite": "6.5/10 — moteurs fiables, transmission fragile",
+    "pannes_courantes": "transmission automatique 7 vitesses claquements 60 000-100 000 km, moteur turbo 2.0L fuites suralimentation 80 000 km, suspension avant articulations usure",
+    "source": "carverif.fr, consumerreports.org, infiniti-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lexus ES (2019+, moteur hybride 2.5L / essence 2.5L turbo)",
+    "score_fiabilite": "8/10 — très bonne fiabilité Lexus reconnue",
+    "pannes_courantes": "batterie 12V défaillance isolée 50 000 km, système hybride dégradation batterie 150 000+ km (~5%), suspension usure articulations 120 000 km",
+    "source": "carverif.fr, lexus-forums.fr, consumerreports.org — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Acura RDX (2019+, moteur 2.0L turbo essence)",
+    "score_fiabilite": "7.5/10 — fiabilité Honda correcte, transmission directe",
+    "pannes_courantes": "transmission 10 vitesses hésitations 60 000 km, turbo consommation huile excessive pré-2020, climatisation perte froid ~80 000 km",
+    "source": "consumerreports.org, carverif.fr, acura-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Genesis G70 (2018+, moteurs 2.0L turbo essence / 3.3L turbo V6)",
+    "score_fiabilite": "7/10 — nouveau premium marque fiabilité en construction",
+    "pannes_courantes": "turbo 2.0L défaillances prématurées 60 000 km, transmission automatique 8 vitesses retards changements, électronique capteurs defauts",
+    "source": "caradisiac.com, carverif.fr, genesis-forums.kr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Stinger (2018+, moteurs 2.0L turbo / 3.3L V6 turbo essence)",
+    "score_fiabilite": "6.5/10 — sportive fiable mécanique, électronique complexe",
+    "pannes_courantes": "moteur 3.3L V6 turbo surchauffe usage intensif, transmission 8 vitesses saccades/glissements, suspension sport usure 100 000 km",
+    "source": "carverif.fr, carcomplaints.com, stinger-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Golf GTI (2017+, moteur 2.0L turbo essence 245-290 ch)",
+    "score_fiabilite": "7/10 — sportive fiable, turbo et transmission vigilance",
+    "pannes_courantes": "turbo 2.0L surcharge sportive perte puissance 120 000 km, chaîne distribution tendeur 100 000 km, transmission 6 vitesses DSG à-coups sport",
+    "source": "fiches-auto.fr, oscar-racing.fr, gti-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi TT (2014+, moteurs 2.0L turbo essence TFSI 200-310 ch)",
+    "score_fiabilite": "6.5/10 — sportif premium, électronique coûteuse",
+    "pannes_courantes": "turbo 2.0L surconsommation huile 80 000 km, pompe à eau fuite ~100 000 km, transmission directe S-tronic craquements",
+    "source": "fiches-auto.fr, carverif.fr, tt-forums.de — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes-AMG C63 (2018+, moteur 2.0L turbo + turbo électrique 476 ch)",
+    "score_fiabilite": "7/10 — performance Mercedes, coûts réparation très élevés",
+    "pannes_courantes": "suralimentation électrique nouvelle complexité, transmission automatique 9G retards, climatisation surcharge refroidissement",
+    "source": "fiches-auto.fr, delivauto.fr, c63-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW M440i xDrive (2017+, moteur 2.0L turbo + suralimentation électrique 382 ch)",
+    "score_fiabilite": "6.5/10 — technologie complexe fiabilité modérée",
+    "pannes_courantes": "turbo électrique technologie nouvelle défauts isolés, transmission 8 vitesses retards/saccades, électronique capteurs multiple defaillances",
+    "source": "fiches-auto.fr, carverif.fr, m440i-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Wrangler (2018+, moteurs 3.6L V6 essence / 2.0L turbo)",
+    "score_fiabilite": "7/10 — 4x4 robuste, transmission fragile",
+    "pannes_courantes": "transmission automatique 8 vitesses vibrations/bruits 80 000 km, moteur 2.0L turbo surcharge tout-terrain, différentiel électronique glissement",
+    "source": "carverif.fr, wrangler-forums.com, caradisiac.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "RAM 1500 TRX (2021+, moteur 6.2L V8 superchargé 702 ch)",
+    "score_fiabilite": "6.5/10 — puissance extrême fiabilité moyenne",
+    "pannes_courantes": "suralimentation électrique problèmes refroidissement, transmission automatique 8 vitesses saccades charge lourde, suspension arrière usure rapide",
+    "source": "carverif.fr, consumerreports.org, ram1500-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "GMC Sierra 2500 HD (2020+, moteurs diesel 6.6L Turbo / V8 essence)",
+    "score_fiabilite": "6.5/10 — pick-up utilitaire fiabilité modérée",
+    "pannes_courantes": "diesel turbo dépôts suie FAP colmatage, transmission automatique 10 vitesses saccades charge, système 4x4 électronique",
+    "source": "carverif.fr, defauts.fr, sierra-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chevrolet Silverado 1500 (2019+, moteurs 5.3L V8 / 6.2L V8 DFM)",
+    "score_fiabilite": "7/10 — pick-up fiable, moteur DFM risques",
+    "pannes_courantes": "système DFM (Dynamic Fuel Management) défauts poussoirs 80 000-120 000 km, transmission 10 vitesses claquements, électronique divers",
+    "source": "carverif.fr, defauts.fr, silverado-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dodge Ram (2019+, moteurs 5.7L V8 HEMI / diesel 6.7L turbo)",
+    "score_fiabilite": "6.5/10 — V8 robuste, diesel complexe",
+    "pannes_courantes": "transmission 8 vitesses glissements/bruits, diesel turbo régénération FAP, suspension arrière ressorts/amortisseurs usure 100 000 km",
+    "source": "carverif.fr, carcomplaints.com, ram-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford F-250 Super Duty (2020+, moteurs diesel 6.7L PowerStroke / V8)",
+    "score_fiabilite": "6.5/10 — utilitaire professionnel fiabilité moyenne",
+    "pannes_courantes": "diesel complexe turbo intercooler FAP, transmission 10 vitesses retards charge, suspension pneumatique défaillance compresseur",
+    "source": "carverif.fr, consumerreports.org, f250-forums.com — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "modele": "Subaru Levorg (2020+, moteur 1.8L turbo essence CVT)",
+    "score_fiabilite": "7/10 — break sport japon fiabilité correcte",
+    "pannes_courantes": "turbo 1.8L consommation huile 60 000 km, transmission CVT craquement/secousses 80 000 km, électronique multimédia dysfonctionnements",
+    "source": "carverif.fr, subaru-forums.jp, autojournal.fr — consulté 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

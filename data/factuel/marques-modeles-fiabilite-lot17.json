@@ -1,0 +1,353 @@
+[
+  {
+    "marque": "Toyota",
+    "modele": "Yaris 2024 (5e génération, essence/hybride)",
+    "motorisation": "essence 1.0L turbo / hybride 1.5L",
+    "score_fiabilite": "7.5/10 — très bonne fiabilité attendue",
+    "pannes_courantes": [
+      { "nom": "Dysfonctionnement système infodivertissement (2023-2024)", "cout": "300-800€", "gravite": "mineure" },
+      { "nom": "Batterie 12V défaillante (modèles hybrides)", "cout": "200-400€", "gravite": "mineure" },
+      { "nom": "Pompe à eau usure prématurée (modèles essence), rare", "cout": "400-800€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "larevueautomobile.com", "aramisauto.com", "starter-autoecole.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Toyota",
+    "modele": "Rav4 2024 (5e génération, essence/hybride)",
+    "motorisation": "essence 2.5L / hybride 2.5L",
+    "score_fiabilite": "7.8/10 — très bonne fiabilité confirmée",
+    "pannes_courantes": [
+      { "nom": "Câble haute tension hybride corrosion (modèles 2019-2022, amélioration 2023+)", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Suspension vibrations/craquements amortisseurs", "cout": "800-1500€", "gravite": "moyenne" },
+      { "nom": "Bloc moteur porosité fissuration (rare, modèles 2019-2020)", "cout": "3000-6000€", "gravite": "grave" }
+    ],
+    "sources": ["toyotaproblemes.fr", "larevueautomobile.com", "consumerreports.org", "tfc30.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Renault",
+    "modele": "Captur 2024 (2e génération restylée, essence/hybride)",
+    "motorisation": "essence TCe 90/130 / hybride E-TECH 145",
+    "score_fiabilite": "6.5/10 — fiabilité moyenne avec quelques défauts jeunesse",
+    "pannes_courantes": [
+      { "nom": "Boîte E-TECH hybride joint d'étanchéité défaillant", "cout": "2000-3500€", "gravite": "grave" },
+      { "nom": "Écran infodivertissement dysfonctionnement noir/pixels", "cout": "500-1200€", "gravite": "mineure" },
+      { "nom": "Système Start-stop arrêt permanent après 15k-25k km", "cout": "300-600€", "gravite": "mineure" }
+    ],
+    "sources": ["auto-doc.fr", "careco.fr", "planeterenault.com", "oscar-racing.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Peugeot",
+    "modele": "3008 2024 (3e génération, essence/diesel/hybride)",
+    "motorisation": "essence 1.2 PureTech / diesel 2.0 BlueHDi / hybride 1.6",
+    "score_fiabilite": "7/10 — fiabilité améliorée nouvelle génération",
+    "pannes_courantes": [
+      { "nom": "Courroie distribution PureTech 1.2 (pré-2024 essence), corrigée 2024+", "cout": "1500-2000€", "gravite": "grave" },
+      { "nom": "Circuit alimentation carburant rappels (pré-novembre 2024)", "cout": "null", "gravite": "grave" },
+      { "nom": "Système direction problème récall (pré-novembre 2024)", "cout": "null", "gravite": "grave" }
+    ],
+    "sources": ["largus.fr", "larevueautomobile.com", "fiches-auto.fr", "carslift.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Volkswagen",
+    "modele": "Passat 2024 (B8 restylée, essence/diesel)",
+    "motorisation": "essence 1.5 TSI turbo / diesel 2.0 TDI",
+    "score_fiabilite": "6.5/10 — fiabilité moyenne, moteurs turbo fragiles",
+    "pannes_courantes": [
+      { "nom": "Turbocompresseur usure précoce 80k-150k km", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Chaîne distribution usure 1.5 TSI", "cout": "1000-2500€", "gravite": "grave" },
+      { "nom": "Système électrique défaillances multiples", "cout": "500-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["fiches-auto.fr", "auto-doc.fr", "oscar-racing.fr", "caradisiac.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Honda",
+    "modele": "Civic 2024 (11e génération, essence)",
+    "motorisation": "essence 1.5L turbo",
+    "score_fiabilite": "7/10 — bonne fiabilité malgré quelques pannes turbo",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.0 i-VTEC courroie humide casse moteur (anciens, pas 2024)", "cout": "3000-6000€", "gravite": "grave" },
+      { "nom": "Turbocompresseur défaillance 80k-120k km (1.5L turbo)", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Transmission CVT changements saccadés 60k-80k km", "cout": "1500-3000€", "gravite": "grave" }
+    ],
+    "sources": ["largus.fr", "larevueautomobile.com", "auto-doc.fr", "consumerreports.org"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Nissan",
+    "modele": "Qashqai 2024 (3e génération, essence/diesel/hybride)",
+    "motorisation": "essence 1.3 DIG-T / diesel 1.5 dCi / hybride e-Power",
+    "score_fiabilite": "7/10 — fiabilité en progrès génération récente",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.3 DIG-T post-2018 fiabilisé (pas de problème majeur)", "cout": "null", "gravite": "mineure" },
+      { "nom": "Diesel 1.5 dCi post-2017 robustesse reconnue", "cout": "null", "gravite": "mineure" },
+      { "nom": "Système e-Power hybride excellente fiabilité", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["oscar-racing.fr", "larevueautomobile.com", "carverif.fr", "caradisiac.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Peugeot",
+    "modele": "2008 2024 (2e génération restylée, essence/électrique)",
+    "motorisation": "essence 1.2 PureTech turbo / électrique 50 kWh",
+    "score_fiabilite": "7/10 — fiabilité améliorée version 2023+",
+    "pannes_courantes": [
+      { "nom": "Courroie distribution 1.2 PureTech pré-2023 (chaîne 2023+)", "cout": "1500-2000€", "gravite": "grave" },
+      { "nom": "Boîte vitesses défauts août 2024 résolus", "cout": "null", "gravite": "grave" },
+      { "nom": "Batterie électrique (version e-2008) usure progressive", "cout": "2000-4000€", "gravite": "grave" }
+    ],
+    "sources": ["auto-ways.fr", "largus.fr", "oscar-racing.fr", "epavistefrance.net"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Citroën",
+    "modele": "C5 Aircross 2024 (1ère génération, essence/diesel/PHEV)",
+    "motorisation": "essence 1.6 PureTech turbo / diesel 2.0 BlueHDi / hybride rechargeable",
+    "score_fiabilite": "5.5/10 — fiabilité dégradée, nombreux problèmes électroniques",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.2 PureTech 130 courroie désagrégation catastrophique", "cout": "2000-4000€", "gravite": "grave" },
+      { "nom": "Diesel 1.5 BlueHDi chaîne fissuration rappels massifs", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "PHEV batterie 12V défaillante, chargeur embarqué capricieux", "cout": "1500-3000€", "gravite": "grave" }
+    ],
+    "sources": ["oscar-racing.fr", "fiches-auto.fr", "delivauto.fr", "codedefaut.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Hyundai",
+    "modele": "Ioniq 2024 (2e génération, hybride/électrique)",
+    "motorisation": "hybride 1.6 GDi / électrique 84 kWh",
+    "score_fiabilite": "7.5/10 — très bonne fiabilité système hybride",
+    "pannes_courantes": [
+      { "nom": "Batterie 12V court-circuit potentiel (rappel constructeur)", "cout": "500-1000€", "gravite": "mineure" },
+      { "nom": "Moteur hybride 1.6 GDi robustesse reconnue", "cout": "null", "gravite": "mineure" },
+      { "nom": "Autonomie électrique dégradation 10-20% après 100k-150k km", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["conseil-auto-moto.fr", "fiches-auto.fr", "caradisiac.com", "carverif.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Kia",
+    "modele": "Niro 2024 (2e génération restylée, hybride/PHEV)",
+    "motorisation": "hybride 1.6 GDi / PHEV 1.6 GDi",
+    "score_fiabilite": "7/10 — fiabilité correcte post-2023 améliorée",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.6 GDi cokéfication soupapes admission 80k km", "cout": "600-1200€", "gravite": "mineure" },
+      { "nom": "Batterie PHEV dégradation capacité 60k-80k km", "cout": "null", "gravite": "grave" },
+      { "nom": "Boîte DCT secousses 40k-60k km basse vitesse (corrigée 2024)", "cout": "1500-3000€", "gravite": "moyenne" }
+    ],
+    "sources": ["caradisiac.com", "fiches-auto.fr", "carverif.fr", "garagegine.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "BMW",
+    "modele": "Série 3 2024 (G20/G21 berline/break, essence turbo)",
+    "motorisation": "essence 2.0L turbo 4-cyl / 3.0L turbo 6-cyl",
+    "score_fiabilite": "7/10 — retour à fiabilité, génération G20 éprouvée",
+    "pannes_courantes": [
+      { "nom": "Moteur N20 (F30 pré-2016) chaîne distribution, PAS sur G20", "cout": "null", "gravite": "grave" },
+      { "nom": "Génération G20 depuis 2019 pas de défaut structurel majeur", "cout": "null", "gravite": "mineure" },
+      { "nom": "Système électronique capteurs défaillance isolée", "cout": "500-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "larevueautomobile.com", "fiches-auto.fr", "caradisiac.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Audi",
+    "modele": "A3 2024 (8Y, berline/break compacte, essence TFSI)",
+    "motorisation": "essence 1.5 TFSI turbo 150ch / 2.0 TFSI turbo",
+    "score_fiabilite": "7.5/10 — fiabilité optimisée 2023+",
+    "pannes_courantes": [
+      { "nom": "Refroidissement joint pompe à eau dégradation 70k-110k km", "cout": "800-1500€", "gravite": "moyenne" },
+      { "nom": "Chaîne distribution tendeur sensible huile 90k-140k km", "cout": "1000-2000€", "gravite": "grave" },
+      { "nom": "Moteur 1.5 TFSI COD (Cylinder On Demand) mild-hybrid 48V robuste", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["mytracks.fr", "caradisiac.com", "larevueautomobile.com", "carverif.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Renault",
+    "modele": "Scénic 2024 (4e génération E-TECH, essence)",
+    "motorisation": "essence 1.3 TCe turbo / électrique 87 kWh",
+    "score_fiabilite": "6.5/10 — motorisation essence améliorée post-2019",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.3 TCe post-2019 fiabilisé correction injection turbo", "cout": "null", "gravite": "mineure" },
+      { "nom": "Perte puissance grand froid (300-500 km thermostat)", "cout": "300-500€", "gravite": "mineure" },
+      { "nom": "Vanne EGR colmatage 70k-120k km (50-100€ décrassage)", "cout": "500-700€", "gravite": "mineure" }
+    ],
+    "sources": ["oscar-racing.fr", "iodines.fr", "caradisiac.com", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Peugeot",
+    "modele": "308 2024 (3e génération, essence/hybride)",
+    "motorisation": "essence 1.2 PureTech chaîne 2024 / hybride 1.6",
+    "score_fiabilite": "7/10 — fiabilité renforcée chaîne de distribution",
+    "pannes_courantes": [
+      { "nom": "Courroie distribution PureTech pré-2024 usure (chaîne depuis février 2024)", "cout": "1500-2000€", "gravite": "grave" },
+      { "nom": "Huile moteur 5W30 FPW9.55535/03 obligatoire depuis février 2024", "cout": "30-50€/vidange", "gravite": "mineure" },
+      { "nom": "Moteur PureTech versions post-2024 fiabilité confirmée", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["conseil-auto-moto.fr", "carverif.fr", "fiches-auto.fr", "larevueautomobile.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Honda",
+    "modele": "CR-V 2024 (5e génération, essence turbo/hybride)",
+    "motorisation": "essence 1.5L turbo / hybride 2.0L",
+    "score_fiabilite": "7/10 — bonne fiabilité, générations récentes fiables",
+    "pannes_courantes": [
+      { "nom": "Turbine pompe carburant moulage défectueux (rappel 2017-2020)", "cout": "null", "gravite": "grave" },
+      { "nom": "Moteur 1.5L turbo soupape décharge rupture (pré-2020)", "cout": "3000€+", "gravite": "grave" },
+      { "nom": "Essence dans l'huile hiver trajets courts 2017-2020 (corrigé)", "cout": "null", "gravite": "grave" }
+    ],
+    "sources": ["protegez-vous.ca", "jdpower.com", "consumerreports.org", "crvownersclub.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Mercedes-Benz",
+    "modele": "Classe C 2024 (W206, berline/break, essence)",
+    "motorisation": "essence 1.5L turbo micro-hybride 48V / 2.0L turbo",
+    "score_fiabilite": "8.5/10 — très bonne fiabilité construction qualité",
+    "pannes_courantes": [
+      { "nom": "Micro-hybride 48V surveillance système nécessaire", "cout": "500-1500€", "gravite": "mineure" },
+      { "nom": "Huile moteur MB 229.71 exclusive obligatoire", "cout": "40-80€/vidange", "gravite": "mineure" },
+      { "nom": "Mises à jour logicielles régulières système embarqué", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["bymycar.fr", "carverif.fr", "caradisiac.com", "auto-doc.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Nissan",
+    "modele": "Leaf 2024 (4e génération électrique, batteries)",
+    "motorisation": "électrique 62 kWh / 87 kWh",
+    "score_fiabilite": "6.5/10 — fiabilité mécanique bonne, batterie à surveiller",
+    "pannes_courantes": [
+      { "nom": "Batterie dégradation capacité 10-20% après 100k-150k km", "cout": "null", "gravite": "grave" },
+      { "nom": "Compresseur climatisation électrique défaillance 70k-120k km", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Système de batterie usure progressive 2-3% annuel", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["bymycar.fr", "caradisiac.com", "auto-doc.fr", "nissannews.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Peugeot",
+    "modele": "5008 2024 (3e génération STLA, essence/hybride/électrique)",
+    "motorisation": "essence 1.2 PureTech / hybride 1.6 E-Tech / électrique 73 kWh",
+    "score_fiabilite": "7/10 — fiabilité améliorée plateforme nouvelle",
+    "pannes_courantes": [
+      { "nom": "Courroie distribution PureTech pré-2024 (problème résolu 2024+)", "cout": "1500-2000€", "gravite": "grave" },
+      { "nom": "Boîte vitesses ancienne BVA6 à-coups (remplacée 2024)", "cout": "1500-3000€", "gravite": "moyenne" },
+      { "nom": "Plateforme STLA Medium 2024 recul insuffisant verdict", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["fiches-auto.fr", "oscar-racing.fr", "largus.fr", "minitracks.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Volkswagen",
+    "modele": "Tiguan 2024 (2e génération restylée, essence TSI/diesel TDI)",
+    "motorisation": "essence 1.4 TSI turbo / diesel 2.0 TDI",
+    "score_fiabilite": "6.5/10 — fiabilité moyenne, problèmes DSG et turbo",
+    "pannes_courantes": [
+      { "nom": "Moteur 2.0 TDI 150/190 EA288 Evo fiabilisé chaîne post-2016", "cout": "null", "gravite": "mineure" },
+      { "nom": "Boîte DSG7 défauts 30% avant 100k km (échange-standard)", "cout": "1500-2500€", "gravite": "grave" },
+      { "nom": "Dépôts suie turbo perte puissance froid 80k km", "cout": "300-400€ décrassage", "gravite": "mineure" }
+    ],
+    "sources": ["carverif.fr", "oscar-racing.fr", "consumerreports.org", "larevueautomobile.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Hyundai",
+    "modele": "Tucson 2024 (4e génération, essence/diesel/hybride)",
+    "motorisation": "essence 1.6 GDI / 1.6 T-GDi turbo / diesel 2.0L",
+    "score_fiabilite": "7/10 — fiabilité correcte post-2023 améliorée",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.6 GDI atmosphérique fiable simple", "cout": "null", "gravite": "mineure" },
+      { "nom": "Moteur 2.5L Smartstream consommation huile excessive pré-2023", "cout": "null", "gravite": "grave" },
+      { "nom": "Système hybride 48V mild-hybrid pannes dès 19k km isolées", "cout": "800-1500€", "gravite": "moyenne" }
+    ],
+    "sources": ["auto-land.fr", "ecoloauto.com", "oscar-racing.fr", "caradisiac.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Kia",
+    "modele": "Sportage 2024 (4e génération restylée, essence/diesel)",
+    "motorisation": "essence 1.6 T-GDI turbo / diesel 2.0 CRDi",
+    "score_fiabilite": "7/10 — essence fiable, diesel moins recommandé",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.6 T-GDI essence boîte manuelle meilleur choix", "cout": "null", "gravite": "mineure" },
+      { "nom": "Diesel 1.6 CRDi 136 hybride risque casse moteur (ÉVITER)", "cout": "null", "gravite": "grave" },
+      { "nom": "Diesel 2.0 CRDi 185 seul diesel fiable (inspection nécessaire)", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["ct-auto-63.fr", "wearebargain.com", "iodines.fr", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Audi",
+    "modele": "A4 2024 (B9, berline/break, essence TFSI)",
+    "motorisation": "essence 2.0 TFSI turbo / 1.4 TFSI turbo",
+    "score_fiabilite": "7/10 — fiabilité globale bonne, moteur 2.0 vigilance",
+    "pannes_courantes": [
+      { "nom": "Moteur 2.0 TFSI consommation huile excessive 50k km", "cout": "null", "gravite": "grave" },
+      { "nom": "Pompe à huile défaillance endommagement moteur", "cout": "2000€+", "gravite": "grave" },
+      { "nom": "Fuite pompe à eau 100k km courroies courantes", "cout": "800-1200€", "gravite": "moyenne" }
+    ],
+    "sources": ["carverif.fr", "linkar-app.com", "bymycar.fr", "fiches-auto.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Renault",
+    "modele": "Kadjar 2024 (1ère génération restylée, essence/diesel)",
+    "motorisation": "essence 1.3 TCe turbo / diesel 1.5 dCi",
+    "score_fiabilite": "6.5/10 — fiabilité inégale par motorisation",
+    "pannes_courantes": [
+      { "nom": "Moteur 1.2 TCe 130 surconsommation huile casse moteur", "cout": "3000-5000€", "gravite": "grave" },
+      { "nom": "Moteur 1.3 TCe 140 injecteurs fragiles ratés accélération", "cout": "800-1500€", "gravite": "moyenne" },
+      { "nom": "Diesel 1.6 dCi 130 / 1.5 dCi fiables sans pannes récurrentes", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["oscar-racing.fr", "bymycar.fr", "carverif.fr", "auto-land.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Citroën",
+    "modele": "Berlingo 2024 (3e génération, essence Van/passager)",
+    "motorisation": "essence 1.2 PureTech / 1.5 BlueHDi diesel",
+    "score_fiabilite": "6/10 — courroie distribution problème principal",
+    "pannes_courantes": [
+      { "nom": "Courroie distribution PureTech 110/130 désagrégation 60k-100k km", "cout": "1450€ kit / 4200€ casse moteur", "gravite": "grave" },
+      { "nom": "Dépôts métalliques huile vidange signe élongation courroie", "cout": "1450€", "gravite": "grave" },
+      { "nom": "Post-2022 chaîne ou courroie révisée meilleure fiabilité", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["carverif.fr", "largus.fr", "fiches-auto.fr", "iodines.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Honda",
+    "modele": "Jazz 2024 (4e génération GE, essence CVT)",
+    "motorisation": "essence 1.3L / 1.5L CVT",
+    "score_fiabilite": "7.5/10 — très bonne fiabilité transmission CVT éprouvée",
+    "pannes_courantes": [
+      { "nom": "Transmission CVT fiabilité reconnue excellente", "cout": "null", "gravite": "mineure" },
+      { "nom": "Moteur essence robustesse fiable moteurs simple", "cout": "null", "gravite": "mineure" },
+      { "nom": "Climatisation compresseur défaillance isolée rare", "cout": "800-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "caradisiac.com", "auto-doc.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Nissan",
+    "modele": "Altima 2024 (6e génération, essence CVT)",
+    "motorisation": "essence 2.5L CVT",
+    "score_fiabilite": "7/10 — bonne fiabilité moteur fiable CVT éprouvée",
+    "pannes_courantes": [
+      { "nom": "Transmission CVT fiabilité éprouvée longue durée", "cout": "null", "gravite": "mineure" },
+      { "nom": "Moteur 2.5L essence robustesse reconnue", "cout": "null", "gravite": "mineure" },
+      { "nom": "Électronique suspension sièges chauffants défaut isolé", "cout": "300-800€", "gravite": "mineure" }
+    ],
+    "sources": ["caradisiac.com", "consumerreports.org"],
+    "a_verifier": true
+  }
+]

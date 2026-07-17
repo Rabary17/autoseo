@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Index — Documentation autoseo</title>
+<style>
+:root{
+  --bg:#0d1117;
+  --bg2:#161b27;
+  --bg3:#1e2535;
+  --bg4:#252d3f;
+  --border:rgba(255,255,255,.07);
+  --border2:rgba(255,255,255,.13);
+  --text:#e2e8f0;
+  --text2:#94a3b8;
+  --text3:#4a5568;
+  --c4:#4f8ef7;
+  --c7:#f97316;
+  --ok:#4caf7d;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.wrap{
+  max-width:1200px;
+  margin:0 auto;
+  padding:40px 28px 80px;
+}
+
+h1{font-size:32px;font-weight:700;margin-bottom:12px;background:linear-gradient(135deg,var(--c4),var(--c7));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+.lead{font-size:15px;color:var(--text2);margin-bottom:36px;max-width:900px;line-height:1.8}
+
+h2{
+  font-size:18px;
+  font-weight:700;
+  margin:40px 0 16px;
+  padding-bottom:8px;
+  border-bottom:2px solid var(--c7);
+  color:var(--text);
+}
+
+.doc-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:16px;
+  margin:24px 0;
+}
+
+.doc-card{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:20px;
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.doc-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:2px;
+  background:linear-gradient(90deg,var(--c4),var(--c7));
+  opacity:0;
+  transition:opacity 0.3s ease;
+}
+
+.doc-card:hover{
+  border-color:var(--c4);
+  box-shadow:0 0 20px rgba(79,142,247,.1);
+  transform:translateY(-2px);
+}
+
+.doc-card:hover::before{opacity:1}
+
+.doc-icon{
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.doc-title{
+  font-size:15px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:var(--text);
+}
+
+.doc-desc{
+  font-size:12px;
+  color:var(--text2);
+  margin-bottom:12px;
+  line-height:1.6;
+}
+
+.doc-meta{
+  font-size:11px;
+  color:var(--text3);
+  margin-bottom:12px;
+  display:flex;
+  gap:12px;
+}
+
+.doc-link{
+  display:inline-block;
+  padding:6px 12px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:6px;
+  color:var(--c4);
+  text-decoration:none;
+  font-size:11px;
+  font-weight:600;
+  transition:all 0.2s ease;
+}
+
+.doc-link:hover{
+  background:var(--c4);
+  color:#000;
+}
+
+.category{
+  margin:32px 0;
+}
+
+.category-badge{
+  display:inline-block;
+  padding:4px 12px;
+  background:rgba(79,142,247,.1);
+  border:1px solid var(--c4);
+  border-radius:20px;
+  color:var(--c4);
+  font-size:10px;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  margin-bottom:12px;
+}
+
+.box{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-left:3px solid var(--c7);
+  border-radius:8px;
+  padding:18px;
+  margin:24px 0;
+}
+
+.box.info{border-left-color:var(--c4)}
+.box.success{border-left-color:var(--ok)}
+
+.timeline{
+  position:relative;
+  padding-left:20px;
+  margin:24px 0;
+}
+
+.timeline::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:linear-gradient(180deg,var(--c4),var(--c7));
+}
+
+.timeline-item{
+  margin-bottom:20px;
+  position:relative;
+}
+
+.timeline-item::before{
+  content:'';
+  position:absolute;
+  left:-26px;
+  top:2px;
+  width:12px;
+  height:12px;
+  background:var(--c4);
+  border:2px solid var(--bg);
+  border-radius:50%;
+}
+
+.timeline-title{
+  font-weight:700;
+  font-size:13px;
+  color:var(--text);
+  margin-bottom:4px;
+}
+
+.timeline-desc{
+  font-size:12px;
+  color:var(--text2);
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:12px;
+  margin:24px 0;
+}
+
+.stat-box{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:16px;
+  text-align:center;
+}
+
+.stat-value{
+  font-size:24px;
+  font-weight:700;
+  color:var(--c4);
+  margin-bottom:4px;
+}
+
+.stat-label{
+  font-size:11px;
+  color:var(--text2);
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+@media(max-width:768px){
+  .wrap{padding:20px 14px 60px}
+  .doc-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>📚 Documentation autoseo</h1>
+<p class="lead">Hub centralisé pour tous les documents du projet autoseo. Explorez le plan global, la feuille de route, les plus-values techniques, et le détail du plan complet.</p>
+
+<div class="stats-grid">
+  <div class="stat-box">
+    <div class="stat-value">10 000</div>
+    <div class="stat-label">Articles cibles</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">19</div>
+    <div class="stat-label">Silos</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">7</div>
+    <div class="stat-label">Moteurs</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">6</div>
+    <div class="stat-label">Pages HTML</div>
+  </div>
+</div>
+
+<div class="category">
+  <span class="category-badge">🗂️ Vue d'ensemble</span>
+
+  <div class="doc-grid">
+    <div class="doc-card">
+      <div class="doc-icon">🗺️</div>
+      <div class="doc-title">PBN Taxonomy</div>
+      <div class="doc-desc">Fichier mère : arborescence complète du réseau de 12 niches (Finance, Santé, Tech, Maison, Juridique, Voyage, Auto, Éducation, Loisirs, Animaux, Mode, Alimentation). Taxonomie par niche.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>~200 silos</span>
+      </div>
+      <a href="pbn-taxonomy-complete.html" class="doc-link">Ouvrir →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">📊</div>
+      <div class="doc-title">Feuille de route</div>
+      <div class="doc-desc">État d'avancement courant (P1–P6). Vue complète des 19 silos Auto, progression par phase, blocages, prochaines étapes, statut infrastructure WordPress.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Updated 2026-07-17</span>
+      </div>
+      <a href="ROADMAP.html" class="doc-link">Ouvrir →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">⭐</div>
+      <div class="doc-title">Plus-values techniques</div>
+      <div class="doc-desc">Résumé des 7+ innovations du projet (architecture headless, pipeline autopublish, moteurs programmatiques, maillage, SEO/GEO, images optimisées).</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Index principal</span>
+      </div>
+      <a href="FEATURES.html" class="doc-link">Ouvrir →</a>
+    </div>
+  </div>
+</div>
+
+<div class="category">
+  <span class="category-badge">🎯 Plan de production</span>
+
+  <div class="doc-grid">
+    <div class="doc-card">
+      <div class="doc-icon">📈</div>
+      <div class="doc-title">Plan complet 10 000 articles</div>
+      <div class="doc-desc">Stratégie globale : 19 silos, allocation articles par silo, 7 moteurs programmatiques, modèle de maillage interne, unicité garantie, pipeline P1–P6.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Référence architecture</span>
+      </div>
+      <a href="plan-auto-mobilite-10000.html" class="doc-link">Ouvrir →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">✅</div>
+      <div class="doc-title">Plan d'actions détaillé</div>
+      <div class="doc-desc">22 sessions P2 (données factuelles). Tracker interactif : datasets à compiler, statuts, tracking localStorage (cases à cocher), priorité par date.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Checklist interactive</span>
+      </div>
+      <a href="plan-auto-mobilite-10000-actions.html" class="doc-link">Ouvrir →</a>
+    </div>
+  </div>
+</div>
+
+<div class="category">
+  <span class="category-badge">⚙️ Architecture & plus-values</span>
+
+  <div class="doc-grid">
+    <div class="doc-card">
+      <div class="doc-icon">🏗️</div>
+      <div class="doc-title">Architecture headless</div>
+      <div class="doc-desc">WordPress (données) + Next.js (frontend) sur Vercel. Séparation complète, revalidation ISR automatique, images optimisées WordPress+Imagify, webhook publication.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Stack technique</span>
+      </div>
+      <a href="feature-architecture-headless.html" class="doc-link">Lire →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">🎯</div>
+      <div class="doc-title">7 moteurs programmatiques</div>
+      <div class="doc-desc">M1–M7 : Prestation×Véhicule, Codes&amp;symptômes, Fiches modèle, Pièce×Marque, Versus, Démarche×Cas, Itinéraires. Chacun croise template + base de données factuelles.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Détail moteurs</span>
+      </div>
+      <a href="feature-moteurs-programmatiques.html" class="doc-link">Lire →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">🤖</div>
+      <div class="doc-title">Pipeline autopublish</div>
+      <div class="doc-desc">Génération + relecture + gating 9 règles + publication. API Claude (Sonnet/Haiku), structured output, prompt caching. 20 articles/semaine démarrage.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>Orchestration automation</span>
+      </div>
+      <a href="feature-autopublish.html" class="doc-link">Lire →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">🔗</div>
+      <div class="doc-title">Maillage sémantique</div>
+      <div class="doc-desc">Génération auto du graphe de liens (hub ↔ sous-hub ↔ articles). Cocons respects, rotation d'ancres, profondeur ≤3 clics, anti-cannibalisation.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>P3 détail</span>
+      </div>
+      <a href="feature-maillage.html" class="doc-link">Lire →</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">🔍</div>
+      <div class="doc-title">SEO/GEO complet</div>
+      <div class="doc-desc">100% des critères Google (Core Web Vitals, EAT, JSON-LD, OG images dynamiques, sitemap, robots.txt, llms.txt). Optimisations Discover/News/LLM.</div>
+      <div class="doc-meta">
+        <span>📄 HTML</span>
+        <span>On-page + technical</span>
+      </div>
+      <a href="feature-seo-geo.html" class="doc-link">Lire →</a>
+    </div>
+  </div>
+</div>
+
+<div class="category">
+  <span class="category-badge">📂 Fichiers dans le dépôt</span>
+
+  <div class="box info">
+    <h3 style="margin-top:0">Documentation</h3>
+    <ul style="margin:0;padding:12px 0 12px 20px">
+      <li><code>STATE.md</code> — État d'avancement courant (mis à jour en permanence)</li>
+      <li><code>CLAUDE.md</code> — Instructions projet</li>
+      <li><code>docs/architecture-headless.md</code> — Détail architecture WordPress+Next.js</li>
+      <li><code>docs/architecture-autopublish.md</code> — Pipeline génération détaillé</li>
+      <li><code>docs/setup-wordpress-vierge.md</code> — Checklist nouvel hébergement WordPress</li>
+      <li><code>docs/commandes.md</code> — Slash commands (/p1-keywords, /p2-database, etc.)</li>
+    </ul>
+  </div>
+
+  <div class="box info">
+    <h3 style="margin-top:0">Skills (par domaine)</h3>
+    <ul style="margin:0;padding:12px 0 12px 20px">
+      <li><code>skills/seo.md</code> — Stratégie SEO détaillée</li>
+      <li><code>skills/geo.md</code> — Géolocalisation & Discover</li>
+      <li><code>skills/redaction.md</code> — Voix d'auteur (6 personas A–F)</li>
+      <li><code>skills/wordpress-publication.md</code> — Règles Gutenberg, catégories/tags, planning</li>
+      <li><code>skills/design.md</code> — Grille graphique, couleurs, typographie</li>
+      <li><code>skills/developpement.md</code> — Architecture technique mise à jour</li>
+      <li><code>skills/gestion-de-projet.md</code> — Processus, approbations, escalades</li>
+    </ul>
+  </div>
+
+  <div class="box info">
+    <h3 style="margin-top:0">Données & scripts</h3>
+    <ul style="margin:0;padding:12px 0 12px 20px">
+      <li><code>data/keywords/tracking-mots-cles.xlsx</code> — 506 clusters P1 (feuille maîtresse)</li>
+      <li><code>data/keywords/</code> — Fichiers JSON P1 par silo (19 fichiers)</li>
+      <li><code>data/factuel/</code> — Bases factuelles P2 (marques, codes, prestations, démarches, etc.)</li>
+      <li><code>data/maillage/maillage.json</code> — Graphe de liens P3 (410 entrées)</li>
+      <li><code>scripts/fetch-keywords.js</code> — Collecteur P1 (API Haloscan)</li>
+      <li><code>scripts/gen-maillage.py</code> — Générateur P3</li>
+      <li><code>scripts/autopublish/</code> — Pipeline complet (run.js, config.js, 10 modules lib/)</li>
+    </ul>
+  </div>
+</div>
+
+<div class="category">
+  <span class="category-badge">📅 Historique récent</span>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-12</div>
+      <div class="timeline-desc">P1 terminé sur 19 silos (506 clusters). Crédit Haloscan : 9 086 / 10 000.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-13</div>
+      <div class="timeline-desc">P2 + P3 avancent en parallèle. 9 silos P2 terminés. P3 lancé sur 16 silos (410 entrées maillage).</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-14</div>
+      <div class="timeline-desc">Pipeline autopublish complet (API Anthropic directe). Architecture headless : SSG → ISR (Vercel).</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-15</div>
+      <div class="timeline-desc">Frontend audité (9 features ajoutées). WordPress infrastructure en impasse (solution : nouvel hébergement).</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-17</div>
+      <div class="timeline-desc">Documentation HTML créée (ROADMAP, FEATURES, pages détaillées). INDEX créé.</div>
+    </div>
+  </div>
+</div>
+
+<div class="category">
+  <span class="category-badge">🚀 Prochaines étapes</span>
+
+  <div class="box success">
+    <h3 style="margin-top:0">Priorités immédiates</h3>
+    <ol style="margin:0;padding:12px 0 12px 20px">
+      <li><strong>WordPress neuf :</strong> Hébergement + installation (checklist : setup-wordpress-vierge.md)</li>
+      <li><strong>P2 3 silos :</strong> Entretien, Pannes, Marques (si P3 avant P2 complète)</li>
+      <li><strong>P4 hubs :</strong> Rédaction pilier 130 pages (validé par utilisateur)</li>
+      <li><strong>P5 launch :</strong> Autopublish 20 articles/semaine Phase 2</li>
+      <li><strong>P6 indexation :</strong> GSC, Lighthouse, monitoring SEO</li>
+    </ol>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

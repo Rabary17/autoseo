@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 moteurs — Ébauches et exemples</title>
+<style>
+:root{
+  --bg:#0d1117;
+  --bg2:#161b27;
+  --bg3:#1e2535;
+  --border:rgba(255,255,255,.07);
+  --border2:rgba(255,255,255,.13);
+  --text:#e2e8f0;
+  --text2:#94a3b8;
+  --text3:#4a5568;
+  --c4:#4f8ef7;
+  --c7:#f97316;
+  --ok:#4caf7d;
+  --warn:#f5a623;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.wrap{
+  max-width:1100px;
+  margin:0 auto;
+  padding:32px 28px 80px;
+}
+
+.breadcrumb{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  font-size:12px;
+  color:var(--text2);
+  margin-bottom:24px;
+}
+
+.breadcrumb a{color:var(--c4);text-decoration:none}
+
+h1{font-size:32px;font-weight:700;margin-bottom:12px}
+
+.lead{font-size:14px;color:var(--text2);margin-bottom:28px;max-width:900px}
+
+h2{
+  font-size:18px;
+  font-weight:700;
+  margin:40px 0 16px;
+  padding-bottom:8px;
+  border-bottom:2px solid var(--c7);
+  color:var(--text);
+}
+
+.motor-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:18px;
+  margin:24px 0;
+}
+
+.motor-card{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:22px;
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+.motor-card::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--c4),var(--c7));
+  opacity:0;
+  transition:opacity 0.3s ease;
+}
+
+.motor-card:hover{
+  border-color:var(--c4);
+  box-shadow:0 0 20px rgba(79,142,247,.15);
+  transform:translateY(-2px);
+}
+
+.motor-card:hover::before{opacity:1}
+
+.motor-icon{
+  font-size:32px;
+  margin-bottom:12px;
+}
+
+.motor-label{
+  font-size:10px;
+  color:var(--c7);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.motor-title{
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:var(--text);
+}
+
+.motor-desc{
+  font-size:12px;
+  color:var(--text2);
+  margin-bottom:12px;
+  line-height:1.6;
+}
+
+.motor-example{
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:6px;
+  padding:10px;
+  margin:12px 0;
+  font-size:11px;
+  color:var(--text2);
+}
+
+.motor-example-title{
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:4px;
+  font-size:10px;
+  text-transform:uppercase;
+  color:var(--c7);
+}
+
+.motor-stats{
+  display:flex;
+  gap:12px;
+  margin:12px 0;
+  font-size:11px;
+  color:var(--text3);
+}
+
+.motor-stat{
+  flex:1;
+}
+
+.motor-stat-value{
+  font-size:16px;
+  font-weight:700;
+  color:var(--c4);
+}
+
+.motor-link{
+  display:inline-block;
+  padding:8px 14px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:6px;
+  color:var(--c4);
+  text-decoration:none;
+  font-size:11px;
+  font-weight:600;
+  transition:all 0.2s ease;
+  margin-top:8px;
+}
+
+.motor-link:hover{
+  background:var(--c4);
+  color:#000;
+}
+
+.box{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-left:3px solid var(--c7);
+  border-radius:8px;
+  padding:18px;
+  margin:24px 0;
+}
+
+.box.info{border-left-color:var(--c4)}
+.box.success{border-left-color:var(--ok)}
+
+.comparison-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:20px 0;
+  font-size:12px;
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.comparison-table th{
+  text-align:left;
+  padding:10px 12px;
+  color:var(--text3);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  border-bottom:1px solid var(--border);
+  background:var(--bg3);
+  font-weight:600;
+}
+
+.comparison-table td{
+  padding:10px 12px;
+  border-bottom:1px solid var(--border);
+  color:var(--text2);
+  vertical-align:top;
+}
+
+.comparison-table tr:last-child td{border-bottom:none}
+
+.nav-buttons{
+  display:flex;
+  gap:12px;
+  margin:40px 0;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 18px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:6px;
+  color:var(--c4);
+  text-decoration:none;
+  font-size:12px;
+  font-weight:600;
+  transition:all 0.2s ease;
+}
+
+.btn:hover{
+  background:var(--c4);
+  color:#000;
+}
+
+@media(max-width:768px){
+  .wrap{padding:20px 14px 60px}
+  .motor-grid{grid-template-columns:1fr}
+  .comparison-table{display:block;overflow-x:auto}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="breadcrumb">
+  <a href="INDEX.html">Documentation Index</a>
+  <span>›</span>
+  <a href="feature-moteurs-programmatiques.html">7 moteurs programmatiques</a>
+  <span>›</span>
+  <span>Ébauches et exemples</span>
+</div>
+
+<h1>🎯 7 moteurs — Ébauches d'articles</h1>
+<p class="lead">Exemples concrets d'articles générés par chaque moteur. Ces ébauches montrent la structure, les données factuelles injectées, et le résultat final que le pipeline autopublish produira à l'échelle.</p>
+
+<h2>Les 7 moteurs en un coup d'œil</h2>
+
+<table class="comparison-table">
+  <thead>
+    <tr>
+      <th>Moteur</th>
+      <th>Formule</th>
+      <th>Articles</th>
+      <th>Exemple</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>M1</strong></td>
+      <td>Prestation × Véhicule</td>
+      <td>~1 800</td>
+      <td>« Vidange Renault Clio 5 »</td>
+    </tr>
+    <tr>
+      <td><strong>M2</strong></td>
+      <td>Codes OBD × Symptômes</td>
+      <td>~1 300</td>
+      <td>« Code P0420 : Catalyseur »</td>
+    </tr>
+    <tr>
+      <td><strong>M3</strong></td>
+      <td>Fiches modèle</td>
+      <td>~1 700</td>
+      <td>« Clio 5 : fiabilité »</td>
+    </tr>
+    <tr>
+      <td><strong>M4</strong></td>
+      <td>Pièce × Marque</td>
+      <td>~900</td>
+      <td>« Plaquettes Bosch vs Textar »</td>
+    </tr>
+    <tr>
+      <td><strong>M5</strong></td>
+      <td>Comparatifs Versus</td>
+      <td>~800</td>
+      <td>« Clio vs Peugeot 208 »</td>
+    </tr>
+    <tr>
+      <td><strong>M6</strong></td>
+      <td>Démarche × Cas</td>
+      <td>~700</td>
+      <td>« Changement carte grise succession »</td>
+    </tr>
+    <tr>
+      <td><strong>M7</strong></td>
+      <td>Itinéraires road trip</td>
+      <td>~350</td>
+      <td>« Road trip Suisse 7 jours »</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Moteur M1 — Prestation × Véhicule</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">🔧</div>
+    <div class="motor-label">M1 — Entretien & révision</div>
+    <div class="motor-title">Prestation × Véhicule</div>
+    <div class="motor-desc">Croise 25 prestations d'entretien (vidange, freins, courroie, clim...) × 40 marques/modèles populaires + 800 tutos génériques.</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~1 800</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">25×40</div> matrice</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Vidange Renault Clio 5 : 89–145 € TTC, 15 000 km intervalle, 45–60 min MO
+    </div>
+    <a href="moteur-m1-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Moteur M2 — Codes défaut & symptômes</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">🛠</div>
+    <div class="motor-label">M2 — Pannes & diagnostic</div>
+    <div class="motor-title">Codes OBD × Symptômes</div>
+    <div class="motor-desc">600 codes OBD (P0xxx/P2xxx) + 80 voyants tableau de bord × déclinaisons marque + 250 symptômes (bruit, fumée, vibration).</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~1 300</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">600+80</div> base</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Code P0420 : Catalyseur défaillant | Cause #1 : Encrassement 40% | Coût réparation 600–1500€
+    </div>
+    <a href="moteur-m2-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Moteur M3 — Fiches modèle</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">🏷</div>
+    <div class="motor-label">M3 — Marques & modèles</div>
+    <div class="motor-title">Fiches modèle</div>
+    <div class="motor-desc">~450 modèles (essence + diesel + EV + motos) × 3–4 angles : fiabilité, entretien & coûts, occasion, versions à éviter.</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~1 700</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">450×4</div> angles</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Clio 5 fiabilité : 7.8/10 | Problèmes : courroie humide TCe (15%), amortisseurs 70k km | À éviter : 2019–2020
+    </div>
+    <a href="moteur-m3-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Moteur M4 — Pièce × Marque</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">⚙️</div>
+    <div class="motor-label">M4 — Pièces détachées</div>
+    <div class="motor-title">Pièce × Marque</div>
+    <div class="motor-desc">20 familles de pièces (turbo, injecteurs, alternateur, batterie...) × 40 marques + comparatifs équipementiers.</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~900</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">20×40</div> matrice</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Plaquettes Bosch vs Textar Clio : Bosch 45–65€ (50k km durée) | Textar 65–95€ (60k km, moins poussière)
+    </div>
+    <a href="moteur-m4-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Moteur M5 — Comparatifs Versus</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">⚔️</div>
+    <div class="motor-label">M5 — Essais & comparatifs</div>
+    <div class="motor-title">Comparatifs Versus</div>
+    <div class="motor-desc">Duels de modèles concurrents (Clio vs 208, Tesla Model 3 vs Ioniq) + classements par segment & budget annualisés.</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~800</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">50+</div> segments</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Clio 5 vs Peugeot 208 : Clio meilleur rapport qualité-prix | 208 + spacieux (405L) | Clio meilleur entretien coûts
+    </div>
+    <a href="moteur-m5-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Moteur M6 — Démarche × Cas</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">📋</div>
+    <div class="motor-label">M6 — Carte grise & démarches</div>
+    <div class="motor-title">Démarche × Cas particulier</div>
+    <div class="motor-desc">30 démarches (cession, duplicata, import, malus, points...) × cas particuliers (héritage, divorce, mineur, leasing...).</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~700</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">30×20</div> cas</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Changement titulaire succession : Délai 4–6 semaines | Coût 19,60€ (ANTS) + acte notarié | Documents requis : testament + acte succession
+    </div>
+    <a href="moteur-m6-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Moteur M7 — Itinéraires road trip</h2>
+
+<div class="motor-grid" style="grid-template-columns:1fr">
+  <div class="motor-card">
+    <div class="motor-icon">🗺️</div>
+    <div class="motor-label">M7 — Road trips & voyage</div>
+    <div class="motor-title">Itinéraires road trip</div>
+    <div class="motor-desc">Destinations France/Europe × durée (week-end, 7j, 15j) + pages pratiques par pays (vignette, péages, règles).</div>
+    <div class="motor-stats">
+      <div class="motor-stat"><div class="motor-stat-value">~350</div> articles</div>
+      <div class="motor-stat"><div class="motor-stat-value">40+</div> destinations</div>
+    </div>
+    <div class="motor-example">
+      <div class="motor-example-title">Exemple généré</div>
+      Road trip Suisse 7 jours : 1800 km | Vignette 40 CHF | Budget essence 180–220€ | 6 nuits hébergement 600–900€
+    </div>
+    <a href="moteur-m7-exemple.html" class="motor-link">Lire l'ébauche →</a>
+  </div>
+</div>
+
+<h2>Vue synthétique des ébauches</h2>
+
+<div class="box success">
+  <h3 style="margin-top:0">Structure commune à tous les moteurs</h3>
+  <ul style="margin:0;padding:12px 0 12px 20px">
+    <li><strong>Métadonnées :</strong> Silo, auteur, longueur estimée</li>
+    <li><strong>Données factuelles :</strong> Prix, tarifs, coûts, spécifications (de la base P2)</li>
+    <li><strong>Structure contenu :</strong> Titres H2/H3, listes, tableaux, FAQ</li>
+    <li><strong>Sources citées :</strong> Vroomly, constructeurs, Sécurité routière, service-public.fr</li>
+    <li><strong>Unicité garantie :</strong> Chaque article combine données + template unique par auteur</li>
+  </ul>
+</div>
+
+<div class="box info">
+  <h3 style="margin-top:0">Comment le pipeline autopublish utilise ces moteurs</h3>
+  <ol style="margin:0;padding:12px 0 12px 20px">
+    <li>Lire <code>tracking-mots-cles.xlsx</code> : récupère les clusters P1 (506 au total)</li>
+    <li>Assigner moteur : M1 pour « Entretien », M2 pour « Pannes », etc.</li>
+    <li>Charger données factuelles : P2 (prix vidange, codes OBD, modèles, etc.)</li>
+    <li>Charger maillage P3 : liens hub/sous-hub/latéraux à injecter</li>
+    <li>Rédaction Claude : Template moteur + données + mots-clés → article complet</li>
+    <li>Relecture + gating : 9 règles vérifiées automatiquement</li>
+    <li>Publication WordPress : Article + métadonnées + image + catégorie/tags</li>
+  </ol>
+</div>
+
+<h2>Points clés</h2>
+
+<div class="box">
+  <h3 style="margin-top:0">Unicité à l'échelle</h3>
+  <ul style="margin:0;padding:12px 0 12px 20px">
+    <li>Chaque article combine : template éditorial + données factuelles + voix auteur → <strong>0% duplication</strong></li>
+    <li>Les ébauches ci-dessus sont des exemples de résultats finaux</li>
+    <li>À 10 000 articles, le coût moyen/article = ~5€ (vs 30–80€ rédacteur humain)</li>
+  </ul>
+</div>
+
+<div class="nav-buttons">
+  <a href="feature-moteurs-programmatiques.html" class="btn">← Détail les 7 moteurs</a>
+  <a href="feature-autopublish.html" class="btn">Pipeline autopublish →</a>
+  <a href="ROADMAP.html" class="btn">Retour feuille de route</a>
+</div>
+
+</div>
+</body>
+</html>

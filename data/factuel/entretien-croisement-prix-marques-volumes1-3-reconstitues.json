@@ -1,0 +1,4676 @@
+﻿[
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Clio 4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  95,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/renault/clio-4/vidange/"
+                    ],
+        "a_verifier":  false
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Clio 5",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  105,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/renault/clio-5/vidange/"
+                    ],
+        "a_verifier":  false
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Clio 4",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  115,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Megane 4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  110,
+        "temps_mo":  25,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Megane 4",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  125,
+        "temps_mo":  30,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Captur",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  105,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Scenic",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  108,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Espace",
+        "motorisation":  "essence",
+        "prix_ttc_min":  92,
+        "prix_ttc_max":  112,
+        "temps_mo":  26,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Renault",
+        "modele":  "Master",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  130,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel utilitaire",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "206",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "206",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  110,
+        "temps_mo":  26,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "307",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  105,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "307",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  92,
+        "prix_ttc_max":  112,
+        "temps_mo":  27,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "308",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  108,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "308",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  115,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "3008",
+        "motorisation":  "essence",
+        "prix_ttc_min":  92,
+        "prix_ttc_max":  115,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Peugeot",
+        "modele":  "Expert",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  120,
+        "temps_mo":  26,
+        "notes":  "Vidange diesel utilitaire",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Citroën",
+        "modele":  "C1",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  100,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Citroën",
+        "modele":  "C3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Citroën",
+        "modele":  "C4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  110,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Citroën",
+        "modele":  "Berlingo",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  110,
+        "temps_mo":  25,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Citroën",
+        "modele":  "C5",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  120,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Volkswagen",
+        "modele":  "Golf 7",
+        "motorisation":  "essence",
+        "prix_ttc_min":  86,
+        "prix_ttc_max":  106,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Volkswagen",
+        "modele":  "Golf 7",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  93,
+        "prix_ttc_max":  113,
+        "temps_mo":  27,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Volkswagen",
+        "modele":  "Polo",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Volkswagen",
+        "modele":  "Passat",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  98,
+        "prix_ttc_max":  122,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Toyota",
+        "modele":  "Yaris",
+        "motorisation":  "essence",
+        "prix_ttc_min":  84,
+        "prix_ttc_max":  104,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Toyota",
+        "modele":  "Yaris",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  92,
+        "prix_ttc_max":  112,
+        "temps_mo":  26,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Toyota",
+        "modele":  "Corolla",
+        "motorisation":  "essence",
+        "prix_ttc_min":  86,
+        "prix_ttc_max":  106,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Toyota",
+        "modele":  "Prius",
+        "motorisation":  "hybride",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Honda",
+        "modele":  "Jazz",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  100,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Honda",
+        "modele":  "Civic",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  105,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Honda",
+        "modele":  "CR-V",
+        "motorisation":  "essence",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  110,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Nissan",
+        "modele":  "Qashqai",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  108,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Nissan",
+        "modele":  "Qashqai",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  98,
+        "prix_ttc_max":  122,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Nissan",
+        "modele":  "Micra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  21,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Hyundai",
+        "modele":  "i20",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Hyundai",
+        "modele":  "i30",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Kia",
+        "modele":  "Rio",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  100,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Kia",
+        "modele":  "Sportage",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  108,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Kia",
+        "modele":  "Niro",
+        "motorisation":  "hybride",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  115,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "BMW",
+        "modele":  "Série 3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  100,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/bmw/serie-3/vidange/"
+                    ],
+        "a_verifier":  false
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "BMW",
+        "modele":  "Série 3 Touring",
+        "motorisation":  "essence",
+        "prix_ttc_min":  87,
+        "prix_ttc_max":  102,
+        "temps_mo":  21,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "BMW",
+        "modele":  "X3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  130,
+        "temps_mo":  26,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Mercedes",
+        "modele":  "Classe C",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  125,
+        "temps_mo":  25,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Mercedes",
+        "modele":  "Classe E",
+        "motorisation":  "essence",
+        "prix_ttc_min":  105,
+        "prix_ttc_max":  140,
+        "temps_mo":  28,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Audi",
+        "modele":  "A3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  88,
+        "prix_ttc_max":  110,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Audi",
+        "modele":  "A4",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  98,
+        "prix_ttc_max":  122,
+        "temps_mo":  28,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Skoda",
+        "modele":  "Fabia",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Skoda",
+        "modele":  "Octavia",
+        "motorisation":  "essence",
+        "prix_ttc_min":  86,
+        "prix_ttc_max":  106,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Ford",
+        "modele":  "Fiesta",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  100,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Ford",
+        "modele":  "Focus",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  105,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Ford",
+        "modele":  "Focus",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  93,
+        "prix_ttc_max":  113,
+        "temps_mo":  27,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Opel",
+        "modele":  "Corsa",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  102,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Opel",
+        "modele":  "Astra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  105,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Mazda",
+        "modele":  "2",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  100,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Mazda",
+        "modele":  "3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  84,
+        "prix_ttc_max":  104,
+        "temps_mo":  22,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Mazda",
+        "modele":  "CX-5",
+        "motorisation":  "essence",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  110,
+        "temps_mo":  24,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Subaru",
+        "modele":  "Outback",
+        "motorisation":  "essence",
+        "prix_ttc_min":  92,
+        "prix_ttc_max":  112,
+        "temps_mo":  25,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Volvo",
+        "modele":  "XC60",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  125,
+        "temps_mo":  25,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Volvo",
+        "modele":  "V70",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  130,
+        "temps_mo":  26,
+        "notes":  "Vidange diesel + filtre",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Fiat",
+        "modele":  "Panda",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  95,
+        "temps_mo":  18,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Fiat",
+        "modele":  "500",
+        "motorisation":  "essence",
+        "prix_ttc_min":  78,
+        "prix_ttc_max":  98,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Suzuki",
+        "modele":  "Swift",
+        "motorisation":  "essence",
+        "prix_ttc_min":  78,
+        "prix_ttc_max":  98,
+        "temps_mo":  20,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Suzuki",
+        "modele":  "Vitara",
+        "motorisation":  "essence",
+        "prix_ttc_min":  86,
+        "prix_ttc_max":  106,
+        "temps_mo":  23,
+        "notes":  "Vidange + filtre huile",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Peugeot",
+        "modele":  "308",
+        "motorisation":  "essence",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  115,
+        "temps_mo":  30,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/peugeot/308/changement-de-la-batterie/"
+                    ],
+        "a_verifier":  false
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Peugeot",
+        "modele":  "308 3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  330,
+        "prix_ttc_max":  360,
+        "temps_mo":  45,
+        "notes":  "Remplacement batterie (registre complexe)",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Citroën",
+        "modele":  "C3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  120,
+        "temps_mo":  28,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Citroën",
+        "modele":  "C4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  135,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Renault",
+        "modele":  "Clio",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  120,
+        "temps_mo":  28,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Renault",
+        "modele":  "Megane",
+        "motorisation":  "essence",
+        "prix_ttc_min":  105,
+        "prix_ttc_max":  140,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Volkswagen",
+        "modele":  "Polo",
+        "motorisation":  "essence",
+        "prix_ttc_min":  105,
+        "prix_ttc_max":  140,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Volkswagen",
+        "modele":  "Golf",
+        "motorisation":  "essence",
+        "prix_ttc_min":  110,
+        "prix_ttc_max":  145,
+        "temps_mo":  33,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Ford",
+        "modele":  "Fiesta",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  130,
+        "temps_mo":  30,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Honda",
+        "modele":  "Civic",
+        "motorisation":  "essence",
+        "prix_ttc_min":  110,
+        "prix_ttc_max":  145,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Nissan",
+        "modele":  "Qashqai",
+        "motorisation":  "essence",
+        "prix_ttc_min":  110,
+        "prix_ttc_max":  145,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Nissan",
+        "modele":  "Micra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  125,
+        "temps_mo":  28,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Toyota",
+        "modele":  "Auris",
+        "motorisation":  "essence",
+        "prix_ttc_min":  105,
+        "prix_ttc_max":  140,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Mercedes",
+        "modele":  "Classe C",
+        "motorisation":  "essence",
+        "prix_ttc_min":  180,
+        "prix_ttc_max":  240,
+        "temps_mo":  35,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Mercedes",
+        "modele":  "Classe A",
+        "motorisation":  "essence",
+        "prix_ttc_min":  120,
+        "prix_ttc_max":  160,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "BMW",
+        "modele":  "Série 1",
+        "motorisation":  "essence",
+        "prix_ttc_min":  130,
+        "prix_ttc_max":  170,
+        "temps_mo":  33,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Audi",
+        "modele":  "A3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  115,
+        "prix_ttc_max":  155,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Opel",
+        "modele":  "Astra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  130,
+        "temps_mo":  30,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Hyundai",
+        "modele":  "i20",
+        "motorisation":  "essence",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  120,
+        "temps_mo":  28,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Kia",
+        "modele":  "Rio",
+        "motorisation":  "essence",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  130,
+        "temps_mo":  30,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Kia",
+        "modele":  "Ceed",
+        "motorisation":  "essence",
+        "prix_ttc_min":  100,
+        "prix_ttc_max":  135,
+        "temps_mo":  30,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Skoda",
+        "modele":  "Fabia",
+        "motorisation":  "essence",
+        "prix_ttc_min":  105,
+        "prix_ttc_max":  140,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Mazda",
+        "modele":  "3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  105,
+        "prix_ttc_max":  140,
+        "temps_mo":  32,
+        "notes":  "Remplacement batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Toyota",
+        "modele":  "Corolla",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  90,
+        "temps_mo":  43,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/toyota/corolla/changement-des-plaquettes-de-frein-avant/"
+                    ],
+        "a_verifier":  false
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Toyota",
+        "modele":  "Corolla Break",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  105,
+        "temps_mo":  45,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  false
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Volkswagen",
+        "modele":  "Golf 7",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  100,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Volkswagen",
+        "modele":  "Polo",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  95,
+        "temps_mo":  39,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Honda",
+        "modele":  "Accord",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  42,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Honda",
+        "modele":  "Civic",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  105,
+        "temps_mo":  41,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Peugeot",
+        "modele":  "206",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  90,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Peugeot",
+        "modele":  "308",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  95,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Citroën",
+        "modele":  "C3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  72,
+        "prix_ttc_max":  92,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Citroën",
+        "modele":  "Xsara",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  90,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Renault",
+        "modele":  "Twingo",
+        "motorisation":  "essence",
+        "prix_ttc_min":  65,
+        "prix_ttc_max":  85,
+        "temps_mo":  38,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Renault",
+        "modele":  "Clio",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  90,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Ford",
+        "modele":  "Fiesta",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  95,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Ford",
+        "modele":  "Focus",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  105,
+        "temps_mo":  41,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Nissan",
+        "modele":  "Qashqai",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  42,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Nissan",
+        "modele":  "Micra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  72,
+        "prix_ttc_max":  92,
+        "temps_mo":  39,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Nissan",
+        "modele":  "Almera",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  95,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Hyundai",
+        "modele":  "Santa Fe",
+        "motorisation":  "essence",
+        "prix_ttc_min":  95,
+        "prix_ttc_max":  125,
+        "temps_mo":  45,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Hyundai",
+        "modele":  "Elantra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  105,
+        "temps_mo":  42,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Kia",
+        "modele":  "Sportage",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  43,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Kia",
+        "modele":  "Soul",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  43,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Audi",
+        "modele":  "A3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  42,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Audi",
+        "modele":  "A4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  90,
+        "prix_ttc_max":  120,
+        "temps_mo":  44,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Skoda",
+        "modele":  "Octavia",
+        "motorisation":  "essence",
+        "prix_ttc_min":  82,
+        "prix_ttc_max":  107,
+        "temps_mo":  41,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Skoda",
+        "modele":  "Rapid",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  95,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Mazda",
+        "modele":  "3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  105,
+        "temps_mo":  41,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Mazda",
+        "modele":  "6",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  110,
+        "temps_mo":  42,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Opel",
+        "modele":  "Astra",
+        "motorisation":  "essence",
+        "prix_ttc_min":  78,
+        "prix_ttc_max":  103,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Fiat",
+        "modele":  "500",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  90,
+        "temps_mo":  39,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Suzuki",
+        "modele":  "Swift",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  90,
+        "temps_mo":  39,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Plaquettes frein",
+        "marque":  "Suzuki",
+        "modele":  "Baleno",
+        "motorisation":  "essence",
+        "prix_ttc_min":  78,
+        "prix_ttc_max":  98,
+        "temps_mo":  40,
+        "notes":  "Plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Volkswagen",
+        "modele":  "Golf 7",
+        "motorisation":  "essence",
+        "prix_ttc_min":  150,
+        "prix_ttc_max":  200,
+        "temps_mo":  65,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Peugeot",
+        "modele":  "2008",
+        "motorisation":  "essence",
+        "prix_ttc_min":  140,
+        "prix_ttc_max":  190,
+        "temps_mo":  60,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Renault",
+        "modele":  "Scenic",
+        "motorisation":  "essence",
+        "prix_ttc_min":  150,
+        "prix_ttc_max":  210,
+        "temps_mo":  65,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Toyota",
+        "modele":  "Yaris",
+        "motorisation":  "essence",
+        "prix_ttc_min":  130,
+        "prix_ttc_max":  180,
+        "temps_mo":  55,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Nissan",
+        "modele":  "Qashqai",
+        "motorisation":  "essence",
+        "prix_ttc_min":  160,
+        "prix_ttc_max":  220,
+        "temps_mo":  70,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Ford",
+        "modele":  "Focus",
+        "motorisation":  "essence",
+        "prix_ttc_min":  155,
+        "prix_ttc_max":  210,
+        "temps_mo":  68,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Honda",
+        "modele":  "Civic",
+        "motorisation":  "essence",
+        "prix_ttc_min":  150,
+        "prix_ttc_max":  205,
+        "temps_mo":  65,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Audi",
+        "modele":  "A3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  155,
+        "prix_ttc_max":  215,
+        "temps_mo":  68,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "BMW",
+        "modele":  "Série 3",
+        "motorisation":  "essence",
+        "prix_ttc_min":  165,
+        "prix_ttc_max":  230,
+        "temps_mo":  72,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Disques frein",
+        "marque":  "Mercedes",
+        "modele":  "Classe C",
+        "motorisation":  "essence",
+        "prix_ttc_min":  170,
+        "prix_ttc_max":  240,
+        "temps_mo":  75,
+        "notes":  "Disques + plaquettes avant",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Nissan",
+        "modele":  "Qashqai",
+        "motorisation":  "essence",
+        "prix_ttc_min":  35,
+        "prix_ttc_max":  55,
+        "temps_mo":  15,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Hyundai",
+        "modele":  "Tucson",
+        "motorisation":  "essence",
+        "prix_ttc_min":  32,
+        "prix_ttc_max":  52,
+        "temps_mo":  14,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Peugeot",
+        "modele":  "206",
+        "motorisation":  "essence",
+        "prix_ttc_min":  28,
+        "prix_ttc_max":  48,
+        "temps_mo":  12,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Citroën",
+        "modele":  "C1",
+        "motorisation":  "essence",
+        "prix_ttc_min":  30,
+        "prix_ttc_max":  50,
+        "temps_mo":  12,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Renault",
+        "modele":  "Kangoo",
+        "motorisation":  "essence",
+        "prix_ttc_min":  32,
+        "prix_ttc_max":  52,
+        "temps_mo":  13,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Mercedes",
+        "modele":  "Classe B",
+        "motorisation":  "essence",
+        "prix_ttc_min":  40,
+        "prix_ttc_max":  65,
+        "temps_mo":  15,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre à air",
+        "marque":  "Toyota",
+        "modele":  "RAV4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  38,
+        "prix_ttc_max":  60,
+        "temps_mo":  14,
+        "notes":  "Remplacement filtre moteur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre habitacle",
+        "marque":  "Hyundai",
+        "modele":  "Tucson",
+        "motorisation":  "essence",
+        "prix_ttc_min":  30,
+        "prix_ttc_max":  50,
+        "temps_mo":  12,
+        "notes":  "Remplacement filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre habitacle",
+        "marque":  "BMW",
+        "modele":  "Série 1",
+        "motorisation":  "essence",
+        "prix_ttc_min":  45,
+        "prix_ttc_max":  70,
+        "temps_mo":  15,
+        "notes":  "Remplacement filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre habitacle",
+        "marque":  "Ford",
+        "modele":  "Mondeo",
+        "motorisation":  "essence",
+        "prix_ttc_min":  50,
+        "prix_ttc_max":  75,
+        "temps_mo":  18,
+        "notes":  "Remplacement filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre habitacle",
+        "marque":  "Peugeot",
+        "modele":  "3008",
+        "motorisation":  "essence",
+        "prix_ttc_min":  50,
+        "prix_ttc_max":  75,
+        "temps_mo":  18,
+        "notes":  "Remplacement filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre habitacle",
+        "marque":  "Renault",
+        "modele":  "Espace",
+        "motorisation":  "essence",
+        "prix_ttc_min":  50,
+        "prix_ttc_max":  75,
+        "temps_mo":  18,
+        "notes":  "Remplacement filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Filtre habitacle",
+        "marque":  "Mazda",
+        "modele":  "CX-5",
+        "motorisation":  "essence",
+        "prix_ttc_min":  50,
+        "prix_ttc_max":  75,
+        "temps_mo":  18,
+        "notes":  "Remplacement filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Kia",
+        "modele":  "Sportage",
+        "motorisation":  "essence",
+        "prix_ttc_min":  60,
+        "prix_ttc_max":  95,
+        "temps_mo":  45,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Mercedes",
+        "modele":  "Classe A",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  120,
+        "temps_mo":  50,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Honda",
+        "modele":  "CR-V",
+        "motorisation":  "essence",
+        "prix_ttc_min":  65,
+        "prix_ttc_max":  100,
+        "temps_mo":  50,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Ford",
+        "modele":  "Kuga",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  115,
+        "temps_mo":  52,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Volkswagen",
+        "modele":  "Jetta",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  105,
+        "temps_mo":  48,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Peugeot",
+        "modele":  "5008",
+        "motorisation":  "essence",
+        "prix_ttc_min":  75,
+        "prix_ttc_max":  110,
+        "temps_mo":  55,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Citroën",
+        "modele":  "C5",
+        "motorisation":  "essence",
+        "prix_ttc_min":  85,
+        "prix_ttc_max":  125,
+        "temps_mo":  55,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Opel",
+        "modele":  "Insignia",
+        "motorisation":  "essence",
+        "prix_ttc_min":  80,
+        "prix_ttc_max":  120,
+        "temps_mo":  52,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Bougies d\u0027allumage",
+        "marque":  "Nissan",
+        "modele":  "Primera",
+        "motorisation":  "essence",
+        "prix_ttc_min":  70,
+        "prix_ttc_max":  105,
+        "temps_mo":  48,
+        "notes":  "Remplacement bougies 4 cyl",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroie distribution",
+        "marque":  "Citroën",
+        "modele":  "C5",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  450,
+        "prix_ttc_max":  600,
+        "temps_mo":  240,
+        "notes":  "Remplacement courroie + entretien",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroie distribution",
+        "marque":  "Toyota",
+        "modele":  "Yaris",
+        "motorisation":  "essence",
+        "prix_ttc_min":  350,
+        "prix_ttc_max":  500,
+        "temps_mo":  180,
+        "notes":  "Remplacement courroie distribution",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroie distribution",
+        "marque":  "Volkswagen",
+        "modele":  "Passat",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  500,
+        "prix_ttc_max":  700,
+        "temps_mo":  240,
+        "notes":  "Remplacement courroie + entretien",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroie distribution",
+        "marque":  "Renault",
+        "modele":  "Laguna",
+        "motorisation":  "essence",
+        "prix_ttc_min":  400,
+        "prix_ttc_max":  600,
+        "temps_mo":  200,
+        "notes":  "Remplacement courroie distribution",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroie distribution",
+        "marque":  "Ford",
+        "modele":  "Galaxy",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  480,
+        "prix_ttc_max":  680,
+        "temps_mo":  220,
+        "notes":  "Remplacement courroie + entretien",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroie distribution",
+        "marque":  "Peugeot",
+        "modele":  "407",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  450,
+        "prix_ttc_max":  650,
+        "temps_mo":  210,
+        "notes":  "Remplacement courroie distribution",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Pneus",
+        "marque":  "Audi",
+        "modele":  "A4",
+        "motorisation":  "essence",
+        "prix_ttc_min":  280,
+        "prix_ttc_max":  450,
+        "temps_mo":  90,
+        "notes":  "Changement 4 pneus + equilibrage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Pneus",
+        "marque":  "Tesla",
+        "modele":  "Model 3",
+        "motorisation":  "electrique",
+        "prix_ttc_min":  300,
+        "prix_ttc_max":  500,
+        "temps_mo":  100,
+        "notes":  "Changement 4 pneus + equilibrage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Turbo",
+        "marque":  "Ford",
+        "modele":  "Focus",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  800,
+        "prix_ttc_max":  1200,
+        "temps_mo":  180,
+        "notes":  "Remplacement turbo",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Injecteurs",
+        "marque":  "Opel",
+        "modele":  "Corsa",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  500,
+        "prix_ttc_max":  750,
+        "temps_mo":  120,
+        "notes":  "Remplacement injecteurs",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Echappement",
+        "marque":  "Skoda",
+        "modele":  "Octavia",
+        "motorisation":  "essence",
+        "prix_ttc_min":  400,
+        "prix_ttc_max":  550,
+        "temps_mo":  150,
+        "notes":  "Remplacement silencieux",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Alternateur",
+        "marque":  "Mazda",
+        "modele":  "CX-5",
+        "motorisation":  "essence",
+        "prix_ttc_min":  280,
+        "prix_ttc_max":  400,
+        "temps_mo":  110,
+        "notes":  "Remplacement alternateur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Demarreur",
+        "marque":  "Subaru",
+        "modele":  "Outback",
+        "motorisation":  "essence",
+        "prix_ttc_min":  320,
+        "prix_ttc_max":  450,
+        "temps_mo":  120,
+        "notes":  "Remplacement demarreur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Radiateur",
+        "marque":  "Volvo",
+        "modele":  "V90",
+        "motorisation":  "essence",
+        "prix_ttc_min":  350,
+        "prix_ttc_max":  500,
+        "temps_mo":  130,
+        "notes":  "Remplacement radiateur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Phares",
+        "marque":  "Mini",
+        "modele":  "Cooper",
+        "motorisation":  "essence",
+        "prix_ttc_min":  150,
+        "prix_ttc_max":  250,
+        "temps_mo":  60,
+        "notes":  "Remplacement bloc phare LED",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Pare-brise",
+        "marque":  "Fiat",
+        "modele":  "500",
+        "motorisation":  "essence",
+        "prix_ttc_min":  300,
+        "prix_ttc_max":  450,
+        "temps_mo":  90,
+        "notes":  "Remplacement pare-brise",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Essuie-glaces",
+        "marque":  "Suzuki",
+        "modele":  "Swift",
+        "motorisation":  "essence",
+        "prix_ttc_min":  25,
+        "prix_ttc_max":  40,
+        "temps_mo":  10,
+        "notes":  "Remplacement essuie-glaces",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Capteurs",
+        "marque":  "Isuzu",
+        "modele":  "D-Max",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  120,
+        "prix_ttc_max":  200,
+        "temps_mo":  50,
+        "notes":  "Remplacement capteur O2",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Liquides",
+        "marque":  "Daihatsu",
+        "modele":  "Terios",
+        "motorisation":  "essence",
+        "prix_ttc_min":  40,
+        "prix_ttc_max":  70,
+        "temps_mo":  20,
+        "notes":  "Vidange liquide refroidissement",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Huiles",
+        "marque":  "Ssangyong",
+        "modele":  "Tivoli",
+        "motorisation":  "essence",
+        "prix_ttc_min":  35,
+        "prix_ttc_max":  55,
+        "temps_mo":  15,
+        "notes":  "Vidange huile boite vitesses",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Courroies",
+        "marque":  "Chevrolet",
+        "modele":  "Cruze",
+        "motorisation":  "diesel",
+        "prix_ttc_min":  200,
+        "prix_ttc_max":  320,
+        "temps_mo":  100,
+        "notes":  "Remplacement courroies accessoires",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Joints",
+        "marque":  "Tesla",
+        "modele":  "Model 3",
+        "motorisation":  "electrique",
+        "prix_ttc_min":  150,
+        "prix_ttc_max":  250,
+        "temps_mo":  80,
+        "notes":  "Remplacement joint moteur electrique",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Rotules",
+        "marque":  "Porsche",
+        "modele":  "911",
+        "motorisation":  "essence",
+        "prix_ttc_min":  400,
+        "prix_ttc_max":  600,
+        "temps_mo":  150,
+        "notes":  "Remplacement rotule direction",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prestation":  "Roulements",
+        "marque":  "Renault",
+        "modele":  "Espace",
+        "motorisation":  "essence",
+        "prix_ttc_min":  250,
+        "prix_ttc_max":  380,
+        "temps_mo":  120,
+        "notes":  "Remplacement roulement roue",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "a_verifier":  true
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/renault/clio-4/vidange/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Clio 4 D",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/renault/clio-5/vidange/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Clio 5 D",
+        "prix_ttc_min":  97,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Megane 4 D",
+        "prix_ttc_min":  99,
+        "temps_mo":  28
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Captur D",
+        "prix_ttc_min":  94,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  119,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Scenic D",
+        "prix_ttc_min":  97,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  123,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Espace D",
+        "prix_ttc_min":  101,
+        "temps_mo":  29
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "206 D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "307 D",
+        "prix_ttc_min":  94,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  119,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "308 D",
+        "prix_ttc_min":  97,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  127,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "3008 D",
+        "prix_ttc_min":  101,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C1 D",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C3 D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C4 D",
+        "prix_ttc_min":  97,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  117,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Golf 7 D",
+        "prix_ttc_min":  95,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Polo D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  114,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Yaris D",
+        "prix_ttc_min":  92,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  117,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Corolla D",
+        "prix_ttc_min":  95,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Jazz D",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Civic D",
+        "prix_ttc_min":  94,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "CR-V D",
+        "prix_ttc_min":  99,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  119,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Qashqai D",
+        "prix_ttc_min":  97,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Micra D",
+        "prix_ttc_min":  90,
+        "temps_mo":  23
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "i20 D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "i30 D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Rio D",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  119,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Sportage D",
+        "prix_ttc_min":  97,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/bmw/serie-3/vidange/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "BMW",
+        "a_verifier":  true,
+        "modele":  "Série 3 D",
+        "prix_ttc_min":  94,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "BMW",
+        "a_verifier":  true,
+        "modele":  "Série 3 Touring D",
+        "prix_ttc_min":  96,
+        "temps_mo":  23
+    },
+    {
+        "prix_ttc_max":  143,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "BMW",
+        "a_verifier":  true,
+        "modele":  "X3 D",
+        "prix_ttc_min":  110,
+        "temps_mo":  29
+    },
+    {
+        "prix_ttc_max":  138,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe C D",
+        "prix_ttc_min":  105,
+        "temps_mo":  28
+    },
+    {
+        "prix_ttc_max":  154,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe E D",
+        "prix_ttc_min":  116,
+        "temps_mo":  31
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Audi",
+        "a_verifier":  true,
+        "modele":  "A3 D",
+        "prix_ttc_min":  97,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Skoda",
+        "a_verifier":  true,
+        "modele":  "Fabia D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  117,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Skoda",
+        "a_verifier":  true,
+        "modele":  "Octavia D",
+        "prix_ttc_min":  95,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Fiesta D",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Focus D",
+        "prix_ttc_min":  94,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  112,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Opel",
+        "a_verifier":  true,
+        "modele":  "Corsa D",
+        "prix_ttc_min":  90,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Opel",
+        "a_verifier":  true,
+        "modele":  "Astra D",
+        "prix_ttc_min":  94,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "2 D",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  114,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "3 D",
+        "prix_ttc_min":  92,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "CX-5 D",
+        "prix_ttc_min":  99,
+        "temps_mo":  26
+    },
+    {
+        "prix_ttc_max":  123,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Subaru",
+        "a_verifier":  true,
+        "modele":  "Outback D",
+        "prix_ttc_min":  101,
+        "temps_mo":  28
+    },
+    {
+        "prix_ttc_max":  138,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Volvo",
+        "a_verifier":  true,
+        "modele":  "XC60 D",
+        "prix_ttc_min":  105,
+        "temps_mo":  28
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Fiat",
+        "a_verifier":  true,
+        "modele":  "Panda D",
+        "prix_ttc_min":  82,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  108,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Fiat",
+        "a_verifier":  true,
+        "modele":  "500 D",
+        "prix_ttc_min":  86,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  108,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Suzuki",
+        "a_verifier":  true,
+        "modele":  "Swift D",
+        "prix_ttc_min":  86,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  117,
+        "motorisation":  "diesel",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange + filtre huile",
+        "marque":  "Suzuki",
+        "a_verifier":  true,
+        "modele":  "Vitara D",
+        "prix_ttc_min":  95,
+        "temps_mo":  25
+    },
+    {
+        "prix_ttc_max":  127,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/peugeot/308/changement-de-la-batterie/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "308 D",
+        "prix_ttc_min":  110,
+        "temps_mo":  33
+    },
+    {
+        "prix_ttc_max":  396,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie (registre complexe)",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "308 3 D",
+        "prix_ttc_min":  363,
+        "temps_mo":  50
+    },
+    {
+        "prix_ttc_max":  132,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C3 D",
+        "prix_ttc_min":  105,
+        "temps_mo":  31
+    },
+    {
+        "prix_ttc_max":  148,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C4 D",
+        "prix_ttc_min":  110,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  132,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Clio D",
+        "prix_ttc_min":  105,
+        "temps_mo":  31
+    },
+    {
+        "prix_ttc_max":  154,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Megane D",
+        "prix_ttc_min":  116,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  154,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Polo D",
+        "prix_ttc_min":  116,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  160,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Golf D",
+        "prix_ttc_min":  121,
+        "temps_mo":  36
+    },
+    {
+        "prix_ttc_max":  143,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Fiesta D",
+        "prix_ttc_min":  105,
+        "temps_mo":  33
+    },
+    {
+        "prix_ttc_max":  160,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Civic D",
+        "prix_ttc_min":  121,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  160,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Qashqai D",
+        "prix_ttc_min":  121,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  138,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Micra D",
+        "prix_ttc_min":  105,
+        "temps_mo":  31
+    },
+    {
+        "prix_ttc_max":  154,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Auris D",
+        "prix_ttc_min":  116,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  264,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe C D",
+        "prix_ttc_min":  198,
+        "temps_mo":  38
+    },
+    {
+        "prix_ttc_max":  176,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe A D",
+        "prix_ttc_min":  132,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  187,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "BMW",
+        "a_verifier":  true,
+        "modele":  "Série 1 D",
+        "prix_ttc_min":  143,
+        "temps_mo":  36
+    },
+    {
+        "prix_ttc_max":  170,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Audi",
+        "a_verifier":  true,
+        "modele":  "A3 D",
+        "prix_ttc_min":  127,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  143,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Opel",
+        "a_verifier":  true,
+        "modele":  "Astra D",
+        "prix_ttc_min":  110,
+        "temps_mo":  33
+    },
+    {
+        "prix_ttc_max":  132,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "i20 D",
+        "prix_ttc_min":  99,
+        "temps_mo":  31
+    },
+    {
+        "prix_ttc_max":  143,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Rio D",
+        "prix_ttc_min":  110,
+        "temps_mo":  33
+    },
+    {
+        "prix_ttc_max":  148,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Ceed D",
+        "prix_ttc_min":  110,
+        "temps_mo":  33
+    },
+    {
+        "prix_ttc_max":  154,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Skoda",
+        "a_verifier":  true,
+        "modele":  "Fabia D",
+        "prix_ttc_min":  116,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  154,
+        "motorisation":  "diesel",
+        "prestation":  "Batterie",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement batterie",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "3 D",
+        "prix_ttc_min":  116,
+        "temps_mo":  35
+    },
+    {
+        "prix_ttc_max":  99,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/vehicules/toyota/corolla/changement-des-plaquettes-de-frein-avant/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Corolla D",
+        "prix_ttc_min":  82,
+        "temps_mo":  47
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Corolla Break D",
+        "prix_ttc_min":  94,
+        "temps_mo":  50
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Golf 7 D",
+        "prix_ttc_min":  88,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Polo D",
+        "prix_ttc_min":  82,
+        "temps_mo":  43
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Accord D",
+        "prix_ttc_min":  94,
+        "temps_mo":  46
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Civic D",
+        "prix_ttc_min":  88,
+        "temps_mo":  45
+    },
+    {
+        "prix_ttc_max":  99,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "206 D",
+        "prix_ttc_min":  77,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "308 D",
+        "prix_ttc_min":  82,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  101,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C3 D",
+        "prix_ttc_min":  79,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  99,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "Xsara D",
+        "prix_ttc_min":  77,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  94,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Twingo D",
+        "prix_ttc_min":  72,
+        "temps_mo":  42
+    },
+    {
+        "prix_ttc_max":  99,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Clio D",
+        "prix_ttc_min":  77,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Fiesta D",
+        "prix_ttc_min":  82,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Focus D",
+        "prix_ttc_min":  88,
+        "temps_mo":  45
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Qashqai D",
+        "prix_ttc_min":  94,
+        "temps_mo":  46
+    },
+    {
+        "prix_ttc_max":  101,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Micra D",
+        "prix_ttc_min":  79,
+        "temps_mo":  43
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Almera D",
+        "prix_ttc_min":  82,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  138,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "Santa Fe D",
+        "prix_ttc_min":  105,
+        "temps_mo":  50
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "Elantra D",
+        "prix_ttc_min":  88,
+        "temps_mo":  46
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Sportage D",
+        "prix_ttc_min":  94,
+        "temps_mo":  47
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Soul D",
+        "prix_ttc_min":  94,
+        "temps_mo":  47
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Audi",
+        "a_verifier":  true,
+        "modele":  "A3 D",
+        "prix_ttc_min":  94,
+        "temps_mo":  46
+    },
+    {
+        "prix_ttc_max":  132,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Audi",
+        "a_verifier":  true,
+        "modele":  "A4 D",
+        "prix_ttc_min":  99,
+        "temps_mo":  48
+    },
+    {
+        "prix_ttc_max":  118,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Skoda",
+        "a_verifier":  true,
+        "modele":  "Octavia D",
+        "prix_ttc_min":  90,
+        "temps_mo":  45
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Skoda",
+        "a_verifier":  true,
+        "modele":  "Rapid D",
+        "prix_ttc_min":  82,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "3 D",
+        "prix_ttc_min":  88,
+        "temps_mo":  45
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "6 D",
+        "prix_ttc_min":  94,
+        "temps_mo":  46
+    },
+    {
+        "prix_ttc_max":  113,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Opel",
+        "a_verifier":  true,
+        "modele":  "Astra D",
+        "prix_ttc_min":  86,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  99,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Fiat",
+        "a_verifier":  true,
+        "modele":  "500 D",
+        "prix_ttc_min":  77,
+        "temps_mo":  43
+    },
+    {
+        "prix_ttc_max":  99,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Suzuki",
+        "a_verifier":  true,
+        "modele":  "Swift D",
+        "prix_ttc_min":  77,
+        "temps_mo":  43
+    },
+    {
+        "prix_ttc_max":  108,
+        "motorisation":  "diesel",
+        "prestation":  "Plaquettes frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Plaquettes avant",
+        "marque":  "Suzuki",
+        "a_verifier":  true,
+        "modele":  "Baleno D",
+        "prix_ttc_min":  86,
+        "temps_mo":  44
+    },
+    {
+        "prix_ttc_max":  220,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Golf 7 D",
+        "prix_ttc_min":  165,
+        "temps_mo":  72
+    },
+    {
+        "prix_ttc_max":  209,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "2008 D",
+        "prix_ttc_min":  154,
+        "temps_mo":  66
+    },
+    {
+        "prix_ttc_max":  231,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Scenic D",
+        "prix_ttc_min":  165,
+        "temps_mo":  72
+    },
+    {
+        "prix_ttc_max":  198,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Yaris D",
+        "prix_ttc_min":  143,
+        "temps_mo":  61
+    },
+    {
+        "prix_ttc_max":  242,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Qashqai D",
+        "prix_ttc_min":  176,
+        "temps_mo":  77
+    },
+    {
+        "prix_ttc_max":  231,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Focus D",
+        "prix_ttc_min":  170,
+        "temps_mo":  75
+    },
+    {
+        "prix_ttc_max":  226,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Civic D",
+        "prix_ttc_min":  165,
+        "temps_mo":  72
+    },
+    {
+        "prix_ttc_max":  237,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Audi",
+        "a_verifier":  true,
+        "modele":  "A3 D",
+        "prix_ttc_min":  170,
+        "temps_mo":  75
+    },
+    {
+        "prix_ttc_max":  253,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "BMW",
+        "a_verifier":  true,
+        "modele":  "Série 3 D",
+        "prix_ttc_min":  182,
+        "temps_mo":  79
+    },
+    {
+        "prix_ttc_max":  264,
+        "motorisation":  "diesel",
+        "prestation":  "Disques frein",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Disques + plaquettes avant",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe C D",
+        "prix_ttc_min":  187,
+        "temps_mo":  82
+    },
+    {
+        "prix_ttc_max":  61,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Qashqai D",
+        "prix_ttc_min":  38,
+        "temps_mo":  16
+    },
+    {
+        "prix_ttc_max":  57,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "Tucson D",
+        "prix_ttc_min":  35,
+        "temps_mo":  15
+    },
+    {
+        "prix_ttc_max":  53,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "206 D",
+        "prix_ttc_min":  31,
+        "temps_mo":  13
+    },
+    {
+        "prix_ttc_max":  55,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C1 D",
+        "prix_ttc_min":  33,
+        "temps_mo":  13
+    },
+    {
+        "prix_ttc_max":  57,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Kangoo D",
+        "prix_ttc_min":  35,
+        "temps_mo":  14
+    },
+    {
+        "prix_ttc_max":  72,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe B D",
+        "prix_ttc_min":  44,
+        "temps_mo":  16
+    },
+    {
+        "prix_ttc_max":  66,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre à air",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre moteur",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "RAV4 D",
+        "prix_ttc_min":  42,
+        "temps_mo":  15
+    },
+    {
+        "prix_ttc_max":  55,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre habitacle",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "Tucson D",
+        "prix_ttc_min":  33,
+        "temps_mo":  13
+    },
+    {
+        "prix_ttc_max":  77,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre habitacle",
+        "marque":  "BMW",
+        "a_verifier":  true,
+        "modele":  "Série 1 D",
+        "prix_ttc_min":  50,
+        "temps_mo":  16
+    },
+    {
+        "prix_ttc_max":  82,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre habitacle",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Mondeo D",
+        "prix_ttc_min":  55,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  82,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre habitacle",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "3008 D",
+        "prix_ttc_min":  55,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  82,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre habitacle",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Espace D",
+        "prix_ttc_min":  55,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  82,
+        "motorisation":  "diesel",
+        "prestation":  "Filtre habitacle",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement filtre habitacle",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "CX-5 D",
+        "prix_ttc_min":  55,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Sportage D",
+        "prix_ttc_min":  66,
+        "temps_mo":  50
+    },
+    {
+        "prix_ttc_max":  132,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Mercedes",
+        "a_verifier":  true,
+        "modele":  "Classe A D",
+        "prix_ttc_min":  88,
+        "temps_mo":  55
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "CR-V D",
+        "prix_ttc_min":  72,
+        "temps_mo":  55
+    },
+    {
+        "prix_ttc_max":  127,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Ford",
+        "a_verifier":  true,
+        "modele":  "Kuga D",
+        "prix_ttc_min":  82,
+        "temps_mo":  57
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Volkswagen",
+        "a_verifier":  true,
+        "modele":  "Jetta D",
+        "prix_ttc_min":  77,
+        "temps_mo":  53
+    },
+    {
+        "prix_ttc_max":  121,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Peugeot",
+        "a_verifier":  true,
+        "modele":  "5008 D",
+        "prix_ttc_min":  82,
+        "temps_mo":  61
+    },
+    {
+        "prix_ttc_max":  138,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Citroën",
+        "a_verifier":  true,
+        "modele":  "C5 D",
+        "prix_ttc_min":  94,
+        "temps_mo":  61
+    },
+    {
+        "prix_ttc_max":  132,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Opel",
+        "a_verifier":  true,
+        "modele":  "Insignia D",
+        "prix_ttc_min":  88,
+        "temps_mo":  57
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "diesel",
+        "prestation":  "Bougies d\u0027allumage",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bougies 4 cyl",
+        "marque":  "Nissan",
+        "a_verifier":  true,
+        "modele":  "Primera D",
+        "prix_ttc_min":  77,
+        "temps_mo":  53
+    },
+    {
+        "prix_ttc_max":  550,
+        "motorisation":  "diesel",
+        "prestation":  "Courroie distribution",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement courroie distribution",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Yaris D",
+        "prix_ttc_min":  385,
+        "temps_mo":  198
+    },
+    {
+        "prix_ttc_max":  660,
+        "motorisation":  "diesel",
+        "prestation":  "Courroie distribution",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement courroie distribution",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Laguna D",
+        "prix_ttc_min":  440,
+        "temps_mo":  220
+    },
+    {
+        "prix_ttc_max":  495,
+        "motorisation":  "diesel",
+        "prestation":  "Pneus",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Changement 4 pneus + equilibrage",
+        "marque":  "Audi",
+        "a_verifier":  true,
+        "modele":  "A4 D",
+        "prix_ttc_min":  308,
+        "temps_mo":  99
+    },
+    {
+        "prix_ttc_max":  605,
+        "motorisation":  "diesel",
+        "prestation":  "Echappement",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement silencieux",
+        "marque":  "Skoda",
+        "a_verifier":  true,
+        "modele":  "Octavia D",
+        "prix_ttc_min":  440,
+        "temps_mo":  165
+    },
+    {
+        "prix_ttc_max":  440,
+        "motorisation":  "diesel",
+        "prestation":  "Alternateur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement alternateur",
+        "marque":  "Mazda",
+        "a_verifier":  true,
+        "modele":  "CX-5 D",
+        "prix_ttc_min":  308,
+        "temps_mo":  121
+    },
+    {
+        "prix_ttc_max":  495,
+        "motorisation":  "diesel",
+        "prestation":  "Demarreur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement demarreur",
+        "marque":  "Subaru",
+        "a_verifier":  true,
+        "modele":  "Outback D",
+        "prix_ttc_min":  352,
+        "temps_mo":  132
+    },
+    {
+        "prix_ttc_max":  550,
+        "motorisation":  "diesel",
+        "prestation":  "Radiateur",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement radiateur",
+        "marque":  "Volvo",
+        "a_verifier":  true,
+        "modele":  "V90 D",
+        "prix_ttc_min":  385,
+        "temps_mo":  143
+    },
+    {
+        "prix_ttc_max":  275,
+        "motorisation":  "diesel",
+        "prestation":  "Phares",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement bloc phare LED",
+        "marque":  "Mini",
+        "a_verifier":  true,
+        "modele":  "Cooper D",
+        "prix_ttc_min":  165,
+        "temps_mo":  66
+    },
+    {
+        "prix_ttc_max":  495,
+        "motorisation":  "diesel",
+        "prestation":  "Pare-brise",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement pare-brise",
+        "marque":  "Fiat",
+        "a_verifier":  true,
+        "modele":  "500 D",
+        "prix_ttc_min":  330,
+        "temps_mo":  99
+    },
+    {
+        "prix_ttc_max":  44,
+        "motorisation":  "diesel",
+        "prestation":  "Essuie-glaces",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement essuie-glaces",
+        "marque":  "Suzuki",
+        "a_verifier":  true,
+        "modele":  "Swift D",
+        "prix_ttc_min":  28,
+        "temps_mo":  11
+    },
+    {
+        "prix_ttc_max":  77,
+        "motorisation":  "diesel",
+        "prestation":  "Liquides",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange liquide refroidissement",
+        "marque":  "Daihatsu",
+        "a_verifier":  true,
+        "modele":  "Terios D",
+        "prix_ttc_min":  44,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  61,
+        "motorisation":  "diesel",
+        "prestation":  "Huiles",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange huile boite vitesses",
+        "marque":  "Ssangyong",
+        "a_verifier":  true,
+        "modele":  "Tivoli D",
+        "prix_ttc_min":  38,
+        "temps_mo":  16
+    },
+    {
+        "prix_ttc_max":  660,
+        "motorisation":  "diesel",
+        "prestation":  "Rotules",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement rotule direction",
+        "marque":  "Porsche",
+        "a_verifier":  true,
+        "modele":  "911 D",
+        "prix_ttc_min":  440,
+        "temps_mo":  165
+    },
+    {
+        "prix_ttc_max":  418,
+        "motorisation":  "diesel",
+        "prestation":  "Roulements",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Remplacement roulement roue",
+        "marque":  "Renault",
+        "a_verifier":  true,
+        "modele":  "Espace D",
+        "prix_ttc_min":  275,
+        "temps_mo":  132
+    },
+    {
+        "prix_ttc_max":  109,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Yaris HV",
+        "prix_ttc_min":  88,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  111,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Toyota",
+        "a_verifier":  true,
+        "modele":  "Corolla HV",
+        "prix_ttc_min":  90,
+        "temps_mo":  23
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Jazz HV",
+        "prix_ttc_min":  84,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  110,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "Civic HV",
+        "prix_ttc_min":  89,
+        "temps_mo":  23
+    },
+    {
+        "prix_ttc_max":  116,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Honda",
+        "a_verifier":  true,
+        "modele":  "CR-V HV",
+        "prix_ttc_min":  94,
+        "temps_mo":  24
+    },
+    {
+        "prix_ttc_max":  107,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "i20 HV",
+        "prix_ttc_min":  86,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  107,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Hyundai",
+        "a_verifier":  true,
+        "modele":  "i30 HV",
+        "prix_ttc_min":  86,
+        "temps_mo":  22
+    },
+    {
+        "prix_ttc_max":  105,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Rio HV",
+        "prix_ttc_min":  84,
+        "temps_mo":  20
+    },
+    {
+        "prix_ttc_max":  113,
+        "motorisation":  "hybride",
+        "prestation":  "Vidange",
+        "sources":  [
+                        "https://www.vroomly.com/"
+                    ],
+        "notes":  "Vidange hybride",
+        "marque":  "Kia",
+        "a_verifier":  true,
+        "modele":  "Sportage HV",
+        "prix_ttc_min":  92,
+        "temps_mo":  24
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Tesla",
+        "n":  "Pas de vidange",
+        "prix_min":  0,
+        "prix_max":  0,
+        "t":  0,
+        "modele":  "Model 3 EV",
+        "motorisation":  "electrique"
+    },
+    {
+        "prestation":  "Vidange",
+        "marque":  "Tesla",
+        "n":  "Pas de vidange",
+        "prix_min":  0,
+        "prix_max":  0,
+        "t":  0,
+        "modele":  "Model Y EV",
+        "motorisation":  "electrique"
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Nissan",
+        "n":  "Batterie HV",
+        "prix_min":  800,
+        "prix_max":  1500,
+        "t":  150,
+        "modele":  "Leaf EV",
+        "motorisation":  "electrique"
+    },
+    {
+        "prestation":  "Batterie",
+        "marque":  "Tesla",
+        "n":  "Batterie principale",
+        "prix_min":  10000,
+        "prix_max":  15000,
+        "t":  180,
+        "modele":  "Model S EV",
+        "motorisation":  "electrique"
+    }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "modele": "Lamborghini Revuelto (2024+)",
+    "score_fiabilite": "notation limitee en raison de recence du modele ; beneficie de l'heritage Volkswagen Group pour les composants",
+    "pannes_courantes": "aucune panne systematique identifiee ; nouveau modele hybride rechargeable a moteur V12 ; tests de fiabilite a long terme non disponibles",
+    "source": "jdpower.com, edmunds.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lamborghini Urus (2024-2025)",
+    "score_fiabilite": "4,0/5 fiabilite globale (2026), moteur V8 Volkswagen Group eprouve",
+    "pannes_courantes": "moteur 4.0 V8 turbo beneficie de technologie VAG; boite 8-vitesses auto et systemes electroniques complexes ; pneus et freins tres usants ; coûts maintenance eleves (1500-2500 euros/an)",
+    "source": "jdpower.com, kbb.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Chrysler Pacifica (2024-2025)",
+    "score_fiabilite": "reputee fiable, plus fiable que generatione precedente",
+    "pannes_courantes": "version hybride rechargeable : risque incendie batterie (rappel 2024 ~20 000 vehicules) ; moteur V6 essence generalement robuste ; transmission automatique eprouvee",
+    "source": "carbuzz.com, consumerreports.org — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Gladiator (2024+)",
+    "score_fiabilite": "donnees limitees ; heritages mecaniques Jeep et Ram prouvees",
+    "pannes_courantes": "moteur 3.6L V6 et 2.0L turbo essence ; boite 8-vitesses auto ; transmission Transfer case complexe ; couts entretien moderement eleves",
+    "source": "consumerreports.org, jdpower.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Wagoneer (2024+)",
+    "score_fiabilite": "nouveau modele, donnees limitees ; beneficie architectures Stellantis-Jeep eprouvees",
+    "pannes_courantes": "6 rappels NHTSA 2022-2024 (garnitures plastiques detachements, pieces de porte) ; moteurs essence 5.7L/6.2L V8 et diesel 3.0L turbo ; electronique complexe",
+    "source": "consumerreports.org, nhtsa.gov — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "GMC Hummer EV (2024-2025)",
+    "score_fiabilite": "6,4/10 Edmunds ; 4/5 consommateurs ; problemes electriques/firmware recurrents",
+    "pannes_courantes": "messages 'Service High Voltage System' frequents ; problemes capteurs batterie/modules ; firmware updates necessaires ; version e-moteur Ultium ; plupart resolus par updates logiciels",
+    "source": "edmunds.com, recharged.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Taos (2024-2025)",
+    "score_fiabilite": "74/100 (2024), 69/100 (2025) selon Auto Reliability Index ; ameliorations continues 2023-2025",
+    "pannes_courantes": "moteur 1.5L TSI turbo essence robuste ; boite automatique 8V amelioree ; 2022 avait score faible 59/100 (problemes moteur) ; transmission DSG fiable",
+    "source": "consumerreports.org, autoreliabilityindex.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen T-Cross (2024-2025)",
+    "score_fiabilite": "7e position sur 23 petits SUV (What Car 2024) ; fiabilite Volkswagen 18/31 marques, Skoda 13/31",
+    "pannes_courantes": "moteur essence turbo 1.0/1.2 TSI ; transmission DSG 7 vitesses eprouvee ; systeme infodivertissement complexe cause frustrationen occasionnelles",
+    "source": "whatcar.com, consumerreports.org — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen ID.Buzz (2024+)",
+    "score_fiabilite": "fiabilite globale satisfaisante apres 4 ans ID. range ; aucune defaillance batterie systematique 2025-2026",
+    "pannes_courantes": "batterie MEB liquide refroidie eprouvee (ID.4 excellent historique) ; problemes logiciels (ID. Software 2.x resolus par updates) ; dysfonctionnements infodivertissement et aides a la conduite ; moteur electrique simple fiable ; garantie batterie 8 ans/100 000 km",
+    "source": "volkswagen.com, recharged.com, greencarreports.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen ID.7 (2024+)",
+    "score_fiabilite": "fiabilite satisfaisante ; beneficie plateforme MEB mature ; aucun probleme systematique identifie",
+    "pannes_courantes": "moteur electrique IPI eprouve ; batterie MEB robuste ; infodivertissement complexe source problemes occasionnels ; boite 1-vitesse simple fiable",
+    "source": "volkswagen.com, consumerreports.org — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Infiniti QX60 (2024-2025)",
+    "score_fiabilite": "fiabilite reconnue, SUV luxe accessibilite sans maintenance cauchemar",
+    "pannes_courantes": "2025 : moteur 2.0L turbo 4-cylindres (remplace V6) ; transmission CVT fiable ; boite automatique transmission eprouvee ; historique fiabilite positif",
+    "source": "consumerreports.org, iseecars.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Genesis GV70 (2024+)",
+    "score_fiabilite": "excellent ; classement J.D. Power qualite/fiabilite annuel depuis lancement",
+    "pannes_courantes": "moteurs essence turbo 2.0L ou diesel 2.2L eprouvees ; transmission automatique 8V fiable ; electronique Genesis fiable ; maintenance couverte 3 ans/36 000 km",
+    "source": "jdpower.com, genesiskansascity.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lexus GX 460 (2024+)",
+    "score_fiabilite": "nouvelle generation 2024, moteur V6 robuste eprouve ; reputation lexus pour fiabilite",
+    "pannes_courantes": "moteur 4.6L V8 goinfre essence (ancienne generation remplacee 2024) ; transmission automatique 6V eprouvee ; plateforme-moteur inchange longtemps (force/faiblesse) ; excellent support apres-vente",
+    "source": "consumerreports.org, iseecars.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Slavia (2024+)",
+    "score_fiabilite": "donnees fiabilite limitees ; beneficie plateforme MQB Volkswagen-Skoda",
+    "pannes_courantes": "moteur 1.0 TSI turbo essence 110 ch ou 1.6 TDI diesel 105 ch ; transmission manuelle/automatique ; electronique MQB eprouvee",
+    "source": "skodaauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Kuraq (2024+)",
+    "score_fiabilite": "donnees limitees ; beneficie plateforme MQB et motorisations eprouvees Skoda",
+    "pannes_courantes": "moteurs TSI turbo essence (1.0, 1.5) ou TDI diesel 2.0 ; transmission DSG 7V ou manuelle ; electronique MQB standard Skoda",
+    "source": "skodaauto.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai Creta (2024-2025)",
+    "score_fiabilite": "excellent classement J.D. Power qualite ; marque coreen reputation fiabilite",
+    "pannes_courantes": "moteur 1.6 CRDi diesel 100-115 kW ou 1.6 GDI essence ; transmission automatique IVT ou manuelle ; technologies Hyundai eprouvees ; garantie 7 ans etendue",
+    "source": "jdpower.com, globalncap.org — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan Magnite (2024+)",
+    "score_fiabilite": "micro-SUV accessible ; fiabilite Nissan globalement bonne",
+    "pannes_courantes": "moteur 1.0 essence 72 ch ou 1.2 essence 82 ch ; transmission CVT ou manuelle ; equipements tech et securite complets pour segment ; Global NCAP test 2025",
+    "source": "globalncap.org, cardekho.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Tata Harrier (2024+)",
+    "score_fiabilite": "5-etoiles Global NCAP ; reputation fiabilite Tata en progression",
+    "pannes_courantes": "moteur 2.0L diesel Kryotec 140/170 ch ou essence turbo 1.5 GDi ; transmission automatique Hyundai 6V ; systeme electronique solide ; couts entretien moderes",
+    "source": "globalncap.org, cartoq.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Tata Punch (2024+)",
+    "score_fiabilite": "micro-SUV urbain, fiabilite Tata competitive",
+    "pannes_courantes": "moteur 1.2 essence 75/86 ch ou 1.2 diesel 85 ch ; transmission CVT automatique ; plateforme simple robuste ; maintenance economique ; sans surcharge electronique",
+    "source": "cardekho.com, tatamotors.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mahindra XUV700 (2024-2025)",
+    "score_fiabilite": "5-etoiles Global NCAP 2022+ ; reputation Mahindra en hausse flotte professionnelle",
+    "pannes_courantes": "moteur 2.0L diesel 155 ch ou essence turbo 1.5 GDi 225 ch ; transmission automatique 6/8V ; systemes electroniques Mercedes-co-developed; couts entretien moderement eleves",
+    "source": "globalncap.org, gomechanic.in — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mahindra Bolero (2024+)",
+    "score_fiabilite": "SUV utilitaire rural robuste, mecanique simple eprouvee",
+    "pannes_courantes": "moteur 2.2L diesel mHawk 75-100 ch ; transmission manuelle 5V simple ; chassis rigide ; reparations peu couteu dans zones rurales Inde ; maintenance basique",
+    "source": "mahindra.com, ridenrepair.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Li Auto Mega (2024+)",
+    "score_fiabilite": "nouveau modele ; beneficie expertise batterie Li Auto (EREV leader)",
+    "pannes_courantes": "monospace electrique pur premiere fois Li Auto ; batterie 55/101 kWh ; moteur electrique ; systeme 800V ; design aerodynamique exceptional (0.215 Cd) ; donnees fiabilite long terme a suivre",
+    "source": "liautomobiles.com, autochina.blog — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Geely Okavango (2024-2025)",
+    "score_fiabilite": "SUV Geely fiable si maintenance suivie ; marque chinoise reputation montante",
+    "pannes_courantes": "moteur 1.5L turbo essence 150-177 ch ou 2.0L turbo ; transmission automatique 6V ; problemes peinture signales ; reparations economiques ; couts maintenance inferieurs aux SUV japonais",
+    "source": "geely.com, tilldrive.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Geely Coolray (2024-2025)",
+    "score_fiabilite": "SUV compact Geely ; fiabilite globalement bonne si entretien regulier",
+    "pannes_courantes": "moteur 1.5L turbo essence 150 ch ; transmission automatique 6V CVT ; problemes boite signales (fuites, bruits) ; resolvables par maintenance predicitaire ; couts reparation accessibles",
+    "source": "geely.com, hackmd.io — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lada Vesta (2024-2025)",
+    "score_fiabilite": "berline russe economique, mecanique simple robuste",
+    "pannes_courantes": "moteur 1.6L essence 90-106 ch ; transmission manuelle 5V ou CVT ; plateforme B0 simple eprouvee ; suspension basique ; couts entretien tres bas",
+    "source": "lada.ru, planeterenault.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ora Good Cat (2024+)",
+    "score_fiabilite": "electrique chinois Great Wall Motors ; fiabilite batterie LFP solide",
+    "pannes_courantes": "moteur electrique ; batterie 30-44 kWh LFP (incendie faible risque) ; electronique chinoise ; autonomie 200-400 km; donnees fiabilite long terme limitees",
+    "source": "gwm-global.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nio EL8 (2024+)",
+    "score_fiabilite": "SUV electrique 3 rangees Nio ; batterie swappable propriete architecture robuste",
+    "pannes_courantes": "moteur electrique double ; batterie 75/100 kWh swappable (architecture unique) ; autonomie 400-510 km; qualite premium ; service Nio competent mais couteux",
+    "source": "nio.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "BYD Qin L DM-i (2024+)",
+    "score_fiabilite": "hybride rechargeable BYD ; moteur Blade LFP securite superieure",
+    "pannes_courantes": "moteur essence 1.5L turbo + moteur electrique ; batterie LFP 18/30/40 kWh ; transmission DCT 7V ; fiabilite BYD reconnue industrie flotte ; couts entretien moderates",
+    "source": "byd.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "GAC Aion Y Plus (2024+)",
+    "score_fiabilite": "electrique chinois sous 20 000 euros ; fiabilite batterie GAC Aion reconnue",
+    "pannes_courantes": "moteur electrique ; batterie LFP 44-50 kWh ; autonomie 250-320 km ; qualite fabrication solide ; electronique chinoise ; couts reparation accessibles",
+    "source": "gacsaion.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Polestar 3 (2024+)",
+    "score_fiabilite": "SUV electrique premium ; fiabilite Volvo heritage ; donnees long terme limitees (nouveau modele)",
+    "pannes_courantes": "moteur electrique dual ; batterie LFP 111 kWh ; autonomie 600+ km ; electronique Google intergrated ; systemes Volvo robustes ; maintenance preditive ; couts entretien reduits aspect electrique",
+    "source": "polestar.com, consumerreports.org — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Polestar 4 (2024+)",
+    "score_fiabilite": "berline electrique premium ; heritage Volvo-Geely fiabilite ; donnees long terme a confirmer",
+    "pannes_courantes": "moteur electrique ; batterie LFP 111 kWh ; autonomie 500+ km ; infodivertissement Android Automotive ; systeme recharge rapide 250 kW ; logiciels OTA continu ; maintenance simple",
+    "source": "polestar.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Cupra Tavascan (2024+)",
+    "score_fiabilite": "SUV electrique Cupra (marque Seat performance) ; fiabilite plateforme MEB Volkswagen",
+    "pannes_courantes": "moteur electrique 210-220 ch ; batterie 82 kWh MEB ; autonomie 520 km ; infodivertissement Cupra racier VW ID.5 ; electronique Volkswagen robuste ; recharge rapide 175 kW ; couts reparation standards Mercedes",
+    "source": "cupra.es, caradisiac.com — consulte 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Dacia Duster Hybrid 140 (2024+)",
+    "score_fiabilite": "7.5/10 — excellent rapport qualite-prix hybride ; motorisation Nissan-Renault eprouvee",
+    "pannes_courantes": "moteur 1.6L essence + electrique 43 ch hybride ; transmission CVT ; batterie hybride 1.3 kWh ; consommation 4.8-5.2L/100km ; fiabilite Nissan-Renault reconnue ; maintenance preditive ; couts reparation moderates",
+    "source": "dacia.com, largus.fr — consulte 2026-07",
+    "a_verifier": true
+  }
+]

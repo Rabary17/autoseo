@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maillage sémantique — autoseo</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c4:#4f8ef7;--c7:#f97316;--ok:#4caf7d;--warn:#f5a623;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 28px 80px}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--text2);margin-bottom:20px}
+.breadcrumb a{color:var(--c4);text-decoration:none}
+h1{font-size:28px;font-weight:700;margin-bottom:8px}
+.lead{font-size:14px;color:var(--text2);margin-bottom:28px;max-width:800px}
+h2{font-size:18px;font-weight:700;margin:40px 0 6px;padding-top:18px;border-top:1px solid var(--border);color:var(--c7)}
+h3{font-size:14px;font-weight:700;margin:18px 0 8px}
+p{color:var(--text2);margin-bottom:10px}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:16px;margin:16px 0}
+.box.info{border-left-color:var(--c4)}
+.box.success{border-left-color:var(--ok)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:11px;color:var(--warn);font-family:Consolas,monospace}
+ul{margin:12px 0 12px 20px;color:var(--text2)}
+li{margin-bottom:6px}
+.diagram{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0;font-family:Consolas,monospace;font-size:11px;color:#60a5fa;overflow-x:auto;line-height:1.7}
+table{width:100%;border-collapse:collapse;font-size:12px;margin:16px 0;background:var(--bg2);border:1px solid var(--border);border-radius:8px}
+th{text-align:left;padding:10px 12px;color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border2);background:var(--bg3);font-weight:600}
+td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.btn{display:inline-block;padding:8px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none;font-size:12px;margin-top:20px}
+.btn:hover{background:var(--c4);color:#000}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="breadcrumb">
+  <a href="FEATURES.html">← Plus-values</a>
+  <span>›</span>
+  <span>Maillage sémantique</span>
+</div>
+
+<h1>🔗 Maillage sémantique auto-généré</h1>
+<p class="lead">Génération automatique du graphe de liens (hub ↔ sous-hub ↔ articles) respectant les règles de cocon sémantique. P3 du pipeline, basé sur P1 (mots-clés).</p>
+
+<div class="box success">
+  <strong>Résultat :</strong> 410 entrées de maillage actuellement (16 silos sur 19). Chaque lien est résolu avant la rédaction, les articles naissent avec leurs liens.
+</div>
+
+<h2>Principes fondamentaux</h2>
+
+<h3>Structure en 4 niveaux</h3>
+<div class="diagram">
+Accueil
+  ↓
+  Hub (Silo) — Entretien & révision
+    ├─ Sous-hub — Vidange & huiles
+    │    ├─ Article — Vidange Renault Clio
+    │    ├─ Article — Vidange Peugeot 308
+    │    └─ Article — Quand changer l'huile ?
+    ├─ Sous-hub — Freins
+    │    ├─ Article — Plaquettes disques usées
+    │    └─ Article — Liquide frein changement
+    └─ Sous-hub — Courroie & distribution
+         ├─ Article — Courroie distribution humide
+         └─ Article — Changement courroie prix
+</div>
+
+<h3>4 types de liens</h3>
+<table>
+<thead>
+<tr><th>Type</th><th>Direction</th><th>Nombre par article</th><th>Règle</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Montant</strong></td><td>Article → Sous-hub → Hub</td><td>3–4</td><td>Breadcrumb systématique, ancres exactes</td></tr>
+<tr><td><strong>Descendant</strong></td><td>Hub → Sous-hubs → Articles</td><td>10–40</td><td>Hub lie tous ses sous-hubs ; sous-hub lie ses enfants</td></tr>
+<tr><td><strong>Latéral</strong></td><td>Article ↔ Article (même cocon)</td><td>3–5</td><td>Proximité sémantique (même entité : marque, prestation, code)</td></tr>
+<tr><td><strong>Transversal</strong></td><td>Cocon → Cocon (rare)</td><td>0–2</td><td>Uniquement si entité partagée (ex. marque Renault)</td></tr>
+</tbody>
+</table>
+
+<h2>Règles d'or du cocon</h2>
+
+<div class="box info">
+  <h3 style="margin-top:0">Anti-cannibalisation</h3>
+  <ul>
+    <li><strong>1 mot-clé principal = 1 URL.</strong> Jamais 2 articles ne ciblent le même mot-clé exact.</li>
+    <li><strong>Variantes regroupées.</strong> « Vidange prix », « Vidange coût », « Vidange tarif » = 1 seul article (cluster).</li>
+    <li><strong>Clustering préalable.</strong> Les 506 clusters P1 définissent les 506 articles minimums (pas 10 000 clusters).</li>
+  </ul>
+</div>
+
+<div class="box info">
+  <h3 style="margin-top:0">Profondeur garantie</h3>
+  <ul>
+    <li><strong>≤ 3 clics depuis l'accueil.</strong> 100% des articles respectent : Accueil → Hub → Sous-hub → Article.</li>
+    <li><strong>Bonus money pages.</strong> Pages à fort potentiel monétaire reçoivent chacune ≥ 8 liens internes depuis le même cocon.</li>
+  </ul>
+</div>
+
+<div class="box info">
+  <h3 style="margin-top:0">Rotation d'ancres</h3>
+  <ul>
+    <li><strong>4 variantes par lien.</strong> Chaque cluster fournit 4 ancres (exacte, naturelle, entité, générique).</li>
+    <li><strong>Ratio cible :</strong> 40% exacte / 30% naturelle / 20% entité / 10% générique.</li>
+    <li><strong>Jamais 2× la même ancre.</strong> Vers la même URL depuis le même cocon.</li>
+  </ul>
+</div>
+
+<h2>Génération (script P3)</h2>
+
+<h3>Entrée : fichier xlsx mots-clés</h3>
+<p><code>tracking-mots-cles.xlsx</code> : 506 clusters (1 ligne = 1 cluster = 1 article futur)</p>
+<ul>
+  <li>Silo</li>
+  <li>Sous-cocon</li>
+  <li>Seed (mot-clé principal)</li>
+  <li>Variantes enrichies (20–100 variantes)</li>
+  <li>Volume recherche mensuel</li>
+  <li>Difficulté SEO</li>
+  <li>Auteur assigné</li>
+</ul>
+
+<h3>Sortie : fichier JSON maillage</h3>
+<p><code>data/maillage/maillage.json</code> : 410+ entrées (1 ligne = 1 article + ses liens)</p>
+<div class="diagram">
+{
+  "url": "/entretien/vidange-renault-clio",
+  "silo": "Entretien & révision",
+  "sous_cocon": "Vidange & huiles",
+  "title": "Vidange Renault Clio : coût, périodicité, DIY",
+  "kw_principal": "vidange renault clio prix",
+  "cluster_id": "E-001",
+  "liens_montants": [
+    { "url": "/entretien/vidange", "ancre": "vidange moteur" },
+    { "url": "/entretien", "ancre": "guide entretien complet" }
+  ],
+  "liens_lateraux": [
+    { "url": "/entretien/plaquettes-renault", "ancre": "changement plaquettes" },
+    { "url": "/entretien/humide-peugeot", "ancre": "courroie humide" }
+  ],
+  "liens_transversaux": []
+}
+</div>
+
+<h3>Algorithme (gen-maillage.py)</h3>
+<ol>
+  <li>Lire <code>tracking-mots-cles.xlsx</code> onglet Suivi</li>
+  <li>Grouper par (silo, sous-cocon)</li>
+  <li>Pour chaque cluster : générer liens latéraux (top 3–5 clusters du même sous-cocon par proximité sémantique)</li>
+  <li>Pour chaque sous-cocon : générer liens descendants vers ses articles</li>
+  <li>Pour chaque silo : générer liens descendants vers ses sous-cocons</li>
+  <li>Générer 4 variantes d'ancre par lien (via regex + dictionnaire)</li>
+  <li>Fusionner dans <code>maillage.json</code> (idempotent : pas de doublons si relancé)</li>
+</ol>
+
+<h2>Exemple concret</h2>
+
+<h3>Silo : Entretien & révision</h3>
+<ul>
+  <li><strong>Hub :</strong> /entretien (« Guide complet entretien auto »)</li>
+  <li><strong>Sous-hubs :</strong> /entretien/vidange, /entretien/freins, /entretien/distribution</li>
+  <li><strong>Articles :</strong> /entretien/vidange-renault-clio, /entretien/vidange-peugeot-308, etc.</li>
+</ul>
+
+<h3>Liens de l'article « Vidange Renault Clio »</h3>
+<table>
+<thead>
+<tr><th>Type</th><th>Destination</th><th>Ancre</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Montant</strong></td><td>/entretien/vidange (sous-hub)</td><td>« tous les fluides moteur »</td></tr>
+<tr><td><strong>Montant</strong></td><td>/entretien (hub)</td><td>« guide entretien auto complet »</td></tr>
+<tr><td><strong>Latéral</strong></td><td>/entretien/vidange-peugeot-308</td><td>« vidange 308 »</td></tr>
+<tr><td><strong>Latéral</strong></td><td>/entretien/plaquettes-renault-clio</td><td>« freins Clio »</td></tr>
+<tr><td><strong>Latéral</strong></td><td>/entretien/quand-changer-huile</td><td>« intervalle vidange »</td></tr>
+</tbody>
+</table>
+
+<h2>Statut actuel</h2>
+
+<div class="box">
+  <h3 style="margin-top:0">410 entrées mappées</h3>
+  <ul>
+    <li><strong>Permis & conduite :</strong> 27 articles maillés</li>
+    <li><strong>Assurance auto :</strong> 27 articles</li>
+    <li><strong>Carte grise & démarches :</strong> 26 articles</li>
+    <li><strong>Électrique & hybride :</strong> 46 articles</li>
+    <li><strong>Moto & scooter :</strong> 27 articles</li>
+    <li><strong>Road trips & voyage :</strong> 21 articles</li>
+    <li><strong>Pièces détachées :</strong> 28 articles</li>
+    <li><strong>+ 9 silos « édito »</strong> (tous leurs clusters maillés)</li>
+    <li style="margin-top:8px"><strong>⏳ En attente :</strong> Entretien & révision, Pannes & diagnostic, Marques & modèles (P2 jugé trop partiel pour P3)</li>
+  </ul>
+</div>
+
+<h2>Avantages SEO</h2>
+
+<div class="box success">
+  <h3 style="margin-top:0">Crawlabilité & jus de lien</h3>
+  <ul>
+    <li><strong>Structure logique :</strong> Googlebot navigue naturellement via le breadcrumb.</li>
+    <li><strong>Profondeur contrôlée :</strong> Aucune page n'est à >3 clics = indexation rapide.</li>
+    <li><strong>Jus concentré :</strong> Hub reçoit tous les liens de ses enfants → ranking fort sur mot-clé silo.</li>
+    <li><strong>Pages money boostées :</strong> 8+ liens internes = autorité supplémentaire.</li>
+  </ul>
+</div>
+
+<div class="box success">
+  <h3 style="margin-top:0">Unicité & pertinence</h3>
+  <ul>
+    <li><strong>Liens contextués :</strong> Articles sur le même thème se lient = pertinence sémantique claire.</li>
+    <li><strong>Pas de lien spam :</strong> Chaque lien a un sens (même marque, même prestation, même code).</li>
+    <li><strong>Signaux d'entités :</strong> Links via marques (ex. Renault) créent des signaux d'entités Google.</li>
+  </ul>
+</div>
+
+<a href="FEATURES.html" class="btn">← Retour aux plus-values</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,369 @@
+[
+  {
+    "marque": "RAM",
+    "modele": "RAM 1500 5e génération (2019-2026, moteur V8 5.7L HEMI)",
+    "motorisation": "essence V8 5.7L HEMI",
+    "score_fiabilite": "7.5/10 (2024), 7.2/10 (2023) — bonne fiabilité",
+    "pannes_courantes": [
+      { "nom": "HEMI tick (boulons collecteur d'échappement cassés)", "cout": "500-1500€", "gravite": "mineure" },
+      { "nom": "Fuites d'huile (joints de culasses, carter d'huile)", "cout": "300-800€", "gravite": "mineure" },
+      { "nom": "Suspension pneumatique Active-Level (soufflets/conduites gel <-10°C)", "cout": "800-2500€", "gravite": "moyenne" },
+      { "nom": "Problème soudure commande transmission (fuite fluide)", "cout": "1500-3000€", "gravite": "grave" }
+    ],
+    "sources": ["largus.fr", "ecoloauto.com", "fiche-auto.com", "carverif.fr", "consumerreports.org"],
+    "a_verifier": true
+  },
+  {
+    "marque": "GMC",
+    "modele": "GMC Sierra 1500 5e génération (2019-2026, V8 5.3L/6.2L)",
+    "motorisation": "essence V8 5.3L DFM / 6.2L",
+    "score_fiabilite": "7/10 — fiabilité moyenne, problèmes moteur critiques 2019-2021",
+    "pannes_courantes": [
+      { "nom": "DFM (Dynamic Fuel Management) : usure poussoirs hydrauliques, claquement", "cout": "3000-5000€", "gravite": "grave" },
+      { "nom": "Défaillance boîte de vitesses (craquement passages)", "cout": "2000-4000€", "gravite": "moyenne" },
+      { "nom": "Fuites réservoir carburant", "cout": "800-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["caradisiac.com", "largus.fr", "fiche-auto.com", "defauts.fr", "ecoloauto.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "GMC",
+    "modele": "GMC Yukon 2024+ (SUV grand format, V8 moteurs récents)",
+    "motorisation": "essence V8 5.3L DFM ou 6.2L",
+    "score_fiabilite": "6.5/10 — fiabilité à surveiller, éviter générations pré-2022",
+    "pannes_courantes": [
+      { "nom": "Système DFM (problèmes similaires à Sierra)", "cout": "3000-5500€", "gravite": "grave" },
+      { "nom": "Problèmes d'électronique de confort (vitres, éclairage)", "cout": "200-800€", "gravite": "mineure" }
+    ],
+    "sources": ["caradisiac.com", "defauts.fr", "largus.fr", "ecoloauto.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Ford",
+    "modele": "Ford F-150 14e génération (2021-2026, moteur 2.7L EcoBoost turbo)",
+    "motorisation": "essence 2.7L EcoBoost turbo",
+    "score_fiabilite": "7.4/10 (2024) — bonne, mais transmission problématique",
+    "pannes_courantes": [
+      { "nom": "Transmission 10R80 : passages brutaux, claquements, sauts rapports", "cout": "2500-8000€", "gravite": "grave" },
+      { "nom": "Soupapes d'admission mal fabriquées (2.7L EcoBoost 2021) - fragilité", "cout": "4000-6000€", "gravite": "grave" },
+      { "nom": "Fuites turbo/capteur oxygène", "cout": "800-2000€", "gravite": "mineure" }
+    ],
+    "sources": ["ecoloauto.com", "defauts.fr", "consumerreports.org", "timothyabeel.com", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Ford",
+    "modele": "Ford Super Duty (2024+, diesel ou essence)",
+    "motorisation": "diesel turbo / essence",
+    "score_fiabilite": "données insuffisantes pour marché FR 2024",
+    "pannes_courantes": [
+      { "nom": "Transmission 10 vitesses (même défaut que F-150)", "cout": "2500-8000€", "gravite": "grave" }
+    ],
+    "sources": ["ecoloauto.com", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Chevrolet",
+    "modele": "Chevrolet Silverado 2024+ (5e génération, V8 5.3L/6.2L)",
+    "motorisation": "essence V8 5.3L DFM / 6.2L",
+    "score_fiabilite": "7/10 — fiabilité moyenne avec risques moteur V8",
+    "pannes_courantes": [
+      { "nom": "DFM : usure précoce poussoirs hydrauliques", "cout": "3000-5000€", "gravite": "grave" },
+      { "nom": "Transmission automatique 10 rapports", "cout": "2000-4000€", "gravite": "moyenne" }
+    ],
+    "sources": ["defauts.fr", "ecoloauto.com", "largus.fr", "fiche-auto.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Chevrolet",
+    "modele": "Chevrolet Tahoe 2024 (SUV grand format, V8 moteurs récents)",
+    "motorisation": "essence V8 5.3L/6.2L",
+    "score_fiabilite": "6.5/10 — moins fiable que moyenne 2024",
+    "pannes_courantes": [
+      { "nom": "Rappel V8 6.2L : défaut bielle/vilebrequin risque autodestruction moteur", "cout": "5000-8000€+", "gravite": "grave" },
+      { "nom": "Module freinage électronique défaut (perte assistance freinage)", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Système climatisation, convertisseurs catalytiques", "cout": "500-2000€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "defauts.fr", "consumerreports.org", "moniteurautomobile.be"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Chevrolet",
+    "modele": "Chevrolet Suburban 2024 (SUV 3 rangées, V8 moteurs)",
+    "motorisation": "essence V8 5.3L/6.2L",
+    "score_fiabilite": "6.5/10 — fiabilité dégradée, 2 rappels NHTSA",
+    "pannes_courantes": [
+      { "nom": "Rappel V8 6.2L bielle/vilebrequin (identique Tahoe)", "cout": "5000-8000€+", "gravite": "grave" },
+      { "nom": "Module freinage électronique", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Silencieux, catalyseurs, électronique", "cout": "500-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["consumerreports.org", "largus.fr", "moniteurautomobile.be"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Toyota",
+    "modele": "Toyota 4Runner 2024 (SUV robuste, V6 moteur)",
+    "motorisation": "essence V6 turbo",
+    "score_fiabilite": "7.9/10 — très bonne fiabilité, 1 rappel mineur",
+    "pannes_courantes": [
+      { "nom": "Panneaux de roulement insuffisante extension (glissance)", "cout": "200-400€", "gravite": "mineure" },
+      { "nom": "Système caméra distorsion (vision parking défectueuse)", "cout": "300-800€", "gravite": "mineure" },
+      { "nom": "Interaction volume bip/clé sans fil (dysfonctionnement rare)", "cout": "100-300€", "gravite": "mineure" },
+      { "nom": "Usure précoce plaquettes/rotors freins, problèmes peinture", "cout": "400-1000€", "gravite": "mineure" }
+    ],
+    "sources": ["toyotaproblemes.fr", "consumerreports.org", "autoreliabilityindex.com", "guideautoweb.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Toyota",
+    "modele": "Toyota Tundra 2024 (pickup 3 rangées, V6 turbo)",
+    "motorisation": "essence V6 turbo turbo 3.5L",
+    "score_fiabilite": "7.5/10 — bonne fiabilité, rappels intermittents",
+    "pannes_courantes": [
+      { "nom": "Mouvement inattendu au point mort (rappel 2022-2024)", "cout": "null", "gravite": "grave" },
+      { "nom": "Pneus dommage sidewall interne (perte pression soudaine)", "cout": "300-600€", "gravite": "grave" },
+      { "nom": "Feu recul : humidité boîtier (électronique)", "cout": "200-500€", "gravite": "mineure" }
+    ],
+    "sources": ["consumerreports.org", "defauts.fr", "toyotaproblemes.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Toyota",
+    "modele": "Toyota Sequoia 2024 (SUV grand format 3 rangées, V6 turbo)",
+    "motorisation": "essence V6 turbo 3.5L hybride optionnel",
+    "score_fiabilite": "7.5/10 — fiabilité correcte, rappels comparables Tundra",
+    "pannes_courantes": [
+      { "nom": "Mouvement inattendu point mort (véhicules hybride récall)", "cout": "null", "gravite": "grave" },
+      { "nom": "Pneus dommage sidewall (véhicules 2024 hybride)", "cout": "300-600€", "gravite": "grave" }
+    ],
+    "sources": ["consumerreports.org", "defauts.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Nissan",
+    "modele": "Nissan Titan 2024 (pickup pleine grandeur, V8 essence)",
+    "motorisation": "essence V8 5.6L",
+    "score_fiabilite": "8.8/10 (J.D. Power) — très bonne fiabilité",
+    "pannes_courantes": [
+      { "nom": "Fuites joint essieu arrière (anciens modèles pré-2011)", "cout": "500-1500€", "gravite": "mineure" },
+      { "nom": "Corrosion faisceaux câblage (pré-2011 principalement)", "cout": "300-800€", "gravite": "mineure" },
+      { "nom": "Rappel airbags 2021/2024 : entretoise manquante", "cout": "null", "gravite": "grave" }
+    ],
+    "sources": ["consumerreports.org", "carverif.fr", "autopom.com", "carparts.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Rolls-Royce",
+    "modele": "Rolls-Royce (modèles récents 2023-2024, tourelles V12)",
+    "motorisation": "essence V12 turbo 6.75L",
+    "score_fiabilite": "données très limitées marché FR, construction sur mesure",
+    "pannes_courantes": [
+      { "nom": "Problèmes électriques complexes (systems électroniques multiples)", "cout": "null", "gravite": "grave" },
+      { "nom": "Maintenance générale très coûteuse (pièces propriétaires)", "cout": "5000€+/an", "gravite": "moyenne" }
+    ],
+    "sources": ["auto-evasion.com", "largus.fr", "rollsroyceforums.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Bentley",
+    "modele": "Bentley (modèles 2023-2024, W12/V8 turbo)",
+    "motorisation": "essence W12/V8 turbo",
+    "score_fiabilite": "données très partielles, marché niche européen limité",
+    "pannes_courantes": [
+      { "nom": "Capteurs/modules électroniques complexes", "cout": "null", "gravite": "grave" },
+      { "nom": "Maintenance coûteuse (pièces constructeur uniquement)", "cout": "3000€+/intervention", "gravite": "moyenne" }
+    ],
+    "sources": ["auto-evasion.com", "rollsroyceforums.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Porsche",
+    "modele": "Porsche 911 2024 (moteur flat-6 turbo, moderne génération 992+)",
+    "motorisation": "essence flat-6 turbo 3.0L/3.8L",
+    "score_fiabilite": "7.5/10 — très bonne fiabilité générale",
+    "pannes_courantes": [
+      { "nom": "Écrous roue verrouillage central (rappel oct.2024, ~10 600 unités)", "cout": "null", "gravite": "grave" },
+      { "nom": "Airbags sièges baquets (rappel 2021-2023 Turbo S / 2022 Turbo)", "cout": "null", "gravite": "grave" }
+    ],
+    "sources": ["largus.fr", "fiches-auto.fr", "consumerreports.org", "mobilect.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Porsche",
+    "modele": "Porsche 911 Turbo/Turbo S (2024, moteur 3.8L DuoTurbo)",
+    "motorisation": "essence 3.8L flat-6 biturbo 580+ ch",
+    "score_fiabilite": "7.5/10 — très bonne malgré complexité turbo",
+    "pannes_courantes": [
+      { "nom": "Fuites huile turbo (utilisation intensive piste)", "cout": "800-2000€", "gravite": "mineure" },
+      { "nom": "Rappels électronique/ceintures (voir modèle base 911)", "cout": "null", "gravite": "grave" }
+    ],
+    "sources": ["fiches-auto.fr", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "BMW",
+    "modele": "BMW X7 2024 (SUV premium 7 places, moteur V8 turbo ou 6cyl)",
+    "motorisation": "essence 3.0L turbo 6-cyl ou 4.4L V8 biturbo",
+    "score_fiabilite": "4.5/10 (Consumer Reports) — fiabilité dégradée",
+    "pannes_courantes": [
+      { "nom": "Système électrique défaillances multiples (accélération, sièges, infodivert)", "cout": "500-2000€+", "gravite": "mineure" },
+      { "nom": "Turbo commande électronique dysfonctionnement", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Défaillance freinage intégré, système DSC/ABS", "cout": "2000-4000€", "gravite": "grave" },
+      { "nom": "Casse moteur manque huile (défaut conception)", "cout": "4000-8000€", "gravite": "grave" }
+    ],
+    "sources": ["largus.fr", "delivauto.fr", "consumerreports.org", "theweeklydriver.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Honda",
+    "modele": "Honda Accord 2024 (berline 4 portes, moteur essence turbo)",
+    "motorisation": "essence 1.5L turbo / 2.0L turbo",
+    "score_fiabilite": "7.5/10 — plus fiable que moyenne 2024",
+    "pannes_courantes": [
+      { "nom": "Transmission : problème catégorie principale reportée", "cout": "2000-4000€", "gravite": "grave" },
+      { "nom": "Entretien économique, système électronique robuste", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "consumerreports.org", "carcomplaints.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Honda",
+    "modele": "Honda Odyssey 2024 (monospace 3 rangées, moteur V6 essence)",
+    "motorisation": "essence V6 3.5L",
+    "score_fiabilite": "6.5/10 — fiabilité moyenne, 5 rappels NHTSA",
+    "pannes_courantes": [
+      { "nom": "Transmission automatique 10 vitesses : sorties aléatoires boîte (remise à neuf requise)", "cout": "2500-5000€", "gravite": "grave" },
+      { "nom": "Portes latérales coulissantes dysfonctionnement", "cout": "500-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["consumerreports.org", "odyclub.com", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Mazda",
+    "modele": "Mazda 6 2024 (berline 4 portes, diesel 2.2L)",
+    "motorisation": "diesel 2.2L turbo",
+    "score_fiabilite": "6.5/10 — fiabilité diesel convenable mais problèmes ponctuels",
+    "pannes_courantes": [
+      { "nom": "Pompe haute pression diesel défaillance 140 000-180 000 km", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Filtre à particules encrassement 60 000-100 000 km (trajets courts)", "cout": "500-1500€", "gravite": "mineure" },
+      { "nom": "Climatisation compresseur défaut 70 000-90 000 km", "cout": "800-1500€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "fiches-auto.fr", "oscar-racing.fr", "auto-doc.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Mazda",
+    "modele": "Mazda MX-5 2024 (roadster 2 places, moteur 1.5L/2.0L essence)",
+    "motorisation": "essence 1.5L 132ch / 2.0L 184ch",
+    "score_fiabilite": "7.5/10 — bonne fiabilité, mécanique simple reconnue",
+    "pannes_courantes": [
+      { "nom": "Rouille (fléau principal sur tous les MX-5, régions humides/salées)", "cout": "500-3000€", "gravite": "moyenne" },
+      { "nom": "Moteur 1.5L : couple faible <4000 tr/min", "cout": "null", "gravite": "mineure" },
+      { "nom": "Moteur 2.0L : fiabilité long terme non encore établie (génération récente)", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "oscar-racing.fr", "fiches-auto.fr", "mx5global.com"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Kia",
+    "modele": "Kia Sorento 2024 (SUV 3 rangées, essence/diesel/hybride)",
+    "motorisation": "essence 2.0L turbo / diesel 2.0L / hybride 2.0L",
+    "score_fiabilite": "7/10 — fiabilité correcte, modèle populaire stabil",
+    "pannes_courantes": [
+      { "nom": "Entretien coûts maîtrisés, fiabilité base moyenne", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["moniteurautomobile.be", "largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Kia",
+    "modele": "Kia EV9 2024 (SUV électrique 3 rangées, batteries 76-99 kWh)",
+    "motorisation": "électrique 76 kWh / 99 kWh",
+    "score_fiabilite": "4/10 — très mauvaise fiabilité 2024, 6 rappels NHTSA",
+    "pannes_courantes": [
+      { "nom": "Défaillance logicielle application téléphonique (déverrouillage impossible)", "cout": "null", "gravite": "grave" },
+      { "nom": "Erreur logicielle écran tableau de bord black-out", "cout": "500-1500€", "gravite": "moyenne" },
+      { "nom": "Loquet console centrale défaut fixation (vibration)", "cout": "200-500€", "gravite": "mineure" },
+      { "nom": "Instabilité siège conducteur (immobilisation >4 mois rapportée)", "cout": "1000-3000€", "gravite": "grave" },
+      { "nom": "Boulons sièges 2e/3e rangée manquants (rappel sécurité)", "cout": "null", "gravite": "grave" },
+      { "nom": "Revêtement plafond protection impact insuffisant (rappel)", "cout": "null", "gravite": "grave" }
+    ],
+    "sources": ["consumerreports.org", "caradisiac.com", "kiaevforums.com", "vivacar.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Hyundai",
+    "modele": "Hyundai Santa Fe 2024 (SUV 3 rangées, essence/diesel/hybride)",
+    "motorisation": "essence 2.0L turbo / diesel 2.2L CRDi / hybride 2.0L",
+    "score_fiabilite": "7/10 — fiabilité correcte génération 4 actuelle",
+    "pannes_courantes": [
+      { "nom": "Transmission automatique usure/dysfonctionnement", "cout": "1500-3500€", "gravite": "grave" },
+      { "nom": "Capteurs défectueux, mode Limp activation erronée 20 000 km", "cout": "500-1500€", "gravite": "mineure" },
+      { "nom": "Hésitation accélération, arrêt intempestif, démarrage lent 30 000 km", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["auto-doc.fr", "conseil-auto-moto.fr", "largus.fr", "oscar-racing.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Hyundai",
+    "modele": "Hyundai Sonata 2024 (berline grande, essence/hybride)",
+    "motorisation": "essence 2.0L turbo / hybride 2.0L",
+    "score_fiabilite": "données manquantes (recherche insuffisante)",
+    "pannes_courantes": [
+      { "nom": "Estimation basée sur base Santa Fe/Elantra similaires", "cout": "null", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Lada",
+    "modele": "Lada Niva Legend (SUV 4x4 rustique, moteur 1.7L essence)",
+    "motorisation": "essence 1.7L 83 ch atmosphérique",
+    "score_fiabilite": "7.5/10 — robustesse mécanique réputée, fiabilité intemporelle",
+    "pannes_courantes": [
+      { "nom": "Moteur/boîte : très fiables, mécanique simple et rustique", "cout": "null", "gravite": "mineure" },
+      { "nom": "Transmission synchro, roulements roues : pannes isolées", "cout": "300-800€", "gravite": "mineure" },
+      { "nom": "Surchauffe moteur (entretien critère)", "cout": "200-500€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "caradisiac.com", "fiches-auto.fr", "forum4x4.org"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Lada",
+    "modele": "Lada Granta (berline économique, moteur 1.6L essence)",
+    "motorisation": "essence 1.6L 82-106 ch atmosphérique",
+    "score_fiabilite": "6.5/10 — fiabilité rustique acceptable, entretien basique",
+    "pannes_courantes": [
+      { "nom": "Électronique moins fiable que mécanique (finition limitée)", "cout": "200-600€", "gravite": "mineure" },
+      { "nom": "Bobine allumage, injecteurs usure précoce", "cout": "300-800€", "gravite": "mineure" }
+    ],
+    "sources": ["largus.fr", "larevueautomobile.com", "autodoc.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Mercedes-Benz",
+    "modele": "Mercedes-AMG A45 (berline compacte 4 portes, moteur 2.0L turbo)",
+    "motorisation": "essence 2.0L turbo 4-cyl 421 ch",
+    "score_fiabilite": "6/10 — fiabilité compromise par turbo/boîte problématiques",
+    "pannes_courantes": [
+      { "nom": "Turbocompresseur défaillance/réparation ~100 000 km", "cout": "1500-3000€", "gravite": "grave" },
+      { "nom": "Boîte automatique DCT craquement passages P-R/N-R", "cout": "2000-4000€", "gravite": "grave" },
+      { "nom": "Collecteur d'échappement, poulies, pompe à eau (réparation groupée)", "cout": "3000-6000€", "gravite": "grave" }
+    ],
+    "sources": ["fiches-auto.fr", "forum-mercedes.com", "delivauto.fr"],
+    "a_verifier": true
+  },
+  {
+    "marque": "Mercedes-Benz",
+    "modele": "Mercedes-AMG GLC (SUV médium sportif, moteur V6 turbo ou 4-cyl turbo)",
+    "motorisation": "essence 2.0L turbo 4-cyl / V6 turbo 3.0L",
+    "score_fiabilite": "6.5/10 — fiabilité dégradée, nombreux capteurs électroniques",
+    "pannes_courantes": [
+      { "nom": "Capteurs pression/radars/ouverture porte : alertes erronées tableau de bord", "cout": "500-1500€", "gravite": "mineure" },
+      { "nom": "Module électronique défaillances isolées", "cout": "null", "gravite": "mineure" },
+      { "nom": "Turbo inefficacité (corrections 2024 appliquées)", "cout": "1500-3000€", "gravite": "moyenne" }
+    ],
+    "sources": ["codedefaut.fr", "fiches-auto.fr", "delivauto.fr"],
+    "a_verifier": true
+  }
+]

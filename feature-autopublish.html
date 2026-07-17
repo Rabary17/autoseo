@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pipeline autopublish — autoseo</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c4:#4f8ef7;--c7:#f97316;--ok:#4caf7d;--warn:#f5a623;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 28px 80px}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--text2);margin-bottom:20px}
+.breadcrumb a{color:var(--c4);text-decoration:none}
+h1{font-size:28px;font-weight:700;margin-bottom:8px}
+.lead{font-size:14px;color:var(--text2);margin-bottom:28px;max-width:800px}
+h2{font-size:18px;font-weight:700;margin:40px 0 6px;padding-top:18px;border-top:1px solid var(--border);color:var(--c7)}
+h3{font-size:14px;font-weight:700;margin:18px 0 8px}
+p{color:var(--text2);margin-bottom:10px}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:16px;margin:16px 0}
+.box.info{border-left-color:var(--c4)}
+.box.success{border-left-color:var(--ok)}
+.box.warning{border-left-color:var(--warn)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:11px;color:var(--warn);font-family:Consolas,monospace}
+ul{margin:12px 0 12px 20px;color:var(--text2)}
+li{margin-bottom:6px}
+.pipeline{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;margin:16px 0;font-family:Consolas,monospace;font-size:11px;color:#60a5fa;overflow-x:auto;line-height:1.8}
+table{width:100%;border-collapse:collapse;font-size:12px;margin:16px 0;background:var(--bg2);border:1px solid var(--border);border-radius:8px}
+th{text-align:left;padding:10px 12px;color:var(--text3);font-size:10px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--border2);background:var(--bg3);font-weight:600}
+td{padding:10px 12px;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
+tr:last-child td{border-bottom:none}
+.btn{display:inline-block;padding:8px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none;font-size:12px;margin-top:20px}
+.btn:hover{background:var(--c4);color:#000}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="breadcrumb">
+  <a href="FEATURES.html">← Plus-values</a>
+  <span>›</span>
+  <span>Pipeline autopublish</span>
+</div>
+
+<h1>🤖 Pipeline autopublish</h1>
+<p class="lead">Génération entièrement automatisée de 10 000 articles : rédaction LLM + relecture QA + gating 9 règles + publication WordPress. Zéro supervision manuelle.</p>
+
+<div class="box success">
+  <strong>Résultat :</strong> 20 articles/semaine en Phase 2 de démarrage, jusqu'à 15/jour à pleine capacité. Coût total : ~5€/article (vs 30–80€ pour un rédacteur humain).
+</div>
+
+<h2>Architecture globale</h2>
+
+<div class="pipeline">
+├─ config.json (budget, modèles, mapping)
+├─ run.js (orchestrateur)
+├─ lib/
+│  ├─ state.js (tracking d'état)
+│  ├─ tracking.js (lecture xlsx mots-clés)
+│  ├─ maillage.js (récup liens internes)
+│  ├─ factuel.js (lecture données P2)
+│  ├─ persona.js (charge profil auteur)
+│  ├─ prompt-builder.js (compose le prompt)
+│  ├─ claude.js (API Anthropic)
+│  ├─ review.js (relecture QA)
+│  ├─ gating.js (9 règles SEO)
+│  ├─ similarity.js (TF-IDF anti-dupe)
+│  ├─ scheduler.js (étalement publication)
+│  └─ images.js (Pexels/Unsplash/Pixabay)
+└─ test-e2e.js (test 1 article [TEST])
+</div>
+
+<h2>Flux complet (par article)</h2>
+
+<h3>1️⃣ Préparation</h3>
+<ul>
+  <li>Lire <code>tracking-mots-cles.xlsx</code> (506 clusters × 19 silos)</li>
+  <li>Charger <code>maillage.json</code> (liens hub/sous-hub/latéraux)</li>
+  <li>Charger <code>data/factuel/*.json</code> (préstations, modèles, codes, etc.)</li>
+  <li>Récupérer profil auteur depuis <code>skills/redaction/auteur-*.md</code></li>
+  <li>Sélectionner modèle Claude : Sonnet 5 (hubs) ou Haiku 4.5 (articles)</li>
+</ul>
+
+<h3>2️⃣ Rédaction (appel Claude #1)</h3>
+<ul>
+  <li>Prompt : template éditorial + données + mots-clés + voix auteur + consigne FAQ/schémas</li>
+  <li>Structured output : JSON typé (title, body, meta_description, faq, etc.)</li>
+  <li>Prompt caching : skill auteur mis en cache (économie 90% sur requêtes suiv.)</li>
+  <li>Output : article complet en Markdown + métadonnées</li>
+</ul>
+
+<h3>3️⃣ Relecture QA (appel Claude #2)</h3>
+<ul>
+  <li>Vérifier : grammaire, cohérence, pertinence données, sources citées</li>
+  <li>Jugement : Sonnet 5 uniquement (qualité critique)</li>
+  <li>Retour : verdict GO / ASK_REVISION (rarement — le prompt est bon)</li>
+</ul>
+
+<h3>4️⃣ Gating — 9 règles SEO/éditoriaux</h3>
+<table>
+<thead>
+<tr><th>#</th><th>Règle</th><th>Action si KO</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Meta description 120–160 chars</td><td>Régénérer</td></tr>
+<tr><td>2</td><td>Mot-clé principal dans H1</td><td>Rejeter</td></tr>
+<tr><td>3</td><td>Longueur 800–4000 mots selon type</td><td>Régénérer</td></tr>
+<tr><td>4</td><td>Aucune source non citée (donnée)</td><td>Rejeter</td></tr>
+<tr><td>5</td><td>Similarité TF-IDF &lt; 20% vs articles existants</td><td>Rejeter</td></tr>
+<tr><td>6</td><td>Présence FAQ (articles &gt; 1200 mots)</td><td>Recommander</td></tr>
+<tr><td>7</td><td>Images appelées (alt text + title)</td><td>Rejeter</td></tr>
+<tr><td>8</td><td>Aucune phrase marketing/creuse</td><td>Demander relecture</td></tr>
+<tr><td>9</td><td>Liens internes résolus (check 404)</td><td>Corriger</td></tr>
+</tbody>
+</table>
+
+<h3>5️⃣ Images (cascade smart)</h3>
+<ul>
+  <li><strong>Stratégie :</strong> Pexels → Unsplash → Pixabay (en ordre de priorité)</li>
+  <li><strong>Requête :</strong> Entité principale (marque/pièce/destination) + contexte</li>
+  <li><strong>Déduplicate :</strong> Ledger <code>autopublish-image-ledger.json</code> (1 image = 1 article, pas de remploi)</li>
+  <li><strong>Alt text :</strong> Généré (SEO native, description image)</li>
+  <li><strong>Jamais blocking :</strong> Pas d'image = article publié quand même (image est un plus, pas une gating)</li>
+</ul>
+
+<h3>6️⃣ Publication WordPress</h3>
+<ul>
+  <li><code>POST /wp-json/wp/v2/posts</code> (authentifié, Application Password)</li>
+  <li>Body : titre, contenu (Gutenberg blocs), meta description, catégorie, tags, image à la une, auteur, statut=publish</li>
+  <li>Détection erreur : timeout, 401/403, limites API → logger + skip (pas de blocage)</li>
+  <li>Webhook revalidation auto-déclenché (ISR Next.js)</li>
+</ul>
+
+<h3>7️⃣ Tracking & rapports</h3>
+<ul>
+  <li>État sauvegardé dans <code>data/autopublish-state.json</code> (quelle pièce = quel statut)</li>
+  <li>Rapport texte écrit après chaque run : nombre OK / erreur / rejeté / images</li>
+  <li>Email quotidien envoyé à <code>andrianina.rabarivelo@gmail.com</code> (workflow GitHub Actions)</li>
+  <li>Résumé de la semaine: articles publiés, coût Claude, état progression</li>
+</ul>
+
+<h2>Chaîne de valeur</h2>
+
+<div class="box info">
+  <h3 style="margin-top:0">Coûts vs bénéfices</h3>
+  <table>
+    <thead>
+      <tr><th>Aspect</th><th>Coût</th><th>Bénéfice</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>API Claude</strong></td><td>~0.3€/article (Haiku articles + Sonnet hubs)</td><td>Qualité GPT-4 class, prompt caching</td></tr>
+      <tr><td><strong>Infrastructure</strong></td><td>$5–10/mois (WordPress minimal)</td><td>Scalable à 1M articles</td></tr>
+      <tr><td><strong>Temps human</strong></td><td>~30 min/semaine (monitoring)</td><td>0 rédacteurs = gain énorme</td></tr>
+      <tr><td><strong>Images</strong></td><td>$0 (API libres)</td><td>1 unique/article, SEO natif</td></tr>
+      <tr><td><strong>Revalidation</strong></td><td>$0 (Vercel ISR natif)</td><td>Pages fraîches sans rebuild complet</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Workflows GitHub Actions</h2>
+
+<table>
+<thead>
+<tr><th>Workflow</th><th>Cron</th><th>Déclenchement</th><th>Action</th></tr>
+</thead>
+<tbody>
+<tr><td><code>autopublish.yml</code></td><td>Lundi 6h</td><td><code>workflow_dispatch --dry-run</code></td><td>Génère batch 100–250 articles</td></tr>
+<tr><td><code>daily-report.yml</code></td><td>Quotidien 8h</td><td>Automatique</td><td>Email rapport</td></tr>
+<tr><td><code>test-e2e.yml</code></td><td>Manuel</td><td><code>workflow_dispatch</code></td><td>Test 1 article [TEST]</td></tr>
+</tbody>
+</table>
+
+<h2>Gestion des erreurs</h2>
+
+<div class="box warning">
+  <h3 style="margin-top:0">Isolation des pannes</h3>
+  <ul>
+    <li><strong>Article échoue :</strong> Marqué <code>status: 'erreur'</code>, pipeline continue (pas de cascade)</li>
+    <li><strong>API Claude timeout :</strong> Retry 3× (exponential backoff), puis skip</li>
+    <li><strong>WordPress 401/403 :</strong> Erreur loggée, continue la boucle (ne bloque rien)</li>
+    <li><strong>Images manquantes :</strong> Article publié quand même (images sont un plus)</li>
+    <li><strong>État corrompu :</strong> Regenerate depuis zéro (fichier JSON corrupted → skip et continuer)</li>
+  </ul>
+</div>
+
+<h2>Points clés</h2>
+
+<div class="box success">
+  <h3 style="margin-top:0">Différences vs autres autopublish</h3>
+  <ul>
+    <li><strong>Pas de supervision manuelle :</strong> Relecture Claude (QA) remplace l'humain</li>
+    <li><strong>Gating strict :</strong> 9 règles vérifiées programmatiquement (pas de content farm)</li>
+    <li><strong>Données uniques :</strong> Chaque article injecte ses propres données (prix, specs, codes)</li>
+    <li><strong>Maillage résolu :</strong> Liens internes vérifiés avant publication (pas de 404)</li>
+    <li><strong>Isolation erreur :</strong> 1 article échoue ≠ tout s'arrête (robustesse)</li>
+  </ul>
+</div>
+
+<a href="FEATURES.html" class="btn">← Retour aux plus-values</a>
+
+</div>
+</body>
+</html>

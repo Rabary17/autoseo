@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 moteurs programmatiques — autoseo</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c4:#4f8ef7;--c7:#f97316;--ok:#4caf7d;--warn:#f5a623;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 28px 80px}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--text2);margin-bottom:20px}
+.breadcrumb a{color:var(--c4);text-decoration:none}
+h1{font-size:28px;font-weight:700;margin-bottom:8px}
+.lead{font-size:14px;color:var(--text2);margin-bottom:28px;max-width:800px}
+h2{font-size:18px;font-weight:700;margin:40px 0 6px;padding-top:18px;border-top:1px solid var(--border);color:var(--c7)}
+h3{font-size:14px;font-weight:700;margin:18px 0 8px}
+p{color:var(--text2);margin-bottom:10px}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:16px;margin:16px 0}
+.box.info{border-left-color:var(--c4)}
+.box.success{border-left-color:var(--ok)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:11px;color:var(--warn);font-family:Consolas,monospace}
+ul{margin:12px 0 12px 20px;color:var(--text2)}
+li{margin-bottom:6px}
+.motor-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:18px;margin:16px 0}
+.motor-header{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+.motor-icon{font-size:24px}
+.motor-title{font-size:15px;font-weight:700;color:var(--text)}
+.motor-formula{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;font-family:Consolas,monospace;font-size:11px;color:var(--c4);margin:10px 0;overflow-x:auto}
+.motor-examples{margin-top:10px}
+.motor-examples-label{font-size:11px;font-weight:600;color:var(--text);margin-bottom:6px}
+.example{background:var(--bg4);border:1px solid var(--border);border-radius:4px;padding:8px 10px;margin:4px 0;font-size:11px;color:var(--text2);font-family:Consolas,monospace}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0}
+.stat-box{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center}
+.stat-value{font-size:20px;font-weight:700;color:var(--c4);margin-bottom:4px}
+.stat-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em}
+.btn{display:inline-block;padding:8px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none;font-size:12px;margin-top:20px}
+.btn:hover{background:var(--c4);color:#000}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="breadcrumb">
+  <a href="FEATURES.html">← Plus-values</a>
+  <span>›</span>
+  <span>7 moteurs programmatiques</span>
+</div>
+
+<h1>🎯 7 moteurs programmatiques</h1>
+<p class="lead">La clé pour générer 10 000 articles uniques : chaque moteur croise un template éditorial avec une base de données factuelles. Unicité garantie, pas de duplication.</p>
+
+<div class="box success">
+  <strong>Logique centrale :</strong> 1 moteur = 1 template × 1 base de données. Ex. M1 = template « Vidange » × base « 40 marques/modèles » = 40 articles uniques « Vidange [Marque] [Modèle] ». Aucune phrase identique car les données sont différentes.
+</div>
+
+<h2>Les 7 moteurs</h2>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">🔧</div>
+    <div class="motor-title">M1 — Prestation × Véhicule</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silo Entretien & révision (~1 800 articles)</p>
+  <div class="motor-formula">25 prestations (vidange, freins, embrayage, distribution, clim...) × 40 marques/modèles populaires + 800 tutos génériques</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples d'articles générés :</div>
+    <div class="example">Vidange Renault Clio 5 — coût, périodicité, DIY</div>
+    <div class="example">Changement embrayage Peugeot 308 — tarif garage, temps MO</div>
+    <div class="example">Révision complète Mercedes Classe C W206 — points de contrôle</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Données requises :</strong> Fourchette prix TTC, périodicité constructeur, temps MO, spécificités modèle (ex. courroie humide PureTech).</p>
+</div>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">🛠</div>
+    <div class="motor-title">M2 — Codes défaut & symptômes</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silo Pannes & diagnostic (~1 300 articles)</p>
+  <div class="motor-formula">600 codes OBD (P0xxx/P2xxx) + 80 voyants tableau de bord × contextes + 250 symptômes (bruit, fumée, vibration)</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples :</div>
+    <div class="example">Code P0420 — catalyseur défaillant : causes, diagnostic, coût</div>
+    <div class="example">Voyant moteur orange allumé — gravité, que faire ?</div>
+    <div class="example">Bruit métallique à l'accélération — 5 causes classées par probabilité</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Avantage SEO :</strong> Quasi aucune concurrence de qualité en FR sur la longue traîne des codes OBD.</p>
+</div>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">🏷</div>
+    <div class="motor-title">M3 — Fiches modèle</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silos Marques & modèles, Électrique, Moto (~1 700 articles)</p>
+  <div class="motor-formula">~450 modèles (thermique + EV + motos) × 3–4 angles : fiabilité, entretien & coûts, occasion, versions à éviter</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples :</div>
+    <div class="example">Renault Clio 5 — fiabilité et problèmes connus par année</div>
+    <div class="example">Tesla Model 3 — autonomie réelle vs WLTP, coût recharge, fiabilité batterie</div>
+    <div class="example">Yamaha YZF-R6 — quelle génération acheter ? Moteurs à éviter</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Structure :</strong> Score fiabilité + pannes courantes + coûts d'entretien par motorisation.</p>
+</div>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">⚙️</div>
+    <div class="motor-title">M4 — Pièce × Marque</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silo Pièces détachées & accessoires (~900 articles)</p>
+  <div class="motor-formula">20 familles de pièces (turbo, injecteurs, FAP, alternateur, batterie...) × 40 marques + comparatifs équipementiers (Valeo vs LUK...)</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples :</div>
+    <div class="example">Injecteurs Bosch pour Diesel Renault — modèles compatibles, prix</div>
+    <div class="example">Turbo Garrett vs KKK — quelle marque choisir ? Fiabilité, coût</div>
+    <div class="example">Plaquettes de frein EBC vs Textar — comparatif usure/bruit/longévité</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Données requises :</strong> Compatibilité modèle, prix pièce seule + pose garage, fiabilité équipementier.</p>
+</div>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">⚔️</div>
+    <div class="motor-title">M5 — Comparatifs "Versus"</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silos Essais & comparatifs, Vélo (~800 articles)</p>
+  <div class="motor-formula">Duels de modèles (Clio vs 208, Tesla Model 3 vs Hyundai Ioniq...) + classements par segment & budget</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples :</div>
+    <div class="example">Renault Clio vs Peugeot 208 — espace, consommation, coût entretien</div>
+    <div class="example">Meilleur SUV compact à moins de 30 000€ — TOP 5 2026</div>
+    <div class="example">VTT électrique vs trottinette électrique — quelle mobilité pour le dernier km ?</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Avantage :</strong> Entités structurées permettent comparaisons programmatiques (specs vs spec).</p>
+</div>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">📋</div>
+    <div class="motor-title">M6 — Démarche × Cas particulier</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silos Carte grise, Assurance, Permis (~1 100 articles)</p>
+  <div class="motor-formula">30 démarches (cession, duplicata, import, malus, points...) × cas particuliers (héritage, divorce, mineur, léasing...)</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples :</div>
+    <div class="example">Changement titulaire après succession — formulaires, délais, coûts 2026</div>
+    <div class="example">Retrait de points permis — comment les récupérer ? Stage obligatoire ?</div>
+    <div class="example">Assurance auto jeune conducteur — quelles garanties choisir ? Coût moyen</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Modèle :</strong> Inspiré de Guichet Carte Grise (très performant en SEO).</p>
+</div>
+
+<div class="motor-card">
+  <div class="motor-header">
+    <div class="motor-icon">🗺️</div>
+    <div class="motor-title">M7 — Itinéraires road trip</div>
+  </div>
+  <p style="margin-bottom:8px"><strong>Cible :</strong> Silo Road trips & voyage auto (~350 articles)</p>
+  <div class="motor-formula">Destinations France/Europe × durée (week-end, 7j, 15j) + pages pratiques par pays (vignette, péages, règles)</div>
+  <div class="motor-examples">
+    <div class="motor-examples-label">📄 Exemples :</div>
+    <div class="example">Road trip Suisse 7 jours — itinéraire, vignette, péages, hôtels</div>
+    <div class="example">Week-end Provence depuis Paris — où dormir, que voir, coûts</div>
+    <div class="example">Vignette Autriche 2026 — tarifs, validité, où l'acheter en ligne</div>
+  </div>
+  <p style="margin-top:10px;font-size:12px;color:var(--text2)"><strong>Récurrence :</strong> Pages mises à jour annuellement (tarifs vignettes/péages).</p>
+</div>
+
+<h2>Statistiques globales</h2>
+
+<div class="stats-grid">
+  <div class="stat-box">
+    <div class="stat-value">10 000</div>
+    <div class="stat-label">Articles générés</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">7</div>
+    <div class="stat-label">Moteurs</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">~100 000</div>
+    <div class="stat-label">Mots-clés variantes</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-value">506</div>
+    <div class="stat-label">Clusters de base</div>
+  </div>
+</div>
+
+<h2>Garantie d'unicité</h2>
+
+<div class="box info">
+  <h3 style="margin-top:0">Pourquoi 0 % de duplication ?</h3>
+  <ul>
+    <li><strong>Données uniques par article :</strong> Chaque prestation×marque a son prix, sa périodicité, ses spécificités. Aucun article ne partage l'ensemble de ses données.</li>
+    <li><strong>Templates variés :</strong> 6–8 variantes de structure par moteur (6 auteurs différents, 6 voix d'écriture distinctes).</li>
+    <li><strong>Clustering anti-cannibalisation :</strong> 1 mot-clé principal = 1 URL. Les variantes du même cluster sont regroupées dans un seul article, jamais éclatées.</li>
+    <li><strong>Similarité contrôlée :</strong> Pipeline QA mesure la similarité TF-IDF (seuil &lt; 20% de chevauchement avec articles existants).</li>
+  </ul>
+</div>
+
+<div class="box success">
+  <h3 style="margin-top:0">Avantage concurrentiel</h3>
+  <p>Les 1 472 sites concurrents crawlés : articles génériques (ex. « Vidange voiture », « Top 10 SUV ») sans données spécifiques. autoseo : articles hyper-spécialisés (« Vidange Renault Clio 5 : 82€ TTC, tous les 15 000 km ») qui dominent les requêtes longue traîne.</p>
+</div>
+
+<a href="FEATURES.html" class="btn">← Retour aux plus-values</a>
+
+</div>
+</body>
+</html>

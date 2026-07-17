@@ -1,0 +1,200 @@
+[
+  {
+    "code": "P1305",
+    "libelle": "Circuit allumeur malfonctionnement n°2",
+    "causes_possibles": "Bobine d'allumage défaillante, module d'allumage défaillant, connecteur endommagé ou desserré, cablage endommagé ou court-circuité, calculateur défaillant",
+    "source": "troublecodes.net, yourmechanic.com, toyota/lexus specific codes — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1315",
+    "libelle": "Circuit allumeur malfonctionnement n°4",
+    "causes_possibles": "Bobine d'allumage cyl. 4 défaillante, bougies usées ou incorrectes, capteur régime moteur défaillant, masse du circuit endommagée, connecteur corrodé",
+    "source": "troublecodes.net, yourmechanic.com, forums toyota — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1325",
+    "libelle": "Circuit allumeur malfonctionnement n°6",
+    "causes_possibles": "Bobine d'allumage cyl. 6 défaillante, câblage allumeur endommagé ou corrodé, relais d'allumage défaillant, tension batterie insuffisante, calculateur défaillant",
+    "source": "troublecodes.net, yourmechanic.com, 2carpros.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1335",
+    "libelle": "Pas de signal du capteur CKP moteur en marche",
+    "causes_possibles": "Capteur de régime moteur (CKP) défaillant ou mal positionné, dent manquante sur la cible magnétique, connecteur endommagé ou corrodé, câblage en circuit ouvert, calculateur défaillant",
+    "source": "troublecodes.net, yourmechanic.com, obd-codes.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1345",
+    "libelle": "Système calage variable soupapes (VVT) malfonctionnement",
+    "causes_possibles": "Electrovanne VVT défaillante ou bloquée, liquide moteur sale ou niveau insuffisant, capteur position arbre à cames défaillant, chaîne/courroie distribution allongée, calculateur défaillant",
+    "source": "go-parts.com, yourmechanic.com, toyotaparts.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1360",
+    "libelle": "Circuit secondaire bobine d'allumage A malfonctionnement",
+    "causes_possibles": "Bobine d'allumage A défaillante ou mal fixée, connecteur endommagé ou desserré, câblage secondaire cassé ou mal isolé, tension batterie anormale",
+    "source": "troublecodes.net, ford manufacturer codes, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1370",
+    "libelle": "Trop d'impulsions de référence d'allumage (GM)",
+    "causes_possibles": "Capteur régime moteur défaillant ou trop sensible, dent double sur la roue cible, connecteur lâche ou corrodé, câblage endommagé, EMI/interférence électromagnétique, calculateur défaillant",
+    "source": "aa1car.com (GM trouble codes), yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1380",
+    "libelle": "Module de commande d'allumage ou circuit bobine défaillant",
+    "causes_possibles": "Module d'allumage électronique défaillant, bobine défaillante, connecteur endommagé, câblage en circuit ouvert, corrélation entre capteurs, calculateur défaillant",
+    "source": "icarsoft.com, aa1car.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1410",
+    "libelle": "Système d'injection d'air secondaire défaillant",
+    "causes_possibles": "Pompe d'air secondaire défaillante, électrovanne d'air secondaire bloquée, tuyauterie ou connecteur endommagé, capteur de débit d'air défaillant, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1420",
+    "libelle": "Capteur température catalyseur défaillant",
+    "causes_possibles": "Capteur de température catalyseur endommagé ou déconnecté, connecteur corrodé, câblage en circuit ouvert ou court-circuité, catalyseur encrassé, calculateur défaillant",
+    "source": "troublecodes.net, mercedes/ford specific codes — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1430",
+    "libelle": "Pompe d'air électrique secondaire défaillant",
+    "causes_possibles": "Pompe d'air électrique défaillante ou bloquée, relais de pompe défaillant, fusible grillé, connecteur endommagé, câblage endommagé ou en circuit ouvert",
+    "source": "troublecodes.net, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1440",
+    "libelle": "Soupape de purgation EVAP coincée ouverte",
+    "causes_possibles": "Soupape de purgation EVAP coincée ou défaillante, électrovanne de purgation bloquée, tuyauterie endommagée ou obstruée, filtre à charbon encrassé, calculateur défaillant",
+    "source": "obd-codes.com, go-parts.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P1450",
+    "libelle": "Vide excessif réservoir carburant - impossible de dégazer",
+    "causes_possibles": "Clapet de remplissage du réservoir défaillant, soupape de dépressurisation endommagée, tuyauterie d'aération bouchée, fuite d'essence, capteur de pression défaillant",
+    "source": "kbb.com, obd-codes.com, troublecodes.net — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2200",
+    "libelle": "Circuit capteur NOx banc 1",
+    "causes_possibles": "Capteur NOx défaillant ou endommagé, connecteur corrodé ou desserré, câblage en circuit ouvert ou court-circuité, filtre capteur encrassé, température catalyseur trop basse",
+    "source": "obd-codes.com, yourmechanic.com, mycarly.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2210",
+    "libelle": "Circuit de détection chauffage capteur NOx banc 1 - signal bas",
+    "causes_possibles": "Connecteur capteur NOx défaillant ou desserré, câblage chauffage en circuit ouvert, résistance chauffage excessive, alimentation 12V insuffisante, calculateur défaillant",
+    "source": "obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2220",
+    "libelle": "Circuit commande chauffage capteur NOx banc 2 - signal haut",
+    "causes_possibles": "Court-circuit à l'alimentation du chauffage NOx banc 2, connecteur endommagé, câblage en court-circuit, relais chauffage bloqué, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2260",
+    "libelle": "Déséquilibre rapport air/carburant banc 1",
+    "causes_possibles": "Injecteur encrassé ou défaillant, capteur O2 défaillant, débitmètre MAF encrassé, filtre à air très encrassé, fuite d'admission, pression carburant anormale",
+    "source": "obd-codes.com, yourmechanic.com, carparts.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2280",
+    "libelle": "Circuit commande pompe d'air - signal bas",
+    "causes_possibles": "Relais de pompe défaillant, connecteur endommagé ou desserré, câblage en circuit ouvert, tension alimentation insuffisante, pompe d'air défaillante",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2290",
+    "libelle": "Circuit commande pompe d'air - signal haut",
+    "causes_possibles": "Court-circuit à l'alimentation du relais de pompe, connecteur endommagé ou corrodé, câblage en court-circuit à la masse, relais en court-circuit, calculateur défaillant",
+    "source": "obd-codes.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2310",
+    "libelle": "Circuit primaire bobine d'allumage D - signal haut",
+    "causes_possibles": "Bobine d'allumage D défaillante, connecteur endommagé ou desserré, câblage en court-circuit à l'alimentation, masse du circuit endommagée, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2320",
+    "libelle": "Circuit secondaire bobine d'allumage G",
+    "causes_possibles": "Bobine d'allumage G défaillante ou mal isolée, connecteur endommagé, câblage secondaire cassé ou contact mauvais, tension batterie anormale, calculateur défaillant",
+    "source": "obd-codes.com, ecufiles.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2330",
+    "libelle": "Circuit primaire bobine d'allumage K - signal bas",
+    "causes_possibles": "Bobine d'allumage K défaillante ou endommagée, connecteur lâche ou corrodé, câblage en circuit ouvert, tension alimentation insuffisante, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2340",
+    "libelle": "Circuit primaire bobine d'allumage L - signal bas",
+    "causes_possibles": "Bobine d'allumage L défaillante, connecteur desserré ou corrodé, câblage en circuit ouvert ou endommagé, masse du circuit endommagée, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2350",
+    "libelle": "Circuit secondaire bobine d'allumage L",
+    "causes_possibles": "Bobine d'allumage L défaillante, connecteur endommagé ou mal inséré, câblage secondaire cassé ou mal isolé, tension batterie anormale, calculateur défaillant",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2414",
+    "libelle": "Erreur échantillon échappement capteur O2 banc 1 capteur 1",
+    "causes_possibles": "Capteur O2 défaillant ou endommagé, connecteur corrodé ou desserré, câblage en circuit ouvert, sonde lambda encrassée, catalyseur endommagé",
+    "source": "obd-codes.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "P2415",
+    "libelle": "Erreur échantillon échappement capteur O2 banc 2 capteur 1",
+    "causes_possibles": "Capteur O2 banc 2 défaillant, connecteur endommagé ou lâche, câblage en circuit ouvert ou court-circuité, sonde lambda banc 2 encrassée, catalyseur banc 2 endommagé",
+    "source": "obd-codes.com, yourmechanic.com, repairpal.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "C0145",
+    "libelle": "Capteur vitesse roue arrière gauche - défaillance circuit",
+    "causes_possibles": "Capteur ABS arrière gauche défaillant ou endommagé, connecteur corrodé ou desserré, câblage en circuit ouvert ou court-circuité, roue dentée ABS endommagée, module ABS défaillant",
+    "source": "radmanrepair.ca, geekobd.com, autodtcs.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "C0200",
+    "libelle": "Module de commande ABS - défaillant",
+    "causes_possibles": "Module ABS défaillant ou endommagé, connecteur principal ABS desserré, alimentation électrique insuffisante, fusible ABS grillé, surtension ou souscharge du système électrique",
+    "source": "dot.report, geekobd.com, repairsadvisor.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "C0240",
+    "libelle": "Circuit moteur pompe ABS - malfonctionnement",
+    "causes_possibles": "Pompe ABS défaillante ou endommagée, relais de pompe défaillant, fusible de pompe grillé, connecteur endommagé, câblage en circuit ouvert, module ABS défaillant",
+    "source": "radmanrepair.ca, autodtcs.com, aa1car.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "C0245",
+    "libelle": "Capteur vitesse roue - erreur fréquence",
+    "causes_possibles": "Capteur ABS défaillant ou endommagé, roue dentée ABS partiellement cassée ou endommagée, connecteur corrodé ou desserré, câblage endommagé ou en circuit ouvert, module ABS défaillant",
+    "source": "go-parts.com, radmanrepair.ca, autodtcs.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0120",
+    "libelle": "Perte communication avec module commande démarreur/alternateur",
+    "causes_possibles": "Batterie faible ou connecteurs desserrés, câblage endommagé ou en circuit ouvert, connecteur du module défaillant ou corrodé, module démarreur/alternateur défaillant, fusible CAN bus grillé",
+    "source": "kbb.com, go-parts.com, yourmechanic.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0210",
+    "libelle": "Perte communication avec module commande siège C",
+    "causes_possibles": "Module siège C défaillant ou endommagé, batterie faible, câblage CAN bus endommagé, connecteur corrodé ou desserré, fusible CAN bus grillé, problème de masse",
+    "source": "obd-codes.com, radmanrepair.ca, engine-codes.com — consulté 2026-07 (via WebSearch)"
+  },
+  {
+    "code": "U0220",
+    "libelle": "Perte communication avec interrupteur porte F",
+    "causes_possibles": "Interrupteur porte F défaillant ou endommagé, câblage de la porte endommagé ou en circuit ouvert, connecteur corrodé ou desserré, batterie faible, module porte défaillant",
+    "source": "obd-codes.com, radmanrepair.ca, ricksfreeautorepairadvice.com — consulté 2026-07 (via WebSearch)"
+  }
+]

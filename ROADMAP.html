@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feuille de route — autoseo</title>
+<style>
+:root{
+  --bg:#0d1117;
+  --bg2:#161b27;
+  --bg3:#1e2535;
+  --bg4:#252d3f;
+  --border:rgba(255,255,255,.07);
+  --border2:rgba(255,255,255,.13);
+  --text:#e2e8f0;
+  --text2:#94a3b8;
+  --text3:#4a5568;
+  --c7:#f97316;
+  --c4:#4f8ef7;
+  --ok:#4caf7d;
+  --warn:#f5a623;
+  --error:#f24444;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  font-size:13px;
+  line-height:1.7;
+}
+
+.wrap{
+  max-width:1200px;
+  margin:0 auto;
+  padding:32px 28px 80px;
+}
+
+h1{font-size:28px;font-weight:700;margin-bottom:8px}
+.lead{font-size:14px;color:var(--text2);margin-bottom:28px;max-width:900px}
+
+h2{
+  font-size:18px;
+  font-weight:700;
+  margin:40px 0 6px;
+  padding-top:18px;
+  border-top:1px solid var(--border);
+  color:var(--c7);
+}
+
+h3{font-size:14px;font-weight:700;margin:20px 0 8px}
+
+.metrics{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:12px;
+  margin:24px 0;
+}
+
+.metric{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:16px;
+  text-align:center;
+}
+
+.metric-value{
+  font-size:24px;
+  font-weight:700;
+  color:var(--c7);
+  margin-bottom:4px;
+}
+
+.metric-label{
+  font-size:11px;
+  color:var(--text2);
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+.progress-container{
+  margin:16px 0;
+}
+
+.progress-label{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  margin-bottom:6px;
+  color:var(--text2);
+}
+
+.progress-bar{
+  height:24px;
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:4px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--c4),var(--ok));
+  transition:width 0.3s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#000;
+  font-size:11px;
+  font-weight:700;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:12px;
+  margin:18px 0;
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+th{
+  text-align:left;
+  padding:10px 12px;
+  color:var(--text3);
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  border-bottom:1px solid var(--border2);
+  background:var(--bg3);
+  font-weight:600;
+}
+
+td{
+  padding:10px 12px;
+  border-bottom:1px solid var(--border);
+  color:var(--text2);
+  vertical-align:middle;
+}
+
+tr:last-child td{border-bottom:none}
+
+.status-badge{
+  display:inline-block;
+  padding:2px 8px;
+  border-radius:4px;
+  font-size:10px;
+  font-weight:600;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.status-done{
+  background:var(--ok);
+  color:#000;
+}
+
+.status-partial{
+  background:var(--warn);
+  color:#000;
+}
+
+.status-pending{
+  background:var(--text3);
+  color:var(--text);
+}
+
+.status-blocked{
+  background:var(--error);
+  color:#fff;
+}
+
+.box{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-left:3px solid var(--c7);
+  border-radius:8px;
+  padding:16px;
+  margin:16px 0;
+}
+
+.box.info{border-left-color:var(--c4)}
+.box.warning{border-left-color:var(--warn)}
+.box.success{border-left-color:var(--ok)}
+
+code{
+  background:var(--bg3);
+  border:1px solid var(--border);
+  border-radius:4px;
+  padding:2px 6px;
+  font-size:11px;
+  color:var(--warn);
+  font-family:Consolas,monospace;
+}
+
+.phase-card{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:18px;
+  margin:12px 0;
+}
+
+.phase-header{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.phase-icon{
+  font-size:24px;
+}
+
+.phase-title{
+  font-size:14px;
+  font-weight:700;
+}
+
+.phase-desc{
+  color:var(--text2);
+  font-size:12px;
+  margin-bottom:8px;
+}
+
+.silo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:12px;
+  margin:18px 0;
+}
+
+.silo-card{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:14px;
+}
+
+.silo-name{
+  font-weight:600;
+  font-size:12px;
+  margin-bottom:8px;
+  color:var(--text);
+}
+
+.silo-phases{
+  display:flex;
+  gap:4px;
+  flex-wrap:wrap;
+}
+
+.phase-badge{
+  display:flex;
+  align-items:center;
+  gap:3px;
+  padding:3px 7px;
+  border-radius:3px;
+  font-size:10px;
+  font-weight:600;
+  background:var(--bg3);
+  border:1px solid var(--border);
+}
+
+.phase-badge.done{
+  background:var(--ok);
+  border-color:var(--ok);
+  color:#000;
+}
+
+.phase-badge.partial{
+  background:var(--warn);
+  border-color:var(--warn);
+  color:#000;
+}
+
+.phase-badge.pending{
+  background:var(--text3);
+  border-color:var(--text3);
+  color:var(--text);
+}
+
+.timeline{
+  position:relative;
+  margin:20px 0;
+}
+
+.timeline-item{
+  display:flex;
+  gap:16px;
+  margin-bottom:20px;
+  padding-left:30px;
+  position:relative;
+}
+
+.timeline-item::before{
+  content:'';
+  position:absolute;
+  left:0;
+  top:0;
+  width:20px;
+  height:20px;
+  background:var(--bg3);
+  border:2px solid var(--c4);
+  border-radius:50%;
+}
+
+.timeline-item.done::before{
+  background:var(--ok);
+  border-color:var(--ok);
+}
+
+.timeline-item.blocked::before{
+  background:var(--error);
+  border-color:var(--error);
+}
+
+.timeline-content{
+  flex:1;
+}
+
+.timeline-date{
+  font-size:11px;
+  color:var(--text2);
+  margin-bottom:2px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+
+.timeline-title{
+  font-weight:600;
+  margin-bottom:3px;
+  font-size:13px;
+}
+
+.timeline-desc{
+  color:var(--text2);
+  font-size:12px;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:12px;
+  margin:16px 0;
+}
+
+.stat-box{
+  background:var(--bg2);
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:14px;
+}
+
+.stat-label{
+  font-size:11px;
+  color:var(--text2);
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  margin-bottom:6px;
+}
+
+.stat-value{
+  font-size:20px;
+  font-weight:700;
+  color:var(--c4);
+}
+
+.stat-detail{
+  font-size:11px;
+  color:var(--text3);
+  margin-top:4px;
+}
+
+ul{margin:12px 0 12px 20px;color:var(--text2)}
+li{margin-bottom:4px}
+
+@media(max-width:768px){
+  .wrap{padding:20px 14px 60px}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .silo-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div style="display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap;font-size:12px">
+  <a href="INDEX.html" style="padding:8px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none">← Documentation Index</a>
+  <a href="pbn-taxonomy-complete.html" style="padding:8px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none">PBN Taxonomy</a>
+  <a href="plan-auto-mobilite-10000.html" style="padding:8px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none">Plan complet</a>
+  <a href="FEATURES.html" style="padding:8px 14px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none">Plus-values →</a>
+</div>
+
+<h1>🚗 Feuille de route autoseo</h1>
+<p class="lead">Plateforme de planification et production de contenu SEO/GEO pour un réseau de sites de niche. Niche active : <strong>Auto & mobilité</strong> · 10 000 articles, 19 silos, 7 moteurs programmatiques.</p>
+
+<h2>📊 Vue d'ensemble</h2>
+
+<div class="metrics">
+  <div class="metric">
+    <div class="metric-value">10 000</div>
+    <div class="metric-label">Articles cibles</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value">19</div>
+    <div class="metric-label">Silos (catégories)</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value">506</div>
+    <div class="metric-label">Clusters (mots-clés)</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value">410</div>
+    <div class="metric-label">Maillage P3 entrées</div>
+  </div>
+  <div class="metric">
+    <div class="metric-value">9 086</div>
+    <div class="metric-label">Crédits Haloscan restants</div>
+  </div>
+</div>
+
+<h2>🎯 Phases du pipeline (P1–P6)</h2>
+
+<div class="phase-card">
+  <div class="phase-header">
+    <div class="phase-icon">🔑</div>
+    <div>
+      <div class="phase-title">P1 — Collecte mots-clés (Haloscan)</div>
+      <div class="phase-desc">Extraction de mots-clés variantes enrichies par seed</div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-label">
+      <span>Progression</span>
+      <span><strong>19 / 19 silos</strong> ✅ TERMINÉ</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:100%">100%</div>
+    </div>
+  </div>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Résultat :</strong> 506 clusters de mots-clés compilés dans <code>tracking-mots-cles.xlsx</code>. Crédit consommé : ~914 / 10 000 Haloscan (très large marge). Dernière exécution : 2026-07-12.</p>
+</div>
+
+<div class="phase-card">
+  <div class="phase-header">
+    <div class="phase-icon">📊</div>
+    <div>
+      <div class="phase-title">P2 — Données factuelles (recherche + sourcing)</div>
+      <div class="phase-desc">Compilation de bases de données structurées par silo</div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-label">
+      <span>Progression</span>
+      <span><strong>10 / 19 silos complets</strong> + partiels</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:53%">53%</div>
+    </div>
+  </div>
+  <div style="margin-top:8px;color:var(--text2);font-size:12px">
+    <p><strong>Complets (P2 terminé) :</strong> Permis & conduite, Assurance auto, Carte grise & démarches, Électrique & hybride, Moto & scooter, Road trips & voyage auto, Pièces détachées & accessoires, Entretien & révision, Pannes & diagnostic.</p>
+    <p><strong>Partiels (en cours) :</strong> Marques & modèles (102/450 modèles ~23%), codes OBD (238/600 ~40%).</p>
+    <p><strong>Édito uniquement (0 dataset) :</strong> 9 silos sans P2 structuré (Essais & comparatifs, Achat voiture neuve, Voiture d'occasion, etc.).</p>
+  </div>
+</div>
+
+<div class="phase-card">
+  <div class="phase-header">
+    <div class="phase-icon">🔗</div>
+    <div>
+      <div class="phase-title">P3 — Maillage interne (cocons sémantiques)</div>
+      <div class="phase-desc">Génération des liens hub ↔ sous-hub ↔ articles</div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-label">
+      <span>Progression</span>
+      <span><strong>16 / 19 silos</strong></span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:84%">84%</div>
+    </div>
+  </div>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Résultat :</strong> 410 entrées dans <code>data/maillage/maillage.json</code>. En attente : Entretien & révision, Pannes & diagnostic, Marques & modèles (P2 jugé trop partiel). Script : <code>scripts/gen-maillage.py</code>.</p>
+</div>
+
+<div class="phase-card">
+  <div class="phase-header">
+    <div class="phase-icon">📝</div>
+    <div>
+      <div class="phase-title">P4 — Rédaction hubs & sous-hubs</div>
+      <div class="phase-desc">Génération du contenu pilier (2 500–4 000 mots hubs)</div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-label">
+      <span>Progression</span>
+      <span><strong>0 / 19 silos</strong> ⏳ BLOQUÉ</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Bloqué par :</strong> Attente de validation utilisateur pour lancer la génération. Dépend de P3 (complètement terminé) et de l'infrastructure WordPress (voir &quot;État WordPress&quot; ci-dessous).</p>
+</div>
+
+<div class="phase-card">
+  <div class="phase-header">
+    <div class="phase-icon">✍️</div>
+    <div>
+      <div class="phase-title">P5 — Rédaction articles (autopublish)</div>
+      <div class="phase-desc">Génération de 10 000 articles via LLM + relecture</div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-label">
+      <span>Progression</span>
+      <span><strong>0 / 10 000 articles</strong> ⏳ BLOQUÉ</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Bloqué par :</strong> Infrastructure WordPress fonctionnelle (actuellement en impasse sur `mntdev.passion4humanity.com`). Pipeline autopublish prêt sur GitHub Actions (voir <code>scripts/autopublish/</code>).</p>
+</div>
+
+<div class="phase-card">
+  <div class="phase-header">
+    <div class="phase-icon">🔍</div>
+    <div>
+      <div class="phase-title">P6 — Indexation & suivi</div>
+      <div class="phase-desc">Vérification GSC, Lighthouse, monitoring SEO</div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-label">
+      <span>Progression</span>
+      <span><strong>N/A</strong> ⏳ En attente P5</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:0%"></div>
+    </div>
+  </div>
+</div>
+
+<h2>📋 Statut par silo (P1–P3)</h2>
+
+<div class="silo-grid">
+  <div class="silo-card">
+    <div class="silo-name">🔧 Entretien & révision</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge partial">P2 ⚠</span>
+      <span class="phase-badge pending">P3 ⏳</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">40 seeds, 1800 articles. P2 : croisement prix×marques + codes OBD lot 1-2.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🛠 Pannes & diagnostic</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge partial">P2 ⚠</span>
+      <span class="phase-badge pending">P3 ⏳</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">30 seeds, 1300 articles. P2 : 238 codes OBD, 86 voyants.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🏷 Marques & modèles</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge partial">P2 ⚠</span>
+      <span class="phase-badge pending">P3 ⏳</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">26 seeds, 1400 articles. P2 : 102/450 modèles (~23%).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">⚙️ Pièces détachées & accessoires</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">28 seeds, 900 articles. 20 familles de pièces × équipementiers.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🧪 Essais & comparatifs</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">21 seeds, 800 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">📄 Carte grise & démarches</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">26 seeds, 450 articles. 30 démarches administratives.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">⚡ Électrique & hybride</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">46 seeds, 700 articles. Data autonomie/recharge EV.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🛡 Assurance auto</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">27 seeds, 400 articles. Barèmes bonus-malus & garanties.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🎓 Permis & conduite</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">27 seeds, 400 articles. Points & infractions 2026.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🏍 Moto & scooter</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">27 seeds, 500 articles. Permis + équipement obligatoire.</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🚗 Achat voiture neuve</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">33 seeds, 300 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🚙 Voiture d'occasion</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">N/A seeds, 300 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🚲 Vélo & nouvelles mobilités</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">22 seeds, 250 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🚐 Camping-car & van</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">20 seeds, 250 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🧳 Road trips & voyage auto</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">21 seeds, 350 articles. 18/40 destinations (péages/vignettes).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🏁 Sport auto & passion</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">26 seeds, 250 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">⛽ Carburants & consommation</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">17 seeds, 200 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🚌 Mobilité partagée & transports</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">20 seeds, 250 articles. Édito (sans dataset P2).</p>
+  </div>
+
+  <div class="silo-card">
+    <div class="silo-name">🛻 Utilitaires & flottes pro</div>
+    <div class="silo-phases">
+      <span class="phase-badge done">P1 ✅</span>
+      <span class="phase-badge done">P2 ✅</span>
+      <span class="phase-badge done">P3 ✅</span>
+    </div>
+    <p style="font-size:11px;color:var(--text3);margin-top:6px">20 seeds, 200 articles. Édito (sans dataset P2).</p>
+  </div>
+</div>
+
+<h2>⭐ Plus-values techniques du projet</h2>
+
+<p style="color:var(--text2);margin-bottom:16px">Le projet autoseo s'appuie sur 7+ innovations pour dominer les 1 472 concurrents du marché Auto. Chaque plus-value est documentée en détail dans des pages dédiées :</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px">
+    <div style="font-size:20px;margin-bottom:8px">🏗️</div>
+    <div style="font-weight:700;font-size:12px;margin-bottom:6px">Architecture headless</div>
+    <p style="font-size:11px;color:var(--text2);margin-bottom:10px">WordPress + Next.js ISR sur Vercel. Déploiement simplifié, performance optimale.</p>
+    <a href="feature-architecture-headless.html" style="font-size:10px;color:var(--c4);text-decoration:none;font-weight:600">Détail →</a>
+  </div>
+
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px">
+    <div style="font-size:20px;margin-bottom:8px">🎯</div>
+    <div style="font-weight:700;font-size:12px;margin-bottom:6px">7 moteurs programmatiques</div>
+    <p style="font-size:11px;color:var(--text2);margin-bottom:10px">M1–M7 : Chaque moteur croise template + données factuelles. 10 000 articles uniques.</p>
+    <a href="feature-moteurs-programmatiques.html" style="font-size:10px;color:var(--c4);text-decoration:none;font-weight:600">Détail →</a>
+  </div>
+
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px">
+    <div style="font-size:20px;margin-bottom:8px">🤖</div>
+    <div style="font-weight:700;font-size:12px;margin-bottom:6px">Pipeline autopublish</div>
+    <p style="font-size:11px;color:var(--text2);margin-bottom:10px">Génération + relecture + gating. API Claude, 20 articles/semaine Phase 2.</p>
+    <a href="feature-autopublish.html" style="font-size:10px;color:var(--c4);text-decoration:none;font-weight:600">Détail →</a>
+  </div>
+
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px">
+    <div style="font-size:20px;margin-bottom:8px">🔗</div>
+    <div style="font-weight:700;font-size:12px;margin-bottom:6px">Maillage sémantique</div>
+    <p style="font-size:11px;color:var(--text2);margin-bottom:10px">Génération auto du graphe de liens. Cocons, rotation d'ancres, profondeur ≤3.</p>
+    <a href="feature-maillage.html" style="font-size:10px;color:var(--c4);text-decoration:none;font-weight:600">Détail →</a>
+  </div>
+
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px">
+    <div style="font-size:20px;margin-bottom:8px">🔍</div>
+    <div style="font-weight:700;font-size:12px;margin-bottom:6px">SEO/GEO complet</div>
+    <p style="font-size:11px;color:var(--text2);margin-bottom:10px">100% critères Google. JSON-LD, OG images, sitemap, Discover/LLM optimisé.</p>
+    <a href="feature-seo-geo.html" style="font-size:10px;color:var(--c4);text-decoration:none;font-weight:600">Détail →</a>
+  </div>
+
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px">
+    <div style="font-size:20px;margin-bottom:8px">⭐</div>
+    <div style="font-weight:700;font-size:12px;margin-bottom:6px">+ 2 plus-values</div>
+    <p style="font-size:11px;color:var(--text2);margin-bottom:10px">Images optimisées, ISR revalidation, newsletter, accessibilité WCAG.</p>
+    <a href="FEATURES.html" style="font-size:10px;color:var(--c4);text-decoration:none;font-weight:600">Voir tous →</a>
+  </div>
+</div>
+
+<h2>⚠️ État WordPress & publication</h2>
+
+<div class="box warning">
+  <strong>🔴 BLOQUANT — Infrastructure WordPress en impasse</strong>
+  <p style="margin-top:8px">Domaine actuel : <code>mntdev.passion4humanity.com</code> · Problème : <code>current_user_can('manage_options')</code> retourne faux pour l'admin authentifié via Application Password, bloquant toutes les écritures REST authentifiées (401/403).</p>
+  <p style="margin-top:8px"><strong>Solution :</strong> Nouveau WordPress sur nouvel hébergement (checklist créée : <code>docs/setup-wordpress-vierge.md</code>). Frontend Next.js prêt et déployé sur Vercel : <code>monauto-tau.vercel.app</code>.</p>
+  <p style="margin-top:8px"><strong>Décision en attente :</strong> Nouvel hébergement à choisir par l'utilisateur, installation à réaliser.</p>
+</div>
+
+<h2>🚀 Pipeline autopublish & infrastructure</h2>
+
+<div class="box info">
+  <strong>Pipeline autopublish ready-to-deploy</strong>
+  <p style="margin-top:8px">Tout le code de génération + relecture est prêt dans <code>scripts/autopublish/</code>. 3 workflows GitHub Actions :</p>
+  <ul style="margin-top:8px">
+    <li><code>autopublish.yml</code> — Hebdomadaire (lundi 6h) + <code>workflow_dispatch --dry-run</code></li>
+    <li><code>daily-report.yml</code> — Quotidien (e-mail de rapport)</li>
+    <li><code>test-e2e.yml</code> — Manuel (test 1 article [TEST])</li>
+  </ul>
+  <p style="margin-top:8px"><strong>À débloquer :</strong> Infrastructure WordPress fonctionnelle (voir ci-dessus) + secrets GitHub/Vercel configurés.</p>
+</div>
+
+<div class="box info">
+  <strong>Frontend Next.js 15 — 100% fonctionnel</strong>
+  <p style="margin-top:8px">✅ Accueil + rubriques (19 hubs) + catégories + articles + pages + auteurs + tags + recherche + pagination + sitemap/robots/llms.txt + JSON-LD complet + responsive + mode sombre + images optimisées WordPress+Imagify + formulaire newsletter fonctionnel + OG images dynamiques + ISR revalidation.</p>
+  <p style="margin-top:8px"><strong>Déployé :</strong> Vercel (gratuit, Hobby plan, ISR à 900s). Domaine pointant vers : <code>monauto-tau.vercel.app</code>.</p>
+</div>
+
+<h2>📅 Chronologie récente & décisions majeures</h2>
+
+<div class="timeline">
+  <div class="timeline-item done">
+    <div class="timeline-content">
+      <div class="timeline-date">2026-07-12</div>
+      <div class="timeline-title">P1 terminé sur 19 silos</div>
+      <div class="timeline-desc">506 clusters de mots-clés. Crédit Haloscan : 9 086 / 10 000 (marge très large).</div>
+    </div>
+  </div>
+
+  <div class="timeline-item done">
+    <div class="timeline-date">2026-07-13</div>
+    <div class="timeline-title">P2 & P3 avancent en parallèle</div>
+    <div class="timeline-desc">9 silos P2 terminés + P3 lancé sur 16 silos (410 entrées maillage). 3 silos P2 jugés trop partiels pour P3 (Entretien, Pannes, Marques).</div>
+    </div>
+  </div>
+
+  <div class="timeline-item done">
+    <div class="timeline-date">2026-07-14</div>
+    <div class="timeline-title">Pipeline autopublish construit</div>
+    <div class="timeline-desc">API Anthropic directe (sans session Claude Code). Orchestrateur complet, config, 10 modules lib/, gating 9 règles, images Pexels/Unsplash/Pixabay.</div>
+    </div>
+  </div>
+
+  <div class="timeline-item done">
+    <div class="timeline-date">2026-07-14</div>
+    <div class="timeline-title">Architecture front/back : SSG → ISR</div>
+    <div class="timeline-desc">Basculé vers ISR sur Vercel (moins coûteux à grande échelle). Revalidation ciblée via webhook WordPress au lieu de rebuild complet quotidien.</div>
+    </div>
+  </div>
+
+  <div class="timeline-item done">
+    <div class="timeline-date">2026-07-15</div>
+    <div class="timeline-title">Frontend audité & complété (9 fonctionnalités)</div>
+    <div class="timeline-desc">Pagination, tags, recherche temps réel, OG images dynamiques, mode sombre, accessibilité WCAG (contraste, ordre titres).</div>
+    </div>
+  </div>
+
+  <div class="timeline-item blocked">
+    <div class="timeline-date">2026-07-15</div>
+    <div class="timeline-title">WordPress infrastructure en impasse</div>
+    <div class="timeline-desc"><code>current_user_can('manage_options')</code> échoue sur l'hébergement actuel. Solution : nouvel hébergement + nouvelle installation (checklist dans <code>docs/setup-wordpress-vierge.md</code>).</div>
+    </div>
+  </div>
+</div>
+
+<h2>✅ Prochaines étapes</h2>
+
+<div class="stats-grid">
+  <div class="stat-box">
+    <div class="stat-label">Priorité 1 (débloquant)</div>
+    <div class="stat-value">WordPress neuf</div>
+    <div class="stat-detail">Hébergement + installation + config API</div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-label">Priorité 2 (P2)</div>
+    <div class="stat-value">3 silos P2</div>
+    <div class="stat-detail">Entretien, Pannes, Marques (si P3 avant P2 complète)</div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-label">Priorité 3 (P4)</div>
+    <div class="stat-value">Hubs & sous-hubs</div>
+    <div class="stat-detail">Rédaction pilier (130 pages), validé par l'utilisateur</div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-label">Priorité 4 (P5)</div>
+    <div class="stat-value">Autopublish lancé</div>
+    <div class="stat-detail">Générer & publier 10 000 articles (20/semaine Phase 2)</div>
+  </div>
+</div>
+
+<h2>📚 Documentation & ressources</h2>
+
+<ul>
+  <li><strong>Plan complet :</strong> <a href="plan-auto-mobilite-10000.html">plan-auto-mobilite-10000.html</a> (P1–P6, 7 moteurs)</li>
+  <li><strong>Plan d'actions détaillé :</strong> <a href="plan-auto-mobilite-10000-actions.html">plan-auto-mobilite-10000-actions.html</a> (22 sessions P2 + tracking)</li>
+  <li><strong>État d'avancement :</strong> <code>STATE.md</code> (à jour permanente)</li>
+  <li><strong>Architecture headless :</strong> <code>docs/architecture-headless.md</code></li>
+  <li><strong>Autopublish technique :</strong> <code>docs/architecture-autopublish.md</code></li>
+  <li><strong>Setup WordPress vierge :</strong> <code>docs/setup-wordpress-vierge.md</code></li>
+  <li><strong>Skills par domaine :</strong> <code>skills/*.md</code> (SEO, GEO, Design, Dev, Gestion de projet, Rédaction)</li>
+  <li><strong>Commandes slash :</strong> <code>docs/commandes.md</code> (/p1-keywords, /p2-database, /p3-mapping, etc.)</li>
+</ul>
+
+</div>
+</body>
+</html>
