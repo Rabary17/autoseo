@@ -1,0 +1,262 @@
+[
+  {
+    "pays": "République Tchèque",
+    "systeme_peage": "vignette électronique obligatoire (e-vignette)",
+    "prix_indicatif": "49,95€ mensuelle 2026 ; vignettes 10 jours/mois/annuelle également disponibles ; gratuit pour véhicules électriques et à hydrogène à zéro émission",
+    "vehicules_concernes": "tous les véhicules de moins de 3,5 tonnes ; motos exemptes",
+    "amende_si_absente": "jusqu'à 820€ (20 000 CZK) de contravention",
+    "particularites": "e-vignette liée à la plaque d'immatriculation depuis 2021 ; à partir du 1er mars 2026, seuls les véhicules à zéro émission (électriques/hydrogène pur) restent exempts ; contrôle par caméra",
+    "source": "winiety24.eu, vintrica.com, electrical-vignette.cz — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Slovaquie",
+    "systeme_peage": "vignette électronique obligatoire",
+    "prix_indicatif": "10€ pour 10 jours, 14€ pour 30 jours, 50€ pour 1 an (2026)",
+    "vehicules_concernes": "tous les véhicules jusqu'à 3,5 tonnes",
+    "amende_si_absente": "amendes automatiques possibles ; montants non précisés dans cette recherche",
+    "particularites": "vignette électronique liée à la plaque d'immatriculation ; contrôle par caméra automatique",
+    "source": "touteleurope.eu, moniteurautomobile.be — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Hongrie",
+    "systeme_peage": "vignette électronique obligatoire (e-matrica)",
+    "prix_indicatif": "e-matrica 2026 : tarifs indexés ~5% depuis janvier 2026 (environ 62 775 HUF pour tarif annuel D1, soit environ 168€) ; vignettes 10 jours/mois/annuelle disponibles",
+    "vehicules_concernes": "tous les véhicules jusqu'à 3,5 tonnes incluant motos et caravanes",
+    "amende_si_absente": "amendes possibles ; montants non précisés dans cette recherche",
+    "particularites": "système 100% numérique sans barrière physique ; contrôle par caméra ; achat exclusivement en ligne depuis 2024 ; valable immédiatement après achat",
+    "source": "tolltickets.com, vintrica.com, hungary-vignette.eu — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Pologne",
+    "systeme_peage": "pas de vignette nationale ; péages sur sections spécifiques d'autoroutes (A1, A2, A4)",
+    "prix_indicatif": "A1 Gdańsk–Toruń (~150 km): ~5€ ; A1 Piotrków Trybunalski–Częstochowa (~60 km): ~3€ ; A2 Nowy Tomyśl–Konin (~160 km): ~5€ ; A4 Katowice–Cracovie (~60 km): ~3€ ; augmentation de 40% en 2026",
+    "vehicules_concernes": "tous les véhicules ; poids lourds (>3,5t) soumis au système e-TOLL national",
+    "amende_si_absente": "non applicable pour sections à péage ; amendes pour non-paiement e-TOLL (poids lourds)",
+    "particularites": "paiement direct aux postes de péage en espèces ou carte ; augmentation tarifaire majeure (40%) en 2026 à anticiper ; plusieurs sections tolérées mais pas couverture nationale",
+    "source": "taxe-auto.be, mobility.autopay.eu, moniteurautomobile.be — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Roumanie",
+    "systeme_peage": "vignette électronique obligatoire (Rovinieta)",
+    "prix_indicatif": "3€ hebdomadaire (7 jours), 7€ mensuelle, 13€ (90 jours), 28€ annuelle (2026)",
+    "vehicules_concernes": "tous les véhicules jusqu'à 3,5 tonnes",
+    "amende_si_absente": "amendes automatiques possibles ; montants non précisés dans cette recherche",
+    "particularites": "vignette électronique liée à la plaque d'immatriculation ; contrôle par caméra ANPR ; parmi les tarifs les plus avantageux d'Europe",
+    "source": "winiety24.eu, vintrica.com, tolls.eu — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Bulgarie",
+    "systeme_peage": "vignette électronique obligatoire (BG TOLL e-vignette)",
+    "prix_indicatif": "5,11€ weekend, 7,67€ (7 jours), 15,34€ (30 jours), 27,61€ (3 mois), 49,60€ (1 an, depuis 2026 après adoption de l'euro)",
+    "vehicules_concernes": "tous les véhicules jusqu'à 3,5 tonnes ; motos exemptes",
+    "amende_si_absente": "amendes automatiques possibles ; montants non précisés dans cette recherche",
+    "particularites": "système ANPR par caméra ; reconnaissance automatique des plaques aux points d'entrée/sortie autoroutes ; contrôle 24h/24",
+    "source": "tolls.eu, tolltickets.com, vignetteregister.com — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Danemark",
+    "systeme_peage": "pas de péage ni vignette généralisé sur autoroutes",
+    "prix_indicatif": "gratuit (réseau général) ; exceptions : pont Storebaelt et pont Øresund payants",
+    "vehicules_concernes": "tous les véhicules (exemptés réseau général)",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau autoroutier complètement gratuit ; seules exceptions structurelles (ponts majeurs) sont payantes ; pas de limitation de vitesse spécifique",
+    "source": "moniteurautomobile.be, mycamper.com — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Suède",
+    "systeme_peage": "pas de péage ni vignette sur autoroutes",
+    "prix_indicatif": "gratuit du nord au sud, d'est en ouest ; aucun péage aux stations",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau autoroutier entièrement gratuit sans exception",
+    "source": "moniteurautomobile.be, mycamper.com — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Finlande",
+    "systeme_peage": "pas de péage ni vignette sur autoroutes",
+    "prix_indicatif": "gratuit",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau routier finlandais entièrement gratuit",
+    "source": "moniteurautomobile.be, mycamper.com — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Irlande",
+    "systeme_peage": "péages mixtes (barrières physiques et flux libre électronique)",
+    "prix_indicatif": "variable selon tronçon ; flux libre M50 Dublin nécessite paiement en ligne avant 20h le lendemain du passage",
+    "vehicules_concernes": "tous les véhicules y compris motos",
+    "amende_si_absente": "amendes automatiques pour non-paiement flux libre (M50) ; montants non précisés",
+    "particularites": "système mixte avec barrières péage et péage en flux libre électronique ; paiement obligatoire en ligne pour certains tronçons modernes",
+    "source": "moniteurautomobile.be, touring.be — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Luxembourg",
+    "systeme_peage": "pas de péage ni vignette",
+    "prix_indicatif": "gratuit",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau autoroutier entièrement gratuit ; pas de routes à péage pour véhicules de tourisme",
+    "source": "moniteurautomobile.be, touteleurope.eu — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Andorre",
+    "systeme_peage": "tunnel à péage (+ accès via ponts/tunnels Espagne-Portugal)",
+    "prix_indicatif": "tunnel d'Andorre payant (montant non précisé cette recherche) ; structure routière sinueuse",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable (paiement direct à péage)",
+    "particularites": "passage obligatoire par tunnel payant ; petite Principauté avec accès limité ; alternativement accès via Espagne/France",
+    "source": "moniteurautomobile.be, lebaladin.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Monaco",
+    "systeme_peage": "pas de péage ni vignette",
+    "prix_indicatif": "gratuit (routes internes) ; mais accès via France A8 qui est à péage",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable pour Monaco",
+    "particularites": "Principauté sans péage interne ; mais accès via France impose A8 (péage français) ; petite zone sans réseau étendu",
+    "source": "taxe-auto.be, touteleurope.eu — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Serbie",
+    "systeme_peage": "péages autoroutiers basés sur distance",
+    "prix_indicatif": "exemple Belgrade–Novi Sad : ~3€ voiture simple, ~3,50€ avec caravane ; paiement au sortir (euros ou dinars acceptés)",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable (paiement obligatoire au péage ou non passage)",
+    "particularites": "système par ticket à l'entrée, paiement à la sortie en espèces (euros/dinars) ou carte ; transpondeur optionnel",
+    "source": "moniteurautomobile.be, taxe-auto.be, ideoz.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Bosnie-Herzégovine",
+    "systeme_peage": "péages autoroutiers sur sections principales",
+    "prix_indicatif": "exemple E73-A1 Zenica–Sarajevo : 4,20€ ; variable selon distance",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable (paiement direct au péage)",
+    "particularites": "péages à barrière physique ; paiement en euros généralement accepté",
+    "source": "moniteurautomobile.be, camperstyle.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Monténégro",
+    "systeme_peage": "éco-vignette supprimée ; seuls péages spécifiques : tunnel de Sozina + car-ferries baie de Kotor",
+    "prix_indicatif": "tunnel de Sozina : montant non précisé ; car-ferries : montants variables selon véhicule",
+    "vehicules_concernes": "tous les véhicules utilisant le tunnel ou ferries",
+    "amende_si_absente": "non applicable (paiement direct à péage/ferry)",
+    "particularites": "éco-vignette abrogée ; principalement passage par tunnel unique major ; car-ferries comme alternative côtière",
+    "source": "moniteurautomobile.be, ideoz.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Albanie",
+    "systeme_peage": "gratuit sauf tunnel Kalimash",
+    "prix_indicatif": "tunnel Kalimash (5,65 km) : 5€ voiture, 11-17€ camping-car",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau gratuit excepté tunnel majeur unique ; tunnel reliant régions nord/sud ; alternative routière possible mais longue",
+    "source": "moniteurautomobile.be, ideoz.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Macédoine du Nord",
+    "systeme_peage": "péages autoroutiers basés sur distance parcourue",
+    "prix_indicatif": "variable selon tronçon (montants précis non trouvés)",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable (paiement direct aux postes)",
+    "particularites": "paiement directement aux postes de péage ; système classique à barrière",
+    "source": "moniteurautomobile.be — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Turquie",
+    "systeme_peage": "péages électroniques basés sur distance (OGS/HGS)",
+    "prix_indicatif": "exemple Edirne–Istanbul (O-3) : 14,75-16,75 TRY (~0,45-0,51€) ; ponts Bosphore : 49 TRY (~1,49€, cat.2) ; tarifs révisés janvier 2026 selon IPC",
+    "vehicules_concernes": "catégories : voitures particulières (cat.1), véhicules gros empattement (cat.2), 3-6 essieux (cat.3-5), motos (cat.6)",
+    "amende_si_absente": "non applicable (paiement électronique obligatoire, non-paiement bloque passage)",
+    "particularites": "paiement exclusivement électronique (OGS transpondeur pare-brise ou HGS carte prépayée) ; aucun paiement espèces ; systèmes disponibles PTT/stations-service",
+    "source": "taxe-auto.be, tollguru.com, onyxtms.com — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Lituanie",
+    "systeme_peage": "pas de péage pour voitures particulières (changement prévu 2027)",
+    "prix_indicatif": "gratuit 2026 ; transition vers péage basé distance à partir 2027",
+    "vehicules_concernes": "voitures exemptes ; poids lourds >3,5t soumis au système de péage",
+    "amende_si_absente": "non applicable 2026 pour voitures",
+    "particularites": "gratuit actuellement ; système transitoire avant basculement péage distance 2027 ; poids lourds et camionnettes >3,5t déjà taxés",
+    "source": "tolls.eu, moniteurautomobile.be — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Lettonie",
+    "systeme_peage": "pas de péage pour voitures particulières",
+    "prix_indicatif": "gratuit",
+    "vehicules_concernes": "voitures exemptes ; poids lourds soumis à taxation",
+    "amende_si_absente": "non applicable pour voitures",
+    "particularites": "réseau gratuit pour véhicules légers ; seuls poids lourds taxés",
+    "source": "moniteurautomobile.be, tolls.eu — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Estonie",
+    "systeme_peage": "pas de péage pour voitures particulières",
+    "prix_indicatif": "gratuit",
+    "vehicules_concernes": "voitures exemptes",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau routier gratuit pour véhicules légers ; technologie moderne mais sans péage voitures",
+    "source": "moniteurautomobile.be, tolls.eu — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Islande",
+    "systeme_peage": "gratuit sauf tunnel Hvalfjördur",
+    "prix_indicatif": "réseau gratuit ; tunnel Hvalfjördur payant (montant non précisé)",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau quasi-entièrement gratuit ; tunnel unique payant ; alternative routière longue possible",
+    "source": "moniteurautomobile.be — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "pays": "Maroc",
+    "systeme_peage": "hybride : vignette annuelle obligatoire + péages autoroutes classiques",
+    "prix_indicatif": "vignette 2026 (1-31 jan) : 350-20 000 DH selon puissance fiscale/carburant (~35-2000€) ; péages autoroutes : variable distance + catégorie véhicule ; majoration 15% retard paiement vignette",
+    "vehicules_concernes": "vignette : tous les propriétaires ; péages autoroutes : tous les véhicules",
+    "amende_si_absente": "vignette retard : +15% mois 1, +0,5% par mois supplémentaire ; péage autoroute : amendes automatiques si non-paiement",
+    "particularites": "système unique en Europe : vignette annuelle obligatoire + péage à la barrière combinés ; vignette vérifiée numériquement par terminal policier ; réseau autoroutier moderne",
+    "source": "autoecoletrajectoire.ma, tic-maroc.com, calchub.ma — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Liechtenstein",
+    "systeme_peage": "pas de péage ni vignette",
+    "prix_indicatif": "gratuit (mais accès via Suisse ou Autriche nécessite leur vignette respective)",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable Liechtenstein (mais vignette suisse/autriche obligatoire si passage par ces pays)",
+    "particularites": "petit État sans péage interne ; mais enclavé : obligation quasi-systématique de traverser Suisse (vignette obligatoire) ou Autriche pour y accéder",
+    "source": "taxe-auto.be, diplomatiebelgium.be — consulté 2026-07",
+    "a_verifier": false
+  },
+  {
+    "pays": "Chypre",
+    "systeme_peage": "pas de péage ni vignette",
+    "prix_indicatif": "gratuit",
+    "vehicules_concernes": "tous les véhicules",
+    "amende_si_absente": "non applicable",
+    "particularites": "réseau routier entièrement gratuit ; île sans réseau dense de péages",
+    "source": "touteleurope.eu, europe-consommateurs.eu — consulté 2026-07",
+    "a_verifier": false
+  }
+]
