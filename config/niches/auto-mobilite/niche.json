@@ -1,0 +1,295 @@
+{
+  "id": "auto-mobilite",
+  "name": "Auto & mobilité",
+  "data_dir": "data",
+  "authors": {
+    "A": {
+      "label": "A — Mécanique & technique",
+      "wp_slug": "julien-fabre"
+    },
+    "B": {
+      "label": "B — Marques, essais & sport auto",
+      "wp_slug": "auteur-b"
+    },
+    "C": {
+      "label": "C — Achat & mobilité électrique",
+      "wp_slug": "auteur-c"
+    },
+    "D": {
+      "label": "D — Démarches, assurance & permis",
+      "wp_slug": "auteur-d"
+    },
+    "E": {
+      "label": "E — Deux-roues & nouvelles mobilités",
+      "wp_slug": "auteur-e"
+    },
+    "F": {
+      "label": "F — Usages spécifiques & voyage",
+      "wp_slug": "auteur-f"
+    }
+  },
+  "silos": [
+    {
+      "name": "Entretien & révision",
+      "hub_slug": "entretien-revision",
+      "author": "A",
+      "sous_cocons": [
+        "Batterie & électricité",
+        "Boîte & embrayage",
+        "Climatisation",
+        "Distribution & courroies",
+        "Freinage",
+        "Pneus & géométrie",
+        "Prestations par marque",
+        "Vidange & filtres"
+      ],
+      "seeds_file": "entretien-revision.json"
+    },
+    {
+      "name": "Pannes & diagnostic",
+      "hub_slug": "pannes-diagnostic",
+      "author": "A",
+      "sous_cocons": [
+        "Bruits & symptômes",
+        "Codes défaut OBD",
+        "Pannes moteur",
+        "Pannes électroniques & capteurs",
+        "Valises & outils diagnostic",
+        "Voyants tableau de bord"
+      ],
+      "seeds_file": "pannes-diagnostic.json"
+    },
+    {
+      "name": "Pièces détachées & accessoires",
+      "hub_slug": "pieces-detachees-accessoires",
+      "author": "A",
+      "sous_cocons": [
+        "Accessoires intérieur & confort",
+        "Carrosserie & optiques",
+        "Casse & occasion",
+        "Pièces d'usure",
+        "Pièces moteur",
+        "Électronique embarquée"
+      ],
+      "seeds_file": "pieces-detachees-accessoires.json"
+    },
+    {
+      "name": "Marques & modèles",
+      "hub_slug": "marques-modeles",
+      "author": "B",
+      "sous_cocons": [
+        "Fiches modèles & fiabilité",
+        "Marques allemandes",
+        "Marques asiatiques",
+        "Marques chinoises & nouvelles",
+        "Marques françaises"
+      ],
+      "seeds_file": "marques-modeles.json"
+    },
+    {
+      "name": "Essais & comparatifs",
+      "hub_slug": "essais-comparatifs",
+      "author": "B",
+      "sous_cocons": [
+        "Avis long terme",
+        "Comparatifs face-à-face",
+        "Concept-cars & anticipation",
+        "Essais par segment",
+        "Nouveautés & salons"
+      ],
+      "seeds_file": "essais-comparatifs.json"
+    },
+    {
+      "name": "Sport auto & passion",
+      "hub_slug": "sport-auto-passion",
+      "author": "B",
+      "sous_cocons": [
+        "F1 & compétition",
+        "Rallye & endurance",
+        "Simracing",
+        "Track days & circuits",
+        "Tuning & préparation",
+        "Youngtimers & collection"
+      ],
+      "seeds_file": "sport-auto-passion.json"
+    },
+    {
+      "name": "Achat voiture neuve",
+      "hub_slug": "achat-voiture-neuve",
+      "author": "C",
+      "sous_cocons": [
+        "Bonus, malus & fiscalité",
+        "Guide d'achat par segment",
+        "Leasing LOA & LLD",
+        "Mandataire & import",
+        "Négociation & remises",
+        "Options & configuration"
+      ],
+      "seeds_file": "achat-voiture-neuve.json"
+    },
+    {
+      "name": "Voiture d'occasion",
+      "hub_slug": "voiture-d-occasion",
+      "author": "C",
+      "sous_cocons": [
+        "Acheter une occasion",
+        "Cote & estimation",
+        "Enchères & ventes pro",
+        "Garanties occasion",
+        "Historique & vices cachés",
+        "Vendre sa voiture"
+      ],
+      "seeds_file": "voiture-d-occasion.json"
+    },
+    {
+      "name": "Électrique & hybride",
+      "hub_slug": "electrique-hybride",
+      "author": "C",
+      "sous_cocons": [
+        "Aides & fiscalité EV",
+        "Autonomie & batteries",
+        "Coût & TCO",
+        "Hybride & rechargeable",
+        "Modèles électriques",
+        "Recharge publique & itinérance",
+        "Recharge à domicile",
+        "Technologies d'avenir & rétrofit",
+        "Voiture autonome & connectée"
+      ],
+      "seeds_file": "electrique-hybride.json"
+    },
+    {
+      "name": "Carte grise & démarches",
+      "hub_slug": "carte-grise-demarches",
+      "author": "D",
+      "sous_cocons": [
+        "Cession & achat",
+        "Changement de titulaire",
+        "Contrôle technique",
+        "Duplicata & modifications",
+        "Immatriculation & import",
+        "Malus & taxes"
+      ],
+      "seeds_file": "carte-grise-demarches.json"
+    },
+    {
+      "name": "Assurance auto",
+      "hub_slug": "assurance-auto",
+      "author": "D",
+      "sous_cocons": [
+        "Assurances spécifiques",
+        "Bonus-malus",
+        "Comparer les offres",
+        "Formules & garanties",
+        "Profils spécifiques",
+        "Sinistres & indemnisation"
+      ],
+      "seeds_file": "assurance-auto.json"
+    },
+    {
+      "name": "Permis & conduite",
+      "hub_slug": "permis-conduite",
+      "author": "D",
+      "sous_cocons": [
+        "Auto-écoles & financement",
+        "Permis B & code",
+        "Permis moto & autres",
+        "Points & infractions",
+        "Sécurité routière",
+        "Éco-conduite"
+      ],
+      "seeds_file": "permis-conduite.json"
+    },
+    {
+      "name": "Moto & scooter",
+      "hub_slug": "moto-scooter",
+      "author": "E",
+      "sous_cocons": [
+        "Assurance & réglementation moto",
+        "Balades & voyage moto",
+        "Choisir sa moto",
+        "Entretien moto",
+        "Scooter & 125",
+        "Équipement pilote"
+      ],
+      "seeds_file": "moto-scooter.json"
+    },
+    {
+      "name": "Vélo & nouvelles mobilités",
+      "hub_slug": "velo-nouvelles-mobilites",
+      "author": "E",
+      "sous_cocons": [
+        "Aides à l'achat",
+        "Trottinettes & EDPM",
+        "Vélo électrique",
+        "Vélotaf & pratique",
+        "Équipement & antivol"
+      ],
+      "seeds_file": "velo-nouvelles-mobilites.json"
+    },
+    {
+      "name": "Mobilité partagée & transports",
+      "hub_slug": "mobilite-partagee-transports",
+      "author": "E",
+      "sous_cocons": [
+        "Autopartage & location particuliers",
+        "Covoiturage",
+        "Location courte & longue durée",
+        "Train & transports en commun",
+        "VTC & taxi"
+      ],
+      "seeds_file": "mobilite-partagee-transports.json"
+    },
+    {
+      "name": "Carburants & consommation",
+      "hub_slug": "carburants-consommation",
+      "author": "F",
+      "sous_cocons": [
+        "E85 & conversions",
+        "GPL, GNV & hydrogène",
+        "Prix & stations",
+        "Réduire sa consommation"
+      ],
+      "seeds_file": "carburants-consommation.json"
+    },
+    {
+      "name": "Camping-car & van",
+      "hub_slug": "camping-car-van",
+      "author": "F",
+      "sous_cocons": [
+        "Acheter camping-car",
+        "Assurance & réglementation",
+        "Entretien & hivernage",
+        "Van & fourgon aménagé",
+        "Voyager & aires"
+      ],
+      "seeds_file": "camping-car-van.json"
+    },
+    {
+      "name": "Utilitaires & flottes pro",
+      "hub_slug": "utilitaires-flottes-pro",
+      "author": "F",
+      "sous_cocons": [
+        "Aménagement & équipement",
+        "Choisir un utilitaire",
+        "Fiscalité véhicule pro",
+        "LLD & gestion de flotte",
+        "Utilitaires électriques"
+      ],
+      "seeds_file": "utilitaires-flottes-pro.json"
+    },
+    {
+      "name": "Road trips & voyage auto",
+      "hub_slug": "road-trips-voyage-auto",
+      "author": "F",
+      "sous_cocons": [
+        "Conduite à l'étranger",
+        "Péages & vignettes",
+        "Road trips Europe",
+        "Road trips France",
+        "Équipement & préparation"
+      ],
+      "seeds_file": "road-trips-voyage-auto.json"
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+[
+  {
+    "modele": "Alpine A110",
+    "score_fiabilite": "correcte pour une sportive de niche mais avec des points de vigilance identifiés ; certains propriétaires rapportent une bonne fiabilité (un seul souci en 2 ans), d'autres des soucis récurrents",
+    "pannes_courantes": "boîte double embrayage EDC Getrag sous-dimensionnée pour le couple (échangeur d'huile trop petit, déficit de refroidissement en usage intensif) ; défaillance récurrente de la pompe à essence surtout par forte chaleur (un témoignage évoque une 4e pompe en 65 000 km) ; pannes électroniques (écran noir, coupures tableau de bord, bugs CarPlay) ; rappels constructeur pour problème moteur et souci de capot",
+    "source": "fiches-auto.fr, caradisiac.com, carverif.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota GR Yaris",
+    "score_fiabilite": "globalement correcte, moteur 3 cylindres considéré moins fiable que le reste de la gamme Toyota selon les retours",
+    "pannes_courantes": "différentiel avant pouvant générer bruits ou fonctionnement anormal (jeu interne, lubrification dégradée ou réglage) ; claquements ou grognements et motricité irrégulière rapportés ; rappels constructeur pour airbags et électronique sur certains millésimes",
+    "source": "fiches-auto.fr, automobile-sportive.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota GR Corolla",
+    "score_fiabilite": "a_verifier — peu de recul disponible en France, modèle récent et confidentiel sur ce marché",
+    "pannes_courantes": "au-delà de 100 000 km, supports moteur, joints de turbo et éléments de suspension peuvent nécessiter un remplacement préventif (retour d'expérience GR Supra à moteur partagé, à confirmer spécifiquement pour la Corolla GR)",
+    "source": "icarsoft-france.fr, carverif.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Mustang GT (V8 5.0, générations récentes)",
+    "score_fiabilite": "jugée exemplaire par les spécialistes pour les motorisations 4 cylindres EcoBoost 2.3 et V8 5.0 atmosphérique récentes ; générations plus anciennes (moteur 4.6 V8) moins fiables",
+    "pannes_courantes": "boîte auto 4R70W (générations 4.6 V8) fragile entre 80 000 et 120 000 km, patinages et retards ; bobines d'allumage défaillantes entre 50 000 et 80 000 km sur moteur 4.6 V8 ; climatisation défaillante entre 60 000 et 100 000 km ; suspension bruyante ; pannes électriques (câblage, capteurs, alternateur) fréquentes",
+    "source": "largus.fr, auto-doc.fr, iems.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW Série 4 420i (G22, 2020+)",
+    "score_fiabilite": "a_verifier — retours encore limités sur la génération récente G22",
+    "pannes_courantes": "sur générations antérieures (F32/F36) : vanne EGR récurrente, crémaillère de direction, circuit de refroidissement, consommation d'huile ; guide-chaîne redessiné en 2015 a amélioré la fiabilité ; régulation de climatisation pouvant devenir incohérente (sonde température habitacle)",
+    "source": "carverif.fr, fiches-auto.fr, obd2.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi TT RS",
+    "score_fiabilite": "considérée comme une sportive fiable mais avec un budget d'entretien élevé (2.5 TFSI 400ch)",
+    "pannes_courantes": "turbo point faible sur modèles 2011-2013 (code P0299, pression insuffisante, souvent avant 50 000 km) ; consommation d'huile excessive rapportée par plusieurs propriétaires ; capteurs de gestion moteur et calculateur électronique sensibles ; problèmes électriques sur optiques arrière et lève-vitres ; transmission quattro sollicitée en usage intensif",
+    "source": "fiches-auto.fr, automobile-sportive.com, autotitre.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Mégane RS (Mk4, 2018+, moteur 1.8 Turbo 300 ch)",
+    "score_fiabilite": "a_verifier — pas de score chiffré trouvé, retours mitigés selon les motorisations et boîtes",
+    "pannes_courantes": "boîte double embrayage EDC connue pour à-coups lors des changements de rapport à basse vitesse ; système multimédia R-Link sujet à gels et redémarrages intempestifs ; certains propriétaires signalent électrovanne de pression d'huile pouvant causer casse moteur, pompe à essence, durite de pression d'huile turbo",
+    "source": "fiches-auto.fr, largus.fr, piecesauto-pro.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 208 GTi (2013-2019, moteur 1.6 THP 200 ch)",
+    "score_fiabilite": "0,6 panne moyenne par an sur base de 41 fiches propriétaires ; recommandé de privilégier les millésimes 2016-2018 sous 75 000 km",
+    "pannes_courantes": "4 défauts concentrent 78% des factures supérieures à 500€ : volant moteur bi-masse HS (28%, 800-1400€), chaîne de distribution bruyante (22%, étirement au-delà de 80 000 km, kit complet 1600-2200€), consommation d'huile supérieure à 0,5l/1000km (19%)",
+    "source": "carverif.fr, automobile-sportive.com, maisondelautomobile.be — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat 124 Spider (2016+, moteur 1.4 MultiAir turbo)",
+    "score_fiabilite": "considérée comme l'une des voitures italiennes les plus fiables de ces dernières années, base mécanique Mazda MX-5 partagée",
+    "pannes_courantes": "problèmes électriques courants (phares s'éteignant sans raison, lève-vitres électriques, pannes de batterie) ; moteur 1.4 MultiAir et chaîne de distribution jugés éprouvés avec peu de soucis récurrents",
+    "source": "mx5global.com, automobile-sportive.com, moteurfrancais.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Nissan 370Z",
+    "score_fiabilite": "a_verifier — pas de note chiffrée trouvée, rappel notable en 2018",
+    "pannes_courantes": "dysfonctionnements électriques (câbles, connecteurs plutôt que l'alternateur lui-même) ; capteurs ABS/vitesse défectueux pouvant générer des erreurs de freinage ; fermeture centralisée sensible à la pile de télécommande",
+    "source": "largus.fr, dailydriven.ro, defauts.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi S3 (8V/8Y)",
+    "score_fiabilite": "score de fiabilité de 91,4% selon l'enquête What Car? 2023 (15e sur 29 dans sa catégorie)",
+    "pannes_courantes": "turbo, embrayage, transmission Haldex fortement sollicités ; capteur MAF (débitmètre d'air) pouvant causer perte de puissance ; mécanismes de lève-vitre fragiles (pièces plastiques)",
+    "source": "largus.fr, podgarage.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW Z4 (toutes générations)",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée",
+    "pannes_courantes": "défaillance du moteur électro-hydraulique de capote (panne très répandue) ; voilage des disques avant, défauts de roulement ; connecteur du câble positif de batterie défectueux (panne électrique) ; compresseur de clim, valvetronic, bobines d'allumage et feux xénon sujets à pannes selon les générations",
+    "source": "largus.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota GR Supra",
+    "score_fiabilite": "a_verifier — peu de données chiffrées en France, moteur et boîte manuelle partagés avec BMW",
+    "pannes_courantes": "au-delà de 100 000 km, supports moteur, joints de turbo et éléments de suspension à surveiller ; embrayage de la version manuelle (course longue, point de patinage haut) demande une période d'adaptation",
+    "source": "carverif.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Hyundai i30 N",
+    "score_fiabilite": "a_verifier — pas de note spécifique à la version N trouvée ; la gamme i30 générale est jugée fiable sur versions bien choisies après 2015",
+    "pannes_courantes": "système start-stop dont la fiabilité diminue après 30 000-50 000 km ; problèmes d'électronique embarquée (écran multimédia, verrouillage central) rapportés sur i30 post-2013 ; à confirmer spécifiquement sur le bloc 2.0 T-GDI de la version N",
+    "source": "fiches-auto.fr, premiumcarsprovence.fr, auto-doc.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroën C3 Aircross II (2024+, essence/hybride e-DCS6)",
+    "score_fiabilite": "trop récent pour un historique de fiabilité solide, plusieurs points de vigilance déjà identifiés",
+    "pannes_courantes": "rappel sécurité pour fuite carburant sur ligne haute pression (écrou de fixation manquant, code GJ6) ; rappel système de freinage (support de pédale insuffisamment fixé, code GQ8) ; pannes électroniques de jeunesse (démarrage impossible, tablette inactive, aides à la conduite instables) ; transmission hybride e-DCS6 pouvant bloquer la sélection de vitesse dès moins de 2000 km sur certains exemplaires",
+    "source": "fiches-auto.fr, e-driver.fr, rapidauto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Toyota Yaris Cross",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée, réputation Toyota généralement bonne",
+    "pannes_courantes": "batterie 12V sous-dimensionnée (25Ah avant février 2024, portée à 35Ah depuis) causant pannes de démarrage en usage urbain ; système multimédia Toyota Smart Connect avec coupures Bluetooth et redémarrages d'écran ; encrassement du filtre à particules essence sur le 116h hybride en usage urbain court ; rappel module airbag pour véhicules produits juin-juillet 2023",
+    "source": "icarsoft-france.fr, fiches-auto.fr, accessoirement.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Kia Stonic",
+    "score_fiabilite": "fiabilité moyenne évaluée à 3,2/5, variable selon la motorisation",
+    "pannes_courantes": "embrayage du 1.0 T-GDI 120ch fragile (défaillances parfois dès 15 000-20 000 km, remplacement 1500-2000€) ; chaîne de distribution avec bruits liés à un tendeur défaillant sur moteurs turbo essence ; boîte automatique DCT7 nécessitant souvent un remplacement complet en cas de panne (4500-6000€) ; rappel pompe tandem diesel 1.6 CRDi (production juin 2019-avril 2020)",
+    "source": "garage-auto-benet.fr, premiumcarsprovence.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Skoda Kamiq",
+    "score_fiabilite": "classé parmi les SUV compacts les plus fiables de sa catégorie selon ADAC/DEKRA, devant Renault Captur et Peugeot 2008 en nombre de pannes sur 3 ans (2023)",
+    "pannes_courantes": "capteurs de pression des pneus, capteur d'angle de braquage et capteurs de stationnement en panne régulière ; boîte DSG avec à-coups entre 1re et 2e vitesse par temps froid ; bugs du système d'infodivertissement (écrans noirs, GPS en panne, Bluetooth perdu)",
+    "source": "solidarauto49.fr, icarsoft-france.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Crossland (X, 2017+)",
+    "score_fiabilite": "note de fiabilité de 3/5 par Auto Plus, niveau jugé passable",
+    "pannes_courantes": "65% des immobilisations avant 80 000 km liées à une courroie se désagrégeant dans l'huile moteur (bouche crépine et pompe à huile) ; broutements au premier rapport sur versions diesel et 1.2 Turbo 130ch ; dysfonctionnements fréquents des aides à la conduite et du système multimédia",
+    "source": "fiches-auto.fr, carverif.fr, moteurfrancais.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "MG ZS (essence, 1.0 T-GDI / 1.5 VTi-Tech)",
+    "score_fiabilite": "fiabilité globalement acceptable avec maintenance régulière ; défauts principaux jugés évitables ou solubles par entretien préventif",
+    "pannes_courantes": "fausses alertes TPMS dès 10 000-15 000 km (capteurs défaillants ou mal calibrés) ; pompe à carburant électrique en panne à partir de 20 000-30 000 km surtout en usage urbain court ; climatisation défaillante entre 35 000 et 45 000 km ; dysfonctionnements multimédia (plantages, CarPlay/Android Auto) dès 15 000-20 000 km",
+    "source": "auto-doc.fr, carverif.fr, automoto-gp.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Fiat 600 Hybrid (2024+, moteur 1.2 hybride)",
+    "score_fiabilite": "fiabilité jugée très aléatoire, pannes d'origine électromécanique à répétition rapportées par les premiers propriétaires",
+    "pannes_courantes": "casse de boîte de vitesses signalée après seulement 400 km sur certains exemplaires ; écrans noirs pendant la conduite avec clignotement multicolore signalant un passage garage ; défaut du système de traction électrique après seulement 1 mois d'utilisation ; voyant de détection piéton revenant régulièrement",
+    "source": "fiches-auto.fr, iodines.fr, largus.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jeep Avenger",
+    "score_fiabilite": "fiabilité générale jugée préoccupante par l'ensemble des sources, particulièrement pour les versions électrique et hybride",
+    "pannes_courantes": "défaut de traction électrique sur la version EV pouvant immobiliser le véhicule en circulation (cas rapportés dès 1000 km, jusqu'à 8 immobilisations en un an) ; boîte hybride e-DCS6 avec irrégularités de passage de vitesse dès 10 000-25 000 km et blocage en mode thermique ; entrée sans clé peu fiable dès 3000-12 000 km ; version essence héritant de la réputation du moteur PureTech (fiabilité de la courroie de distribution)",
+    "source": "auto-doc.fr, oscar-racing.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Renault Espace 5 (2015-2023)",
+    "score_fiabilite": "a_verifier — de multiples dysfonctionnements rapportés selon L'Argus, à privilégier après 2018",
+    "pannes_courantes": "turbo à géométrie variable pouvant gripper avec les suies, EGR encrassée ; 1.6 dCi 160ch concentre soucis de refroidissement, fuite d'huile côté distribution, casse moteur ; 2.0 Blue dCi avec problèmes AdBlue, refroidissement et capteurs ; système R-Link 2 à multiples problèmes ; boîte EDC avec à-coups en conduite urbaine, surtout sur premiers modèles",
+    "source": "fiches-auto.fr, largus.fr, ovoko.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Multivan T7 (2021+)",
+    "score_fiabilite": "a_verifier — modèle récent, peu de recul long terme",
+    "pannes_courantes": "boîte de vitesses avec changements saccadés dès 1000-10 000 km, nécessitant souvent une mise à jour logicielle du calculateur ; turbocompresseur ou fonctionnement moteur rugueux avec perte de puissance et surconsommation d'huile entre 10 000 et 50 000 km ; climatisation avec refroidissement faible ou irrégulier dès 30 000-50 000 km ; arrêts système spontanés en conduite, navigation qui gèle",
+    "source": "largus.fr, auto-doc.fr, car-recalls.eu — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Citroën SpaceTourer / Peugeot Traveller (2016+, moteurs 1.5/2.0 BlueHDI diesel)",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée",
+    "pannes_courantes": "problèmes fréquents du système AdBlue et du filtre à particules diesel, particulièrement critiques avant 25 000 km ; infodivertissement figeant régulièrement, climatisation automatique irrégulière dès 30 000 km ; lève-vitres électriques en panne dès 50 000 km ; rappel courroie de distribution (novembre 2020) avec risque de fragments dans le circuit d'huile",
+    "source": "auto-doc.fr, fiches-auto.fr, car-recalls.eu — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford S-Max (2006-2015)",
+    "score_fiabilite": "moindre taux de panne que le Focus C-Max, pannes immobilisantes peu nombreuses",
+    "pannes_courantes": "transmission automatique (2.0/2.2 TDCi) avec changements de vitesse saccadés entre 80 000 et 120 000 km ; volant moteur bimasse et embrayage très sollicités par le poids du monospace et le couple TDCi ; compresseur de climatisation défaillant après 50 000-80 000 km ; hayon électrique en panne après 60 000-90 000 km",
+    "source": "fiches-auto.fr, largus.fr, icarsoft-france.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Ford Galaxy (2015+, 3e génération)",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée",
+    "pannes_courantes": "transmission automatique avec changements saccadés et blocages occasionnels ; problèmes de gestion de batterie et de régénération sur versions hybrides après 40 000-70 000 km ; compresseur de climatisation défaillant après 50 000-80 000 km ; hayon électrique en panne après 60 000-90 000 km",
+    "source": "auto-doc.fr, icarsoft-france.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Volkswagen Touran II/III (2010-2021)",
+    "score_fiabilite": "fiabilité correcte avec entretien rigoureux malgré des défauts connus",
+    "pannes_courantes": "boîte DSG avec à-coups en conduite urbaine, surtout sur modèles 2008-2015 ; moteurs diesel 1.9/2.0 TDI (avant 2005 surtout) avec pannes turbo, injecteurs, volant moteur ; calculateurs de gestion moteur nécessitant parfois une reprogrammation ; moteurs essence TSI avec encrassement EGR, fragilité turbo et colmatage FAP",
+    "source": "piecesauto-pro.fr, largus.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Opel Zafira Tourer (2011-2019)",
+    "score_fiabilite": "note de fiabilité de 4/5 par Auto Plus, jugée honorable malgré des problèmes de qualité observés",
+    "pannes_courantes": "défaillance du volant moteur sur versions diesel à partir de 30 000 km ; difficultés au démarrage liées à la vanne EGR ou au capteur de pression de suralimentation ; perte de puissance récurrente (injection, EGR, turbocompresseur) ; bugs des aides à la conduite et du multimédia sur modèles antérieurs à 2016",
+    "source": "fiches-auto.fr, icarsoft-france.fr, largus.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Peugeot 807 / Citroën C8 (2002-2014)",
+    "score_fiabilite": "fiabilité correcte pour le 807 2.0 HDi 120ch (moteur noté 7,5/10 par les propriétaires), C8 techniquement identique avec mêmes défauts",
+    "pannes_courantes": "défaillance de la courroie de distribution, problèmes de FAP, alertes électroniques récurrentes (airbag, ABS) ; volant moteur bimasse point faible récurrent, embrayage/volant moteur autour de 190 000 km ; sur C8, portes coulissantes motorisées avec fermeture imparfaite ou réouverture intempestive ; moteurs 2.0 HDi 136/138ch avec encrassement FAP/EGR, usure d'embrayage",
+    "source": "carverif.fr, fiches-auto.fr, compar-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW Série 2 Active Tourer / Gran Tourer (2014+)",
+    "score_fiabilite": "fiabilité globalement satisfaisante, notée 7/10 pour la version 218d",
+    "pannes_courantes": "vanne EGR encrassée dès 60 000 km en usage urbain (rappel septembre 2015 pour environ 3000 véhicules Série 1/2 Active Tourer) ; chaîne de distribution défectueuse (N20/N47) sur modèles 2014-début 2015 ; consommation d'huile excessive sur 220i 192ch ; système iDrive et Bluetooth peu fiables après 40 000-80 000 km ; usure rapide des freins ; recommandé d'éviter les millésimes 2014-2016",
+    "source": "fiches-auto.fr, carverif.fr, ovoko.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi Q8",
+    "score_fiabilite": "généralement considérée comme un SUV de luxe fiable",
+    "pannes_courantes": "problèmes de suspension pneumatique (fuites ou défaillances) rapportés par certains propriétaires ; capteurs et infodivertissement parfois défaillants ; rappels pour arbre de direction mal vissé (premières productions), défaut d'étanchéité boîte Tiptronic (production sept-déc 2019), capteurs de collision de portes défectueux (juillet-sept 2020)",
+    "source": "fiches-auto.fr, mycarly.com, car-recalls.eu — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW Série 7 (G70, 2022+)",
+    "score_fiabilite": "a_verifier — fiabilité de la marque en dégradation générale signalée (+60% frais de maintenance entre 2012-2024, +35% pannes pour générations 2020-2024 vs 2000), peu de recul pour la génération G70 spécifiquement",
+    "pannes_courantes": "sur générations antérieures : suspension pneumatique déficiente à partir de 90 000 km (plus de 6000€ de réparation) ; corrosion précoce du condenseur de climatisation ; consommation d'huile excessive (moteur N62) ; fuites de radiateur",
+    "source": "largus.fr, fiches-auto.fr, automauritanie.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes Classe S (W223, 2020+)",
+    "score_fiabilite": "généralement réputée fiable lorsqu'elle est bien entretenue",
+    "pannes_courantes": "problèmes électriques fréquents en raison du grand nombre de capteurs et d'équipements (amplificateurs, coussins de siège gonflables, infodivertissement, entrée sans clé) ; suspension pneumatique point faible potentiel ; sur moteurs diesel à haut kilométrage : injecteurs, vanne EGR, FAP encrassé ; rappel boulons en aluminium du boîtier de direction pouvant se casser",
+    "source": "lpddconseil.fr, fiches-auto.fr, carmunu.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Genesis GV80",
+    "score_fiabilite": "moins fiable que la moyenne des véhicules du même millésime selon Consumer Reports, mais fiable et solide sur la garantie comparé à ses concurrents (recul plus court)",
+    "pannes_courantes": "problèmes d'infodivertissement (audio, GPS, téléphone, caméras, affichage tête haute) ; connexions Apple CarPlay sans fil et Bluetooth capricieuses ; batterie complètement déchargée nécessitant un démarrage assisté ; entrée sans clé ne reconnaissant pas toujours les clés ; joint défaillant sur bloc optique conducteur",
+    "source": "consumerreports.org, autoblog.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Porsche Panamera",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée ; modèle le plus complexe technologiquement de la gamme Porsche",
+    "pannes_courantes": "pannes électroniques de l'unité de contrôle moteur sur modèles 2012 (perte de puissance, ralenti saccadé) ; capteurs de pression d'huile en panne entre 50 000 et 80 000 km ; FAP et AdBlue défaillants entre 80 000 et 120 000 km (diesel) ; batterie haute tension défaillante entre 60 000 et 100 000 km (hybride) ; serrures avant/arrière en panne",
+    "source": "auto-doc.fr, fiches-auto.fr, defauts.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Audi A8",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée",
+    "pannes_courantes": "défauts électroniques de l'interface MMI (écrans gelés, manque de réactivité) fréquents au-delà de 60 000 km ; connexion Bluetooth et téléphone intermittentes ; problèmes de catalyseurs et boîtes automatiques rapportés sur générations 1994-2010 ; moteur W12 nécessitant un entretien plus fréquent (tous les 10 000 km)",
+    "source": "largus.fr, auto-doc.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "BMW X6",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée",
+    "pannes_courantes": "verrouillage du coffre défaillant dès 30 000-50 000 km, surtout sur versions diesel 30d et 40d ; frein à main électronique défaillant après 70 000-90 000 km (ne se serre pas ou ne se desserre pas correctement) sur M50d et autres variantes",
+    "source": "fiches-auto.fr, auto-doc.fr — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Mercedes GLS",
+    "score_fiabilite": "a_verifier — peu d'informations spécifiques trouvées sur ce modèle précis",
+    "pannes_courantes": "rappel boulons en aluminium du boîtier de direction (véhicules produits avril 2010-avril 2017, risque de détachement) ; rappel verrouillage de dossier de sièges arrière sur génération 167 (plus de 60 000 véhicules produits 2020-2022 concernés, risque en cas d'impact)",
+    "source": "largus.fr, forum-mercedes.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Jaguar XJ",
+    "score_fiabilite": "a_verifier — pas de note chiffrée globale trouvée",
+    "pannes_courantes": "moteur 5.0 V8 avec ralenti irrégulier, ratés d'allumage et fuites d'huile aux joints de couvre-culasses après 80 000-100 000 km ; suspension pneumatique défaillante à partir de 60 000 km (affaissement, blocage en position basse) ; moteur diesel 2.7 avec défauts EGR et démarrage difficile à froid entre 70 000 et 120 000 km ; unités de contrôle électronique multiples pouvant tomber en panne après 100 000 km",
+    "source": "largus.fr, auto-doc.fr, repareletoimeme.com — consulté 2026-07",
+    "a_verifier": true
+  },
+  {
+    "modele": "Lexus LS",
+    "score_fiabilite": "réputation Lexus généralement excellente en fiabilité, filiale premium de Toyota ; hybrides jugés particulièrement fiables (transmission e-CVT sans embrayage sec)",
+    "pannes_courantes": "a_verifier — pas de panne spécifique au modèle LS identifiée dans les sources consultées ; pannes générales de la marque concernent batterie, freinage, transmission, logiciels électroniques et moteur",
+    "source": "largus.fr, fiches-auto.fr — consulté 2026-07",
+    "a_verifier": true
+  }
+]

@@ -1,0 +1,500 @@
+{
+  "moteurs": [
+    {
+      "id": "M1",
+      "label": "M1 — Prestation × Véhicule",
+      "type": "cross",
+      "source_glob": "entretien-croisement-prix-marques-*.json",
+      "field_a": "prestation",
+      "field_b_template": "{marque} {modele}",
+      "field_b_strip_parens": [
+        "modele"
+      ],
+      "label_map": {
+        "vidange": "vidange",
+        "plaquettes_frein": "plaquettes de frein",
+        "disques_frein": "disques de frein",
+        "freins": "freins",
+        "embrayage": "embrayage",
+        "kit_embrayage": "kit embrayage",
+        "distribution": "courroie de distribution",
+        "courroie_distribution": "courroie de distribution",
+        "courroie_accessoire": "courroie accessoire",
+        "climatisation": "climatisation",
+        "clim": "climatisation",
+        "amortisseurs": "amortisseurs",
+        "batterie": "batterie",
+        "alternateur": "alternateur",
+        "demarreur": "démarreur",
+        "echappement": "échappement",
+        "filtre_particules": "filtre à particules",
+        "fap": "filtre à particules",
+        "bougies": "bougies",
+        "bougies_prechauffage": "bougies de préchauffage",
+        "pneus": "pneus",
+        "geometrie": "géométrie",
+        "parallelisme": "parallélisme",
+        "revision": "révision",
+        "controle_technique": "contrôle technique",
+        "joint_culasse": "joint de culasse",
+        "turbo": "turbo",
+        "injecteurs": "injecteurs",
+        "volant_moteur": "volant moteur",
+        "pompe_eau": "pompe à eau",
+        "liquide_refroidissement": "liquide de refroidissement",
+        "filtre_habitacle": "filtre d'habitacle",
+        "filtre_air": "filtre à air",
+        "filtre_carburant": "filtre à carburant",
+        "cardan": "cardan",
+        "rotule": "rotule",
+        "triangle": "triangle de suspension",
+        "egr": "vanne EGR",
+        "vanne_egr": "vanne EGR",
+        "bougies_allumage": "bougies d'allumage",
+        "roulement_roue": "roulement de roue",
+        "essuie_glaces": "essuie-glaces",
+        "pare_brise": "pare-brise",
+        "phares": "phares",
+        "radiateur": "radiateur",
+        "huiles": "huile moteur",
+        "liquides": "liquides (frein/refroidissement)",
+        "capteurs": "capteurs moteur",
+        "diagnostic_electronique": "diagnostic électronique",
+        "faisceaux_haute_tension": "faisceau haute tension",
+        "controleur_charge": "contrôleur de charge",
+        "entretien_batterie_electrique": "entretien batterie électrique",
+        "entretien_batterie_hybride": "entretien batterie hybride",
+        "onduleur_hybride": "onduleur hybride"
+      },
+      "label_aliases": {
+        "plaquettes_de_frein": "plaquettes_frein",
+        "disques_de_frein": "disques_frein",
+        "filtre_a_air": "filtre_air",
+        "courroie_de_distribution": "courroie_distribution",
+        "courroies": "courroie_accessoire",
+        "joints": "joint_culasse",
+        "rotules": "rotule",
+        "roulements": "roulement_roue",
+        "bougies_allumage": "bougies_allumage",
+        "climatisation_revision": "climatisation",
+        "capteurs_electroniques": "capteurs"
+      },
+      "sous_cocon_map": {
+        "vidange": "Vidange & filtres",
+        "filtre_habitacle": "Vidange & filtres",
+        "filtre_air": "Vidange & filtres",
+        "filtre_carburant": "Vidange & filtres",
+        "plaquettes_frein": "Freinage",
+        "disques_frein": "Freinage",
+        "freins": "Freinage",
+        "embrayage": "Boîte & embrayage",
+        "kit_embrayage": "Boîte & embrayage",
+        "volant_moteur": "Boîte & embrayage",
+        "cardan": "Boîte & embrayage",
+        "distribution": "Distribution & courroies",
+        "courroie_distribution": "Distribution & courroies",
+        "courroie_accessoire": "Distribution & courroies",
+        "joint_culasse": "Distribution & courroies",
+        "turbo": "Distribution & courroies",
+        "injecteurs": "Distribution & courroies",
+        "pompe_eau": "Distribution & courroies",
+        "climatisation": "Climatisation",
+        "clim": "Climatisation",
+        "amortisseurs": "Pneus & géométrie",
+        "rotule": "Pneus & géométrie",
+        "triangle": "Pneus & géométrie",
+        "geometrie": "Pneus & géométrie",
+        "parallelisme": "Pneus & géométrie",
+        "pneus": "Pneus & géométrie",
+        "batterie": "Batterie & électricité",
+        "alternateur": "Batterie & électricité",
+        "demarreur": "Batterie & électricité",
+        "bougies": "Batterie & électricité",
+        "bougies_prechauffage": "Batterie & électricité",
+        "echappement": "Dépollution & échappement",
+        "fap": "Dépollution & échappement",
+        "filtre_particules": "Dépollution & échappement",
+        "egr": "Dépollution & échappement",
+        "vanne_egr": "Dépollution & échappement",
+        "revision": "Révision & contrôle",
+        "controle_technique": "Révision & contrôle",
+        "bougies_allumage": "Batterie & électricité",
+        "roulement_roue": "Pneus & géométrie",
+        "essuie_glaces": "Révision & contrôle",
+        "pare_brise": "Révision & contrôle",
+        "phares": "Révision & contrôle",
+        "radiateur": "Distribution & courroies",
+        "liquide_refroidissement": "Distribution & courroies",
+        "huiles": "Vidange & filtres",
+        "liquides": "Vidange & filtres",
+        "capteurs": "Batterie & électricité",
+        "diagnostic_electronique": "Batterie & électricité",
+        "faisceaux_haute_tension": "Autonomie & batteries",
+        "controleur_charge": "Autonomie & batteries",
+        "entretien_batterie_electrique": "Autonomie & batteries",
+        "entretien_batterie_hybride": "Autonomie & batteries",
+        "onduleur_hybride": "Autonomie & batteries"
+      },
+      "sous_cocon_default": "Entretien courant",
+      "silo_default": "Entretien & révision",
+      "silo_override_map": {
+        "entretien_batterie_electrique": "Électrique & hybride",
+        "entretien_batterie_hybride": "Électrique & hybride",
+        "onduleur_hybride": "Électrique & hybride",
+        "controleur_charge": "Électrique & hybride",
+        "faisceaux_haute_tension": "Électrique & hybride"
+      },
+      "intention": "Info",
+      "variantes_templates": [
+        "prix {base}",
+        "{base} tarif",
+        "combien coute {base}",
+        "{base} périodicité",
+        "{label} {marque} prix"
+      ],
+      "note_fields": [
+        {
+          "type": "range",
+          "min_field": "prix_ttc_min",
+          "max_field": "prix_ttc_max",
+          "template": "prix {min}-{max}€ TTC"
+        },
+        {
+          "type": "value",
+          "field": "temps_mo",
+          "template": "MO {value} min",
+          "strip_suffix_regex": "\\s*min\\.?$"
+        },
+        {
+          "type": "value",
+          "field": "motorisation"
+        }
+      ]
+    },
+    {
+      "id": "M2a",
+      "label": "M2 — Codes défaut OBD",
+      "type": "single_entity",
+      "source_glob": "codes-obd-*.json",
+      "field": "code",
+      "base_template": "code {value}",
+      "silo_default": "Pannes & diagnostic",
+      "sous_cocon_default": "Codes défaut OBD",
+      "intention": "Info",
+      "variantes_templates": [
+        "{value}",
+        "{value} signification",
+        "defaut {value}",
+        "{value} symptomes",
+        "{value} solution",
+        "{value} reparation"
+      ],
+      "note_fields": [
+        {
+          "type": "value",
+          "field": "libelle"
+        }
+      ]
+    },
+    {
+      "id": "M2b",
+      "label": "M2 — Voyants tableau de bord",
+      "type": "single_entity",
+      "source_glob": "pannes-*voyant*.json",
+      "field": "voyant",
+      "strip_parens": true,
+      "template_unless_contains": "voyant",
+      "base_template": "voyant {value}",
+      "silo_default": "Pannes & diagnostic",
+      "sous_cocon_default": "Voyants tableau de bord",
+      "intention": "Info",
+      "variantes_templates": [
+        "{base} allumé",
+        "{base} que faire",
+        "signification {base}",
+        {
+          "template": "{base} {couleur}",
+          "requires_field": "couleur"
+        }
+      ],
+      "note_fields": [
+        {
+          "type": "value",
+          "field": "signification"
+        }
+      ]
+    },
+    {
+      "id": "M3",
+      "label": "M3 — Fiches modèle",
+      "type": "entity_angles",
+      "source_glob": "marques-modeles-fiabilite-*.json",
+      "field": "modele",
+      "strip_parens": true,
+      "min_entity_length": 3,
+      "silo_default": "Marques & modèles",
+      "note_fields": [
+        {
+          "type": "first_nonempty",
+          "fields": [
+            "pannes_courantes",
+            "score_fiabilite"
+          ]
+        }
+      ],
+      "angles": [
+        {
+          "suffix_template": "{entity} fiabilité",
+          "sous_cocon": "Fiabilité par modèle",
+          "intention": "Info",
+          "variantes_templates": [
+            "{entity} fiabilité",
+            "{entity} fiable ou pas",
+            "avis fiabilité {entity}"
+          ]
+        },
+        {
+          "suffix_template": "{entity} problèmes",
+          "sous_cocon": "Pannes par modèle",
+          "intention": "Info",
+          "variantes_templates": [
+            "{entity} problèmes",
+            "{entity} pannes fréquentes",
+            "{entity} problèmes connus"
+          ]
+        },
+        {
+          "suffix_template": "{entity} entretien prix",
+          "sous_cocon": "Coûts & entretien par modèle",
+          "intention": "Info",
+          "variantes_templates": [
+            "{entity} coût entretien",
+            "entretien {entity} prix",
+            "{entity} budget entretien"
+          ]
+        },
+        {
+          "suffix_template": "{entity} occasion",
+          "sous_cocon": "Achat occasion par modèle",
+          "intention": "Commercial",
+          "variantes_templates": [
+            "{entity} occasion",
+            "{entity} quelle version choisir",
+            "{entity} année à éviter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M4",
+      "label": "M4 — Pièce × Marque",
+      "type": null,
+      "source_glob": "pieces-*famille*.json",
+      "silo_default": "Pièces détachées & accessoires",
+      "intention": "Commercial",
+      "note_fields": [
+        {
+          "type": "first_nonempty",
+          "fields": [
+            "prix_indicatif",
+            "specs_notes"
+          ]
+        }
+      ],
+      "sub_builders": [
+        {
+          "type": "cross",
+          "field_a": "famille",
+          "label_mode": "identity",
+          "strip_field_a": true,
+          "field_b_list": "equipementiers_reconnus",
+          "sous_cocon_default": "Pièces & équipementiers",
+          "variantes_templates": [
+            "{base} prix",
+            "{base} avis",
+            "meilleur {label} {b}"
+          ]
+        },
+        {
+          "type": "paired_versus",
+          "entity_field": "famille",
+          "list_field": "equipementiers_reconnus",
+          "base_template": "{e1} vs {e2} {entity}",
+          "sous_cocon_default": "Comparatifs équipementiers",
+          "variantes_templates": [
+            "{e1} ou {e2} {entity}",
+            "comparatif {entity} {e1} {e2}",
+            "meilleur {entity}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M6",
+      "label": "M6 — Démarche × Cas",
+      "type": "single_entity",
+      "source_glob": "carte-grise-*demarche*.json",
+      "field": "demarche",
+      "strip_parens": true,
+      "template_unless_contains": "carte grise",
+      "base_template": "{value} carte grise",
+      "silo_default": "Carte grise & démarches",
+      "intention": "Info",
+      "sous_cocon_match_on": "value",
+      "sous_cocon_rules": [
+        {
+          "contains": [
+            "controle technique"
+          ],
+          "label": "Contrôle technique"
+        },
+        {
+          "contains": [
+            "immatricul",
+            "importe",
+            "plaque",
+            " ww",
+            "sans papiers"
+          ],
+          "label": "Immatriculation & import"
+        },
+        {
+          "contains": [
+            "taxe",
+            "exoneration",
+            "malus"
+          ],
+          "label": "Malus & taxes"
+        },
+        {
+          "contains": [
+            "changement de titulaire",
+            "succession",
+            "donation",
+            "divorce",
+            "reprise du vehicule",
+            "reprise-vente",
+            "location longue duree",
+            "societe",
+            "co-titularite",
+            "saisie judiciaire"
+          ],
+          "label": "Changement de titulaire"
+        },
+        {
+          "contains": [
+            "cession",
+            "vente",
+            "non-gage",
+            "histovec",
+            "vehicule gage"
+          ],
+          "label": "Cession & achat"
+        },
+        {
+          "contains": [
+            "duplicata",
+            "rectification",
+            "changement d'adresse",
+            "changement de nom",
+            "changement de departement",
+            "changement de puissance",
+            "changement de carrosserie",
+            "modification du nombre de places",
+            "collection"
+          ],
+          "label": "Duplicata & modifications"
+        }
+      ],
+      "sous_cocon_default": "Duplicata & modifications",
+      "variantes_templates": [
+        "{value} prix",
+        "{value} délai",
+        "{value} documents",
+        "{value} en ligne"
+      ],
+      "note_fields": [
+        {
+          "type": "value",
+          "field": "cout_indicatif",
+          "template": "coût {value}"
+        },
+        {
+          "type": "value",
+          "field": "delai_legal",
+          "template": "délai {value}"
+        }
+      ]
+    },
+    {
+      "id": "M7",
+      "label": "M7 — Itinéraires road trip",
+      "type": "entity_angles",
+      "source_glob": "roadtrips-destinations-*.json",
+      "field": "pays",
+      "dedup_by_entity": true,
+      "silo_default": "Road trips & voyage auto",
+      "note_fields": [
+        {
+          "type": "first_nonempty",
+          "fields": [
+            "prix_indicatif",
+            "systeme_peage"
+          ]
+        }
+      ],
+      "angles": [
+        {
+          "suffix_template": "road trip {entity}",
+          "sous_cocon": "Destinations road trip",
+          "intention": "Info",
+          "variantes_templates": [
+            "road trip {entity} itinéraire",
+            "road trip {entity} combien de jours",
+            "voyage voiture {entity}"
+          ]
+        },
+        {
+          "suffix_template": "péage {entity}",
+          "sous_cocon": "Péages & vignettes",
+          "intention": "Info",
+          "variantes_templates": [
+            "péage {entity} prix",
+            "autoroute {entity} tarif",
+            "coût péage {entity}"
+          ]
+        },
+        {
+          "suffix_template": "vignette {entity}",
+          "sous_cocon": "Péages & vignettes",
+          "intention": "Info",
+          "variantes_templates": [
+            "vignette {entity} prix",
+            "vignette autoroute {entity}",
+            "où acheter vignette {entity}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "M5",
+      "label": "M5 — Comparatifs \"Versus\"",
+      "type": "grouped_versus",
+      "source_glob": "marques-modeles-fiabilite-*.json",
+      "entity_field": "modele",
+      "strip_parens": true,
+      "min_entity_length": 3,
+      "group_map_file": "segments-modeles.json",
+      "silo_default": "Essais & comparatifs",
+      "intention": "Commercial",
+      "base_template": "{e1} vs {e2}",
+      "variantes_templates": [
+        "{e1} ou {e2}",
+        "comparatif {e1} {e2}",
+        "{e1} vs {e2} lequel choisir",
+        "{e1} {e2} différences"
+      ],
+      "sous_cocon_template": "Comparatifs face-à-face"
+    }
+  ]
+}

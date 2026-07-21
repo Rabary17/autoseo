@@ -60,6 +60,10 @@ code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padd
   <div class="sc"><div class="sv">≤3</div><div class="sl">Clics de profondeur</div></div>
 </div>
 
+<div class="box" style="border-left-color:var(--warn, #f5a623)">
+<strong>État réel (2026-07-20)</strong> — ce document décrit le plan cible d'origine, pas l'état courant. Progrès réel : <strong>506 clusters éditoriaux</strong> collectés et maillés (P1/P3 terminés à 100 %, P2 quasi complet — voir STATE.md), plus <strong>4 153 candidats programmatiques</strong> générés par formule (<code>scripts/expand-moteurs.py</code>) dans <code>data/keywords/moteurs-candidats.json</code>, tous encore au statut « à valider » (aucun n'a été validé par Haloscan ni publié). Le chiffre "10 000 articles / ~100 000 mots-clés" reste la cible, pas un acquis. Détail complet et prochaine étape : voir STATE.md.
+</div>
+
 <h2>1. Architecture : 3 niveaux + allocation des 10 000 articles</h2>
 <p>Structure en <strong>cocon sémantique</strong> : <code>Accueil → Silo (hub) → Sous-cocon (sous-hub) → Articles</code>. Chaque silo a une page hub pilier (2 500–4 000 mots) qui cible le mot-clé de tête et distribue le jus vers ses sous-hubs. Chaque sous-cocon a un sous-hub (1 500–2 500 mots) qui liste et maille ses articles enfants.</p>
 <table>

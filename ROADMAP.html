@@ -445,7 +445,7 @@ li{margin-bottom:4px}
       <div class="progress-fill" style="width:100%">100%</div>
     </div>
   </div>
-  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Résultat :</strong> 506 clusters de mots-clés compilés dans <code>tracking-mots-cles.xlsx</code>. Crédit consommé : ~914 / 10 000 Haloscan (très large marge). Dernière exécution : 2026-07-12.</p>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Résultat :</strong> 506 clusters de mots-clés compilés dans <code>tracking-mots-cles.xlsx</code>. Crédit consommé : ~914 / 10 000 Haloscan (très large marge). Dernière exécution : 2026-07-12. <strong>Complément 2026-07-20 :</strong> 4 153 candidats programmatiques supplémentaires générés par formule (<code>scripts/expand-moteurs.py</code>, voir STATE.md) dans <code>data/keywords/moteurs-candidats.json</code> — statut « à valider », pas encore mesurés par Haloscan ni promus dans ce fichier.</p>
 </div>
 
 <div class="phase-card">
@@ -459,16 +459,14 @@ li{margin-bottom:4px}
   <div class="progress-container">
     <div class="progress-label">
       <span>Progression</span>
-      <span><strong>10 / 19 silos complets</strong> + partiels</span>
+      <span><strong>19 / 19 silos</strong> ✅ TERMINÉ (2026-07-18)</span>
     </div>
     <div class="progress-bar">
-      <div class="progress-fill" style="width:53%">53%</div>
+      <div class="progress-fill" style="width:100%">100%</div>
     </div>
   </div>
   <div style="margin-top:8px;color:var(--text2);font-size:12px">
-    <p><strong>Complets (P2 terminé) :</strong> Permis & conduite, Assurance auto, Carte grise & démarches, Électrique & hybride, Moto & scooter, Road trips & voyage auto, Pièces détachées & accessoires, Entretien & révision, Pannes & diagnostic.</p>
-    <p><strong>Partiels (en cours) :</strong> Marques & modèles (102/450 modèles ~23%), codes OBD (238/600 ~40%).</p>
-    <p><strong>Édito uniquement (0 dataset) :</strong> 9 silos sans P2 structuré (Essais & comparatifs, Achat voiture neuve, Voiture d'occasion, etc.).</p>
+    <p><strong>Résultat final :</strong> codes OBD 574 uniques/600 visés (~96%, cible dépassée en entrées brutes), modèles fiabilité 450+/450 (dépassé), road trips 40/40 pays, prestations entretien 25/25, croisement prix×marques 1000+ lignes, pièces détachées 20/20, carte grise 30/30, EV+moto/barèmes permis+assurance complets. 9 silos restent "édito uniquement" par conception (pas de dataset structuré prévu au plan).</p>
   </div>
 </div>
 
@@ -483,13 +481,13 @@ li{margin-bottom:4px}
   <div class="progress-container">
     <div class="progress-label">
       <span>Progression</span>
-      <span><strong>16 / 19 silos</strong></span>
+      <span><strong>19 / 19 silos</strong> ✅ TERMINÉ</span>
     </div>
     <div class="progress-bar">
-      <div class="progress-fill" style="width:84%">84%</div>
+      <div class="progress-fill" style="width:100%">100%</div>
     </div>
   </div>
-  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Résultat :</strong> 410 entrées dans <code>data/maillage/maillage.json</code>. En attente : Entretien & révision, Pannes & diagnostic, Marques & modèles (P2 jugé trop partiel). Script : <code>scripts/gen-maillage.py</code>.</p>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Résultat :</strong> 506 entrées dans <code>data/maillage/maillage.json</code> (une par cluster éditorial P1). Script : <code>scripts/gen-maillage.py</code> (désormais aussi utilisable avec <code>--all</code>, dérive automatiquement les paires silo/hub). <strong>P1→P2→P3 intégralement achevés sur les 19 silos éditoriaux.</strong></p>
 </div>
 
 <div class="phase-card">
@@ -503,13 +501,13 @@ li{margin-bottom:4px}
   <div class="progress-container">
     <div class="progress-label">
       <span>Progression</span>
-      <span><strong>0 / 19 silos</strong> ⏳ BLOQUÉ</span>
+      <span><strong>0 / 19 silos</strong> ⏳ EN ATTENTE DE VALIDATION</span>
     </div>
     <div class="progress-bar">
       <div class="progress-fill" style="width:0%"></div>
     </div>
   </div>
-  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Bloqué par :</strong> Attente de validation utilisateur pour lancer la génération. Dépend de P3 (complètement terminé) et de l'infrastructure WordPress (voir &quot;État WordPress&quot; ci-dessous).</p>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Prérequis levés :</strong> P1/P2/P3 100% terminés, WordPress fonctionnel sur <code>mntdev.riseasso.com</code> (résolu 2026-07-17, remplace l'impasse passion4humanity), pipeline autopublish validé de bout en bout en CI (2026-07-17 soir, 6/6). <strong>Reste :</strong> validation explicite de l'utilisateur avant le premier run réel (règle projet : jamais de run massif sans validation).</p>
 </div>
 
 <div class="phase-card">
@@ -523,13 +521,13 @@ li{margin-bottom:4px}
   <div class="progress-container">
     <div class="progress-label">
       <span>Progression</span>
-      <span><strong>0 / 10 000 articles</strong> ⏳ BLOQUÉ</span>
+      <span><strong>0 / 10 000 articles</strong> (cible) — <strong>506 publiables dès validation</strong>, 4 153 candidats programmatiques en attente de validation Haloscan</span>
     </div>
     <div class="progress-bar">
       <div class="progress-fill" style="width:0%"></div>
     </div>
   </div>
-  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Bloqué par :</strong> Infrastructure WordPress fonctionnelle (actuellement en impasse sur `mntdev.passion4humanity.com`). Pipeline autopublish prêt sur GitHub Actions (voir <code>scripts/autopublish/</code>).</p>
+  <p style="margin-top:8px;color:var(--text2);font-size:12px"><strong>Pipeline armé, non lancé :</strong> infrastructure WordPress résolue, `test-e2e` vert en CI. <strong>Bloque uniquement sur :</strong> validation utilisateur du premier run réel (voir P4 ci-dessus) — voir <code>scripts/autopublish/</code> et STATE.md pour le détail.</p>
 </div>
 
 <div class="phase-card">
@@ -793,26 +791,25 @@ li{margin-bottom:4px}
   </div>
 </div>
 
-<h2>⚠️ État WordPress & publication</h2>
+<h2>✅ État WordPress & publication (résolu 2026-07-17)</h2>
 
-<div class="box warning">
-  <strong>🔴 BLOQUANT — Infrastructure WordPress en impasse</strong>
-  <p style="margin-top:8px">Domaine actuel : <code>mntdev.passion4humanity.com</code> · Problème : <code>current_user_can('manage_options')</code> retourne faux pour l'admin authentifié via Application Password, bloquant toutes les écritures REST authentifiées (401/403).</p>
-  <p style="margin-top:8px"><strong>Solution :</strong> Nouveau WordPress sur nouvel hébergement (checklist créée : <code>docs/setup-wordpress-vierge.md</code>). Frontend Next.js prêt et déployé sur Vercel : <code>monauto-tau.vercel.app</code>.</p>
-  <p style="margin-top:8px"><strong>Décision en attente :</strong> Nouvel hébergement à choisir par l'utilisateur, installation à réaliser.</p>
+<div class="box success">
+  <strong>🟢 Infrastructure WordPress fonctionnelle</strong>
+  <p style="margin-top:8px">Nouveau domaine : <code>mntdev.riseasso.com</code> (Infomaniak, remplace l'ancienne impasse <code>mntdev.passion4humanity.com</code>). 3 correctifs infra appliqués (en-tête Authorization, HTTPS derrière proxy, user_login réel = e-mail admin) — lecture/écriture REST authentifiées confirmées.</p>
+  <p style="margin-top:8px">Installation complète : mu-plugin déployé, ACF Free + Imagify actifs, 6 comptes auteur créés, revalidation Next.js configurée. Frontend Next.js déployé sur Vercel : <code>monauto-tau.vercel.app</code> (variables d'env vers le nouveau WP restant à brancher).</p>
 </div>
 
 <h2>🚀 Pipeline autopublish & infrastructure</h2>
 
-<div class="box info">
-  <strong>Pipeline autopublish ready-to-deploy</strong>
-  <p style="margin-top:8px">Tout le code de génération + relecture est prêt dans <code>scripts/autopublish/</code>. 3 workflows GitHub Actions :</p>
+<div class="box success">
+  <strong>Pipeline autopublish validé de bout en bout en CI (2026-07-17 soir)</strong>
+  <p style="margin-top:8px">Workflow <code>test-e2e</code> vert (6/6) : auth WordPress, génération Claude (Haiku articles / Sonnet hub+relecture), relecture obligatoire (a correctement rejeté un contenu test hors-sujet), sourcing image, écriture WordPress. 3 workflows GitHub Actions :</p>
   <ul style="margin-top:8px">
     <li><code>autopublish.yml</code> — Hebdomadaire (lundi 6h) + <code>workflow_dispatch --dry-run</code></li>
     <li><code>daily-report.yml</code> — Quotidien (e-mail de rapport)</li>
-    <li><code>test-e2e.yml</code> — Manuel (test 1 article [TEST])</li>
+    <li><code>test-e2e.yml</code> — Manuel (validé vert)</li>
   </ul>
-  <p style="margin-top:8px"><strong>À débloquer :</strong> Infrastructure WordPress fonctionnelle (voir ci-dessus) + secrets GitHub/Vercel configurés.</p>
+  <p style="margin-top:8px"><strong>Le pipeline est « armé » mais pas encore lancé</strong> : reste (a) brancher les 4 variables d'env Vercel vers le nouveau WP, (b) décision photos d'auteur (avatars neutres recommandés), (c) validation explicite de l'utilisateur avant le premier run réel (règle projet).</p>
 </div>
 
 <div class="box info">

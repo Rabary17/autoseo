@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Commandes — pipeline moteurs programmatiques — autoseo</title>
+<style>
+:root{--bg:#0d1117;--bg2:#161b27;--bg3:#1e2535;--bg4:#252d3f;--border:rgba(255,255,255,.07);--border2:rgba(255,255,255,.13);--text:#e2e8f0;--text2:#94a3b8;--text3:#4a5568;--c4:#4f8ef7;--c7:#f97316;--ok:#4caf7d;--warn:#f5a623;--danger:#f16565;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);font-size:13px;line-height:1.7}
+.wrap{max-width:960px;margin:0 auto;padding:32px 28px 80px}
+.breadcrumb{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--text2);margin-bottom:20px;flex-wrap:wrap}
+.breadcrumb a{color:var(--c4);text-decoration:none}
+h1{font-size:26px;font-weight:700;margin-bottom:8px}
+.lead{font-size:14px;color:var(--text2);margin-bottom:24px;max-width:760px}
+h2{font-size:17px;font-weight:700;margin:36px 0 4px;padding-top:16px;border-top:1px solid var(--border);color:var(--c7);display:flex;align-items:center;gap:8px}
+h2 .step-num{background:var(--c7);color:#0d1117;font-size:12px;font-weight:800;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-sub{font-size:12px;color:var(--text2);margin-bottom:14px;font-weight:400}
+p{color:var(--text2);margin-bottom:10px}
+.box{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--c7);border-radius:8px;padding:14px 16px;margin:14px 0}
+.box.info{border-left-color:var(--c4)}
+.box.success{border-left-color:var(--ok)}
+.box.warn{border-left-color:var(--warn)}
+.box.danger{border-left-color:var(--danger)}
+code{background:var(--bg3);border:1px solid var(--border);border-radius:4px;padding:2px 6px;font-size:11.5px;color:var(--warn);font-family:Consolas,'SF Mono',monospace}
+ul{margin:10px 0 10px 20px;color:var(--text2)}
+li{margin-bottom:6px}
+.cmd-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:16px 18px;margin:12px 0}
+.cmd-label{font-size:11px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;display:flex;align-items:center;gap:8px;justify-content:space-between}
+.tag{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.tag.safe{background:rgba(76,175,125,.15);color:var(--ok)}
+.tag.cost{background:rgba(241,101,101,.15);color:var(--danger)}
+.tag.optional{background:rgba(148,163,184,.15);color:var(--text2)}
+.cmd-row{display:flex;align-items:stretch;gap:8px;margin-bottom:8px}
+.cmd-line{flex:1;background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:10px 12px;font-family:Consolas,'SF Mono',monospace;font-size:12px;color:var(--c4);overflow-x:auto;white-space:pre;display:flex;align-items:center}
+.copy-btn{background:var(--bg4);border:1px solid var(--border2);border-radius:6px;color:var(--text2);font-size:11px;padding:0 14px;cursor:pointer;white-space:nowrap;transition:.15s}
+.copy-btn:hover{background:var(--c4);color:#0d1117;border-color:var(--c4)}
+.copy-btn.copied{background:var(--ok);color:#0d1117;border-color:var(--ok)}
+.cmd-desc{font-size:12px;color:var(--text2);margin-top:8px}
+.cmd-desc strong{color:var(--text)}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:16px 0}
+.stat-box{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center}
+.stat-value{font-size:19px;font-weight:700;color:var(--c4);margin-bottom:4px}
+.stat-label{font-size:10.5px;color:var(--text3);text-transform:uppercase;letter-spacing:.05em}
+.btn{display:inline-block;padding:8px 16px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;color:var(--c4);text-decoration:none;font-size:12px;margin-top:20px;margin-right:8px}
+.btn:hover{background:var(--c4);color:#0d1117}
+.flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:12px;color:var(--text2);margin:14px 0;font-family:Consolas,monospace}
+.flow .node{background:var(--bg3);border:1px solid var(--border2);border-radius:6px;padding:6px 10px}
+.flow .arrow{color:var(--text3)}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:12px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border)}
+th{color:var(--text3);text-transform:uppercase;font-size:10.5px;letter-spacing:.04em}
+td{color:var(--text2)}
+td code{color:var(--warn)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="breadcrumb">
+  <a href="INDEX.html">← Documentation Index</a>
+  <span>›</span>
+  <a href="feature-moteurs-programmatiques.html">7 moteurs programmatiques</a>
+  <span>›</span>
+  <span>Commandes</span>
+</div>
+
+<h1>🖥️ Commandes du pipeline moteurs programmatiques</h1>
+<p class="lead">Toutes les commandes Python/Node à copier-coller, dans l'ordre d'exécution, pour valider et publier les 4 153 candidats programmatiques générés le 2026-07-20. Chaque bouton copie la commande exacte dans le presse-papiers.</p>
+
+<div class="box warn">
+  <strong>⚠️ Un seul maillon coûte des crédits réels :</strong> l'étape 3 (validation Haloscan) consomme le pool <code>creditBulkKeyword</code> (500/mois constaté le 2026-07-20). Toutes les autres commandes sont gratuites et sans risque — elles ne font que lire/écrire des fichiers locaux.
+</div>
+
+<div class="stats-grid">
+  <div class="stat-box"><div class="stat-value">4 153</div><div class="stat-label">Candidats générés</div></div>
+  <div class="stat-box"><div class="stat-value">0</div><div class="stat-label">Validés à ce jour</div></div>
+  <div class="stat-box"><div class="stat-value">500</div><div class="stat-label">Crédits/mois disponibles</div></div>
+  <div class="stat-box"><div class="stat-value">506</div><div class="stat-label">Clusters déjà publiables</div></div>
+</div>
+
+<div class="flow">
+  <div class="node">1. expand-moteurs.py</div><span class="arrow">→</span>
+  <div class="node">2. --dry-run</div><span class="arrow">→</span>
+  <div class="node">3. validate-moteurs-haloscan.js 💰</div><span class="arrow">→</span>
+  <div class="node">4. populate-tracking-xlsx.py</div><span class="arrow">→</span>
+  <div class="node">5. gen-maillage.py --all</div>
+</div>
+
+<h2><span class="step-num">1</span> Régénérer les candidats (si les bases factuelles ont changé)</h2>
+<p class="step-sub">À relancer uniquement si <code>data/factuel/*.json</code> a été mis à jour (nouveau lot de codes OBD, nouveaux modèles...). Réinitialise tous les candidats non encore validés à <code>« à valider »</code> — ne touche jamais un candidat déjà <code>retenu</code>/<code>rejete</code>.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Régénération des candidats</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python scripts/expand-moteurs.py">python scripts/expand-moteurs.py</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Lit <code>data/factuel/*.json</code>, compose les mots-clés par formule (prestation×marque, code OBD, modèle×angle...), écrit <code>data/keywords/moteurs-candidats.json</code> + <code>.xlsx</code>. <strong>Fermer le fichier xlsx dans Excel avant de lancer</strong> (verrou Windows sinon).</div>
+</div>
+
+<h2><span class="step-num">2</span> Vérifier avant de dépenser (aucun coût)</h2>
+<p class="step-sub">Simule toute la logique de lots/seuils/reprise sans le moindre appel réseau ni la moindre écriture réelle. À faire à chaque fois qu'on modifie le script de validation.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Test à blanc (dry-run)</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/validate-moteurs-haloscan.js --dry-run">node scripts/validate-moteurs-haloscan.js --dry-run</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Simule la validation avec des volumes fictifs. N'écrit rien sur disque, ne consomme aucun crédit. Sert uniquement à vérifier que le lotissement et les seuils se comportent comme attendu.</div>
+</div>
+
+<h2><span class="step-num">3</span> Valider pour de vrai <span class="tag cost" style="margin-left:8px">consomme des crédits</span></h2>
+<p class="step-sub">⚠️ Ne lancer qu'après validation explicite — ceci dépense le pool <code>creditBulkKeyword</code> réel. Reprend automatiquement là où un run précédent s'était arrêté (ne revalide jamais un candidat déjà traité).</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Run réel — comportement par défaut</span><span class="tag cost">payant</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/validate-moteurs-haloscan.js">node scripts/validate-moteurs-haloscan.js</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Valide tous les candidats <code>« à valider »</code> par lots de 100, s'arrête proprement (sans erreur) dès que le pool restant ne permet plus un lot complet — relançable le mois suivant sans perte.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Run réel — plafonné (contrôle plus fin de la dépense)</span><span class="tag cost">payant</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/validate-moteurs-haloscan.js --limit 200">node scripts/validate-moteurs-haloscan.js --limit 200</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Traite au maximum 200 mots-clés puis s'arrête, quel que soit le crédit restant — utile pour un premier run prudent avant de laisser tourner le run complet.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Options disponibles</span><span class="tag optional">avancé</span></div>
+  <table>
+    <thead><tr><th>Flag</th><th>Effet</th><th>Défaut</th></tr></thead>
+    <tbody>
+      <tr><td><code>--min-volume N</code></td><td>Seuil de rétention : volume ≥ N → « retenu », sinon « rejete »</td><td>1</td></tr>
+      <tr><td><code>--batch-size N</code></td><td>Taille d'un lot bulk() (réduit automatiquement de moitié en cas d'erreur)</td><td>100</td></tr>
+      <tr><td><code>--limit N</code></td><td>Plafonne le nombre total de mots-clés traités sur ce run</td><td>illimité</td></tr>
+    </tbody>
+  </table>
+  <div class="cmd-desc">Exemple combiné : <code>node scripts/validate-moteurs-haloscan.js --min-volume 10 --limit 300</code></div>
+</div>
+
+<div class="box info">
+  <strong>Premier run réel uniquement :</strong> un échantillon de la réponse brute Haloscan sera écrit dans <code>data/keywords/_debug-bulk-response-sample.json</code> — utile si le script signale « pas de volume exploitable » en masse (format de réponse jamais observé avant ce jour).
+</div>
+
+<h2><span class="step-num">4</span> Promouvoir les candidats validés dans le tracking</h2>
+<p class="step-sub">Fusionne les candidats <code>« retenu »</code> dans l'onglet <code>Suivi</code> de <code>tracking-mots-cles.xlsx</code> (celui que lit le pipeline de publication), triés par volume avec l'éditorial. Ne perd jamais la progression de publication déjà en cours.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Régénération du tracking (Suivi)</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python scripts/populate-tracking-xlsx.py">python scripts/populate-tracking-xlsx.py</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Idempotent : relancer sans nouveau candidat validé ne change rien. <strong>Fermer <code>tracking-mots-cles.xlsx</code> dans Excel avant de lancer.</strong></div>
+</div>
+
+<h2><span class="step-num">5</span> Régénérer le maillage interne</h2>
+<p class="step-sub">Ajoute les liens (hub/sous-hub/latéraux/ancres) pour chaque nouveau cluster promu à l'étape 4. Fusionne avec l'existant, n'écrase jamais une entrée déjà en place.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Maillage — tous les silos automatiquement</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python scripts/gen-maillage.py --all">python scripts/gen-maillage.py --all</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Dérive automatiquement la paire (silo, hub) pour chaque silo présent dans l'onglet Suivi — recommandé plutôt que de retaper les 19 paires à la main.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Maillage — silos ciblés (ancienne méthode, toujours valide)</span><span class="tag optional">avancé</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd='python scripts/gen-maillage.py "Entretien & révision" "entretien-revision" "Pannes & diagnostic" "pannes-diagnostic"'>python scripts/gen-maillage.py "Entretien & révision" "entretien-revision" "Pannes & diagnostic" "pannes-diagnostic"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Utile pour ne régénérer qu'un ou deux silos précis plutôt que la totalité.</div>
+</div>
+
+<h2><span class="step-num">✓</span> Vérification rapide de l'état à tout moment</h2>
+<p class="step-sub">Trois commandes en lecture seule pour connaître l'état réel des données sans rien modifier.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Compter les candidats par statut</span><span class="tag safe">lecture seule</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python -c &quot;import json; from collections import Counter; d=json.load(open('data/keywords/moteurs-candidats.json',encoding='utf-8')); print(Counter(c['statut'] for c in d['candidats']))&quot;">python -c "import json; from collections import Counter; d=json.load(open('data/keywords/moteurs-candidats.json',encoding='utf-8')); print(Counter(c['statut'] for c in d['candidats']))"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Vérifier le solde de crédits Haloscan</span><span class="tag safe">lecture seule</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node -e &quot;require('./scripts/haloscan-client').getCredit().then(c=&gt;console.log(JSON.stringify(c.totalCredit,null,2)))&quot;">node -e "require('./scripts/haloscan-client').getCredit().then(c=>console.log(JSON.stringify(c.totalCredit,null,2)))"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Compter les lignes du Suivi et du maillage</span><span class="tag safe">lecture seule</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python -c &quot;import openpyxl,json; wb=openpyxl.load_workbook('data/keywords/tracking-mots-cles.xlsx'); print('Suivi:', wb['Suivi'].max_row-1); print('Maillage:', len(json.load(open('data/maillage/maillage.json',encoding='utf-8'))))&quot;">python -c "import openpyxl,json; wb=openpyxl.load_workbook('data/keywords/tracking-mots-cles.xlsx'); print('Suivi:', wb['Suivi'].max_row-1); print('Maillage:', len(json.load(open('data/maillage/maillage.json',encoding='utf-8'))))"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+</div>
+
+<h2><span class="step-num">6</span> Sauver les candidats rejetés (volume nul)</h2>
+<p class="step-sub">Au lieu d'abandonner un candidat à volume nul, cherche la vraie formulation recherchée autour de la même entité via <code>keywords/similar</code> (1 crédit <code>creditKeyword</code>, pool à 9999 — pas le pool contraint de la validation) + <code>match/questions/related</code> (gratuits). Réutilise le filtrage anti-bruit déjà éprouvé du P1.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Test à blanc (dry-run)</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/rescue-rejected-candidats.js --dry-run">node scripts/rescue-rejected-candidats.js --dry-run</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Sauvetage réel</span><span class="tag cost">quasi gratuit (pool 9999)</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/rescue-rejected-candidats.js --limit 20">node scripts/rescue-rejected-candidats.js --limit 20</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Une alternative pertinente trouvée → le candidat repasse directement à <code>retenu</code> avec le vrai mot-clé et son vrai volume (pas besoin de repasser par la validation). Rien trouvé (ou doublon avec un mot-clé déjà pris) → <code>rejete_definitif</code>, jamais retenté.</div>
+</div>
+
+<h2>📚 Autres scripts du projet (P1 initial, publication)</h2>
+<p class="step-sub">Pour référence — ces commandes existaient déjà avant le pipeline moteurs et ne font pas partie du flux ci-dessus.</p>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>P1 — Collecte de mots-clés Haloscan par silo</span><span class="tag cost">payant</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd='node scripts/fetch-keywords.js --silo "Entretien & révision"'>node scripts/fetch-keywords.js --silo "Entretien & révision"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Déjà exécuté sur les 19 silos (506 clusters). À ne relancer que pour un nouveau silo. Ajouter <code>--dry-run</code> pour simuler sans coût.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Test end-to-end du pipeline de publication</span><span class="tag optional">CI / local</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/autopublish/test-e2e.js">node scripts/autopublish/test-e2e.js</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Publie 1 article de test préfixé « [TEST] » sur WordPress puis vérifie chaque maillon (génération, relecture, image, écriture). Déjà validé vert en CI le 2026-07-17.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Run réel du pipeline de publication</span><span class="tag danger" style="background:rgba(241,101,101,.15);color:var(--danger)">⛔ validation utilisateur requise</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="node scripts/autopublish/run.js --dry-run">node scripts/autopublish/run.js --dry-run</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">⚠️ Ne jamais lancer sans <code>--dry-run</code> sans confirmation explicite préalable (règle projet : jamais de run massif sans validation). Publie réellement sur WordPress une fois confirmé.</div>
+</div>
+
+<h2>🏭 Industrialisation — nouvelle niche / nouveau silo (2026-07-20)</h2>
+<p class="step-sub">Toute la taxonomie (silos, sous-cocons, auteurs) et les 7 moteurs programmatiques sont maintenant pilotés par une config déclarative (<code>config/niches/&lt;id&gt;/niche.json</code> + <code>moteurs.json</code>) au lieu d'être codés en dur en Python. Ajouter un silo ou une niche ne demande plus d'éditer aucun script.</p>
+
+<div class="box success">
+  <strong>Équivalence vérifiée :</strong> le moteur générique (<code>scripts/moteur-engine.py</code> + <code>scripts/lib_py/moteur_types.py</code>) reproduit à 100% les 4 153 candidats de la niche <code>auto-mobilite</code> (comparaison exhaustive mot-clé par mot-clé, 0 écart) — <code>scripts/expand-moteurs.py</code> délègue désormais à ce moteur générique.
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Créer une nouvelle niche</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd='python scripts/new-niche.py cuisine-recettes "Cuisine & Recettes du monde"'>python scripts/new-niche.py cuisine-recettes "Cuisine & Recettes du monde"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Scaffold <code>config/niches/&lt;id&gt;/{niche.json, moteurs.json}</code> + arborescence de données isolée (<code>data/niches/&lt;id&gt;/</code>) + classeur de tracking vierge. Ne touche jamais aux données d'une autre niche.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Ajouter un silo à une niche existante</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd='python scripts/add-silo.py auto-mobilite "Nouveau silo" nouveau-silo --author A --sous-cocons "Sous-cocon 1" "Sous-cocon 2"'>python scripts/add-silo.py auto-mobilite "Nouveau silo" nouveau-silo --author A --sous-cocons "Sous-cocon 1" "Sous-cocon 2"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Enregistre le silo dans <code>niche.json</code> + crée un squelette vide dans <code>seeds.json</code> (sous-cocons déclarés, mots-clés à remplir à la main — jamais devinés). Fonctionne pour <code>auto-mobilite</code> comme pour toute nouvelle niche.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Collecter les mots-clés du nouveau silo (P1)</span><span class="tag cost">payant</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd='node scripts/fetch-keywords.js --niche auto-mobilite --silo "Nouveau silo"'>node scripts/fetch-keywords.js --niche auto-mobilite --silo "Nouveau silo"</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Ajouter <code>--dry-run</code> pour simuler sans coût. Nécessite d'avoir rempli les mots-clés seed dans <code>seeds.json</code> au préalable.</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Régénérer le tracking et le maillage pour une niche</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python scripts/populate-tracking-xlsx.py --niche auto-mobilite">python scripts/populate-tracking-xlsx.py --niche auto-mobilite</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python scripts/gen-maillage.py --all --niche auto-mobilite">python scripts/gen-maillage.py --all --niche auto-mobilite</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Identiques aux commandes de l'étape 4-5 plus haut, avec <code>--niche</code> explicite (défaut : <code>auto-mobilite</code>, donc ces commandes sans le flag continuent de fonctionner exactement comme avant).</div>
+</div>
+
+<div class="cmd-card">
+  <div class="cmd-label"><span>Générer les candidats programmatiques d'une niche (si elle a des moteurs.json remplis)</span><span class="tag safe">gratuit</span></div>
+  <div class="cmd-row">
+    <div class="cmd-line" data-cmd="python scripts/moteur-engine.py --niche auto-mobilite">python scripts/moteur-engine.py --niche auto-mobilite</div>
+    <button class="copy-btn" onclick="copyCmd(this)">Copier</button>
+  </div>
+  <div class="cmd-desc">Équivalent générique de l'étape 1 plus haut. Les 4 types de moteur réutilisables (croisement, entité seule, entité×angles, comparatif) sont documentés dans <code>scripts/lib_py/moteur_types.py</code>.</div>
+</div>
+
+<a href="feature-moteurs-programmatiques.html" class="btn">← 7 moteurs programmatiques</a>
+<a href="INDEX.html" class="btn">Documentation Index</a>
+
+<script>
+function copyCmd(btn){
+  const cmd = btn.previousElementSibling.getAttribute('data-cmd');
+  navigator.clipboard.writeText(cmd).then(() => {
+    const original = btn.textContent;
+    btn.textContent = 'Copié ✓';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = original; btn.classList.remove('copied'); }, 1500);
+  }).catch(() => {
+    btn.textContent = 'Erreur';
+    setTimeout(() => { btn.textContent = 'Copier'; }, 1500);
+  });
+}
+</script>
+
+</div>
+</body>
+</html>

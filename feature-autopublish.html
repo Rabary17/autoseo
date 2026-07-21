@@ -42,10 +42,14 @@ tr:last-child td{border-bottom:none}
 </div>
 
 <h1>🤖 Pipeline autopublish</h1>
-<p class="lead">Génération entièrement automatisée de 10 000 articles : rédaction LLM + relecture QA + gating 9 règles + publication WordPress. Zéro supervision manuelle.</p>
+<p class="lead">Génération entièrement automatisée de 10 000 articles (cible) : rédaction LLM + relecture QA + gating 9 règles + publication WordPress. Zéro supervision manuelle.</p>
 
 <div class="box success">
-  <strong>Résultat :</strong> 20 articles/semaine en Phase 2 de démarrage, jusqu'à 15/jour à pleine capacité. Coût total : ~5€/article (vs 30–80€ pour un rédacteur humain).
+  <strong>Résultat visé :</strong> 20 articles/semaine en Phase 2 de démarrage, jusqu'à 15/jour à pleine capacité. Coût total : ~5€/article (vs 30–80€ pour un rédacteur humain).
+</div>
+
+<div class="box" style="border-left-color:var(--warn, #f5a623)">
+  <strong>État réel (2026-07-20) :</strong> pipeline validé de bout en bout en CI (workflow <code>test-e2e</code> vert, 6/6) et infrastructure WordPress fonctionnelle (<code>mntdev.riseasso.com</code>) — mais <strong>0 article publié à ce jour</strong>, le premier run réel attend une validation explicite de l'utilisateur (règle projet). 506 clusters éditoriaux sont publiables immédiatement ; 4 153 candidats programmatiques supplémentaires existent (<code>data/keywords/moteurs-candidats.json</code>) mais restent à valider par Haloscan avant de pouvoir être produits.
 </div>
 
 <h2>Architecture globale</h2>

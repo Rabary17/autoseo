@@ -1,5 +1,7 @@
 # Peuple data/keywords/tracking-mots-cles.xlsx (onglet "Suivi") avec les vraies données Haloscan
-# collectées par scripts/fetch-keywords.js, silo par silo (uniquement ceux déjà traités en P1).
+# collectées par scripts/fetch-keywords.js, silo par silo (uniquement ceux déjà traités en P1),
+# PLUS les candidats programmatiques des moteurs (scripts/expand-moteurs.py) déjà validés par
+# Haloscan (scripts/validate-moteurs-haloscan.js, statut 'retenu' dans moteurs-candidats.json).
 #
 # Une ligne = un cluster = un seed du plan (mot_cle_principal) + ses variantes enrichies
 # (match/questions/related, filtrées des marques/navigation) — jamais une ligne par variante,
@@ -9,11 +11,26 @@
 # volume_estime = volume cumulé du cluster (mot-clé principal + variantes retenues), pas le seul
 # volume du mot-clé de tête, pour permettre un tri par priorité réelle (volume bon / difficulté faible).
 #
-# Usage : python scripts/populate-tracking-xlsx.py
+# IMPORTANT : ce script REGÉNÈRE intégralement l'onglet "Suivi" à chaque exécution (source de
+# vérité = seeds.json éditorial + moteurs-candidats.json 'retenu', jamais l'xlsx lui-même). Pour
+# ne jamais perdre la progression de publication déjà faite par le pipeline autopublish (statut
+# 'en rédaction'/'programmé'/'publié', url_cible, date_publication écrits par run.js), l'ancien
+# état de chaque mot_cle_principal est capturé AVANT régénération et réappliqué après si le
+# cluster avait progressé au-delà de 'à faire' — voir preserve_publish_state().
+#
+# Usage : python scripts/populate-tracking-xlsx.py [--niche <id>]
+#
+# 2026-07-20 (industrialisation) : AUTHOR_MAP/SILO_ORDER étaient codés en dur en Python,
+# spécifiques à "Auto & mobilité" — ajouter un silo exigeait d'éditer ce fichier. Remplacés
+# par la config déclarative config/niches/<id>/niche.json (scripts/lib_py/niche_config.py).
+# --niche par défaut 'auto-mobilite', dont data_dir='data' pointe sur la racine actuelle :
+# comportement 100% identique à avant pour qui ne passe pas ce flag.
 
+import argparse
 import json
 import os
 import re
+import sys
 import unicodedata
 
 import openpyxl
@@ -21,39 +38,15 @@ from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 from openpyxl.comments import Comment
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lib_py'))
+import niche_config
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(ROOT, 'data', 'keywords')
-SEEDS_PATH = os.path.join(DATA_DIR, 'seeds.json')
-XLSX_PATH = os.path.join(DATA_DIR, 'tracking-mots-cles.xlsx')
+
+HEADERS = ['mot_cle_principal', 'variantes', 'silo', 'sous_cocon', 'intention',
+           'volume_estime', 'url_cible', 'auteur', 'statut', 'date_publication']
 
 INTENT_LABELS = {'I': 'Info', 'C': 'Commercial', 'T': 'Transactionnel'}
-
-# Mapping silo -> persona auteur (skills/wordpress-publication.md section 4)
-AUTHOR_MAP = {
-    'Entretien & révision': 'A — Mécanique & technique',
-    'Pannes & diagnostic': 'A — Mécanique & technique',
-    'Pièces détachées & accessoires': 'A — Mécanique & technique',
-    'Marques & modèles': 'B — Marques, essais & sport auto',
-    'Essais & comparatifs': 'B — Marques, essais & sport auto',
-    'Sport auto & passion': 'B — Marques, essais & sport auto',
-    'Achat voiture neuve': 'C — Achat & mobilité électrique',
-    "Voiture d'occasion": 'C — Achat & mobilité électrique',
-    'Électrique & hybride': 'C — Achat & mobilité électrique',
-    'Carte grise & démarches': 'D — Démarches, assurance & permis',
-    'Assurance auto': 'D — Démarches, assurance & permis',
-    'Permis & conduite': 'D — Démarches, assurance & permis',
-    'Moto & scooter': 'E — Deux-roues & nouvelles mobilités',
-    'Vélo & nouvelles mobilités': 'E — Deux-roues & nouvelles mobilités',
-    'Mobilité partagée & transports': 'E — Deux-roues & nouvelles mobilités',
-    'Carburants & consommation': 'F — Usages spécifiques & voyage',
-    'Camping-car & van': 'F — Usages spécifiques & voyage',
-    'Utilitaires & flottes pro': 'F — Usages spécifiques & voyage',
-    'Road trips & voyage auto': 'F — Usages spécifiques & voyage',
-}
-
-# Ordre du plan de niche (STATE.md / plan-auto-mobilite-10000.html), pour trier les silos traités
-# dans le même ordre que le reste du pipeline plutôt que par ordre alphabétique.
-SILO_ORDER = list(AUTHOR_MAP.keys())
 
 MAX_VARIANTES = 15
 
@@ -65,8 +58,8 @@ def slug(name):
     return n
 
 
-def load_silo_rows(silo_name):
-    path = os.path.join(DATA_DIR, f'{slug(silo_name)}.json')
+def load_silo_rows(data_dir, author_map, silo_name):
+    path = os.path.join(data_dir, 'keywords', f'{slug(silo_name)}.json')
     if not os.path.exists(path):
         return []
     with open(path, encoding='utf-8') as f:
@@ -90,7 +83,7 @@ def load_silo_rows(silo_name):
             'intention': INTENT_LABELS.get(entry.get('intent'), ''),
             'volume_estime': volume_cluster,
             'url_cible': '',
-            'auteur': AUTHOR_MAP.get(silo_name, ''),
+            'auteur': author_map.get(silo_name, ''),
             'statut': 'à faire',
             'date_publication': '',
         })
@@ -99,35 +92,102 @@ def load_silo_rows(silo_name):
     return rows
 
 
-def build_all_rows():
+def load_moteurs_rows_by_silo(moteurs_json_path, author_map):
+    """Candidats programmatiques (scripts/expand-moteurs.py) déjà validés par Haloscan
+    (statut 'retenu' écrit par scripts/validate-moteurs-haloscan.js), groupés par silo.
+    Fichier absent ou vide -> aucun impact (rétro-compatible avec le comportement d'origine,
+    100 % éditorial)."""
+    if not os.path.exists(moteurs_json_path):
+        return {}
+    with open(moteurs_json_path, encoding='utf-8') as f:
+        data = json.load(f)
+
+    by_silo = {}
+    for c in data.get('candidats', []):
+        if c.get('statut') != 'retenu':
+            continue
+        by_silo.setdefault(c['silo'], []).append({
+            'mot_cle_principal': c['mot_cle_principal'],
+            'variantes': c['variantes'],
+            'silo': c['silo'],
+            'sous_cocon': c['sous_cocon'],
+            'intention': c['intention'],
+            'volume_estime': c.get('volume_estime') or 0,
+            'url_cible': '',
+            'auteur': author_map.get(c['silo'], ''),
+            'statut': 'à faire',
+            'date_publication': '',
+        })
+    return by_silo
+
+
+def build_all_rows(data_dir, moteurs_json_path, author_map, silo_order):
+    moteurs_by_silo = load_moteurs_rows_by_silo(moteurs_json_path, author_map)
     all_rows = []
     processed_silos = []
-    for silo_name in SILO_ORDER:
-        rows = load_silo_rows(silo_name)
+    moteurs_counts = {}
+    for silo_name in silo_order:
+        editorial_rows = load_silo_rows(data_dir, author_map, silo_name)
+        moteurs_rows = moteurs_by_silo.get(silo_name, [])
+        rows = editorial_rows + moteurs_rows
+        # priorité : volume cumulé décroissant sur l'ensemble éditorial + programmatique,
+        # pas seulement au sein de chaque source (skills/seo.md section 3 : volume bon d'abord).
+        rows.sort(key=lambda r: r['volume_estime'], reverse=True)
         if rows:
-            processed_silos.append((silo_name, len(rows)))
+            processed_silos.append((silo_name, len(editorial_rows), len(moteurs_rows)))
             all_rows.extend(rows)
-    return all_rows, processed_silos
+        if moteurs_rows:
+            moteurs_counts[silo_name] = len(moteurs_rows)
+    return all_rows, processed_silos, moteurs_counts
+
+
+def capture_publish_state(ws):
+    """Avant régénération : capture l'état de publication déjà avancé (par le pipeline
+    autopublish, run.js) pour chaque mot_cle_principal, afin de ne jamais le perdre en
+    reconstruisant l'onglet à partir des sources (seeds.json + moteurs-candidats.json) —
+    ce script régénère TOUT à chaque run, donc sans cette capture un run relancé après le
+    début de la publication réelle écraserait silencieusement statut/url_cible/date."""
+    state = {}
+    for row in ws.iter_rows(min_row=2, values_only=True):
+        mot_cle, statut, url_cible, date_pub = row[0], row[8], row[6], row[9]
+        if mot_cle and statut and statut != 'à faire':
+            state[mot_cle] = {'statut': statut, 'url_cible': url_cible, 'date_publication': date_pub}
+    return state
 
 
 def main():
-    all_rows, processed_silos = build_all_rows()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--niche', default=niche_config.DEFAULT_NICHE)
+    args = parser.parse_args()
 
-    if not os.path.exists(XLSX_PATH):
-        raise SystemExit(f'{XLSX_PATH} introuvable — lancer scripts/build-tracking-xlsx.py une première fois.')
+    niche = niche_config.load_niche(args.niche)
+    data_dir = niche_config.data_path(niche)
+    xlsx_path = niche_config.data_path(niche, 'keywords', 'tracking-mots-cles.xlsx')
+    moteurs_json_path = niche_config.data_path(niche, 'keywords', 'moteurs-candidats.json')
+    author_map = niche_config.author_map(niche)
+    silo_order = niche_config.silo_order(niche)
 
-    wb = openpyxl.load_workbook(XLSX_PATH)
+    all_rows, processed_silos, moteurs_counts = build_all_rows(data_dir, moteurs_json_path, author_map, silo_order)
+
+    if not os.path.exists(xlsx_path):
+        raise SystemExit(f'{xlsx_path} introuvable — lancer scripts/build-tracking-xlsx.py une première fois.')
+
+    wb = openpyxl.load_workbook(xlsx_path)
     ws = wb['Suivi']
+
+    old_publish_state = capture_publish_state(ws)
 
     # Repart d'un onglet Suivi vierge (header conservé) pour éviter les doublons entre deux runs.
     ws.delete_rows(2, ws.max_row)
 
-    headers = ['mot_cle_principal', 'variantes', 'silo', 'sous_cocon', 'intention',
-               'volume_estime', 'url_cible', 'auteur', 'statut', 'date_publication']
-
     r = 2
+    preserved = 0
     for row in all_rows:
-        for i, h in enumerate(headers, start=1):
+        prior = old_publish_state.get(row['mot_cle_principal'])
+        if prior:
+            row = {**row, **prior}
+            preserved += 1
+        for i, h in enumerate(HEADERS, start=1):
             ws.cell(row=r, column=i, value=row[h])
         r += 1
 
@@ -136,21 +196,45 @@ def main():
     for i, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
 
-    # Note de suivi dans l'onglet Légende : silos déjà couverts par cette génération.
+    # Note de suivi dans l'onglet Légende : silos déjà couverts par cette génération, avec
+    # le détail éditorial vs programmatique (moteurs) par silo.
+    #
+    # Le bloc de note précédent (marqueur ci-dessous) est SUPPRIMÉ avant d'en écrire un
+    # nouveau — sans ça, chaque exécution du script empile un nouveau bloc à la suite du
+    # précédent sans jamais rien effacer. Constaté en conditions réelles : 246 lignes déjà
+    # accumulées dans l'onglet Légende avant ce correctif, faute d'avoir jamais été nettoyées
+    # au fil des dizaines d'exécutions passées (voir STATE.md).
     legend = wb['Légende']
-    note_row = legend.max_row + 2
-    legend.cell(row=note_row, column=1, value='Dernière génération automatique (populate-tracking-xlsx.py)').font = Font(name='Arial', bold=True)
+    MARKER = 'Dernière génération automatique (populate-tracking-xlsx.py)'
+    existing_marker_row = next(
+        (row for row in range(1, legend.max_row + 1) if legend.cell(row=row, column=1).value == MARKER),
+        None,
+    )
+    if existing_marker_row is not None:
+        legend.delete_rows(existing_marker_row, legend.max_row - existing_marker_row + 1)
+        note_row = existing_marker_row
+    else:
+        note_row = legend.max_row + 2
+    legend.cell(row=note_row, column=1, value=MARKER).font = Font(name='Arial', bold=True)
     r2 = note_row + 1
-    for silo_name, count in processed_silos:
+    for silo_name, n_edit, n_moteurs in processed_silos:
+        detail = f'{n_edit} éditoriaux'
+        if n_moteurs:
+            detail += f' + {n_moteurs} programmatiques'
         legend.cell(row=r2, column=1, value=silo_name)
-        legend.cell(row=r2, column=2, value=f'{count} clusters')
+        legend.cell(row=r2, column=2, value=f'{n_edit + n_moteurs} clusters ({detail})')
         r2 += 1
     if not processed_silos:
         legend.cell(row=r2, column=1, value='(aucun silo P1 traité pour le moment)')
 
-    wb.save(XLSX_PATH)
+    wb.save(xlsx_path)
     total = len(all_rows)
-    print(f'{total} clusters écrits dans {XLSX_PATH} — silos couverts : {", ".join(s for s, _ in processed_silos) or "aucun"}')
+    total_moteurs = sum(moteurs_counts.values())
+    print(f'{total} clusters écrits dans {xlsx_path} (dont {total_moteurs} programmatiques) — '
+          f'silos couverts : {", ".join(s for s, _, _ in processed_silos) or "aucun"}')
+    if preserved:
+        print(f'{preserved} lignes ont conservé leur progression de publication déjà en cours '
+              f'(statut/url_cible/date_publication préservés).')
 
 
 if __name__ == '__main__':

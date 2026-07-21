@@ -1,0 +1,538 @@
+[
+  {
+    "code": "P2102",
+    "libelle": "Circuit moteur de l'actionneur de papillon A - signal bas",
+    "causes_possibles": "Moteur d'actionneur de papillon defaillant, cablage coupe ou court-circuite a la masse, connecteur corrode, boitier papillon encrasse mecaniquement bloque",
+    "gravite": "severe",
+    "source": "obd-codes.com, kbb.com, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2103",
+    "libelle": "Circuit moteur de l'actionneur de papillon A - signal eleve",
+    "causes_possibles": "Court-circuit a l'alimentation du cablage de l'actionneur, moteur du papillon defaillant, module de commande electronique du papillon (PCM) endommage",
+    "gravite": "severe",
+    "source": "yourmechanic.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2104",
+    "libelle": "Systeme de commande de l'actionneur de papillon - ralenti force",
+    "causes_possibles": "Boitier papillon encrasse ou mecaniquement bloque, pedale d'accelerateur ou capteur de position papillon defaillant, PCM ayant force un mode de secours en ralenti",
+    "gravite": "severe",
+    "source": "repairpal.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2105",
+    "libelle": "Systeme de commande de l'actionneur de papillon - arret moteur force",
+    "causes_possibles": "Defaillance grave du systeme de commande electronique du papillon, capteurs de position papillon/pedale incoherents, PCM ayant coupe le moteur par securite",
+    "gravite": "severe",
+    "source": "repairpal.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2106",
+    "libelle": "Systeme de commande de l'actionneur de papillon - puissance limitee forcee",
+    "causes_possibles": "Defaut detecte sur le systeme de commande electronique du papillon entrainant un mode de puissance reduite (limp mode), capteur de position papillon ou pedale hors plage",
+    "gravite": "severe",
+    "source": "repairpal.com, kbb.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2107",
+    "libelle": "Processeur du module de commande de l'actionneur de papillon",
+    "causes_possibles": "Defaillance interne du microprocesseur du module de commande electronique du papillon, PCM defectueux, probleme d'alimentation du module",
+    "gravite": "severe",
+    "source": "repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2226",
+    "libelle": "Circuit du capteur de pression barometrique A",
+    "causes_possibles": "Capteur de pression barometrique (BARO) defaillant, cablage endommage ou connecteur corrode, prise d'air du capteur obstruee",
+    "gravite": "modere",
+    "source": "obd-codes.com, repairpal.com, autocodes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2227",
+    "libelle": "Circuit du capteur de pression barometrique A - plage/performance",
+    "causes_possibles": "Capteur BARO hors plage attendue par rapport aux autres capteurs de pression, connecteur partiellement deconnecte, capteur degrade",
+    "gravite": "modere",
+    "source": "troublecodes.net, go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2228",
+    "libelle": "Circuit du capteur de pression barometrique A - signal bas",
+    "causes_possibles": "Court-circuit a la masse du circuit du capteur BARO, capteur defaillant, connecteur corrode",
+    "gravite": "modere",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2443",
+    "libelle": "Systeme d'injection d'air secondaire - vanne de commutation bloquee fermee (banc 2)",
+    "causes_possibles": "Vanne de commutation d'air secondaire grippee en position fermee, pompe d'air secondaire defaillante, durite d'air obstruee ou percee",
+    "gravite": "faible",
+    "source": "repairpal.com, hewitt-tech.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2444",
+    "libelle": "Systeme d'injection d'air secondaire - pompe bloquee en marche (banc 1)",
+    "causes_possibles": "Relais de la pompe d'air secondaire colle en position fermee, pompe defaillante, cablage du relais court-circuite",
+    "gravite": "faible",
+    "source": "repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2445",
+    "libelle": "Systeme d'injection d'air secondaire - pompe bloquee a l'arret (banc 1)",
+    "causes_possibles": "Pompe d'air secondaire en panne, fusible ou relais grille, cablage d'alimentation de la pompe coupe",
+    "gravite": "faible",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2503",
+    "libelle": "Systeme de charge - tension basse",
+    "causes_possibles": "Alternateur/generateur produisant une tension insuffisante, courroie d'entrainement usee ou detendue, cablage de charge corrode, batterie fortement dechargee",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2504",
+    "libelle": "Systeme de charge - tension elevee",
+    "causes_possibles": "Regulateur de tension de l'alternateur defaillant, connexion de masse de la batterie corrodee, cablage de detection de tension endommage",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2563",
+    "libelle": "Capteur de position de commande de suralimentation turbo - plage/performance",
+    "causes_possibles": "Capteur de position de la vanne de suralimentation (wastegate/geometrie variable) deregle, tringlerie mecanique grippee, durite de depression fuyante",
+    "gravite": "severe",
+    "source": "carparts.com, ziptuning.com, dot.report — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2564",
+    "libelle": "Capteur de position de commande de suralimentation turbo A - signal bas",
+    "causes_possibles": "Court-circuit a la masse du capteur de position de suralimentation, capteur defaillant, connecteur endommage",
+    "gravite": "severe",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2565",
+    "libelle": "Capteur de position de commande de suralimentation turbo A - signal eleve",
+    "causes_possibles": "Court-circuit a l'alimentation du capteur de position de suralimentation, capteur defaillant, cablage endommage",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com, carparts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2601",
+    "libelle": "Circuit de commande de la pompe a eau A - plage/performance",
+    "causes_possibles": "Pompe a eau electrique defaillante ou grippee, cablage de commande endommage, liquide de refroidissement bas ou circuit d'air",
+    "gravite": "modere",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2610",
+    "libelle": "Performance de la minuterie interne d'arret moteur ECM/PCM",
+    "causes_possibles": "Defaillance interne du module ECM/PCM concernant le minutage de coupure moteur, perte d'alimentation batterie de secours du module, PCM defectueux",
+    "gravite": "modere",
+    "source": "obd-codes.com, repairpal.com, yourmechanic.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2614",
+    "libelle": "Circuit de sortie du signal de position d'arbre a cames - circuit ouvert",
+    "causes_possibles": "Cablage du signal de sortie du capteur d'arbre a cames coupe, capteur defaillant, connecteur deconnecte",
+    "gravite": "modere",
+    "source": "endtuning.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2620",
+    "libelle": "Circuit de sortie de la position du papillon - circuit ouvert",
+    "causes_possibles": "Cablage du signal de sortie de position papillon coupe, capteur de position papillon defaillant, connecteur corrode",
+    "gravite": "modere",
+    "source": "endtuning.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P2714",
+    "libelle": "Electrovanne de pression D - performance ou bloquee fermee",
+    "causes_possibles": "Electrovanne de pression de boite automatique encrassee par des particules d'usure, cablage endommage, pompe a huile de transmission usee, niveau d'huile de boite bas",
+    "gravite": "severe",
+    "source": "obd-codes.com, repairpal.com, transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2723",
+    "libelle": "Electrovanne de pression E - bloquee fermee",
+    "causes_possibles": "Electrovanne de pression encrassee ou grippee en position fermee, huile de transmission degradee, cablage de commande coupe",
+    "gravite": "severe",
+    "source": "transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2729",
+    "libelle": "Electrovanne de pression E - circuit de commande tension basse",
+    "causes_possibles": "Court-circuit a la masse du circuit de l'electrovanne de pression, electrovanne defaillante, connecteur corrode",
+    "gravite": "severe",
+    "source": "transmissionrepaircostguide.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2A02",
+    "libelle": "Circuit du capteur O2 - plage/performance (banc 1, capteur 3)",
+    "causes_possibles": "Capteur d'oxygene banc 1 sensor 3 (post-catalyseur) degrade ou encrasse, cablage endommage, fuite d'echappement en amont du capteur",
+    "gravite": "modere",
+    "source": "autocodes.com, engine-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P2A03",
+    "libelle": "Circuit du capteur O2 - plage/performance (banc 2, capteur 1)",
+    "causes_possibles": "Capteur d'oxygene amont banc 2 degrade ou encrasse par depots, cablage du capteur endommage, fuite d'echappement en amont du capteur",
+    "gravite": "modere",
+    "source": "obd-codes.com, repairpal.com, dot.report, ecufiles.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "P3007",
+    "libelle": "Defaut du capteur d'arbre a cames",
+    "causes_possibles": "Capteur d'arbre a cames (CMP) defaillant, cablage ou connecteur endommage, roue dentee/cible de synchronisation deplacee (a verifier selon marque/modele)",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "P3497",
+    "libelle": "Systeme de desactivation de cylindres - defaut (banc 2)",
+    "causes_possibles": "Solenoides de desactivation de cylindres (AFM/MDS) defaillants, pression ou niveau d'huile moteur insuffisant, cablage du systeme de gestion des soupapes endommage",
+    "gravite": "modere",
+    "source": "go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0073",
+    "libelle": "Module de commande - bus de donnees hors ligne",
+    "causes_possibles": "Court-circuit ou coupure sur le bus de communication CAN, module de commande defaillant emettant des trames erronees, connecteur de bus corrode",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0107",
+    "libelle": "Perte de communication avec le module de commande de l'actionneur de papillon (TAC)",
+    "causes_possibles": "Module TAC hors tension ou defaillant, cablage du bus CAN coupe vers ce module, fusible d'alimentation du module grille",
+    "gravite": "severe",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0121",
+    "libelle": "Perte de communication avec le module ABS",
+    "causes_possibles": "Module ABS hors tension ou defaillant, cablage du bus de communication coupe ou court-circuite, fusible du module ABS grille",
+    "gravite": "severe",
+    "source": "icarsoft.com, obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0122",
+    "libelle": "Perte de communication avec le module de controle de la dynamique du vehicule (VDC)",
+    "causes_possibles": "Module VDC/ESP hors tension ou defaillant, cablage du bus CAN coupe, fusible d'alimentation grille",
+    "gravite": "severe",
+    "source": "obd-codes.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0140",
+    "libelle": "Perte de communication avec le module de carrosserie (BCM)",
+    "causes_possibles": "BCM hors tension ou defaillant, cablage du bus de communication coupe, fusible du BCM grille, masse du module corrodee",
+    "gravite": "modere",
+    "source": "2carpros.com, kingbolentool.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0164",
+    "libelle": "Perte de communication avec le module de climatisation (HVAC)",
+    "causes_possibles": "Module de commande climatisation hors tension ou defaillant, cablage du bus coupe vers ce module, fusible grille",
+    "gravite": "faible",
+    "source": "recherche agregee (obd-codes.com, repairpal.com) — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0169",
+    "libelle": "Perte de communication avec le module de toit ouvrant",
+    "causes_possibles": "Module de commande du toit ouvrant hors tension ou defaillant, cablage du bus coupe, fusible grille",
+    "gravite": "faible",
+    "source": "recherche agregee (repairpal.com, go-parts.com) — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0184",
+    "libelle": "Perte de communication avec l'autoradio",
+    "causes_possibles": "Autoradio/module multimedia hors tension ou defaillant, cablage du bus MOST/CAN coupe, fusible d'alimentation grille",
+    "gravite": "faible",
+    "source": "recherche agregee (repairpal.com, go-parts.com) — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0195",
+    "libelle": "Perte de communication avec le module de reception d'abonnement multimedia",
+    "causes_possibles": "Module recepteur radio satellite/abonnement hors tension ou defaillant, cablage du bus coupe, fusible grille",
+    "gravite": "faible",
+    "source": "recherche agregee (repairpal.com, go-parts.com) — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0197",
+    "libelle": "Perte de communication avec le module telephone",
+    "causes_possibles": "Module de telephonie embarquee hors tension ou defaillant, cablage du bus coupe, fusible d'alimentation grille",
+    "gravite": "faible",
+    "source": "recherche agregee (repairpal.com, go-parts.com) — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0212",
+    "libelle": "Perte de communication avec le module de colonne de direction",
+    "causes_possibles": "Module de colonne de direction hors tension ou defaillant, cablage du bus coupe, connecteur du contacteur tournant endommage",
+    "gravite": "modere",
+    "source": "go-parts.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0213",
+    "libelle": "Perte de communication avec le module de retroviseurs",
+    "causes_possibles": "Module de commande des retroviseurs electriques hors tension ou defaillant, cablage du bus coupe, fusible grille",
+    "gravite": "faible",
+    "source": "go-parts.com, repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0253",
+    "libelle": "Perte de communication avec le module d'interface de protocole accessoire",
+    "causes_possibles": "Module d'interface accessoire hors tension ou defaillant, cablage du bus coupe, fusible d'alimentation grille",
+    "gravite": "faible",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0284",
+    "libelle": "Perte de communication avec le module moteur du volet actif de calandre 1",
+    "causes_possibles": "Module moteur du volet de calandre actif (AGS) hors tension ou defaillant, cablage du bus coupe, mecanisme du volet grippe",
+    "gravite": "faible",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0293",
+    "libelle": "Perte de communication avec l'unite de commande climatisation",
+    "causes_possibles": "Unite de commande HVAC hors tension ou defaillante, cablage du bus coupe, fusible grille",
+    "gravite": "faible",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U029D",
+    "libelle": "Perte de communication avec le capteur NOx A",
+    "causes_possibles": "Capteur NOx hors tension ou defaillant, cablage du bus coupe vers le capteur, connecteur corrode par la chaleur de l'echappement",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "U0300",
+    "libelle": "Incompatibilite logicielle interne du module de commande",
+    "causes_possibles": "Mise a jour logicielle incorrecte ou incomplete d'un module, module de remplacement avec version logicielle non compatible, calibration corrompue",
+    "gravite": "modere",
+    "source": "repairpal.com, troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0400",
+    "libelle": "Donnees invalides recues",
+    "causes_possibles": "Trame de donnees corrompue recue sur le bus de communication, module emetteur defaillant, interference electromagnetique sur le cablage du bus",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0401",
+    "libelle": "Donnees invalides recues de l'ECM/PCM A",
+    "causes_possibles": "PCM emettant des donnees corrompues ou incoherentes, cablage du bus CAN endommage, logiciel PCM obsolete",
+    "gravite": "modere",
+    "source": "repairpal.com, club.autodoc.co.uk — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0402",
+    "libelle": "Donnees invalides recues du TCM",
+    "causes_possibles": "Module de commande de transmission (TCM) emettant des donnees corrompues, cablage du bus CAN endommage, TCM defaillant",
+    "gravite": "modere",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0415",
+    "libelle": "Donnees invalides recues du module de commande ABS",
+    "causes_possibles": "Module ABS emettant des donnees corrompues, cablage du bus CAN endommage, module ABS defaillant",
+    "gravite": "severe",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0416",
+    "libelle": "Donnees invalides recues du module de controle de dynamique du vehicule",
+    "causes_possibles": "Module VDC/ESP emettant des donnees corrompues, cablage du bus CAN endommage, module defaillant",
+    "gravite": "severe",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0422",
+    "libelle": "Donnees invalides recues du module de carrosserie (BCM)",
+    "causes_possibles": "BCM emettant des donnees corrompues, cablage du bus CAN endommage, BCM defaillant",
+    "gravite": "modere",
+    "source": "repairpal.com — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "U0481",
+    "libelle": "Donnees invalides recues du module de commande d'eclairage automatique",
+    "causes_possibles": "Module d'eclairage automatique emettant des donnees corrompues, cablage du bus CAN endommage, capteur de luminosite defaillant",
+    "gravite": "faible",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  },
+  {
+    "code": "C0031",
+    "libelle": "Capteur de vitesse de roue avant gauche (sous-defaut)",
+    "causes_possibles": "Capteur de vitesse de roue avant gauche defaillant ou encrasse, entrefer incorrect avec la cible dentee, cablage endommage",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0032",
+    "libelle": "Alimentation du capteur de vitesse de roue avant gauche (sous-defaut)",
+    "causes_possibles": "Court-circuit ou coupure sur le circuit d'alimentation du capteur, capteur defaillant, connecteur corrode",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0033",
+    "libelle": "Roue phonique (cible dentee) avant droite (sous-defaut)",
+    "causes_possibles": "Cible dentee (tone wheel) endommagee ou encrassee, entrefer incorrect avec le capteur, roulement de roue use",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0034",
+    "libelle": "Capteur de vitesse de roue avant droite (sous-defaut)",
+    "causes_possibles": "Capteur de vitesse de roue avant droite defaillant ou encrasse, entrefer incorrect, cablage endommage",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0036",
+    "libelle": "Roue phonique (cible dentee) arriere gauche (sous-defaut)",
+    "causes_possibles": "Cible dentee endommagee ou encrassee, entrefer incorrect avec le capteur, roulement de roue use",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0037",
+    "libelle": "Capteur de vitesse de roue arriere gauche (sous-defaut)",
+    "causes_possibles": "Capteur de vitesse de roue arriere gauche defaillant ou encrasse, entrefer incorrect, cablage endommage",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0038",
+    "libelle": "Alimentation du capteur de vitesse de roue arriere gauche (sous-defaut)",
+    "causes_possibles": "Court-circuit ou coupure sur le circuit d'alimentation du capteur, capteur defaillant, connecteur corrode",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0039",
+    "libelle": "Roue phonique (cible dentee) arriere droite (sous-defaut)",
+    "causes_possibles": "Cible dentee endommagee ou encrassee, entrefer incorrect avec le capteur, roulement de roue use",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C003A",
+    "libelle": "Capteur de vitesse de roue arriere droite (sous-defaut)",
+    "causes_possibles": "Capteur de vitesse de roue arriere droite defaillant ou encrasse, entrefer incorrect, cablage endommage",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C003B",
+    "libelle": "Alimentation du capteur de vitesse de roue arriere droite (sous-defaut)",
+    "causes_possibles": "Court-circuit ou coupure sur le circuit d'alimentation du capteur, capteur defaillant, connecteur corrode",
+    "gravite": "severe",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0051",
+    "libelle": "Capteur de position du volant de direction (sous-defaut)",
+    "causes_possibles": "Capteur d'angle volant defaillant ou mal calibre apres intervention, contacteur tournant endommage, cablage coupe",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0061",
+    "libelle": "Capteur d'acceleration laterale (sous-defaut)",
+    "causes_possibles": "Capteur d'acceleration laterale (utilise par l'ESP) defaillant, cablage endommage, module central des capteurs inertiels defectueux",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0062",
+    "libelle": "Capteur d'acceleration longitudinale (sous-defaut)",
+    "causes_possibles": "Capteur d'acceleration longitudinale defaillant, cablage endommage, module central des capteurs inertiels defectueux",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0063",
+    "libelle": "Capteur de vitesse de lacet (sous-defaut)",
+    "causes_possibles": "Capteur de vitesse de lacet (yaw rate, utilise par l'ESP) defaillant, cablage endommage, mauvaise calibration apres remplacement",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": false
+  },
+  {
+    "code": "C0700",
+    "libelle": "Commutateur de l'inflateur accessoire de correction d'assiette (suspension pilotee/pneumatique)",
+    "causes_possibles": "Compresseur de suspension pneumatique defaillant, commutateur de niveau endommage, fuite dans le circuit pneumatique de correction d'assiette",
+    "gravite": "modere",
+    "source": "troublecodes.net — consulte 2026-07 (via WebSearch)",
+    "a_verifier": true
+  }
+]

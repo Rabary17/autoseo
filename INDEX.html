@@ -426,13 +426,16 @@ h2{
   <div class="box info">
     <h3 style="margin-top:0">Données & scripts</h3>
     <ul style="margin:0;padding:12px 0 12px 20px">
-      <li><code>data/keywords/tracking-mots-cles.xlsx</code> — 506 clusters P1 (feuille maîtresse)</li>
+      <li><code>data/keywords/tracking-mots-cles.xlsx</code> — 506 clusters P1 (feuille maîtresse, publiable)</li>
       <li><code>data/keywords/</code> — Fichiers JSON P1 par silo (19 fichiers)</li>
-      <li><code>data/factuel/</code> — Bases factuelles P2 (marques, codes, prestations, démarches, etc.)</li>
-      <li><code>data/maillage/maillage.json</code> — Graphe de liens P3 (410 entrées)</li>
+      <li><code>data/keywords/moteurs-candidats.json</code> — 4 153 candidats programmatiques (2026-07-20, statut « à valider », pas encore promus dans le fichier ci-dessus)</li>
+      <li><code>data/factuel/</code> — Bases factuelles P2 (marques, codes, prestations, démarches, etc. — 100% terminé, voir STATE.md)</li>
+      <li><code>data/maillage/maillage.json</code> — Graphe de liens P3 (506 entrées, 19/19 silos)</li>
       <li><code>scripts/fetch-keywords.js</code> — Collecteur P1 (API Haloscan)</li>
-      <li><code>scripts/gen-maillage.py</code> — Générateur P3</li>
-      <li><code>scripts/autopublish/</code> — Pipeline complet (run.js, config.js, 10 modules lib/)</li>
+      <li><code>scripts/expand-moteurs.py</code> — Générateur de candidats programmatiques (moteurs)</li>
+      <li><code>scripts/validate-moteurs-haloscan.js</code> — Validation Haloscan des candidats (mot-clé principal uniquement)</li>
+      <li><code>scripts/gen-maillage.py</code> — Générateur P3 (mode <code>--all</code> disponible)</li>
+      <li><code>scripts/autopublish/</code> — Pipeline complet (run.js, config.js, 10 modules lib/) — validé en CI, pas encore lancé en réel</li>
     </ul>
   </div>
 </div>
@@ -463,7 +466,17 @@ h2{
 
     <div class="timeline-item">
       <div class="timeline-title">2026-07-17</div>
-      <div class="timeline-desc">Documentation HTML créée (ROADMAP, FEATURES, pages détaillées). INDEX créé.</div>
+      <div class="timeline-desc">Documentation HTML créée (ROADMAP, FEATURES, pages détaillées). INDEX créé. WordPress résolu sur <code>mntdev.riseasso.com</code> (remplace l'impasse passion4humanity) — pipeline autopublish validé de bout en bout en CI (test-e2e 6/6).</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-18</div>
+      <div class="timeline-desc">🎯 P1-P2-P3 achevés à 100% sur les 19 silos (506 clusters, 506 entrées maillage, toutes les bases factuelles complètes ou dépassées).</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-title">2026-07-20</div>
+      <div class="timeline-desc">Pont croisements → tracking construit (<code>scripts/expand-moteurs.py</code>) : 4 153 candidats programmatiques générés (statut « à valider »). Chaîne de validation Haloscan + promotion + maillage automatique mise en place et testée (aucun crédit consommé). Plusieurs bugs corrigés (alignement sous-cocons, accumulation Légende xlsx, octets NUL dans run.js).</div>
     </div>
   </div>
 </div>

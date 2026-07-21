@@ -28,14 +28,12 @@
 
 const fs = require('fs');
 const path = require('path');
-const { getCredit, similar, match, questions, related } = require('./haloscan-client');
+const { getCredit, similar } = require('./haloscan-client');
+const nicheConfig = require('./lib_js/niche-config');
+const { enrichSeed } = require('./lib_js/keyword-enrich');
 
-const DATA_DIR = path.join(__dirname, '..', 'data', 'keywords');
-const SEEDS_PATH = path.join(DATA_DIR, 'seeds.json');
 const DELAY_MS = 400;
 const MIN_CREDIT_SAFETY = 100;
-const ENRICH_VOLUME_MIN = 10;
-const ENRICH_COMPETITION_MAX = 0.35;
 
 function parseArgs() {
   const args = process.argv.slice(2);
@@ -45,6 +43,7 @@ function parseArgs() {
   };
   return {
     silo: get('--silo'),
+    niche: get('--niche') || nicheConfig.DEFAULT_NICHE,
     dryRun: args.includes('--dry-run'),
     resume: args.includes('--resume'),
     force: args.includes('--force'),
@@ -65,89 +64,12 @@ function stripIntent(kw) {
 
 async function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-// Enseignes/marques auto connues qui ressortent souvent en "related"/"match" (SERP concurrentiel)
-// sans être des sujets d'article valables pour ce réseau de contenu — filtrées même quand
-// si_brand/si_nav renvoie "NA" au lieu de true/false (incohérence observée sur l'API Haloscan).
-const BRAND_BLOCKLIST = new Set([
-  'feu vert', 'feuvert', 'feux vert', 'norauto', 'midas', 'speedy', 'speedy avis', 'euromaster',
-  'point s', 'roady', 'carter cash', 'cartercash', 'carter-cash', 'oscaro', 'mister auto', 'allopneu',
-  'vroomly', 'autobacs', 'leclerc automobiles', 'leclerc location', 'leclerc auto', 'wordreference',
-  'best drive', 'firststop', 'first stop', 'ad distribution', 'my renault', 'pneus',
-]);
+// BRAND_BLOCKLIST/STOPWORDS/NICHE_GENERIC_WORDS/significantTokens/mergeCandidates/enrichSeed
+// déménagés dans scripts/lib_js/keyword-enrich.js le 2026-07-21 (réutilisés aussi par
+// scripts/rescue-rejected-candidats.js — jamais dupliquer/diverger ces règles de filtrage).
 
-const STOPWORDS = new Set([
-  'le', 'la', 'les', 'de', 'des', 'du', 'un', 'une', 'et', 'ou', 'à', 'a', 'pour', 'avec', 'sans',
-  'sur', 'dans', 'par', 'plus', 'que', 'qui', 'ce', 'cette', 'ces', 'son', 'sa', 'ses', 'vs', 'au',
-  'aux', 'en', 'est', 'quand', 'comment', 'combien',
-]);
-
-// Mots trop génériques DANS CETTE NICHE pour servir de signal de pertinence (ils reviennent dans
-// quasi tous les seeds, donc un simple partage de ce mot ne prouve rien sur le sujet réel) — ex.
-// "contrôle technique prix" matchait à tort "vidange prix moyen" via le seul mot "prix" avant ce
-// durcissement (2026-07-11). Ils restent affichés tels quels dans le mot-clé candidat, seulement
-// exclus du calcul de chevauchement lexical.
-const NICHE_GENERIC_WORDS = new Set([
-  'prix', 'tarif', 'tarifs', 'coût', 'cout', 'couts', 'coûts', 'voiture', 'voitures', 'auto', 'autos',
-  'moyen', 'moyenne', 'meilleur', 'meilleure', 'meilleurs', 'meilleures', 'changer', 'changement',
-  'entretien', 'garage', 'marque', 'marques', 'modele', 'modèle', 'modeles', 'modèles', 'cher',
-  'chere', 'chère', 'pas cher', 'gratuit', 'gratuite', 'astuce', 'astuces', 'guide', 'conseil', 'conseils',
-]);
-
-function significantTokens(text) {
-  return (text || '').toLowerCase().split(/[^a-zà-ÿ0-9]+/)
-    .filter(t => t.length >= 4 && !STOPWORDS.has(t) && !NICHE_GENERIC_WORDS.has(t) && !/^\d+$/.test(t));
-}
-
-// Fusionne les résultats des 3 endpoints d'enrichissement en une liste de candidats dédupliqués,
-// en excluant le bruit navigationnel/marques concurrentes (pas des sujets d'article exploitables).
-function mergeCandidates(seedKeyword, sources) {
-  const seedTokens = significantTokens(seedKeyword);
-  const byKeyword = new Map();
-  for (const { source, results } of sources) {
-    for (const r of results || []) {
-      if (!r.keyword) continue;
-      const kwLower = r.keyword.toLowerCase();
-      if (r.si_nav === true || r.si_brand === true) continue;
-      if (BRAND_BLOCKLIST.has(kwLower)) continue;
-      // Chevauchement lexical exigé pour les 3 sources, y compris `questions` : contrairement à
-      // l'hypothèse initiale, les questions "People Also Ask" renvoyées par Haloscan pour un seed
-      // donné ne sont pas toujours spécifiques à ce seed (ex. des questions génériques "prix
-      // entretien auto" ressortaient pour le seed "vidange prix moyen" sans rapport réel avec la
-      // vidange) — constaté et corrigé le 2026-07-11.
-      const shared = significantTokens(kwLower).some(t => seedTokens.includes(t));
-      if (!shared) continue;
-      const cand = {
-        keyword: r.keyword,
-        volume: r.volume ?? null,
-        competition: r.competition === 'NA' ? null : r.competition,
-        source,
-      };
-      // garde la meilleure info si le même mot-clé ressort de plusieurs endpoints
-      const existingCand = byKeyword.get(r.keyword);
-      if (!existingCand || (cand.volume ?? 0) > (existingCand.volume ?? 0)) {
-        byKeyword.set(r.keyword, cand);
-      }
-    }
-  }
-  return [...byKeyword.values()].sort((a, b) => (b.volume ?? 0) - (a.volume ?? 0));
-}
-
-async function enrichSeed(keyword) {
-  const opts = { volumeMin: ENRICH_VOLUME_MIN, competitionMax: ENRICH_COMPETITION_MAX };
-  const [matchRes, questionsRes, relatedRes] = await Promise.all([
-    match(keyword, opts).catch(() => ({ results: [] })),
-    questions(keyword, opts).catch(() => ({ results: [] })),
-    related(keyword, opts).catch(() => ({ results: [] })),
-  ]);
-  return mergeCandidates(keyword, [
-    { source: 'match', results: matchRes.results },
-    { source: 'questions', results: questionsRes.results },
-    { source: 'related', results: relatedRes.results },
-  ]);
-}
-
-async function processSilo(siloName, siloData, { dryRun, force, forceEnrich }) {
-  const outPath = path.join(DATA_DIR, `${slug(siloName)}.json`);
+async function processSilo(siloName, siloData, dataDir, { dryRun, force, forceEnrich }) {
+  const outPath = path.join(dataDir, `${slug(siloName)}.json`);
   const existing = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, 'utf8')) : { silo: siloName, seeds: {} };
 
   const allSeeds = siloData.subs.flatMap(sub => sub.kws.map(k => ({ sub: sub.name, ...stripIntent(k) })));
@@ -202,8 +124,15 @@ async function processSilo(siloName, siloData, { dryRun, force, forceEnrich }) {
 }
 
 async function main() {
-  const { silo, dryRun, force, forceEnrich } = parseArgs();
-  const seeds = JSON.parse(fs.readFileSync(SEEDS_PATH, 'utf8'));
+  const { silo, niche: nicheId, dryRun, force, forceEnrich } = parseArgs();
+  const niche = nicheConfig.loadNiche(nicheId);
+  const dataDir = nicheConfig.dataPath(niche, 'keywords');
+  const seedsPath = path.join(dataDir, 'seeds.json');
+  if (!fs.existsSync(seedsPath)) {
+    console.error(`Aucun seeds.json pour la niche '${nicheId}' (${seedsPath}) — le créer d'abord (liste de silos/sous-cocons/mots-clés seed).`);
+    process.exit(1);
+  }
+  const seeds = JSON.parse(fs.readFileSync(seedsPath, 'utf8'));
 
   if (!dryRun) {
     const credit = await getCredit();
@@ -225,7 +154,7 @@ async function main() {
 
   let total = 0;
   for (const [name, data] of Object.entries(silosToRun)) {
-    total += await processSilo(name, data, { dryRun, force, forceEnrich });
+    total += await processSilo(name, data, dataDir, { dryRun, force, forceEnrich });
   }
   console.log(`\nTotal appels API cette session : ${total}`);
 }
