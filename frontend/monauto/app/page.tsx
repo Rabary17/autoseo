@@ -5,6 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import NewsletterForm from "@/components/NewsletterForm";
 import { getPosts } from "@/lib/wp";
 import { SILOS } from "@/lib/taxonomy";
+import SiloThumb from "@/components/SiloThumb";
 import { websiteSchema, organizationSchema } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo-meta";
 
@@ -72,10 +73,13 @@ export default async function HomePage() {
           <div className="silo-grid">
             {SILOS.map((s) => (
               <Link key={s.slug} className="silo" href={`/categorie/${s.slug}/`}>
-                <span>
-                  <span className="silo__name">{s.name}</span>
-                  <span className="silo__desc" style={{ display: "block" }}>
-                    {s.desc}
+                <span className="silo__main">
+                  <SiloThumb slug={s.slug} alt="" />
+                  <span>
+                    <span className="silo__name">{s.name}</span>
+                    <span className="silo__desc" style={{ display: "block" }}>
+                      {s.desc}
+                    </span>
                   </span>
                 </span>
                 <span className="silo__count">{s.articles.toLocaleString("fr-FR")}</span>

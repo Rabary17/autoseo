@@ -48,13 +48,16 @@ module.exports = {
   // créés dans wp-admin avant le premier run réel sur leurs silos respectifs
   // — run.js échoue explicitement si le compte est introuvable plutôt que de
   // publier sous un mauvais auteur.
+  // Noms de plume complétés le 2026-07-21 (voir persona.js) — seule julien-fabre existait
+  // jusque-là comme compte WP réel ; les comptes B-F restent à créer (scripts/autopublish/
+  // create-missing-authors.js) une fois WordPress à nouveau joignable.
   WP_AUTHOR_SLUG_BY_PERSONA: {
     A: 'julien-fabre',
-    B: 'auteur-b',
-    C: 'auteur-c',
-    D: 'auteur-d',
-    E: 'auteur-e',
-    F: 'auteur-f',
+    B: 'thomas-lefevre',
+    C: 'camille-roussel',
+    D: 'sophie-andrieu',
+    E: 'karim-belaid',
+    F: 'nathalie-moreau',
   },
 
   // Ordre par défaut de traitement des silos en Phase 2 — reprend l'ordre

@@ -246,6 +246,27 @@ export async function getTermBySlug(
   return terms[0] ? decodeTerm(terms[0]) : null;
 }
 
+export async function getCategoryById(id: number): Promise<WpTerm | null> {
+  try {
+    const term = await wpJson<WpTerm>(`/categories/${id}`);
+    return decodeTerm(term);
+  } catch {
+    return null;
+  }
+}
+
+// Sous-cocons d'un silo = catégories enfants (parent=id) — hiérarchie réelle
+// créée à la publication par resolveCategoryId() (scripts/autopublish/run.js),
+// jamais exploitée côté frontend jusqu'ici (voir app/[slug]/page.tsx et
+// app/categorie/[slug]/page.tsx : le module "sous-rubriques" n'affichait que
+// du texte statique tiré de data/taxonomy.json). hide_empty=false pour lister
+// aussi les sous-cocons sans encore aucun article publié.
+export async function getChildCategories(parentId: number): Promise<WpTerm[]> {
+  return (
+    await wpJson<WpTerm[]>(`/categories?parent=${parentId}&per_page=100&hide_empty=false`)
+  ).map(decodeTerm);
+}
+
 export async function getAuthorBySlug(slug: string): Promise<WpUser | null> {
   const users = await wpJson<WpUser[]>(`/users?slug=${encodeURIComponent(slug)}`);
   return users[0] ? decodeUser(users[0]) : null;

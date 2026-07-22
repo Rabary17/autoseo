@@ -42,7 +42,11 @@ async function main() {
         email: `${slug}@monauto.example`,
         password,
         roles: ['author'],
-        description: `Persona ${info.nom} — silos : ${info.silos.join(', ')}.`,
+        description: info.bio,
+        // acf.job_title exposé en REST par le mu-plugin (show_in_rest) — voir
+        // wordpress/mu-plugins/monauto-headless.php. acf.same_as laissé vide : pas de
+        // profil réseau social pour un persona éditorial fictif.
+        acf: { job_title: info.intitule_role },
       },
     });
     console.log(`Persona ${key} (${slug}) : compte créé (id ${created.id}). Mot de passe généré (sans usage — non requis par le pipeline) : ${password}`);

@@ -4,10 +4,24 @@ import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import NewsletterForm from "@/components/NewsletterForm";
-import { decodeEntities, getAllPages, getImageVariant, getPageBySlug, getPostBySlug, parseFaq, parseSources } from "@/lib/wp";
+import {
+  decodeEntities,
+  getAllPages,
+  getCategoryById,
+  getChildCategories,
+  getImageVariant,
+  getPageBySlug,
+  getPostBySlug,
+  parseFaq,
+  parseSources,
+} from "@/lib/wp";
 import { getSilo } from "@/lib/taxonomy";
 import { articleSchema, faqPageLd } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo-meta";
+import type { WpTerm } from "@/lib/types";
+import { SILO_WIDGET } from "@/components/widgets";
+import SousCoconIcon from "@/components/SousCoconIcon";
+import AuthorAvatar from "@/components/AuthorAvatar";
 
 // ISR : on ne pré-génère au build que les pages WP statiques (peu nombreuses,
 // ex. "À propos") — PAS les articles. À 10 000 articles publiés en continu,
@@ -80,6 +94,43 @@ export default async function CatchAllPage({ params }: Props) {
   notFound();
 }
 
+// Résout la navigation réelle de la sidebar à partir de la catégorie WP de
+// l'article (le sous-cocon). Deux cas : l'article a un parent (cas normal,
+// sous-cocon réel) -> on remonte au silo et on liste ses vrais frères ; sinon
+// (article exceptionnellement classé directement dans le silo) -> on liste les
+// enfants du silo lui-même. Dégradation gracieuse : un échec réseau ne fait
+// jamais échouer le rendu de l'article, juste disparaître ce module.
+async function resolveSidebarNav(cat: WpTerm | undefined): Promise<{
+  silo?: ReturnType<typeof getSilo>;
+  siloSlug?: string;
+  sousCocons: WpTerm[];
+  currentId?: number;
+}> {
+  if (!cat) return { sousCocons: [] };
+  try {
+    if (cat.parent) {
+      const [parentTerm, siblings] = await Promise.all([
+        getCategoryById(cat.parent),
+        getChildCategories(cat.parent),
+      ]);
+      return {
+        silo: parentTerm ? getSilo(parentTerm.slug) : undefined,
+        // Slug WP brut, indépendant de data/taxonomy.json — c'est celui-ci qui indexe
+        // components/widgets/index.tsx (SILO_WIDGET), pas silo?.slug (qui peut être
+        // undefined si le silo manque encore de la taxonomie statique).
+        siloSlug: parentTerm?.slug,
+        sousCocons: siblings,
+        currentId: cat.id,
+      };
+    }
+    const children = await getChildCategories(cat.id);
+    return { silo: getSilo(cat.slug), siloSlug: cat.slug, sousCocons: children, currentId: undefined };
+  } catch (e) {
+    console.warn(`[resolveSidebarNav] échec du fetch WP, module masqué: ${e}`);
+    return { sousCocons: [] };
+  }
+}
+
 async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBySlug>> }) {
   if (!post) return null;
   const author = post._embedded?.author?.[0];
@@ -89,7 +140,15 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
   const tags = post._embedded?.["wp:term"]?.[1] ?? [];
   const sources = parseSources(post.acf?.sources);
   const faq = parseFaq(post.acf?.faq);
-  const silo = cat ? getSilo(cat.slug) : undefined;
+
+  // La catégorie assignée à l'article EST le sous-cocon (voir resolveCategoryId
+  // dans scripts/autopublish/run.js : parent = silo, sousTerm = catégorie de
+  // l'article) — pas le silo lui-même. On remonte au silo via cat.parent pour
+  // retrouver son nom/desc dans data/taxonomy.json, et on liste les VRAIS
+  // sous-cocons (catégories enfants du même parent) au lieu du texte statique
+  // affiché jusqu'ici.
+  const { silo, siloSlug, sousCocons, currentId } = await resolveSidebarNav(cat);
+  const SiloWidget = siloSlug ? SILO_WIDGET[siloSlug] : undefined;
 
   return (
     <div className="wrap-wide">
@@ -107,6 +166,7 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
             <header className="article__head">
               <h1 className="article__title" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
               <div className="article__byline">
+                {author && <AuthorAvatar slug={author.slug} alt="" />}
                 <span>
                   {author && (
                     <>
@@ -174,15 +234,33 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
         </div>
 
         <aside className="col-side" aria-label="Explorer">
-          {silo && silo.children.length > 0 && (
+          {SiloWidget && <SiloWidget />}
+
+          {sousCocons.length > 0 && (
             <section className="side-mod">
-              <p className="side-mod__title">Dans la rubrique {silo.name}</p>
+              <p className="side-mod__title">
+                {silo ? (
+                  <Link href={`/categorie/${silo.slug}/`}>Dans la rubrique {silo.name}</Link>
+                ) : (
+                  "Sous-rubriques"
+                )}
+              </p>
               <ul className="subnav">
-                {silo.children.map((child) => (
-                  <li key={child}>
-                    <span>{child}</span>
-                  </li>
-                ))}
+                {sousCocons.map((sc) =>
+                  sc.id === currentId ? (
+                    <li key={sc.id}>
+                      <strong aria-current="page" style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <SousCoconIcon name={sc.name} /> {sc.name}
+                      </strong>
+                    </li>
+                  ) : (
+                    <li key={sc.id}>
+                      <Link href={`/categorie/${sc.slug}/`} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <SousCoconIcon name={sc.name} /> {sc.name}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </section>
           )}

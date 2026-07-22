@@ -3,7 +3,7 @@
   "total": 10000,
   "silos": [
     {
-      "slug": "entretien",
+      "slug": "entretien-revision",
       "name": "Entretien & révision",
       "desc": "Tutos, prix et périodicités par modèle",
       "articles": 1800,
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "slug": "pieces-accessoires",
+      "slug": "pieces-detachees-accessoires",
       "name": "Pièces & accessoires",
       "desc": "Guides pièce par marque, comparatifs",
       "articles": 900,
@@ -70,7 +70,7 @@
       "children": []
     },
     {
-      "slug": "assurance",
+      "slug": "assurance-auto",
       "name": "Assurance auto",
       "desc": "Garanties, profils, sinistres",
       "articles": 400,
@@ -91,21 +91,21 @@
       "children": []
     },
     {
-      "slug": "achat-neuf",
+      "slug": "achat-voiture-neuve",
       "name": "Achat voiture neuve",
       "desc": "Guides achat, leasing, négociation",
       "articles": 300,
       "children": []
     },
     {
-      "slug": "occasion",
+      "slug": "voiture-d-occasion",
       "name": "Voiture occasion",
       "desc": "Achat, vente, cote, vices cachés",
       "articles": 300,
       "children": []
     },
     {
-      "slug": "velo-mobilites",
+      "slug": "velo-nouvelles-mobilites",
       "name": "Vélo & mobilités",
       "desc": "VAE, EDPM, réglementation",
       "articles": 250,
@@ -119,35 +119,35 @@
       "children": []
     },
     {
-      "slug": "road-trips",
+      "slug": "road-trips-voyage-auto",
       "name": "Road trips & voyage",
       "desc": "Itinéraires et pratique par pays",
       "articles": 350,
       "children": []
     },
     {
-      "slug": "sport-auto",
+      "slug": "sport-auto-passion",
       "name": "Sport auto & passion",
       "desc": "Circuits, collection, tuning légal",
       "articles": 250,
       "children": []
     },
     {
-      "slug": "carburants-conso",
+      "slug": "carburants-consommation",
       "name": "Carburants & conso",
       "desc": "E85, GPL, éco-conduite",
       "articles": 200,
       "children": []
     },
     {
-      "slug": "mobilite-partagee",
+      "slug": "mobilite-partagee-transports",
       "name": "Mobilité partagée",
       "desc": "Covoiturage, location, VTC",
       "articles": 250,
       "children": []
     },
     {
-      "slug": "utilitaires-flottes",
+      "slug": "utilitaires-flottes-pro",
       "name": "Utilitaires & flottes",
       "desc": "Choix, fiscalité, LLD pro",
       "articles": 200,

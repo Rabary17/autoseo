@@ -7,6 +7,7 @@ import Pagination from "@/components/Pagination";
 import { getAllAuthors, getAuthorBySlug, getPostsByAuthor } from "@/lib/wp";
 import { personLd } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo-meta";
+import AuthorAvatar from "@/components/AuthorAvatar";
 
 // Les 6 comptes auteur sont fixes et peu nombreux — un fetch direct sur
 // /users est largement suffisant, pas besoin de dériver depuis getAllPosts()
@@ -46,11 +47,14 @@ export default async function AuthorPage({ params, searchParams }: Props) {
     <div className="wrap">
       <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: author.name, href: `/auteur/${author.slug}/` }]} />
 
-      <header className="article__head">
-        <h1>{author.name}</h1>
-        {author.acf?.job_title && <p className="eyebrow">{author.acf.job_title}</p>}
-        <p>{author.description}</p>
+      <header className="author-hero">
+        <AuthorAvatar slug={author.slug} alt="" size={64} />
+        <div>
+          <h1>{author.name}</h1>
+          {author.acf?.job_title && <p className="role">{author.acf.job_title}</p>}
+        </div>
       </header>
+      <p>{author.description}</p>
 
       <section className="section" aria-label="Articles de cet auteur">
         <div className="section__head">
