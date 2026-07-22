@@ -6,6 +6,7 @@ Tu relis un contenu déjà généré (fourni ci-dessous en JSON) pour le persona
 
 1. **Voix de l'auteur** : le contenu respecte-t-il le registre de vocabulaire, le rythme et le réflexe/tic récurrent décrits dans le skill de l'auteur ?
 2. **Liste de contrôle anti-tics-LLM** (section 3 du skill de l'auteur) : formules creuses, faux équilibre systématique, hedging excessif, rythme robotique, symétrie de structure, généralités sans donnée, sur-optimisation du mot-clé, emoji/ponctuation artificielle — signale et corrige toute occurrence.
+2bis. **Style & anti-IA commun** (`style-anti-ia.md`, donné juste au-dessus) : verbes interdits (offrir, devenir, résider, s'imposer, reposer, rester, demeurer, constituer), participes présents stylistiques, clichés IA, phrases >20 mots en majorité, placement des liens (un par H2, aucun dans FAQ/tableau/titre/TL;DR), tableau pour tout comparatif/prix.
 3. **Fidélité aux faits fournis** : chaque donnée chiffrée du contenu correspond-elle exactement aux faits fournis dans le message utilisateur (pas de chiffre inventé, arrondi de manière trompeuse, ou sorti de son contexte) ?
 4. **Maillage** : les liens et ancres utilisés sont-ils exactement ceux fournis (pas de lien inventé, pas d'ancre différente de celle fournie) ?
 5. **Contraintes structurelles** (section 4 du skill de l'auteur / contraintes SEO-GEO du type de contenu) : longueur, réponse dans les 50 premiers mots, FAQ alignée avec le texte visible, blocs Gutenberg valides.

@@ -25,6 +25,12 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 - FAQ (`faq[]`) : 2 à 5 questions, réponse directe en 2-4 phrases, questions dans le même ordre que les sections correspondantes du texte. Le texte visible et `faq[]` doivent être strictement identiques (le schema.org FAQPage sera généré depuis `faq[]`, pas retapé).
 - Toute donnée chiffrée doit venir des faits fournis dans le message utilisateur et citer sa source dans `sources[]` — jamais un chiffre inventé ou approximatif ("plutôt cher") quand une donnée réelle est fournie.
 
+## Images d'appui
+
+- 1 à 2 images d'appui (`inline_images[]`), en plus de l'image à la une gérée par le pipeline. Voir la description du champ pour le placement exact (jeton `[[IMAGE:n]]`).
+- `query` : une scène ou un objet concret et réel (ex. "mécanicien qui remplace une plaquette de frein", "tableau de bord avec voyant moteur allumé"), jamais le mot-clé SEO tel quel.
+- `alt` : décrit ce que montre l'image, pas ce que dit l'article — jamais identique au `title` ou au mot-clé principal répété tel quel.
+
 ## Données factuelles
 
 Le message utilisateur te fournit un extrait de `data/factuel/*.json` pertinent pour ce cluster. N'utilise **aucune** donnée chiffrée en dehors de cet extrait — si une information manque, formule sans chiffre plutôt que d'inventer.

@@ -10,6 +10,7 @@
 // local pour test — jamais commitées en clair dans le repo.
 const fs = require('fs');
 const path = require('path');
+const sharp = require('sharp');
 
 function loadDotEnvFallback() {
   const envPath = path.join(__dirname, '..', '..', '..', '.env');
@@ -128,4 +129,30 @@ async function downloadImage(url) {
   return { buffer: Buffer.from(arrayBuffer), mimeType };
 }
 
-module.exports = { findImage, downloadImage, LEDGER_PATH };
+// Toute image servie par le site (featured ET inline, stock ET statique)
+// doit être du WebP — conversion faite ici une bonne fois pour toutes plutôt
+// que de dépendre d'Imagify (pas encore configuré côté WP, voir STATE.md
+// 2026-07-12). qualité 82 : compromis net/poids standard pour de la photo.
+async function toWebp(buffer) {
+  return sharp(buffer).webp({ quality: 82 }).toBuffer();
+}
+
+// Nom de fichier explicite et unique : slug de l'alt/requête + slug de la
+// pièce (article/hub/sous-hub) pour ne jamais collisionner deux images
+// distinctes portant la même description générique (ex. deux "vidange
+// moteur" sur des articles différents).
+function slugifyFr(s) {
+  return s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60);
+}
+
+function buildImageFilename(description, pieceSlug) {
+  return `${slugifyFr(description)}-${slugifyFr(pieceSlug)}.webp`;
+}
+
+module.exports = { findImage, downloadImage, toWebp, slugifyFr, buildImageFilename, LEDGER_PATH };

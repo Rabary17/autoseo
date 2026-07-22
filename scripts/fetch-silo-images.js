@@ -142,12 +142,18 @@ async function findVariants(query) {
   return null;
 }
 
+// Conversion WebP systématique (voir STATE.md 2026-07-22) : toute image
+// statique servie par le site doit être en WebP, pas seulement les images
+// d'articles WordPress.
+const sharp = require('sharp');
+
 async function download(url, destPath) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`téléchargement échoué (${res.status})`);
   const buffer = Buffer.from(await res.arrayBuffer());
-  fs.writeFileSync(destPath, buffer);
-  return buffer.length;
+  const webpBuffer = await sharp(buffer).webp({ quality: 82 }).toBuffer();
+  fs.writeFileSync(destPath, webpBuffer);
+  return webpBuffer.length;
 }
 
 async function main() {
@@ -163,8 +169,8 @@ async function main() {
   const credits = [];
 
   for (const [slug, query] of entries) {
-    const coverPath = path.join(OUT_DIR, `${slug}-cover.jpg`);
-    const thumbPath = path.join(OUT_DIR, `${slug}-thumb.jpg`);
+    const coverPath = path.join(OUT_DIR, `${slug}-cover.webp`);
+    const thumbPath = path.join(OUT_DIR, `${slug}-thumb.webp`);
     if (!args.force && fs.existsSync(coverPath) && fs.existsSync(thumbPath)) {
       skipped++;
       continue;

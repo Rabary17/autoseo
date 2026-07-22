@@ -46,7 +46,12 @@ function loadAllFacts() {
   const files = fs.readdirSync(FACTUEL_DIR).filter(f => f.endsWith('.json'));
   const all = [];
   for (const file of files) {
-    const root = JSON.parse(fs.readFileSync(path.join(FACTUEL_DIR, file), 'utf8'));
+    // .replace(/^﻿/, '') : au moins un fichier factuel a été enregistré
+    // avec un BOM UTF-8, ce que JSON.parse refuse tel quel — sans ce retrait,
+    // une seule entrée mal encodée cassait le chargement de TOUS les faits
+    // (le cache est partagé entre silos), constaté lors du test P4 2026-07-22.
+    const raw = fs.readFileSync(path.join(FACTUEL_DIR, file), 'utf8').replace(/^﻿/, '');
+    const root = JSON.parse(raw);
     collectFacts(root, file, all);
   }
   cache = all;

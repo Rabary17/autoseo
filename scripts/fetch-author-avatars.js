@@ -123,12 +123,17 @@ async function findVariant(query) {
   return null;
 }
 
+// Conversion WebP systématique (voir STATE.md 2026-07-22) : toute image
+// statique servie par le site doit être en WebP.
+const sharp = require('sharp');
+
 async function download(url, destPath) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`téléchargement échoué (${res.status})`);
   const buffer = Buffer.from(await res.arrayBuffer());
-  fs.writeFileSync(destPath, buffer);
-  return buffer.length;
+  const webpBuffer = await sharp(buffer).webp({ quality: 82 }).toBuffer();
+  fs.writeFileSync(destPath, webpBuffer);
+  return webpBuffer.length;
 }
 
 async function main() {
@@ -144,7 +149,7 @@ async function main() {
   const toVerify = [];
 
   for (const [slug, query] of entries) {
-    const destPath = path.join(OUT_DIR, `${slug}.jpg`);
+    const destPath = path.join(OUT_DIR, `${slug}.webp`);
     if (!args.force && fs.existsSync(destPath)) {
       skipped++;
       continue;

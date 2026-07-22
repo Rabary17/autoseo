@@ -44,7 +44,27 @@ async function callClaude({ model, system, messages, schema, thinking, effort, m
   };
   if (thinking) params.thinking = thinking;
 
-  const response = await client.messages.create(params);
+  // Le SDK refuse les appels non-streamés dès qu'il estime qu'ils peuvent
+  // dépasser 10 min (cas réel avec maxTokens relevé pour hub/sous-hub +
+  // thinking adaptatif, constaté lors du test P4 2026-07-22) — on stream
+  // systématiquement et on ne garde que le message final, le contenu
+  // intermédiaire ne nous sert à rien ici (pas d'affichage temps réel).
+  // Un flux long est plus exposé aux coupures réseau transitoires qu'un
+  // appel court : 2 tentatives avec backoff avant d'abandonner (constaté en
+  // test P4 2026-07-22 : "Connection error"/"terminated" sur un run sinon
+  // identique qui avait réussi juste avant).
+  let response;
+  let lastErr;
+  for (let attempt = 0; attempt <= 2; attempt++) {
+    try {
+      response = await client.messages.stream(params).finalMessage();
+      break;
+    } catch (e) {
+      lastErr = e;
+      if (attempt < 2) await new Promise(r => setTimeout(r, 2000 * (attempt + 1)));
+    }
+  }
+  if (!response) throw lastErr;
 
   if (response.stop_reason === 'refusal') {
     throw new Error(`claude-client: refus du modèle (stop_reason=refusal) pour le schéma "${schema.name}"`);
@@ -64,6 +84,9 @@ async function callClaude({ model, system, messages, schema, thinking, effort, m
   try {
     parsed = JSON.parse(textBlock.text);
   } catch (e) {
+    try {
+      fs.writeFileSync(path.join(__dirname, '..', '..', '..', 'logs', 'autopublish', '_debug-raw-response.txt'), textBlock.text, 'utf8');
+    } catch {}
     throw new Error(`claude-client: JSON invalide renvoyé par le modèle pour "${schema.name}": ${e.message}`);
   }
 

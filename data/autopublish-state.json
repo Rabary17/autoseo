@@ -1,12 +1,12 @@
 {
   "phase": 0,
   "silo_en_cours": null,
-  "phase_start_date": null,
-  "items_scheduled_in_phase": 0,
+  "phase_start_date": "2026-07-22",
+  "items_scheduled_in_phase": 1,
   "budget_semaine": 20,
   "budget_consomme": 0,
-  "semaine_debut": "2026-W29",
+  "semaine_debut": "2026-W30",
   "silo_start_date": null,
   "items_scheduled_for_silo": 0,
-  "derniere_execution": null
+  "derniere_execution": "2026-07-22T09:43:47.469Z"
 }

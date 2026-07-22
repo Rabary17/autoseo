@@ -14,7 +14,7 @@ export default function AuthorAvatar({
 }) {
   return (
     <img
-      src={`/authors/${slug}.jpg`}
+      src={`/authors/${slug}.webp`}
       alt={alt}
       width={size}
       height={size}

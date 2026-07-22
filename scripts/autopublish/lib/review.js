@@ -47,6 +47,23 @@ function writeReviewLog({ runDate, slug, contentType, silo, conforme, justificat
   fs.writeFileSync(path.join(dir, `${slug}-review.md`), lines.join('\n'), 'utf8');
 }
 
+// La relecture renvoie l'enveloppe de contenu COMPLÈTE (content) en plus de
+// justification/corrections_appliquees — donc toujours plus lourde en tokens
+// de sortie que la génération initiale du même type. 16000 (défaut
+// claude-client) suffit à peine pour un article court mais tronque un
+// hub/sous-hub long (2500-4000 mots + inline_images + faq + sources,
+// constaté lors du test P4 2026-07-22 : stop_reason=max_tokens systématique).
+// `thinking: adaptive` consomme sur le même budget que max_tokens (le
+// raisonnement du modèle compte contre la limite) — un hub de 4000 mots +
+// inline_images + faq + sources peut à lui seul approcher 24000 tokens de
+// sortie ; 32000 laisse une vraie marge (constaté tronqué à 24000 en test
+// P4 2026-07-22, sur la génération elle-même, pas seulement la relecture).
+const MAX_TOKENS_BY_CONTENT_TYPE = {
+  hub: 32000,
+  'sous-hub': 24000,
+  article: 16000,
+};
+
 async function reviewContent({
   contentType,
   silo,
@@ -74,6 +91,7 @@ async function reviewContent({
     schema: req.schema,
     thinking,
     effort,
+    maxTokens: MAX_TOKENS_BY_CONTENT_TYPE[contentType] || 16000,
   });
 
   const { conforme, justification, corrections_appliquees: corrections = [], content } = result.parsed;
@@ -83,4 +101,4 @@ async function reviewContent({
   return { conforme, justification, corrections, content, usage: result.usage };
 }
 
-module.exports = { reviewContent, DEFAULT_REVIEW_MODEL, DEFAULT_THINKING, DEFAULT_EFFORT };
+module.exports = { reviewContent, DEFAULT_REVIEW_MODEL, DEFAULT_THINKING, DEFAULT_EFFORT, MAX_TOKENS_BY_CONTENT_TYPE };

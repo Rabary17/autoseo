@@ -6,9 +6,14 @@
 const similarity = require('./similarity');
 const persona = require('./persona');
 
+// Hub/sous-hub : plancher ferme, plafond large plutôt qu'une fourchette
+// stricte — un silo à peu de sous-hubs/articles doit quand même atteindre le
+// plancher (voir system-hub.md/system-sous-hub.md, contenu complémentaire
+// utile plutôt que du remplissage), et un silo large qui dépasse 4000/2500
+// mots légitimement ne doit pas être bloqué pour ça (voir STATE.md 2026-07-22).
 const LENGTH_RANGES = {
-  hub: [2500, 4000],
-  'sous-hub': [1500, 2500],
+  hub: [1500, 6000],
+  'sous-hub': [1500, 4000],
   article: [800, 1200], // programmatique par défaut (voir seo.md section 4)
   'article-editorial': [1500, 2500],
 };

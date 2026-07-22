@@ -56,8 +56,26 @@ const CONTENT_SCHEMA = {
       },
     },
     tags: { type: 'array', items: { type: 'string' }, description: '2 à 5 entités transversales max' },
+    inline_images: {
+      type: 'array',
+      description:
+        "Images d'appui à insérer dans le corps, en plus de l'image à la une. Pour chacune, place le jeton "
+        + "[[IMAGE:n]] (n = index base 1) comme paragraphe Gutenberg à lui seul, juste après le paragraphe "
+        + "d'ouverture du H2 concerné — jamais dans le TL;DR, un tableau ou la FAQ. Le pipeline remplace ensuite "
+        + "chaque jeton par le vrai bloc wp:image une fois l'image sourcée.",
+      items: {
+        type: 'object',
+        properties: {
+          index: { type: 'integer', description: 'Doit correspondre au n du jeton [[IMAGE:n]] utilisé dans content_gutenberg' },
+          query: { type: 'string', description: "Requête de recherche stock-photo précise et concrète (scène/objet réel, en anglais si besoin), jamais un mot-clé SEO brut" },
+          alt: { type: 'string', description: "Texte alternatif descriptif et naturel (ce que montre l'image), <= 125 caractères, sans bourrage de mot-clé" },
+        },
+        required: ['index', 'query', 'alt'],
+        additionalProperties: false,
+      },
+    },
   },
-  required: ['title', 'meta_title', 'meta_description', 'excerpt', 'content_gutenberg', 'faq', 'sources', 'tags'],
+  required: ['title', 'meta_title', 'meta_description', 'excerpt', 'content_gutenberg', 'faq', 'sources', 'tags', 'inline_images'],
   additionalProperties: false,
 };
 
@@ -86,11 +104,13 @@ const REVIEW_SCHEMA = {
 function buildSystemBlocks(silo, contentType) {
   const personaInfo = persona.getPersonaForSilo(silo);
   const skillContent = readFile(personaInfo.skill);
+  const styleGuide = readFile(path.join(PROMPTS_DIR, 'style-anti-ia.md'));
   const contract = readFile(path.join(PROMPTS_DIR, CONTRACT_FILE_BY_TYPE[contentType]));
   return {
     personaInfo,
     system: [
       { type: 'text', text: skillContent },
+      { type: 'text', text: styleGuide },
       { type: 'text', text: contract, cache_control: { type: 'ephemeral' } },
     ],
   };

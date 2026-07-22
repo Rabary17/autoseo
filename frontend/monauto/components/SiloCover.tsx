@@ -7,7 +7,7 @@ export default function SiloCover({ slug, alt }: { slug: string; alt: string }) 
   return (
     <div className="silo-cover">
       <img
-        src={`/silos/${slug}-cover.jpg`}
+        src={`/silos/${slug}-cover.webp`}
         alt={alt}
         loading="eager"
         onError={(e) => {

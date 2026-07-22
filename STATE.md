@@ -5,6 +5,14 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+<!-- autopublish:report:start -->
+## Autopublish — dernier run : 2026-07-22
+- Phase : 0 — silo en cours : —
+- Programmées : 0 — bloquées (draft) : 1 — erreurs techniques : 3 ⚠️
+- Détail complet : [logs/autopublish/2026-07-22.md](logs/autopublish/2026-07-22.md)
+<!-- autopublish:report:end -->
+
+
 ## Dernière situation connue (2026-07-11)
 
 - Abonnement Haloscan Starter confirmé (10 000 recherches Keyword Explorer/mois) — suffisant pour couvrir le P1.

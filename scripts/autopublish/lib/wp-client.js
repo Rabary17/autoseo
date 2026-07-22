@@ -124,7 +124,7 @@ async function getAllUsers() {
 
 // Upload d'un média binaire (image) — route WP dédiée, pas de JSON body,
 // content-type = celui du fichier, nom transmis via Content-Disposition.
-async function uploadMedia(buffer, filename, mimeType) {
+async function uploadMedia(buffer, filename, mimeType, altText) {
   const res = await fetch(buildUrl('/media'), {
     method: 'POST',
     headers: {
@@ -136,6 +136,12 @@ async function uploadMedia(buffer, filename, mimeType) {
   });
   const json = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(`WP POST /media -> ${res.status}: ${JSON.stringify(json)}`);
+  // alt_text n'est pas accepté par l'upload binaire lui-même (pas de champ
+  // de formulaire possible avec un body brut) — deuxième appel JSON dédié,
+  // requis pour toute image (accessibilité + SEO image), jamais laissé vide.
+  if (altText) {
+    await request(`/media/${json.id}`, { method: 'POST', body: { alt_text: altText } });
+  }
   return json;
 }
 

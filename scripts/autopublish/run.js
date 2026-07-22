@@ -24,6 +24,15 @@ const report = require('./lib/report');
 
 const DRY_RUN = process.argv.includes('--dry-run');
 
+// Scoping de test uniquement (jamais utilisé en run réel hebdomadaire) :
+// --test-silos="Silo A,Silo B" limite la Phase 0 à ces silos,
+// --max-sous-hubs=N plafonne le nombre total de sous-hubs traités tous
+// silos confondus. Absents par défaut => comportement de production inchangé.
+const testSilosArg = process.argv.find(a => a.startsWith('--test-silos='));
+const TEST_SILOS = testSilosArg ? testSilosArg.slice('--test-silos='.length).split(',').map(s => s.trim()) : null;
+const maxSousHubArg = process.argv.find(a => a.startsWith('--max-sous-hubs='));
+const MAX_SOUS_HUBS = maxSousHubArg ? Number(maxSousHubArg.slice('--max-sous-hubs='.length)) : null;
+
 function todayIso() {
   return new Date().toISOString().slice(0, 10);
 }
@@ -134,19 +143,69 @@ function acfFields(content) {
 
 /* ---------- Image à la une ---------- */
 
-async function resolveFeaturedMedia(entityQuery, silo) {
+async function resolveFeaturedMedia(entityQuery, silo, altText) {
   if (DRY_RUN) return null;
   try {
     const found = await images.findImage(entityQuery, { silo });
     if (!found) return config.DEFAULT_IMAGE_MEDIA_ID_BY_SILO[silo] ?? null;
-    const { buffer, mimeType } = await images.downloadImage(found.url);
-    const ext = mimeType.includes('png') ? 'png' : 'jpg';
-    const media = await wp.uploadMedia(buffer, `${slugifyFr(entityQuery)}.${ext}`, mimeType);
+    const { buffer } = await images.downloadImage(found.url);
+    const webpBuffer = await images.toWebp(buffer);
+    const media = await wp.uploadMedia(
+      webpBuffer,
+      images.buildImageFilename(entityQuery, 'une'),
+      'image/webp',
+      altText || entityQuery
+    );
     return media.id;
   } catch (e) {
     console.warn(`[images] échec sourcing pour "${entityQuery}" (${silo}) : ${e.message} — repli image par défaut.`);
     return config.DEFAULT_IMAGE_MEDIA_ID_BY_SILO[silo] ?? null;
   }
+}
+
+// Résout les images d'appui déclarées par le modèle (`inline_images[]`,
+// jetons [[IMAGE:n]] dans content_gutenberg) : sourcing dédupliqué (même
+// ledger que l'image à la une, voir images.js), conversion WebP systématique,
+// nom de fichier explicite (description + pièce), alt renseigné à l'upload.
+// En dry-run, aucune écriture WP possible : on prévisualise avec l'URL brute
+// du fournisseur stock-photo plutôt que de sauter l'aperçu.
+async function resolveInlineImages(contentGutenberg, inlineImages, pieceSlug, silo) {
+  let result = contentGutenberg;
+  for (const spec of inlineImages || []) {
+    const token = `[[IMAGE:${spec.index}]]`;
+    if (!result.includes(token)) continue;
+    try {
+      const found = await images.findImage(spec.query, { silo });
+      if (!found) {
+        result = result.replace(token, '');
+        continue;
+      }
+      let src, mediaId;
+      if (DRY_RUN) {
+        src = found.url;
+        mediaId = 0;
+      } else {
+        const { buffer } = await images.downloadImage(found.url);
+        const webpBuffer = await images.toWebp(buffer);
+        const filename = images.buildImageFilename(spec.alt || spec.query, pieceSlug);
+        const media = await wp.uploadMedia(webpBuffer, filename, 'image/webp', spec.alt);
+        src = media.source_url;
+        mediaId = media.id;
+      }
+      const block = `<!-- wp:image {"id":${mediaId},"sizeSlug":"large","linkDestination":"none"} -->\n`
+        + `<figure class="wp-block-image size-large"><img src="${src}" alt="${escapeHtmlAttr(spec.alt || '')}" class="wp-image-${mediaId}"/></figure>\n`
+        + `<!-- /wp:image -->`;
+      result = result.replace(token, block);
+    } catch (e) {
+      console.warn(`[images] échec image d'appui "${spec.query}" (${silo}, ${pieceSlug}) : ${e.message} — jeton retiré.`);
+      result = result.replace(token, '');
+    }
+  }
+  return result;
+}
+
+function escapeHtmlAttr(s) {
+  return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
 
 /* ---------- Génération + relecture (commun hub/sous-hub/article) ---------- */
@@ -161,6 +220,7 @@ async function generateAndReview({ contentType, silo, item, maillageEntry, child
     system: genReq.system,
     messages: genReq.messages,
     schema: genReq.schema,
+    maxTokens: reviewModule.MAX_TOKENS_BY_CONTENT_TYPE?.[contentType] || 16000,
   });
   addUsage(usageAcc, genResult.usage);
 
@@ -230,7 +290,16 @@ async function buildPhase0Candidates() {
 
   const capacity = config.PHASE_CAPACITY_PER_DAY[0];
   const weekCap = capacity * 7; // une semaine de file en un run hebdomadaire
-  return { hubs: hubs.slice(0, weekCap), sousHubs: sousHubs.slice(0, weekCap) };
+
+  let filteredHubs = hubs;
+  let filteredSousHubs = sousHubs;
+  if (TEST_SILOS) {
+    filteredHubs = hubs.filter(h => TEST_SILOS.includes(h.silo));
+    filteredSousHubs = sousHubs.filter(sh => TEST_SILOS.includes(sh.silo));
+  }
+  if (MAX_SOUS_HUBS != null) filteredSousHubs = filteredSousHubs.slice(0, MAX_SOUS_HUBS);
+
+  return { hubs: filteredHubs.slice(0, weekCap), sousHubs: filteredSousHubs.slice(0, weekCap) };
 }
 
 function wpPageDateGmt(page) {
@@ -303,13 +372,14 @@ async function runPhase0(state, runDate, usageAcc) {
     try {
       const authorId = await resolveAuthorId(hub.silo);
       const categoryId = await resolveCategoryId(hub.silo, null);
-      const featuredMedia = await resolveFeaturedMedia(hub.silo, hub.silo);
+      const featuredMedia = await resolveFeaturedMedia(hub.silo, hub.silo, hub.content.title);
+      const resolvedContent = await resolveInlineImages(hub.content.content_gutenberg, hub.content.inline_images, hub.slug, hub.silo);
       const payload = {
         title: hub.content.title,
         slug: hub.slug,
         status: 'future',
         date_gmt: hub.post_date.replace(/Z$/, ''),
-        content: hub.content.content_gutenberg,
+        content: resolvedContent,
         excerpt: hub.content.excerpt,
         categories: [categoryId],
         author: authorId,
@@ -369,14 +439,15 @@ async function runPhase0(state, runDate, usageAcc) {
     try {
       const authorId = await resolveAuthorId(sousHub.silo);
       const categoryId = await resolveCategoryId(sousHub.silo, sousHub.title);
-      const featuredMedia = await resolveFeaturedMedia(sousHub.title, sousHub.silo);
+      const featuredMedia = await resolveFeaturedMedia(sousHub.title, sousHub.silo, sousHub.content.title);
+      const resolvedContent = await resolveInlineImages(sousHub.content.content_gutenberg, sousHub.content.inline_images, sousHub.slug, sousHub.silo);
       const parentId = hubIdBySlug.get(sousHub.hubSlug);
       const payload = {
         title: sousHub.content.title,
         slug: sousHub.slug,
         status: 'future',
         date_gmt: sousHub.post_date.replace(/Z$/, ''),
-        content: sousHub.content.content_gutenberg,
+        content: resolvedContent,
         excerpt: sousHub.content.excerpt,
         categories: [categoryId],
         author: authorId,
@@ -521,13 +592,14 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
       const authorId = await resolveAuthorId(silo);
       const categoryId = await resolveCategoryId(silo, art.row.sous_cocon);
       const tagIds = await resolveTagIds(art.content.tags);
-      const featuredMedia = await resolveFeaturedMedia(art.row.mot_cle_principal, silo);
+      const featuredMedia = await resolveFeaturedMedia(art.row.mot_cle_principal, silo, art.content.title);
+      const resolvedContent = await resolveInlineImages(art.content.content_gutenberg, art.content.inline_images, art.slug, silo);
       const payload = {
         title: art.content.title,
         slug: art.slug,
         status: 'future',
         date_gmt: art.post_date.replace(/Z$/, ''),
-        content: art.content.content_gutenberg,
+        content: resolvedContent,
         excerpt: art.content.excerpt,
         categories: [categoryId],
         tags: tagIds,

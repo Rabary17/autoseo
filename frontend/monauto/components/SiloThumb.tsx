@@ -7,7 +7,7 @@
 export default function SiloThumb({ slug, alt }: { slug: string; alt: string }) {
   return (
     <img
-      src={`/silos/${slug}-thumb.jpg`}
+      src={`/silos/${slug}-thumb.webp`}
       alt={alt}
       width={40}
       height={40}
