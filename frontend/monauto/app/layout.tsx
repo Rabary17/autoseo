@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BottomNav from "@/components/BottomNav";
+import CookieConsent from "@/components/CookieConsent";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./monauto.css";
 
@@ -62,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <BottomNav />
+        <CookieConsent />
       </body>
     </html>
   );

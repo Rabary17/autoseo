@@ -17,7 +17,13 @@ export default function Footer() {
             <h2>Le média</h2>
             <ul>
               <li>
-                <Link href="/a-propos/">À propos</Link>
+                <Link href="/a-propos/">Qui sommes-nous ?</Link>
+              </li>
+              <li>
+                <Link href="/faq/">FAQ</Link>
+              </li>
+              <li>
+                <Link href="/contact/">Contact</Link>
               </li>
             </ul>
           </div>
@@ -29,6 +35,23 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/rubriques/">Toutes les rubriques</Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Légal</h2>
+            <ul>
+              <li>
+                <Link href="/mentions-legales/">Mentions légales</Link>
+              </li>
+              <li>
+                <Link href="/cgu/">Conditions d&apos;utilisation</Link>
+              </li>
+              <li>
+                <Link href="/confidentialite/">Confidentialité</Link>
+              </li>
+              <li>
+                <Link href="/cookies/">Cookies</Link>
               </li>
             </ul>
           </div>

@@ -466,3 +466,47 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .searchbox__hint{padding:8px 10px;color:var(--muted);font-size:13px;margin:0}
 .searchbox__all{display:block;text-align:center;padding:10px;font-weight:600;font-size:13px;
   color:var(--accent);border-top:1px solid var(--line);margin-top:4px}
+
+/* ---------- Pages légales / statiques ---------- */
+.legal{max-width:760px;margin:0 auto;padding:28px 0 60px}
+.legal h1{font-size:28px;margin:0 0 6px}
+.legal .legal__updated{font-size:13px;color:var(--muted);margin:0 0 28px}
+.legal h2{font-size:18px;margin:32px 0 10px}
+.legal h2:first-of-type{margin-top:8px}
+.legal p{font-size:15px;line-height:1.7;color:var(--ink);margin:0 0 14px}
+.legal ul{margin:0 0 14px;padding-left:20px;font-size:15px;line-height:1.7}
+.legal li{margin:0 0 6px}
+.legal a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.legal strong{font-weight:700}
+
+/* ---------- Formulaire de contact ---------- */
+.contact-form{display:grid;gap:14px;max-width:520px;margin:24px 0 0}
+.contact-form__row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.contact-form label{display:block;font-family:var(--font-display);font-weight:600;
+  font-size:13px;margin:0 0 6px;color:var(--ink)}
+.contact-form input,.contact-form textarea{
+  width:100%;border-radius:var(--r-md);border:1px solid var(--line);
+  padding:11px 14px;font:400 15px var(--font-text);background:var(--surface);color:var(--ink);
+  resize:vertical}
+.contact-form input{height:44px}
+.contact-form textarea{min-height:140px;line-height:1.5}
+.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:var(--accent)}
+.contact-form .btn{justify-content:center;margin-top:2px}
+.contact-form__note{font-size:13px;color:var(--muted);margin:2px 0 0}
+.contact-form__status{font-size:14px;margin:0;padding:12px 14px;border-radius:var(--r-md)}
+.contact-form__status--ok{background:var(--accent-soft);color:var(--accent)}
+.contact-form__status--err{background:color-mix(in srgb,#B4552D 10%,var(--surface));color:#B4552D}
+@media (max-width:479px){.contact-form__row{grid-template-columns:1fr}}
+
+/* ---------- Bandeau consentement cookies ---------- */
+.cookie-banner{position:fixed;left:0;right:0;bottom:0;z-index:200;background:var(--brand);
+  color:#fff;padding:18px 0;box-shadow:0 -4px 20px rgba(0,0,0,.18)}
+.cookie-banner__inner{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px}
+.cookie-banner__text{flex:1;min-width:240px;font-size:13.5px;line-height:1.6;
+  color:rgba(255,255,255,.82);margin:0}
+.cookie-banner__text a{color:#fff;text-decoration:underline;text-underline-offset:2px}
+.cookie-banner__actions{display:flex;gap:10px;flex-wrap:wrap}
+.cookie-banner .btn--ghost{color:#fff;border-color:rgba(255,255,255,.3)}
+.cookie-banner .btn--ghost:hover{background:rgba(255,255,255,.08)}
+@media (max-width:479px){.cookie-banner__inner{flex-direction:column;align-items:stretch}
+  .cookie-banner__actions{justify-content:stretch}.cookie-banner__actions .btn{flex:1}}
