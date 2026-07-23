@@ -4,14 +4,20 @@ import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import NewsletterForm from "@/components/NewsletterForm";
+import EntityCard from "@/components/EntityCard";
+import FaqSection from "@/components/FaqSection";
+import ShareButtons from "@/components/ShareButtons";
 import {
   decodeEntities,
   getAllPages,
   getCategoryById,
   getChildCategories,
+  getChildPages,
   getImageVariant,
   getPageBySlug,
   getPostBySlug,
+  getPostsByCategory,
+  getTermBySlug,
   parseFaq,
   parseSources,
 } from "@/lib/wp";
@@ -89,9 +95,106 @@ export default async function CatchAllPage({ params }: Props) {
   if (post) return <ArticleView post={post} />;
 
   const page = await getPageBySlug(slug);
-  if (page) return <StaticPageView page={page} />;
+  if (page) {
+    // Un hub/sous-hub est une page WP dont le slug correspond exactement à
+    // une catégorie (silo ou sous-cocon, voir resolveCategoryId dans
+    // scripts/autopublish/run.js) — une page WP "normale" (à-propos, contact)
+    // n'a jamais de catégorie du même slug. Les pages hub/sous-hub ne portent
+    // pas la taxonomie `category` elles-mêmes (voir getChildPages), donc ce
+    // lookup sert uniquement à les DÉTECTER et à retrouver le nom/la
+    // hiérarchie du silo/sous-cocon, jamais à lister leurs enfants.
+    const term = await getTermBySlug("categories", slug).catch(() => null);
+    if (term) return <HubSousHubView page={page} term={term} />;
+    return <StaticPageView page={page} />;
+  }
 
   notFound();
+}
+
+// Design dédié hub/sous-hub (demande explicite de l'utilisateur, 2026-07-22) :
+// listing des enfants en cards illustrées (sous-hubs pour un hub, articles
+// pour un sous-hub), FAQ dépliable (FaqSection, partagée avec les articles),
+// sections du corps différenciées visuellement (classe `prose--feature`,
+// voir monauto.css) — les articles eux-mêmes restent volontairement sobres.
+async function HubSousHubView({ page, term }: { page: NonNullable<Awaited<ReturnType<typeof getPageBySlug>>>; term: WpTerm }) {
+  const isHub = !term.parent;
+  const heroImage = getImageVariant(page._embedded?.["wp:featuredmedia"]?.[0], "monauto_hero");
+  const faq = parseFaq(page.acf?.faq);
+
+  const parentTerm = term.parent ? await getCategoryById(term.parent).catch(() => null) : null;
+
+  type ChildCard = { href: string; title: string; image?: ReturnType<typeof getImageVariant> };
+  let children: ChildCard[] = [];
+  try {
+    if (isHub) {
+      const childPages = await getChildPages(page.id);
+      children = childPages.map((p) => ({
+        href: `/${p.slug}/`,
+        title: p.title.rendered,
+        image: getImageVariant(p._embedded?.["wp:featuredmedia"]?.[0], "monauto_card"),
+      }));
+    } else {
+      const { posts } = await getPostsByCategory(term.id, 1);
+      children = posts.map((p) => ({
+        href: `/${p.slug}/`,
+        title: p.title.rendered,
+        image: getImageVariant(p._embedded?.["wp:featuredmedia"]?.[0], "monauto_card"),
+      }));
+    }
+  } catch (e) {
+    console.warn(`[HubSousHubView] échec du fetch des enfants pour "${term.slug}" : ${e} — section masquée.`);
+  }
+
+  return (
+    <div className="wrap">
+      <Breadcrumb
+        items={[
+          { name: "Accueil", href: "/" },
+          ...(parentTerm ? [{ name: parentTerm.name, href: `/${parentTerm.slug}/` }] : []),
+          { name: page.title.rendered, href: `/${page.slug}/` },
+        ]}
+      />
+
+      <article className="article">
+        <header className="article__head">
+          <p className="eyebrow">{isHub ? "Rubrique" : "Sous-rubrique"}</p>
+          <h1 className="article__title" dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
+          <ShareButtons path={`/${page.slug}/`} title={decodeEntities(page.title.rendered)} />
+        </header>
+
+        {heroImage && (
+          <figure className="article__hero">
+            <img src={heroImage.url} alt="" width={heroImage.width} height={heroImage.height} />
+          </figure>
+        )}
+
+        <div className="prose prose--feature" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+
+        {children.length > 0 && (
+          <section className="section">
+            <div className="section__head">
+              <h2>{isHub ? "Sous-rubriques" : "Articles de ce sous-cocon"}</h2>
+            </div>
+            <div className="stack">
+              {children.map((c) => (
+                <EntityCard
+                  key={c.href}
+                  href={c.href}
+                  title={c.title}
+                  image={c.image}
+                  eyebrow={isHub ? "Sous-rubrique" : undefined}
+                />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <FaqSection items={faq} />
+      </article>
+
+      {faq.length > 0 && <JsonLd data={faqPageLd(faq)} />}
+    </div>
+  );
 }
 
 // Résout la navigation réelle de la sidebar à partir de la catégorie WP de
@@ -182,6 +285,7 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
                   )}
                 </span>
               </div>
+              <ShareButtons path={`/${post.slug}/`} title={decodeEntities(post.title.rendered)} />
             </header>
 
             {heroImage && (
@@ -204,17 +308,7 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
 
             <div className="prose" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
 
-            {faq.length > 0 && (
-              <section className="faq" aria-label="Questions fréquentes">
-                <h2>Questions fréquentes</h2>
-                {faq.map((item) => (
-                  <details key={item.question}>
-                    <summary>{item.question}</summary>
-                    <p>{item.answer}</p>
-                  </details>
-                ))}
-              </section>
-            )}
+            <FaqSection items={faq} />
 
             {sources.length > 0 && (
               <footer className="sources">

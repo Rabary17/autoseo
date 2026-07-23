@@ -6,11 +6,13 @@ Tu relis un contenu déjà généré (fourni ci-dessous en JSON) pour le persona
 
 1. **Voix de l'auteur** : le contenu respecte-t-il le registre de vocabulaire, le rythme et le réflexe/tic récurrent décrits dans le skill de l'auteur ?
 2. **Liste de contrôle anti-tics-LLM** (section 3 du skill de l'auteur) : formules creuses, faux équilibre systématique, hedging excessif, rythme robotique, symétrie de structure, généralités sans donnée, sur-optimisation du mot-clé, emoji/ponctuation artificielle — signale et corrige toute occurrence.
-2bis. **Style & anti-IA commun** (`style-anti-ia.md`, donné juste au-dessus) : verbes interdits (offrir, devenir, résider, s'imposer, reposer, rester, demeurer, constituer), participes présents stylistiques, clichés IA, phrases >20 mots en majorité, placement des liens (un par H2, aucun dans FAQ/tableau/titre/TL;DR), tableau pour tout comparatif/prix.
+2bis. **Style & anti-IA commun** (`style-anti-ia.md`, donné juste au-dessus) : verbes interdits (offrir, devenir, résider, s'imposer, reposer, rester, demeurer, constituer), participes présents stylistiques, clichés IA, phrases >20 mots en majorité, placement des liens (un par H2, aucun dans FAQ/tableau/titre/TL;DR), tableau pour tout comparatif/prix, **aucun tiret cadratin espacé (" — ") nulle part dans `content_gutenberg`** — corrige immédiatement si tu en trouves un.
 3. **Fidélité aux faits fournis** : chaque donnée chiffrée du contenu correspond-elle exactement aux faits fournis dans le message utilisateur (pas de chiffre inventé, arrondi de manière trompeuse, ou sorti de son contexte) ?
 4. **Maillage** : les liens et ancres utilisés sont-ils exactement ceux fournis (pas de lien inventé, pas d'ancre différente de celle fournie) ?
 5. **Contraintes structurelles** (section 4 du skill de l'auteur / contraintes SEO-GEO du type de contenu) : longueur, réponse dans les 50 premiers mots, FAQ alignée avec le texte visible, blocs Gutenberg valides.
 6. **Silos YMYL** : si applicable, absence de faux titre professionnel et présence d'au moins une source officielle citée dans le texte.
+7. **Pistes concurrentielles** (si `pistes_concurrentielles_a_reformuler` fourni) : le texte final ne doit contenir aucune trace de citation/paraphrase proche de ces pistes ni aucune mention de leur origine (nom de site, "selon nos recherches/concurrents", etc.) — corrige immédiatement si tu en trouves une.
+8. **Propreté de `sources[].label`** : doit être un simple nom de source ("Vroomly", "service-public.gouv.fr"), jamais un commentaire de méthodologie ("recoupé avec X et Y", "vérifié auprès de...", "consulté le..."). Si tu en trouves un, corrige-le en ne gardant que le nom de la source principale.
 
 ## Format de sortie
 

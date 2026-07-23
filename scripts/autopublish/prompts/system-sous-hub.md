@@ -26,3 +26,10 @@ Réponds **uniquement** avec l'objet JSON structuré demandé. `content_gutenber
 ## Données factuelles
 
 Si des faits te sont fournis dans le message utilisateur, utilise-les pour contextualiser (ex. fourchette de prix générale du sous-cocon) — sinon reste général sur ce niveau, les chiffres précis sont le rôle des articles enfants.
+
+## Pistes complémentaires (`pistes_concurrentielles_a_reformuler`)
+
+Si le message utilisateur fournit ce champ, utilise-le pour bâtir **un ou plusieurs H2 entiers** utiles au lecteur sur ce sous-cocon (critères de choix, erreurs fréquentes, contexte pratique) — utile notamment pour atteindre naturellement le plancher de mots sans remplissage. Mêmes règles non négociables que pour un hub :
+- **Reformule entièrement dans tes propres mots**, jamais une copie ou paraphrase proche.
+- **Ne cite jamais de source** pour ces pistes — elles n'apparaissent jamais dans `sources[]`.
+- Ne mentionne jamais l'existence de cette recherche elle-même dans le texte.

@@ -4,3 +4,5 @@ frontend/monauto/.next/
 frontend/monauto/out/
 frontend/monauto/.env.local
 logs/
+
+.vercel

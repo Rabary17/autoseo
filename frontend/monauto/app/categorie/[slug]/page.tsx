@@ -3,10 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
+import JsonLd from "@/components/JsonLd";
 import Pagination from "@/components/Pagination";
 import { getChildCategories, getCategoryById, getPostsByCategory, getTermBySlug } from "@/lib/wp";
 import { getSilo, SILOS } from "@/lib/taxonomy";
 import { pageMeta } from "@/lib/seo-meta";
+import { collectionPageLd } from "@/lib/schema";
 import type { WpTerm } from "@/lib/types";
 import SousCoconIcon from "@/components/SousCoconIcon";
 import SiloCover from "@/components/SiloCover";
@@ -72,15 +74,15 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     }
   })();
 
+  const breadcrumbItems = [
+    { name: "Accueil", href: "/" },
+    ...(breadcrumbParent ? [{ name: breadcrumbParent.name, href: `/categorie/${breadcrumbParent.slug}/` }] : []),
+    { name: title, href: `/categorie/${slug}/` },
+  ];
+
   return (
     <div className="wrap">
-      <Breadcrumb
-        items={[
-          { name: "Accueil", href: "/" },
-          ...(breadcrumbParent ? [{ name: breadcrumbParent.name, href: `/categorie/${breadcrumbParent.slug}/` }] : []),
-          { name: title, href: `/categorie/${slug}/` },
-        ]}
-      />
+      <Breadcrumb items={breadcrumbItems} />
 
       {isSiloPage && <SiloCover slug={slug} alt={title} />}
 
@@ -130,6 +132,15 @@ export default async function CategoryPage({ params, searchParams }: Props) {
           </p>
         )}
       </section>
+
+      <JsonLd
+        data={collectionPageLd({
+          title,
+          description: desc,
+          path: `/categorie/${slug}/`,
+          items: posts.map((p) => ({ name: p.title.rendered, href: `/${p.slug}/` })),
+        })}
+      />
     </div>
   );
 }

@@ -37,13 +37,17 @@
   --shadow-1:0 1px 2px rgba(16,20,26,.06), 0 1px 8px rgba(16,20,26,.04);
   --shadow-2:0 4px 16px rgba(16,20,26,.10);
 
-  /* Typographie — polices système uniquement (voir skills/design.md section 2 :
-     pas de webfont distante, zéro requête tierce, zéro FOUT/FOIT). Le build a
-     déjà échoué une fois sur cette machine avec next/font/google (réseau
-     indisponible au build) — le kit prévoyait Space Grotesk/Figtree via Google
-     Fonts CDN, remplacées ici par la stack système native. */
-  --font-display:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-text:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Typographie — Space Grotesk (titres) + Source Sans 3 (texte, remplace
+     Figtree sur demande explicite de l'utilisateur, 2026-07-23). Auto-
+     hébergées en local (public/fonts/, @font-face plus bas) plutôt que via
+     next/font/google ou le CDN Google Fonts : le build avait déjà échoué une
+     fois sur cette machine faute d'accès réseau à fonts.googleapis.com au
+     moment du build (voir skills/design.md section 2) — l'auto-hébergement
+     supprime cette dépendance réseau une fois pour toutes, en dev comme en
+     prod. Un seul fichier variable par famille (couvre 400-700, voir
+     @font-face). */
+  --font-display:"Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-text:"Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   /* Gabarit mobile-first */
   --wrap: 560px;          /* largeur de lecture max sur grand écran */
@@ -51,6 +55,14 @@
   --bottomnav-h: 64px;
   --gutter: 16px;
 }
+
+/* Fontes variables auto-hébergées (public/fonts/) : un seul fichier par
+   famille couvre toute la plage 400-700 (font-weight en intervalle), pas
+   besoin d'un fichier par graisse. */
+@font-face{font-family:"Space Grotesk";font-style:normal;font-weight:400 700;
+  font-display:swap;src:url("/fonts/space-grotesk-variable.woff2") format("woff2")}
+@font-face{font-family:"Source Sans 3";font-style:normal;font-weight:400 700;
+  font-display:swap;src:url("/fonts/source-sans-variable.woff2") format("woff2")}
 
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -74,7 +86,10 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.15;
   letter-spacing:-.02em;color:var(--ink);margin:0 0 .5em}
 h1{font-size:clamp(28px,7vw,40px)}
 h2{font-size:clamp(22px,5vw,30px)}
-h3{font-size:20px}
+h3{font-size:19px;font-weight:600;letter-spacing:-.01em}
+/* h4 en "kicker" (même traitement que .eyebrow) : distinct de h3 au premier
+   coup d'œil sans rivaliser en poids visuel avec les niveaux au-dessus. */
+h4{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 .eyebrow{font-family:var(--font-display);font-weight:600;font-size:12px;
   letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
 
@@ -164,6 +179,13 @@ h3{font-size:20px}
 .rail::-webkit-scrollbar{display:none}
 .rail>*{scroll-snap-align:start}
 
+/* ---------- Partage social (Facebook/X/LinkedIn) ---------- */
+.share{display:flex;gap:10px;margin:16px 0}
+.share__btn{display:flex;align-items:center;justify-content:center;width:36px;height:36px;
+  border-radius:50%;background:var(--surface-2);color:var(--muted);flex:none}
+.share__btn svg{width:18px;height:18px}
+.share__btn:hover{background:var(--accent);color:#fff}
+
 /* ---------- Fil d'Ariane ---------- */
 .breadcrumb{font-size:13px;color:var(--muted);padding:14px 0 2px}
 .breadcrumb ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
@@ -194,16 +216,43 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .prose h2{margin:1.6em 0 .5em}.prose h3{margin:1.4em 0 .4em}
 .prose img{border-radius:var(--r-md);margin:1.4em 0}
 .prose figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+
+/* Tableaux Gutenberg (wp:table) : responsive (scroll horizontal plutôt que
+   débordement/écrasement sur mobile), zébrage et en-tête plus gras pour la
+   lisibilité — demande explicite de l'utilisateur, 2026-07-23. */
+.prose .wp-block-table{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.4em 0}
+.prose table{width:100%;border-collapse:collapse;font-size:15px;min-width:420px}
+.prose table th,.prose table td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.prose table thead th{font-family:var(--font-display);font-weight:700;font-size:13px;
+  letter-spacing:.02em;color:var(--ink);background:var(--surface-2);white-space:nowrap}
+.prose table tbody tr:nth-child(even){background:var(--surface)}
+.prose table tbody tr:hover{background:var(--accent-soft)}
+
+/* Hub/sous-hub uniquement (app/[slug]/page.tsx HubSousHubView) : sections du
+   corps clairement différenciées — barre d'accent + espacement renforcé sur
+   chaque H2, pour que chaque section "se voie" sans avoir à restructurer le
+   HTML généré par le pipeline (voir demande utilisateur 2026-07-22). Les
+   articles restent volontairement sobres (pas de `.prose--feature`). */
+.prose--feature h2{margin:2.4em 0 .7em;padding-left:16px;border-left:4px solid var(--accent);
+  font-size:1.3em;line-height:1.3}
+.prose--feature h2:first-child{margin-top:0}
+.prose--feature h3{margin:1.6em 0 .5em;color:var(--accent-strong,var(--accent))}
+
 .sources{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}
 .sources h2{font-size:16px}
 .sources ol{padding-left:20px;font-size:14px;color:var(--muted)}
 .sources a{word-break:break-word}
 .faq{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}
 .faq h2{font-size:16px}
-.faq details{border:1px solid var(--line);border-radius:var(--r-sm);padding:12px 14px;margin:0 0 8px}
-.faq summary{font-weight:600;cursor:pointer}
+/* Titres dépliables plus grands/lisibles (demande explicite de l'utilisateur,
+   2026-07-23) : summary en police de titre, taille relevée, zone cliquable
+   généreuse plutôt qu'un texte de la taille du corps noyé dans la bordure. */
+.faq details{border:1px solid var(--line);border-radius:var(--r-md);padding:16px 18px;margin:0 0 10px}
+.faq details[open]{border-color:var(--accent)}
+.faq summary{font-family:var(--font-display);font-weight:700;font-size:17px;line-height:1.35;
+  cursor:pointer}
 .faq summary::marker{color:var(--accent)}
-.faq p{margin:8px 0 0;font-size:15px;color:var(--muted)}
+.faq p{margin:10px 0 0;font-size:16px;line-height:1.6;color:var(--muted)}
 
 /* ---------- Layout article + sidebar contextuelle ---------- */
 .wrap-wide{max-width:1140px;margin:0 auto;padding:0 var(--gutter)}

@@ -41,8 +41,15 @@ export interface WpPage {
   slug: string;
   title: { rendered: string };
   content: { rendered: string };
+  excerpt?: { rendered: string };
   date: string;
   modified: string;
+  parent: number;
+  featured_media?: number;
+  acf?: { tldr?: string; sources?: string; faq?: string };
+  _embedded?: {
+    "wp:featuredmedia"?: WpImage[];
+  };
 }
 
 export interface WpPost {

@@ -3,9 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
+import JsonLd from "@/components/JsonLd";
 import Pagination from "@/components/Pagination";
 import { getPostsByTag, getTermBySlug } from "@/lib/wp";
 import { pageMeta } from "@/lib/seo-meta";
+import { collectionPageLd } from "@/lib/schema";
 
 // Pas de generateStaticParams : les tags sont des entités transversales
 // (marque, modèle, code, prestation — voir skills/wordpress-publication.md
@@ -45,9 +47,11 @@ export default async function TagPage({ params, searchParams }: Props) {
 
   if (!term) notFound();
 
+  const breadcrumbItems = [{ name: "Accueil", href: "/" }, { name: term.name, href: `/tag/${term.slug}/` }];
+
   return (
     <div className="wrap">
-      <Breadcrumb items={[{ name: "Accueil", href: "/" }, { name: term.name, href: `/tag/${term.slug}/` }]} />
+      <Breadcrumb items={breadcrumbItems} />
 
       <header className="section">
         <p className="eyebrow">Sujet</p>
@@ -75,6 +79,15 @@ export default async function TagPage({ params, searchParams }: Props) {
           </p>
         )}
       </section>
+
+      <JsonLd
+        data={collectionPageLd({
+          title: term.name,
+          description: term.description,
+          path: `/tag/${term.slug}/`,
+          items: posts.map((p) => ({ name: p.title.rendered, href: `/${p.slug}/` })),
+        })}
+      />
     </div>
   );
 }

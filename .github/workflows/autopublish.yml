@@ -43,6 +43,7 @@ jobs:
           RI_PEXELS_KEY: ${{ secrets.RI_PEXELS_KEY }}
           RI_UNSPLASH_KEY: ${{ secrets.RI_UNSPLASH_KEY }}
           RI_PIXABAY_KEY: ${{ secrets.RI_PIXABAY_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
             npm run autopublish:dry

@@ -90,7 +90,13 @@ add_action('init', function () {
 add_action('acf/init', function () {
 	if (!function_exists('acf_add_local_field_group')) return;
 
-	// -- Article (post type "post") : TL;DR + sources vérifiables (GEO/EEAT) --
+	// -- Article + hub/sous-hub (post types "post" ET "page") : TL;DR + sources
+	// vérifiables (GEO/EEAT). Les hubs/sous-hubs sont créés comme des pages WP
+	// (voir scripts/autopublish/run.js, wp.createPage) — sans la règle de
+	// localisation "page" ci-dessous, acf_fields envoyés à la création (tldr,
+	// sources, faq) étaient silencieusement ignorés par ACF (aucun groupe de
+	// champs ne s'appliquant à ce post type), constaté le 2026-07-22 sur les 2
+	// premières pages hub/sous-hub réellement publiées.
 	acf_add_local_field_group([
 		'key' => 'group_monauto_article',
 		'title' => 'monauto — Article',
@@ -125,7 +131,10 @@ add_action('acf/init', function () {
 				'rows' => 4,
 			],
 		],
-		'location' => [[['param' => 'post_type', 'operator' => '==', 'value' => 'post']]],
+		'location' => [
+			[['param' => 'post_type', 'operator' => '==', 'value' => 'post']],
+			[['param' => 'post_type', 'operator' => '==', 'value' => 'page']],
+		],
 		'show_in_rest' => 1,
 	]);
 

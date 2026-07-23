@@ -48,7 +48,14 @@ const CONTENT_SCHEMA = {
       items: {
         type: 'object',
         properties: {
-          label: { type: 'string' },
+          label: {
+            type: 'string',
+            description:
+              "Nom de la source SEUL (ex. \"Vroomly\", \"service-public.gouv.fr\") — jamais de commentaire de "
+              + "méthodologie ou de recoupement (interdit : \"recoupé avec X et Y\", \"vérifié auprès de...\", "
+              + "\"consulté le...\"). Le champ `source` fourni dans les faits peut contenir ce type de mention "
+              + "en interne (traçabilité) : n'en reprends jamais que le nom de la source principale.",
+          },
           url: { type: 'string' },
         },
         required: ['label', 'url'],
@@ -116,7 +123,7 @@ function buildSystemBlocks(silo, contentType) {
   };
 }
 
-function buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts }) {
+function buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles }) {
   if (!CONTRACT_FILE_BY_TYPE[contentType]) throw new Error(`prompt-builder: type de contenu inconnu "${contentType}"`);
   const { personaInfo, system } = buildSystemBlocks(silo, contentType);
   const ymyl = persona.isYmylSilo(silo);
@@ -145,6 +152,11 @@ function buildGenerationRequest({ contentType, silo, item, maillageEntry, childL
       : undefined,
     liens_descendants: childLinks && childLinks.length ? childLinks : undefined,
     faits_disponibles: facts && facts.length ? facts : [],
+    // Pistes tirées d'une recherche concurrentielle (Tavily), déjà des
+    // synthèses (jamais le texte brut d'une page tierce) — à reformuler
+    // entièrement, jamais à citer (voir prompts/system-*.md et
+    // lib/competitor-research.js pour la règle complète).
+    pistes_concurrentielles_a_reformuler: competitorAngles && competitorAngles.length ? competitorAngles : [],
   };
 
   return {
@@ -155,7 +167,7 @@ function buildGenerationRequest({ contentType, silo, item, maillageEntry, childL
   };
 }
 
-function buildReviewRequest({ contentType, silo, generatedContent, maillageEntry, facts }) {
+function buildReviewRequest({ contentType, silo, generatedContent, maillageEntry, facts, competitorAngles }) {
   const { personaInfo, system } = buildSystemBlocks(silo, contentType);
   const reviewContract = readFile(path.join(PROMPTS_DIR, 'review.md'));
   const ymyl = persona.isYmylSilo(silo);
@@ -168,6 +180,9 @@ function buildReviewRequest({ contentType, silo, generatedContent, maillageEntry
       ? { liens_lateraux: maillageEntry.liens_lateraux, ancres: maillageEntry.ancres }
       : undefined,
     faits_disponibles: facts && facts.length ? facts : [],
+    // Fourni pour que la relecture (point 7 de review.md) puisse vérifier
+    // qu'aucune trace/citation de ces pistes ne subsiste dans le texte final.
+    pistes_concurrentielles_a_reformuler: competitorAngles && competitorAngles.length ? competitorAngles : [],
     contenu_a_relire: generatedContent,
   };
 

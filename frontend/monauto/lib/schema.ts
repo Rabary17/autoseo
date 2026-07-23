@@ -99,6 +99,53 @@ export function breadcrumbLd(items: Crumb[]) {
   return { "@context": "https://schema.org", ...breadcrumbSchema(items) };
 }
 
+// Pages de silo/sous-cocon/tag : ce sont des pages de LISTING (catégories WP),
+// pas des articles — CollectionPage + ItemList est le schéma recommandé par
+// Google pour ce type de page (voir https://schema.org/CollectionPage), à ne
+// pas confondre avec Article qui décrit un contenu éditorial unique avec
+// auteur/date. Le BreadcrumbList est déjà émis séparément par le composant
+// <Breadcrumb> (voir components/Breadcrumb.tsx) — pas dupliqué ici.
+export function collectionPageLd({
+  title,
+  description,
+  path,
+  items,
+}: {
+  title: string;
+  description?: string;
+  path: string;
+  items: { name: string; href: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${SITE_URL}${path}#webpage`,
+        name: title,
+        description,
+        url: `${SITE_URL}${path}`,
+        isPartOf: { "@id": `${SITE_URL}/#website` },
+        ...(items.length > 0
+          ? {
+              mainEntity: {
+                "@type": "ItemList",
+                itemListElement: items.map((it, i) => ({
+                  "@type": "ListItem",
+                  position: i + 1,
+                  url: `${SITE_URL}${it.href}`,
+                  name: it.name,
+                })),
+              },
+            }
+          : {}),
+      },
+      organizationSchema(),
+      websiteSchema(),
+    ],
+  };
+}
+
 export function personLd(author: WpUser) {
   return { "@context": "https://schema.org", ...personSchema(author) };
 }

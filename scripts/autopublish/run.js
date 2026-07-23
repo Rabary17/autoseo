@@ -11,6 +11,7 @@ const stateLib = require('./lib/state');
 const trackingXlsx = require('./lib/tracking-xlsx');
 const maillage = require('./lib/maillage');
 const factuel = require('./lib/factuel');
+const competitorResearch = require('./lib/competitor-research');
 const persona = require('./lib/persona');
 const promptBuilder = require('./lib/prompt-builder');
 const claudeClient = require('./lib/claude-client');
@@ -210,8 +211,8 @@ function escapeHtmlAttr(s) {
 
 /* ---------- Génération + relecture (commun hub/sous-hub/article) ---------- */
 
-async function generateAndReview({ contentType, silo, item, maillageEntry, childLinks, facts, slug, runDate, usageAcc }) {
-  const genReq = promptBuilder.buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts });
+async function generateAndReview({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles, slug, runDate, usageAcc }) {
+  const genReq = promptBuilder.buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles });
   const modelCfg = config.MODEL_BY_CONTENT_TYPE[contentType];
   const genResult = await claudeClient.callClaude({
     model: modelCfg.model,
@@ -231,6 +232,7 @@ async function generateAndReview({ contentType, silo, item, maillageEntry, child
     generatedContent: genResult.parsed,
     maillageEntry,
     facts,
+    competitorAngles,
     runDate,
     model: config.REVIEW_MODEL.model,
     thinking: config.REVIEW_MODEL.thinking,
@@ -238,7 +240,16 @@ async function generateAndReview({ contentType, silo, item, maillageEntry, child
   });
   addUsage(usageAcc, reviewResult.usage);
 
-  return reviewResult.content;
+  // Usage propre à cette pièce (génération + relecture), distinct du cumul
+  // de tout le run (usageAcc) — pour le détail par page demandé par
+  // l'utilisateur le 2026-07-22 (voir report.js).
+  const itemUsage = addUsage(
+    { input_tokens: 0, output_tokens: 0, cache_read_input_tokens: 0, cache_creation_input_tokens: 0 },
+    genResult.usage
+  );
+  addUsage(itemUsage, reviewResult.usage);
+
+  return { content: reviewResult.content, usage: itemUsage };
 }
 
 /* ---------- Phase 0 : hubs & sous-hubs ---------- */
@@ -311,10 +322,19 @@ function wpPageDateGmt(page) {
 // existant d'un run précédent). Toute panne réseau ici est traitée comme
 // "parent non publié" (échec de gating naturel, jamais un crash) — l'entrée
 // sera simplement retentée au run suivant.
-async function resolveHubParentDate(hubSlug, hubDateBySlug) {
+// `hubIdBySlug` n'est peuplé par la boucle d'insertion des hubs (plus haut)
+// que pour un hub publié DANS CE MÊME run — un hub publié un run précédent
+// (cas normal : hub et sous-hub ne sont pas toujours traités le même jour)
+// laissait `hubIdBySlug` vide pour lui, et donc `parent` non résolu à
+// l'insertion du sous-hub (voir plus bas, `hubIdBySlug.get(sousHub.hubSlug)`)
+// — bug réel constaté le 2026-07-22 (sous-hub publié avec `parent: 0`,
+// hiérarchie WP cassée, cards de la page hub vides). Corrigé en peuplant
+// aussi `hubIdBySlug` ici, dès qu'on interroge WP pour un hub pré-existant.
+async function resolveHubParentDate(hubSlug, hubDateBySlug, hubIdBySlug) {
   if (hubDateBySlug.has(hubSlug)) return hubDateBySlug.get(hubSlug);
   try {
     const page = await wp.findBySlug('pages', hubSlug);
+    if (page && !hubIdBySlug.has(hubSlug)) hubIdBySlug.set(hubSlug, page.id);
     const date = wpPageDateGmt(page);
     return date ? date.toISOString() : null;
   } catch (e) {
@@ -341,10 +361,11 @@ async function runPhase0(state, runDate, usageAcc) {
         return acc;
       }, []);
       const facts = factuel.searchFacts(hub.silo);
+      const competitorAngles = await competitorResearch.searchCompetitorAngles(hub.silo);
 
-      const content = await generateAndReview({
+      const { content, usage } = await generateAndReview({
         contentType: 'hub', silo: hub.silo, item: null, maillageEntry: null,
-        childLinks, facts, slug: hub.slug, runDate, usageAcc,
+        childLinks, facts, competitorAngles, slug: hub.slug, runDate, usageAcc,
       });
 
       const gatingResult = gating.runGating({
@@ -353,8 +374,8 @@ async function runPhase0(state, runDate, usageAcc) {
         childLinksCount: childLinks.length, parentPublished: true, factsProvided: facts,
       });
 
-      if (gatingResult.passed) hubGatingPassed.push({ ...hub, content });
-      else items.push({ slug: hub.slug, contentType: 'hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message) });
+      if (gatingResult.passed) hubGatingPassed.push({ ...hub, content, usage });
+      else items.push({ slug: hub.slug, contentType: 'hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
     } catch (e) {
       console.error(`[phase0] échec génération/gating hub "${hub.slug}" : ${e.message}`);
       items.push({ slug: hub.slug, contentType: 'hub', status: 'erreur', reasons: [e.message] });
@@ -392,7 +413,7 @@ async function runPhase0(state, runDate, usageAcc) {
         similarity.addToIndex(hub.silo, hub.silo, hub.slug, hub.content.content_gutenberg);
       }
       hubDateBySlug.set(hub.slug, hub.post_date);
-      items.push({ slug: hub.slug, contentType: 'hub', status: 'publie', postDate: hub.post_date });
+      items.push({ slug: hub.slug, contentType: 'hub', status: 'publie', postDate: hub.post_date, usage: hub.usage });
     } catch (e) {
       console.error(`[phase0] échec insertion WP hub "${hub.slug}" : ${e.message}`);
       items.push({ slug: hub.slug, contentType: 'hub', status: 'erreur', reasons: [e.message] });
@@ -403,15 +424,16 @@ async function runPhase0(state, runDate, usageAcc) {
   const sousHubGatingPassed = [];
   for (const sousHub of sousHubs) {
     try {
-      const parentDate = await resolveHubParentDate(sousHub.hubSlug, hubDateBySlug);
+      const parentDate = await resolveHubParentDate(sousHub.hubSlug, hubDateBySlug, hubIdBySlug);
       const parentPublished = !!parentDate;
 
       const childLinks = sousHub.childArticleEntries.map(e => ({ url: e.url, title: e.ancres?.naturelle_longue || e.mot_cle_principal }));
       const facts = factuel.searchFacts(sousHub.title);
+      const competitorAngles = await competitorResearch.searchCompetitorAngles(sousHub.title);
 
-      const content = await generateAndReview({
+      const { content, usage } = await generateAndReview({
         contentType: 'sous-hub', silo: sousHub.silo, item: null, maillageEntry: null,
-        childLinks, facts, slug: sousHub.slug, runDate, usageAcc,
+        childLinks, facts, competitorAngles, slug: sousHub.slug, runDate, usageAcc,
       });
 
       const gatingResult = gating.runGating({
@@ -420,8 +442,8 @@ async function runPhase0(state, runDate, usageAcc) {
         childLinksCount: childLinks.length, parentPublished, factsProvided: facts,
       });
 
-      if (gatingResult.passed) sousHubGatingPassed.push({ ...sousHub, content, parentDate });
-      else items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message) });
+      if (gatingResult.passed) sousHubGatingPassed.push({ ...sousHub, content, parentDate, usage });
+      else items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
     } catch (e) {
       console.error(`[phase0] échec génération/gating sous-hub "${sousHub.slug}" : ${e.message}`);
       items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'erreur', reasons: [e.message] });
@@ -442,6 +464,13 @@ async function runPhase0(state, runDate, usageAcc) {
       const featuredMedia = await resolveFeaturedMedia(sousHub.title, sousHub.silo, sousHub.content.title);
       const resolvedContent = await resolveInlineImages(sousHub.content.content_gutenberg, sousHub.content.inline_images, sousHub.slug, sousHub.silo);
       const parentId = hubIdBySlug.get(sousHub.hubSlug);
+      // En dry-run, le hub n'est jamais réellement créé (voir plus haut,
+      // wp.createPage sauté si DRY_RUN) : aucun id ne peut donc exister pour
+      // lui même s'il est publié dans ce même run simulé, ce n'est pas une
+      // vraie anomalie à signaler.
+      if (!parentId && !DRY_RUN) {
+        console.warn(`[phase0] parent introuvable pour le sous-hub "${sousHub.slug}" (hub "${sousHub.hubSlug}"), publié quand même sans hiérarchie WP. À corriger manuellement.`);
+      }
       const payload = {
         title: sousHub.content.title,
         slug: sousHub.slug,
@@ -459,7 +488,7 @@ async function runPhase0(state, runDate, usageAcc) {
         await wp.createPage(payload);
         similarity.addToIndex(sousHub.silo, sousHub.title, sousHub.slug, sousHub.content.content_gutenberg);
       }
-      items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'publie', postDate: sousHub.post_date });
+      items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'publie', postDate: sousHub.post_date, usage: sousHub.usage });
     } catch (e) {
       console.error(`[phase0] échec insertion WP sous-hub "${sousHub.slug}" : ${e.message}`);
       items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'erreur', reasons: [e.message] });
@@ -547,6 +576,7 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
     const slug = maillageEntry ? lastSegment(maillageEntry.url) : slugifyFr(row.mot_cle_principal);
     try {
       const facts = factuel.searchFacts(`${row.mot_cle_principal} ${row.variantes || ''}`);
+      const competitorAngles = await competitorResearch.searchCompetitorAngles(row.mot_cle_principal);
 
       const parentSlug = maillageEntry ? lastSegment(maillageEntry.sous_hub) : null;
       let parentDate = null;
@@ -560,9 +590,9 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         }
       }
 
-      const content = await generateAndReview({
+      const { content, usage } = await generateAndReview({
         contentType: 'article', silo, item: row, maillageEntry, childLinks: [],
-        facts, slug, runDate, usageAcc,
+        facts, competitorAngles, slug, runDate, usageAcc,
       });
 
       const gatingResult = gating.runGating({
@@ -572,9 +602,9 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
       });
 
       if (gatingResult.passed) {
-        gatingPassed.push({ row, slug, maillageEntry, content, parentDate });
+        gatingPassed.push({ row, slug, maillageEntry, content, parentDate, usage });
       } else {
-        items.push({ slug, contentType: 'article', status: 'draft', reasons: gatingResult.failures.map(f => f.message) });
+        items.push({ slug, contentType: 'article', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
       }
     } catch (e) {
       console.error(`[phase2] échec génération/gating article "${slug}" : ${e.message}`);
@@ -617,7 +647,7 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
           date_publication: art.post_date.slice(0, 10),
         });
       }
-      items.push({ slug: art.slug, contentType: 'article', status: 'publie', postDate: art.post_date });
+      items.push({ slug: art.slug, contentType: 'article', status: 'publie', postDate: art.post_date, usage: art.usage });
     } catch (e) {
       console.error(`[phase2] échec insertion WP article "${art.slug}" : ${e.message}`);
       items.push({ slug: art.slug, contentType: 'article', status: 'erreur', reasons: [e.message] });

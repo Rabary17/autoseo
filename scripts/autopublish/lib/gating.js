@@ -38,6 +38,16 @@ function hasNumericClaim(text) {
   return NUMERIC_CLAIM_PATTERN.test(text);
 }
 
+// Tiret cadratin espacé (U+2014, " — "), jamais autorisé dans le texte
+// généré (demande explicite de l'utilisateur, 2026-07-22) — à ne pas
+// confondre avec le tiret court U+2013 ("–") légitime dans une fourchette de
+// prix ("50 – 180 €"), volontairement exclu de ce motif.
+const EM_DASH_PATTERN = /\s—\s/;
+
+function checkNoEmDash(content) {
+  return !EM_DASH_PATTERN.test(stripHtmlToText(content.content_gutenberg || ''));
+}
+
 /* ---------- Règles individuelles ---------- */
 
 function checkParentPublished(parentPublished) {
@@ -105,6 +115,24 @@ function checkLength(content, contentType, lengthRangeOverride) {
   return { ok: words >= min && words <= max, words, min, max };
 }
 
+// Le champ `source` des faits (data/factuel/*.json) contient parfois une
+// mention de méthodologie interne ("recoupé avec X et Y", "consulté le...")
+// destinée à la traçabilité, jamais à être publiée telle quelle (demande
+// explicite de l'utilisateur, 2026-07-22) — sources[].label doit rester un
+// simple nom de source.
+const SOURCE_COMMENTARY_PATTERN = /recoup[ée]|vérifié aupr[eè]s|consult[ée] le/i;
+
+// Vérifie sources[].label ET le corps du texte lui-même : constaté en
+// publication réelle le 2026-07-22 que le modèle recopie ce commentaire dans
+// une légende de tableau (figcaption) plutôt que dans sources[] — les deux
+// emplacements doivent être propres.
+function checkSourceLabelsClean(content) {
+  const offendingLabels = (content.sources || []).filter(s => SOURCE_COMMENTARY_PATTERN.test(s.label || ''));
+  const bodyText = stripHtmlToText(content.content_gutenberg || '');
+  const offendingBody = SOURCE_COMMENTARY_PATTERN.test(bodyText);
+  return { ok: offendingLabels.length === 0 && !offendingBody, offendingLabels, offendingBody };
+}
+
 function checkYmylSource(content, silo) {
   if (!persona.isYmylSilo(silo)) return { ok: true };
   return { ok: (content.sources || []).length > 0, reason: 'Silo YMYL sans source officielle citée dans sources[].' };
@@ -163,6 +191,20 @@ function runGating({
       rule: 'longueur',
       message: `${length.words} mots, attendu entre ${length.min} et ${length.max}.`,
     });
+  }
+
+  const sourceLabels = checkSourceLabelsClean(content);
+  if (!sourceLabels.ok) {
+    const parts = [];
+    if (sourceLabels.offendingLabels.length) {
+      parts.push(`sources[] : ${sourceLabels.offendingLabels.map(s => `"${s.label}"`).join(', ')}`);
+    }
+    if (sourceLabels.offendingBody) parts.push('texte du corps (ex. légende de tableau)');
+    failures.push({ rule: 'sources_propres', message: `Commentaire de méthodologie repéré dans ${parts.join(' ; ')}.` });
+  }
+
+  if (!checkNoEmDash(content)) {
+    failures.push({ rule: 'tiret_cadratin', message: 'Tiret cadratin espacé (" — ") détecté dans le contenu — interdit.' });
   }
 
   const ymyl = checkYmylSource(content, silo);

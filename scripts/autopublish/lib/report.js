@@ -37,9 +37,14 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
     '## Détail',
     '',
     ...items.map(i => {
-      if (i.status === 'publie') return `- [x] ${i.slug} (${i.contentType}) — programmé pour ${i.postDate}`;
-      if (i.status === 'erreur') return `- [!] ${i.slug} (${i.contentType}) — ERREUR TECHNIQUE : ${(i.reasons || []).join('; ')}`;
-      return `- [ ] ${i.slug} (${i.contentType}) — bloqué (gating) : ${(i.reasons || []).join('; ')}`;
+      // Tokens de CETTE pièce (génération + relecture) — absent si l'erreur a
+      // eu lieu avant tout appel Messages API (ex. réseau WP en amont).
+      const tokens = i.usage
+        ? ` [tokens : in ${i.usage.input_tokens} / out ${i.usage.output_tokens} / cache_read ${i.usage.cache_read_input_tokens} / cache_creation ${i.usage.cache_creation_input_tokens}]`
+        : '';
+      if (i.status === 'publie') return `- [x] ${i.slug} (${i.contentType}) — programmé pour ${i.postDate}${tokens}`;
+      if (i.status === 'erreur') return `- [!] ${i.slug} (${i.contentType}) — ERREUR TECHNIQUE : ${(i.reasons || []).join('; ')}${tokens}`;
+      return `- [ ] ${i.slug} (${i.contentType}) — bloqué (gating) : ${(i.reasons || []).join('; ')}${tokens}`;
     }),
     '',
     '## Coût du run (cumul des appels Messages API, génération + relecture)',

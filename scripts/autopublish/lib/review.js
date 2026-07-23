@@ -58,9 +58,15 @@ function writeReviewLog({ runDate, slug, contentType, silo, conforme, justificat
 // inline_images + faq + sources peut à lui seul approcher 24000 tokens de
 // sortie ; 32000 laisse une vraie marge (constaté tronqué à 24000 en test
 // P4 2026-07-22, sur la génération elle-même, pas seulement la relecture).
+// 'sous-hub' relevé 24000 -> 32000 -> 48000 le 2026-07-23 : la recherche
+// concurrentielle (competitor-research.js) enrichit désormais aussi les
+// sous-hubs de nouveaux H2, rapprochant leur volume de celui d'un hub — 6
+// puis encore 3 troncatures stop_reason=max_tokens constatées sur 2 dry-runs
+// successifs, notamment sur les sous-hubs "par modèle" (beaucoup d'entités à
+// éditorialiser : marques-françaises, fiabilité-par-modèle...).
 const MAX_TOKENS_BY_CONTENT_TYPE = {
   hub: 32000,
-  'sous-hub': 24000,
+  'sous-hub': 48000,
   article: 16000,
 };
 
@@ -71,6 +77,7 @@ async function reviewContent({
   generatedContent,
   maillageEntry,
   facts,
+  competitorAngles,
   runDate,
   model = DEFAULT_REVIEW_MODEL,
   thinking = DEFAULT_THINKING,
@@ -82,6 +89,7 @@ async function reviewContent({
     generatedContent,
     maillageEntry,
     facts,
+    competitorAngles,
   });
 
   const result = await claudeClient.callClaude({

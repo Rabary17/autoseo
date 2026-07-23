@@ -1,6 +1,6 @@
-import Link from "next/link";
 import type { WpPost } from "@/lib/types";
 import { getImageVariant } from "@/lib/wp";
+import EntityCard from "./EntityCard";
 
 const dateFr = (d: string) => new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" });
 
@@ -10,24 +10,12 @@ export default function ArticleCard({ post }: { post: WpPost }) {
   const cat = post._embedded?.["wp:term"]?.[0]?.[0];
 
   return (
-    <article className="card">
-      {image && (
-        <Link href={`/${post.slug}/`} className="card__media" aria-hidden tabIndex={-1}>
-          <img src={image.url} alt="" loading="lazy" width={image.width} height={image.height} />
-        </Link>
-      )}
-      <div className="card__body">
-        {cat && <p className="card__cat">{cat.name}</p>}
-        <h3 className="card__title">
-          <Link
-            href={`/${post.slug}/`}
-            dangerouslySetInnerHTML={{ __html: post.title.rendered }}
-          />
-        </h3>
-        <div className="card__meta">
-          <time dateTime={post.date}>{dateFr(post.date)}</time>
-        </div>
-      </div>
-    </article>
+    <EntityCard
+      href={`/${post.slug}/`}
+      title={post.title.rendered}
+      eyebrow={cat?.name}
+      image={image}
+      meta={<time dateTime={post.date}>{dateFr(post.date)}</time>}
+    />
   );
 }

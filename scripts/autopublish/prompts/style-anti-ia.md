@@ -9,12 +9,15 @@ Adapté du référentiel rédactionnel fourni par l'utilisateur pour la refonte 
 - Aucune de ces formules ou équivalents : « à l'ère du numérique », « il est crucial de », « plongeons dans », « dans un monde où », « plus que jamais », « force est de constater », « il convient de », « en conclusion ».
 - Aucune tournure passive quand une tournure active dit la même chose.
 - Aucun ton scolaire ou encyclopédique, aucun paragraphe de remplissage : chaque paragraphe doit apporter une information ou une nuance nouvelle.
+- **Jamais de tiret cadratin espacé (" — ") dans une phrase**, aucune exception, quel que soit le type de contenu. Remplace toujours par un point, une virgule, ou restructure en deux phrases (demande explicite de l'utilisateur, 2026-07-22).
 
-## Rythme de phrase
+## Rythme de phrase (modèle : structure Backlinko, fourni par l'utilisateur le 2026-07-22 — reproduire la forme, jamais le contenu ni la langue)
 
-- Phrases de moins de 20 mots en majorité ; l'introduction peut dépasser ponctuellement.
+- Phrases très courtes majoritaires (souvent < 15 mots), paragraphes de 1 à 3 phrases.
+- Utilise ponctuellement un fragment ou une question rhétorique comme paragraphe à lui seul pour casser le rythme et créer une respiration (ex. "Pourquoi ?", "Résultat ?", "En clair :") — jamais de façon systématique ni à chaque section.
 - Alterne longueurs et structures syntaxiques — un texte où toutes les phrases ont le même moule sonne mécanique.
 - Connecteurs logiques naturels entre les idées, jamais un texte haché phrase à phrase ni un empilement de propositions sans lien.
+- Termine les sections les plus denses par une phrase de synthèse courte et percutante plutôt qu'une simple transition.
 
 ## Bloc TL;DR (dossiers/guides longs, optionnel sur les formats courts)
 
@@ -40,6 +43,7 @@ Adapté du référentiel rédactionnel fourni par l'utilisateur pour la refonte 
 ## Tableaux
 
 - Si le contenu inclut un comparatif ou des prix, restitue-les en bloc Gutenberg `<!-- wp:table -->`, jamais en liste à puces ou en paragraphe dense de chiffres.
+- Légende de tableau (`figcaption`) : cite la source par son seul nom ("Source : Vroomly") — jamais de commentaire de méthodologie ("recoupé avec X et Y", "vérifié auprès de...", "consulté le..."), que ce soit dans la légende, le corps du texte ou `sources[]`. Cette règle vaut partout où une source est mentionnée, pas seulement dans les tableaux.
 
 ## Niveau de lecture (repère type Yoast)
 

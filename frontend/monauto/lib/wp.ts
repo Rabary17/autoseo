@@ -221,9 +221,18 @@ export async function getPostBySlug(slug: string): Promise<WpPost | null> {
 
 export async function getPageBySlug(slug: string): Promise<WpPage | null> {
   const pages = await wpJson<WpPage[]>(
-    `/pages?slug=${encodeURIComponent(slug)}&status=publish`
+    `/pages?slug=${encodeURIComponent(slug)}&_embed=1&status=publish`
   );
   return pages[0] ?? null;
+}
+
+// Pages enfants d'une autre page (hiérarchie native WP `parent`) — sert à
+// lister les sous-hubs d'un hub en cards avec image : contrairement aux
+// articles, les pages hub/sous-hub ne portent pas la taxonomie `category`
+// (voir mu-plugins/monauto-headless.php, non enregistrée pour ce post type),
+// donc c'est `parent` qui fait foi ici, pas `categories`.
+export async function getChildPages(parentId: number): Promise<WpPage[]> {
+  return wpJson<WpPage[]>(`/pages?parent=${parentId}&per_page=100&_embed=1&status=publish&orderby=menu_order&order=asc`);
 }
 
 // Nécessaire pour generateStaticParams de app/[slug]/page.tsx : en export
