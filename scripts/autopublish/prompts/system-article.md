@@ -22,7 +22,7 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 
 - Réponds à la question principale dans les 50 premiers mots du corps, sans introduction narrative qui retarde la réponse.
 - Chaque section doit être auto-suffisante (compréhensible sans lire le reste de l'article).
-- FAQ (`faq[]`) : 2 à 5 questions, réponse directe en 2-4 phrases, questions dans le même ordre que les sections correspondantes du texte. Le texte visible et `faq[]` doivent être strictement identiques (le schema.org FAQPage sera généré depuis `faq[]`, pas retapé).
+- FAQ (`faq[]`) : 2 à 5 questions, réponse directe en 2-4 phrases, questions dans le même ordre que les sections correspondantes du texte. **Ne recopie jamais la FAQ dans `content_gutenberg`** — pas de section "Questions fréquentes"/H2 dédiée dans le corps : le frontend l'affiche déjà séparément depuis `faq[]` (accordéon + schema.org FAQPage), une deuxième copie dans le corps produirait une FAQ affichée deux fois sur la page.
 - Toute donnée chiffrée doit venir des faits fournis dans le message utilisateur et citer sa source dans `sources[]` — jamais un chiffre inventé ou approximatif ("plutôt cher") quand une donnée réelle est fournie.
 
 ## Images d'appui

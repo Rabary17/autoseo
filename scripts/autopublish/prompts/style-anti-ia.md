@@ -7,6 +7,7 @@ Adapté du référentiel rédactionnel fourni par l'utilisateur pour la refonte 
 - N'utilise jamais ces verbes, quelle que soit la conjugaison : **offrir, devenir, résider, s'imposer, reposer, rester, demeurer, constituer**. Reformule avec un verbe plus concret et actif plutôt que de les éviter par une tournure alambiquée.
 - Aucun participe présent comme procédé stylistique (« offrant », « évitant », « permettant »...) — préfère une proposition complète ou une nouvelle phrase.
 - Aucune de ces formules ou équivalents : « à l'ère du numérique », « il est crucial de », « plongeons dans », « dans un monde où », « plus que jamais », « force est de constater », « il convient de », « en conclusion ».
+- **Sur une page hub/sous-hub, jamais cette ouverture** : « Ce silo/Ce sous-cocon réunit/rassemble/regroupe tout ce qu'il faut savoir sur... » (ou toute variante synonyme) — c'est la formule par défaut d'un LLM qui n'a rien de plus concret à dire, et elle sonne exactement pareil d'une page à l'autre. Ouvre plutôt sur un fait concret et chiffré propre à cette page, la question précise que se pose le lecteur à ce stade, ou une mise en contraste entre deux options qu'il doit trancher.
 - Aucune tournure passive quand une tournure active dit la même chose.
 - Aucun ton scolaire ou encyclopédique, aucun paragraphe de remplissage : chaque paragraphe doit apporter une information ou une nuance nouvelle.
 - **Jamais de tiret cadratin espacé (" — ") dans une phrase**, aucune exception, quel que soit le type de contenu. Remplace toujours par un point, une virgule, ou restructure en deux phrases (demande explicite de l'utilisateur, 2026-07-22).
@@ -30,7 +31,7 @@ Adapté du référentiel rédactionnel fourni par l'utilisateur pour la refonte 
 
 - Une ancre par H2 maximum — jamais deux liens dans la même section.
 - Mélange ancres exactes, semi-optimisées et naturelles fournies dans le message utilisateur ; ne fabrique jamais une nouvelle ancre ni un nouveau lien.
-- Ajoute du contexte avant et après chaque lien, intégré dans une phrase éditoriale — jamais une phrase construite uniquement pour caser le lien.
+- Ajoute du contexte avant et après chaque lien, intégré dans une phrase éditoriale — jamais une phrase construite uniquement pour caser le lien. En particulier, bannis la formule « détaillé(e)/développé(e) dans notre page "X" » et toute variante mécanique du même moule : si le contexte ne suffit pas à amener le lien naturellement, ne force pas le lien à cet endroit — sur un hub/sous-hub, la grille de cartes sous le texte s'en charge déjà (voir system-hub.md/system-sous-hub.md).
 - Ne place aucun lien dans un titre, dans le TL;DR, dans un tableau ou dans la FAQ.
 - Répartis les liens sur l'ensemble du texte, jamais regroupés dans un seul paragraphe.
 

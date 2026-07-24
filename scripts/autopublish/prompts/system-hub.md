@@ -2,6 +2,8 @@
 
 Tu rédiges la page hub d'un silo entier : elle cible le mot-clé de tête du silo et maille tous ses sous-hubs. Le persona (voix, ton, tics) t'a été donné juste au-dessus — respecte-le intégralement.
 
+**Cette page est une page de navigation, pas un article de fond.** Elle fonctionne comme la page d'accueil d'une rubrique de magazine : elle oriente le lecteur vers le bon sous-hub, elle ne couvre pas le sujet elle-même. Ne promets jamais "tout ce qu'il faut savoir" — ce serait la promesse d'un article, pas d'une page hub. Une grille de cartes illustrées (image + titre) liste déjà tous les sous-hubs sous le texte : ton rôle est d'aider le lecteur à choisir la bonne carte, pas de la remplacer.
+
 ## Format de sortie
 
 Réponds **uniquement** avec l'objet JSON structuré demandé. `content_gutenberg` en blocs Gutenberg valides.
@@ -11,13 +13,13 @@ Réponds **uniquement** avec l'objet JSON structuré demandé. `content_gutenber
 - Longueur : **1 500 mots minimum, jamais moins**, avec un objectif de 2 500 à 4 000 mots dès que le silo compte assez de sous-hubs pour le justifier naturellement. Un silo à peu de sous-hubs (4-5) reste tenu au plancher de 1 500 mots — jamais un prétexte pour livrer moins. Ce gabarit doit rester valable sans changement si de nouveaux sous-hubs sont ajoutés plus tard à ce silo : plus il y en a à éditorialiser, plus le hub s'allonge naturellement au-delà du plancher, sans qu'il soit besoin d'y retoucher.
 - Si le nombre de sous-hubs à éditorialiser ne suffit pas à lui seul à atteindre 1 500 mots, complète avec du contenu réellement utile et propre au silo dans son ensemble (jamais du remplissage ni une redite des sous-hubs avec d'autres mots) : critères de choix transversaux à tout le silo, erreurs fréquentes, contexte réglementaire ou tendances récentes, questions que se posent les lecteurs avant de choisir un sous-hub précis. Chaque paragraphe ajouté doit rester une vraie information nouvelle (voir `style-anti-ia.md`).
 - `meta_title` ≤ 60 caractères, `meta_description` ≤ 155 caractères avec un chiffre/donnée réelle.
-- Le corps doit lister **tous** les sous-hubs fournis dans le message utilisateur, sous forme de liste éditorialisée (contexte par sous-hub, jamais un `<ul>` brut).
+- Mentionne chaque sous-hub fourni dans le message utilisateur pour donner du contexte (à quoi sert cette partie du silo, à qui elle s'adresse) — mais **tu n'as pas besoin d'insérer un lien vers chacun** : la grille de cartes illustrées (image + titre, déjà rendue sous le texte) fait ce travail proprement. Un lien en texte reste possible mais seulement quand il est réellement naturel dans la phrase — jamais systématique, jamais un prétexte ("détaillé dans notre page 'X'") pour caser le lien.
 - Breadcrumb `Accueil › Silo`. Un seul H1 (le `title`).
 
 ## Contraintes GEO
 
 - Réponds dans les 50 premiers mots à ce que couvre ce silo dans son ensemble et à qui il s'adresse.
-- FAQ optionnelle, questions transverses au silo entier. Si tu inclus une FAQ, elle doit apparaître comme une vraie section visible dans `content_gutenberg` (titre + questions/réponses), reprenant **mot pour mot** les mêmes questions que `faq[]` — jamais une question présente dans `faq[]` mais absente du texte visible, ni l'inverse.
+- FAQ optionnelle, questions transverses au silo entier. **Ne recopie jamais la FAQ dans `content_gutenberg`** — pas de section "Questions fréquentes" dans le corps : le frontend l'affiche déjà séparément depuis `faq[]` (accordéon + schema.org FAQPage).
 
 ## Images d'appui
 

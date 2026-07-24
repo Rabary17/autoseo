@@ -31,7 +31,7 @@ export default function Footer() {
             <h2>Rubriques</h2>
             <ul>
               <li>
-                <Link href="/categorie/entretien/">Entretien &amp; révision</Link>
+                <Link href="/categorie/entretien-revision/">Entretien &amp; révision</Link>
               </li>
               <li>
                 <Link href="/rubriques/">Toutes les rubriques</Link>

@@ -31,4 +31,12 @@ Direction artistique par défaut pour tous les sites de la plateforme, sauf brie
 
 - Pas d'animations d'entrée systématiques sur chaque bloc (fade-in au scroll partout) : ça alourdit le JS et n'apporte rien à un lecteur qui cherche une info précise.
 - Pas de popups d'inscription newsletter en interstitiel avant lecture (nuit à l'UX et au GEO — le contenu doit être immédiatement accessible).
+
+## 6. Barre de progression de lecture & bouton retour en haut
+
+Standard sur toutes les pages de contenu depuis le 2026-07-24 (`components/ReadingProgress.tsx`, `components/BackToTop.tsx`, montés une fois dans le layout racine) :
+
+- **Barre de progression** : fine (3px), fixée en haut du viewport, couleur `--accent`, largeur = position de scroll / hauteur totale de la page. Un seul listener `scroll` passif, pas de librairie.
+- **Retour en haut** : bouton rond fixe en bas à droite, apparaît seulement après ~600px de scroll (jamais sur une page courte), `scrollTo({behavior:"smooth"})` avec repli sur un saut instantané si `prefers-reduced-motion: reduce`.
+- Les deux respectent la contrainte JS minimale (section 3) : `useEffect` + listener natif, aucune dépendance.
 - Pas de thème visuel générique de template gratuit non retouché : cohérence avec la charte de la niche à minima (couleur d'accent, logo, favicon).

@@ -265,6 +265,12 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .side-mod__title{font-family:var(--font-display);font-weight:700;font-size:12px;
   letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
 
+/* Cards illustrées (sous-hubs/articles enfants) en colonne latérale d'un hub
+   ou sous-hub — une seule colonne malgré la règle desktop `.stack{grid-
+   template-columns:repeat(3,1fr)}` plus bas (320px de large ne permet pas 3
+   colonnes) ; spécificité (2 classes) suffit à l'emporter sans !important. */
+.col-side .stack{grid-template-columns:1fr}
+
 /* sous-catégories pertinentes */
 .subnav{list-style:none;margin:0;padding:0}
 .subnav li{display:flex;align-items:center;justify-content:space-between}
@@ -559,3 +565,20 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .cookie-banner .btn--ghost:hover{background:rgba(255,255,255,.08)}
 @media (max-width:479px){.cookie-banner__inner{flex-direction:column;align-items:stretch}
   .cookie-banner__actions{justify-content:stretch}.cookie-banner__actions .btn{flex:1}}
+
+/* ---------- Barre de progression de lecture ---------- */
+.reading-progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:70;
+  background:transparent;pointer-events:none}
+.reading-progress__bar{height:100%;width:100%;transform-origin:0 50%;
+  background:var(--accent);transform:scaleX(0);
+  transition:transform .1s linear}
+@media (prefers-reduced-motion:reduce){.reading-progress__bar{transition:none}}
+
+/* ---------- Bouton retour en haut ---------- */
+.back-to-top{position:fixed;right:16px;
+  bottom:calc(var(--bottomnav-h) + env(safe-area-inset-bottom) + 16px);
+  z-index:55;width:44px;height:44px;display:grid;place-items:center;
+  border-radius:50%;border:1px solid var(--line);background:var(--paper);
+  color:var(--ink);box-shadow:var(--shadow-2);cursor:pointer}
+.back-to-top:hover{background:var(--surface-2)}
+@media (min-width:768px){.back-to-top{bottom:24px}}

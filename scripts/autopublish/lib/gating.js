@@ -85,20 +85,22 @@ function checkFactsNotInvented(content, factsProvided) {
   return { ok: true };
 }
 
-// Miroir strict FAQ ⇄ texte visible (voir geo.md section 3) : chaque question
-// doit apparaître dans le texte, dans le même ordre. Le schema.org FAQPage
-// est construit par run.js depuis faq[], donc sa cohérence dépend entièrement
-// de ce miroir.
-function checkFaqMirror(content) {
-  const text = stripHtmlToText(content.content_gutenberg).toLowerCase();
-  let lastIndex = -1;
-  for (const item of content.faq || []) {
-    const idx = text.indexOf(item.question.toLowerCase());
-    if (idx === -1) return { ok: false, reason: `Question FAQ absente du texte visible : "${item.question}"` };
-    if (idx < lastIndex) return { ok: false, reason: `Question FAQ hors ordre par rapport au texte : "${item.question}"` };
-    lastIndex = idx;
-  }
-  return { ok: true };
+// La FAQ ne doit exister QUE dans faq[] — le frontend la rend séparément
+// (FaqSection + JSON-LD FAQPage, voir components/FaqSection.tsx), donc la
+// recopier aussi en section visible du corps produit une FAQ dupliquée à
+// l'écran. Jusqu'au 2026-07-24 la règle exigeait l'inverse (miroir strict
+// obligatoire) — inversée après avoir constaté la duplication en conditions
+// réelles sur les hubs/sous-hubs publiés le 2026-07-22 (voir STATE.md).
+// Détection par titre de section plutôt que par substring de chaque question :
+// une correspondance partielle de phrase dans une page qui aborde légitimement
+// un sujet proche donnerait de faux positifs, alors que le vrai bug se
+// manifeste toujours par un vrai H2/H3 "Questions fréquentes" redondant.
+const FAQ_HEADING_PATTERN = /questions?\s+fr[ée]quentes?|foire\s+aux\s+questions/i;
+
+function checkFaqNotDuplicated(content) {
+  if (!(content.faq || []).length) return { ok: true };
+  const text = stripHtmlToText(content.content_gutenberg || '');
+  return { ok: !FAQ_HEADING_PATTERN.test(text) };
 }
 
 function checkSeoFields(content) {
@@ -179,8 +181,8 @@ function runGating({
   const facts = checkFactsNotInvented(content, factsProvided);
   if (!facts.ok) failures.push({ rule: 'faits_non_inventes', message: facts.reason });
 
-  const faq = checkFaqMirror(content);
-  if (!faq.ok) failures.push({ rule: 'schema_coherent', message: faq.reason });
+  const faq = checkFaqNotDuplicated(content);
+  if (!faq.ok) failures.push({ rule: 'schema_coherent', message: 'FAQ dupliquée : une section "Questions fréquentes" apparaît dans le corps alors que faq[] est déjà renseigné.' });
 
   const seo = checkSeoFields(content);
   if (!seo.ok) failures.push({ rule: 'champs_seo', message: seo.reasons.join('; ') });

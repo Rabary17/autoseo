@@ -353,11 +353,18 @@ async function runPhase0(state, runDate, usageAcc) {
   const hubIdBySlug = new Map();
 
   /* --- Hubs : génération + relecture + gating, un échec n'affecte que ce hub --- */
+  console.log(`\n=== Phase 0 — Hubs : ${hubs.length} à traiter ===`);
   const hubGatingPassed = [];
-  for (const hub of hubs) {
+  for (const [i, hub] of hubs.entries()) {
+    console.log(`[hub ${i + 1}/${hubs.length}] ${hub.slug} (${hub.silo}) : génération...`);
     try {
+      // Préfixe /categorie : c'est l'URL publique réelle d'un sous-hub depuis
+      // le 2026-07-24 (voir app/categorie/[...slug]/page.tsx) — maillage.json
+      // garde le champ `sous_hub` brut tel quel (identifiant interne utilisé
+      // ailleurs par getEntriesBySousHub etc.), seule la valeur envoyée au
+      // modèle comme lien à écrire est transformée ici.
       const childLinks = maillage.getEntriesByHub(hub.url).reduce((acc, e) => {
-        if (!acc.some(c => c.url === e.sous_hub)) acc.push({ url: e.sous_hub, title: e.ancres?.entite_seule || e.sous_hub });
+        if (!acc.some(c => c.url === e.sous_hub)) acc.push({ url: `/categorie${e.sous_hub}`, title: e.ancres?.entite_seule || e.sous_hub });
         return acc;
       }, []);
       const facts = factuel.searchFacts(hub.silo);
@@ -374,8 +381,13 @@ async function runPhase0(state, runDate, usageAcc) {
         childLinksCount: childLinks.length, parentPublished: true, factsProvided: facts,
       });
 
-      if (gatingResult.passed) hubGatingPassed.push({ ...hub, content, usage });
-      else items.push({ slug: hub.slug, contentType: 'hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
+      if (gatingResult.passed) {
+        console.log(`[hub ${i + 1}/${hubs.length}] ${hub.slug} : gating OK.`);
+        hubGatingPassed.push({ ...hub, content, usage });
+      } else {
+        console.log(`[hub ${i + 1}/${hubs.length}] ${hub.slug} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
+        items.push({ slug: hub.slug, contentType: 'hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
+      }
     } catch (e) {
       console.error(`[phase0] échec génération/gating hub "${hub.slug}" : ${e.message}`);
       items.push({ slug: hub.slug, contentType: 'hub', status: 'erreur', reasons: [e.message] });
@@ -389,7 +401,9 @@ async function runPhase0(state, runDate, usageAcc) {
   state.items_scheduled_in_phase += hubScheduled.length;
 
   /* --- Hubs : insertion WP, un échec n'affecte que ce hub --- */
-  for (const hub of hubScheduled) {
+  console.log(`=== Phase 0 — Hubs : insertion WP de ${hubScheduled.length} pièce(s) programmée(s) ===`);
+  for (const [i, hub] of hubScheduled.entries()) {
+    console.log(`[hub ${i + 1}/${hubScheduled.length}] ${hub.slug} : insertion WP...`);
     try {
       const authorId = await resolveAuthorId(hub.silo);
       const categoryId = await resolveCategoryId(hub.silo, null);
@@ -421,13 +435,17 @@ async function runPhase0(state, runDate, usageAcc) {
   }
 
   /* --- Sous-hubs : génération + relecture + gating --- */
+  console.log(`\n=== Phase 0 — Sous-hubs : ${sousHubs.length} à traiter ===`);
   const sousHubGatingPassed = [];
-  for (const sousHub of sousHubs) {
+  for (const [i, sousHub] of sousHubs.entries()) {
+    console.log(`[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug} (${sousHub.silo}) : génération...`);
     try {
       const parentDate = await resolveHubParentDate(sousHub.hubSlug, hubDateBySlug, hubIdBySlug);
       const parentPublished = !!parentDate;
 
-      const childLinks = sousHub.childArticleEntries.map(e => ({ url: e.url, title: e.ancres?.naturelle_longue || e.mot_cle_principal }));
+      // Les articles restent en URL plate (voir STATE.md, point ouvert avant
+      // P5) — seul le dernier segment de l'identifiant maillage.json compte.
+      const childLinks = sousHub.childArticleEntries.map(e => ({ url: `/${lastSegment(e.url)}`, title: e.ancres?.naturelle_longue || e.mot_cle_principal }));
       const facts = factuel.searchFacts(sousHub.title);
       const competitorAngles = await competitorResearch.searchCompetitorAngles(sousHub.title);
 
@@ -442,8 +460,13 @@ async function runPhase0(state, runDate, usageAcc) {
         childLinksCount: childLinks.length, parentPublished, factsProvided: facts,
       });
 
-      if (gatingResult.passed) sousHubGatingPassed.push({ ...sousHub, content, parentDate, usage });
-      else items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
+      if (gatingResult.passed) {
+        console.log(`[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug} : gating OK.`);
+        sousHubGatingPassed.push({ ...sousHub, content, parentDate, usage });
+      } else {
+        console.log(`[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
+        items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
+      }
     } catch (e) {
       console.error(`[phase0] échec génération/gating sous-hub "${sousHub.slug}" : ${e.message}`);
       items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'erreur', reasons: [e.message] });
@@ -457,7 +480,9 @@ async function runPhase0(state, runDate, usageAcc) {
   state.items_scheduled_in_phase += sousHubScheduled.length;
 
   /* --- Sous-hubs : insertion WP --- */
-  for (const sousHub of sousHubScheduled) {
+  console.log(`=== Phase 0 — Sous-hubs : insertion WP de ${sousHubScheduled.length} pièce(s) programmée(s) ===`);
+  for (const [i, sousHub] of sousHubScheduled.entries()) {
+    console.log(`[sous-hub ${i + 1}/${sousHubScheduled.length}] ${sousHub.slug} : insertion WP...`);
     try {
       const authorId = await resolveAuthorId(sousHub.silo);
       const categoryId = await resolveCategoryId(sousHub.silo, sousHub.title);
@@ -571,9 +596,11 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
   const capacity = config.PHASE_CAPACITY_PER_DAY[2];
   const gatingPassed = [];
 
-  for (const row of candidateRows) {
+  console.log(`\n=== Phase 2 — Articles (${silo}) : ${candidateRows.length} à traiter ===`);
+  for (const [i, row] of candidateRows.entries()) {
     const maillageEntry = maillage.getEntryByKeyword(row.mot_cle_principal);
     const slug = maillageEntry ? lastSegment(maillageEntry.url) : slugifyFr(row.mot_cle_principal);
+    console.log(`[article ${i + 1}/${candidateRows.length}] ${slug} : génération...`);
     try {
       const facts = factuel.searchFacts(`${row.mot_cle_principal} ${row.variantes || ''}`);
       const competitorAngles = await competitorResearch.searchCompetitorAngles(row.mot_cle_principal);
@@ -602,8 +629,10 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
       });
 
       if (gatingResult.passed) {
+        console.log(`[article ${i + 1}/${candidateRows.length}] ${slug} : gating OK.`);
         gatingPassed.push({ row, slug, maillageEntry, content, parentDate, usage });
       } else {
+        console.log(`[article ${i + 1}/${candidateRows.length}] ${slug} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
         items.push({ slug, contentType: 'article', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
       }
     } catch (e) {
@@ -617,7 +646,9 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
     capacityOverride: capacity, startIndex: state.items_scheduled_for_silo,
   });
 
-  for (const art of scheduled) {
+  console.log(`=== Phase 2 — Articles : insertion WP de ${scheduled.length} pièce(s) programmée(s) ===`);
+  for (const [i, art] of scheduled.entries()) {
+    console.log(`[article ${i + 1}/${scheduled.length}] ${art.slug} : insertion WP...`);
     try {
       const authorId = await resolveAuthorId(silo);
       const categoryId = await resolveCategoryId(silo, art.row.sous_cocon);

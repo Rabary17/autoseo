@@ -6,11 +6,11 @@
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-07-22 (dry-run)
+## Autopublish — dernier run : 2026-07-23
 - Phase : 0 — silo en cours : —
-- Programmées : 13 — bloquées (draft) : 3 — erreurs techniques : 1 ⚠️
-- Dernier article programmé pour : 2026-07-23T12:00:00.000Z
-- Détail complet : [logs/autopublish/2026-07-22.md](logs/autopublish/2026-07-22.md)
+- Programmées : 12 — bloquées (draft) : 56 — erreurs techniques : 20 ⚠️
+- Dernier article programmé pour : 2026-07-23T10:39:00.000Z
+- Détail complet : [logs/autopublish/2026-07-23.md](logs/autopublish/2026-07-23.md)
 <!-- autopublish:report:end -->
 
 
@@ -461,3 +461,48 @@ Constat de l'utilisateur (après explication de l'architecture WP/Next.js réell
 - **[frontend/monauto/app/[slug]/page.tsx](frontend/monauto/app/[slug]/page.tsx)** : la catégorie assignée à un article EST le sous-cocon (pas le silo) — `resolveSidebarNav()` remonte au silo via `cat.parent`, récupère les vrais sous-cocons frères, et les rend en vrais liens `<Link>` vers `/categorie/{slug}/` (l'actuel en `<strong>` non cliquable). Avant ce correctif, `getSilo(cat.slug)` cherchait à tort un silo dont le slug correspondrait à celui du sous-cocon — ne matchait quasiment jamais, donc le module était le plus souvent invisible en prod.
 - **[frontend/monauto/app/categorie/[slug]/page.tsx](frontend/monauto/app/categorie/[slug]/page.tsx)** : gérait uniquement les 19 slugs de silo (404 sur un slug de sous-cocon, ce qui aurait cassé les nouveaux liens ajoutés dans la sidebar). Étendu pour résoudre aussi une catégorie de sous-cocon directement en base WP (titre/desc/breadcrumb avec parent, sous-rubriques sœurs cliquables).
 - **Vérifié** : `npx tsc --noEmit` 0 erreur. Site testé en local (`npm run dev` via `.claude/launch.json`) — accueil et dégradation gracieuse OK. **Non vérifiable visuellement de bout en bout** : l'hébergement WordPress renvoie une 502 depuis cet environnement sandbox (limitation réseau déjà documentée, pas liée à ce correctif) — impossible de charger un vrai article pour confirmer visuellement le rendu des liens réels. À reconfirmer sur un environnement avec accès WP (ou en production après déploiement).
+
+## 2026-07-24 : reconstitution d'un historique manquant (22-23/07) + corrections URL/ton/ancres/FAQ sur Entretien & révision
+
+**Point de départ de la journée** : demande utilisateur "go pour 1 silo et 1 sous-cocon, soit deux pages", en pensant lever le blocage P4 pour la première fois. En creusant l'inventaire réel WordPress (jamais fait avant — les sessions précédentes ne vérifiaient que `/wp/v2/posts`, jamais `/wp/v2/pages`), il s'est avéré que **P4 avait déjà tourné en réel les 22 et 23/07, sans qu'aucune ligne n'en soit jamais écrite dans STATE.md.** Reconstitué à partir de `git log` (commit `ec31446`, 23/07, 41 fichiers/5729 lignes), de `logs/autopublish/2026-07-23.md` et de l'inventaire WordPress :
+
+- **10 hubs + 3 sous-hubs publiés** (pages WP, statut `publish`) depuis le 22-23/07 : Entretien & révision (id 17) + Vidange & filtres (id 18) en tout premier (22/07 12h12), puis Électrique & hybride, Moto & scooter, Voiture d'occasion, Camping-car & van, Sport auto & passion, Carburants & consommation, Utilitaires & flottes pro, Pannes & diagnostic, Marques & modèles, + sous-hubs Scooter 125, Équipement pilote, Van & fourgon aménagé.
+- **Rework frontend important déjà livré le même jour** (composants `HubSousHubView`/`EntityCard`/`FaqSection`/`ShareButtons`, correctif ACF sur les pages dans le mu-plugin) — également jamais documenté ici.
+- **Mon propre hub/sous-hub "Entretien & révision" du jour (posts WP id 21/22, créés en `post` suite à un diagnostic ACF fait AVANT de découvrir le correctif du 22/07) faisait doublon avec le contenu déjà publié** (pages id 17/18) — **mis à la corbeille**, aucune conséquence (jamais publiés).
+
+**Conclusion pratique** : l'architecture pages WP + hiérarchie native `parent` (pas posts) est la bonne et fonctionne déjà (ACF marche sur les pages depuis le correctif du 22/07, `getChildPages` marche via `parent`). Le travail du jour a donc porté sur la correction du **contenu déjà publié** (id 17/18) et du **pipeline de génération**, pas sur une nouvelle production.
+
+### Défauts signalés par l'utilisateur en testant le site, confirmés dans le contenu réel (hub camping-car-van id 55, non modifié, sert de témoin)
+
+1. **URLs non imbriquées** : le hub/sous-hub avait un vrai contenu WP mais n'était rendu qu'en `/{slug}/` plat ; `/categorie/{slug}/` existait déjà mais affichait une vue générique différente (jamais le vrai contenu), et rien ne gérait `/categorie/{silo}/{sous-cocon}/` (404).
+2. **FAQ dupliquée** : `system-hub.md`/`system-sous-hub.md`/`system-article.md` exigeaient la FAQ **mot pour mot dans le corps**, et `gating.js` l'imposait (`checkFaqMirror`) — alors que le frontend la rend déjà séparément (`FaqSection` + JSON-LD `FAQPage`). Les deux étaient corrects isolément, contradictoires ensemble.
+3. **Ouverture générique "Ce silo/sous-cocon réunit tout ce qu'il faut savoir..."** et **ancres forcées "détaillé dans notre page 'X'"** : confirmés dans le contenu réel — non bannis jusqu'ici dans les prompts.
+4. **Hub/sous-hub écrits comme des guides** plutôt que des pages de navigation.
+
+### Corrections appliquées (pipeline + frontend, prouvées sur Entretien & révision uniquement — décision utilisateur explicite de ne pas régénérer les 10 autres hubs/3 sous-hubs aujourd'hui)
+
+- **Routage imbriqué** : `app/categorie/[slug]/page.tsx` → `app/categorie/[...slug]/page.tsx` (catch-all 1 ou 2 segments), rend désormais le vrai contenu hub/sous-hub (nouveau composant partagé [components/HubSousHubContent.tsx](frontend/monauto/components/HubSousHubContent.tsx), extrait de l'ancien `HubSousHubView`) avec repli sur la vue générique si le hub/sous-hub n'est pas encore rédigé. `app/[slug]/page.tsx` redirige désormais (308) un hub/sous-hub vers son URL canonique `/categorie/...` au lieu de le rendre sur place — une seule URL indexable par page.
+- **Sidebar avec cards titrées** : `HubSousHubContent` passe en layout 2 colonnes (`layout`/`col-main`/`col-side`, classes déjà existantes côté articles) — la grille `EntityCard` (image + titre, déjà correcte en code, pas de bug CSS trouvé) passe en colonne latérale plutôt qu'en pleine largeur sous le texte. Nouvelle règle CSS `.col-side .stack{grid-template-columns:1fr}`.
+- **FAQ non dupliquée** : `system-hub.md`/`system-sous-hub.md`/`system-article.md` : la FAQ ne doit plus jamais être recopiée dans `content_gutenberg`. `gating.js` : `checkFaqMirror` → `checkFaqNotDuplicated` (détecte la présence d'un H2/H3 "Questions fréquentes" dans le corps plutôt qu'un miroir strict question par question, pour éviter les faux positifs sur du contenu qui aborde légitimement un sujet proche).
+- **Ancres/ton** : `style-anti-ia.md` bannit désormais explicitement l'ouverture "Ce silo/sous-cocon réunit..." et la formule "détaillé(e) dans notre page 'X'". `system-hub.md`/`system-sous-hub.md` : le corps n'a plus besoin d'insérer un lien par sous-hub/article listé (la grille de cards en sidebar fait ce travail) — retire la cause racine du tic d'ancre forcée. Ajout d'un cadrage explicite "page de navigation, pas un article de fond".
+- **`run.js`** : les hrefs enfants passés au prompt sont désormais préfixés `/categorie` pour un hub (liens vers ses sous-hubs) ; les liens vers les articles (depuis un sous-hub) utilisent le dernier segment de l'URL maillage (articles restent en URL plate, voir point ouvert ci-dessous).
+- **Mu-plugin** (`wordpress/mu-plugins/monauto-headless.php`) : le calcul des chemins de revalidation ciblée inclut désormais `/categorie/...` pour un hub/sous-hub, pas seulement le slug plat. **⚠️ Pas d'accès FTP configuré dans cette session pour déployer ce fichier sur le serveur live** — reste une étape manuelle (upload vers le dossier mu-plugins du serveur), comme pour les déploiements précédents de ce fichier.
+- **Retrofit direct sur le contenu déjà publié** (id 17 hub, id 18 sous-hub, via l'API REST WP, sans nouvel appel Claude) : hrefs enfants du hub réécrits en `/categorie/entretien-revision/{slug}/` (11 liens) ; section "Questions fréquentes" retirée du corps du sous-hub (l'ACF `faq` reste intact, c'est lui que le frontend affiche). Note : le sous-hub retombe à ~1128 mots de corps visible (sous le plancher 1500 de gating, qui ne s'applique qu'à la publication, pas rétroactivement) — la FAQ reste visible sur la page via `FaqSection`, juste plus comptée dans ce total.
+- **Nouveauté sans précédent antérieur** (vérifié : aucune mention dans `skills/design.md` ni le code avant ce jour) : barre de progression de lecture (`components/ReadingProgress.tsx`) + bouton retour en haut (`components/BackToTop.tsx`), montés une fois dans `app/layout.tsx`, documentés dans `skills/design.md` section 6.
+- **Corrections opportunistes adjacentes** : lien mort `/categorie/entretien/` dans `Footer.tsx` → `/categorie/entretien-revision/` ; liens sidebar article vers un sous-cocon (`app/[slug]/page.tsx`) mis à jour en URL imbriquée `/categorie/{silo}/{sous-cocon}/`.
+
+### Vérification
+
+- `npx tsc --noEmit` (frontend) : 0 erreur. `node --check` sur `run.js`/`gating.js` : OK.
+- **Rendu visuel non vérifiable depuis ce sandbox** (limitation déjà documentée à plusieurs reprises — 2026-07-15, 2026-07-21) : ni le WordPress de production (timeout Node/SSL confirmé à nouveau ce jour) ni l'ancien site de test local `thermotowel.local` (Local by Flywheel, actuellement arrêté) ne sont joignables pour un rendu réel dans le navigateur de prévisualisation. Vérification faite via lecture/écriture directe de l'API REST WP (`context=edit`) pour confirmer le contenu retrofité (hrefs, absence de FAQ dupliquée, ACF intact) et via l'inventaire complet des pages/catégories.
+- Confirmé que les 10 autres hubs / 3 sous-hubs restent inchangés (spot-check sur id 55, `modified` toujours au 22/07, "réunit" toujours présent).
+
+### Points ouverts (non traités aujourd'hui, notés pour ne pas être perdus)
+
+- **Schéma d'URL des articles** : restent en URL plate `/{slug}/` (aucun article publié à ce jour, donc sans risque de régression) — mais leurs futurs liens latéraux utiliseront aussi des URLs imbriquées dans `maillage.json` (`liens_lateraux[].url`) sans transformation prévue à ce stade. À trancher explicitement avant le lancement de P5.
+- **Retrofit des 10 autres hubs / 3 sous-hubs** déjà publiés (mêmes défauts : FAQ dupliquée, ouverture générique, ancres forcées) : décision utilisateur explicite de ne pas y toucher aujourd'hui — suivra en lot séparé une fois le correctif validé sur Entretien & révision.
+- **`scripts/autopublish/lib/persona.js`** ne lit pas `config/niches/.../niche.json` (personas codées en dur) — écart d'industrialisation à combler avant une 2e niche réelle en production.
+- **Doublons de comptes auteur dans WP** (hors périmètre) : deux jeux de comptes coexistent — slugs `auteur-b..f` (ids 3-7) ET slugs nominatifs `thomas-lefevre`/`camille-roussel`/`sophie-andrieu`/`karim-belaid`/`nathalie-moreau` (ids 8-12). Persona A `julien-fabre` (id 2) est unique.
+- **Déploiement du mu-plugin modifié** sur le serveur live (pas d'accès FTP dans cette session).
+
+**Prochaine étape suggérée** : valider visuellement le rendu (accès WP direct ou après déploiement), déployer le mu-plugin mis à jour, puis décider du lot de retrofit pour les 10 autres hubs/3 sous-hubs.

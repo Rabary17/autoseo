@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BottomNav from "@/components/BottomNav";
 import CookieConsent from "@/components/CookieConsent";
+import ReadingProgress from "@/components/ReadingProgress";
+import BackToTop from "@/components/BackToTop";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./monauto.css";
 
@@ -59,10 +61,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body>
+        <ReadingProgress />
         <Header />
         <main>{children}</main>
         <Footer />
         <BottomNav />
+        <BackToTop />
         <CookieConsent />
       </body>
     </html>

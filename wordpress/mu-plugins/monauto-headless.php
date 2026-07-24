@@ -391,7 +391,24 @@ function monauto_send_revalidation($event, $paths) {
 // si c'est un article (pas une simple page statique comme "À propos").
 function monauto_paths_for_post($post) {
 	$paths = ["/{$post->post_name}/"];
-	if ($post->post_type !== 'post') return $paths;
+
+	if ($post->post_type !== 'post') {
+		// Un hub/sous-hub est une page WP dont le slug correspond exactement à
+		// une catégorie (voir resolveCategoryId dans scripts/autopublish/run.js)
+		// — son contenu réel se rend désormais à l'URL imbriquée canonique
+		// /categorie/... (2026-07-24, voir STATE.md et app/categorie/[...slug]/
+		// page.tsx), en plus de l'URL plate ci-dessus qui redirige vers elle.
+		$term = get_term_by('slug', $post->post_name, 'category');
+		if ($term) {
+			if ($term->parent) {
+				$parent = get_term($term->parent, 'category');
+				if ($parent && !is_wp_error($parent)) $paths[] = "/categorie/{$parent->slug}/{$term->slug}/";
+			} else {
+				$paths[] = "/categorie/{$term->slug}/";
+			}
+		}
+		return $paths;
+	}
 
 	$paths[] = '/';
 	$cats = get_the_category($post->ID);
