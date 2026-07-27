@@ -6,11 +6,10 @@
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-07-23
+## Autopublish — dernier run : 2026-07-27
 - Phase : 0 — silo en cours : —
-- Programmées : 12 — bloquées (draft) : 56 — erreurs techniques : 20 ⚠️
-- Dernier article programmé pour : 2026-07-23T10:39:00.000Z
-- Détail complet : [logs/autopublish/2026-07-23.md](logs/autopublish/2026-07-23.md)
+- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 70 ⚠️
+- Détail complet : [logs/autopublish/2026-07-27.md](logs/autopublish/2026-07-27.md)
 <!-- autopublish:report:end -->
 
 

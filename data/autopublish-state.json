@@ -5,8 +5,8 @@
   "items_scheduled_in_phase": 13,
   "budget_semaine": 20,
   "budget_consomme": 0,
-  "semaine_debut": "2026-W30",
+  "semaine_debut": "2026-W31",
   "silo_start_date": null,
   "items_scheduled_for_silo": 0,
-  "derniere_execution": "2026-07-23T10:54:45.449Z"
+  "derniere_execution": "2026-07-27T10:11:13.795Z"
 }
