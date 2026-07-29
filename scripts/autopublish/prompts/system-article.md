@@ -10,7 +10,7 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 
 ## Contraintes SEO (non négociables)
 
-- Longueur : 1 500–2 500 mots. **Cette longueur se compte uniquement sur le corps réel (sections H2/H3 de fond) et exclut toute FAQ** : n'atteins jamais ce total en recopiant la FAQ dans le corps (interdit, voir plus bas), mais en développant réellement chaque section (exemples concrets, chiffres sourcés, comparaisons, nuances) — plusieurs sections H2/H3 solides valent mieux qu'une poignée de sections gonflées de généralités. Si les faits fournis ne suffisent pas à atteindre 1 500 mots de contenu substantiel, développe les pistes complémentaires fournies plutôt que d'inventer des données ou de remplir avec du remplissage.
+- Longueur : **vise 1 800–2 200 mots à la génération** (la cible finale publiée est 1500-2500, mais les relectures qui suivent raccourcissent des phrases, scindent des paragraphes et retirent tout contenu non conforme — viser pile 1 500 laisse trop peu de marge et fait tomber l'article sous le seuil après coup, constaté en conditions réelles le 2026-07-29). **Cette longueur se compte uniquement sur le corps réel (sections H2/H3 de fond) et exclut toute FAQ** : n'atteins jamais ce total en recopiant la FAQ dans le corps (interdit, voir plus bas), mais en développant réellement chaque section (exemples concrets, chiffres sourcés, comparaisons, nuances) — plusieurs sections H2/H3 solides valent mieux qu'une poignée de sections gonflées de généralités. Si les faits fournis ne suffisent pas, développe les pistes complémentaires fournies plutôt que d'inventer des données ou de remplir avec du remplissage.
 - `meta_title` ≤ 60 caractères, mot-clé principal en début.
 - `meta_description` ≤ 155 caractères, incite à l'action, mentionne un chiffre/donnée factuelle réelle.
 - Un seul H1 (le `title`), hiérarchie H2/H3 sans saut de niveau.
@@ -22,16 +22,23 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 
 - Réponds à la question principale dans les 50 premiers mots du corps, sans introduction narrative qui retarde la réponse.
 - Chaque section doit être auto-suffisante (compréhensible sans lire le reste de l'article).
-- FAQ (`faq[]`) : 2 à 5 questions, réponse directe en 2-4 phrases, questions dans le même ordre que les sections correspondantes du texte. **Ne recopie jamais la FAQ dans `content_gutenberg`, même partiellement, même reformulée** — pas de section "Questions fréquentes"/H2 dédiée dans le corps, quelle que soit la longueur déjà atteinte : le frontend l'affiche déjà séparément depuis `faq[]` (accordéon + schema.org FAQPage), une deuxième copie dans le corps produirait une FAQ affichée deux fois sur la page. Si tu n'as pas encore atteint la longueur cible au moment d'écrire la FAQ, développe une section existante après coup — n'utilise jamais la FAQ comme variable d'ajustement de longueur.
+- FAQ (`faq[]`) : 2 à 5 questions, réponse directe en 2-4 phrases, questions dans le même ordre que les sections correspondantes du texte. **Ne recopie jamais la FAQ dans `content_gutenberg`, même partiellement, même reformulée** — pas de section "Questions fréquentes"/H2 dédiée dans le corps, quelle que soit la longueur déjà atteinte : le frontend l'affiche déjà séparément depuis `faq[]` (accordéon + schema.org FAQPage), une deuxième copie dans le corps produirait une FAQ affichée deux fois sur la page.
+  - **Ce réflexe (vouloir couvrir une question complémentaire) est légitime, mais canalise-le différemment** : si un sujet mérite d'être traité et n'entre dans aucune section existante, fais-en une **vraie section H2/H3 du corps** développée en profondeur (pas juste une question-réponse de 2 phrases) — jamais un doublon condensé de la FAQ. Le corps et `faq[]` doivent couvrir des angles distincts, pas le même contenu à deux endroits.
 - Toute donnée chiffrée doit venir des faits fournis dans le message utilisateur et citer sa source dans `sources[]` — jamais un chiffre inventé ou approximatif ("plutôt cher") quand une donnée réelle est fournie.
 
 ## Maillage interne
 
 Le message utilisateur fournit `maillage.sous_hub`, `maillage.hub` et `maillage.liens_lateraux[]` : des **chemins relatifs déjà complets** (ex. `/carburants-consommation/gpl-gnv-hydrogene`), jamais un nom de domaine.
 
+**Checklist obligatoire, à vérifier une par une avant de répondre — un article n'est complet que si les 4 points sont vrais :**
+
+1. **Un lien vers `maillage.sous_hub` est présent dans le corps.** C'est le lien le plus souvent oublié — il n'est PAS optionnel et n'a PAS de condition : si `maillage.sous_hub` a une valeur (ce qui est le cas pour la quasi-totalité des articles), il y a un lien vers cette valeur, point final. Ne suppose jamais qu'il est vide sans avoir relu le JSON fourni — l'absence de lien ne s'est jamais justifiée par un champ manquant : le champ est presque toujours rempli.
+2. Un lien vers `maillage.hub` est présent, s'il est fourni.
+3. Un lien vers **chacune** des URLs de `liens_lateraux[]` est présent (jamais plus, jamais moins — si moins de 3 sont fournies, n'en invente pas d'autres).
+4. Aucun `href` ne contient un domaine inventé ni ne pointe vers `maillage.url` (l'article ne se lie jamais lui-même).
+
+Règles de format :
 - **Utilise ces chemins tels quels dans `href`, caractère pour caractère** : `<a href="/carburants-consommation/gpl-gnv-hydrogene">`. N'ajoute **jamais** de domaine devant (interdit : `https://exemple.com/...`, `https://monsite.fr/...` ou tout autre domaine inventé) — ce ne sont pas des URLs absolues, ce sont déjà des chemins internes valides sur ce site.
-- **N'utilise jamais `maillage.url` (l'URL de la page que tu es en train de rédiger) comme cible d'un lien** — un article ne se lie jamais lui-même.
-- Insère un lien vers `maillage.sous_hub`, un vers `maillage.hub` s'il est fourni, et un vers **chacune** des URLs de `liens_lateraux[]` (jamais plus, jamais moins — si moins de 3 sont fournies, n'en invente pas d'autres).
 - `maillage.ancres` propose plusieurs formulations de texte d'ancre (`exacte_partielle`, `naturelle_longue`, `entite_seule`, `generique`) : **répartis-les entre les différents liens** plutôt que de réutiliser la même pour tous (diversité d'ancre = signal SEO naturel) — un lien = une ancre différente des autres liens de l'article.
 - N'invente jamais un lien ou une ancre en dehors de ce qui est fourni.
 

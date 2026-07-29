@@ -8,8 +8,7 @@
 <!-- autopublish:report:start -->
 ## Autopublish — dernier run : 2026-07-29
 - Phase : 2 — silo en cours : Carburants & consommation
-- Programmées : 2 — bloquées (draft) : 2 — erreurs techniques : 0
-- Dernier article programmé pour : 2026-09-04T09:20:00.000Z
+- Programmées : 0 — bloquées (draft) : 2 — erreurs techniques : 0
 - Détail complet : [logs/autopublish/2026-07-29.md](logs/autopublish/2026-07-29.md)
 <!-- autopublish:report:end -->
 
