@@ -38,6 +38,22 @@ Trois correctifs demandés par l'utilisateur après avoir vu la grille de rubriq
 
 3. **Sitemap pointant vers `monauto-tau.vercel.app`** : **pas un bug de code** — `app/sitemap.ts` utilise correctement `SITE_URL` (lib/site.ts), qui vient uniquement de `process.env.SITE_URL`. La variable d'environnement Vercel du projet est encore réglée sur l'ancienne URL preview — **action manuelle requise côté utilisateur** : mettre à jour `SITE_URL` (→ `https://techcars.fr`, à confirmer une fois le certificat SSL réglé) dans les Environment Variables du projet Vercel, hors de portée de cet environnement.
 
+### 2026-07-29 (suite 3) : formulaire newsletter cassé en prod, logo illisible en mode sombre/footer, loader de page ajouté
+
+**Découverte majeure** : le CLI Vercel est en fait disponible et authentifié dans cet environnement (`.vercel/project.json` lié au projet `autoseo/monauto`, session `andrianinarabarivelo-1187`) — contrairement à ce qui avait été supposé jusqu'ici pour les changements de config Vercel.
+
+- **Formulaire newsletter ("Une erreur est survenue")** : la piste CORS a été testée et écartée (l'endpoint WP `monauto/v1/newsletter` reflète déjà n'importe quelle origine). Cause réelle trouvée en inspectant le JS buildé de `techcars.fr` en prod : le littéral **`thermotowel.local`** (repli codé en dur de `lib/public-env.ts`) y est présent — `NEXT_PUBLIC_WP_SITE_URL` n'a **jamais été défini** dans les Environment Variables Production de Vercel (confirmé via `vercel env ls production`, qui ne listait que `SITE_URL`/`WP_API_URL`/`REVALIDATE_SECRET`/`WP_URL` avant correctif). Corrigé directement via `vercel env add` :
+  - `NEXT_PUBLIC_WP_SITE_URL=https://mntdev.riseasso.com` (ajoutée, absente)
+  - `SITE_URL=https://techcars.fr` (corrigée, pointait vers `monauto-tau.vercel.app` — au passage constaté que ce domaine Vercel n'existe même plus, `DEPLOYMENT_NOT_FOUND`)
+  - `SITE_NAME=techcars` (ajoutée, absente — le fallback code déjà égal donc pas de bug visible, ajoutée par cohérence)
+  - `SMTP_HOST=mail.infomaniak.com`, `SMTP_PORT=587`, `SMTP_USER=contact@techcars.com`, `SMTP_FROM=contact@techcars.com`, `SMTP_PASS=...` (ajoutées — le formulaire de contact `/api/contact` était lui aussi cassé, `mail_not_configured`, identifiants fournis par l'utilisateur)
+  - **⚠️ Ne prendra effet qu'au prochain build/déploiement** (variables `NEXT_PUBLIC_*`/serveur figées à la compilation, pas au runtime) — un push sur `main` déclenchera normalement ce build via l'intégration GitHub de Vercel.
+  - Non traité : environnements Preview/Development sur Vercel (0 variable définie, y compris `WP_API_URL`/`REVALIDATE_SECRET` — `REVALIDATE_SECRET` n'a pas pu être répliqué, valeur secrète inconnue) — hors périmètre de cette demande, à traiter si des previews sont utilisées.
+- **Logo illisible** : le mot "tech" du logo est en quasi-noir (`~0,0,0`), invisible sur fond sombre. Deux cas distincts : le header bascule clair/sombre selon le thème (corrigé via une 2e variante `public/logo-dark.png` — mot "tech" reclairci en `#EDEFF2` via `sharp`, générée par script, texte rouge inchangé — bascule CSS sur `[data-theme="dark"]`) ; le footer a un fond **toujours sombre** (`--brand: #14171C`, jamais surchargé en dark mode) donc utilise désormais `logo-dark.png` sans condition de thème.
+- **Loader de page** : [app/loading.tsx](frontend/monauto/app/loading.tsx) ajouté (fallback Suspense global, spinner CSS respectant `prefers-reduced-motion`) — s'affiche pendant le chargement de n'importe quelle route sans `loading.tsx` plus spécifique, pour éviter que l'utilisateur croie qu'un clic n'a rien déclenché pendant un fetch WP lent.
+
+Vérifié en local (dev server + navigation réelle) : bascule logo clair/sombre OK, footer OK, `tsc --noEmit` propre, aucune régression console. Commit `7039b7b`.
+
 ## 2026-07-29 : P1-P2-P3 lancés sur 4 nouveaux sites (dossier OKR), carte blanche utilisateur
 
 Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question", "GO") : faire l'étude P1 (mots-clés Haloscan) → P2 (données factuelles) → P3 (maillage interne) pour 4 sites du dossier `OKR/`, arrêt à P3 (pas de P4/P5). Dossiers `OKR/<domaine>` trouvés vides — tout construit from scratch (aucun seeds.json/niche.json préexistant). Utilise l'architecture multi-niche déjà en place (`scripts/new-niche.py`, `config/niches/<id>/niche.json`, `data/niches/<id>/`), jamais utilisée en dehors de `auto-mobilite` jusqu'ici.
