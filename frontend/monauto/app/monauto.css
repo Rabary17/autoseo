@@ -104,6 +104,9 @@ h4{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
 .appbar__logo{display:flex;align-items:center}
 .appbar__logo:hover{text-decoration:none}
 .appbar__brand{height:28px;width:auto;flex:0 0 auto}
+.appbar__brand--dark{display:none}
+:root[data-theme="dark"] .appbar__brand--light{display:none}
+:root[data-theme="dark"] .appbar__brand--dark{display:block}
 .icon-btn{width:44px;height:44px;display:grid;place-items:center;border:0;
   background:transparent;color:var(--ink);border-radius:var(--r-md);cursor:pointer}
 .icon-btn:hover{background:var(--surface-2)}
@@ -586,3 +589,13 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
   color:var(--ink);box-shadow:var(--shadow-2);cursor:pointer}
 .back-to-top:hover{background:var(--surface-2)}
 @media (min-width:768px){.back-to-top{bottom:24px}}
+
+/* ---------- Loader de page (app/loading.tsx) ---------- */
+.page-spinner{display:grid;place-items:center}
+.page-spinner__ring{display:block;width:36px;height:36px;border-radius:50%;
+  border:3px solid var(--line);border-top-color:var(--accent);
+  animation:page-spinner-spin .7s linear infinite}
+@keyframes page-spinner-spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .page-spinner__ring{animation-duration:1.6s}
+}

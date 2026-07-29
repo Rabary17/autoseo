@@ -27,7 +27,18 @@ export default async function Header() {
   return (
     <header className="appbar">
       <Link className="appbar__logo" href="/" aria-label="techcars — accueil">
-        <img className="appbar__brand" src="/logo.png" alt="techcars" width={343} height={28} />
+        {/* logo.png a le mot "tech" en quasi-noir, invisible sur le fond sombre
+            du thème dark (--paper devient #1A1D23) — logo-dark.png reprend le
+            même fichier avec ce texte reclairci, basculé par CSS (2026-07-29). */}
+        <img className="appbar__brand appbar__brand--light" src="/logo.png" alt="techcars" width={343} height={28} />
+        <img
+          className="appbar__brand appbar__brand--dark"
+          src="/logo-dark.png"
+          alt=""
+          aria-hidden="true"
+          width={343}
+          height={28}
+        />
       </Link>
       <nav className="appbar__nav" aria-label="Rubriques">
         {navSilos.map((s) => (

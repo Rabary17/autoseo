@@ -5,7 +5,10 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="wrap">
-        <img className="footer__brand" src="/logo.png" alt="techcars" width={392} height={32} />
+        {/* .footer a toujours un fond sombre (--brand, indépendant du thème
+            clair/sombre) — toujours la variante logo-dark.png, jamais logo.png
+            dont le mot "tech" en quasi-noir y serait invisible (2026-07-29). */}
+        <img className="footer__brand" src="/logo-dark.png" alt="techcars" width={392} height={32} />
         <p style={{ color: "rgba(255,255,255,.7)", maxWidth: "38ch", margin: 0 }}>
           Le média expert de l&apos;auto et de la mobilité. Guides testés, sourcés et mis à jour
           par notre rédaction.
