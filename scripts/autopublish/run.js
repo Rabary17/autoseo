@@ -110,8 +110,13 @@ let usersCache = null;
 // lancé). La règle "jamais de lien actif vers une cible non publiée" avait
 // été appliquée une fois à la main le 2026-07-25 mais jamais intégrée au
 // pipeline lui-même : chaque nouveau sous-hub généré depuis reproduisait le
-// même défaut. Un seul chargement par run (les articles publiés ne changent
-// pas en cours de route dans un run Phase 0).
+// même défaut. Un seul chargement réseau par run, mais complété localement au
+// fil des insertions (voir markArticleSlugAsExisting) : en Phase 2, les
+// articles d'un même sous-cocon se citent entre eux (liens_lateraux) et sont
+// tous traités dans le même run — sans ce complément, le 1er article publié
+// dans le run restait invisible pour le 4e du même lot (constaté en test réel
+// le 2026-07-29 : les 4 articles de "GPL, GNV & hydrogène" se sont tous
+// retrouvés avec une liste de liens latéraux vide).
 let existingArticleSlugsCache = null;
 async function getExistingArticleSlugs() {
   if (existingArticleSlugsCache) return existingArticleSlugsCache;
@@ -124,6 +129,14 @@ async function getExistingArticleSlugs() {
   }
   existingArticleSlugsCache = new Set(all.map((p) => p.slug));
   return existingArticleSlugsCache;
+}
+
+// Appelé juste après l'insertion WP réussie d'un article (jamais avant, pour
+// ne jamais rendre linkable une cible qui a échoué au gating) — met à jour le
+// cache en mémoire sans nouvel appel réseau, pour que les articles suivants
+// du même run puissent déjà le citer.
+function markArticleSlugAsExisting(slug) {
+  existingArticleSlugsCache?.add(slug);
 }
 
 async function resolveAuthorId(silo) {
@@ -836,7 +849,7 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
 
       const gatingResult = gating.runGating({
         contentType: 'article', silo, sousCocon: row.sous_cocon, content,
-        clusterRow: row, trackingRows, maillageEntry, childLinksCount: 0,
+        clusterRow: row, trackingRows, maillageEntry: safeMaillageEntry, childLinksCount: 0,
         parentPublished: !!parentDate, factsProvided: facts,
       });
 
@@ -891,6 +904,7 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         const created = await wp.createPost(payload);
         console.log(`${logTag} : inséré — article WP #${created.id} (${created.link || '(url non renvoyée)'}), publication prévue ${scheduled.post_date.slice(0, 10)}.`);
         similarity.addToIndex(silo, row.sous_cocon, slug, content.content_gutenberg);
+        markArticleSlugAsExisting(slug);
         trackingXlsx.updateRow(trackingRows, row.mot_cle_principal, {
           statut: 'programmé',
           url_cible: maillageEntry ? maillageEntry.url : `/${slug}`,

@@ -14,7 +14,7 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 - `meta_title` ≤ 60 caractères, mot-clé principal en début.
 - `meta_description` ≤ 155 caractères, incite à l'action, mentionne un chiffre/donnée factuelle réelle.
 - Un seul H1 (le `title`), hiérarchie H2/H3 sans saut de niveau.
-- Maillage : insère exactement les liens fournis (montant vers sous-hub + hub, latéraux) avec les ancres fournies — n'invente jamais un lien ou une ancre. Si le nombre de liens latéraux fournis est inférieur à 3, n'en invente pas d'autres.
+- Maillage : voir la section dédiée "Maillage interne" plus bas — règles non négociables sur le `href`.
 - Ne répète pas le mot-clé principal identique plus de 2-3 fois — utilise les variantes fournies.
 - Tags : 2 à 5 tags maximum, entités transversales (marque, modèle, code, prestation), jamais une deuxième hiérarchie.
 
@@ -24,6 +24,16 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 - Chaque section doit être auto-suffisante (compréhensible sans lire le reste de l'article).
 - FAQ (`faq[]`) : 2 à 5 questions, réponse directe en 2-4 phrases, questions dans le même ordre que les sections correspondantes du texte. **Ne recopie jamais la FAQ dans `content_gutenberg`, même partiellement, même reformulée** — pas de section "Questions fréquentes"/H2 dédiée dans le corps, quelle que soit la longueur déjà atteinte : le frontend l'affiche déjà séparément depuis `faq[]` (accordéon + schema.org FAQPage), une deuxième copie dans le corps produirait une FAQ affichée deux fois sur la page. Si tu n'as pas encore atteint la longueur cible au moment d'écrire la FAQ, développe une section existante après coup — n'utilise jamais la FAQ comme variable d'ajustement de longueur.
 - Toute donnée chiffrée doit venir des faits fournis dans le message utilisateur et citer sa source dans `sources[]` — jamais un chiffre inventé ou approximatif ("plutôt cher") quand une donnée réelle est fournie.
+
+## Maillage interne
+
+Le message utilisateur fournit `maillage.sous_hub`, `maillage.hub` et `maillage.liens_lateraux[]` : des **chemins relatifs déjà complets** (ex. `/carburants-consommation/gpl-gnv-hydrogene`), jamais un nom de domaine.
+
+- **Utilise ces chemins tels quels dans `href`, caractère pour caractère** : `<a href="/carburants-consommation/gpl-gnv-hydrogene">`. N'ajoute **jamais** de domaine devant (interdit : `https://exemple.com/...`, `https://monsite.fr/...` ou tout autre domaine inventé) — ce ne sont pas des URLs absolues, ce sont déjà des chemins internes valides sur ce site.
+- **N'utilise jamais `maillage.url` (l'URL de la page que tu es en train de rédiger) comme cible d'un lien** — un article ne se lie jamais lui-même.
+- Insère un lien vers `maillage.sous_hub`, un vers `maillage.hub` s'il est fourni, et un vers **chacune** des URLs de `liens_lateraux[]` (jamais plus, jamais moins — si moins de 3 sont fournies, n'en invente pas d'autres).
+- `maillage.ancres` propose plusieurs formulations de texte d'ancre (`exacte_partielle`, `naturelle_longue`, `entite_seule`, `generique`) : **répartis-les entre les différents liens** plutôt que de réutiliser la même pour tous (diversité d'ancre = signal SEO naturel) — un lien = une ancre différente des autres liens de l'article.
+- N'invente jamais un lien ou une ancre en dehors de ce qui est fourni.
 
 ## Images d'appui
 

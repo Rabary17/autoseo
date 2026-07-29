@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound, redirect, unstable_rethrow } from "next/navigation";
 import ArticleCard from "@/components/ArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import HubSousHubContent from "@/components/HubSousHubContent";
@@ -33,29 +33,43 @@ type Props = { params: Promise<{ slug: string[] }>; searchParams: Promise<{ page
 
 // Résout les segments d'URL en catégorie WP (silo ou sous-cocon), avec
 // vérification de cohérence de la hiérarchie pour 2 segments.
+// Dégradation gracieuse identique au reste du fichier (getPostsByCategory,
+// getPageBySlug plus bas) : sans elle, un WP injoignable au moment du build
+// (ex. CI sans WP_API_URL, ou WP en maintenance pendant un déploiement) fait
+// planter tout l'export Next.js sur une ECONNREFUSED non rattrapée ici —
+// alors que generateStaticParams/sitemap.ts, eux, retombent déjà sur []
+// dans ce cas. `notFound()`/`redirect()` lancent leurs propres exceptions de
+// contrôle de flux Next.js : `unstable_rethrow` les laisse remonter telles
+// quelles, seul un vrai échec réseau/WP est traité ici comme "terme introuvable".
 async function resolveTerm(slugParts: string[]): Promise<{ term: WpTerm; parentTerm: WpTerm | null } | null> {
-  if (slugParts.length === 1) {
-    const term = await getTermBySlug("categories", slugParts[0]);
-    if (!term) return null;
-    if (term.parent) {
-      // Un sous-cocon accédé par son seul slug (ancien lien, favori...) :
-      // on redirige vers la forme canonique à 2 segments plutôt que de
-      // servir un doublon de contenu à deux URLs différentes.
-      const parent = await getCategoryById(term.parent);
-      if (parent) redirect(`/categorie/${parent.slug}/${term.slug}/`);
-      return null;
+  try {
+    if (slugParts.length === 1) {
+      const term = await getTermBySlug("categories", slugParts[0]);
+      if (!term) return null;
+      if (term.parent) {
+        // Un sous-cocon accédé par son seul slug (ancien lien, favori...) :
+        // on redirige vers la forme canonique à 2 segments plutôt que de
+        // servir un doublon de contenu à deux URLs différentes.
+        const parent = await getCategoryById(term.parent);
+        if (parent) redirect(`/categorie/${parent.slug}/${term.slug}/`);
+        return null;
+      }
+      return { term, parentTerm: null };
     }
-    return { term, parentTerm: null };
+    if (slugParts.length === 2) {
+      const [siloSlug, subSlug] = slugParts;
+      const term = await getTermBySlug("categories", subSlug);
+      if (!term || !term.parent) return null;
+      const parentTerm = await getCategoryById(term.parent);
+      if (!parentTerm || parentTerm.slug !== siloSlug) return null; // hiérarchie incohérente
+      return { term, parentTerm };
+    }
+    return null; // pas de nesting au-delà de silo/sous-cocon
+  } catch (e) {
+    unstable_rethrow(e);
+    console.warn(`[categorie/${slugParts.join("/")}] échec du fetch WP (résolution du terme), fallback 404: ${e}`);
+    return null;
   }
-  if (slugParts.length === 2) {
-    const [siloSlug, subSlug] = slugParts;
-    const term = await getTermBySlug("categories", subSlug);
-    if (!term || !term.parent) return null;
-    const parentTerm = await getCategoryById(term.parent);
-    if (!parentTerm || parentTerm.slug !== siloSlug) return null; // hiérarchie incohérente
-    return { term, parentTerm };
-  }
-  return null; // pas de nesting au-delà de silo/sous-cocon
 }
 
 async function resolveCategoryPage(slugParts: string[]) {

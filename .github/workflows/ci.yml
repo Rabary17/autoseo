@@ -28,6 +28,19 @@ jobs:
 
       - name: Build Next.js
         working-directory: frontend/monauto
+        # Sans ces variables, generateStaticParams/les pages retombent sur
+        # http://thermotowel.local (repli de lib/wp.ts, jamais joignable
+        # depuis un runner GitHub) — chaque appel WP échoue, et malgré les
+        # dégradations gracieuses (fallback []/404), la file d'attente à
+        # concurrence 2 (voir wp.ts) fait dépasser le timeout de 60s/page de
+        # Next.js sur un nombre suffisant de pages pour planter tout le build
+        # (constaté le 2026-07-29). Valeurs identiques à .env.local (lecture
+        # publique seule, sans authentification — aucun secret nécessaire ici).
+        env:
+          WP_API_URL: https://mntdev.riseasso.com/wp-json/wp/v2
+          NEXT_PUBLIC_WP_SITE_URL: https://mntdev.riseasso.com
+          SITE_URL: http://localhost:3000
+          SITE_NAME: monauto
         run: npm run build
 
   check-scripts:

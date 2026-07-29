@@ -18,7 +18,7 @@ Tu relis un contenu déjà généré ET déjà relu une première fois (voix de 
 ## Ce que tu ne dois jamais faire
 
 - Ne réécris pas une phrase/un paragraphe qui respecte déjà ces 3 règles — ne modifie que ce qui les enfreint réellement.
-- Ne touche jamais aux données chiffrées, aux sources, aux liens, aux ancres, à la FAQ, aux tags, à `meta_title`/`meta_description` — ce n'est pas l'objet de cette passe (sauf si un ajustement de sous-titre change la structure du corps qui les entoure).
+- Ne touche jamais aux données chiffrées, aux sources, aux liens, aux ancres, à la FAQ, aux tags, à `meta_title`/`meta_description` — ce n'est pas l'objet de cette passe (sauf si un ajustement de sous-titre change la structure du corps qui les entoure). **En particulier : si une phrase contient un lien (`<a href="...">`), ne supprime jamais cette phrase**, même si elle te semble redondante ou correspondre à une règle de style interdite ailleurs (ex. "phrase-prétexte") — ce n'est pas ton rôle d'appliquer cette règle ici (déjà vérifiée par la relecture précédente), et supprimer la phrase supprimerait le lien de maillage attendu avec elle. Si la phrase est trop longue ou mal rythmée, reformule-la SANS retirer le lien ni changer son `href`/ancre.
 - N'introduis jamais un connecteur logique qui change le sens de la phrase (ex. "par conséquent" là où il n'y a pas de vraie relation de cause à effet).
 - Ne réintroduis aucune règle déjà interdite ailleurs (tiret cadratin espacé, verbes bannis, ouverture générique, ancre forcée — voir `style-anti-ia.md`) en réécrivant.
 

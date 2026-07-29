@@ -201,9 +201,48 @@ function checkYmylSource(content, silo) {
   return { ok: (content.sources || []).length > 0, reason: 'Silo YMYL sans source officielle citée dans sources[].' };
 }
 
-function checkMaillageResolved(contentType, maillageEntry, childLinksCount) {
-  if (contentType === 'article') return !!maillageEntry;
-  return (childLinksCount ?? 0) > 0;
+// Extrait les `href` des liens du corps — sert à vérifier que le maillage
+// promis est réellement présent, pas juste que `maillage.json` a une entrée
+// (voir checkMaillageResolved) : constaté en test réel le 2026-07-29que
+// `!!maillageEntry` seul laisse passer un article avec un lien vers un
+// domaine inventé ("https://exemple.com/...") ou carrément sans aucun lien.
+function extractHrefs(html) {
+  const hrefs = [];
+  const re = /<a\s[^>]*href="([^"]*)"/gi;
+  let m;
+  while ((m = re.exec(html || ''))) hrefs.push(m[1]);
+  return hrefs;
+}
+
+function checkMaillageResolved(contentType, maillageEntry, childLinksCount, content) {
+  if (contentType === 'article') {
+    if (!maillageEntry) return { ok: false, reason: 'Maillage non résolu (entrée maillage.json absente).' };
+    const hrefs = extractHrefs(content?.content_gutenberg);
+    // Un href qui ne commence pas par "/" est soit un domaine inventé
+    // (jamais un vrai chemin interne de ce site), soit un ancrage factice
+    // ("#") — les deux interdits.
+    const foreign = hrefs.filter((h) => !h.startsWith('/'));
+    if (foreign.length) {
+      return { ok: false, reason: `Lien(s) invalide(s) (domaine inventé ou ancrage factice au lieu d'un chemin relatif) : ${foreign.join(', ')}.` };
+    }
+    if (maillageEntry.url && hrefs.includes(maillageEntry.url)) {
+      return { ok: false, reason: 'L\'article contient un lien vers sa propre URL.' };
+    }
+    const expected = new Set([maillageEntry.sous_hub, maillageEntry.hub, ...(maillageEntry.liens_lateraux || [])].filter(Boolean));
+    const unexpected = hrefs.filter((h) => !expected.has(h));
+    if (unexpected.length) {
+      return { ok: false, reason: `Lien(s) non prévu(s) par le maillage de ce cluster : ${unexpected.join(', ')}.` };
+    }
+    // Le sous-hub est toujours cense être publié à ce stade (checkParentPublished
+    // l'exige déjà) — son lien doit donc toujours être présent, contrairement
+    // aux liens latéraux qui peuvent légitimement être absents si aucune des
+    // cibles sœurs n'est encore publiée (voir getExistingArticleSlugs, run.js).
+    if (maillageEntry.sous_hub && !hrefs.includes(maillageEntry.sous_hub)) {
+      return { ok: false, reason: 'Lien montant vers le sous-hub manquant dans le corps.' };
+    }
+    return { ok: true };
+  }
+  return { ok: (childLinksCount ?? 0) > 0, reason: 'Maillage non résolu (entrée maillage.json absente ou liens descendants vides).' };
 }
 
 /* ---------- Orchestration ---------- */
@@ -294,8 +333,9 @@ function runGating({
   const ymyl = checkYmylSource(content, silo);
   if (!ymyl.ok) failures.push({ rule: 'source_ymyl', message: ymyl.reason });
 
-  if (!checkMaillageResolved(contentType, maillageEntry, childLinksCount)) {
-    failures.push({ rule: 'maillage_resolu', message: 'Maillage non résolu (entrée maillage.json absente ou liens descendants vides).' });
+  const maillageCheck = checkMaillageResolved(contentType, maillageEntry, childLinksCount, content);
+  if (!maillageCheck.ok) {
+    failures.push({ rule: 'maillage_resolu', message: maillageCheck.reason });
   }
 
   return { passed: failures.length === 0, failures };
