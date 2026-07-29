@@ -5,6 +5,22 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-07-29 (suite 5) : premiers articles réels publiés sur techcars.fr (silo Carte grise & démarches)
+
+**🎯 Premiers articles jamais réellement publiés sur ce site.** Batch de 25 (voir suite précédente pour le correctif "gating KO conservé en draft") : 1 seul passé le gating proprement (`declaration-de-cession-carte-grise`, #929), 23 en draft `à valider`, 1 échec technique Mistral (`controle-technique-points-verifies`, jamais généré).
+
+**QC manuel effectué sur les 24 brouillons réels** (via l'API WP authentifiée, `content.raw` ET `content.rendered` — pas les logs de relecture, qui peuvent diverger du contenu réellement stocké) :
+- Images (à la une + inline) : 24/24 OK, aucune cassée.
+- Liens : **12/24 contenaient des liens externes cliquables vers de vrais domaines officiels** (ants.gouv.fr, service-public.fr...) au lieu d'une citation en texte — la relecture réintroduit ce défaut malgré le gating conçu pour l'empêcher. **Plusieurs liens internes "corrigés" par la relecture pointaient vers des chemins inventés** ne correspondant à aucune vraie catégorie WP (ex. `/carte-grise/changement-de-titulaire` au lieu de `/carte-grise-demarches/changement-de-titulaire`, ou carrément un self-link vers l'article lui-même) — non détectés par le gating dans certains cas (`checkMaillageResolved` semble avoir un angle mort sur les chemins malformés qui commencent bien par `/` mais ne correspondent à aucune entrée réelle du maillage — **à creuser**, potentiel bug résiduel).
+- Longueur : 15/24 sous le plancher de 900 mots.
+
+**Décision utilisateur** ("corrige ce qui est réparable") : 7 articles avec un problème *uniquement* de liens (mots ≥900, pas d'autre défaut de fond) corrigés directement en base (liens externes invalides retirés/convertis en texte, chemins internes remplacés par le vrai `sous_hub` lu dans `data/maillage/maillage.json`) puis republiés. `certificat-cession-cerfa-15776` (#937) exclu de ce lot malgré des liens réparables : 70,5 % de similarité avec `declaration-de-cession-carte-grise` déjà publié — un vrai problème de fond (quasi-doublon), pas juste un lien à corriger, laissé en draft `à valider`.
+
+**8 articles réellement publiés et vérifiés en ligne sur techcars.fr** (200 OK) :
+`declaration-de-cession-carte-grise` (#929), `immatriculer-vehicule-importe` (#895), `plaque-ww-provisoire-duree` (#900), `cession-vehicule-pour-destruction` (#926), `ct-vehicule-electrique-specificites` (#949), `changement-de-titulaire-carte-grise` (#962), `carte-grise-ants-demarches` (#966), `carte-grise-collection` (#978). `tracking-mots-cles.xlsx` mis à jour en conséquence (`statut = publié`, `date_publication = 2026-07-29`).
+
+**Reste en draft `à valider`, non publiable en l'état** : 15 articles trop courts (<900 mots, nécessitent une vraie réécriture, pas juste une correction de liens) + `certificat-cession-cerfa-15776` (quasi-doublon) + `controle-technique-points-verifies` jamais généré (échec technique, à relancer).
+
 ## 2026-07-29 (suite 4) : www.techcars.fr cassé (ERR_CERT_COMMON_NAME_INVALID) + articles bloqués par le gating enfin conservés
 
 **⚠️ Action manuelle requise (DNS, hors de portée d'ici)** : `www.techcars.fr` renvoyait une erreur de certificat dans le navigateur. Cause : ce sous-domaine n'était pas enregistré dans le projet Vercel (`vercel domains ls` ne listait que l'apex `techcars.fr`), donc aucun certificat TLS n'était provisionné pour lui. Ajouté via `vercel domains add www.techcars.fr monauto`, mais Vercel exige en plus un enregistrement DNS chez le registrar (Infomaniak) pour finaliser : **ajouter un enregistrement `A` sur `www.techcars.fr` pointant vers `76.76.21.21`** (vérifié via `vercel domains inspect www.techcars.fr`). Une fois ce record ajouté et le certificat émis (vérification automatique par Vercel, email de confirmation), la redirection 308 `www.techcars.fr/*` → `https://techcars.fr/*` déjà codée dans [next.config.ts](frontend/monauto/next.config.ts) (`redirects()`, matching sur le header `Host`) s'appliquera automatiquement — testée en local avec un Host forcé (`www.techcars.fr` → 308 vers l'apex, `techcars.fr` → 200 normal).
@@ -89,8 +105,9 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 
 <!-- autopublish:report:start -->
 ## Autopublish — dernier run : 2026-07-29
-- Phase : 2 — silo en cours : Carburants & consommation
-- Programmées : 0 — bloquées (draft) : 2 — erreurs techniques : 0
+- Phase : 2 — silo en cours : Carte grise & démarches
+- Programmées : 1 — bloquées (draft) : 22 — erreurs techniques : 2 ⚠️
+- Dernier article programmé pour : 2026-09-01T08:00:00.000Z
 - Détail complet : [logs/autopublish/2026-07-29.md](logs/autopublish/2026-07-29.md)
 <!-- autopublish:report:end -->
 
