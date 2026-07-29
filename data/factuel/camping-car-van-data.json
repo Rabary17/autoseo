@@ -1,0 +1,138 @@
+[
+  {
+    "sous_cocon": "Acheter camping-car",
+    "fait": "Permis requis pour conduire un camping-car selon son poids (PTAC)",
+    "valeur": "Permis B suffisant jusqu'à 3 500 kg de PTAC ; au-delà, permis C requis (sauf mention B79 pour les permis obtenus avant le 20/01/1975, qui autorise un PTAC supérieur à 3 500 kg)",
+    "source": "FFCC, \"Quel permis pour conduire un camping-car ?\" (https://ffcc.fr/conseil-pratique/quel-permis-pour-conduire-un-camping-car) ; recoupé avec Ornikar et Fouilleul Formations",
+    "a_verifier": false,
+    "notes": "Concordance forte entre 3 sources indépendantes (auto-école, fédération professionnelle FFCC, organisme de formation PL). Une question parlementaire (Assemblée nationale, QE n°5007) évoque des discussions sur une possible évolution de la limite de poids du permis B — à surveiller mais non en vigueur à ce jour."
+  },
+  {
+    "sous_cocon": "Acheter camping-car",
+    "fait": "Mention B96 sur le permis B",
+    "valeur": "Permet de tracter une remorque de plus de 750 kg, à condition que l'ensemble véhicule + remorque ne dépasse pas 4 250 kg",
+    "source": "FFCC, \"Quel permis pour conduire un camping-car ?\"",
+    "a_verifier": false,
+    "notes": "Point technique utile pour le sous-cocon \"acheter\" (camping-car + remorque porte-voiture par ex.). Distinct du permis BE (pour ensembles supérieurs à 4 250 kg)."
+  },
+  {
+    "sous_cocon": "Acheter camping-car",
+    "fait": "Prix moyen d'un camping-car neuf en France en 2026",
+    "valeur": "De 48 990 € (van d'entrée de gamme) à plus de 150 000 € (intégral haut de gamme) ; un profilé familial se situe le plus souvent entre 53 000 € et 90 000 €",
+    "source": "Horizon Guide, \"Acheter un camping-car & van : le guide complet 2026\" (https://horizonguide.fr/achat-camping-car) ; recoupé avec L'Automobile Magazine (grille tarifaire Campérêve, janvier 2026) et euromotor.fr",
+    "a_verifier": true,
+    "notes": "Ordre de grandeur cohérent entre 3 sources (site spécialisé, presse auto, comparateur), mais les fourchettes exactes varient selon la marque/le format cité — présenter comme une fourchette indicative par gamme, pas un prix moyen unique et précis."
+  },
+  {
+    "sous_cocon": "Acheter camping-car",
+    "fait": "Prix moyen d'un camping-car d'occasion en France (modèles de 5 à 10 ans)",
+    "valeur": "Généralement entre 25 000 € et 65 000 € selon l'état, l'équipement et l'ancienneté",
+    "source": "Tavily answer synthèse (basée sur horizonguide.fr et aferiy.com) ; fourchette basse recoupée avec AFERIY FR (\"Combien coûte la vie en camping-car en France en 2026\") qui cite 15 000 € à 45 000 € pour des modèles plus anciens",
+    "a_verifier": true,
+    "notes": "Les fourchettes divergent selon la source (25-65k€ vs 15-45k€) car elles ne portent pas exactement sur les mêmes tranches d'âge/équipement — à présenter comme un ordre de grandeur large, en précisant toujours l'âge du véhicule concerné, jamais un chiffre unique."
+  },
+  {
+    "sous_cocon": "Van & fourgon aménagé",
+    "fait": "Prix neuf d'un van aménagé de marque spécialisée vs fourgon converti par un professionnel (2026)",
+    "valeur": "Van aménagé (marque spécialisée) : de 45 000 € (entrée de gamme) à 85 000 €+ (haut de gamme) ; fourgon aménagé par converter pro : fourchette généralement inférieure",
+    "source": "euromotor.fr, \"Van aménagé vs camping-car 2026 : prix et meilleur choix\" (https://euromotor.fr/blog/van-amenage-camping-car-2026-comparatif-prix)",
+    "a_verifier": true,
+    "notes": "Source unique (comparateur spécialisé, pas un organisme officiel) — ordre de grandeur à recouper avant citation ferme d'un prix précis en article."
+  },
+  {
+    "sous_cocon": "Van & fourgon aménagé",
+    "fait": "Homologation VASP obligatoire pour un van/fourgon aménagé",
+    "valeur": "Obligatoire si l'aménagement répond à 5 conditions cumulatives : rangements, table et assises, banquettes convertibles en lit (lit fixe accepté), cuisine fixe (gaz/électrique/diesel, pas de réchaud mobile), aménagement inamovible non démontable en moins de 2 heures",
+    "source": "Matmut, \"Van ou fourgon aménagé : l'homologation VASP\" (https://www.matmut.fr/assurance/auto/conseils/van-fourgon-amenagement-legislation) ; critères détaillés recoupés avec Le Van Migrateur et H2R Equipements",
+    "a_verifier": false,
+    "notes": "Forte concordance entre un assureur (Matmut) et deux sites spécialisés indépendants sur les 5 critères déclencheurs de l'obligation VASP."
+  },
+  {
+    "sous_cocon": "Van & fourgon aménagé",
+    "fait": "Un van/fourgon aménagé de façon sommaire, mobile et démontable rapidement échappe-t-il à l'obligation VASP ?",
+    "valeur": "Oui : si l'aménagement est sommaire, mobile et démontable en 2 heures maximum, l'homologation VASP n'est pas exigée",
+    "source": "Matmut, \"Van ou fourgon aménagé : l'homologation VASP\"",
+    "a_verifier": false,
+    "notes": "Information directement issue d'un assureur généraliste reconnu, cohérente avec les critères VASP listés dans l'entrée précédente."
+  },
+  {
+    "sous_cocon": "Van & fourgon aménagé",
+    "fait": "Signification de la mention \"CTTE\" sur une carte grise",
+    "valeur": "CTTE = camionnette / véhicule utilitaire (genre national, ligne J1 de la carte grise) ; distinct de VASP (véhicule automoteur spécialisé), qui est la mention requise pour un camping-car homologué",
+    "source": "Le Van Migrateur, \"Éviter l'homologation VASP, comment faire ?\" (https://levanmigrateur.com/contourner-lhomologation-vasp-comment-faire) ; recoupé avec eplaque.fr, \"Genre national carte grise J1\"",
+    "a_verifier": false,
+    "notes": "Concordance entre 2 sources spécialisées (site vanlife + site professionnel carte grise). Utile pour expliquer pourquoi un fourgon resté en genre CTTE n'est pas légalement un camping-car."
+  },
+  {
+    "sous_cocon": "Van & fourgon aménagé",
+    "fait": "Carte grise VASP obligatoire pour tout camping-car",
+    "valeur": "Un camping-car doit avoir une carte grise en règle ; la mention VASP au repère J1 remplace VP (voiture) ou CTTE (camionnette) lorsque le véhicule répond aux critères d'un véhicule spécialisé",
+    "source": "eplaque.fr, \"Carte grise VASP : immatriculer un véhicule spécialisé\" (https://www.eplaque.fr/carte-grise/carte-grise-vasp) ; Dépôt Camp, \"Est-ce que la carte grise VASP est obligatoire pour un camping-car ?\"",
+    "a_verifier": true,
+    "notes": "Le principe général (carte grise en règle, mention VASP si aménagement qualifiant) est confirmé par 2 sources spécialisées, mais aucune n'est un site institutionnel (ANTS/service-public.fr) — à recouper avant affirmation catégorique en article, notamment sur les cas limites (fourgon resté en CTTE malgré aménagement)."
+  },
+  {
+    "sous_cocon": "Assurance & réglementation",
+    "fait": "Prix moyen d'une assurance camping-car en France",
+    "valeur": "Entre 200 € et 600 € par an selon la formule (tiers ou tous risques) et la valeur du véhicule, soit environ 17 à 50 € par mois",
+    "source": "LesFurets, \"Assurance camping-car\" (https://www.lesfurets.com/assurance-auto/types-vehicules/autres-types-vehicules/camping-car) ; fourchette identique confirmée par GoodAssur, \"Prix assurance camping-car : combien ça coûte en 2026 ?\"",
+    "a_verifier": false,
+    "notes": "Concordance exacte entre 2 comparateurs d'assurance indépendants sur la fourchette 200-600 €/an."
+  },
+  {
+    "sous_cocon": "Assurance & réglementation",
+    "fait": "Le porte-vélo et les vélos transportés sont-ils couverts par l'assurance auto/camping-car standard ?",
+    "valeur": "Non systématiquement : le porte-vélo et les vélos fixés dessus ne sont pas toujours couverts par un contrat auto standard, notamment en cas de vol — une garantie ou extension spécifique doit être vérifiée auprès de l'assureur",
+    "source": "MAAF, \"Faut-il prendre une assurance pour son porte-vélos\" (https://www.maaf.fr/fr/assurance-auto/assurance-porte-velos) ; recoupé avec MAIF (\"Vélo fixé sur un porte-vélo voiture : quelle assurance ?\") et Franssen Loisirs",
+    "a_verifier": false,
+    "notes": "Concordance entre 2 grands assureurs (MAAF, MAIF) et un professionnel d'accessoires camping-car."
+  },
+  {
+    "sous_cocon": "Assurance & réglementation",
+    "fait": "Réglementation du stationnement des camping-cars sur la voie publique",
+    "valeur": "Un camping-car peut stationner partout où une voiture peut le faire, sauf stationnement dangereux, gênant ou abusif ; les arrêtés municipaux interdisant spécifiquement le stationnement des camping-cars sont jugés illégaux par la jurisprudence (défaut de motivation, caractère discriminatoire)",
+    "source": "FFCC, \"Stationnement des camping-cars et contraventions\" (https://ffcc.fr/conseil-pratique/stationnement-des-camping-cars) ; confirmé par le Sénat, réponse à la question écrite n° qSEQ241001232 (https://www.senat.fr/questions/base/2024/qSEQ241001232.html)",
+    "a_verifier": false,
+    "notes": "Double confirmation par une fédération d'usagers (FFCC) et une réponse ministérielle publiée sur le site du Sénat — source institutionnelle solide."
+  },
+  {
+    "sous_cocon": "Assurance & réglementation",
+    "fait": "Durée maximale de stationnement autorisée pour un camping-car au même endroit avant de risquer une qualification de stationnement abusif",
+    "valeur": "7 jours consécutifs (article R.417-12 du Code de la route), au-delà le stationnement peut être considéré comme abusif",
+    "source": "Horizon Camping-Cars, \"Stationnement des Camping-cars en France : que dit la loi en 2025 ?\" (https://www.campingcarfrance.com/infos-utiles/les-guides-du-bon-camping-cariste/le-stationnement-des-camping-cars-quel-cadre-juridique-en-france) ; article de loi confirmé également cité par la Maison des Communes de la Vendée",
+    "a_verifier": true,
+    "notes": "Le délai de 7 jours et la référence à l'article R.417-12 sont cités par 2 sources concordantes (site spécialisé + collectivité), mais à vérifier sur Légifrance avant citation ferme de l'article de loi exact."
+  },
+  {
+    "sous_cocon": "Assurance & réglementation",
+    "fait": "Différence entre stationner et camper sur la voie publique pour un camping-car",
+    "valeur": "Le stationnement est autorisé comme pour une voiture, mais il est interdit de \"camper\" : poser des cales, déployer un auvent, sortir table et chaises à l'heure du repas sur la voie publique",
+    "source": "Maison des Communes de la Vendée, \"Accueillir les touristes itinérants - stationnement des campings-cars : quel cadre juridique ?\" (https://www.maisondescommunes85.fr/actualites/accueillir-touristes-itinerants-stationnement-campings-cars-quel-cadre-juridique)",
+    "a_verifier": false,
+    "notes": "Source institutionnelle (collectivité territoriale), cohérente avec la réponse du Sénat et la FFCC citées ci-dessus."
+  },
+  {
+    "sous_cocon": "Entretien & hivernage",
+    "fait": "Étapes clés de l'hivernage d'un camping-car",
+    "valeur": "Vidanger entièrement tous les réservoirs d'eau (y compris eaux grises), ouvrir la vanne de vidange du chauffe-eau et tous les robinets, couper l'alimentation électrique et retirer/isoler la batterie dans un endroit à l'abri du gel, nettoyer l'extérieur avant de remiser",
+    "source": "Hymer, \"Préparer son camping-car pour l'hiver : Conseils + liste de contrôle\" (https://www.hymer.com/fr/fr/voyager-experiences/conseils-voyage/hivernage-du-camping-car) ; recoupé avec Generali (\"Quelles sont les étapes avant l'hivernage de votre camping-car\") et Wikicampers",
+    "a_verifier": false,
+    "notes": "Concordance forte entre un constructeur (Hymer), un assureur (Generali) et un site spécialisé location (Wikicampers) sur les étapes essentielles (vidange totale, coupure électrique, protection batterie)."
+  },
+  {
+    "sous_cocon": "Entretien & hivernage",
+    "fait": "Vidange des eaux usées (grises/noires) d'un camping-car sur la voie publique",
+    "valeur": "Interdite : vider ses eaux usées dans un caniveau, une bouche d'eaux pluviales ou en pleine nature est interdit et peut être verbalisé par la police municipale ; la vidange doit se faire dans une aire de services dédiée",
+    "source": "Van-Away, \"Vidange camping-car : eaux grises et eaux noires\" (https://www.van-away.com/actualites/eaux-grises-eaux-noires-vidanges)",
+    "a_verifier": true,
+    "notes": "Source unique spécialisée (blog vanlife), principe globalement plausible et cohérent avec la réglementation générale sur la pollution de l'eau, mais pas recoupé avec un texte réglementaire précis (Code de l'environnement) — à vérifier avant de citer un montant d'amende ou un article de loi exact."
+  },
+  {
+    "sous_cocon": "Voyager & aires",
+    "fait": "Nombre d'aires de camping-car recensées en France et proportion totalement gratuite (2026)",
+    "valeur": "3 917 aires recensées au total, dont 1 108 totalement gratuites (ni stationnement nocturne, ni plein d'eau payants) — en légère baisse par rapport à 1 129 l'année précédente et 1 120 il y a deux ans",
+    "source": "Le Monde du Camping-Car, \"Les aires de camping-car en 2026 : la vérité sur les tarifs...\" (https://www.lemondeducampingcar.fr/etapes/aires-de-services-etapes/enquete-sur-le-vrai-tarif-des-aires-de-camping-car-augmentations-gratuite-tendances/190594)",
+    "a_verifier": true,
+    "notes": "Chiffre précis et daté issu d'une enquête d'un site spécialisé reconnu du secteur, mais provenant d'une source unique (pas de recoupement avec une base de données officielle type camping-car park ou collectivités) — présenter comme une enquête sectorielle, pas une statistique officielle."
+  }
+]

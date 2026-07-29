@@ -3,35 +3,60 @@
 // ajustements de politique (budget hebdo, modèle par type) ne nécessitent pas
 // de modifier l'orchestrateur.
 const { PHASE_CAPACITY_PER_DAY } = require('./lib/scheduler');
+const maillage = require('./lib/maillage');
+
+// Silos triés par nombre total d'articles CROISSANT (le plus petit cocon
+// d'abord) — demande explicite de l'utilisateur le 2026-07-28, pour valider
+// le pipeline articles sur des cocons complets et peu coûteux avant de
+// passer aux plus gros (Entretien & révision 314, Marques & modèles 463).
+// Calculé depuis data/maillage/maillage.json (source réelle) plutôt qu'une
+// liste figée à la main — évite la même désynchronisation que celle trouvée
+// le 2026-07-28 sur config/niches/.../niche.json (resté périmé au fil des
+// ajouts de sous-cocons, voir STATE.md).
+function computeSiloOrderAscendingByArticleCount() {
+  const counts = new Map();
+  for (const entry of maillage.loadMaillage()) {
+    counts.set(entry.silo, (counts.get(entry.silo) || 0) + 1);
+  }
+  return [...counts.entries()].sort((a, b) => a[1] - b[1]).map(([silo]) => silo);
+}
 
 module.exports = {
-  // Budget de démarrage Phase 2 — confirmé par l'utilisateur ("~20
-  // articles/semaine"), très en dessous du plafond de 15/jour
-  // (skills/wordpress-publication.md section 6). À augmenter uniquement sur
-  // décision explicite de l'utilisateur, jamais automatiquement.
-  WEEKLY_BUDGET_PHASE2: 20,
+  // Budget hebdomadaire Phase 2 — 10 articles/jour (voir scheduler.js et
+  // skills/wordpress-publication.md section 6, abaissé de 15 à 10/jour le
+  // 2026-07-28 sur demande explicite de l'utilisateur). Remplace l'ancien
+  // budget de démarrage prudent (20/semaine) : à ce stade, le pipeline
+  // articles est validé (test-e2e + backfill meta), plus besoin d'un rythme
+  // artificiellement réduit.
+  WEEKLY_BUDGET_PHASE2: 70,
 
   // Capacité/jour utilisée pour l'espacement des post_date (voir scheduler.js)
   // — distincte du budget hebdomadaire ci-dessus, qui limite combien de
   // pièces un run traite, pas la vitesse de publication elle-même.
   PHASE_CAPACITY_PER_DAY,
 
-  // Répartition modèle par type de contenu (voir plan indexed-hugging-flurry
-  // section 5, économie de tokens) : Sonnet 5 pour hub/sous-hub (structuration
-  // de liens complexe) ; Haiku 4.5 pour les articles programmatiques courts
-  // (gros volume, contenu templaté). Haiku 4.5 n'accepte ni
-  // `thinking: adaptive` ni `output_config.effort` (erreur 400) — laisser
-  // `thinking`/`effort` à `undefined` pour ce modèle (voir claude-client.js,
-  // qui n'envoie ces champs que s'ils sont fournis).
+  // Répartition modèle par type de contenu (migré vers l'API Mistral le
+  // 2026-07-27, demande explicite de l'utilisateur — voir STATE.md) :
+  // mistral-large-latest pour hub/sous-hub (structuration de liens complexe) ;
+  // mistral-small-latest pour les articles programmatiques courts (gros
+  // volume, contenu templaté).
   MODEL_BY_CONTENT_TYPE: {
-    hub: { model: 'claude-sonnet-5', thinking: { type: 'adaptive' }, effort: 'high' },
-    'sous-hub': { model: 'claude-sonnet-5', thinking: { type: 'adaptive' }, effort: 'high' },
-    article: { model: 'claude-haiku-4-5', thinking: undefined, effort: undefined },
+    hub: { model: 'mistral-large-latest' },
+    'sous-hub': { model: 'mistral-large-latest' },
+    article: { model: 'mistral-small-latest' },
   },
 
-  // Relecture obligatoire (voir review.js) : toujours Sonnet 5, jugement
-  // qualité — quel que soit le type de contenu relu.
-  REVIEW_MODEL: { model: 'claude-sonnet-5', thinking: { type: 'adaptive' }, effort: 'medium' },
+  // Relecture obligatoire (voir review.js), par type de contenu — mistral-large-latest
+  // pour hub/sous-hub (structuration de liens, jugement qualité critique, faible
+  // volume) ; mistral-medium-latest pour les articles (gros volume, contenu
+  // templaté — allégé le 2026-07-27 sur demande explicite de l'utilisateur pour
+  // réduire le coût des runs massifs, en s'appuyant sur des données factuelles
+  // solides en amont plutôt que sur la relecture pour rattraper les manques).
+  REVIEW_MODEL_BY_CONTENT_TYPE: {
+    hub: { model: 'mistral-large-latest' },
+    'sous-hub': { model: 'mistral-large-latest' },
+    article: { model: 'mistral-medium-latest' },
+  },
 
   // Image par défaut par silo (media_id WordPress déjà uploadé), dernier
   // repli si les 3 API stock-photo (images.js) ne renvoient rien de
@@ -60,32 +85,11 @@ module.exports = {
     F: 'nathalie-moreau',
   },
 
-  // Ordre par défaut de traitement des silos en Phase 2 — reprend l'ordre
-  // dans lequel le P1 (collecte mots-clés) a déjà été réalisé (voir STATE.md),
-  // cohérent avec "Entretien & révision et Pannes & diagnostic en premier"
-  // (skills/wordpress-publication.md section 6). Utilisé uniquement quand
-  // `silo_en_cours` est vide dans l'état — sinon l'état persisté fait foi.
-  SILO_ORDER_PHASE2: [
-    'Entretien & révision',
-    'Pannes & diagnostic',
-    'Marques & modèles',
-    'Essais & comparatifs',
-    'Achat voiture neuve',
-    'Électrique & hybride',
-    'Pièces détachées & accessoires',
-    'Carte grise & démarches',
-    'Assurance auto',
-    'Permis & conduite',
-    'Moto & scooter',
-    'Vélo & nouvelles mobilités',
-    'Mobilité partagée & transports',
-    'Carburants & consommation',
-    'Camping-car & van',
-    'Utilitaires & flottes pro',
-    'Sport auto & passion',
-    'Road trips & voyage auto',
-    "Voiture d'occasion",
-  ],
+  // Ordre de traitement des silos en Phase 2 — du plus petit au plus gros
+  // cocon (voir computeSiloOrderAscendingByArticleCount ci-dessus). Utilisé
+  // uniquement quand `silo_en_cours` est vide dans l'état — sinon l'état
+  // persisté fait foi.
+  SILO_ORDER_PHASE2: computeSiloOrderAscendingByArticleCount(),
 
   // Quotas d'intention interleavés (voir seo.md section 3 et
   // wordpress-publication.md section 6) — approximatifs, appliqués au budget

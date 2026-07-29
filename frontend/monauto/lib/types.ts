@@ -46,7 +46,7 @@ export interface WpPage {
   modified: string;
   parent: number;
   featured_media?: number;
-  acf?: { tldr?: string; sources?: string; faq?: string };
+  acf?: { tldr?: string; sources?: string; faq?: string; meta_title?: string; meta_description?: string };
   _embedded?: {
     "wp:featuredmedia"?: WpImage[];
   };
@@ -63,7 +63,7 @@ export interface WpPost {
   author: number;
   categories: number[];
   tags: number[];
-  acf?: { tldr?: string; sources?: string; faq?: string };
+  acf?: { tldr?: string; sources?: string; faq?: string; meta_title?: string; meta_description?: string };
   _embedded?: {
     author?: WpUser[];
     "wp:featuredmedia"?: WpImage[];

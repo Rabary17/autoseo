@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Rapport quotidien — aucune génération, aucun appel Claude, coût ~nul.
+// Rapport quotidien — aucune génération, aucun appel Mistral, coût ~nul.
 // Interroge WordPress (source de vérité) pour lister : ce qui est publié
 // aujourd'hui, ce qui est prévu demain, et un aperçu des jours suivants.
 // Écrit un e-mail HTML que le workflow GitHub Actions envoie ensuite (voir

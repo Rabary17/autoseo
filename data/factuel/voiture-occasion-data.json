@@ -1,0 +1,154 @@
+[
+  {
+    "sous_cocon": "Garanties occasion",
+    "fait": "Durée de la garantie légale des vices cachés sur une voiture d'occasion",
+    "valeur": "2 ans à compter de la découverte du vice (et non de la date d'achat), dans la limite de 20 ans après la vente",
+    "source": "Articles 1641, 1648 et 2232 du Code civil ; recoupé avec Victoris Avocat (victorisavocat.com), Thomas Veron Avocat et Roole.fr",
+    "a_verifier": false,
+    "notes": "S'applique aussi bien aux ventes entre particuliers qu'aux ventes par un professionnel. Concordance forte entre 4 sources juridiques indépendantes."
+  },
+  {
+    "sous_cocon": "Garanties occasion",
+    "fait": "Durée de la garantie légale de conformité (vente par un professionnel uniquement)",
+    "valeur": "2 ans à compter de la livraison du véhicule (article L.217-3 du Code de la consommation) ; présomption d'antériorité du défaut de 12 mois pour l'occasion",
+    "source": "Thomas Veron Avocat, \"Vice caché voiture d'occasion : vos droits, recours et délais\" (articles L.217-3 et L.217-7 du Code de la consommation)",
+    "a_verifier": false,
+    "notes": "Ne s'applique qu'aux ventes consenties par un professionnel à un consommateur, contrairement à la garantie des vices cachés qui s'applique aussi entre particuliers. Bien distinguer les deux dispositifs dans le contenu."
+  },
+  {
+    "sous_cocon": "Garanties occasion",
+    "fait": "Durée moyenne de la garantie commerciale/constructeur proposée par un vendeur professionnel sur un véhicule d'occasion",
+    "valeur": "Entre 6 et 12 mois en moyenne pour la garantie commerciale du vendeur ; la garantie constructeur d'origine (2 à 7 ans selon la marque) reste transférable aux acheteurs successifs sous condition d'entretien conforme",
+    "source": "Litige.fr, \"Garantie d'une voiture d'occasion\" ; recoupé avec Distinxion.fr et Allure Automobile",
+    "a_verifier": true,
+    "notes": "Les durées varient significativement selon les sources et les marques (2 à 7 ans pour le constructeur) — présenter comme un ordre de grandeur, jamais un chiffre unique, et préciser que cela dépend du constructeur et du respect du carnet d'entretien dans le réseau agréé."
+  },
+  {
+    "sous_cocon": "Garanties occasion",
+    "fait": "Garantie minimale légale suisse sur une occasion (à ne pas confondre avec la France)",
+    "valeur": "Non retenu pour ce silo",
+    "source": null,
+    "a_verifier": true,
+    "notes": "REJETÉ : une source (AutoScout24.ch) mentionne une garantie minimale de 12 mois mais concerne le droit suisse, pas français. Ne pas utiliser cette donnée pour un contenu ciblant la France."
+  },
+  {
+    "sous_cocon": "Garanties occasion",
+    "fait": "Droit de rétractation après achat d'une voiture d'occasion",
+    "valeur": "Aucun droit de rétractation automatique entre particuliers ni en concession pour un paiement comptant ; délai de 14 jours uniquement en cas de vente à distance/démarchage par un professionnel, ou en cas de financement par crédit à la consommation (rétractation sur le crédit)",
+    "source": "Litige.fr, \"Délai de rétractation lors de l'achat d'une voiture\" ; recoupé avec CapCar et RX Automobiles",
+    "a_verifier": true,
+    "notes": "Une source (DexAuto) mentionne un délai de 7 jours pour se rétracter après signature d'un bon de commande en vente physique chez un professionnel, ce qui contredit les 3 autres sources affirmant qu'aucune rétractation n'existe hors distance/crédit. Contradiction non résolue — à vérifier sur une source primaire (Code de la consommation) avant publication."
+  },
+  {
+    "sous_cocon": "Historique & vices cachés",
+    "fait": "Service HistoVec — historique administratif gratuit d'un véhicule d'occasion",
+    "valeur": "Service gratuit du Ministère de l'Intérieur (histovec.interieur.gouv.fr), basé sur le SIV ; couvre changements de propriétaires, contrôles techniques, sinistres déclarés, situation administrative (gage, opposition, vol) ; uniquement pour les véhicules immatriculés en France",
+    "source": "histovec.interieur.gouv.fr ; service-public.gouv.fr, \"Consulter en ligne les informations de votre véhicule sur la plateforme HistoVec\" (https://www.service-public.gouv.fr/particuliers/vosdroits/R68264)",
+    "a_verifier": false,
+    "notes": "Source officielle directe (ministère). Fiabilité maximale."
+  },
+  {
+    "sous_cocon": "Historique & vices cachés",
+    "fait": "Certificat de non-gage (certificat de situation administrative, CSA) — obligation et durée de validité",
+    "valeur": "Obligatoire pour toute vente de véhicule d'occasion immatriculé en France ; doit dater de moins de 15 jours au moment de la vente",
+    "source": "siv.interieur.gouv.fr ; economie.gouv.fr/dgccrf, \"Achat d'un véhicule d'occasion : quelles sont les obligations du vendeur\" ; recoupé avec Village-Justice (articles L322-2 et R322-4 du Code de la route)",
+    "a_verifier": false,
+    "notes": "Le certificat n'existe que pour les véhicules immatriculés en France (source Roole.fr) — ne peut pas être obtenu pour un véhicule importé de l'étranger."
+  },
+  {
+    "sous_cocon": "Historique & vices cachés",
+    "fait": "Proportion estimée de compteurs kilométriques trafiqués sur le marché de l'occasion en France",
+    "valeur": "Entre 5 % et 10 % des véhicules d'occasion vendus, avec une fréquence accrue sur les véhicules importés d'Allemagne",
+    "source": "Litige.fr, \"Compteur kilométrique trafiqué : quelle expertise et quel recours ?\" par Audrey Bergamini",
+    "a_verifier": true,
+    "notes": "Chiffre issu d'un seul article juridique (non recoupé avec une étude statistique officielle ou un organisme comme la DGCCRF) — traiter comme un ordre de grandeur indicatif, pas une statistique certaine."
+  },
+  {
+    "sous_cocon": "Historique & vices cachés",
+    "fait": "Recours de l'acheteur en cas de kilométrage trafiqué découvert après achat",
+    "valeur": "Action civile possible pour tromperie/vice caché visant l'annulation de la vente ou une réduction du prix ; la responsabilité peut remonter à un propriétaire antérieur si le compteur a été modifié avant lui (jurisprudence : vendeur de bonne foi néanmoins condamné à rembourser si le trucage remonte à une vente antérieure)",
+    "source": "TF1 Info, \"Véhicule d'occasion : êtes-vous responsable de la fraude si vous revendez une voiture truquée ?\" ; economie.gouv.fr/dgccrf, \"Vente de voitures d'occasion, gare aux tromperies !\"",
+    "a_verifier": false,
+    "notes": "Confirmé par une source officielle (DGCCRF) qui documente des pratiques de minoration de kilométrage récurrentes, notamment en zones transfrontalières et chez des revendeurs indépendants."
+  },
+  {
+    "sous_cocon": "Vendre sa voiture",
+    "fait": "Documents obligatoires à remettre à l'acheteur lors de la vente d'un véhicule d'occasion",
+    "valeur": "4 documents : carte grise barrée portant la mention « vendu/cédé le » et signée, certificat de cession (Cerfa n°15776*02), certificat de situation administrative (non-gage, moins de 15 jours), et procès-verbal de contrôle technique de moins de 6 mois (si le véhicule a plus de 4 ans)",
+    "source": "economie.gouv.fr/dgccrf, \"Achat d'un véhicule d'occasion : quelles sont les obligations du vendeur\" ; recoupé avec LegalPlace et Generali",
+    "a_verifier": false,
+    "notes": "Concordance forte entre source officielle (DGCCRF) et deux sources professionnelles (assureur, plateforme juridique)."
+  },
+  {
+    "sous_cocon": "Vendre sa voiture",
+    "fait": "Délai légal pour déclarer la cession d'un véhicule à l'ANTS après la vente",
+    "valeur": "15 jours à compter de la date de vente",
+    "source": "Article R322-4 du Code de la route ; LegalPlace, \"Déclaration de cession de véhicule sur ANTS : le guide\" ; recoupé avec declaration-cession-vehicule.fr",
+    "a_verifier": false,
+    "notes": "Concordance entre 3 sources sur le délai de 15 jours."
+  },
+  {
+    "sous_cocon": "Vendre sa voiture",
+    "fait": "Montant de l'amende en cas de non-déclaration de cession dans les délais",
+    "valeur": "Amende forfaitaire de 4e classe : 90 € si payée sous 15-30 jours (minorée), 135 € si payée entre 15/45 jours (30/60 jours en ligne), 375 € en cas de retard important (majorée) ; pas de retrait de points sur le permis",
+    "source": "LegalPlace, \"Certificat de cession non enregistré : ce qu'il faut savoir\" ; recoupé avec Plaques24.fr (citant l'article R322-4 du Code de la route)",
+    "a_verifier": false,
+    "notes": "Barème identique retrouvé sur 2 sources indépendantes citant le même texte réglementaire."
+  },
+  {
+    "sous_cocon": "Vendre sa voiture",
+    "fait": "Délai pendant lequel le vendeur reste destinataire des amendes après la vente s'il n'a pas déclaré la cession",
+    "valeur": "1 mois : l'acheteur peut légalement circuler avec l'ancienne carte grise au nom du vendeur pendant ce délai ; au-delà, il est en infraction",
+    "source": "CapCar, \"Amende reçue après la vente d'une voiture d'occasion : que faire ?\"",
+    "a_verifier": false,
+    "notes": "Ce délai d'1 mois concerne l'obligation de l'ACHETEUR de refaire la carte grise à son nom, distinct du délai de 15 jours de déclaration de cession qui incombe au VENDEUR — bien différencier les deux dans le contenu pour éviter la confusion."
+  },
+  {
+    "sous_cocon": "Acheter une occasion",
+    "fait": "Obligation du contrôle technique lors de l'achat d'un véhicule d'occasion auprès d'un particulier",
+    "valeur": "Obligatoire pour tout véhicule de plus de 4 ans vendu à un particulier, daté de moins de 6 mois ; non exigé pour un véhicule de moins de 4 ans, ni pour une vente à un professionnel (garage, concessionnaire)",
+    "source": "service-public.gouv.fr, \"Peut-on vendre un véhicule d'occasion sans contrôle technique ?\" (https://www.service-public.gouv.fr/particuliers/vosdroits/F16540) ; recoupé avec DEKRA et Toyota.fr",
+    "a_verifier": false,
+    "notes": "Source officielle directe, recoupée par 2 sources professionnelles concordantes."
+  },
+  {
+    "sous_cocon": "Acheter une occasion",
+    "fait": "Délai légal pour l'acheteur pour obtenir une nouvelle carte grise après achat d'une occasion",
+    "valeur": "1 mois après l'achat, sous peine d'une amende forfaitaire de 135 €",
+    "source": "Toyota.fr, \"Comment immatriculer un véhicule d'occasion ?\" ; recoupé avec cartegrise.com et landes.gouv.fr (préfecture)",
+    "a_verifier": false,
+    "notes": "Concordance entre source professionnelle et source préfectorale (landes.gouv.fr) sur le délai d'1 mois."
+  },
+  {
+    "sous_cocon": "Cote & estimation",
+    "fait": "Origine et nature de la cote Argus",
+    "valeur": "Créée en 1927 par Paul Rousseau ; estimation neutre basée sur le prix catalogue du véhicule neuf ajusté par des courbes de décote selon le kilométrage, l'état et les tendances du marché ; ce n'est pas un prix de vente garanti mais une base de négociation",
+    "source": "largus.fr/cote ; recoupé avec CapCar (capcar.fr/vendre/cote-argus)",
+    "a_verifier": false,
+    "notes": "Concordance entre le site officiel de L'Argus et un acteur professionnel indépendant sur la définition et l'origine historique (1927)."
+  },
+  {
+    "sous_cocon": "Cote & estimation",
+    "fait": "Existence de cotes alternatives à l'Argus (autobiz, La Centrale)",
+    "valeur": "Cote Autobiz : méthodologie basée sur l'analyse quotidienne de 2 millions d'annonces de particuliers pour ajuster la cote à l'offre et la demande réelles du marché",
+    "source": "coteauto.autobiz.fr",
+    "a_verifier": true,
+    "notes": "Chiffre (2 millions d'annonces) issu de la communication commerciale du site lui-même, non vérifié par une source tierce indépendante — à présenter comme argument marketing de l'acteur, pas comme fait établi."
+  },
+  {
+    "sous_cocon": "Enchères & ventes pro",
+    "fait": "Existence d'un site officiel des enchères du Domaine (État) pour les véhicules d'occasion",
+    "valeur": "encheres-domaine.gouv.fr propose une catégorie « Véhicules » incluant véhicules de tourisme, utilitaires, motos, scooters, camions",
+    "source": "encheres-domaine.gouv.fr (site officiel), catégorie Véhicules (https://encheres-domaine.gouv.fr/categorie/vehicules)",
+    "a_verifier": false,
+    "notes": "Source officielle directe (Direction générale des Finances publiques). Le nombre de lots disponibles varie en continu et n'est pas une donnée statique à citer telle quelle."
+  },
+  {
+    "sous_cocon": "Enchères & ventes pro",
+    "fait": "Critères d'éligibilité des véhicules proposés sur les plateformes d'enchères professionnelles privées (ex. Enchères VO)",
+    "valeur": "Généralement véhicules de moins de 10 ans et moins de 160 000 km, avec possibilité d'extension de garantie",
+    "source": "encheres-vo.com",
+    "a_verifier": true,
+    "notes": "Donnée issue de la communication commerciale d'un acteur privé spécifique — les critères varient selon la plateforme (VPauto, Interencheres) et ne constituent pas une règle générale du marché des enchères automobiles."
+  }
+]

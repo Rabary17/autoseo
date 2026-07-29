@@ -1,0 +1,146 @@
+[
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Bonus écologique 2026 pour l'achat d'une voiture électrique neuve (barème de base selon revenu)",
+    "valeur": "5 700 € pour les ménages précaires, 4 700 € pour les ménages modestes non précaires, 3 500 € pour les autres ménages",
+    "source": "economie.gouv.fr, \"Achat d'un véhicule électrique : pouvez-vous bénéficier de la prime coup de pouce véhicules particuliers électriques ?\" (https://www.economie.gouv.fr/particuliers/voyager-et-se-deplacer/achat-dun-vehicule-electrique-pouvez-vous-beneficier-de-la-prime-coup-de-pouce-vehicules-particuliers-electriques) ; recoupé avec capcar.fr, francecartegrise.com et automobile-propre.com",
+    "a_verifier": false,
+    "notes": "Source officielle (economie.gouv.fr) et 3 sources professionnelles indépendantes concordantes sur les mêmes montants. Le dispositif s'appelle officiellement depuis le 1er juillet 2025 la prime \"coup de pouce véhicules particuliers électriques\", plus \"bonus écologique\" au sens strict de l'ancien dispositif."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Surbonus batterie européenne (bonus écologique 2026)",
+    "valeur": "Entre 1 200 € et 2 000 € en complément, pour les véhicules électriques équipés d'une batterie fabriquée dans l'Espace économique européen",
+    "source": "automobile-propre.com, \"Ce qui change le 1er janvier 2026 pour les automobilistes\" ; recoupé avec economie.gouv.fr et francecartegrise.com",
+    "a_verifier": false,
+    "notes": "Concordance entre source officielle et sources spécialisées automobiles sur la fourchette."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Conditions cumulatives d'éligibilité au bonus écologique 2026",
+    "valeur": "Véhicule 100 % électrique ou hydrogène neuf, prix catalogue inférieur à 47 000 €, poids inférieur à 2 400 kg, score environnemental ADEME supérieur ou égal à 60/80",
+    "source": "capcar.fr, \"Bonus écologique 2026 : montants, conditions et voitures éligibles\"",
+    "a_verifier": true,
+    "notes": "Les hybrides rechargeables ne sont plus éligibles depuis le 1er juillet 2025 selon cette source. Une autre source (izi-by-edf.fr) évoque un montant d'aide établi à \"27 % TTC du coût d'acquisition\", ce qui semble être une donnée obsolète ou une autre formule de calcul — ne pas citer ce pourcentage sans vérification, privilégier les montants fixes par tranche de revenu."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Seuil de déclenchement et plafond du malus écologique CO2 pour les voitures neuves immatriculées en 2026",
+    "valeur": "Malus à partir de 108 g/km de CO2 (WLTP), plafond à 80 000 € au-delà de 192 g/km",
+    "source": "drivetobusiness.fr, \"Malus et exonération pour les entreprises\" ; barème détaillé recoupé avec caroom.fr (\"Malus 2026 : la grille à jour\")",
+    "a_verifier": true,
+    "notes": "CONTRADICTION relevée : une autre source (guichetcartegrise.com) indique un seuil de déclenchement à 118 g/km et un plafond de 60 000 €, ce qui semble correspondre à un barème antérieur (probablement 2024 ou 2025) resté en ligne sans mise à jour. largus.fr évoque par ailleurs un plafond de 100 000 € mais à horizon 2027-2028, pas pour 2026. À vérifier sur le texte réglementaire (Légifrance / Code général des impôts, article 1012 ter) avant publication — ne citer qu'un seul jeu de chiffres cohérent (108 g/km / 80 000 €), pas les 3 en même temps."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Malus au poids pour les voitures neuves en 2026",
+    "valeur": "S'applique aux véhicules de plus de 1 500 kg, barème progressif jusqu'à 30 €/kg ; véhicules 100 % électriques et hydrogène exonérés",
+    "source": "drivetobusiness.fr, \"Bonus et malus écologique\"",
+    "a_verifier": true,
+    "notes": "Chiffre trouvé sur une seule source spécialisée (site de courtage professionnel) ; non recoupé avec une source officielle (service-public.fr / impots.gouv.fr) dans cette recherche — à vérifier avant publication."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Existence de la prime à la conversion pour l'achat d'une voiture neuve en 2026",
+    "valeur": "Non — la prime à la conversion a été supprimée par décret le 2 décembre 2024 et n'a pas été reconduite en 2026",
+    "source": "particuliers.engie.fr, \"Fin de la prime à la conversion 2026 : c'est officiel !\" ; joinsteer.com, \"Prime à la conversion 2026 : montants, conditions et alternatives\"",
+    "a_verifier": true,
+    "notes": "CONTRADICTION IMPORTANTE : plusieurs autres sites (easy-rachat-auto.fr, euromotor.fr, mes-allocs.fr) publient des tableaux de montants \"2026\" très détaillés (jusqu'à 5 000 € selon le revenu) présentant la prime comme active en 2026, ce qui contredit directement les 2 sources ci-dessus annonçant sa suppression fin 2024. Il s'agit très probablement de pages non mises à jour ou de contenus dupliqués d'années antérieures republiés avec la date \"2026\". Ne jamais affirmer l'existence ou l'absence de cette prime sans vérification sur service-public.fr ou economie.gouv.fr — la contradiction porte sur l'existence même du dispositif, pas seulement sur son montant."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Formule légale de calcul de la puissance fiscale (chevaux fiscaux) d'un véhicule, utilisée pour le prix de la carte grise",
+    "valeur": "PF = (CO2 ÷ 45) + (Puissance moteur en kW ÷ 40)^1,6, en vigueur depuis juillet 1998 (article 62 de la loi n°98-546 du 2 juillet 1998)",
+    "source": "guide-carte-grise.info, \"Calculez la Puissance Fiscale de votre Véhicule\" ; existence du simulateur confirmée par service-public.gouv.fr (\"Carte grise : quel est le prix d'1CV\")",
+    "a_verifier": false,
+    "notes": "Formule réglementaire ancienne et stable, référencée avec un simulateur officiel service-public.gouv.fr en complément."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Prix du cheval fiscal (taxe régionale Y1 de la carte grise) : variabilité selon la région",
+    "valeur": "Varie par région, exemples cités : environ 43 €/CV en Auvergne-Rhône-Alpes, environ 60 €/CV en Bretagne",
+    "source": "cartegriseminute.fr, \"Prix carte grise 2026\" et \"Chevaux fiscaux ou chevaux DIN\"",
+    "a_verifier": true,
+    "notes": "Montants régionaux revus chaque année en conseil régional — à vérifier sur le site officiel de la région concernée avant citation dans un article, ne jamais présenter un tarif régional comme valable pour toute la France."
+  },
+  {
+    "sous_cocon": "Bonus, malus & fiscalité",
+    "fait": "Taxe sur les véhicules de société (TVS) en 2026",
+    "valeur": "N'existe plus sous ce nom depuis 2022/2023 : remplacée par deux taxes annuelles distinctes, l'une sur les émissions de CO2, l'autre sur les émissions de polluants atmosphériques",
+    "source": "indy.fr, \"La nouvelle TVS : les règles en 2026\" ; recoupé avec sixt.fr/business (TVTS) et l-expert-comptable.com",
+    "a_verifier": false,
+    "notes": "Concordance forte entre 3 sources professionnelles indépendantes (comptabilité, location de flotte, fiscalité) sur la structure du dispositif."
+  },
+  {
+    "sous_cocon": "Guide d'achat par segment",
+    "fait": "Prix moyen d'une voiture neuve en France en 2026",
+    "valeur": "Dépasse 35 000 € en moyenne",
+    "source": "joinsteer.com, \"Acheter une voiture neuve en 2026 : guide complet\"",
+    "a_verifier": true,
+    "notes": "Chiffre provenant d'une marketplace automobile (acteur commercial), pas d'un institut statistique officiel (INSEE, CCFA/PFA) — à recouper avec une source officielle avant citation comme statistique de marché."
+  },
+  {
+    "sous_cocon": "Guide d'achat par segment",
+    "fait": "Délai de livraison moyen d'une voiture neuve commandée sur mesure (hors stock) en 2026",
+    "valeur": "Entre 4 semaines et plusieurs mois selon la complexité de la configuration et la capacité de production du constructeur ; certains modèles premium jusqu'à 9 mois",
+    "source": "avocat-voisin.fr, \"Délais de livraison : quand recevoir votre voiture neuve ?\" ; recoupé avec joinsteer.com et leasing-social.org",
+    "a_verifier": true,
+    "notes": "Fourchettes très variables selon les sources (4-8 semaines pour avocat-voisin, 8-12 semaines pour un concessionnaire cité par leasing-social.org, jusqu'à 9 mois pour joinsteer sur des modèles premium) — présenter comme un ordre de grandeur large et variable selon marque/modèle, jamais un chiffre unique précis."
+  },
+  {
+    "sous_cocon": "Guide d'achat par segment",
+    "fait": "Marques dont les modèles conservent le mieux leur valeur à la revente",
+    "valeur": "Toyota, Lexus, Porsche et Tesla cités comme les marques les plus performantes en valeur de revente",
+    "source": "autoscout24.be, \"Choisir un véhicule avec une valeur de revente élevée\"",
+    "a_verifier": true,
+    "notes": "Source unique (site belge d'AutoScout24, acteur commercial), sans données chiffrées précises de décote ni méthodologie publiée — à recouper avec une étude française (Argus, AAA Data) avant utilisation comme fait établi."
+  },
+  {
+    "sous_cocon": "Leasing LOA & LLD",
+    "fait": "Différence fondamentale entre LOA (location avec option d'achat) et LLD (location longue durée)",
+    "valeur": "La LOA permet de devenir propriétaire du véhicule en fin de contrat en payant la valeur résiduelle ; la LLD est une location pure, sans option d'achat, avec restitution obligatoire du véhicule en fin de contrat",
+    "source": "service-public.gouv.fr, \"Car rental: LOA (rent with option to buy) or LLD (long term rental)?\" (https://www.service-public.gouv.fr/particuliers/vosdroits/F2437) ; recoupé avec Capital.fr et Hyundai France",
+    "a_verifier": false,
+    "notes": "Source officielle directe (service-public.gouv.fr) confirmée par plusieurs sources professionnelles concordantes."
+  },
+  {
+    "sous_cocon": "Leasing LOA & LLD",
+    "fait": "Nature juridique de la LOA par rapport à la LLD",
+    "valeur": "La LOA est traitée comme un crédit à la consommation, tandis que la LLD est un contrat de location pure",
+    "source": "service-public.gouv.fr, \"Car rental: LOA or LLD?\"",
+    "a_verifier": false,
+    "notes": "Source officielle directe, distinction juridique claire."
+  },
+  {
+    "sous_cocon": "Mandataire & import",
+    "fait": "Réduction de prix annoncée par les mandataires automobiles sur une voiture neuve par rapport au prix catalogue constructeur",
+    "valeur": "Réductions annoncées de l'ordre de 30 % à 43 % selon les mandataires (Autodiscount jusqu'à 42 %, Elite-Auto jusqu'à 43 %, EspagnAuto jusqu'à 30 %)",
+    "source": "autodiscount.fr, elite-auto.fr, espagnauto.com (sites de mandataires) ; comparatif recoupé avec caroom.fr, \"Quel est le mandataire auto le moins cher en 2026 ?\"",
+    "a_verifier": true,
+    "notes": "Ces pourcentages proviennent exclusivement de sites commerciaux de mandataires (autopromotion), non d'un comparateur indépendant ou d'une étude UFC-Que Choisir — à présenter comme des réductions \"annoncées\" par les acteurs eux-mêmes, pas comme une moyenne de marché vérifiée. Les pourcentages varient fortement selon la marque et le modèle réellement importé."
+  },
+  {
+    "sous_cocon": "Négociation & remises",
+    "fait": "Marge de négociation habituelle sur le prix d'une voiture neuve chez un concessionnaire",
+    "valeur": "Remise courante de 5 à 8 %, pouvant atteindre 10 à 15 % dans certains cas ; une remise de 10 à 12 % est déjà considérée comme un bon geste commercial",
+    "source": "younited.com, \"Comment bien négocier le prix d'une voiture neuve\" ; recoupé avec quechoisir.org, \"Bien négocier l'achat d'une voiture neuve\"",
+    "a_verifier": true,
+    "notes": "Concordance générale entre les 2 sources sur l'ordre de grandeur, mais quechoisir.org (association de consommateurs, source plus fiable) précise que rechercher une remise plus forte n'est pas réaliste sur des modèles très demandés (cabriolet, coupé sportif, citadine tendance) — nuancer selon le modèle, ne pas généraliser un pourcentage unique à tous les véhicules."
+  },
+  {
+    "sous_cocon": "Négociation & remises",
+    "fait": "Meilleures périodes de l'année pour négocier une remise sur une voiture neuve",
+    "valeur": "Août et septembre (creux de marché) ainsi que décembre-janvier (périodes de déstockage des modèles neufs en concession)",
+    "source": "groupama.fr, \"Comment négocier le prix d'une voiture neuve ?\"",
+    "a_verifier": true,
+    "notes": "Source unique (assureur), non recoupée avec une deuxième source indépendante dans cette recherche — ordre de grandeur plausible et cohérent avec les pratiques commerciales connues du secteur, mais à confirmer avant de le présenter comme une règle absolue."
+  },
+  {
+    "sous_cocon": "Options & configuration",
+    "fait": "Marge commerciale des concessionnaires sur les options et accessoires (GPS, autoradio, barres de toit) par rapport à la voiture elle-même",
+    "valeur": "Marges plus élevées sur les accessoires/options que sur le véhicule lui-même ; les vendeurs les offrent plus facilement en négociation car cela leur coûte peu",
+    "source": "quechoisir.org, \"Bien négocier l'achat d'une voiture neuve\"",
+    "a_verifier": true,
+    "notes": "Affirmation qualitative (pas de pourcentage chiffré) issue d'une association de consommateurs reconnue (source plutôt fiable) mais non recoupée avec une deuxième source indépendante dans cette recherche — utilisable comme conseil pratique, pas comme statistique."
+  }
+]

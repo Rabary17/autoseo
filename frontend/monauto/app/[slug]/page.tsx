@@ -20,7 +20,7 @@ import {
 } from "@/lib/wp";
 import { getSilo } from "@/lib/taxonomy";
 import { articleSchema, faqPageLd } from "@/lib/schema";
-import { pageMeta } from "@/lib/seo-meta";
+import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import type { WpTerm } from "@/lib/types";
 import { SILO_WIDGET } from "@/components/widgets";
 import SousCoconIcon from "@/components/SousCoconIcon";
@@ -50,21 +50,22 @@ type Props = { params: Promise<{ slug: string }> };
 
 const dateFr = (d: string) => new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" });
 
-const stripHtml = (html: string) => decodeEntities(html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
-const truncate = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
   if (post) {
+    // meta_title/meta_description (ACF, 2026-07-28) : distincts du H1/extrait,
+    // rédigés spécifiquement pour le SERP (mot-clé en tête, incitation au
+    // clic) — utilisés en priorité, repli sur H1/extrait si absents (contenu
+    // plus ancien ou bloqué par le gating avant insertion).
     const description = truncate(
-      stripHtml(post.excerpt.rendered) || post.acf?.tldr || stripHtml(post.content.rendered),
+      post.acf?.meta_description || stripHtml(post.excerpt.rendered) || post.acf?.tldr || stripHtml(post.content.rendered),
       155
     );
     const media = post._embedded?.["wp:featuredmedia"]?.[0];
     const author = post._embedded?.author?.[0];
     return pageMeta({
-      title: post.title.rendered,
+      title: post.acf?.meta_title || post.title.rendered,
       description,
       path: `/${post.slug}/`,
       image: getImageVariant(media, "monauto_hero")?.url,
@@ -77,8 +78,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = await getPageBySlug(slug);
   if (page) {
     return pageMeta({
-      title: page.title.rendered,
-      description: truncate(stripHtml(page.content.rendered), 155),
+      title: page.acf?.meta_title || page.title.rendered,
+      description: page.acf?.meta_description || truncate(stripHtml(page.content.rendered), 155),
       path: `/${page.slug}/`,
     });
   }

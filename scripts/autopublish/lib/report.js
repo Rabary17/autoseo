@@ -23,6 +23,13 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
   const published = items.filter(i => i.status === 'publie');
   const draft = items.filter(i => i.status === 'draft');
   const erreur = items.filter(i => i.status === 'erreur');
+  // Contenu généré et relu, mais qui échoue une ou plusieurs règles de
+  // gating : inséré en draft quand même pour validation manuelle par
+  // l'utilisateur (2026-07-26 pour le seul cas "trop court", étendu à TOUT
+  // motif de gating le 2026-07-27 — le coût génération+relecture est déjà
+  // payé, jamais de contenu jeté). `draft` (ci-dessus) reste utilisé
+  // uniquement par la Phase 2 (articles), pas encore basculée sur ce principe.
+  const aValider = items.filter(i => i.status === 'a_valider');
 
   const lines = [
     `# Rapport autopublish — ${runDate}${dryRun ? ' (dry-run)' : ''}`,
@@ -31,7 +38,8 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
     `- Silo en cours : ${silo ?? '—'}`,
     `- Pièces traitées : ${items.length}`,
     `- Programmées : ${published.length}`,
-    `- Bloquées par le gating qualité (draft) : ${draft.length}`,
+    `- Bloquées par le gating, conservées en draft pour validation manuelle : ${aValider.length}`,
+    `- Bloquées par le gating (jamais écrites en WP — Phase 2 seulement) : ${draft.length}`,
     `- Échecs techniques (erreur) : ${erreur.length}${erreur.length ? ' — À VÉRIFIER' : ''}`,
     '',
     '## Détail',
@@ -43,6 +51,7 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
         ? ` [tokens : in ${i.usage.input_tokens} / out ${i.usage.output_tokens} / cache_read ${i.usage.cache_read_input_tokens} / cache_creation ${i.usage.cache_creation_input_tokens}]`
         : '';
       if (i.status === 'publie') return `- [x] ${i.slug} (${i.contentType}) — programmé pour ${i.postDate}${tokens}`;
+      if (i.status === 'a_valider') return `- [~] ${i.slug} (${i.contentType}) — bloqué (gating) mais enregistré en draft (à valider manuellement) : ${(i.reasons || []).join('; ')}${tokens}`;
       if (i.status === 'erreur') return `- [!] ${i.slug} (${i.contentType}) — ERREUR TECHNIQUE : ${(i.reasons || []).join('; ')}${tokens}`;
       return `- [ ] ${i.slug} (${i.contentType}) — bloqué (gating) : ${(i.reasons || []).join('; ')}${tokens}`;
     }),
@@ -66,7 +75,7 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
     phase,
     silo,
     publishedCount: published.length,
-    blockedCount: draft.length,
+    blockedCount: draft.length + aValider.length,
     errorCount: erreur.length,
     lastScheduledDate: published.length ? published[published.length - 1].postDate : null,
     reportRelPath: `logs/autopublish/${runDate}.md`,

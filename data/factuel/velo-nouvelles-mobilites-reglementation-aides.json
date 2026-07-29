@@ -1,0 +1,162 @@
+[
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Âge minimum légal pour circuler en trottinette électrique sur la voie publique en France",
+    "valeur": "14 ans",
+    "source": "service-public.gouv.fr, \"Circulation à trottinette électrique, rollers ou skateboard\" (https://www.service-public.gouv.fr/particuliers/vosdroits/F308)",
+    "a_verifier": false,
+    "notes": "Confirmé par plusieurs sources professionnelles concordantes (e-rider.fr, Vélo Shop, Roue Libre Bandol) en plus de la source officielle."
+  },
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Vitesse maximale autorisée pour une trottinette électrique (limitation de construction)",
+    "valeur": "25 km/h",
+    "source": "service-public.gouv.fr ; recoupé avec Groupama Assurance et cabinet Minier Avocat (https://minier-avocat-carpentras.fr/reglementation-trottinettes-electriques)",
+    "a_verifier": false,
+    "notes": "Le débridage au-delà de 25 km/h est passible d'une amende pouvant atteindre 1 500 € et de la confiscation de l'engin (source cabinet d'avocat, à recouper avec un texte réglementaire précis avant citation du montant exact)."
+  },
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Assurance responsabilité civile pour trottinette électrique",
+    "valeur": "Obligatoire depuis 2019 (équivalent RC auto)",
+    "source": "Groupama, \"Trottinette électrique : assurance et réglementation\" ; recoupé avec Minier Avocat",
+    "a_verifier": false,
+    "notes": "Concordance forte entre assureur et cabinet d'avocat sur ce point."
+  },
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Port du casque en trottinette électrique",
+    "valeur": "Non obligatoire pour les adultes (fortement recommandé) ; obligatoire pour les mineurs de 14 à 18 ans depuis octobre 2019",
+    "source": "Decathlon (conseilsport.decathlon.fr) ; recoupé avec Ausom France et Wee-bot",
+    "a_verifier": false,
+    "notes": "Une proposition de loi (n°1810, déposée le 16 septembre 2025) vise à rendre le casque obligatoire pour tous les utilisateurs de vélos/trottinettes/EDPM — à ce jour toujours en commission, PAS en vigueur. Ne pas présenter comme une obligation actuelle."
+  },
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Équipements obligatoires sur une trottinette électrique pour circuler légalement",
+    "valeur": "Système de freinage, avertisseur sonore, feux avant et arrière, dispositifs réfléchissants arrière et latéraux (sauf pneus déjà réfléchissants)",
+    "source": "service-public.gouv.fr, \"Circulation à trottinette électrique, rollers ou skateboard\"",
+    "a_verifier": false,
+    "notes": "Source officielle directe."
+  },
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Permis de conduire requis pour une trottinette électrique",
+    "valeur": "Aucun permis requis (catégorie EDPM)",
+    "source": "Codes Rousseau, \"La trottinette électrique et autres EDPM et le Code de la route\"",
+    "a_verifier": false,
+    "notes": null
+  },
+  {
+    "sous_cocon": "Trottinettes & EDPM",
+    "fait": "Immatriculation / plaque obligatoire pour les trottinettes électriques",
+    "valeur": "Non confirmé par une source officielle à ce jour",
+    "source": null,
+    "a_verifier": true,
+    "notes": "Affirmation trouvée uniquement dans des sources peu fiables (publication Facebook, blogs non spécialisés) annonçant une obligation d'immatriculation/plaque + enregistrement DGT au 2 janvier 2026. service-public.gouv.fr (source officielle consultée) ne mentionne AUCUNE obligation d'immatriculation ou de plaque pour les EDPM à ce jour — seulement les équipements listés ci-dessus. Ne pas utiliser cette affirmation sans vérification sur Légifrance/service-public.gouv.fr avant publication ; risque réel de désinformation si reprise telle quelle."
+  },
+  {
+    "sous_cocon": "Vélo électrique",
+    "fait": "Prix moyen constaté d'un vélo électrique (VAE) en France",
+    "valeur": "Environ 2 079 € en moyenne dépensé par les acheteurs ; fourchette large de 1 000 € (entrée de gamme) à 6 000 € (haut de gamme)",
+    "source": "Les Numériques, \"Guide : quels sont les meilleurs vélos électriques ?\" ; fourchette recoupée avec Ride & Co et Wee-bot",
+    "a_verifier": true,
+    "notes": "Le chiffre de 2 079 € provient d'un article presse spécialisée (Les Numériques) sans lien direct vers l'étude/enquête source citée — traité comme un ordre de grandeur, pas une statistique officielle vérifiée."
+  },
+  {
+    "sous_cocon": "Vélo électrique",
+    "fait": "Coût moyen d'une recharge complète de batterie de vélo électrique",
+    "valeur": "Entre 0,10 € et 0,25 € par recharge complète",
+    "source": "Wee-bot, \"Combien coûte un vélo électrique en 2026 ?\"",
+    "a_verifier": true,
+    "notes": "Source non officielle (blog commercial), ordre de grandeur plausible mais non recoupé avec une deuxième source indépendante."
+  },
+  {
+    "sous_cocon": "Aides à l'achat",
+    "fait": "Aide nationale à l'achat d'un vélo à assistance électrique (VAE) neuf ou d'occasion",
+    "valeur": "Jusqu'à 400 € par vélo, sous condition de ressources (limite de 2 vélos par foyer)",
+    "source": "jeunes.gouv.fr, \"Achat d'un vélo, les aides nationales sont étendues jusqu'en 2027\" (https://www.jeunes.gouv.fr/achat-d-un-velo-les-aides-nationales-sont-etendues-jusqu-en-2027-2085) ; montant recoupé avec aide-sociale.fr",
+    "a_verifier": true,
+    "notes": "CONTRADICTION IMPORTANTE entre sources trouvées : plusieurs sites (aide-sociale.fr, ByCommute, Roue Libre Bandol) affirment que le bonus écologique vélo national a été DÉFINITIVEMENT SUPPRIMÉ le 14-15 février 2025 (décret n°2024-1084) et n'existe plus en 2026, seules les aides locales/régionales subsistant. À l'inverse, jeunes.gouv.fr (source institutionnelle, donc a priori plus fiable) affirme que ces aides nationales sont non seulement maintenues mais étendues jusqu'en 2027. Impossible de trancher avec confiance sans consulter directement Légifrance ou economie.gouv.fr — À VÉRIFIER IMPÉRATIVEMENT avant toute utilisation dans un article publié, la contradiction porte sur l'existence même du dispositif, pas seulement sur son montant."
+  },
+  {
+    "sous_cocon": "Aides à l'achat",
+    "fait": "Aide nationale à l'achat d'un vélo cargo électrique, remorque électrique ou vélo adapté handicap",
+    "valeur": "Jusqu'à 2 000 € sous condition de ressources",
+    "source": "jeunes.gouv.fr, \"Achat d'un vélo, les aides nationales sont étendues jusqu'en 2027\"",
+    "a_verifier": true,
+    "notes": "Même réserve que l'entrée précédente : à confirmer sur une source primaire (Légifrance/economie.gouv.fr) avant publication, vu la contradiction relevée sur la persistance du dispositif national."
+  },
+  {
+    "sous_cocon": "Aides à l'achat",
+    "fait": "Existence d'aides locales/régionales à l'achat d'un vélo électrique",
+    "valeur": "Variable selon commune/région (ex. jusqu'à 800 € dans certaines villes), cumulables entre elles selon les collectivités",
+    "source": "ByCommute, \"Subventions Vélo Électrique France 2026 : Toutes les Aides par Région\" ; Gaya, \"Achat d'un vélo électrique : quelles aides en 2026\"",
+    "a_verifier": true,
+    "notes": "Dispositif confirmé sur le principe par plusieurs sources indépendantes, mais les montants et conditions varient par collectivité — ne jamais citer un montant précis sans préciser la ville/région concernée."
+  },
+  {
+    "sous_cocon": "Vélotaf pratique",
+    "fait": "Forfait mobilités durables (FMD) — plafond d'exonération annuel",
+    "valeur": "600 € par an et par salarié dans le secteur privé (900 € en cas de cumul avec un abonnement transports en commun)",
+    "source": "Fiche-Paie.fr, \"Barème Indemnités Kilométriques 2026\" ; recoupé avec Orki et Greenly (greenly.earth/blog/guide-entreprise/forfait-mobilite-durable)",
+    "a_verifier": true,
+    "notes": "Concordance forte entre 3 sources indépendantes sur le montant, mais aucune n'est un site gouvernemental officiel (URSSAF/service-public.fr) — à recouper avec une source primaire avant publication finale."
+  },
+  {
+    "sous_cocon": "Vélotaf pratique",
+    "fait": "Le forfait mobilités durables est-il obligatoire pour l'employeur ?",
+    "valeur": "Non, prise en charge facultative de l'employeur (pas une obligation légale de remboursement)",
+    "source": "Orki, \"Forfait mobilités durables 2026 : montants, règles & avantages\" ; Fiche-Paie.fr",
+    "a_verifier": false,
+    "notes": "Concordance claire entre les 2 sources sur le caractère facultatif du dispositif."
+  },
+  {
+    "sous_cocon": "Vélotaf pratique",
+    "fait": "Indemnité kilométrique vélo (IKV) — barème 2026",
+    "valeur": "0,37 € par kilomètre parcouru (en hausse depuis 0,36 €)",
+    "source": "Gaya, \"Indemnité kilométrique vélo : montants en 2026\" (https://gaya.bike/journal/indemnite-kilometrique-velo)",
+    "a_verifier": true,
+    "notes": "Chiffre distinct du plafond du forfait mobilités durables (600€/an) — à ne pas confondre, ce sont deux dispositifs différents. Une autre source consultée (fiche-paie.fr) mentionne un barème différent de 0,25 €/km pour le vélo si l'employeur choisit un remboursement au kilomètre — contradiction non résolue entre les deux montants, à vérifier avant publication (source primaire recommandée : service-public.fr ou URSSAF)."
+  },
+  {
+    "sous_cocon": "Équipement & antivol",
+    "fait": "Marquage/identification obligatoire des vélos neufs vendus par des professionnels",
+    "valeur": "Obligatoire depuis le 1er janvier 2021 (vélos neufs de plus de 16 pouces) ; identifiant unique gravé ou étiqueté, enregistré au Fichier national unique des cycles identifiés (FNUCI)",
+    "source": "ecologie.gouv.fr, \"Marquage et identification des vélos\" (https://www.ecologie.gouv.fr/politiques-publiques/identification-cycles)",
+    "a_verifier": false,
+    "notes": "Source gouvernementale officielle directe — fiabilité maximale pour ce projet."
+  },
+  {
+    "sous_cocon": "Équipement & antivol",
+    "fait": "Marquage obligatoire pour les vélos d'occasion vendus par un professionnel",
+    "valeur": "Oui, obligatoire depuis le 1er juillet 2021",
+    "source": "BicyCode, \"Marquage et enregistrement des vélos\" ; recoupé avec Decathlon (conseilsport.decathlon.fr)",
+    "a_verifier": true,
+    "notes": "Date du 1er juillet 2021 mentionnée par 2 sources professionnelles concordantes (BicyCode, Decathlon) mais pas retrouvée telle quelle sur la page ecologie.gouv.fr consultée — à recouper avant citation de la date exacte."
+  },
+  {
+    "sous_cocon": "Équipement & antivol",
+    "fait": "Nombre de vols de vélos par an en France",
+    "valeur": "Ordre de grandeur large selon les études : environ 400 000/an (chiffre le plus cité, base étude IFRESI-CNRS/Altermodal 2003 recoupée par l'enquête CVS 2014) à 350 000-580 000/an selon une étude plus récente FUB/ADMA/ROZO",
+    "source": "Fédération française des Usagers de la Bicyclette (FUB), \"Lutte contre le vol\" (https://www.fub.fr/moi-velo/services/lutte-contre-vol\") ; fourchette haute via ByCommute citant l'étude FUB/ADMA/ROZO",
+    "a_verifier": true,
+    "notes": "Le chiffre de 400 000 repose sur une étude ancienne (2003) dont la pertinence est questionnée par plusieurs sources vu l'essor récent du vélo en France — présenter comme un ordre de grandeur indicatif, jamais comme une statistique précise et récente, et mentionner la fourchette plutôt qu'un chiffre unique."
+  },
+  {
+    "sous_cocon": "Équipement & antivol",
+    "fait": "Taux de restitution d'un vélo volé selon qu'il est marqué (FNUCI/BicyCode) ou non",
+    "valeur": "Environ 2 % de restitution sans marquage, contre un taux nettement plus élevé (present à 100% dans une source) si le vélo est identifié",
+    "source": "Decathlon, \"Le marquage vélo : on vous explique !\"",
+    "a_verifier": true,
+    "notes": "Le chiffre de \"100% de chance d'être restitué\" avancé par la source semble être un argument commercial plutôt qu'une statistique rigoureuse — reformuler en \"restitution nettement facilitée\" plutôt que de citer un taux de 100% en article, qui serait trompeur."
+  },
+  {
+    "sous_cocon": "Équipement & antivol",
+    "fait": "Obligation légale d'antivol sur un vélo",
+    "valeur": "Aucune obligation légale d'antivol pour un vélo lui-même (contrairement aux véhicules à moteur) ; seul le marquage/identification est obligatoire à la vente par un professionnel",
+    "source": "Wikipédia, \"Antivol\" (à recouper avec une source officielle avant citation ferme) ; distinction confirmée avec ecologie.gouv.fr qui ne mentionne que le marquage, jamais un antivol obligatoire",
+    "a_verifier": true,
+    "notes": "Point de clarification utile pour éviter une confusion fréquente entre \"marquage obligatoire\" (vrai) et \"antivol obligatoire\" (pas confirmé comme une obligation légale) — Wikipédia n'est pas une source primaire, à recouper avant publication."
+  }
+]

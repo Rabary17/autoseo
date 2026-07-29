@@ -4,6 +4,10 @@
 // contenu visible et le JSON-LD (lib/schema.ts), jamais une info différente.
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_URL } from "./site";
+import { decodeEntities } from "./wp";
+
+export const stripHtml = (html: string) => decodeEntities(html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+export const truncate = (s: string, n: number) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}…` : s);
 
 interface PageMetaInput {
   title: string;

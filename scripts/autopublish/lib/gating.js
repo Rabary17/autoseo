@@ -12,9 +12,14 @@ const persona = require('./persona');
 // utile plutôt que du remplissage), et un silo large qui dépasse 4000/2500
 // mots légitimement ne doit pas être bloqué pour ça (voir STATE.md 2026-07-22).
 const LENGTH_RANGES = {
-  hub: [1500, 6000],
-  'sous-hub': [1500, 4000],
-  article: [800, 1200], // programmatique par défaut (voir seo.md section 4)
+  hub: [1300, 6000],
+  'sous-hub': [1300, 4000],
+  // Cible de génération 1500-2500 (voir system-article.md), mais seuil de
+  // blocage plus tolérant côté gating (demande explicite de l'utilisateur
+  // 2026-07-29) : un article > 900 mots avec du contenu réellement
+  // substantiel (pas de remplissage détecté par les autres règles) ne doit
+  // pas être rejeté juste pour ne pas avoir atteint 1500 pile.
+  article: [900, 2500],
   'article-editorial': [1500, 2500],
 };
 
@@ -41,11 +46,67 @@ function hasNumericClaim(text) {
 // Tiret cadratin espacé (U+2014, " — "), jamais autorisé dans le texte
 // généré (demande explicite de l'utilisateur, 2026-07-22) — à ne pas
 // confondre avec le tiret court U+2013 ("–") légitime dans une fourchette de
-// prix ("50 – 180 €"), volontairement exclu de ce motif.
+// prix ("50 – 180 €"), volontairement exclu de ce motif. Étendu le 2026-07-28
+// à meta_title/meta_description/title (audit WXR : trouvé dans un meta_title
+// alors que la règle n'avait jamais été vérifiée que sur content_gutenberg —
+// ces champs suivent les mêmes règles de style depuis qu'ils sont réellement
+// publiés, voir STATE.md).
 const EM_DASH_PATTERN = /\s—\s/;
 
 function checkNoEmDash(content) {
-  return !EM_DASH_PATTERN.test(stripHtmlToText(content.content_gutenberg || ''));
+  const fields = [content.content_gutenberg, content.title, content.meta_title, content.meta_description];
+  return fields.every((f) => !EM_DASH_PATTERN.test(stripHtmlToText(f || '')));
+}
+
+// Caractères hors script latin (CJK, hangul, kana...) constatés à deux
+// reprises le 2026-07-28 dans des meta_title tronqués par `maxLength`
+// (probable artefact de troncature en plein milieu d'un token multi-octets
+// côté Mistral) — jamais légitime dans du contenu francophone.
+const FOREIGN_SCRIPT_PATTERN = /[一-鿿぀-ヿ가-힯]/;
+
+function checkNoForeignScript(content) {
+  const fields = [content.title, content.meta_title, content.meta_description, content.content_gutenberg];
+  const offending = fields.filter((f) => FOREIGN_SCRIPT_PATTERN.test(f || ''));
+  return { ok: offending.length === 0 };
+}
+
+// Valide l'appariement des commentaires de bloc Gutenberg (<!-- wp:X -->/
+// <!-- /wp:X -->) — constaté le 2026-07-28 (audit WXR) sur 58/137 pages
+// publiées : un `<!-- wp:heading -->` fermé par `<!-- /wp:paragraph -->` (ou
+// l'inverse), invisible à l'écran (le HTML brut reste valide) mais casse la
+// ré-édition du bloc dans l'éditeur WordPress. Détection par pile, pas par
+// simple comptage — un décalage doit être associé au bon endroit.
+function checkGutenbergBlocksWellFormed(content) {
+  const html = content.content_gutenberg || '';
+  const markers = html.match(/<!--\s*\/?wp:[a-z-]+(?:\s+\{[^}]*\})?\s*-->/g) || [];
+  const stack = [];
+  const mismatches = [];
+  for (const marker of markers) {
+    const closeMatch = marker.match(/<!--\s*\/wp:([a-z-]+)/);
+    const openMatch = marker.match(/<!--\s*wp:([a-z-]+)/);
+    if (closeMatch) {
+      const expected = stack.pop();
+      if (expected && expected !== closeMatch[1]) {
+        mismatches.push(`bloc "${expected}" fermé par "/wp:${closeMatch[1]}"`);
+      }
+    } else if (openMatch) {
+      stack.push(openMatch[1]);
+    }
+  }
+  return { ok: mismatches.length === 0, mismatches };
+}
+
+// Ouverture générique bannie depuis le 2026-07-24 dans style-anti-ia.md
+// ("Ce silo/sous-cocon réunit/rassemble/regroupe...") mais constatée encore
+// deux fois sur 137 pages lors de l'audit WXR du 2026-07-28 — la relecture
+// (jugement humain par le modèle) ne l'a pas rattrapée à chaque fois. Motif
+// assez précis pour un vrai garde-fou programmatique, contrairement à
+// l'ancre forcée (trop variable en formulation pour une regex fiable).
+const GENERIC_HUB_OPENING_PATTERN = /\bce (silo|sous-cocon|cocon)\b[^.!?]{0,40}\b(r[ée]unit|rassemble|regroupe)\b/i;
+
+function checkNoGenericOpening(content, contentType) {
+  if (contentType !== 'hub' && contentType !== 'sous-hub') return true;
+  return !GENERIC_HUB_OPENING_PATTERN.test(stripHtmlToText(content.content_gutenberg || '').slice(0, 500));
 }
 
 /* ---------- Règles individuelles ---------- */
@@ -170,12 +231,19 @@ function runGating({
     failures.push({ rule: 'cluster_duplique', message: 'Cluster déjà couvert par une autre URL programmée/publiée.' });
   }
 
-  const sim = checkSimilarity(content, silo, sousCocon);
-  if (!sim.ok) {
-    failures.push({
-      rule: 'similarite',
-      message: `Similarité ${(sim.max * 100).toFixed(1)}% avec "${sim.against}" (seuil ${SIMILARITY_THRESHOLD * 100}%).`,
-    });
+  // Règle documentée (wordpress-publication.md section 5) : uniqueness
+  // s'applique entre articles d'un même sous-cocon, jamais entre un article
+  // et son propre hub/sous-hub parent (qui résume forcément leur vocabulaire
+  // — comparer les deux ferait échouer tout premier lot d'articles d'un
+  // sous-cocon, constaté en test réel le 2026-07-29).
+  if (contentType === 'article') {
+    const sim = checkSimilarity(content, silo, sousCocon);
+    if (!sim.ok) {
+      failures.push({
+        rule: 'similarite',
+        message: `Similarité ${(sim.max * 100).toFixed(1)}% avec "${sim.against}" (seuil ${SIMILARITY_THRESHOLD * 100}%).`,
+      });
+    }
   }
 
   const facts = checkFactsNotInvented(content, factsProvided);
@@ -207,6 +275,20 @@ function runGating({
 
   if (!checkNoEmDash(content)) {
     failures.push({ rule: 'tiret_cadratin', message: 'Tiret cadratin espacé (" — ") détecté dans le contenu — interdit.' });
+  }
+
+  const foreignScript = checkNoForeignScript(content);
+  if (!foreignScript.ok) {
+    failures.push({ rule: 'script_etranger', message: 'Caractère hors script latin (CJK/hangul/kana) détecté dans le titre ou les champs meta — jamais légitime en contenu francophone.' });
+  }
+
+  const blocks = checkGutenbergBlocksWellFormed(content);
+  if (!blocks.ok) {
+    failures.push({ rule: 'blocs_gutenberg', message: `Bloc(s) Gutenberg mal fermé(s) : ${blocks.mismatches.join(' ; ')}.` });
+  }
+
+  if (!checkNoGenericOpening(content, contentType)) {
+    failures.push({ rule: 'ouverture_generique', message: 'Ouverture générique bannie ("Ce silo/sous-cocon réunit/rassemble/regroupe...") détectée.' });
   }
 
   const ymyl = checkYmylSource(content, silo);

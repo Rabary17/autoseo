@@ -10,4 +10,4 @@ Ce dossier contient les règles de travail pour ce projet, organisées par domai
 - [redaction.md](redaction.md) — voix propre à chaque auteur (A à F), liste de contrôle pour ne pas sonner comme un LLM
 - [gestion-de-projet.md](gestion-de-projet.md) — reprise de session, gestion des tokens, suivi des mots-clés
 
-Voir aussi [../STATE.md](../STATE.md) pour l'état d'avancement courant (à lire en premier lors d'une reprise), et [../docs/architecture-autopublish.md](../docs/architecture-autopublish.md) pour le pipeline de publication automatisée (API Anthropic directe, GitHub Actions).
+Voir aussi [../STATE.md](../STATE.md) pour l'état d'avancement courant (à lire en premier lors d'une reprise), et [../docs/architecture-autopublish.md](../docs/architecture-autopublish.md) pour le pipeline de publication automatisée (API Mistral directe, GitHub Actions).

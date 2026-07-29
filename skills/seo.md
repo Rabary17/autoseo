@@ -7,7 +7,7 @@ Règles à appliquer pour toute production de contenu ou de structure sur les si
 - Architecture à 3 niveaux stricte : `Accueil → Silo (hub) → Sous-cocon (sous-hub) → Articles`.
 - **Profondeur maximale : 3 clics** depuis l'accueil pour 100 % des pages, sans exception.
 - Chaque silo a **une seule** page hub (2 500–4 000 mots) qui cible le mot-clé de tête du silo.
-- Chaque sous-cocon a **un seul** sous-hub (1 500–2 500 mots) qui liste et maille ses articles enfants.
+- Chaque sous-cocon a **un seul** sous-hub (1 300–2 500 mots) qui liste et maille ses articles enfants.
 - Un article n'appartient qu'à un seul sous-cocon. Pas de double rattachement.
 
 ## 2. Maillage interne
@@ -38,9 +38,8 @@ Le graphe de maillage doit toujours être généré **avant** la rédaction (fic
 ## 4. Règles rédactionnelles
 
 - Longueurs variées selon le type de page, jamais uniformes :
-  - Programmatique (pages générées par moteur) : 800–1 200 mots
-  - Guides éditoriaux : 1 500–2 500 mots
-  - Hubs / sous-hubs : 2 500–4 000 mots / 1 500–2 500 mots
+  - Articles (programmatiques ou guides éditoriaux, plus de distinction depuis le 2026-07-29 sur demande explicite de l'utilisateur) : cible 1 500–2 500 mots en génération, seuil de blocage au gating plus tolérant à 900–2 500 (un article > 900 mots sans autre défaut n'est pas rejeté juste pour ne pas avoir atteint 1 500 pile)
+  - Hubs / sous-hubs : 2 500–4 000 mots / 1 300–2 500 mots (plancher ferme 1 300, jamais moins)
 - Unicité stricte : deux pages du même template programmatique ne doivent partager aucune phrase. Faire varier la structure (6–8 variantes de plan par template) et l'angle d'introduction.
 - Chaque page programmatique injecte des données factuelles propres (prix, périodicité, specs) — la donnée fait l'unicité, pas juste la formulation.
 - FAQ en fin d'article quand pertinent (alimente aussi le schema `FAQPage`, voir [geo.md](geo.md)).

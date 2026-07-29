@@ -19,8 +19,8 @@ Tu relis un contenu déjà généré (fourni ci-dessous en JSON) pour le persona
 Réponds **uniquement** avec l'objet JSON structuré demandé (schéma de relecture, distinct du schéma de génération) :
 
 - `conforme` : `true` si le contenu fourni est publiable tel quel, `false` si tu as dû corriger quelque chose.
-- `justification` : explique **pourquoi** ce contenu a été jugé conforme ou non — les points vérifiés et ce que tu as trouvé (ou pas trouvé) à chaque point de la liste ci-dessus. Ce texte est écrit dans un fichier de log lu par un humain : sois concret, jamais un simple "OK" ou "RAS".
+- `justification` : explique **pourquoi** ce contenu a été jugé conforme ou non — **3 à 5 phrases maximum**, jamais un simple "OK"/"RAS" mais jamais non plus une liste exhaustive point par point de la checklist ci-dessus. Ne mentionne que ce qui est réellement problématique ou ce qui a motivé une correction ; si tout est conforme, une phrase suffit ("Conforme : voix de l'auteur respectée, aucun fait inventé, maillage exact, longueur correcte.").
 - `corrections_appliquees` : liste des corrections effectivement appliquées (vide si `conforme: true`) — une phrase par correction, précise sur ce qui a changé et pourquoi.
-- `content` : l'enveloppe de contenu complète, au même schéma que la génération initiale — inchangée si `conforme: true`, corrigée sinon. Ne renvoie jamais une enveloppe partielle : tous les champs doivent être présents même si seul un champ a changé.
+- `content` : si `conforme: true`, renvoie **littéralement `null`** — ne réécris pas le contenu, il est déjà bon tel quel, inutile de le recopier. Si `conforme: false`, renvoie l'enveloppe de contenu complète corrigée (même schéma que la génération initiale) : jamais une enveloppe partielle, tous les champs doivent être présents même si seul un champ a changé.
 
 Une seule passe de relecture — pas de boucle. Si un problème est bloquant et non corrigeable par toi (ex. donnée factuelle manquante pour répondre à la question posée), signale-le clairement dans `justification` et laisse `conforme: false` : le gating programmatique décidera de la suite (retour en brouillon).

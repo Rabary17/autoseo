@@ -130,6 +130,31 @@ add_action('acf/init', function () {
 				'instructions' => 'Optionnel. Une question par ligne, format "Question ? | Réponse." — les questions/réponses doivent apparaître à l\'identique dans le texte visible (voir skills/geo.md section 3).',
 				'rows' => 4,
 			],
+			[
+				// Distinct du titre H1 (post_title) — pensé pour le SERP (mot-clé en
+				// tête, ≤60 caractères), pas pour la lecture éditoriale. Jusqu'au
+				// 2026-07-28, généré par le pipeline mais jamais persisté ni consommé
+				// par le frontend (qui dérivait <title> du H1) — corrigé ce jour,
+				// voir frontend/monauto/app/[slug]/page.tsx et app/categorie/[...slug]/page.tsx.
+				'key' => 'field_monauto_meta_title',
+				'label' => 'Titre SEO (balise <title>)',
+				'name' => 'meta_title',
+				'type' => 'text',
+				'instructions' => 'Distinct du titre H1 — mot-clé principal en tête, ≤ 60 caractères. Utilisé pour la balise <title>/Open Graph, jamais affiché dans le corps de la page.',
+				'maxlength' => 60,
+			],
+			[
+				// Distinct de l'extrait (post_excerpt/tldr) — rédigée pour inciter au
+				// clic dans les résultats de recherche, pas comme un simple résumé.
+				// Même historique que meta_title ci-dessus (non branché avant le 2026-07-28).
+				'key' => 'field_monauto_meta_description',
+				'label' => 'Meta description SEO',
+				'name' => 'meta_description',
+				'type' => 'textarea',
+				'instructions' => '≤ 155 caractères, incite au clic, mentionne un chiffre/donnée réelle si pertinent. Utilisée pour <meta name="description">/Open Graph, jamais affichée dans le corps de la page.',
+				'rows' => 2,
+				'maxlength' => 155,
+			],
 		],
 		'location' => [
 			[['param' => 'post_type', 'operator' => '==', 'value' => 'post']],

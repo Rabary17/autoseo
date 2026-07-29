@@ -10,7 +10,7 @@ Prérequis : P4 (hub + sous-hubs) terminé pour ce silo. Sinon, arrête-toi et s
 1. Sélectionne dans [data/keywords/tracking-mots-cles.xlsx](../../data/keywords/tracking-mots-cles.xlsx) les clusters au statut `à faire` pour ce silo, dans l'ordre, jusqu'au nombre demandé.
 2. Pour chaque cluster : récupère son entrée dans `data/maillage/maillage.json` (liens déjà résolus — ne jamais improviser le maillage à la rédaction).
 3. Rédige l'article en respectant :
-   - Longueur 800–1 200 mots (programmatique) ou 1 500–2 500 (guide éditorial) selon le type — [skills/seo.md](../../skills/seo.md)
+   - Longueur 1 500–2 500 mots — [skills/seo.md](../../skills/seo.md)
    - Réponse directe dans les 50 premiers mots, structure orientée question/réponse — [skills/geo.md](../../skills/geo.md)
    - Voix propre à l'auteur assigné et absence de tout tic d'écriture LLM (formules creuses, faux équilibre systématique, hedging excessif...) — [skills/redaction.md](../../skills/redaction.md)
    - Données factuelles issues de `data/factuel/*.json` (P2), jamais inventées

@@ -12,9 +12,10 @@ const trackingXlsx = require('./lib/tracking-xlsx');
 const maillage = require('./lib/maillage');
 const factuel = require('./lib/factuel');
 const competitorResearch = require('./lib/competitor-research');
+const tavilyFacts = require('./lib/tavily-facts');
 const persona = require('./lib/persona');
 const promptBuilder = require('./lib/prompt-builder');
-const claudeClient = require('./lib/claude-client');
+const mistralClient = require('./lib/mistral-client');
 const reviewModule = require('./lib/review');
 const gating = require('./lib/gating');
 const similarity = require('./lib/similarity');
@@ -33,6 +34,17 @@ const testSilosArg = process.argv.find(a => a.startsWith('--test-silos='));
 const TEST_SILOS = testSilosArg ? testSilosArg.slice('--test-silos='.length).split(',').map(s => s.trim()) : null;
 const maxSousHubArg = process.argv.find(a => a.startsWith('--max-sous-hubs='));
 const MAX_SOUS_HUBS = maxSousHubArg ? Number(maxSousHubArg.slice('--max-sous-hubs='.length)) : null;
+// --max-articles=N plafonne le nombre d'articles traités en Phase 2 pour ce
+// run (même principe que --max-sous-hubs pour la Phase 0) — utile pour
+// tester "un seul sous-cocon entier" sans déborder sur le suivant.
+const maxArticlesArg = process.argv.find(a => a.startsWith('--max-articles='));
+const MAX_ARTICLES = maxArticlesArg ? Number(maxArticlesArg.slice('--max-articles='.length)) : null;
+
+// En dessous de ce nombre de faits locaux (data/factuel/*.json), le cluster
+// est considéré trop pauvre pour tenir 1500+ mots sans inventer de chiffre —
+// complété par une recherche Tavily en direct (demande explicite de
+// l'utilisateur, 2026-07-29, voir lib/tavily-facts.js).
+const MIN_LOCAL_FACTS_FOR_ARTICLE = 5;
 
 function todayIso() {
   return new Date().toISOString().slice(0, 10);
@@ -61,6 +73,24 @@ function addUsage(acc, usage) {
   return acc;
 }
 
+// Sauvegarde incrémentale de l'état (2026-07-27, demande explicite de
+// l'utilisateur après un run interrompu par épuisement de crédit) : jusque-là,
+// `state.json` n'était écrit qu'une seule fois, tout à la fin de `main()` —
+// insuffisant pour protéger les COMPTEURS (items_scheduled_*/budget_consomme)
+// en cas de kill brutal du process en cours de boucle, même après le
+// correctif "insertion WP immédiate" (le contenu déjà publié était protégé,
+// mais pas la position dans la file pour la reprise). Appelée après chaque
+// pièce insérée avec succès, jamais en dry-run.
+function persistStateProgress(state) {
+  if (DRY_RUN) return;
+  state.derniere_execution = new Date().toISOString();
+  try {
+    stateLib.saveState(state);
+  } catch (e) {
+    console.error(`[run] échec de sauvegarde incrémentale de l'état (non bloquant) : ${e.message}`);
+  }
+}
+
 /* ---------- Résolution des identifiants WP (catégories, auteur, tags) ---------- */
 // Mise en cache mémoire (par run) : évite de refaire un aller-retour WP pour
 // le même auteur/catégorie/tag à chaque pièce d'un même silo — un run peut
@@ -71,6 +101,30 @@ const authorIdCache = new Map();
 const categoryIdCache = new Map();
 const tagIdCache = new Map();
 let usersCache = null;
+
+// Slugs d'articles RÉELLEMENT publiés dans WordPress (tous statuts) — voir
+// getLinkableChildArticles ci-dessous. Constaté le 2026-07-28 (audit d'un
+// export WXR complet) : les sous-hubs liaient systématiquement leurs articles
+// enfants en URL réelle (/slug/) sans jamais vérifier qu'ils existaient déjà
+// — 308 liens morts sur ~85 pages, faute d'articles publiés (P5 pas encore
+// lancé). La règle "jamais de lien actif vers une cible non publiée" avait
+// été appliquée une fois à la main le 2026-07-25 mais jamais intégrée au
+// pipeline lui-même : chaque nouveau sous-hub généré depuis reproduisait le
+// même défaut. Un seul chargement par run (les articles publiés ne changent
+// pas en cours de route dans un run Phase 0).
+let existingArticleSlugsCache = null;
+async function getExistingArticleSlugs() {
+  if (existingArticleSlugsCache) return existingArticleSlugsCache;
+  const all = [];
+  for (let page = 1; ; page += 1) {
+    const batch = await wp.request(`/posts?per_page=100&page=${page}&status=any&_fields=slug`).catch(() => []);
+    if (!batch.length) break;
+    all.push(...batch);
+    if (batch.length < 100) break;
+  }
+  existingArticleSlugsCache = new Set(all.map((p) => p.slug));
+  return existingArticleSlugsCache;
+}
 
 async function resolveAuthorId(silo) {
   // En dry-run, ne dépend plus de WordPress du tout (ni lecture ni écriture)
@@ -139,6 +193,12 @@ function acfFields(content) {
     tldr: content.excerpt,
     sources: (content.sources || []).map(s => `${s.label} | ${s.url}`).join('\n'),
     faq: (content.faq || []).map(f => `${f.question} | ${f.answer}`).join('\n'),
+    // Distincts du H1 (`title`)/de l'extrait (`excerpt`) — voir gating.js
+    // checkSeoFields et le mu-plugin (champs ACF meta_title/meta_description,
+    // 2026-07-28) : jusqu'ici générés puis jamais persistés ni consommés par
+    // le frontend, qui dérivait <title>/description du H1/excerpt.
+    meta_title: content.meta_title,
+    meta_description: content.meta_description,
   };
 }
 
@@ -196,13 +256,32 @@ async function resolveInlineImages(contentGutenberg, inlineImages, pieceSlug, si
       const block = `<!-- wp:image {"id":${mediaId},"sizeSlug":"large","linkDestination":"none"} -->\n`
         + `<figure class="wp-block-image size-large"><img src="${src}" alt="${escapeHtmlAttr(spec.alt || '')}" class="wp-image-${mediaId}"/></figure>\n`
         + `<!-- /wp:image -->`;
-      result = result.replace(token, block);
+      result = replaceImageToken(result, token, block);
     } catch (e) {
       console.warn(`[images] échec image d'appui "${spec.query}" (${silo}, ${pieceSlug}) : ${e.message} — jeton retiré.`);
-      result = result.replace(token, '');
+      result = replaceImageToken(result, token, '');
     }
   }
   return result;
+}
+
+// Constaté le 2026-07-28 (audit WXR, 46/137 pages) : le modèle place presque
+// toujours le jeton [[IMAGE:n]] comme SEUL contenu d'un paragraphe Gutenberg
+// (`<!-- wp:paragraph --><p>[[IMAGE:n]]</p><!-- /wp:paragraph -->`) plutôt
+// que nu — un remplacement naïf du jeton laissait alors le bloc wp:image
+// imbriqué dans le wp:paragraph englobant (markup Gutenberg invalide, casse
+// la ré-édition dans wp-admin même si le HTML brut reste affichable). On
+// remplace tout le paragraphe englobant quand il ne contient QUE le jeton,
+// pour que wp:image redevienne un bloc de premier niveau ; sinon (jeton nu
+// ou entouré d'autre texte) on retombe sur un remplacement simple du jeton.
+function replaceImageToken(html, token, replacement) {
+  const wrappedRe = new RegExp(
+    `<!--\\s*wp:paragraph(?:\\s+\\{[^}]*\\})?\\s*-->\\s*<p[^>]*>\\s*${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*</p>\\s*<!--\\s*/wp:paragraph\\s*-->`
+  );
+  if (wrappedRe.test(html)) {
+    return html.replace(wrappedRe, replacement);
+  }
+  return html.replace(token, replacement);
 }
 
 function escapeHtmlAttr(s) {
@@ -211,20 +290,30 @@ function escapeHtmlAttr(s) {
 
 /* ---------- Génération + relecture (commun hub/sous-hub/article) ---------- */
 
-async function generateAndReview({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles, slug, runDate, usageAcc }) {
+// Logs détaillés étape par étape (2026-07-27, demande explicite de
+// l'utilisateur : "j'aimerai comprendre comment ça se passe vraiment") —
+// chaque appel modèle, sa taille de sortie et son verdict sont affichés en
+// direct dans la console, pas seulement résumés a posteriori dans le rapport.
+async function generateAndReview({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles, slug, runDate, usageAcc, logPrefix }) {
+  const tag = logPrefix || `[${contentType} ${slug}]`;
+  const personaInfo = persona.getPersonaForSilo(silo);
+  console.log(`${tag} auteur : ${personaInfo.nom} (persona ${persona.getPersonaKeyForSilo(silo)}) — ${facts.length} fait(s) factuel(s), ${competitorAngles.length} piste(s) concurrentielle(s)`);
+
   const genReq = promptBuilder.buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles });
   const modelCfg = config.MODEL_BY_CONTENT_TYPE[contentType];
-  const genResult = await claudeClient.callClaude({
+  console.log(`${tag} appel génération — modèle ${modelCfg.model}...`);
+  const genResult = await mistralClient.callMistral({
     model: modelCfg.model,
-    thinking: modelCfg.thinking,
-    effort: modelCfg.effort,
     system: genReq.system,
     messages: genReq.messages,
     schema: genReq.schema,
     maxTokens: reviewModule.MAX_TOKENS_BY_CONTENT_TYPE?.[contentType] || 16000,
   });
+  console.log(`${tag} génération reçue — ${genResult.usage.input_tokens} tokens en entrée, ${genResult.usage.output_tokens} en sortie (cache: ${genResult.usage.cache_read_input_tokens}).`);
   addUsage(usageAcc, genResult.usage);
 
+  const reviewModel = config.REVIEW_MODEL_BY_CONTENT_TYPE[contentType].model;
+  console.log(`${tag} appel relecture — modèle ${reviewModel}...`);
   const reviewResult = await reviewModule.reviewContent({
     contentType,
     silo,
@@ -234,13 +323,33 @@ async function generateAndReview({ contentType, silo, item, maillageEntry, child
     facts,
     competitorAngles,
     runDate,
-    model: config.REVIEW_MODEL.model,
-    thinking: config.REVIEW_MODEL.thinking,
-    effort: config.REVIEW_MODEL.effort,
+    model: reviewModel,
   });
+  console.log(`${tag} relecture reçue — conforme : ${reviewResult.conforme ? 'oui' : 'non'} (${reviewResult.corrections.length} correction(s)), ${reviewResult.usage.output_tokens} tokens de sortie.`);
+  if (!reviewResult.conforme) {
+    for (const c of reviewResult.corrections) console.log(`${tag}   corrigé : ${c}`);
+  }
   addUsage(usageAcc, reviewResult.usage);
 
-  // Usage propre à cette pièce (génération + relecture), distinct du cumul
+  // 3ᵉ passe — lisibilité mécanique (2026-07-28, demande explicite de
+  // l'utilisateur) : distincte de la relecture voix/faits ci-dessus, ne
+  // touche jamais aux mêmes points (voir prompts/lisibilite.md).
+  console.log(`${tag} appel relecture lisibilité — modèle ${reviewModel}...`);
+  const readabilityResult = await reviewModule.reviewReadability({
+    contentType,
+    silo,
+    slug,
+    generatedContent: reviewResult.content,
+    runDate,
+    model: reviewModel,
+  });
+  console.log(`${tag} relecture lisibilité reçue — conforme : ${readabilityResult.conforme ? 'oui' : 'non'} (${readabilityResult.corrections.length} correction(s)), ${readabilityResult.usage.output_tokens} tokens de sortie.`);
+  if (!readabilityResult.conforme) {
+    for (const c of readabilityResult.corrections) console.log(`${tag}   ajusté : ${c}`);
+  }
+  addUsage(usageAcc, readabilityResult.usage);
+
+  // Usage propre à cette pièce (génération + 2 relectures), distinct du cumul
   // de tout le run (usageAcc) — pour le détail par page demandé par
   // l'utilisateur le 2026-07-22 (voir report.js).
   const itemUsage = addUsage(
@@ -248,8 +357,9 @@ async function generateAndReview({ contentType, silo, item, maillageEntry, child
     genResult.usage
   );
   addUsage(itemUsage, reviewResult.usage);
+  addUsage(itemUsage, readabilityResult.usage);
 
-  return { content: reviewResult.content, usage: itemUsage };
+  return { content: readabilityResult.content, usage: itemUsage };
 }
 
 /* ---------- Phase 0 : hubs & sous-hubs ---------- */
@@ -352,9 +462,17 @@ async function runPhase0(state, runDate, usageAcc) {
   const hubDateBySlug = new Map();
   const hubIdBySlug = new Map();
 
-  /* --- Hubs : génération + relecture + gating, un échec n'affecte que ce hub --- */
+  /* --- Hubs : génération + relecture + gating + INSERTION WP IMMÉDIATE ---
+     Correctif critique (2026-07-26) : générer/gater TOUS les hubs d'abord
+     puis insérer dans une boucle séparée faisait perdre tout le contenu déjà
+     validé (accumulé seulement en mémoire) si le process était interrompu
+     avant d'atteindre la boucle d'insertion — constaté en conditions réelles
+     après épuisement du crédit API (43 pièces gating OK jamais écrites dans
+     WordPress). Chaque hub est désormais écrit dans WordPress dès qu'il
+     passe le gating, DANS LA MÊME itération — un crash/kill/épuisement de
+     crédit après ce point ne peut plus faire perdre que la pièce en cours,
+     jamais celles déjà traitées. */
   console.log(`\n=== Phase 0 — Hubs : ${hubs.length} à traiter ===`);
-  const hubGatingPassed = [];
   for (const [i, hub] of hubs.entries()) {
     console.log(`[hub ${i + 1}/${hubs.length}] ${hub.slug} (${hub.silo}) : génération...`);
     try {
@@ -367,12 +485,13 @@ async function runPhase0(state, runDate, usageAcc) {
         if (!acc.some(c => c.url === e.sous_hub)) acc.push({ url: `/categorie${e.sous_hub}`, title: e.ancres?.entite_seule || e.sous_hub });
         return acc;
       }, []);
+      const logTag = `[hub ${i + 1}/${hubs.length}] ${hub.slug}`;
       const facts = factuel.searchFacts(hub.silo);
       const competitorAngles = await competitorResearch.searchCompetitorAngles(hub.silo);
 
       const { content, usage } = await generateAndReview({
         contentType: 'hub', silo: hub.silo, item: null, maillageEntry: null,
-        childLinks, facts, competitorAngles, slug: hub.slug, runDate, usageAcc,
+        childLinks, facts, competitorAngles, slug: hub.slug, runDate, usageAcc, logPrefix: logTag,
       });
 
       const gatingResult = gating.runGating({
@@ -381,113 +500,127 @@ async function runPhase0(state, runDate, usageAcc) {
         childLinksCount: childLinks.length, parentPublished: true, factsProvided: facts,
       });
 
-      if (gatingResult.passed) {
-        console.log(`[hub ${i + 1}/${hubs.length}] ${hub.slug} : gating OK.`);
-        hubGatingPassed.push({ ...hub, content, usage });
-      } else {
-        console.log(`[hub ${i + 1}/${hubs.length}] ${hub.slug} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
-        items.push({ slug: hub.slug, contentType: 'hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
-      }
-    } catch (e) {
-      console.error(`[phase0] échec génération/gating hub "${hub.slug}" : ${e.message}`);
-      items.push({ slug: hub.slug, contentType: 'hub', status: 'erreur', reasons: [e.message] });
-    }
-  }
+      // Demande explicite de l'utilisateur (2026-07-26, étendue le 2026-07-27
+      // à TOUT motif de gating, pas seulement la longueur) : un échec de
+      // gating ne doit plus jamais faire perdre le contenu généré — le coût
+      // génération+relecture est déjà payé, autant l'insérer quand même (en
+      // `draft`) pour qu'il reste consultable/éditable dans wp-admin,
+      // validation manuelle par l'utilisateur plutôt qu'une nouvelle
+      // génération à l'aveugle ou une perte pure et simple.
+      console.log(`${logTag} : ${gatingResult.passed ? 'gating OK.' : 'gating KO — conservé en draft pour validation manuelle (' + gatingResult.failures.map(f => f.message).join(' ; ') + ').'}`);
 
-  const hubScheduled = scheduler.computeSchedule({
-    phase: 0, phaseStartDate: state.phase_start_date, queue: hubGatingPassed,
-    capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
-  });
-  state.items_scheduled_in_phase += hubScheduled.length;
+      // Planification + insertion immédiate (même itération, voir note plus haut).
+      const [scheduled] = scheduler.computeSchedule({
+        phase: 0, phaseStartDate: state.phase_start_date, queue: [{ content, usage }],
+        capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
+      });
+      state.items_scheduled_in_phase += 1;
+      persistStateProgress(state);
+      console.log(`${logTag} : programmé pour le ${scheduled.post_date.slice(0, 10)}.`);
 
-  /* --- Hubs : insertion WP, un échec n'affecte que ce hub --- */
-  console.log(`=== Phase 0 — Hubs : insertion WP de ${hubScheduled.length} pièce(s) programmée(s) ===`);
-  for (const [i, hub] of hubScheduled.entries()) {
-    console.log(`[hub ${i + 1}/${hubScheduled.length}] ${hub.slug} : insertion WP...`);
-    try {
+      console.log(`${logTag} : résolution WP (auteur, catégorie, image à la une)...`);
       const authorId = await resolveAuthorId(hub.silo);
       const categoryId = await resolveCategoryId(hub.silo, null);
-      const featuredMedia = await resolveFeaturedMedia(hub.silo, hub.silo, hub.content.title);
-      const resolvedContent = await resolveInlineImages(hub.content.content_gutenberg, hub.content.inline_images, hub.slug, hub.silo);
+      const featuredMedia = await resolveFeaturedMedia(hub.silo, hub.silo, content.title);
+      console.log(`${logTag}   auteur WP #${authorId ?? '(dry-run)'}, catégorie WP #${categoryId ?? '(dry-run)'}, image à la une : ${featuredMedia ? `media #${featuredMedia}` : 'aucune (repli sans image)'}.`);
+      const resolvedContent = await resolveInlineImages(content.content_gutenberg, content.inline_images, hub.slug, hub.silo);
       const payload = {
-        title: hub.content.title,
+        title: content.title,
         slug: hub.slug,
-        status: 'future',
-        date_gmt: hub.post_date.replace(/Z$/, ''),
+        // Toutes les insertions en `draft` pour l'instant (demande explicite
+        // de l'utilisateur, 2026-07-26) : la file de publication réelle ne
+        // démarre que le 29/08, voir la replanification faite ce jour sur
+        // les 53 pages déjà publiées — cohérence sur les nouvelles aussi.
+        status: 'draft',
+        date_gmt: scheduled.post_date.replace(/Z$/, ''),
         content: resolvedContent,
-        excerpt: hub.content.excerpt,
+        excerpt: content.excerpt,
         categories: [categoryId],
         author: authorId,
         featured_media: featuredMedia || undefined,
-        acf: acfFields(hub.content),
+        acf: acfFields(content),
       };
+      console.log(`${logTag} : insertion WP...`);
       if (!DRY_RUN) {
         const created = await wp.createPage(payload);
         hubIdBySlug.set(hub.slug, created.id);
-        similarity.addToIndex(hub.silo, hub.silo, hub.slug, hub.content.content_gutenberg);
+        console.log(`${logTag} : inséré — page WP #${created.id} (${created.link || '(url non renvoyée)'}).`);
+      } else {
+        console.log(`${logTag} : dry-run — insertion WP simulée, rien écrit.`);
       }
-      hubDateBySlug.set(hub.slug, hub.post_date);
-      items.push({ slug: hub.slug, contentType: 'hub', status: 'publie', postDate: hub.post_date, usage: hub.usage });
+      // Un hub inséré alors qu'il échoue le gating (quel que soit le motif)
+      // n'est PAS considéré "publié" au sens de la date parent des sous-hubs
+      // (voir hubDateBySlug plus bas) : rester bloqué tant que l'utilisateur
+      // ne l'a pas validé manuellement.
+      if (gatingResult.passed) hubDateBySlug.set(hub.slug, scheduled.post_date);
+      items.push({
+        slug: hub.slug, contentType: 'hub',
+        status: gatingResult.passed ? 'publie' : 'a_valider',
+        postDate: scheduled.post_date, usage,
+        reasons: gatingResult.passed ? undefined : gatingResult.failures.map(f => f.message),
+      });
     } catch (e) {
-      console.error(`[phase0] échec insertion WP hub "${hub.slug}" : ${e.message}`);
+      console.error(`[phase0] échec hub "${hub.slug}" : ${e.message}`);
       items.push({ slug: hub.slug, contentType: 'hub', status: 'erreur', reasons: [e.message] });
     }
   }
 
-  /* --- Sous-hubs : génération + relecture + gating --- */
+  /* --- Sous-hubs : génération + relecture + gating + INSERTION WP IMMÉDIATE
+     (même correctif critique que pour les hubs ci-dessus, voir la note
+     détaillée plus haut — écriture dans la même itération, jamais accumulée
+     en mémoire en attendant la fin du lot). --- */
   console.log(`\n=== Phase 0 — Sous-hubs : ${sousHubs.length} à traiter ===`);
-  const sousHubGatingPassed = [];
   for (const [i, sousHub] of sousHubs.entries()) {
     console.log(`[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug} (${sousHub.silo}) : génération...`);
+    const logTag = `[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug}`;
     try {
       const parentDate = await resolveHubParentDate(sousHub.hubSlug, hubDateBySlug, hubIdBySlug);
       const parentPublished = !!parentDate;
 
       // Les articles restent en URL plate (voir STATE.md, point ouvert avant
       // P5) — seul le dernier segment de l'identifiant maillage.json compte.
-      const childLinks = sousHub.childArticleEntries.map(e => ({ url: `/${lastSegment(e.url)}`, title: e.ancres?.naturelle_longue || e.mot_cle_principal }));
+      // Ne proposer au modèle QUE les articles réellement publiés (voir
+      // getExistingArticleSlugs) — jamais un lien vers une cible qui n'existe
+      // pas encore. `childLinksCount` transmis au gating reste basé sur le
+      // compte structurel complet du maillage (checkMaillageResolved vérifie
+      // la cohérence de la structure, pas la disponibilité des liens cliquables).
+      const existingArticleSlugs = await getExistingArticleSlugs();
+      const linkableChildEntries = sousHub.childArticleEntries.filter((e) => existingArticleSlugs.has(lastSegment(e.url)));
+      const childLinks = linkableChildEntries.map(e => ({ url: `/${lastSegment(e.url)}`, title: e.ancres?.naturelle_longue || e.mot_cle_principal }));
       const facts = factuel.searchFacts(sousHub.title);
       const competitorAngles = await competitorResearch.searchCompetitorAngles(sousHub.title);
 
       const { content, usage } = await generateAndReview({
         contentType: 'sous-hub', silo: sousHub.silo, item: null, maillageEntry: null,
-        childLinks, facts, competitorAngles, slug: sousHub.slug, runDate, usageAcc,
+        childLinks, facts, competitorAngles, slug: sousHub.slug, runDate, usageAcc, logPrefix: logTag,
       });
 
       const gatingResult = gating.runGating({
         contentType: 'sous-hub', silo: sousHub.silo, sousCocon: sousHub.title, content,
         clusterRow: null, trackingRows: null, maillageEntry: null,
-        childLinksCount: childLinks.length, parentPublished, factsProvided: facts,
+        childLinksCount: sousHub.childArticleEntries.length, parentPublished, factsProvided: facts,
       });
 
-      if (gatingResult.passed) {
-        console.log(`[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug} : gating OK.`);
-        sousHubGatingPassed.push({ ...sousHub, content, parentDate, usage });
-      } else {
-        console.log(`[sous-hub ${i + 1}/${sousHubs.length}] ${sousHub.slug} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
-        items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
-      }
-    } catch (e) {
-      console.error(`[phase0] échec génération/gating sous-hub "${sousHub.slug}" : ${e.message}`);
-      items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'erreur', reasons: [e.message] });
-    }
-  }
+      // Voir note équivalente sur les hubs plus haut : un échec de gating,
+      // quel qu'en soit le motif, est désormais conservé (draft) pour
+      // validation manuelle, jamais perdu.
+      console.log(`${logTag} : ${gatingResult.passed ? 'gating OK.' : 'gating KO — conservé en draft pour validation manuelle (' + gatingResult.failures.map(f => f.message).join(' ; ') + ').'}`);
 
-  const sousHubScheduled = scheduler.computeSchedule({
-    phase: 0, phaseStartDate: state.phase_start_date, queue: sousHubGatingPassed,
-    capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
-  });
-  state.items_scheduled_in_phase += sousHubScheduled.length;
+      // Planification + insertion immédiate (même itération).
+      const [scheduled] = scheduler.computeSchedule({
+        phase: 0, phaseStartDate: state.phase_start_date, queue: [{ content, usage, parentDate }],
+        capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
+      });
+      state.items_scheduled_in_phase += 1;
+      persistStateProgress(state);
+      console.log(`${logTag} : programmé pour le ${scheduled.post_date.slice(0, 10)}.`);
 
-  /* --- Sous-hubs : insertion WP --- */
-  console.log(`=== Phase 0 — Sous-hubs : insertion WP de ${sousHubScheduled.length} pièce(s) programmée(s) ===`);
-  for (const [i, sousHub] of sousHubScheduled.entries()) {
-    console.log(`[sous-hub ${i + 1}/${sousHubScheduled.length}] ${sousHub.slug} : insertion WP...`);
-    try {
+      console.log(`${logTag} : résolution WP (auteur, catégorie, image à la une)...`);
       const authorId = await resolveAuthorId(sousHub.silo);
       const categoryId = await resolveCategoryId(sousHub.silo, sousHub.title);
-      const featuredMedia = await resolveFeaturedMedia(sousHub.title, sousHub.silo, sousHub.content.title);
-      const resolvedContent = await resolveInlineImages(sousHub.content.content_gutenberg, sousHub.content.inline_images, sousHub.slug, sousHub.silo);
+      const featuredMedia = await resolveFeaturedMedia(sousHub.title, sousHub.silo, content.title);
+      console.log(`${logTag}   auteur WP #${authorId ?? '(dry-run)'}, catégorie WP #${categoryId ?? '(dry-run)'}, image à la une : ${featuredMedia ? `media #${featuredMedia}` : 'aucune (repli sans image)'}.`);
+      const resolvedContent = await resolveInlineImages(content.content_gutenberg, content.inline_images, sousHub.slug, sousHub.silo);
       const parentId = hubIdBySlug.get(sousHub.hubSlug);
       // En dry-run, le hub n'est jamais réellement créé (voir plus haut,
       // wp.createPage sauté si DRY_RUN) : aucun id ne peut donc exister pour
@@ -497,25 +630,33 @@ async function runPhase0(state, runDate, usageAcc) {
         console.warn(`[phase0] parent introuvable pour le sous-hub "${sousHub.slug}" (hub "${sousHub.hubSlug}"), publié quand même sans hiérarchie WP. À corriger manuellement.`);
       }
       const payload = {
-        title: sousHub.content.title,
+        title: content.title,
         slug: sousHub.slug,
-        status: 'future',
-        date_gmt: sousHub.post_date.replace(/Z$/, ''),
+        status: 'draft',
+        date_gmt: scheduled.post_date.replace(/Z$/, ''),
         content: resolvedContent,
-        excerpt: sousHub.content.excerpt,
+        excerpt: content.excerpt,
         categories: [categoryId],
         author: authorId,
         parent: parentId || undefined,
         featured_media: featuredMedia || undefined,
-        acf: acfFields(sousHub.content),
+        acf: acfFields(content),
       };
+      console.log(`${logTag} : insertion WP...`);
       if (!DRY_RUN) {
-        await wp.createPage(payload);
-        similarity.addToIndex(sousHub.silo, sousHub.title, sousHub.slug, sousHub.content.content_gutenberg);
+        const created = await wp.createPage(payload);
+        console.log(`${logTag} : inséré — page WP #${created.id} (${created.link || '(url non renvoyée)'}).`);
+      } else {
+        console.log(`${logTag} : dry-run — insertion WP simulée, rien écrit.`);
       }
-      items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'publie', postDate: sousHub.post_date, usage: sousHub.usage });
+      items.push({
+        slug: sousHub.slug, contentType: 'sous-hub',
+        status: gatingResult.passed ? 'publie' : 'a_valider',
+        postDate: scheduled.post_date, usage,
+        reasons: gatingResult.passed ? undefined : gatingResult.failures.map(f => f.message),
+      });
     } catch (e) {
-      console.error(`[phase0] échec insertion WP sous-hub "${sousHub.slug}" : ${e.message}`);
+      console.error(`[phase0] échec sous-hub "${sousHub.slug}" : ${e.message}`);
       items.push({ slug: sousHub.slug, contentType: 'sous-hub', status: 'erreur', reasons: [e.message] });
     }
   }
@@ -525,9 +666,15 @@ async function runPhase0(state, runDate, usageAcc) {
 
 /* ---------- Phase 2 : articles ---------- */
 
-function pickArticleQueueForSilo(silo, rows, remainingBudget) {
-  const candidates = rows.filter(r => r.silo === silo && ['à faire', 'en rédaction'].includes(r.statut));
-  if (!candidates.length || remainingBudget <= 0) return [];
+// Sélectionne, parmi les clusters "à faire"/"en rédaction" d'un GROUPE
+// (silo entier ou un seul sous-cocon), une file interleavée par quota
+// d'intention (~65 % Info / 25 % Commercial / 10 % Transactionnel) et triée
+// par volume décroissant à l'intérieur de chaque intention — voir
+// skills/wordpress-publication.md section 6. Factorisé pour être appliqué
+// une fois par sous-cocon (voir pickArticleQueueForSilo ci-dessous), pas
+// seulement une fois pour tout le silo.
+function pickInterleavedQueue(candidates, budget) {
+  if (!candidates.length || budget <= 0) return [];
 
   const byIntent = {};
   for (const row of candidates) (byIntent[row.intention] ||= []).push(row);
@@ -537,16 +684,16 @@ function pickArticleQueueForSilo(silo, rows, remainingBudget) {
 
   const quotas = {};
   for (const [intent, share] of Object.entries(config.INTENT_QUOTA)) {
-    quotas[intent] = Math.max(1, Math.round(remainingBudget * share));
+    quotas[intent] = Math.max(1, Math.round(budget * share));
   }
 
   const selected = [];
   const cursors = {};
   let progressed = true;
-  while (selected.length < remainingBudget && progressed) {
+  while (selected.length < budget && progressed) {
     progressed = false;
     for (const intent of Object.keys(config.INTENT_QUOTA)) {
-      if (selected.length >= remainingBudget) break;
+      if (selected.length >= budget) break;
       const takenSoFar = selected.filter(r => r.intention === intent).length;
       if (takenSoFar >= quotas[intent]) continue;
       const list = byIntent[intent] || [];
@@ -559,16 +706,50 @@ function pickArticleQueueForSilo(silo, rows, remainingBudget) {
     }
   }
 
-  if (selected.length < remainingBudget) {
+  if (selected.length < budget) {
     const remaining = candidates
       .filter(r => !selected.includes(r))
       .sort((a, b) => (Number(b.volume_estime) || 0) - (Number(a.volume_estime) || 0));
     for (const row of remaining) {
-      if (selected.length >= remainingBudget) break;
+      if (selected.length >= budget) break;
       selected.push(row);
     }
   }
 
+  return selected;
+}
+
+// Priorise par SOUS-COCON (2026-07-28, demande explicite de l'utilisateur,
+// pour un ranking plus rapide et plus solide) : un sous-hub publié tôt sans
+// ses articles pendant des semaines reste un cluster topique incomplet — un
+// signal plus faible pour Google et une navigation plus pauvre pour le
+// lecteur qu'un sous-cocon qui se remplit vite derrière son sous-hub. Avant
+// ce correctif, `pickArticleQueueForSilo` interleavait par intention sur TOUT
+// le silo en une fois, dispersant les articles d'un même sous-cocon sur toute
+// la durée de traitement du silo. Les sous-cocons sont maintenant traités un
+// par un — **le plus petit d'abord** (nombre d'articles croissant, décision
+// explicite de l'utilisateur le 2026-07-28 : valider le pipeline sur des
+// cocons complets et peu coûteux avant les plus gros) — chacun interleavé en
+// interne par quota d'intention (voir pickInterleavedQueue).
+function pickArticleQueueForSilo(silo, rows, remainingBudget) {
+  const candidates = rows.filter(r => r.silo === silo && ['à faire', 'en rédaction'].includes(r.statut));
+  if (!candidates.length || remainingBudget <= 0) return [];
+
+  const bySousCocon = new Map();
+  for (const row of candidates) {
+    const key = row.sous_cocon || '(sans sous-cocon)';
+    if (!bySousCocon.has(key)) bySousCocon.set(key, []);
+    bySousCocon.get(key).push(row);
+  }
+
+  const groups = [...bySousCocon.values()].sort((a, b) => a.length - b.length);
+
+  const selected = [];
+  for (const group of groups) {
+    if (selected.length >= remainingBudget) break;
+    const picked = pickInterleavedQueue(group, remainingBudget - selected.length);
+    selected.push(...picked);
+  }
   return selected;
 }
 
@@ -592,17 +773,36 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
   }
   if (!state.silo_start_date) state.silo_start_date = runDate;
 
-  const candidateRows = pickArticleQueueForSilo(silo, trackingRows, remainingBudget);
+  let candidateRows = pickArticleQueueForSilo(silo, trackingRows, remainingBudget);
+  if (MAX_ARTICLES != null) candidateRows = candidateRows.slice(0, MAX_ARTICLES);
   const capacity = config.PHASE_CAPACITY_PER_DAY[2];
-  const gatingPassed = [];
 
+  /* Génération + relecture + gating + INSERTION WP IMMÉDIATE, dans la même
+     itération — même correctif critique que pour les hubs/sous-hubs
+     (2026-07-26, voir la note détaillée dans runPhase0 ci-dessus) : avant ce
+     correctif, tous les articles gatés étaient accumulés en mémoire
+     (`gatingPassed`) et insérés seulement dans une seconde boucle après la
+     fin de TOUTE la génération du lot — un crash/kill/épuisement de crédit
+     entre les deux boucles faisait perdre tout le contenu déjà généré et payé
+     sans qu'il n'atteigne jamais WordPress. Étendu aux articles le 2026-07-27
+     (constaté reproduit en conditions réelles sur un lot d'articles, demande
+     explicite de l'utilisateur de ne plus jamais perdre de tokens ainsi). */
   console.log(`\n=== Phase 2 — Articles (${silo}) : ${candidateRows.length} à traiter ===`);
   for (const [i, row] of candidateRows.entries()) {
     const maillageEntry = maillage.getEntryByKeyword(row.mot_cle_principal);
     const slug = maillageEntry ? lastSegment(maillageEntry.url) : slugifyFr(row.mot_cle_principal);
-    console.log(`[article ${i + 1}/${candidateRows.length}] ${slug} : génération...`);
+    const logTag = `[article ${i + 1}/${candidateRows.length}] ${slug}`;
+    let stage = 'génération/gating';
     try {
-      const facts = factuel.searchFacts(`${row.mot_cle_principal} ${row.variantes || ''}`);
+      let facts = factuel.searchFacts(`${row.mot_cle_principal} ${row.variantes || ''}`);
+      if (facts.length < MIN_LOCAL_FACTS_FOR_ARTICLE) {
+        console.log(`${logTag} : seulement ${facts.length} fait(s) local(aux), recherche Tavily complémentaire...`);
+        const extra = await tavilyFacts.searchFactualData(row.mot_cle_principal);
+        if (extra.length) {
+          console.log(`${logTag} : ${extra.length} donnée(s) factuelle(s) trouvée(s) via Tavily.`);
+          facts = facts.concat(extra);
+        }
+      }
       const competitorAngles = await competitorResearch.searchCompetitorAngles(row.mot_cle_principal);
 
       const parentSlug = maillageEntry ? lastSegment(maillageEntry.sous_hub) : null;
@@ -617,9 +817,21 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         }
       }
 
+      // Même correctif que pour les sous-hubs (voir runPhase0/getExistingArticleSlugs
+      // plus haut, appliqué ici par anticipation avant le premier vrai run
+      // d'articles) : liens_lateraux/liens_transversaux du maillage pointent
+      // vers d'autres articles qui n'existent pas forcément encore — ne
+      // proposer au modèle que ceux réellement publiés.
+      const existingArticleSlugs = await getExistingArticleSlugs();
+      const safeMaillageEntry = maillageEntry ? {
+        ...maillageEntry,
+        liens_lateraux: (maillageEntry.liens_lateraux || []).filter((u) => existingArticleSlugs.has(lastSegment(u))),
+        liens_transversaux: (maillageEntry.liens_transversaux || []).filter((u) => existingArticleSlugs.has(lastSegment(u))),
+      } : maillageEntry;
+
       const { content, usage } = await generateAndReview({
-        contentType: 'article', silo, item: row, maillageEntry, childLinks: [],
-        facts, competitorAngles, slug, runDate, usageAcc,
+        contentType: 'article', silo, item: row, maillageEntry: safeMaillageEntry, childLinks: [],
+        facts, competitorAngles, slug, runDate, usageAcc, logPrefix: logTag,
       });
 
       const gatingResult = gating.runGating({
@@ -628,65 +840,76 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         parentPublished: !!parentDate, factsProvided: facts,
       });
 
-      if (gatingResult.passed) {
-        console.log(`[article ${i + 1}/${candidateRows.length}] ${slug} : gating OK.`);
-        gatingPassed.push({ row, slug, maillageEntry, content, parentDate, usage });
-      } else {
-        console.log(`[article ${i + 1}/${candidateRows.length}] ${slug} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
+      if (!gatingResult.passed) {
+        console.log(`${logTag} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
         items.push({ slug, contentType: 'article', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
+        continue;
       }
-    } catch (e) {
-      console.error(`[phase2] échec génération/gating article "${slug}" : ${e.message}`);
-      items.push({ slug, contentType: 'article', status: 'erreur', reasons: [e.message] });
-    }
-  }
+      console.log(`${logTag} : gating OK.`);
 
-  const scheduled = scheduler.computeSchedule({
-    phase: 2, phaseStartDate: state.silo_start_date, queue: gatingPassed,
-    capacityOverride: capacity, startIndex: state.items_scheduled_for_silo,
-  });
+      // Planification + insertion immédiate (même itération, voir note plus haut).
+      const [scheduled] = scheduler.computeSchedule({
+        phase: 2, phaseStartDate: state.silo_start_date, queue: [{ content, usage, parentDate }],
+        capacityOverride: capacity, startIndex: state.items_scheduled_for_silo,
+      });
+      state.items_scheduled_for_silo += 1;
+      state.budget_consomme += 1;
+      persistStateProgress(state);
+      console.log(`${logTag} : programmé pour le ${scheduled.post_date.slice(0, 10)}.`);
 
-  console.log(`=== Phase 2 — Articles : insertion WP de ${scheduled.length} pièce(s) programmée(s) ===`);
-  for (const [i, art] of scheduled.entries()) {
-    console.log(`[article ${i + 1}/${scheduled.length}] ${art.slug} : insertion WP...`);
-    try {
+      stage = 'insertion WP';
+      console.log(`${logTag} : résolution WP (auteur, catégorie, tags, image à la une)...`);
       const authorId = await resolveAuthorId(silo);
-      const categoryId = await resolveCategoryId(silo, art.row.sous_cocon);
-      const tagIds = await resolveTagIds(art.content.tags);
-      const featuredMedia = await resolveFeaturedMedia(art.row.mot_cle_principal, silo, art.content.title);
-      const resolvedContent = await resolveInlineImages(art.content.content_gutenberg, art.content.inline_images, art.slug, silo);
+      const categoryId = await resolveCategoryId(silo, row.sous_cocon);
+      const tagIds = await resolveTagIds(content.tags);
+      const featuredMedia = await resolveFeaturedMedia(row.mot_cle_principal, silo, content.title);
+      console.log(`${logTag}   auteur WP #${authorId ?? '(dry-run)'}, catégorie WP #${categoryId ?? '(dry-run)'}, ${tagIds.length} tag(s), image à la une : ${featuredMedia ? `media #${featuredMedia}` : 'aucune (repli sans image)'}.`);
+      const resolvedContent = await resolveInlineImages(content.content_gutenberg, content.inline_images, slug, silo);
       const payload = {
-        title: art.content.title,
-        slug: art.slug,
-        status: 'future',
-        date_gmt: art.post_date.replace(/Z$/, ''),
+        title: content.title,
+        slug,
+        // Toutes les insertions en `draft` pour l'instant (même règle que les
+        // hubs/sous-hubs, demande explicite de l'utilisateur du 2026-07-26,
+        // étendue aux articles le 2026-07-28) : la file de publication réelle
+        // ne démarre que le 29/08 — `date_gmt` reste calculé pour ordonner
+        // les pièces entre elles, mais `status: 'future'` aurait fait publier
+        // ces articles immédiatement en direct sur WordPress (post_date déjà
+        // passé au moment de l'insertion), constaté avant tout run réel.
+        status: 'draft',
+        date_gmt: scheduled.post_date.replace(/Z$/, ''),
         content: resolvedContent,
-        excerpt: art.content.excerpt,
+        excerpt: content.excerpt,
         categories: [categoryId],
         tags: tagIds,
         author: authorId,
         featured_media: featuredMedia || undefined,
-        acf: acfFields(art.content),
+        acf: acfFields(content),
       };
 
+      console.log(`${logTag} : insertion WP...`);
       if (!DRY_RUN) {
-        await wp.createPost(payload);
-        similarity.addToIndex(silo, art.row.sous_cocon, art.slug, art.content.content_gutenberg);
-        trackingXlsx.updateRow(trackingRows, art.row.mot_cle_principal, {
+        const created = await wp.createPost(payload);
+        console.log(`${logTag} : inséré — article WP #${created.id} (${created.link || '(url non renvoyée)'}), publication prévue ${scheduled.post_date.slice(0, 10)}.`);
+        similarity.addToIndex(silo, row.sous_cocon, slug, content.content_gutenberg);
+        trackingXlsx.updateRow(trackingRows, row.mot_cle_principal, {
           statut: 'programmé',
-          url_cible: art.maillageEntry ? art.maillageEntry.url : `/${art.slug}`,
-          date_publication: art.post_date.slice(0, 10),
+          url_cible: maillageEntry ? maillageEntry.url : `/${slug}`,
+          date_publication: scheduled.post_date.slice(0, 10),
         });
+        // Écrit immédiatement (pas seulement en mémoire) — même principe que
+        // persistStateProgress ci-dessus : avant ce correctif, le xlsx n'était
+        // réécrit qu'une fois à la toute fin de main(), donc un kill brutal en
+        // cours de boucle aurait laissé WordPress et tracking-mots-cles.xlsx
+        // désynchronisés (article publié mais toujours marqué "à faire" —
+        // risque de reprise en double au run suivant).
+        trackingXlsx.writeRows(trackingRows);
       }
-      items.push({ slug: art.slug, contentType: 'article', status: 'publie', postDate: art.post_date, usage: art.usage });
+      items.push({ slug, contentType: 'article', status: 'publie', postDate: scheduled.post_date, usage });
     } catch (e) {
-      console.error(`[phase2] échec insertion WP article "${art.slug}" : ${e.message}`);
-      items.push({ slug: art.slug, contentType: 'article', status: 'erreur', reasons: [e.message] });
+      console.error(`[phase2] échec ${stage} article "${slug}" : ${e.message}`);
+      items.push({ slug, contentType: 'article', status: 'erreur', reasons: [e.message] });
     }
   }
-
-  state.items_scheduled_for_silo += scheduled.length;
-  state.budget_consomme += scheduled.length;
 
   return items;
 }
@@ -716,11 +939,11 @@ async function main() {
     if (state.phase === 0) {
       items = await runPhase0(state, runDate, usageAcc);
     } else if (state.phase === 2) {
+      // runPhase2 écrit désormais tracking-mots-cles.xlsx immédiatement après
+      // chaque article publié (voir plus haut) — plus besoin d'une écriture
+      // batchée ici en fin de run.
       const trackingRows = trackingXlsx.readRows();
       items = await runPhase2(state, runDate, trackingRows, usageAcc);
-      if (!DRY_RUN && items.some(i => i.status === 'publie')) {
-        trackingXlsx.writeRows(trackingRows);
-      }
     } else {
       console.log(`Phase inconnue (${state.phase}) — arrêt sans action.`);
       return;

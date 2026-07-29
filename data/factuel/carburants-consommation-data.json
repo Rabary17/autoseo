@@ -1,0 +1,146 @@
+[
+  {
+    "sous_cocon": "E85 & conversions",
+    "fait": "Coût d'installation d'un boîtier E85 homologué par un installateur agréé",
+    "valeur": "Entre 790 € et 1 100 € selon eFlexFuel (kit + pose incluse) ; une offre promotionnelle Flexfuel Company annonce un boîtier posé et homologué à partir de 499 €",
+    "source": "eFlexFuel France, \"Guide complet 2026 : Boîtier éthanol E85 homologué\" (https://eflexfuelfrance.com/blog/guide-complet-2026-tout-savoir-sur-le-boitier-ethanol-e85) ; Flexfuel Company (https://www.flexfuel-company.com/super-ethanol-e85)",
+    "a_verifier": true,
+    "notes": "Écart important entre les deux sources (499 € vs 790-1100 €) : le prix bas semble être une offre promotionnelle anniversaire ponctuelle (\"15 ans\"), pas un tarif standard. Présenter une fourchette large plutôt qu'un chiffre unique, et préciser que les prix varient selon véhicule/installateur/région."
+  },
+  {
+    "sous_cocon": "E85 & conversions",
+    "fait": "Prix moyen du Superéthanol-E85 à la pompe",
+    "valeur": "Entre 0,745 € et 0,87 €/L selon les relevés (mars-mai 2026)",
+    "source": "Roole Data, \"Prix des carburants en France semaine par semaine\" (0,745 €/L) ; Supercarbu, \"Prix carburant mai 2026\" (0,868 €/L) ; biomotors.fr (0,84 €/L, mars 2026)",
+    "a_verifier": false,
+    "notes": "Plusieurs sources indépendantes concordent sur un ordre de grandeur 0,75-0,87 €/L, confirmant que l'E85 reste de loin le carburant le moins cher en France."
+  },
+  {
+    "sous_cocon": "E85 & conversions",
+    "fait": "Nombre de stations distribuant du Superéthanol-E85 en France",
+    "valeur": "Plus de 4 000 stations en 2025 (une source cite 3 500)",
+    "source": "eFlexFuel France ; biomotors.fr ; Flexfuel Company (3 500 stations)",
+    "a_verifier": true,
+    "notes": "Léger écart entre 3 500 et plus de 4 000 stations selon la source et l'année de mise à jour de la donnée ; à recouper avec le site officiel bioethanolcarburant.com avant de citer un chiffre précis."
+  },
+  {
+    "sous_cocon": "E85 & conversions",
+    "fait": "Cadre réglementaire des boîtiers de conversion E85",
+    "valeur": "Fixé par l'arrêté du 30 novembre 2017 relatif aux conditions d'homologation et d'installation des dispositifs de conversion E85",
+    "source": "eplaque.fr, \"Modifier sa carte grise éthanol E85 et prix\" (https://www.eplaque.fr/carte-grise/ethanol-e85)",
+    "a_verifier": true,
+    "notes": "Référence réglementaire citée par une source spécialisée non officielle ; à confirmer sur Légifrance avant citation ferme du numéro/date de l'arrêté."
+  },
+  {
+    "sous_cocon": "E85 & conversions",
+    "fait": "Obligation de modifier la carte grise après la pose d'un boîtier E85 homologué",
+    "valeur": "Oui, obligatoire : la mention carburant doit passer à \"FE\" (bicarburation Superéthanol-E85 + essence) ; sur véhicule hybride EE/EH devient FL/FH ; sur véhicule GPL, EG devient FG. Sans mise à jour, risque de contre-visite au contrôle technique et de sanction",
+    "source": "bioethanolcarburant.com, \"Comment modifier ma carte grise après avoir fait installer un boîtier E85 homologué\" ; recoupé avec biomotors.fr et guichetcartegrise.com",
+    "a_verifier": false,
+    "notes": "Trois sources spécialisées concordantes sur le mécanisme et les mentions. La conversion homologuée elle-même n'est pas un motif de contre-visite ; c'est l'absence de mise à jour de la carte grise qui pose problème (biomotors.fr)."
+  },
+  {
+    "sous_cocon": "E85 & conversions",
+    "fait": "Aide régionale à la conversion E85 (exemple région Sud/PACA)",
+    "valeur": "Chèque transition bioéthanol couvrant 50 % du coût de conversion, plafonné à 500 €",
+    "source": "Biomotors, \"Combien coûte l'installation d'un boîtier éthanol ?\" (https://www.biomotors.fr/boitier-ethanol/combien-coute-linstallation-dun-boitier-ethanol)",
+    "a_verifier": true,
+    "notes": "Dispositif régional (PACA uniquement), source commerciale unique non recoupée ; vérifier l'existence et les conditions actuelles sur le site de la région Sud avant publication, et ne pas généraliser à toute la France."
+  },
+  {
+    "sous_cocon": "GPL GNV & hydrogène",
+    "fait": "Prix moyen du GPL carburant à la pompe en France",
+    "valeur": "Entre 0,95 € et 1,08 €/L selon les sources et la période (2026)",
+    "source": "Antargaz (0,9488-1,0262 €) ; prix-du-carburant.com (1,075 € en mai 2026) ; Butagaz (0,98 €) ; globalpetrolprices.com (1,03 €)",
+    "a_verifier": false,
+    "notes": "Quatre sources indépendantes convergent sur une fourchette 0,95-1,08 €/L ; bon ordre de grandeur fiable pour un article."
+  },
+  {
+    "sous_cocon": "GPL GNV & hydrogène",
+    "fait": "Nombre de stations GPL en France",
+    "valeur": "Environ 1 476 à 1 900 stations selon les sources",
+    "source": "prix-du-carburant.com (1 476 stations) ; Antargaz (\"plus de 1 500 stations-service\")",
+    "a_verifier": true,
+    "notes": "Écart modéré entre sources selon la date de mise à jour ; utiliser une formulation prudente du type \"environ 1 500 stations\" plutôt qu'un chiffre exact."
+  },
+  {
+    "sous_cocon": "GPL GNV & hydrogène",
+    "fait": "Surconsommation d'un véhicule GPL par rapport à l'essence/diesel",
+    "valeur": "Consommation en moyenne 10 à 20 % supérieure à celle d'un véhicule essence ou diesel équivalent",
+    "source": "ladepeche.fr, \"Prix des carburants : le GPL est-il une bonne solution ?\" (citant Carbu.com)",
+    "a_verifier": true,
+    "notes": "Chiffre repris d'un article de presse citant un site tiers (Carbu.com) sans lien direct vers l'étude ; traiter comme ordre de grandeur indicatif."
+  },
+  {
+    "sous_cocon": "GPL GNV & hydrogène",
+    "fait": "Prix moyen d'un véhicule à hydrogène commercialisé en France",
+    "valeur": "Entre 72 000 € et 120 000 € selon les modèles (une source situe la moyenne des modèles commercialisés à 75 950 €)",
+    "source": "Vivacar, \"Top 10 des voitures hydrogène 2026\" ; ENGIE Particuliers, \"Quel est le prix d'une voiture à hydrogène ?\"",
+    "a_verifier": false,
+    "notes": "Les deux sources sont cohérentes entre elles (75 950 € se situe bien dans la fourchette 72 000-120 000 €)."
+  },
+  {
+    "sous_cocon": "GPL GNV & hydrogène",
+    "fait": "Prix de l'hydrogène au kilo pour véhicule particulier en France",
+    "valeur": "Selon les sources : environ 10-15 €/kg (ENGIE, vivacar) contre 19-21 €/kg TTC sur les stations franciliennes en 2025-2026 (granderemise.com, qui évoque une hausse depuis 9 €/kg en 2021)",
+    "source": "ENGIE Particuliers ; vivacar.fr ; granderemise.com, \"Hydrogène vs électrique : le verdict 2026 du VTC premium\"",
+    "a_verifier": true,
+    "notes": "CONTRADICTION notable : écart du simple au double entre les sources (10 €/kg contre 19-21 €/kg). La source la plus élevée précise \"stations franciliennes\" et une hausse récente du prix, ce qui peut expliquer l'écart avec des sources plus anciennes ou génériques. Ne pas citer un chiffre unique sans préciser la zone géographique et la période ; vérifier auprès de France Hydrogène ou Air Liquide avant publication."
+  },
+  {
+    "sous_cocon": "GPL GNV & hydrogène",
+    "fait": "Nombre de stations hydrogène en France et perspective 2030",
+    "valeur": "Quelques dizaines de stations en service en 2026 (un opérateur, Atawey, en revendique plus de 50 à lui seul) ; objectif national de 1 000 stations H2 à l'horizon 2030 selon France Hydrogène",
+    "source": "France Hydrogène (cité par hydrogen-refueling-solutions.fr) ; Atawey (atawey.com/stations-hydrogene) ; environnement-gazette.fr",
+    "a_verifier": true,
+    "notes": "Le nombre exact de stations actuellement en service en France n'est pas donné avec précision par une source primaire consultée (ordres de grandeur \"dizaines\" à \"centaines\" selon les sources) ; l'objectif 2030 de 1000 stations est mieux sourcé (France Hydrogène) mais reste une projection, pas un fait acquis."
+  },
+  {
+    "sous_cocon": "Prix & stations",
+    "fait": "Prix moyen mensuel de vente au détail du gazole en France (donnée officielle)",
+    "valeur": "1,96 €/L en juin 2026 (données mensuelles 2026 : 1,65 € en janvier, 2,26 € en avril, 2,06 € en mars, 1,96 € en juin) — forte volatilité sur l'année",
+    "source": "INSEE, série \"Prix moyens mensuels de vente au détail en métropole - Gazole\" (https://www.insee.fr/fr/statistiques/serie/000442588)",
+    "a_verifier": false,
+    "notes": "Source officielle statistique directe, la plus fiable de toutes les sources consultées sur ce point. Toujours préciser le mois exact tant les prix varient fortement d'un mois à l'autre en 2026."
+  },
+  {
+    "sous_cocon": "Prix & stations",
+    "fait": "Prix moyen du SP95-E10 en France en 2026",
+    "valeur": "Entre 1,83 €/L (mars 2026) et environ 2,03-2,20 €/L (mai-juillet 2026 selon plusieurs relevés) ; tous les carburants classiques ont dépassé le seuil de 2 €/L fin juillet 2026",
+    "source": "manouvellevoiture.com (1,83 €, mars 2026) ; Supercarbu, \"Prix carburant mai 2026\" (2,026 €) ; france3-regions.franceinfo.fr (fin juillet 2026, tous carburants > 2 €/L sauf TotalEnergies)",
+    "a_verifier": true,
+    "notes": "Hausse rapide et irrégulière au fil de 2026 selon plusieurs relevés concordants entre eux dans le temps (prix en hausse constante de mars à juillet) ; ne jamais citer un prix sans dater précisément le relevé, et privilégier une fourchette large plutôt qu'un chiffre figé."
+  },
+  {
+    "sous_cocon": "Prix & stations",
+    "fait": "Classement des carburants du moins cher au plus cher en France (2026)",
+    "valeur": "E85 (environ 0,75-0,87 €/L) < GPL (environ 0,95-1,08 €/L) < Gazole/SP95/SP98 (environ 1,90 à 2,20 €/L selon période)",
+    "source": "Synthèse de Roole Data, Supercarbu, Antargaz, INSEE (voir entrées précédentes de ce fichier)",
+    "a_verifier": false,
+    "notes": "Le classement relatif (ordre) est solide et concordant sur toutes les sources consultées, même si les valeurs absolues varient dans le temps."
+  },
+  {
+    "sous_cocon": "Réduire sa consommation",
+    "fait": "Réduction de consommation de carburant permise par l'éco-conduite",
+    "valeur": "Selon les sources : jusqu'à 25 % de réduction (chiffre attribué à l'ADEME par manouvellevoiture.com) contre environ 15 % en moyenne selon Michelin Connected Fleet et Assurance Prévention",
+    "source": "manouvellevoiture.com (citant l'ADEME) ; MICHELIN Connected Fleet, \"Éco-conduite : Guide complet\" ; Assurance Prévention, \"L'éco-conduite : 8 gestes simples\"",
+    "a_verifier": true,
+    "notes": "Écart notable entre 15 % (deux sources concordantes, dont un assureur) et 25 % (une seule source, citant l'ADEME sans lien direct vers l'étude/la publication ADEME correspondante). Privilégier la fourchette \"10 à 25 %\" ou le chiffre le plus consensuel de 15 % ; vérifier la publication ADEME d'origine avant de citer 25 % en article."
+  },
+  {
+    "sous_cocon": "Réduire sa consommation",
+    "fait": "Écart entre consommation de carburant annoncée (norme WLTP) et consommation réelle constatée",
+    "valeur": "Écart moyen de +23,7 % pour les véhicules essence et +18,1 % pour les véhicules diesel par rapport aux valeurs WLTP officielles (soit environ +1,5 L/100 km pour l'essence et +1,05 L/100 km pour le diesel) ; un test terrain de L'Argus sur un Volvo XC90 diesel WLTP a mesuré un écart de plus de 30 %",
+    "source": "Modys.fr, \"Consommation de carburant : l'étude qui révèle un écart considérable\" ; L'Argus, \"WLTP. 30 % d'écart entre fiche technique et consommation réelle ?\"",
+    "a_verifier": true,
+    "notes": "Les deux sources concordent sur l'existence d'un écart significatif et défavorable au conducteur, mais les pourcentages exacts diffèrent selon la méthodologie (étude constructeurs vs test terrain sur un modèle unique) ; présenter comme un ordre de grandeur (\"15 à 30 % selon les modèles\") plutôt qu'un chiffre unique."
+  },
+  {
+    "sous_cocon": "Réduire sa consommation",
+    "fait": "Seuil de déclenchement du malus écologique CO2 et du malus au poids en 2026",
+    "valeur": "Malus CO2 : déclenché dès 108 g/km de CO2 en 2026 (contre 113 g/km en 2025), plafond de 80 000 € au-delà de 191 g/km. Malus au poids : déclenché à partir de 1 500 kg (10 €/kg jusqu'à 1 700 kg, jusqu'à 30 €/kg au-delà de 2 000 kg), les deux malus étant cumulables mais plafonnés ensemble à 80 000 €",
+    "source": "caroom.fr, \"Malus 2026 : la grille à jour + simulateur de calcul\" ; recoupé avec opteven.com et automobile-magazine.fr",
+    "a_verifier": true,
+    "notes": "Bonne concordance entre trois sources spécialisées sur les seuils et le principe, mais aucune n'est un site gouvernemental officiel (impots.gouv.fr/service-public.fr) ; à recouper avec une source primaire avant de citer des montants précis dans un article, notamment le plafond de 80 000 €."
+  }
+]

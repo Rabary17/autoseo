@@ -64,7 +64,7 @@ tr:last-child td{border-bottom:none}
 │  ├─ factuel.js (lecture données P2)
 │  ├─ persona.js (charge profil auteur)
 │  ├─ prompt-builder.js (compose le prompt)
-│  ├─ claude.js (API Anthropic)
+│  ├─ mistral-client.js (API Mistral)
 │  ├─ review.js (relecture QA)
 │  ├─ gating.js (9 règles SEO)
 │  ├─ similarity.js (TF-IDF anti-dupe)
@@ -81,21 +81,20 @@ tr:last-child td{border-bottom:none}
   <li>Charger <code>maillage.json</code> (liens hub/sous-hub/latéraux)</li>
   <li>Charger <code>data/factuel/*.json</code> (préstations, modèles, codes, etc.)</li>
   <li>Récupérer profil auteur depuis <code>skills/redaction/auteur-*.md</code></li>
-  <li>Sélectionner modèle Claude : Sonnet 5 (hubs) ou Haiku 4.5 (articles)</li>
+  <li>Sélectionner modèle Mistral : mistral-large-latest (hubs) ou mistral-small-latest (articles)</li>
 </ul>
 
-<h3>2️⃣ Rédaction (appel Claude #1)</h3>
+<h3>2️⃣ Rédaction (appel Mistral #1)</h3>
 <ul>
   <li>Prompt : template éditorial + données + mots-clés + voix auteur + consigne FAQ/schémas</li>
   <li>Structured output : JSON typé (title, body, meta_description, faq, etc.)</li>
-  <li>Prompt caching : skill auteur mis en cache (économie 90% sur requêtes suiv.)</li>
   <li>Output : article complet en Markdown + métadonnées</li>
 </ul>
 
-<h3>3️⃣ Relecture QA (appel Claude #2)</h3>
+<h3>3️⃣ Relecture QA (appel Mistral #2)</h3>
 <ul>
   <li>Vérifier : grammaire, cohérence, pertinence données, sources citées</li>
-  <li>Jugement : Sonnet 5 uniquement (qualité critique)</li>
+  <li>Jugement : mistral-large-latest uniquement (qualité critique)</li>
   <li>Retour : verdict GO / ASK_REVISION (rarement — le prompt est bon)</li>
 </ul>
 

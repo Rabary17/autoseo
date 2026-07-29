@@ -97,18 +97,18 @@ Publication en **3 phases**, décidé le 2026-07-11 pour remplacer un plafond fi
 
 ### Phase 2 — Rythme de croisière (articles)
 
-- **15 articles/jour**, pour **un seul silo à la fois** (cocon publié en continu — jamais 15/jour × plusieurs silos en parallèle, ce qui viderait le crawl budget d'un domaine encore jeune).
+- **10 articles/jour** (abaissé de 15 à 10 le 2026-07-28, demande explicite de l'utilisateur), pour **un seul silo à la fois** (cocon publié en continu — jamais en parallèle sur plusieurs silos, ce qui viderait le crawl budget d'un domaine encore jeune).
 - Réévaluation hebdomadaire via `/p6-indexation` : si le taux d'indexation reste sain (pas d'erreurs de crawl anormales, pas d'action manuelle GSC), le rythme peut être **augmenté progressivement** silo après silo — décision explicite de l'utilisateur à chaque palier, jamais automatique.
-- **Conséquence arithmétique à avoir en tête** : à 15 articles/jour en continu, 10 000 articles représentent **~1 an et 10 mois** (hors phases 0 et 1). C'est le rythme de référence tant qu'aucune autre décision n'est prise ; le plan de niche prévoit une accélération possible sur domaine mature/expiré (voir [plan-auto-mobilite-10000.html](../plan-auto-mobilite-10000.html) section 5) ou une répartition sur plusieurs domaines si le volume doit sortir plus vite.
+- **Conséquence arithmétique à avoir en tête** : à 10 articles/jour en continu, 10 000 articles représentent **~2 ans et 9 mois** (hors phases 0 et 1). C'est le rythme de référence tant qu'aucune autre décision n'est prise ; le plan de niche prévoit une accélération possible sur domaine mature/expiré (voir [plan-auto-mobilite-10000.html](../plan-auto-mobilite-10000.html) section 5) ou une répartition sur plusieurs domaines si le volume doit sortir plus vite.
 
 ### Ordre de priorité de publication
 
 1. **Phase 0** : homepage → hubs (tous silos) → sous-hubs (tous silos), avant tout article.
 2. **Phase 2**, au sein des articles d'un silo, priorité décroissante sur :
-   1. Clusters à **fort volume de recherche réel** (donnée Haloscan) — capter le trafic potentiel le plus tôt.
-   2. Répartition qui respecte le quota d'intention du silo (~65 % Info / 25 % Commercial / 10 % Transactionnel, voir [seo.md](seo.md) section 3) **étalée dans le temps** — ne pas publier tout le Transactionnel d'un coup en fin de silo ni tout en premier, l'interleaver proportionnellement.
-   3. Un silo est publié en continu (son cocon complet) avant de passer majoritairement au silo suivant, plutôt que de saupoudrer tous les silos en parallèle — cohérent avec la logique "cocon publié d'un bloc" du plan (P5).
-3. Entre silos : suivre l'ordre du plan de niche (Entretien & révision et Pannes & diagnostic en premier — cœur de trafic, voir [STATE.md](../STATE.md)), sauf changement explicite de l'utilisateur.
+   1. **Sous-cocon par sous-cocon, le plus petit (le moins d'articles) en premier** (ajouté le 2026-07-28, demande explicite de l'utilisateur — valider le pipeline sur des cocons complets et peu coûteux avant les plus gros) : traiter entièrement un sous-cocon (son cocon complet d'articles) avant de passer au suivant, plutôt que de piocher les meilleurs volumes de tout le silo en parallèle. Un sous-hub déjà publié sans aucun article derrière pendant des semaines est un cluster topique incomplet — signal plus faible pour Google, navigation plus pauvre pour le lecteur — qu'un sous-cocon qui se remplit vite derrière son sous-hub.
+   2. À l'intérieur d'un sous-cocon : répartition qui respecte le quota d'intention du silo (~65 % Info / 25 % Commercial / 10 % Transactionnel, voir [seo.md](seo.md) section 3), triée par volume décroissant dans chaque intention.
+   3. Un silo est publié en continu (tous ses sous-cocons, du plus petit au plus gros) avant de passer majoritairement au silo suivant, plutôt que de saupoudrer tous les silos en parallèle — cohérent avec la logique "cocon publié d'un bloc" du plan (P5).
+3. Entre silos : **du plus petit au plus gros cocon** (nombre total d'articles croissant, calculé depuis `data/maillage/maillage.json` — voir `config.js`), décision explicite de l'utilisateur le 2026-07-28 qui remplace l'ordre précédent ("Entretien & révision et Pannes & diagnostic en premier"), sauf nouveau changement explicite de l'utilisateur.
 
 ### Calcul des dates
 

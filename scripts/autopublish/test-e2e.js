@@ -1,16 +1,18 @@
 #!/usr/bin/env node
 // Test de bout en bout, ISOLÉ de toute donnée réelle (ne touche jamais
 // data/autopublish-state.json ni tracking-mots-cles.xlsx) — vérifie que
-// chaque maillon fonctionne réellement : génération (Claude API), relecture
-// obligatoire (2e appel Claude), sourcing d'image (Pexels/Unsplash/Pixabay),
-// écriture WordPress (1 catégorie, 1 tag, 1 article), puis le rapport
-// quotidien doit le détecter. Article publié immédiatement (status=publish),
-// titre préfixé "[TEST]" pour rester identifiable et facile à supprimer
-// depuis wp-admin une fois la vérification faite.
+// chaque maillon fonctionne réellement : génération (Mistral API), relecture
+// voix/faits obligatoire (2e appel Mistral), relecture lisibilité obligatoire
+// (3e appel Mistral, ajoutée le 2026-07-28), sourcing d'image
+// (Pexels/Unsplash/Pixabay), écriture WordPress (1 catégorie, 1 tag, 1
+// article), puis le rapport quotidien doit le détecter. Article publié
+// immédiatement (status=publish), titre préfixé "[TEST]" pour rester
+// identifiable et facile à supprimer depuis wp-admin une fois la
+// vérification faite.
 const fs = require('fs');
 const path = require('path');
 const promptBuilder = require('./lib/prompt-builder');
-const claudeClient = require('./lib/claude-client');
+const mistralClient = require('./lib/mistral-client');
 const reviewModule = require('./lib/review');
 const gating = require('./lib/gating');
 const images = require('./lib/images');
@@ -48,41 +50,51 @@ async function main() {
     volume_estime: 0,
   };
 
-  log('## 1/6 — Génération (Claude API)');
+  log('## 1/7 — Génération (Mistral API)');
   const genReq = promptBuilder.buildGenerationRequest({
     contentType: 'article', silo: TEST_SILO, item: testItem,
     maillageEntry: null, childLinks: [], facts: [],
   });
   const modelCfg = config.MODEL_BY_CONTENT_TYPE.article;
-  const genResult = await claudeClient.callClaude({
-    model: modelCfg.model, thinking: modelCfg.thinking, effort: modelCfg.effort,
+  const genResult = await mistralClient.callMistral({
+    model: modelCfg.model,
     system: genReq.system, messages: genReq.messages, schema: genReq.schema,
   });
-  log(`OK — modèle \`${genResult.model}\`, ${genResult.usage.output_tokens} tokens de sortie, ${genResult.usage.cache_read_input_tokens} tokens lus en cache.`);
+  log(`OK — modèle \`${genResult.model}\`, ${genResult.usage.output_tokens} tokens de sortie.`);
   log('');
 
-  log('## 2/6 — Relecture obligatoire (2e appel Claude API)');
+  log('## 2/7 — Relecture voix/faits obligatoire (2e appel Mistral API)');
   const runDate = new Date().toISOString().slice(0, 10);
   const reviewResult = await reviewModule.reviewContent({
     contentType: 'article', silo: TEST_SILO, slug: TEST_SLUG,
     generatedContent: genResult.parsed, maillageEntry: null, facts: [], runDate,
-    model: config.REVIEW_MODEL.model, thinking: config.REVIEW_MODEL.thinking, effort: config.REVIEW_MODEL.effort,
+    model: config.REVIEW_MODEL_BY_CONTENT_TYPE.article.model,
   });
   log(`OK — conforme sans correction : ${reviewResult.conforme ? 'oui' : 'non'}, corrections appliquées : ${reviewResult.corrections.length}.`);
   log(`Justification : ${reviewResult.justification}`);
   log('');
-  const content = reviewResult.content;
 
-  log('## 3/6 — Vérification du gating (informatif seulement, ne bloque pas ce test)');
+  log('## 3/7 — Relecture lisibilité obligatoire (3e appel Mistral API)');
+  const readabilityResult = await reviewModule.reviewReadability({
+    contentType: 'article', silo: TEST_SILO, slug: TEST_SLUG,
+    generatedContent: reviewResult.content, runDate,
+    model: config.REVIEW_MODEL_BY_CONTENT_TYPE.article.model,
+  });
+  log(`OK — conforme sans correction : ${readabilityResult.conforme ? 'oui' : 'non'}, corrections appliquées : ${readabilityResult.corrections.length}.`);
+  log(`Justification : ${readabilityResult.justification}`);
+  log('');
+  const content = readabilityResult.content;
+
+  log('## 4/7 — Vérification du gating (informatif seulement, ne bloque pas ce test)');
   const gatingResult = gating.runGating({
     contentType: 'article', silo: TEST_SILO, sousCocon: 'Test', content,
     clusterRow: null, trackingRows: null, maillageEntry: null,
     childLinksCount: 0, parentPublished: true, factsProvided: [],
   });
-  log(gatingResult.passed ? 'PASS — les 9 règles de gating passeraient sur ce contenu.' : `Règles non satisfaites (normal pour un contenu de test générique) : ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
+  log(gatingResult.passed ? 'PASS — les règles de gating passeraient sur ce contenu.' : `Règles non satisfaites (normal pour un contenu de test générique) : ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
   log('');
 
-  log('## 4/6 — Sourcing image (cascade Pexels → Unsplash → Pixabay)');
+  log('## 5/7 — Sourcing image (cascade Pexels → Unsplash → Pixabay)');
   let featuredMedia;
   try {
     const found = await images.findImage('entretien automobile garage', { silo: 'TEST' });
@@ -99,7 +111,7 @@ async function main() {
   }
   log('');
 
-  log('## 5/6 — Écriture WordPress (catégorie, tag, article)');
+  log('## 6/7 — Écriture WordPress (catégorie, tag, article)');
   const categoryId = (await wp.findOrCreateTerm('categories', 'test-autopublish', { name: 'Test Autopublish', slug: 'test-autopublish' })).id;
   const tagId = (await wp.findOrCreateTerm('tags', 'test', { name: 'Test', slug: 'test' })).id;
   const users = await wp.getAllUsers();
@@ -124,15 +136,15 @@ async function main() {
   log(`OK — article publié : ${post.link} (id ${post.id}, catégorie #${categoryId}, tag #${tagId}).`);
   log('');
 
-  log('## 6/6 — Résumé');
+  log('## 7/7 — Résumé');
   log(`- Article de test : ${post.link}`);
   log(`- À supprimer manuellement depuis wp-admin une fois la vérification faite.`);
   log(`- Le prochain rapport quotidien (daily-report.js) doit lister cet article dans "Publié aujourd'hui".`);
-  log(`- Coût de ce test : génération ${JSON.stringify(genResult.usage)}, relecture ${JSON.stringify(reviewResult.usage)}.`);
+  log(`- Coût de ce test : génération ${JSON.stringify(genResult.usage)}, relecture voix/faits ${JSON.stringify(reviewResult.usage)}, relecture lisibilité ${JSON.stringify(readabilityResult.usage)}.`);
 }
 
 // Le log doit être écrit même si le test échoue en cours de route (ex.
-// écriture WP en échec à l'étape 5/6) — sinon un run raté ne laisse AUCUNE
+// écriture WP en échec à l'étape 6/7) — sinon un run raté ne laisse AUCUNE
 // trace du point où il s'est arrêté, obligeant à rejouer aveuglément (voir le
 // durcissement équivalent dans run.js).
 main()

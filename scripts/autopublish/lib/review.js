@@ -1,20 +1,21 @@
 // Relecture/auto-correction obligatoire après génération (règle explicite de
-// l'utilisateur) : un second appel Messages API dédié vérifie la conformité
-// au skill de l'auteur et aux contraintes, corrige si besoin, et justifie ses
-// choix dans un fichier de log lisible par un humain — jamais de correction
-// silencieuse. Une seule passe, jamais de boucle (voir plan section 3.bis).
+// l'utilisateur) : deux appels dédiés vérifient la conformité — voix de
+// l'auteur/faits/maillage (`reviewContent`), puis lisibilité mécanique
+// (`reviewReadability`, ajoutée le 2026-07-28) — et justifient leurs choix
+// dans un fichier de log lisible par un humain, jamais de correction
+// silencieuse. Chaque passe reste unique, jamais de boucle (voir plan
+// section 3.bis) — la lisibilité est une 3ᵉ passe distincte, pas une
+// itération de la relecture voix/faits.
 const fs = require('fs');
 const path = require('path');
 const promptBuilder = require('./prompt-builder');
-const claudeClient = require('./claude-client');
+const mistralClient = require('./mistral-client');
 
 const LOGS_ROOT = path.join(__dirname, '..', '..', '..', 'logs', 'autopublish');
 
-// Modèle de relecture par défaut : Sonnet 5, jugement qualité (voir plan
-// section 5, "répartition modèle par type") — surchageable par config.js.
-const DEFAULT_REVIEW_MODEL = 'claude-sonnet-5';
-const DEFAULT_THINKING = { type: 'adaptive' };
-const DEFAULT_EFFORT = 'medium';
+// Modèle de relecture par défaut : mistral-large-latest, jugement qualité
+// (voir plan section 5, "répartition modèle par type") — surchageable par config.js.
+const DEFAULT_REVIEW_MODEL = 'mistral-large-latest';
 
 // `slug` alimente un nom de fichier — normalement toujours un slug propre
 // (persona.js/scheduler.js le construisent ainsi), mais on neutralise ici tout
@@ -24,12 +25,15 @@ function safeFileSlug(slug) {
   return String(slug).replace(/[^a-zA-Z0-9-_]/g, '-');
 }
 
-function writeReviewLog({ runDate, slug, contentType, silo, conforme, justification, corrections }) {
+// `kind` distingue le fichier de log entre les 2 passes de relecture d'une
+// même pièce (voix/faits vs lisibilité) — sinon la 2e passe écraserait le
+// log de la 1ère (même slug).
+function writeReviewLog({ runDate, slug, contentType, silo, conforme, justification, corrections, kind = 'voix-faits' }) {
   const dir = path.join(LOGS_ROOT, runDate);
   fs.mkdirSync(dir, { recursive: true });
   slug = safeFileSlug(slug);
   const lines = [
-    `# Relecture — ${slug}`,
+    `# Relecture (${kind}) — ${slug}`,
     '',
     `- Type de contenu : ${contentType}`,
     `- Silo : ${silo}`,
@@ -44,30 +48,25 @@ function writeReviewLog({ runDate, slug, contentType, silo, conforme, justificat
     corrections.length ? corrections.map(c => `- ${c}`).join('\n') : '_Aucune._',
     '',
   ];
-  fs.writeFileSync(path.join(dir, `${slug}-review.md`), lines.join('\n'), 'utf8');
+  fs.writeFileSync(path.join(dir, `${slug}-review-${kind}.md`), lines.join('\n'), 'utf8');
 }
 
 // La relecture renvoie l'enveloppe de contenu COMPLÈTE (content) en plus de
 // justification/corrections_appliquees — donc toujours plus lourde en tokens
-// de sortie que la génération initiale du même type. 16000 (défaut
-// claude-client) suffit à peine pour un article court mais tronque un
-// hub/sous-hub long (2500-4000 mots + inline_images + faq + sources,
-// constaté lors du test P4 2026-07-22 : stop_reason=max_tokens systématique).
-// `thinking: adaptive` consomme sur le même budget que max_tokens (le
-// raisonnement du modèle compte contre la limite) — un hub de 4000 mots +
-// inline_images + faq + sources peut à lui seul approcher 24000 tokens de
-// sortie ; 32000 laisse une vraie marge (constaté tronqué à 24000 en test
-// P4 2026-07-22, sur la génération elle-même, pas seulement la relecture).
-// 'sous-hub' relevé 24000 -> 32000 -> 48000 le 2026-07-23 : la recherche
-// concurrentielle (competitor-research.js) enrichit désormais aussi les
-// sous-hubs de nouveaux H2, rapprochant leur volume de celui d'un hub — 6
-// puis encore 3 troncatures stop_reason=max_tokens constatées sur 2 dry-runs
-// successifs, notamment sur les sous-hubs "par modèle" (beaucoup d'entités à
-// éditorialiser : marques-françaises, fiabilité-par-modèle...).
+// de sortie que la génération initiale du même type. Plafonds fixés à
+// l'époque de l'API Anthropic (test P4 2026-07-22, `hub`/`sous-hub` relevés
+// après plusieurs finish_reason=length constatés sur du contenu long).
+// `article` relevé 16000 -> 24000 le 2026-07-27 (migration Mistral) : premier
+// test end-to-end sur mistral-large-latest tronqué à 16000 sur un article de
+// relecture (3730 tokens de sortie sur une tentative réussie juste après,
+// donc plutôt une variance ponctuelle qu'un besoin structurel plus élevé —
+// mais la marge est gardée par prudence plutôt que de retenter le hasard en
+// production). À surveiller aussi sur hub/sous-hub si des troncatures
+// réapparaissent avec Mistral (tokenizer différent de celui de Claude).
 const MAX_TOKENS_BY_CONTENT_TYPE = {
   hub: 32000,
   'sous-hub': 48000,
-  article: 16000,
+  article: 24000,
 };
 
 async function reviewContent({
@@ -80,8 +79,6 @@ async function reviewContent({
   competitorAngles,
   runDate,
   model = DEFAULT_REVIEW_MODEL,
-  thinking = DEFAULT_THINKING,
-  effort = DEFAULT_EFFORT,
 }) {
   const req = promptBuilder.buildReviewRequest({
     contentType,
@@ -92,21 +89,55 @@ async function reviewContent({
     competitorAngles,
   });
 
-  const result = await claudeClient.callClaude({
+  const result = await mistralClient.callMistral({
     model,
     system: req.system,
     messages: req.messages,
     schema: req.schema,
-    thinking,
-    effort,
     maxTokens: MAX_TOKENS_BY_CONTENT_TYPE[contentType] || 16000,
   });
 
   const { conforme, justification, corrections_appliquees: corrections = [], content } = result.parsed;
+  // `content: null` quand `conforme: true` (voir prompts/review.md et
+  // prompt-builder.js REVIEW_SCHEMA) : le modèle ne réémet pas l'enveloppe
+  // déjà bonne, on réutilise celle générée initialement.
+  const finalContent = content ?? generatedContent;
 
   writeReviewLog({ runDate, slug, contentType, silo, conforme, justification, corrections });
 
-  return { conforme, justification, corrections, content, usage: result.usage };
+  return { conforme, justification, corrections, content: finalContent, usage: result.usage };
 }
 
-module.exports = { reviewContent, DEFAULT_REVIEW_MODEL, DEFAULT_THINKING, DEFAULT_EFFORT, MAX_TOKENS_BY_CONTENT_TYPE };
+// 3ᵉ passe (2026-07-28, demande explicite de l'utilisateur) : lisibilité
+// mécanique (longueur de phrase, taille de paragraphe/section, connecteurs
+// logiques) — voir prompts/lisibilite.md. Ne touche jamais à la voix, aux
+// faits ou au maillage (déjà validés par reviewContent ci-dessus) : contrat
+// et schéma distincts (READABILITY_REVIEW_SCHEMA), mais même mécanique
+// `content: null` si déjà conforme pour économiser les tokens de sortie.
+async function reviewReadability({
+  contentType,
+  silo,
+  slug,
+  generatedContent,
+  runDate,
+  model = DEFAULT_REVIEW_MODEL,
+}) {
+  const req = promptBuilder.buildReadabilityReviewRequest({ contentType, silo, generatedContent });
+
+  const result = await mistralClient.callMistral({
+    model,
+    system: req.system,
+    messages: req.messages,
+    schema: req.schema,
+    maxTokens: MAX_TOKENS_BY_CONTENT_TYPE[contentType] || 16000,
+  });
+
+  const { conforme, justification, corrections_appliquees: corrections = [], content } = result.parsed;
+  const finalContent = content ?? generatedContent;
+
+  writeReviewLog({ runDate, slug, contentType, silo, conforme, justification, corrections, kind: 'lisibilite' });
+
+  return { conforme, justification, corrections, content: finalContent, usage: result.usage };
+}
+
+module.exports = { reviewContent, reviewReadability, DEFAULT_REVIEW_MODEL, MAX_TOKENS_BY_CONTENT_TYPE };

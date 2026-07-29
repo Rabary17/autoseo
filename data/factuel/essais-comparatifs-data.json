@@ -1,0 +1,154 @@
+[
+  {
+    "sous_cocon": "Nouveautés & salons",
+    "fait": "Dates du Mondial de l'Auto Paris 2026 (91e édition)",
+    "valeur": "Du lundi 12 au dimanche 18 octobre 2026, à Paris Expo Porte de Versailles (12 octobre réservé presse et professionnels, ouverture au public du 13 au 18)",
+    "source": "OICA (Organisation Internationale des Constructeurs d'Automobiles), \"Mondial de l'Auto Paris 2026\" (https://oica.net/events/mondial-de-lauto-paris-2026) ; recoupé avec expo.paris/salon/mondial-de-l-auto-2026 et keyqo.io",
+    "a_verifier": false,
+    "notes": "Concordance forte entre 3 sources indépendantes (organisme professionnel international, billetterie officielle du site, agenda spécialisé) sur les dates et le lieu."
+  },
+  {
+    "sous_cocon": "Nouveautés & salons",
+    "fait": "Fréquentation du Mondial de l'Auto Paris, édition 2024 (90e édition)",
+    "valeur": "508 007 visiteurs sur 6 jours d'ouverture, 48 constructeurs, 158 exposants, fréquentation en hausse d'environ 28 % par rapport à l'édition 2022",
+    "source": "mondial.paris, \"Mondial de l'Auto Paris 2024 : une 90e édition record avec plus de 500 000 visiteurs en 6 jours\" (https://mondial.paris/actualites/mondial-de-lauto-paris-2024-une-90e-edition-record-avec-plus-de-500-000-visiteurs-en-seulement-6-jours-41951.html) ; recoupé avec L'Argus et expo.paris",
+    "a_verifier": false,
+    "notes": "Chiffre officiel des organisateurs, recoupé par la presse spécialisée (L'Argus) et le site de billetterie de l'édition 2026. Cohérent avec le chiffre \"508 000 visiteurs\" cité par expo.paris pour situer l'édition 2026."
+  },
+  {
+    "sous_cocon": "Nouveautés & salons",
+    "fait": "Record historique de fréquentation du Mondial de l'Auto Paris",
+    "valeur": "1,461 million de visiteurs lors de l'édition 2004 (25 septembre au 10 octobre 2004), présenté par les organisateurs de l'époque comme le premier salon automobile mondial devant Tokyo, Francfort, Detroit, Genève, Shanghai et Pékin",
+    "source": "Wikipédia, \"Mondial de l'Auto Paris\" (https://fr.wikipedia.org/wiki/Mondial_de_l%27Auto_Paris)",
+    "a_verifier": true,
+    "notes": "Wikipédia n'est pas une source primaire ; le chiffre est vraisemblable (il circule aussi ailleurs) mais à recouper avec une archive de presse ou un communiqué de l'époque avant citation ferme dans un article publié. Utile comme ordre de grandeur historique uniquement."
+  },
+  {
+    "sous_cocon": "Nouveautés & salons",
+    "fait": "Ancienneté du Mondial de l'Auto (origine du salon)",
+    "valeur": "Lancé en 1898 à l'initiative de l'Automobile Club de France (jardin des Tuileries), devenu \"Mondial de l'Automobile\" en 1988 ; l'édition 2026 est présentée comme la 128e année d'existence de l'événement",
+    "source": "Expo Paris, \"Salon de l'Auto 2026 | Paris Expo Porte de Versailles\" (https://expo.paris/salon/mondial-de-l-auto-2026)",
+    "a_verifier": false,
+    "notes": "Source officielle de la billetterie/organisation du salon."
+  },
+  {
+    "sous_cocon": "Nouveautés & salons",
+    "fait": "Élection \"Voiture de l'année\" 2026 (Car of the Year, jury européen) — modalités et finalistes",
+    "valeur": "7 modèles finalistes retenus en octobre (sur 7 propositions maximum par juré, véhicules devant être commercialisés dans un nombre minimal de pays européens) ; résultat annoncé le 9 janvier 2026 au salon de Bruxelles ; parmi les finalistes 2026, 5 SUV et 3 véhicules 100 % électriques, dont la Renault 4 et le Citroën C5 Aircross pour la France",
+    "source": "L'Argus, \"Voiture de l'année 2026. On connaît les 7 modèles finalistes de l'élection européenne\" (https://www.largus.fr/actualite-automobile/voiture-de-l-annee-2026-on-connait-les-7-modeles-finalistes-de-l-election-europeenne-30044210.html) ; recoupé avec RTBF Actus sur le fonctionnement du jury",
+    "a_verifier": true,
+    "notes": "Dates et liste des finalistes concordantes entre L'Argus, Autosphere et mondial.paris. Le point du jury (7 propositions par juré, sélection des 7 plus nominés) vient de RTBF, source distincte à recouper avec le règlement officiel de l'organisation Car of the Year avant de le présenter comme une règle figée — les modalités précises peuvent varier d'une année à l'autre."
+  },
+  {
+    "sous_cocon": "Nouveautés & salons",
+    "fait": "Palmarès récent de l'élection \"Voiture de l'année\" européenne (marque Renault)",
+    "valeur": "Renault a remporté le titre en 2024 (Scénic E-Tech) et en 2025 (Renault 5 E-Tech, avec l'Alpine A290 également distinguée), et est présentée comme favorite en 2026 avec la Renault 4",
+    "source": "mondial.paris, \"Voiture de l'année 2026 : 7 finalistes dont 2 françaises !\" (https://mondial.paris/actualites/auto-pratique/voiture-de-l-annee-2026-7-finalistes-dont-2-francaises-50813.html) ; recoupé avec L'Argus",
+    "a_verifier": false,
+    "notes": "Concordance entre deux sources presse spécialisées indépendantes sur le palmarès 2024-2025."
+  },
+  {
+    "sous_cocon": "Concept-cars & anticipation",
+    "fait": "Définition d'un concept-car",
+    "valeur": "Véhicule expérimental produit en très peu d'exemplaires (souvent un seul), construit par un constructeur pour présenter une technologie, une orientation de style ou un usage inédit, généralement lors d'un salon automobile ; il n'est pas destiné à la vente en l'état",
+    "source": "Wikipédia FR, \"Concept car\" (https://fr.wikipedia.org/wiki/Concept_car\") ; recoupé avec ScienceDirect (\"Concept Car - an overview\") et CarGurus",
+    "a_verifier": false,
+    "notes": "Définition générale non chiffrée, concordante entre plusieurs sources indépendantes (encyclopédie, base académique, presse auto)."
+  },
+  {
+    "sous_cocon": "Concept-cars & anticipation",
+    "fait": "Exemples de concept-cars ayant abouti à une mise en production en série",
+    "valeur": "Certains concept-cars sont repris quasiment tels quels en version de série ; exemples cités par plusieurs sources : Audi TT, Volkswagen New Beetle, Ford Mustang, Mazda Miata (MX-5), Dodge Viper",
+    "source": "CarGurus, \"The Best Concept Cars That Made It to Production\" (https://www.cargurus.com/research/articles/best-concept-cars-production)",
+    "a_verifier": true,
+    "notes": "Liste d'exemples emblématiques largement reprise dans la presse automobile anglophone, mais provenant d'une seule source consultée en détail ; à illustrer avec prudence (formulation \"parmi les exemples souvent cités\" plutôt qu'une liste exhaustive/officielle) et recouper avec une deuxième source si un article cite des dates précises de présentation/production."
+  },
+  {
+    "sous_cocon": "Concept-cars & anticipation",
+    "fait": "Cas du concept-car utilisé comme banc d'essai de sécurité (exemple historique)",
+    "valeur": "Le concept Volvo VESC a servi de base de développement à des dispositifs de sécurité repris sur la Volvo série 240 (ceintures 3 points à enrouleur, zones de déformation programmée, appuie-têtes, protection anti-tonneau, pare-chocs absorbants) et a inspiré des normes reprises par la NHTSA (régulateur américain)",
+    "source": "Wikipedia EN, \"Concept car\" (https://en.wikipedia.org/wiki/Concept_car)",
+    "a_verifier": true,
+    "notes": "Anecdote historique intéressante pour illustrer le rôle des concept-cars au-delà du style, mais provient de Wikipédia (source tertiaire) — à recouper avec une source Volvo ou un historique automobile spécialisé avant citation ferme d'une date ou d'un modèle précis."
+  },
+  {
+    "sous_cocon": "Essais par segment",
+    "fait": "Classification européenne des segments automobiles (lettres A à F)",
+    "valeur": "Segment A/B1 : mini-citadines ; segment B/B2 : citadines polyvalentes ; segment C/M1 : berlines compactes ; segment D/M2 : berlines familiales (taille S) ; segment E : grandes routières (taille M) ; segment F : limousines (taille L) ; catégorie séparée pour les SUV/tout-terrain",
+    "source": "Wikipédia FR, \"Segment automobile\" (https://fr.wikipedia.org/wiki/Segment_automobile)",
+    "a_verifier": true,
+    "notes": "Classification largement utilisée dans la presse auto généraliste, mais la source consultée est Wikipédia (tertiaire) — les lettres de segment (A à F) sont un usage courant du secteur, à recouper si besoin avec une source constructeur ou institutionnelle (ex. ACEA) avant présentation comme nomenclature officielle unique."
+  },
+  {
+    "sous_cocon": "Essais par segment",
+    "fait": "Définition d'une voiture citadine (critère de longueur)",
+    "valeur": "Véhicule compact conçu pour les trajets urbains/périurbains, généralement d'une longueur inférieure à 4,10 mètres",
+    "source": "Toyota France, \"Citadine ou berline : Quelles différences ?\" (https://www.toyota.fr/vehicules-neufs/citadines/difference-entre-citadine-et-berline)",
+    "a_verifier": true,
+    "notes": "Source constructeur (contenu à visée commerciale) donnant un repère de longueur cohérent avec la définition Wikipédia du segment B, mais à recouper avec une deuxième source indépendante (presse auto) si un seuil précis en mètres doit être cité comme une norme."
+  },
+  {
+    "sous_cocon": "Essais par segment",
+    "fait": "Volume de comparatifs de véhicules disponibles chez un acteur consommateur reconnu",
+    "valeur": "Plus de 800 modèles testés et comparés (toutes marques), selon Que Choisir",
+    "source": "Que Choisir, \"Dossier Comparateur auto\" (https://www.quechoisir.org/dossier-comparateur-auto-t239)",
+    "a_verifier": true,
+    "notes": "Chiffre annoncé par l'association de consommateurs elle-même sans méthodologie détaillée consultée ; à citer comme illustration de l'ampleur de leur base de comparatifs, pas comme une statistique de marché."
+  },
+  {
+    "sous_cocon": "Comparatifs face-à-face",
+    "fait": "Écart entre consommation WLTP homologuée et consommation réelle constatée par les utilisateurs",
+    "valeur": "Écart moyen de l'ordre de 30 % en défaveur du chiffre officiel selon plusieurs sources (jusqu'à 50 % sur certains véhicules testés) ; un autre média cite un écart plus modéré d'environ 1 L/100 km pour un thermique (contre 3-4 L/100 km avec l'ancien cycle NEDC)",
+    "source": "L'Argus, \"WLTP. 30 % d'écart entre fiche technique et consommation réelle ?\" (https://www.largus.fr/actualite-automobile/wltp-30-decart-entre-fiche-technique-et-consommation-reelle-10668395.html) ; recoupé avec Qovoltis (citant Auto Plus) et Faurie",
+    "a_verifier": true,
+    "notes": "CONTRADICTION relevée entre sources : L'Argus et Faurie avancent un écart d'environ 30 % (voire davantage) entre WLTP et usage réel, tandis que Qovoltis (citant Auto Plus) évoque un écart plus faible et exprimé différemment (en L/100 km absolus, pas en %). Les deux formulations ne sont pas strictement incompatibles (dépend du véhicule et du type de moteur) mais ne doivent pas être fusionnées en un chiffre unique : préciser systématiquement le véhicule/étude d'origine si un pourcentage est cité en article."
+  },
+  {
+    "sous_cocon": "Comparatifs face-à-face",
+    "fait": "Impact de la conduite autoroutière sur l'autonomie réelle d'un véhicule électrique par rapport au cycle WLTP",
+    "valeur": "Sur autoroute à 130 km/h, l'autonomie réelle peut tomber à environ 50-60 % du chiffre WLTP mixte annoncé",
+    "source": "Faurie, \"Autonomie voiture électrique : tout comprendre et choisir le bon modèle\" (https://www.faurie.fr/fauriemag/actualites/post/autonomie-voiture-electrique-tout-comprendre-et-choisir-le-bon-modele)",
+    "a_verifier": true,
+    "notes": "Source concessionnaire (contenu à visée commerciale), chiffre plausible et cohérent avec le consensus sur la résistance aérodynamique à haute vitesse, mais non recoupé avec une étude indépendante (ex. association de consommateurs ou constructeur) — à présenter comme un ordre de grandeur, pas une statistique validée."
+  },
+  {
+    "sous_cocon": "Comparatifs face-à-face",
+    "fait": "Critères de notation utilisés par un média automobile pour ses essais et comparatifs",
+    "valeur": "Grille de notation incluant notamment les émissions polluantes à l'usage (CO2, seul chiffre imposé aux constructeurs), l'insonorisation/isolation vibratoire, et d'autres critères techniques et subjectifs comparés à motorisation/puissance équivalente",
+    "source": "Caradisiac, \"Essais et comparatifs Caradisiac : tous nos critères de notation détaillés et expliqués\" (https://www.caradisiac.com/essais-et-comparatifs-caradisiac-tous-nos-criteres-de-notation-detailles-et-expliques-169531.htm)",
+    "a_verifier": false,
+    "notes": "Méthodologie propre à un média donné, présentée comme telle (pas une norme sectorielle unique) — utile pour illustrer comment un comparatif automobile professionnel construit sa notation, à condition de préciser qu'il s'agit de la méthode de ce média en particulier."
+  },
+  {
+    "sous_cocon": "Comparatifs face-à-face",
+    "fait": "Score environnemental des véhicules et éligibilité au bonus écologique (méthodologie officielle française)",
+    "valeur": "Le calcul du score environnemental (conditionnant l'éligibilité au bonus) a fait l'objet d'une révision de méthodologie ; les véhicules commandés ou en location signée avant le 8 avril 2025, facturés ou avec premier loyer versé avant le 22 juin 2025, restent éligibles selon les anciennes conditions",
+    "source": "ADEME, plateforme officielle \"Score environnemental du véhicule\" (https://score-environnemental-bonus.ademe.fr)",
+    "a_verifier": false,
+    "notes": "Source institutionnelle directe (ADEME) — fiabilité maximale pour ce point réglementaire, mais le dispositif du bonus écologique évolue régulièrement : vérifier la date de dernière mise à jour de la page avant citation dans un article publié, car les seuils/dates peuvent changer d'une année sur l'autre."
+  },
+  {
+    "sous_cocon": "Comparatifs face-à-face",
+    "fait": "Consommation moyenne comparée essence / diesel / hybride / électrique",
+    "valeur": "Les motorisations électriques sont présentées comme les plus sobres en énergie/CO2 ; le diesel reste plus économe en carburant que l'essence sur longue distance mais plus polluant en particules fines ; les hybrides gagnent en popularité comme compromis (demande de véhicules hybrides d'occasion en hausse de 41,8 % au T1 2026 selon une étude iSeeCars citée)",
+    "source": "Starterre, \"Quelle voiture consomme le moins en 2026 ? Top 3 par catégorie\" (https://www.starterre.fr/guide-achat/article/voiture-qui-consomme-le-moins) ; chiffre iSeeCars recoupé via Jinyu Autos (https://jinyuautos.com/fr/blog/2026-gasoline-vs-hybrid-vs-electric)",
+    "a_verifier": true,
+    "notes": "Le classement qualitatif (électrique < hybride < diesel < essence en consommation d'énergie) est un consensus large et non controversé. Le chiffre précis de +41,8 % de demande de véhicules hybrides d'occasion vient d'une étude tierce (iSeeCars) relayée par un blog commercial, non consultée directement à la source — à recouper avec l'étude originale avant de le citer comme statistique ferme."
+  },
+  {
+    "sous_cocon": "Avis long terme",
+    "fait": "Classement des marques automobiles selon un indice de fiabilité en France",
+    "valeur": "Existence de classements de fiabilité par marque (ex. UFC-Que Choisir), avec des catégories qualitatives allant de \"très bon\" à \"mauvais\" ; plusieurs médias auto (ex. L'Automobile Journal / autojournal.fr) publient des palmarès annuels basés sur les retours de leurs lecteurs, plaçant régulièrement Toyota parmi les marques les plus fiables et certaines marques françaises (Peugeot, DS Automobiles) parmi celles rapportant le plus de pannes",
+    "source": "Wikipédia FR, \"Classements de marques de voitures par indice de fiabilité\" (https://fr.wikipedia.org/wiki/Classements_de_marques_de_voitures_par_indice_de_fiabilit%C3%A9) ; recoupé avec autojournal.fr, \"Fiabilité : quelles voitures tombent régulièrement en panne ?\"",
+    "a_verifier": true,
+    "notes": "Le principe de classements de fiabilité par marque est confirmé par plusieurs sources indépendantes (UFC-Que Choisir cité par Wikipédia, palmarès propre d'Autojournal basé sur les messages de ses lecteurs). Mais AUCUN chiffre précis d'indice ou de taux de panne n'a pu être vérifié avec confiance dans les sources consultées — la méthodologie de l'Autojournal repose sur des témoignages spontanés de lecteurs, pas un échantillon représentatif : présenter ces classements comme des indications qualitatives et non comme des statistiques de fiabilité rigoureuses, et toujours nommer la source du classement cité."
+  },
+  {
+    "sous_cocon": "Avis long terme",
+    "fait": "Étude chiffrée sur la fiabilité des véhicules après 100 000 km en France",
+    "valeur": "Aucune étude chiffrée, sourcée et récente n'a pu être identifiée lors de cette recherche",
+    "source": null,
+    "a_verifier": true,
+    "notes": "Les résultats de recherche pour cette requête étaient en grande majorité hors-sujet (résultats parasites autour de \"Avis Car Rental/Sales\", sans lien avec la fiabilité automobile en France). Ne pas inventer un chiffre de fiabilité à 100 000 km : si un article doit aborder ce sujet, s'appuyer sur les classements qualitatifs par marque (entrée précédente) plutôt que sur une statistique précise non trouvée, ou relancer une recherche ciblée (ex. études constructeur, baromètre assureur) avant publication."
+  }
+]

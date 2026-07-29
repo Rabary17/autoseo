@@ -1,0 +1,162 @@
+[
+  {
+    "sous_cocon": "Choisir un utilitaire",
+    "fait": "Permis nécessaire pour conduire un utilitaire (camionnette CTTE)",
+    "valeur": "Permis B, pour un véhicule dont le PTAC (poids total autorisé en charge) ne dépasse pas 3 500 kg et transportant au maximum 9 places (conducteur compris)",
+    "source": "service-public.gouv.fr, \"Quels permis de conduire faut-il avoir selon la catégorie du véhicule ?\" (https://www.service-public.gouv.fr/particuliers/vosdroits/F12096) ; recoupé avec elite-auto.fr et Codes Rousseau",
+    "a_verifier": false,
+    "notes": "Concordance forte entre source officielle et deux sources professionnelles indépendantes."
+  },
+  {
+    "sous_cocon": "Choisir un utilitaire",
+    "fait": "Catégorie administrative d'un véhicule utilitaire léger sur la carte grise",
+    "valeur": "Mention CTTE (camionnette) en case J.1, correspondant à la catégorie européenne N1, pour un PTAC inférieur ou égal à 3,5 tonnes",
+    "source": "eplaque.fr, \"Carte Grise Véhicule utilitaire (CTTE)\" ; recoupé avec cartegrise-services.fr",
+    "a_verifier": false,
+    "notes": "Concordance forte entre deux sources spécialisées carte grise."
+  },
+  {
+    "sous_cocon": "Choisir un utilitaire",
+    "fait": "Prix neuf d'un utilitaire léger d'entrée de gamme (petit fourgon type Renault Kangoo Van)",
+    "valeur": "À partir d'environ 21 900 € à 29 200 € HT selon la source et la finition",
+    "source": "vivacar.fr, \"Top 10 des utilitaires les moins chers du marché (2026)\" (21 900 €) ; caroom.fr (17 700 € TTC pour une fourgonnette) ; lerat-location.fr (29 200 € HT) ; manouvellevoiture.com (micro-utilitaires de 15 000 à 40 000 € HT)",
+    "a_verifier": true,
+    "notes": "Écarts importants entre les sources selon qu'elles indiquent un prix TTC ou HT, et selon le niveau de finition retenu comme référence. Présenter uniquement comme un ordre de grandeur (\"à partir d'environ 20 000-30 000 €\"), jamais un chiffre unique précis."
+  },
+  {
+    "sous_cocon": "Choisir un utilitaire",
+    "fait": "Prix neuf d'un grand fourgon (type Renault Master / Fiat Ducato)",
+    "valeur": "À partir d'environ 32 300 € à 39 000 € HT selon le modèle et la source",
+    "source": "caroom.fr (32 300 € TTC) ; lerat-location.fr (Renault Master 38 000 € HT, Fiat Ducato 38 800 €) ; manouvellevoiture.com (grands fourgons 55 000-70 000 € HT)",
+    "a_verifier": true,
+    "notes": "Fourchette large selon le volume de chargement et la motorisation (électrique vs thermique) ; ne jamais citer un chiffre unique sans préciser le modèle et l'énergie."
+  },
+  {
+    "sous_cocon": "Choisir un utilitaire",
+    "fait": "Modèles utilitaires les plus immatriculés en France (avril 2026)",
+    "valeur": "1. Renault Kangoo (2 790 immatriculations/mois), 2. Renault Master (2 684), 3. Renault Trafic (2 432), 4. Peugeot Partner (1 998)",
+    "source": "altus-utilitaires.fr, \"Marché de l'Utilitaire Neuf en Avril 2026 : Bilan, Évolutions et Top des Ventes\"",
+    "a_verifier": true,
+    "notes": "Source spécialisée mais unique (site professionnel de location, pas un organisme statistique officiel type CCFA/Plateforme automobile) ; à recouper avec les chiffres CCFA avant citation ferme en article."
+  },
+  {
+    "sous_cocon": "Fiscalité véhicule pro",
+    "fait": "Exonération de la Taxe sur les Véhicules de Société (TVS / taxe annuelle sur les émissions) pour les utilitaires",
+    "valeur": "Les véhicules de catégorie CTTE (2 places, mention CTTE sur la carte grise) sont exclus du champ d'application de la taxe, quelle que soit leur puissance ou leur pollution",
+    "source": "legalplace.fr, \"Taxe d'un véhicule de société : calcul, montant et exonérations en 2026\" ; recoupé avec blog.renault.re (\"Exonération totale de TVS\" pour les utilitaires en LLD/crédit-bail/LOA)",
+    "a_verifier": false,
+    "notes": "Concordance entre deux sources indépendantes sur le principe de l'exonération des utilitaires CTTE."
+  },
+  {
+    "sous_cocon": "Fiscalité véhicule pro",
+    "fait": "Barème de la TVS 2026 pour un véhicule de société sans données CO2 (calcul par puissance fiscale)",
+    "valeur": "De 2 000 € (jusqu'à 3 CV) à 6 500 € (à partir de 16 CV), par tranche de puissance administrative",
+    "source": "drivetobusiness.fr, \"Calcul TVS 2026 : barèmes de la taxe sur les véhicules de société\" ; recoupé avec legalstart.fr (mêmes montants pour le barème puissance fiscale)",
+    "a_verifier": false,
+    "notes": "Barème identique retrouvé sur deux sources spécialisées indépendantes."
+  },
+  {
+    "sous_cocon": "Fiscalité véhicule pro",
+    "fait": "Plafond du malus écologique CO2 pour les véhicules neufs en 2026",
+    "valeur": "80 000 € maximum, déclenché à partir de 192 g/km de CO2 (contre un plafond de 70 000 € en 2025) ; seuil de déclenchement du malus abaissé à 108 g/km",
+    "source": "beev.co, \"Le malus écologique 2026 : son durcissement et ce qui change pour les entreprises\" ; recoupé avec drivetobusiness.fr, aficar.com et eplaque.fr",
+    "a_verifier": false,
+    "notes": "Chiffres concordants sur 4 sources indépendantes (plafond 80 000€, seuil 108 g/km)."
+  },
+  {
+    "sous_cocon": "Fiscalité véhicule pro",
+    "fait": "Malus au poids (masse en ordre de marche) 2026 pour véhicules d'entreprise",
+    "valeur": "Barème progressif à partir de 1 500 kg : 10 €/kg (1 500-1 699 kg) jusqu'à 30 €/kg (à partir de 2 000 kg) ; les véhicules 100 % électriques restent exonérés du malus au poids en 2026, mais les véhicules électriques sans éco-score seront partiellement taxés à partir du 1er juillet 2026 (abattement de 600 kg)",
+    "source": "beev.co, \"Le malus écologique 2026\" ; recoupé avec cartecarburant.com et drivetobusiness.fr",
+    "a_verifier": true,
+    "notes": "Barème des tranches confirmé par 3 sources concordantes. Le point sur la taxation partielle des VE sans éco-score à partir du 1er juillet 2026 est mentionné par 2 sources indépendantes mais reste une évolution réglementaire récente ; à recouper avec Légifrance/economie.gouv.fr avant citation ferme en article."
+  },
+  {
+    "sous_cocon": "Fiscalité véhicule pro",
+    "fait": "Bonus écologique à l'achat d'un véhicule (particulier ou utilitaire) par une entreprise (personne morale)",
+    "valeur": "Totalement supprimé depuis le 2 décembre 2024/1er janvier 2025 pour toutes les personnes morales (entreprises, collectivités, associations), conformément au décret n°2024-1084 du 29 novembre 2024, aussi bien pour les véhicules particuliers que pour les utilitaires légers (VUL)",
+    "source": "ulys.com, \"Guide 2026 : fiscalité et aides pour véhicules électriques d'entreprise\" ; recoupé avec chargemap-business.com, automobile-magazine.fr et eplaque.fr (4 sources concordantes)",
+    "a_verifier": false,
+    "notes": "Concordance forte et unanime entre 4 sources indépendantes sur la suppression du bonus écologique pour les personnes morales. Bonus écologique conservé, lui, pour les particuliers (personnes physiques), mais ce n'est pas le sujet de ce silo pro."
+  },
+  {
+    "sous_cocon": "Fiscalité véhicule pro",
+    "fait": "Aide de remplacement du bonus écologique pour les entreprises achetant/louant un utilitaire électrique",
+    "valeur": "Prime CEE (Certificats d'Économies d'Énergie), pouvant atteindre jusqu'à 4 450 € pour un véhicule utilitaire léger électrique neuf (achat ou LLD/location de plus de 24 mois)",
+    "source": "chargemap-business.com, \"Aides à l'achat de véhicules électriques en entreprise pour 2026\" ; recoupé avec ulys.com et professionnels.renault.fr (dispositif CEE confirmé, montant précis à vérifier selon barème en vigueur au moment de la demande)",
+    "a_verifier": true,
+    "notes": "Le principe du dispositif CEE comme aide de substitution est confirmé par 3 sources concordantes, mais le montant exact (4 450 €) provient d'une seule source et les montants CEE évoluent fréquemment par arrêté ; à vérifier auprès d'un fournisseur d'énergie obligé avant citation d'un montant précis en article."
+  },
+  {
+    "sous_cocon": "LLD & gestion de flotte",
+    "fait": "Avantage fiscal principal de la LLD (Location Longue Durée) pour une entreprise",
+    "valeur": "Les loyers sont considérés comme des charges d'exploitation, intégralement déductibles du résultat imposable ; pour les utilitaires, la TVA est récupérable en totalité (usage exclusivement professionnel) et le véhicule bénéficie d'une exonération totale de TVS",
+    "source": "equation-bmw-mini.fr, \"LLD professionnelle : optimisez la fiscalité de votre entreprise\" ; recoupé avec kinto-mobility.eu, lizy.fr et blog.renault.re (exonération TVS/TVA utilitaires)",
+    "a_verifier": false,
+    "notes": "Concordance forte entre 4 sources indépendantes sur les mécanismes fiscaux de la LLD (déductibilité des loyers, récupération de TVA, exonération TVS pour les utilitaires)."
+  },
+  {
+    "sous_cocon": "LLD & gestion de flotte",
+    "fait": "Durée type d'un contrat de LLD pour un véhicule professionnel",
+    "valeur": "Généralement entre 24 et 60 mois",
+    "source": "equation-bmw-mini.fr, \"LLD professionnelle : optimisez la fiscalité de votre entreprise\"",
+    "a_verifier": true,
+    "notes": "Ordre de grandeur usuel du marché, mais provenant d'une seule source consultée (site constructeur/concessionnaire) ; à recouper si un chiffre précis est cité en article."
+  },
+  {
+    "sous_cocon": "LLD & gestion de flotte",
+    "fait": "Répartition moyenne du coût total de possession (TCO) d'une flotte automobile d'entreprise",
+    "valeur": "Loyer/financement 36 %, carburant 25 %, services (entretien, pneus, assurance) 21 %, fiscalité 6 %, remise en état 5 %, frais administratifs 4 %, coûts cachés 3 %",
+    "source": "aficar.com, \"Coûts d'une flotte automobile : comment les calculer et les optimiser ?\"",
+    "a_verifier": true,
+    "notes": "Répartition détaillée mais issue d'une seule source (cabinet spécialisé en gestion de flotte, audits internes non publiés) ; à présenter comme un ordre de grandeur indicatif du marché, pas une statistique officielle vérifiée par une deuxième source indépendante."
+  },
+  {
+    "sous_cocon": "LLD & gestion de flotte",
+    "fait": "Formalité déclarative de la TVS pour les véhicules loués par l'entreprise",
+    "valeur": "La TVS est calculée par trimestre pour les véhicules loués ; les véhicules loués pour une durée de moins de 30 jours consécutifs bénéficient d'une exonération totale de la taxe",
+    "source": "drivetobusiness.fr, \"Calcul TVS 2026 : barèmes de la taxe sur les véhicules de société\"",
+    "a_verifier": true,
+    "notes": "Information issue d'une seule source spécialisée consultée ; à recouper avec le BOFiP ou service-public.fr avant citation ferme du seuil de 30 jours."
+  },
+  {
+    "sous_cocon": "Utilitaires électriques",
+    "fait": "Autonomie WLTP moyenne des utilitaires électriques professionnels disponibles en 2026",
+    "valeur": "Environ 250 à 460 km selon le modèle et le segment (250-350 km pour les petits fourgons urbains, jusqu'à 440-460 km pour les grands fourgons type Mercedes eSprinter ou Renault Master E-Tech)",
+    "source": "automobile-propre.com, \"Utilitaire électrique professionnel : le guide d'achat complet 2026\" ; recoupé avec vivacar.fr, utilitairemagazine.com et glasseo.com (fourchettes concordantes)",
+    "a_verifier": false,
+    "notes": "Bonne concordance entre 4 sources indépendantes sur la fourchette générale d'autonomie WLTP par segment."
+  },
+  {
+    "sous_cocon": "Utilitaires électriques",
+    "fait": "Suppression du bonus écologique et de la prime à la conversion pour les utilitaires électriques d'entreprise",
+    "valeur": "Définitivement supprimés pour les personnes morales depuis fin 2024/2025 ; seule la prime au rétrofit électrique est maintenue, avec une aide pouvant aller jusqu'à 5 000 € selon le type de véhicule",
+    "source": "ulys.com, \"Guide 2026 : fiscalité et aides pour véhicules électriques d'entreprise\"",
+    "a_verifier": true,
+    "notes": "Le principe de suppression est confirmé par plusieurs sources (voir entrée fiscalité véhicule pro), mais le montant de 5 000 € pour la prime au rétrofit provient d'une seule source ; à vérifier avant citation d'un montant précis."
+  },
+  {
+    "sous_cocon": "Aménagement & équipement",
+    "fait": "Prix d'un aménagement/rangement standard (étagères, tiroirs) pour véhicule utilitaire",
+    "valeur": "Entre 500 € et 2 000 € selon les dimensions, les matériaux (aluminium, acier, bois) et les options (tiroirs, étagères modulables)",
+    "source": "hellopro.fr, \"Rangement pour véhicules utilitaires - tous les fournisseurs\" ; recoupé avec des exemples de prix unitaires chez kitutilitaire.com et vehikit.com (kits d'aménagement bois de l'ordre de 300 à 2 900 € HT selon modèle)",
+    "a_verifier": true,
+    "notes": "Fourchette générale confirmée par plusieurs annuaires professionnels, mais aucune de ces sources n'est un organisme statistique indépendant (ce sont des sites marchands) ; à traiter comme un ordre de grandeur commercial plutôt qu'une statistique de marché."
+  },
+  {
+    "sous_cocon": "Aménagement & équipement",
+    "fait": "Matériau privilégié pour les aménagements de fourgon pour des raisons de sécurité",
+    "valeur": "Le métal (validé par crash-tests) est mis en avant par les fabricants spécialisés comme plus sûr que le bois, bien que des kits en bois/contreplaqué restent largement commercialisés pour leur rapport qualité-prix",
+    "source": "utilitaire-market.com (fabricant StoreVan, argumentaire pro-métal) ; à mettre en regard avec vehikit.com et kitutilitaire.com qui commercialisent des aménagements bois",
+    "a_verifier": true,
+    "notes": "Point de vigilance : l'argument \"le métal est plus sûr, validé par crash-tests\" provient d'un fabricant qui vend exclusivement du métal (argumentaire commercial) ; les fabricants de kits bois ne mentionnent pas de crash-tests équivalents. Ne pas présenter comme un fait tranché sans source indépendante (type Euro NCAP ou UTAC) sur la sécurité comparée bois/métal."
+  },
+  {
+    "sous_cocon": "Aménagement & équipement",
+    "fait": "Budget d'un aménagement complet et sur-mesure de fourgon aménagé (camping-car professionnel/van aménagé)",
+    "valeur": "Généralement entre 80 000 € et 135 000 € TTC hors véhicule et équipements extérieurs, pour un aménagement premium sur base Mercedes Sprinter",
+    "source": "woodandvan.fr, \"Le vrai prix d'un aménagement de fourgon sur mesure\"",
+    "a_verifier": true,
+    "notes": "Ce chiffre concerne un aménagement premium type van aménagé/camping-car (couchage, cuisine, douche), pas un aménagement utilitaire de travail classique (étagères/rangement) ; à ne pas confondre avec les prix de rangement professionnel (entrée précédente, 500-2 000 €). Source unique (site spécialisé dans ce type de prestation) ; à recouper si utilisé comme chiffre de référence du marché."
+  }
+]

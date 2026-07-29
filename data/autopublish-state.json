@@ -1,12 +1,12 @@
 {
-  "phase": 0,
-  "silo_en_cours": null,
+  "phase": 2,
+  "silo_en_cours": "Carburants & consommation",
   "phase_start_date": "2026-07-22",
-  "items_scheduled_in_phase": 13,
+  "items_scheduled_in_phase": 137,
   "budget_semaine": 20,
-  "budget_consomme": 0,
-  "semaine_debut": "2026-W30",
-  "silo_start_date": null,
-  "items_scheduled_for_silo": 0,
-  "derniere_execution": "2026-07-23T10:54:45.449Z"
+  "budget_consomme": 2,
+  "semaine_debut": "2026-W31",
+  "silo_start_date": "2026-07-29",
+  "items_scheduled_for_silo": 2,
+  "derniere_execution": "2026-07-29T05:37:26.967Z"
 }

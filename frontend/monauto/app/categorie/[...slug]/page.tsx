@@ -8,7 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import Pagination from "@/components/Pagination";
 import { getChildCategories, getCategoryById, getPageBySlug, getPostsByCategory, getTermBySlug } from "@/lib/wp";
 import { getSilo, SILOS } from "@/lib/taxonomy";
-import { pageMeta } from "@/lib/seo-meta";
+import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import { collectionPageLd } from "@/lib/schema";
 import type { WpTerm } from "@/lib/types";
 import SousCoconIcon from "@/components/SousCoconIcon";
@@ -77,7 +77,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const resolved = await resolveCategoryPage(slug);
   if (!resolved) return {};
-  return pageMeta({ title: resolved.title, description: resolved.desc, path: `/categorie/${slug.join("/")}/` });
+  const path = `/categorie/${slug.join("/")}/`;
+
+  // Un hub/sous-hub rédigé (page WP réelle) a son propre titre/extrait/meta —
+  // bien plus pertinents que le titre générique de la catégorie (voir
+  // resolveCategoryPage ci-dessus, qui ne connaît que taxonomy.json/le terme
+  // WP). Jusqu'au 2026-07-28, generateMetadata() ne vérifiait jamais cette
+  // page réelle : un hub/sous-hub publié gardait un <title>/description
+  // générique même une fois rédigé.
+  const hubPage = await getPageBySlug(resolved.term.slug).catch(() => null);
+  if (hubPage) {
+    return pageMeta({
+      title: hubPage.acf?.meta_title || hubPage.title.rendered,
+      description:
+        hubPage.acf?.meta_description || hubPage.acf?.tldr || truncate(stripHtml(hubPage.content.rendered), 155),
+      path,
+    });
+  }
+
+  return pageMeta({ title: resolved.title, description: resolved.desc, path });
 }
 
 export default async function CategoryPage({ params, searchParams }: Props) {

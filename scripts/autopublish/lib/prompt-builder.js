@@ -27,8 +27,16 @@ const CONTENT_SCHEMA = {
   type: 'object',
   properties: {
     title: { type: 'string', description: 'Titre H1 de la page' },
-    meta_title: { type: 'string', description: '<= 60 caractères' },
-    meta_description: { type: 'string', description: '<= 155 caractères' },
+    // `maxLength` fait respecter la limite structurellement (validé le
+    // 2026-07-28 : même en demandant explicitement au modèle d'ignorer toute
+    // limite et d'écrire 100/250 caractères, Mistral tronque exactement à
+    // 60/155) — un vrai garde-fou, pas seulement une consigne. Cible resserrée
+    // de 50/145 à 45/140 le même jour (audit WXR : 22/137 pages avaient un
+    // meta_title tronqué en plein mot à la limite dure, ex. "...pour votreT",
+    // "...Guide 20") — plus de marge pour que la troncature reste rare, et
+    // consigne explicite de s'arrêter sur un mot complet.
+    meta_title: { type: 'string', maxLength: 60, description: 'Vise 45 caractères, jamais plus de 60 (dur, tronqué au mot près sinon). Mot-clé principal en tête, termine sur un mot complet.' },
+    meta_description: { type: 'string', maxLength: 155, description: 'Vise 140 caractères, jamais plus de 155 (dur, tronqué au mot près sinon). Incite au clic, chiffre/donnée réelle si pertinent, termine sur un mot complet.' },
     excerpt: { type: 'string', description: 'Résumé court (1-2 phrases), utilisé comme extrait WP' },
     content_gutenberg: { type: 'string', description: 'Corps de la page en blocs Gutenberg valides' },
     faq: {
@@ -88,26 +96,42 @@ const CONTENT_SCHEMA = {
 
 const GENERATION_SCHEMA = { name: 'contenu_wp', schema: CONTENT_SCHEMA };
 
-const REVIEW_SCHEMA = {
-  name: 'relecture_wp',
-  schema: {
-    type: 'object',
-    properties: {
-      conforme: { type: 'boolean' },
-      justification: { type: 'string' },
-      corrections_appliquees: { type: 'array', items: { type: 'string' } },
-      content: CONTENT_SCHEMA,
+// `content: null` quand `conforme: true` (voir review.md) — évite de réémettre
+// l'intégralité de l'enveloppe en sortie quand rien n'a changé (économie de
+// tokens vérifiée le 2026-07-27 : content=null coûte ~13 tokens de sortie
+// contre l'enveloppe complète sinon). review.js réutilise le contenu généré
+// initial quand `content` revient `null`.
+// Forme commune aux deux passes de relecture (voix/faits/maillage, puis
+// lisibilité) — seuls `name` et le contrat système (system-*.md vs
+// lisibilite.md) diffèrent, voir buildReviewRequest/buildReadabilityReviewRequest.
+function reviewSchema(name) {
+  return {
+    name,
+    schema: {
+      type: 'object',
+      properties: {
+        conforme: { type: 'boolean' },
+        justification: { type: 'string' },
+        corrections_appliquees: { type: 'array', items: { type: 'string' } },
+        content: { anyOf: [CONTENT_SCHEMA, { type: 'null' }] },
+      },
+      required: ['conforme', 'justification', 'corrections_appliquees', 'content'],
+      additionalProperties: false,
     },
-    required: ['conforme', 'justification', 'corrections_appliquees', 'content'],
-    additionalProperties: false,
-  },
-};
+  };
+}
+
+const REVIEW_SCHEMA = reviewSchema('relecture_wp');
+// 3ᵉ passe obligatoire (2026-07-28, demande explicite de l'utilisateur) :
+// lisibilité mécanique (longueur de phrase, taille de paragraphe/section,
+// connecteurs logiques) — voir prompts/lisibilite.md. Passe distincte de la
+// relecture voix/faits/maillage ci-dessus, jamais une 3e itération de la même
+// chose (voir docs/architecture-autopublish.md section 4).
+const READABILITY_REVIEW_SCHEMA = reviewSchema('relecture_lisibilite_wp');
 
 // system[] : skill complet de l'auteur, puis contrat universel du type de
-// contenu — un seul cache_control en fin de tableau suffit à mettre en cache
-// l'ensemble (voir shared/prompt-caching.md : le breakpoint met en cache tout
-// ce qui précède). Réutilisé identique en génération ET en relecture, pour
-// que le cache serve aux deux appels d'une même pièce.
+// contenu — mistral-client.js concatène ces blocs en un seul message
+// role=system. Réutilisé identique en génération ET en relecture.
 function buildSystemBlocks(silo, contentType) {
   const personaInfo = persona.getPersonaForSilo(silo);
   const skillContent = readFile(personaInfo.skill);
@@ -118,7 +142,7 @@ function buildSystemBlocks(silo, contentType) {
     system: [
       { type: 'text', text: skillContent },
       { type: 'text', text: styleGuide },
-      { type: 'text', text: contract, cache_control: { type: 'ephemeral' } },
+      { type: 'text', text: contract },
     ],
   };
 }
@@ -188,9 +212,31 @@ function buildReviewRequest({ contentType, silo, generatedContent, maillageEntry
 
   return {
     personaKey: Object.keys(persona.PERSONAS).find(k => persona.PERSONAS[k] === personaInfo),
-    system: [...system, { type: 'text', text: reviewContract, cache_control: { type: 'ephemeral' } }],
+    system: [...system, { type: 'text', text: reviewContract }],
     messages: [{ role: 'user', content: JSON.stringify(userPayload, null, 2) }],
     schema: REVIEW_SCHEMA,
+  };
+}
+
+// 3ᵉ passe (voir READABILITY_REVIEW_SCHEMA) : pas besoin du contexte
+// maillage/faits/pistes concurrentielles (déjà validés par la relecture
+// précédente, cette passe ne les touche pas) — seul le contenu à ajuster est
+// transmis, message utilisateur plus léger.
+function buildReadabilityReviewRequest({ contentType, silo, generatedContent }) {
+  const { personaInfo, system } = buildSystemBlocks(silo, contentType);
+  const readabilityContract = readFile(path.join(PROMPTS_DIR, 'lisibilite.md'));
+
+  const userPayload = {
+    type_de_contenu: contentType,
+    silo,
+    contenu_a_relire: generatedContent,
+  };
+
+  return {
+    personaKey: Object.keys(persona.PERSONAS).find(k => persona.PERSONAS[k] === personaInfo),
+    system: [...system, { type: 'text', text: readabilityContract }],
+    messages: [{ role: 'user', content: JSON.stringify(userPayload, null, 2) }],
+    schema: READABILITY_REVIEW_SCHEMA,
   };
 }
 
@@ -198,6 +244,8 @@ module.exports = {
   CONTENT_SCHEMA,
   GENERATION_SCHEMA,
   REVIEW_SCHEMA,
+  READABILITY_REVIEW_SCHEMA,
   buildGenerationRequest,
   buildReviewRequest,
+  buildReadabilityReviewRequest,
 };

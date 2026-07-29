@@ -5,16 +5,33 @@
 // l'architecture cible complète du site.
 import taxonomy from "@/data/taxonomy.json";
 
+export interface PlannedArticle {
+  slug: string;
+  title: string;
+}
+
+export interface SousCocon {
+  slug: string;
+  name: string;
+  count: number;
+  /** Liste complète des articles prévus (voir scripts/gen-taxonomy-articles.js) — publiés ou non. */
+  articles: PlannedArticle[];
+}
+
 export interface Silo {
   slug: string;
   name: string;
   desc: string;
   articles: number;
-  children: string[];
+  children: SousCocon[];
 }
 
 export const SILOS: Silo[] = taxonomy.silos;
 
 export function getSilo(slug: string): Silo | undefined {
   return SILOS.find((s) => s.slug === slug);
+}
+
+export function getSousCocon(siloSlug: string, sousCoconSlug: string): SousCocon | undefined {
+  return getSilo(siloSlug)?.children.find((c) => c.slug === sousCoconSlug);
 }

@@ -1,0 +1,146 @@
+[
+  {
+    "sous_cocon": "F1 & compétition",
+    "fait": "Plafond budgétaire (cost cap) global des écuries de Formule 1 pour la saison 2026",
+    "valeur": "215 millions de dollars US (contre 135 millions de dollars + inflation en 2025, soit +80 M$)",
+    "source": "Formula1.com, \"EXPLAINED: What is the F1 cost cap and why has it gone up?\" (https://www.formula1.com/en/latest/article/explained-what-is-the-f1-cost-cap-and-why-has-it-gone-up.2tYtDIe5SbE5utjThctBT3)",
+    "a_verifier": false,
+    "notes": "Chiffre confirmé par la source officielle F1.com, recoupé avec formulaonehistory.com (même montant, mêmes explications sur l'intégration de coûts auparavant exclus). Ne pas confondre avec le plafond spécifique aux unités de puissance (voir entrée suivante)."
+  },
+  {
+    "sous_cocon": "F1 & compétition",
+    "fait": "Plafond budgétaire spécifique aux unités de puissance (moteurs) F1 pour 2026",
+    "valeur": "190 millions de dollars US (relevé depuis un objectif initial de 130 M$ + inflation, suite à la suppression du plafond de dépenses en capital séparé)",
+    "source": "Formula1.com, \"EXPLAINED: What is the F1 cost cap and why has it gone up?\" ; recoupé avec formulaonehistory.com",
+    "a_verifier": false,
+    "notes": "Concordance entre les deux sources sur le montant et la raison de la hausse (fusion avec l'ancien plafond de CAPEX)."
+  },
+  {
+    "sous_cocon": "F1 & compétition",
+    "fait": "Licence requise pour participer à une compétition automobile en France (rallye, circuit, etc.)",
+    "valeur": "Licence FFSA obligatoire (ex. licence Nationale Concurrent-Conducteur Auto - NCC), délivrée sur présentation du permis de conduire et d'un certificat médical de non contre-indication à la pratique du sport automobile",
+    "source": "Rallye Mont-Blanc Morzine, \"Licence pilote ou co-pilote\" (https://www.rallye-mont-blanc-morzine.com/prendre-sa-licence-2) ; structure confirmée par ffsa.org",
+    "a_verifier": true,
+    "notes": "Source associative organisatrice d'épreuves (pas la FFSA elle-même), et prix de la licence non retrouvé lors de cette recherche — à vérifier sur ffsa.org avant de citer un tarif."
+  },
+  {
+    "sous_cocon": "Rallye & endurance",
+    "fait": "Dates de la 94e édition des 24 Heures du Mans 2026",
+    "valeur": "Du 10 au 14 juin 2026 (Journée Test le 7 juin), sur le Circuit Bugatti / Circuit des 24 Heures du Mans",
+    "source": "lemans.org (Automobile Club de l'Ouest, organisateur officiel), \"Le calendrier 2026 des circuits du Mans\" (https://www.lemans.org/fr/actualites/aco/le-calendrier-2026-des-circuits-du-mans-60033)",
+    "a_verifier": false,
+    "notes": "Source organisatrice officielle (ACO), fiabilité maximale."
+  },
+  {
+    "sous_cocon": "Rallye & endurance",
+    "fait": "Présence d'une manche du Championnat du monde des rallyes (WRC) en France en 2026",
+    "valeur": "Aucune manche WRC en France au calendrier 2026 (14 manches : Monte-Carlo, Suède, Kenya, Croatie, Canaries, Portugal, Japon, Grèce, Estonie, Finlande, Paraguay, Chili, Italie, Arabie Saoudite)",
+    "source": "wrc.com, \"WRC Calendar 2026\" (https://www.wrc.com/en/calendar) ; recoupé avec toyotagazooracing.com et redbull.com",
+    "a_verifier": false,
+    "notes": "Point de clarification important pour éviter une confusion : le Rallye Monte-Carlo se déroule en partie sur le territoire français mais est classé \"Monaco\" comme pays organisateur. Ne pas présenter une manche WRC comme se déroulant \"en France\" en 2026 sans cette nuance."
+  },
+  {
+    "sous_cocon": "Rallye & endurance",
+    "fait": "Existence d'un championnat national de rallye en France, distinct du WRC",
+    "valeur": "Coupe de France des Rallyes et Championnat de France des Rallyes : plusieurs dizaines d'épreuves régionales/nationales réparties sur toute l'année 2026 (ex. Rallye des Routes du Nord, Rallye de Suède n'en fait pas partie, etc.)",
+    "source": "RallyeGo.com, \"Calendrier 2026\" (https://www.rallyego.com/calendrier-2026)",
+    "a_verifier": true,
+    "notes": "Source agrégatrice communautaire, pas la FFSA elle-même — utile comme ordre de grandeur du nombre d'épreuves mais à recouper avec ffsa.org avant de citer un nombre précis d'épreuves ou un calendrier détaillé."
+  },
+  {
+    "sous_cocon": "Simracing",
+    "fait": "Fourchette de prix d'un volant à retour de force (force feedback) pour simracing",
+    "valeur": "D'environ 70 $/€ (entrée de gamme type Logitech G RS Round/Track Wheel) à plus de 1 000 $/€ pour les modèles à direct drive haut de gamme",
+    "source": "Logitech G (logitechg.com/en-us/shop/c/racing-wheels-pedals) ; recoupé avec PCGamer, \"Best PC racing wheels in 2026\" (https://www.pcgamer.com/best-steering-wheels-for-pc)",
+    "a_verifier": false,
+    "notes": "Concordance forte entre le site constructeur (Logitech) et le média spécialisé indépendant (PCGamer) sur la fourchette de prix."
+  },
+  {
+    "sous_cocon": "Simracing",
+    "fait": "Technologie de retour de force la plus réaliste pour un volant de simracing",
+    "valeur": "Le \"direct drive\" (moteur directement fixé au volant, sans réducteur ni courroie) est considéré comme la technologie offrant le retour de force le plus précis et le plus réaliste, mais aussi la plus coûteuse",
+    "source": "PCGamer, \"Best PC racing wheels in 2026\" ; recoupé avec Fanatec (fanatec.com) et Nacon (nacongaming.com/en-US/blog/force-feedback-steering-wheel)",
+    "a_verifier": false,
+    "notes": "Concordance entre média indépendant et deux fabricants spécialisés (Fanatec, Nacon) sur la hiérarchie technique gear-driven / belt-driven / direct drive."
+  },
+  {
+    "sous_cocon": "Track days & circuits",
+    "fait": "Fourchette de prix d'un stage de pilotage sur circuit en France",
+    "valeur": "D'environ 65-71 € (baptême/stage découverte, circuits comme Le Bugey ou Pouilly-en-Auxois) à 2 530 € TTC pour un stage de 12 tours en GT sur le circuit Paul Ricard (Le Castellet)",
+    "source": "Motorsport Academy (motorsport-academy.fr/stage-pilotage) ; GTDrive (gtdrive.com) pour le tarif Paul Ricard ; recoupé avec Extrem Cars Events et Sprint Racing",
+    "a_verifier": false,
+    "notes": "Fourchette large confirmée par la concordance de 5 prestataires indépendants de stages de pilotage en France ; les prix affichés incluent souvent des promotions temporaires, à mentionner comme ordre de grandeur plutôt qu'un tarif fixe."
+  },
+  {
+    "sous_cocon": "Track days & circuits",
+    "fait": "Homologation administrative obligatoire d'un circuit de vitesse en France",
+    "valeur": "Homologation préalable délivrée par le préfet pour une durée de 4 ans, après avis de la Commission nationale d'examen des circuits de vitesse (si vitesse pouvant dépasser 200 km/h) ou de la commission départementale de sécurité routière (autres cas) ; vérifications techniques obligatoires de chaque véhicule avant toute épreuve",
+    "source": "sports.gouv.fr (ministère chargé des Sports), fiche officielle \"Vitesse sur circuit asphalte - Sport automobile\" (https://www.sports.gouv.fr/sites/default/files/2023-02/organiser-une-manifestation-t-l-charger-les-fiches-vitesse-sur-circuit-asphalte-3933.pdf), citant les articles R.331-35 et R.331-37 du code du sport",
+    "a_verifier": false,
+    "notes": "Source gouvernementale officielle directe, fiabilité maximale pour ce projet."
+  },
+  {
+    "sous_cocon": "Tuning & préparation",
+    "fait": "Délai légal et sanction en cas de non-déclaration d'une modification technique notable (carte grise) après tuning",
+    "valeur": "1 mois pour mettre à jour le certificat d'immatriculation après une modification ; amende forfaitaire de 135 €, pouvant grimper jusqu'à 750 € selon la gravité",
+    "source": "Vidéo \"BTS Assurance\", \"Quelles sont les lois concernant le tuning d'une voiture ?\" (youtube.com/watch?v=kyZhxSB3Bf8)",
+    "a_verifier": true,
+    "notes": "Source pédagogique non institutionnelle (chaîne YouTube étudiante) — montants plausibles et cohérents avec le régime général des amendes liées au certificat d'immatriculation, mais à recouper avec service-public.gouv.fr ou le code de la route avant publication ferme d'un montant."
+  },
+  {
+    "sous_cocon": "Tuning & préparation",
+    "fait": "Modifications esthétiques interdites ou strictement encadrées sur un véhicule en France (tuning)",
+    "valeur": "Néons interdits ; films teintés sur pare-brise et vitres avant interdits ; becquets et ailerons non d'origine constructeur interdits ; boucliers/calandre non d'origine strictement réglementés",
+    "source": "L'Automobile Magazine, \"Tuning automobile : ce que dit la loi en matière de modifications autorisées\" (automobile-magazine.fr/toute-l-actualite/article/30159-tuning-automobile-ce-que-dit-la-loi-en-matiere-de-modifications-autorisees)",
+    "a_verifier": true,
+    "notes": "Source presse spécialisée reconnue mais article de 2021 non recoupé avec un texte réglementaire (code de la route) précis lors de cette recherche — à vérifier avant citation ferme, notamment sur l'évolution éventuelle depuis 2021."
+  },
+  {
+    "sous_cocon": "Tuning & préparation",
+    "fait": "Modifications mécaniques notables (moteur, suspension) nécessitant une validation administrative avant remise en circulation",
+    "valeur": "Toute \"transformation notable\" inscrite sur la carte grise ou la fiche technique doit être validée par la DREAL (Direction Régionale de l'Environnement, de l'Aménagement et du Logement) avant la remise en circulation du véhicule",
+    "source": "L'Automobile Magazine, \"Tuning automobile : ce que dit la loi en matière de modifications autorisées\", citant l'article R321-16 du code de la route",
+    "a_verifier": true,
+    "notes": "Référence à un article de code de la route (R321-16) mentionnée par la source presse mais non vérifiée directement sur Légifrance lors de cette recherche — à confirmer avant publication."
+  },
+  {
+    "sous_cocon": "Youngtimers & collection",
+    "fait": "Critères légaux du statut \"véhicule de collection\" en France (carte grise / certificat d'immatriculation collection - CIC)",
+    "valeur": "Véhicule construit ou immatriculé pour la première fois il y a au moins 30 ans, dont le type n'est plus produit, et dont les caractéristiques techniques principales (mécanique, carrosserie, nombre de places) n'ont subi aucune modification essentielle",
+    "source": "service-public.gouv.fr, \"How do I obtain a collector vehicle registration certificate?\" (https://www.service-public.gouv.fr/particuliers/vosdroits/F1925) ; recoupé avec ffve.org, citant l'article R.311-1 (6.3) du code de la route",
+    "a_verifier": false,
+    "notes": "Double source officielle (service-public.gouv.fr et FFVE, organisme agréé par l'État pour la délivrance de l'attestation) — fiabilité maximale. Le statut n'est ni automatique, ni obligatoire."
+  },
+  {
+    "sous_cocon": "Youngtimers & collection",
+    "fait": "Définition du terme \"youngtimer\" et différence avec \"véhicule de collection\"",
+    "valeur": "Le youngtimer n'a aucun statut juridique en France ; il désigne généralement une voiture âgée de 20 à 30 ans (typiquement années 1990 à début 2000), pas encore éligible au statut légal de collection (qui exige 30 ans révolus)",
+    "source": "Wikipédia, \"Youngtimer\" ; recoupé avec Vroomly (vroomly.com), FRPA (frpa.fr) et Capcar (capcar.fr/blog/difference-youngtimer-oldtimer-collection)",
+    "a_verifier": false,
+    "notes": "Concordance forte entre 4 sources indépendantes (encyclopédie + 3 sites spécialisés auto) sur l'absence de statut légal et la fourchette d'âge. Wikipédia n'est pas une source primaire mais sert ici uniquement à confirmer un consensus déjà établi ailleurs."
+  },
+  {
+    "sous_cocon": "Youngtimers & collection",
+    "fait": "Avantages concrets de la carte grise de collection (CIC) et son coût",
+    "valeur": "Libre circulation dans les Zones à Faibles Émissions (ZFE) sans vignette Crit'Air, contrôle technique tous les 5 ans (au lieu de 2 ans) pour les véhicules légers de plus de 1960, coût de la seule mention \"collection\" sur le certificat : 13,76 €",
+    "source": "ffve.org, \"Commander sa carte grise de collection\" ; montant recoupé avec Groupama (groupama.fr/assurance-auto/conseils/vehicule-collection)",
+    "a_verifier": false,
+    "notes": "Concordance entre la FFVE (fédération agréée par l'État) et un assureur majeur sur le montant de 13,76 € et les avantages ZFE/contrôle technique."
+  },
+  {
+    "sous_cocon": "Youngtimers & collection",
+    "fait": "Économie réalisée sur une assurance auto de collection par rapport à une assurance classique",
+    "valeur": "Assurance collection 30 à 60 % moins chère qu'un contrat classique, soit une économie moyenne annoncée de 450 € à 900 € par an",
+    "source": "France Épargne, \"Collection vs Auto Classique\" (france-epargne.fr/academy/assurance-auto/collection-vs-auto-classique-quelle-assurance-pour-votre-vehicule-ancien\"), citant une \"enquête FFVE 2025\"",
+    "a_verifier": true,
+    "notes": "Source de type blog financier/SEO, pas un assureur ni la FFVE directement — l'\"enquête FFVE 2025\" citée n'a pas pu être retrouvée et vérifiée directement sur ffve.org lors de cette recherche. Le principe (assurance collection moins chère) est confirmé qualitativement par Groupama et Assurances Clavel, mais le pourcentage et les montants précis (30-60 %, 450-900 €) sont à vérifier avant publication."
+  },
+  {
+    "sous_cocon": "Youngtimers & collection",
+    "fait": "Nombre de véhicules de collection (carte grise CIC) recensés en France",
+    "valeur": "CONTRADICTION selon les sources : environ 400 000 véhicules immatriculés en collection selon une étude FFVE de 2020 (citée par Meilleurtaux) vs environ 800 000 véhicules de collection selon un blog citant une \"enquête FFVE 2025\" non retrouvée",
+    "source": "Meilleurtaux, \"Assurance voiture de collection : comparateur\" (citant étude FFVE 2020) vs France Épargne (citant \"FFVE, enquête 2025\", non vérifiée)",
+    "a_verifier": true,
+    "notes": "Écart important (du simple au double) entre les deux chiffres sur une période de 5 ans, ce qui est possible (croissance du marché collection) mais aucune des deux sources n'est la FFVE elle-même consultée directement — ne pas citer un chiffre précis sans vérification sur ffve.org avant publication. Meilleurtaux précise par ailleurs que le parc de véhicules \"anciens\" au sens large atteindrait 1 000 000 (soit 2,5 % du parc roulant), à ne pas confondre avec le nombre de CIC délivrées."
+  }
+]

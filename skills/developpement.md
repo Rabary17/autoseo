@@ -12,7 +12,7 @@ Stack technique de référence pour les sites de la plateforme.
 
 Ce découpage headless permet : vitesse (le visiteur reçoit une page déjà générée, sans dépendre de WordPress au moment de la visite), sécurité (admin WordPress non exposé publiquement, domaine WP marqué `noindex`), et réutilisation d'un même gabarit Next.js pour plusieurs niches/sites du réseau.
 
-Le pipeline de **production automatisée de contenu** (génération + relecture via l'API Anthropic, gating programmatique, publication planifiée), distinct de ce découpage front/back, est documenté dans [docs/architecture-autopublish.md](../docs/architecture-autopublish.md).
+Le pipeline de **production automatisée de contenu** (génération + relecture via l'API Mistral, gating programmatique, publication planifiée), distinct de ce découpage front/back, est documenté dans [docs/architecture-autopublish.md](../docs/architecture-autopublish.md).
 
 ## 2. WordPress (backend)
 

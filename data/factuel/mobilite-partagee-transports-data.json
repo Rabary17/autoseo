@@ -1,0 +1,162 @@
+[
+  {
+    "sous_cocon": "Autopartage & location particuliers",
+    "fait": "Prix d'entrée observé pour une location de voiture entre particuliers via Getaround",
+    "valeur": "À partir de 25 €/jour, jusqu'à 30 % moins cher que les loueurs traditionnels",
+    "source": "Getaround, page d'accueil fr.getaround.com",
+    "a_verifier": true,
+    "notes": "Chiffre communiqué par la plateforme elle-même (source commerciale) — présenter comme un prix d'appel indicatif, pas une moyenne de marché garantie."
+  },
+  {
+    "sous_cocon": "Autopartage & location particuliers",
+    "fait": "Tarifs Citiz (autopartage en stations fixes) pour un particulier",
+    "valeur": "Avec abonnement : 16 €/mois + à partir de 3 €/heure ; sans abonnement : 0 €/mois + à partir de 5,50 €/heure",
+    "source": "Citiz, grandlyon.citiz.coop/tarifs et iledefrance.citiz.coop/tarifs",
+    "a_verifier": false,
+    "notes": "Tarifs directement publiés par l'opérateur, cohérents entre les réseaux régionaux Citiz (Lyon, Île-de-France) consultés."
+  },
+  {
+    "sous_cocon": "Autopartage & location particuliers",
+    "fait": "Assurance lors d'une location de voiture entre particuliers (Getaround)",
+    "valeur": "Assurance tous risques/multirisque obligatoire et automatiquement incluse (partenariat AXA), aucune assurance auto classique ne couvre ce type de location",
+    "source": "Getaround, \"Assurance Location Voiture entre Particuliers\" (fr.getaround.com/assurance-location-voiture-particulier)",
+    "a_verifier": false,
+    "notes": "Confirmé par la page officielle Getaround et par un article tiers indépendant (parrainduweb.fr) qui aboutit à la même conclusion."
+  },
+  {
+    "sous_cocon": "Autopartage & location particuliers",
+    "fait": "Le propriétaire qui met sa voiture en autopartage doit-il garder une assurance auto classique ?",
+    "valeur": "Oui, obligation légale : contrat annuel au minimum au tiers, même si le véhicule n'est utilisé qu'en location (les assurances \"parking\"/\"garage\" ne sont pas acceptées)",
+    "source": "parrainduweb.fr, \"Getaround assurance : tout comprendre avant de louer en 2026\"",
+    "a_verifier": true,
+    "notes": "Source non officielle (blog) mais règle cohérente avec l'obligation générale d'assurance automobile en France — à recouper avec le code des assurances avant citation ferme d'un article."
+  },
+  {
+    "sous_cocon": "Autopartage & location particuliers",
+    "fait": "Seuil de rentabilité de l'autopartage par rapport à la possession d'un véhicule personnel",
+    "valeur": "Rentable sous 5 000 km/an en zone urbaine ; au-delà de 8 000 km/an, la voiture personnelle redevient moins chère",
+    "source": "vrai-cout-auto.fr, \"Autopartage vs posséder : à partir de quel kilométrage ça vaut le coup\"",
+    "a_verifier": true,
+    "notes": "Source unique (blog spécialisé budget auto), pas de recoupement avec une étude ADEME ou institutionnelle trouvée dans cette recherche — présenter comme un ordre de grandeur, pas une statistique officielle."
+  },
+  {
+    "sous_cocon": "Covoiturage",
+    "fait": "Existence en 2026 de la prime nationale de 100 € pour les nouveaux conducteurs de covoiturage courte distance",
+    "valeur": "Supprimée depuis 2026 selon plusieurs sources ; date butoir des dernières réclamations fixée au 30 mai 2025",
+    "source": "parrainduweb.fr (\"Prime covoiturage BlaBlaCar : ce qui reste en 2026\") et particuliers.engie.fr (\"Primes transports 2026\")",
+    "a_verifier": true,
+    "notes": "CONTRADICTION relevée : une étude de marché (mordorintelligence.com, \"Taille, part et analyse du marché du covoiturage en France 2031\") affirme au contraire que \"le covoiturage longue distance de BlaBlaCar continue de bénéficier de la prime nationale de 100 EUR pour les conducteurs\" en 2025. Deux sources concordantes (blog + article presse énergie) annoncent la suppression, contre une source d'étude de marché qui semble en décalage ou basée sur des données antérieures. Ne pas affirmer catégoriquement l'existence ou la suppression de cette prime sans vérification sur une source gouvernementale (service-public.gouv.fr / economie.gouv.fr) — c'est précisément ce point qui a déjà bloqué un sous-hub covoiturage faute de source fiable."
+  },
+  {
+    "sous_cocon": "Covoiturage",
+    "fait": "Forfait mobilités durables (FMD) applicable au covoiturage domicile-travail",
+    "valeur": "Jusqu'à 600 €/an dans le privé (900 €/an en cas de cumul avec un abonnement de transports en commun), exonéré de cotisations sociales et d'impôt sur le revenu ; jusqu'à 300 €/an dans le public",
+    "source": "orki.green, \"Forfait mobilités durables (FMD) 2026\" ; recoupé avec greenly.earth/blog/guide-entreprise/forfait-mobilite-durable et declic-mobilites.org",
+    "a_verifier": false,
+    "notes": "Concordance forte entre 3 sources indépendantes sur les montants et le fonctionnement du dispositif ; le FMD couvre le covoiturage mais aussi vélo, EDPM, autopartage — pas les taxis/VTC/train (exclus explicitement selon greenly.earth)."
+  },
+  {
+    "sous_cocon": "Covoiturage",
+    "fait": "Aides locales/régionales au covoiturage courte distance (par trajet, via des AOM)",
+    "valeur": "Exemples : Île-de-France (Karos, Klaxit) 2 €/trajet conducteur ; Lyon 1,50 €/trajet conducteur + 1 €/trajet passager ; Nantes 2 €/trajet conducteur (max 50 €/mois) ; Toulouse 1,50 €/trajet conducteur ; Grenoble 2 €/trajet conducteur + 1 €/trajet passager",
+    "source": "parrainduweb.fr, \"Prime covoiturage BlaBlaCar : ce qui reste en 2026\"",
+    "a_verifier": true,
+    "notes": "Source unique (blog), montants présentés par l'auteur lui-même comme \"indicatifs et évoluant régulièrement\" — à vérifier auprès de chaque Autorité Organisatrice de la Mobilité avant citation dans un article, ne jamais présenter comme des montants fixes nationaux."
+  },
+  {
+    "sous_cocon": "Covoiturage",
+    "fait": "Volume d'activité de BlaBlaCar Daily (covoiturage courte distance/quotidien) en France en 2025",
+    "valeur": "7 millions de covoiturages réalisés en 2025",
+    "source": "BlaBlaCar Daily, \"À propos\" (blablacardaily.com/a-propos)",
+    "a_verifier": true,
+    "notes": "Chiffre officiel communiqué par l'entreprise elle-même, non audité par un tiers indépendant identifié dans cette recherche — présenter comme une donnée déclarée par l'entreprise."
+  },
+  {
+    "sous_cocon": "Covoiturage",
+    "fait": "Nombre de membres de la communauté BlaBlaCar en France",
+    "valeur": "Plus de 27 millions de membres en France (chiffre cité par un blog) ; par ailleurs 3,5 millions de membres \"BlaBla\" actifs en conversation et près de 483 000 \"BlaBlaBla\" en 2025 selon un communiqué officiel BlaBlaCar",
+    "source": "parrainduweb.fr pour le chiffre des 27 millions ; newsroom.blablacar.fr, \"Sondage BlaBlaCar\" (10/12/2025) pour les chiffres d'engagement",
+    "a_verifier": true,
+    "notes": "Le chiffre des 27 millions de membres vient d'un blog tiers non recoupé avec une source officielle BlaBlaCar dans cette recherche — à ne pas confondre avec les chiffres d'engagement (3,5 M / 483 000), qui eux proviennent d'un communiqué de presse officiel de l'entreprise."
+  },
+  {
+    "sous_cocon": "Location courte & longue durée",
+    "fait": "Prix moyen d'une location de voiture courte durée (à la journée) en France",
+    "valeur": "Deux fourchettes trouvées : environ 30 €/jour (citadine) à 50 €/jour (familiale) selon Getaround ; entre 80 € et 130 €/jour selon Elite Auto (avec 1 000 €+ pour un véhicule sport haut de gamme)",
+    "source": "fr.getaround.com/blog/prix-location-voiture ; elite-auto.fr/faq/leasing/quel-est-le-prix-d-une-location-de-voiture-par-jour",
+    "a_verifier": true,
+    "notes": "CONTRADICTION notable entre deux sources professionnelles : l'écart peut s'expliquer par le fait que Getaround (location entre particuliers/pros low-cost) est structurellement moins cher qu'un loueur traditionnel type Elite Auto, mais aucune des deux sources ne fait cette distinction explicitement. Ne pas citer un chiffre unique sans préciser le type d'offre (particulier vs agence traditionnelle)."
+  },
+  {
+    "sous_cocon": "Location courte & longue durée",
+    "fait": "Prix d'une location de voiture à l'heure (courte durée)",
+    "valeur": "Entre 15 € et 25 € pour la première heure, avec un supplément pouvant aller jusqu'à une dizaine d'euros par heure additionnelle",
+    "source": "elite-auto.fr, \"Quel est le prix d'une location de voiture par jour ?\"",
+    "a_verifier": true,
+    "notes": "Source unique, non recoupée avec un comparateur indépendant dans cette recherche — ordre de grandeur à confirmer."
+  },
+  {
+    "sous_cocon": "Location courte & longue durée",
+    "fait": "Budget mensuel moyen pour une location longue durée (LLD) de voiture",
+    "valeur": "Entre 179 € et 550 €/mois en moyenne (179-300 €/mois pour une citadine, 350-400 €/mois pour une berline, 400-500 €/mois pour un SUV) ; exemples concrets constatés : Peugeot 208 dès 170-199 €/mois, BMW Série 1 à 969 €/mois",
+    "source": "leasys.com, \"Quel budget pour ma location longue durée ?\" ; recoupé avec lizy.fr et sixt.fr/services-de-location/location-longue-duree",
+    "a_verifier": true,
+    "notes": "Bonne concordance entre 3 loueurs/courtiers indépendants sur les fourchettes par catégorie de véhicule, mais ce sont tous des acteurs commerciaux (pas de source institutionnelle) — traiter comme un ordre de grandeur de marché."
+  },
+  {
+    "sous_cocon": "Train & transports en commun",
+    "fait": "Prix de l'abonnement mensuel Navigo (toutes zones) en Île-de-France en 2026",
+    "valeur": "90,80 € par mois (+2,3 % au 1er janvier 2026, soit +2 € par rapport à 2025)",
+    "source": "service-public.gouv.fr, actualité \"Quels seront les nouveaux tarifs des transports en Île-de-France\" ; confirmé par iledefrance-mobilites.fr/tarifs-titre-de-transport-en-commun-2026",
+    "a_verifier": false,
+    "notes": "Double source officielle concordante (service-public.gouv.fr + opérateur Île-de-France Mobilités) — fiabilité maximale."
+  },
+  {
+    "sous_cocon": "Train & transports en commun",
+    "fait": "Taux de prise en charge par l'employeur d'un abonnement de transport en commun domicile-travail",
+    "valeur": "50 % obligatoire dans le secteur privé, 75 % dans le secteur public",
+    "source": "service-public.gouv.fr, actualité sur les tarifs 2026 des transports en Île-de-France ; recoupé avec kammi.fr, \"Forfaits de transport 2026\"",
+    "a_verifier": false,
+    "notes": "Concordance entre source officielle et source spécialisée RH sur ce point réglementaire bien établi."
+  },
+  {
+    "sous_cocon": "Train & transports en commun",
+    "fait": "Prix moyen d'un abonnement mensuel aux transports en commun (bus) en France, toutes villes confondues",
+    "valeur": "Environ 56,50 €/mois en 2026 (fourchette de 33 € à 90 € selon les villes ; ex. Bordeaux 42,75 €, Lyon 74,10 €, Paris 90 €)",
+    "source": "combien-coute.net, citant les données Numbeo (2026)",
+    "a_verifier": true,
+    "notes": "Source agrégatrice basée sur des données Numbeo (crowdsourcées, non officielles) — à recouper avec les grilles tarifaires publiées par chaque réseau de transport avant citation précise d'une moyenne nationale."
+  },
+  {
+    "sous_cocon": "VTC & taxi",
+    "fait": "Carte professionnelle VTC : obtention et renouvellement",
+    "valeur": "Obligatoire pour exercer, délivrée après réussite à un examen organisé par les Chambres de Métiers et de l'Artisanat (CMA), renouvelable tous les 5 ans (stage de remise à niveau), coût d'obtention d'environ 60 €",
+    "source": "legalplace.fr, \"Carte VTC : comment l'obtenir et la renouveler en 2026 ?\" ; recoupé avec artisanat.fr (examens taxi VTC VMDTR) et entreprendre.service-public.gouv.fr/vosdroits/F31027",
+    "a_verifier": false,
+    "notes": "Forte concordance entre source officielle (service-public.gouv.fr) et sources professionnelles spécialisées sur l'obligation, l'organisme examinateur et la durée de validité."
+  },
+  {
+    "sous_cocon": "VTC & taxi",
+    "fait": "Garantie financière exigée pour exercer une activité de VTC (exploitant)",
+    "valeur": "1 500 € par véhicule utilisé de façon régulière, sauf si l'exploitant est propriétaire du véhicule, en a un contrat de location d'au moins 6 mois, ou justifie déjà de capacités financières pour ce véhicule",
+    "source": "bpifrance-creation.fr, \"VTC | réglementation de l'activité\" (citant l'article R3122-9 du code des transports et l'arrêté du 28 janvier 2015)",
+    "a_verifier": false,
+    "notes": "Source institutionnelle (Bpifrance Création) citant directement les textes réglementaires — fiabilité élevée."
+  },
+  {
+    "sous_cocon": "VTC & taxi",
+    "fait": "Les chauffeurs VTC sont-ils soumis à l'obligation de \"capacité de transport\" (comme les taxis, cars, poids lourds) ?",
+    "valeur": "Non : les chauffeurs VTC ne sont pas concernés par l'obligation de capacité de transport ; ils doivent à la place détenir une licence VTC / carte professionnelle VTC",
+    "source": "legalplace.fr, \"La capacité de transport : les modalités d'obtention en 2026\"",
+    "a_verifier": true,
+    "notes": "Affirmation claire d'une source professionnelle spécialisée en droit des affaires, mais non recoupée avec un texte réglementaire officiel direct dans cette recherche — à confirmer avant publication d'un article s'appuyant fortement sur ce point de distinction juridique."
+  },
+  {
+    "sous_cocon": "VTC & taxi",
+    "fait": "Taux de remboursement par la CPAM d'un trajet en taxi conventionné pour motif médical",
+    "valeur": "55 % des frais, dans la limite des tarifs de la Sécurité sociale (100 % dans certains cas : ALD, grossesse à risque, accident du travail/maladie professionnelle, urgence, etc.) ; franchise médicale de 4 € par transport, plafonnée à 8 €/jour et 50 €/an",
+    "source": "service-public.gouv.fr, \"Remboursement des frais de transports par l'Assurance maladie\" (F2951) ; recoupé avec aide-sociale.fr et caree.fr",
+    "a_verifier": false,
+    "notes": "Source officielle directe (service-public.gouv.fr) confirmée par deux sources professionnelles indépendantes sur le taux (55 %) et le montant de la franchise — fiabilité élevée."
+  }
+]
