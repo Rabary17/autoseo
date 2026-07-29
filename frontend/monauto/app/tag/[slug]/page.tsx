@@ -8,6 +8,7 @@ import Pagination from "@/components/Pagination";
 import { getPostsByTag, getTermBySlug } from "@/lib/wp";
 import { pageMeta } from "@/lib/seo-meta";
 import { collectionPageLd } from "@/lib/schema";
+import { SITE_NAME } from "@/lib/site";
 
 // Pas de generateStaticParams : les tags sont des entités transversales
 // (marque, modèle, code, prestation — voir skills/wordpress-publication.md
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!term) return {};
   return pageMeta({
     title: term.name,
-    description: term.description || `Tous les articles monauto sur ${term.name}.`,
+    description: term.description || `Tous les articles ${SITE_NAME} sur ${term.name}.`,
     path: `/tag/${term.slug}/`,
   });
 }

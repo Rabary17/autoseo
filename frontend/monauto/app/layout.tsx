@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: `${SITE_NAME} — Le média expert de l'auto et de la mobilité`, template: `%s — ${SITE_NAME}` },
   description: DEFAULT_DESCRIPTION,
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/favicon.png", apple: "/apple-touch-icon.png" },
   // max-image-preview:large — sans ça Google limite la taille des images dans
   // les résultats de recherche ET exclut de fait le site des cartes Google
   // Discover (qui exigent des images pleine largeur). Valeur par défaut de
@@ -45,7 +45,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#14171C",
+  themeColor: "#E20500",
 };
 
 // Anti-FOUC : posé en tête de <head>, avant tout CSS/hydratation, pour que

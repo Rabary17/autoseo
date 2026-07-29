@@ -5,9 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="wrap">
-        <p className="footer__brand">
-          monauto<span className="dot">.</span>
-        </p>
+        <img className="footer__brand" src="/logo.png" alt="techcars" width={392} height={32} />
         <p style={{ color: "rgba(255,255,255,.7)", maxWidth: "38ch", margin: 0 }}>
           Le média expert de l&apos;auto et de la mobilité. Guides testés, sourcés et mis à jour
           par notre rédaction.
@@ -57,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="footer__legal">
-          © <span>{year}</span> monauto — Tous droits réservés.
+          © <span>{year}</span> techcars — Tous droits réservés.
         </p>
       </div>
     </footer>

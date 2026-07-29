@@ -4,11 +4,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Pagination from "@/components/Pagination";
 import { searchPosts } from "@/lib/wp";
 import { pageMeta } from "@/lib/seo-meta";
+import { SITE_NAME } from "@/lib/site";
 
 // Jamais indexée : une page de résultats de recherche interne n'a pas sa
 // place dans Google (contenu dupliqué avec les vraies pages d'articles).
 export const metadata: Metadata = {
-  ...pageMeta({ title: "Recherche", description: "Recherche sur monauto.", path: "/recherche/" }),
+  ...pageMeta({ title: "Recherche", description: `Recherche sur ${SITE_NAME}.`, path: "/recherche/" }),
   robots: { index: false, follow: true },
 };
 

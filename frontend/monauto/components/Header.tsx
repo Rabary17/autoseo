@@ -10,11 +10,8 @@ export default function Header() {
 
   return (
     <header className="appbar">
-      <Link className="appbar__logo" href="/" aria-label="monauto — accueil">
-        <img className="appbar__mark" src="/mark.svg" alt="" width={28} height={28} />
-        <span className="appbar__word">
-          monauto<span className="dot">.</span>
-        </span>
+      <Link className="appbar__logo" href="/" aria-label="techcars — accueil">
+        <img className="appbar__brand" src="/logo.png" alt="techcars" width={343} height={28} />
       </Link>
       <nav className="appbar__nav" aria-label="Rubriques">
         {navSilos.map((s) => (

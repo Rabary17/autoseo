@@ -15,13 +15,11 @@ export const organizationSchema = () => ({
   name: SITE_NAME,
   url: SITE_URL,
   // Requis par Google pour afficher le logo de la marque dans les résultats
-  // enrichis / le Knowledge Panel. Note : Google recommande un format raster
-  // (PNG/JPG/WebP) plutôt que SVG pour ce champ précis — à remplacer par un
-  // vrai logo raster avant mise en production réelle (même limitation que
-  // l'image Open Graph par défaut, voir docs/architecture-headless.md section 6).
+  // enrichis / le Knowledge Panel. Format raster (PNG), pas SVG — recommandation
+  // Google pour ce champ précis (voir docs/architecture-headless.md section 6).
   logo: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/logo.svg`,
+    url: `${SITE_URL}/logo.png`,
   },
 });
 

@@ -1,8 +1,0 @@
-<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="monauto">
-  <rect width="64" height="64" rx="16" fill="#14171C"></rect>
-  <g fill="#1B54FF">
-    <rect x="13" y="19" width="28" height="4.5" rx="2.25"></rect>
-    <rect x="19" y="28.5" width="22" height="4.5" rx="2.25"></rect>
-    <rect x="24" y="38" width="17" height="4.5" rx="2.25"></rect>
-  </g>
-</svg>

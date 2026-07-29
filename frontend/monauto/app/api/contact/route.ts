@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { SITE_NAME } from "@/lib/site";
 
 // Destinataire fixe, non modifiable par l'utilisateur (jamais lu depuis le
 // corps de la requête) : le formulaire public n'affiche aucune adresse e-mail,
@@ -67,7 +68,7 @@ export async function POST(request: NextRequest) {
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
       to: CONTACT_TO,
       replyTo: `${name} <${email}>`,
-      subject: `[Contact monauto] ${subject}`,
+      subject: `[Contact ${SITE_NAME}] ${subject}`,
       text: `De : ${name} <${email}>\nObjet : ${subject}\n\n${message}`,
       html: `<p><strong>De :</strong> ${escapeHtml(name)} &lt;${escapeHtml(email)}&gt;</p>
 <p><strong>Objet :</strong> ${escapeHtml(subject)}</p>

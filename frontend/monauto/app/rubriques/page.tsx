@@ -2,10 +2,11 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { SILOS } from "@/lib/taxonomy";
 import { pageMeta } from "@/lib/seo-meta";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Toutes les rubriques",
-  description: "Les 19 rubriques du guide auto & mobilité monauto : entretien, pannes, marques, essais, démarches, électrique et plus.",
+  description: `Les 19 rubriques du guide auto & mobilité ${SITE_NAME} : entretien, pannes, marques, essais, démarches, électrique et plus.`,
   path: "/rubriques/",
 });
 

@@ -19,6 +19,7 @@ import {
   parseSources,
 } from "@/lib/wp";
 import { getSilo } from "@/lib/taxonomy";
+import { SITE_NAME } from "@/lib/site";
 import { articleSchema, faqPageLd } from "@/lib/schema";
 import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import type { WpTerm } from "@/lib/types";
@@ -294,7 +295,7 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
           )}
 
           <section className="side-cta">
-            <p className="side-cta__title">La newsletter monauto</p>
+            <p className="side-cta__title">La newsletter {SITE_NAME}</p>
             <p className="side-cta__sub">Chaque semaine, nos essais et conseils auto. Zéro spam.</p>
             <NewsletterForm />
           </section>

@@ -13,7 +13,7 @@ export const metadata: Metadata = pageMeta({
 
 const FAQ_ITEMS = [
   {
-    question: "Qui rédige les articles de monauto ?",
+    question: `Qui rédige les articles de ${SITE_NAME} ?`,
     answer:
       "Chaque article est rédigé par un contributeur rattaché à un domaine précis (mécanique, achat de véhicule, mobilité électrique, démarches administratives, deux-roues, road trips). Retrouvez leur profil sur la page de chaque rubrique.",
   },
@@ -33,7 +33,7 @@ const FAQ_ITEMS = [
       "Merci de nous le signaler via notre formulaire de contact en indiquant l'URL de l'article concerné et la nature de l'erreur. Nous vérifions et corrigeons dans les meilleurs délais.",
   },
   {
-    question: "monauto est-il rémunéré par des marques ou constructeurs ?",
+    question: `${SITE_NAME} est-il rémunéré par des marques ou constructeurs ?`,
     answer:
       "Non. Nous ne percevons aucune rémunération pour orienter nos recommandations. Si un lien venait à générer une commission (lien affilié), cela serait explicitement indiqué dans l'article concerné.",
   },

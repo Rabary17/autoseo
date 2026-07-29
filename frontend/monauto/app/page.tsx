@@ -8,9 +8,10 @@ import { SILOS } from "@/lib/taxonomy";
 import SiloThumb from "@/components/SiloThumb";
 import { websiteSchema, organizationSchema } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo-meta";
+import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
-  title: "monauto — Le média expert de l'auto et de la mobilité",
+  title: `${SITE_NAME} — Le média expert de l'auto et de la mobilité`,
   description:
     "Entretien, pannes, fiabilité, essais et démarches : des guides auto vérifiés par nos experts, sourcés et tenus à jour. 19 rubriques, une rédaction identifiée.",
   path: "/",
@@ -32,11 +33,12 @@ export default async function HomePage() {
   return (
     <>
       <section className="chero">
-        {/* Photo libre de droits (licence Pexels, aucune attribution requise) —
-            "Rustic Car Workshop with Tools and Machinery", pexels.com/photo/34337558.
-            Pré-optimisée en WebP à 2 largeurs (800/1920) via scripts sharp locaux,
-            pas de service d'optimisation à la volée (voir docs/architecture-headless.md
-            section 3.3 — même raison de coût que le choix WordPress+Imagify). */}
+        {/* Photo libre de droits (licence Unsplash, aucune attribution requise) —
+            unsplash.com/photos/Aqt08E8JzEc, recadrée sur la voiture depuis l'original
+            portrait. Pré-optimisée en WebP à 2 largeurs (800/1920) via scripts sharp
+            locaux, pas de service d'optimisation à la volée (voir
+            docs/architecture-headless.md section 3.3 — même raison de coût que le
+            choix WordPress+Imagify). */}
         <img
           className="chero__bg"
           src="/images/accueil-hero-1920.webp"
@@ -44,7 +46,7 @@ export default async function HomePage() {
           sizes="100vw"
           width={1920}
           height={1440}
-          alt="Atelier de mécanique automobile, outillage et pont élévateur"
+          alt="Porsche 911 orange vue de trois quarts arrière sous un ciel bleu"
           fetchPriority="high"
         />
         <div className="chero__scrim" aria-hidden="true" />
@@ -103,7 +105,7 @@ export default async function HomePage() {
 
         <section className="section">
           <div className="section__head">
-            <h2>Pourquoi monauto</h2>
+            <h2>Pourquoi {SITE_NAME}</h2>
           </div>
           <div className="trust-grid">
             <div className="trust">
@@ -131,7 +133,7 @@ export default async function HomePage() {
         </section>
 
         <section className="nl-band">
-          <h2>La newsletter monauto</h2>
+          <h2>La newsletter {SITE_NAME}</h2>
           <p>Chaque semaine : nos nouveaux guides, essais et conseils d&apos;entretien. Zéro spam.</p>
           <NewsletterForm />
         </section>
