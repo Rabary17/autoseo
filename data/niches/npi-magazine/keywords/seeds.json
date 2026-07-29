@@ -1,0 +1,66 @@
+{
+  "Ports maritimes": {
+    "icon": "⚓",
+    "subs": [
+      {"name": "Gestion portuaire", "kws": ["gestion portuaire|I","digitalisation portuaire|I","autorité portuaire rôle|I","exploitation portuaire|I"]},
+      {"name": "Investissements portuaires", "kws": ["investissements ports français|I","financement infrastructures portuaires|I","modernisation portuaire|I"]},
+      {"name": "Compétitivité des ports", "kws": ["compétitivité des ports|I","classement des ports maritimes|I","attractivité portuaire|I"]}
+    ]
+  },
+  "Infrastructures portuaires": {
+    "icon": "🏗",
+    "subs": [
+      {"name": "Normes énergétiques portuaires", "kws": ["normes énergétiques portuaires|I","station OPS port|I","réglementation environnementale portuaire|I"]},
+      {"name": "Modernisation des terminaux", "kws": ["terminal portuaire modernisation|I","terminal à conteneurs automatisé|I"]},
+      {"name": "Sécurité des infrastructures critiques", "kws": ["infrastructures critiques transport|I","cybersécurité portuaire|I","supervision infrastructures critiques|I"]}
+    ]
+  },
+  "Transport fluvial & canaux": {
+    "icon": "🚢",
+    "subs": [
+      {"name": "Batellerie & voies navigables", "kws": ["transport fluvial marchandises|I","batellerie fluviale France|I","voies navigables européennes|I"]},
+      {"name": "Canal Seine-Nord Europe", "kws": ["canal Seine-Nord Europe|I","canal Seine-Nord Europe travaux|I","canal Seine-Nord Europe impact économique|I"]},
+      {"name": "Réglementation fluviale", "kws": ["réglementation transport fluvial|I","permis navigation fluviale|I"]}
+    ]
+  },
+  "Intermodalité & hubs logistiques": {
+    "icon": "🔀",
+    "subs": [
+      {"name": "Transport combiné rail-route-fleuve", "kws": ["transport combiné rail route fleuve|I","transport multimodal|I","report modal marchandises|I"]},
+      {"name": "Hubs logistiques européens", "kws": ["hub logistique européen|I","entrepôt logistique nouvelle génération|I"]},
+      {"name": "Corridors de fret", "kws": ["corridor fret ferroviaire|I","corridor logistique international|I"]}
+    ]
+  },
+  "Hydrogène & carburants alternatifs": {
+    "icon": "🔋",
+    "subs": [
+      {"name": "Hydrogène logistique", "kws": ["hydrogène logistique|I","hydrogène transport de marchandises|I","hydrogène vert logistique|I"]},
+      {"name": "Carburants alternatifs transport", "kws": ["carburants alternatifs transport maritime|I","carburants alternatifs poids lourds|I","biocarburant fret|I"]},
+      {"name": "GNL maritime", "kws": ["GNL carburant maritime|I","avitaillement GNL navires|I"]}
+    ]
+  },
+  "Transition énergétique du transport": {
+    "icon": "🌿",
+    "subs": [
+      {"name": "Décarbonation du fret", "kws": ["décarbonation transport marchandises|I","empreinte carbone fret maritime|I"]},
+      {"name": "Alimentation électrique à quai (OPS)", "kws": ["alimentation électrique à quai|I","OPS onshore power supply|I"]},
+      {"name": "Réglementation environnementale", "kws": ["réglementation environnementale transport maritime|I","zone à faibles émissions maritime|I"]}
+    ]
+  },
+  "Digitalisation & innovation": {
+    "icon": "💡",
+    "subs": [
+      {"name": "Supervision numérique des infrastructures", "kws": ["supervision numérique infrastructures|I","jumeau numérique infrastructure|I"]},
+      {"name": "Intelligence artificielle logistique", "kws": ["intelligence artificielle logistique|I","IA prévision trafic maritime|I"]},
+      {"name": "Automatisation portuaire", "kws": ["automatisation portuaire|I","robotique terminaux portuaires|I"]}
+    ]
+  },
+  "Réglementation & politique des transports": {
+    "icon": "📜",
+    "subs": [
+      {"name": "Politique européenne des transports", "kws": ["politique européenne des transports|I","réseau transeuropéen de transport|I"]},
+      {"name": "Financements publics infrastructures", "kws": ["financement public infrastructures transport|I","subventions infrastructures logistiques|I"]},
+      {"name": "Normes internationales", "kws": ["normes internationales transport maritime|I","réglementation OMI transport maritime|I"]}
+    ]
+  }
+}

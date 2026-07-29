@@ -42,7 +42,7 @@ export default async function HubSousHubContent({
   // config/niches/.../niche.json + data/maillage/maillage.json, comptage réel
   // de clusters par sous-cocon), fusionné avec les pages WP déjà publiées
   // pour l'image/le titre/le lien réels.
-  type SousCoconCard = { slug: string; name: string; count: number; href?: string; image?: string };
+  type SousCoconCard = { slug: string; name: string; href?: string; image?: string };
   let sousCoconCards: SousCoconCard[] = [];
   try {
     if (isHub) {
@@ -55,7 +55,6 @@ export default async function HubSousHubContent({
         return {
           slug: sc.slug,
           name: p ? decodeEntities(p.title.rendered) : sc.name,
-          count: sc.count,
           href: p ? `/categorie/${term.slug}/${p.slug}/` : undefined,
           image: image?.url,
         };
@@ -126,7 +125,6 @@ export default async function HubSousHubContent({
                     href={sc.href}
                     name={sc.name}
                     desc={sc.href ? "Voir les guides" : "Contenu en préparation"}
-                    count={sc.count}
                     imageUrl={sc.image}
                   />
                 ))}

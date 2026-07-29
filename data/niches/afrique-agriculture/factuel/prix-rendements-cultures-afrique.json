@@ -1,0 +1,242 @@
+{
+  "prix_cultures_de_rente": {
+    "cacao_cours_mondial_2024_sommet": {
+      "donnee": "Pic historique du cours mondial du cacao début 2024 : plus de 11 000-11 280 USD/tonne (marché ICE)",
+      "source": "invest-time.com — consulté 2026-07 (\"Cacao : de 11 280 à 2 974 dollars la tonne\", https://invest-time.com/2026/03/09/chute-prix-cacao-tonne/)",
+      "a_verifier": false
+    },
+    "cacao_cours_mondial_debut_2026": {
+      "donnee": "Cours mondial du cacao retombé autour de 2 900-2 974 USD/tonne début mars 2026, soit plus de 70% de baisse depuis le pic de 2024",
+      "source": "invest-time.com — consulté 2026-07 (https://invest-time.com/2026/03/09/chute-prix-cacao-tonne/)",
+      "a_verifier": false
+    },
+    "cacao_cote_ivoire_prix_bord_champ_2026": {
+      "donnee": "Prix officiel bord champ du cacao en Côte d'Ivoire, campagne 2025/2026 : 2 800 FCFA/kg en campagne principale, 1 200 FCFA/kg en campagne intermédiaire (baisse de près de 60% par rapport au prix antérieur, liée à la chute des cours mondiaux)",
+      "source": "Jeune Afrique — consulté 2026-07 (\"Crise du cacao : la Côte d'Ivoire réduit de près de 60% le prix d'achat aux producteurs\", https://www.jeuneafrique.com/1771206/) ; erooamba.com (https://erooamba.com/posts/prix-cacao-cote-ivoire-2026)",
+      "a_verifier": false
+    },
+    "cacao_ghana_prix_bord_champ_2026": {
+      "donnee": "Prix d'achat au producteur du cacao au Ghana pour la petite traite 2025/2026 : 41 392 cedis/tonne (≈3 728 USD/tonne), soit 41 GHC/kg (≈2 124 FCFA/kg) mentionné en février 2026",
+      "source": "KOACI — consulté 2026-07 (https://www.koaci.com/article/2026/02/14/ghana/societe/ghana-baisse-du-prix-du-cacao-le-kg-passe-a-41-ghc-soit-2-124-f-cfa_194364.html) ; agenceecofin.com (https://www.agenceecofin.com/actualites-agro/1506-139300-)",
+      "a_verifier": false
+    },
+    "cafe_arabica_cameroun_2025_2026": {
+      "donnee": "Ouverture de la campagne caféière 2025/2026 au Cameroun : Arabica à 2 854 FCFA/kg (prix jugé record)",
+      "source": "Eco Finances — consulté 2026-07 (https://ecofinances.net/2026/01/26/cafe-camerounais-larabica-a-2-854-fcfa-kg-et-le-robusta-a-1-959-fcfa-kg-des-prix-record-et-des-perspectives-prometteuses/)",
+      "a_verifier": false
+    },
+    "cafe_robusta_cameroun_2025_2026": {
+      "donnee": "Robusta camerounais : 1 959 FCFA/kg à l'ouverture de la campagne 2025/2026, puis stagnation entre 1 200 et 1 300 FCFA/kg mi-2026 après avoir un temps dépassé le cacao",
+      "source": "Eco Finances (https://ecofinances.net/2026/01/26/...) et Investir au Cameroun — consulté 2026-07 (https://www.investiraucameroun.com/agriculture/1805-23404-cafe-les-prix-du-robusta-stagnent-a-1200-1300-fcfa-depuis-deux-mois-au-cameroun-apres-avoir-surclasse-ceux-du-cacao)",
+      "a_verifier": false
+    },
+    "cafe_robusta_rdc_2025": {
+      "donnee": "Prix international du kg de café robusta congolais : 4,65 USD au 22 septembre 2025 (hausse de 5,20%)",
+      "source": "ACP (Agence Congolaise de Presse) — consulté 2026-07 (https://acp.cd/economie/le-prix-dun-kilogramme-du-cafe-robusta-en-hausse-de-520-a-linternational/)",
+      "a_verifier": true
+    },
+    "cafe_arabica_rdc_2025": {
+      "donnee": "Prix du kg de café arabica (commerce extérieur RDC) : 6,84 USD, semaine du 03 au 08 février 2025",
+      "source": "ACP — consulté 2026-07 (https://acp.cd/economie/commerce-exterieur-le-prix-dun-kilogramme-de-cafe-arabica-en-hausse-de-721/)",
+      "a_verifier": true
+    },
+    "coton_benin_2025_2026": {
+      "donnee": "Prix d'achat du coton graine au Bénin, campagne 2025/2026 : 300 FCFA/kg (conventionnel 1er choix) / 250 FCFA/kg (2e choix) ; 360 FCFA/kg (bio 1er choix) / 310 FCFA/kg (bio 2e choix)",
+      "source": "Banouto — consulté 2026-07 (https://www.banouto.bj/societe/article/20250521-campagne-agricole-2025-2026-au-benin-les-prix-de-cession-des-intrants-et-d-achat-de-coton-graine-aux-producteurs)",
+      "a_verifier": false
+    },
+    "coton_cote_ivoire_2025_2026": {
+      "donnee": "Prix du coton graine en Côte d'Ivoire, campagne 2025/2026 : 310 FCFA/kg (1er choix), 285 FCFA/kg (2e choix), prix maintenu par rapport à la campagne précédente",
+      "source": "Le Patriote — consulté 2026-07 (https://lepatriote.ci/le-prix-du-coton-graine-fixe-a-310-fcfa-pour-le-1er-choix-et-a-285-f-cfa-pour-le-2e-choix-pour-la-campagne-2025-2026)",
+      "a_verifier": false
+    },
+    "anacarde_cote_ivoire_2026": {
+      "donnee": "Prix plancher bord champ de la noix de cajou (anacarde) en Côte d'Ivoire pour la campagne 2026 : 400 FCFA/kg, en baisse de 6% par rapport à 2025 (contexte : repli du marché international, mesures tarifaires US, baisse du dollar), prix révisable à la hausse (bilan attendu fin avril 2026)",
+      "source": "Abidjan.net — consulté 2026-07 (https://news.abidjan.net/articles/746557/) ; agenceecofin.com (https://www.agenceecofin.com/actualites-agro/0902-135589-cote-d-ivoire-baisse-de-6-du-prix-minimum-bord-champ-de-la-noix-de-cajou-en-2026)",
+      "a_verifier": false
+    },
+    "anacarde_cote_ivoire_2025": {
+      "donnee": "Prix de la noix de cajou en Côte d'Ivoire en 2025 : 425 FCFA/kg (prix record de la campagne précédant 2026)",
+      "source": "Abidjan.net — consulté 2026-07 (https://news.abidjan.net/articles/746557/)",
+      "a_verifier": false
+    },
+    "huile_de_palme_cif_rotterdam_2026": {
+      "donnee": "Prix moyen de l'huile de palme brute CIF Rotterdam : 1 356 USD/tonne au 1er trimestre 2026, contre 1 230 USD/tonne au 1er trimestre 2025",
+      "source": "Fastmarkets / synthèse marché — consulté 2026-07 (https://www.fastmarkets.com/commodity-prices/crude-palm-oil-cif-rotterdam-dollar-tonne-ag-plm-0018/)",
+      "a_verifier": true
+    },
+    "huile_de_palme_prevision_2026": {
+      "donnee": "Prévision Banque mondiale du prix moyen annuel de l'huile de palme brute (CPO) pour 2026 : 1 089 USD/tonne (contre 1 007 USD/tonne l'année précédente) ; certaines projections évoquent jusqu'à 1 500 USD/tonne au second semestre 2026 en cas de tension d'offre (biodiesel B50 Indonésie, risque El Niño)",
+      "source": "agenceecofin.com et ofimagazine.com — consultés 2026-07 (https://www.agenceecofin.com/actualites/2111-133625-les-prix-de-l-huile-de-palme-pourraient-atteindre-1082-la-tonne-a-court-terme ; https://www.ofimagazine.com/news/palm-oil-prices-could-reach-us-1-500-tonne-as-b50-and-el-ni%C3%B1o-tighten-supply)",
+      "a_verifier": true
+    }
+  },
+  "rendements_cultures_vivrieres": {
+    "mais_afrique_moyenne_2020": {
+      "donnee": "Rendement moyen du maïs en Afrique en progression de 16% entre 2000 et 2020, atteignant environ 2 tonnes/ha (mais très inférieur à la moyenne mondiale)",
+      "source": "FAO, cité par agenceecofin.com — consulté 2026-07 (https://www.agenceecofin.com/agro/1804-107502-l-afrique-a-enregistre-la-plus-forte-progression-mondiale-de-rendement-du-ble-entre-2000-et-2020-fao)",
+      "a_verifier": false
+    },
+    "mais_afrique_ouest_centrale": {
+      "donnee": "Rendement du maïs blanc en Afrique de l'Ouest et centrale : environ 1 tonne/ha ou moins",
+      "source": "FAO — consulté 2026-07 (https://www.fao.org/4/y4675f/y4675f08.htm)",
+      "a_verifier": true
+    },
+    "mais_afrique_est_australe": {
+      "donnee": "Rendement du maïs blanc en Afrique de l'Est et australe : entre 1,1 et 1,8 tonne/ha selon les grands pays producteurs, jusqu'à 1,2 t/ha en moyenne régionale",
+      "source": "FAO — consulté 2026-07 (https://www.fao.org/4/y4675f/y4675f08.htm)",
+      "a_verifier": true
+    },
+    "riz_afrique_ouest": {
+      "donnee": "Rendement moyen du riz en Afrique de l'Ouest : passé d'environ 1 t/ha (10 q/ha) à 2 t/ha (20 q/ha) au cours des années 2000 ; rendement plus récent mentionné à 2,17 t/ha",
+      "source": "Universalis / synthèse CARD-AGRA — consulté 2026-07 (https://www.universalis.fr/encyclopedie/riz/4-des-rendements-par-hectare-de-riz-tres-contrastes/ ; https://agra.org/wp-content/uploads/2026/03/Securite-alimentaire-en-Afrique-et-importance-de-la-production-rizicole-...)",
+      "a_verifier": false
+    },
+    "manioc_afrique_ouest": {
+      "donnee": "Rendement du manioc en Afrique de l'Ouest : typiquement 10-12 tonnes/ha au Ghana, Bénin et Nigeria en conditions courantes ; objectifs d'intensification visant 16 t/ha ; certaines sources évoquent un potentiel de 30-50 t/ha selon variété et pratiques optimisées — fourchette large, à recouper selon le pays précis",
+      "source": "FAO / germeocyclevert.com / agenceecofin.com — consultés 2026-07 (https://www.fao.org/4/x5158f/x5158f09.htm ; https://germeocyclevert.com/rendement-du-manioc-par-hectare-combien-de-boutures-de-manioc-par-hectare/)",
+      "a_verifier": true
+    },
+    "mil_afrique_sahel": {
+      "donnee": "Rendement du mil au Sahel : environ 500 kg/ha avec variétés traditionnelles (ex. Sénégal), jusqu'à 1,5-2 tonnes/ha avec variétés améliorées (Sénégal, Mali — variété Toroniou)",
+      "source": "WAAPP/PPAAO Sénégal — consulté 2026-07 (http://www.waapp-ppaao.org/senegal/index.php/actualit%C3%A9s/177-des-rendements-de-1,5-tonne-%C3%A0-l%E2%80%99hectare.html)",
+      "a_verifier": false
+    },
+    "sorgho_afrique_sahel": {
+      "donnee": "Rendement du sorgho selon variété et zone agro-écologique : potentiel de 3 à 6 tonnes/ha, mais rendements réels au Sahel souvent bien inférieurs sur le terrain (ex. 990 kg/ha avec variété ICSV dans la région de Kaya, Burkina Faso ; 500 kg/ha en variété traditionnelle au Sénégal, 1,5 t/ha en variété améliorée). Le microdosage d'engrais permettrait des gains de 44 à 120% sur mil/sorgho (Niger, Mali, Burkina Faso)",
+      "source": "agrimaroc.org / WAAPP Sénégal — consultés 2026-07 (https://www.agrimaroc.org/index.php/Actes_IAVH2/article/view/703 ; http://www.waapp-ppaao.org/senegal/...)",
+      "a_verifier": true
+    }
+  },
+  "rendements_cultures_de_rente": {
+    "cacao_cote_ivoire_rendement": {
+      "donnee": "Rendement cacao Côte d'Ivoire : moyenne nationale d'environ 625-650 kg/ha (2020-2024), 636 kg/ha selon une autre estimation ; producteurs bénéficiaires du programme Quantité-Qualité-Croissance (2QC) : 853,9 kg/ha contre 543,3 kg/ha pour les non-bénéficiaires. Potentiel technique estimé bien plus élevé (jusqu'à 1 500-2 000 kg/ha visés par les programmes, plus de 3 000 kg/ha en ferme optimisée selon certaines études)",
+      "source": "cacao.ci — consulté 2026-07 (https://cacao.ci/rendement-moyen-mondial-kg-hectare-et-comparaison-avec-les-rendements-en-cote-divoire-et-dans-dautres-pays-cles/)",
+      "a_verifier": false
+    },
+    "cacao_ghana_rendement": {
+      "donnee": "Rendement cacao Ghana : traditionnellement autour de 400-550 kg/ha, généralement plus bas qu'en Côte d'Ivoire",
+      "source": "cacao.ci — consulté 2026-07 (https://cacao.ci/rendement-moyen-mondial-kg-hectare-et-comparaison-avec-les-rendements-en-cote-divoire-et-dans-dautres-pays-cles/)",
+      "a_verifier": true
+    },
+    "cafe_afrique_rendement_moyen": {
+      "donnee": "Rendement moyen du café en Afrique : environ 400 kg/ha sur la période 2011/12-2013/14 (soit 5 à 10 sacs, ~300-600 kg/ha) — productivité jugée faible par rapport aux standards mondiaux. En Éthiopie, le rendement varie fortement selon variété et mode de culture, de moins de 100 kg/ha à plus de 2 tonnes/ha",
+      "source": "ICO (International Coffee Organization) — consulté 2026-07 (https://ico.org/documents/cy2016-17/icc-120-7f-african-coffee-sector.pdf)",
+      "a_verifier": true
+    },
+    "coton_benin_rendement": {
+      "donnee": "Rendement coton Bénin : environ 0,73 tonne/ha (5e rang africain, 1er en Afrique de l'Ouest)",
+      "source": "lanouvelletribune.info (USDA) — consulté 2026-07 (https://lanouvelletribune.info/2026/02/coton-en-afrique-le-benin-leader-ouest-africain-et-5%E1%B5%89-du-continent/)",
+      "a_verifier": true
+    },
+    "coton_cote_ivoire_rendement": {
+      "donnee": "Rendement coton Côte d'Ivoire : moyenne de 954,75 kg/ha entre les campagnes 2020/2021 et 2023/2024",
+      "source": "lanouvelletribune.info — consulté 2026-07 (https://lanouvelletribune.info/2026/02/coton-en-afrique-le-benin-leader-ouest-africain-et-5%E1%B5%89-du-continent/)",
+      "a_verifier": true
+    },
+    "coton_burkina_faso_rendement": {
+      "donnee": "Rendement coton Burkina Faso : 811,5 kg/ha en moyenne 2020/2021-2023/2024, puis amélioration à environ 827 kg/ha lors de la campagne 2024/2025",
+      "source": "lanouvelletribune.info / lerural.bj — consultés 2026-07 (https://lerural.bj/production-cotonniere)",
+      "a_verifier": true
+    },
+    "coton_mali_rendement": {
+      "donnee": "Rendement coton Mali : environ 0,53 tonne/ha",
+      "source": "lanouvelletribune.info — consulté 2026-07 (https://lanouvelletribune.info/2026/02/coton-en-afrique-le-benin-leader-ouest-africain-et-5%E1%B5%89-du-continent/)",
+      "a_verifier": true
+    },
+    "coton_senegal_rendement": {
+      "donnee": "Rendement coton Sénégal : 1,26 tonne/ha, en hausse de 50% sur un an, très supérieur à la moyenne zonale estimée à 960 kg/ha",
+      "source": "lanouvelletribune.info — consulté 2026-07 (https://lanouvelletribune.info/2026/02/coton-en-afrique-le-benin-leader-ouest-africain-et-5%E1%B5%89-du-continent/)",
+      "a_verifier": true
+    }
+  },
+  "maladies_ravageurs_majeurs": [
+    {
+      "nom": "Chenille légionnaire d'automne (Spodoptera frugiperda) sur maïs — Afrique de l'Ouest",
+      "donnee": "Baisses de rendement du maïs de 10 à 15% en Afrique de l'Ouest suite à la propagation rapide du ravageur depuis son arrivée en 2016",
+      "source": "FAO — consulté 2026-07 (https://www.fao.org/fall-armyworm/background/fr/)",
+      "a_verifier": false
+    },
+    {
+      "nom": "Chenille légionnaire d'automne — cas sévères localisés",
+      "donnee": "Peut hypothéquer jusqu'à 75% du rendement d'un champ de maïs infesté en l'absence de lutte",
+      "source": "FAO/CIRAD, synthèse — consulté 2026-07 (https://open-library.cirad.fr/files/4/2587__CONTROLE__DE_LA_CHENILLE_LEGIONNAIRE.pdf)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Chenille légionnaire d'automne — Ghana, Zambie, Tanzanie",
+      "donnee": "Pertes de maïs estimées à 41% au Ghana et en Zambie, et 57% en Tanzanie",
+      "source": "FAO / synthèse SciDev.net — consulté 2026-07 (https://www.scidev.net/afrique-sub-saharienne/news/chenille-mais-lutte/)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Chenille légionnaire d'automne — Cameroun",
+      "donnee": "Pertes de rendement annuel de maïs estimées entre 15 et 78% selon les zones",
+      "source": "ResearchGate, revue des travaux de recherche en Afrique — consulté 2026-07 (https://www.researchgate.net/publication/369830423_Revue_des_principaux_resultats_des_travaux_de_recherche_sur_la_chenille_legionnaire_d'automne_Spodoptera_frugiperda_JE_Smith_en_Afrique)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Chenille légionnaire d'automne — impact continental",
+      "donnee": "Estimation 2018 sur 12 pays africains : jusqu'à 17,7 millions de tonnes de maïs perdues chaque année sur le continent",
+      "source": "FAO — consulté 2026-07 (https://www.fao.org/fall-armyworm/background/fr/)",
+      "a_verifier": false
+    },
+    {
+      "nom": "Mosaïque africaine du manioc (CMD, virus Begomovirus, vecteur Bemisia tabaci) — impact global",
+      "donnee": "Pertes estimées à 15-24% de la production continentale de manioc, soit l'équivalent de 15-27 millions de tonnes par an ; dans les cas sévères, pertes de rendement pouvant atteindre 50 à 100% des cultures",
+      "source": "IITA / synthèse scientifique — consulté 2026-07 (https://propas.iita.org/fr/solutions/disease-resistant-cassava-varieties/51/details/)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Mosaïque du manioc — République Centrafricaine",
+      "donnee": "Incidence de 85% de la maladie et perte de production estimée à 50%, CMD identifiée comme la principale contrainte biotique du manioc dans ce pays",
+      "source": "geoecotrop.be — consulté 2026-07 (https://www.geoecotrop.be/uploads/publications/pub_321_07.pdf)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Pourriture brune des cabosses du cacaoyer (Phytophthora spp., dont P. megakarya et P. palmivora) — impact général",
+      "donnee": "Maladie du cacaoyer la plus importante au monde ; pertes de rendement pouvant atteindre 80-90% en l'absence de mesures de lutte",
+      "source": "Wikipédia FR (synthèse sourcée CIRAD) — consulté 2026-07 (https://fr.wikipedia.org/wiki/Pourriture_brune_des_cabosses_du_cacaoyer)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Pourriture brune du cacaoyer — Togo",
+      "donnee": "Pertes variables selon les régions : 70% dans le Litimé, 75% sur le plateau de Kouma, 80% dans l'Adélé",
+      "source": "CIRAD, étude Togo — consulté 2026-07 (https://publications.cirad.fr/une_notice.php?dk=401853)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Pourriture brune du cacaoyer — Côte d'Ivoire (Phytophthora palmivora)",
+      "donnee": "Pertes de production estimées à 30%",
+      "source": "AJOL (Sciences & Nature) — consulté 2026-07 (https://www.ajol.info/index.php/scinat/article/view/48579)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Pourriture brune du cacaoyer — Phytophthora megakarya (souche la plus agressive)",
+      "donnee": "Pertes de rendement pouvant dépasser 50%, et mortalité d'environ 10% des arbres affectés",
+      "source": "Thèse CIRAD/HAL, Cameroun — consulté 2026-07 (https://theses.hal.science/tel-04075964v1)",
+      "a_verifier": true
+    }
+  ],
+  "financement_agricole": [
+    {
+      "nom": "Taux de microcrédit agricole — Bénin",
+      "donnee": "Taux d'intérêt annuels pratiqués par les institutions de microfinance au Bénin compris entre 24% et 77%, taux élevés liés aux coûts de mise en place et au risque agricole (infrastructures, éloignement, aléas climatiques, absence de garanties)",
+      "source": "École de la microfinance — consulté 2026-07 (https://www.ecole-de-la-microfinance.com/le-credit-a-lagriculture-un-outil-cle-du-developpement/)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Coopérative Agricole de Yakassé Attobrou (CAYAT) — Côte d'Ivoire",
+      "donnee": "Coopérative de cacao et café créée en 2010, plus de 3 000 membres, facilite la collecte et la commercialisation du cacao et du café pour ses membres",
+      "source": "Global Landscapes Forum — consulté 2026-07 (https://thinklandscape.globallandscapesforum.org/58194/cocoa-co-op-concocts-richer-futures-for-farmers-qa-with-awa-bamba/)",
+      "a_verifier": true
+    },
+    {
+      "nom": "Densité de coopératives cacao — département de Méagui, Côte d'Ivoire",
+      "donnee": "Plus de 84 coopératives de production de cacao recensées dans ce seul département, illustrant le rôle central des coopératives dans la commercialisation du cacao ivoirien",
+      "source": "Rapport CIRAD/Enabel — consulté 2026-07 (https://www.tdc-enabel.be/wp-content/uploads/2021/07/TomeIRapportCIRAD_Final.pdf)",
+      "a_verifier": true
+    }
+  ],
+  "note_generale": "Dataset factuel P2 pour la niche afrique-agriculture (afrique-agriculture.com), compilé le 2026-07-29 via recherche web (WebSearch) sur des sources francophones et internationales (FAO, CIRAD, IITA, ICO, presse économique africaine — Agence Ecofin, Jeune Afrique, Koaci, Investir au Cameroun, Sikafinance, ACP RDC, la Nouvelle Tribune, etc.). 44 entrées sourcées couvrant : prix des cultures de rente (cacao, café robusta/arabica, coton, anacarde, huile de palme) sur données 2025-2026 ; rendements moyens à l'hectare pour les cultures vivrières (maïs, riz, manioc, mil, sorgho) et de rente (cacao, café, coton) par pays quand disponible ; impacts chiffrés des principaux ravageurs/maladies (chenille légionnaire d'automne, mosaïque du manioc, pourriture brune/mildiou du cacaoyer) ; quelques données de financement agricole (taux de microcrédit, exemples de coopératives). Limites : les prix et rendements évoluent vite (campagnes agricoles annuelles, cours mondiaux volatils) — à rafraîchir périodiquement. Plusieurs chiffres de rendement varient fortement selon la source et la méthode de mesure (rendement nominal vs réel, par pays vs par région) ; ceux jugés moins consolidés sont marqués a_verifier=true plutôt que d'être omis ou arrondis arbitrairement. Aucun chiffre n'a été inventé : toute donnée non recoupée avec confiance est explicitement signalée."
+}

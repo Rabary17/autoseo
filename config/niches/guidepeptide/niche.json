@@ -1,0 +1,81 @@
+{
+  "id": "guidepeptide",
+  "name": "Guide Peptide",
+  "data_dir": "data/niches/guidepeptide",
+  "authors": {
+    "A": {
+      "label": "A — Fondamentaux & recherche peptides",
+      "wp_slug": "auteur-a"
+    },
+    "B": {
+      "label": "B — Peptides, santé & performance",
+      "wp_slug": "auteur-b"
+    },
+    "C": {
+      "label": "C — Peptides alimentaires (lait & végétaux)",
+      "wp_slug": "auteur-c"
+    },
+    "D": {
+      "label": "D — Lifestyle & bien-être",
+      "wp_slug": "auteur-d"
+    }
+  },
+  "silos": [
+    {
+      "name": "Fondamentaux des peptides",
+      "hub_slug": "fondamentaux-peptides",
+      "author": "A",
+      "sous_cocons": ["Définitions & structure", "Synthèse & fabrication", "Peptides vs protéines vs acides aminés"],
+      "seeds_file": "fondamentaux-peptides.json"
+    },
+    {
+      "name": "Peptides de recherche",
+      "hub_slug": "peptides-de-recherche",
+      "author": "A",
+      "sous_cocons": ["Présentation générale", "Réglementation & statut légal", "Actualités scientifiques"],
+      "seeds_file": "peptides-de-recherche.json"
+    },
+    {
+      "name": "Peptides & anti-âge",
+      "hub_slug": "peptides-anti-age",
+      "author": "B",
+      "sous_cocons": ["Collagène & peptides de collagène", "Peptides cuivre GHK-Cu", "Longévité cellulaire"],
+      "seeds_file": "peptides-anti-age.json"
+    },
+    {
+      "name": "Peptides & perte de poids",
+      "hub_slug": "peptides-perte-de-poids",
+      "author": "B",
+      "sous_cocons": ["Peptides GLP-1", "Métabolisme & satiété", "Comparatifs peptides minceur"],
+      "seeds_file": "peptides-perte-de-poids.json"
+    },
+    {
+      "name": "Peptides & performance sportive",
+      "hub_slug": "peptides-performance-sportive",
+      "author": "B",
+      "sous_cocons": ["Récupération musculaire", "Croissance musculaire", "Protocoles d'utilisation sportive"],
+      "seeds_file": "peptides-performance-sportive.json"
+    },
+    {
+      "name": "Peptides du lait",
+      "hub_slug": "peptides-du-lait",
+      "author": "C",
+      "sous_cocons": ["Lactoferrine", "Caséine & peptides bioactifs", "Immunité & peptides du lait"],
+      "seeds_file": "peptides-du-lait.json"
+    },
+    {
+      "name": "Peptides végétaux",
+      "hub_slug": "peptides-vegetaux",
+      "author": "C",
+      "sous_cocons": ["Peptides de soja", "Peptides de pois & riz", "Alternatives protéines animales"],
+      "seeds_file": "peptides-vegetaux.json"
+    },
+    {
+      "name": "Pause bien-être",
+      "hub_slug": "pause-bien-etre",
+      "author": "D",
+      "sous_cocons": ["Sommeil & récupération", "Nutrition & micronutrition", "Rituels bien-être"],
+      "seeds_file": "pause-bien-etre.json"
+    }
+  ]
+}

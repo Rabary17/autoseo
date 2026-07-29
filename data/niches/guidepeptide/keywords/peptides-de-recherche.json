@@ -1,0 +1,95 @@
+{
+  "silo": "Peptides de recherche",
+  "seeds": {
+    "peptide de recherche c'est quoi": {
+      "sub": "Présentation générale",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:07:41.780Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:07:42.870Z"
+    },
+    "peptides les plus étudiés": {
+      "sub": "Présentation générale",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:07:47.279Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:07:48.297Z"
+    },
+    "peptides interdits liste": {
+      "sub": "Réglementation & statut légal",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:07:52.348Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:07:53.407Z"
+    },
+    "essais cliniques peptides": {
+      "sub": "Actualités scientifiques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:08:04.587Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:08:05.735Z"
+    },
+    "liste peptides de recherche": {
+      "sub": "Présentation générale",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:13:11.846Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:13:14.216Z"
+    },
+    "peptides de recherche légal": {
+      "sub": "Réglementation & statut légal",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:13:15.875Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:13:17.202Z"
+    },
+    "achat peptide recherche": {
+      "sub": "Réglementation & statut légal",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:13:18.923Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:13:21.229Z"
+    },
+    "études sur les peptides": {
+      "sub": "Actualités scientifiques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:13:22.951Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:13:24.240Z"
+    },
+    "recherche sur les peptides": {
+      "sub": "Actualités scientifiques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:13:25.922Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:13:28.107Z"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "silo": "Infrastructures portuaires",
+  "seeds": {
+    "réglementation environnementale portuaire": {
+      "sub": "Normes énergétiques portuaires",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:11:23.528Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:11:25.025Z"
+    },
+    "terminal à conteneurs automatisé": {
+      "sub": "Modernisation des terminaux",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:11:31.057Z",
+      "candidates": [
+        {
+          "keyword": "le port de yangshan fonctionne désormais efficacement comme le plus grand terminal à conteneurs automatisé au monde affichant le plus haut niveau d'automatisation au monde. l'achèvement de la quatrième phase marque une étape importante dans la modernisation des modes de fonctionnement et des technologies du secteur portuaire chinois.",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T14:11:33.298Z"
+    },
+    "normes énergétiques portuaires": {
+      "sub": "Normes énergétiques portuaires",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:39.991Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:41.034Z"
+    },
+    "station OPS port": {
+      "sub": "Normes énergétiques portuaires",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:42.664Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:45.150Z"
+    },
+    "terminal portuaire modernisation": {
+      "sub": "Modernisation des terminaux",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:46.578Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:47.626Z"
+    },
+    "infrastructures critiques transport": {
+      "sub": "Sécurité des infrastructures critiques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:49.031Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:50.115Z"
+    },
+    "cybersécurité portuaire": {
+      "sub": "Sécurité des infrastructures critiques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:51.479Z",
+      "candidates": [
+        {
+          "keyword": "cybersécurité portuaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:15:52.745Z"
+    },
+    "supervision infrastructures critiques": {
+      "sub": "Sécurité des infrastructures critiques",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:54.136Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:55.170Z"
+    }
+  }
+}

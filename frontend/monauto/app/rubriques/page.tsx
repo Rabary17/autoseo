@@ -26,7 +26,6 @@ export default function RubriquesPage() {
                   {s.desc}
                 </span>
               </span>
-              <span className="silo__count">{s.articles.toLocaleString("fr-FR")}</span>
             </Link>
           ))}
         </div>

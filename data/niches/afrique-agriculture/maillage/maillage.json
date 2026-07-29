@@ -1,0 +1,2566 @@
+[
+  {
+    "url": "/agroecologie-adaptation-climatique/adaptation-au-changement-climatique-agriculture",
+    "mot_cle_principal": "adaptation au changement climatique agriculture",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/adaptation-a-la-secheresse",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/techniques-d-agriculture-en-zone-aride",
+      "/agroecologie-adaptation-climatique/cultures-resistantes-a-la-secheresse"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "adaptation au changement climatique agriculture",
+      "naturelle_longue": "adaptation au changement climatique agriculture",
+      "entite_seule": "Adaptation à la sécheresse",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/cultures-resistantes-a-la-secheresse",
+    "mot_cle_principal": "cultures résistantes à la sécheresse",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/adaptation-a-la-secheresse",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/adaptation-au-changement-climatique-agriculture",
+      "/agroecologie-adaptation-climatique/techniques-d-agriculture-en-zone-aride"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "cultures résistantes à la sécheresse",
+      "naturelle_longue": "cultures résistantes à la sécheresse",
+      "entite_seule": "Adaptation à la sécheresse",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/techniques-d-agriculture-en-zone-aride",
+    "mot_cle_principal": "techniques d'agriculture en zone aride",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/adaptation-a-la-secheresse",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/cultures-resistantes-a-la-secheresse",
+      "/agroecologie-adaptation-climatique/adaptation-au-changement-climatique-agriculture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "techniques d'agriculture en zone aride",
+      "naturelle_longue": "techniques d'agriculture en zone aride",
+      "entite_seule": "Adaptation à la sécheresse",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/agroforesterie-principe-et-avantages",
+    "mot_cle_principal": "agroforesterie principe et avantages",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/agroforesterie-compostage",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/associer-cultures-et-arbres",
+      "/agroecologie-adaptation-climatique/compostage-agricole-methode"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "agroforesterie principe et avantages",
+      "naturelle_longue": "agroforesterie principe et avantages",
+      "entite_seule": "Agroforesterie & compostage",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/compostage-agricole-methode",
+    "mot_cle_principal": "compostage agricole méthode",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/agroforesterie-compostage",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/associer-cultures-et-arbres",
+      "/agroecologie-adaptation-climatique/agroforesterie-principe-et-avantages"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "compostage agricole méthode",
+      "naturelle_longue": "tout savoir sur compostage agricole méthode",
+      "entite_seule": "Agroforesterie & compostage",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/associer-cultures-et-arbres",
+    "mot_cle_principal": "associer cultures et arbres",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/agroforesterie-compostage",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/compostage-agricole-methode",
+      "/agroecologie-adaptation-climatique/agroforesterie-principe-et-avantages"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "associer cultures et arbres",
+      "naturelle_longue": "tout savoir sur associer cultures et arbres",
+      "entite_seule": "Agroforesterie & compostage",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/permaculture-tropicale-principes",
+    "mot_cle_principal": "permaculture tropicale principes",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/permaculture-tropicale",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/formation-permaculture-afrique",
+      "/agroecologie-adaptation-climatique/jardin-en-permaculture-debuter"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permaculture tropicale principes",
+      "naturelle_longue": "permaculture tropicale principes",
+      "entite_seule": "Permaculture tropicale",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/jardin-en-permaculture-debuter",
+    "mot_cle_principal": "jardin en permaculture débuter",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/permaculture-tropicale",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/permaculture-tropicale-principes",
+      "/agroecologie-adaptation-climatique/formation-permaculture-afrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "jardin en permaculture débuter",
+      "naturelle_longue": "jardin en permaculture débuter",
+      "entite_seule": "Permaculture tropicale",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroecologie-adaptation-climatique/formation-permaculture-afrique",
+    "mot_cle_principal": "formation permaculture Afrique",
+    "silo": "Agroécologie & adaptation climatique",
+    "sous_hub": "/agroecologie-adaptation-climatique/permaculture-tropicale",
+    "hub": "/agroecologie-adaptation-climatique",
+    "liens_lateraux": [
+      "/agroecologie-adaptation-climatique/permaculture-tropicale-principes",
+      "/agroecologie-adaptation-climatique/jardin-en-permaculture-debuter"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "formation permaculture Afrique",
+      "naturelle_longue": "formation permaculture Afrique",
+      "entite_seule": "Permaculture tropicale",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/prix-tracteur-agricole-occasion",
+    "mot_cle_principal": "prix tracteur agricole occasion",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/tracteurs-motoculteurs",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/entretien-tracteur-agricole",
+      "/agroequipement-irrigation/motoculteur-adapte-petite-exploitation",
+      "/agroequipement-irrigation/location-de-tracteur-agricole"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix tracteur agricole occasion",
+      "naturelle_longue": "prix tracteur agricole occasion",
+      "entite_seule": "Tracteurs & motoculteurs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/location-de-tracteur-agricole",
+    "mot_cle_principal": "location de tracteur agricole",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/tracteurs-motoculteurs",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/prix-tracteur-agricole-occasion",
+      "/agroequipement-irrigation/motoculteur-adapte-petite-exploitation",
+      "/agroequipement-irrigation/entretien-tracteur-agricole"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "location de tracteur agricole",
+      "naturelle_longue": "tout savoir sur location de tracteur agricole",
+      "entite_seule": "Tracteurs & motoculteurs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/entretien-tracteur-agricole",
+    "mot_cle_principal": "entretien tracteur agricole",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/tracteurs-motoculteurs",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/motoculteur-adapte-petite-exploitation",
+      "/agroequipement-irrigation/prix-tracteur-agricole-occasion",
+      "/agroequipement-irrigation/location-de-tracteur-agricole"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "entretien tracteur agricole",
+      "naturelle_longue": "tout savoir sur entretien tracteur agricole",
+      "entite_seule": "Tracteurs & motoculteurs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/motoculteur-adapte-petite-exploitation",
+    "mot_cle_principal": "motoculteur adapté petite exploitation",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/tracteurs-motoculteurs",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/entretien-tracteur-agricole",
+      "/agroequipement-irrigation/location-de-tracteur-agricole",
+      "/agroequipement-irrigation/prix-tracteur-agricole-occasion"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "motoculteur adapté petite exploitation",
+      "naturelle_longue": "motoculteur adapté petite exploitation",
+      "entite_seule": "Tracteurs & motoculteurs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/irrigation-goutte-a-goutte-installation",
+    "mot_cle_principal": "irrigation goutte à goutte installation",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/irrigation-energie-solaire",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/pompe-solaire-pour-irrigation-prix",
+      "/agroequipement-irrigation/kit-irrigation-solaire-agriculture",
+      "/agroequipement-irrigation/economiser-l-eau-a-l-irrigation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "irrigation goutte à goutte installation",
+      "naturelle_longue": "irrigation goutte à goutte installation",
+      "entite_seule": "Irrigation & énergie solaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/pompe-solaire-pour-irrigation-prix",
+    "mot_cle_principal": "pompe solaire pour irrigation prix",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/irrigation-energie-solaire",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/irrigation-goutte-a-goutte-installation",
+      "/agroequipement-irrigation/kit-irrigation-solaire-agriculture",
+      "/agroequipement-irrigation/economiser-l-eau-a-l-irrigation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pompe solaire pour irrigation prix",
+      "naturelle_longue": "pompe solaire pour irrigation prix",
+      "entite_seule": "Irrigation & énergie solaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/kit-irrigation-solaire-agriculture",
+    "mot_cle_principal": "kit irrigation solaire agriculture",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/irrigation-energie-solaire",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/economiser-l-eau-a-l-irrigation",
+      "/agroequipement-irrigation/irrigation-goutte-a-goutte-installation",
+      "/agroequipement-irrigation/pompe-solaire-pour-irrigation-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "kit irrigation solaire agriculture",
+      "naturelle_longue": "kit irrigation solaire agriculture",
+      "entite_seule": "Irrigation & énergie solaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/economiser-l-eau-a-l-irrigation",
+    "mot_cle_principal": "économiser l'eau à l'irrigation",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/irrigation-energie-solaire",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/irrigation-goutte-a-goutte-installation",
+      "/agroequipement-irrigation/pompe-solaire-pour-irrigation-prix",
+      "/agroequipement-irrigation/kit-irrigation-solaire-agriculture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "économiser l'eau à l'irrigation",
+      "naturelle_longue": "économiser l'eau à l'irrigation",
+      "entite_seule": "Irrigation & énergie solaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/materiel-agricole-essentiel-liste",
+    "mot_cle_principal": "matériel agricole essentiel liste",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/outillage-stockage",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/prix-outillage-agricole",
+      "/agroequipement-irrigation/silo-de-stockage-des-cereales-construction"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "matériel agricole essentiel liste",
+      "naturelle_longue": "matériel agricole essentiel liste",
+      "entite_seule": "Outillage & stockage",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/silo-de-stockage-des-cereales-construction",
+    "mot_cle_principal": "silo de stockage des céréales construction",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/outillage-stockage",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/prix-outillage-agricole",
+      "/agroequipement-irrigation/materiel-agricole-essentiel-liste"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "silo de stockage des céréales construction",
+      "naturelle_longue": "silo de stockage des céréales construction",
+      "entite_seule": "Outillage & stockage",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/agroequipement-irrigation/prix-outillage-agricole",
+    "mot_cle_principal": "prix outillage agricole",
+    "silo": "Agroéquipement & irrigation",
+    "sous_hub": "/agroequipement-irrigation/outillage-stockage",
+    "hub": "/agroequipement-irrigation",
+    "liens_lateraux": [
+      "/agroequipement-irrigation/silo-de-stockage-des-cereales-construction",
+      "/agroequipement-irrigation/materiel-agricole-essentiel-liste"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix outillage agricole",
+      "naturelle_longue": "tout savoir sur prix outillage agricole",
+      "entite_seule": "Outillage & stockage",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/culture-du-palmier-a-huile",
+    "mot_cle_principal": "culture du palmier à huile",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/anacarde-palmier-a-huile",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-anacarde-a-l-hectare",
+      "/cultures-de-rente/maladies-du-palmier-a-huile",
+      "/cultures-de-rente/prix-noix-de-cajou-brute",
+      "/cultures-de-rente/culture-de-l-anacardier-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du palmier à huile",
+      "naturelle_longue": "tout savoir sur culture du palmier à huile",
+      "entite_seule": "Anacarde & palmier à huile",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/culture-de-l-anacardier-guide",
+    "mot_cle_principal": "culture de l'anacardier guide",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/anacarde-palmier-a-huile",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-anacarde-a-l-hectare",
+      "/cultures-de-rente/prix-noix-de-cajou-brute",
+      "/cultures-de-rente/culture-du-palmier-a-huile",
+      "/cultures-de-rente/maladies-du-palmier-a-huile"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture de l'anacardier guide",
+      "naturelle_longue": "tout savoir sur culture de l'anacardier guide",
+      "entite_seule": "Anacarde & palmier à huile",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/prix-noix-de-cajou-brute",
+    "mot_cle_principal": "prix noix de cajou brute",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/anacarde-palmier-a-huile",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/culture-de-l-anacardier-guide",
+      "/cultures-de-rente/culture-du-palmier-a-huile",
+      "/cultures-de-rente/rendement-anacarde-a-l-hectare",
+      "/cultures-de-rente/maladies-du-palmier-a-huile"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix noix de cajou brute",
+      "naturelle_longue": "tout savoir sur prix noix de cajou brute",
+      "entite_seule": "Anacarde & palmier à huile",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/maladies-du-palmier-a-huile",
+    "mot_cle_principal": "maladies du palmier à huile",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/anacarde-palmier-a-huile",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-anacarde-a-l-hectare",
+      "/cultures-de-rente/culture-du-palmier-a-huile",
+      "/cultures-de-rente/prix-noix-de-cajou-brute",
+      "/cultures-de-rente/culture-de-l-anacardier-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du palmier à huile",
+      "naturelle_longue": "tout savoir sur maladies du palmier à huile",
+      "entite_seule": "Anacarde & palmier à huile",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/rendement-anacarde-a-l-hectare",
+    "mot_cle_principal": "rendement anacarde à l'hectare",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/anacarde-palmier-a-huile",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/prix-noix-de-cajou-brute",
+      "/cultures-de-rente/culture-du-palmier-a-huile",
+      "/cultures-de-rente/culture-de-l-anacardier-guide",
+      "/cultures-de-rente/maladies-du-palmier-a-huile"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement anacarde à l'hectare",
+      "naturelle_longue": "rendement anacarde à l'hectare",
+      "entite_seule": "Anacarde & palmier à huile",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/culture-du-cacao-guide-complet",
+    "mot_cle_principal": "culture du cacao guide complet",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cacao",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/certification-cacao-durable",
+      "/cultures-de-rente/rendement-cacaoyer-a-l-hectare",
+      "/cultures-de-rente/variete-de-cacao-hybride",
+      "/cultures-de-rente/prix-du-cacao-au-kg",
+      "/cultures-de-rente/maladies-du-cacaoyer-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du cacao guide complet",
+      "naturelle_longue": "culture du cacao guide complet",
+      "entite_seule": "Cacao",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/maladies-du-cacaoyer-traitement",
+    "mot_cle_principal": "maladies du cacaoyer traitement",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cacao",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/variete-de-cacao-hybride",
+      "/cultures-de-rente/rendement-cacaoyer-a-l-hectare",
+      "/cultures-de-rente/certification-cacao-durable",
+      "/cultures-de-rente/prix-du-cacao-au-kg",
+      "/cultures-de-rente/culture-du-cacao-guide-complet"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du cacaoyer traitement",
+      "naturelle_longue": "maladies du cacaoyer traitement",
+      "entite_seule": "Cacao",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/prix-du-cacao-au-kg",
+    "mot_cle_principal": "prix du cacao au kg",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cacao",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/culture-du-cacao-guide-complet",
+      "/cultures-de-rente/maladies-du-cacaoyer-traitement",
+      "/cultures-de-rente/certification-cacao-durable",
+      "/cultures-de-rente/variete-de-cacao-hybride",
+      "/cultures-de-rente/rendement-cacaoyer-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix du cacao au kg",
+      "naturelle_longue": "tout savoir sur prix du cacao au kg",
+      "entite_seule": "Cacao",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/certification-cacao-durable",
+    "mot_cle_principal": "certification cacao durable",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cacao",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/culture-du-cacao-guide-complet",
+      "/cultures-de-rente/rendement-cacaoyer-a-l-hectare",
+      "/cultures-de-rente/prix-du-cacao-au-kg",
+      "/cultures-de-rente/variete-de-cacao-hybride",
+      "/cultures-de-rente/maladies-du-cacaoyer-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "certification cacao durable",
+      "naturelle_longue": "tout savoir sur certification cacao durable",
+      "entite_seule": "Cacao",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/rendement-cacaoyer-a-l-hectare",
+    "mot_cle_principal": "rendement cacaoyer à l'hectare",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cacao",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/prix-du-cacao-au-kg",
+      "/cultures-de-rente/culture-du-cacao-guide-complet",
+      "/cultures-de-rente/maladies-du-cacaoyer-traitement",
+      "/cultures-de-rente/variete-de-cacao-hybride",
+      "/cultures-de-rente/certification-cacao-durable"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement cacaoyer à l'hectare",
+      "naturelle_longue": "rendement cacaoyer à l'hectare",
+      "entite_seule": "Cacao",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/variete-de-cacao-hybride",
+    "mot_cle_principal": "variété de cacao hybride",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cacao",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-cacaoyer-a-l-hectare",
+      "/cultures-de-rente/prix-du-cacao-au-kg",
+      "/cultures-de-rente/culture-du-cacao-guide-complet",
+      "/cultures-de-rente/certification-cacao-durable",
+      "/cultures-de-rente/maladies-du-cacaoyer-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "variété de cacao hybride",
+      "naturelle_longue": "tout savoir sur variété de cacao hybride",
+      "entite_seule": "Cacao",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/culture-du-cafeier-arabica-robusta",
+    "mot_cle_principal": "culture du caféier arabica robusta",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cafe",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-cafeier-a-l-hectare",
+      "/cultures-de-rente/maladies-du-cafeier-traitement",
+      "/cultures-de-rente/transformation-cafe-decorticage",
+      "/cultures-de-rente/prix-du-cafe-marchand-local"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du caféier arabica robusta",
+      "naturelle_longue": "culture du caféier arabica robusta",
+      "entite_seule": "Café",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/maladies-du-cafeier-traitement",
+    "mot_cle_principal": "maladies du caféier traitement",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cafe",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/prix-du-cafe-marchand-local",
+      "/cultures-de-rente/culture-du-cafeier-arabica-robusta",
+      "/cultures-de-rente/transformation-cafe-decorticage",
+      "/cultures-de-rente/rendement-cafeier-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du caféier traitement",
+      "naturelle_longue": "maladies du caféier traitement",
+      "entite_seule": "Café",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/prix-du-cafe-marchand-local",
+    "mot_cle_principal": "prix du café marchand local",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cafe",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/culture-du-cafeier-arabica-robusta",
+      "/cultures-de-rente/maladies-du-cafeier-traitement",
+      "/cultures-de-rente/transformation-cafe-decorticage",
+      "/cultures-de-rente/rendement-cafeier-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix du café marchand local",
+      "naturelle_longue": "tout savoir sur prix du café marchand local",
+      "entite_seule": "Café",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/transformation-cafe-decorticage",
+    "mot_cle_principal": "transformation café décorticage",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cafe",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/maladies-du-cafeier-traitement",
+      "/cultures-de-rente/rendement-cafeier-a-l-hectare",
+      "/cultures-de-rente/prix-du-cafe-marchand-local",
+      "/cultures-de-rente/culture-du-cafeier-arabica-robusta"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "transformation café décorticage",
+      "naturelle_longue": "transformation café décorticage",
+      "entite_seule": "Café",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/rendement-cafeier-a-l-hectare",
+    "mot_cle_principal": "rendement caféier à l'hectare",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/cafe",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/culture-du-cafeier-arabica-robusta",
+      "/cultures-de-rente/maladies-du-cafeier-traitement",
+      "/cultures-de-rente/transformation-cafe-decorticage",
+      "/cultures-de-rente/prix-du-cafe-marchand-local"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement caféier à l'hectare",
+      "naturelle_longue": "tout savoir sur rendement caféier à l'hectare",
+      "entite_seule": "Café",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/culture-du-coton-guide",
+    "mot_cle_principal": "culture du coton guide",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/coton",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-coton-a-l-hectare",
+      "/cultures-de-rente/prix-du-coton-graine",
+      "/cultures-de-rente/maladies-du-cotonnier-traitement",
+      "/cultures-de-rente/coton-biologique-afrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du coton guide",
+      "naturelle_longue": "tout savoir sur culture du coton guide",
+      "entite_seule": "Coton",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/maladies-du-cotonnier-traitement",
+    "mot_cle_principal": "maladies du cotonnier traitement",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/coton",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/prix-du-coton-graine",
+      "/cultures-de-rente/culture-du-coton-guide",
+      "/cultures-de-rente/coton-biologique-afrique",
+      "/cultures-de-rente/rendement-coton-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du cotonnier traitement",
+      "naturelle_longue": "maladies du cotonnier traitement",
+      "entite_seule": "Coton",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/prix-du-coton-graine",
+    "mot_cle_principal": "prix du coton graine",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/coton",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/coton-biologique-afrique",
+      "/cultures-de-rente/maladies-du-cotonnier-traitement",
+      "/cultures-de-rente/rendement-coton-a-l-hectare",
+      "/cultures-de-rente/culture-du-coton-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix du coton graine",
+      "naturelle_longue": "tout savoir sur prix du coton graine",
+      "entite_seule": "Coton",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/rendement-coton-a-l-hectare",
+    "mot_cle_principal": "rendement coton à l'hectare",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/coton",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/prix-du-coton-graine",
+      "/cultures-de-rente/coton-biologique-afrique",
+      "/cultures-de-rente/culture-du-coton-guide",
+      "/cultures-de-rente/maladies-du-cotonnier-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement coton à l'hectare",
+      "naturelle_longue": "tout savoir sur rendement coton à l'hectare",
+      "entite_seule": "Coton",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cultures-de-rente/coton-biologique-afrique",
+    "mot_cle_principal": "coton biologique Afrique",
+    "silo": "Cultures de rente",
+    "sous_hub": "/cultures-de-rente/coton",
+    "hub": "/cultures-de-rente",
+    "liens_lateraux": [
+      "/cultures-de-rente/rendement-coton-a-l-hectare",
+      "/cultures-de-rente/maladies-du-cotonnier-traitement",
+      "/cultures-de-rente/prix-du-coton-graine",
+      "/cultures-de-rente/culture-du-coton-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "coton biologique Afrique",
+      "naturelle_longue": "tout savoir sur coton biologique Afrique",
+      "entite_seule": "Coton",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/calendrier-cultural-mais",
+    "mot_cle_principal": "calendrier cultural maïs",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mais",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/variete-de-mais-resistante-secheresse",
+      "/cereales-cultures-vivrieres/prix-engrais-mais",
+      "/cereales-cultures-vivrieres/culture-du-mais-guide-complet",
+      "/cereales-cultures-vivrieres/maladies-du-mais-traitement",
+      "/cereales-cultures-vivrieres/rendement-mais-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "calendrier cultural maïs",
+      "naturelle_longue": "tout savoir sur calendrier cultural maïs",
+      "entite_seule": "Maïs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/rendement-mais-a-l-hectare",
+    "mot_cle_principal": "rendement maïs à l'hectare",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mais",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladies-du-mais-traitement",
+      "/cereales-cultures-vivrieres/culture-du-mais-guide-complet",
+      "/cereales-cultures-vivrieres/variete-de-mais-resistante-secheresse",
+      "/cereales-cultures-vivrieres/calendrier-cultural-mais",
+      "/cereales-cultures-vivrieres/prix-engrais-mais"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement maïs à l'hectare",
+      "naturelle_longue": "tout savoir sur rendement maïs à l'hectare",
+      "entite_seule": "Maïs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/culture-du-mais-guide-complet",
+    "mot_cle_principal": "culture du maïs guide complet",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mais",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladies-du-mais-traitement",
+      "/cereales-cultures-vivrieres/variete-de-mais-resistante-secheresse",
+      "/cereales-cultures-vivrieres/calendrier-cultural-mais",
+      "/cereales-cultures-vivrieres/rendement-mais-a-l-hectare",
+      "/cereales-cultures-vivrieres/prix-engrais-mais"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du maïs guide complet",
+      "naturelle_longue": "tout savoir sur culture du maïs guide complet",
+      "entite_seule": "Maïs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/maladies-du-mais-traitement",
+    "mot_cle_principal": "maladies du maïs traitement",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mais",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/calendrier-cultural-mais",
+      "/cereales-cultures-vivrieres/prix-engrais-mais",
+      "/cereales-cultures-vivrieres/variete-de-mais-resistante-secheresse",
+      "/cereales-cultures-vivrieres/culture-du-mais-guide-complet",
+      "/cereales-cultures-vivrieres/rendement-mais-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du maïs traitement",
+      "naturelle_longue": "tout savoir sur maladies du maïs traitement",
+      "entite_seule": "Maïs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/variete-de-mais-resistante-secheresse",
+    "mot_cle_principal": "variété de maïs résistante sécheresse",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mais",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/calendrier-cultural-mais",
+      "/cereales-cultures-vivrieres/maladies-du-mais-traitement",
+      "/cereales-cultures-vivrieres/culture-du-mais-guide-complet",
+      "/cereales-cultures-vivrieres/rendement-mais-a-l-hectare",
+      "/cereales-cultures-vivrieres/prix-engrais-mais"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "variété de maïs résistante sécheresse",
+      "naturelle_longue": "variété de maïs résistante sécheresse",
+      "entite_seule": "Maïs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/prix-engrais-mais",
+    "mot_cle_principal": "prix engrais maïs",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mais",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/calendrier-cultural-mais",
+      "/cereales-cultures-vivrieres/rendement-mais-a-l-hectare",
+      "/cereales-cultures-vivrieres/variete-de-mais-resistante-secheresse",
+      "/cereales-cultures-vivrieres/maladies-du-mais-traitement",
+      "/cereales-cultures-vivrieres/culture-du-mais-guide-complet"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix engrais maïs",
+      "naturelle_longue": "tout savoir sur prix engrais maïs",
+      "entite_seule": "Maïs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/riziculture-pluviale-technique",
+    "mot_cle_principal": "riziculture pluviale technique",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/riz",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/meilleure-variete-de-riz-nerica",
+      "/cereales-cultures-vivrieres/prix-du-riz-local-marche",
+      "/cereales-cultures-vivrieres/transformation-riz-decorticage",
+      "/cereales-cultures-vivrieres/riziculture-irriguee-rendement",
+      "/cereales-cultures-vivrieres/maladies-du-riz-pyriculariose"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "riziculture pluviale technique",
+      "naturelle_longue": "riziculture pluviale technique",
+      "entite_seule": "Riz",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/riziculture-irriguee-rendement",
+    "mot_cle_principal": "riziculture irriguée rendement",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/riz",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/prix-du-riz-local-marche",
+      "/cereales-cultures-vivrieres/meilleure-variete-de-riz-nerica",
+      "/cereales-cultures-vivrieres/riziculture-pluviale-technique",
+      "/cereales-cultures-vivrieres/transformation-riz-decorticage",
+      "/cereales-cultures-vivrieres/maladies-du-riz-pyriculariose"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "riziculture irriguée rendement",
+      "naturelle_longue": "riziculture irriguée rendement",
+      "entite_seule": "Riz",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/maladies-du-riz-pyriculariose",
+    "mot_cle_principal": "maladies du riz pyriculariose",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/riz",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/prix-du-riz-local-marche",
+      "/cereales-cultures-vivrieres/meilleure-variete-de-riz-nerica",
+      "/cereales-cultures-vivrieres/transformation-riz-decorticage",
+      "/cereales-cultures-vivrieres/riziculture-irriguee-rendement",
+      "/cereales-cultures-vivrieres/riziculture-pluviale-technique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du riz pyriculariose",
+      "naturelle_longue": "tout savoir sur maladies du riz pyriculariose",
+      "entite_seule": "Riz",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/meilleure-variete-de-riz-nerica",
+    "mot_cle_principal": "meilleure variété de riz NERICA",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/riz",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/transformation-riz-decorticage",
+      "/cereales-cultures-vivrieres/maladies-du-riz-pyriculariose",
+      "/cereales-cultures-vivrieres/prix-du-riz-local-marche",
+      "/cereales-cultures-vivrieres/riziculture-irriguee-rendement",
+      "/cereales-cultures-vivrieres/riziculture-pluviale-technique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleure variété de riz NERICA",
+      "naturelle_longue": "meilleure variété de riz NERICA",
+      "entite_seule": "Riz",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/prix-du-riz-local-marche",
+    "mot_cle_principal": "prix du riz local marché",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/riz",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladies-du-riz-pyriculariose",
+      "/cereales-cultures-vivrieres/transformation-riz-decorticage",
+      "/cereales-cultures-vivrieres/riziculture-pluviale-technique",
+      "/cereales-cultures-vivrieres/meilleure-variete-de-riz-nerica",
+      "/cereales-cultures-vivrieres/riziculture-irriguee-rendement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix du riz local marché",
+      "naturelle_longue": "tout savoir sur prix du riz local marché",
+      "entite_seule": "Riz",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/transformation-riz-decorticage",
+    "mot_cle_principal": "transformation riz décorticage",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/riz",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladies-du-riz-pyriculariose",
+      "/cereales-cultures-vivrieres/prix-du-riz-local-marche",
+      "/cereales-cultures-vivrieres/meilleure-variete-de-riz-nerica",
+      "/cereales-cultures-vivrieres/riziculture-pluviale-technique",
+      "/cereales-cultures-vivrieres/riziculture-irriguee-rendement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "transformation riz décorticage",
+      "naturelle_longue": "transformation riz décorticage",
+      "entite_seule": "Riz",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/culture-du-manioc-guide",
+    "mot_cle_principal": "culture du manioc guide",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/manioc",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/variete-de-manioc-resistante",
+      "/cereales-cultures-vivrieres/maladie-mosaique-du-manioc",
+      "/cereales-cultures-vivrieres/transformation-manioc-farine-gari",
+      "/cereales-cultures-vivrieres/prix-manioc-marche-local",
+      "/cereales-cultures-vivrieres/rendement-manioc-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du manioc guide",
+      "naturelle_longue": "tout savoir sur culture du manioc guide",
+      "entite_seule": "Manioc",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/maladie-mosaique-du-manioc",
+    "mot_cle_principal": "maladie mosaïque du manioc",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/manioc",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/rendement-manioc-a-l-hectare",
+      "/cereales-cultures-vivrieres/transformation-manioc-farine-gari",
+      "/cereales-cultures-vivrieres/variete-de-manioc-resistante",
+      "/cereales-cultures-vivrieres/prix-manioc-marche-local",
+      "/cereales-cultures-vivrieres/culture-du-manioc-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladie mosaïque du manioc",
+      "naturelle_longue": "tout savoir sur maladie mosaïque du manioc",
+      "entite_seule": "Manioc",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/variete-de-manioc-resistante",
+    "mot_cle_principal": "variété de manioc résistante",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/manioc",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/rendement-manioc-a-l-hectare",
+      "/cereales-cultures-vivrieres/transformation-manioc-farine-gari",
+      "/cereales-cultures-vivrieres/prix-manioc-marche-local",
+      "/cereales-cultures-vivrieres/maladie-mosaique-du-manioc",
+      "/cereales-cultures-vivrieres/culture-du-manioc-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "variété de manioc résistante",
+      "naturelle_longue": "tout savoir sur variété de manioc résistante",
+      "entite_seule": "Manioc",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/transformation-manioc-farine-gari",
+    "mot_cle_principal": "transformation manioc farine gari",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/manioc",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/variete-de-manioc-resistante",
+      "/cereales-cultures-vivrieres/prix-manioc-marche-local",
+      "/cereales-cultures-vivrieres/culture-du-manioc-guide",
+      "/cereales-cultures-vivrieres/rendement-manioc-a-l-hectare",
+      "/cereales-cultures-vivrieres/maladie-mosaique-du-manioc"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "transformation manioc farine gari",
+      "naturelle_longue": "transformation manioc farine gari",
+      "entite_seule": "Manioc",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/rendement-manioc-a-l-hectare",
+    "mot_cle_principal": "rendement manioc à l'hectare",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/manioc",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladie-mosaique-du-manioc",
+      "/cereales-cultures-vivrieres/prix-manioc-marche-local",
+      "/cereales-cultures-vivrieres/variete-de-manioc-resistante",
+      "/cereales-cultures-vivrieres/transformation-manioc-farine-gari",
+      "/cereales-cultures-vivrieres/culture-du-manioc-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement manioc à l'hectare",
+      "naturelle_longue": "tout savoir sur rendement manioc à l'hectare",
+      "entite_seule": "Manioc",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/prix-manioc-marche-local",
+    "mot_cle_principal": "prix manioc marché local",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/manioc",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladie-mosaique-du-manioc",
+      "/cereales-cultures-vivrieres/variete-de-manioc-resistante",
+      "/cereales-cultures-vivrieres/transformation-manioc-farine-gari",
+      "/cereales-cultures-vivrieres/culture-du-manioc-guide",
+      "/cereales-cultures-vivrieres/rendement-manioc-a-l-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix manioc marché local",
+      "naturelle_longue": "tout savoir sur prix manioc marché local",
+      "entite_seule": "Manioc",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/culture-du-mil-pluvial",
+    "mot_cle_principal": "culture du mil pluvial",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mil-sorgho",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladies-du-sorgho-traitement",
+      "/cereales-cultures-vivrieres/culture-du-sorgho-zone-sahelienne",
+      "/cereales-cultures-vivrieres/varietes-de-mil-resistantes",
+      "/cereales-cultures-vivrieres/rendement-mil-sorgho-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du mil pluvial",
+      "naturelle_longue": "tout savoir sur culture du mil pluvial",
+      "entite_seule": "Mil & sorgho",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/culture-du-sorgho-zone-sahelienne",
+    "mot_cle_principal": "culture du sorgho zone sahélienne",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mil-sorgho",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/maladies-du-sorgho-traitement",
+      "/cereales-cultures-vivrieres/varietes-de-mil-resistantes",
+      "/cereales-cultures-vivrieres/rendement-mil-sorgho-hectare",
+      "/cereales-cultures-vivrieres/culture-du-mil-pluvial"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du sorgho zone sahélienne",
+      "naturelle_longue": "culture du sorgho zone sahélienne",
+      "entite_seule": "Mil & sorgho",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/varietes-de-mil-resistantes",
+    "mot_cle_principal": "variétés de mil résistantes",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mil-sorgho",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/culture-du-mil-pluvial",
+      "/cereales-cultures-vivrieres/maladies-du-sorgho-traitement",
+      "/cereales-cultures-vivrieres/culture-du-sorgho-zone-sahelienne",
+      "/cereales-cultures-vivrieres/rendement-mil-sorgho-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "variétés de mil résistantes",
+      "naturelle_longue": "tout savoir sur variétés de mil résistantes",
+      "entite_seule": "Mil & sorgho",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/maladies-du-sorgho-traitement",
+    "mot_cle_principal": "maladies du sorgho traitement",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mil-sorgho",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/culture-du-sorgho-zone-sahelienne",
+      "/cereales-cultures-vivrieres/varietes-de-mil-resistantes",
+      "/cereales-cultures-vivrieres/culture-du-mil-pluvial",
+      "/cereales-cultures-vivrieres/rendement-mil-sorgho-hectare"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du sorgho traitement",
+      "naturelle_longue": "tout savoir sur maladies du sorgho traitement",
+      "entite_seule": "Mil & sorgho",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/cereales-cultures-vivrieres/rendement-mil-sorgho-hectare",
+    "mot_cle_principal": "rendement mil sorgho hectare",
+    "silo": "Céréales & cultures vivrières",
+    "sous_hub": "/cereales-cultures-vivrieres/mil-sorgho",
+    "hub": "/cereales-cultures-vivrieres",
+    "liens_lateraux": [
+      "/cereales-cultures-vivrieres/culture-du-sorgho-zone-sahelienne",
+      "/cereales-cultures-vivrieres/maladies-du-sorgho-traitement",
+      "/cereales-cultures-vivrieres/varietes-de-mil-resistantes",
+      "/cereales-cultures-vivrieres/culture-du-mil-pluvial"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement mil sorgho hectare",
+      "naturelle_longue": "tout savoir sur rendement mil sorgho hectare",
+      "entite_seule": "Mil & sorgho",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/prix-des-matieres-premieres-agricoles",
+    "mot_cle_principal": "prix des matières premières agricoles",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/prix-commercialisation",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/export-de-produits-agricoles-afrique",
+      "/financement-marches-metiers-agricoles/bourse-agricole-cotation",
+      "/financement-marches-metiers-agricoles/vendre-sa-recolte-au-meilleur-prix"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix des matières premières agricoles",
+      "naturelle_longue": "prix des matières premières agricoles",
+      "entite_seule": "Prix & commercialisation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/vendre-sa-recolte-au-meilleur-prix",
+    "mot_cle_principal": "vendre sa récolte au meilleur prix",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/prix-commercialisation",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/export-de-produits-agricoles-afrique",
+      "/financement-marches-metiers-agricoles/prix-des-matieres-premieres-agricoles",
+      "/financement-marches-metiers-agricoles/bourse-agricole-cotation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "vendre sa récolte au meilleur prix",
+      "naturelle_longue": "vendre sa récolte au meilleur prix",
+      "entite_seule": "Prix & commercialisation",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/export-de-produits-agricoles-afrique",
+    "mot_cle_principal": "export de produits agricoles Afrique",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/prix-commercialisation",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/vendre-sa-recolte-au-meilleur-prix",
+      "/financement-marches-metiers-agricoles/prix-des-matieres-premieres-agricoles",
+      "/financement-marches-metiers-agricoles/bourse-agricole-cotation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "export de produits agricoles Afrique",
+      "naturelle_longue": "export de produits agricoles Afrique",
+      "entite_seule": "Prix & commercialisation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/bourse-agricole-cotation",
+    "mot_cle_principal": "bourse agricole cotation",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/prix-commercialisation",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/vendre-sa-recolte-au-meilleur-prix",
+      "/financement-marches-metiers-agricoles/export-de-produits-agricoles-afrique",
+      "/financement-marches-metiers-agricoles/prix-des-matieres-premieres-agricoles"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "bourse agricole cotation",
+      "naturelle_longue": "tout savoir sur bourse agricole cotation",
+      "entite_seule": "Prix & commercialisation",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/formation-agricole-en-ligne",
+    "mot_cle_principal": "formation agricole en ligne",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/formations-jeunes-agripreneurs",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/femmes-entrepreneures-agricoles",
+      "/financement-marches-metiers-agricoles/metiers-de-l-agriculture-en-afrique",
+      "/financement-marches-metiers-agricoles/devenir-agripreneur-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "formation agricole en ligne",
+      "naturelle_longue": "tout savoir sur formation agricole en ligne",
+      "entite_seule": "Formations & jeunes agripreneurs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/devenir-agripreneur-guide",
+    "mot_cle_principal": "devenir agripreneur guide",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/formations-jeunes-agripreneurs",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/metiers-de-l-agriculture-en-afrique",
+      "/financement-marches-metiers-agricoles/formation-agricole-en-ligne",
+      "/financement-marches-metiers-agricoles/femmes-entrepreneures-agricoles"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "devenir agripreneur guide",
+      "naturelle_longue": "tout savoir sur devenir agripreneur guide",
+      "entite_seule": "Formations & jeunes agripreneurs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/metiers-de-l-agriculture-en-afrique",
+    "mot_cle_principal": "métiers de l'agriculture en Afrique",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/formations-jeunes-agripreneurs",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/devenir-agripreneur-guide",
+      "/financement-marches-metiers-agricoles/femmes-entrepreneures-agricoles",
+      "/financement-marches-metiers-agricoles/formation-agricole-en-ligne"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "métiers de l'agriculture en Afrique",
+      "naturelle_longue": "métiers de l'agriculture en Afrique",
+      "entite_seule": "Formations & jeunes agripreneurs",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/femmes-entrepreneures-agricoles",
+    "mot_cle_principal": "femmes entrepreneures agricoles",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/formations-jeunes-agripreneurs",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/formation-agricole-en-ligne",
+      "/financement-marches-metiers-agricoles/devenir-agripreneur-guide",
+      "/financement-marches-metiers-agricoles/metiers-de-l-agriculture-en-afrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "femmes entrepreneures agricoles",
+      "naturelle_longue": "femmes entrepreneures agricoles",
+      "entite_seule": "Formations & jeunes agripreneurs",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/financement-de-projet-agricole",
+    "mot_cle_principal": "financement de projet agricole",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/microcredit-cooperatives",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/assurance-agricole-indicielle",
+      "/financement-marches-metiers-agricoles/cooperative-agricole-avantages",
+      "/financement-marches-metiers-agricoles/microcredit-agricole-conditions"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "financement de projet agricole",
+      "naturelle_longue": "financement de projet agricole",
+      "entite_seule": "Microcrédit & coopératives",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/microcredit-agricole-conditions",
+    "mot_cle_principal": "microcrédit agricole conditions",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/microcredit-cooperatives",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/assurance-agricole-indicielle",
+      "/financement-marches-metiers-agricoles/financement-de-projet-agricole",
+      "/financement-marches-metiers-agricoles/cooperative-agricole-avantages"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "microcrédit agricole conditions",
+      "naturelle_longue": "microcrédit agricole conditions",
+      "entite_seule": "Microcrédit & coopératives",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/cooperative-agricole-avantages",
+    "mot_cle_principal": "coopérative agricole avantages",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/microcredit-cooperatives",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/financement-de-projet-agricole",
+      "/financement-marches-metiers-agricoles/assurance-agricole-indicielle",
+      "/financement-marches-metiers-agricoles/microcredit-agricole-conditions"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "coopérative agricole avantages",
+      "naturelle_longue": "coopérative agricole avantages",
+      "entite_seule": "Microcrédit & coopératives",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/financement-marches-metiers-agricoles/assurance-agricole-indicielle",
+    "mot_cle_principal": "assurance agricole indicielle",
+    "silo": "Financement, marchés & métiers agricoles",
+    "sous_hub": "/financement-marches-metiers-agricoles/microcredit-cooperatives",
+    "hub": "/financement-marches-metiers-agricoles",
+    "liens_lateraux": [
+      "/financement-marches-metiers-agricoles/microcredit-agricole-conditions",
+      "/financement-marches-metiers-agricoles/cooperative-agricole-avantages",
+      "/financement-marches-metiers-agricoles/financement-de-projet-agricole"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "assurance agricole indicielle",
+      "naturelle_longue": "tout savoir sur assurance agricole indicielle",
+      "entite_seule": "Microcrédit & coopératives",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/insecticide-naturel-maison",
+    "mot_cle_principal": "insecticide naturel maison",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/ravageurs-insectes",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/invasion-de-criquets-lutte",
+      "/maladies-ravageurs-des-cultures/chenille-legionnaire-d-automne-traitement",
+      "/maladies-ravageurs-des-cultures/ravageurs-du-stockage-des-cereales"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "insecticide naturel maison",
+      "naturelle_longue": "tout savoir sur insecticide naturel maison",
+      "entite_seule": "Ravageurs & insectes",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/chenille-legionnaire-d-automne-traitement",
+    "mot_cle_principal": "chenille légionnaire d'automne traitement",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/ravageurs-insectes",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/ravageurs-du-stockage-des-cereales",
+      "/maladies-ravageurs-des-cultures/invasion-de-criquets-lutte",
+      "/maladies-ravageurs-des-cultures/insecticide-naturel-maison"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "chenille légionnaire d'automne traitement",
+      "naturelle_longue": "chenille légionnaire d'automne traitement",
+      "entite_seule": "Ravageurs & insectes",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/invasion-de-criquets-lutte",
+    "mot_cle_principal": "invasion de criquets lutte",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/ravageurs-insectes",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/ravageurs-du-stockage-des-cereales",
+      "/maladies-ravageurs-des-cultures/insecticide-naturel-maison",
+      "/maladies-ravageurs-des-cultures/chenille-legionnaire-d-automne-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "invasion de criquets lutte",
+      "naturelle_longue": "tout savoir sur invasion de criquets lutte",
+      "entite_seule": "Ravageurs & insectes",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/ravageurs-du-stockage-des-cereales",
+    "mot_cle_principal": "ravageurs du stockage des céréales",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/ravageurs-insectes",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/insecticide-naturel-maison",
+      "/maladies-ravageurs-des-cultures/invasion-de-criquets-lutte",
+      "/maladies-ravageurs-des-cultures/chenille-legionnaire-d-automne-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "ravageurs du stockage des céréales",
+      "naturelle_longue": "ravageurs du stockage des céréales",
+      "entite_seule": "Ravageurs & insectes",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/mildiou-traitement-des-cultures",
+    "mot_cle_principal": "mildiou traitement des cultures",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/maladies-fongiques-virales",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/rouille-des-cultures-traitement",
+      "/maladies-ravageurs-des-cultures/fongicide-bio-agriculture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "mildiou traitement des cultures",
+      "naturelle_longue": "mildiou traitement des cultures",
+      "entite_seule": "Maladies fongiques & virales",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/rouille-des-cultures-traitement",
+    "mot_cle_principal": "rouille des cultures traitement",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/maladies-fongiques-virales",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/fongicide-bio-agriculture",
+      "/maladies-ravageurs-des-cultures/mildiou-traitement-des-cultures"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rouille des cultures traitement",
+      "naturelle_longue": "rouille des cultures traitement",
+      "entite_seule": "Maladies fongiques & virales",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/fongicide-bio-agriculture",
+    "mot_cle_principal": "fongicide bio agriculture",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/maladies-fongiques-virales",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/mildiou-traitement-des-cultures",
+      "/maladies-ravageurs-des-cultures/rouille-des-cultures-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "fongicide bio agriculture",
+      "naturelle_longue": "tout savoir sur fongicide bio agriculture",
+      "entite_seule": "Maladies fongiques & virales",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/lutte-biologique-en-agriculture-guide",
+    "mot_cle_principal": "lutte biologique en agriculture guide",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/lutte-biologique",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/biopesticide-fabrication-maison",
+      "/maladies-ravageurs-des-cultures/auxiliaires-des-cultures-insectes-utiles"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "lutte biologique en agriculture guide",
+      "naturelle_longue": "lutte biologique en agriculture guide",
+      "entite_seule": "Lutte biologique",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/auxiliaires-des-cultures-insectes-utiles",
+    "mot_cle_principal": "auxiliaires des cultures insectes utiles",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/lutte-biologique",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/biopesticide-fabrication-maison",
+      "/maladies-ravageurs-des-cultures/lutte-biologique-en-agriculture-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "auxiliaires des cultures insectes utiles",
+      "naturelle_longue": "auxiliaires des cultures insectes utiles",
+      "entite_seule": "Lutte biologique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maladies-ravageurs-des-cultures/biopesticide-fabrication-maison",
+    "mot_cle_principal": "biopesticide fabrication maison",
+    "silo": "Maladies & ravageurs des cultures",
+    "sous_hub": "/maladies-ravageurs-des-cultures/lutte-biologique",
+    "hub": "/maladies-ravageurs-des-cultures",
+    "liens_lateraux": [
+      "/maladies-ravageurs-des-cultures/auxiliaires-des-cultures-insectes-utiles",
+      "/maladies-ravageurs-des-cultures/lutte-biologique-en-agriculture-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "biopesticide fabrication maison",
+      "naturelle_longue": "biopesticide fabrication maison",
+      "entite_seule": "Lutte biologique",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/avantages-de-la-culture-sous-serre",
+    "mot_cle_principal": "avantages de la culture sous serre",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/cultures-sous-serre",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/goutte-a-goutte-sous-serre-installation",
+      "/maraichage-horticulture/prix-d-une-serre-maraichage",
+      "/maraichage-horticulture/serre-agricole-tropicale-construction"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "avantages de la culture sous serre",
+      "naturelle_longue": "avantages de la culture sous serre",
+      "entite_seule": "Cultures sous serre",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/serre-agricole-tropicale-construction",
+    "mot_cle_principal": "serre agricole tropicale construction",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/cultures-sous-serre",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/goutte-a-goutte-sous-serre-installation",
+      "/maraichage-horticulture/prix-d-une-serre-maraichage",
+      "/maraichage-horticulture/avantages-de-la-culture-sous-serre"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "serre agricole tropicale construction",
+      "naturelle_longue": "serre agricole tropicale construction",
+      "entite_seule": "Cultures sous serre",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/prix-d-une-serre-maraichage",
+    "mot_cle_principal": "prix d'une serre maraîchage",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/cultures-sous-serre",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/avantages-de-la-culture-sous-serre",
+      "/maraichage-horticulture/serre-agricole-tropicale-construction",
+      "/maraichage-horticulture/goutte-a-goutte-sous-serre-installation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix d'une serre maraîchage",
+      "naturelle_longue": "tout savoir sur prix d'une serre maraîchage",
+      "entite_seule": "Cultures sous serre",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/goutte-a-goutte-sous-serre-installation",
+    "mot_cle_principal": "goutte à goutte sous serre installation",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/cultures-sous-serre",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/prix-d-une-serre-maraichage",
+      "/maraichage-horticulture/avantages-de-la-culture-sous-serre",
+      "/maraichage-horticulture/serre-agricole-tropicale-construction"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "goutte à goutte sous serre installation",
+      "naturelle_longue": "goutte à goutte sous serre installation",
+      "entite_seule": "Cultures sous serre",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/culture-de-la-tomate-en-afrique",
+    "mot_cle_principal": "culture de la tomate en Afrique",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/legumes-maraichers",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/maladies-de-la-tomate-traitement",
+      "/maraichage-horticulture/prix-des-legumes-au-marche",
+      "/maraichage-horticulture/culture-de-l-oignon-technique",
+      "/maraichage-horticulture/calendrier-maraicher-saison-seche",
+      "/maraichage-horticulture/meilleur-engrais-pour-legumes"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture de la tomate en Afrique",
+      "naturelle_longue": "culture de la tomate en Afrique",
+      "entite_seule": "Légumes maraîchers",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/culture-de-l-oignon-technique",
+    "mot_cle_principal": "culture de l'oignon technique",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/legumes-maraichers",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/meilleur-engrais-pour-legumes",
+      "/maraichage-horticulture/prix-des-legumes-au-marche",
+      "/maraichage-horticulture/culture-de-la-tomate-en-afrique",
+      "/maraichage-horticulture/calendrier-maraicher-saison-seche",
+      "/maraichage-horticulture/maladies-de-la-tomate-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture de l'oignon technique",
+      "naturelle_longue": "tout savoir sur culture de l'oignon technique",
+      "entite_seule": "Légumes maraîchers",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/maladies-de-la-tomate-traitement",
+    "mot_cle_principal": "maladies de la tomate traitement",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/legumes-maraichers",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/culture-de-l-oignon-technique",
+      "/maraichage-horticulture/calendrier-maraicher-saison-seche",
+      "/maraichage-horticulture/prix-des-legumes-au-marche",
+      "/maraichage-horticulture/culture-de-la-tomate-en-afrique",
+      "/maraichage-horticulture/meilleur-engrais-pour-legumes"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies de la tomate traitement",
+      "naturelle_longue": "maladies de la tomate traitement",
+      "entite_seule": "Légumes maraîchers",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/calendrier-maraicher-saison-seche",
+    "mot_cle_principal": "calendrier maraîcher saison sèche",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/legumes-maraichers",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/maladies-de-la-tomate-traitement",
+      "/maraichage-horticulture/meilleur-engrais-pour-legumes",
+      "/maraichage-horticulture/prix-des-legumes-au-marche",
+      "/maraichage-horticulture/culture-de-la-tomate-en-afrique",
+      "/maraichage-horticulture/culture-de-l-oignon-technique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "calendrier maraîcher saison sèche",
+      "naturelle_longue": "calendrier maraîcher saison sèche",
+      "entite_seule": "Légumes maraîchers",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/meilleur-engrais-pour-legumes",
+    "mot_cle_principal": "meilleur engrais pour légumes",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/legumes-maraichers",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/calendrier-maraicher-saison-seche",
+      "/maraichage-horticulture/prix-des-legumes-au-marche",
+      "/maraichage-horticulture/culture-de-l-oignon-technique",
+      "/maraichage-horticulture/maladies-de-la-tomate-traitement",
+      "/maraichage-horticulture/culture-de-la-tomate-en-afrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "meilleur engrais pour légumes",
+      "naturelle_longue": "tout savoir sur meilleur engrais pour légumes",
+      "entite_seule": "Légumes maraîchers",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/prix-des-legumes-au-marche",
+    "mot_cle_principal": "prix des légumes au marché",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/legumes-maraichers",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/calendrier-maraicher-saison-seche",
+      "/maraichage-horticulture/culture-de-la-tomate-en-afrique",
+      "/maraichage-horticulture/maladies-de-la-tomate-traitement",
+      "/maraichage-horticulture/meilleur-engrais-pour-legumes",
+      "/maraichage-horticulture/culture-de-l-oignon-technique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix des légumes au marché",
+      "naturelle_longue": "tout savoir sur prix des légumes au marché",
+      "entite_seule": "Légumes maraîchers",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/culture-du-manguier-guide",
+    "mot_cle_principal": "culture du manguier guide",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/arboriculture-fruitiere",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/maladies-des-agrumes-traitement",
+      "/maraichage-horticulture/greffage-du-manguier-technique",
+      "/maraichage-horticulture/rendement-manguier-a-l-hectare",
+      "/maraichage-horticulture/prix-mangue-export"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "culture du manguier guide",
+      "naturelle_longue": "tout savoir sur culture du manguier guide",
+      "entite_seule": "Arboriculture fruitière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/greffage-du-manguier-technique",
+    "mot_cle_principal": "greffage du manguier technique",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/arboriculture-fruitiere",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/prix-mangue-export",
+      "/maraichage-horticulture/rendement-manguier-a-l-hectare",
+      "/maraichage-horticulture/culture-du-manguier-guide",
+      "/maraichage-horticulture/maladies-des-agrumes-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "greffage du manguier technique",
+      "naturelle_longue": "greffage du manguier technique",
+      "entite_seule": "Arboriculture fruitière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/maladies-des-agrumes-traitement",
+    "mot_cle_principal": "maladies des agrumes traitement",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/arboriculture-fruitiere",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/rendement-manguier-a-l-hectare",
+      "/maraichage-horticulture/greffage-du-manguier-technique",
+      "/maraichage-horticulture/prix-mangue-export",
+      "/maraichage-horticulture/culture-du-manguier-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies des agrumes traitement",
+      "naturelle_longue": "maladies des agrumes traitement",
+      "entite_seule": "Arboriculture fruitière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/rendement-manguier-a-l-hectare",
+    "mot_cle_principal": "rendement manguier à l'hectare",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/arboriculture-fruitiere",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/greffage-du-manguier-technique",
+      "/maraichage-horticulture/culture-du-manguier-guide",
+      "/maraichage-horticulture/maladies-des-agrumes-traitement",
+      "/maraichage-horticulture/prix-mangue-export"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "rendement manguier à l'hectare",
+      "naturelle_longue": "rendement manguier à l'hectare",
+      "entite_seule": "Arboriculture fruitière",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/maraichage-horticulture/prix-mangue-export",
+    "mot_cle_principal": "prix mangue export",
+    "silo": "Maraîchage & horticulture",
+    "sous_hub": "/maraichage-horticulture/arboriculture-fruitiere",
+    "hub": "/maraichage-horticulture",
+    "liens_lateraux": [
+      "/maraichage-horticulture/maladies-des-agrumes-traitement",
+      "/maraichage-horticulture/rendement-manguier-a-l-hectare",
+      "/maraichage-horticulture/greffage-du-manguier-technique",
+      "/maraichage-horticulture/culture-du-manguier-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix mangue export",
+      "naturelle_longue": "tout savoir sur prix mangue export",
+      "entite_seule": "Arboriculture fruitière",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/prix-engrais-agricole",
+    "mot_cle_principal": "prix engrais agricole",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/fertilisation-engrais",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/compost-et-fumier-utilisation",
+      "/sols-semences-intrants/carence-du-sol-agricole-signes",
+      "/sols-semences-intrants/engrais-npk-dosage",
+      "/sols-semences-intrants/engrais-organique-fabrication"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix engrais agricole",
+      "naturelle_longue": "tout savoir sur prix engrais agricole",
+      "entite_seule": "Fertilisation & engrais",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/engrais-npk-dosage",
+    "mot_cle_principal": "engrais NPK dosage",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/fertilisation-engrais",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/carence-du-sol-agricole-signes",
+      "/sols-semences-intrants/compost-et-fumier-utilisation",
+      "/sols-semences-intrants/prix-engrais-agricole",
+      "/sols-semences-intrants/engrais-organique-fabrication"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "engrais NPK dosage",
+      "naturelle_longue": "tout savoir sur engrais NPK dosage",
+      "entite_seule": "Fertilisation & engrais",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/engrais-organique-fabrication",
+    "mot_cle_principal": "engrais organique fabrication",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/fertilisation-engrais",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/prix-engrais-agricole",
+      "/sols-semences-intrants/compost-et-fumier-utilisation",
+      "/sols-semences-intrants/engrais-npk-dosage",
+      "/sols-semences-intrants/carence-du-sol-agricole-signes"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "engrais organique fabrication",
+      "naturelle_longue": "tout savoir sur engrais organique fabrication",
+      "entite_seule": "Fertilisation & engrais",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/compost-et-fumier-utilisation",
+    "mot_cle_principal": "compost et fumier utilisation",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/fertilisation-engrais",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/prix-engrais-agricole",
+      "/sols-semences-intrants/carence-du-sol-agricole-signes",
+      "/sols-semences-intrants/engrais-npk-dosage",
+      "/sols-semences-intrants/engrais-organique-fabrication"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "compost et fumier utilisation",
+      "naturelle_longue": "tout savoir sur compost et fumier utilisation",
+      "entite_seule": "Fertilisation & engrais",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/carence-du-sol-agricole-signes",
+    "mot_cle_principal": "carence du sol agricole signes",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/fertilisation-engrais",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/engrais-npk-dosage",
+      "/sols-semences-intrants/compost-et-fumier-utilisation",
+      "/sols-semences-intrants/prix-engrais-agricole",
+      "/sols-semences-intrants/engrais-organique-fabrication"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carence du sol agricole signes",
+      "naturelle_longue": "carence du sol agricole signes",
+      "entite_seule": "Fertilisation & engrais",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/lutte-integree-contre-les-ravageurs",
+    "mot_cle_principal": "lutte intégrée contre les ravageurs",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/produits-phytosanitaires",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/prix-produits-phytosanitaires",
+      "/sols-semences-intrants/pesticide-bio-agriculture",
+      "/sols-semences-intrants/utilisation-herbicide-dosage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "lutte intégrée contre les ravageurs",
+      "naturelle_longue": "lutte intégrée contre les ravageurs",
+      "entite_seule": "Produits phytosanitaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/pesticide-bio-agriculture",
+    "mot_cle_principal": "pesticide bio agriculture",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/produits-phytosanitaires",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/prix-produits-phytosanitaires",
+      "/sols-semences-intrants/lutte-integree-contre-les-ravageurs",
+      "/sols-semences-intrants/utilisation-herbicide-dosage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pesticide bio agriculture",
+      "naturelle_longue": "tout savoir sur pesticide bio agriculture",
+      "entite_seule": "Produits phytosanitaires",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/utilisation-herbicide-dosage",
+    "mot_cle_principal": "utilisation herbicide dosage",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/produits-phytosanitaires",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/lutte-integree-contre-les-ravageurs",
+      "/sols-semences-intrants/prix-produits-phytosanitaires",
+      "/sols-semences-intrants/pesticide-bio-agriculture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "utilisation herbicide dosage",
+      "naturelle_longue": "tout savoir sur utilisation herbicide dosage",
+      "entite_seule": "Produits phytosanitaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/prix-produits-phytosanitaires",
+    "mot_cle_principal": "prix produits phytosanitaires",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/produits-phytosanitaires",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/lutte-integree-contre-les-ravageurs",
+      "/sols-semences-intrants/utilisation-herbicide-dosage",
+      "/sols-semences-intrants/pesticide-bio-agriculture"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix produits phytosanitaires",
+      "naturelle_longue": "tout savoir sur prix produits phytosanitaires",
+      "entite_seule": "Produits phytosanitaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/semences-ameliorees-avantages",
+    "mot_cle_principal": "semences améliorées avantages",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/semences-ameliorees",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/semences-resistantes-a-la-secheresse",
+      "/sols-semences-intrants/ou-acheter-semences-certifiees",
+      "/sols-semences-intrants/production-de-semences-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "semences améliorées avantages",
+      "naturelle_longue": "tout savoir sur semences améliorées avantages",
+      "entite_seule": "Semences améliorées",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/ou-acheter-semences-certifiees",
+    "mot_cle_principal": "où acheter semences certifiées",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/semences-ameliorees",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/semences-resistantes-a-la-secheresse",
+      "/sols-semences-intrants/semences-ameliorees-avantages",
+      "/sols-semences-intrants/production-de-semences-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "où acheter semences certifiées",
+      "naturelle_longue": "où acheter semences certifiées",
+      "entite_seule": "Semences améliorées",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/semences-resistantes-a-la-secheresse",
+    "mot_cle_principal": "semences résistantes à la sécheresse",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/semences-ameliorees",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/semences-ameliorees-avantages",
+      "/sols-semences-intrants/ou-acheter-semences-certifiees",
+      "/sols-semences-intrants/production-de-semences-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "semences résistantes à la sécheresse",
+      "naturelle_longue": "semences résistantes à la sécheresse",
+      "entite_seule": "Semences améliorées",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/sols-semences-intrants/production-de-semences-guide",
+    "mot_cle_principal": "production de semences guide",
+    "silo": "Sols, semences & intrants",
+    "sous_hub": "/sols-semences-intrants/semences-ameliorees",
+    "hub": "/sols-semences-intrants",
+    "liens_lateraux": [
+      "/sols-semences-intrants/ou-acheter-semences-certifiees",
+      "/sols-semences-intrants/semences-ameliorees-avantages",
+      "/sols-semences-intrants/semences-resistantes-a-la-secheresse"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "production de semences guide",
+      "naturelle_longue": "tout savoir sur production de semences guide",
+      "entite_seule": "Semences améliorées",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/fabrication-aliment-pour-poisson",
+    "mot_cle_principal": "fabrication aliment pour poisson",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/pisciculture-aquaculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/maladies-des-poissons-d-elevage",
+      "/elevage-aquaculture/elevage-de-tilapia-rentable",
+      "/elevage-aquaculture/prix-alevins-de-tilapia",
+      "/elevage-aquaculture/pisciculture-en-etang-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "fabrication aliment pour poisson",
+      "naturelle_longue": "fabrication aliment pour poisson",
+      "entite_seule": "Pisciculture & aquaculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/pisciculture-en-etang-guide",
+    "mot_cle_principal": "pisciculture en étang guide",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/pisciculture-aquaculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/maladies-des-poissons-d-elevage",
+      "/elevage-aquaculture/elevage-de-tilapia-rentable",
+      "/elevage-aquaculture/prix-alevins-de-tilapia",
+      "/elevage-aquaculture/fabrication-aliment-pour-poisson"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "pisciculture en étang guide",
+      "naturelle_longue": "tout savoir sur pisciculture en étang guide",
+      "entite_seule": "Pisciculture & aquaculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/elevage-de-tilapia-rentable",
+    "mot_cle_principal": "élevage de tilapia rentable",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/pisciculture-aquaculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/fabrication-aliment-pour-poisson",
+      "/elevage-aquaculture/prix-alevins-de-tilapia",
+      "/elevage-aquaculture/pisciculture-en-etang-guide",
+      "/elevage-aquaculture/maladies-des-poissons-d-elevage"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "élevage de tilapia rentable",
+      "naturelle_longue": "tout savoir sur élevage de tilapia rentable",
+      "entite_seule": "Pisciculture & aquaculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/prix-alevins-de-tilapia",
+    "mot_cle_principal": "prix alevins de tilapia",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/pisciculture-aquaculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/elevage-de-tilapia-rentable",
+      "/elevage-aquaculture/maladies-des-poissons-d-elevage",
+      "/elevage-aquaculture/fabrication-aliment-pour-poisson",
+      "/elevage-aquaculture/pisciculture-en-etang-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix alevins de tilapia",
+      "naturelle_longue": "tout savoir sur prix alevins de tilapia",
+      "entite_seule": "Pisciculture & aquaculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/maladies-des-poissons-d-elevage",
+    "mot_cle_principal": "maladies des poissons d'élevage",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/pisciculture-aquaculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/pisciculture-en-etang-guide",
+      "/elevage-aquaculture/fabrication-aliment-pour-poisson",
+      "/elevage-aquaculture/elevage-de-tilapia-rentable",
+      "/elevage-aquaculture/prix-alevins-de-tilapia"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies des poissons d'élevage",
+      "naturelle_longue": "maladies des poissons d'élevage",
+      "entite_seule": "Pisciculture & aquaculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/fabrication-aliment-volaille",
+    "mot_cle_principal": "fabrication aliment volaille",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/aviculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/maladies-des-volailles-traitement",
+      "/elevage-aquaculture/prix-poussin-d-un-jour",
+      "/elevage-aquaculture/elevage-de-poulet-de-chair-guide",
+      "/elevage-aquaculture/elevage-de-poules-pondeuses-rentabilite"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "fabrication aliment volaille",
+      "naturelle_longue": "tout savoir sur fabrication aliment volaille",
+      "entite_seule": "Aviculture",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/prix-poussin-d-un-jour",
+    "mot_cle_principal": "prix poussin d'un jour",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/aviculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/fabrication-aliment-volaille",
+      "/elevage-aquaculture/elevage-de-poules-pondeuses-rentabilite",
+      "/elevage-aquaculture/maladies-des-volailles-traitement",
+      "/elevage-aquaculture/elevage-de-poulet-de-chair-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix poussin d'un jour",
+      "naturelle_longue": "tout savoir sur prix poussin d'un jour",
+      "entite_seule": "Aviculture",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/elevage-de-poulet-de-chair-guide",
+    "mot_cle_principal": "élevage de poulet de chair guide",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/aviculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/prix-poussin-d-un-jour",
+      "/elevage-aquaculture/fabrication-aliment-volaille",
+      "/elevage-aquaculture/elevage-de-poules-pondeuses-rentabilite",
+      "/elevage-aquaculture/maladies-des-volailles-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "élevage de poulet de chair guide",
+      "naturelle_longue": "élevage de poulet de chair guide",
+      "entite_seule": "Aviculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/elevage-de-poules-pondeuses-rentabilite",
+    "mot_cle_principal": "élevage de poules pondeuses rentabilité",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/aviculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/maladies-des-volailles-traitement",
+      "/elevage-aquaculture/fabrication-aliment-volaille",
+      "/elevage-aquaculture/elevage-de-poulet-de-chair-guide",
+      "/elevage-aquaculture/prix-poussin-d-un-jour"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "élevage de poules pondeuses rentabilité",
+      "naturelle_longue": "élevage de poules pondeuses rentabilité",
+      "entite_seule": "Aviculture",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/maladies-des-volailles-traitement",
+    "mot_cle_principal": "maladies des volailles traitement",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/aviculture",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/prix-poussin-d-un-jour",
+      "/elevage-aquaculture/elevage-de-poules-pondeuses-rentabilite",
+      "/elevage-aquaculture/fabrication-aliment-volaille",
+      "/elevage-aquaculture/elevage-de-poulet-de-chair-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies des volailles traitement",
+      "naturelle_longue": "maladies des volailles traitement",
+      "entite_seule": "Aviculture",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/elevage-bovin-embouche-guide",
+    "mot_cle_principal": "élevage bovin embouche guide",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/elevage-bovin-petits-ruminants",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/prix-bovin-marche-a-betail",
+      "/elevage-aquaculture/alimentation-du-betail-en-saison-seche",
+      "/elevage-aquaculture/elevage-de-chevres-rentable",
+      "/elevage-aquaculture/race-bovine-resistante-afrique",
+      "/elevage-aquaculture/maladies-du-betail-traitement"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "élevage bovin embouche guide",
+      "naturelle_longue": "tout savoir sur élevage bovin embouche guide",
+      "entite_seule": "Élevage bovin & petits ruminants",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/elevage-de-chevres-rentable",
+    "mot_cle_principal": "élevage de chèvres rentable",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/elevage-bovin-petits-ruminants",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/race-bovine-resistante-afrique",
+      "/elevage-aquaculture/alimentation-du-betail-en-saison-seche",
+      "/elevage-aquaculture/maladies-du-betail-traitement",
+      "/elevage-aquaculture/elevage-bovin-embouche-guide",
+      "/elevage-aquaculture/prix-bovin-marche-a-betail"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "élevage de chèvres rentable",
+      "naturelle_longue": "tout savoir sur élevage de chèvres rentable",
+      "entite_seule": "Élevage bovin & petits ruminants",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/maladies-du-betail-traitement",
+    "mot_cle_principal": "maladies du bétail traitement",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/elevage-bovin-petits-ruminants",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/elevage-bovin-embouche-guide",
+      "/elevage-aquaculture/prix-bovin-marche-a-betail",
+      "/elevage-aquaculture/alimentation-du-betail-en-saison-seche",
+      "/elevage-aquaculture/elevage-de-chevres-rentable",
+      "/elevage-aquaculture/race-bovine-resistante-afrique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "maladies du bétail traitement",
+      "naturelle_longue": "tout savoir sur maladies du bétail traitement",
+      "entite_seule": "Élevage bovin & petits ruminants",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/alimentation-du-betail-en-saison-seche",
+    "mot_cle_principal": "alimentation du bétail en saison sèche",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/elevage-bovin-petits-ruminants",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/prix-bovin-marche-a-betail",
+      "/elevage-aquaculture/elevage-bovin-embouche-guide",
+      "/elevage-aquaculture/maladies-du-betail-traitement",
+      "/elevage-aquaculture/race-bovine-resistante-afrique",
+      "/elevage-aquaculture/elevage-de-chevres-rentable"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "alimentation du bétail en saison sèche",
+      "naturelle_longue": "alimentation du bétail en saison sèche",
+      "entite_seule": "Élevage bovin & petits ruminants",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/prix-bovin-marche-a-betail",
+    "mot_cle_principal": "prix bovin marché à bétail",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/elevage-bovin-petits-ruminants",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/elevage-de-chevres-rentable",
+      "/elevage-aquaculture/maladies-du-betail-traitement",
+      "/elevage-aquaculture/race-bovine-resistante-afrique",
+      "/elevage-aquaculture/alimentation-du-betail-en-saison-seche",
+      "/elevage-aquaculture/elevage-bovin-embouche-guide"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "prix bovin marché à bétail",
+      "naturelle_longue": "tout savoir sur prix bovin marché à bétail",
+      "entite_seule": "Élevage bovin & petits ruminants",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/elevage-aquaculture/race-bovine-resistante-afrique",
+    "mot_cle_principal": "race bovine résistante Afrique",
+    "silo": "Élevage & aquaculture",
+    "sous_hub": "/elevage-aquaculture/elevage-bovin-petits-ruminants",
+    "hub": "/elevage-aquaculture",
+    "liens_lateraux": [
+      "/elevage-aquaculture/elevage-de-chevres-rentable",
+      "/elevage-aquaculture/maladies-du-betail-traitement",
+      "/elevage-aquaculture/elevage-bovin-embouche-guide",
+      "/elevage-aquaculture/alimentation-du-betail-en-saison-seche",
+      "/elevage-aquaculture/prix-bovin-marche-a-betail"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "race bovine résistante Afrique",
+      "naturelle_longue": "race bovine résistante Afrique",
+      "entite_seule": "Élevage bovin & petits ruminants",
+      "generique": "notre guide"
+    }
+  }
+]

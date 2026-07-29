@@ -1,0 +1,288 @@
+{
+  "silo": "Ports maritimes",
+  "seeds": {
+    "autorité portuaire rôle": {
+      "sub": "Gestion portuaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:10:44.530Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:10:47.148Z"
+    },
+    "investissements ports français": {
+      "sub": "Investissements portuaires",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:10:52.845Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:10:54.493Z"
+    },
+    "financement infrastructures portuaires": {
+      "sub": "Investissements portuaires",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:10:56.230Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:10:58.471Z"
+    },
+    "gestion portuaire": {
+      "sub": "Gestion portuaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:19.894Z",
+      "candidates": [
+        {
+          "keyword": "gestion portuaire pdf",
+          "volume": 10,
+          "competition": 0.0714,
+          "source": "match"
+        },
+        {
+          "keyword": "la gestion portuaire",
+          "volume": 10,
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "gestion portuaire",
+          "volume": 10,
+          "competition": 0.0571,
+          "source": "match"
+        },
+        {
+          "keyword": "gestion portuaire maritime pdf",
+          "volume": 10,
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "cours gestion portuaire pdf",
+          "volume": 10,
+          "competition": 0,
+          "source": "match"
+        },
+        {
+          "keyword": "formation en gestion portuaire",
+          "volume": 10,
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "gestion portuaire maritime",
+          "volume": 10,
+          "competition": 0.1429,
+          "source": "match"
+        },
+        {
+          "keyword": "administration maritime et gestion portuaire",
+          "volume": 10,
+          "competition": 0,
+          "source": "match"
+        },
+        {
+          "keyword": "formation gestion portuaire",
+          "volume": 10,
+          "competition": 0.22,
+          "source": "match"
+        },
+        {
+          "keyword": "mémoire sur la gestion portuaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "gestion portuaire cours",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "formation gestion portuaire france",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "gestion portuaire definition",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "master gestion portuaire maritime",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "C'est quoi la gestion portuaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "Qu'est-ce que la logistique de gestion portuaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "Quel est le travail de la gestion portuaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "societe de gestion portuaire de la guadeloupe",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "logiciel de gestion portuaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "qu'est-ce que la gestion portuaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:15:21.754Z"
+    },
+    "digitalisation portuaire": {
+      "sub": "Gestion portuaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:23.252Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:24.299Z"
+    },
+    "exploitation portuaire": {
+      "sub": "Gestion portuaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:25.730Z",
+      "candidates": [
+        {
+          "keyword": "exploitation portuaire",
+          "volume": 10,
+          "competition": 0.0357,
+          "source": "match"
+        },
+        {
+          "keyword": "directeur d'exploitation portuaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "exploitation portuaire définition",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "agent d'exploitation portuaire salaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "spl d'exploitation portuaire de la manche",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "C'est quoi l'exploitation portuaire ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "apm terminals est une société d'exploitation portuaire dont le siège social est situé à la haye aux pays-bas. filiale de la division transport et logistique de la compagnie maritime danoise maersk elle gère des terminaux à conteneurs et propose des services intégrés de fret et de transport terrestre. elle exploite 74 installations portuaires et terminalières dans 38 pays sur les cinq continents.",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "marsa maroc est un opérateur portuaire multitrafic occupant la place de leader de l'exploitation portuaire au maroc avec une présence significative dans l'ensemble des ports de commerce du maroc ainsi qu'au port de cotonou au bénin.",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "depuis sa création en 1854 katoen natie est passée de la fourniture de services d'exploitation portuaire et d'activités d'entreposage locales à la création d'un fournisseur mondial de services complets en matière de solutions logistiques et d'ingénierie .",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:15:27.162Z"
+    },
+    "modernisation portuaire": {
+      "sub": "Investissements portuaires",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:28.578Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:29.692Z"
+    },
+    "compétitivité des ports": {
+      "sub": "Compétitivité des ports",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:31.049Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:33.481Z"
+    },
+    "classement des ports maritimes": {
+      "sub": "Compétitivité des ports",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:34.904Z",
+      "candidates": [
+        {
+          "keyword": "quel est le classement des ports maritimes français ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:15:36.102Z"
+    },
+    "attractivité portuaire": {
+      "sub": "Compétitivité des ports",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:15:37.502Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:15:38.562Z"
+    }
+  }
+}

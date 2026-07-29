@@ -1,0 +1,173 @@
+{
+  "silo": "Peptides végétaux",
+  "seeds": {
+    "comparatif peptides pois riz soja": {
+      "sub": "Peptides de pois & riz",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:09:50.291Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:09:51.427Z"
+    },
+    "peptides de soja": {
+      "sub": "Peptides de soja",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:38.237Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:39.252Z"
+    },
+    "peptides de soja comparatif": {
+      "sub": "Peptides de soja",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:40.660Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:42.962Z"
+    },
+    "peptides de pois": {
+      "sub": "Peptides de pois & riz",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:44.340Z",
+      "candidates": [
+        {
+          "keyword": "peptides de pois et huile de ricin de typology",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "sérum cils & sourcils peptides de pois 2% + huile de ricin",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "peptides de pois cheveux",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "sérum cils & sourcils peptides de pois 2% + huile de ricin avis",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "À quoi servent les peptides de pois ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "Quand utiliser le sérum aux peptides de pois ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quand utiliser le sérum aux peptides de pois ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quels sont les avis sur le gel fortifiant sourcils peptides de pois + kératine végétale de typology ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "les peptides de pois sont une source exceptionnelle de vitamines (d e k et a) et d'acides aminés essentiels notamment la lysine un élément essentiel des cellules humaines. appliqués sur les cheveux les peptides de pois stimulent et renforcent les cellules souches folliculaires favorisant ainsi la croissance et la prévention de la chute des cheveux .",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "comment les atténuer ou les faire disparaître : appliquer quotidiennement un sérum sur les cils ; favoriser des ingrédients qui stimulent la pousse des cils (huile de ricin peptides de pois biotinyl-ghk etc...) ; utiliser un mascara.",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "gel fortifiant sourcils peptides de pois + kératine végétale",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "sérum mascara peptides de pois 1% + huile de ricin",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "qu'est-ce que les peptides de pois ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quels sont les avis sur le sérum aux peptides de pois aroma-zone ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "les peptides de pois sont-ils bons pour les cheveux ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:14:45.801Z"
+    },
+    "peptides de riz": {
+      "sub": "Peptides de pois & riz",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:47.213Z",
+      "candidates": [
+        {
+          "keyword": "ancien prix nouveau prix 400 00 € (800 00 €/100 ml.) le sérum à la texture coussin associant le pouvoir remodelant de la tourmaline micronisée aux peptides de riz stimulateurs de collagènes comble les volumes pour une morphologie du visage plus jeune.",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:14:48.401Z"
+    },
+    "peptides végétaux alternative": {
+      "sub": "Alternatives protéines animales",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:49.818Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:52.001Z"
+    },
+    "absorption peptides végétaux": {
+      "sub": "Alternatives protéines animales",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:53.404Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:54.973Z"
+    }
+  }
+}

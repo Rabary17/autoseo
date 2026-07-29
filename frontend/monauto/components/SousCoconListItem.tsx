@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 // Card sous-cocon pour la sidebar d'un hub — même forme visuelle que la grille
-// "Nos domaines d'expertise" de l'accueil (.silo/.silo__main/.silo__desc/.silo__count,
+// "Nos domaines d'expertise" de l'accueil (.silo/.silo__main/.silo__desc,
 // voir app/monauto.css et app/page.tsx), pour ne jamais faire diverger le style
 // entre les deux listings (demande explicite de l'utilisateur, 2026-07-26).
 // Un sous-cocon pas encore publié dans WordPress s'affiche quand même (liste
@@ -10,13 +10,11 @@ export default function SousCoconListItem({
   href,
   name,
   desc,
-  count,
   imageUrl,
 }: {
   href?: string;
   name: string;
   desc: string;
-  count: number;
   imageUrl?: string;
 }) {
   const content = (
@@ -39,7 +37,6 @@ export default function SousCoconListItem({
           </span>
         </span>
       </span>
-      <span className="silo__count">{count.toLocaleString("fr-FR")}</span>
     </>
   );
 

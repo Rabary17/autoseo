@@ -15,6 +15,21 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // pas encore branché sur l'optimiseur d'image Vercel — à réévaluer plus tard
   },
+  // 301 des URLs de l'ancien site "Tech'Cars" (agence auto à Laval, domaine
+  // racheté) trouvées via Wayback Machine (CDX API, 2026-07-29) — préserve le
+  // jus de lien des 143 domaines référents vers les rubriques les plus proches
+  // thématiquement. /contact existe déjà à l'identique (géré par trailingSlash).
+  async redirects() {
+    return [
+      { source: "/vehicule-d-occasion", destination: "/categorie/voiture-d-occasion/", permanent: true },
+      { source: "/service-carte-grise", destination: "/categorie/carte-grise-demarches/", permanent: true },
+      {
+        source: "/location",
+        destination: "/categorie/mobilite-partagee-transports/location-courte-longue-duree/",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

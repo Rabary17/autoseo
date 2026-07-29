@@ -1,0 +1,76 @@
+{
+  "Céréales & cultures vivrières": {
+    "icon": "🌽",
+    "subs": [
+      {"name": "Maïs", "kws": ["culture du maïs|I","maladies du maïs|I","rendement maïs hectare|I","variété de maïs|C","prix engrais maïs|T","calendrier maïs|I"]},
+      {"name": "Riz", "kws": ["riziculture pluviale|I","riziculture irriguée|I","pyriculariose du riz|I","riz NERICA|C","prix du riz|T","décorticage du riz|I"]},
+      {"name": "Manioc", "kws": ["culture du manioc|I","mosaïque du manioc|I","variété de manioc|C","farine de manioc gari|I","rendement manioc hectare|I","prix du manioc|T"]},
+      {"name": "Mil & sorgho", "kws": ["culture du mil|I","culture du sorgho|I","variété de mil|C","maladies du sorgho|I","rendement du mil|I"]}
+    ]
+  },
+  "Maraîchage & horticulture": {
+    "icon": "🥬",
+    "subs": [
+      {"name": "Légumes maraîchers", "kws": ["culture de la tomate|I","culture de l'oignon|I","maladies de la tomate|I","calendrier maraîcher|I","engrais pour légumes|C","prix des légumes|T"]},
+      {"name": "Arboriculture fruitière", "kws": ["culture du manguier|I","greffage du manguier|I","maladies des agrumes|I","rendement manguier hectare|I","prix de la mangue|T"]},
+      {"name": "Cultures sous serre", "kws": ["serre agricole tropicale|I","culture sous serre avantages|I","prix d'une serre|T","goutte à goutte sous serre|I"]}
+    ]
+  },
+  "Cultures de rente": {
+    "icon": "🍫",
+    "subs": [
+      {"name": "Cacao", "kws": ["culture du cacao|I","maladies du cacaoyer|I","prix du cacao|T","certification cacao|I","rendement cacaoyer hectare|I","variété de cacao|C"]},
+      {"name": "Café", "kws": ["culture du caféier|I","maladies du caféier|I","prix du café|T","décorticage du café|I","rendement caféier hectare|I"]},
+      {"name": "Coton", "kws": ["culture du coton|I","maladies du cotonnier|I","prix du coton|T","rendement coton hectare|I","coton biologique|I"]},
+      {"name": "Anacarde & palmier à huile", "kws": ["culture de l'anacardier|I","prix noix de cajou|T","culture du palmier à huile|I","maladies du palmier à huile|I","rendement anacarde hectare|I"]}
+    ]
+  },
+  "Élevage & aquaculture": {
+    "icon": "🐄",
+    "subs": [
+      {"name": "Élevage bovin & petits ruminants", "kws": ["élevage bovin embouche|I","élevage de chèvres|I","maladies du bétail|I","alimentation du bétail|I","prix d'un bovin|T","race bovine résistante|C"]},
+      {"name": "Aviculture", "kws": ["élevage de poulet de chair|I","élevage de poules pondeuses|I","maladies des volailles|I","aliment pour volaille|I","prix poussin|T"]},
+      {"name": "Pisciculture & aquaculture", "kws": ["pisciculture en étang|I","élevage de tilapia|I","aliment pour poisson|I","prix alevins tilapia|T","maladies des poissons|I"]}
+    ]
+  },
+  "Sols, semences & intrants": {
+    "icon": "🌱",
+    "subs": [
+      {"name": "Fertilisation & engrais", "kws": ["engrais NPK dosage|I","engrais organique|I","prix engrais agricole|T","compost et fumier|I","carence du sol|I"]},
+      {"name": "Semences améliorées", "kws": ["semences améliorées|I","semences certifiées|T","semences résistantes sécheresse|C","production de semences|I"]},
+      {"name": "Produits phytosanitaires", "kws": ["pesticide bio|I","dosage herbicide|I","prix produits phytosanitaires|T","lutte intégrée ravageurs|I"]}
+    ]
+  },
+  "Maladies & ravageurs des cultures": {
+    "icon": "🐛",
+    "subs": [
+      {"name": "Ravageurs & insectes", "kws": ["chenille légionnaire d'automne|I","invasion de criquets|I","insecticide naturel maison|I","ravageurs du stockage|I"]},
+      {"name": "Maladies fongiques & virales", "kws": ["mildiou traitement|I","rouille des cultures|I","fongicide bio|I"]},
+      {"name": "Lutte biologique", "kws": ["lutte biologique agriculture|I","insectes utiles cultures|I","biopesticide maison|I"]}
+    ]
+  },
+  "Agroéquipement & irrigation": {
+    "icon": "🚜",
+    "subs": [
+      {"name": "Tracteurs & motoculteurs", "kws": ["prix tracteur agricole occasion|T","motoculteur petite exploitation|C","entretien tracteur agricole|I","location de tracteur agricole|T"]},
+      {"name": "Irrigation & énergie solaire", "kws": ["irrigation goutte à goutte|I","prix pompe solaire irrigation|T","kit irrigation solaire|C","économie d'eau irrigation|I"]},
+      {"name": "Outillage & stockage", "kws": ["matériel agricole essentiel|I","silo de stockage céréales|I","prix outillage agricole|T"]}
+    ]
+  },
+  "Agroécologie & adaptation climatique": {
+    "icon": "🌍",
+    "subs": [
+      {"name": "Agroforesterie & compostage", "kws": ["agroforesterie avantages|I","compostage agricole|I","association cultures arbres|I"]},
+      {"name": "Adaptation à la sécheresse", "kws": ["cultures résistantes sécheresse|I","agriculture en zone aride|I","agriculture changement climatique|I"]},
+      {"name": "Permaculture tropicale", "kws": ["permaculture tropicale|I","débuter en permaculture|I","formation permaculture|T"]}
+    ]
+  },
+  "Financement, marchés & métiers agricoles": {
+    "icon": "💰",
+    "subs": [
+      {"name": "Microcrédit & coopératives", "kws": ["microcrédit agricole|I","coopérative agricole avantages|I","financement projet agricole|T","assurance agricole indicielle|I"]},
+      {"name": "Prix & commercialisation", "kws": ["prix matières premières agricoles|I","vendre sa récolte|I","export produits agricoles|I","cotation agricole|I"]},
+      {"name": "Formations & jeunes agripreneurs", "kws": ["formation agricole en ligne|T","devenir agripreneur|I","métiers de l'agriculture|I","femmes entrepreneures agricoles|I"]}
+    ]
+  }
+}

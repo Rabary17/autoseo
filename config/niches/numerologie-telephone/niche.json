@@ -1,0 +1,59 @@
+{
+  "id": "numerologie-telephone",
+  "name": "Numérologie Téléphone",
+  "data_dir": "data/niches/numerologie-telephone",
+  "authors": {
+    "A": {
+      "label": "A — Types d'arnaques & indicatifs",
+      "wp_slug": "auteur-a"
+    },
+    "B": {
+      "label": "B — Signalement, recours & protection",
+      "wp_slug": "auteur-b"
+    }
+  },
+  "silos": [
+    {
+      "name": "Indicatifs & numéros téléphoniques",
+      "hub_slug": "indicatifs-numeros-telephoniques",
+      "author": "A",
+      "sous_cocons": ["Indicatifs mobiles 06/07", "Numéros fixes régionaux", "Numéros surtaxés 08", "Numéros masqués & internationaux"],
+      "seeds_file": "indicatifs-numeros-telephoniques.json"
+    },
+    {
+      "name": "Types d'arnaques téléphoniques",
+      "hub_slug": "types-arnaques-telephoniques",
+      "author": "A",
+      "sous_cocons": ["Faux conseiller bancaire", "Arnaque au colis", "Arnaque CPF & administration", "Spoofing & usurpation de numéro"],
+      "seeds_file": "types-arnaques-telephoniques.json"
+    },
+    {
+      "name": "Ping call & rappel piégé",
+      "hub_slug": "ping-call-rappel-piege",
+      "author": "A",
+      "sous_cocons": ["Fonctionnement du ping call", "Numéros surtaxés audiotel", "Comment éviter le rappel"],
+      "seeds_file": "ping-call-rappel-piege.json"
+    },
+    {
+      "name": "Démarchage commercial & RGPD",
+      "hub_slug": "demarchage-commercial-rgpd",
+      "author": "B",
+      "sous_cocons": ["Opposition au démarchage (Bloctel)", "RGPD & données personnelles", "Démarchage travaux & assurance"],
+      "seeds_file": "demarchage-commercial-rgpd.json"
+    },
+    {
+      "name": "Signalement & recours",
+      "hub_slug": "signalement-recours",
+      "author": "B",
+      "sous_cocons": ["Signaler un numéro (33700)", "Plainte pour arnaque téléphonique", "Blocage d'un numéro"],
+      "seeds_file": "signalement-recours.json"
+    },
+    {
+      "name": "Protection & prévention",
+      "hub_slug": "protection-prevention",
+      "author": "B",
+      "sous_cocons": ["Applications anti-spam", "Paramètres téléphone anti-appel", "Conseils aux victimes"],
+      "seeds_file": "protection-prevention.json"
+    }
+  ]
+}

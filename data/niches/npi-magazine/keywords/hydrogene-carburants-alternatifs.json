@@ -1,0 +1,105 @@
+{
+  "silo": "Hydrogène & carburants alternatifs",
+  "seeds": {
+    "carburants alternatifs transport maritime": {
+      "sub": "Carburants alternatifs transport",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:12:40.934Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:12:42.028Z"
+    },
+    "GNL carburant maritime": {
+      "sub": "GNL maritime",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:12:48.555Z",
+      "candidates": [
+        {
+          "keyword": "gpl carburant",
+          "volume": 1727,
+          "competition": 0.01,
+          "source": "related"
+        },
+        {
+          "keyword": "gnl carburant maritime",
+          "volume": 10,
+          "competition": 0.0204,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T14:12:50.509Z"
+    },
+    "hydrogène logistique": {
+      "sub": "Hydrogène logistique",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:16:51.613Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:16:53.468Z"
+    },
+    "hydrogène transport de marchandises": {
+      "sub": "Hydrogène logistique",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:16:54.876Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:16:55.907Z"
+    },
+    "hydrogène vert logistique": {
+      "sub": "Hydrogène logistique",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:16:57.317Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:16:58.999Z"
+    },
+    "carburants alternatifs poids lourds": {
+      "sub": "Carburants alternatifs transport",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:00.807Z",
+      "candidates": [
+        {
+          "keyword": "carburants alternatifs poids lourds",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:17:02.671Z"
+    },
+    "biocarburant fret": {
+      "sub": "Carburants alternatifs transport",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:04.066Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:05.112Z"
+    },
+    "avitaillement GNL navires": {
+      "sub": "GNL maritime",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:06.548Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:07.592Z"
+    }
+  }
+}

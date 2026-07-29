@@ -1,0 +1,88 @@
+{
+  "id": "afrique-agriculture",
+  "name": "Afrique Agriculture",
+  "data_dir": "data/niches/afrique-agriculture",
+  "authors": {
+    "A": {
+      "label": "A — Cultures vivrières & maraîchage",
+      "wp_slug": "auteur-a"
+    },
+    "B": {
+      "label": "B — Cultures de rente & élevage",
+      "wp_slug": "auteur-b"
+    },
+    "C": {
+      "label": "C — Techniques, sols & agroéquipement",
+      "wp_slug": "auteur-c"
+    },
+    "D": {
+      "label": "D — Financement, marchés & formation",
+      "wp_slug": "auteur-d"
+    }
+  },
+  "silos": [
+    {
+      "name": "Céréales & cultures vivrières",
+      "hub_slug": "cereales-cultures-vivrieres",
+      "author": "A",
+      "sous_cocons": ["Maïs", "Riz", "Manioc", "Mil & sorgho"],
+      "seeds_file": "cereales-cultures-vivrieres.json"
+    },
+    {
+      "name": "Maraîchage & horticulture",
+      "hub_slug": "maraichage-horticulture",
+      "author": "A",
+      "sous_cocons": ["Légumes maraîchers", "Arboriculture fruitière", "Cultures sous serre"],
+      "seeds_file": "maraichage-horticulture.json"
+    },
+    {
+      "name": "Cultures de rente",
+      "hub_slug": "cultures-de-rente",
+      "author": "B",
+      "sous_cocons": ["Cacao", "Café", "Coton", "Anacarde & palmier à huile"],
+      "seeds_file": "cultures-de-rente.json"
+    },
+    {
+      "name": "Élevage & aquaculture",
+      "hub_slug": "elevage-aquaculture",
+      "author": "B",
+      "sous_cocons": ["Élevage bovin & petits ruminants", "Aviculture", "Pisciculture & aquaculture"],
+      "seeds_file": "elevage-aquaculture.json"
+    },
+    {
+      "name": "Sols, semences & intrants",
+      "hub_slug": "sols-semences-intrants",
+      "author": "C",
+      "sous_cocons": ["Fertilisation & engrais", "Semences améliorées", "Produits phytosanitaires"],
+      "seeds_file": "sols-semences-intrants.json"
+    },
+    {
+      "name": "Maladies & ravageurs des cultures",
+      "hub_slug": "maladies-ravageurs-cultures",
+      "author": "C",
+      "sous_cocons": ["Ravageurs & insectes", "Maladies fongiques & virales", "Lutte biologique"],
+      "seeds_file": "maladies-ravageurs-cultures.json"
+    },
+    {
+      "name": "Agroéquipement & irrigation",
+      "hub_slug": "agroequipement-irrigation",
+      "author": "C",
+      "sous_cocons": ["Tracteurs & motoculteurs", "Irrigation & énergie solaire", "Outillage & stockage"],
+      "seeds_file": "agroequipement-irrigation.json"
+    },
+    {
+      "name": "Agroécologie & adaptation climatique",
+      "hub_slug": "agroecologie-adaptation-climatique",
+      "author": "C",
+      "sous_cocons": ["Agroforesterie & compostage", "Adaptation à la sécheresse", "Permaculture tropicale"],
+      "seeds_file": "agroecologie-adaptation-climatique.json"
+    },
+    {
+      "name": "Financement, marchés & métiers agricoles",
+      "hub_slug": "financement-marches-metiers-agricoles",
+      "author": "D",
+      "sous_cocons": ["Microcrédit & coopératives", "Prix & commercialisation", "Formations & jeunes agripreneurs"],
+      "seeds_file": "financement-marches-metiers-agricoles.json"
+    }
+  ]
+}

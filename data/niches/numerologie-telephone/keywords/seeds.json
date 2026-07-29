@@ -1,0 +1,52 @@
+{
+  "Indicatifs & numéros téléphoniques": {
+    "icon": "📞",
+    "subs": [
+      {"name": "Indicatifs mobiles 06/07", "kws": ["qui m'a appelé numéro mobile|I","indicatif 06 07 origine|I","identifier un numéro de portable inconnu|I"]},
+      {"name": "Numéros fixes régionaux", "kws": ["indicatif téléphonique par région|I","numéro fixe qui appelle souvent|I","d'où vient ce numéro fixe|I"]},
+      {"name": "Numéros surtaxés 08", "kws": ["numéro 08 surtaxé|I","coût appel numéro 0899|T","éviter un numéro surtaxé|I"]},
+      {"name": "Numéros masqués & internationaux", "kws": ["numéro masqué qui a appelé|I","appel depuis l'étranger qui est-ce|I","indicatif international +33|I"]}
+    ]
+  },
+  "Types d'arnaques téléphoniques": {
+    "icon": "🚨",
+    "subs": [
+      {"name": "Faux conseiller bancaire", "kws": ["arnaque faux conseiller bancaire|I","reconnaître une arnaque bancaire|I"]},
+      {"name": "Arnaque au colis", "kws": ["arnaque SMS colis en attente|I","faux livreur appel arnaque|I"]},
+      {"name": "Arnaque CPF & administration", "kws": ["arnaque CPF téléphone|I","faux appel CAF sécurité sociale|I","arnaque impots.gouv téléphone|I"]},
+      {"name": "Spoofing & usurpation de numéro", "kws": ["spoofing téléphonique|I","usurpation de numéro de téléphone|I","mon numéro utilisé par un arnaqueur|I"]}
+    ]
+  },
+  "Ping call & rappel piégé": {
+    "icon": "📳",
+    "subs": [
+      {"name": "Fonctionnement du ping call", "kws": ["ping call c'est quoi|I","appel manqué numéro inconnu|I"]},
+      {"name": "Numéros surtaxés audiotel", "kws": ["numéro audiotel|I","rappeler un numéro surtaxé danger|I"]},
+      {"name": "Comment éviter le rappel", "kws": ["ne pas rappeler un numéro inconnu|I","éviter un ping call|I"]}
+    ]
+  },
+  "Démarchage commercial & RGPD": {
+    "icon": "📋",
+    "subs": [
+      {"name": "Opposition au démarchage (Bloctel)", "kws": ["inscription Bloctel|T","Bloctel ça marche vraiment|I"]},
+      {"name": "RGPD & données personnelles", "kws": ["RGPD démarchage téléphonique|I","droit d'opposition appel commercial|I"]},
+      {"name": "Démarchage travaux & assurance", "kws": ["démarchage travaux isolation arnaque|I","démarchage assurance téléphone|I"]}
+    ]
+  },
+  "Signalement & recours": {
+    "icon": "⚖️",
+    "subs": [
+      {"name": "Signaler un numéro (33700)", "kws": ["signaler un numéro suspect 33700|T","comment fonctionne le 33700|I"]},
+      {"name": "Plainte pour arnaque téléphonique", "kws": ["porter plainte arnaque téléphonique|I","recours arnaque téléphonique argent perdu|I"]},
+      {"name": "Blocage d'un numéro", "kws": ["bloquer un numéro sur iPhone|T","bloquer un numéro sur Android|T"]}
+    ]
+  },
+  "Protection & prévention": {
+    "icon": "🛡",
+    "subs": [
+      {"name": "Applications anti-spam", "kws": ["meilleure application anti spam appel|C","application identifier numéro inconnu|C"]},
+      {"name": "Paramètres téléphone anti-appel", "kws": ["filtre appel inconnu iPhone|T","bloquer les appels masqués Android|T"]},
+      {"name": "Conseils aux victimes", "kws": ["que faire après une arnaque téléphonique|I","victime arnaque téléphonique conseils|I"]}
+    ]
+  }
+}

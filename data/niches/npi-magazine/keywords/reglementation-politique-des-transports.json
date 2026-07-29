@@ -1,0 +1,193 @@
+{
+  "silo": "Réglementation & politique des transports",
+  "seeds": {
+    "politique européenne des transports": {
+      "sub": "Politique européenne des transports",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:13:26.395Z",
+      "candidates": [
+        {
+          "keyword": "politique européenne des transports",
+          "volume": 30,
+          "competition": 0,
+          "source": "match"
+        },
+        {
+          "keyword": "politique européenne des transports ferroviaire",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "Comment la politique européenne des transports Favorise-t-elle la construction d'un territoire européen commun ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "Comment la politique européenne des transports Favorise-t-elle la cohésion et la compétitivité des territoires ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "Quelle est la politique européenne des transports ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "quelle est la politique européenne des transports ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "transports définition",
+          "volume": 54,
+          "competition": 0,
+          "source": "questions"
+        },
+        {
+          "keyword": "où se trouve le siège de l'union européenne",
+          "volume": 50,
+          "competition": 0,
+          "source": "questions"
+        },
+        {
+          "keyword": "que fait l'union européenne pour développer les régions en difficulté",
+          "volume": 10,
+          "competition": 0,
+          "source": "questions"
+        },
+        {
+          "keyword": "Quelle institution européenne siège à Bruxelles ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Quelles sont les 4 institution de l'Union européenne ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Où siège l'Union européenne ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "Quelle région européenne est zone de grand développement ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "questions"
+        },
+        {
+          "keyword": "union européenne",
+          "volume": 40600,
+          "competition": null,
+          "source": "related"
+        },
+        {
+          "keyword": "transports depaeuw",
+          "volume": 1455,
+          "competition": 0.07,
+          "source": "related"
+        },
+        {
+          "keyword": "commission européenne bruxelles",
+          "volume": 1000,
+          "competition": 0,
+          "source": "related"
+        }
+      ],
+      "enriched_at": "2026-07-29T14:13:28.357Z"
+    },
+    "réglementation OMI transport maritime": {
+      "sub": "Normes internationales",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:13:40.221Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:13:41.221Z"
+    },
+    "réseau transeuropéen de transport": {
+      "sub": "Politique européenne des transports",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:39.135Z",
+      "candidates": [
+        {
+          "keyword": "réseau transeuropéen de transport",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "réseau transeuropéen de transport (rte-t)",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "la roumanie compte 17 aéroports internationaux dont 11 font partie du réseau transeuropéen de transport (ten-t).",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "la roumanie compte 17 aéroports internationaux dont 11 font partie du réseau transeuropéen de transport (ten-t). les aéroports roumains ont enregistré un trafic record de 26 m de passagers en 2024 soit une hausse de 11% par rapport à 2023 (24 5 m de passagers).",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "la politique du réseau transeuropéen de transport (rte-t) vise à construire un réseau multimodal de transport ferroviaire de routes de voies d'eau intérieure et de routes maritimes à courte distance reliées à des nœuds urbains à des ports maritimes et intérieurs ainsi qu'à des aéroports et à leurs terminaux dans l' ...",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:17:40.556Z"
+    },
+    "financement public infrastructures transport": {
+      "sub": "Financements publics infrastructures",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:41.973Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:43.041Z"
+    },
+    "subventions infrastructures logistiques": {
+      "sub": "Financements publics infrastructures",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:44.435Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:45.469Z"
+    },
+    "normes internationales transport maritime": {
+      "sub": "Normes internationales",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:47.072Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:49.279Z"
+    }
+  }
+}

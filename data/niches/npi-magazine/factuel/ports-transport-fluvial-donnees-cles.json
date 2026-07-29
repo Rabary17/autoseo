@@ -1,0 +1,216 @@
+{
+  "ports_maritimes": [
+    {
+      "nom": "Trafic Marseille-Fos 2025",
+      "donnee": "Le Grand Port Maritime de Marseille-Fos a enregistré environ 74-75 millions de tonnes de trafic en 2025, en hausse de 5% par rapport à 2024 (dont 43,5 Mt d'hydrocarbures et 1,45 million de conteneurs EVP).",
+      "annee": "2025",
+      "source": "Mer et Marine, https://www.meretmarine.com/fr/vie-portuaire/le-port-de-marseille-fos-a-vu-son-trafic-augmenter-de-5-en-2025",
+      "a_verifier": false
+    },
+    {
+      "nom": "Rang européen Marseille-Fos",
+      "donnee": "Marseille-Fos est le 1er port français et se classe autour du 4e rang parmi les ports européens en tonnage global ; c'est aussi le 3e port pétrolier d'Europe.",
+      "annee": "2025",
+      "source": "mesinfos.fr, https://mesinfos.fr/13000-marseille/marseille-fos-reste-le-troisieme-port-petrolier-d-europe-238094.html",
+      "a_verifier": false
+    },
+    {
+      "nom": "Trafic Haropa Port (Le Havre-Rouen-Paris) 2025",
+      "donnee": "Haropa Port a enregistré 84,7 millions de tonnes de trafic en 2025 (+2%), avec un record historique de trafic conteneurs (3,2 millions d'EVP) et un trafic hinterland record de 2,3 MEVP (+4%).",
+      "annee": "2025",
+      "source": "Mer et Marine, https://www.meretmarine.com/fr/vie-portuaire/haropa-port-un-trafic-en-hausse-de-2-en-2025",
+      "a_verifier": false
+    },
+    {
+      "nom": "Trafic Dunkerque 2025",
+      "donnee": "Le port de Dunkerque a traité 48 millions de tonnes en 2025, en hausse de 5% (la plus forte progression des grands ports de la rangée Nord-Europe), avec un trafic conteneurs de 747 000 EVP (+14%).",
+      "annee": "2025",
+      "source": "CNTPA / Ports et corridors, https://www.cntpa.org/bilan-de-lactivite-2025-du-port-de-dunkerque-lannee-se-termine-avec-une-hausse-de-5-et-48-mt-traitees/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Trafic Rotterdam 2025",
+      "donnee": "Le port de Rotterdam reste le premier port européen avec environ 428 millions de tonnes de trafic en 2025 (léger recul d'environ 1,7% sur un an), le trafic conteneurs progressant de 3,1% à 14,2 millions d'EVP.",
+      "annee": "2025",
+      "source": "Port of Rotterdam, https://www.portofrotterdam.com/en/pressroom/throughput-figures",
+      "a_verifier": true
+    },
+    {
+      "nom": "Trafic Anvers-Bruges 2025",
+      "donnee": "Le port d'Anvers-Bruges a enregistré 266,5 millions de tonnes en 2025 (-4,1%), les conteneurs représentant 149,5 Mt pour 13,6 millions d'EVP (+0,7%). 20 236 navires ont transité par le port en 2025.",
+      "annee": "2025",
+      "source": "Mer et Marine / Ports et corridors, https://www.meretmarine.com/fr/vie-portuaire/le-port-belge-d-anvers-bruges-a-vu-son-trafic-baisser-de-4-en-2025",
+      "a_verifier": false
+    },
+    {
+      "nom": "Trafic Hambourg 2025",
+      "donnee": "Le port de Hambourg a enregistré 114,6 millions de tonnes en 2025 (+2,6%), avec un trafic conteneurs en hausse de 7,3% à 8,3 millions d'EVP, mettant fin à trois années consécutives de baisse.",
+      "annee": "2025",
+      "source": "Mer et Marine / Port of Hamburg, https://www.hafen-hamburg.de/en/press1/news/hamburger-hafen-umschlagszahlen-2025-auf-einen-blick/",
+      "a_verifier": false
+    }
+  ],
+  "canal_seine_nord_europe": [
+    {
+      "nom": "Longueur du Canal Seine-Nord Europe",
+      "donnee": "Le canal à grand gabarit reliant Compiègne (Oise) à Aubencheul-au-Bac (Nord) mesure 107 kilomètres de long.",
+      "annee": "2026",
+      "source": "Cour des comptes, https://www.ccomptes.fr/fr/publications/la-construction-du-canal-seine-nord-europe-et-ses-consequences",
+      "a_verifier": false
+    },
+    {
+      "nom": "Coût estimé du projet",
+      "donnee": "Selon la Cour des comptes (rapport d'avril 2026), le coût du projet a quasiment doublé pour atteindre environ 7,3 milliards d'euros courants, contre 4,5 milliards d'euros budgétés initialement en 2017 ; en intégrant le coût du financement (prêt de refinancement estimé entre 1 et 3 milliards d'euros), le coût total pourrait avoisiner 10 milliards d'euros.",
+      "annee": "2026",
+      "source": "Cour des comptes (via La Gazette France), https://www.lagazettefrance.fr/article/canal-seine-nord-europe-la-derive-des-couts-cree-un-risque-fort-pour-l-etat-selon-la-cour-des-comptes",
+      "a_verifier": false
+    },
+    {
+      "nom": "Calendrier prévisionnel",
+      "donnee": "La mise en service du canal est envisagée à l'horizon 2030 ; certaines sources antérieures évoquaient une inauguration au second semestre 2027 pour une première section, mais le calendrier global fait l'objet de retards documentés par la Cour des comptes.",
+      "annee": "2026",
+      "source": "Wikipédia (synthèse) / Cour des comptes, https://fr.wikipedia.org/wiki/Canal_Seine-Nord_Europe",
+      "a_verifier": true
+    },
+    {
+      "nom": "Gabarit visé pour les péniches",
+      "donnee": "Le canal est dimensionné pour accueillir des bateaux fluviaux à grand gabarit jusqu'à 185 mètres de long et 11,40 mètres de large, pouvant transporter jusqu'à 4 400 tonnes de marchandises, soit l'équivalent d'environ 220 camions.",
+      "annee": "2026",
+      "source": "Presse régionale Hauts-de-France, https://media24.fr/2026/06/07/ce-chantier-gigantesque-dans-le-nord-de-la-france-va-doter-le-pays-dun-nouveau-canal-de-107-km-de-long-pour-un-cout-estime-a-a-73-milliards-deuros/",
+      "a_verifier": false
+    }
+  ],
+  "hydrogene_logistique": [
+    {
+      "nom": "Capacité installée Lhyfe",
+      "donnee": "Le producteur français d'hydrogène vert Lhyfe dispose d'une puissance d'électrolyse installée de 21 MW sur 4 sites opérationnels, avec environ 1,4 GW de projets en développement.",
+      "annee": "2026",
+      "source": "Batirama, https://www.batirama.com/article/94578-lhyfe-continue-son-developpement-mais-avant-tout-en-mobilite-et-en-industrie.html",
+      "a_verifier": false
+    },
+    {
+      "nom": "Croissance de capacité Lhyfe",
+      "donnee": "Lhyfe prévoit une augmentation de 70% de sa capacité de production d'hydrogène d'ici fin 2026.",
+      "annee": "2026",
+      "source": "Batirama, https://www.batirama.com/article/94578-lhyfe-continue-son-developpement-mais-avant-tout-en-mobilite-et-en-industrie.html",
+      "a_verifier": true
+    },
+    {
+      "nom": "Logistique hydrogène Lhyfe",
+      "donnee": "En 2025, Lhyfe a dépassé les 1 000 livraisons d'hydrogène vert dans neuf pays européens, avec une flotte de plus de 80 conteneurs hydrogène de type 4, l'une des plus importantes flottes modernes de transport d'hydrogène en vrac dans l'UE ; l'entreprise a renforcé cette flotte avec 84 conteneurs nouvelle génération.",
+      "annee": "2026",
+      "source": "JDL Groupe, https://jdlgroupe.com/2026/07/09/lhyfe-renforce-sa-logistique-hydrogene-vert-avec-84-conteneurs-nouvelle-generation/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Projet H2V Fos (port de Marseille-Fos)",
+      "donnee": "Le Grand Port Maritime de Marseille-Fos et H2V Fos prévoient un investissement de 750 millions d'euros dans six unités de production d'hydrogène vert (installation de 600 MW au total), déployées entre 2026 et 2031, pour une production annuelle visée d'environ 84 000 tonnes.",
+      "annee": "2026",
+      "source": "L'Usine Nouvelle, https://www.usinenouvelle.com/article/le-port-de-marseille-fos-et-h2v-fos-vont-investir-750-millions-d-euros-dans-six-unites-de-production-d-hydrogene-vert.N1774567",
+      "a_verifier": false
+    },
+    {
+      "nom": "Projet H4 Marseille Fos (e-SAF)",
+      "donnee": "Le projet H4 Marseille Fos (Hyport) prévoit la construction de trois unités de production d'hydrogène pour une capacité électrique combinée de 300 MW, avec un objectif de production allant jusqu'à 75 000 tonnes d'e-SAF (carburant aviation durable) d'ici 2030.",
+      "annee": "2026",
+      "source": "H2 Mobile, https://www.h2-mobile.fr/actus/hydrogene-h4-marseille-fos-projet-e-saf-300-mw-2030/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Projet DHUNE au port de Dunkerque",
+      "donnee": "Le projet DHUNE (réseau de transport d'hydrogène à Dunkerque) prévoit une capacité de transport de 20 GWh/jour, équivalant à 1 GW de puissance d'électrolyse installée ou importée, avec une première section de 10 km visée pour 2027 et une extension possible jusqu'à 50 km après 2030, en interconnexion avec la Belgique.",
+      "annee": "2026",
+      "source": "France Hydrogène, https://www.france-hydrogene.org/transport-dhydrogene-les-etudes-dingenierie-lancees-pour-le-projet-dhune-a-dunkerque/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Objectif import hydrogène Rotterdam 2030",
+      "donnee": "Le port de Rotterdam vise l'importation d'environ 4 millions de tonnes d'hydrogène d'ici 2030, complétées par 0,6 million de tonnes de production locale, soit près de 25% de l'objectif européen RePowerEU (20 millions de tonnes produites/importées).",
+      "annee": "2026",
+      "source": "Port of Rotterdam, https://www.portofrotterdam.com/en/port-future/energy-transition/ongoing-projects/hydrogen-rotterdam/import-of-hydrogen",
+      "a_verifier": false
+    }
+  ],
+  "alimentation_electrique_a_quai_ops": [
+    {
+      "nom": "Obligation FuelEU Maritime pour l'OPS",
+      "donnee": "À partir du 1er janvier 2030, les porte-conteneurs de plus de 5 000 tonnes de jauge brute et les navires à passagers (dont ferries et paquebots de croisière) devront se raccorder à une alimentation électrique à quai (OPS) ou utiliser une technologie équivalente zéro émission dans les ports du réseau transeuropéen de transport (TEN-T) concernés.",
+      "annee": "2026",
+      "source": "Ministère de la Transition écologique, https://www.mer.gouv.fr/le-reglement-fueleu-maritime",
+      "a_verifier": false
+    },
+    {
+      "nom": "État actuel de l'équipement OPS en Europe",
+      "donnee": "51 ports répartis dans 15 États membres côtiers de l'UE sont actuellement équipés d'infrastructures d'alimentation électrique à quai (340 connecteurs haute et basse tension), fournissant une puissance totale de 309 MW, dont 283 MW dédiés aux porte-conteneurs et navires à passagers.",
+      "annee": "2025",
+      "source": "Actu Transport Logistique / Le Journal de la Marine Marchande (synthèse d'une étude européenne), https://www.bateau-electrique.com/actualites/electrification-quai-prend-retard-ports-europeens/",
+      "a_verifier": true
+    },
+    {
+      "nom": "Retard de mise en conformité 2030",
+      "donnee": "Seuls environ 20% des raccordements électriques à quai requis d'ici 2030 ont été installés dans les 31 principaux ports européens analysés dans une étude récente ; seuls 4 ports (Algeciras en Espagne, Livourne en Italie, Świnoujście en Pologne, La Valette à Malte) dépassent 50% de conformité.",
+      "annee": "2025",
+      "source": "Le Journal de la Marine Marchande, https://www.journalmarinemarchande.fr/ports/2025/07/branchement-electrique-a-quai-une-tres-lente-mise-en-conformite/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Électrification des quais de croisière au Havre (Haropa Port)",
+      "donnee": "Haropa Port a réalisé le premier branchement électrique à quai d'un navire de croisière au Havre le 30 octobre 2025 (poste Pierre Callet) ; les trois postes du terminal croisière seront opérationnels en 2026, pour une puissance simultanée totale de 30 MW, évitant l'émission de 15 000 à 20 000 tonnes de CO2 par an.",
+      "annee": "2025",
+      "source": "Haropa Port, https://www.haropaport.com/sites/default/files/media/downloads/communique_de_presse_-_1er_branchement_renaq_def_0.pdf",
+      "a_verifier": false
+    },
+    {
+      "nom": "Électrification des terminaux conteneurs Haropa Port",
+      "donnee": "Haropa Port débute l'électrification de ses terminaux à conteneurs, avec le terminal Amériques du Havre comme premier équipé, visé d'ici 2028 ; le port a obtenu 6,1 millions d'euros de financement européen pour ces investissements d'électrification.",
+      "annee": "2025",
+      "source": "Le Journal de la Marine Marchande, https://www.journalmarinemarchande.fr/shipping/2025/11/haropa-port-obtient-61-me-de-financement-europeen-pour-lelectrification-de-ses-terminaux/",
+      "a_verifier": false
+    }
+  ],
+  "transport_fluvial_france": [
+    {
+      "nom": "Tonnage transporté par voie fluviale en France en 2024",
+      "donnee": "43,7 millions de tonnes de marchandises ont été transportées sur le réseau fluvial français en 2024, en hausse de 2,9% par rapport à 2023, équivalant à environ 2 185 000 camions et évitant l'émission de 404 000 tonnes de CO2.",
+      "annee": "2024",
+      "source": "Voies Navigables de France (VNF), https://www.vnf.fr/vnf/presses/fret-fluvial-de-nouveaux-segments-de-marche-dynamiques/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Évolution par filière industrielle (2024)",
+      "donnee": "En 2024, les filières chimie (engrais et produits chimiques) et métallurgie ont tiré la croissance du fluvial avec des hausses respectives de 17,8% et 7,8% par rapport à 2023, tandis que les céréales et matériaux de construction ont reculé (entre -2,5% et -4%). Le transport de conteneurs a progressé de plus de 5%, avec 570 000 EVP transportés sur le réseau.",
+      "annee": "2024",
+      "source": "Voies Navigables de France (VNF), https://www.vnf.fr/vnf/presses/fret-fluvial-de-nouveaux-segments-de-marche-dynamiques/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Part modale du fluvial sur le Rhin français",
+      "donnee": "23,4% de l'ensemble du transport fluvial en France a été réalisé sur le Rhin français en 2024 ; dans les principaux bassins de navigation ouverts sur les pays voisins, la part modale de la voie d'eau dépasse 15%.",
+      "annee": "2024",
+      "source": "Voies Navigables de France (VNF), https://www.vnf.fr/vnf/app/uploads/2025/10/Observatoire-du-transport-fluvial-2024.pdf",
+      "a_verifier": true
+    },
+    {
+      "nom": "Étendue du réseau navigable français",
+      "donnee": "Le réseau navigable français est le plus vaste d'Europe avec un linéaire total de 8 600 kilomètres, dont 6 700 kilomètres sont gérés par Voies Navigables de France (VNF).",
+      "annee": "2025",
+      "source": "Voies Navigables de France (VNF), https://www.vnf.fr/vnf/accueil/qui-sommes-nous-vnf/le-reseau-navigable/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Composition des infrastructures gérées par VNF",
+      "donnee": "Les 6 700 km de réseau géré par VNF se composent de 3 800 km de canaux et 2 900 km de rivières navigables, avec 494 barrages, 1 595 écluses, 74 aqueducs, 65 réservoirs et 35 tunnels, ainsi que 40 000 hectares de domaine public.",
+      "annee": "2025",
+      "source": "Voies Navigables de France (VNF), https://www.vnf.fr/vnf/accueil/qui-sommes-nous-vnf/le-reseau-navigable/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Couverture territoriale du réseau VNF",
+      "donnee": "Le réseau géré par VNF traverse 3 119 communes, où réside 34% de la population française.",
+      "annee": "2025",
+      "source": "Voies Navigables de France (VNF), https://www.vnf.fr/vnf/accueil/qui-sommes-nous-vnf/le-reseau-navigable/",
+      "a_verifier": false
+    }
+  ],
+  "note_generale": "Dataset factuel compilé par recherche web (WebSearch/WebFetch) pour le silo 'Ports, transport fluvial et intermodalité' du site npi-magazine.com. Toutes les données proviennent de sources identifiées (presse spécialisée maritime/fluviale, autorités portuaires, VNF, Cour des comptes, ministère de la Transition écologique, entreprises citées) avec URL. Les chiffres 2025-2026 sont sujets à révisions ultérieures (bilans définitifs, ajustements de calendrier ou de coûts, notamment pour le Canal Seine-Nord Europe et les projets hydrogène en développement). Les entrées marquées 'a_verifier: true' correspondent à des données dont la source primaire n'a pas pu être consultée directement (paywall, page inaccessible) ou dont plusieurs sources se contredisent légèrement ; elles doivent être recoupées avant publication dans un article. Ne pas extrapoler au-delà des chiffres cités."
+}

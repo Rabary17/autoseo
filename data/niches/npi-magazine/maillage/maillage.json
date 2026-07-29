@@ -1,0 +1,1040 @@
+[
+  {
+    "url": "/digitalisation-innovation/solutions-numeriques-pour-la-supervision-d-infrastructures",
+    "mot_cle_principal": "solutions numériques pour la supervision d'infrastructures",
+    "silo": "Digitalisation & innovation",
+    "sous_hub": "/digitalisation-innovation/supervision-numerique-des-infrastructures",
+    "hub": "/digitalisation-innovation",
+    "liens_lateraux": [
+      "/digitalisation-innovation/jumeau-numerique-infrastructure-portuaire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "solutions numériques pour la supervision d'infrastructures",
+      "naturelle_longue": "solutions numériques pour la supervision d'infrastructures",
+      "entite_seule": "Supervision numérique des infrastructures",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/digitalisation-innovation/jumeau-numerique-infrastructure-portuaire",
+    "mot_cle_principal": "jumeau numérique infrastructure portuaire",
+    "silo": "Digitalisation & innovation",
+    "sous_hub": "/digitalisation-innovation/supervision-numerique-des-infrastructures",
+    "hub": "/digitalisation-innovation",
+    "liens_lateraux": [
+      "/digitalisation-innovation/solutions-numeriques-pour-la-supervision-d-infrastructures"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "jumeau numérique infrastructure portuaire",
+      "naturelle_longue": "jumeau numérique infrastructure portuaire",
+      "entite_seule": "Supervision numérique des infrastructures",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/digitalisation-innovation/intelligence-artificielle-logistique-portuaire",
+    "mot_cle_principal": "intelligence artificielle logistique portuaire",
+    "silo": "Digitalisation & innovation",
+    "sous_hub": "/digitalisation-innovation/intelligence-artificielle-logistique",
+    "hub": "/digitalisation-innovation",
+    "liens_lateraux": [
+      "/digitalisation-innovation/ia-et-prevision-du-trafic-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "intelligence artificielle logistique portuaire",
+      "naturelle_longue": "intelligence artificielle logistique portuaire",
+      "entite_seule": "Intelligence artificielle logistique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/digitalisation-innovation/ia-et-prevision-du-trafic-maritime",
+    "mot_cle_principal": "IA et prévision du trafic maritime",
+    "silo": "Digitalisation & innovation",
+    "sous_hub": "/digitalisation-innovation/intelligence-artificielle-logistique",
+    "hub": "/digitalisation-innovation",
+    "liens_lateraux": [
+      "/digitalisation-innovation/intelligence-artificielle-logistique-portuaire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "IA et prévision du trafic maritime",
+      "naturelle_longue": "IA et prévision du trafic maritime",
+      "entite_seule": "Intelligence artificielle logistique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/digitalisation-innovation/automatisation-portuaire-equipements",
+    "mot_cle_principal": "automatisation portuaire équipements",
+    "silo": "Digitalisation & innovation",
+    "sous_hub": "/digitalisation-innovation/automatisation-portuaire",
+    "hub": "/digitalisation-innovation",
+    "liens_lateraux": [
+      "/digitalisation-innovation/robotique-dans-les-terminaux-portuaires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "automatisation portuaire équipements",
+      "naturelle_longue": "automatisation portuaire équipements",
+      "entite_seule": "Automatisation portuaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/digitalisation-innovation/robotique-dans-les-terminaux-portuaires",
+    "mot_cle_principal": "robotique dans les terminaux portuaires",
+    "silo": "Digitalisation & innovation",
+    "sous_hub": "/digitalisation-innovation/automatisation-portuaire",
+    "hub": "/digitalisation-innovation",
+    "liens_lateraux": [
+      "/digitalisation-innovation/automatisation-portuaire-equipements"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "robotique dans les terminaux portuaires",
+      "naturelle_longue": "robotique dans les terminaux portuaires",
+      "entite_seule": "Automatisation portuaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/gnl-carburant-maritime",
+    "mot_cle_principal": "GNL carburant maritime",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/gnl-maritime",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/avitaillement-gnl-des-navires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "GNL carburant maritime",
+      "naturelle_longue": "tout savoir sur GNL carburant maritime",
+      "entite_seule": "GNL maritime",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/avitaillement-gnl-des-navires",
+    "mot_cle_principal": "avitaillement GNL des navires",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/gnl-maritime",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/gnl-carburant-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "avitaillement GNL des navires",
+      "naturelle_longue": "tout savoir sur avitaillement GNL des navires",
+      "entite_seule": "GNL maritime",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/hydrogene-logistique-marche-europeen",
+    "mot_cle_principal": "hydrogène logistique marché européen",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/hydrogene-logistique",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/hydrogene-pour-le-transport-de-marchandises",
+      "/hydrogene-carburants-alternatifs/production-d-hydrogene-vert-pour-la-logistique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "hydrogène logistique marché européen",
+      "naturelle_longue": "hydrogène logistique marché européen",
+      "entite_seule": "Hydrogène logistique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/hydrogene-pour-le-transport-de-marchandises",
+    "mot_cle_principal": "hydrogène pour le transport de marchandises",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/hydrogene-logistique",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/production-d-hydrogene-vert-pour-la-logistique",
+      "/hydrogene-carburants-alternatifs/hydrogene-logistique-marche-europeen"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "hydrogène pour le transport de marchandises",
+      "naturelle_longue": "hydrogène pour le transport de marchandises",
+      "entite_seule": "Hydrogène logistique",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/production-d-hydrogene-vert-pour-la-logistique",
+    "mot_cle_principal": "production d'hydrogène vert pour la logistique",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/hydrogene-logistique",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/hydrogene-pour-le-transport-de-marchandises",
+      "/hydrogene-carburants-alternatifs/hydrogene-logistique-marche-europeen"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "production d'hydrogène vert pour la logistique",
+      "naturelle_longue": "production d'hydrogène vert pour la logistique",
+      "entite_seule": "Hydrogène logistique",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/carburants-alternatifs-transport-maritime",
+    "mot_cle_principal": "carburants alternatifs transport maritime",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/carburants-alternatifs-transport",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/carburants-alternatifs-pour-poids-lourds",
+      "/hydrogene-carburants-alternatifs/biocarburant-pour-le-transport-de-fret"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carburants alternatifs transport maritime",
+      "naturelle_longue": "carburants alternatifs transport maritime",
+      "entite_seule": "Carburants alternatifs transport",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/carburants-alternatifs-pour-poids-lourds",
+    "mot_cle_principal": "carburants alternatifs pour poids lourds",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/carburants-alternatifs-transport",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/carburants-alternatifs-transport-maritime",
+      "/hydrogene-carburants-alternatifs/biocarburant-pour-le-transport-de-fret"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "carburants alternatifs pour poids lourds",
+      "naturelle_longue": "carburants alternatifs pour poids lourds",
+      "entite_seule": "Carburants alternatifs transport",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/hydrogene-carburants-alternatifs/biocarburant-pour-le-transport-de-fret",
+    "mot_cle_principal": "biocarburant pour le transport de fret",
+    "silo": "Hydrogène & carburants alternatifs",
+    "sous_hub": "/hydrogene-carburants-alternatifs/carburants-alternatifs-transport",
+    "hub": "/hydrogene-carburants-alternatifs",
+    "liens_lateraux": [
+      "/hydrogene-carburants-alternatifs/carburants-alternatifs-pour-poids-lourds",
+      "/hydrogene-carburants-alternatifs/carburants-alternatifs-transport-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "biocarburant pour le transport de fret",
+      "naturelle_longue": "biocarburant pour le transport de fret",
+      "entite_seule": "Carburants alternatifs transport",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/normes-energetiques-infrastructures-portuaires",
+    "mot_cle_principal": "normes énergétiques infrastructures portuaires",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/normes-energetiques-portuaires",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/reglementation-environnementale-portuaire",
+      "/infrastructures-portuaires/station-ops-port-definition"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "normes énergétiques infrastructures portuaires",
+      "naturelle_longue": "normes énergétiques infrastructures portuaires",
+      "entite_seule": "Normes énergétiques portuaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/station-ops-port-definition",
+    "mot_cle_principal": "station OPS port définition",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/normes-energetiques-portuaires",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/normes-energetiques-infrastructures-portuaires",
+      "/infrastructures-portuaires/reglementation-environnementale-portuaire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "station OPS port définition",
+      "naturelle_longue": "tout savoir sur station OPS port définition",
+      "entite_seule": "Normes énergétiques portuaires",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/reglementation-environnementale-portuaire",
+    "mot_cle_principal": "réglementation environnementale portuaire",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/normes-energetiques-portuaires",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/station-ops-port-definition",
+      "/infrastructures-portuaires/normes-energetiques-infrastructures-portuaires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "réglementation environnementale portuaire",
+      "naturelle_longue": "réglementation environnementale portuaire",
+      "entite_seule": "Normes énergétiques portuaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/modernisation-d-un-terminal-portuaire",
+    "mot_cle_principal": "modernisation d'un terminal portuaire",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/modernisation-des-terminaux",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/terminal-a-conteneurs-automatise"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "modernisation d'un terminal portuaire",
+      "naturelle_longue": "modernisation d'un terminal portuaire",
+      "entite_seule": "Modernisation des terminaux",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/terminal-a-conteneurs-automatise",
+    "mot_cle_principal": "terminal à conteneurs automatisé",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/modernisation-des-terminaux",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/modernisation-d-un-terminal-portuaire"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "terminal à conteneurs automatisé",
+      "naturelle_longue": "terminal à conteneurs automatisé",
+      "entite_seule": "Modernisation des terminaux",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/securite-des-infrastructures-critiques-de-transport",
+    "mot_cle_principal": "sécurité des infrastructures critiques de transport",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/securite-des-infrastructures-critiques",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/supervision-des-infrastructures-critiques",
+      "/infrastructures-portuaires/cybersecurite-infrastructures-portuaires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "sécurité des infrastructures critiques de transport",
+      "naturelle_longue": "sécurité des infrastructures critiques de transport",
+      "entite_seule": "Sécurité des infrastructures critiques",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/cybersecurite-infrastructures-portuaires",
+    "mot_cle_principal": "cybersécurité infrastructures portuaires",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/securite-des-infrastructures-critiques",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/securite-des-infrastructures-critiques-de-transport",
+      "/infrastructures-portuaires/supervision-des-infrastructures-critiques"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "cybersécurité infrastructures portuaires",
+      "naturelle_longue": "cybersécurité infrastructures portuaires",
+      "entite_seule": "Sécurité des infrastructures critiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/infrastructures-portuaires/supervision-des-infrastructures-critiques",
+    "mot_cle_principal": "supervision des infrastructures critiques",
+    "silo": "Infrastructures portuaires",
+    "sous_hub": "/infrastructures-portuaires/securite-des-infrastructures-critiques",
+    "hub": "/infrastructures-portuaires",
+    "liens_lateraux": [
+      "/infrastructures-portuaires/cybersecurite-infrastructures-portuaires",
+      "/infrastructures-portuaires/securite-des-infrastructures-critiques-de-transport"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "supervision des infrastructures critiques",
+      "naturelle_longue": "supervision des infrastructures critiques",
+      "entite_seule": "Sécurité des infrastructures critiques",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/transport-multimodal-avantages",
+    "mot_cle_principal": "transport multimodal avantages",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/transport-combine-rail-route-fleuve",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/report-modal-des-marchandises",
+      "/intermodalite-hubs-logistiques/transport-combine-rail-route-fleuve"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "transport multimodal avantages",
+      "naturelle_longue": "transport multimodal avantages",
+      "entite_seule": "Transport combiné rail-route-fleuve",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/transport-combine-rail-route-fleuve",
+    "mot_cle_principal": "transport combiné rail route fleuve",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/transport-combine-rail-route-fleuve",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/transport-multimodal-avantages",
+      "/intermodalite-hubs-logistiques/report-modal-des-marchandises"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "transport combiné rail route fleuve",
+      "naturelle_longue": "transport combiné rail route fleuve",
+      "entite_seule": "Transport combiné rail-route-fleuve",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/report-modal-des-marchandises",
+    "mot_cle_principal": "report modal des marchandises",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/transport-combine-rail-route-fleuve",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/transport-multimodal-avantages",
+      "/intermodalite-hubs-logistiques/transport-combine-rail-route-fleuve"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "report modal des marchandises",
+      "naturelle_longue": "tout savoir sur report modal des marchandises",
+      "entite_seule": "Transport combiné rail-route-fleuve",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/hubs-logistiques-europeens-tendances",
+    "mot_cle_principal": "hubs logistiques européens tendances",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/hubs-logistiques-europeens",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/entrepot-logistique-nouvelle-generation"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "hubs logistiques européens tendances",
+      "naturelle_longue": "hubs logistiques européens tendances",
+      "entite_seule": "Hubs logistiques européens",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/entrepot-logistique-nouvelle-generation",
+    "mot_cle_principal": "entrepôt logistique nouvelle génération",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/hubs-logistiques-europeens",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/hubs-logistiques-europeens-tendances"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "entrepôt logistique nouvelle génération",
+      "naturelle_longue": "entrepôt logistique nouvelle génération",
+      "entite_seule": "Hubs logistiques européens",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/corridor-de-fret-ferroviaire-en-europe",
+    "mot_cle_principal": "corridor de fret ferroviaire en Europe",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/corridors-de-fret",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/corridor-logistique-international"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "corridor de fret ferroviaire en Europe",
+      "naturelle_longue": "corridor de fret ferroviaire en Europe",
+      "entite_seule": "Corridors de fret",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/intermodalite-hubs-logistiques/corridor-logistique-international",
+    "mot_cle_principal": "corridor logistique international",
+    "silo": "Intermodalité & hubs logistiques",
+    "sous_hub": "/intermodalite-hubs-logistiques/corridors-de-fret",
+    "hub": "/intermodalite-hubs-logistiques",
+    "liens_lateraux": [
+      "/intermodalite-hubs-logistiques/corridor-de-fret-ferroviaire-en-europe"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "corridor logistique international",
+      "naturelle_longue": "corridor logistique international",
+      "entite_seule": "Corridors de fret",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/ports-maritimes/gestion-portuaire-numerique",
+    "mot_cle_principal": "gestion portuaire numérique",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/gestion-portuaire",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/autorite-portuaire-role",
+      "/ports-maritimes/exploitation-d-un-port-de-commerce",
+      "/ports-maritimes/optimisation-des-activites-portuaires-par-la-donnee"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "gestion portuaire numérique",
+      "naturelle_longue": "tout savoir sur gestion portuaire numérique",
+      "entite_seule": "Gestion portuaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/ports-maritimes/optimisation-des-activites-portuaires-par-la-donnee",
+    "mot_cle_principal": "optimisation des activités portuaires par la donnée",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/gestion-portuaire",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/autorite-portuaire-role",
+      "/ports-maritimes/exploitation-d-un-port-de-commerce",
+      "/ports-maritimes/gestion-portuaire-numerique"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "optimisation des activités portuaires par la donnée",
+      "naturelle_longue": "optimisation des activités portuaires par la donnée",
+      "entite_seule": "Gestion portuaire",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/ports-maritimes/autorite-portuaire-role",
+    "mot_cle_principal": "autorité portuaire rôle",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/gestion-portuaire",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/gestion-portuaire-numerique",
+      "/ports-maritimes/exploitation-d-un-port-de-commerce",
+      "/ports-maritimes/optimisation-des-activites-portuaires-par-la-donnee"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "autorité portuaire rôle",
+      "naturelle_longue": "tout savoir sur autorité portuaire rôle",
+      "entite_seule": "Gestion portuaire",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/ports-maritimes/exploitation-d-un-port-de-commerce",
+    "mot_cle_principal": "exploitation d'un port de commerce",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/gestion-portuaire",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/autorite-portuaire-role",
+      "/ports-maritimes/gestion-portuaire-numerique",
+      "/ports-maritimes/optimisation-des-activites-portuaires-par-la-donnee"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "exploitation d'un port de commerce",
+      "naturelle_longue": "exploitation d'un port de commerce",
+      "entite_seule": "Gestion portuaire",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/ports-maritimes/investissements-ports-francais",
+    "mot_cle_principal": "investissements ports français",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/investissements-portuaires",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/plan-de-modernisation-portuaire",
+      "/ports-maritimes/financement-infrastructures-portuaires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "investissements ports français",
+      "naturelle_longue": "investissements ports français",
+      "entite_seule": "Investissements portuaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/ports-maritimes/financement-infrastructures-portuaires",
+    "mot_cle_principal": "financement infrastructures portuaires",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/investissements-portuaires",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/plan-de-modernisation-portuaire",
+      "/ports-maritimes/investissements-ports-francais"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "financement infrastructures portuaires",
+      "naturelle_longue": "financement infrastructures portuaires",
+      "entite_seule": "Investissements portuaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/ports-maritimes/plan-de-modernisation-portuaire",
+    "mot_cle_principal": "plan de modernisation portuaire",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/investissements-portuaires",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/financement-infrastructures-portuaires",
+      "/ports-maritimes/investissements-ports-francais"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "plan de modernisation portuaire",
+      "naturelle_longue": "plan de modernisation portuaire",
+      "entite_seule": "Investissements portuaires",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/ports-maritimes/competitivite-des-ports-europeens",
+    "mot_cle_principal": "compétitivité des ports européens",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/competitivite-des-ports",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/attractivite-portuaire-criteres",
+      "/ports-maritimes/classement-des-ports-maritimes-par-trafic"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "compétitivité des ports européens",
+      "naturelle_longue": "compétitivité des ports européens",
+      "entite_seule": "Compétitivité des ports",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/ports-maritimes/classement-des-ports-maritimes-par-trafic",
+    "mot_cle_principal": "classement des ports maritimes par trafic",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/competitivite-des-ports",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/competitivite-des-ports-europeens",
+      "/ports-maritimes/attractivite-portuaire-criteres"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "classement des ports maritimes par trafic",
+      "naturelle_longue": "classement des ports maritimes par trafic",
+      "entite_seule": "Compétitivité des ports",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/ports-maritimes/attractivite-portuaire-criteres",
+    "mot_cle_principal": "attractivité portuaire critères",
+    "silo": "Ports maritimes",
+    "sous_hub": "/ports-maritimes/competitivite-des-ports",
+    "hub": "/ports-maritimes",
+    "liens_lateraux": [
+      "/ports-maritimes/classement-des-ports-maritimes-par-trafic",
+      "/ports-maritimes/competitivite-des-ports-europeens"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "attractivité portuaire critères",
+      "naturelle_longue": "attractivité portuaire critères",
+      "entite_seule": "Compétitivité des ports",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/reglementation-politique-des-transports/politique-europeenne-des-transports",
+    "mot_cle_principal": "politique européenne des transports",
+    "silo": "Réglementation & politique des transports",
+    "sous_hub": "/reglementation-politique-des-transports/politique-europeenne-des-transports",
+    "hub": "/reglementation-politique-des-transports",
+    "liens_lateraux": [
+      "/reglementation-politique-des-transports/reseau-transeuropeen-de-transport-rte-t"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "politique européenne des transports",
+      "naturelle_longue": "politique européenne des transports",
+      "entite_seule": "Politique européenne des transports",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/reglementation-politique-des-transports/reseau-transeuropeen-de-transport-rte-t",
+    "mot_cle_principal": "réseau transeuropéen de transport RTE-T",
+    "silo": "Réglementation & politique des transports",
+    "sous_hub": "/reglementation-politique-des-transports/politique-europeenne-des-transports",
+    "hub": "/reglementation-politique-des-transports",
+    "liens_lateraux": [
+      "/reglementation-politique-des-transports/politique-europeenne-des-transports"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "réseau transeuropéen de transport RTE-T",
+      "naturelle_longue": "réseau transeuropéen de transport RTE-T",
+      "entite_seule": "Politique européenne des transports",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/reglementation-politique-des-transports/financement-public-des-infrastructures-de-transport",
+    "mot_cle_principal": "financement public des infrastructures de transport",
+    "silo": "Réglementation & politique des transports",
+    "sous_hub": "/reglementation-politique-des-transports/financements-publics-infrastructures",
+    "hub": "/reglementation-politique-des-transports",
+    "liens_lateraux": [
+      "/reglementation-politique-des-transports/subventions-infrastructures-logistiques-europe"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "financement public des infrastructures de transport",
+      "naturelle_longue": "financement public des infrastructures de transport",
+      "entite_seule": "Financements publics infrastructures",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/reglementation-politique-des-transports/subventions-infrastructures-logistiques-europe",
+    "mot_cle_principal": "subventions infrastructures logistiques Europe",
+    "silo": "Réglementation & politique des transports",
+    "sous_hub": "/reglementation-politique-des-transports/financements-publics-infrastructures",
+    "hub": "/reglementation-politique-des-transports",
+    "liens_lateraux": [
+      "/reglementation-politique-des-transports/financement-public-des-infrastructures-de-transport"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "subventions infrastructures logistiques Europe",
+      "naturelle_longue": "subventions infrastructures logistiques Europe",
+      "entite_seule": "Financements publics infrastructures",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/reglementation-politique-des-transports/normes-internationales-du-transport-maritime",
+    "mot_cle_principal": "normes internationales du transport maritime",
+    "silo": "Réglementation & politique des transports",
+    "sous_hub": "/reglementation-politique-des-transports/normes-internationales",
+    "hub": "/reglementation-politique-des-transports",
+    "liens_lateraux": [
+      "/reglementation-politique-des-transports/reglementation-omi-transport-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "normes internationales du transport maritime",
+      "naturelle_longue": "normes internationales du transport maritime",
+      "entite_seule": "Normes internationales",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/reglementation-politique-des-transports/reglementation-omi-transport-maritime",
+    "mot_cle_principal": "réglementation OMI transport maritime",
+    "silo": "Réglementation & politique des transports",
+    "sous_hub": "/reglementation-politique-des-transports/normes-internationales",
+    "hub": "/reglementation-politique-des-transports",
+    "liens_lateraux": [
+      "/reglementation-politique-des-transports/normes-internationales-du-transport-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "réglementation OMI transport maritime",
+      "naturelle_longue": "réglementation OMI transport maritime",
+      "entite_seule": "Normes internationales",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transition-energetique-du-transport/decarbonation-du-transport-de-marchandises",
+    "mot_cle_principal": "décarbonation du transport de marchandises",
+    "silo": "Transition énergétique du transport",
+    "sous_hub": "/transition-energetique-du-transport/decarbonation-du-fret",
+    "hub": "/transition-energetique-du-transport",
+    "liens_lateraux": [
+      "/transition-energetique-du-transport/empreinte-carbone-du-fret-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "décarbonation du transport de marchandises",
+      "naturelle_longue": "décarbonation du transport de marchandises",
+      "entite_seule": "Décarbonation du fret",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transition-energetique-du-transport/empreinte-carbone-du-fret-maritime",
+    "mot_cle_principal": "empreinte carbone du fret maritime",
+    "silo": "Transition énergétique du transport",
+    "sous_hub": "/transition-energetique-du-transport/decarbonation-du-fret",
+    "hub": "/transition-energetique-du-transport",
+    "liens_lateraux": [
+      "/transition-energetique-du-transport/decarbonation-du-transport-de-marchandises"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "empreinte carbone du fret maritime",
+      "naturelle_longue": "empreinte carbone du fret maritime",
+      "entite_seule": "Décarbonation du fret",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/transition-energetique-du-transport/alimentation-electrique-a-quai-des-navires",
+    "mot_cle_principal": "alimentation électrique à quai des navires",
+    "silo": "Transition énergétique du transport",
+    "sous_hub": "/transition-energetique-du-transport/alimentation-electrique-a-quai-ops",
+    "hub": "/transition-energetique-du-transport",
+    "liens_lateraux": [
+      "/transition-energetique-du-transport/ops-onshore-power-supply-avantages"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "alimentation électrique à quai des navires",
+      "naturelle_longue": "alimentation électrique à quai des navires",
+      "entite_seule": "Alimentation électrique à quai (OPS)",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/transition-energetique-du-transport/ops-onshore-power-supply-avantages",
+    "mot_cle_principal": "OPS onshore power supply avantages",
+    "silo": "Transition énergétique du transport",
+    "sous_hub": "/transition-energetique-du-transport/alimentation-electrique-a-quai-ops",
+    "hub": "/transition-energetique-du-transport",
+    "liens_lateraux": [
+      "/transition-energetique-du-transport/alimentation-electrique-a-quai-des-navires"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "OPS onshore power supply avantages",
+      "naturelle_longue": "OPS onshore power supply avantages",
+      "entite_seule": "Alimentation électrique à quai (OPS)",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transition-energetique-du-transport/reglementation-environnementale-transport-maritime",
+    "mot_cle_principal": "réglementation environnementale transport maritime",
+    "silo": "Transition énergétique du transport",
+    "sous_hub": "/transition-energetique-du-transport/reglementation-environnementale",
+    "hub": "/transition-energetique-du-transport",
+    "liens_lateraux": [
+      "/transition-energetique-du-transport/zone-a-faibles-emissions-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "réglementation environnementale transport maritime",
+      "naturelle_longue": "réglementation environnementale transport maritime",
+      "entite_seule": "Réglementation environnementale",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/transition-energetique-du-transport/zone-a-faibles-emissions-maritime",
+    "mot_cle_principal": "zone à faibles émissions maritime",
+    "silo": "Transition énergétique du transport",
+    "sous_hub": "/transition-energetique-du-transport/reglementation-environnementale",
+    "hub": "/transition-energetique-du-transport",
+    "liens_lateraux": [
+      "/transition-energetique-du-transport/reglementation-environnementale-transport-maritime"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "zone à faibles émissions maritime",
+      "naturelle_longue": "zone à faibles émissions maritime",
+      "entite_seule": "Réglementation environnementale",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/transport-fluvial-de-marchandises-avantages",
+    "mot_cle_principal": "transport fluvial de marchandises avantages",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/batellerie-voies-navigables",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/batellerie-fluviale-en-france",
+      "/transport-fluvial-canaux/voies-navigables-europeennes-reseau"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "transport fluvial de marchandises avantages",
+      "naturelle_longue": "transport fluvial de marchandises avantages",
+      "entite_seule": "Batellerie & voies navigables",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/batellerie-fluviale-en-france",
+    "mot_cle_principal": "batellerie fluviale en France",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/batellerie-voies-navigables",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/voies-navigables-europeennes-reseau",
+      "/transport-fluvial-canaux/transport-fluvial-de-marchandises-avantages"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "batellerie fluviale en France",
+      "naturelle_longue": "tout savoir sur batellerie fluviale en France",
+      "entite_seule": "Batellerie & voies navigables",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/voies-navigables-europeennes-reseau",
+    "mot_cle_principal": "voies navigables européennes réseau",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/batellerie-voies-navigables",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/transport-fluvial-de-marchandises-avantages",
+      "/transport-fluvial-canaux/batellerie-fluviale-en-france"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "voies navigables européennes réseau",
+      "naturelle_longue": "voies navigables européennes réseau",
+      "entite_seule": "Batellerie & voies navigables",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/canal-seine-nord-europe-avancement-des-travaux",
+    "mot_cle_principal": "canal Seine-Nord Europe avancement des travaux",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/canal-seine-nord-europe",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/canal-seine-nord-europe-enjeux",
+      "/transport-fluvial-canaux/impact-economique-du-canal-seine-nord"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "canal Seine-Nord Europe avancement des travaux",
+      "naturelle_longue": "canal Seine-Nord Europe avancement des travaux",
+      "entite_seule": "Canal Seine-Nord Europe",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/canal-seine-nord-europe-enjeux",
+    "mot_cle_principal": "canal Seine-Nord Europe enjeux",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/canal-seine-nord-europe",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/canal-seine-nord-europe-avancement-des-travaux",
+      "/transport-fluvial-canaux/impact-economique-du-canal-seine-nord"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "canal Seine-Nord Europe enjeux",
+      "naturelle_longue": "canal Seine-Nord Europe enjeux",
+      "entite_seule": "Canal Seine-Nord Europe",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/impact-economique-du-canal-seine-nord",
+    "mot_cle_principal": "impact économique du canal Seine-Nord",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/canal-seine-nord-europe",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/canal-seine-nord-europe-enjeux",
+      "/transport-fluvial-canaux/canal-seine-nord-europe-avancement-des-travaux"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "impact économique du canal Seine-Nord",
+      "naturelle_longue": "impact économique du canal Seine-Nord",
+      "entite_seule": "Canal Seine-Nord Europe",
+      "generique": "notre guide"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/reglementation-du-transport-fluvial",
+    "mot_cle_principal": "réglementation du transport fluvial",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/reglementation-fluviale",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/permis-de-navigation-fluviale-marchandise"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "réglementation du transport fluvial",
+      "naturelle_longue": "réglementation du transport fluvial",
+      "entite_seule": "Réglementation fluviale",
+      "generique": "cet article"
+    }
+  },
+  {
+    "url": "/transport-fluvial-canaux/permis-de-navigation-fluviale-marchandise",
+    "mot_cle_principal": "permis de navigation fluviale marchandise",
+    "silo": "Transport fluvial & canaux",
+    "sous_hub": "/transport-fluvial-canaux/reglementation-fluviale",
+    "hub": "/transport-fluvial-canaux",
+    "liens_lateraux": [
+      "/transport-fluvial-canaux/reglementation-du-transport-fluvial"
+    ],
+    "liens_transversaux": [],
+    "ancres": {
+      "exacte_partielle": "permis de navigation fluviale marchandise",
+      "naturelle_longue": "permis de navigation fluviale marchandise",
+      "entite_seule": "Réglementation fluviale",
+      "generique": "cet article"
+    }
+  }
+]

@@ -1,0 +1,227 @@
+{
+  "note_generale": "Ce dataset est strictement informationnel et scientifique (vulgarisation de littérature de recherche publique sur les peptides). Il ne constitue ni un protocole d'auto-administration, ni un conseil médical personnalisé, ni une recommandation de dosage. Les formulations utilisent volontairement des tournures prudentes (\"étudié pour\", \"la recherche suggère\", \"mécanisme proposé\") car, sauf mention contraire (peptides alimentaires, médicaments approuvés comme le sémaglutide, ou médicaments russes Semax/Selank), la grande majorité des peptides dits \"de recherche\" n'ont pas d'essais cliniques humains complets et ne sont approuvés par aucune agence sanitaire pour un usage thérapeutique général. Aucune donnée n'a été inventée : chaque entrée cite sa source ; les points non vérifiables avec confiance sont marqués a_verifier.",
+
+  "peptides_recherche_reparation_tissulaire": [
+    {
+      "nom": "BPC-157",
+      "famille": "Peptide de recherche (fragment dérivé de la protéine gastrique BPC / Body Protection Compound)",
+      "mecanisme_etudie": "Peptide très étudié en recherche préclinique. Les mécanismes proposés incluent l'activation de la voie VEGF/eNOS (production de monoxyde d'azote favorisant l'angiogenèse) et une possible activation de la voie de signalisation JAK2, étudiées dans des modèles animaux de cicatrisation de tendons, ligaments, muscles et de protection gastro-intestinale. Aucun essai clinique humain complet n'a été publié à ce jour.",
+      "statut": "Non approuvé par la FDA ; classé par la FDA comme \"Substance with Safety Concerns\" (Category 2 Bulk Drug Substance), ce qui interdit sa préparation par les pharmacies de préparation aux Etats-Unis pour usage humain.",
+      "source": "MDPI Pharmaceuticals 2025 (Józwiak et al., revue littérature/brevets BPC-157), https://www.mdpi.com/1424-8247/18/2/185 ; STAT News, https://www.statnews.com/2026/02/03/bpc-157-peptide-science-safety-regulatory-questions/ ; OPSS (Dept. of Defense), https://www.opss.org/article/bpc-157-prohibited-peptide-and-unapproved-drug-found-health-and-wellness-products",
+      "a_verifier": false
+    },
+    {
+      "nom": "TB-500 (fragment de Thymosine bêta-4)",
+      "famille": "Peptide de recherche dérivé de la Thymosine bêta-4 (protéine régulatrice de l'actine)",
+      "mecanisme_etudie": "Mécanisme principal étudié : séquestration de l'actine G, régulant l'équilibre actine G/F impliqué dans la migration et la division cellulaire. Des mécanismes additionnels sont étudiés en recherche : angiogenèse (migration des cellules endothéliales), mobilisation de cellules souches vers les zones lésées, et modulation de l'inflammation. Des études animales montrent une accélération de la fermeture de plaies cutanées ; peu de recherche clinique humaine limitée (ex. ulcères diabétiques, sécheresse oculaire).",
+      "statut": "Peptide de recherche, non approuvé comme médicament ; vendu hors cadre pharmaceutique dans certains pays sous étiquette \"research use only\".",
+      "source": "MDPI Applied Sciences 2026, revue systématique Thymosine bêta-4/TB-500, https://www.mdpi.com/2076-3417/16/12/6202 ; HealingMaps, https://healingmaps.com/tb-500-thymosin-beta-4-fragment-wound-healing-peptide/",
+      "a_verifier": false
+    },
+    {
+      "nom": "GHK-Cu (peptide de cuivre, tripeptide Glycine-Histidine-Lysine)",
+      "famille": "Peptide de recherche endogène, complexé au cuivre",
+      "mecanisme_etudie": "Découvert en 1973 par Loren Pickart, isolé du plasma humain. La recherche in vitro et animale montre une stimulation des fibroblastes, une augmentation de la synthèse de collagène, d'élastine et de glycosaminoglycanes cutanés, une régulation à la hausse de la tropoélastine et une activation d'enzymes antioxydantes (superoxyde dismutase, glutathion peroxydase). Plusieurs essais cliniques randomisés en application topique sur peau photovieillie montrent des améliorations mesurables (hydratation, densité cutanée).",
+      "statut": "Utilisé en cosmétique topique (hors cadre médicament) dans plusieurs pays ; un essai clinique enregistré (NCT07437586) évalue un gel topique pour la cicatrisation de plaies aiguës.",
+      "source": "MDPI Cosmetics 2018, \"Skin Regenerative and Anti-Cancer Actions of Copper Peptides\", https://www.mdpi.com/2079-9284/5/2/29 ; ClinicalTrials.gov NCT07437586, https://clinicaltrials.gov/study/NCT07437586",
+      "a_verifier": false
+    }
+  ],
+
+  "peptides_recherche_hormonaux_metaboliques": [
+    {
+      "nom": "Ipamorelin",
+      "famille": "Peptide sécrétagogue de l'hormone de croissance (GHRP, agoniste du récepteur ghréline)",
+      "mecanisme_etudie": "Étudié pour son action sur le récepteur GHS-R1a (récepteur sensible à la ghréline) situé dans l'hypothalamus et l'hypophyse, avec un effet plus ciblé sur la libération de GH et un impact moindre sur le cortisol et la prolactine comparé aux GHRP plus anciens, selon la littérature disponible.",
+      "statut": "Peptide de recherche, non approuvé par la FDA comme médicament autonome pour usage humain général.",
+      "source": "IRE Journals, mécanisme CJC-1295/Ipamorelin, https://www.irejournals.com/paper-details/1714043",
+      "a_verifier": false
+    },
+    {
+      "nom": "CJC-1295",
+      "famille": "Analogue de la GHRH (Growth Hormone Releasing Hormone), 29 acides aminés",
+      "mecanisme_etudie": "Mécanisme proposé : liaison au récepteur de la GHRH sur les somatotrophes de l'hypophyse antérieure, activation de protéines G hétérotrimériques, production d'AMPc et d'IP3, modulation de gènes liés à la GH. Souvent étudié en association avec l'Ipamorelin pour un effet synergique sur le pic de GH pulsatile.",
+      "statut": "Peptide de recherche, non approuvé par la FDA comme médicament autonome pour usage humain général.",
+      "source": "IRE Journals, https://www.irejournals.com/paper-details/1714043 ; Biotech Peptides, https://biotechpeptides.com/2025/09/02/pharmacological-and-metabolic-insights-into-the-ipamorelin-cjc-1295-blend/",
+      "a_verifier": false
+    },
+    {
+      "nom": "MOTS-c",
+      "famille": "Peptide mitochondrial dérivé (mitochondrial-derived peptide, 16 acides aminés, codé dans la région 12S rRNA de l'ADN mitochondrial)",
+      "mecanisme_etudie": "Découvert en 2015. Étudié pour sa translocation vers le noyau cellulaire en réponse au stress et à l'exercice, où il régule l'expression de gènes liés à l'adaptation au stress, principalement via la voie folate-AICAR-AMPK, influençant le métabolisme du glucose, la sensibilité à l'insuline et des marqueurs du vieillissement. Recherche essentiellement précliniques (cellulaire et animale).",
+      "statut": "Peptide de recherche, non approuvé pour usage thérapeutique humain.",
+      "source": "Journal of Translational Medicine 2023, https://link.springer.com/article/10.1186/s12967-023-03885-2 ; Cell Metabolism (Reynolds et al. 2015), https://www.cell.com/cell-metabolism/fulltext/S1550-4131(15)00061-3",
+      "a_verifier": false
+    },
+    {
+      "nom": "Sémaglutide",
+      "famille": "Analogue peptidique du GLP-1 (Glucagon-Like Peptide-1)",
+      "mecanisme_etudie": "Agoniste du récepteur GLP-1, potentialise la sécrétion d'insuline et réduit la sécrétion de glucagon de façon glucose-dépendante via des récepteurs couplés aux protéines G sur les cellules bêta pancréatiques. Seul agoniste GLP-1 disponible en formulation orale ; essais cliniques démontrant une efficacité sur le contrôle glycémique, la perte de poids et la réduction du risque cardiovasculaire.",
+      "statut": "Médicament approuvé (FDA et EMA) pour le diabète de type 2 et, sous certaines marques/dosages, pour la gestion du poids — statut très différent des peptides de recherche non approuvés listés ci-dessus.",
+      "source": "NCBI PMC, revue MASH/sémaglutide, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12660513/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Tirzépatide",
+      "famille": "Peptide de synthèse de 39 acides aminés, agoniste double des récepteurs GIP et GLP-1",
+      "mecanisme_etudie": "Structure basée sur la séquence du GIP, avec une portion acide gras en C20 prolongeant la durée d'action. Les essais cliniques rapportent une perte de poids supérieure au sémaglutide dans des comparaisons directes chez des personnes en situation d'obésité, avec ou sans diabète.",
+      "statut": "Médicament approuvé (FDA et EMA) pour le diabète de type 2 et la gestion du poids.",
+      "source": "Nature, International Journal of Obesity, https://www.nature.com/articles/s41366-026-02025-2 ; NCBI PMC, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12175907/",
+      "a_verifier": false
+    }
+  ],
+
+  "peptides_recherche_neuro_comportement": [
+    {
+      "nom": "DSIP (Delta Sleep-Inducing Peptide)",
+      "famille": "Nonapeptide neuromodulateur (séquence Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu)",
+      "mecanisme_etudie": "Détecté initialement dans le sang veineux cérébral de lapins soumis à une stimulation électrique thalamique induisant le sommeil. Les mécanismes exacts restent incertains ; la recherche évoque une modulation hypothalamique et des neurotransmetteurs (GABA, sérotonine, dopamine, noradrénaline), avec passage de la barrière hémato-encéphalique. Les récepteurs précis n'ont pas été formellement identifiés.",
+      "statut": "Peptide de recherche, non approuvé comme médicament du sommeil.",
+      "source": "Frontiers in Pharmacology 2024, https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1439536/full ; ScienceDirect Topics, https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/delta-sleep-inducing-peptide",
+      "a_verifier": false
+    },
+    {
+      "nom": "Épithalon / Épitalon (tétrapeptide AEDG)",
+      "famille": "Peptide de synthèse basé sur l'Épithalamine, extrait de glande pinéale bovine",
+      "mecanisme_etudie": "Étudié depuis environ 25 ans in vitro, in vivo et in silico pour des propriétés géroprotectrices, antioxydantes et antimutagènes proposées, notamment une stimulation de la télomérase associée à un allongement des télomères observé dans des lignées cellulaires humaines en laboratoire, ainsi qu'une influence proposée sur la sécrétion de mélatonine. Des cohortes de suivi (jusqu'à 12 ans) rapportées dans la littérature russe associent son administration à des marqueurs physiologiques améliorés, mais les données humaines robustes restent limitées.",
+      "statut": "Peptide de recherche, non approuvé comme médicament anti-âge en Occident ; littérature majoritairement d'origine russe.",
+      "source": "NCBI PMC, \"Overview of Epitalon\", https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11943447/ ; ResearchGate, Khavinson et al., https://www.researchgate.net/publication/10598271_Epithalon_Peptide_Induces_Telomerase_Activity_and_Telomere_Elongation_in_Human_Somatic_Cells",
+      "a_verifier": false
+    },
+    {
+      "nom": "Semax",
+      "famille": "Peptide de synthèse, analogue de l'ACTH(4-7)",
+      "mecanisme_etudie": "Développé dans les années 1980 par l'Académie des sciences de Russie. Étudié pour une augmentation de l'expression du BDNF (facteur neurotrophique) dans l'hippocampe et un renforcement de l'activité dopaminergique et sérotoninergique. Des essais cliniques russes rapportent une amélioration des suites d'AVC ischémique lorsqu'administré dans la fenêtre thérapeutique.",
+      "statut": "Médicament approuvé en Russie (liste des médicaments essentiels), administré par voie intranasale, utilisé depuis les années 1990 pour la récupération post-AVC et les troubles cognitifs ; non approuvé aux Etats-Unis ni dans l'UE.",
+      "source": "Peptidepedia, https://peptidepedia.org/guides/selank-vs-semax ; Alpha Peptides (historique recherche russe), https://alpha-peptides.com/russian-peptide-research-history/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Selank",
+      "famille": "Peptide de synthèse dérivé de la tuftsine",
+      "mecanisme_etudie": "Étudié pour une modulation de la neurotransmission GABAergique (expression des récepteurs GABA-A) et du système des enképhalines cérébrales, avec des propriétés anxiolytiques et immunomodulatrices rapportées dans la littérature russe.",
+      "statut": "Médicament approuvé en Russie pour le trouble anxieux généralisé et la neurasthénie ; non approuvé aux Etats-Unis ni dans l'UE.",
+      "source": "Peptidepedia, https://peptidepedia.org/guides/selank-vs-semax",
+      "a_verifier": false
+    },
+    {
+      "nom": "PT-141 (Bremelanotide)",
+      "famille": "Heptapeptide cyclique, agoniste des récepteurs mélanocortines, dérivé structurel de la Mélanotan II",
+      "mecanisme_etudie": "Issu de recherches des années 1980 à l'Université d'Arizona sur des analogues de l'alpha-MSH. Agit sur les récepteurs MC3R et MC4R (couplés aux protéines G), impliqués dans l'excitation sexuelle, en minimisant l'activation de MC1R (pigmentation) et MC5R, contrairement à la Mélanotan II qui active les cinq sous-types. Action centrale (cerveau), différente des inhibiteurs de PDE5 à action vasculaire périphérique.",
+      "statut": "Approuvé par la FDA sous forme de médicament (Vyleesi) pour le trouble du désir sexuel hypoactif chez la femme préménopausée ; distinct des formes \"recherche\" non pharmaceutiques vendues en ligne.",
+      "source": "Newtropin, mécanisme PT-141, https://newtropin.com/peptides/pt-141 ; Peptides Source, https://www.peptidessource.com/pt-141-bremelanotide-research-melanocortin-receptor-pathways-cns-mechanism-studies/",
+      "a_verifier": true
+    }
+  ],
+
+  "peptides_alimentaires_lait": [
+    {
+      "nom": "Lactoferrine",
+      "famille": "Glycoprotéine du lactosérum (whey), peptide bioactif du lait",
+      "mecanisme_etudie": "La recherche nutritionnelle rapporte une activité anti-inflammatoire notable ; des hydrolysats de lactoferrine montrent des effets anti-inflammatoires sur des cellules de cartilage et de synoviale humaines en laboratoire, suggérant un intérêt étudié pour l'arthrite (données précliniques). Peptides dérivés (ex. lactoferricine B) étudiés pour des propriétés antimicrobiennes et immunomodulatrices.",
+      "statut": "Composant nutritionnel, présent naturellement dans le lait et utilisé comme ingrédient alimentaire/complément ; non un médicament.",
+      "source": "NCBI PMC, \"Bioactive Peptides from Milk Proteins with Antioxidant, Anti-Inflammatory, and Antihypertensive Activities\", https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11816975/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Peptides de caséine (caséine alpha-s1, bêta, kappa)",
+      "famille": "Peptides bioactifs issus de l'hydrolyse enzymatique des caséines du lait (80% des protéines du lait)",
+      "mecanisme_etudie": "Générés par hydrolyse enzymatique lors de la digestion, la fermentation ou la transformation alimentaire. Des peptides comme les bêta-casokinines et la bêta-casomorphine sont étudiés pour des activités antimicrobiennes, immunomodulatrices, antioxydantes et antihypertensives (inhibition de l'ECA).",
+      "statut": "Composants nutritionnels naturels du lait ; recherche en nutraceutique et aliments fonctionnels, non des médicaments.",
+      "source": "Journal of Dairy Research, Cambridge Core, https://www.cambridge.org/core/journals/journal-of-dairy-research/article/bioactive-peptides-from-milk-animal-determinants-and-their-implications-in-human-health/596D1EC00F27787D33242449EA91F8E2 ; Springer Nature, https://link.springer.com/article/10.1186/s43014-024-00280-2",
+      "a_verifier": false
+    },
+    {
+      "nom": "Peptides du lactosérum (whey) - alpha-lactalbumine, bêta-lactoglobuline",
+      "famille": "Peptides bioactifs de la fraction whey (20% des protéines du lait)",
+      "mecanisme_etudie": "Étudiés pour un spectre d'activités biologiques incluant des effets antimicrobiens, antioxydants et de liaison minérale, selon les revues de littérature en science alimentaire.",
+      "statut": "Ingrédient nutritionnel courant (poudres protéinées), non un médicament.",
+      "source": "Nutrition Reviews, Oxford Academic, \"Dairy bioactive proteins and peptides: a narrative review\", https://academic.oup.com/nutritionreviews/article/79/Supplement_2/36/6457115",
+      "a_verifier": false
+    }
+  ],
+
+  "peptides_alimentaires_vegetaux": [
+    {
+      "nom": "Peptides du soja",
+      "famille": "Peptides bioactifs dérivés de l'hydrolyse des protéines de soja",
+      "mecanisme_etudie": "Des peptides comme Asp-Leu-Pro et Asp-Gly sont étudiés pour une capacité antihypertensive. La consommation de soja est associée dans la littérature à des bénéfices potentiels pour la réduction de maladies chroniques (obésité, maladies cardiovasculaires, résistance à l'insuline/diabète de type 2), via ses protéines et peptides bioactifs.",
+      "statut": "Ingrédient alimentaire, non un médicament ; recherche en nutrition fonctionnelle.",
+      "source": "NCBI PMC, \"Beneficial Effects of Soybean-Derived Bioactive Peptides\", https://pmc.ncbi.nlm.nih.gov/articles/PMC8395274/ ; NCBI PMC, \"Soybean Bioactive Peptides and Their Functional Properties\", https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6164536/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Peptides du pois",
+      "famille": "Peptides bioactifs dérivés de l'hydrolyse des protéines de pois",
+      "mecanisme_etudie": "Des peptides comme Ile-Arg, Lys-Phe et Glu-Phe sont étudiés pour une capacité antihypertensive (inhibition de l'ECA). Les hydrolysats de protéines de pois sont également étudiés en association avec le soja pour des effets DPP-IV et ECA inhibiteurs.",
+      "statut": "Ingrédient alimentaire, non un médicament.",
+      "source": "NCBI PMC, \"Integrated Evaluation of the Multifunctional DPP-IV and ACE Inhibitory Effect of Soybean and Pea Protein Hydrolysates\", https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9227613/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Peptides du riz",
+      "famille": "Peptides bioactifs dérivés de l'hydrolyse des protéines de riz",
+      "mecanisme_etudie": "Le peptide Ile-His-Arg-Phe est étudié pour une activité antihypertensive. La protéine de riz est considérée dans la littérature comme exceptionnellement digestible, comparable voire supérieure à certaines protéines animales ; des peptides du riz sont aussi étudiés pour des propriétés antioxydantes.",
+      "statut": "Ingrédient alimentaire, non un médicament.",
+      "source": "ScienceDirect, \"Rice protein-derived bioactive peptides: Production, purification, health promoting benefits and food applications\", https://www.sciencedirect.com/science/article/abs/pii/S0889157525009573",
+      "a_verifier": false
+    }
+  ],
+
+  "peptides_collagene": [
+    {
+      "nom": "Peptides de collagène (peau)",
+      "famille": "Peptides bioactifs issus de l'hydrolyse du collagène (bovin, marin/poisson)",
+      "mecanisme_etudie": "Plusieurs essais cliniques randomisés en double aveugle contre placebo (ex. peptides de collagène de thon) rapportent une augmentation de l'hydratation, de l'élasticité et de la densité cutanées, avec une diminution de la perte insensible en eau, effets maintenus après une période sans supplémentation dans certaines études.",
+      "statut": "Complément alimentaire / ingrédient cosmétique-nutritionnel, non un médicament.",
+      "source": "NCBI PMC, essai peptides de collagène de thon, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11626298/ ; NCBI PMC, \"The Sustained Effects of Bioactive Collagen Peptides on Skin Health\", https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12661388/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Peptides de collagène (articulations)",
+      "famille": "Peptides bioactifs issus de l'hydrolyse du collagène",
+      "mecanisme_etudie": "Des essais en double aveugle rapportent un soulagement de la douleur articulaire cliniquement pertinent, avec des scores de douleur et de raideur plus bas et une meilleure mobilité comparé au placebo. Un mécanisme anti-inflammatoire est proposé via l'inhibition de la libération de cytokines médiée par la glycine.",
+      "statut": "Complément alimentaire, non un médicament ; utilisé souvent en association avec chondroïtine/glucosamine dans les études.",
+      "source": "ScienceDirect, \"Collagen supplementation in skin and orthopedic diseases: A review of the literature\", https://www.sciencedirect.com/science/article/pii/S2405844023021680",
+      "a_verifier": false
+    }
+  ],
+
+  "definitions_techniques": [
+    {
+      "nom": "Différence acide aminé / peptide / protéine",
+      "famille": "Définition technique de base",
+      "mecanisme_etudie": "Un acide aminé est un composé organique comportant un groupe amine (-NH2) et un groupe carboxyle (-COOH) ; le corps humain utilise 20 acides aminés différents. Un peptide est une courte chaîne de 2 à 50 acides aminés reliés par des liaisons peptidiques (réaction de condensation). Une protéine est généralement une chaîne plus longue, de plus de 100 acides aminés, avec jusqu'à quatre niveaux de structure (primaire, secondaire, tertiaire, quaternaire). La distinction peptide/protéine reste en partie conventionnelle et dépend du contexte.",
+      "statut": "N/A (définition biochimique générale)",
+      "source": "University of Queensland, Institute for Molecular Bioscience, \"Explainer: Peptides vs proteins\", https://imb.uq.edu.au/article/2017/11/explainer-peptides-vs-proteins-whats-difference ; NCBI Bookshelf StatPearls, \"Biochemistry, Peptide\", https://www.ncbi.nlm.nih.gov/books/NBK562260/ ; Bachem, https://www.bachem.com/knowledge-center/peptides-amino-acids-for-beginners-understanding-the-basics/",
+      "a_verifier": false
+    },
+    {
+      "nom": "Synthèse peptidique en phase solide (SPPS)",
+      "famille": "Méthode de synthèse chimique de peptides en recherche",
+      "mecanisme_etudie": "Méthode développée initialement par Robert Bruce Merrifield au début des années 1960, consistant à assembler les acides aminés de façon séquentielle sur un support solide (résine), via des cycles répétés de couplage, lavage et déprotection de l'amine N-terminale. Le peptide reste attaché au support solide durant toute la synthèse, ce qui simplifie la purification en éliminant les sous-produits. Technique mature, largement utilisée en recherche et en production de peptides.",
+      "statut": "N/A (méthode de laboratoire, non un produit)",
+      "source": "Bachem, \"Solid Phase Peptide Synthesis (SPPS) explained\", https://www.bachem.com/knowledge-center/solid-phase-peptide-synthesis-spps-explained/ ; Creative Peptides, https://www.creative-peptides.com/resources/solid-phase-peptide-synthesis-spps-a-key-technology-for-high-quality-peptide-production.html",
+      "a_verifier": false
+    }
+  ],
+
+  "statut_reglementaire_general": [
+    {
+      "nom": "Statut réglementaire Etats-Unis (peptides de recherche)",
+      "famille": "Cadre réglementaire général",
+      "mecanisme_etudie": "N/A",
+      "statut": "La FDA n'a approuvé la grande majorité des peptides dits \"de recherche\" (ex. BPC-157, TB-500) pour aucun usage thérapeutique humain. Ils sont vendus sous étiquette \"research use only, not for human consumption\". La FDA a classé BPC-157 comme \"Substance with Safety Concerns\" (Category 2 Bulk Drug Substance), interdisant sa préparation par les pharmacies de préparation (compounding) pour usage humain ; des poursuites du Department of Justice ont visé des officines distribuant ces peptides non approuvés.",
+      "source": "STAT News, https://www.statnews.com/2026/02/03/bpc-157-peptide-science-safety-regulatory-questions/ ; OPSS, https://www.opss.org/article/bpc-157-prohibited-peptide-and-unapproved-drug-found-health-and-wellness-products ; Science News, https://www.sciencenews.org/article/peptides-unproven-health-fda-access",
+      "a_verifier": false
+    },
+    {
+      "nom": "Statut réglementaire Europe (peptides de recherche)",
+      "famille": "Cadre réglementaire général",
+      "mecanisme_etudie": "N/A",
+      "statut": "L'EMA encadre les peptides uniquement lorsqu'ils sont destinés à un usage médicamenteux (autorisation de mise sur le marché après essais précliniques et cliniques). Les peptides non approuvés, vendus comme \"produits de recherche\" à des laboratoires/universités, échappent en théorie au statut de médicament tant qu'ils ne sont pas commercialisés comme complément, cosmétique ou traitement. L'application varie selon les Etats membres : certains pays (cités dans la littérature grand public consultée, à vérifier auprès de sources juridiques officielles) traiteraient les peptides non approuvés de façon plus stricte que d'autres.",
+      "source": "Pepspan FAQ, https://pepspan.com/en/faq/research-peptides-europe ; CertaPeptides, guideline EMA 2026, https://certapeptides.com/blog/ema-synthetic-peptide-guideline-2026-eu-researchers",
+      "a_verifier": true
+    }
+  ]
+}

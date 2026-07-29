@@ -1,0 +1,81 @@
+{
+  "id": "npi-magazine",
+  "name": "NPI Magazine",
+  "data_dir": "data/niches/npi-magazine",
+  "authors": {
+    "A": {
+      "label": "A — Ports & infrastructures",
+      "wp_slug": "auteur-a"
+    },
+    "B": {
+      "label": "B — Transport fluvial & intermodalité",
+      "wp_slug": "auteur-b"
+    },
+    "C": {
+      "label": "C — Énergie & transition",
+      "wp_slug": "auteur-c"
+    },
+    "D": {
+      "label": "D — Innovation, digital & réglementation",
+      "wp_slug": "auteur-d"
+    }
+  },
+  "silos": [
+    {
+      "name": "Ports maritimes",
+      "hub_slug": "ports-maritimes",
+      "author": "A",
+      "sous_cocons": ["Gestion portuaire", "Investissements portuaires", "Compétitivité des ports"],
+      "seeds_file": "ports-maritimes.json"
+    },
+    {
+      "name": "Infrastructures portuaires",
+      "hub_slug": "infrastructures-portuaires",
+      "author": "A",
+      "sous_cocons": ["Normes énergétiques portuaires", "Modernisation des terminaux", "Sécurité des infrastructures critiques"],
+      "seeds_file": "infrastructures-portuaires.json"
+    },
+    {
+      "name": "Transport fluvial & canaux",
+      "hub_slug": "transport-fluvial-canaux",
+      "author": "B",
+      "sous_cocons": ["Batellerie & voies navigables", "Canal Seine-Nord Europe", "Réglementation fluviale"],
+      "seeds_file": "transport-fluvial-canaux.json"
+    },
+    {
+      "name": "Intermodalité & hubs logistiques",
+      "hub_slug": "intermodalite-hubs-logistiques",
+      "author": "B",
+      "sous_cocons": ["Transport combiné rail-route-fleuve", "Hubs logistiques européens", "Corridors de fret"],
+      "seeds_file": "intermodalite-hubs-logistiques.json"
+    },
+    {
+      "name": "Hydrogène & carburants alternatifs",
+      "hub_slug": "hydrogene-carburants-alternatifs",
+      "author": "C",
+      "sous_cocons": ["Hydrogène logistique", "Carburants alternatifs transport", "GNL maritime"],
+      "seeds_file": "hydrogene-carburants-alternatifs.json"
+    },
+    {
+      "name": "Transition énergétique du transport",
+      "hub_slug": "transition-energetique-transport",
+      "author": "C",
+      "sous_cocons": ["Décarbonation du fret", "Alimentation électrique à quai (OPS)", "Réglementation environnementale"],
+      "seeds_file": "transition-energetique-transport.json"
+    },
+    {
+      "name": "Digitalisation & innovation",
+      "hub_slug": "digitalisation-innovation",
+      "author": "D",
+      "sous_cocons": ["Supervision numérique des infrastructures", "Intelligence artificielle logistique", "Automatisation portuaire"],
+      "seeds_file": "digitalisation-innovation.json"
+    },
+    {
+      "name": "Réglementation & politique des transports",
+      "hub_slug": "reglementation-politique-transports",
+      "author": "D",
+      "sous_cocons": ["Politique européenne des transports", "Financements publics infrastructures", "Normes internationales"],
+      "seeds_file": "reglementation-politique-transports.json"
+    }
+  ]
+}

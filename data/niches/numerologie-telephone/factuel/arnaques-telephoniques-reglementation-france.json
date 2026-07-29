@@ -1,0 +1,247 @@
+{
+  "plan_numerotation_arcep": [
+    {
+      "nom": "Zone 01 — Île-de-France",
+      "description": "Indicatif géographique fixe couvrant la région Île-de-France (Zone de Numérotation Élémentaire). Les numéros géographiques (01 à 05) sont rattachés à une zone du territoire mais peuvent aussi être utilisés en VoIP sans lien réel avec la géographie de l'appelant, un point de vigilance pour l'usurpation.",
+      "source": "ARCEP, plan de numérotation (arcep.fr/actualites/actualites-et-communiques/detail/n/plan-de-numerotation-050922.html) ; monpetitforfait.com — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Zone 02 — Nord-Ouest",
+      "description": "Indicatif géographique fixe couvrant le quart Nord-Ouest de la France métropolitaine.",
+      "source": "monpetitforfait.com, regions-departements-france.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Zone 03 — Nord-Est",
+      "description": "Indicatif géographique fixe couvrant le quart Nord-Est de la France métropolitaine.",
+      "source": "monpetitforfait.com, regions-departements-france.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Zone 04 — Sud-Est",
+      "description": "Indicatif géographique fixe couvrant le quart Sud-Est de la France métropolitaine.",
+      "source": "monpetitforfait.com, regions-departements-france.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Zone 05 — Sud-Ouest",
+      "description": "Indicatif géographique fixe couvrant le quart Sud-Ouest de la France métropolitaine.",
+      "source": "monpetitforfait.com, regions-departements-france.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "06 / 07 — Mobile",
+      "description": "Depuis le 1er janvier 2023, tous les numéros commençant par 06 ou 07 sont réservés aux services de communications interpersonnelles (appels et SMS entre particuliers), dans le cadre de la modernisation du plan de numérotation engagée par l'ARCEP à partir de 2018.",
+      "source": "ARCEP (arcep.fr) ; next.ink, « L'Arcep modernise le plan de numérotation, les 06 et 07 réservées aux communications personnelles » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "09 — Numéro non géographique (VoIP)",
+      "description": "Préfixe réservé à la téléphonie sur IP (VoIP), notamment les box internet. Contrairement aux indicatifs 01-05, un numéro en 09 ne permet pas d'identifier la zone géographique de l'abonné — un simple appel ou SMS entrant depuis ce préfixe ne prouve donc rien sur la localisation de l'appelant.",
+      "source": "districall.com, « Différents types de numéros fixes (01,02,03,04,05,09) » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "08 — Numéros à valeur ajoutée (structure générale)",
+      "description": "Les numéros commençant par 08 sont des numéros de services à valeur ajoutée (SVA), à tarification différenciée selon la tranche exacte (gratuite, standard/banalisée ou surtaxée). Régime encadré par l'ARCEP depuis le 1er octobre 2015.",
+      "source": "ARCEP, « Numéros surtaxés : comprendre les numéros de services à valeur ajoutée » (arcep.fr/mes-demarches-et-services/consommateurs/fiches-pratiques/les-numeros-08-et-les-numeros-courts.html) — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "0800 à 0805 — Numéros verts (gratuits)",
+      "description": "Numéros à 10 chiffres gratuits pour l'appelant, quel que soit l'opérateur ou le forfait : aucun coût de communication ni de service.",
+      "source": "economie.gouv.fr, « Numéros commençant par 08 : quels sont les tarifs ? » (economie.gouv.fr/particuliers/eviter-les-arnaques/numeros-commencant-par-08-quels-sont-les-tarifs) ; ARCEP — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "0806 à 0809 — Numéros gris (tarification standard/banalisée)",
+      "description": "Le coût de la communication peut être facturé selon l'opérateur et le forfait de l'appelant (comme un appel vers un fixe classique), mais sans surcoût de service additionnel prélevé par l'éditeur du numéro.",
+      "source": "economie.gouv.fr ; Orange, « Tarification des numéros spéciaux : numéros verts, gris et violets » (assistancepro.orange.fr) — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "081 — Numéro violet, tarification majorée basse",
+      "description": "Numéro à tarification majorée : coût de la communication standardisé selon l'opérateur, plus un service facturé plafonné à 0,06 €/min ou 0,15 €/appel.",
+      "source": "ARCEP (guide-operateurs-editeurs-sva-juin2014.pdf) — consulté 2026-07",
+      "a_verifier": true
+    },
+    {
+      "nom": "082 — Numéro violet, tarification majorée intermédiaire",
+      "description": "Numéro à tarification majorée : coût de la communication standardisé selon l'opérateur, plus un service facturé plafonné à 0,20 €/min ou 0,50 €/appel.",
+      "source": "ARCEP (guide-operateurs-editeurs-sva-juin2014.pdf) — consulté 2026-07",
+      "a_verifier": true
+    },
+    {
+      "nom": "089 — Numéro violet, tarification surtaxée haute",
+      "description": "Numéro le plus fortement surtaxé de la tranche 08 : coût de la communication standardisé selon l'opérateur, plus un service facturé plafonné à 0,80 €/min ou 3,00 €/appel — la tranche la plus souvent utilisée dans les arnaques au rappel (wangiri/ping call) et aux faux jeux-concours.",
+      "source": "ARCEP (guide-operateurs-editeurs-sva-juin2014.pdf) — consulté 2026-07",
+      "a_verifier": true
+    }
+  ],
+  "dispositif_33700": [
+    {
+      "nom": "Nature et gestion du 33700",
+      "description": "Le 33700 est la plateforme nationale de signalement des SMS spam et des appels indésirables/frauduleux, gérée par l'AF2M (association des opérateurs mobiles). Service gratuit, accessible avec tous les forfaits, sans inscription ni application à installer.",
+      "source": "33700.fr, « Pourquoi signaler un SMS ou appel indésirable au 33700 ? » ; economie.gouv.fr, « SMS et appels indésirables : le 33700 facilite le signalement » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Procédure de signalement d'un SMS indésirable",
+      "description": "L'utilisateur transfère (fonction « Transférer ») le SMS reçu vers le 33700. Un SMS automatique de retour demande alors le numéro de l'expéditeur d'origine ; il suffit de répondre avec ce numéro pour finaliser le signalement. Une déclaration par capture d'écran est aussi possible via le site 33700.fr.",
+      "source": "33700.fr, « Informations pratiques » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Procédure de signalement d'un appel indésirable (spam vocal)",
+      "description": "Pour un appel suspect ou un ping call, l'utilisateur envoie un SMS au 33700 contenant les mots « spam vocal » suivis du numéro qui a appelé.",
+      "source": "33700.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Effet réel des signalements 33700",
+      "description": "Les signalements sont transmis chaque jour aux opérateurs mobiles, qui peuvent suspendre les numéros à l'origine de campagnes frauduleuses et couper les numéros surtaxés ou les envois massifs réalisés depuis de faux expéditeurs. Le 33700 ne bloque pas un numéro instantanément à titre individuel : son efficacité dépend du volume cumulé de signalements sur un même numéro.",
+      "source": "33700.fr, « Pourquoi signaler... » — consulté 2026-07",
+      "a_verifier": false
+    }
+  ],
+  "dispositif_bloctel": [
+    {
+      "nom": "Inscription sur Bloctel",
+      "description": "Inscription gratuite sur www.bloctel.gouv.fr, jusqu'à 8 numéros de téléphone par démarche. Un récépissé précise la date à laquelle l'inscription devient effective, dans un délai maximal de 30 jours après sa délivrance.",
+      "source": "economie.gouv.fr, « Bloctel : comment fonctionne la liste d'opposition au démarchage téléphonique » ; bloctel.gouv.fr/faq — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Durée de validité de l'inscription",
+      "description": "L'inscription sur la liste Bloctel est valable 3 ans. Trois mois avant l'expiration, l'abonné est recontacté (mail ou courrier) pour renouveler s'il le souhaite.",
+      "source": "economie.gouv.fr ; manche.gouv.fr, « La liste d'opposition Bloctel est ouverte » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Exemption Bloctel — relation contractuelle préexistante",
+      "description": "Le démarchage téléphonique d'un consommateur inscrit sur Bloctel reste autorisé en cas de relations contractuelles préexistantes avec l'entreprise (ex. son fournisseur d'énergie, sa banque). C'est la limite la plus fréquemment mal comprise du dispositif.",
+      "source": "economie.gouv.fr, « Bloctel : comment fonctionne... » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Droit d'opposition spécifique même hors Bloctel",
+      "description": "Un consommateur démarché par une entreprise dont il est déjà client (donc en dehors de la protection Bloctel) peut lui demander explicitement de ne plus être prospecté ; l'entreprise doit alors l'inscrire sur sa propre liste interne d'opposition.",
+        "source": "economie.gouv.fr, assemblee-nationale.fr (amendement CE65) — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Obligation de purge pour les professionnels",
+      "description": "Les entreprises pratiquant régulièrement le démarchage téléphonique doivent interroger la liste Bloctel au moins une fois par mois pour purger leurs fichiers de prospection des numéros inscrits.",
+      "source": "assemblee-nationale.fr (amendement CE65, CION-ECO) — consulté 2026-07",
+      "a_verifier": true
+    },
+    {
+      "nom": "Limite connue — non-respect et sanctions",
+      "description": "Bloctel réduit le démarchage légal mais ne protège pas contre les entreprises hors-la-loi (souvent basées à l'étranger ou utilisant des numéros usurpés/spoofés) qui ne consultent pas la liste : Bloctel n'a aucun effet sur les appels frauduleux ou les arnaques, seulement sur le démarchage commercial licite.",
+      "source": "Recoupement CNIL (cnil.fr, « Bloctel : un nouveau site... ») et economie.gouv.fr — consulté 2026-07 ; note de synthèse, pas une citation littérale d'une source unique",
+      "a_verifier": true
+    }
+  ],
+  "types_arnaques_telephoniques": [
+    {
+      "nom": "Wangiri / ping call — mécanisme",
+      "description": "Un automate compose des numéros en masse et raccroche après une à deux sonneries. La victime, intriguée par cet « appel manqué », rappelle un numéro surtaxé (souvent tranche 089 ou un indicatif étranger), ce qui déclenche une facturation immédiate côté opérateur, jusqu'à plusieurs euros par appel/minute.",
+      "source": "quechoisir.org, « Arnaque au numéro surtaxé - Wangiri, un mot nouveau pour un phénomène ancien » ; numero-inconnu.fr, « Wangiri 2025 » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Wangiri / ping call — signes reconnaissables",
+      "description": "Appel très bref (1-2 sonneries max), numéro affiché souvent à indicatif étranger (Afrique de l'Ouest, Balkans, petites îles) ou parfois maquillé pour ressembler à un numéro français, absence de message vocal laissé.",
+      "source": "selectra.info, « Ping call : l'arnaque à l'appel manqué » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Spoofing téléphonique — mécanisme",
+      "description": "Le spoofing consiste à afficher sur l'écran de la victime un numéro usurpé (ex. le numéro officiel de sa banque) grâce à la technologie VoIP, sans que ce numéro corresponde réellement à l'appelant. La victime ne peut pas détecter la manipulation par elle-même au moment de l'appel.",
+      "source": "cybermalveillance.gouv.fr, « Fraude au faux conseiller bancaire » ; avocat-hupin.fr, « Victime de spoofing bancaire » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Arnaque au faux conseiller bancaire — mécanisme",
+      "description": "L'escroc se présente comme conseiller ou agent du service anti-fraude de la banque de la victime, souvent en usurpant le numéro réel de l'établissement (spoofing). Il dispose déjà d'informations sur la victime (identité, coordonnées bancaires partielles) pour crédibiliser son discours, crée un climat d'urgence/de stress, et cherche à obtenir des codes de validation ou à faire confirmer de fausses opérations frauduleuses par la victime elle-même.",
+      "source": "cybermalveillance.gouv.fr, « Que faire en cas de fraude au faux conseiller bancaire ? » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Arnaque au CPF (Compte Personnel de Formation) — cadre légal",
+      "description": "Depuis la loi du 19 décembre 2022, tout démarchage commercial concernant le CPF est interdit, quel que soit le canal (téléphone, SMS, e-mail, réseaux sociaux). Un appel non sollicité évoquant le CPF est donc par nature une fraude.",
+      "source": "economie.gouv.fr, « Démarchage relatif au compte personnel de formation (CPF) : attention aux arnaques ! » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Arnaque au CPF — signes reconnaissables",
+      "description": "Appel non sollicité évoquant le CPF, sentiment d'urgence artificiel (« derniers jours », « vos droits expirent »), promesse de conversion du solde CPF en argent liquide (impossible : le CPF ne finance que des formations, jamais un versement en espèces), demande d'informations personnelles ou du numéro de sécurité sociale avant toute inscription officielle sur Mon Compte Formation.",
+      "source": "litige.fr, « Arnaques au compte CPF » ; economie.gouv.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Arnaque au faux support technique — mécanisme",
+      "description": "Un message d'alerte anxiogène (souvent déclenché par une publicité malveillante ou un lien de phishing) simule un blocage de l'ordinateur et un risque de perte de données, pour pousser la victime à appeler un numéro de « support technique » affiché à l'écran. Dans certains cas, les victimes sont directement contactées par téléphone par de faux techniciens se réclamant d'un éditeur connu (ex. Microsoft).",
+      "source": "cybermalveillance.gouv.fr, « Comment faire face à l'arnaque au faux support technique ? » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Arnaque au faux support technique — signes reconnaissables",
+      "description": "Message en rouge très alarmant, compte à rebours, alerte sonore persistante, numéro de téléphone affiché en urgence, page impossible à fermer normalement. Microsoft rappelle explicitement qu'il ne contacte jamais un utilisateur de manière proactive pour un support non sollicité, et que ses messages d'erreur authentiques n'affichent jamais de numéro de téléphone.",
+      "source": "support.microsoft.com, « Éviter et signaler les arnaques au faux support technique Microsoft » — consulté 2026-07",
+      "a_verifier": false
+    }
+  ],
+  "recours_legaux": [
+    {
+      "nom": "Plateforme THESEE — plainte en ligne pour escroquerie",
+      "description": "THESEE (Traitement Harmonisé des Enquêtes et Signalements pour les E-Escroqueries), créée le 15 mars 2022 par le ministère de l'Intérieur, permet à tout particulier majeur de déposer plainte en ligne pour une escroquerie (dont certaines arnaques initiées par téléphone), via service-public.fr, rubrique « arnaque sur internet ». Démarche guidée, environ 10 minutes. Les professionnels doivent se déplacer en commissariat ou gendarmerie.",
+      "source": "justice.fr, « Porter plainte escroquerie sentiments THESEE » ; masecurite.interieur.gouv.fr, « THESEE suit les arnaques sur internet à la trace » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Dépôt de plainte classique (commissariat/gendarmerie)",
+      "description": "Pour les faits ne relevant pas du périmètre THESEE, ou en complément, la victime peut porter plainte directement en commissariat de police ou en brigade de gendarmerie.",
+      "source": "plus.transformation.gouv.fr, « Dépôt de plainte » — consulté 2026-07",
+      "a_verifier": true
+    },
+    {
+      "nom": "SignalConso — signalement du démarchage abusif à la DGCCRF",
+      "description": "SignalConso (signal.conso.gouv.fr) est la plateforme officielle permettant de signaler un problème de démarchage abusif (y compris malgré une inscription Bloctel) ou toute pratique commerciale déloyale. Le signalement est transmis au professionnel concerné et à la DGCCRF, qui peut ouvrir une enquête.",
+      "source": "signal.conso.gouv.fr, « Démarchage abusif : faire un signalement » — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Rôle de la DGCCRF",
+      "description": "La Direction générale de la concurrence, de la consommation et de la répression des fraudes (DGCCRF) veille au respect des règles de concurrence et de protection des consommateurs (publicité trompeuse, abus de faiblesse, non-respect de Bloctel, etc.). Elle ne tranche pas les litiges civils individuels entre un consommateur et une entreprise — c'est le rôle des tribunaux — mais peut enquêter et sanctionner les professionnels fautifs suite aux signalements reçus.",
+      "source": "droit-finances.commentcamarche.com, « DGCCRF : contact et rôle » ; smart-legal.fr — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Remboursement bancaire en cas d'opération non autorisée — principe légal",
+      "description": "En application des articles L.133-18 et suivants du Code monétaire et financier, la banque doit rembourser au client le montant d'une opération de paiement non autorisée signalée dans un délai de 13 mois suivant le débit, en général immédiatement et au plus tard à la fin du premier jour ouvrable suivant le signalement — sauf si elle prouve une négligence grave ou une fraude du client, la charge de la preuve reposant sur l'établissement bancaire.",
+      "source": "Légifrance, Code monétaire et financier, art. L133-18 (legifrance.gouv.fr/codes/article_lc/LEGIARTI000035430532) — consulté 2026-07",
+      "a_verifier": false
+    },
+    {
+      "nom": "Remboursement bancaire et spoofing — cas particulier",
+      "description": "Le fait d'avoir été trompé par un faux conseiller affichant le numéro réel de sa banque (spoofing) n'est généralement pas qualifié de négligence grave par les tribunaux, ce qui maintient en principe le droit au remboursement — mais chaque dossier est apprécié au cas par cas par la banque puis, en cas de désaccord, par un tribunal.",
+      "source": "avocat-hupin.fr, « Victime de spoofing bancaire : vos droits face à votre banque » — consulté 2026-07 ; qualifié de tendance générale, pas une garantie systématique",
+      "a_verifier": true
+    },
+    {
+      "nom": "Cybermalveillance.gouv.fr — assistance aux victimes",
+      "description": "Dispositif public d'assistance aux victimes de cybermalveillance (dont les arnaques au faux support technique et au faux conseiller bancaire), avec fiches réflexes pratiques et mise en relation avec des prestataires de proximité qualifiés.",
+      "source": "cybermalveillance.gouv.fr — consulté 2026-07",
+      "a_verifier": false
+    }
+  ],
+  "note_generale": "Dataset factuel P2 pour le site numerologie-telephone.com (annuaire inversé/signalement d'arnaques téléphoniques). 38 entrées réparties en 5 catégories : plan de numérotation ARCEP (indicatifs géographiques 01-05, mobile 06/07, VoIP 09, tranches 08 gratuites/standard/surtaxées), fonctionnement du 33700, fonctionnement et limites de Bloctel, mécanismes et signes des arnaques les plus documentées en France (wangiri/ping call, spoofing, faux conseiller bancaire, arnaque CPF, faux support technique), et recours légaux réels (THESEE, plainte classique, SignalConso, rôle de la DGCCRF, remboursement bancaire art. L133-18 CMF, cybermalveillance.gouv.fr). Sources exclusivement officielles ou institutionnelles françaises quand elles existent (ARCEP, economie.gouv.fr/DGCCRF, 33700.fr, bloctel.gouv.fr, cybermalveillance.gouv.fr, service-public.fr/justice.fr, Légifrance, support.microsoft.com) ; quelques médias spécialisés consommateurs (Que Choisir, Selectra, sites d'avocats) utilisés en complément pour les mécanismes d'arnaques et marqués individuellement. 8 entrées marquées `a_verifier: true` par prudence (tarifs plafonds précis des tranches 081/082/089 datant d'un guide ARCEP 2014 non revérifié à une source plus récente, fréquence exacte de purge Bloctel par les pros, portée générale de la limite Bloctel hors texte réglementaire unique, jurisprudence spoofing non garantie systématique, détail de la procédure de plainte classique hors THESEE). Aucune donnée chiffrée ou procédure n'a été inventée ; toute incertitude a été signalée plutôt que devinée, conformément à la règle du projet.",
+  "meta": {
+    "site": "numerologie-telephone.com",
+    "phase_pipeline": "P2 — base factuelle",
+    "date_compilation": "2026-07-29",
+    "nombre_entrees": 38
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "silo": "Transition énergétique du transport",
+  "seeds": {
+    "réglementation environnementale transport maritime": {
+      "sub": "Réglementation environnementale",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:13:05.412Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:13:06.583Z"
+    },
+    "zone à faibles émissions maritime": {
+      "sub": "Réglementation environnementale",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:13:08.043Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:13:09.103Z"
+    },
+    "décarbonation transport marchandises": {
+      "sub": "Décarbonation du fret",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:09.050Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:10.754Z"
+    },
+    "empreinte carbone fret maritime": {
+      "sub": "Décarbonation du fret",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:12.157Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:13.853Z"
+    },
+    "alimentation électrique à quai": {
+      "sub": "Alimentation électrique à quai (OPS)",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:15.312Z",
+      "candidates": [
+        {
+          "keyword": "Qu’est-ce que l’alimentation électrique à quai ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "le grand port maritime de marseille est le premier port français à avoir mis en place un service d'alimentation électrique à quai pour les navires de commerce. ainsi depuis juillet 2016 trois bornes d'alimentation électrique à quai sont installées.",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        },
+        {
+          "keyword": "qu'est-ce que l'alimentation électrique à quai ?",
+          "volume": "NA",
+          "competition": null,
+          "source": "match"
+        }
+      ],
+      "enriched_at": "2026-07-29T16:17:16.767Z"
+    },
+    "OPS onshore power supply": {
+      "sub": "Alimentation électrique à quai (OPS)",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:17:18.205Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:17:19.248Z"
+    }
+  }
+}

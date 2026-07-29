@@ -1,0 +1,95 @@
+{
+  "silo": "Peptides & performance sportive",
+  "seeds": {
+    "peptides et croissance musculaire": {
+      "sub": "Croissance musculaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:09:04.821Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:09:05.857Z"
+    },
+    "peptides bodybuilding avis": {
+      "sub": "Croissance musculaire",
+      "intent": "C",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:09:09.709Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:09:10.740Z"
+    },
+    "protocole peptides sportifs": {
+      "sub": "Protocoles d'utilisation sportive",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T14:09:12.174Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T14:09:13.193Z"
+    },
+    "BPC-157 effets": {
+      "sub": "Récupération musculaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:07.802Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:08.848Z"
+    },
+    "peptides récupération musculaire": {
+      "sub": "Récupération musculaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:10.228Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:11.235Z"
+    },
+    "peptides cicatrisation tendon": {
+      "sub": "Récupération musculaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:12.637Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:13.696Z"
+    },
+    "peptides sécrétagogues": {
+      "sub": "Croissance musculaire",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:15.172Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:16.236Z"
+    },
+    "cycle peptides": {
+      "sub": "Protocoles d'utilisation sportive",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:17.610Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:19.186Z"
+    },
+    "dosage peptides recherche": {
+      "sub": "Protocoles d'utilisation sportive",
+      "intent": "I",
+      "volume": null,
+      "total_similar": 0,
+      "results": [],
+      "fetched_at": "2026-07-29T16:14:20.600Z",
+      "candidates": [],
+      "enriched_at": "2026-07-29T16:14:22.242Z"
+    }
+  }
+}

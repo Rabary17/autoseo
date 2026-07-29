@@ -1,0 +1,66 @@
+{
+  "Fondamentaux des peptides": {
+    "icon": "🧬",
+    "subs": [
+      {"name": "Définitions & structure", "kws": ["qu'est-ce qu'un peptide|I","structure d'un peptide|I","peptide de recherche définition|I","peptides naturels vs synthétiques|I","différence peptide protéine|I"]},
+      {"name": "Synthèse & fabrication", "kws": ["synthèse peptidique|I","fabrication des peptides|I","peptide reagent grade|I","pureté peptide certificat|I"]},
+      {"name": "Peptides vs protéines vs acides aminés", "kws": ["différence peptide protéine acide aminé|I","chaîne peptidique taille|I","digestion des peptides|I"]}
+    ]
+  },
+  "Peptides de recherche": {
+    "icon": "🔬",
+    "subs": [
+      {"name": "Présentation générale", "kws": ["peptide de recherche c'est quoi|I","liste peptides de recherche|I","peptides les plus étudiés|I"]},
+      {"name": "Réglementation & statut légal", "kws": ["peptides de recherche légal|I","peptides interdits liste|I","achat peptide recherche|I"]},
+      {"name": "Actualités scientifiques", "kws": ["études sur les peptides|I","recherche sur les peptides|I","essais cliniques peptides|I"]}
+    ]
+  },
+  "Peptides & anti-âge": {
+    "icon": "✨",
+    "subs": [
+      {"name": "Collagène & peptides de collagène", "kws": ["peptides de collagène bienfaits|I","collagène marin vs bovin|C","complément peptides de collagène|C","peptides collagène peau|I"]},
+      {"name": "Peptides cuivre GHK-Cu", "kws": ["GHK-Cu peptide effets|I","peptide de cuivre peau|I","GHK-Cu cosmétique|I"]},
+      {"name": "Longévité cellulaire", "kws": ["peptides et longévité cellulaire|I","peptides anti-âge|I","sénescence cellulaire|I"]}
+    ]
+  },
+  "Peptides & perte de poids": {
+    "icon": "⚖️",
+    "subs": [
+      {"name": "Peptides GLP-1", "kws": ["peptides GLP-1|I","peptides et perte de poids|I","agoniste GLP-1 effets secondaires|I"]},
+      {"name": "Métabolisme & satiété", "kws": ["peptides et appétit|I","peptides et métabolisme|I","peptides et satiété|I"]},
+      {"name": "Comparatifs peptides minceur", "kws": ["comparatif peptides minceur|C","peptides vs régime alimentaire|I"]}
+    ]
+  },
+  "Peptides & performance sportive": {
+    "icon": "💪",
+    "subs": [
+      {"name": "Récupération musculaire", "kws": ["BPC-157 effets|I","peptides récupération musculaire|I","peptides cicatrisation tendon|I"]},
+      {"name": "Croissance musculaire", "kws": ["peptides et croissance musculaire|I","peptides sécrétagogues|I","peptides bodybuilding avis|C"]},
+      {"name": "Protocoles d'utilisation sportive", "kws": ["protocole peptides sportifs|I","cycle peptides|I","dosage peptides recherche|I"]}
+    ]
+  },
+  "Peptides du lait": {
+    "icon": "🥛",
+    "subs": [
+      {"name": "Lactoferrine", "kws": ["lactoferrine bienfaits|I","lactoferrine et immunité|I","complément lactoferrine avis|C"]},
+      {"name": "Caséine & peptides bioactifs", "kws": ["peptides de caséine|I","peptides bioactifs du lait|I"]},
+      {"name": "Immunité & peptides du lait", "kws": ["peptides du lait immunité|I","colostrum peptides|I"]}
+    ]
+  },
+  "Peptides végétaux": {
+    "icon": "🌱",
+    "subs": [
+      {"name": "Peptides de soja", "kws": ["peptides de soja|I","peptides de soja comparatif|C"]},
+      {"name": "Peptides de pois & riz", "kws": ["peptides de pois|I","peptides de riz|I","comparatif peptides pois riz soja|C"]},
+      {"name": "Alternatives protéines animales", "kws": ["peptides végétaux alternative|I","absorption peptides végétaux|I"]}
+    ]
+  },
+  "Pause bien-être": {
+    "icon": "☕",
+    "subs": [
+      {"name": "Sommeil & récupération", "kws": ["peptides et sommeil|I","DSIP peptide sommeil|I","routine sommeil récupération|I"]},
+      {"name": "Nutrition & micronutrition", "kws": ["micronutrition et bien-être|I","compléments alimentaires bien-être|C"]},
+      {"name": "Rituels bien-être", "kws": ["rituel bien-être quotidien|I","pause bien-être|I"]}
+    ]
+  }
+}
