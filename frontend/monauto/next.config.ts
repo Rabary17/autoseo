@@ -21,6 +21,19 @@ const nextConfig: NextConfig = {
   // thématiquement. /contact existe déjà à l'identique (géré par trailingSlash).
   async redirects() {
     return [
+      // www -> apex (domaine canonique = SITE_URL = https://techcars.fr) —
+      // DOIT rester la première règle : sinon les redirections suivantes
+      // matcheraient d'abord et renverraient vers .../categorie/... sur le
+      // mauvais host. www.techcars.fr ajouté au projet Vercel le 2026-07-29
+      // (cf. STATE.md) ; nécessite aussi l'enregistrement DNS A demandé par
+      // Vercel côté registrar (Infomaniak) pour que le certificat TLS de ce
+      // sous-domaine soit valide avant que cette règle ne s'applique.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.techcars.fr" }],
+        destination: "https://techcars.fr/:path*",
+        permanent: true,
+      },
       { source: "/vehicule-d-occasion", destination: "/categorie/voiture-d-occasion/", permanent: true },
       { source: "/service-carte-grise", destination: "/categorie/carte-grise-demarches/", permanent: true },
       {

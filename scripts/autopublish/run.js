@@ -853,12 +853,13 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         parentPublished: !!parentDate, factsProvided: facts,
       });
 
-      if (!gatingResult.passed) {
-        console.log(`${logTag} : bloqué (gating) — ${gatingResult.failures.map(f => f.message).join(' ; ')}`);
-        items.push({ slug, contentType: 'article', status: 'draft', reasons: gatingResult.failures.map(f => f.message), usage });
-        continue;
-      }
-      console.log(`${logTag} : gating OK.`);
+      // Même règle que pour les hubs/sous-hubs (voir plus haut) — étendue aux
+      // articles le 2026-07-29, demande explicite de l'utilisateur après avoir
+      // constaté un taux de blocage élevé sur "Carte grise & démarches" : un
+      // échec de gating ne doit plus faire perdre le contenu déjà généré/payé
+      // (génération + 2 relectures). Toujours inséré en draft pour validation
+      // manuelle, jamais régénéré à l'aveugle au run suivant.
+      console.log(`${logTag} : ${gatingResult.passed ? 'gating OK.' : 'gating KO — conservé en draft pour validation manuelle (' + gatingResult.failures.map(f => f.message).join(' ; ') + ').'}`);
 
       // Planification + insertion immédiate (même itération, voir note plus haut).
       const [scheduled] = scheduler.computeSchedule({
@@ -903,12 +904,19 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
       if (!DRY_RUN) {
         const created = await wp.createPost(payload);
         console.log(`${logTag} : inséré — article WP #${created.id} (${created.link || '(url non renvoyée)'}), publication prévue ${scheduled.post_date.slice(0, 10)}.`);
-        similarity.addToIndex(silo, row.sous_cocon, slug, content.content_gutenberg);
-        markArticleSlugAsExisting(slug);
+        // Un article inséré malgré un échec de gating n'est pas considéré
+        // "réellement disponible" pour autant : ni comme cible de lien pour
+        // les prochains articles du même sous-cocon, ni dans l'index de
+        // similarité (même logique que hubDateBySlug pour les hubs) — tant
+        // que l'utilisateur ne l'a pas validé manuellement.
+        if (gatingResult.passed) {
+          similarity.addToIndex(silo, row.sous_cocon, slug, content.content_gutenberg);
+          markArticleSlugAsExisting(slug);
+        }
         trackingXlsx.updateRow(trackingRows, row.mot_cle_principal, {
-          statut: 'programmé',
+          statut: gatingResult.passed ? 'programmé' : 'à valider',
           url_cible: maillageEntry ? maillageEntry.url : `/${slug}`,
-          date_publication: scheduled.post_date.slice(0, 10),
+          date_publication: gatingResult.passed ? scheduled.post_date.slice(0, 10) : '',
         });
         // Écrit immédiatement (pas seulement en mémoire) — même principe que
         // persistStateProgress ci-dessus : avant ce correctif, le xlsx n'était
@@ -918,7 +926,12 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         // risque de reprise en double au run suivant).
         trackingXlsx.writeRows(trackingRows);
       }
-      items.push({ slug, contentType: 'article', status: 'publie', postDate: scheduled.post_date, usage });
+      items.push({
+        slug, contentType: 'article',
+        status: gatingResult.passed ? 'publie' : 'a_valider',
+        postDate: scheduled.post_date, usage,
+        reasons: gatingResult.passed ? undefined : gatingResult.failures.map(f => f.message),
+      });
     } catch (e) {
       console.error(`[phase2] échec ${stage} article "${slug}" : ${e.message}`);
       items.push({ slug, contentType: 'article', status: 'erreur', reasons: [e.message] });
