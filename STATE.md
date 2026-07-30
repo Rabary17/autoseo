@@ -128,11 +128,10 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-07-29
+## Autopublish — dernier run : 2026-07-30
 - Phase : 2 — silo en cours : Carte grise & démarches
-- Programmées : 1 — bloquées (draft) : 22 — erreurs techniques : 2 ⚠️
-- Dernier article programmé pour : 2026-09-01T08:00:00.000Z
-- Détail complet : [logs/autopublish/2026-07-29.md](logs/autopublish/2026-07-29.md)
+- Programmées : 0 — bloquées (draft) : 6 — erreurs techniques : 0
+- Détail complet : [logs/autopublish/2026-07-30.md](logs/autopublish/2026-07-30.md)
 <!-- autopublish:report:end -->
 
 
@@ -955,6 +954,26 @@ En relisant en détail le HTML brut des 2 articles programmés au run précéden
 - `review.md` (règle 4, maillage) et `lisibilite.md` (règle "ne jamais toucher aux liens") : renforcés avec les 2 défauts concrets trouvés (domaine inventé, `href="#"`, auto-lien, suppression d'une phrase à cause d'un lien qu'elle contient) comme contre-exemples explicites.
 - `gating.js` (`checkMaillageResolved`, articles uniquement) : nouvelle vérification réelle du contenu — extrait tous les `<a href>` du corps, rejette tout href qui ne commence pas par `/` (domaine inventé ou `#`), rejette un href égal à l'URL de l'article lui-même, rejette tout href hors de l'ensemble attendu (sous-hub/hub/liens latéraux), exige la présence du lien montant vers le sous-hub (toujours disponible dès lors que `checkParentPublished` passe). Testé isolément sur le HTML réel des 2 articles cassés (les deux défauts détectés) et sur un exemple synthétique correct (aucun faux positif).
 
-**Build CI cassé (signalé en passant par l'utilisateur)** : reproduit en local en simulant l'environnement CI (aucune variable WP) — `next build` plante avec `ECONNREFUSED` sur `/categorie/[...slug]/page`, pas juste un warning. Deux causes cumulées :
+### 2026-07-30 : QC des 16 "à valider" + 6 articles neufs — 0/22 publiable, hallucination de sources YMYL externes
+
+Sur demande explicite de l'utilisateur ("lance les silos urgent et important, publie 10 articles/jour"), tentative de traiter le silo prioritaire `Carte grise & démarches` : 16 articles déjà en `draft` "à valider" (bloqués au run du 2026-07-29 pour longueur <900 mots) + les 6 derniers clusters "à faire" du silo.
+
+**Vérifié d'abord (liens/images) sur les 16 draft existants** : aucun lien mort, aucune image cassée — toutes les URLs pointaient vers de vraies sources gouvernementales (ants.gouv.fr, service-public.fr...). Le seul défaut structurel était la longueur (`gating.js` exige 900-2500 mots pour un article).
+
+**Tentative de régénération** (nouveau script [scripts/autopublish/regenerate-short.js](scripts/autopublish/regenerate-short.js), réutilise `generateAndReview` de `run.js` mais `updatePost` au lieu de `createPost` pour ne pas dupliquer le slug) : **0/16 passe le gating**, même après 2 tentatives complètes (1ère : 8 échecs techniques `fetch failed` + 8 échecs de gating substantiels ; 2ème après confirmation que la connectivité Mistral fonctionnait bien en direct : 0/16 encore). Puis test délibéré avec `mistral-medium-latest` au lieu de `mistral-small-latest` pour la génération (sur 3 clusters, demande explicite de l'utilisateur pour trancher "modèle plus gros" vs "prompt à corriger") : **encore pire** (contenu encore plus court, 418-584 mots, mêmes liens inventés) — la taille du modèle n'est donc pas la cause.
+
+**Run standard sur les 6 clusters neufs "à faire"** (`node run.js --max-articles=6`, contenu jamais généré avant, donc indépendant du problème de régénération) : **0/6 passe le gating non plus**, mêmes catégories d'échec.
+
+**Cause racine identifiée, distincte de celle corrigée le 2026-07-29** (qui portait sur le maillage interne — sous-hub/hub/liens latéraux, déjà bien filtrée par `checkMaillageResolved`) : ici, ce sont des **liens vers des sources OFFICIELLES EXTERNES** (`service-public.gouv.fr/particuliers/vosdroits/F1986`, `ants.gouv.fr`, `economie.gouv.fr/mediateur`...) qui sont inventés — des codes de référence `service-public.fr` plausibles mais fictifs, jamais présents dans les faits fournis. Cause probable : `system-article.md` ligne 64 impose "`sources[]` doit obligatoirement contenir au moins une source officielle citée dans le texte" pour tout silo YMYL, mais les données factuelles locales (`data/factuel/*.json`) + le complément Tavily ne fournissent pas toujours une URL officielle réelle et pertinente pour des mots-clés très précis ("cheval fiscal prix par région", "contrôle technique moto 2026") — le modèle comble alors le vide en inventant une URL vraisemblable pour satisfaire la contrainte YMYL, malgré la règle déjà existante ligne 43 ("n'invente jamais un lien... en dehors de ce qui est fourni").
+
+**Autres motifs de blocage récurrents sur ce lot** (secondaires, non uniques à ce run) : "lien montant vers le sous-hub manquant dans le corps" (récurrent sur ~8/22 pièces, malgré la relecture qui le corrige explicitement à chaque fois — semble alors retiré par la passe lisibilité ou mal réinjecté), un doublon de contenu à 70%+ avec un article déjà publié (`declaration-de-cession-carte-grise`), 1 erreur modèle brute (`finish_reason=error`).
+
+**Décision utilisateur en attente** : ~740k tokens Mistral consommés sur cette session pour 0 article publiable — arrêt des tentatives de régénération/production sur ce silo tant que le prompt (`system-article.md`) n'a pas été corrigé pour soit (a) interdire explicitement toute URL externe qui n'apparaît pas mot pour mot dans les faits fournis (quitte à assouplir/retirer l'obligation YMYL de citer une source si aucune n'est disponible), soit (b) enrichir `data/factuel/carte-grise-demarches.json` avec de vraies URLs officielles par sous-cocon avant tout nouveau run.
+
+**Prochaine action concrète** : corriger `system-article.md` (contrainte anti-hallucination sur les sources externes, symétrique à celle déjà en place sur le maillage interne), puis retester sur 2-3 clusters seulement avant de relancer un lot complet. Les 16 + 6 restent en `draft` dans WordPress (rien perdu, tout re-régénérable).
+
+### 2026-07-29 : Build CI cassé (signalé en passant par l'utilisateur)
+
+Reproduit en local en simulant l'environnement CI (aucune variable WP) — `next build` plante avec `ECONNREFUSED` sur `/categorie/[...slug]/page`, pas juste un warning. Deux causes cumulées :
 1. `resolveTerm()` (`app/categorie/[...slug]/page.tsx`) n'avait **aucun** `try/catch` autour de `getTermBySlug`/`getCategoryById`, contrairement au reste du fichier (`getPostsByCategory`, `getPageBySlug`, déjà protégés) — une erreur réseau non rattrapée y plantait tout l'export Next.js plutôt que de dégrader gracieusement vers un 404. Corrigé avec le même principe de repli que le reste du fichier ; `redirect()`/`notFound()` sont des exceptions de contrôle de flux Next.js qu'il ne faut jamais avaler — `unstable_rethrow(e)` les laisse remonter avant le traitement générique de l'erreur.
 2. **Cause racine réelle** : `.github/workflows/ci.yml` ne transmet **aucune** variable d'environnement WP à l'étape "Build Next.js" — `lib/wp.ts` retombe alors sur `http://thermotowel.local` (repli local, jamais joignable depuis un runner GitHub), donc **tous** les appels WP échouent pour les 39 pages du build. Corrigé : `ci.yml` fournit maintenant `WP_API_URL`/`NEXT_PUBLIC_WP_SITE_URL`/`SITE_URL`/`SITE_NAME` (valeurs identiques à `.env.local` — lecture publique sans authentification, aucun secret nécessaire). **Vérifié en local** en reproduisant exactement l'environnement CI (ces 4 variables seules, sans `.env.local`, sans `NODE_TLS_REJECT_UNAUTHORIZED`) : build réussi, 41/41 pages générées.
