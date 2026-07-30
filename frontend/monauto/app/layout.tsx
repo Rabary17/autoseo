@@ -6,6 +6,7 @@ import CookieConsent from "@/components/CookieConsent";
 import ReadingProgress from "@/components/ReadingProgress";
 import BackToTop from "@/components/BackToTop";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 import "./monauto.css";
 
 const DEFAULT_DESCRIPTION =
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <BottomNav />
         <BackToTop />
         <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );

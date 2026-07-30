@@ -9,6 +9,7 @@
     "seed-test": "node ../../scripts/seed-monauto-test-content.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "next": "^15.5.20",
     "nodemailer": "^9.0.3",
     "react": "19.0.0",
