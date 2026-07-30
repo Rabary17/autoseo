@@ -5,6 +5,14 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-07-30 : les 8 articles "publiés" hier n'étaient en fait jamais devenus publics + page /archives/
+
+**🐛 Bug critique découvert en construisant la page `/archives/`** (qui affichait 0 article alors que 8 avaient été "publiés" la veille) : passer `status: 'publish'` seul via l'API REST WP, sans changer `date`/`date_gmt`, ne suffit PAS si la date stockée est dans le futur (ces 8 articles avaient encore `date_gmt = 2026-09-01`, héritée de la planification initiale du batch). **WordPress rebascule silencieusement le statut en `future`** (programmé) dans ce cas — confirmé en vérifiant directement les 8 posts par ID le lendemain : tous `status: "future"`, `X-WP-Total` (status=publish) = 0. **Les 8 articles n'ont donc jamais été réellement visibles publiquement entre leur "publication" et cette découverte.**
+
+**Corrigé** : `date` ET `date_gmt` (les deux, pas seulement l'un des deux) mis à une date passée (15 min avant l'heure d'exécution) en plus de `status: 'publish'` — confirmé cette fois `status: "publish"` réel, `X-WP-Total` = 8. **Leçon à retenir pour toute future publication sur ce projet** : ne jamais flipper `draft`/`future` → `publish` sans aussi réinitialiser `date`/`date_gmt` à une date passée — voir mémoire `feedback-qc-avant-publication-autoseo`, mise à jour en conséquence.
+
+**Nouvelle page [/archives/](frontend/monauto/app/archives/page.tsx)** : liste tous les articles publiés, filtrable par catégorie (+ sous-catégorie, un seul `<select>` avec `<optgroup>`) et par tag (second `<select>`), 30 articles/page avec pagination, grille responsive 1→5 colonnes. Nouvelle card dédiée ([ArchiveArticleCard.tsx](frontend/monauto/components/ArchiveArticleCard.tsx)) : catégorie en badge cliquable sur l'image, titre en dessous, date + auteur — visuel volontairement distinct d'`EntityCard` pour ne pas faire diverger les autres listings. Lien "Tous les articles" ajouté au header. Vérifié en local (dev server) : 8 cards affichées, filtre catégorie parent (inclut les sous-catégories via jointure d'IDs) et filtre par sous-catégorie directe tous deux fonctionnels, grille confirmée à 5 colonnes en desktop, meta title/description corrects.
+
 ## 2026-07-29 (suite 5) : premiers articles réels publiés sur techcars.fr (silo Carte grise & démarches)
 
 **🎯 Premiers articles jamais réellement publiés sur ce site.** Batch de 25 (voir suite précédente pour le correctif "gating KO conservé en draft") : 1 seul passé le gating proprement (`declaration-de-cession-carte-grise`, #929), 23 en draft `à valider`, 1 échec technique Mistral (`controle-technique-points-verifies`, jamais généré).
