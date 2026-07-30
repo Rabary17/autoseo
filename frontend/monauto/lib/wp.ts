@@ -5,6 +5,21 @@
 import type { FaqItem, Source, WpImage, WpPage, WpPost, WpTerm, WpUser } from "./types";
 import * as http from "node:http";
 import * as https from "node:https";
+import { cache } from "react";
+import { unstable_cache } from "next/cache";
+
+// Économiser les appels API WordPress (demande explicite de l'utilisateur,
+// 2026-07-30) — deux mécanismes complémentaires, pas un seul :
+// - `cache()` (React) déduplique DANS une même requête : generateMetadata()
+//   et le composant de page appellent souvent getPostBySlug/getPageBySlug/etc.
+//   avec le même argument — sans ça, chaque page article/hub payait 2 appels
+//   WP identiques au lieu d'1. Ne persiste jamais entre deux requêtes.
+// - `unstable_cache` (Next.js) persiste ENTRE requêtes, 15 min (comme le
+//   `revalidate` déjà en place partout sur ce site) — réservé aux données
+//   identiques quelle que soit la page (catégories, tags, auteurs, pages
+//   statiques, tous les posts pour le sitemap) : sans ça, /archives/,
+//   le header et chaque page catégorie refont chacun le même appel.
+const REVALIDATE_SECONDS = 900;
 
 // `fetch` global (patché par Next.js pour son Data Cache) ET même `undici`
 // importé directement (Next patche le dispatcher global d'undici, pas
@@ -192,39 +207,42 @@ export async function getPosts(page = 1, perPage = 12, extra = "") {
 // et app/auteur/[slug]/page.tsx appellent chacun getAllPosts() indépendamment.
 // Sans cache, Next.js relance la même requête coûteuse (_embed=1, potentiellement
 // plusieurs pages) en parallèle pour chacun — ce qui a fait planter (502) un
-// hébergement mutualisé à faible capacité PHP-FPM/WAF. Un seul fetch est donc
-// partagé entre tous les appelants d'un même build.
-let allPostsCache: Promise<WpPost[]> | null = null;
-export async function getAllPosts(): Promise<WpPost[]> {
-  if (!allPostsCache) {
-    allPostsCache = (async () => {
-      const all: WpPost[] = [];
-      let page = 1;
-      while (true) {
-        const { posts, totalPages } = await getPosts(page, 100);
-        all.push(...posts);
-        if (page >= totalPages) break;
-        page += 1;
-      }
-      return all;
-    })();
-  }
-  return allPostsCache;
-}
+// hébergement mutualisé à faible capacité PHP-FPM/WAF. `unstable_cache`
+// persiste le résultat 15 min ENTRE requêtes (pas seulement pour la durée
+// d'un build) — sitemap.ts, generateStaticParams et la page auteur en
+// bénéficient tous les trois sans se marcher dessus.
+export const getAllPosts = unstable_cache(
+  async (): Promise<WpPost[]> => {
+    const all: WpPost[] = [];
+    let page = 1;
+    while (true) {
+      const { posts, totalPages } = await getPosts(page, 100);
+      all.push(...posts);
+      if (page >= totalPages) break;
+      page += 1;
+    }
+    return all;
+  },
+  ["wp-all-posts"],
+  { revalidate: REVALIDATE_SECONDS }
+);
 
-export async function getPostBySlug(slug: string): Promise<WpPost | null> {
+// cache() (React) : generateMetadata() ET le composant de page appellent
+// tous les deux getPostBySlug/getPageBySlug avec le même slug — sans ce
+// wrapper, chaque page article/hub déclenchait 2 appels WP identiques.
+export const getPostBySlug = cache(async (slug: string): Promise<WpPost | null> => {
   const posts = await wpJson<WpPost[]>(
     `/posts?slug=${encodeURIComponent(slug)}&_embed=1&status=publish`
   );
   return posts[0] ? decodeEmbeds(posts[0]) : null;
-}
+});
 
-export async function getPageBySlug(slug: string): Promise<WpPage | null> {
+export const getPageBySlug = cache(async (slug: string): Promise<WpPage | null> => {
   const pages = await wpJson<WpPage[]>(
     `/pages?slug=${encodeURIComponent(slug)}&_embed=1&status=publish`
   );
   return pages[0] ?? null;
-}
+});
 
 // Pages enfants d'une autre page (hiérarchie native WP `parent`) — sert à
 // lister les sous-hubs d'un hub en cards avec image : contrairement aux
@@ -238,31 +256,38 @@ export async function getChildPages(parentId: number): Promise<WpPage[]> {
 // Nécessaire pour generateStaticParams de app/[slug]/page.tsx : en export
 // statique, dynamicParams est toujours false — toute page (WP "page", pas
 // "post") absente de generateStaticParams renvoie une 500 au build.
-export async function getAllPages(): Promise<WpPage[]> {
-  return wpJson<WpPage[]>("/pages?per_page=100&status=publish");
-}
+export const getAllPages = unstable_cache(
+  (): Promise<WpPage[]> => wpJson<WpPage[]>("/pages?per_page=100&status=publish"),
+  ["wp-all-pages"],
+  { revalidate: REVALIDATE_SECONDS }
+);
 
 /* ---------- Taxonomies & auteurs ---------- */
 
-export const getCategories = async () =>
-  (await wpJson<WpTerm[]>("/categories?per_page=100&hide_empty=false")).map(decodeTerm);
+// Identiques quelle que soit la page qui les demande (header, /archives/,
+// sidebar hub, pages catégorie...) — unstable_cache leur évite de refaire le
+// même appel WP à chaque page/requête différente.
+export const getCategories = unstable_cache(
+  async () => (await wpJson<WpTerm[]>("/categories?per_page=100&hide_empty=false")).map(decodeTerm),
+  ["wp-all-categories"],
+  { revalidate: REVALIDATE_SECONDS }
+);
 
-export async function getTermBySlug(
-  tax: "categories" | "tags",
-  slug: string
-): Promise<WpTerm | null> {
-  const terms = await wpJson<WpTerm[]>(`/${tax}?slug=${encodeURIComponent(slug)}`);
-  return terms[0] ? decodeTerm(terms[0]) : null;
-}
+export const getTermBySlug = cache(
+  async (tax: "categories" | "tags", slug: string): Promise<WpTerm | null> => {
+    const terms = await wpJson<WpTerm[]>(`/${tax}?slug=${encodeURIComponent(slug)}`);
+    return terms[0] ? decodeTerm(terms[0]) : null;
+  }
+);
 
-export async function getCategoryById(id: number): Promise<WpTerm | null> {
+export const getCategoryById = cache(async (id: number): Promise<WpTerm | null> => {
   try {
     const term = await wpJson<WpTerm>(`/categories/${id}`);
     return decodeTerm(term);
   } catch {
     return null;
   }
-}
+});
 
 // Sous-cocons d'un silo = catégories enfants (parent=id) — hiérarchie réelle
 // créée à la publication par resolveCategoryId() (scripts/autopublish/run.js),
@@ -276,17 +301,19 @@ export async function getChildCategories(parentId: number): Promise<WpTerm[]> {
   ).map(decodeTerm);
 }
 
-export async function getAuthorBySlug(slug: string): Promise<WpUser | null> {
+export const getAuthorBySlug = cache(async (slug: string): Promise<WpUser | null> => {
   const users = await wpJson<WpUser[]>(`/users?slug=${encodeURIComponent(slug)}`);
   return users[0] ? decodeUser(users[0]) : null;
-}
+});
 
 // Directement via /users (6 comptes auteur fixes) plutôt que de dériver la
 // liste depuis getAllPosts() — évite un fetch coûteux (_embed=1, paginé) qui
 // n'a de toute façon pas besoin de croître avec le nombre d'articles.
-export async function getAllAuthors(): Promise<WpUser[]> {
-  return (await wpJson<WpUser[]>("/users?per_page=100")).map(decodeUser);
-}
+export const getAllAuthors = unstable_cache(
+  async (): Promise<WpUser[]> => (await wpJson<WpUser[]>("/users?per_page=100")).map(decodeUser),
+  ["wp-all-authors"],
+  { revalidate: REVALIDATE_SECONDS }
+);
 
 export const getPostsByAuthor = (id: number, page = 1) =>
   getPosts(page, 12, `&author=${id}`);
