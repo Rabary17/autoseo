@@ -49,6 +49,9 @@ export default async function Header() {
         <Link className="chip" href="/rubriques/">
           Toutes les rubriques
         </Link>
+        <Link className="chip" href="/archives/">
+          Tous les articles
+        </Link>
       </nav>
       <div className="appbar__actions">
         <SearchBox />

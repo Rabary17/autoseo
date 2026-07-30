@@ -162,6 +162,38 @@ h4{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
 .card--soon .card__title{color:var(--muted)}
 .card--soon .card__media img{filter:grayscale(1);opacity:.55}
 
+/* ---------- Page /archives/ : filtres + grille de cards (2026-07-30) ---------- */
+.archive-filters{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 20px}
+.archive-filters__field{display:flex;flex-direction:column;gap:4px}
+.archive-filters__field label{font-size:12.5px;color:var(--muted)}
+.archive-filters__field select{font:inherit;padding:9px 12px;border-radius:var(--r-sm);
+  border:1px solid var(--line);background:var(--paper);color:var(--ink);min-width:200px}
+
+.archive-grid{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:480px){.archive-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:768px){.archive-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){.archive-grid{grid-template-columns:repeat(5,1fr)}}
+
+/* Catégorie posée sur l'image (badge), titre en dessous — visuel distinct de
+   .card (EntityCard), demande explicite de l'utilisateur (voir capture jointe
+   façon fil d'actu). */
+.acard{background:var(--paper);border-radius:var(--r-lg);overflow:hidden;
+  box-shadow:var(--shadow-1);border:1px solid var(--line)}
+.acard__media{position:relative;aspect-ratio:4/3;background:var(--surface-2)}
+.acard__media img{width:100%;height:100%;object-fit:cover}
+.acard__media-link{position:absolute;inset:0}
+.acard__badge{position:absolute;top:10px;left:10px;z-index:1;font-family:var(--font-display);
+  font-weight:600;font-size:11px;letter-spacing:.04em;text-transform:uppercase;
+  color:#fff;background:rgba(20,23,28,.72);backdrop-filter:blur(4px);
+  padding:5px 10px;border-radius:var(--r-pill)}
+.acard__badge:hover{background:var(--accent);text-decoration:none}
+.acard__body{padding:12px 14px 16px}
+.acard__title{font-family:var(--font-display);font-weight:700;font-size:15.5px;
+  line-height:1.3;letter-spacing:-.01em;margin:0 0 6px}
+.acard__title a{color:var(--ink)}.acard__title a:hover{color:var(--accent);text-decoration:none}
+.acard__meta{color:var(--muted);font-size:12.5px;margin:0}
+.acard__meta a{color:var(--muted)}.acard__meta a:hover{color:var(--accent)}
+
 /* Une (hero) — variante pleine largeur */
 .hero{position:relative;border-radius:var(--r-lg);overflow:hidden;isolation:isolate;
   min-height:60vh;display:flex;align-items:flex-end;color:#fff}
