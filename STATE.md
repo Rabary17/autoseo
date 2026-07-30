@@ -5,6 +5,14 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-07-30 (suite 2) : cache des appels API WordPress
+
+Suite à la demande "il faut mettre en cache les appels API vers WordPress" — [lib/wp.ts](frontend/monauto/lib/wp.ts) utilise désormais deux mécanismes complémentaires :
+- **`cache()` (React)** sur `getPostBySlug`/`getPageBySlug`/`getTermBySlug`/`getCategoryById`/`getAuthorBySlug` — déduplique dans une même requête (jusqu'ici, `generateMetadata()` et le composant de page rappelaient chacun la même fonction avec le même argument : 2 appels WP identiques au lieu d'1 par page article/hub/catégorie/auteur).
+- **`unstable_cache` (Next.js, 15 min)** sur `getCategories`/`getAllTags`/`getAllPages`/`getAllAuthors`/`getAllPosts` — persiste entre requêtes pour les données identiques quelle que soit la page qui les demande (header, `/archives/`, pages catégorie...). Remplace l'ancien cache mémoire par build de `getAllPosts` (qui ne survivait pas entre requêtes) par un cache qui survit aussi entre requêtes.
+
+Le cache dédié précédemment codé dans `Header.tsx` (autour de `getCategories`) est devenu redondant et supprimé — la fonction est déjà cache à la source. Vérifié en local : homepage, page article, `/archives/` fonctionnent toujours normalement après le changement.
+
 ## 2026-07-30 (suite) : meta keywords, silhouettes de chargement, listes d'articles harmonisées avec /archives/
 
 - **Balise `<meta name="keywords">`** : champ ACF `keywords` ajouté dans [wordpress/mu-plugins/monauto-headless.php](wordpress/mu-plugins/monauto-headless.php) — **⚠️ nécessite un déploiement manuel côté hébergement WP** (comme pour tout ce fichier, aucune CI ne le pousse), sinon `acf.keywords` restera silencieusement ignoré aux insertions. Rempli automatiquement par `scripts/autopublish/run.js` (mot-clé principal + jusqu'à 8 variantes de `tracking-mots-cles.xlsx`, jamais généré par le modèle) pour tout nouvel article. Les 8 articles déjà publiés n'ont pas ce champ — à backfiller une fois le mu-plugin déployé si besoin.
