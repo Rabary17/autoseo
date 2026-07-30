@@ -201,7 +201,7 @@ async function resolveTagIds(tagNames) {
 
 /* ---------- Champs ACF texte (ACF Free : pas de Repeater — voir wp-client) ---------- */
 
-function acfFields(content) {
+function acfFields(content, keywords) {
   return {
     tldr: content.excerpt,
     sources: (content.sources || []).map(s => `${s.label} | ${s.url}`).join('\n'),
@@ -212,7 +212,20 @@ function acfFields(content) {
     // le frontend, qui dérivait <title>/description du H1/excerpt.
     meta_title: content.meta_title,
     meta_description: content.meta_description,
+    // Balise <meta name="keywords"> (2026-07-30, demande explicite) — dérivée
+    // directement du mot-clé principal + ses variantes (tracking-mots-cles.xlsx),
+    // jamais laissée au modèle (pas de valeur ajoutée à la faire générer, et un
+    // risque d'invention en moins). Absent pour les hubs/sous-hubs (pas de `row`).
+    ...(keywords ? { keywords } : {}),
   };
+}
+
+// Mot-clé principal + variantes, plafonné pour rester une vraie liste de mots-clés
+// (certains clusters ont 15+ variantes en base — inutile et too-long en <meta>).
+const MAX_KEYWORD_VARIANTS = 8;
+function buildKeywords(row) {
+  const variants = (row.variantes || '').split(';').map(v => v.trim()).filter(Boolean).slice(0, MAX_KEYWORD_VARIANTS);
+  return [row.mot_cle_principal, ...variants].filter(Boolean).join(', ');
 }
 
 /* ---------- Image à la une ---------- */
@@ -897,7 +910,7 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         tags: tagIds,
         author: authorId,
         featured_media: featuredMedia || undefined,
-        acf: acfFields(content),
+        acf: acfFields(content, buildKeywords(row)),
       };
 
       console.log(`${logTag} : insertion WP...`);

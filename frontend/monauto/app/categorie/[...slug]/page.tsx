@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect, unstable_rethrow } from "next/navigation";
-import ArticleCard from "@/components/ArticleCard";
+import ArchiveArticleCard from "@/components/ArchiveArticleCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import HubSousHubContent from "@/components/HubSousHubContent";
 import JsonLd from "@/components/JsonLd";
@@ -106,6 +106,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description:
         hubPage.acf?.meta_description || hubPage.acf?.tldr || truncate(stripHtml(hubPage.content.rendered), 155),
       path,
+      keywords: hubPage.acf?.keywords,
     });
   }
 
@@ -122,19 +123,19 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   // Le vrai contenu hub/sous-hub, s'il a été rédigé : une page WP dont le
   // slug correspond exactement à celui de la catégorie (même convention déjà
   // utilisée par app/[slug]/page.tsx pour détecter un hub/sous-hub).
+  const page = Math.max(1, Number((await searchParams).page) || 1);
+
   const hubPage = await getPageBySlug(term.slug).catch(() => null);
   if (hubPage) {
-    return <HubSousHubContent page={hubPage} term={term} parentTerm={parentTerm} />;
+    return <HubSousHubContent page={hubPage} pageNumber={page} term={term} parentTerm={parentTerm} />;
   }
-
-  const page = Math.max(1, Number((await searchParams).page) || 1);
 
   // Dégradation gracieuse identique à avant : silo/sous-cocon sans hub/sous-hub
   // rédigé -> vue générique (description + articles + sous-rubriques sœurs).
   const { posts, totalPages, siblings } = await (async () => {
     try {
       const [postsRes, siblingCats] = await Promise.all([
-        getPostsByCategory(term.id, page),
+        getPostsByCategory(term.id, page, 30),
         getChildCategories(parentTerm ? parentTerm.id : term.id),
       ]);
       return { ...postsRes, siblings: siblingCats };
@@ -194,9 +195,9 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         </div>
         {posts.length > 0 ? (
           <>
-            <div className="stack">
+            <div className="archive-grid">
               {posts.map((p) => (
-                <ArticleCard key={p.id} post={p} />
+                <ArchiveArticleCard key={p.id} post={p} />
               ))}
             </div>
             <Pagination currentPage={page} totalPages={totalPages} basePath={basePath} />

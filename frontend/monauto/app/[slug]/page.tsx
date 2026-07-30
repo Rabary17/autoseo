@@ -74,6 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       modifiedTime: post.modified,
       authorName: author?.name,
+      keywords: post.acf?.keywords,
     });
   }
   const page = await getPageBySlug(slug);
@@ -82,6 +83,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: page.acf?.meta_title || page.title.rendered,
       description: page.acf?.meta_description || truncate(stripHtml(page.content.rendered), 155),
       path: `/${page.slug}/`,
+      keywords: page.acf?.keywords,
     });
   }
   return {};

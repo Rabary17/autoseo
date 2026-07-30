@@ -290,10 +290,10 @@ export async function getAllAuthors(): Promise<WpUser[]> {
 
 export const getPostsByAuthor = (id: number, page = 1) =>
   getPosts(page, 12, `&author=${id}`);
-export const getPostsByCategory = (id: number, page = 1) =>
-  getPosts(page, 12, `&categories=${id}`);
-export const getPostsByTag = (id: number, page = 1) =>
-  getPosts(page, 12, `&tags=${id}`);
+export const getPostsByCategory = (id: number, page = 1, perPage = 12) =>
+  getPosts(page, perPage, `&categories=${id}`);
+export const getPostsByTag = (id: number, page = 1, perPage = 12) =>
+  getPosts(page, perPage, `&tags=${id}`);
 
 // Recherche plein texte WP native (paramètre core `search`) — même forme de
 // retour (posts/total/totalPages) que getPosts, réutilisable telle quelle par

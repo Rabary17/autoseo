@@ -1,13 +1,16 @@
 import Breadcrumb from "./Breadcrumb";
 import JsonLd from "./JsonLd";
-import EntityCard from "./EntityCard";
+import ArchiveArticleCard from "./ArchiveArticleCard";
+import Pagination from "./Pagination";
 import SousCoconListItem from "./SousCoconListItem";
 import FaqSection from "./FaqSection";
 import ShareButtons from "./ShareButtons";
-import { decodeEntities, getChildPages, getImageVariant, getPostsByCategory, parseFaq } from "@/lib/wp";
+import { getChildPages, getImageVariant, getPostsByCategory, decodeEntities, parseFaq } from "@/lib/wp";
 import { faqPageLd } from "@/lib/schema";
-import { getSilo, getSousCocon } from "@/lib/taxonomy";
+import { getSilo } from "@/lib/taxonomy";
 import type { WpPage, WpTerm } from "@/lib/types";
+
+const ARTICLES_PER_PAGE = 30;
 
 // Rendu partagé des pages hub (silo) et sous-hub (sous-cocon) — extrait de
 // l'ancien `HubSousHubView` (qui vivait dans app/[slug]/page.tsx) pour être
@@ -20,10 +23,13 @@ import type { WpPage, WpTerm } from "@/lib/types";
 // au corps de texte d'avoir à caser un lien par enfant (voir style-anti-ia.md).
 export default async function HubSousHubContent({
   page,
+  pageNumber = 1,
   term,
   parentTerm,
 }: {
   page: WpPage;
+  /** Page de pagination (?page=N) pour la liste d'articles d'un sous-hub. */
+  pageNumber?: number;
   term: WpTerm;
   /** Catégorie parente (silo) — fournie uniquement pour un sous-hub. */
   parentTerm?: WpTerm | null;
@@ -34,8 +40,6 @@ export default async function HubSousHubContent({
 
   const basePath = isHub ? `/categorie/${term.slug}/` : `/categorie/${parentTerm?.slug}/${term.slug}/`;
 
-  type ChildCard = { href?: string; title: string; image?: ReturnType<typeof getImageVariant> };
-  let children: ChildCard[] = [];
   // Sous-cocons du silo (hub uniquement) : liste COMPLÈTE attendue dans la
   // sidebar — même sans page WP publiée pour l'instant — voir STATE.md
   // 2026-07-26. Source de vérité : data/taxonomy.json (généré depuis
@@ -44,6 +48,14 @@ export default async function HubSousHubContent({
   // pour l'image/le titre/le lien réels.
   type SousCoconCard = { slug: string; name: string; href?: string; image?: string };
   let sousCoconCards: SousCoconCard[] = [];
+  // Articles réels du sous-hub (hors hub) — même présentation que /archives/
+  // (grille 5/ligne, 30/page, pagination), demande explicite de l'utilisateur
+  // (2026-07-30) : remplace l'ancienne liste "complète attendue" mêlant
+  // articles publiés et non rédigés dans la sidebar (col-side, trop étroite
+  // pour 5 colonnes) — un sous-hub liste désormais uniquement les vrais
+  // articles publiés, comme n'importe quelle autre liste d'articles du site.
+  let articles: Awaited<ReturnType<typeof getPostsByCategory>>["posts"] = [];
+  let articlesTotalPages = 0;
   try {
     if (isHub) {
       const childPages = await getChildPages(page.id);
@@ -60,24 +72,9 @@ export default async function HubSousHubContent({
         };
       });
     } else {
-      // Même principe que les sous-cocons d'un hub ci-dessus (2026-07-28) :
-      // liste COMPLÈTE des articles prévus pour ce sous-cocon (data/maillage.json
-      // via taxonomy.json, voir scripts/gen-taxonomy-articles.js), fusionnée
-      // avec les articles WordPress déjà publiés pour l'image/le titre/le lien
-      // réels — un article pas encore rédigé s'affiche quand même, en attente.
-      const { posts } = await getPostsByCategory(term.id, 1);
-      const byPostSlug = new Map(posts.map((p) => [p.slug, p]));
-      const declaredArticles = parentTerm ? getSousCocon(parentTerm.slug, term.slug)?.articles ?? [] : [];
-      children = declaredArticles.map((a) => {
-        const p = byPostSlug.get(a.slug);
-        return {
-          // Les articles restent en URL plate pour l'instant (voir STATE.md,
-          // point ouvert avant P5) — seuls hub/sous-hub sont imbriqués.
-          href: p ? `/${p.slug}/` : undefined,
-          title: p ? p.title.rendered : a.title,
-          image: p ? getImageVariant(p._embedded?.["wp:featuredmedia"]?.[0], "monauto_card") : undefined,
-        };
-      });
+      const { posts, totalPages } = await getPostsByCategory(term.id, pageNumber, ARTICLES_PER_PAGE);
+      articles = posts;
+      articlesTotalPages = totalPages;
     }
   } catch (e) {
     console.warn(`[HubSousHubContent] échec du fetch des enfants pour "${term.slug}" : ${e} — module masqué.`);
@@ -133,19 +130,27 @@ export default async function HubSousHubContent({
           </aside>
         )}
 
-        {!isHub && children.length > 0 && (
-          <aside className="col-side" aria-label="Explorer">
-            <section className="side-mod">
-              <p className="side-mod__title">Articles de ce sous-cocon</p>
-              <div className="stack">
-                {children.map((c) => (
-                  <EntityCard key={c.href ?? c.title} href={c.href} title={c.title} image={c.image} />
+      </div>
+
+      {!isHub && (
+        <section className="section">
+          <div className="section__head">
+            <h2>Articles</h2>
+          </div>
+          {articles.length > 0 ? (
+            <>
+              <div className="archive-grid">
+                {articles.map((a) => (
+                  <ArchiveArticleCard key={a.id} post={a} />
                 ))}
               </div>
-            </section>
-          </aside>
-        )}
-      </div>
+              <Pagination currentPage={pageNumber} totalPages={articlesTotalPages} basePath={basePath} />
+            </>
+          ) : (
+            <p>Aucun article publié pour l&apos;instant dans cette sous-rubrique.</p>
+          )}
+        </section>
+      )}
 
       {faq.length > 0 && <JsonLd data={faqPageLd(faq)} />}
     </div>

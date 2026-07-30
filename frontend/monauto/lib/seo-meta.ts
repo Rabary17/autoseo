@@ -20,6 +20,11 @@ interface PageMetaInput {
   publishedTime?: string;
   modifiedTime?: string;
   authorName?: string;
+  /** Champ ACF "keywords" (mot-clé principal + variantes) — voir mu-plugins/
+   *  monauto-headless.php et scripts/autopublish/run.js (acfFields). Utile aux
+   *  moteurs génératifs même si les moteurs classiques l'ignorent depuis longtemps
+   *  (demande explicite de l'utilisateur, 2026-07-30). */
+  keywords?: string;
 }
 
 export function pageMeta({
@@ -31,12 +36,14 @@ export function pageMeta({
   publishedTime,
   modifiedTime,
   authorName,
+  keywords,
 }: PageMetaInput): Metadata {
   const url = `${SITE_URL}${path}`;
 
   return {
     title,
     description,
+    ...(keywords ? { keywords } : {}),
     alternates: { canonical: url },
     openGraph: {
       title,

@@ -155,6 +155,18 @@ add_action('acf/init', function () {
 				'rows' => 2,
 				'maxlength' => 155,
 			],
+			[
+				// Balise <meta name="keywords"> — les moteurs classiques l'ignorent
+				// depuis longtemps, mais utile aux moteurs génératifs (demande
+				// explicite de l'utilisateur, 2026-07-30). Rempli par le pipeline avec
+				// le mot-clé principal + ses variantes (tracking-mots-cles.xlsx),
+				// jamais généré par le modèle — voir scripts/autopublish/run.js.
+				'key' => 'field_monauto_keywords',
+				'label' => 'Mots-clés SEO (meta keywords)',
+				'name' => 'keywords',
+				'type' => 'text',
+				'instructions' => 'Liste de mots-clés séparés par des virgules. Utilisée pour <meta name="keywords">, jamais affichée dans le corps de la page.',
+			],
 		],
 		'location' => [
 			[['param' => 'post_type', 'operator' => '==', 'value' => 'post']],
