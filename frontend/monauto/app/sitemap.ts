@@ -13,10 +13,11 @@ export const revalidate = 3600;
 
 // WP renvoie `modified_gmt` en UTC mais sans indicateur de fuseau (ex.
 // "2026-07-30T05:08:18") — passé tel quel, Google Search Console rejette la
-// date ("Date non valide", format W3C Datetime non respecté). Le "Z" en fait
-// une date UTC explicite, valide en ISO 8601.
-function toLastModified(modifiedGmt: string): Date {
-  return new Date(`${modifiedGmt}Z`);
+// date ("Date non valide", format W3C Datetime non respecté). Suffixe
+// "+00:00" explicite (plutôt que "Z"/toISOString) pour matcher exactement le
+// format des sitemaps WordPress natifs (ex. npi-magazine.com, non headless).
+function toLastModified(modifiedGmt: string): string {
+  return `${modifiedGmt}+00:00`;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
