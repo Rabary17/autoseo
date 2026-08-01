@@ -10,6 +10,15 @@ import { SITE_URL } from "@/lib/site";
 // En dessous de ce volume (test + démarrage), un seul fichier suffit ; à
 // segmenter par silo quand le nombre d'articles publiés le justifiera.
 export const revalidate = 3600;
+
+// WP renvoie `modified_gmt` en UTC mais sans indicateur de fuseau (ex.
+// "2026-07-30T05:08:18") — passé tel quel, Google Search Console rejette la
+// date ("Date non valide", format W3C Datetime non respecté). Le "Z" en fait
+// une date UTC explicite, valide en ISO 8601.
+function toLastModified(modifiedGmt: string): Date {
+  return new Date(`${modifiedGmt}Z`);
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dégradation gracieuse (inspiré de next-wp/lib/wordpress.ts, voir
   // app/[slug]/page.tsx) : un sitemap partiel (sans la ressource en échec)
@@ -61,14 +70,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // page publiée dans WP doit apparaître ici sans intervention manuelle.
   const pageUrls: MetadataRoute.Sitemap = pages.map((p) => ({
     url: `${SITE_URL}/${p.slug}/`,
-    lastModified: p.modified,
+    lastModified: toLastModified(p.modified_gmt),
     changeFrequency: "monthly",
     priority: 0.3,
   }));
 
   const postUrls: MetadataRoute.Sitemap = posts.map((p) => ({
     url: `${SITE_URL}/${p.slug}/`,
-    lastModified: p.modified,
+    lastModified: toLastModified(p.modified_gmt),
     changeFrequency: "monthly",
     priority: 0.6,
   }));

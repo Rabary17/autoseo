@@ -5,6 +5,14 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-01 : sitemap.xml — "Date non valide" (Search Console) corrigé
+
+**Signalé par l'utilisateur** via Search Console (`techcars.fr/sitemap.xml`, 8 occurrences "Date non valide"). Cause : `<lastmod>` était rempli avec `post.modified`/`page.modified`, le champ WordPress REST en heure locale du serveur **sans indicateur de fuseau** (ex. `2026-07-30T05:08:18`) — format non conforme au W3C Datetime attendu par les sitemaps, rejeté par le validateur de Google.
+
+**Corrigé** dans [app/sitemap.ts](frontend/monauto/app/sitemap.ts) : utilise désormais `modified_gmt` (déjà renvoyé par l'API WP, juste jamais typé/exploité — champ ajouté à `WpPost`/`WpPage` dans [lib/types.ts](frontend/monauto/lib/types.ts)), qui est réellement en UTC, avec un suffixe `Z` explicite pour produire une date ISO 8601 valide (`2026-07-30T05:08:18.000Z`). Vérifié en local (dev server, `/sitemap.xml`) : tous les `<lastmod>` désormais correctement suffixés. `npx tsc --noEmit` : aucune erreur.
+
+**Non traité (hors périmètre du signalement)** : `dateModified` du JSON-LD ([lib/schema.ts](frontend/monauto/lib/schema.ts)) utilise encore `post.modified` (même format sans fuseau) — Google est généralement tolérant sur ce champ en Schema.org, non signalé comme erreur ; à corriger si un souci apparaît un jour sur les données structurées.
+
 ## 2026-07-30 (suite 2) : cache des appels API WordPress
 
 Suite à la demande "il faut mettre en cache les appels API vers WordPress" — [lib/wp.ts](frontend/monauto/lib/wp.ts) utilise désormais deux mécanismes complémentaires :

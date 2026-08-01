@@ -44,6 +44,7 @@ export interface WpPage {
   excerpt?: { rendered: string };
   date: string;
   modified: string;
+  modified_gmt: string;
   parent: number;
   featured_media?: number;
   acf?: { tldr?: string; sources?: string; faq?: string; meta_title?: string; meta_description?: string; keywords?: string };
@@ -57,6 +58,7 @@ export interface WpPost {
   slug: string;
   date: string;
   modified: string;
+  modified_gmt: string;
   title: { rendered: string };
   excerpt: { rendered: string };
   content: { rendered: string };
