@@ -5,6 +5,19 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-03 (suite) : régénération des 17 blocqués (règle sans lien) — 0% automatique, 2 de plus récupérés à la main, régression de longueur constatée
+
+Régénération des 17 articles encore bloqués de "Carte grise & démarches" sous la nouvelle règle "aucun lien de source" (voir entrée précédente). Résultat : **0/17 passent le gating automatiquement**, mais **zéro fabrication d'URL/lien externe silencieuse** — cohérent avec la correction du jour, gating reste la dernière ligne de défense fiable.
+
+**Détail des 17** :
+- **5 erreurs API brutes** (`finish_reason=error`, Mistral) : `vendre voiture sans contrôle technique`, `certificat cession cerfa 15776`, `calcul malus occasion importée`, `contre-visite délai défauts`, `contrôle technique pas cher près` — jamais régénérés avec succès cette tentative, à refaire.
+- **10/12 générations réussies bloquées principalement pour longueur insuffisante** (<900 mots, certaines à 484-775 mots) — taux de blocage sur la longueur nettement plus élevé que les tentatives précédentes de la journée (voir entrées du 2026-08-01/08-03 plus haut, où la plupart dépassaient 900-1300 mots). **Cause non confirmée** : coïncide avec le passage à "zéro lien de source" (prompt système-article.md nettement raccourci sur cette section) et/ou une dégradation ponctuelle de l'API Mistral ce jour (taux d'erreur brute aussi anormalement élevé, 5/17) — à surveiller sur un prochain lot avant de conclure à un vrai lien de cause à effet.
+- **2 récupérés manuellement** (même méthode que la session précédente — défaut unique, corrigé à la main, revérifié par `gating.runGating` avant toute écriture) : `changement d'adresse sur la carte grise` (#1009, lien externe → texte + lien sous-hub ajouté) et `code de cession obtenir` (#974, chemin interne halluciné `/carte-grise-demarches/ants` → texte simple). **Les deux passent le gating et sont à jour dans WordPress, mais laissés en `draft`** (pas publiés aujourd'hui, pour respecter la cadence 5/jour déjà atteinte avec les 5 publiés plus tôt).
+
+**Reste bloqué (15)** : 5 en erreur API (à relancer), 10 trop courts pour un simple correctif de lien — nécessitent soit une nouvelle régénération, soit une réécriture manuelle plus substantielle (pas juste un lien à corriger).
+
+**Décision en attente de l'utilisateur** : relancer un 3e lot sur les 15 restants (coût Mistral supplémentaire, taux de réussite automatique incertain vu la régression de longueur constatée), ou traiter au cas par cas.
+
 ## 2026-08-03 : ⚠️ décalage de date détecté + 5 premiers vrais articles publiés + cadence 5/jour
 
 **Décalage de date important détecté et corrigé** : le contexte de session indiquait `2026-08-01` comme date du jour, mais l'horloge système, Node.js ET l'horloge du serveur WordPress (`mntdev.riseasso.com`, header HTTP `Date`) indiquent toutes les trois **2026-08-03** — vérifié par triple recoupement avant toute action datée. Le dernier commit réel (`3e1b5fd`, format lastmod sitemap) date bien du 2026-08-01, ce qui confirme qu'environ 2 jours se sont écoulés dans cette session sans que le contexte affiché ne se soit mis à jour. **Toute date "aujourd'hui" doit être vérifiée en conditions réelles (horloge système/serveur) avant d'être utilisée pour publier ou planifier — ne jamais se fier uniquement à la date affichée en contexte.**
