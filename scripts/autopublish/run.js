@@ -301,11 +301,30 @@ async function resolveInlineImages(contentGutenberg, inlineImages, pieceSlug, si
 // pour que wp:image redevienne un bloc de premier niveau ; sinon (jeton nu
 // ou entouré d'autre texte) on retombe sur un remplacement simple du jeton.
 function replaceImageToken(html, token, replacement) {
+  const escapedToken = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const wrappedRe = new RegExp(
-    `<!--\\s*wp:paragraph(?:\\s+\\{[^}]*\\})?\\s*-->\\s*<p[^>]*>\\s*${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*</p>\\s*<!--\\s*/wp:paragraph\\s*-->`
+    `<!--\\s*wp:paragraph(?:\\s+\\{[^}]*\\})?\\s*-->\\s*<p[^>]*>\\s*${escapedToken}\\s*</p>\\s*<!--\\s*/wp:paragraph\\s*-->`
   );
   if (wrappedRe.test(html)) {
     return html.replace(wrappedRe, replacement);
+  }
+  // Jeton entouré d'autre texte dans le même paragraphe (ex. "...texte avant
+  // [[IMAGE:n]] texte après...") : constaté le 2026-08-03 sur des pages
+  // hub/sous-hub (assurance-reglementation, van-fourgon-amenage) — un simple
+  // remplacement du jeton laissait le bloc wp:image imbriqué dans le <p>
+  // englobant (même défaut que le cas "jeton seul" ci-dessus, corrigé le
+  // 2026-07-28, mais jamais étendu à ce cas). On scinde le paragraphe en
+  // deux (texte avant / texte après) de part et d'autre du bloc image, qui
+  // redevient un bloc de premier niveau.
+  const partialRe = new RegExp(
+    `<!--\\s*wp:paragraph(?:\\s+\\{[^}]*\\})?\\s*-->\\s*<p[^>]*>([\\s\\S]*?)${escapedToken}([\\s\\S]*?)</p>\\s*<!--\\s*/wp:paragraph\\s*-->`
+  );
+  const partialMatch = html.match(partialRe);
+  if (partialMatch) {
+    const [, before, after] = partialMatch;
+    const beforeBlock = before.trim() ? `<!-- wp:paragraph -->\n<p>${before.trim()}</p>\n<!-- /wp:paragraph -->\n\n` : '';
+    const afterBlock = after.trim() ? `\n\n<!-- wp:paragraph -->\n<p>${after.trim()}</p>\n<!-- /wp:paragraph -->` : '';
+    return html.replace(partialRe, `${beforeBlock}${replacement}${afterBlock}`);
   }
   return html.replace(token, replacement);
 }

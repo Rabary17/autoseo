@@ -22,7 +22,18 @@ const LENGTH_RANGES = {
   'article-editorial': [1500, 2500],
 };
 
-const SIMILARITY_THRESHOLD = 0.20;
+// Relevé de 0,20 à 0,60 le 2026-08-03 (demande explicite de l'utilisateur,
+// "passe les similaires") : constaté sur Carte grise & démarches (44-57 %)
+// et Camping-car & van (22-42 %) que des articles réellement distincts sur
+// un même sous-cocon encore peu peuplé (1-2 articles indexés) dépassent
+// mécaniquement 20 % — le mot du sujet lui-même ("camping"/"e85"/"cession")
+// domine le score TF-IDF partagé tant que l'IDF n'a pas assez de documents
+// pour le discriminer. 0,60 laisse passer tous les cas observés à ce jour
+// tout en gardant un vrai garde-fou contre la duplication franche (contenu
+// quasi identique, observé au-delà de 70-80 % dans les cas de doublon réel).
+// À revoir à la baisse une fois les sous-cocons mieux peuplés (l'IDF se
+// rééquilibre naturellement à mesure que le corpus grandit).
+const SIMILARITY_THRESHOLD = 0.60;
 
 function stripHtmlToText(html) {
   return html.replace(/<!--[\s\S]*?-->/g, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
@@ -127,8 +138,8 @@ function checkClusterNotDuplicated(clusterRow, trackingRows) {
   );
 }
 
-function checkSimilarity(content, silo, sousCocon) {
-  const { max, against } = similarity.maxSimilarity(content.content_gutenberg, silo, sousCocon);
+function checkSimilarity(content, silo, sousCocon, excludeSlug) {
+  const { max, against } = similarity.maxSimilarity(content.content_gutenberg, silo, sousCocon, excludeSlug);
   return { ok: max < SIMILARITY_THRESHOLD, max, against };
 }
 
@@ -270,7 +281,8 @@ function runGating({
   // — comparer les deux ferait échouer tout premier lot d'articles d'un
   // sous-cocon, constaté en test réel le 2026-07-29).
   if (contentType === 'article') {
-    const sim = checkSimilarity(content, silo, sousCocon);
+    const ownSlug = maillageEntry?.url ? maillageEntry.url.split('/').filter(Boolean).pop() : undefined;
+    const sim = checkSimilarity(content, silo, sousCocon, ownSlug);
     if (!sim.ok) {
       failures.push({
         rule: 'similarite',

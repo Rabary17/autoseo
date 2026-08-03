@@ -109,8 +109,13 @@ function cosine(a, b) {
 // Similarité maximale du texte candidat contre tout le corpus existant du
 // même silo+sous-cocon. Retourne 0 (et against: null) si le corpus est vide
 // — un premier article du sous-cocon ne peut pas être jugé similaire à rien.
-function maxSimilarity(text, silo, sousCocon) {
-  const entries = loadIndex(silo, sousCocon);
+function maxSimilarity(text, silo, sousCocon, excludeSlug) {
+  // excludeSlug : évite un faux 100% quand on revérifie un contenu déjà
+  // indexé sous son propre slug (ex. QC manuelle après une régénération) —
+  // addToIndex remplace l'entrée existante, donc sans exclusion explicite le
+  // candidat se retrouve comparé à sa propre version indexée (constaté le
+  // 2026-08-03 lors d'une re-vérification manuelle).
+  const entries = loadIndex(silo, sousCocon).filter(e => e.slug !== excludeSlug);
   if (!entries.length) return { max: 0, against: null };
   const candidateTf = termFrequency(tokenize(text));
   const idf = buildIdf([...entries.map(e => e.tf), candidateTf]);

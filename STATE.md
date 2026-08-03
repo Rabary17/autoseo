@@ -5,6 +5,18 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-03 (suite 5) : seuil de similarité relevé (0,20 → 0,60), bug d'auto-comparaison corrigé, bug d'image imbriquée étendu, 7 articles débloqués et programmés
+
+Sur demande explicite de l'utilisateur ("passe les similaires et prépare d'autres articles... on doit arriver à programmer pour 3 mois à 5/jour").
+
+- **`SIMILARITY_THRESHOLD` relevé de 0,20 à 0,60** dans [gating.js](scripts/autopublish/lib/gating.js) — motif détaillé dans le commentaire du code : le mot du sujet lui-même domine le score TF-IDF tant que le sous-cocon a peu de documents indexés, rendant 20% intenable pour du contenu réellement distinct. À revoir à la baisse une fois les corpus mieux peuplés.
+- **🐛 Bug trouvé en revérifiant les 22 pièces "à valider"** : `similarity.maxSimilarity` ne s'excluait jamais elle-même de l'index — un contenu déjà indexé (après une correction manuelle antérieure) se comparait à sa propre version stockée, donnant un faux 100%. Corrigé (paramètre `excludeSlug` ajouté à `maxSimilarity`/`checkSimilarity`, dérivé du slug de `maillageEntry.url` dans `runGating`).
+- **🐛 Bug d'image imbriquée étendu à un nouveau cas** : le correctif du 2026-07-28 (`replaceImageToken`) ne gérait que le jeton `[[IMAGE:n]]` seul dans son paragraphe — un jeton entouré d'autre texte (constaté sur les pages hub/sous-hub `assurance-reglementation`/`van-fourgon-amenage`) retombait sur un remplacement naïf, imbriquant le bloc image dans le `<p>` englobant. `run.js` scinde maintenant le paragraphe en deux de part et d'autre du bloc image dans ce cas aussi.
+- **7 pièces re-testées avec ces correctifs, toutes passent désormais le gating** et sont programmées à la suite du calendrier déjà en place (2026-08-07 et 08-08, capacité 5/jour) : `code-de-cession-obtenir`, `e85-rentabilite-calcul`, `peage-camping-car-classe`, `applications-aires-camping-car`, `france-passion-vignoble-etape`, `camping-car-hiver-ski-conseils`, `stationnement-camping-car-regles-ville`.
+- **15 autres pièces "à valider" NON débloquées** (défauts réels distincts de la similarité, jamais revus jusqu'ici — la plupart proviennent des runs du bot automatique sur Carburants & consommation) : liens hors maillage, blocs Gutenberg gravement corrompus (une pièce à 46 003 mots avec des dizaines de blocs mal fermés — à investiguer, volume anormal), longueur insuffisante, lien montant manquant, lien vers soi-même, tiret cadratin. Laissées en l'état, à traiter dans la suite du chantier "3 mois à 5/jour".
+
+**Objectif "3 mois à 5/jour" (~450 créneaux)** : très loin d'être atteint (22 créneaux réels programmés à ce stade, 2026-08-04 au 2026-08-08). Chantier en cours dans cette même session — priorité : revue/publication du hub + sous-hubs de chaque silo (préalable obligatoire à toute date réelle d'article, même bug que Camping-car & van plus haut), puis génération en lots successifs.
+
 ## 2026-08-03 (suite 4) : hub + 5 sous-hubs Camping-car & van revus et publiés + 3 articles reprogrammés (fin septembre → 06/08)
 
 Sur demande explicite de l'utilisateur ("passe en revue puis publie"), QC manuelle du hub `camping-car-van` et de ses 5 sous-hubs (`assurance-reglementation`, `voyager-aires`, `acheter-camping-car`, `van-fourgon-amenage`, `entretien-hivernage`) — tous encore en `draft` avec un `date_gmt` de début septembre hérité de la Phase 0/1, jamais vraiment programmé (cause du bug de planification noté dans l'entrée précédente : le planificateur refuse de dater un article avant son sous-hub parent).
