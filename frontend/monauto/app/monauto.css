@@ -157,7 +157,7 @@ h4{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
 /* ---------- Carte article ---------- */
 .card{background:var(--paper);border-radius:var(--r-lg);overflow:hidden;
   box-shadow:var(--shadow-1);border:1px solid var(--line)}
-.card__media{aspect-ratio:16/10;position:relative}
+.card__media{display:block;aspect-ratio:2/1;max-height:180px;position:relative}
 .card__media img{width:100%;height:100%;object-fit:cover}
 .card__body{padding:14px 16px 18px}
 .card__cat{font-family:var(--font-display);font-weight:600;font-size:12px;
