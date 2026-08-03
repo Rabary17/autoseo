@@ -5,6 +5,23 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-03 (suite 3) : 🐛 bug critique de maillage interne corrigé (liens cassés site entier) + 9 nouveaux articles (Carburants & consommation, Camping-car & van) + QC manuelle de 7 bloqués
+
+**🔎 Découverte majeure** : quasiment tous les liens internes du site (déjà en production, y compris sur les 5 premiers vrais articles publiés plus tôt aujourd'hui) sont cassés en 404. Cause : `maillage.json` stocke les chemins des sous-hubs et des liens latéraux au format `/silo/slug` (2 segments), repris tel quel en `href` par `run.js` — mais côté frontend, un sous-hub vit sous `/categorie/silo/sous-cocon/` (3 segments) et un article vit sous `/article-slug/` (1 segment, sans le silo). Un lien à 2 segments sans le préfixe `/categorie/` ne correspond à aucune route Next.js. Seul le lien vers le hub seul (1 segment) fonctionnait, par coïncidence (le slug WP du hub == le slug du silo, capté par `/[slug]/`). Vérifié en direct sur la prod (`taxe-co2-vehicule-occasion`, déjà publié) : 2 liens sur 2 en 404.
+
+**Corrigé par réécriture d'URL plutôt que migration de contenu** (demande explicite de l'utilisateur, "comme sur WordPress") : nouveau [frontend/monauto/middleware.ts](frontend/monauto/middleware.ts) — pour tout chemin à 2 segments dont le premier correspond à un silo connu, réécrit silencieusement (sans redirection visible) vers `/categorie/silo/sous-cocon/` si le 2ᵉ segment est un vrai sous-cocon (`getSousCocon`), sinon vers `/sous-segment/` (article, sans le préfixe silo). Corrige instantanément **tout le contenu déjà publié**, sans avoir à retoucher un seul article existant ni à corriger un par un les futurs. Vérifié en local : sous-hub cassé → OK, lien vers article existant cassé → OK, lien vers article pas encore rédigé → 404 correct (pas un bug), `/categorie/...` déjà correct → inchangé, `/auteur/...` (2 segments, pas un silo) → non affecté. `npx tsc --noEmit` : 0 erreur.
+
+**Run articles (`--max-articles=10`, demande explicite "on génère 10... les 10 les plus urgents et importants", résolu en suivant l'ordre déjà établi du plus petit silo au plus gros)** :
+- Carburants & consommation (1 seul cluster "à faire" restant) : 1 traité, en draft "à valider" (similarité 48%→35% après correction, tiret cadratin corrigé).
+- Camping-car & van (silo suivant, 20 clusters) : 8 traités — 2 programmés proprement au run automatique, 6 en draft "à valider" (gating KO), 1 erreur technique Mistral.
+
+**QC manuelle des 7 "à valider"** (même méthode que pour Carte grise & démarches — contenu réel relu depuis WordPress, défauts diagnostiqués un par un, revérifiés avec `gating.runGating` avant écriture) :
+- **6/7 défauts réels corrigés au-delà de la seule similarité** : tirets cadratins dans des placeholders de tableau ("—" seul, jamais repéré comme tel avant), meta_title/meta_description tronqués en plein mot (`maxLength` structurel touche encore régulièrement), 2 blocs image orphelins (`{"id":1}`/`{"id":2}` sans `<figure>`, artefact de résolution des jetons image — même défaut que celui trouvé le 2026-07-28 sur les images imbriquées, jamais revu depuis), 1 lien halluciné hors maillage (`/camping-car-van/entretien-hivernage`, retiré), 2 ancres trompeuses (le texte du lien reprenait le titre de l'article LUI-MÊME au lieu de décrire la cible), 2 tableaux HTML avec `</table>` manquant et `figcaption` sortie de la `<figure>` (invisible à l'écran, casse la ré-édition Gutenberg — jamais détecté par `checkGutenbergBlocksWellFormed`, qui ne valide que les commentaires de bloc, pas le HTML brut à l'intérieur).
+- **Similarité toujours bloquante sur 6/7** (22 à 42 % contre le seuil de 20 %), même diagnostic que sur Carte grise & démarches le même jour : le mot du sujet lui-même ("camping"/"e85") domine le score partagé dans un sous-cocon encore petit (1-2 articles indexés) — tentative de réduction par retrait de doublons de contenu + dilution de connecteurs répétitifs ("ainsi"/"voici") efficace mais insuffisante seule (ex. 24,7%→22,6% sur le meilleur cas). **1/7 passe intégralement le gating** (`profile-vs-integral-vs-capucine`) — prêt à programmer, mais son hub/sous-hub parent est encore en `draft` (voir ci-dessous), donc en attente.
+- **Bug de planification découvert au passage** : le hub (`camping-car-van`) et ses 5 sous-hubs sont encore en `draft` avec un `date_gmt` de début septembre (hérité de la Phase 0/1, jamais vraiment programmé) — tant qu'ils ne sont pas eux-mêmes publiés/programmés à une date proche, le planificateur (règle "jamais un article avant son parent") pousse tout article de ce silo à début septembre. Revue manuelle de ces 6 pages en cours, décision utilisateur déjà donnée ("passe en revue puis publie").
+
+**Décision utilisateur toujours en attente** (identique à l'entrée Carte grise & démarches du jour) : tolérer un seuil de similarité plus élevé pour les sous-cocons encore peu peuplés, ou attendre la dilution naturelle par publication d'autres articles du même sous-cocon.
+
 ## 2026-08-03 (suite 2) : 12/15 des derniers bloqués récupérés à la main un par un et programmés (5/jour à partir du 08-04)
 
 Sur demande explicite de l'utilisateur ("Récupère les manuellement... et passe les directs dans la file de publications selon la date"), traitement individuel des 15 articles qui restaient bloqués (voir entrée précédente : 5 en erreur API, 10 trop courts — en réalité, à la relecture, les 5 "erreurs API" avaient bien fini par générer du contenu lors d'une tentative antérieure, simplement encore trop court ou avec des liens cassés).
@@ -218,9 +235,9 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 
 <!-- autopublish:report:start -->
 ## Autopublish — dernier run : 2026-08-03
-- Phase : 2 — silo en cours : Carburants & consommation
-- Programmées : 2 — bloquées (draft) : 11 — erreurs techniques : 1 ⚠️
-- Dernier article programmé pour : 2026-09-04T08:00:00.000Z
+- Phase : 2 — silo en cours : Camping-car & van
+- Programmées : 2 — bloquées (draft) : 6 — erreurs techniques : 1 ⚠️
+- Dernier article programmé pour : 2026-09-04T17:00:00.000Z
 - Détail complet : [logs/autopublish/2026-08-03.md](logs/autopublish/2026-08-03.md)
 <!-- autopublish:report:end -->
 
