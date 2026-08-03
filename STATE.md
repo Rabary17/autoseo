@@ -217,10 +217,11 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-07-30
-- Phase : 2 — silo en cours : Carte grise & démarches
-- Programmées : 0 — bloquées (draft) : 6 — erreurs techniques : 0
-- Détail complet : [logs/autopublish/2026-07-30.md](logs/autopublish/2026-07-30.md)
+## Autopublish — dernier run : 2026-08-03
+- Phase : 2 — silo en cours : Carburants & consommation
+- Programmées : 2 — bloquées (draft) : 11 — erreurs techniques : 1 ⚠️
+- Dernier article programmé pour : 2026-09-04T08:00:00.000Z
+- Détail complet : [logs/autopublish/2026-08-03.md](logs/autopublish/2026-08-03.md)
 <!-- autopublish:report:end -->
 
 
