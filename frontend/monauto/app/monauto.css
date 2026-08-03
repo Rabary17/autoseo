@@ -432,7 +432,11 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 /* ---------- Footer ---------- */
 .footer{background:var(--brand);color:#fff;margin-top:40px;padding:32px 0 40px}
 .footer a{color:rgba(255,255,255,.78)}.footer a:hover{color:#fff}
-.footer__brand{display:block;height:32px;width:auto;margin:0 0 4px}
+/* height:auto (pas une valeur fixe) : le logo (ratio réel 1200x98) doit
+   pouvoir rétrécir proportionnellement quand sa colonne est plus étroite que
+   392px, sinon max-width:100% (reset global) réduit la largeur pendant que
+   la hauteur reste figée — déformation constatée (2026-08-03). */
+.footer__brand{display:block;height:auto;width:auto;max-width:min(392px,100%);margin:0 0 4px}
 .footer__cols{display:grid;grid-template-columns:1fr 1fr;gap:22px 16px;margin:22px 0}
 /* h2 (pas h4) : voir components/Footer.tsx — un pied de page peut redémarrer
    sa propre hiérarchie de titres sans "sauter" de niveau (h4 après un contenu
