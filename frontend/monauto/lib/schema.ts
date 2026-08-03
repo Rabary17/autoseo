@@ -84,7 +84,7 @@ export function articleSchema(post: WpPost, sources: Source[]) {
         author: author
           ? { "@type": "Person", name: author.name, url: `${SITE_URL}/auteur/${author.slug}` }
           : undefined,
-        citation: sources.map((s) => s.url),
+        citation: sources.map((s) => s.label),
         publisher: { "@id": `${SITE_URL}/#organization` },
       },
       organizationSchema(),

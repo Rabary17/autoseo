@@ -40,6 +40,16 @@ const POST_ID_BY_KEYWORD = {
   'contre-visite délai défauts': 945,
   'contrôle technique pas cher près': 941,
   'contrôle technique moto 2026': 952,
+  // 6 clusters "neufs" du même lot (jamais dans la sélection initiale
+  // ci-dessus car insérés via run.js standard, pas regenerate-short.js) —
+  // id résolus le 2026-08-01 via wp.findBySlug('posts', slug), même silo,
+  // mêmes drafts déjà en base suite au run du 2026-07-30 (0/22 publiables).
+  'changement adresse carte grise gratuit': 1012,
+  "changement d'adresse sur la carte grise": 1009,
+  'duplicata carte grise perte': 1018,
+  'carte grise héritage succession': 1015,
+  'rectifier erreur carte grise': 1022,
+  'contrôle technique points vérifiés': 1007,
 };
 
 function lastSegment(url) {
@@ -131,7 +141,7 @@ async function main() {
         excerpt: content.excerpt,
         acf: {
           tldr: content.excerpt,
-          sources: (content.sources || []).map(s => `${s.label} | ${s.url}`).join('\n'),
+          sources: (content.sources || []).map(s => s.label).join('\n'),
           faq: (content.faq || []).map(f => `${f.question} | ${f.answer}`).join('\n'),
           meta_title: content.meta_title,
           meta_description: content.meta_description,

@@ -204,7 +204,7 @@ async function resolveTagIds(tagNames) {
 function acfFields(content, keywords) {
   return {
     tldr: content.excerpt,
-    sources: (content.sources || []).map(s => `${s.label} | ${s.url}`).join('\n'),
+    sources: (content.sources || []).map(s => s.label).join('\n'),
     faq: (content.faq || []).map(f => `${f.question} | ${f.answer}`).join('\n'),
     // Distincts du H1 (`title`)/de l'extrait (`excerpt`) — voir gating.js
     // checkSeoFields et le mu-plugin (champs ACF meta_title/meta_description,

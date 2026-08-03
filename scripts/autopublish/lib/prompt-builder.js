@@ -62,11 +62,12 @@ const CONTENT_SCHEMA = {
               "Nom de la source SEUL (ex. \"Vroomly\", \"service-public.gouv.fr\") — jamais de commentaire de "
               + "méthodologie ou de recoupement (interdit : \"recoupé avec X et Y\", \"vérifié auprès de...\", "
               + "\"consulté le...\"). Le champ `source` fourni dans les faits peut contenir ce type de mention "
-              + "en interne (traçabilité) : n'en reprends jamais que le nom de la source principale.",
+              + "en interne (traçabilité) : n'en reprends jamais que le nom de la source principale. "
+              + "Aucune URL n'est demandée ici (décision explicite du 2026-08-03) : ces sources ne sont jamais "
+              + "vérifiées indépendamment, donc jamais transformées en lien cliquable, nulle part sur le site.",
           },
-          url: { type: 'string' },
         },
-        required: ['label', 'url'],
+        required: ['label'],
         additionalProperties: false,
       },
     },

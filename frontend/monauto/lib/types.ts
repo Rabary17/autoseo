@@ -75,7 +75,6 @@ export interface WpPost {
 
 export interface Source {
   label: string;
-  url: string;
 }
 
 export interface FaqItem {

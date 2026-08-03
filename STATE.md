@@ -5,6 +5,55 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-03 : ⚠️ décalage de date détecté + 5 premiers vrais articles publiés + cadence 5/jour
+
+**Décalage de date important détecté et corrigé** : le contexte de session indiquait `2026-08-01` comme date du jour, mais l'horloge système, Node.js ET l'horloge du serveur WordPress (`mntdev.riseasso.com`, header HTTP `Date`) indiquent toutes les trois **2026-08-03** — vérifié par triple recoupement avant toute action datée. Le dernier commit réel (`3e1b5fd`, format lastmod sitemap) date bien du 2026-08-01, ce qui confirme qu'environ 2 jours se sont écoulés dans cette session sans que le contexte affiché ne se soit mis à jour. **Toute date "aujourd'hui" doit être vérifiée en conditions réelles (horloge système/serveur) avant d'être utilisée pour publier ou planifier — ne jamais se fier uniquement à la date affichée en contexte.**
+
+**Relecture manuelle effectuée par Claude** (sur demande explicite de l'utilisateur, conformément à la règle QC déjà actée — voir mémoire `feedback-qc-avant-publication-autoseo`) sur 5 des brouillons bloqués du silo "Carte grise & démarches" (voir entrée précédente) : dans les 5 cas, le seul défaut restant était mineur et strictement réparable sans invention (lien interne manquant/mal ciblé, un lien externe cliquable à convertir en texte, une URL de source erronée) — jamais un problème de fond. Corrections appliquées directement en base (contenu + `acf.sources`), **vérifiées programmatiquement avec `gating.runGating` avant publication** (pas seulement à l'œil) :
+- `changement-titulaire-carte-grise-en-ligne` (#958) — déjà conforme, aucune correction nécessaire.
+- `certificat-conformite-europeen-coc` (#903) — lien vers le hub générique remplacé par le vrai lien vers le sous-hub `/carte-grise-demarches/immatriculation-import`, lien latéral manquant ajouté, URL de la source "FFVE" corrigée (pointait vers `ffcc.fr`, un domaine sans rapport, au lieu de `ffve.org`).
+- `controle-technique-points-verifies` (#1007) — lien vers le hub générique remplacé par le vrai lien vers le sous-hub `/carte-grise-demarches/controle-technique`.
+- `rectifier-erreur-carte-grise` (#1022) — lien texte "sous-hub dédié" qui pointait par erreur vers le hub générique, corrigé vers le vrai sous-hub `/carte-grise-demarches/duplicata-modifications`.
+- `taxe-co2-vehicule-occasion` (#907) — lien cliquable vers `service-public.fr` (interdit, voir règle anti-hallucination) converti en mention texte simple, lien latéral manquant ajouté.
+
+**Les 5 publiés réellement** (`status: publish` confirmé par relecture fraîche de l'API après écriture, pas juste la réponse de l'update) avec `date`/`date_gmt` explicitement dans le passé proche (règle du 2026-07-30 respectée à la lettre — jamais de date future sur un `status: publish`, sinon WP repasse silencieusement en `future`) : liens en ligne vérifiés sur techcars.fr. `tracking-mots-cles.xlsx` mis à jour (`statut = publié`, `date_publication = 2026-08-03`).
+
+**Cadence changée de 10 à 5 articles/jour** (demande explicite de l'utilisateur : "le site est en ligne, il faut du contenu chaque jour, on met 5 par jour") : [scripts/autopublish/lib/scheduler.js](scripts/autopublish/lib/scheduler.js) `PHASE_CAPACITY_PER_DAY.2` passé de 10 à 5. [data/autopublish-state.json](data/autopublish-state.json) réinitialisé pour ancrer la planification sur la vraie date du jour plutôt que de continuer une séquence datée du 2026-07-29 : `silo_start_date: "2026-08-03"`, `items_scheduled_for_silo: 5` (les 5 publiés aujourd'hui comptent comme le jour 0 de la nouvelle cadence — le prochain lot automatique se programmera à partir du 2026-08-04), `budget_consomme: 39` (34 + 5).
+
+**Reste bloqué dans le silo** (16 articles sur les 22 "à valider" d'origine, voir entrée précédente pour le détail des causes) — candidats pour une prochaine session de relecture manuelle du même type, ou une 3e passe de régénération.
+
+**Non commité à ce stade** : `lib/gating.js`, `lib/prompt-builder.js`, `prompts/system-article.md`, `regenerate-short.js`, `lib/scheduler.js` — le contenu WordPress est déjà publié (effet réel immédiat), mais le code du pipeline reste en attente de validation utilisateur avant commit/push.
+
+## 2026-08-01 (suite) : reprise silo "Carte grise & démarches" — hallucination de sources corrigée, mais taux de gating toujours bas
+
+**Contexte** : reprise demandée par l'utilisateur (API Mistral rechargée) du silo bloqué le 2026-07-30 (0/22 publiables, ~740k tokens perdus, cause identifiée = hallucination d'URL de source YMYL). Clé `MISTRAL_API_KEY` dans `.env` trouvée invalide (401 sur `/v1/models`, pas un problème de crédit) avant de pouvoir reprendre — remplacée par la nouvelle clé fournie par l'utilisateur.
+
+**Correctif appliqué (3 points, symétrique aux garde-fous déjà en place sur le maillage interne)** :
+1. [lib/prompt-builder.js](scripts/autopublish/lib/prompt-builder.js) : description ajoutée au champ `sources[].url` du schéma — URL racine du domaine uniquement, jamais un chemin profond, jamais inventée si aucun domaine officiel n'est fourni.
+2. [prompts/system-article.md](scripts/autopublish/prompts/system-article.md) : nouvelle section "Sources externes (anti-hallucination)", obligation YMYL de citer une source assouplie (souhaitable, plus obligatoire), et règle explicite ajoutée que les sources externes ne doivent **jamais** devenir un `<a href>` cliquable dans le corps (uniquement citées par leur nom, l'URL reste dans `sources[]`).
+3. [lib/gating.js](scripts/autopublish/lib/gating.js) : `checkYmylSource` neutralisée (ne bloque plus sur "sources[] vide"), nouvelle règle `checkSourceUrlsNotFabricated` qui rejette toute `sources[].url` avec un chemin après le domaine (jamais recopiable depuis les faits, donc toujours inventé si présent).
+
+**Résultat confirmé** : sur 23 tentatives réelles (3 en validation + 20 en lot), **plus aucune URL fabriquée n'est passée silencieusement** — la nouvelle règle a intercepté un cas réel (`déclaration cession véhicule en ligne`, `https://www.economie.gouv.fr/dgccrf`, jamais recopiable depuis les faits) qui aurait échappé à l'ancien gating (`checkYmylSource` ne vérifiait que la non-vacuité de `sources[]`, jamais son contenu). C'est précisément le bug d'origine — **corrigé et vérifié**.
+
+**Mais le taux de passage au gating reste à 0% après 2 passes** (~920k tokens consommés cette session, [scripts/autopublish/regenerate-short.js](scripts/autopublish/regenerate-short.js) étendu avec les 6 ids WP des clusters neufs). Causes dominantes, **distinctes du bug corrigé, déjà connues ou nouvellement observées** :
+- Longueur insuffisante (<900 mots) : la cause la plus fréquente, y compris en régression entre les deux passes sur plusieurs clusters (ex. `carte grise héritage succession` 1107→569 mots).
+- Lien montant vers le sous-hub manquant : défaut déjà documenté dans system-article.md comme "le plus souvent oublié" — persiste malgré l'avertissement.
+- **Lien externe cliquable dans le corps** (`checkMaillageResolved`, règle préexistante) : le modèle continue de transformer une source nommée en `<a href="https://...">` malgré l'interdiction désormais explicite (point 3 ci-dessus) — la consigne n'élimine pas complètement le réflexe, seul le gating l'intercepte de façon fiable.
+- **Similarité trop élevée avec `declaration-de-cession-carte-grise` déjà publié**, sur 3 clusters distincts (`déclaration cession véhicule en ligne` ~67%, `certificat cession cerfa 15776` ~58%, `vendre voiture sans contrôle technique` ~40-50%, ce dernier en hausse entre les deux passes) — probable chevauchement structurel de sujet, pas juste un problème de régénération ; à revoir angle par angle plutôt qu'à réessayer en boucle.
+- 3 erreurs API Mistral brutes (`finish_reason=error`) — confirmées transitoires (retry individuel réussi sur un cas testé).
+
+**Seul article passé au gating cette session** : `changement titulaire carte grise en ligne` (#958, 1096 mots) — prêt pour relecture manuelle finale avant publication (règle QC déjà actée, voir mémoire `feedback-qc-avant-publication-autoseo`).
+
+**État exact des 22 lignes "à valider" du silo à l'arrêt** (2e passe interrompue par l'utilisateur après 15/20, aucune perte — le process s'arrête proprement entre deux clusters) :
+- ✅ gating OK : `changement titulaire carte grise en ligne` (#958).
+- ⏸️ Jamais retentés cette session (exclus par erreur des lots de reprise, restent sur leur résultat KO de la validation initiale) : `délai carte grise après achat` (#955, court + lien manquant), `quitus fiscal véhicule étranger` (#897, lien manquant seul).
+- ⏸️ Non atteints par la 2e passe (dernier résultat = 1re passe) : `contrôle technique points vérifiés` (#1007, lien manquant seul), `contre-visite délai défauts` (#945, court seul), `contrôle technique pas cher près` (#941, erreur API, contenu jamais régénéré avec succès cette session), `contrôle technique moto 2026` (#952, idem), `cheval fiscal prix par région` (#918, régénération 2 interrompue en cours, contenu WP encore celui de la 1re passe : court + commentaire méthodologie).
+- ❌ KO après 2 passes, à retenter ou diagnostiquer : les 13 restants (`taxe CO2 véhicule occasion`, `changement d'adresse sur la carte grise`, `vendre voiture sans contrôle technique`, `déclaration cession véhicule en ligne`, `carte grise prix par région`, `code de cession obtenir`, `certificat cession cerfa 15776`, `duplicata carte grise perte`, `carte grise héritage succession`, `rectifier erreur carte grise`, `certificat conformité européen COC`, `calcul malus occasion importée`, `exonération malus famille nombreuse`, `changement adresse carte grise gratuit`).
+
+**Non commité** : `lib/gating.js`, `lib/prompt-builder.js`, `prompts/system-article.md`, `regenerate-short.js` (POST_ID_BY_KEYWORD étendu) — modifications locales en attente de validation utilisateur avant commit.
+
+**Prochaine action concrète (décision utilisateur)** : soit une 3e passe ciblée sur les clusters à un seul défaut restant (proches du seuil), soit traiter à part les 3 clusters à similarité élevée (angle éditorial à différencier plutôt que régénération aveugle), soit committer le correctif dès maintenant indépendamment de l'état du batch (le bug corrigé est déjà validé en conditions réelles).
+
 ## 2026-08-01 : sitemap.xml — "Date non valide" (Search Console) corrigé
 
 **Signalé par l'utilisateur** via Search Console (`techcars.fr/sitemap.xml`, 8 occurrences "Date non valide"). Cause : `<lastmod>` était rempli avec `post.modified`/`page.modified`, le champ WordPress REST en heure locale du serveur **sans indicateur de fuseau** (ex. `2026-07-30T05:08:18`) — format non conforme au W3C Datetime attendu par les sitemaps, rejeté par le validateur de Google.

@@ -1,10 +1,10 @@
 // Calcul de post_date selon skills/wordpress-publication.md section 6 —
-// 3 phases (0 : 10 pages/jour, 1 : pause, 2 : 10 articles/jour), jamais
+// 3 phases (0 : 10 pages/jour, 1 : pause, 2 : 5 articles/jour), jamais
 // avant la date du hub/sous-hub parent, heures réparties dans la journée
-// plutôt que tout à minuit. Phase 2 abaissée de 15 à 10/jour le 2026-07-28
-// (demande explicite de l'utilisateur, en même temps que la repriorisation
-// par sous-cocon/silo du plus petit au plus gros).
-const PHASE_CAPACITY_PER_DAY = { 0: 10, 2: 10 }; // phase 1 = pause, pas de file
+// plutôt que tout à minuit. Phase 2 abaissée de 15 à 10/jour le 2026-07-28,
+// puis de 10 à 5/jour le 2026-08-03 (demande explicite de l'utilisateur : le
+// site est en ligne, cadence stable et durable plutôt qu'un pic non tenable).
+const PHASE_CAPACITY_PER_DAY = { 0: 10, 2: 5 }; // phase 1 = pause, pas de file
 
 const DAY_START_HOUR = 8;
 const DAY_END_HOUR = 20;

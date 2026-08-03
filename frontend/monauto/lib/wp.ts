@@ -363,17 +363,19 @@ export async function getAllTags(): Promise<WpTerm[]> {
 
 /* ---------- Parsing des champs ACF texte (ACF Free : pas de Repeater) ---------- */
 
-// "Libellé | URL" par ligne → [{ label, url }]
+// Un nom de source par ligne → [{ label }]. Ces sources ne sont jamais
+// vérifiées indépendamment, donc jamais transformées en lien cliquable
+// (décision du 2026-08-03) — seul le nom est affiché, jamais d'URL. Tolère
+// l'ancien format "Libellé | URL" (posts publiés avant ce changement) en ne
+// gardant que la partie avant le "|", pour ne pas afficher l'URL brute en
+// texte sur les articles déjà en ligne.
 export function parseSources(raw?: string): Source[] {
   if (!raw) return [];
   return raw
     .split("\n")
     .map((line) => line.trim())
     .filter(Boolean)
-    .map((line) => {
-      const [label, url] = line.split("|").map((s) => s.trim());
-      return { label: label ?? line, url: url ?? "#" };
-    });
+    .map((line) => ({ label: line.split("|")[0].trim() }));
 }
 
 // Une URL par ligne → string[]

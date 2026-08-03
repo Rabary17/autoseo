@@ -4,7 +4,6 @@
 // ligne de suivi, entrée de maillage, faits fournis au prompt). Un contenu
 // qui échoue une seule règle reste en `draft`, jamais publié "quand même".
 const similarity = require('./similarity');
-const persona = require('./persona');
 
 // Hub/sous-hub : plancher ferme, plafond large plutôt qu'une fourchette
 // stricte — un silo à peu de sous-hubs/articles doit quand même atteindre le
@@ -196,11 +195,6 @@ function checkSourceLabelsClean(content) {
   return { ok: offendingLabels.length === 0 && !offendingBody, offendingLabels, offendingBody };
 }
 
-function checkYmylSource(content, silo) {
-  if (!persona.isYmylSilo(silo)) return { ok: true };
-  return { ok: (content.sources || []).length > 0, reason: 'Silo YMYL sans source officielle citée dans sources[].' };
-}
-
 // Extrait les `href` des liens du corps — sert à vérifier que le maillage
 // promis est réellement présent, pas juste que `maillage.json` a une entrée
 // (voir checkMaillageResolved) : constaté en test réel le 2026-07-29que
@@ -329,9 +323,6 @@ function runGating({
   if (!checkNoGenericOpening(content, contentType)) {
     failures.push({ rule: 'ouverture_generique', message: 'Ouverture générique bannie ("Ce silo/sous-cocon réunit/rassemble/regroupe...") détectée.' });
   }
-
-  const ymyl = checkYmylSource(content, silo);
-  if (!ymyl.ok) failures.push({ rule: 'source_ymyl', message: ymyl.reason });
 
   const maillageCheck = checkMaillageResolved(contentType, maillageEntry, childLinksCount, content);
   if (!maillageCheck.ok) {

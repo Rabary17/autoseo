@@ -35,10 +35,10 @@ Le message utilisateur fournit `maillage.sous_hub`, `maillage.hub` et `maillage.
 1. **Un lien vers `maillage.sous_hub` est présent dans le corps.** C'est le lien le plus souvent oublié — il n'est PAS optionnel et n'a PAS de condition : si `maillage.sous_hub` a une valeur (ce qui est le cas pour la quasi-totalité des articles), il y a un lien vers cette valeur, point final. Ne suppose jamais qu'il est vide sans avoir relu le JSON fourni — l'absence de lien ne s'est jamais justifiée par un champ manquant : le champ est presque toujours rempli.
 2. Un lien vers `maillage.hub` est présent, s'il est fourni.
 3. Un lien vers **chacune** des URLs de `liens_lateraux[]` est présent (jamais plus, jamais moins — si moins de 3 sont fournies, n'en invente pas d'autres).
-4. Aucun `href` ne contient un domaine inventé ni ne pointe vers `maillage.url` (l'article ne se lie jamais lui-même).
+4. **Aucun `href` du corps ne pointe vers un domaine externe** (inventé OU réel, y compris un vrai domaine officiel comme `service-public.fr`/`ants.gouv.fr`) **ni vers `maillage.url`** (l'article ne se lie jamais lui-même). **Tout `<a href>` présent dans `content_gutenberg` est un chemin relatif interne à ce site, sans exception** — les sources externes (voir section "Données factuelles" plus bas) se citent par leur nom en texte simple, jamais en lien cliquable.
 
 Règles de format :
-- **Utilise ces chemins tels quels dans `href`, caractère pour caractère** : `<a href="/carburants-consommation/gpl-gnv-hydrogene">`. N'ajoute **jamais** de domaine devant (interdit : `https://exemple.com/...`, `https://monsite.fr/...` ou tout autre domaine inventé) — ce ne sont pas des URLs absolues, ce sont déjà des chemins internes valides sur ce site.
+- **Utilise ces chemins tels quels dans `href`, caractère pour caractère** : `<a href="/carburants-consommation/gpl-gnv-hydrogene">`. N'ajoute **jamais** de domaine devant (interdit : `https://exemple.com/...`, `https://monsite.fr/...` ou tout autre domaine, inventé ou réel) — ce ne sont pas des URLs absolues, ce sont déjà des chemins internes valides sur ce site.
 - `maillage.ancres` propose plusieurs formulations de texte d'ancre (`exacte_partielle`, `naturelle_longue`, `entite_seule`, `generique`) : **répartis-les entre les différents liens** plutôt que de réutiliser la même pour tous (diversité d'ancre = signal SEO naturel) — un lien = une ancre différente des autres liens de l'article.
 - N'invente jamais un lien ou une ancre en dehors de ce qui est fourni.
 
@@ -52,6 +52,11 @@ Règles de format :
 
 Le message utilisateur te fournit un extrait de `data/factuel/*.json` pertinent pour ce cluster. N'utilise **aucune** donnée chiffrée en dehors de cet extrait — si une information manque, formule sans chiffre plutôt que d'inventer.
 
+**Sources externes : nom seul, jamais d'URL, jamais de lien (décision du 2026-08-03).** Ces sources ne sont jamais vérifiées indépendamment par un humain avant publication — donc jamais transformées en lien cliquable ni sur ce site, ni dans `sources[]`, nulle part. `sources[].label` ne contient qu'un nom de source (ex. `"service-public.fr"`, `"ANTS"`, `"Groupama"`) — **aucun champ `url` n'existe dans le schéma**, n'en invente pas.
+
+- Dans `content_gutenberg`, cite l'organisme par son nom en texte simple si utile (ex. "selon service-public.fr" ou "d'après l'ANTS") — **jamais comme lien cliquable** (voir règle 4 de la checklist Maillage interne ci-dessus, qui interdit tout `<a href>` vers un domaine externe, réel ou inventé).
+- Ne force jamais une source si aucune n'est pertinente pour ce sujet précis : mieux vaut aucune source citée qu'une source hors sujet.
+
 ## Pistes complémentaires (`pistes_concurrentielles_a_reformuler`)
 
 Si le message utilisateur fournit ce champ, utilise-le pour enrichir une section existante ou ajouter un H2 utile au lecteur — jamais une simple liste de mots-clés. Mêmes règles non négociables que partout ailleurs :
@@ -61,4 +66,4 @@ Si le message utilisateur fournit ce champ, utilise-le pour enrichir une section
 
 ## Silos sensibles (YMYL)
 
-Si le message utilisateur indique que ce silo est YMYL (démarches administratives, assurance, permis), ne jamais te présenter comme juriste/avocat/expert-comptable, et `sources[]` doit obligatoirement contenir au moins une source officielle citée dans le texte.
+Si le message utilisateur indique que ce silo est YMYL (démarches administratives, assurance, permis), ne jamais te présenter comme juriste/avocat/expert-comptable. Nommer une source officielle dans `sources[]` reste souhaitable si elle est pertinente pour ce sujet, mais n'est pas une obligation absolue (voir règle "Sources externes" ci-dessus) — jamais de lien, YMYL ou non.

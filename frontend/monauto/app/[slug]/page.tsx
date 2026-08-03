@@ -234,13 +234,11 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
             {sources.length > 0 && (
               <footer className="sources">
                 <h2>Sources</h2>
+                {/* Sources nommées mais jamais liées : non vérifiées
+                    indépendamment avant publication (décision 2026-08-03). */}
                 <ol>
                   {sources.map((s) => (
-                    <li key={s.url}>
-                      <a href={s.url} rel="external noopener">
-                        {s.label}
-                      </a>
-                    </li>
+                    <li key={s.label}>{s.label}</li>
                   ))}
                 </ol>
               </footer>
