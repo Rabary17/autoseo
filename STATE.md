@@ -5,6 +5,23 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-03 (suite 4) : hub + 5 sous-hubs Camping-car & van revus et publiés + 3 articles reprogrammés (fin septembre → 06/08)
+
+Sur demande explicite de l'utilisateur ("passe en revue puis publie"), QC manuelle du hub `camping-car-van` et de ses 5 sous-hubs (`assurance-reglementation`, `voyager-aires`, `acheter-camping-car`, `van-fourgon-amenage`, `entretien-hivernage`) — tous encore en `draft` avec un `date_gmt` de début septembre hérité de la Phase 0/1, jamais vraiment programmé (cause du bug de planification noté dans l'entrée précédente : le planificateur refuse de dater un article avant son sous-hub parent).
+
+**Défauts réels trouvés et corrigés** (contenu relu intégralement page par page, pas seulement les champs signalés par le gating) :
+- **6 blocs image imbriqués dans un `<p>`** (`assurance-reglementation` x3, `van-fourgon-amenage` x3) — même défaut que celui documenté le 2026-07-28 sur 46/137 pages, jamais revu depuis sur du nouveau contenu. Séparés en blocs `wp:image` autonomes.
+- **2 liens externes cliquables** (`assurance-reglementation` → Médiateur de l'Assurance, `entretien-hivernage` → FFCC) — contraire à la règle du 2026-08-01 (sources citées par leur nom, jamais en `<a href>`). Convertis en mentions texte.
+- **1 `meta_title` tronqué en plein mot** (`van-fourgon-amenage`, "...immatricul") — raccourci proprement.
+- **1 source à la limite de l'acceptable, laissée en l'état** (`acheter-camping-car` cite un article tiers intitulé "contourner l'homologation VASP" — mais le corps de page mentionne bien le risque réel, le refus de prise en charge assurance, donc pas une incitation sans contrepartie ; signalé ici pour traçabilité plutôt que corrigé).
+- Les 4 autres pages (`camping-car-van`, `voyager-aires`, `acheter-camping-car`, `entretien-hivernage` pour le reste) : aucun défaut trouvé (pas de tiret cadratin, pas de caractère hors script latin, blocs Gutenberg bien formés).
+
+**Publiées** (`status: publish`, `date`/`date_gmt` dans le passé proche — règle du 2026-07-30 respectée, vérifié par relecture fraîche de l'API après écriture) : les 6 pages sont maintenant en ligne. Vérifié en local que `/categorie/camping-car-van/acheter-camping-car/` et `/camping-car-van/` rendent bien le vrai contenu (plus la vue générique de repli).
+
+**3 articles reprogrammés** du 2026-09-04 (date fausse, héritée du bug de planification) au **2026-08-06** (continuité du calendrier 5/jour déjà entamé sur Carte grise & démarches, `scheduler.computeSchedule` avec `startIndex:12`) : `limitation-vitesse-camping-car` (#1147, 14h), `aires-camping-car-gratuites-france` (#1159, 17h), `profile-vs-integral-vs-capucine` (#1175, 20h — le seul des 7 corrigés dans l'entrée précédente à passer intégralement le gating). `tracking-mots-cles.xlsx` mis à jour (`statut: programmé`, `date_publication: 2026-08-06`). `data/autopublish-state.json` non touché : sa logique de curseur par silo est distincte de cette correction ponctuelle, le prochain run réel se resynchronisera de lui-même sur les statuts réels du tracking.
+
+**Non traité** : les 5 articles "à valider" de Carburants & consommation, également mal datés au 2026-09-04 pour la même raison (hub/sous-hub de ce silo pas encore revus) — hors périmètre de cette demande, à traiter séparément.
+
 ## 2026-08-03 (suite 3) : 🐛 bug critique de maillage interne corrigé (liens cassés site entier) + 9 nouveaux articles (Carburants & consommation, Camping-car & van) + QC manuelle de 7 bloqués
 
 **🔎 Découverte majeure** : quasiment tous les liens internes du site (déjà en production, y compris sur les 5 premiers vrais articles publiés plus tôt aujourd'hui) sont cassés en 404. Cause : `maillage.json` stocke les chemins des sous-hubs et des liens latéraux au format `/silo/slug` (2 segments), repris tel quel en `href` par `run.js` — mais côté frontend, un sous-hub vit sous `/categorie/silo/sous-cocon/` (3 segments) et un article vit sous `/article-slug/` (1 segment, sans le silo). Un lien à 2 segments sans le préfixe `/categorie/` ne correspond à aucune route Next.js. Seul le lien vers le hub seul (1 segment) fonctionnait, par coïncidence (le slug WP du hub == le slug du silo, capté par `/[slug]/`). Vérifié en direct sur la prod (`taxe-co2-vehicule-occasion`, déjà publié) : 2 liens sur 2 en 404.
