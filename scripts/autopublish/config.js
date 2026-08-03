@@ -36,26 +36,30 @@ module.exports = {
   PHASE_CAPACITY_PER_DAY,
 
   // Répartition modèle par type de contenu (migré vers l'API Mistral le
-  // 2026-07-27, demande explicite de l'utilisateur — voir STATE.md) :
-  // mistral-large-latest pour hub/sous-hub (structuration de liens complexe) ;
-  // mistral-small-latest pour les articles programmatiques courts (gros
-  // volume, contenu templaté).
+  // 2026-07-27, demande explicite de l'utilisateur — voir STATE.md).
+  // `article` passé de mistral-small à mistral-large le 2026-07-30 (demande
+  // explicite de l'utilisateur après le constat du 2026-07-30 : 0/22 articles
+  // publiables sur "Carte grise & démarches", hallucination de sources
+  // officielles YMYL persistant même avec mistral-medium — le modèle le plus
+  // puissant disponible reste la seule variable non encore testée). Coût par
+  // article nettement plus élevé, mais nouvelle politique explicite : tout
+  // insérer en draft quel que soit le gating (déjà le comportement de run.js),
+  // correction/QC manuelle article par article ensuite, publication seulement
+  // à une date programmée décidée après coup — jamais automatique.
   MODEL_BY_CONTENT_TYPE: {
     hub: { model: 'mistral-large-latest' },
     'sous-hub': { model: 'mistral-large-latest' },
-    article: { model: 'mistral-small-latest' },
+    article: { model: 'mistral-large-latest' },
   },
 
-  // Relecture obligatoire (voir review.js), par type de contenu — mistral-large-latest
-  // pour hub/sous-hub (structuration de liens, jugement qualité critique, faible
-  // volume) ; mistral-medium-latest pour les articles (gros volume, contenu
-  // templaté — allégé le 2026-07-27 sur demande explicite de l'utilisateur pour
-  // réduire le coût des runs massifs, en s'appuyant sur des données factuelles
-  // solides en amont plutôt que sur la relecture pour rattraper les manques).
+  // Relecture obligatoire (voir review.js) — repassée à mistral-large-latest
+  // partout le 2026-07-30 (même demande explicite que MODEL_BY_CONTENT_TYPE
+  // ci-dessus : le modèle le plus performant disponible, coût secondaire tant
+  // que le taux d'échec au gating n'est pas d'abord réduit).
   REVIEW_MODEL_BY_CONTENT_TYPE: {
     hub: { model: 'mistral-large-latest' },
     'sous-hub': { model: 'mistral-large-latest' },
-    article: { model: 'mistral-medium-latest' },
+    article: { model: 'mistral-large-latest' },
   },
 
   // Image par défaut par silo (media_id WordPress déjà uploadé), dernier

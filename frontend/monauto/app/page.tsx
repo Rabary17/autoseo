@@ -76,7 +76,7 @@ export default async function HomePage() {
             {SILOS.map((s) => (
               <Link key={s.slug} className="silo" href={`/categorie/${s.slug}/`}>
                 <span className="silo__main">
-                  <SiloThumb slug={s.slug} alt="" />
+                  <SiloThumb slug={s.slug} alt={`Icône ${s.name}`} />
                   <span>
                     <span className="silo__name">{s.name}</span>
                     <span className="silo__desc" style={{ display: "block" }}>
