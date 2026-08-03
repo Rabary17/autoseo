@@ -25,7 +25,7 @@ export const revalidate = 900;
 export default async function HomePage() {
   // Dégradation gracieuse (voir app/[slug]/page.tsx) : l'accueil doit rester
   // déployable même si WP est temporairement injoignable au build.
-  const { posts } = await getPosts(1, 6).catch((e) => {
+  const { posts } = await getPosts(1, 16).catch((e) => {
     console.warn(`[HomePage] échec du fetch WP, fallback sur []: ${e}`);
     return { posts: [], total: 0, totalPages: 0 };
   });

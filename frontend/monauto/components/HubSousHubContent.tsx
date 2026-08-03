@@ -101,7 +101,7 @@ export default async function HubSousHubContent({
 
             {heroImage && (
               <figure className="article__hero">
-                <img src={heroImage.url} alt="" width={heroImage.width} height={heroImage.height} />
+                <img src={heroImage.url} alt={heroImage.alt || ""} width={heroImage.width} height={heroImage.height} />
               </figure>
             )}
 

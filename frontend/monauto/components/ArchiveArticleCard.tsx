@@ -18,7 +18,9 @@ export default function ArchiveArticleCard({ post }: { post: WpPost }) {
   return (
     <article className="acard">
       <div className="acard__media">
-        {image && <img src={image.url} alt="" loading="lazy" width={image.width} height={image.height} />}
+        {image && (
+          <img src={image.url} alt={image.alt || ""} loading="lazy" width={image.width} height={image.height} />
+        )}
         {category && (
           <Link href={`/categorie/${category.slug}/`} className="acard__badge">
             {category.name}

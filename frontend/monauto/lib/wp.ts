@@ -411,11 +411,13 @@ export function parseFaq(raw?: string): FaqItem[] {
 // section 9 pour le détail des mesures ayant fixé ces dimensions.
 export function getImageVariant(media: WpImage | undefined, size: "monauto_card" | "monauto_hero") {
   if (!media) return undefined;
+  const alt = media.alt_text || "";
   const variant = media.media_details?.sizes?.[size];
-  if (variant) return { url: variant.source_url, width: variant.width, height: variant.height };
+  if (variant) return { url: variant.source_url, width: variant.width, height: variant.height, alt };
   return {
     url: media.source_url,
     width: media.media_details?.width ?? 1200,
     height: media.media_details?.height ?? 750,
+    alt,
   };
 }

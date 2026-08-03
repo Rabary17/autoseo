@@ -20,11 +20,11 @@ export default function EntityCard({
   /** HTML autorisé (ex. title.rendered de WP) — rendu via dangerouslySetInnerHTML. */
   title: string;
   eyebrow?: string;
-  image?: { url: string; width?: number; height?: number };
+  image?: { url: string; width?: number; height?: number; alt?: string };
   meta?: ReactNode;
 }) {
   const media = image && (
-    <img src={image.url} alt="" loading="lazy" width={image.width} height={image.height} />
+    <img src={image.url} alt={image.alt || ""} loading="lazy" width={image.width} height={image.height} />
   );
   return (
     <article className={`card${href ? "" : " card--soon"}`}>
