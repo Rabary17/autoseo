@@ -5,6 +5,16 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-04 (suite 2) : hub/sous-hub de 6 silos de plus publiés (dont Carte grise & démarches, jusque-là jamais promu) + cluster persistant bloqué identifié
+
+Suite du chantier de fond. **Voiture d'occasion, Carte grise & démarches, Achat voiture neuve, Électrique & hybride** revus et publiés (même méthode `_qc-page.js` + revue manuelle des liens externes/meta tronqués/années fausses). **Point important** : `carte-grise-demarches` et ses 6 sous-hubs étaient eux-mêmes encore en `draft` malgré des dizaines d'articles déjà publiés dessous depuis le 2026-07-29 — exactement la même cause racine que le bug de maillage corrigé plus tôt (parent jamais promu), maintenant résolue pour ce silo aussi.
+
+**Cluster persistant en échec technique** : `gaz-camping-car-securite` (Camping-car & van) — 4 tentatives consécutives, toutes `finish_reason=error` de Mistral, jamais un contenu généré. Comportement identique à `garanties-occasion` le 2026-07-27 (qui avait fini par passer au 3ᵉ essai) mais ici toujours bloqué après 4 essais. **Curseur `data/autopublish-state.json` avancé manuellement** vers le silo suivant (`Mobilité partagée & transports`) pour ne pas bloquer indéfiniment l'automatisation dessus — ce cluster reste `à faire`, à reprendre séparément (nouvelle tentative plus tard, ou reformulation du prompt si le blocage persiste, gaz/sécurité pourrait déclencher un filtre de sécurité côté Mistral).
+
+**2 runs articles supplémentaires** lancés en tâche de fond (batch2 : 2 items Camping-car & van restants, 1 succès + 1 échec technique confirmé persistant ; batch3 : 37 articles, silo Mobilité partagée & transports puis suivants).
+
+Total hub/sous-hub publiés à ce stade : **11 silos** (Carburants & consommation, Camping-car & van, Mobilité partagée & transports, Utilitaires & flottes pro, Vélo & nouvelles mobilités, Sport auto & passion, Permis & conduite, Assurance auto, Moto & scooter, Essais & comparatifs, Voiture d'occasion, Carte grise & démarches, Achat voiture neuve, Électrique & hybride — 14 en réalité). Restent à revoir : Pièces détachées & accessoires, Road trips & voyage auto, Pannes & diagnostic, Entretien & révision, Marques & modèles.
+
 ## 2026-08-04 (suite) : hub/sous-hub de 7 silos supplémentaires revus et publiés + outil de QC réutilisable
 
 Suite du chantier "3 mois à 5/jour" ("oui go" de l'utilisateur). Même méthode que pour Carburants & consommation : QC manuelle puis publication du hub + sous-hubs de **Mobilité partagée & transports, Utilitaires & flottes pro, Vélo & nouvelles mobilités, Sport auto & passion, Permis & conduite, Assurance auto, Moto & scooter** (44 pages au total, hub+sous-hubs). En parallèle, lancement d'un run `--max-articles=48` en tâche de fond sur Camping-car & van (12 clusters restants) puis les silos suivants dans l'ordre établi — cf. [run-batch1.log] dans le scratchpad de session pour le détail.
@@ -297,11 +307,10 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-08-03
+## Autopublish — dernier run : 2026-08-04
 - Phase : 2 — silo en cours : Camping-car & van
-- Programmées : 2 — bloquées (draft) : 6 — erreurs techniques : 1 ⚠️
-- Dernier article programmé pour : 2026-09-04T17:00:00.000Z
-- Détail complet : [logs/autopublish/2026-08-03.md](logs/autopublish/2026-08-03.md)
+- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 1 ⚠️
+- Détail complet : [logs/autopublish/2026-08-04.md](logs/autopublish/2026-08-04.md)
 <!-- autopublish:report:end -->
 
 
