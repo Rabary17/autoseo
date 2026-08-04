@@ -5,6 +5,24 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-04 (suite) : hub/sous-hub de 7 silos supplémentaires revus et publiés + outil de QC réutilisable
+
+Suite du chantier "3 mois à 5/jour" ("oui go" de l'utilisateur). Même méthode que pour Carburants & consommation : QC manuelle puis publication du hub + sous-hubs de **Mobilité partagée & transports, Utilitaires & flottes pro, Vélo & nouvelles mobilités, Sport auto & passion, Permis & conduite, Assurance auto, Moto & scooter** (44 pages au total, hub+sous-hubs). En parallèle, lancement d'un run `--max-articles=48` en tâche de fond sur Camping-car & van (12 clusters restants) puis les silos suivants dans l'ordre établi — cf. [run-batch1.log] dans le scratchpad de session pour le détail.
+
+**Nouvel outil réutilisable** : [scripts/autopublish/_qc-page.js](scripts/autopublish/_qc-page.js) (committé, réutilisable pour les prochains silos) — corrige automatiquement les 2 défauts mécaniques récurrents (image isolée imbriquée dans un `<p>`, tableau sans `<figure>` englobante) et rapporte le reste pour revue manuelle. A nettement accéléré la QC par rapport à la lecture intégrale page par page des sessions précédentes.
+
+**Nouveaux variants du bug d'image imbriquée découverts** (au-delà des 2 déjà connus) :
+- Bloc `wp:image {"id":1/2/3}` ou `{"index":N}` (placeholder) englobant un `<p>` qui contient lui-même le vrai bloc `wp:image` — trouvé sur `velo-electrique`, `track-days-circuits`.
+- Bloc `wp:image` sans commentaire d'ouverture du tout, fermé par `<!-- /wp:post-content -->` (mismatch total) — trouvé sur `points-infractions`.
+- Chacun corrigé au cas par cas (pas encore généralisé dans `_qc-page.js`, ces variants restent rares comparés au cas standard).
+
+**Autres défauts récurrents trouvés et corrigés sur ces 7 silos** :
+- **~5 pages avec des liens externes cliquables** (LesFurets, LeLynx, FFVE, club Renault 21, Paris.fr, sécurité-routière.gouv.fr...) — `points-infractions` en avait **19 dans le corps + 7 dans la FAQ**, le cas le plus massif rencontré à ce jour, corrigé par un remplacement global plutôt qu'un par un.
+- **~8 `meta_title` tronqués en plein mot** ou **avec une année fausse (2024 au lieu de 2026)** — ce 2ᵉ motif (année fausse, pas juste tronquée) touche maintenant 4 pages au total depuis sa première détection.
+- **1 page (`tuning-preparation`, `choisir-un-utilitaire`) avec des dizaines de tirets cadratins** (jusqu'à 63 sur une seule page) — bien au-delà des 1-2 occurrences isolées vues jusqu'ici, remplacés en masse plutôt qu'un par un.
+
+**Non fait** : les 15 pièces "à valider" avec de vrais défauts (silo Carburants & consommation, notées dans l'entrée précédente) restent en l'état, hors périmètre de cette session de revue hub/sous-hub.
+
 ## 2026-08-04 : hub + 4 sous-hubs Carburants & consommation revus et publiés + 5 articles reprogrammés (2026-08-08/09)
 
 Suite directe de l'entrée précédente ("prépare d'autres articles... 3 mois à 5/jour"). Même traitement que pour Camping-car & van : QC manuelle du hub `carburants-consommation` et de ses 4 sous-hubs (`gpl-gnv-hydrogene`, `prix-stations`, `reduire-sa-consommation`, `e85-conversions`), tous en `draft` avec un `date_gmt` de septembre.
