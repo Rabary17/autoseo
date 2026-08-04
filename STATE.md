@@ -5,6 +5,22 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 2026-08-04 : hub + 4 sous-hubs Carburants & consommation revus et publiés + 5 articles reprogrammés (2026-08-08/09)
+
+Suite directe de l'entrée précédente ("prépare d'autres articles... 3 mois à 5/jour"). Même traitement que pour Camping-car & van : QC manuelle du hub `carburants-consommation` et de ses 4 sous-hubs (`gpl-gnv-hydrogene`, `prix-stations`, `reduire-sa-consommation`, `e85-conversions`), tous en `draft` avec un `date_gmt` de septembre.
+
+**Défauts réels trouvés, plus nombreux et plus graves que sur Camping-car & van** :
+- **13 blocs image imbriqués** au total sur les 5 pages, dont **3 doublement corrompus** sur `reduire-sa-consommation` : le bloc `wp:image` entier (commentaires + `<figure>`) s'est retrouvé recopié tel quel à l'intérieur de l'attribut `src=""` d'un AUTRE bloc image externe — `<img src="<!-- wp:image ...--><figure>...</figure><!-- /wp:image -->" .../>`, HTML invalide. Reconstruits en extrayant uniquement le vrai bloc interne.
+- **2 tableaux sans balise `<figure>` englobante** (`<table class="wp-block-table">` seul, sans le wrapper Gutenberg standard) — trouvé sur `reduire-sa-consommation` et `e85-conversions`, jamais rencontré jusqu'ici sur ce projet.
+- **5 liens externes cliquables** (bioethanolcarburant.com, ADEME, ANTS/service-public.fr x2, un dans une réponse FAQ) — convertis en mentions texte.
+- **1 année fausse dans un `meta_title`** (`e85-conversions` : "...en 2024" au lieu de 2026 — pas une troncature, une vraie erreur de date).
+- **3 `meta_title`/`meta_description` tronqués en plein mot**.
+- Un artefact de ma propre correction repéré et corrigé après coup (4 occurrences de `<p>p>...` — script de fix imparfait sur `prix-stations`, revérifié et nettoyé avant publication).
+
+**Publiées** (`status: publish`, date réelle proche). **5 articles reprogrammés** du 2026-09-04 (faux) au **2026-08-08/09** (suite du calendrier 5/jour) : `station-hydrogene-france-carte`, `carburant-moins-cher-autour-de-moi`, `voiture-gpl-avantages-inconvenients`, `reprogrammation-e85-vs-boitier`, `gnv-utilitaire-pro`.
+
+**Total réel programmé à ce stade : 27 créneaux** (2026-08-04 au 2026-08-09), sur les ~450 nécessaires pour 3 mois à 5/jour. Chantier "3 mois à 5/jour" toujours très en amont — reste à traiter : les 15 pièces "à valider" avec de vrais défauts (hors similarité, non touchées aujourd'hui), les 12 clusters "à faire" restants de Camping-car & van, puis les 16 autres silos (hub/sous-hub jamais revus).
+
 ## 2026-08-03 (suite 5) : seuil de similarité relevé (0,20 → 0,60), bug d'auto-comparaison corrigé, bug d'image imbriquée étendu, 7 articles débloqués et programmés
 
 Sur demande explicite de l'utilisateur ("passe les similaires et prépare d'autres articles... on doit arriver à programmer pour 3 mois à 5/jour").
