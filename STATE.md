@@ -5,6 +5,20 @@
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
 
+## 🎯 2026-08-04 (suite 3) : les 19 silos ont maintenant leur hub + sous-hubs publiés (118 pages)
+
+Fin du chantier de revue hub/sous-hub entamé plus tôt aujourd'hui. **Pièces détachées & accessoires, Road trips & voyage auto, Pannes & diagnostic, Entretien & révision, Marques & modèles** revus et publiés — ce sont les 5 derniers silos qui restaient en `draft`. **Vérifié programmatiquement sur les 19 hubs (`wp.findBySlug` + `status`) : tous en `publish`.**
+
+**Défauts récurrents sur ces 5 derniers silos** (mêmes familles que précédemment) :
+- Liens externes cliquables sur ~8 pages (Vroomly, Careco, Fiches Auto, Carverif, AutoScore, Sécurité Routière, ch.ch, asfinag.at, bgtoll.bg... — routes de péage européennes en particulier, très citées dans Road trips).
+- **2 pages avec des dizaines de tirets cadratins** : `voyants-tableau-de-bord` (21), `distribution-courroies` (8) — confirme que ce n'est pas un cas isolé (63 sur `tuning-preparation` la veille), plutôt une caractéristique de certains runs de génération plus anciens, antérieurs au renforcement de la règle anti-tiret.
+- ~10 `meta_title` tronqués ou avec année fausse (2024 au lieu de 2026) — motif désormais observé sur la quasi-totalité des 19 silos.
+- 1 `meta_title` contenant lui-même un tiret cadratin littéral (`depollution-echappement`), jamais vu auparavant dans un champ meta plutôt que le corps.
+
+**Bilan du chantier hub/sous-hub (toute la journée du 2026-08-04)** : 118 pages (19 hubs + 99 sous-hubs) passées en revue une par une, corrigées puis publiées. Plus aucun lien vers un hub/sous-hub non publié possible désormais — combiné au correctif de maillage (middleware) du 2026-08-03, l'architecture de liens internes du site est maintenant cohérente de bout en bout.
+
+**Prochaine étape** : la génération d'articles (runs en tâche de fond, silo par silo dans l'ordre déjà établi) peut continuer sans plus buter sur des parents non publiés. Reste : les 15 pièces "à valider" avec de vrais défauts non similarité (notées plus haut), le cluster `gaz-camping-car-securite` toujours en échec technique, et la suite du calendrier de génération vers l'objectif "3 mois à 5/jour" (~450 créneaux, 27 atteints à ce stade avant cette session de revue — le nombre exact augmente avec les runs en cours).
+
 ## 2026-08-04 (suite 2) : hub/sous-hub de 6 silos de plus publiés (dont Carte grise & démarches, jusque-là jamais promu) + cluster persistant bloqué identifié
 
 Suite du chantier de fond. **Voiture d'occasion, Carte grise & démarches, Achat voiture neuve, Électrique & hybride** revus et publiés (même méthode `_qc-page.js` + revue manuelle des liens externes/meta tronqués/années fausses). **Point important** : `carte-grise-demarches` et ses 6 sous-hubs étaient eux-mêmes encore en `draft` malgré des dizaines d'articles déjà publiés dessous depuis le 2026-07-29 — exactement la même cause racine que le bug de maillage corrigé plus tôt (parent jamais promu), maintenant résolue pour ce silo aussi.
