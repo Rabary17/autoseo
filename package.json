@@ -9,7 +9,8 @@
     "daily-report": "node scripts/autopublish/daily-report.js",
     "create-missing-authors": "node scripts/autopublish/create-missing-authors.js",
     "backfill-meta": "node scripts/autopublish/backfill-meta.js",
-    "test:e2e": "node scripts/autopublish/test-e2e.js"
+    "test:e2e": "node scripts/autopublish/test-e2e.js",
+    "veille-actus": "node scripts/actus/veille.js"
   },
   "dependencies": {
     "sharp": "^0.35.3",

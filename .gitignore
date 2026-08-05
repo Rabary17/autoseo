@@ -6,3 +6,7 @@ frontend/monauto/.env.local
 logs/
 
 .vercel
+
+# Snapshots quotidiens de la veille actus (générés par scripts/actus/veille.js) —
+# seul data/actus/sources.json (la liste des flux) est versionné.
+data/actus/veille-*.json

@@ -1,0 +1,36 @@
+{
+  "_comment": "Sources RSS surveillées pour la veille d'actualités auto/mobilité. category sert juste d'indication éditoriale (pas un filtre technique). Ajouté/retiré librement — voir scripts/actus/veille.js.",
+  "_autre_source": "data/actus/tendances-signails.csv (178 lignes, export Signails.com du 2026-08-05, fourni par l'utilisateur) : mots-clés/entreprises automobile en forte croissance de recherche, triés par volume. Complémentaire des flux RSS ci-dessous — pas de l'actualité chaude, mais des idées de sujets 'tendance' (produits, startups, technologies émergentes) pour des dossiers ou des actus de fond. Pas de mécanisme de rafraîchissement automatique pour l'instant ; à renouveler manuellement si utile.",
+  "sources": [
+    {
+      "name": "Caradisiac",
+      "url": "https://www.caradisiac.com/rss.xml",
+      "category": "actualite-generaliste"
+    },
+    {
+      "name": "L'Argus",
+      "url": "https://www.largus.fr/RSS",
+      "category": "actualite-generaliste"
+    },
+    {
+      "name": "Auto Plus",
+      "url": "https://www.autoplus.fr/feed",
+      "category": "actualite-generaliste"
+    },
+    {
+      "name": "Motorlegend",
+      "url": "https://www.motorlegend.com/rss/motorlegend.rss",
+      "category": "actualite-generaliste"
+    },
+    {
+      "name": "Google Actualités — carte grise / démarches",
+      "url": "https://news.google.com/rss/search?q=%22carte%20grise%22%20OR%20%22contr%C3%B4le%20technique%22%20OR%20%22malus%20%C3%A9cologique%22&hl=fr&gl=FR&ceid=FR:fr",
+      "category": "reglementaire"
+    },
+    {
+      "name": "Google Actualités — automobile France",
+      "url": "https://news.google.com/rss/search?q=automobile%20France&hl=fr&gl=FR&ceid=FR:fr",
+      "category": "actualite-generaliste"
+    }
+  ]
+}
