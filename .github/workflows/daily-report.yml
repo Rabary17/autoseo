@@ -4,9 +4,12 @@ name: Rapport quotidien monauto
 # vérité) puis un envoi d'e-mail. Coût quasi nul, peut tourner tous les jours
 # sans conflit avec l'économie de tokens du pipeline de génération
 # (.github/workflows/autopublish.yml, lui hebdomadaire).
+# Cron désactivé le 2026-08-05 : le contenu du projet est daté sur un
+# calendrier simulé (2026) alors que ce workflow tourne sur l'horloge réelle
+# des runners GitHub Actions — le rapport ne peut donc que rapporter "rien
+# publié/prévu" tant que la vraie date n'a pas rejoint 2026. Toujours
+# déclenchable manuellement (workflow_dispatch) si besoin ponctuel.
 on:
-  schedule:
-    - cron: '0 6 * * *'
   workflow_dispatch: {}
 
 jobs:
