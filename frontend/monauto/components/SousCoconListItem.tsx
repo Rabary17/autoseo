@@ -9,12 +9,10 @@ import Link from "next/link";
 export default function SousCoconListItem({
   href,
   name,
-  desc,
   imageUrl,
 }: {
   href?: string;
   name: string;
-  desc: string;
   imageUrl?: string;
 }) {
   const content = (
@@ -24,17 +22,14 @@ export default function SousCoconListItem({
           <img
             src={imageUrl}
             alt=""
-            width={40}
-            height={40}
+            width={64}
+            height={64}
             loading="lazy"
-            style={{ width: 40, height: 40, borderRadius: 10, objectFit: "cover", flexShrink: 0 }}
+            style={{ width: 64, height: 64, borderRadius: 12, objectFit: "cover", flexShrink: 0 }}
           />
         )}
         <span>
           <span className="silo__name">{name}</span>
-          <span className="silo__desc" style={{ display: "block" }}>
-            {desc}
-          </span>
         </span>
       </span>
     </>

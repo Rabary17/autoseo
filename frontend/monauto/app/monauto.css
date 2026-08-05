@@ -355,7 +355,7 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 @media (min-width:1024px){
   .layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;align-items:start}
   .col-main{max-width:none;margin:0}
-  .col-side{position:sticky;top:84px;margin-top:0}
+  .col-side{position:sticky;top:84px;margin-top:0;max-height:calc(100vh - 104px);overflow-y:auto}
 }
 
 /* ---------- Accueil corporate ---------- */

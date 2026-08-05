@@ -121,7 +121,6 @@ export default async function HubSousHubContent({
                     key={sc.slug}
                     href={sc.href}
                     name={sc.name}
-                    desc={sc.href ? "Voir les guides" : "Contenu en préparation"}
                     imageUrl={sc.image}
                   />
                 ))}
