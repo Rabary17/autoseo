@@ -5,9 +5,13 @@ name: Autopublish monauto
 # chaque jour aux dates prévues — un seul run par semaine suffit à programmer
 # toute la semaine à venir. workflow_dispatch permet un test manuel (--dry-run)
 # sans attendre le lundi.
+# Cron désactivé le 2026-08-05 (même raison que daily-report.yml) : le
+# contenu du projet est daté sur un calendrier simulé (2026) alors que ce
+# workflow tourne sur l'horloge réelle des runners GitHub Actions — un run
+# automatique calculerait "aujourd'hui" en temps réel, désynchronisé d'environ
+# un an avec les dates déjà utilisées partout ailleurs (WP, tracking xlsx).
+# Toujours déclenchable manuellement (workflow_dispatch) si besoin ponctuel.
 on:
-  schedule:
-    - cron: '0 6 * * 1'
   workflow_dispatch:
     inputs:
       dry_run:
