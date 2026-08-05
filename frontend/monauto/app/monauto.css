@@ -419,6 +419,8 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 @media (min-width:640px){.silo-grid{grid-template-columns:1fr 1fr}}
 @media (min-width:768px){.trust-grid{grid-template-columns:repeat(3,1fr)}.nl-band form{flex-direction:row}.nl-band input{flex:1}}
 @media (min-width:1024px){.silo-grid{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:640px){.silo-grid--list{grid-template-columns:1fr}}
+@media (min-width:1024px){.silo-grid--list{grid-template-columns:1fr}}
 
 /* ---------- Auteur ---------- */
 .author-hero{display:flex;gap:16px;align-items:center;padding:20px 0}

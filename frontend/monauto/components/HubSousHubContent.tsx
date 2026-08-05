@@ -115,7 +115,7 @@ export default async function HubSousHubContent({
           <aside className="col-side" aria-label="Explorer">
             <section className="side-mod">
               <p className="side-mod__title">Sous-rubriques</p>
-              <div className="silo-grid">
+              <div className="silo-grid silo-grid--list">
                 {sousCoconCards.map((sc) => (
                   <SousCoconListItem
                     key={sc.slug}
