@@ -15,6 +15,17 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // pas encore branché sur l'optimiseur d'image Vercel — à réévaluer plus tard
   },
+  // Next.js streame par défaut <title>/meta description/canonical/robots dans
+  // le <body> (après un <head> déjà fermé) pour tout crawler absent de sa
+  // liste interne HTML_LIMITED_BOT_UA_RE — constaté via l'audit Screaming
+  // Frog du 2026-08-05 (title/meta description/canonical/robots "en dehors du
+  // <head>" sur 69-80% des pages). Cette liste ne couvre ni Screaming Frog, ni
+  // les crawlers IA/GEO (GPTBot, ClaudeBot, PerplexityBot...) qui ne rendent
+  // pas le JS — ils ne verraient donc jamais ces balises. `.*` force un rendu
+  // synchrone (metadata déjà dans le <head> du 1er octet) pour absolument
+  // toute requête ; le fetch WP sous-jacent est de toute façon déjà nécessaire
+  // et mis en cache pour le contenu de la page, donc coût de latence négligeable.
+  htmlLimitedBots: /.*/,
   // 301 des URLs de l'ancien site "Tech'Cars" (agence auto à Laval, domaine
   // racheté) trouvées via Wayback Machine (CDX API, 2026-07-29) — préserve le
   // jus de lien des 143 domaines référents vers les rubriques les plus proches
@@ -40,6 +51,34 @@ const nextConfig: NextConfig = {
         source: "/location",
         destination: "/categorie/mobilite-partagee-transports/location-courte-longue-duree/",
         permanent: true,
+      },
+    ];
+  },
+  // En-têtes de sécurité manquants sur 100% des pages (audit Screaming Frog du
+  // 2026-08-05, 239/292 URL). CSP volontairement permissive côté scripts/styles
+  // ('unsafe-inline') : le site utilise un script inline pour le thème sombre
+  // anti-FOUC (voir app/layout.tsx) et des styles inline générés par React —
+  // une CSP stricte casserait ces deux usages. L'audit ne vérifie que la
+  // présence de l'en-tête, pas le détail de sa politique (voir description du
+  // rapport) ; un durcissement ultérieur (nonce) reste possible si besoin.
+  async headers() {
+    // NewsletterForm (Client Component) poste directement à l'API REST WP
+    // publique depuis le navigateur (voir lib/public-env.ts) — connect-src
+    // doit explicitement l'autoriser, sinon la CSP bloque ce fetch.
+    const wpSiteUrl = (process.env.NEXT_PUBLIC_WP_SITE_URL ?? "").replace(/\/$/, "");
+    const connectSrc = ["'self'", wpSiteUrl].filter(Boolean).join(" ");
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "X-Frame-Options", value: "SAMEORIGIN" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          {
+            key: "Content-Security-Policy",
+            value: `default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src ${connectSrc}; frame-ancestors 'self'; base-uri 'self'; object-src 'none'`,
+          },
+        ],
       },
     ];
   },
