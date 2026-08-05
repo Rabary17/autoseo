@@ -126,6 +126,11 @@ async function wpFetch(path: string, retries = 2): Promise<SimpleResponse> {
         if (!res.ok) {
           throw new Error(`WP ${res.status} — ${path}`);
         }
+        // Cet hébergement renvoie parfois un corps vide avec un statut 200
+        // quand PHP-FPM sature (voir SAFE_EMBED_PAGE_SIZE/SAFE_PAGE_SIZE) —
+        // sans ce contrôle, la boucle de retry ne se déclenche jamais et
+        // l'échec ne surgit qu'au .json() de l'appelant, hors retry.
+        if (res.rawBody.length === 0) throw new Error(`WP réponse vide (200) — ${path}`);
         return res;
       } catch (e) {
         if (e instanceof WpNotFound) throw e;
@@ -188,15 +193,39 @@ function decodeEmbeds(post: WpPost): WpPost {
 
 /* ---------- Articles ---------- */
 
+// per_page=100 avec _embed=1 fait planter cet hébergement dès qu'il doit
+// réellement embarquer plus d'une quinzaine de posts dans la réponse (PHP-FPM
+// sature et renvoie un corps vide avec un statut 200 malgré tout — vérifié en
+// direct : per_page<=15 passe systématiquement, >=16 échoue systématiquement,
+// ce n'est pas un aléa réseau qu'un simple retry suffit à corriger). 10 reste
+// une marge de sécurité confortable sous ce seuil mesuré. Tous les appelants
+// (archives 30/page, sous-hub 30/page, accueil 16, etc.) veulent garder leur
+// pagination "logique" inchangée : getPosts fenêtre donc en interne sur des
+// requêtes WP de taille sûre et recolle les résultats, de façon transparente.
+const SAFE_EMBED_PAGE_SIZE = 10;
+
 export async function getPosts(page = 1, perPage = 12, extra = "") {
-  const res = await wpFetch(
-    `/posts?_embed=1&status=publish&page=${page}&per_page=${perPage}${extra}`
-  );
-  const posts = ((await res.json()) as WpPost[]).map(decodeEmbeds);
+  const offset = (page - 1) * perPage;
+  const firstWpPage = Math.floor(offset / SAFE_EMBED_PAGE_SIZE) + 1;
+  const lastWpPage = Math.floor((offset + perPage - 1) / SAFE_EMBED_PAGE_SIZE) + 1;
+
+  let total = 0;
+  const collected: WpPost[] = [];
+  for (let wpPage = firstWpPage; wpPage <= lastWpPage; wpPage++) {
+    const res = await wpFetch(
+      `/posts?_embed=1&status=publish&page=${wpPage}&per_page=${SAFE_EMBED_PAGE_SIZE}${extra}`
+    );
+    const batch = ((await res.json()) as WpPost[]).map(decodeEmbeds);
+    total = Number(res.headers.get("X-WP-Total") ?? 0);
+    collected.push(...batch);
+    if (batch.length < SAFE_EMBED_PAGE_SIZE) break; // dernière page WP atteinte
+  }
+
+  const startInBatch = offset - (firstWpPage - 1) * SAFE_EMBED_PAGE_SIZE;
   return {
-    posts,
-    total: Number(res.headers.get("X-WP-Total") ?? 0),
-    totalPages: Number(res.headers.get("X-WP-TotalPages") ?? 0),
+    posts: collected.slice(startInBatch, startInBatch + perPage),
+    total,
+    totalPages: Math.ceil(total / perPage),
   };
 }
 
@@ -210,13 +239,15 @@ export async function getPosts(page = 1, perPage = 12, extra = "") {
 // hébergement mutualisé à faible capacité PHP-FPM/WAF. `unstable_cache`
 // persiste le résultat 15 min ENTRE requêtes (pas seulement pour la durée
 // d'un build) — sitemap.ts, generateStaticParams et la page auteur en
-// bénéficient tous les trois sans se marcher dessus.
+// bénéficient tous les trois sans se marcher dessus. getPosts fenêtre déjà en
+// interne sur du SAFE_EMBED_PAGE_SIZE ; demander directement cette taille ici
+// évite un fenêtrage pour rien (offset toujours aligné).
 export const getAllPosts = unstable_cache(
   async (): Promise<WpPost[]> => {
     const all: WpPost[] = [];
     let page = 1;
     while (true) {
-      const { posts, totalPages } = await getPosts(page, 100);
+      const { posts, totalPages } = await getPosts(page, SAFE_EMBED_PAGE_SIZE);
       all.push(...posts);
       if (page >= totalPages) break;
       page += 1;
@@ -253,11 +284,31 @@ export async function getChildPages(parentId: number): Promise<WpPage[]> {
   return wpJson<WpPage[]>(`/pages?parent=${parentId}&per_page=100&_embed=1&status=publish&orderby=menu_order&order=asc`);
 }
 
+// per_page=100 (sans même _embed) fait déjà planter cet hébergement au-delà
+// d'une trentaine de pages renvoyées (contenu hub/sous-hub volumineux) — voir
+// SAFE_EMBED_PAGE_SIZE plus haut pour le même constat sur /posts. Le nombre
+// de pages (137 à ce jour) dépasse de toute façon 100 : un seul appel per_page=100
+// perdait déjà silencieusement les pages au-delà de la première page de
+// résultats, en plus de planter — il faut paginer, pas juste réduire per_page.
+const SAFE_PAGE_SIZE = 20;
+
 // Nécessaire pour generateStaticParams de app/[slug]/page.tsx : en export
 // statique, dynamicParams est toujours false — toute page (WP "page", pas
 // "post") absente de generateStaticParams renvoie une 500 au build.
 export const getAllPages = unstable_cache(
-  (): Promise<WpPage[]> => wpJson<WpPage[]>("/pages?per_page=100&status=publish"),
+  async (): Promise<WpPage[]> => {
+    const all: WpPage[] = [];
+    let page = 1;
+    while (true) {
+      const res = await wpFetch(`/pages?per_page=${SAFE_PAGE_SIZE}&status=publish&page=${page}`);
+      const pages = (await res.json()) as WpPage[];
+      all.push(...pages);
+      const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? 0);
+      if (page >= totalPages || pages.length === 0) break;
+      page += 1;
+    }
+    return all;
+  },
   ["wp-all-pages"],
   { revalidate: REVALIDATE_SECONDS }
 );
@@ -335,7 +386,7 @@ export async function getAllPagesFull(): Promise<WpPage[]> {
   const all: WpPage[] = [];
   let page = 1;
   while (true) {
-    const res = await wpFetch(`/pages?per_page=100&status=publish&page=${page}`);
+    const res = await wpFetch(`/pages?per_page=${SAFE_PAGE_SIZE}&status=publish&page=${page}`);
     const pages = (await res.json()) as WpPage[];
     all.push(...pages);
     const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? 0);
