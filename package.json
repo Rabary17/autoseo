@@ -10,7 +10,9 @@
     "create-missing-authors": "node scripts/autopublish/create-missing-authors.js",
     "backfill-meta": "node scripts/autopublish/backfill-meta.js",
     "test:e2e": "node scripts/autopublish/test-e2e.js",
-    "veille-actus": "node scripts/actus/veille.js"
+    "veille-actus": "node scripts/actus/veille.js",
+    "generate-actus": "node scripts/actus/generate.js",
+    "approve-actus": "node scripts/actus/approve.js"
   },
   "dependencies": {
     "sharp": "^0.35.3",
