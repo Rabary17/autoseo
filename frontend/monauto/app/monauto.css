@@ -261,6 +261,25 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
   border-radius:var(--r-md);padding:16px 18px;margin:0 0 22px}
 .tldr h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
 .tldr p{margin:0;font-size:15px;color:var(--ink)}
+
+.toc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);
+  padding:16px 18px;margin:0 0 22px}
+.toc__title{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.toc ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.toc__item a{font-size:14.5px;color:var(--ink);text-decoration:none}
+.toc__item a:hover{color:var(--accent);text-decoration:underline}
+.toc__item--2{padding-left:0}
+.toc__item--3{padding-left:16px}
+
+.author-box{display:flex;gap:16px;align-items:flex-start;background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--r-lg);padding:20px;margin:28px 0 0}
+.author-box .avatar{width:64px;height:64px;flex-shrink:0}
+.author-box__name{font-family:var(--font-display);font-weight:700;font-size:16px;margin:0}
+.author-box__role{font-size:13px;color:var(--accent);font-weight:600;margin:2px 0 8px}
+.author-box__bio{font-size:14.5px;color:var(--muted);line-height:1.6;margin:0 0 10px}
+.author-box__link{font-size:14px;font-weight:600;color:var(--accent);text-decoration:none}
+.author-box__link:hover{text-decoration:underline}
+@media (max-width:479px){.author-box{flex-direction:column;align-items:center;text-align:center}}
 .prose{font-size:17px;line-height:1.75;color:#22262E}
 .prose>*{margin:0 0 1.1em}
 .prose h2{margin:1.6em 0 .5em}.prose h3{margin:1.4em 0 .4em}

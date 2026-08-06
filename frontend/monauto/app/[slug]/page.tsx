@@ -26,6 +26,9 @@ import type { WpTerm } from "@/lib/types";
 import { SILO_WIDGET } from "@/components/widgets";
 import SousCoconIcon from "@/components/SousCoconIcon";
 import AuthorAvatar from "@/components/AuthorAvatar";
+import AuthorBio from "@/components/AuthorBio";
+import TableOfContents from "@/components/TableOfContents";
+import { buildToc } from "@/lib/toc";
 
 // ISR : on ne pré-génère au build que les pages WP statiques (peu nombreuses,
 // ex. "À propos") — PAS les articles. À 10 000 articles publiés en continu,
@@ -162,6 +165,7 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
   const tags = post._embedded?.["wp:term"]?.[1] ?? [];
   const sources = parseSources(post.acf?.sources);
   const faq = parseFaq(post.acf?.faq);
+  const { toc, html: contentWithIds } = buildToc(post.content.rendered);
 
   // La catégorie assignée à l'article EST le sous-cocon (voir resolveCategoryId
   // dans scripts/autopublish/run.js : parent = silo, sousTerm = catégorie de
@@ -226,6 +230,8 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
               </figure>
             )}
 
+            <TableOfContents items={toc} />
+
             {post.acf?.tldr && (
               <aside className="tldr" aria-label="L'essentiel">
                 <h2>L&apos;essentiel</h2>
@@ -233,7 +239,7 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
               </aside>
             )}
 
-            <div className="prose" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+            <div className="prose" dangerouslySetInnerHTML={{ __html: contentWithIds }} />
 
             <FaqSection items={faq} />
 
@@ -249,6 +255,8 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
                 </ol>
               </footer>
             )}
+
+            {author && <AuthorBio author={author} />}
           </article>
         </div>
 
