@@ -1,5 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
+import { submitToIndexNow } from "@/lib/indexnow";
+import { SITE_URL } from "@/lib/site";
 
 // Appelé par le mu-plugin WordPress (monauto_send_revalidation, section 4 de
 // monauto-headless.php — inspiré du plugin next-revalidate du projet de
@@ -34,6 +36,18 @@ export async function POST(request: NextRequest) {
   }
 
   for (const path of paths) revalidatePath(path);
+
+  // IndexNow (Bing + moteurs partenaires) : ce endpoint est déjà appelé à
+  // chaque publication/dépublication/mise à jour WP, quelle que soit la
+  // source (édition manuelle, script de QC, ou passage automatique de WP de
+  // "future" à "publish") — point d'intégration unique, pas de logique à
+  // dupliquer côté WordPress. Jamais bloquant : une erreur ne doit pas faire
+  // échouer la revalidation elle-même (voir submitToIndexNow).
+  // Attendu (pas fire-and-forget) : sur le runtime serverless de Vercel, une
+  // promesse non attendue peut être tuée dès que la réponse part avant
+  // d'avoir eu le temps de s'exécuter.
+  const urls = paths.map((p) => `${SITE_URL}${p}`);
+  await submitToIndexNow(urls, SITE_URL);
 
   return NextResponse.json({ revalidated: paths });
 }
