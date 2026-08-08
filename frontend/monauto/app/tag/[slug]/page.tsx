@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: term.name,
     description: term.description || `Tous les articles ${SITE_NAME} sur ${term.name}.`,
     path: `/tag/${term.slug}/`,
+    noindex: true,
   });
 }
 

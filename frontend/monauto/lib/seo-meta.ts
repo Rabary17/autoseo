@@ -25,6 +25,11 @@ interface PageMetaInput {
    *  moteurs génératifs même si les moteurs classiques l'ignorent depuis longtemps
    *  (demande explicite de l'utilisateur, 2026-07-30). */
   keywords?: string;
+  /** Pages listing transversales à faible valeur individuelle (ex. /tag/*) —
+   *  noindex mais follow (les liens internes restent suivis/le maillage
+   *  continue de circuler) : demande explicite de l'utilisateur, 2026-08-06,
+   *  pour éviter que ces pages fines/proches-doublons gonflent l'index. */
+  noindex?: boolean;
 }
 
 export function pageMeta({
@@ -37,6 +42,7 @@ export function pageMeta({
   modifiedTime,
   authorName,
   keywords,
+  noindex,
 }: PageMetaInput): Metadata {
   const url = `${SITE_URL}${path}`;
 
@@ -44,6 +50,7 @@ export function pageMeta({
     title,
     description,
     ...(keywords ? { keywords } : {}),
+    ...(noindex ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: url },
     openGraph: {
       title,
