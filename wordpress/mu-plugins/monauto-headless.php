@@ -597,6 +597,14 @@ add_action('rest_api_init', function () {
 			update_post_meta($post_id, '_monauto_source_url', esc_url_raw((string) $request->get_param('source_url')));
 			update_post_meta($post_id, '_monauto_submitted_at', current_time('mysql'));
 
+			// Synchronisation Zoho Campaigns (section 6) : tentative immediate en
+			// tache differee (ne bloque jamais la reponse au formulaire), avec
+			// retry automatique par cron si Zoho est temporairement indisponible.
+			update_post_meta($post_id, '_monauto_zoho_synced', '0');
+			if (!wp_next_scheduled('monauto_zoho_sync_one', [$post_id])) {
+				wp_schedule_single_event(time(), 'monauto_zoho_sync_one', [$post_id]);
+			}
+
 			return new WP_REST_Response(['ok' => true], 201);
 		},
 	]);
@@ -632,7 +640,148 @@ add_action('rest_api_init', function () {
 				'email' => get_post_meta($p->ID, '_monauto_email', true),
 				'source_url' => get_post_meta($p->ID, '_monauto_source_url', true),
 				'submitted_at' => get_post_meta($p->ID, '_monauto_submitted_at', true),
+				'zoho_synced' => get_post_meta($p->ID, '_monauto_zoho_synced', true) === '1',
 			], $posts), 200);
 		},
 	]);
 });
+
+/* ==========================================================================
+   6. Synchronisation newsletter -> Zoho Campaigns
+      Reutilisable tel quel sur chaque nouveau site (industrialisation) :
+      seules les 5 constantes wp-config.php ci-dessous changent d'un site a
+      l'autre, aucune ligne de code a modifier. Si elles ne sont pas
+      definies, toute cette section reste silencieusement inactive (les
+      emails continuent d'etre stockes localement comme avant, section 5).
+
+      Constantes attendues dans wp-config.php (jamais commitees, comme
+      REVALIDATE_SECRET/SMTP_PASS) :
+      - ZOHO_CLIENT_ID / ZOHO_CLIENT_SECRET  : app "Self Client" creee une
+        seule fois sur https://api-console.zoho.com (reutilisable sur tous
+        les sites -- seul le refresh token et la liste changent par site).
+      - ZOHO_REFRESH_TOKEN                   : obtenu une fois via echange
+        du grant code (voir docs/integration-zoho-newsletter.md).
+      - ZOHO_DC                              : domaine du datacenter Zoho du
+        compte ("com", "eu", "in", "com.cn", "jp" -- ne pas laisser "com" par
+        defaut si le compte est europeen, sinon l'API renvoie invalid_client).
+      - ZOHO_CAMPAIGNS_LIST_KEY              : cle de la liste de diffusion
+        Zoho Campaigns propre a CE site (une liste par site/marque).
+   ========================================================================== */
+
+function monauto_zoho_configured(): bool {
+	return defined('ZOHO_CLIENT_ID') && defined('ZOHO_CLIENT_SECRET')
+		&& defined('ZOHO_REFRESH_TOKEN') && defined('ZOHO_CAMPAIGNS_LIST_KEY');
+}
+
+function monauto_zoho_dc(): string {
+	return defined('ZOHO_DC') ? ZOHO_DC : 'com';
+}
+
+// Access token mis en cache (transient) : Zoho les delivre valides ~1h, on
+// les garde 50 min pour ne jamais appeler l'API avec un token expire.
+function monauto_zoho_get_access_token() {
+	$cached = get_transient('monauto_zoho_access_token');
+	if ($cached) return $cached;
+
+	$response = wp_remote_post('https://accounts.zoho.' . monauto_zoho_dc() . '/oauth/v2/token', [
+		'timeout' => 10,
+		'body' => [
+			'refresh_token' => ZOHO_REFRESH_TOKEN,
+			'client_id' => ZOHO_CLIENT_ID,
+			'client_secret' => ZOHO_CLIENT_SECRET,
+			'grant_type' => 'refresh_token',
+		],
+	]);
+
+	if (is_wp_error($response)) {
+		error_log('[monauto][zoho] echec refresh token: ' . $response->get_error_message());
+		return null;
+	}
+
+	$data = json_decode(wp_remote_retrieve_body($response), true);
+	if (empty($data['access_token'])) {
+		error_log('[monauto][zoho] reponse refresh token invalide: ' . wp_remote_retrieve_body($response));
+		return null;
+	}
+
+	set_transient('monauto_zoho_access_token', $data['access_token'], 50 * MINUTE_IN_SECONDS);
+	return $data['access_token'];
+}
+
+// Ajoute un email a la liste de diffusion Zoho Campaigns du site. Retourne
+// true seulement en cas de succes confirme par l'API (jamais optimiste).
+function monauto_zoho_add_contact(string $email): bool {
+	$token = monauto_zoho_get_access_token();
+	if (!$token) return false;
+
+	$url = 'https://campaigns.zoho.' . monauto_zoho_dc() . '/api/v1.1/json/listsubscribe'
+		. '?resfmt=JSON'
+		. '&listkey=' . rawurlencode(ZOHO_CAMPAIGNS_LIST_KEY)
+		. '&contactinfo=' . rawurlencode(wp_json_encode(['Contact Email' => $email]));
+
+	$response = wp_remote_post($url, [
+		'timeout' => 10,
+		'headers' => ['Authorization' => 'Zoho-oauthtoken ' . $token],
+	]);
+
+	if (is_wp_error($response)) {
+		error_log('[monauto][zoho] echec ajout contact: ' . $response->get_error_message());
+		return false;
+	}
+
+	$data = json_decode(wp_remote_retrieve_body($response), true);
+	// Zoho repond status=success, ou status=error avec un code -- "Contact
+	// already exists" est traite comme un succes (deja inscrit = objectif atteint).
+	$ok = isset($data['status']) && $data['status'] === 'success';
+	$already = isset($data['message']) && stripos((string) $data['message'], 'already') !== false;
+	if (!$ok && !$already) {
+		error_log('[monauto][zoho] reponse API refusee: ' . wp_remote_retrieve_body($response));
+	}
+	return $ok || $already;
+}
+
+// Tache differee declenchee a chaque inscription (section 5) : ne bloque
+// jamais la reponse HTTP au formulaire, l'utilisateur voit la confirmation
+// immediatement meme si Zoho est lent ou temporairement en panne.
+add_action('monauto_zoho_sync_one', function ($post_id) {
+	if (!monauto_zoho_configured()) return; // site pas encore branche sur Zoho, rien a faire
+
+	$email = get_post_meta($post_id, '_monauto_email', true);
+	if (!$email) return;
+
+	if (monauto_zoho_add_contact($email)) {
+		update_post_meta($post_id, '_monauto_zoho_synced', '1');
+		update_post_meta($post_id, '_monauto_zoho_synced_at', current_time('mysql'));
+	}
+	// En echec, le flag reste a '0' -- repris par le cron de retry ci-dessous.
+});
+
+// Filet de securite : retry horaire pour les inscriptions dont la
+// synchronisation immediate a echoue (Zoho indisponible, quota, etc.).
+// Plafonne a 20/run pour rester loin des limites de l'API Zoho Campaigns.
+add_action('monauto_zoho_retry_sync', function () {
+	if (!monauto_zoho_configured()) return;
+
+	$pending = get_posts([
+		'post_type' => 'monauto_lead',
+		'post_status' => 'publish',
+		'posts_per_page' => 20,
+		'meta_query' => [
+			['key' => '_monauto_zoho_synced', 'value' => '1', 'compare' => '!='],
+		],
+		'fields' => 'ids',
+	]);
+
+	foreach ($pending as $post_id) {
+		$email = get_post_meta($post_id, '_monauto_email', true);
+		if (!$email) continue;
+		if (monauto_zoho_add_contact($email)) {
+			update_post_meta($post_id, '_monauto_zoho_synced', '1');
+			update_post_meta($post_id, '_monauto_zoho_synced_at', current_time('mysql'));
+		}
+	}
+});
+
+if (!wp_next_scheduled('monauto_zoho_retry_sync')) {
+	wp_schedule_event(time(), 'hourly', 'monauto_zoho_retry_sync');
+}

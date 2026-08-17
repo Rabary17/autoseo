@@ -2,8 +2,55 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-17 : intégration newsletter → Zoho Campaigns implémentée (code prêt, attend les identifiants Zoho de l'utilisateur)
+
+Demande explicite de l'utilisateur : collecter les emails newsletter de techcars.fr vers Zoho, automatiser l'envoi du formulaire de contact vers `andrianina.rabarivelo@gmail.com`, et rendre ça automatique pour chaque futur site (industrialisation).
+
+- **Contact form → email** : déjà fait depuis le 2026-07-29 (`frontend/monauto/app/api/contact/route.ts:8`, SMTP configuré) — déjà "industrialisé" de fait puisque la valeur est en dur dans le code template partagé, rien à faire de plus pour les futurs sites.
+- **Newsletter → Zoho Campaigns** (nouveau) : ajouté [wordpress/mu-plugins/monauto-headless.php](wordpress/mu-plugins/monauto-headless.php) section 6 — push différé (non bloquant) à chaque inscription + retry horaire par cron si Zoho est indisponible. Code générique, inactif tant que les constantes `wp-config.php` ne sont pas définies (`ZOHO_CLIENT_ID/SECRET`, `ZOHO_REFRESH_TOKEN`, `ZOHO_DC`, `ZOHO_CAMPAIGNS_LIST_KEY`) — voir [docs/integration-zoho-newsletter.md](docs/integration-zoho-newsletter.md) pour la procédure complète et le plan d'industrialisation (4 des 5 constantes identiques pour tous les sites, seule la List Key change).
+- **Bloquant, à faire uniquement par l'utilisateur** (accès à son propre compte Zoho, jamais par un agent) : créer l'app "Self Client" sur api-console.zoho.com, générer le refresh token (procédure détaillée dans le doc ci-dessus), créer la liste de diffusion Zoho Campaigns pour techcars.fr, puis renseigner les 5 constantes dans `wp-config.php`.
+- **Mise à jour 2026-08-17 (suite)** : OAuth Zoho finalisé et testé en conditions réelles. Le scope initialement documenté (`ZohoCampaigns.contact.CREATE,contact.READ`) s'est révélé insuffisant (401 sur l'ajout réel de contact, alors que la lecture des listes fonctionnait) — corrigé en `ZohoCampaigns.contact.ALL` (doc mise à jour). Refresh token généré et testé : `POST listsubscribe` sur la liste Zoho Campaigns existante "Techcars" **confirmé en succès** (`status: success`, email de confirmation envoyé — double opt-in actif sur cette liste, point signalé à l'utilisateur, pas tranché).
+- **Prochaine action concrète (bloquant, utilisateur uniquement)** : coller les 5 constantes Zoho (Client ID/Secret/Refresh Token/DC/List Key — valeurs en possession de l'utilisateur, transmises hors de ce fichier) dans le `wp-config.php` réel du serveur WordPress de techcars.fr, et déployer la version à jour de `wordpress/mu-plugins/monauto-headless.php` (section 6) sur ce même serveur — mécanisme de déploiement du mu-plugin vers la prod pas encore identifié dans ce projet, à clarifier avec l'utilisateur. Une fois fait : tester une inscription réelle puis vérifier `zoho_synced: true` via `GET /wp-json/monauto/v1/newsletter`.
+
+## 2026-08-11 : exécution planifiée `autoseo-p1-p3-autopilot` — toujours rien à faire dans son périmètre, aucune action prise
+
+Reprise automatique, même vérification complète que le 2026-08-10 (pas de confiance dans le récit figé de la tâche planifiée) :
+- **19/19 silos auto-mobilité** : `data/keywords/*.json` (22 fichiers, ≥19 silos), `data/maillage/maillage.json` et `config/niches/auto-mobilite/niche.json` (19 silos) toujours cohérents — P1+P3 restent complets sur toute la niche.
+- **Crédit Haloscan** : 7248 creditKeyword restants — non bloquant.
+- **Commits depuis le 2026-08-10** (`c35d1be`…`f48ed19`) : tous relatifs à P6/technique (indexation, maillage frontend, correctifs SEO) ou P4/P5 (QC/publication), rien qui rouvre du P1/P2/P3 sur un silo auto-mobilité.
+- **Conclusion identique** : aucun silo ne correspond au critère "P1+P2+P3 non complets" pour la niche auto-mobilité — aucune action prise ce run.
+
+**Fichiers non suivis observés hors périmètre** (`git status`) : nouveaux CSV dans `data/niches/afrique-agriculture/`, `data/niches/guidepeptide/`, `data/niches/npi-magazine/` — semblent relever d'un travail manuel de l'utilisateur sur les 4 autres niches (point déjà signalé le 2026-08-10, toujours non tranché), pas touchés par cette tâche.
+
+**Recommandation inchangée** : cette tâche planifiée n'a plus de silo auto-mobilité à traiter depuis le 2026-07-18. Elle continuera à se déclencher sans effet utile — à désactiver ou réorienter au retour de l'utilisateur.
+
+## 2026-08-10 (suite) : `/p5-schedule` — QC manuelle des 35 brouillons + reprogrammation, file de publication passée de 8 à 41 articles (jusqu'au 18/08)
+
+Sur demande explicite de l'utilisateur ("lance /p5-schedule mais vérifie manuellement et corrige ceux en brouillon"), suite au constat qu'il ne restait que 8 articles `future` (jusqu'au 11/08 seulement).
+
+**État réel trouvé (35 posts en `draft`)** :
+- **33 correspondent au pipeline cluster/tracking** (`data/keywords/tracking-mots-cles.xlsx` + `data/maillage/maillage.json`) — 2 sont des articles `actus` (pipeline distinct, hors périmètre, laissés en `draft` intacts : `nouveaux-vehicules-prioritaires-au-code-de-la-route-des-2026`, `byd-depasse-tesla-en-intentions-d-achat-en-europe-musk-en-cause`).
+- Sur les 33 : **17 échouaient le gating** (`scripts/autopublish/lib/gating.js`) — longueur insuffisante (9), lien non prévu par le maillage/lien invalide/auto-référencé (5), lien montant vers le sous-hub manquant (2), similarité > 60% avec un article déjà publié (2), et **1 contenu corrompu** (`stations-low-cost-qualite-carburant` #1096, 46 000 mots dupliqués en boucle, blocs Gutenberg mal fermés) — régénéré entièrement plutôt que corrigé. **8 autres** (`etancheite-camping-car-controle`, `hivernage-camping-car-checklist`, `meilleur-fourgon-base-amenagement`, `van-amenage-occasion-choisir`, `amenager-fourgon-soi-meme-homologation`, `decote-camping-car-neuf`, `covoiturage-domicile-travail-prime`, `location-voiture-entre-particuliers-avis`) avaient un statut `tracking-mots-cles.xlsx = programmé` avec une date passée (05-07/08/2026) mais étaient en réalité restés `draft` sur WordPress — même bug de fond que le 2026-07-30 ("annoncé programmé/publié mais jamais réellement écrit côté WordPress"), **jamais détecté depuis car rien ne compare l'état réel WordPress au statut du tracking xlsx**. Gating rejoué sur ces 8 : tous passent déjà.
+- **Correction des 17 échecs** : contenu réécrit/complété (`content.raw` uniquement, jamais `status`) — étoffement factuel (aucun chiffre inventé, sources ajoutées dans `acf.sources` si besoin), retrait/correction des liens hors maillage, ajout des liens montants manquants, et pour les 2 conflits de similarité, réécriture avec un angle éditorial distinct de l'article publié concurrent (67,6%→52,9% et 69,4%→48,0%, seuil 60%). **Revérifié programmatiquement (`gating.runGating` sur les 35 posts réels) : 33/33 OK, 0 KO.**
+- **Programmation réelle** : les 33 articles passés en `post_status=future` avec date calculée (cadence 5/jour confirmée le 2026-08-03, ordre sous-cocon le plus petit en premier au sein de chaque silo, silo en cours `Mobilité partagée & transports` traité en premier puis les silos avec restes `Carte grise & démarches` / `Carburants & consommation` / `Camping-car & van`) — 2 créneaux le 11/08 (complète la journée à 5), puis 5/jour du 12/08 au 18/08. `tracking-mots-cles.xlsx` mis à jour en cohérence (`statut: programmé`, `date_publication` réelle, pas l'ancienne date passée pour les 8 récupérés).
+- **Résultat** : file de publication `future` passée de **8 à 41 articles**, dernier programmé le **2026-08-18T08:00**. Les 2 articles `actus` restent en `draft`, hors périmètre de cette commande.
+
+**Point de vigilance signalé pour une prochaine session** : le tracking xlsx peut afficher `programmé` alors que WordPress est resté en `draft` (constaté sur 8 articles ici) — aucun contrôle automatique ne recoupe aujourd'hui le statut réel WordPress avec `tracking-mots-cles.xlsx`. Un script de rapprochement périodique (comparer `status=future/publish` WordPress vs `statut` xlsx pour chaque `url_cible`) éviterait de refaire cette découverte à la main.
+
 ## Niche active
 **Auto & mobilité** — plan complet : [plan-auto-mobilite-10000.html](plan-auto-mobilite-10000.html) · plan d'action détaillé : [plan-auto-mobilite-10000-actions.html](plan-auto-mobilite-10000-actions.html)
+
+## 2026-08-10 : exécution planifiée `autoseo-p1-p3-autopilot` — rien à faire dans son périmètre, aucune action prise
+
+Reprise automatique de la tâche planifiée (créée le 2026-07-12 pour piloter P1→P3 silo par silo pendant l'absence de l'utilisateur). **Vérification complète de l'état réel avant toute action** (comme demandé, sans se fier au récit figé de la tâche planifiée) :
+- **P1 (mots-clés) + P3 (maillage) sur les 19/19 silos du plan** : déjà déclarés 100% terminés le 2026-07-18 (voir plus bas dans ce fichier) — confirmé à nouveau aujourd'hui : les 19 fichiers `data/keywords/<slug>.json` existent tous, `data/maillage/maillage.json` couvre les 19 silos, `config/niches/auto-mobilite/niche.json` liste bien 19 silos.
+- **Expansion programmatique M1-M7** (moteurs-candidats.json) : validation Haloscan également close depuis le 2026-07-21 (0 candidat `à valider` restant sur les 4153 générés).
+- **Crédit Haloscan** : 7258 creditKeyword restants (largement suffisant) — ce n'est donc pas un blocage.
+- **Conclusion : aucun silo ne correspond au critère "P1+P2+P3 non complets" pour la niche auto-mobilité.** Tout le travail réalisé depuis le 2026-07-18 (visible plus haut dans ce fichier : QC hub/sous-hub, génération d'articles, autopublish, corrections de bugs de maillage/publication) relève de P4/P5/P6, **explicitement hors périmètre de cette tâche planifiée** — aucune action prise ce run, ni sur WordPress ni sur les autres silos.
+
+**Point ouvert signalé pour arbitrage utilisateur (pas tranché ici, hors périmètre "19 silos" de cette tâche)** : les 4 autres niches lancées le 2026-07-29 (afrique-agriculture, guidepeptide, npi-magazine, numerologie-telephone) ont leur P1/P2/P3 fait mais **le P2 (factuel) et P3 (maillage) de ces 4 sites reposent encore sur l'ancienne sélection de mots-clés, avant la reformulation des seeds** qui a fait grimper le volume mesurable (voir entrée 2026-07-29 "diagnostic volume faible..." plus bas) — décision explicitement laissée à l'utilisateur à l'époque, toujours non tranchée à ce jour.
+
+**Recommandation** : cette tâche planifiée `autoseo-p1-p3-autopilot` n'a plus de silo auto-mobilité à traiter — elle continuera à se déclencher sans effet utile tant que son périmètre reste limité aux 19 silos du plan mobilité. À la reprise, l'utilisateur pourrait soit la désactiver, soit l'étendre explicitement (ex. trancher le point P2/P3 ci-dessus sur les 4 autres niches, ou l'orienter vers un nouveau chantier P1-P3).
 
 ## 🎯 2026-08-04 (suite 3) : les 19 silos ont maintenant leur hub + sous-hubs publiés (118 pages)
 
@@ -321,10 +368,11 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-08-04
-- Phase : 2 — silo en cours : Camping-car & van
-- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 1 ⚠️
-- Détail complet : [logs/autopublish/2026-08-04.md](logs/autopublish/2026-08-04.md)
+## Autopublish — dernier run : 2026-08-11
+- Phase : 2 — silo en cours : Utilitaires & flottes pro
+- Programmées : 3 — bloquées (draft) : 1 — erreurs techniques : 10 ⚠️
+- Dernier article programmé pour : 2026-08-11T20:00:00.000Z
+- Détail complet : [logs/autopublish/2026-08-11.md](logs/autopublish/2026-08-11.md)
 <!-- autopublish:report:end -->
 
 

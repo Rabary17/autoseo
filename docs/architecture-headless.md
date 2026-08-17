@@ -346,6 +346,18 @@ techniquement possible depuis cette bascule.
   ni donnée sensible, juste l'URL racine publique de l'API (voir
   `lib/public-env.ts`).
 
+### 8.3bis Synchronisation vers Zoho Campaigns (2026-08-17)
+
+Chaque inscription est désormais aussi poussée vers une liste de diffusion
+Zoho Campaigns (mu-plugin section 6), en plus du stockage local `monauto_lead`
+— voir [docs/integration-zoho-newsletter.md](integration-zoho-newsletter.md)
+pour la procédure complète (création de l'app OAuth Zoho, liste par site,
+constantes `wp-config.php`) et le plan d'industrialisation pour les sites
+suivants. Le contact form (`/api/contact`, section Next.js) envoie lui déjà
+par SMTP vers une boîte mail fixe depuis l'origine de ce chantier — rien à
+faire de plus de ce côté, y compris pour les futurs sites (valeur en dur dans
+le code template).
+
 ### 8.3 Testé en conditions réelles
 
 Formulaire rempli et soumis dans le navigateur (via preview) → confirmation
