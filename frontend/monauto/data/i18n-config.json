@@ -1,0 +1,76 @@
+{
+  "_doc": "Configuration de l'internationalisation (2026-08-18). Source de vérité unique, lue par le pipeline de traduction (scripts/i18n/) ET par le frontend Next.js (frontend/monauto/lib/i18n.ts). Ne jamais dupliquer ces valeurs ailleurs.",
+  "defaut": "fr",
+  "_doc_defaut": "Langue d'origine du contenu. Elle N'A PAS de préfixe d'URL : les URLs françaises existantes (/vidange-guide/) restent inchangées, sinon les 83 articles déjà indexés perdraient leur URL. Les traductions vivent sous /en/, /es/, etc.",
+  "locales": {
+    "fr": {
+      "hreflang": "fr-FR",
+      "nom": "Français",
+      "prefixe_url": null,
+      "tiret_cadratin_autorise": false
+    },
+    "en": {
+      "hreflang": "en",
+      "nom": "English",
+      "prefixe_url": "en",
+      "tiret_cadratin_autorise": true
+    },
+    "es": {
+      "hreflang": "es",
+      "nom": "Español",
+      "prefixe_url": "es",
+      "tiret_cadratin_autorise": false
+    },
+    "it": {
+      "hreflang": "it",
+      "nom": "Italiano",
+      "prefixe_url": "it",
+      "tiret_cadratin_autorise": false
+    },
+    "de": {
+      "hreflang": "de",
+      "nom": "Deutsch",
+      "prefixe_url": "de",
+      "tiret_cadratin_autorise": true
+    }
+  },
+  "_doc_tiret_cadratin": "L'interdiction du tiret cadratin espacé est une règle de TYPOGRAPHIE FRANÇAISE (demande utilisateur, appliquée depuis 2026-07). En anglais et en allemand, le tiret cadratin est une ponctuation normale et courante : l'interdire produirait un texte artificiel. L'espagnol et l'italien suivent l'usage français (tiret rare, virgule ou parenthèse préférées). Voir gating.js/checkNoEmDash.",
+  "hreflang_x_default": "fr",
+  "_doc_x_default": "La version française sert de x-default : c'est la langue d'origine, la plus complète, et le marché principal du site.",
+  "silos_traduisibles": {
+    "camping-car-van": [
+      "en"
+    ],
+    "mobilite-partagee-transports": [
+      "en"
+    ],
+    "carburants-consommation": [
+      "en"
+    ],
+    "carte-grise-demarches": [
+      "en"
+    ],
+    "utilitaires-flottes-pro": [
+      "en"
+    ],
+    "velo-nouvelles-mobilites": [
+      "en"
+    ]
+  },
+  "_doc_silos_langues": "ANGLAIS SEUL pour l'instant (decision utilisateur 2026-08-18 : « on garde l'anglais uniquement pour l'instant »). Espagnol, italien et allemand restent declares dans `locales` mais n'apparaissent dans aucun silo : aucun run ne peut donc les rouvrir par inadvertance. A rouvrir quand l'anglais aura donne des donnees d'indexation reelles.",
+  "_doc_silos": "TOUT n'est PAS traduisible, et c'est la décision la plus structurante du projet. Un silo n'apparaît ici que si son sujet existe réellement sur le marché visé. Note historique : 'Carte grise & démarches' (30 articles, le silo le plus fourni du site) est absent de cette liste — ANTS, cerfa 15776, cheval fiscal, quitus fiscal sont des procédures administratives françaises que personne ne cherche en anglais ou en espagnol. Les traduire produirait 120 pages techniquement correctes et commercialement mortes, tout en exposant le site à la politique Google sur l'abus de contenu à grande échelle. MAIS l'utilisateur a explicitement tranché l'inverse le 2026-08-18 (« toujours tout traduire sans exception, on s'en fou si personne ne les recherche ») : à ce stade l'objectif est de collecter de la donnée sur les mots-clés qui prennent position, pas d'optimiser l'éditorial. Les 5 silos publiés sont donc tous inclus en anglais. Ajouter ou retirer un silo ici reste une décision éditoriale, jamais un défaut technique.",
+  "pilote": {
+    "silo": "camping-car-van",
+    "locale": "en",
+    "_doc": "Périmètre du premier lot (décision utilisateur 2026-08-18) : une seule langue, un seul silo, pour mesurer l'indexation réelle sur 4 à 6 semaines avant d'engager les 3 autres langues. Camping-car & van retenu parce que le van life, les aires, l'hivernage et le choix d'un fourgon sont des sujets pan-européens — l'Allemagne et l'Italie sont les deux premiers marchés camping-car du continent, contrairement aux silos administratifs franco-français."
+  },
+  "traduction": {
+    "modele": "mistral-large-latest",
+    "max_tokens": 16000,
+    "_doc_modele": "Même modèle que la génération d'articles (config.js/MODEL_BY_CONTENT_TYPE) — inutile d'introduire un second fournisseur pour une tâche plus simple que la rédaction."
+  },
+  "categories_marqueur": {
+    "en": 528
+  },
+  "_doc_categories_marqueur": "Id des categories WordPress qui marquent la langue d'un contenu. Sert UNIQUEMENT a exclure les traductions des requetes francaises (`categories_exclude`), jamais a l'affichage. Ecrit par scripts/i18n/tag-locale-category.js."
+}

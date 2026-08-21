@@ -1,0 +1,149 @@
+{
+  "_doc": "Articles EXCLUS de la traduction parce que leur sujet n'existe que pour un resident francais (2026-08-18, decision utilisateur : « toutes les contenus uniquement reserves a la France, on n'y touche pas »). Remplace la consigne precedente du meme jour (« tout traduire sans exception »).",
+  "_doc_critere": "Un article est exclu quand son sujet n'a de sens que pour quelqu'un qui vit en France, y cotise et y fait ses demarches : procedure administrative francaise, impot ou taxe francais, subvention francaise, abonnement d'operateur public reserve aux residents, licence professionnelle francaise. Un article est CONSERVE des lors qu'un non-resident le chercherait reellement : touriste qui conduit, loue ou campe en France, expatrie qui importe un vehicule, ou sujet technique independant de toute administration (entretien, choix de vehicule, consommation).",
+  "_doc_cas_limites": "Deux categories ont ete tranchees dans le sens de la CONSERVATION, parce que l'intention de recherche etrangere y est reelle : (1) tout ce qui concerne la location, le peage, le stationnement et les aires en France, massivement recherche par les touristes ; (2) le sous-ensemble transfrontalier de 'Carte grise & demarches' (quitus fiscal, immatriculation d'un vehicule importe, certificat de conformite europeen, malus sur occasion importee, plaques WW) — ce sont precisement les demarches que fait un ETRANGER qui arrive en France, pas un resident etabli. Ces 5 articles se concentrent dans le sous-cocon 'Immatriculation & import'.",
+  "_doc_pages": "Un hub ou sous-hub n'est traduit que s'il contient au moins un article traduit : traduire un sous-hub dont tous les articles sont exclus produirait une page de rubrique vide, avec un lien montant vers rien. Cette regle est appliquee en code (scripts/i18n/translate.js), pas listee ici.",
+  "articles_france_uniquement": {
+    "vasp-carte-grise-demarches": "Categorie d'immatriculation VASP, procedure purement francaise",
+    "assurance-camping-car-comparatif": "Comparatif d'assureurs francais avec tarifs francais, non souscriptible de l'etranger",
+    "taxi-conventionne-cpam": "Remboursement par l'Assurance Maladie francaise",
+    "blablacar-daily-avis": "Service de covoiturage domicile-travail pour residents",
+    "prime-covoiturage-100-euros": "Subvention publique francaise",
+    "covoiturage-domicile-travail-prime": "Prime employeur encadree par le droit francais",
+    "covoiturage-courte-distance-applis": "Applications et primes specifiques au marche francais",
+    "ter-abonnement-travail": "Abonnement TER pour salaries residents",
+    "tgv-max-abonnement-avis": "Abonnement SNCF reserve aux moins de 27 ans residents",
+    "forfait-navigo-teletravail": "Forfait Navigo Ile-de-France, residents uniquement",
+    "lld-particulier-sans-apport": "Offres de LLD du marche francais, non accessibles de l'etranger",
+    "carte-vtc-examen": "Examen de la licence VTC francaise",
+    "devenir-chauffeur-vtc-conditions": "Conditions d'exercice professionnel en France",
+    "boitier-e85-homologue-prix": "Homologation et marche E85 francais",
+    "reprogrammation-e85-vs-boitier": "Filiere E85 francaise",
+    "e85-rentabilite-calcul": "Rentabilite calculee sur les prix et taxes francais",
+    "e85-fiabilite-moteur-long-terme": "Cluster E85 francais",
+    "carte-grise-gratuite-e85": "Exoneration de taxe d'immatriculation francaise",
+    "prix-essence-evolution-2026": "Evolution des prix du marche francais",
+    "carte-carburant-particulier-cashback": "Cartes carburant francaises pour particuliers",
+    "gnv-utilitaire-pro": "Filiere GNV et aides francaises",
+    "delai-carte-grise-apres-achat": "Demarche ANTS",
+    "changement-adresse-carte-grise-gratuit": "Demarche ANTS",
+    "changement-d-adresse-sur-la-carte-grise": "Demarche ANTS",
+    "cession-vehicule-pour-destruction": "Demarche ANTS",
+    "carte-grise-collection": "Carte grise de collection francaise",
+    "taxe-co2-vehicule-occasion": "Taxe francaise",
+    "changement-de-titulaire-carte-grise": "Demarche ANTS",
+    "changement-titulaire-carte-grise-en-ligne": "Demarche ANTS",
+    "vendre-voiture-sans-controle-technique": "Obligation de controle technique francaise",
+    "declaration-cession-vehicule-en-ligne": "Demarche ANTS",
+    "declaration-de-cession-carte-grise": "Demarche ANTS",
+    "carte-grise-ants-demarches": "Demarche ANTS",
+    "carte-grise-prix-par-region": "Tarification regionale francaise",
+    "code-de-cession-obtenir": "Demarche ANTS",
+    "certificat-cession-cerfa-15776": "Formulaire cerfa francais",
+    "duplicata-carte-grise-perte": "Demarche ANTS",
+    "carte-grise-heritage-succession": "Droit successoral francais",
+    "rectifier-erreur-carte-grise": "Demarche ANTS",
+    "exoneration-malus-famille-nombreuse": "Dispositif fiscal francais",
+    "cheval-fiscal-prix-par-region": "Fiscalite regionale francaise",
+    "controle-technique-points-verifies": "Controle technique francais",
+    "contre-visite-delai-defauts": "Controle technique francais",
+    "controle-technique-pas-cher-pres": "Reseau de centres francais",
+    "ct-vehicule-electrique-specificites": "Controle technique francais",
+    "controle-technique-moto-2026": "Reglementation francaise",
+    "carte-carburant-pro-comparatif": "Cartes carburant professionnelles francaises",
+    "pick-up-fiscalite-avantage": "Avantage fiscal francais",
+    "aides-utilitaire-electrique-pro": "Aides publiques francaises",
+    "lld-utilitaire-pro-sans-apport": "Offres de LLD du marche francais",
+    "tvs-taxe-vehicules-societe-calcul": "Taxe sur les vehicules de societe francaise",
+    "tva-recuperable-utilitaire": "Regles de TVA francaises",
+    "amortissement-vehicule-societe-plafond": "Plafonds d'amortissement du droit fiscal francais",
+    "avantage-en-nature-vehicule-fonction": "Avantage en nature au sens du droit social francais"
+  },
+  "_doc_motifs": "Les articles a venir ne peuvent pas figurer dans la liste ci-dessus : leur slug n'existe pas encore. Ces motifs s'appliquent donc AUTOMATIQUEMENT au slug de tout nouvel article, pour que le pipeline n'ait pas besoin d'une classification manuelle a chaque lot. Volontairement CONSERVATEURS et cibles sur des marqueurs de dispositif francais (prime, aide, forfait mobilites, obligation legale, organisme, taxe), jamais sur des mots generiques : un motif trop large exclurait du contenu exportable, ce qui est le defaut le plus couteux ici (on perd du contenu utile en silence). Toute exclusion automatique est LOGUEE par translate.js, donc verifiable lot par lot.",
+  "motifs_auto_france_uniquement": [
+    {
+      "motif": "(^|-)primes?(-|$)",
+      "raison": "Prime ou subvention publique francaise"
+    },
+    {
+      "motif": "(^|-)aides?(-|$)",
+      "raison": "Aide publique francaise"
+    },
+    {
+      "motif": "subvention",
+      "raison": "Subvention publique francaise"
+    },
+    {
+      "motif": "forfait-mobilites",
+      "raison": "Forfait mobilites durables, dispositif francais"
+    },
+    {
+      "motif": "obligatoire",
+      "raison": "Obligation legale francaise"
+    },
+    {
+      "motif": "bicycode",
+      "raison": "Marquage Bicycode, dispositif francais"
+    },
+    {
+      "motif": "(^|-)edpm(-|$)",
+      "raison": "Categorie juridique EDPM, droit francais"
+    },
+    {
+      "motif": "leasing-velo-entreprise",
+      "raison": "Dispositif employeur encadre par le droit francais"
+    },
+    {
+      "motif": "controle-technique",
+      "raison": "Controle technique francais"
+    },
+    {
+      "motif": "carte-grise",
+      "raison": "Demarche d'immatriculation francaise"
+    },
+    {
+      "motif": "(^|-)ants(-|$)",
+      "raison": "Demarche ANTS"
+    },
+    {
+      "motif": "cerfa",
+      "raison": "Formulaire cerfa francais"
+    },
+    {
+      "motif": "(^|-)tvs(-|$)",
+      "raison": "Taxe sur les vehicules de societe"
+    },
+    {
+      "motif": "cheval-fiscal",
+      "raison": "Fiscalite regionale francaise"
+    },
+    {
+      "motif": "(^|-)cpam(-|$)|urssaf",
+      "raison": "Organisme social francais"
+    },
+    {
+      "motif": "(^|-)malus(-|$)",
+      "raison": "Malus ecologique francais"
+    },
+    {
+      "motif": "bonus-ecologique",
+      "raison": "Bonus ecologique francais"
+    },
+    {
+      "motif": "avantage-en-nature",
+      "raison": "Avantage en nature au sens du droit social francais"
+    },
+    {
+      "motif": "amortissement-vehicule",
+      "raison": "Plafonds d'amortissement du droit fiscal francais"
+    }
+  ],
+  "_doc_exceptions": "Slugs qui matchent un motif automatique mais doivent QUAND MEME etre traduits. Tous relevent de la meme logique : ce sont les demarches d'un ETRANGER qui arrive en France, pas d'un resident etabli — donc precisement le contenu que cherche un non-francophone.",
+  "exceptions_a_traduire": [
+    "quitus-fiscal-vehicule-etranger",
+    "immatriculer-vehicule-importe",
+    "calcul-malus-occasion-importee",
+    "certificat-conformite-europeen-coc",
+    "plaque-ww-provisoire-duree"
+  ]
+}

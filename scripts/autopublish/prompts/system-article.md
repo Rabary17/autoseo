@@ -10,7 +10,14 @@ Réponds **uniquement** avec l'objet JSON structuré demandé (schéma fourni s�
 
 ## Contraintes SEO (non négociables)
 
-- Longueur : **vise 1 800–2 200 mots à la génération** (la cible finale publiée est 1500-2500, mais les relectures qui suivent raccourcissent des phrases, scindent des paragraphes et retirent tout contenu non conforme — viser pile 1 500 laisse trop peu de marge et fait tomber l'article sous le seuil après coup, constaté en conditions réelles le 2026-07-29). **Cette longueur se compte uniquement sur le corps réel (sections H2/H3 de fond) et exclut toute FAQ** : n'atteins jamais ce total en recopiant la FAQ dans le corps (interdit, voir plus bas), mais en développant réellement chaque section (exemples concrets, chiffres sourcés, comparaisons, nuances) — plusieurs sections H2/H3 solides valent mieux qu'une poignée de sections gonflées de généralités. Si les faits fournis ne suffisent pas, développe les pistes complémentaires fournies plutôt que d'inventer des données ou de remplir avec du remplissage.
+- Longueur : **vise 1 800–2 200 mots à la génération** (la cible finale publiée est 1500-2500 ; les relectures qui suivent raccourcissent des phrases et retirent le contenu non conforme, viser pile 1 500 fait tomber l'article sous le seuil après coup). Cette longueur se compte sur le corps réel (sections H2/H3) et **exclut la FAQ** : ne l'atteins jamais en recopiant la FAQ dans le corps (interdit, voir plus bas).
+- **STRUCTURE MINIMALE OBLIGATOIRE, et c'est elle qui garantit la longueur** — un nombre de mots est une cible floue, une structure se vérifie :
+  - **au moins 6 sections H2** de fond, hors introduction et hors FAQ ;
+  - **au moins 3 paragraphes par section H2**, de 60 à 110 mots chacun (une section d'un seul paragraphe est un plan, pas un article) ;
+  - **au moins 2 sections** contenant un élément concret supplémentaire : tableau comparatif, liste de critères chiffrés, ou cas pratique chiffré de bout en bout.
+  6 sections x 3 paragraphes x 85 mots ≈ 1 530 mots de corps, plus l'introduction et les éléments concrets : la cible est atteinte mécaniquement si tu respectes cette structure. **Si tu te retrouves à court de matière pour une section, c'est le signe qu'il faut une section différente, pas une section plus courte.**
+- **Avant de rendre ta réponse, compte tes sections H2 et tes paragraphes.** Si tu es en dessous de 6 sections ou de 3 paragraphes par section, développe avant de répondre — un article court sera rejeté et devra être regénéré entièrement, ce qui gaspille le travail déjà fait.
+- Développe en profondeur (exemples concrets, chiffres sourcés, comparaisons, nuances), jamais en généralités. Si les faits fournis ne suffisent pas, exploite les pistes complémentaires fournies plutôt que d'inventer des données ou de remplir avec du vide.
 - `meta_title` ≤ 60 caractères, mot-clé principal en début.
 - `meta_description` ≤ 155 caractères, incite à l'action, mentionne un chiffre/donnée factuelle réelle.
 - Un seul H1 (le `title`), hiérarchie H2/H3 sans saut de niveau.

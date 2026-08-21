@@ -241,9 +241,78 @@ function buildReadabilityReviewRequest({ contentType, silo, generatedContent }) 
   };
 }
 
+/* ---------- Etoffement d'une generation trop courte ---------- */
+
+// Pourquoi cette passe existe (2026-08-18, diagnostic mesure sur le lot Velo) :
+// sur 20 articles, 7 ont ete rejetes pour longueur insuffisante (502 a 865 mots
+// pour un plancher de 900). Les trois causes possibles ont ete departagees par
+// la mesure, pas par intuition :
+//   - MATIERE FACTUELLE ? Non : 18 faits en moyenne sur les articles courts,
+//     19 sur les conformes. Identique.
+//   - LES RELECTURES RABOTENT ? Non : elles font legerement GROSSIR le texte
+//     (2505 -> 3223 tokens de sortie en moyenne).
+//   - LA GENERATION SOUS-PRODUIT ? Oui : 2505 tokens de sortie en moyenne
+//     contre 4324 pour les articles conformes, a matiere egale. Un cas extreme
+//     a rendu 873 tokens, soit un article quasi vide.
+//
+// La consigne de longueur etait donc bien presente mais exprimee en NOMBRE DE
+// MOTS, ce que les modeles suivent mal, et rien ne la verifiait. Le prompt a
+// ete reecrit en exigence STRUCTURELLE (6 sections H2, 3 paragraphes chacune),
+// mais un prompt reste une demande : cette passe est la verification.
+//
+// Ne se declenche que si le corps genere est sous le plancher — donc jamais sur
+// les ~65 % de generations correctes. Un appel de plus sur un tiers des
+// articles coute infiniment moins cher que la reprise manuelle constatee
+// plusieurs fois le 2026-08-18.
+function buildExpansionRequest({ generatedContent, facts, competitorAngles, motsActuels, motsCible, motsPlafond }) {
+  const manque = Math.max(0, motsCible - motsActuels);
+  // Une consigne exprimee en MINIMUM seul fait deborder le modele : teste le
+  // 2026-08-18 sur 5 articles reels, un « 1400 mots minimum » a produit
+  // jusqu'a 3809 mots, au-dela du plafond de gating (2500). On encadre donc
+  // par une FOURCHETTE, avec le plafond annonce comme un rejet.
+  const system = `Tu completes un article de blog auto/mobilite DEJA REDIGE, trop court pour etre publie.
+
+ETAT ACTUEL : ${motsActuels} mots de corps. CIBLE : entre ${motsCible} et ${motsPlafond} mots. Il manque environ ${manque} mots.
+Ne DEPASSE PAS ${motsPlafond} mots : au-dela, l'article est rejete pour longueur excessive, exactement comme s'il etait trop court. Viser ${motsCible} a ${motsCible + 200} mots est l'objectif ideal : en pratique les redactions depassent presque toujours leur cible, donc reste volontairement en bas de la fourchette.
+
+REGLES ABSOLUES
+- Tu ne SUPPRIMES rien et tu ne REECRIS pas ce qui existe. Le texte actuel est conserve mot pour mot.
+- Tu ne REORDONNES rien.
+- **Tu CONSERVES toutes les sections H2 existantes.** Un article qui ressort avec moins de sections qu'il n'en avait est rejete : ajouter du texte ne veut pas dire refondre le plan. Teste en conditions reelles, c'est l'erreur la plus frequente sur cette tache.
+- Tu CONSERVES tous les liens <a href> existants, a l'identique.
+- Tu AJOUTES : des paragraphes dans les sections trop maigres, et de nouvelles sections H2 si besoin.
+- Chaque section H2 doit finir avec au moins 3 paragraphes de 60 a 110 mots.
+- Vise au moins 6 sections H2 de fond au total.
+
+INTERDICTIONS
+- N'invente AUCUN chiffre, prix, date, pourcentage ou delai. Utilise EXCLUSIVEMENT les faits fournis ci-dessous.
+- N'ajoute AUCUN lien : aucun \`<a href>\` nouveau. Le maillage est deja en place.
+- Ne cree PAS de section FAQ dans le corps, meme si des questions restent : la FAQ vit dans un champ separe.
+- Pas de remplissage : ni redite d'une section existante, ni generalites ("il est important de...", "chaque situation est unique").
+- Si tu manques vraiment de matiere factuelle pour une section, developpe un cas pratique chiffre a partir des faits fournis plutot que d'ecrire du vide.
+
+FORME
+- Blocs Gutenberg valides, meme format que l'existant (commentaires <!-- wp:paragraph --> apparies).
+- Meme voix, meme ton, meme rythme de phrases que le texte existant.
+
+Renvoie l'article COMPLET (existant + ajouts) dans \`content_gutenberg\`, et recopie les autres champs a l'identique.`;
+
+  const payload = {
+    article_actuel: generatedContent,
+    faits_disponibles: facts,
+    pistes_complementaires: competitorAngles,
+  };
+  return {
+    system,
+    messages: [{ role: 'user', content: JSON.stringify(payload, null, 2) }],
+    schema: GENERATION_SCHEMA,
+  };
+}
+
 module.exports = {
   CONTENT_SCHEMA,
   GENERATION_SCHEMA,
+  buildExpansionRequest,
   REVIEW_SCHEMA,
   READABILITY_REVIEW_SCHEMA,
   buildGenerationRequest,

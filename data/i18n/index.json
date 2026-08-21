@@ -1,0 +1,957 @@
+{
+  "_doc": "Index des traductions — écrit par scripts/i18n/, jamais à la main.",
+  "articles": {
+    "limitation-vitesse-camping-car": {
+      "en": {
+        "slug": "motorhome-speed-limits-law",
+        "wp_id": 1605,
+        "titre": "Motorhome Speed Limits: What the Law Says in France and Europe",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "peage-camping-car-classe": {
+      "en": {
+        "slug": "motorhome-class-2-toll-guide",
+        "wp_id": 1611,
+        "titre": "Motorhome Class 2 Tolls: Prices, Rules and Smart Travel Tips Across Europe",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "applications-aires-camping-car": {
+      "en": {
+        "slug": "best-motorhome-stopover-apps",
+        "wp_id": 1612,
+        "titre": "Top 5 Must-Have Motorhome Stopover Apps in 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "camping-car-occasion-prix-conseils": {
+      "en": {
+        "slug": "used-motorhome-buying-guide",
+        "wp_id": 1613,
+        "titre": "Used Motorhome Buyer’s Guide 2026: Prices, Tips and Pitfalls to Avoid",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "profile-vs-integral-vs-capucine": {
+      "en": {
+        "slug": "choosing-motorhome-type-guide",
+        "wp_id": 1614,
+        "titre": "Low-Profile, Coachbuilt or Over-Cab: Which Motorhome Suits Your Travel Style?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "camping-car-permis-b-poids": {
+      "en": {
+        "slug": "motorhome-weight-licence-guide",
+        "wp_id": 1615,
+        "titre": "Motorhome Weight Limits: How Heavy Can You Go on a Category B Licence?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "decote-camping-car-neuf": {
+      "en": {
+        "slug": "motorhome-depreciation-first-year",
+        "wp_id": 1616,
+        "titre": "New Motorhome Depreciation: How Much Value Does It Lose in the First Year?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "van-amenage-occasion-choisir": {
+      "en": {
+        "slug": "used-camper-van-buying-tips",
+        "wp_id": 1617,
+        "titre": "Buying a Used Camper Van: How to Choose Without Regrets",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "amenager-fourgon-soi-meme-homologation": {
+      "en": {
+        "slug": "diy-van-conversion-vasp-guide",
+        "wp_id": 1618,
+        "titre": "DIY Van Conversion: Is VASP Certification Mandatory?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "vasp-carte-grise-demarches": {
+      "en": {
+        "slug": "vasp-registration-logbook-guide",
+        "wp_id": 1629,
+        "titre": "VASP Registration: How to Get Your Camper Van or Converted Van Logbook",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "meilleur-fourgon-base-amenagement": {
+      "en": {
+        "slug": "best-van-camper-conversion-2026",
+        "wp_id": 1619,
+        "titre": "Best Base Van for Camper Conversion in 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "aires-camping-car-gratuites-france": {
+      "en": {
+        "slug": "free-motorhome-stopovers-france",
+        "wp_id": 1620,
+        "titre": "Free Motorhome Stopovers in France: Where to Find Them and How to Use Them",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "france-passion-vignoble-etape": {
+      "en": {
+        "slug": "france-passion-vineyard-camping-guide",
+        "wp_id": 1621,
+        "titre": "France Passion Vineyard Stops: The Complete Guide to Camping with Winemakers",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "camping-car-hiver-ski-conseils": {
+      "en": {
+        "slug": "winter-motorhome-skiing-tips",
+        "wp_id": 1622,
+        "titre": "Winter Motorhome Ski Trips: 10 Tips for Stress-Free Adventures (Without Freezing)",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "hivernage-camping-car-checklist": {
+      "en": {
+        "slug": "motorhome-winterisation-checklist",
+        "wp_id": 1623,
+        "titre": "Motorhome Winterisation: The Essential On-Site Checklist",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "etancheite-camping-car-controle": {
+      "en": {
+        "slug": "motorhome-waterproofing-check-guide",
+        "wp_id": 1624,
+        "titre": "Motorhome Waterproofing Check: When, How and What It Costs",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "batterie-cellule-entretien": {
+      "en": {
+        "slug": "leisure-battery-maintenance-tips",
+        "wp_id": 1630,
+        "titre": "Leisure Battery Care: Maintenance and Winterisation for Longevity",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "gaz-camping-car-securite": {
+      "en": {
+        "slug": "motorhome-gas-safety-guide",
+        "wp_id": 1625,
+        "titre": "Motorhome Gas Safety: Regulations and Best Practices for Worry-Free Travel",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "assurance-camping-car-comparatif": {
+      "en": {
+        "slug": "motorhome-insurance-comparison-2026",
+        "wp_id": 1626,
+        "titre": "Motorhome Insurance Comparison: How to Choose the Best Deal in 2026",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "stationnement-camping-car-regles-ville": {
+      "en": {
+        "slug": "motorhome-parking-city-rules",
+        "wp_id": 1627,
+        "titre": "Motorhome Parking in Cities: Rules, Bans and Tips to Avoid Fines",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "camping-car-van"
+      }
+    },
+    "taxi-conventionne-cpam": {
+      "en": {
+        "slug": "cpam-approved-taxi-reimbursement",
+        "wp_id": 1637,
+        "titre": "CPAM-Approved Taxis in France: Reimbursement, Costs and Conditions in 2026",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "blablacar-daily-avis": {
+      "en": {
+        "slug": "blablacar-daily-review-worth-it",
+        "wp_id": 1638,
+        "titre": "BlaBlaCar Daily Review: Is Daily Carpooling Really Worth It?",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "prime-covoiturage-100-euros": {
+      "en": {
+        "slug": "100-carpooling-incentive-2026",
+        "wp_id": 1639,
+        "titre": "£100 Carpooling Incentive: How to Claim It in 2026",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "ter-abonnement-travail": {
+      "en": {
+        "slug": "regional-train-commuter-pass",
+        "wp_id": 1640,
+        "titre": "Regional Train Commuter Pass: Prices, Employer Reimbursement and Eligible Areas",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "lld-particulier-sans-apport": {
+      "en": {
+        "slug": "long-term-car-leasing-no-deposit",
+        "wp_id": 1641,
+        "titre": "Long-Term Car Leasing with No Deposit: Is It Really a Good Deal?",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "carte-vtc-examen": {
+      "en": {
+        "slug": "private-hire-driver-licence-guide",
+        "wp_id": 1642,
+        "titre": "Private Hire Driver Licence Exam: Everything You Need to Pass and Get Certified",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "covoiturage-domicile-travail-prime": {
+      "en": {
+        "slug": "workplace-carpooling-incentive-2026",
+        "wp_id": 1643,
+        "titre": "Workplace Carpooling Incentive: 2026 Rates and Sustainable Mobility Allowance Terms",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "covoiturage-courte-distance-applis": {
+      "en": {
+        "slug": "best-apps-short-distance-carpooling",
+        "wp_id": 1644,
+        "titre": "Short-Distance Carpooling: Best Apps for Daily Commutes",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "location-voiture-entre-particuliers-avis": {
+      "en": {
+        "slug": "peer-to-peer-car-rental-guide",
+        "wp_id": 1645,
+        "titre": "Peer-to-Peer Car Rental: Reviews, Pitfalls and Best Practices in 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "getaround-ouicar-comparatif": {
+      "en": {
+        "slug": "getaround-vs-ouicar-comparison",
+        "wp_id": 1646,
+        "titre": "Getaround vs Ouicar: Which Car-Sharing Service Should You Choose in 2026?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "autopartage-citiz-tarifs": {
+      "en": {
+        "slug": "citiz-car-sharing-rates-2026",
+        "wp_id": 1647,
+        "titre": "Citiz Car-Sharing: 2026 Rates, Subscriptions and Savings vs. Owning a Car",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "assurance-location-entre-particuliers": {
+      "en": {
+        "slug": "peer-car-rental-insurance-gaps",
+        "wp_id": 1648,
+        "titre": "Peer-to-Peer Car Rental Insurance: What Your Standard Policy Doesn’t Cover",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "louer-voiture-pas-cher-week-end": {
+      "en": {
+        "slug": "cheap-weekend-car-rental-tips",
+        "wp_id": 1649,
+        "titre": "Cheap Weekend Car Rental: 7 Tried-and-Tested Tips",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "location-voiture-aeroport-astuces": {
+      "en": {
+        "slug": "airport-car-rental-tips",
+        "wp_id": 1650,
+        "titre": "Airport Car Rental: 7 Tips to Avoid Scams and Save Money",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "franchise-location-voiture-racheter": {
+      "en": {
+        "slug": "car-rental-excess-buy-back",
+        "wp_id": 1651,
+        "titre": "Car Rental Excess: How to Buy It Back and at What Cost?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "devenir-chauffeur-vtc-conditions": {
+      "en": {
+        "slug": "become-private-hire-driver-2026",
+        "wp_id": 1652,
+        "titre": "Becoming a Private Hire Driver: All the Requirements for 2026",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "uber-vs-bolt-comparatif-prix": {
+      "en": {
+        "slug": "uber-vs-bolt-price-comparison",
+        "wp_id": 1653,
+        "titre": "Uber vs Bolt: Which Is Cheaper for Your Rides in 2026?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "carte-avantage-sncf-rentable": {
+      "en": {
+        "slug": "sncf-advantage-card-worth-it",
+        "wp_id": 1654,
+        "titre": "SNCF Advantage Card: Is It Worth It? The 2026 Breakdown",
+        "statut": "traduit",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "tgv-max-abonnement-avis": {
+      "en": {
+        "slug": "tgv-max-subscription-review",
+        "wp_id": 1655,
+        "titre": "TGV Max: The Game-Changing Subscription for Frequent Travellers",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "forfait-navigo-teletravail": {
+      "en": {
+        "slug": "navigo-pass-remote-work-rules",
+        "wp_id": 1656,
+        "titre": "Navigo Pass for Remote Workers: Reimbursement Rules and Alternatives in 2026",
+        "statut": "exclu_france_uniquement",
+        "traduit_le": "2026-08-18",
+        "silo": "mobilite-partagee-transports"
+      }
+    },
+    "meilleur-utilitaire-compact": {
+      "en": {
+        "slug": "best-compact-van-2026",
+        "wp_id": 1668,
+        "titre": "Best Compact Van in 2026: Reliability, Price and Usage Comparison",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "amenagement-utilitaire-artisan": {
+      "en": {
+        "slug": "pro-van-conversion-guide",
+        "wp_id": 1669,
+        "titre": "Pro-Level Van Conversion: How to Fit Out Your Van Like an Expert",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "fourgon-3m3-vs-6m3-usages": {
+      "en": {
+        "slug": "van-size-guide-business",
+        "wp_id": 1670,
+        "titre": "3m³ vs 6m³ Van: Which Size is Right for Your Business Needs?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "utilitaire-occasion-kilometrage": {
+      "en": {
+        "slug": "high-mileage-van-buying-guide",
+        "wp_id": 1671,
+        "titre": "High-Mileage Used Van: How to Choose the Right One Without Regrets",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "utilitaire-electrique-autonomie-reelle": {
+      "en": {
+        "slug": "electric-van-real-range-2026",
+        "wp_id": 1672,
+        "titre": "Electric Van Range in 2026: What’s the Real-World Autonomy?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "recharge-flotte-entreprise": {
+      "en": {
+        "slug": "business-fleet-charging-guide",
+        "wp_id": 1673,
+        "titre": "Business Fleet Charging in 2026: Installation, Costs and Tax Optimisation",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "kangoo-master-electrique-avis": {
+      "en": {
+        "slug": "kangoo-master-electric-review",
+        "wp_id": 1674,
+        "titre": "Kangoo and Master Electric: Real-World Review After 15,000 km in a Pro Fleet",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "gestion-flotte-logiciel-tpe": {
+      "en": {
+        "slug": "sme-fleet-management-software",
+        "wp_id": 1675,
+        "titre": "SME Fleet Management Software: 5 Solutions to Cut Costs and Save Time",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "telematique-flotte-avantages": {
+      "en": {
+        "slug": "fleet-telematics-benefits-guide",
+        "wp_id": 1676,
+        "titre": "Fleet Telematics: 5 Key Benefits for Businesses (and How to Use Them)",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "galerie-et-porte-echelle-fourgon": {
+      "en": {
+        "slug": "van-roof-rack-ladder-guide",
+        "wp_id": 1677,
+        "titre": "Van Roof Rack and Ladder Carrier: How to Choose and Install Correctly",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "habillage-bois-utilitaire-kit": {
+      "en": {
+        "slug": "wooden-van-lining-kit-guide",
+        "wp_id": 1678,
+        "titre": "Wooden Van Lining Kits: Ready-to-Fit Options, Prices and Installation Tips",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "attelage-utilitaire-homologation": {
+      "en": {
+        "slug": "van-towing-hitch-regulations-2026",
+        "wp_id": 1679,
+        "titre": "Van Towing Hitch Regulations in 2026: What the Law Says",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "utilitaires-flottes-pro"
+      }
+    },
+    "quitus-fiscal-vehicule-etranger": {
+      "en": {
+        "slug": "foreign-vehicle-tax-clearance-2026",
+        "wp_id": 1683,
+        "titre": "Foreign Vehicle Tax Clearance Certificate: How to Obtain It in 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carte-grise-demarches"
+      }
+    },
+    "immatriculer-vehicule-importe": {
+      "en": {
+        "slug": "register-imported-vehicle-france",
+        "wp_id": 1684,
+        "titre": "Registering an Imported Vehicle in France: Steps, Timelines and Costs for 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carte-grise-demarches"
+      }
+    },
+    "plaque-ww-provisoire-duree": {
+      "en": {
+        "slug": "temporary-ww-plate-validity",
+        "wp_id": 1685,
+        "titre": "Temporary WW Registration Plate: Validity, Renewal and Process for 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carte-grise-demarches"
+      }
+    },
+    "certificat-conformite-europeen-coc": {
+      "en": {
+        "slug": "european-coc-vehicle-registration",
+        "wp_id": 1686,
+        "titre": "European Certificate of Conformity (COC): Everything You Need to Register an Imported Vehicle",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carte-grise-demarches"
+      }
+    },
+    "calcul-malus-occasion-importee": {
+      "en": {
+        "slug": "imported-used-car-eco-tax",
+        "wp_id": 1687,
+        "titre": "Calculating the Eco Tax for an Imported Used Car: 2026 Rates and Steps",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carte-grise-demarches"
+      }
+    },
+    "station-hydrogene-france-carte": {
+      "en": {
+        "slug": "hydrogen-stations-france-2026",
+        "wp_id": 1692,
+        "titre": "Hydrogen Refuelling Stations in France: Where to Fill Up in 2026?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "carburant-moins-cher-autour-de-moi": {
+      "en": {
+        "slug": "cheapest-fuel-near-me",
+        "wp_id": 1693,
+        "titre": "Cheapest Fuel Near Me: Where to Fill Up for Less in 2026?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "coffre-de-toit-consommation": {
+      "en": {
+        "slug": "roof-box-fuel-consumption",
+        "wp_id": 1694,
+        "titre": "Roof Box Fuel Consumption: How Much Does It Really Increase?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "voiture-gpl-avantages-inconvenients": {
+      "en": {
+        "slug": "lpg-car-pros-cons",
+        "wp_id": 1695,
+        "titre": "LPG Cars: Pros, Cons and Key Points to Know",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "stations-low-cost-qualite-carburant": {
+      "en": {
+        "slug": "budget-fuel-stations-quality",
+        "wp_id": 1696,
+        "titre": "Budget Fuel Stations: Where to Find Quality Fuel at the Best Price in 2026?",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "gpl-reservoir-controle": {
+      "en": {
+        "slug": "lpg-tank-inspection-guide",
+        "wp_id": 1697,
+        "titre": "LPG Tank Inspection: When and How to Do It",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "surconsommation-causes-courantes": {
+      "en": {
+        "slug": "excessive-fuel-consumption-causes",
+        "wp_id": 1698,
+        "titre": "Excessive Fuel Consumption: Top 10 Common Causes and How to Spot Them",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "pneus-basse-resistance-economie": {
+      "en": {
+        "slug": "low-rolling-resistance-tyres-savings",
+        "wp_id": 1699,
+        "titre": "Low Rolling Resistance Tyres: Real Savings and Benefits",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "climatisation-surconsommation": {
+      "en": {
+        "slug": "air-con-fuel-consumption-issues",
+        "wp_id": 1700,
+        "titre": "Air Conditioning Increasing Fuel Use: Causes, Solutions and High-Risk Models",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "carburants-consommation"
+      }
+    },
+    "meilleure-trottinette-electrique": {
+      "en": {
+        "slug": "best-electric-scooter-2026",
+        "wp_id": 1770,
+        "titre": "Best Electric Scooter in 2026: Top Picks and Buying Guide",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    },
+    "meilleur-vae-2026": {
+      "en": {
+        "slug": "best-e-bikes-2026",
+        "wp_id": 1771,
+        "titre": "Best E-Bikes of 2026: Smart and Affordable Choices",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    },
+    "batterie-vae-duree-de-vie": {
+      "en": {
+        "slug": "e-bike-battery-lifespan-guide",
+        "wp_id": 1772,
+        "titre": "E-Bike Battery Lifespan: How Long It Lasts, Maintenance and Wear Signs",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    },
+    "antivol-velo-u-comparatif": {
+      "en": {
+        "slug": "best-u-lock-bike-2026",
+        "wp_id": 1773,
+        "titre": "Best U-Lock for Bikes in 2026: Top Picks for Urban Cycling",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    },
+    "traceur-gps-velo-cache": {
+      "en": {
+        "slug": "hidden-gps-bike-trackers",
+        "wp_id": 1774,
+        "titre": "Hidden GPS Bike Trackers: Best Discreet and Effective Models in 2026",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    },
+    "itineraire-velo-securise-appli": {
+      "en": {
+        "slug": "best-cycling-route-apps",
+        "wp_id": 1775,
+        "titre": "Safest Cycling Routes: Best Apps for Confident Urban Riding",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    },
+    "velo-pliant-train-comparatif": {
+      "en": {
+        "slug": "best-folding-bikes-train-travel",
+        "wp_id": 1776,
+        "titre": "Best Folding Bikes for Train Travel in 2026: Lightweight and Smart Choices",
+        "statut": "traduit",
+        "traduit_le": "2026-08-20",
+        "silo": "velo-nouvelles-mobilites"
+      }
+    }
+  },
+  "taxonomie": {
+    "camping-car-van": {
+      "en": {
+        "slug": "motorhomes-campervans",
+        "nom": "Motorhomes & Campervans",
+        "sous_cocons": {
+          "assurance-reglementation": {
+            "slug": "insurance-legal",
+            "nom": "Insurance & Legal",
+            "wp_id": 1607,
+            "statut": "a_valider"
+          },
+          "voyager-aires": {
+            "slug": "travel-stopovers",
+            "nom": "Travel & Stopovers",
+            "wp_id": 1608,
+            "statut": "a_valider"
+          },
+          "acheter-camping-car": {
+            "slug": "buying-guide",
+            "nom": "Buying Guide",
+            "wp_id": 1609,
+            "statut": "a_valider"
+          },
+          "van-fourgon-amenage": {
+            "slug": "vans-conversions",
+            "nom": "Vans & Conversions",
+            "wp_id": 1628,
+            "statut": "traduit"
+          },
+          "entretien-hivernage": {
+            "slug": "maintenance-winterising",
+            "nom": "Maintenance & Winterising",
+            "wp_id": 1610,
+            "statut": "a_valider"
+          }
+        },
+        "wp_id": 1606
+      }
+    },
+    "mobilite-partagee-transports": {
+      "en": {
+        "slug": "shared-mobility",
+        "nom": "Shared Mobility",
+        "sous_cocons": {
+          "vtc-taxi": {
+            "slug": "private-hire-taxis",
+            "nom": "Private Hire & Taxis",
+            "wp_id": 1632,
+            "statut": "traduit"
+          },
+          "covoiturage": {
+            "slug": "car-sharing",
+            "nom": "Car Sharing",
+            "wp_id": 1633,
+            "statut": "traduit"
+          },
+          "train-transports-en-commun": {
+            "slug": "public-transport",
+            "nom": "Public Transport",
+            "wp_id": 1634,
+            "statut": "traduit"
+          },
+          "location-courte-longue-duree": {
+            "slug": "car-rental",
+            "nom": "Car Rental",
+            "wp_id": 1635,
+            "statut": "traduit"
+          },
+          "autopartage-location-particuliers": {
+            "slug": "peer-to-peer-car-sharing",
+            "nom": "Peer-to-Peer Car Sharing",
+            "wp_id": 1636,
+            "statut": "traduit"
+          }
+        },
+        "wp_id": 1631
+      }
+    },
+    "utilitaires-flottes-pro": {
+      "en": {
+        "slug": "commercial-vehicles-fleets",
+        "nom": "Commercial Vehicles & Fleets",
+        "sous_cocons": {
+          "lld-gestion-de-flotte": {
+            "slug": "fleet-leasing-management",
+            "nom": "Fleet Leasing & Management",
+            "wp_id": 1664,
+            "statut": "traduit"
+          },
+          "choisir-un-utilitaire": {
+            "slug": "choosing-van",
+            "nom": "Choosing a Van",
+            "wp_id": 1665,
+            "statut": "traduit"
+          },
+          "amenagement-equipement": {
+            "slug": "van-conversions-equipment",
+            "nom": "Van Conversions & Equipment",
+            "wp_id": 1666,
+            "statut": "traduit"
+          },
+          "utilitaires-electriques": {
+            "slug": "electric-vans",
+            "nom": "Electric Vans",
+            "wp_id": 1667,
+            "statut": "traduit"
+          },
+          "fiscalite-vehicule-pro": {
+            "slug": "business-vehicle-tax",
+            "nom": "Business Vehicle Tax"
+          }
+        },
+        "wp_id": 1663
+      }
+    },
+    "carte-grise-demarches": {
+      "en": {
+        "slug": "vehicle-registration-legal",
+        "nom": "Vehicle Registration & Legal",
+        "sous_cocons": {
+          "changement-de-titulaire": {
+            "slug": "change-ownership",
+            "nom": "Change of Ownership"
+          },
+          "duplicata-modifications": {
+            "slug": "replacement-updates",
+            "nom": "Replacement & Updates"
+          },
+          "cession-achat": {
+            "slug": "buying-selling",
+            "nom": "Buying & Selling"
+          },
+          "immatriculation-import": {
+            "slug": "import-registration",
+            "nom": "Import & Registration",
+            "wp_id": 1681,
+            "statut": "traduit"
+          },
+          "malus-taxes": {
+            "slug": "taxes-penalties",
+            "nom": "Taxes & Penalties",
+            "wp_id": 1682,
+            "statut": "traduit"
+          },
+          "controle-technique": {
+            "slug": "mot-inspections",
+            "nom": "MOT & Inspections"
+          }
+        },
+        "wp_id": 1680
+      }
+    },
+    "carburants-consommation": {
+      "en": {
+        "slug": "fuel-consumption",
+        "nom": "Fuel & Efficiency",
+        "sous_cocons": {
+          "gpl-gnv-hydrogene": {
+            "slug": "alternative-fuels",
+            "nom": "Alternative Fuels",
+            "wp_id": 1689,
+            "statut": "traduit"
+          },
+          "prix-stations": {
+            "slug": "fuel-prices-stations",
+            "nom": "Fuel Prices & Stations",
+            "wp_id": 1690,
+            "statut": "traduit"
+          },
+          "reduire-sa-consommation": {
+            "slug": "fuel-saving-tips",
+            "nom": "Fuel-Saving Tips",
+            "wp_id": 1691,
+            "statut": "traduit"
+          },
+          "e85-conversions": {
+            "slug": "bioethanol-conversions",
+            "nom": "Bioethanol Conversions"
+          }
+        },
+        "wp_id": 1688
+      }
+    },
+    "velo-nouvelles-mobilites": {
+      "en": {
+        "slug": "bikes-personal-transport",
+        "nom": "Bikes & Personal Transport",
+        "sous_cocons": {
+          "trottinettes-edpm": {
+            "slug": "e-scooters-micro-mobility",
+            "nom": "E-scooters & Micro-mobility",
+            "wp_id": 1766,
+            "statut": "traduit"
+          },
+          "aides-a-l-achat": {
+            "slug": "purchase-grants",
+            "nom": "Purchase Grants"
+          },
+          "equipement-antivol": {
+            "slug": "gear-security",
+            "nom": "Gear & Security",
+            "wp_id": 1767,
+            "statut": "traduit"
+          },
+          "velo-electrique": {
+            "slug": "e-bikes",
+            "nom": "E-bikes",
+            "wp_id": 1768,
+            "statut": "traduit"
+          },
+          "velotaf-pratique": {
+            "slug": "commuter-cycling",
+            "nom": "Commuter Cycling",
+            "wp_id": 1769,
+            "statut": "traduit"
+          }
+        },
+        "wp_id": 1765
+      }
+    }
+  }
+}

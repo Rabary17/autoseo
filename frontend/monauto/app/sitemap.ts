@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllAuthors, getAllPagesFull, getAllPosts, getAllTags } from "@/lib/wp";
 import { SILOS } from "@/lib/taxonomy";
+import { SERVED_LOCALES, silosFor, articlesFor, pathForArticle, urlPrefix } from "@/lib/i18n";
 import { SITE_URL } from "@/lib/site";
 
 // ISR : le sitemap n'est plus figé au build (il n'y a plus de build unique
@@ -83,5 +84,44 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...staticUrls, ...categoryUrls, ...tagUrls, ...authorUrls, ...pageUrls, ...postUrls];
+  // URLs traduites. Construites depuis `data/i18n-index.json` et non depuis
+  // WordPress : l'index ne contient que ce qui est reellement insere, et il
+  // porte deja le silo de chaque article — donc aucun appel reseau ici.
+  //
+  // Les listes francaises ci-dessus n'incluent PAS ces URLs : `getPosts` les
+  // exclut par `categories_exclude` et les pages par slug (voir lib/wp.ts).
+  // Sans cela, chaque traduction apparaitrait deux fois dans le sitemap, une
+  // fois a son URL /en/ et une fois a une URL francaise inexistante.
+  const localeUrls: MetadataRoute.Sitemap = [];
+  for (const locale of SERVED_LOCALES) {
+    const prefixe = urlPrefix(locale);
+    if (prefixe) {
+      localeUrls.push({ url: `${SITE_URL}${prefixe}/`, changeFrequency: "weekly", priority: 0.8 });
+    }
+    for (const silo of silosFor(locale)) {
+      localeUrls.push({
+        url: `${SITE_URL}${prefixe}/${silo.slug}/`,
+        changeFrequency: "weekly",
+        priority: 0.7,
+      });
+      for (const sc of silo.sousCocons) {
+        localeUrls.push({
+          url: `${SITE_URL}${prefixe}/${silo.slug}/${sc.slug}/`,
+          changeFrequency: "weekly",
+          priority: 0.6,
+        });
+      }
+    }
+    for (const a of articlesFor(locale)) {
+      const chemin = pathForArticle(a);
+      if (chemin) {
+        localeUrls.push({ url: `${SITE_URL}${chemin}`, changeFrequency: "monthly", priority: 0.6 });
+      }
+    }
+  }
+
+  return [
+    ...staticUrls, ...categoryUrls, ...tagUrls, ...authorUrls,
+    ...pageUrls, ...postUrls, ...localeUrls,
+  ];
 }

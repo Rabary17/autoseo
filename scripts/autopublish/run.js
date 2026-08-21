@@ -18,11 +18,15 @@ const promptBuilder = require('./lib/prompt-builder');
 const mistralClient = require('./lib/mistral-client');
 const reviewModule = require('./lib/review');
 const gating = require('./lib/gating');
+const maillageRepair = require('./lib/maillage-repair');
+const contentRepair = require('./lib/content-repair');
 const similarity = require('./lib/similarity');
 const scheduler = require('./lib/scheduler');
 const images = require('./lib/images');
 const wp = require('./lib/wp-client');
 const report = require('./lib/report');
+const { spawnSync } = require('child_process');
+const pathMod = require('path');
 
 const DRY_RUN = process.argv.includes('--dry-run');
 
@@ -37,6 +41,10 @@ const MAX_SOUS_HUBS = maxSousHubArg ? Number(maxSousHubArg.slice('--max-sous-hub
 // --max-articles=N plafonne le nombre d'articles traités en Phase 2 pour ce
 // run (même principe que --max-sous-hubs pour la Phase 0) — utile pour
 // tester "un seul sous-cocon entier" sans déborder sur le suivant.
+// --no-i18n desactive la traduction automatique declenchee en fin de Phase 2
+// (voir lancerTraductionAutomatique). Presente pour pouvoir isoler un
+// probleme cote francais sans embarquer la chaine de traduction.
+const NO_I18N = process.argv.includes('--no-i18n');
 const maxArticlesArg = process.argv.find(a => a.startsWith('--max-articles='));
 const MAX_ARTICLES = maxArticlesArg ? Number(maxArticlesArg.slice('--max-articles='.length)) : null;
 
@@ -45,6 +53,52 @@ const MAX_ARTICLES = maxArticlesArg ? Number(maxArticlesArg.slice('--max-article
 // complété par une recherche Tavily en direct (demande explicite de
 // l'utilisateur, 2026-07-29, voir lib/tavily-facts.js).
 const MIN_LOCAL_FACTS_FOR_ARTICLE = 5;
+
+// Plancher de mots exige DES LA GENERATION, avant relectures. Volontairement
+// au-dessus du plancher de gating (900) : les relectures retirent du contenu
+// non conforme, un article genere pile a 900 mots retombe en dessous ensuite
+// (constate le 2026-07-29 puis a nouveau le 2026-08-18). 1400 laisse la marge
+// tout en restant sous la cible du prompt (1800-2200), donc sans declencher
+// d'etoffement sur une generation deja correcte.
+const MOTS_PLANCHER_GENERATION = 1400;
+// 2 tentatives maximum : au-dela, le probleme n'est pas le volume mais la
+// matiere disponible, et insister ne produirait que du remplissage — que le
+// gating rejetterait de toute facon.
+const MAX_TENTATIVES_ETOFFEMENT = 2;
+// Plafond annonce au modele lors de l'etoffement. Sous le plafond de gating
+// (2500) pour garder de la marge : les relectures qui suivent peuvent encore
+// ajouter quelques mots.
+const MOTS_PLAFOND_ETOFFEMENT = 1900;
+// Plafond dur du gating pour un article (voir gating.js/LENGTH_RANGES) —
+// duplique ici volontairement en constante nommee : un etoffement qui le
+// depasse est refuse, sans quoi on remplacerait « trop court » par « trop
+// long » en croyant avoir reussi.
+const MOTS_PLAFOND_GATING = 3500;
+
+// Compte les sections H2 et les liens : un etoffement doit AJOUTER du texte
+// sans jamais reduire la structure. Teste le 2026-08-18, c'est le mode
+// d'echec le plus frequent — le modele « grossit » un article en refondant le
+// plan, donc en supprimant des sections, et le nombre de mots seul ne le voit
+// pas.
+function compterStructure(html) {
+  const h = String(html || '');
+  return {
+    h2: (h.match(/<h2[\s>]/gi) || []).length,
+    liens: (h.match(/<a\s[^>]*href=/gi) || []).length,
+  };
+}
+
+// Compte les mots du CORPS uniquement, avec la meme methode que
+// gating.js/countWords — sinon le plancher verifie ici et le plancher verifie
+// la ne parlent pas de la meme chose.
+function compterMotsCorps(html) {
+  const texte = String(html || '')
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return texte ? texte.split(' ').filter(Boolean).length : 0;
+}
 
 function todayIso() {
   return new Date().toISOString().slice(0, 10);
@@ -357,13 +411,73 @@ async function generateAndReview({ contentType, silo, item, maillageEntry, child
   console.log(`${tag} génération reçue — ${genResult.usage.input_tokens} tokens en entrée, ${genResult.usage.output_tokens} en sortie (cache: ${genResult.usage.cache_read_input_tokens}).`);
   addUsage(usageAcc, genResult.usage);
 
+  // Etoffement si la generation est sous le plancher — AVANT les relectures,
+  // pour qu'elles travaillent sur un texte deja complet (elles ajustent le
+  // style et la lisibilite, ce n'est pas leur role de rattraper du volume
+  // manquant : mesure du 2026-08-18, elles ne gagnent que ~700 tokens).
+  // Voir prompt-builder.js/buildExpansionRequest pour le diagnostic complet.
+  let genContent = genResult.parsed;
+  if (contentType === 'article') {
+    const motsCible = MOTS_PLANCHER_GENERATION;
+    let mots = compterMotsCorps(genContent.content_gutenberg);
+    for (let tentative = 1; tentative <= MAX_TENTATIVES_ETOFFEMENT && mots < motsCible; tentative++) {
+      console.log(`${tag} corps a ${mots} mots (< ${motsCible}) — etoffement ${tentative}/${MAX_TENTATIVES_ETOFFEMENT}...`);
+      const expReq = promptBuilder.buildExpansionRequest({
+        generatedContent: genContent, facts, competitorAngles,
+        motsActuels: mots, motsCible, motsPlafond: MOTS_PLAFOND_ETOFFEMENT,
+      });
+      try {
+        const expResult = await mistralClient.callMistral({
+          model: modelCfg.model, system: expReq.system, messages: expReq.messages,
+          schema: expReq.schema,
+          maxTokens: reviewModule.MAX_TOKENS_BY_CONTENT_TYPE?.[contentType] || 16000,
+        });
+        addUsage(usageAcc, expResult.usage);
+        const motsApres = compterMotsCorps(expResult.parsed.content_gutenberg);
+        const avant = compterStructure(genContent.content_gutenberg);
+        const apres = compterStructure(expResult.parsed.content_gutenberg);
+
+        // Trois garde-fous, tous constates necessaires en test reel le
+        // 2026-08-18 : un etoffement doit ajouter du texte, sans perdre de
+        // section ni de lien. Le nombre de mots seul ne suffit pas — un
+        // article peut grossir en refondant son plan (4 sections -> 2).
+        const rejets = [];
+        if (motsApres <= mots) rejets.push(`aucun gain (${motsApres} <= ${mots} mots)`);
+        if (apres.h2 < avant.h2) rejets.push(`sections perdues (${avant.h2} -> ${apres.h2} H2)`);
+        // Egalite STRICTE sur les liens, pas seulement "pas moins" : la passe
+        // d'etoffement a interdiction d'ajouter des liens (le maillage est
+        // deja resolu et verifie). Un lien apparu est un lien invente —
+        // constate en test le 2026-08-18 (2 -> 3 liens). Le rejeter ici evite
+        // qu'il atteigne maillage-repair, qui le delierait silencieusement.
+        if (apres.liens !== avant.liens) rejets.push(`liens modifies (${avant.liens} -> ${apres.liens})`);
+        // Plafond verifie en CODE : le plafond annonce dans le prompt reduit
+        // le debordement sans l'eliminer (teste le 2026-08-18 : 3809 puis
+        // 3352 mots pour une consigne de 2300). Un article au-dela du plafond
+        // de gating serait rejete de toute facon — autant le dire ici, avec
+        // le motif exact, plutot que de laisser croire a un etoffement reussi.
+        if (motsApres > MOTS_PLAFOND_GATING) rejets.push(`depasse le plafond de gating (${motsApres} > ${MOTS_PLAFOND_GATING} mots)`);
+
+        if (rejets.length) {
+          console.warn(`${tag} etoffement REFUSE : ${rejets.join(' ; ')} — version precedente conservee.`);
+          break;
+        }
+        genContent = expResult.parsed;
+        mots = motsApres;
+        console.log(`${tag} etoffement -> ${mots} mots (${apres.h2} sections H2).`);
+      } catch (e) {
+        console.warn(`${tag} etoffement en echec (${e.message}) — on continue avec le texte actuel.`);
+        break;
+      }
+    }
+  }
+
   const reviewModel = config.REVIEW_MODEL_BY_CONTENT_TYPE[contentType].model;
   console.log(`${tag} appel relecture — modèle ${reviewModel}...`);
   const reviewResult = await reviewModule.reviewContent({
     contentType,
     silo,
     slug,
-    generatedContent: genResult.parsed,
+    generatedContent: genContent,
     maillageEntry,
     facts,
     competitorAngles,
@@ -709,6 +823,63 @@ async function runPhase0(state, runDate, usageAcc) {
   return items;
 }
 
+// Silos effectivement traites en Phase 2 pendant ce run — alimente la
+// traduction automatique. Un Set : un run peut deborder sur le silo suivant.
+const SILOS_TOUCHES = new Set();
+
+/* ---------- Traduction automatique en fin de Phase 2 ---------- */
+
+// Demande explicite de l'utilisateur (2026-08-18) : « lorsqu'on genere des
+// articles ou pages, il faut que ca genere automatiquement son equivalent EN ».
+//
+// Lance en PROCESSUS SEPARE, volontairement. La chaine de traduction est
+// longue (un appel modele par article), et le pipeline francais est
+// critique : la file de publication tourne en continu. Un plantage, une
+// boucle ou une fuite memoire cote traduction ne doit pas pouvoir emporter le
+// run francais, dont le contenu est deja insere dans WordPress a ce stade.
+// L'isolation par processus donne cette garantie sans effort.
+//
+// Ne traduit que les silos DECLARES traduisibles (config/i18n.json) et
+// n'ecrase jamais une traduction existante : translate.js est incremental.
+// Les articles reserves aux residents francais sont ecartes par
+// config/i18n-exclusions.json, motifs automatiques compris — indispensable
+// ici, puisque les slugs des nouveaux articles n'existaient pas au moment de
+// la classification manuelle.
+function lancerTraductionAutomatique(silosTouches) {
+  if (NO_I18N || DRY_RUN) return;
+  if (!silosTouches.size) return;
+
+  let i18nConfig;
+  try {
+    i18nConfig = require('../i18n/lib/i18n').loadConfig();
+  } catch (e) {
+    console.warn(`[i18n] configuration illisible, traduction automatique ignoree : ${e.message}`);
+    return;
+  }
+
+  const script = pathMod.join(__dirname, '..', 'i18n', 'translate.js');
+  for (const siloSlug of silosTouches) {
+    const locales = i18nConfig.silos_traduisibles[siloSlug] || [];
+    if (!locales.length) {
+      console.log(`[i18n] silo "${siloSlug}" non declare traduisible — aucune traduction.`);
+      continue;
+    }
+    for (const locale of locales) {
+      console.log(`
+=== Traduction automatique : ${siloSlug} -> ${locale} ===`);
+      const res = spawnSync(process.execPath, [script, `--silo=${siloSlug}`, `--locale=${locale}`], {
+        stdio: 'inherit', cwd: pathMod.join(__dirname, '..', '..'),
+      });
+      if (res.status !== 0) {
+        // Non bloquant : le contenu francais est deja publie et intact. La
+        // traduction se rattrapera au prochain run (translate.js est
+        // incremental) ou a la main.
+        console.warn(`[i18n] traduction ${siloSlug} -> ${locale} en echec (code ${res.status}) — contenu francais intact, a rattraper.`);
+      }
+    }
+  }
+}
+
 /* ---------- Phase 2 : articles ---------- */
 
 // Sélectionne, parmi les clusters "à faire"/"en rédaction" d'un GROUPE
@@ -874,10 +1045,28 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         liens_transversaux: (maillageEntry.liens_transversaux || []).filter((u) => existingArticleSlugs.has(lastSegment(u))),
       } : maillageEntry;
 
-      const { content, usage } = await generateAndReview({
+      const { content: reviewedContent, usage } = await generateAndReview({
         contentType: 'article', silo, item: row, maillageEntry: safeMaillageEntry, childLinks: [],
         facts, competitorAngles, slug, runDate, usageAcc, logPrefix: logTag,
       });
+
+      // Réparation programmatique du maillage avant gating (2026-08-18) : la
+      // relecture LLM déclare régulièrement des corrections de liens qu'elle
+      // n'applique pas (voir lib/maillage-repair.js pour le détail). Les deux
+      // règles concernées sont mécaniques, on ne les délègue plus au modèle.
+      // Le gating revérifie tout juste après : ce passage ne l'affaiblit pas.
+      // Deux reparations mecaniques avant gating : blocs Gutenberg mal fermes
+      // et tiret cadratin espace. Le modele produit les deux malgre
+      // l'interdiction, et les deux se reparent sans jugement editorial —
+      // constate le 2026-08-21 sur 6 articles etoffes, dont 2 rejetes pour ces
+      // seuls motifs alors que le contenu etait bon.
+      const cr = contentRepair.repairContent(reviewedContent);
+      for (const r of cr.repairs) console.log(`${logTag}   contenu réparé : ${r}`);
+
+      const { content, repairs } = maillageRepair.repairArticleLinks({
+        content: cr.content, maillageEntry: safeMaillageEntry,
+      });
+      for (const r of repairs) console.log(`${logTag}   maillage réparé : ${r}`);
 
       const gatingResult = gating.runGating({
         contentType: 'article', silo, sousCocon: row.sous_cocon, content,
@@ -944,6 +1133,13 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
         if (gatingResult.passed) {
           similarity.addToIndex(silo, row.sous_cocon, slug, content.content_gutenberg);
           markArticleSlugAsExisting(slug);
+          // Silo reellement alimente par ce run — declenche la traduction
+          // automatique en fin de Phase 2. Enregistre ici, article par article,
+          // et pas deduit du premier de la file : un run peut deborder sur le
+          // silo suivant, et seuls les articles ayant PASSE le gating meritent
+          // d'etre traduits (traduire un brouillon a valider serait payer deux
+          // fois, avant et apres correction).
+          if (maillageEntry && maillageEntry.hub) SILOS_TOUCHES.add(lastSegment(maillageEntry.hub));
         }
         trackingXlsx.updateRow(trackingRows, row.mot_cle_principal, {
           statut: gatingResult.passed ? 'programmé' : 'à valider',
@@ -1003,6 +1199,9 @@ async function main() {
       // batchée ici en fin de run.
       const trackingRows = trackingXlsx.readRows();
       items = await runPhase2(state, runDate, trackingRows, usageAcc);
+      // Apres l'insertion du francais, jamais avant : la traduction lit les
+      // articles depuis WordPress.
+      lancerTraductionAutomatique(SILOS_TOUCHES);
     } else {
       console.log(`Phase inconnue (${state.phase}) — arrêt sans action.`);
       return;

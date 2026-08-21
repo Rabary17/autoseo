@@ -2,6 +2,304 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-21 (suite) : plafond releve a 3500 + reparations mecaniques mutualisees — taux de rejet longueur ramene de 7/20 a ~1/20
+
+Decision utilisateur : plafond de longueur des articles releve de **2500 a 3500 mots**. Motif documente dans `gating.js` : le plafond de 2500 avait ete fixe quand la longueur servait d'indicateur INDIRECT de remplissage ; les vrais defauts (sections perdues, liens inventes, FAQ dupliquee, phrase dupliquee, similarite) sont desormais verifies directement, donc la longueur n'a plus a servir de proxy.
+
+**`scripts/autopublish/lib/content-repair.js` (nouveau) — deux reparations mecaniques avant gating :**
+- **Blocs Gutenberg mal fermes** : la reparation existait deja mais vivait dans `scripts/i18n/lib/sanitize.js`, donc ne servait QU'AUX TRADUCTIONS alors que le pipeline francais souffre du meme defaut. Remontee au niveau commun ; `sanitize.js` y delegue au lieu de garder une copie qui aurait diverge.
+- **Tiret cadratin espace** : remplace par une VIRGULE, jamais par un deux-points (une virgule est correcte partout, un deux-points mal place change le sens). Applique au corps ET aux champs meta, la ou il avait echappe a la vigilance le 2026-08-18.
+Branche dans `run.js` (avant `maillage-repair`) et dans `expand-short.js`.
+
+**`scripts/autopublish/expand-short.js` (nouveau)** : applique la passe d'etoffement aux brouillons DEJA en base. Distinct de `regenerate-short.js`, qui regenere de zero — donc perd le contenu deja relu et corrige a la main, et repaye la generation complete. Ici on ajoute sans refaire. Ne touche jamais le statut WordPress : les articles restent en `draft`, la programmation reste une decision distincte.
+
+**Resultat mesure sur les 6 brouillons trop courts : 5 ecrits, tous entre 1814 et 3329 mots** (`casque-trottinette-obligatoire` #1746, `meilleur-eclairage-velo` #1720, `trottinette-electrique-autonomie-reelle` #1750, `forfait-mobilites-durables-velo` #1714, `marquage-bicycode-obligatoire` #1717). Verifie en base : les 5 ont bien la nouvelle longueur, tous encore en `draft`, aucun tiret cadratin residuel. Statut tracking passe a `en rédaction`.
+
+**Reste 1 article court** : `vae-ville-confort-comparatif` (776 mots), refuse par les garde-fous.
+
+**Constat important a retenir : la passe d'etoffement est FORTEMENT STOCHASTIQUE.** Trois executions successives sur le meme lot ont donne trois ensembles de gagnants differents :
+- `casque-trottinette-obligatoire` : refuse une fois (7 sections -> 4, 2 liens -> 0), reussi deux fois (3061-3125 mots) ;
+- `meilleur-eclairage-velo` : refuse a 3579 mots (au-dessus du plafond), reussi a 3329 ;
+- `vae-ville-confort-comparatif` : reussi a 2438 mots, puis refuse a 514 mots (le modele l'a RACCOURCI).
+Autrement dit ~5/6 reussissent a chaque passage, mais jamais les memes 5. **Les garde-fous ont refuse la mauvaise sortie a chaque fois** — c'est exactement leur role, et sans eux un article serait passe de 776 a 514 mots en croyant avoir ete etoffe. Consequence pratique : relancer `expand-short.js` sur un refus a de bonnes chances d'aboutir, ce n'est pas un echec definitif.
+
+**Cinquieme et sixieme occurrence de la meme lecon aujourd'hui** (apres le maillage, les blocs Gutenberg cote i18n, les institutions etrangeres, la cible de mots) : le modele affirme respecter une regle et ne la respecte pas. Le pipeline compte desormais **sept garde-fous programmatiques**, tous nes d'un defaut CONSTATE et non suppose : maillage repare, blocs Gutenberg, tiret cadratin, gain reel a l'etoffement, sections conservees, liens strictement inchanges, plafond de longueur.
+
+**Effet global attendu : taux de rejet pour longueur ramene de 7/20 a environ 1/20**, et le correctif vaut pour les 1 272 clusters restants.
+
+## 2026-08-21 : cause racine des articles trop courts diagnostiquee et traitee (prompt + passe d'etoffement)
+
+Demande explicite de l'utilisateur : traiter la cause plutot que corriger a la main, « ca vaut pour les 1 272 clusters restants ». Contexte : sur le lot Velo (20 articles), 7 rejetes pour longueur (502 a 865 mots, plancher 900) — meme taux que les lots precedents, corriges a la main plusieurs fois le 2026-08-18 sans traiter la cause.
+
+**Diagnostic par la MESURE, pas par intuition.** Les trois hypotheses ont ete departagees en correlant, article par article, le nombre de faits fournis, les tokens de sortie de chaque passe et la longueur finale :
+- **Manque de matiere factuelle ? NON.** 18 faits en moyenne sur les articles courts, 19 sur les conformes. Identique. C'etait l'hypothese la plus plausible a priori, elle est fausse.
+- **Les relectures rabotent ? NON.** Elles font legerement GROSSIR le texte (2505 -> 3223 tokens de sortie).
+- **La generation sous-produit ? OUI.** 2505 tokens de sortie en moyenne contre 4324 pour les conformes, **a matiere egale**. Un cas extreme (`trottinette-electrique-autonomie-reelle`) a rendu 873 tokens, soit un article quasi vide que la relecture n'a pas rattrape (502 mots au final).
+
+**Cause : la consigne de longueur etait exprimee en NOMBRE DE MOTS**, noyee ligne 13 dans une puce a longue parenthese, sans aucune contrainte structurelle et sans verification. Les modeles suivent mal une cible de mots.
+
+**Correctif 1 — prompt reecrit en exigence STRUCTURELLE** (`prompts/system-article.md`) : au moins 6 sections H2 de fond, au moins 3 paragraphes de 60-110 mots par section, au moins 2 sections avec un element concret (tableau, cas chiffre). 6 x 3 x 85 ~ 1530 mots : la cible est atteinte mecaniquement si la structure est respectee. Ajout d'une phrase qui traite le reflexe de fond : « si tu manques de matiere pour une section, c'est le signe qu'il faut une section differente, pas une section plus courte ».
+
+**Correctif 2 — passe d'etoffement en code** (`prompt-builder.js/buildExpansionRequest` + `run.js`), declenchee AVANT les relectures uniquement si le corps genere est sous 1400 mots. Donc jamais sur les ~65 % de generations correctes. 2 tentatives maximum : au-dela le probleme n'est plus le volume mais la matiere, et insister ne produirait que du remplissage.
+
+**3 garde-fous, tous ajoutes parce que le TEST les a rendus necessaires** (teste sur les 7 articles reellement rejetes) :
+1. **Gain reel** : un etoffement qui ne rallonge pas est refuse.
+2. **Sections conservees** : premier test, `trottinette-electrique-autonomie-reelle` est passe de 4 sections H2 a 2 tout en gagnant des mots — le modele avait REFONDU le plan au lieu d'ajouter. Le nombre de mots seul ne voit pas ce defaut.
+3. **Liens strictement inchanges** (egalite, pas « pas moins ») : un test a produit 2 -> 3 liens, donc un lien invente. La passe a interdiction d'ajouter des liens, le maillage etant deja resolu.
+
+**Resultat, et sa limite honnete :** sur les 3 cas les plus degrades rejoues, **1 seul rentre dans la fourchette de gating** (`trottinette` 500 -> 2056 mots, sections 4 -> 7, liens conserves). Les 2 autres **debordent le plafond de 2500 mots** (2678 et 3438).
+
+**Constat important : le modele ne se laisse pas piloter par une cible de mots, dans AUCUN des deux sens.** Plafond annonce a 2300 -> 3809 puis 3352 mots ; abaisse a 1900 -> 3438 mots. Il ignore la contrainte numerique. Le garde-fou de plafond est donc verifie en code (`MOTS_PLAFOND_GATING`), et un etoffement qui deborde est REFUSE plutot que de remplacer « trop court » par « trop long » en croyant avoir reussi. **Quatrieme occurrence de la meme lecon aujourd'hui** (apres le maillage, les blocs Gutenberg et les institutions etrangeres) : ce qui est verifiable se verifie en code.
+
+**Decision en attente de l'utilisateur : le plafond de 2500 mots merite-t-il d'etre releve ?** Les versions longues refusees ne sont pas du remplissage : les sections passent de 3 a 6 et de 7 a 8, aucun lien invente, aucune FAQ dupliquee — et ces trois defauts sont desormais verifies directement, donc la longueur n'est plus un indicateur indirect de qualite. Refuser un article de 2678 mots pour 178 mots de trop est probablement le mauvais arbitrage en SEO. Non tranche unilateralement : ca change ce qui se publie sur tout le site.
+
+## 2026-08-18 (suite 7) : back anglais TERMINE — 53 articles + 25 pages, 0 defaut bloquant
+
+Demande explicite de l'utilisateur (« ok go pour les 39 »). Les 3 silos restants traduits en anglais : Utilitaires & flottes pro, Carburants & consommation, Carte grise & demarches.
+
+**Resultat : 26 articles + 12 pages produits. Total anglais : 53 articles + 25 pages.**
+
+| silo | articles | pages | exclus | sous-hubs ignores |
+|---|---|---|---|---|
+| Utilitaires & flottes pro | 12 | 5 | 8 | 1 |
+| Carburants & consommation | 9 | 4 | 8 | 1 |
+| Carte grise & demarches | 5 | 3 | 25 | 4 |
+
+**Les deux regles de la session precedente ont fait exactement leur travail.** « Carte grise & demarches » est le cas qui les valide : 30 articles en entree, 25 ecartes, 4 sous-cocons entiers ignores, **3 pages produites au lieu de 7**. Sans la regle des sous-hubs vides, 4 pages de rubrique indexables sortaient sans aucun contenu dessous.
+
+**3 defauts corriges, tous des faux positifs ou des trous dans MON code, pas des defauts de traduction :**
+
+1. **Aucune reprise reseau sur la phase de COLLECTE** — « Carburants & consommation » a echoue entierement sur un `ETIMEDOUT`, sans produire une seule ligne. J'avais protege les appels au modele et les ecritures WordPress, mais pas les LECTURES — et c'est par elles que tout commence. **C'est le trou exact que j'avais bouche dans `verify.js` deux tours plus tot sans le reporter dans `translate.js`.** Toutes les lectures retentent desormais.
+
+2. **La regle « commentaire de methodologie » produit un faux positif en anglais.** Le motif francais `/recoup[ée]/` attrape le mot anglais **« recouped »** (amorti, recupere) : `low-rolling-resistance-tyres-savings` a ete bloque sur la phrase « the premium is recouped in under a year », parfaitement legitime, alors que la source francaise etait propre. **Meme piege que le tiret cadratin** : une regle de langue francaise appliquee a une autre langue. Motif anglais dedie ajoute (`SOURCE_COMMENTARY_PATTERN_EN`), volontairement restreint aux tournures de methodologie et non a des mots isoles. Les labels de `sources[]` restent verifies avec le motif francais quelle que soit la langue : ils ne sont jamais traduits. Article re-juge : gating OK.
+
+3. **`verify.js` signalait 6 faux bloquants** — les sous-hubs volontairement non traduits (aucun article traduisible dedans) etaient rapportes comme « non traduit », donc bloquants. Il distingue maintenant l'omission INTENTIONNELLE du vrai oubli (un sous-hub non traduit qui contient pourtant des articles traduits reste bloquant). **Un garde-fou qui signale 6 faux bloquants finit par etre ignore en bloc** — c'etait la vraie gravite du defaut, pas les 6 lignes.
+
+**Verification finale : `verify.js` sort en 0.** Couverture 18/18, 9/9, 9/9, 5/5, 12/12 articles. Recoupe par audit independant (code distinct de verify) : **77 contenus publiables, 104 liens internes, 0 casse, 0 anomalie de hierarchie.**
+
+**Etat du back anglais, complet :**
+- **53 articles + 25 pages traduits et verifies**, tous en `draft`
+- **54 articles exclus** (contenu reserve aux residents francais), non traduits
+- **13 traductions conservees en draft mais jamais publiees** (traduites avant la decision d'exclusion, gardees car reversibles et deja payees)
+- Stock a publier : **78 pages**, soit 26 jours de file a 3/jour
+
+**Le back est fini. L'etape 3 (frontend) est desormais le SEUL obstacle a la mise en ligne.** Rappels pour cette etape : `middleware.ts` ne gere que les chemins a 2 segments (un prefixe de langue en fait 3) ; `<html lang="fr">` est en dur dans `app/layout.tsx:59` ; `getAllPosts()` et `sitemap.ts` n'ont aucun filtre de langue ; `schedule.js` refuse de publier sans `--je-confirme-que-le-front-est-pret`. La file francaise tourne en continu (24 articles jusqu'au 23/08), toute modification du routage doit etre verifiee en local avant deploiement.
+
+## 2026-08-18 (suite 6) : perimetre i18n resserre — anglais seul, et exclusion du contenu reserve aux residents francais
+
+Deux decisions successives de l'utilisateur, qui REVIENNENT sur la consigne « tout traduire sans exception » du meme jour :
+1. **« On garde l'anglais uniquement pour l'instant »** — ES/IT/DE restent declares dans `config/i18n.json/locales` mais n'apparaissent dans AUCUN silo : aucun run ne peut les rouvrir par inadvertance. Elimine 131 traductions.
+2. **« Je voudrais ne pas traduire que les choses qui touchent les autres pays, tout le contenu uniquement reserve a la France on n'y touche pas »** — retablit le filtre editorial que j'avais initialement recommande puis que l'utilisateur avait ecarte.
+
+**Le filtre doit etre par ARTICLE, pas par silo** — c'est le point technique de cette session. Les silos sont mixtes : « Mobilite partagee & transports » compte 11 articles franco-francais sur 20, et « Carte grise & demarches » en compte 25 sur 30. Un filtre par silo aurait soit tout garde, soit tout jete.
+
+**`config/i18n-exclusions.json` (nouveau)** : 54 articles exclus, chacun avec son motif (demarche ANTS, taxe francaise, subvention, abonnement d'operateur public, licence professionnelle). Critere documente dans le fichier : exclu quand le sujet n'a de sens que pour quelqu'un qui vit en France, y cotise et y fait ses demarches ; conserve des lors qu'un non-resident le chercherait reellement.
+
+**Deux categories tranchees dans le sens de la CONSERVATION, et c'est le vrai apport de la classification :**
+- **Tout ce qui concerne la location, le peage, le stationnement et les aires en France** : massivement recherche par les touristes anglophones qui conduisent en France. Ce n'est pas du contenu « francais », c'est du contenu SUR la France pour des etrangers.
+- **Le sous-ensemble transfrontalier de « Carte grise & demarches »** : quitus fiscal, immatriculation d'un vehicule importe, certificat de conformite europeen, malus sur occasion importee, plaques WW. Ce sont precisement les demarches que fait un ETRANGER qui arrive en France, pas un resident etabli. Constat net : **ces 5 articles se concentrent dans un seul sous-cocon, « Immatriculation & import »** — le silo le plus franco-francais du site contient une poche exportable, et elle est structurellement identifiable.
+
+**Regle ajoutee : un sous-hub n'est traduit que s'il contient au moins un article traduit.** Sans elle, un sous-cocon dont tous les articles sont exclus produirait une page de rubrique VIDE, indexable, avec un lien montant depuis rien et aucun lien descendant.
+
+**Consequence sur l'existant : 13 articles avaient deja ete traduits avant cette decision.** `scripts/i18n/apply-exclusions.js` (nouveau) traite les deux effets de bord :
+- **3 traductions conservees pointaient vers du contenu desormais exclu** (`motorhome-class-2-toll-guide` -> assurance, `cheap-weekend-car-rental-tips` -> LLD, `uber-vs-bolt-price-comparison` -> taxi CPAM). Liens delies en gardant l'ancre — un lien vers une page qui ne sortira jamais est un lien mort, meme classe de defaut que le 2026-08-03.
+- **Les 13 traductions sont marquees `exclu_france_uniquement` dans l'index et leurs drafts WordPress sont CONSERVES**, pas supprimes : la decision est reversible, le contenu est deja paye, et `schedule.js` refuse de les programmer. Si le perimetre rouvre, rien a repayer.
+
+**Filtre cable dans les 3 scripts** : `translate.js` (ne traduit pas), `schedule.js` (ne programme pas), `verify.js` (ne compte ni comme cible de lien valide ni dans la couverture — un lien vers une exclusion ressort donc comme lien mort).
+
+**Bug corrige dans `verify.js`** : le controle des institutions attrapait ses echecs reseau et les rangeait en « defaut de qualite » sans incrementer `echecsTechniques` — le script sortait donc en 0 alors qu'il n'avait pas tout verifie. Exactement la confusion que le code a 3 etats devait eliminer. Un controle NON EFFECTUE compte maintenant comme echec technique.
+
+**Perimetre anglais final : 53 articles traduisibles (27 faites, 26 restantes), 54 exclus.**
+
+| silo | a traduire | fait | exclus |
+|---|---|---|---|
+| Camping-car & van | 18 | 18 | 2 |
+| Mobilite partagee & transports | 9 | 9 | 11 |
+| Carburants & consommation | 9 | 0 | 8 |
+| Carte grise & demarches | 5 | 0 | 25 |
+| Utilitaires & flottes pro | 12 | 0 | 8 |
+
+Le chantier est passe de ~216 traductions envisagees a **53**. `verify.js` sort en 0.
+
+**Prochaine etape inchangee : etape 3 (frontend)**, toujours le seul obstacle a la mise en ligne de 27 articles + 12 pages deja prets.
+
+## 2026-08-18 (suite 5) : Mobilite partagee traduit en EN + programmation construite + 1 erreur factuelle grave trouvee et corrigee
+
+Demande explicite de l'utilisateur : « Mobilite partagee & transports, EN », puis, sur ma proposition d'exclure 8 articles reserves aux residents francais : **« toujours tout traduire sans exception, on s'en fou si personne ne les recherche »** — l'objectif a ce stade est de collecter de la donnee sur les mots-cles qui prennent position, pas d'optimiser l'editorial. Ma recommandation d'exclusion est donc **ecartee, et c'est une decision assumee de l'utilisateur** : le champ `silos_traduisibles` reste, mais aucun filtrage par article n'est applique.
+
+**Resultat : 20/20 articles + 6 pages traduits, 0 gating KO, 0 erreur technique.** Les 4 garde-fous ecrits au lot precedent ont tous servi : 1 reprise sur `fetch failed` (une page aurait ete perdue), 5 blocs Gutenberg repares, 5 meta-descriptions ecretees.
+`/en/shared-mobility` + `car-sharing`, `car-rental`, et les autres sous-hubs.
+
+**Erreur FACTUELLE grave trouvee et corrigee — la plus grave du chantier i18n.**
+`taxi-conventionne-cpam` avait ete traduit en **« NHS-Approved Taxis »**, avec « NHS » 14 fois et une meta-description affirmant « CPAM reimburses 55 % of NHS-approved taxi fares ». Le NHS est britannique, la CPAM francaise, et les taux cites sont ceux du droit francais : **le texte attribuait des regles francaises au systeme de sante d'un autre pays**. Ce n'est pas une maladresse de style, c'est de la desinformation — exactement ce qui rend une traduction automatique dangereuse plutot que simplement mediocre. Le prompt l'interdisait deja explicitement ; le modele l'a fait quand meme. **Troisieme occurrence de la meme lecon : une regle verifiable en code ne se delegue pas au modele.**
+- `scripts/i18n/lib/institutions.js` (nouveau) : liste d'institutions publiques etrangeres (NHS, HMRC, DVLA, Medicare, IRS, DMV, TUV, INPS, Seguridad Social, DGT...), croisee avec l'ABSENCE du terme dans la source. Le croisement est essentiel : il evite de signaler une institution que l'original citait deja. Volontairement **pas** une detection generique de tout acronyme absent de la source — traduire « TVA » en « VAT » ou « poids lourd » en « HGV » est correct ; seules les institutions PUBLIQUES d'un autre pays portent un cadre juridique qui n'est pas celui du contenu.
+- Prompt durci avec le contre-exemple explicite, sur les 3 appels (contenu, slugs, taxonomie).
+- Controle ajoute au pipeline (articles ET pages) et a `verify.js`.
+- **Scan des 52 contenus traduits : 1 seul touche.** Retraduit en place, slug corrige (`nhs-taxi-reimbursement-costs` -> `cpam-approved-taxi-reimbursement`), verifie : 0 institution etrangere, gating OK.
+- **Le renommage a casse 2 liens entrants**, detectes par `verify.js` — corriges. Lecon : renommer un slug traduit exige de reprendre les liens entrants ; sans le controle de liens, ces 2 404 partaient en production.
+
+**`scripts/i18n/schedule.js` (nouveau) — programmation de la file traduite.**
+Demande utilisateur : « programmer les traductions comme pour les articles pour ne pas avoir toutes les pages publiees d'un seul coup, on vise la regularite ». Pages avant articles (parent avant enfant), gating rejoue, creneaux decales d'une heure par rapport au francais.
+**Cadence retenue : 5 FR + 3 EN/jour.** 3 plutot que 5 parce que le stock traduit est FINI : 52 pages a 3/jour tiennent **17 jours** de publication reguliere (2026-09-01 au 09-18), contre 10 jours a 5/jour puis file a sec — exactement le probleme corrige cote francais le matin meme. La regularite recherchee est donc mieux servie par 3.
+
+**BLOCAGE VERIFIE ET CABLE EN DUR : ne rien publier avant l'etape 3.**
+`frontend/monauto/lib/wp.ts::getAllPosts()` recupere TOUS les articles publies **sans aucun filtre de langue**, et `app/[slug]/page.tsx` resout n'importe quel article par son slug. Un article anglais publie aujourd'hui serait servi a `/motorhome-speed-limits-law/` — dans l'espace de noms FRANCAIS, sans prefixe — inscrit dans le sitemap francais, affiche sur l'accueil et dans /archives/, avec `<html lang="fr">`. Une fois l'URL indexee, la deplacer coute des redirections et de l'autorite.
+`schedule.js` **refuse donc d'appliquer** sans `--je-confirme-que-le-front-est-pret`. Un garde-fou qui repose sur la memoire de quelqu'un dans trois semaines n'est pas un garde-fou.
+
+**2 defauts corriges dans `verify.js` lui-meme :**
+1. **Le controle de couverture etait cable sur `config.pilote.silo`** et ignorait donc EN SILENCE tout silo traduit ensuite : Mobilite partagee, fraichement traduit, n'apparaissait pas au rapport. Un rapport partiel qui se presente comme complet est pire qu'une absence de rapport. Parcourt desormais tous les silos declares traduisibles dans la locale.
+2. **Un `ETIMEDOUT` faisait planter toute la verification avec un code de sortie 1** — indistinguable de « des defauts bloquants ont ete trouves ». Un garde-fou qui confond « le back est casse » et « je n'ai pas pu verifier » autorise a passer outre par lassitude. Toutes les lectures WP retentent, et le script distingue maintenant **3 etats : 0 = propre, 1 = defaut bloquant, 2 = verification incomplete**.
+
+**Etat final verifie : `verify.js` sort en 0.** Camping-car & van 20/20 articles + 6/6 pages, Mobilite partagee 20/20 + 6/6. Recoupe par audit independant : **52 contenus, 89 liens internes, 0 casse, 0 anomalie de hierarchie.**
+
+**Reste a traduire dans le perimetre declare : 140** (Camping-car en ES/IT/DE = 78, Carburants en 4 langues = 88, moins les 26 faits). Hors perimetre par decision editoriale anterieure : Carte grise & demarches (30) et Utilitaires & flottes pro (20) — a reexaminer puisque la consigne est desormais « tout traduire ».
+
+**Prochaine etape : etape 3 (frontend).** C'est le seul geste risque restant, et il est maintenant le seul obstacle a la mise en ligne de 52 pages deja pretes.
+
+## 2026-08-18 (suite 4) : back anglais complet et verifie — 20 articles + 6 pages, 0 defaut bloquant
+
+Demande explicite de l'utilisateur : « faire toutes les traductions des articles et pages avant de toucher le front, preparer le back WordPress et tester que tout est ok sans bug ». Perimetre confirme par l'utilisateur : **anglais seul, silo pilote**.
+
+**Ecart comble : le pipeline ne traitait que les articles, pas les pages.** Les hubs/sous-hubs sont des PAGES WordPress hierarchiques, pas des posts. L'article traduit du premier essai pointait vers `/en/motorhomes-campervans/insurance-legal`, une page qui n'existait pas : chaque article traduit avait un lien montant vers du vide. Le pipeline traduit desormais aussi les pages, **avant** les articles (en cas d'interruption, on ne laisse jamais un article dont la remontee pointe vers rien), et **preserve la hierarchie** — le sous-hub traduit a pour parent le hub TRADUIT, jamais le hub francais, sinon l'arbre des pages melangerait les langues.
+
+**Resultat : 20/20 articles + 1 hub + 5 sous-hubs traduits en anglais, tous en `draft`.** Rien de public.
+`/en/motorhomes-campervans` + `insurance-legal`, `travel-stopovers`, `buying-guide`, `vans-conversions`, `maintenance-winterising`.
+
+**4 defauts SYSTEMIQUES revelees par le premier lot (25 contenus), tous corriges dans `scripts/i18n/lib/sanitize.js` :**
+
+1. **Le plancher de longueur etait la mauvaise regle** — 11 rejets sur 25, aucun contenu reellement maigre. Mesure sur 5 paires FR/EN : **la traduction pese 82 a 93 % de la source, 89 % en moyenne** (l'anglais est structurellement plus dense). Le gating francais mesure une quantite ABSOLUE (900 mots) quand ce qui compte pour une traduction est la FIDELITE. Remplace par une fourchette derivee de la source (75 % a 130 %) : un article de 869 mots traduit d'un original de 975 mots est complet, le meme a 400 mots a perdu des sections. **Les 7 traductions marquees `a_valider` sous l'ancienne regle ont ete re-jugees : 7/7 passent, 0 reellement en defaut** (82 a 97 % de la source).
+2. **Blocs Gutenberg mal fermes par le modele** (3 contenus) — le prompt exige de recopier les commentaires de bloc a l'identique, le modele ne le fait pas toujours. **Meme classe de defaillance que la boucle de relecture francaise** qui annonce des corrections non appliquees : quand une regle est mecaniquement verifiable, on ne la delegue pas au modele. Reparation par pile avant gating. **Nuance verifiee** : en base, les blocs sont sains — le parseur de WordPress normalise a l'enregistrement. Le correctif garde sa valeur (le gating ne rejette plus a tort avant insertion) mais il n'y avait rien a reparer dans WordPress, contrairement a ce que je supposais.
+3. **Un article entierement traduit et paye a ete PERDU pour un `meta_title` de 61 caracteres** — WordPress rejette l'insertion en HTTP 400 au-dela de 60 (contrainte ACF). Le gating l'avait signale, mais APRES la depense et sans empecher l'appel. Champs meta desormais ecretes sur une frontiere de mot avant insertion.
+4. **2 articles perdus sur `fetch failed`** — `wp-client` retente ses propres appels, mais rien ne retentait l'ENCHAINEMENT traduction + insertion. Ajoute, avec detection des motifs transitoires uniquement (jamais de retry sur une erreur deterministe).
+
+**`scripts/i18n/verify.js` (nouveau) — le garde-fou avant le front.** Ne corrige rien, repond a une seule question : « si on branchait le front maintenant, qu'est-ce qui casserait ? ». 6 controles : index <-> WordPress, liens internes resolvant vers des cibles traduites EXISTANTES, hierarchie des pages, gating par langue, **collisions de slugs avec le francais**, couverture. Sort en code 1 s'il reste un defaut bloquant.
+Le controle de collision merite d'etre note : le francais n'ayant PAS de prefixe d'URL (choix assume pour ne pas perdre l'indexation des 83 articles), francais et traductions partagent un espace de noms. Un slug anglais tombant sur un slug francais existant ferait disparaitre une page **sans erreur visible**.
+
+**`scripts/i18n/repair.js` (nouveau)** : reparation en place des traductions deja inserees (blocs, meta), pour ne pas retraduire quand seule la structure est en cause. A rendu 0 correction necessaire ici (voir point 2).
+
+**Verification finale : `verify.js` -> aucun defaut bloquant, aucun defaut de contenu.** Recoupee par un audit independant (ne reutilisant pas le code de verify, pour ne pas confirmer ses propres bugs) : **26 contenus examines, 46 liens internes verifies, 0 lien casse**.
+
+**Bug latent corrige au passage dans `verify.js`** : un `silo`/`sousCocon` a `null` fait planter `checkSimilarity` (`similarity.js/slugifyPart` appelle `normalize()` sur null). Un article traduit dont la ligne de tracking serait introuvable faisait echouer TOUTE la verification au lieu d'etre signale. Trouve en testant, pas en production.
+
+**Prochaine etape : le frontend (etape 3)**, desormais debloquee. Segment `[locale]`, `hreflang`/`x-default`, `<html lang>` dynamique, sitemap multilingue, et reecriture de `middleware.ts` (sa regle ne gere que les chemins a 2 segments, un prefixe de langue en fait 3). Rappel : la file de publication francaise tourne en continu (24 articles programmes jusqu'au 23/08), toute modification du routage doit etre verifiee en local avant deploiement.
+
+## 2026-08-18 (suite 3) : i18n etapes 1 et 2 — modele de donnees + pipeline de traduction, 1er article anglais produit
+
+Demande explicite de l'utilisateur (traduire le site en EN/ES/IT/DE, articles publies et a venir). Decisions prises par l'utilisateur apres analyse : **traductions stockees comme vrais articles WordPress**, **slugs traduits** (pas de slug francais sous prefixe de langue), **pilote 1 langue / 1 silo** avant d'engager le reste.
+
+**Constat editorial structurant, pose des le depart** : « Carte grise & demarches » est le silo le plus fourni du site (30 articles publies) et **le moins traduisible** — ANTS, cerfa 15776, cheval fiscal, quitus fiscal sont des procedures administratives francaises que personne ne cherche en anglais. Le pilote retenu est donc **Camping-car & van** (18/20 publies) : van life, aires, hivernage et choix de fourgon sont des sujets pan-europeens, et l'Allemagne et l'Italie sont les 2 premiers marches camping-car du continent. **On ne traduit pas « le site », on traduit le sous-ensemble traduisible** — d'ou le champ `silos_traduisibles` dans `config/i18n.json`, ou un silo n'apparait que sur decision editoriale.
+
+**Risque signale a l'utilisateur, non resolu** : traduire automatiquement des milliers d'articles vers 4 langues correspond au profil vise par la politique Google sur l'abus de contenu a grande echelle (mars 2024). Non bloquant, mais c'est la raison du cadrage en pilote mesure sur 4 a 6 semaines plutot qu'un deploiement global.
+
+**Etape 1 — modele de donnees (aucun impact sur la prod) :**
+- `config/i18n.json` (nouveau) : locales, hreflang, prefixes d'URL, silos traduisibles, pilote. **Le francais n'a pas de prefixe** — les 83 URLs deja indexees restent identiques, les traductions vivent sous `/en/`, `/es/`...
+- `data/i18n/index.json` (nouveau, ecrit par le pipeline) : correspondance article francais -> traduction (slug, `wp_id`, statut) + taxonomie traduite. **Choix assume : la relation vit dans le repo versionne, pas dans un champ ACF WordPress** — aucun changement de schema WP requis (le mu-plugin n'est pas dans ce depot), le frontend lira l'index en local pour construire les hreflang sans appel reseau supplementaire, et l'historique est dans git.
+- `scripts/i18n/lib/i18n.js` (nouveau) : acces config + index.
+
+**Etape 2 — pipeline de traduction (insertion en `draft` uniquement, aucune publication) :**
+`scripts/i18n/translate.js` (nouveau), en 3 passes dont l'ordre est contraint :
+1. **taxonomie** — traduit le silo et ses 5 sous-cocons en un appel. `camping-car-van` -> `motorhomes-campervans`, `entretien-hivernage` -> `maintenance-winterising`, etc.
+2. **slugs** — traduit tous les titres du silo en un appel et en derive les slugs cibles. **Doit preceder le contenu** : un article cite ses freres, il faut connaitre leur slug traduit avant d'ecrire ses liens. Desambiguisation des doublons faite en code, jamais laissee a WordPress (qui suffixerait `-2` en silence et casserait l'index).
+3. **contenu** — traduit l'article, reecrit le maillage, rejoue le gating dans la langue cible, insere en `draft`.
+
+`scripts/i18n/lib/translate-prompt.js` : prompts de traduction **beaucoup plus contraignants que ceux de generation** — traduire n'est pas regenerer. Interdiction d'ajouter, retirer ou reordonner quoi que ce soit ; commentaires de blocs Gutenberg recopies a l'identique ; `href` jamais traduits ; aucun chiffre modifie ni converti.
+
+`scripts/i18n/lib/link-remap.js` : reecriture du maillage interne vers les chemins de la locale. **C'est la partie que la doc Next.js ne couvre jamais et qui casse en premier** : un lien `/camping-car-van/hivernage-...` recopie tel quel renvoie le lecteur anglophone vers du francais. Meme classe de bug que le 2026-08-03 (liens a 2 segments en 404), multiplie par le nombre de langues. Politique alignee sur `maillage-repair.js` : cible traduite connue -> lien remappe ; sinon -> delie en gardant l'ancre. **Jamais de lien d'un article traduit vers la version francaise** (cul-de-sac linguistique pour le lecteur, signal incoherent pour les moteurs).
+
+**2 adaptations du gating (`lib/gating.js`), toutes deux revelees par le 1er test reel :**
+- **Regle du tiret cadratin desactivee hors francais** : c'est une regle de typographie FRANCAISE. En anglais et en allemand le tiret cadratin est une ponctuation normale — l'interdire produirait un texte artificiel et ferait echouer des articles irreprochables. Pilotee par `tiret_cadratin_autorise` dans `config/i18n.json`.
+- **Regle de maillage desactivee hors francais** : elle se verifie contre `maillage.json`, qui decrit le cocon FRANCAIS. Appliquee a une traduction, elle faisait echouer **100 % des articles** sur un faux motif (« Maillage non resolu »). `link-remap.js` joue le meme role de garantie. Toutes les autres regles restent actives.
+
+**1er article reel produit** (`limitation-vitesse-camping-car` -> `motorhome-speed-limits-law`, WP #1605, draft) :
+- **52 blocs Gutenberg en entree, 52 en sortie, sequence strictement identique** — la structure est transportee sans derive.
+- 7 titres H2 en entree, 7 en sortie. 1398 mots FR -> 1237 mots EN (ecart normal, l'anglais est plus dense).
+- **Aucun chiffre perdu** : verification faite, les ecarts apparents (`3,5 t` -> `3.5 t`, `135 €` -> `€135`) sont des localisations correctes de separateur decimal et de position de devise, pas des pertes.
+- Lien montant remappe vers `/en/motorhomes-campervans/insurance-legal`. Gating OK.
+
+**Reste a faire — etape 3 (frontend), seul geste risque du chantier** : segment `[locale]`, `hreflang`/`x-default`, `<html lang>` dynamique (aujourd'hui `lang="fr"` en dur dans `app/layout.tsx:59`), sitemap multilingue, et **reecriture de `middleware.ts`** dont la regle actuelle ne gere que les chemins a 2 segments (avec prefixe de langue ils en font 3). A verifier en local avant tout deploiement — la file de publication francaise tourne en continu.
+
+## 2026-08-18 (suite 2) : les 2 defauts systemiques corriges dans le code (reparation programmatique du maillage + rapprochement WP/tracking)
+
+Demande explicite de l'utilisateur (« oui » aux deux chantiers proposes a l'entree precedente). Les deux causes racines identifiees lors de la QC du jour sont desormais traitees dans le code, plus a la main.
+
+**1. `scripts/autopublish/lib/maillage-repair.js` (nouveau) — la relecture LLM ne decide plus du maillage.**
+Branche dans `run.js` entre `generateAndReview` et `gating.runGating` (Phase 2 uniquement). Applique en code les 2 regles de `checkMaillageResolved` que la relecture pretendait appliquer sans le faire :
+- **lien hors maillage** : delie en conservant le texte d'ancre (aucun contenu redactionnel perdu) ;
+- **faute de frappe dans l'URL** : corrigee plutot que deliee, via distance de Levenshtein <= 2 sur le slug normalise — couvre le cas reel `lld-gestion-flotte` -> `lld-gestion-de-flotte` (404 silencieuse en prod) sans jamais rapprocher deux cibles distinctes d'un meme sous-cocon ;
+- **lien auto-referencant** : toujours delie, jamais redirige ;
+- **lien montant vers le sous-hub manquant** : paragraphe de liaison ajoute, ancre = `ancres.entite_seule` (le nom du sous-cocon) et non le titre de l'article, ce qui corrige au passage le defaut d'ancre trompeuse releve les 2026-08-03 et 2026-08-18.
+Chaque reparation est **loguee** (`maillage repare : ...`) — une reparation silencieuse masquerait la defaillance de la relecture qu'on cherche justement a rendre visible. **Le gating n'est pas affaibli** : il revérifie tout juste apres, ce module ne le remplace pas.
+`scripts/autopublish/test-maillage-repair.js` (nouveau) rejoue les 9 cas reellement constates aujourd'hui + 2 cas de non-regression (cible trop eloignee -> deliee ; deux slugs proches du meme sous-cocon -> jamais confondus). **9/9 OK.**
+
+**2. `scripts/autopublish/reconcile-tracking.js` (nouveau) — WordPress fait foi, le xlsx s'aligne.**
+Compare `status` WordPress et `statut` xlsx pour chaque `url_cible`, plus les dates de publication. Ne corrige **jamais** WordPress d'apres le tracking, seulement l'inverse, et uniquement avec `--apply` (sans argument : rapport seul). Distingue les ecarts **graves** (WP `draft` alors que le xlsx dit programme/publie : l'article ne sortira jamais) des ecarts benins (WP en avance sur le xlsx).
+
+**Le premier passage a revele un 3e ecart jamais soupconne : 70 articles etaient publies en ligne alors que le tracking les croyait encore `programme` ou `a valider`.** Le suivi sous-estimait donc massivement ce qui est reellement en ligne — l'inverse du bug cherche. Parmi eux, **8 etaient marques `a valider`** (contenu ayant echoue au gating) tout en etant publics : gating rejoue sur ces 8, **tous passent** (corriges a la main lors de sessions precedentes, xlsx jamais mis a jour). Alignement applique : **70 lignes corrigees, WordPress non touche**. Revérification : **aucun ecart, tracking et WordPress alignes.**
+
+**Repartition reelle du tracking apres alignement** : 83 `publie`, 24 `programme`, 1292 `a faire`. Les 2 articles `actus` restent hors tracking (normal, pipeline distinct).
+
+**Incident sans consequence, signale pour tracabilite** : un `node -e "require('./scripts/autopublish/run.js')"` lance pour verifier que le fichier se charge a **declenche un vrai run** (le module s'execute a l'import, il n'y a pas de garde `require.main === module`). Interrompu apres la 1re generation, **aucun article insere dans WordPress** (2 draft/24 future/83 publish inchanges), `autopublish-state.json` intact (`silo_en_cours` toujours Utilitaires & flottes pro). Pour verifier la syntaxe sans executer, utiliser `node --check`. **Une garde `require.main === module` autour du `main()` de `run.js` eviterait ce piege** — non ajoutee ici pour ne pas modifier le point d'entree du workflow GitHub Actions sans validation.
+
+## 2026-08-18 (suite) : QC manuelle des 23 brouillons + reprogrammation complete de la file (19 au 23/08), 0 brouillon restant dans le pipeline
+
+Demande explicite de l'utilisateur (« corrige ceux a corriger et programme leurs publications »), apres constat que WordPress ne contenait plus qu'**1 seul article `future`** (aujourd'hui 08:00) contre **25 brouillons** dormants.
+
+**Etat de depart** : 25 drafts, dont 23 du pipeline (10 issus du batch du jour, 13 anterieurs) et 2 `actus` hors perimetre. Gating rejoue sur les 23 : **13 OK, 10 KO**. Parmi les 13 OK, **11 etaient marques `programme` dans `tracking-mots-cles.xlsx` avec une date passee alors que WordPress les avait laisses en `draft`** (dont 6 anterieurs a cette session) : le bug signale le 2026-07-30 puis le 2026-08-10 s'etait bien reproduit, jamais corrige a la racine.
+
+**10 corrections appliquees a la main** (`content.raw` / `acf` uniquement, jamais `status`), toutes verifiees par re-execution de `gating.runGating` :
+- **Liens internes inventes, delies ou reediriges vers la bonne cible** (7 articles) : `utilitaire-occasion-kilometrage` et `recharge-flotte-entreprise` (lien vers le sous-hub `fiscalite-vehicule-pro`, etranger a leur cluster), `fourgon-3m3-vs-6m3-usages` (lien vers le hub nu `/utilitaires-flottes-pro/`, route inexistante cote Next.js), `pick-up-fiscalite-avantage` (lien auto-referencant vers un silo inexistant `/bonus-malus-fiscalite/`), `telematique-flotte-avantages` (`codes-obd-utilitaires`, article jamais redige), `gaz-camping-car-securite` (2 liens, dont un pointant une marque commerciale « Antargaz » vers un sous-hub interne), `lld-utilitaire-pro-sans-apport` (**faute de frappe dans l'URL** : `lld-gestion-flotte` au lieu de `lld-gestion-de-flotte`, donc 404 silencieuse).
+- **Lien montant vers le sous-hub ajoute** (3 articles) : `kangoo-master-electrique-avis`, `galerie-et-porte-echelle-fourgon`, `gaz-camping-car-securite`.
+- **Ancre auto-referencee corrigee** sur `telematique-flotte-avantages` (le texte du lien reprenait le titre de l'article lui-meme au lieu de decrire la cible — meme defaut que le 2026-08-03).
+- **Commentaire de methodologie publie** retire de `pick-up-fiscalite-avantage` (« recoupe avec les fiches techniques constructeurs » en legende de tableau).
+- **Tiret cadratin espace** retire de la `meta_description` de `utilitaire-occasion-kilometrage` — **jamais dans le corps** : la regle etait respectee dans le contenu mais pas dans les champs meta, angle mort non identifie jusqu'ici.
+- **2 articles trop courts etoffes sans inventer de chiffre** : `telematique-flotte-avantages` 867 -> 1030 mots (repartition du TCO d'une flotte, source `aficar.com` ajoutee dans `acf.sources`), `lld-particulier-sans-apport` 767 -> 903 mots (fourchettes de loyer LLD par categorie, source `leasys.com`). Faits repris de `data/factuel/*.json` (P2).
+
+**Resultat gating : 23/23 OK, 0 KO.**
+
+**Reprogrammation** (`scheduler.computeSchedule`, phase 2, cadence 5/jour, depart 2026-08-19, tri silo en cours > sous-cocon > volume decroissant) : les 23 passes en `post_status=future`, du **2026-08-19T08:00 au 2026-08-23T14:00**. `tracking-mots-cles.xlsx` mis a jour (`statut: programme` + vraie `date_publication`). **File WordPress : 24 articles `future`, plus aucun brouillon du pipeline** — seuls restent les 2 `actus`, volontairement en draft.
+
+**Constat de fond, non corrige (2 defauts systemiques a traiter dans le code) :**
+1. **La boucle de relecture rapporte des corrections qu'elle n'applique pas.** Sur le batch du jour, elle a declare explicitement « Ajout du lien manquant vers `maillage.sous_hub` » pour des articles ou le gating a ensuite constate l'absence de ce lien. Une verification programmatique du lien montant apres relecture (au lieu de faire confiance au rapport du modele) supprimerait la majorite du QC manuel : 9 des 10 defauts corriges ici relevent de deux regles seulement, toutes deux verifiables sans LLM.
+2. **Rien ne recoupe l'etat reel WordPress avec `tracking-mots-cles.xlsx`.** 11 articles affichaient `programme` en restant `draft`. Un script de rapprochement (comparer `status` WP vs `statut` xlsx pour chaque `url_cible`) evite de redecouvrir ce decalage a la main a chaque session — deja recommande le 2026-08-10, toujours pas ecrit.
+3. **La regle « tiret cadratin interdit » n'etait verifiee que dans le corps par l'auteur du contenu** : le gating, lui, couvre bien les champs meta. Un cas confirme aujourd'hui.
+
+## 2026-08-18 : `/p5-articles Utilitaires & flottes pro` — 10 clusters rédigés (5 gating OK, 5 à valider), file de publication à sec depuis aujourd'hui
+
+Demande explicite de l'utilisateur (`/p5-articles Utilitaires & flottes pro 25`). **Le batch de 25 n'était pas réalisable** : il ne restait que **10 clusters `à faire`** dans ce silo (5 déjà `programmé`, 5 `à valider`). Cadrage validé par l'utilisateur : **10 seulement, sans déborder sur le silo suivant** (`Vélo & nouvelles mobilités`, 22 clusters, prochain dans l'ordre du plus petit au plus gros). Prérequis P4 confirmé (hub + 5 sous-hubs publiés le 2026-08-04). Tout inséré en `post_status=draft`, aucune publication, `/p5-schedule` volontairement pas lancé.
+
+**Résultat (`node scripts/autopublish/run.js --max-articles=10` puis `--max-articles=1` pour le retry) — 10/10 générés et insérés, 0 perte :**
+- **5 gating OK** (statut `programmé` dans le tracking) : `amenagement-utilitaire-artisan` #1546, `aides-utilitaire-electrique-pro` #1557, `tvs-taxe-vehicules-societe-calcul` #1569, `tva-recuperable-utilitaire` #1573, `amortissement-vehicule-societe-plafond` #1577.
+- **5 gating KO** (statut `à valider`, contenu conservé en draft) : `galerie-et-porte-echelle-fourgon` #1550 et `kangoo-master-electrique-avis` #1561 (lien montant vers le sous-hub absent du corps), `fourgon-3m3-vs-6m3-usages` #1554 (lien inventé `/utilitaires-flottes-pro/`), `recharge-flotte-entreprise` #1565 (lien hors maillage `fiscalite-vehicule-pro`), `utilitaire-occasion-kilometrage` #1581 (tiret cadratin espacé + même lien hors maillage).
+- **1 erreur technique Mistral** (`finish_reason=error` sur le schéma `contenu_wp`) sur `utilitaire-occasion-kilometrage` au 1er passage, **récupérée au retry** (généré, mais gating KO ci-dessus). Erreurs techniques finales : 0.
+
+**Constat récurrent, non corrigé** : les 5 échecs de gating relèvent tous de **deux défauts seulement** — lien montant vers le sous-hub jamais écrit dans le corps, et lien inventé vers une URL de sous-cocon non prévue par le maillage du cluster. La relecture LLM prétend explicitement les corriger dans ses `corrections[]` (« Ajout du lien manquant vers `maillage.sous_hub` ») alors que le gating les détecte encore juste après : **la boucle de relecture rapporte des corrections qu'elle n'applique pas réellement**. C'est la cause dominante du taux de blocage depuis plusieurs lots (voir 2026-08-03, 2026-08-10). Une vérification programmatique du lien montant après relecture (plutôt que de faire confiance au rapport du modèle) supprimerait probablement la moitié du travail manuel de QC.
+
+**⚠️ Dérive de date confirmée à nouveau** : le planificateur a daté ces 10 articles au **2026-08-12/14, dans le passé** (on est le 18/08), car `data/autopublish-state.json` avait `silo_start_date: 2026-08-10` et une file déjà consommée. Sans conséquence immédiate (tout est `draft` côté WordPress, rien n'est public), **mais `tracking-mots-cles.xlsx` affiche désormais `programmé` avec une date passée pour les 5 OK** — exactement le décalage tracking/WordPress signalé le 2026-08-10. `/p5-schedule` doit recalculer ces dates avant toute publication.
+
+**Situation de la file de publication** : le dernier article réellement programmé côté WordPress l'était pour le **2026-08-18T08:00, soit aujourd'hui**. À partir de demain le site n'a plus rien à publier. **Prochaine action : QC manuelle des 5 `à valider` de ce silo (les 5 nouveaux + les 5 anciens = 10 au total), puis `/p5-schedule` pour redater l'ensemble.** Sans ça, la cadence 5/jour s'interrompt.
+
+## 2026-08-18 (suite) : exécution planifiée `autoseo-p1-p3-autopilot` — nouvelle reprise same jour, toujours rien à faire
+
+Re-déclenchement du même jour (cadence ~2h). Revérification indépendante (pas de confiance dans l'entrée précédente, même datée d'aujourd'hui) — tout est strictement identique :
+- **19/19 silos** listés dans `config/niches/auto-mobilite/niche.json`, `data/keywords/*.json` (22 fichiers), `data/factuel/*.json` (60 fichiers), `data/maillage/maillage.json` (1399 entrées) — aucun changement de volume depuis l'entrée précédente.
+- **Crédit Haloscan** : 7032 creditKeyword (identique) — non bloquant.
+- **Aucun nouveau commit** depuis `9c0eea1` (2026-08-17) — toujours rien qui rouvre du P1/P2/P3 sur un silo auto-mobilité.
+- **Conclusion identique, aucune action prise.**
+
+**Recommandation renforcée** : ça fait maintenant plusieurs exécutions consécutives (2026-08-10, -11, -18 x2) sans aucun silo à traiter dans ce périmètre. À désactiver ou réorienter au retour de l'utilisateur plutôt que de continuer à se déclencher pour rien.
+
+## 2026-08-18 : exécution planifiée `autoseo-p1-p3-autopilot` — toujours rien à faire dans son périmètre, aucune action prise
+
+Reprise automatique, même vérification complète que les 2026-08-10/11 (pas de confiance dans le récit figé de la tâche planifiée) :
+- **19/19 silos auto-mobilité** : `data/keywords/*.json` (22 fichiers), `config/niches/auto-mobilite/niche.json` (19 silos), `data/factuel/*.json` (60 fichiers) toujours cohérents — P1+P2+P3 restent complets sur toute la niche.
+- **Crédit Haloscan** : 7032 creditKeyword restants (creditBulkKeyword 289, creditSite 2972) — non bloquant.
+- **Commits depuis le 2026-08-11** (`ee59667`, `9c0eea1`) : intégration newsletter Zoho Campaigns et données brutes des autres niches (afrique-agriculture, guidepeptide, npi-magazine) — rien qui rouvre du P1/P2/P3 sur un silo auto-mobilité.
+- **Conclusion identique** : aucun silo ne correspond au critère "P1+P2+P3 non complets" pour la niche auto-mobilité — aucune action prise ce run.
+
+**Fichiers non suivis observés hors périmètre** (`git status`) : nouveaux CSV dans `data/niches/afrique-agriculture/`, `data/niches/guidepeptide/`, `data/niches/npi-magazine/`, un script `scripts/autopublish/_recheck2.js` — travail manuel de l'utilisateur hors des 19 silos auto-mobilité, non touchés par cette tâche.
+
+**Recommandation inchangée** : cette tâche planifiée n'a plus de silo auto-mobilité à traiter depuis le 2026-07-18. Elle continue de se déclencher sans effet utile — à désactiver ou réorienter au retour de l'utilisateur (par ex. vers le point P2/P3 non tranché sur les 4 autres niches, signalé le 2026-08-10).
+
 ## 2026-08-17 : intégration newsletter → Zoho Campaigns implémentée (code prêt, attend les identifiants Zoho de l'utilisateur)
 
 Demande explicite de l'utilisateur : collecter les emails newsletter de techcars.fr vers Zoho, automatiser l'envoi du formulaire de contact vers `andrianina.rabarivelo@gmail.com`, et rendre ça automatique pour chaque futur site (industrialisation).
@@ -368,11 +666,11 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-08-11
-- Phase : 2 — silo en cours : Utilitaires & flottes pro
-- Programmées : 3 — bloquées (draft) : 1 — erreurs techniques : 10 ⚠️
-- Dernier article programmé pour : 2026-08-11T20:00:00.000Z
-- Détail complet : [logs/autopublish/2026-08-11.md](logs/autopublish/2026-08-11.md)
+## Autopublish — dernier run : 2026-08-20
+- Phase : 2 — silo en cours : Vélo & nouvelles mobilités
+- Programmées : 11 — bloquées (draft) : 7 — erreurs techniques : 2 ⚠️
+- Dernier article programmé pour : 2026-08-23T14:00:00.000Z
+- Détail complet : [logs/autopublish/2026-08-20.md](logs/autopublish/2026-08-20.md)
 <!-- autopublish:report:end -->
 
 

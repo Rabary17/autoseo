@@ -7,6 +7,7 @@ import * as http from "node:http";
 import * as https from "node:https";
 import { cache } from "react";
 import { unstable_cache } from "next/cache";
+import { EXCLUDED_LOCALE_CATEGORIES, isTranslatedSlug } from "./i18n";
 
 // Économiser les appels API WordPress (demande explicite de l'utilisateur,
 // 2026-07-30) — deux mécanismes complémentaires, pas un seul :
@@ -121,6 +122,7 @@ async function wpFetch(path: string, retries = 2): Promise<SimpleResponse> {
     let lastErr: unknown;
     for (let attempt = 0; attempt <= retries; attempt++) {
       try {
+        if (process.env.DEBUG_WP_URLS === "1") console.log("[wp]", path);
         const res = await rawGet(buildWpUrl(path));
         if (res.status === 404) throw new WpNotFound(path);
         if (!res.ok) {
@@ -204,7 +206,24 @@ function decodeEmbeds(post: WpPost): WpPost {
 // requêtes WP de taille sûre et recolle les résultats, de façon transparente.
 const SAFE_EMBED_PAGE_SIZE = 10;
 
+// Exclusion des traductions de TOUTES les requêtes françaises (2026-08-21).
+//
+// Français et traductions partagent le même espace WordPress : sans cette
+// exclusion, un article anglais publié apparaîtrait sur l'accueil, dans
+// /archives/, /tag/*, /auteur/*, /recherche ET le sitemap français.
+//
+// L'exclusion est faite CÔTÉ REQUÊTE (`categories_exclude`), pas après coup :
+// `getPosts` renvoie aussi `total` et `totalPages`, qui pilotent la pagination.
+// Filtrer le résultat sans corriger les compteurs donnerait des pages
+// incomplètes et une dernière page vide. Le marqueur est posé par
+// scripts/i18n/tag-locale-category.js.
+function exclusionTraductions(): string {
+  const ids = Object.values(EXCLUDED_LOCALE_CATEGORIES);
+  return ids.length ? `&categories_exclude=${ids.join(",")}` : "";
+}
+
 export async function getPosts(page = 1, perPage = 12, extra = "") {
+  extra = `${extra}${exclusionTraductions()}`;
   const offset = (page - 1) * perPage;
   const firstWpPage = Math.floor(offset / SAFE_EMBED_PAGE_SIZE) + 1;
   const lastWpPage = Math.floor((offset + perPage - 1) / SAFE_EMBED_PAGE_SIZE) + 1;
@@ -302,7 +321,11 @@ export const getAllPages = unstable_cache(
     while (true) {
       const res = await wpFetch(`/pages?per_page=${SAFE_PAGE_SIZE}&status=publish&page=${page}`);
       const pages = (await res.json()) as WpPage[];
-      all.push(...pages);
+      // Alimente generateStaticParams de /[slug]/ : sans ce filtrage, une page
+      // de rubrique ANGLAISE serait pre-generee a `/motorhomes-campervans/`,
+      // donc dans l'espace de noms francais et sans prefixe /en/. Les pages WP
+      // n'ayant pas de categorie, l'exclusion se fait par slug via l'index.
+      all.push(...pages.filter((pg) => !isTranslatedSlug(pg.slug)));
       const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? 0);
       if (page >= totalPages || pages.length === 0) break;
       page += 1;
@@ -388,7 +411,11 @@ export async function getAllPagesFull(): Promise<WpPage[]> {
   while (true) {
     const res = await wpFetch(`/pages?per_page=${SAFE_PAGE_SIZE}&status=publish&page=${page}`);
     const pages = (await res.json()) as WpPage[];
-    all.push(...pages);
+    // Les PAGES WordPress n'ont pas de catégorie : l'exclusion par
+    // `categories_exclude` ne s'y applique pas. On filtre donc par slug, via
+    // l'index des traductions — sinon les hubs/sous-hubs anglais entreraient
+    // dans le sitemap français.
+    all.push(...pages.filter((pg) => !isTranslatedSlug(pg.slug)));
     const totalPages = Number(res.headers.get("X-WP-TotalPages") ?? 0);
     if (page >= totalPages || pages.length === 0) break;
     page += 1;

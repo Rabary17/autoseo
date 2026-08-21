@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
+import { isTranslatedSlug, alternatesForArticle } from "@/lib/i18n";
 import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import NewsletterForm from "@/components/NewsletterForm";
@@ -19,7 +20,7 @@ import {
   parseSources,
 } from "@/lib/wp";
 import { getSilo } from "@/lib/taxonomy";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articleSchema, faqPageLd } from "@/lib/schema";
 import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import type { WpTerm } from "@/lib/types";
@@ -68,7 +69,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     );
     const media = post._embedded?.["wp:featuredmedia"]?.[0];
     const author = post._embedded?.author?.[0];
-    return pageMeta({
+    // hreflang cote francais : declare les traductions existantes de CET
+    // article. Sans reciprocite, Google ignore les balises — une page doit
+    // pointer ses alternatives ET etre pointee par elles.
+    const alt = alternatesForArticle(post.slug, SITE_URL);
+    const meta = pageMeta({
       title: post.acf?.meta_title || post.title.rendered,
       description,
       path: `/${post.slug}/`,
@@ -79,6 +84,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       authorName: author?.name,
       keywords: post.acf?.keywords,
     });
+    // Une seule langue servie : pas de balises hreflang du tout. Les poser
+    // avec un unique `fr` et un `x-default` identique n'apporte rien et ajoute
+    // du bruit dans le <head> de 94 pages.
+    if (Object.keys(alt.languages).length <= 2) return meta;
+    return { ...meta, alternates: { canonical: alt.canonical, languages: alt.languages } };
   }
   const page = await getPageBySlug(slug);
   if (page) {
@@ -94,6 +104,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CatchAllPage({ params }: Props) {
   const { slug } = await params;
+
+  // Verrou de langue. Cette route resout N'IMPORTE QUEL article ou page publie
+  // par son slug : sans ce garde-fou, un contenu anglais serait servi a
+  // `/motorhome-speed-limits-law/`, c'est-a-dire dans l'espace de noms
+  // FRANCAIS et sans prefixe /en/. Le francais n'ayant pas de prefixe, les deux
+  // langues partagent cet espace — c'est la contrepartie assumee du choix de ne
+  // pas casser les 94 URLs deja indexees, et elle se paie ici.
+  // Sa place est ici et pas seulement dans les listings : un lien externe, un
+  // partage ou un crawl peut atteindre l'URL directement.
+  if (isTranslatedSlug(slug)) notFound();
 
   const post = await getPostBySlug(slug);
   if (post) return <ArticleView post={post} />;

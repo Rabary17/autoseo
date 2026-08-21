@@ -18,7 +18,19 @@ const LENGTH_RANGES = {
   // 2026-07-29) : un article > 900 mots avec du contenu réellement
   // substantiel (pas de remplissage détecté par les autres règles) ne doit
   // pas être rejeté juste pour ne pas avoir atteint 1500 pile.
-  article: [900, 2500],
+  // Plafond releve de 2500 a 3500 le 2026-08-21 (decision explicite de
+  // l'utilisateur). Deux raisons mesurees :
+  // 1. Le modele ne se laisse PAS piloter par une cible de mots : plafond
+  //    annonce a 2300 -> 3809 puis 3352 mots rendus ; abaisse a 1900 -> 3438.
+  //    Il ignore la contrainte numerique, dans les deux sens.
+  // 2. Le plafond de 2500 avait ete fixe quand la longueur servait
+  //    d'indicateur INDIRECT de remplissage. Ce n'est plus le cas : les vrais
+  //    defauts (sections perdues, liens inventes, FAQ dupliquee, phrase
+  //    dupliquee, similarite) sont desormais verifies directement. Refuser un
+  //    article de 2678 mots pour 178 mots de trop etait donc le mauvais
+  //    arbitrage en SEO, alors que ses sections passaient de 7 a 8 sans aucun
+  //    lien invente.
+  article: [900, 3500],
   'article-editorial': [1500, 2500],
 };
 
@@ -66,6 +78,19 @@ const EM_DASH_PATTERN = /\s—\s/;
 function checkNoEmDash(content) {
   const fields = [content.content_gutenberg, content.title, content.meta_title, content.meta_description];
   return fields.every((f) => !EM_DASH_PATTERN.test(stripHtmlToText(f || '')));
+}
+
+// L'interdiction du tiret cadratin espacé est une règle de typographie
+// FRANÇAISE (demande explicite de l'utilisateur, appliquée depuis 2026-07).
+// En anglais et en allemand, le tiret cadratin est une ponctuation courante et
+// parfaitement correcte : l'interdire sur du contenu traduit produirait un
+// texte artificiel, et ferait échouer au gating des articles irréprochables.
+// La liste des langues concernées vit dans config/i18n.json
+// (`tiret_cadratin_autorise`), jamais en dur ici.
+const LANGS_TIRET_CADRATIN_AUTORISE = new Set(['en', 'de']);
+
+function emDashRuleApplies(lang) {
+  return !LANGS_TIRET_CADRATIN_AUTORISE.has(lang || 'fr');
 }
 
 // Caractères hors script latin (CJK, hangul, kana...) constatés à deux
@@ -195,14 +220,36 @@ function checkLength(content, contentType, lengthRangeOverride) {
 // simple nom de source.
 const SOURCE_COMMENTARY_PATTERN = /recoup[ée]|vérifié aupr[eè]s|consult[ée] le/i;
 
+// Le motif ci-dessus est FRANCAIS et produit un faux positif en anglais :
+// « recouped » (amorti, recupere) contient « recoupe » et declenche la regle
+// sur une phrase parfaitement legitime. Constate le 2026-08-18 sur
+// `low-rolling-resistance-tyres-savings` (« the premium is recouped in under a
+// year »), bloque a tort alors que la source francaise etait propre.
+// Meme piege que le tiret cadratin : une regle de langue francaise appliquee a
+// une autre langue.
+//
+// Motif anglais volontairement RESTREINT aux tournures de methodologie
+// interne, et non a des mots isoles : le corps d'une traduction derive d'un
+// corps francais deja gate, le risque de fuite y est donc bien plus faible
+// que sur une generation d'origine.
+const SOURCE_COMMENTARY_PATTERN_EN = /cross-?referenced with|verified against our|checked against our|as consulted on/i;
+
+function sourceCommentaryPattern(lang) {
+  return (lang && lang !== 'fr') ? SOURCE_COMMENTARY_PATTERN_EN : SOURCE_COMMENTARY_PATTERN;
+}
+
 // Vérifie sources[].label ET le corps du texte lui-même : constaté en
 // publication réelle le 2026-07-22 que le modèle recopie ce commentaire dans
 // une légende de tableau (figcaption) plutôt que dans sources[] — les deux
 // emplacements doivent être propres.
-function checkSourceLabelsClean(content) {
+function checkSourceLabelsClean(content, lang) {
+  const pattern = sourceCommentaryPattern(lang);
+  // Les labels de sources[] restent verifies avec le motif FRANCAIS quelle que
+  // soit la langue : ils ne sont jamais traduits (voir scripts/i18n, les
+  // sources sont recopiees telles quelles de l'article francais).
   const offendingLabels = (content.sources || []).filter(s => SOURCE_COMMENTARY_PATTERN.test(s.label || ''));
   const bodyText = stripHtmlToText(content.content_gutenberg || '');
-  const offendingBody = SOURCE_COMMENTARY_PATTERN.test(bodyText);
+  const offendingBody = pattern.test(bodyText);
   return { ok: offendingLabels.length === 0 && !offendingBody, offendingLabels, offendingBody };
 }
 
@@ -264,6 +311,7 @@ function runGating({
   parentPublished,
   factsProvided,
   lengthRange,
+  lang,
 }) {
   const failures = [];
 
@@ -308,7 +356,7 @@ function runGating({
     });
   }
 
-  const sourceLabels = checkSourceLabelsClean(content);
+  const sourceLabels = checkSourceLabelsClean(content, lang);
   if (!sourceLabels.ok) {
     const parts = [];
     if (sourceLabels.offendingLabels.length) {
@@ -318,7 +366,7 @@ function runGating({
     failures.push({ rule: 'sources_propres', message: `Commentaire de méthodologie repéré dans ${parts.join(' ; ')}.` });
   }
 
-  if (!checkNoEmDash(content)) {
+  if (emDashRuleApplies(lang) && !checkNoEmDash(content)) {
     failures.push({ rule: 'tiret_cadratin', message: 'Tiret cadratin espacé (" — ") détecté dans le contenu — interdit.' });
   }
 
@@ -336,9 +384,19 @@ function runGating({
     failures.push({ rule: 'ouverture_generique', message: 'Ouverture générique bannie ("Ce silo/sous-cocon réunit/rassemble/regroupe...") détectée.' });
   }
 
-  const maillageCheck = checkMaillageResolved(contentType, maillageEntry, childLinksCount, content);
-  if (!maillageCheck.ok) {
-    failures.push({ rule: 'maillage_resolu', message: maillageCheck.reason });
+  // La règle de maillage se vérifie contre `maillage.json`, qui décrit le
+  // cocon FRANÇAIS (chemins et slugs français). Sur un contenu traduit, elle
+  // ne peut structurellement pas s'appliquer : les liens ont été réécrits vers
+  // les chemins de la locale par scripts/i18n/lib/link-remap.js, qui joue
+  // exactement le même rôle de garantie (cible connue ou lien délié, jamais de
+  // lien inventé). L'appliquer quand même ferait échouer 100 % des traductions
+  // sur un faux motif. Toutes les autres règles restent actives.
+  const maillageVerifiable = !lang || lang === 'fr';
+  if (maillageVerifiable) {
+    const maillageCheck = checkMaillageResolved(contentType, maillageEntry, childLinksCount, content);
+    if (!maillageCheck.ok) {
+      failures.push({ rule: 'maillage_resolu', message: maillageCheck.reason });
+    }
   }
 
   return { passed: failures.length === 0, failures };
