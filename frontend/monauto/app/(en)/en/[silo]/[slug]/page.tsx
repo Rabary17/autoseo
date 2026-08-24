@@ -17,7 +17,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import JsonLd from "@/components/JsonLd";
 import FaqSection from "@/components/FaqSection";
 import TableOfContents from "@/components/TableOfContents";
-import { getPostBySlug, getPageBySlug, parseSources, parseFaq, getImageVariant } from "@/lib/wp";
+import { getPostBySlug, getPageBySlug, parseSources, parseFaq, getImageVariant, decodeEntities } from "@/lib/wp";
 import { buildToc } from "@/lib/toc";
 import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import { SITE_URL } from "@/lib/site";
@@ -74,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const page = await getPageBySlug(slug);
     if (!page) return {};
     return pageMeta({
-      title: page.acf?.meta_title || page.title.rendered,
+      title: decodeEntities(page.acf?.meta_title || page.title.rendered),
       description: page.acf?.meta_description || truncate(stripHtml(page.content.rendered), 155),
       path: `/en/${siloSlug}/${slug}/`,
     });
@@ -86,7 +86,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const alt = alternatesForArticle(r.art.frSlug, SITE_URL, LOCALE);
   return {
     ...pageMeta({
-      title: post.acf?.meta_title || post.title.rendered,
+      title: decodeEntities(post.acf?.meta_title || post.title.rendered),
       description: truncate(
         post.acf?.meta_description || stripHtml(post.excerpt.rendered) || stripHtml(post.content.rendered),
         155
@@ -130,7 +130,7 @@ export default async function EnPage({ params }: Props) {
             { name: r.sc.nom, href: `/en/${siloSlug}/${slug}/` },
           ]}
         />
-        <h1>{page.title.rendered}</h1>
+        <h1 dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
         <div className="entry" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
         {enfants.length > 0 && (
           <section className="side-mod">
@@ -168,18 +168,18 @@ export default async function EnPage({ params }: Props) {
         items={[
           { name: "Home", href: "/en/" },
           { name: r.silo.nom, href: `/en/${r.silo.slug}/` },
-          { name: post.title.rendered, href: `/en/${siloSlug}/${slug}/` },
+          { name: decodeEntities(post.title.rendered), href: `/en/${siloSlug}/${slug}/` },
         ]}
       />
       <article>
-        <h1>{post.title.rendered}</h1>
+        <h1 className="article__title" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         <p className="meta">
           {author?.name ? `${author.name} · ` : ""}
           {dateEn(post.date)}
         </p>
         {hero && (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={hero.url} alt={post.title.rendered} width={hero.width} height={hero.height} />
+          <img src={hero.url} alt={decodeEntities(post.title.rendered)} width={hero.width} height={hero.height} />
         )}
         {post.acf?.tldr && <div className="tldr">{post.acf.tldr}</div>}
         {toc.length > 1 && <TableOfContents items={toc} />}

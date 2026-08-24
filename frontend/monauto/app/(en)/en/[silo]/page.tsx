@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
-import { getPageBySlug } from "@/lib/wp";
+import { getPageBySlug, decodeEntities } from "@/lib/wp";
 import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import { silosFor, siloBySlug, articlesFor, pathForArticle } from "@/lib/i18n";
 
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!page) return {};
   return {
     ...pageMeta({
-      title: page.acf?.meta_title || page.title.rendered,
+      title: decodeEntities(page.acf?.meta_title || page.title.rendered),
       description: page.acf?.meta_description || truncate(stripHtml(page.content.rendered), 155),
       path: `/en/${siloSlug}/`,
     }),
@@ -51,7 +51,7 @@ export default async function EnHubPage({ params }: Props) {
           { name: silo.nom, href: `/en/${siloSlug}/` },
         ]}
       />
-      <h1>{page.title.rendered}</h1>
+      <h1 dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
       <div className="entry" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
 
       {silo.sousCocons.length > 0 && (
