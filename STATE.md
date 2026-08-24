@@ -2,6 +2,40 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-21 (suite 2) : i18n etape 3 (frontend) faite sur branche `i18n-frontend-en` — pas encore deployee
+
+Demande explicite de l'utilisateur (« on passe a l'etape 3 du front, fais tres attention »). Travail fait sur une BRANCHE, `main` intact, rien de deploye.
+
+**Constat d'architecture qui contredit le conseil initial : le segment `[locale]` est IMPOSSIBLE ici.** Le francais n'ayant pas de prefixe d'URL, `app/[locale]/page.tsx` et `app/[slug]/page.tsx` seraient deux segments dynamiques FRERES au meme niveau — Next.js ne peut pas les distinguer. Il faudrait prefixer le francais aussi, donc casser les 94 URLs deja indexees. La bonne conception est un sous-arbre LITTERAL `app/en/`, qui ne touche aucune route existante.
+
+**La partie risquee : proteger le site francais.** Francais et traductions partagent le meme espace de noms WordPress. Trois couches, chacune necessaire :
+1. **Categorie marqueur `lang-en`** (id 528) posee sur les 73 contenus traduits, `categories_exclude` ajoute a toutes les requetes francaises. **Exclusion cote REQUETE et non apres coup** : `getPosts` renvoie aussi `total` et `totalPages`, qui pilotent la pagination — filtrer le resultat aurait donne des pages a 11 articles sur 12 annonces et une derniere page vide. Verifie dans les requetes reelles emises : `categories_exclude=528` present sur accueil, archives ET recherche.
+2. **Filtrage par slug pour les PAGES** (`getAllPages` + `getAllPagesFull`) : les pages WP n'ont pas de categorie. Sans cela un hub anglais entrait dans le sitemap francais **et** etait pre-genere a une URL francaise par `generateStaticParams`.
+3. **Verrou dur dans `app/(fr)/[slug]/page.tsx`** : cette route resout N'IMPORTE QUEL contenu publie par son slug. Un lien externe ou un crawl pouvait atteindre `/motorhome-speed-limits-law/` sans passer par aucun listing. Verifie : cette URL sert desormais la page « Cette page n'existe pas ».
+
+**Deux layouts racines par groupes de routes** (`app/(fr)/` et `app/(en)/`) : Next.js n'autorise pas a redefinir `<html>` dans un layout imbrique, donc c'etait la SEULE facon correcte de servir `lang="en"`. Les parentheses sont invisibles dans le routage, **aucune URL ne change**. Le layout anglais n'utilise pas `Header`/`Footer`/`BottomNav` : leurs libelles sont en dur en francais et leurs liens pointent vers `/rubriques/`, `/archives/`, `/auteur/` — les reutiliser aurait affiche une navigation francaise autour d'un article anglais. Sa navigation vient de l'index, donc elle ne cite que des pages qui existent reellement en anglais.
+
+**Autres livrables** : `lib/i18n.ts` (resolution des chemins traduits et hreflang sans appel reseau), routes `/en/`, `/en/[silo]/`, `/en/[silo]/[slug]/` (sous-hub ou article desambiguises par l'index, pas par WordPress), 90 URLs traduites au sitemap, hreflang reciproques poses uniquement si une traduction existe, `scripts/i18n/sync-frontend.js` appele en fin de `translate.js`, `scripts/i18n/tag-locale-category.js`.
+
+**Champ `silo` ajoute a l'index** (73 entrees retro-remplies) : le frontend doit retrouver le silo d'un article pour construire son URL `/en/{silo}/{slug}`. J'avais d'abord ecrit une table remplie a l'execution — elle ne survit pas d'une requete a l'autre. La vraie correction etait dans la DONNEE, pas dans le code.
+
+**Verifications** : 11 routes francaises en 200 avec `lang="fr"`, `/en/` en 200 avec `lang="en"`, 42 liens anglais coherents, zero fuite de navigation francaise, sitemap a 546 URLs FR + 90 EN **sans contamination croisee**, `tsc` sans erreur.
+
+**2 defauts de MA part corriges en cours de route** : `.env.local` corrompu par un ajout sans retour a la ligne prealable (restaure aussitot depuis une copie), et un titre duplique sur `/en/` (« techcars — ... — techcars », le template du layout ajoutant deja le nom du site).
+
+**Observation, PREEXISTANTE et non liee a ce chantier** : une URL francaise inexistante renvoie **200 au lieu de 404** (verifie par comparaison avant/apres). Si ca se reproduit en production, Google voit des soft 404. A controler.
+
+**LIMITE ASSUMEE : aucune page d'article anglais n'a pu etre rendue a l'ecran.** Tout le contenu traduit est en `draft` et le frontend interroge WordPress sans authentification — les brouillons ne sont donc pas servis. Seul `/en/` (qui lit l'index, pas WordPress) a pu etre verifie visuellement.
+
+**Sequence de mise en ligne recommandee, dans cet ordre :**
+1. deployer la branche — le francais est inchange, l'anglais est inerte puisque tout est en draft ;
+2. verifier le FRANCAIS en production (accueil, archives, un article, sitemap) ;
+3. publier **3 pages anglaises seulement** (1 hub + 1 sous-hub + 1 article) et les regarder reellement ;
+4. `node scripts/i18n/schedule.js --locale=en --start=... --apply --je-confirme-que-le-front-est-pret` pour les 86 restantes, a 3/jour.
+L'etape 3 n'est pas une formalite : publier 89 pages sans en avoir jamais rendu une seule serait imprudent.
+
+**Autonomie de la file francaise : jusqu'au 26/08** (29 articles programmes). Le deploiement n'est pas urgent, mais la branche divergera de `main` a chaque nouveau lot.
+
 ## 2026-08-21 (suite) : plafond releve a 3500 + reparations mecaniques mutualisees — taux de rejet longueur ramene de 7/20 a ~1/20
 
 Decision utilisateur : plafond de longueur des articles releve de **2500 a 3500 mots**. Motif documente dans `gating.js` : le plafond de 2500 avait ete fixe quand la longueur servait d'indicateur INDIRECT de remplissage ; les vrais defauts (sections perdues, liens inventes, FAQ dupliquee, phrase dupliquee, similarite) sont desormais verifies directement, donc la longueur n'a plus a servir de proxy.
