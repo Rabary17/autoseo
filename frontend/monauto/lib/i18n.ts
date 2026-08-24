@@ -278,4 +278,41 @@ export function alternatesForTaxonomy(
   return { canonical, languages };
 }
 
+/* ---------------- Revalidation ---------------- */
+
+/**
+ * Chemin traduit correspondant à un slug, ou null si ce slug n'est pas une
+ * traduction. Utilisé par /api/revalidate : le mu-plugin WordPress n'envoie que
+ * des chemins français, il faut donc traduire avant de régénérer.
+ *
+ * Couvre aussi les PAGES de rubrique (hub et sous-hub), que le mu-plugin envoie
+ * également sous forme de slug plat.
+ */
+export function translatedPathForSlug(slug: string): string | null {
+  const art = PAR_SLUG_TRADUIT.get(slug);
+  if (art) return pathForArticle(art);
+
+  for (const [locale, silos] of TAXONOMIE_PAR_LOCALE) {
+    for (const silo of silos) {
+      if (silo.slug === slug) return `${urlPrefix(locale)}/${silo.slug}/`;
+      const sc = silo.sousCocons.find((x) => x.slug === slug);
+      if (sc) return `${urlPrefix(locale)}/${silo.slug}/${sc.slug}/`;
+    }
+  }
+  return null;
+}
+
+/**
+ * Pages de LISTING d'une locale qui citent cet article : accueil de la locale
+ * et hub du silo. Sans les régénérer, un article publié reste invisible dans la
+ * navigation jusqu'à expiration de leur propre cache.
+ */
+export function localeListingPathsForSlug(slug: string): string[] {
+  const art = PAR_SLUG_TRADUIT.get(slug);
+  if (!art) return [];
+  const prefixe = urlPrefix(art.locale);
+  const silo = silosFor(art.locale).find((s) => s.siloFr === art.siloFr);
+  return silo ? [`${prefixe}/`, `${prefixe}/${silo.slug}/`] : [`${prefixe}/`];
+}
+
 export { PAR_SLUG_FR, PAR_SLUG_TRADUIT };
