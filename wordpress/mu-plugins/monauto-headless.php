@@ -62,28 +62,53 @@ add_filter('big_image_size_threshold', fn() => 1600);
    voir règles de sécurité du projet), gratuite sur https://app.imagify.io.
    ========================================================================== */
 
+// ATTENTION : ce bloc appelle l'API d'un plugin TIERS a chaque chargement de
+// page. Sans garde, une mise a jour d'Imagify qui renomme ou supprime une
+// methode provoque un « Fatal error: Call to undefined method » — donc une PAGE
+// BLANCHE dans tout wp-admin, editeur d'article compris. Le piege est sournois :
+// l'ecriture ne se declenche que `if ($diff)`, donc tant que les options
+// correspondent, rien ne casse ; le jour ou une mise a jour du plugin
+// reinitialise ses options, l'ecart apparait et l'appel fatale.
+//
+// Un mu-plugin ne peut pas etre desactive depuis wp-admin : une erreur fatale
+// ici rend le back-office inaccessible sans acces FTP/SSH. La configuration
+// d'un plugin tiers est un confort, jamais une raison de bloquer
+// l'administration — d'ou les gardes et le try/catch ci-dessous.
 add_action('init', function () {
 	if (!class_exists('Imagify_Options')) return;
+	if (!method_exists('Imagify_Options', 'get_instance')) return;
 
-	$options = Imagify_Options::get_instance();
-	$desired = [
-		'auto_optimize'       => 1,    // optimise automatiquement chaque upload
-		'backup'              => 1,    // garde l'original (retour arrière possible)
-		'optimization_level'  => 1,    // "aggressive" — bon compromis qualité/poids (0=normal, 1=aggressive, 2=ultra)
-		'resize_larger'       => 1,    // redimensionne tout original plus large que...
-		'resize_larger_w'     => 1600, // ...notre plus grande taille réelle (monauto_hero)
-		'convert_to_webp'     => 1,
-		'optimization_format' => 'webp',
-		'display_webp'        => 1,
-		'display_webp_method' => 'picture', // <picture> avec repli natif, pas de réécriture serveur requise
-	];
+	try {
+		$options = Imagify_Options::get_instance();
+		$desired = [
+			'auto_optimize'       => 1,    // optimise automatiquement chaque upload
+			'backup'              => 1,    // garde l'original (retour arrière possible)
+			'optimization_level'  => 1,    // "aggressive" — bon compromis qualité/poids (0=normal, 1=aggressive, 2=ultra)
+			'resize_larger'       => 1,    // redimensionne tout original plus large que...
+			'resize_larger_w'     => 1600, // ...notre plus grande taille réelle (monauto_hero)
+			'convert_to_webp'     => 1,
+			'optimization_format' => 'webp',
+			'display_webp'        => 1,
+			'display_webp_method' => 'picture', // <picture> avec repli natif, pas de réécriture serveur requise
+		];
 
-	// N'écrit en base que s'il y a un vrai écart — évite une réécriture de
-	// l'option à chaque chargement d'une page wp-admin.
-	$current = $options->get_all();
-	$diff = array_diff_assoc($desired, array_intersect_key($current, $desired));
-	if ($diff) {
-		$options->set($desired);
+		// N'écrit en base que s'il y a un vrai écart — évite une réécriture de
+		// l'option à chaque chargement d'une page wp-admin.
+		if (!method_exists($options, 'get_all') || !method_exists($options, 'set')) return;
+
+		$current = $options->get_all();
+		if (!is_array($current)) return;
+		// array_diff_assoc convertit ses operandes en chaines : une valeur imbriquee
+		// (tableau) declencherait une conversion et un resultat faux. On ne compare
+		// donc que des valeurs scalaires.
+		$comparable = array_filter(array_intersect_key($current, $desired), 'is_scalar');
+		$diff = array_diff_assoc($desired, $comparable);
+		if ($diff) {
+			$options->set($desired);
+		}
+	} catch (\Throwable $e) {
+		// Jamais bloquant : on trace et on laisse wp-admin fonctionner.
+		error_log('[monauto] configuration Imagify ignoree : ' . $e->getMessage());
 	}
 });
 
