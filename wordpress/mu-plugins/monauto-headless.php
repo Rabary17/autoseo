@@ -252,6 +252,32 @@ add_filter('rest_prepare_user', function ($response, $user) {
 }, 10, 2);
 
 /* ==========================================================================
+   2bis. Conflit WordPress / zlib.output_compression
+   ========================================================================== */
+
+// PAGE BLANCHE dans wp-admin (constate le 2026-08-24, editeur d'article).
+//
+// Cet hebergement (Infomaniak) a `zlib.output_compression` actif au niveau PHP.
+// C'est donc PHP qui possede le tampon de compression de la reponse. Or
+// WordPress accroche `wp_ob_end_flush_all()` sur `shutdown` et tente d'y vider
+// SES propres tampons : l'appel echoue, d'ou la notice
+//
+//   ob_end_flush(): Failed to send buffer of zlib output compression
+//
+// deux fois par requete, et surtout une reponse qui peut partir VIDE — un
+// statut 200 avec un corps absent, c'est-a-dire exactement une page blanche.
+//
+// Le correctif standard consiste a ne pas laisser WordPress vider un tampon
+// qui ne lui appartient pas : la compression reste geree par PHP, qui la
+// termine correctement de lui-meme en fin de requete.
+//
+// Conditionne a `zlib.output_compression` : sur un hebergement sans cette
+// directive, le comportement natif de WordPress reste inchange.
+if (ini_get('zlib.output_compression')) {
+	remove_action('shutdown', 'wp_ob_end_flush_all', 1);
+}
+
+/* ==========================================================================
    3. Sécurisation du back-office (site headless : seul le frontend Next.js
       est public — voir skills/developpement.md section 2)
    ========================================================================== */
