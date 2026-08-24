@@ -56,11 +56,24 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  const tagUrls: MetadataRoute.Sitemap = tags.map((t) => ({
-    url: `${SITE_URL}/tag/${t.slug}/`,
-    changeFrequency: "weekly",
-    priority: 0.4,
-  }));
+  // Les pages /tag/ sont en `noindex, follow` (decision du 2026-08-06 : pages
+  // listing fines, proches-doublons, qui gonflaient l'index sans valeur
+  // propre). Les declarer AU SITEMAP etait donc contradictoire — un sitemap dit
+  // « indexe ceci », la page repond « ne m'indexe pas ».
+  //
+  // Le cout etait mesurable, constate sur l'export GSC du 2026-08-24 : 332 des
+  // 697 URLs du sitemap etaient des pages tag noindex, soit 48 % du sitemap.
+  // Google en avait deja explore 73 pour decouvrir qu'elles etaient noindex, et
+  // 327 URLs restaient « Detectee, actuellement non indexee » faute de budget
+  // d'exploration — avec seulement 20 a 60 requetes/jour et un temps de reponse
+  // monte a 1,2-2,1 s, chaque requete gaspillee retarde d'autant la decouverte
+  // d'un vrai article.
+  //
+  // Les liens internes vers /tag/ restent en place : `follow` suffit a ce que
+  // Google les emprunte pour circuler dans le maillage. Le sitemap n'est pas le
+  // bon outil pour ca.
+  const tagUrls: MetadataRoute.Sitemap = [];
+  void tags;
 
   const authorUrls: MetadataRoute.Sitemap = authors.map((a) => ({
     url: `${SITE_URL}/auteur/${a.slug}/`,
