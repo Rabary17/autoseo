@@ -16,7 +16,10 @@ export const revalidate = 3600;
 
 export const metadata: Metadata = {
   ...pageMeta({
-    title: `${SITE_NAME} — Car and mobility guides`,
+    // Sans le nom du site : le `template` du layout racine l'ajoute deja
+    // (`%s — techcars`). L'inclure ici produisait « techcars — Car and
+    // mobility guides — techcars ».
+    title: "Car and mobility guides",
     description:
       "Practical guides on motorhomes, vans, commercial vehicles, fuel and cycling in France: rules, costs and buying advice.",
     path: "/en/",

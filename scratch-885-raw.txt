@@ -165,7 +165,7 @@ En revanche, évitez le GPL si.
 
 <!-- wp:list -->
 <ul>
-<li>Vous faites souvent de longs trajets (plus de 300 km d’affilée).</li>
+<li>Vous faites souvent de longs trajets (plus de 300 km d’affilée) .</li>
 <li>Vous habitez dans une zone rurale mal desservie en stations GPL.</li>
 <li>Vous roulez beaucoup sur autoroute. L’autonomie réduite du GPL peut alors devenir pénalisante.</li>
 <li>Vous cherchez un véhicule neuf. En effet, les modèles GPL sont rares en concession.</li>

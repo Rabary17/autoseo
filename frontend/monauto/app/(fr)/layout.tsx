@@ -6,7 +6,7 @@ import CookieConsent from "@/components/CookieConsent";
 import ReadingProgress from "@/components/ReadingProgress";
 import BackToTop from "@/components/BackToTop";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
-import "./monauto.css";
+import "../monauto.css";
 
 const DEFAULT_DESCRIPTION =
   "Le média expert de l'auto et de la mobilité : entretien, pannes, marques, essais, démarches. Guides vérifiés, sourcés et tenus à jour par une rédaction identifiée.";
@@ -54,6 +54,17 @@ export const viewport: Viewport = {
 // prefers-color-scheme système. Voir components/ThemeToggle.tsx pour la bascule.
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('monauto-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
 
+// Layout racine FRANÇAIS. Depuis le 2026-08-21 le site a DEUX layouts racines,
+// un par langue, via des groupes de routes `(fr)` et `(en)`. Les parenthèses
+// sont invisibles dans l'URL : aucune adresse ne change.
+//
+// Pourquoi cette structure : Next.js n'autorise pas à redéfinir `<html>` dans un
+// layout imbriqué. Servir `<html lang="en">` sur les pages traduites exigeait
+// donc soit un segment dynamique `[locale]` (impossible ici, le français n'a pas
+// de préfixe — voir lib/i18n.ts), soit deux layouts racines. C'est la seule
+// façon correcte de déclarer la langue, et publier de l'anglais annoncé comme
+// français serait un défaut réel, pour le référencement comme pour les lecteurs
+// d'écran.
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
