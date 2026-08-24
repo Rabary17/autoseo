@@ -86,7 +86,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     });
     // Une seule langue servie : pas de balises hreflang du tout. Les poser
     // avec un unique `fr` et un `x-default` identique n'apporte rien et ajoute
-    // du bruit dans le <head> de 94 pages.
+    // du bruit dans le <head> de 94 pages. Seuil a 2 : x-default + fr pointent
+    // la meme URL, une 3e cle signifie donc qu'une traduction existe vraiment.
     if (Object.keys(alt.languages).length <= 2) return meta;
     return { ...meta, alternates: { canonical: alt.canonical, languages: alt.languages } };
   }

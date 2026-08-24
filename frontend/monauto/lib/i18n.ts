@@ -226,8 +226,15 @@ export interface AlternateLinks {
  * `alternates` d'un article, utilisable depuis les deux côtés : on passe
  * toujours le slug de la SOURCE française, qui est la clé de l'index.
  *
- * `x-default` pointe le français : langue d'origine, la plus complète, marché
- * principal du site (voir config/i18n.json).
+ * ORDRE DES CLÉS SIGNIFICATIF — constaté en production le 2026-08-21 :
+ * Next.js DÉDOUBLONNE `alternates.languages` par URL et ne garde que la
+ * dernière entrée d'une même adresse. `x-default` et le français pointent
+ * forcément la même page, l'un des deux disparaît donc silencieusement.
+ *
+ * On place `x-default` AVANT le français pour que ce soit le code de langue
+ * explicite qui survive : Google exige un hreflang auto-référent avec code de
+ * langue, alors que `x-default` est optionnel. Le compromis est assumé dans ce
+ * sens, pas l'inverse.
  */
 export function alternatesForArticle(
   frSlug: string,
@@ -235,9 +242,10 @@ export function alternatesForArticle(
   localeCourante: string = DEFAULT_LOCALE
 ): AlternateLinks {
   const urlFr = `${siteUrl}/${frSlug}/`;
+  // x-default d'abord, français ensuite : voir la note sur le dédoublonnage.
   const languages: Record<string, string> = {
-    [hreflangCode(DEFAULT_LOCALE)]: urlFr,
     "x-default": urlFr,
+    [hreflangCode(DEFAULT_LOCALE)]: urlFr,
   };
   let canonical = urlFr;
 
@@ -259,8 +267,8 @@ export function alternatesForTaxonomy(
 ): AlternateLinks {
   const urlFr = `${siteUrl}${cheminFr}`;
   const languages: Record<string, string> = {
-    [hreflangCode(DEFAULT_LOCALE)]: urlFr,
     "x-default": urlFr,
+    [hreflangCode(DEFAULT_LOCALE)]: urlFr,
   };
   let canonical = urlFr;
   for (const [locale, chemin] of Object.entries(cheminsParLocale)) {
