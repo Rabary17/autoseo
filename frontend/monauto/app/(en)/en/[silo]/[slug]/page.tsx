@@ -38,9 +38,10 @@ type Props = { params: Promise<{ silo: string; slug: string }> };
 export const revalidate = 3600;
 
 export async function generateStaticParams() {
+  // Articles uniquement : les sous-hubs restent rendus à la demande (moins de
+  // 25 pages, et `dynamicParams` est actif par défaut). Tous connus de
+  // l'index, donc aucun appel réseau au build.
   const params: { silo: string; slug: string }[] = [];
-  for (const silo of [] as never[]) void silo;
-  // Sous-hubs puis articles, tous connus de l'index — aucun appel réseau.
   for (const s of articlesFor(LOCALE)) {
     const chemin = pathForArticle(s);
     if (!chemin) continue;
