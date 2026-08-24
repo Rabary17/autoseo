@@ -546,15 +546,38 @@ add_action('init', function () {
 		'supports' => ['title'],
 		'capability_type' => 'monauto_lead',
 		'map_meta_cap' => true,
+		// Uniquement des capacites PRIMITIVES ici.
+		//
+		// Avec `map_meta_cap => true`, WordPress derive lui-meme les
+		// META-capacites (`edit_post`, `read_post`, `delete_post`) a partir des
+		// primitives, et il exige un identifiant de publication pour les
+		// evaluer. Les declarer dans ce tableau les fait passer pour
+		// primitives : WordPress appelle alors `map_meta_cap()` sans
+		// identifiant et emet un `_doing_it_wrong` a chaque verification.
+		//
+		// Constate le 2026-08-24 dans le log PHP : une CINQUANTAINE de notices
+		// « map_meta_cap a ete appelee de facon incorrecte » par chargement de
+		// page admin, suivies de « ob_end_flush(): Failed to send buffer of zlib
+		// output compression » — l'hebergement ayant zlib.output_compression
+		// actif, ce volume de notices corrompt la reponse et produit une PAGE
+		// BLANCHE dans l'editeur d'article.
+		//
+		// Le declencheur est la construction du menu d'administration, qui
+		// verifie les capacites de TOUS les types de contenu enregistres : le
+		// defaut touche donc toutes les pages de wp-admin, pas seulement les
+		// inscriptions newsletter.
 		'capabilities' => [
-			'edit_post' => 'manage_options',
-			'read_post' => 'manage_options',
-			'delete_post' => 'manage_options',
-			'edit_posts' => 'manage_options',
-			'edit_others_posts' => 'manage_options',
-			'publish_posts' => 'manage_options',
-			'read_private_posts' => 'manage_options',
-			'delete_posts' => 'manage_options',
+			'create_posts'           => 'manage_options',
+			'edit_posts'             => 'manage_options',
+			'edit_others_posts'      => 'manage_options',
+			'edit_private_posts'     => 'manage_options',
+			'edit_published_posts'   => 'manage_options',
+			'publish_posts'          => 'manage_options',
+			'read_private_posts'     => 'manage_options',
+			'delete_posts'           => 'manage_options',
+			'delete_others_posts'    => 'manage_options',
+			'delete_private_posts'   => 'manage_options',
+			'delete_published_posts' => 'manage_options',
 		],
 	]);
 });
