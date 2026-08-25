@@ -308,14 +308,30 @@ export function frenchPathForLocalSlug(slug: string): string | null {
   return null;
 }
 
+// BUG CORRIGÉ le 2026-08-25 : les deux fonctions ci-dessous prenaient un slug
+// FRANÇAIS en entrée (c'est ce que le mu-plugin WordPress envoie, voir
+// api/revalidate/route.ts) mais interrogeaient `PAR_SLUG_TRADUIT`, qui est
+// indexé par le slug TRADUIT — jamais de correspondance possible pour un
+// appel réel. Trouvé en implémentant le sélecteur de langue (LangSwitch) :
+// une page française d'un article pourtant traduit et publié proposait quand
+// même un lien EN vers l'accueil au lieu de l'article. Conséquence côté
+// webhook de revalidation (silencieuse, jamais fait échouer la requête) :
+// une traduction publiée n'était jamais revalidée immédiatement, seulement
+// après expiration du cache ISR (1h) — pas une fuite de contenu, juste un
+// délai de fraîcheur plus long que prévu.
 export function translatedPathForSlug(slug: string): string | null {
-  const art = PAR_SLUG_TRADUIT.get(slug);
-  if (art) return pathForArticle(art);
+  const byLocale = PAR_SLUG_FR.get(slug);
+  if (byLocale) {
+    for (const t of byLocale.values()) {
+      const chemin = pathForArticle(t);
+      if (chemin) return chemin;
+    }
+  }
 
   for (const [locale, silos] of TAXONOMIE_PAR_LOCALE) {
     for (const silo of silos) {
-      if (silo.slug === slug) return `${urlPrefix(locale)}/${silo.slug}/`;
-      const sc = silo.sousCocons.find((x) => x.slug === slug);
+      if (silo.siloFr === slug) return `${urlPrefix(locale)}/${silo.slug}/`;
+      const sc = silo.sousCocons.find((x) => x.frSlug === slug);
       if (sc) return `${urlPrefix(locale)}/${silo.slug}/${sc.slug}/`;
     }
   }
@@ -328,7 +344,7 @@ export function translatedPathForSlug(slug: string): string | null {
  * navigation jusqu'à expiration de leur propre cache.
  */
 export function localeListingPathsForSlug(slug: string): string[] {
-  const art = PAR_SLUG_TRADUIT.get(slug);
+  const art = [...(PAR_SLUG_FR.get(slug)?.values() ?? [])][0];
   if (!art) return [];
   const prefixe = urlPrefix(art.locale);
   const silo = silosFor(art.locale).find((s) => s.siloFr === art.siloFr);
