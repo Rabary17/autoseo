@@ -2,6 +2,24 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-25 (suite 2) : parité visuelle FR/EN + sélecteur de langue dans les 2 menus, 2 bugs supplémentaires trouvés et corrigés
+
+Demande explicite de l'utilisateur (« verifie le design en stp, il faut qu'il soit idem qu'au fr. met le bouton switch lang dans le menu aussi »), juste après l'intervention EN précédente (entrée ci-dessous).
+
+**Bug trouvé en comparant les 2 designs avant de commencer** : le menu ET le pied de page anglais (`app/(en)/layout.tsx`, communs à TOUTE page EN) listaient les 6 sections sans vérifier leur statut réel — même défaut que celui déjà corrigé sur les pages de listing, mais dans la navigation persistante cette fois. 5 des 6 liens du menu renvoyaient un vrai 404, sur chaque page anglaise déjà en ligne y compris. Corrigé avec `lib/i18n-live.ts` (déjà écrit pour l'intervention précédente).
+
+**Parité visuelle** : `app/(en)/en/page.tsx` reprend maintenant la structure de `app/(fr)/page.tsx` (hero avec la même photo, `silo-grid` avec vignettes partagées indexées par slug FRANÇAIS — `SiloThumb` se dégrade proprement si le fichier n'existe pas —, `trust-grid` traduit). `app/(en)/layout.tsx` : pied de page passé à 4 colonnes comme `Footer.tsx` (les pages FAQ/À propos/CGU/Cookies pas encore traduites renvoient vers leur version française, même choix déjà assumé avant pour mentions-légales/confidentialité). **Volontairement pas repris** : le rail « derniers guides » et le bandeau newsletter — `ArticleCard`/`NewsletterForm` sont construits pour du contenu français (liens `/${slug}/`, `/auteur/${slug}/`, cible newsletter pensée pour un lectorat FR), les reprendre tel quel aurait réintroduit des liens cassés ou une décision non tranchée (pertinence d'un opt-in newsletter FR pour un lecteur anglophone).
+
+**Sélecteur de langue** (`components/LangSwitch.tsx`, nouveau, + `lib/i18n.ts::frenchPathForLocalSlug`) : composant client (seul moyen de connaître la page courante depuis Header/le layout EN, partagés sans contexte de route), ajouté dans les deux menus à côté du bouton thème. Résolution best-effort par slug courant (articles + hubs des deux côtés), replie sur l'accueil de la langue cible si la page courante n'a pas de traduction ou n'est pas un type de page couvert (sous-hub EN→FR notamment).
+
+**2e bug trouvé en vérifiant le sélecteur en production** (pas supposé correct après un `tsc` propre) : `lib/i18n.ts::translatedPathForSlug` et `localeListingPathsForSlug` indexaient sur `PAR_SLUG_TRADUIT` (slug TRADUIT) alors qu'elles reçoivent un slug FRANÇAIS — un lien FR→EN sur un article pourtant traduit et publié retombait sur l'accueil EN au lieu de l'article. Bug préexistant (introduit le 21/08, pas par cette intervention), avec un effet de bord réel côté webhook de revalidation (`api/revalidate/route.ts`, silencieux, jamais fait échouer la requête) : une traduction publiée n'était jamais revalidée immédiatement, seulement après expiration du cache ISR (1h). Corrigé en réindexant sur `PAR_SLUG_FR` (déjà exporté, déjà la bonne structure) — comportement des deux fonctions inchangé pour tout appelant, seule la correspondance interne était fausse.
+
+**Vérifié en production après déploiement (3 commits : `912ecb5`, `824a273`)** : accueil FR (hero+grille+trust inchangés, `Read in English` → `/en/`), accueil EN (même structure, hero/grille/trust traduits), menu et footer EN sans lien mort (seule la section réellement publiée apparaît), sélecteur FR→EN et EN→FR testés dans les 2 sens sur un article ET sur un hub — résolvent chaque fois vers la page exacte, pas juste l'accueil.
+
+**2 défauts mineurs déjà notés (entrée précédente) toujours pas corrigés** : signature d'auteur = email brut, `&#038;` non décodé dans le titre du hub `motorhomes-campervans`.
+
+**Prochaine action concrète** : inchangée par rapport à l'entrée précédente — décider si on programme le reste du stock anglais, et si les 2 défauts mineurs doivent être corrigés avant.
+
 ## 2026-08-25 (suite) : lancement EN — branche déjà déployée par ailleurs le 24/08, bug de listing publique trouvé et corrigé (404 réels en prod)
 
 Demande explicite de l'utilisateur (« on lance aussi la partie version EN »), en suivant la séquence en 4 étapes documentée ci-dessous (entrée du 21/08). **Découverte avant d'agir : l'étape 1 (déployer la branche) était déjà faite** — `main..i18n-frontend-en` ne montre aucun commit d'écart, et `main` contient en plus **une dizaine de commits du 2026-08-24** (hreflang, décodage HTML, CSS édition anglaise, webhook de revalidation FR→EN, correctifs mu-plugin `zlib.output_compression`/capacités CPT) **jamais consignés dans STATE.md**. Deux autres sessions Claude Code tournaient en parallèle sur ce même projet pendant cette intervention (`tonton-maj-d1`, `autoseo-81`, visibles via ListAgents) — probablement la source de ce travail non documenté. Aucune modification concurrente de STATE.md constatée après vérification.
@@ -736,7 +754,8 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 <!-- autopublish:report:start -->
 ## Autopublish — dernier run : 2026-08-25
 - Phase : 2 — silo en cours : Vélo & nouvelles mobilités
-- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 3 ⚠️
+- Programmées : 1 — bloquées (draft) : 0 — erreurs techniques : 2 ⚠️
+- Dernier article programmé pour : 2026-08-24T08:00:00.000Z
 - Détail complet : [logs/autopublish/2026-08-25.md](logs/autopublish/2026-08-25.md)
 <!-- autopublish:report:end -->
 
