@@ -104,6 +104,7 @@ async function collectSourceArticles(rows, siloName) {
           return { question, answer: rest.join(' | ') };
         }),
         sources: p.acf.sources || '',
+        featuredMedia: p.featured_media || 0,
       },
     });
   }
@@ -271,6 +272,7 @@ async function collectSourcePages(index, articles) {
           return { question, answer: rest.join(' | ') };
         }),
         sources: (p.acf && p.acf.sources) || '',
+        featuredMedia: p.featured_media || 0,
       },
     });
   }
@@ -346,6 +348,9 @@ async function passePages(pages, index, pathMap) {
         title: traduit.title, slug: page.traduit.slug,
         content: traduit.content_gutenberg, excerpt: traduit.excerpt,
         status: 'draft',
+        // Voir le commentaire équivalent dans traduireArticles() : image à la
+        // une jamais reprise jusqu'ici, même défaut sur les hubs/sous-hubs.
+        featured_media: page.source.featuredMedia || undefined,
         acf: {
           tldr: traduit.excerpt, sources: page.source.sources,
           faq: traduit.faq.map(f => `${f.question} | ${f.answer}`).join('\n'),
@@ -459,6 +464,11 @@ async function passeContenu(articles, index, pathMap) {
         content: traduit.content_gutenberg,
         excerpt: traduit.excerpt,
         status: 'draft', // jamais publié ici — décision distincte
+        // Image à la une jamais reprise jusqu'ici (2026-08-25) : `article.source`
+        // ne la capturait pas au collect, silencieusement — aucun article traduit
+        // n'a d'image à la une, sans erreur ni avertissement. Même image que la
+        // source française, WordPress la sert déjà dans plusieurs tailles.
+        featured_media: article.source.featuredMedia || undefined,
         acf: {
           tldr: traduit.excerpt,
           sources: article.source.sources,

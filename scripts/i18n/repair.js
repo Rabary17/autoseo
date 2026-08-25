@@ -8,8 +8,13 @@
 // longs). Les retraduire serait repayer pour rien — le texte est bon, seule la
 // structure est a reparer, et elle l'est sans ambiguite en code.
 //
-// Ne touche QUE le contenu et les champs meta. Ne change jamais le statut, ne
-// publie rien, ne retraduit rien.
+// Ne touche QUE le contenu, les champs meta et l'image à la une. Ne change
+// jamais le statut, ne publie rien, ne retraduit rien.
+//
+// Image à la une (ajouté le 2026-08-25) : `translate.js` ne la reprenait pas
+// du tout de la source française jusqu'à ce jour — corrigé pour les nouvelles
+// traductions, mais les ~60 déjà insérées restent sans image tant que ce
+// script ne les répare pas une fois.
 //
 // Usage :
 //   node scripts/i18n/repair.js [--locale=en]            # rapport seul
@@ -34,12 +39,12 @@ const LOCALE = arg('locale') || config.pilote.locale;
     const t = byLocale[LOCALE];
     if (t && t.wp_id) cibles.push({ type: 'posts', wpId: t.wp_id, label: t.slug, frSlug });
   }
-  for (const byLocale of Object.values(index.taxonomie || {})) {
+  for (const [siloFrSlug, byLocale] of Object.entries(index.taxonomie || {})) {
     const taxo = byLocale[LOCALE];
     if (!taxo) continue;
-    if (taxo.wp_id) cibles.push({ type: 'pages', wpId: taxo.wp_id, label: taxo.slug });
-    for (const t of Object.values(taxo.sous_cocons || {})) {
-      if (t.wp_id) cibles.push({ type: 'pages', wpId: t.wp_id, label: t.slug });
+    if (taxo.wp_id) cibles.push({ type: 'pages', wpId: taxo.wp_id, label: taxo.slug, frSlug: siloFrSlug });
+    for (const [scFrSlug, t] of Object.entries(taxo.sous_cocons || {})) {
+      if (t.wp_id) cibles.push({ type: 'pages', wpId: t.wp_id, label: t.slug, frSlug: scFrSlug });
     }
   }
 
@@ -59,17 +64,25 @@ const LOCALE = arg('locale') || config.pilote.locale;
     const meta = { meta_title: (p.acf || {}).meta_title || '', meta_description: (p.acf || {}).meta_description || '' };
     const clips = sanitize.clipMetaFields(meta);
 
-    if (!blocs.repairs.length && !clips.length) continue;
+    let featuredMedia = null;
+    if (!p.featured_media && c.frSlug) {
+      const source = await wp.findBySlug(c.type, c.frSlug).catch(() => null);
+      if (source && source.featured_media) featuredMedia = source.featured_media;
+    }
+
+    if (!blocs.repairs.length && !clips.length && !featuredMedia) continue;
 
     console.log(`${c.label} (#${c.wpId})`);
     for (const r of blocs.repairs) console.log(`   bloc : ${r}`);
     for (const k of clips) console.log(`   meta : ${k}`);
+    if (featuredMedia) console.log(`   image à la une : absente, reprise de la source (#${featuredMedia})`);
     repares++;
 
     if (!APPLY) continue;
     const payload = {};
     if (blocs.repairs.length) payload.content = blocs.html;
     if (clips.length) payload.acf = meta;
+    if (featuredMedia) payload.featured_media = featuredMedia;
     const update = c.type === 'posts' ? wp.updatePost : wp.updatePage;
     await sanitize.withRetry(() => update(c.wpId, payload), { log: m => console.log(`   ${m}`) });
     console.log(`   -> corrige dans WordPress`);
