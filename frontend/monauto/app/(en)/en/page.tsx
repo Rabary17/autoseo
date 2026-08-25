@@ -1,13 +1,23 @@
-// Accueil anglais — /en (2026-08-21).
+// Accueil anglais — /en (2026-08-21, restructuré le 2026-08-25 pour la parité
+// visuelle avec l'accueil française, demande explicite de l'utilisateur).
 //
 // Point d'entrée de la locale : sans lui, les rubriques traduites n'ont aucune
-// page parente et le fil d'Ariane pointe vers du vide. Volontairement sobre :
-// une liste de rubriques, pas une réplique de l'accueil française (qui
-// s'appuie sur des widgets et des listings français).
+// page parente et le fil d'Ariane pointe vers du vide.
+//
+// Reprend la structure de app/(fr)/page.tsx (hero, grille de rubriques, bloc
+// de confiance) et ses classes CSS réelles (`chero`, `silo-grid`,
+// `trust-grid`...) — voir ce fichier pour le modèle. Volontairement PAS
+// repris : le rail « derniers guides » (nécessiterait une carte d'article
+// dédiée EN, `ArticleCard` construit des liens FR en dur — `/${slug}/`,
+// `/auteur/${slug}/`, aucun équivalent anglais) et le bandeau newsletter
+// (cible Zoho pensée pour un lectorat français, pas tranché pour l'anglais).
+// Les deux restent au même endroit dans le code français si on veut les
+// ajouter plus tard.
 import type { Metadata } from "next";
 import Link from "next/link";
-import { silosFor, articlesFor, pathForArticle } from "@/lib/i18n";
-import { livePostSlugs, livePageSlugs } from "@/lib/i18n-live";
+import SiloThumb from "@/components/SiloThumb";
+import { silosFor } from "@/lib/i18n";
+import { livePageSlugs } from "@/lib/i18n-live";
 import { pageMeta } from "@/lib/seo-meta";
 import { SITE_NAME } from "@/lib/site";
 
@@ -30,50 +40,89 @@ export const metadata: Metadata = {
 
 export default async function EnHomePage() {
   const allSilos = silosFor(LOCALE);
-  const allArticles = articlesFor(LOCALE);
-  const [livePages, livePosts] = await Promise.all([
-    livePageSlugs(allSilos.map((s) => s.slug)),
-    livePostSlugs(allArticles.map((a) => a.slug)),
-  ]);
-  // Une rubrique n'est affichée que si son hub est réellement publié : sinon
-  // son propre lien (titre de section) serait mort, même si un article
-  // dessous l'était déjà (ne devrait pas arriver vu l'ordre hub → article du
-  // pipeline, mais on ne présume pas).
+  const livePages = await livePageSlugs(allSilos.map((s) => s.slug));
   const silos = allSilos.filter((s) => livePages.has(s.slug));
-  const articles = allArticles.filter((a) => livePosts.has(a.slug));
 
   return (
-    <div className="wrap-wide">
-      <h1>{SITE_NAME} in English</h1>
-      <p>
-        {articles.length} guides across {silos.length} sections, translated from our French coverage.
-      </p>
+    <>
+      <section className="chero">
+        {/* Même photo que l'accueil française (marque commune) : pas de raison
+            visuelle d'en changer pour la version anglaise. */}
+        <img
+          className="chero__bg"
+          src="/images/accueil-hero-1920.webp"
+          srcSet="/images/accueil-hero-800.webp 800w, /images/accueil-hero-1920.webp 1920w"
+          sizes="100vw"
+          width={1920}
+          height={1440}
+          alt="Orange Porsche 911 seen from the rear three-quarter angle under a blue sky"
+          fetchPriority="high"
+        />
+        <div className="chero__scrim" aria-hidden="true" />
+        <div className="wrap">
+          <p className="eyebrow">Independent media · Cars &amp; mobility</p>
+          <h1 className="chero__title">Cars, explained, tested and compared.</h1>
+          <p className="chero__sub">
+            Maintenance, breakdowns, reliability, reviews and paperwork — expert-verified guides,
+            sourced and kept up to date. Everything you need to maintain and choose your vehicle
+            with confidence.
+          </p>
+          <div className="chero__cta">
+            <Link className="btn btn--primary" href="#sections">
+              Explore sections
+            </Link>
+          </div>
+        </div>
+      </section>
 
-      {silos.map((silo) => {
-        const dedans = articles.filter((a) => a.siloFr === silo.siloFr);
-        return (
-          <section key={silo.slug} className="side-mod">
-            <p className="side-mod__title">
-              <Link href={`/en/${silo.slug}/`}>{silo.nom}</Link>
-            </p>
-            <ul>
-              {dedans.slice(0, 6).map((a) => {
-                const chemin = pathForArticle(a);
-                return chemin ? (
-                  <li key={a.slug}>
-                    <Link href={chemin}>{a.titre}</Link>
-                  </li>
-                ) : null;
-              })}
-            </ul>
-            {dedans.length > 6 && (
+      <div className="wrap">
+        <section className="section" id="sections">
+          <div className="section__head">
+            <h2>{SITE_NAME} in English</h2>
+          </div>
+          <div className="silo-grid">
+            {silos.map((silo) => (
+              <Link key={silo.slug} className="silo" href={`/en/${silo.slug}/`}>
+                <span className="silo__main">
+                  {/* Vignette partagée avec le français : même image, indexée par
+                      le slug FRANÇAIS (seul slug pour lequel un fichier existe,
+                      voir scripts/fetch-silo-images.js), pas le slug traduit. */}
+                  <SiloThumb slug={silo.siloFr} alt={`${silo.nom} icon`} />
+                  <span>
+                    <span className="silo__name">{silo.nom}</span>
+                  </span>
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="section">
+          <div className="section__head">
+            <h2>Why {SITE_NAME}</h2>
+          </div>
+          <div className="trust-grid">
+            <div className="trust">
+              <h3>Real expertise</h3>
               <p>
-                <Link href={`/en/${silo.slug}/`}>All {dedans.length} guides</Link>
+                Content written and reviewed by mechanics and motoring journalists, signed and
+                linked to an expert profile.
               </p>
-            )}
-          </section>
-        );
-      })}
-    </div>
+            </div>
+            <div className="trust">
+              <h3>Verifiable sources</h3>
+              <p>
+                Data from manufacturers, France&apos;s road-safety authority and
+                service-public.fr, cited and dated in every article.
+              </p>
+            </div>
+            <div className="trust">
+              <h3>Always up to date</h3>
+              <p>Rates, intervals and thresholds reviewed every year; the last-updated date is shown on every page.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 }

@@ -288,6 +288,26 @@ export function alternatesForTaxonomy(
  * Couvre aussi les PAGES de rubrique (hub et sous-hub), que le mu-plugin envoie
  * également sous forme de slug plat.
  */
+/**
+ * Chemin FRANÇAIS d'un contenu traduit, à partir de son slug LOCAL — l'inverse
+ * de `translatedPathForSlug`. Sert au sélecteur de langue (`LangSwitch`).
+ *
+ * Couvre les articles et les hubs (le slug WP du hub == le slug du silo côté
+ * français, donc `/${siloFr}/`). Les sous-hubs restent hors périmètre (le
+ * couple silo+sous-cocon français n'est pas indexé par son slug traduit) —
+ * l'appelant replie alors sur l'accueil française, ce qui reste un lien
+ * valide, juste moins précis.
+ */
+export function frenchPathForLocalSlug(slug: string): string | null {
+  const art = PAR_SLUG_TRADUIT.get(slug);
+  if (art) return `/${art.frSlug}/`;
+  for (const silos of TAXONOMIE_PAR_LOCALE.values()) {
+    const silo = silos.find((s) => s.slug === slug);
+    if (silo) return `/${silo.siloFr}/`;
+  }
+  return null;
+}
+
 export function translatedPathForSlug(slug: string): string | null {
   const art = PAR_SLUG_TRADUIT.get(slug);
   if (art) return pathForArticle(art);

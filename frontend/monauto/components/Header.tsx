@@ -1,6 +1,7 @@
 import Link from "next/link";
 import SearchBox from "@/components/SearchBox";
 import ThemeToggle from "@/components/ThemeToggle";
+import LangSwitch from "@/components/LangSwitch";
 import { SILOS } from "@/lib/taxonomy";
 import { getCategories } from "@/lib/wp";
 
@@ -50,6 +51,7 @@ export default async function Header() {
       </nav>
       <div className="appbar__actions">
         <SearchBox />
+        <LangSwitch />
         <ThemeToggle />
       </div>
     </header>
