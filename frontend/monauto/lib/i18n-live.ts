@@ -8,20 +8,25 @@
 // pas encore en ligne : 404 réel constaté en production le 25/08 (59 des 60
 // guides listés sur /en/ pointaient vers du contenu en draft).
 //
-// `getAllPosts`/`getAllPages` (lib/wp.ts) ne renvoient déjà QUE le contenu
-// `status=publish` (comportement par défaut de l'API WP pour une requête non
-// authentifiée, et explicite pour les pages) — et sont déjà mis en cache 15
-// min via `unstable_cache`, donc ce filtre ne coûte aucun appel réseau
-// supplémentaire par rapport à ce que le reste du site fait déjà.
-//
-// Fichier séparé de lib/i18n.ts (et non une fonction ajoutée dedans) pour
-// éviter un cycle d'imports : lib/wp.ts importe déjà depuis lib/i18n.ts.
-import { getAllPosts, getAllPages } from "./wp";
+// ATTENTION, piège déjà tombé dedans une fois : `getAllPosts()`/`getAllPages()`
+// (lib/wp.ts) sont volontairement FRANÇAIS-EXCLUSIF (categories_exclude pour
+// les posts, `!isTranslatedSlug` pour les pages — servent generateStaticParams
+// et les listings FR) donc les réutiliser ici filtrait TOUT le contenu anglais,
+// y compris celui déjà publié. On vérifie donc par slug avec
+// `getPostBySlug`/`getPageBySlug`, qui sont neutres vis-à-vis de la langue
+// (juste `status=publish`, déjà utilisés tels quels par les pages EN
+// elles-mêmes) — un peu plus de requêtes, mais dédupliquées par requête via
+// `cache()` et bornées par le limiteur de concurrence déjà en place.
+import { getPostBySlug, getPageBySlug } from "./wp";
 
-export async function publishedEnSlugs(): Promise<{ posts: Set<string>; pages: Set<string> }> {
-  const [posts, pages] = await Promise.all([getAllPosts(), getAllPages()]);
-  return {
-    posts: new Set(posts.map((p) => p.slug)),
-    pages: new Set(pages.map((p) => p.slug)),
-  };
+export async function livePostSlugs(slugs: string[]): Promise<Set<string>> {
+  const uniq = [...new Set(slugs)];
+  const found = await Promise.all(uniq.map(async (s) => ((await getPostBySlug(s)) ? s : null)));
+  return new Set(found.filter((s): s is string => s !== null));
+}
+
+export async function livePageSlugs(slugs: string[]): Promise<Set<string>> {
+  const uniq = [...new Set(slugs)];
+  const found = await Promise.all(uniq.map(async (s) => ((await getPageBySlug(s)) ? s : null)));
+  return new Set(found.filter((s): s is string => s !== null));
 }

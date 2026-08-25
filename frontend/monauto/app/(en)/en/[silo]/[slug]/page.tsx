@@ -30,7 +30,7 @@ import {
   alternatesForArticle,
   pathForArticle,
 } from "@/lib/i18n";
-import { publishedEnSlugs } from "@/lib/i18n-live";
+import { livePostSlugs } from "@/lib/i18n-live";
 
 const LOCALE = "en";
 
@@ -121,8 +121,9 @@ export default async function EnPage({ params }: Props) {
     // articles traduits ne portent que la catégorie marqueur de langue (voir
     // scripts/i18n/tag-locale-category.js), la hiérarchie éditoriale vit dans
     // l'index.
-    const live = await publishedEnSlugs();
-    const enfants = articlesFor(LOCALE).filter((a) => a.siloFr === r.silo.siloFr && live.posts.has(a.slug));
+    const candidats = articlesFor(LOCALE).filter((a) => a.siloFr === r.silo.siloFr);
+    const livePosts = await livePostSlugs(candidats.map((a) => a.slug));
+    const enfants = candidats.filter((a) => livePosts.has(a.slug));
     return (
       <div className="wrap-wide">
         <Breadcrumb

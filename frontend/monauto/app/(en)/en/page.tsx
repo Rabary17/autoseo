@@ -7,7 +7,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { silosFor, articlesFor, pathForArticle } from "@/lib/i18n";
-import { publishedEnSlugs } from "@/lib/i18n-live";
+import { livePostSlugs, livePageSlugs } from "@/lib/i18n-live";
 import { pageMeta } from "@/lib/seo-meta";
 import { SITE_NAME } from "@/lib/site";
 
@@ -29,13 +29,18 @@ export const metadata: Metadata = {
 };
 
 export default async function EnHomePage() {
-  const live = await publishedEnSlugs();
+  const allSilos = silosFor(LOCALE);
+  const allArticles = articlesFor(LOCALE);
+  const [livePages, livePosts] = await Promise.all([
+    livePageSlugs(allSilos.map((s) => s.slug)),
+    livePostSlugs(allArticles.map((a) => a.slug)),
+  ]);
   // Une rubrique n'est affichée que si son hub est réellement publié : sinon
   // son propre lien (titre de section) serait mort, même si un article
   // dessous l'était déjà (ne devrait pas arriver vu l'ordre hub → article du
   // pipeline, mais on ne présume pas).
-  const silos = silosFor(LOCALE).filter((s) => live.pages.has(s.slug));
-  const articles = articlesFor(LOCALE).filter((a) => live.posts.has(a.slug));
+  const silos = allSilos.filter((s) => livePages.has(s.slug));
+  const articles = allArticles.filter((a) => livePosts.has(a.slug));
 
   return (
     <div className="wrap-wide">

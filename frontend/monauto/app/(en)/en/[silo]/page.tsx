@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { getPageBySlug, decodeEntities } from "@/lib/wp";
 import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import { silosFor, siloBySlug, articlesFor, pathForArticle } from "@/lib/i18n";
-import { publishedEnSlugs } from "@/lib/i18n-live";
+import { livePostSlugs, livePageSlugs } from "@/lib/i18n-live";
 
 const LOCALE = "en";
 
@@ -42,9 +42,13 @@ export default async function EnHubPage({ params }: Props) {
   const page = await getPageBySlug(siloSlug);
   if (!page) notFound();
 
-  const live = await publishedEnSlugs();
-  const articles = articlesFor(LOCALE).filter((a) => a.siloFr === silo.siloFr && live.posts.has(a.slug));
-  const sousCocons = silo.sousCocons.filter((sc) => live.pages.has(sc.slug));
+  const candidats = articlesFor(LOCALE).filter((a) => a.siloFr === silo.siloFr);
+  const [livePosts, livePages] = await Promise.all([
+    livePostSlugs(candidats.map((a) => a.slug)),
+    livePageSlugs(silo.sousCocons.map((sc) => sc.slug)),
+  ]);
+  const articles = candidats.filter((a) => livePosts.has(a.slug));
+  const sousCocons = silo.sousCocons.filter((sc) => livePages.has(sc.slug));
 
   return (
     <div className="wrap-wide">
