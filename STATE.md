@@ -2,6 +2,40 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-25 (suite) : lancement EN — branche déjà déployée par ailleurs le 24/08, bug de listing publique trouvé et corrigé (404 réels en prod)
+
+Demande explicite de l'utilisateur (« on lance aussi la partie version EN »), en suivant la séquence en 4 étapes documentée ci-dessous (entrée du 21/08). **Découverte avant d'agir : l'étape 1 (déployer la branche) était déjà faite** — `main..i18n-frontend-en` ne montre aucun commit d'écart, et `main` contient en plus **une dizaine de commits du 2026-08-24** (hreflang, décodage HTML, CSS édition anglaise, webhook de revalidation FR→EN, correctifs mu-plugin `zlib.output_compression`/capacités CPT) **jamais consignés dans STATE.md**. Deux autres sessions Claude Code tournaient en parallèle sur ce même projet pendant cette intervention (`tonton-maj-d1`, `autoseo-81`, visibles via ListAgents) — probablement la source de ce travail non documenté. Aucune modification concurrente de STATE.md constatée après vérification.
+
+**Étape 2 (vérifier le français) : OK**, accueil FR et `/en/` répondent correctement en prod (`lang` correct sur les deux).
+
+**Bug trouvé en vérifiant l'état réel avant de publier quoi que ce soit** (donc avant même d'atteindre l'étape 3 du plan) : la page `/en/` affichait publiquement **"60 guides across 6 sections"** avec liens cliquables, alors qu'une seule traduction est réellement `status=publish` côté WordPress (`motorhome-speed-limits-law`, wp_id 1605) — **vérifié par un vrai clic, 404 réel** sur `best-compact-van-2026` et sur le hub `shared-mobility`. Cause : `data/i18n-index.json` marque `statut: "traduit"` dès qu'une traduction existe, pas quand elle est publiée ; `lib/i18n.ts` (fonctions `silosFor`/`articlesFor` et la garde `estServable`) ne vérifie jamais le statut WordPress réel, seulement la présence d'un `wp_id`. Ce n'est pas un bug que j'ai introduit — déjà présent dans le travail du 24/08, resté invisible faute de clic réel sur les liens listés.
+
+**Corrigé, 2 tentatives** :
+- 1er correctif (commit `8f98c37`) : nouveau fichier `frontend/monauto/lib/i18n-live.ts`, réutilisant `getAllPosts()`/`getAllPages()` (`lib/wp.ts`) pour croiser les listings avec le statut réel. **Faux** : ces deux fonctions excluent DÉLIBÉRÉMENT le contenu anglais (`categories_exclude` pour les posts, `!isTranslatedSlug` pour les pages — servent les listings français), donc `/en/` est passé de "60 guides" (faux, la plupart en 404) à **"0 guides"** (faux aussi, l'unique article déjà publié disparaissait). Repéré en revérifiant réellement la page après déploiement, pas supposé correct après le `tsc` propre.
+- 2e correctif (commit `7f5d1ed`), qui corrige le premier : vérification par slug via `getPostBySlug`/`getPageBySlug` (`lib/wp.ts`), neutres vis-à-vis de la langue (déjà utilisés tels quels par les pages EN elles-mêmes, donc déjà éprouvés). Appliqué aux 3 points d'affichage de liens (`app/(en)/en/page.tsx`, `app/(en)/en/[silo]/page.tsx`, `app/(en)/en/[silo]/[slug]/page.tsx` branche sous-hub) — pas touché à `lib/i18n.ts` ni aux fonctions utilisées pour le hreflang/la résolution d'article individuel (déjà sûres : testé qu'un article non publié renvoie déjà un vrai 404 Next.js, pas de fuite de contenu draft).
+
+**Vérifié en production après déploiement** : `/en/` affiche maintenant "1 guides across 1 sections" (exactement la réalité), le hub `motorhomes-campervans` et l'article `motorhome-speed-limits-law` s'affichent correctement (breadcrumb, TOC, contenu anglais, aucune fuite de navigation française), plus aucun lien mort trouvé sur ces pages.
+
+**2 défauts mineurs trouvés en passant, non corrigés (hors périmètre de cette intervention)** :
+1. La signature d'auteur sur l'article affiche l'email brut (`andrianina.rabarivelo@gmail.com`) au lieu d'un nom d'affichage — visible publiquement sur la page EN publiée.
+2. Le titre de la page hub `motorhomes-campervans` affiche `&#038;` non décodé au lieu de `&` (le correctif du 24/08 "Décode les entités HTML" ne couvre pas ce cas précis, `<title>`/metadata).
+
+**Arrêté volontairement ici, comme prévu** : je n'ai PAS lancé `scripts/i18n/schedule.js` pour programmer les ~86 pages anglaises restantes — décision à reprendre avec l'utilisateur, la note du 21/08 ci-dessous reste valable telle quelle.
+
+**Prochaine action concrète** : décider si on programme maintenant le reste du stock anglais (52 pages traduites restantes environ, cadence 3/jour déjà prévue dans `scripts/i18n/schedule.js`) et si les 2 défauts mineurs ci-dessus doivent être corrigés avant.
+
+## 2026-08-25 : plan EEAT/présence sociale suite audit techcars.fr (2,5/10) — playbook créé, priorité 1 en attente
+
+Demande explicite de l'utilisateur suite à un audit EEAT externe de techcars.fr (anonymat total en mentions légales, personas auteur non vérifiables, présence sociale nulle) : lister les actions de renforcement EEAT et les consigner dans une feuille de route d'industrialisation, avec un script pour créer automatiquement des comptes sociaux par persona et publier 1 article/jour partout.
+
+**Décision prise (confirmée par l'utilisateur via question directe)** : les personas auteur (Karim Belaïd, Nathalie Moreau, etc.) sont des **personas éditoriales fictives, aucune vraie personne derrière**. Conséquence : refus de construire un script de création automatisée de comptes sociaux par persona — CGU des plateformes interdisent les faux profils individuels (usurpation d'identité, bannissable), et un réseau de faux profils détecté est un signal EEAT **pire** que l'anonymat actuel, pas meilleur. Portée confirmée : playbook généralisable à tout le réseau, techcars.fr en site pilote.
+
+**Nouveau document** : [docs/feuille-de-route-eeat-industrialisation.md](docs/feuille-de-route-eeat-industrialisation.md) — sépare clairement 2 niveaux de confiance à ne jamais confondre : l'**entité éditrice réelle** (doit être 100% vérifiable : mentions légales, SIRET, schema `Organization`) vs les **personas auteur** (outil de structuration de contenu, jamais de preuve d'existence externe fabriquée). Contient le plan en 6 sections : (1) urgence légale/mentions légales — priorité 1, bloque tout le reste ; (2) présence sociale au niveau MARQUE (comptes créés à la main par un humain, pas par persona) ; (3) ce qu'on ne fait pas et pourquoi ; (4) automatisation légitime = cross-posting de contenu une fois les comptes de marque créés (pas création de comptes) ; (5) intégration au calendrier éditorial (décision en attente : étendre `tracking-mots-cles.xlsx` ou fichier séparé) ; (6) checklist de réplication par site.
+
+**Corrections associées** : [skills/geo.md](skills/geo.md) section 3 (retrait de `Person.sameAs` pour les personas, ajout d'une ligne `Organization.sameAs` vers les comptes de marque réels) et [skills/wordpress-publication.md](skills/wordpress-publication.md) section 4 (interdiction explicite de créer un profil social au nom d'une persona).
+
+**Prochaine action concrète** : trancher la section 1 du nouveau doc — existence légale de l'entité derrière techcars.fr (SIRET, adresse, directeur de publication nommé) : à créer si elle n'existe pas encore, ou à me fournir si elle existe déjà, pour que je rédige la nouvelle page mentions légales et le schema `Organization`. Rien d'autre dans le plan n'a d'effet tant que ce point n'est pas traité.
+
 ## 2026-08-21 (suite 2) : i18n etape 3 (frontend) faite sur branche `i18n-frontend-en` — pas encore deployee
 
 Demande explicite de l'utilisateur (« on passe a l'etape 3 du front, fais tres attention »). Travail fait sur une BRANCHE, `main` intact, rien de deploye.
@@ -700,11 +734,10 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-08-20
+## Autopublish — dernier run : 2026-08-25
 - Phase : 2 — silo en cours : Vélo & nouvelles mobilités
-- Programmées : 11 — bloquées (draft) : 7 — erreurs techniques : 2 ⚠️
-- Dernier article programmé pour : 2026-08-23T14:00:00.000Z
-- Détail complet : [logs/autopublish/2026-08-20.md](logs/autopublish/2026-08-20.md)
+- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 3 ⚠️
+- Détail complet : [logs/autopublish/2026-08-25.md](logs/autopublish/2026-08-25.md)
 <!-- autopublish:report:end -->
 
 
