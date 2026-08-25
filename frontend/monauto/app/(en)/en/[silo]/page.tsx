@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { getPageBySlug, decodeEntities } from "@/lib/wp";
 import { pageMeta, stripHtml, truncate } from "@/lib/seo-meta";
 import { silosFor, siloBySlug, articlesFor, pathForArticle } from "@/lib/i18n";
+import { publishedEnSlugs } from "@/lib/i18n-live";
 
 const LOCALE = "en";
 
@@ -41,7 +42,9 @@ export default async function EnHubPage({ params }: Props) {
   const page = await getPageBySlug(siloSlug);
   if (!page) notFound();
 
-  const articles = articlesFor(LOCALE).filter((a) => a.siloFr === silo.siloFr);
+  const live = await publishedEnSlugs();
+  const articles = articlesFor(LOCALE).filter((a) => a.siloFr === silo.siloFr && live.posts.has(a.slug));
+  const sousCocons = silo.sousCocons.filter((sc) => live.pages.has(sc.slug));
 
   return (
     <div className="wrap-wide">
@@ -54,11 +57,11 @@ export default async function EnHubPage({ params }: Props) {
       <h1 dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
       <div className="entry" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
 
-      {silo.sousCocons.length > 0 && (
+      {sousCocons.length > 0 && (
         <section className="side-mod">
           <p className="side-mod__title">Sections</p>
           <ul>
-            {silo.sousCocons.map((sc) => (
+            {sousCocons.map((sc) => (
               <li key={sc.slug}>
                 <Link href={`/en/${siloSlug}/${sc.slug}/`}>{sc.nom}</Link>
               </li>
