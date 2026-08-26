@@ -2,6 +2,26 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-26 (suite) : diagnostic performance de recherche à zéro depuis le 21/08 + cadence de publication réduite à 1/jour, dimanche réservé aux actualités
+
+**Alerte de l'utilisateur** : Search Console "n'affiche plus rien" — crainte d'un impact de mise à jour anti-spam suite au score EEAT 2,5/10 documenté le 25/08. Deux exports fournis : Performance (clics/impressions) et Coverage (pages valides).
+
+**Diagnostic, à partir des données réelles, pas d'une supposition** :
+- **Pas d'action manuelle** (confirmé par l'utilisateur dans Sécurité et actions manuelles).
+- **Pas de désindexation** : le rapport Coverage montre une croissance continue et saine (22 pages valides le 05/08 → 155 le 21/08), aucun signe de recul.
+- **La chute est réelle et confirmée, pas un artefact de délai de rapport** : impressions montées progressivement jusqu'à 363 (13/08), stables 150-200 jusqu'au 20/08, puis **effondrement le 21/08 (127 → 3) et zéro sustained depuis le 22/08** — 4-5 jours de recul au moment du diagnostic, largement au-delà du délai habituel de traitement GSC (2-3 jours), donc pas juste "pas encore rapporté".
+- **Hypothèse investiguée et non confirmée** : la coïncidence de date avec les correctifs mu-plugin du 24/08 (bug "page blanche" WordPress, conflit `zlib.output_compression` pouvant renvoyer un corps de réponse vide avec statut 200 — voir commits `24b9423`/`20c50bc`/`191549b`) était tentante, mais les logs de crawl du frontend (Next.js) sur cette fenêtre ne montrent AUCUNE anomalie de temps de réponse ou de volume qui corroborerait une casse du rendu public — et une page test (`/station-hydrogene-france-carte/`) s'affiche parfaitement aujourd'hui. Le bug documenté semble concentré sur `wp-admin` (construction du menu d'administration), pas sur les réponses REST publiques. **Conclusion honnête : cause non tranchée avec certitude** — candidats restants : volatilité normale de classement d'un site tout jeune (boost initial d'exploration qui s'effondre une fois les vrais signaux de confiance évalués) et/ou réévaluation algorithmique liée aux faiblesses EEAT déjà documentées le 25/08 (aucune action manuelle n'exclut un ajustement algorithmique de type qualité/spam).
+- **Recommandation donnée à l'utilisateur** : ne pas paniquer ni sur-réagir sur la base d'une hypothèse non confirmée ; surveiller si les impressions reprennent dans les 1-2 semaines (confirmerait une cause technique/transitoire) ou restent à zéro (renforcerait l'hypothèse qualité/EEAT, auquel cas le [plan EEAT du 25/08](../docs/feuille-de-route-eeat-industrialisation.md) devient plus urgent) ; continuer le chantier EEAT dans tous les cas.
+
+**Décision utilisateur, indépendamment de la cause exacte** : réduire drastiquement la cadence de publication — **1 article FR/jour + 1 article EN/jour** (au lieu de 5 FR/jour + 3 EN/jour), et **dimanche réservé à 2 articles "actualité"** sur le sujet chaud de la semaine, avec **aucune publication silo/sous-cocon/article régulière ce jour-là** (ni FR ni EN).
+
+**Implémenté** :
+- `scripts/autopublish/lib/scheduler.js` : `PHASE_CAPACITY_PER_DAY[2]` 5 → 1, ajout d'un saut de dimanche dans `computeSchedule` (`skipSundays=true` par défaut, testé isolément avec capacité 1 et 10, avec et sans contrainte `parentDate`).
+- `scripts/i18n/schedule.js` : `PER_DAY` par défaut 3 → 1, même logique de saut de dimanche (`--no-skip-sundays` pour désactiver ponctuellement).
+- Documentation de cadence mise à jour partout où elle était citée — [skills/wordpress-publication.md](skills/wordpress-publication.md) section 6 (+ nouvelle sous-section "Actualités du dimanche"), [skills/seo.md](skills/seo.md), [docs/commandes.md](docs/commandes.md), `.claude/commands/p5-schedule.md` — **plusieurs de ces fichiers étaient déjà obsolètes avant même ce changement** (certains citaient encore "15/jour", jamais mis à jour lors des baisses précédentes du 28/07 et du 03/08).
+
+**Non fait, décision à prendre avec l'utilisateur** : aucun pipeline automatisé n'existe pour générer les 2 actualités du dimanche (contenu "à chaud" incompatible avec le pipeline mots-clés → gating actuel, sourcing différent requis). Les 2 seuls contenus `actus` existants (`nouveaux-vehicules-prioritaires-au-code-de-la-route-des-2026`, `byd-depasse-tesla-en-intentions-d-achat-en-europe-musk-en-cause`) sont hors pipeline, en `draft`. **Premier dimanche concerné à anticiper avant qu'il arrive.**
+
 ## 2026-08-26 : image à la une + sidebar sur les articles EN (2 bugs backend), budget de crawl audité et resserré
 
 **Suite de l'intervention EN de la veille** — demande explicite de l'utilisateur : "tu as oublié la sidebar ainsi que l'image a la une pour les articles en EN".
@@ -771,11 +791,10 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-08-25
+## Autopublish — dernier run : 2026-08-26
 - Phase : 2 — silo en cours : Sport auto & passion
-- Programmées : 3 — bloquées (draft) : 0 — erreurs techniques : 1 ⚠️
-- Dernier article programmé pour : 2026-08-25T17:00:00.000Z
-- Détail complet : [logs/autopublish/2026-08-25.md](logs/autopublish/2026-08-25.md)
+- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 4 ⚠️
+- Détail complet : [logs/autopublish/2026-08-26.md](logs/autopublish/2026-08-26.md)
 <!-- autopublish:report:end -->
 
 
