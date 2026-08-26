@@ -20,7 +20,7 @@ Chaque commande respecte la règle de [skills/gestion-de-projet.md](../skills/ge
 | `/p3-mapping [silo]` | Générer le maillage interne | P1 + P2 du silo terminés | `data/maillage/maillage.json` |
 | `/p4-hubs <silo>` | Rédiger hub + sous-hubs d'un silo | P3 du silo terminé | pages hub/sous-hub (WordPress) |
 | `/p5-articles <silo> <n>` | Produire un batch d'articles (insérés en `draft`) | P4 du silo terminé | pages article WordPress (draft) + `tracking-mots-cles.xlsx` |
-| `/p5-schedule [silo]` | Vérifier le gating SEO et programmer les dates de publication (5/jour max, auteurs assignés) | articles en `draft`/`en rédaction` | `post_status=future` + `post_date` WordPress, `tracking-mots-cles.xlsx` |
+| `/p5-schedule [silo]` | Vérifier le gating SEO et programmer les dates de publication (1/jour par locale max (dimanche exclu), auteurs assignés) | articles en `draft`/`en rédaction` | `post_status=future` + `post_date` WordPress, `tracking-mots-cles.xlsx` |
 | `/p6-indexation` | Rituel hebdo indexation/QA | au moins un silo publié | sitemaps, liste de réécriture |
 
 ## Détail par commande
@@ -54,7 +54,7 @@ Exemple : `/p5-articles Entretien & révision 25`
 Produit un batch d'articles (25 par défaut = 1 session ≤ 1h) à partir des clusters `à faire` de `tracking-mots-cles.xlsx`, en blocs Gutenberg, avec catégorie/tags/image à la une et auteur assignés. Insère en `draft` — ne programme jamais de date ici (voir `/p5-schedule`).
 
 ### `/p5-schedule [silo]`
-Sans argument : traite tous les articles en attente. Applique la checklist de gating SEO (anti-cannibalisation, unicité, schema, sources YMYL...), bloque en `draft` ceux qui échouent, puis programme les autres à raison de 5 publications/jour maximum, hubs et sous-hubs toujours en priorité — voir [skills/wordpress-publication.md](../skills/wordpress-publication.md).
+Sans argument : traite tous les articles en attente. Applique la checklist de gating SEO (anti-cannibalisation, unicité, schema, sources YMYL...), bloque en `draft` ceux qui échouent, puis programme les autres à raison de 1 publication/jour par locale maximum (dimanche exclu, réservé aux actualités), hubs et sous-hubs toujours en priorité — voir [skills/wordpress-publication.md](../skills/wordpress-publication.md).
 
 ### `/p6-indexation`
 Checklist hebdomadaire : sitemap du dernier silo publié, rappel de soumission GSC, QA aléatoire sur 5 articles, détection des pages à réécrire après 90 jours.
@@ -68,6 +68,6 @@ Checklist hebdomadaire : sitemap du dernier silo publié, rappel de soumission G
 /p3-mapping "<silo>"
 /p4-hubs "<silo>"
 /p5-articles "<silo>" 25              (répéter jusqu'à épuisement du silo)
-/p5-schedule "<silo>"                 (gating + programmation des dates, 5/jour max)
+/p5-schedule "<silo>"                 (gating + programmation des dates, 1/jour max, dimanche exclu)
 /p6-indexation                        (en continu, une fois par semaine)
 ```

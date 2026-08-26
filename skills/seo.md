@@ -59,7 +59,7 @@ Le graphe de maillage doit toujours être généré **avant** la rédaction (fic
 
 ## 6. Publication WordPress (planification, gating, auteurs)
 
-Les règles détaillées de génération/insertion WordPress (format Gutenberg, catégories/tags/image à la une natifs, nombre et rôle des comptes auteur, planification des dates de publication à 5 articles/jour max, et checklist de blocage avant publication) sont dans [wordpress-publication.md](wordpress-publication.md) — à lire avant toute commande `/p4-hubs` ou `/p5-articles`.
+Les règles détaillées de génération/insertion WordPress (format Gutenberg, catégories/tags/image à la une natifs, nombre et rôle des comptes auteur, planification des dates de publication à 1 article/jour par locale max — dimanche réservé aux actualités — et checklist de blocage avant publication) sont dans [wordpress-publication.md](wordpress-publication.md) — à lire avant toute commande `/p4-hubs` ou `/p5-articles`.
 
 ## 7. Anti-patterns à éviter
 

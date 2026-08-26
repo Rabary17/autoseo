@@ -62,6 +62,7 @@ Mise en place technique :
 - Nom d'affichage distinct du login (sécurité + crédibilité), photo de profil (avatar) cohérente et propre à chaque persona, bio courte sur la page auteur (spécialité, pas de fausse certification).
 - `post_author` réglé automatiquement selon le silo de l'article au moment de l'insertion (mapping silo → auteur ci-dessus), jamais laissé par défaut sur le compte admin.
 - Ne pas fabriquer de faux titres professionnels réglementés (avocat, expert judiciaire, médecin...) : risque de tromperie et de signal négatif E-E-A-T si détecté, en particulier sur les silos sensibles (D).
+- **Ne jamais créer de profil social externe (LinkedIn, Instagram, X...) au nom d'une persona** : ces personas sont éditoriales, pas de vraies personnes — un tel profil serait un faux compte (usurpation d'identité, bannissable) et un signal EEAT négatif s'il est détecté. La confiance vérifiable se construit au niveau de l'entité éditrice réelle, pas des personas — voir [../docs/feuille-de-route-eeat-industrialisation.md](../docs/feuille-de-route-eeat-industrialisation.md).
 
 ## 5. Règles SEO de blocage (gating) — ce qui NE doit PAS être publié
 
@@ -97,9 +98,15 @@ Publication en **3 phases**, décidé le 2026-07-11 pour remplacer un plafond fi
 
 ### Phase 2 — Rythme de croisière (articles)
 
-- **10 articles/jour** (abaissé de 15 à 10 le 2026-07-28, demande explicite de l'utilisateur), pour **un seul silo à la fois** (cocon publié en continu — jamais en parallèle sur plusieurs silos, ce qui viderait le crawl budget d'un domaine encore jeune).
-- Réévaluation hebdomadaire via `/p6-indexation` : si le taux d'indexation reste sain (pas d'erreurs de crawl anormales, pas d'action manuelle GSC), le rythme peut être **augmenté progressivement** silo après silo — décision explicite de l'utilisateur à chaque palier, jamais automatique.
-- **Conséquence arithmétique à avoir en tête** : à 10 articles/jour en continu, 10 000 articles représentent **~2 ans et 9 mois** (hors phases 0 et 1). C'est le rythme de référence tant qu'aucune autre décision n'est prise ; le plan de niche prévoit une accélération possible sur domaine mature/expiré (voir [plan-auto-mobilite-10000.html](../plan-auto-mobilite-10000.html) section 5) ou une répartition sur plusieurs domaines si le volume doit sortir plus vite.
+- **1 article FR/jour + 1 article EN/jour** (historique : 15 → 10/jour le 2026-07-28, 10 → 5/jour le 2026-08-03, **5 → 1/jour le 2026-08-26**, demande explicite de l'utilisateur — régularité plutôt que volume, décidé après une chute de la performance de recherche à zéro depuis le 2026-08-21, voir STATE.md). Toujours **un seul silo à la fois** (cocon publié en continu — jamais en parallèle sur plusieurs silos).
+- **Dimanche exclu de cette cadence** (2026-08-26) : aucune publication silo/sous-cocon/article régulière un dimanche, ni FR ni EN — voir la section "Actualités du dimanche" ci-dessous. Implémenté dans `scripts/autopublish/lib/scheduler.js` (`computeSchedule`, `skipSundays=true` par défaut) et `scripts/i18n/schedule.js` (même principe, `--no-skip-sundays` pour désactiver si besoin ponctuel).
+- Réévaluation hebdomadaire via `/p6-indexation` : si le taux d'indexation reste sain (pas d'erreurs de crawl anormales, pas d'action manuelle GSC) **et que la performance de recherche montre des signes de reprise**, le rythme peut être **augmenté progressivement** — décision explicite de l'utilisateur à chaque palier, jamais automatique. Ne pas réaugmenter tant que la cause de la chute du 21/08 n'est pas mieux comprise.
+
+### Actualités du dimanche (2026-08-26)
+
+- Le dimanche, à la place du contenu programmatique régulier : **2 articles "actualité"** sur l'actualité chaude de la semaine (FR uniquement, sauf décision contraire).
+- **Aucun pipeline automatisé n'existe encore pour ce type de contenu** — contrairement aux articles de silo (mots-clés → gating → publication), une actualité suppose une source d'information récente et un angle éditorial choisi au cas par cas. Les 2 seuls contenus `actus` existants à ce jour (`nouveaux-vehicules-prioritaires-au-code-de-la-route-des-2026`, `byd-depasse-tesla-en-intentions-d-achat-en-europe-musk-en-cause`) ont été créés hors pipeline et dorment en `draft`.
+- **Décision à prendre avec l'utilisateur avant le premier dimanche concerné** : conception d'un pipeline dédié (recherche d'actualité récente, rédaction, gating adapté — les règles de sourcing de la section 5 s'appliquent aussi à ce contenu) ou production manuelle continue. Ne pas improviser une génération automatique de "actualité" sans validation — le risque d'invention factuelle est plus élevé sur du contenu daté/récent que sur du contenu evergreen déjà sourcé par `data/factuel/*.json`.
 
 ### Ordre de priorité de publication
 

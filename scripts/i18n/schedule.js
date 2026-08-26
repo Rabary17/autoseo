@@ -18,14 +18,15 @@
 // Ce script REFUSE donc d'appliquer sans `--je-confirme-que-le-front-est-pret`.
 // ==================================================================
 //
-// Cadence par defaut : 3 traductions/jour, en plus des 5 articles francais
-// (decision utilisateur 2026-08-18 : « on vise la regularite »). 3/jour plutot
-// que 5 parce que le stock traduit est FINI : 52 pages a 3/jour tiennent 17
-// jours de publication reguliere, contre 10 jours a 5/jour — puis file a sec,
-// exactement le probleme qu'on vient de corriger cote francais.
+// Cadence par defaut : 1 traduction/jour, alignee sur le rythme francais
+// (decision utilisateur 2026-08-26 : cadence reduite sur les deux locales,
+// regularite plutot que volume tant que la performance de recherche FR reste
+// nulle depuis le 21/08 — voir STATE.md). Remplace le 3/jour du 2026-08-18.
+// Dimanche exclu par defaut (comme cote francais, voir scheduler.js) : reserve
+// aux actualites, pas de contenu regulier ce jour-la.
 //
 // Usage :
-//   node scripts/i18n/schedule.js --locale=en --start=2026-09-01 [--per-day=3]
+//   node scripts/i18n/schedule.js --locale=en --start=2026-09-01 [--per-day=1]
 //   node scripts/i18n/schedule.js --locale=en --start=... --apply --je-confirme-que-le-front-est-pret
 const wp = require('../autopublish/lib/wp-client');
 const gating = require('../autopublish/lib/gating');
@@ -41,18 +42,26 @@ const APPLY = process.argv.includes('--apply');
 const FRONT_PRET = process.argv.includes('--je-confirme-que-le-front-est-pret');
 const config = i18n.loadConfig();
 const LOCALE = arg('locale') || config.pilote.locale;
-const PER_DAY = Number(arg('per-day') || 3);
+const PER_DAY = Number(arg('per-day') || 1);
 const START = arg('start');
+const SKIP_SUNDAYS = !process.argv.includes('--no-skip-sundays');
 
 // Memes creneaux horaires que le pipeline francais (scheduler.js) : etales dans
 // la journee plutot que groupes, et decales d'une heure par rapport aux
 // creneaux francais pour ne pas empiler deux publications a la meme minute.
 const HEURES = [9, 12, 15, 18, 21];
 
-function addDays(iso, n) {
-  const d = new Date(`${iso}T00:00:00.000Z`);
-  d.setUTCDate(d.getUTCDate() + n);
-  return d;
+// Meme principe que scheduler.js::dayForSlot cote francais : le dimanche n'a
+// aucune capacite pour ce contenu quand skipSundays est vrai.
+function dayForSlot(startIso, i, perDay, skipSundays) {
+  const day = new Date(`${startIso}T00:00:00.000Z`);
+  let remaining = i;
+  while (true) {
+    if (skipSundays && day.getUTCDay() === 0) { day.setUTCDate(day.getUTCDate() + 1); continue; }
+    if (remaining < perDay) return day;
+    remaining -= perDay;
+    day.setUTCDate(day.getUTCDate() + 1);
+  }
 }
 
 (async () => {
@@ -126,7 +135,7 @@ function addDays(iso, n) {
 
   // Dates
   for (const [i, item] of file.entries()) {
-    const d = addDays(START, Math.floor(i / PER_DAY));
+    const d = dayForSlot(START, i, PER_DAY, SKIP_SUNDAYS);
     d.setUTCHours(HEURES[i % PER_DAY], 0, 0, 0);
     item.date = d.toISOString();
   }

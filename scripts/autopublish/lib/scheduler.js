@@ -1,10 +1,12 @@
 // Calcul de post_date selon skills/wordpress-publication.md section 6 —
-// 3 phases (0 : 10 pages/jour, 1 : pause, 2 : 5 articles/jour), jamais
+// 3 phases (0 : 10 pages/jour, 1 : pause, 2 : 1 article/jour), jamais
 // avant la date du hub/sous-hub parent, heures réparties dans la journée
-// plutôt que tout à minuit. Phase 2 abaissée de 15 à 10/jour le 2026-07-28,
-// puis de 10 à 5/jour le 2026-08-03 (demande explicite de l'utilisateur : le
-// site est en ligne, cadence stable et durable plutôt qu'un pic non tenable).
-const PHASE_CAPACITY_PER_DAY = { 0: 10, 2: 5 }; // phase 1 = pause, pas de file
+// plutôt que tout à minuit. Historique phase 2 : 15 -> 10/jour le 2026-07-28,
+// 10 -> 5/jour le 2026-08-03, **5 -> 1/jour le 2026-08-26** (demande explicite
+// de l'utilisateur — cadence réduite, régularité plutôt que volume tant que
+// la performance de recherche est nulle depuis le 21/08, voir STATE.md du
+// 2026-08-26).
+const PHASE_CAPACITY_PER_DAY = { 0: 10, 2: 1 }; // phase 1 = pause, pas de file
 
 const DAY_START_HOUR = 8;
 const DAY_END_HOUR = 20;
@@ -13,6 +15,13 @@ function addDays(date, days) {
   const d = new Date(date.getTime());
   d.setUTCDate(d.getUTCDate() + days);
   return d;
+}
+
+// Dimanche (UTC) réservé aux actualités (2026-08-26, demande explicite de
+// l'utilisateur) : aucun contenu silo/sous-cocon/article régulier ne doit y
+// être daté — voir skills/wordpress-publication.md section 6.
+function isSunday(date) {
+  return date.getUTCDay() === 0;
 }
 
 // Répartit les créneaux du jour entre 8h et 20h plutôt qu'à minuit pile —
@@ -34,7 +43,22 @@ function timeOfDayForSlot(slotIndexInDay, capacityPerDay) {
 // pour qu'un run hebdomadaire continue l'espacement des dates là où le
 // précédent s'est arrêté, au lieu de recalculer depuis le jour 0 à chaque
 // fois (ce qui écraserait les dates déjà attribuées la semaine précédente).
-function computeSchedule({ phase, phaseStartDate, queue, capacityOverride, startIndex = 0 }) {
+// Jour calendaire (minuit UTC) qui accueille le `i`-ième créneau de la file,
+// en sautant le dimanche quand `skipSundays` est vrai — le dimanche n'a
+// simplement aucune capacité pour ce type de contenu, comme une phase 1.
+function dayForSlot(start, i, capacity, skipSundays) {
+  let day = new Date(start.getTime());
+  day.setUTCHours(0, 0, 0, 0);
+  let remaining = i;
+  while (true) {
+    if (skipSundays && isSunday(day)) { day = addDays(day, 1); continue; }
+    if (remaining < capacity) return day;
+    remaining -= capacity;
+    day = addDays(day, 1);
+  }
+}
+
+function computeSchedule({ phase, phaseStartDate, queue, capacityOverride, startIndex = 0, skipSundays = true }) {
   const capacity = capacityOverride ?? PHASE_CAPACITY_PER_DAY[phase];
   if (!capacity) {
     throw new Error(`scheduler: aucune capacité de publication pour la phase ${phase} (pause ou phase inconnue).`);
@@ -43,16 +67,19 @@ function computeSchedule({ phase, phaseStartDate, queue, capacityOverride, start
 
   return queue.map((item, localIndex) => {
     const i = startIndex + localIndex;
-    const dayOffset = Math.floor(i / capacity);
     const slotInDay = i % capacity;
     const { h, m } = timeOfDayForSlot(slotInDay, capacity);
 
-    let date = addDays(start, dayOffset);
+    const day = dayForSlot(start, i, capacity, skipSundays);
+    let date = new Date(day.getTime());
     date.setUTCHours(h, m, 0, 0);
 
     if (item.parentDate) {
       const parent = new Date(item.parentDate);
-      const minDate = addDays(parent, 1);
+      let minDay = addDays(parent, 1);
+      minDay.setUTCHours(0, 0, 0, 0);
+      while (skipSundays && isSunday(minDay)) minDay = addDays(minDay, 1);
+      const minDate = new Date(minDay.getTime());
       minDate.setUTCHours(h, m, 0, 0);
       if (date < minDate) date = minDate;
     }
