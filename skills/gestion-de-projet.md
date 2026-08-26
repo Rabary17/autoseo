@@ -25,7 +25,9 @@ Règles de méthode pour un projet mené par sessions IA discontinues, potentiel
   - `variantes` — les autres mots-clés du cluster (séparés par `;`)
   - `silo` / `sous_cocon` — rattachement dans le cocon
   - `intention` — Info / Commercial / Transactionnel
-  - `volume_estime` — donnée réelle Haloscan, jamais une estimation à la main
+  - `volume_estime` — donnée réelle Haloscan (variantes filtrées par similarité ≥ 0.5, pas la liste brute non filtrée — voir `scripts/populate-tracking-xlsx.py`), jamais une estimation à la main
+  - `concurrence` — concurrence Haloscan pondérée par volume (0-1), 0.5 si inconnue
+  - `score_opportunite` — `volume_estime * (1 - concurrence)`, la clé de tri de priorité de production (2026-08-26, remplace le volume seul — voir [wordpress-publication.md](wordpress-publication.md) section 6)
   - `url_cible` — URL prévue ou publiée de la page qui couvre ce cluster
   - `auteur` — persona auteur WordPress assigné (A à F, voir [wordpress-publication.md](wordpress-publication.md) section 4)
   - `statut` — `à faire` / `en rédaction` / `programmé` / `publié` / `à réécrire` (`programmé` = post_status WordPress `future`, date fixée mais pas encore en ligne)

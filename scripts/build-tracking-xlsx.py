@@ -20,6 +20,8 @@ cols_doc = [
     ('sous_cocon', 'Sous-cocon (ex: Vidange & filtres).'),
     ('intention', 'Info / Commercial / Transactionnel.'),
     ('volume_estime', 'Volume de recherche réel (source Haloscan), jamais estimé à la main.'),
+    ('concurrence', "Concurrence Haloscan pondérée par volume (0-1, plus bas = moins de concurrence), 0.5 si inconnue."),
+    ('score_opportunite', "volume_estime * (1 - concurrence) — sert au tri de priorité de production, pas le volume seul (2026-08-26)."),
     ('url_cible', 'URL prévue ou publiée qui couvre ce cluster.'),
     ('auteur', "Persona auteur WordPress assigné (A à F, voir skills/wordpress-publication.md section 4)."),
     ('statut', 'à faire / en rédaction / programmé / publié / à réécrire. "programmé" = post_status WordPress future (date fixée, pas encore en ligne).'),
@@ -37,7 +39,8 @@ ws0.column_dimensions['A'].width = 22
 ws0.column_dimensions['B'].width = 90
 
 ws = wb.create_sheet('Suivi')
-headers = ['mot_cle_principal', 'variantes', 'silo', 'sous_cocon', 'intention', 'volume_estime', 'url_cible', 'auteur', 'statut', 'date_publication']
+headers = ['mot_cle_principal', 'variantes', 'silo', 'sous_cocon', 'intention', 'volume_estime',
+           'concurrence', 'score_opportunite', 'url_cible', 'auteur', 'statut', 'date_publication']
 header_fill = PatternFill(start_color='1E2535', end_color='1E2535', fill_type='solid')
 header_font = Font(name='Arial', bold=True, color='FFFFFF')
 for i, h in enumerate(headers, start=1):
@@ -53,6 +56,8 @@ example = [
     'Vidange & filtres',
     'Info',
     94,
+    0.22,
+    73.32,
     '/entretien-revision/vidange-filtres/vidange-prix-moyen/',
     'A — Mécanique & technique',
     'à faire',
@@ -68,7 +73,7 @@ ws.cell(row=2, column=1).comment = Comment(
     'autoseo',
 )
 
-widths = [30, 45, 22, 22, 14, 14, 45, 24, 14, 16]
+widths = [30, 45, 22, 22, 14, 14, 12, 16, 45, 24, 14, 16]
 for i, w in enumerate(widths, start=1):
     ws.column_dimensions[get_column_letter(i)].width = w
 

@@ -24,7 +24,8 @@ Un moteur génératif ne "visite" pas une page comme un lecteur : il extrait des
 | Page avec FAQ | `FAQPage` (question/answer strictement identiques au texte visible) |
 | Guide pas-à-pas (démarches, tutos) | `HowTo` (steps ordonnées) |
 | Comparatif produits/modèles | `Product` + `AggregateRating` si avis réels disponibles (jamais de note inventée) |
-| Page auteur | `Person` (jobTitle, sameAs vers profils vérifiables) |
+| Page auteur | `Person` (jobTitle) — **jamais** de `sameAs` : les personas auteur sont éditoriales, pas de vraies personnes (voir [wordpress-publication.md](../skills/wordpress-publication.md) section 4). Un `sameAs` vers un profil créé pour l'occasion serait un faux profil, pire signal EEAT que son absence — voir [feuille-de-route-eeat-industrialisation.md](../docs/feuille-de-route-eeat-industrialisation.md) |
+| Organisation (site-wide) | `Organization` (`legalName`, `address`, `founder` réels, `sameAs` vers les comptes sociaux de **marque**) — voir [feuille-de-route-eeat-industrialisation.md](../docs/feuille-de-route-eeat-industrialisation.md) |
 | Toutes pages | `BreadcrumbList` reflétant le cocon (`Accueil › Silo › Sous-cocon › Article`) |
 
 Règles strictes :

@@ -885,8 +885,9 @@ function lancerTraductionAutomatique(silosTouches) {
 // Sélectionne, parmi les clusters "à faire"/"en rédaction" d'un GROUPE
 // (silo entier ou un seul sous-cocon), une file interleavée par quota
 // d'intention (~65 % Info / 25 % Commercial / 10 % Transactionnel) et triée
-// par volume décroissant à l'intérieur de chaque intention — voir
-// skills/wordpress-publication.md section 6. Factorisé pour être appliqué
+// par score d'opportunité décroissant (volume élevé, concurrence faible —
+// 2026-08-26, remplace le tri par volume brut seul) à l'intérieur de chaque
+// intention — voir skills/wordpress-publication.md section 6. Factorisé pour être appliqué
 // une fois par sous-cocon (voir pickArticleQueueForSilo ci-dessous), pas
 // seulement une fois pour tout le silo.
 function pickInterleavedQueue(candidates, budget) {
@@ -895,7 +896,7 @@ function pickInterleavedQueue(candidates, budget) {
   const byIntent = {};
   for (const row of candidates) (byIntent[row.intention] ||= []).push(row);
   for (const list of Object.values(byIntent)) {
-    list.sort((a, b) => (Number(b.volume_estime) || 0) - (Number(a.volume_estime) || 0));
+    list.sort((a, b) => (Number(b.score_opportunite) || 0) - (Number(a.score_opportunite) || 0));
   }
 
   const quotas = {};
@@ -925,7 +926,7 @@ function pickInterleavedQueue(candidates, budget) {
   if (selected.length < budget) {
     const remaining = candidates
       .filter(r => !selected.includes(r))
-      .sort((a, b) => (Number(b.volume_estime) || 0) - (Number(a.volume_estime) || 0));
+      .sort((a, b) => (Number(b.score_opportunite) || 0) - (Number(a.score_opportunite) || 0));
     for (const row of remaining) {
       if (selected.length >= budget) break;
       selected.push(row);

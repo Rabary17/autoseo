@@ -124,14 +124,15 @@ function dayForSlot(startIso, i, perDay, skipSundays) {
 
     file.push({
       type: 'posts', wpId: t.wp_id, slug: t.slug, silo: null, rang: 2,
-      sousCocon: row.sous_cocon, volume: Number(row.volume_estime) || 0, frSlug,
+      sousCocon: row.sous_cocon, score: Number(row.score_opportunite) || 0, frSlug,
     });
   }
 
-  // Tri : hub, puis sous-hubs, puis articles par sous-cocon et volume decroissant.
+  // Tri : hub, puis sous-hubs, puis articles par sous-cocon et score d'opportunite
+  // decroissant (2026-08-26, remplace le volume brut seul).
   file.sort((a, b) => a.rang - b.rang
     || String(a.sousCocon || '').localeCompare(String(b.sousCocon || ''))
-    || (b.volume || 0) - (a.volume || 0));
+    || (b.score || 0) - (a.score || 0));
 
   // Dates
   for (const [i, item] of file.entries()) {

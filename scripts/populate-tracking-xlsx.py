@@ -11,6 +11,17 @@
 # volume_estime = volume cumulé du cluster (mot-clé principal + variantes retenues), pas le seul
 # volume du mot-clé de tête, pour permettre un tri par priorité réelle (volume bon / difficulté faible).
 #
+# CORRIGÉ le 2026-08-26 (demande explicite de l'utilisateur, priorité qualité > quantité après
+# un déclassement attribué à un profil "keyword farm") : les variantes étaient piochées dans
+# `candidates` (mots-clés "liés" bruts renvoyés par Haloscan, SANS aucun score de pertinence),
+# pas dans `results` (les mêmes mots-clés mais après le passage de similarité sémantique de
+# Haloscan, avec un vrai score `similarity`). Constaté en conditions réelles : le cluster
+# "assurance voiture sans permis" (volume réel 210) affichait un `volume_estime` de 1 317 846,
+# parce que `candidates` incluait "caisse primaire d'assurance maladie" (611 818/mois) et
+# "direct assurance" (488 200/mois) — deux requêtes sans aucun rapport thématique, seul le mot
+# "assurance" étant commun. Sur 188 seeds audités, 30 (16%) avaient ce défaut. Cette contamination
+# touchait aussi la colonne `variantes` elle-même, pas seulement le volume affiché.
+#
 # IMPORTANT : ce script REGÉNÈRE intégralement l'onglet "Suivi" à chaque exécution (source de
 # vérité = seeds.json éditorial + moteurs-candidats.json 'retenu', jamais l'xlsx lui-même). Pour
 # ne jamais perdre la progression de publication déjà faite par le pipeline autopublish (statut
@@ -44,11 +55,22 @@ import niche_config
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 HEADERS = ['mot_cle_principal', 'variantes', 'silo', 'sous_cocon', 'intention',
-           'volume_estime', 'url_cible', 'auteur', 'statut', 'date_publication']
+           'volume_estime', 'concurrence', 'score_opportunite',
+           'url_cible', 'auteur', 'statut', 'date_publication']
 
 INTENT_LABELS = {'I': 'Info', 'C': 'Commercial', 'T': 'Transactionnel'}
 
 MAX_VARIANTES = 15
+
+# Seuil de similarité Haloscan (0-1) sous lequel un résultat de `results` n'est
+# plus considéré assez proche du mot-clé de tête pour compter dans le cluster —
+# généreux par construction : sur les échantillons audités le 2026-08-26, même
+# le résultat le moins similaire d'un cluster propre restait > 0.75.
+SIMILARITY_MIN = 0.5
+# Concurrence neutre appliquée quand Haloscan n'a renvoyé aucune valeur pour un
+# candidat retenu — ne pas confondre "concurrence inconnue" avec "nulle" (qui
+# survaloriserait à tort) ni "maximale" (qui dévaloriserait à tort).
+DEFAULT_COMPETITION = 0.5
 
 
 def slug(name):
@@ -65,16 +87,31 @@ def load_silo_rows(data_dir, author_map, silo_name):
     with open(path, encoding='utf-8') as f:
         data = json.load(f)
 
+    def as_num(v):
+        return v if isinstance(v, (int, float)) else None
+
     rows = []
     for keyword, entry in data.get('seeds', {}).items():
-        candidates = entry.get('candidates') or []
-        top_variantes = candidates[:MAX_VARIANTES]
+        results = entry.get('results') or []
+        relevant = [r for r in results
+                    if isinstance(r.get('similarity'), (int, float)) and r['similarity'] >= SIMILARITY_MIN]
+        top_variantes = relevant[:MAX_VARIANTES]
 
-        def as_int(v):
-            return v if isinstance(v, (int, float)) else 0
+        seed_volume = as_num(entry.get('volume')) or 0
+        variante_volumes = [as_num(c.get('volume')) or 0 for c in top_variantes]
+        volume_cluster = seed_volume + sum(variante_volumes)
 
-        seed_volume = as_int(entry.get('volume'))
-        volume_cluster = seed_volume + sum(as_int(c.get('volume')) for c in top_variantes)
+        # Concurrence pondérée par volume : un candidat à fort volume pèse plus
+        # dans le score qu'un candidat marginal, plutôt qu'une moyenne simple.
+        weighted = [(as_num(c.get('competition')), as_num(c.get('volume')) or 0)
+                    for c in top_variantes if as_num(c.get('competition')) is not None]
+        if weighted:
+            total_weight = sum(w for _, w in weighted) or len(weighted)
+            concurrence = sum((c or 0) * (w or 1) for c, w in weighted) / total_weight
+        else:
+            concurrence = DEFAULT_COMPETITION
+        score_opportunite = round(volume_cluster * (1 - concurrence), 2)
+
         rows.append({
             'mot_cle_principal': keyword,
             'variantes': ';'.join(c['keyword'] for c in top_variantes),
@@ -82,13 +119,17 @@ def load_silo_rows(data_dir, author_map, silo_name):
             'sous_cocon': entry.get('sub', ''),
             'intention': INTENT_LABELS.get(entry.get('intent'), ''),
             'volume_estime': volume_cluster,
+            'concurrence': round(concurrence, 3),
+            'score_opportunite': score_opportunite,
             'url_cible': '',
             'auteur': author_map.get(silo_name, ''),
             'statut': 'à faire',
             'date_publication': '',
         })
-    # priorité : volume cumulé décroissant (volume bon d'abord), à l'intérieur d'un même silo
-    rows.sort(key=lambda r: r['volume_estime'], reverse=True)
+    # priorité : score d'opportunité décroissant (fort volume + faible concurrence
+    # d'abord — 2026-08-26, remplace le tri par volume brut seul), à l'intérieur
+    # d'un même silo.
+    rows.sort(key=lambda r: r['score_opportunite'], reverse=True)
     return rows
 
 
@@ -106,13 +147,19 @@ def load_moteurs_rows_by_silo(moteurs_json_path, author_map):
     for c in data.get('candidats', []):
         if c.get('statut') != 'retenu':
             continue
+        # Pas de donnée de concurrence pour les candidats programmatiques (validés
+        # par scripts/validate-moteurs-haloscan.js, qui ne la capture pas encore) —
+        # concurrence neutre, comportement équivalent au tri par volume seul.
+        volume_estime = c.get('volume_estime') or 0
         by_silo.setdefault(c['silo'], []).append({
             'mot_cle_principal': c['mot_cle_principal'],
             'variantes': c['variantes'],
             'silo': c['silo'],
             'sous_cocon': c['sous_cocon'],
             'intention': c['intention'],
-            'volume_estime': c.get('volume_estime') or 0,
+            'volume_estime': volume_estime,
+            'concurrence': DEFAULT_COMPETITION,
+            'score_opportunite': round(volume_estime * (1 - DEFAULT_COMPETITION), 2),
             'url_cible': '',
             'auteur': author_map.get(c['silo'], ''),
             'statut': 'à faire',
@@ -130,9 +177,9 @@ def build_all_rows(data_dir, moteurs_json_path, author_map, silo_order):
         editorial_rows = load_silo_rows(data_dir, author_map, silo_name)
         moteurs_rows = moteurs_by_silo.get(silo_name, [])
         rows = editorial_rows + moteurs_rows
-        # priorité : volume cumulé décroissant sur l'ensemble éditorial + programmatique,
-        # pas seulement au sein de chaque source (skills/seo.md section 3 : volume bon d'abord).
-        rows.sort(key=lambda r: r['volume_estime'], reverse=True)
+        # priorité : score d'opportunité décroissant sur l'ensemble éditorial + programmatique,
+        # pas seulement au sein de chaque source (skills/seo.md section 3).
+        rows.sort(key=lambda r: r['score_opportunite'], reverse=True)
         if rows:
             processed_silos.append((silo_name, len(editorial_rows), len(moteurs_rows)))
             all_rows.extend(rows)
@@ -146,10 +193,19 @@ def capture_publish_state(ws):
     autopublish, run.js) pour chaque mot_cle_principal, afin de ne jamais le perdre en
     reconstruisant l'onglet à partir des sources (seeds.json + moteurs-candidats.json) —
     ce script régénère TOUT à chaque run, donc sans cette capture un run relancé après le
-    début de la publication réelle écraserait silencieusement statut/url_cible/date."""
+    début de la publication réelle écraserait silencieusement statut/url_cible/date.
+
+    Lecture par NOM de colonne (pas par index fixe) depuis le 2026-08-26 : la mise en
+    colonnes a changé (ajout concurrence/score_opportunite) et un index en dur se
+    désynchronise silencieusement à chaque futur changement de colonnes."""
+    header_row = next(ws.iter_rows(min_row=1, max_row=1, values_only=True))
+    col = {name: i for i, name in enumerate(header_row)}
     state = {}
     for row in ws.iter_rows(min_row=2, values_only=True):
-        mot_cle, statut, url_cible, date_pub = row[0], row[8], row[6], row[9]
+        mot_cle = row[col['mot_cle_principal']]
+        statut = row[col['statut']]
+        url_cible = row[col['url_cible']]
+        date_pub = row[col['date_publication']]
         if mot_cle and statut and statut != 'à faire':
             state[mot_cle] = {'statut': statut, 'url_cible': url_cible, 'date_publication': date_pub}
     return state
@@ -177,6 +233,21 @@ def main():
 
     old_publish_state = capture_publish_state(ws)
 
+    # Resynchronise la ligne d'en-tête sur HEADERS (2026-08-26) : ce script ne réécrivait
+    # jusqu'ici JAMAIS la ligne 1, seulement les données à partir de la ligne 2 — correct
+    # tant que HEADERS ne change pas, mais silencieusement destructeur le jour où une colonne
+    # est ajoutée (ici concurrence/score_opportunite) : les valeurs continuent de s'écrire
+    # dans l'ordre de HEADERS, mais les libellés d'en-tête restent ceux de l'ancienne liste,
+    # donc tout ce qui suit la nouvelle colonne se retrouve décalé d'une case par rapport à
+    # son libellé — constaté en testant sur une copie avant d'écrire sur le fichier réel.
+    header_fill = PatternFill(start_color='1E2535', end_color='1E2535', fill_type='solid')
+    header_font = Font(name='Arial', bold=True, color='FFFFFF')
+    for i, h in enumerate(HEADERS, start=1):
+        c = ws.cell(row=1, column=i, value=h)
+        c.font = header_font
+        c.fill = header_fill
+        c.alignment = Alignment(horizontal='center')
+
     # Repart d'un onglet Suivi vierge (header conservé) pour éviter les doublons entre deux runs.
     ws.delete_rows(2, ws.max_row)
 
@@ -192,7 +263,7 @@ def main():
         r += 1
 
     ws.freeze_panes = 'A2'
-    widths = [30, 60, 22, 22, 14, 14, 45, 24, 14, 16]
+    widths = [30, 60, 22, 22, 14, 14, 12, 16, 45, 24, 14, 16]
     for i, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
 

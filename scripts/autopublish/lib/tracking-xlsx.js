@@ -15,6 +15,15 @@ const COLUMNS = [
   'sous_cocon',
   'intention',
   'volume_estime',
+  // concurrence/score_opportunite (2026-08-26, demande explicite de
+  // l'utilisateur — priorité à la qualité et aux opportunités sans
+  // concurrence plutôt qu'au volume brut) : voir scripts/score-opportunite.js
+  // et skills/wordpress-publication.md section 6. `concurrence` = concurrence
+  // publicitaire Haloscan brute (0-1, vide si jamais renvoyée) ;
+  // `score_opportunite` = volume_estime * (1 - concurrence), la clé de tri
+  // utilisée par run.js à la place du volume seul.
+  'concurrence',
+  'score_opportunite',
   'url_cible',
   'auteur',
   'statut',
