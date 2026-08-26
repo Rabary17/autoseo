@@ -66,3 +66,18 @@ Les règles détaillées de génération/insertion WordPress (format Gutenberg, 
 - Ne jamais publier un article sans que son hub/sous-hub parent existe déjà (cf. pipeline P1–P6 du plan de niche).
 - Ne jamais publier 10 000 pages d'un coup sur un domaine neuf : ça grille le crawl budget. Respecter la cadence définie dans le plan (300–500 articles/semaine).
 - Ne jamais dupliquer un mot-clé principal sur deux URLs (cannibalisation).
+
+## 8. Budget de crawl — ce qui doit consommer le budget, ce qui ne doit pas
+
+Décision du 2026-08-26 (audit Search Console "Statistiques d'exploration par objectif" de techcars.fr, 772 requêtes sur 4 semaines) : **le budget de crawl doit prioriser les articles, les pages auteur et les images — le reste ne doit consommer que le strict nécessaire.** Playbook généralisable à tout le réseau.
+
+**Bloquer via `robots.txt` (`Disallow`)** — uniquement ce qui est déjà `noindex`/hors sitemap, donc sans aucune perte d'indexation :
+- `/tag/*` : pages tag, `noindex` depuis leur création (voir [wordpress-publication.md](wordpress-publication.md)), retirées du sitemap le 2026-07-30 — 152/772 requêtes (~20%) dans l'audit du 2026-08-26 malgré ce retrait, parce que chaque article les lie encore dans "Sujets liés". Retirer du sitemap ne suffit jamais seul : Google recrawle toute URL qu'il connaît déjà par un lien interne, il faut la bloquer explicitement si elle ne doit vraiment jamais être crawlée.
+- `?_rsc=*` : payloads de prefetch client-side Next.js (App Router), jamais indexables — voir [app/robots.ts](../frontend/monauto/app/robots.ts) pour le détail (2026-08-06, ~56% du budget avant blocage).
+
+**Ne jamais bloquer**, même si le volume de requêtes semble élevé dans un audit :
+- Accueil, pages catégorie/hub, `/rubriques/` : ce sont les pages qui permettent à Google de DÉCOUVRIR les articles. Les bloquer irait contre l'objectif — moins de crawl total, mais aussi moins de découverte du contenu qui compte.
+- Mentions légales, à-propos, FAQ, contact, CGU, confidentialité, cookies : déjà hors sitemap (pas besoin d'y pousser du budget), mais **jamais `noindex` ni bloquées** — elles portent l'identité légale et les signaux EEAT (voir [docs/feuille-de-route-eeat-industrialisation.md](../docs/feuille-de-route-eeat-industrialisation.md)). Un volume de crawl comparable à celui des tags sur ces pages est un trade-off accepté, pas un défaut à corriger.
+- Crawlers IA légitimes (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) — voir [geo.md](geo.md) section 5.
+
+**Avant de bloquer quoi que ce soit d'autre** : vérifier que le contenu est déjà `noindex` ET hors sitemap. Bloquer une page encore indexable la désindexe purement et simplement — ce n'est jamais une optimisation de budget, c'est une perte de contenu.

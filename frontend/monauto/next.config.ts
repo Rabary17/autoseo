@@ -52,6 +52,11 @@ const nextConfig: NextConfig = {
         destination: "/categorie/mobilite-partagee-transports/location-courte-longue-duree/",
         permanent: true,
       },
+      // /favicon.ico : requêté par convention (navigateurs, bots) même quand
+      // <link rel="icon"> pointe ailleurs (voir app/(fr)/layout.tsx, icons:
+      // favicon.png) — confirmé en 404 réel dans l'export Search Console
+      // "Statistiques d'exploration" du 2026-08-25.
+      { source: "/favicon.ico", destination: "/favicon.png", permanent: true },
     ];
   },
   // En-têtes de sécurité manquants sur 100% des pages (audit Screaming Frog du
