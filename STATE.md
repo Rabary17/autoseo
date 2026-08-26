@@ -2,6 +2,25 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-26 : image à la une + sidebar sur les articles EN (2 bugs backend), budget de crawl audité et resserré
+
+**Suite de l'intervention EN de la veille** — demande explicite de l'utilisateur : "tu as oublié la sidebar ainsi que l'image a la une pour les articles en EN".
+
+**2 bugs backend trouvés** (pas des défauts d'affichage — vérifié directement sur WordPress) :
+1. `scripts/i18n/translate.js` ne capturait jamais `featured_media` en collectant la source française, donc aucune des traductions ne pouvait avoir d'image à la une, quoi qu'affiche le frontend. Corrigé pour les futures traductions. Un script existant (`repair.js`, déjà utilisé pour les blocs Gutenberg/champs meta) étendu à la même réparation, **appliqué en une fois aux 102 contenus déjà traduits** — vérifié individuellement (`#1605` : `featured_media` 0 → 1144, identique à la source).
+2. Frontend : `app/(en)/en/[silo]/[slug]/page.tsx` utilisait la classe `entry` pour le corps d'article (aucune règle CSS associée — texte brut non stylisé) au lieu de `prose`, et un `<img>` nu au lieu de `<figure class="article__hero">` (toute la mise en forme réelle — ratio, recadrage — vit sur cette classe). Corrigé + ajout de la colonne latérale (`layout`/`col-main`/`col-side`, structure d'`ArticleView` côté français) : sous-rubriques du silo (filtrées sur le statut réel) et tags WP si présents (actuellement toujours vides côté EN, aucun tag encore posé). Widget de silo et newsletter volontairement absents (même raison que le rail "derniers guides" de l'accueil, voir entrée de la veille).
+
+**Nouveau chantier, même session — budget de crawl** (l'utilisateur a joint un export Search Console "Statistiques d'exploration par objectif", 772 requêtes sur 4 semaines, et demandé de resserrer les règles pour prioriser articles/pages auteur/images) :
+- **152/772 requêtes (~20%) sur des pages tag**, déjà `noindex` et retirées du sitemap le 2026-07-30 — constat clé : retirer du sitemap ne suffit pas, Google recrawle toute URL déjà connue via un lien interne (chaque article les lie encore dans "Sujets liés"). Bloqué via `Disallow: /tag/*` dans `app/robots.ts` (aucune perte d'indexation possible, déjà noindex).
+- `favicon.ico` en 404 réel (aucun fichier ne l'a jamais servi) — redirection triviale ajoutée vers `favicon.png` dans `next.config.ts`.
+- **Décision explicite de NE PAS bloquer** malgré un volume comparable : accueil/pages catégorie/`/rubriques/` (nécessaires à la découverte des articles — les bloquer irait contre l'objectif), et mentions légales/à-propos/FAQ/contact (~150 requêtes aussi, mais déjà hors sitemap et au cœur du chantier EEAT de la veille — les bloquer les désindexerait). Politique écrite dans [skills/seo.md](skills/seo.md) section 8 (nouvelle), généralisable au reste du réseau.
+- Le paramètre `?_rsc=*` (payloads de prefetch Next.js) déjà bloqué depuis le 2026-08-06 (`app/robots.ts`, commit antérieur) — vérifié avant d'agir, rien à refaire.
+- Le motif dominant restant dans l'export (articles crawlés deux fois, avec et sans slash final, 301 vers la version canonique) n'est pas un bug corrigeable côté code : tous les liens internes utilisent déjà systématiquement le slash final — c'est Google qui reteste des variantes d'URL découvertes ailleurs (historique, backlinks). Pas d'action possible ici.
+
+**FR — production des 15 articles** : l'agent lancé la veille a été coupé par une limite de session (reset à minuit Europe/Moscou), après seulement **1 article produit sur 15** (`equipement-obligatoire-circuit`, WP #1918). Relancé le 2026-08-26 avec consigne explicite de revérifier l'état réel avant de continuer (tracking + WordPress) plutôt que de se fier à sa mémoire d'avant coupure. **En cours au moment d'écrire cette entrée** — voir la prochaine entrée pour le résultat final.
+
+**Rappel toujours valable (entrée de la veille)** : décider si on programme le reste du stock anglais (~52 pages), et si les 2 défauts mineurs déjà notés (signature d'auteur = email brut, `&#038;` non décodé) doivent être corrigés avant. Nouveau, mineur, trouvé aujourd'hui : `TableOfContents`/`FaqSection` (composants partagés FR/EN) affichent leurs titres en dur en français ("Sommaire", "Questions fréquentes") même sur les pages anglaises — pas corrigé, pas demandé explicitement.
+
 ## 2026-08-25 (suite 2) : parité visuelle FR/EN + sélecteur de langue dans les 2 menus, 2 bugs supplémentaires trouvés et corrigés
 
 Demande explicite de l'utilisateur (« verifie le design en stp, il faut qu'il soit idem qu'au fr. met le bouton switch lang dans le menu aussi »), juste après l'intervention EN précédente (entrée ci-dessous).
@@ -753,9 +772,9 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 
 <!-- autopublish:report:start -->
 ## Autopublish — dernier run : 2026-08-25
-- Phase : 2 — silo en cours : Vélo & nouvelles mobilités
-- Programmées : 1 — bloquées (draft) : 0 — erreurs techniques : 2 ⚠️
-- Dernier article programmé pour : 2026-08-24T08:00:00.000Z
+- Phase : 2 — silo en cours : Sport auto & passion
+- Programmées : 3 — bloquées (draft) : 0 — erreurs techniques : 1 ⚠️
+- Dernier article programmé pour : 2026-08-25T17:00:00.000Z
 - Détail complet : [logs/autopublish/2026-08-25.md](logs/autopublish/2026-08-25.md)
 <!-- autopublish:report:end -->
 
