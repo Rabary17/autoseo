@@ -228,16 +228,43 @@ export async function getPosts(page = 1, perPage = 12, extra = "") {
   const firstWpPage = Math.floor(offset / SAFE_EMBED_PAGE_SIZE) + 1;
   const lastWpPage = Math.floor((offset + perPage - 1) / SAFE_EMBED_PAGE_SIZE) + 1;
 
+  // Fenêtres demandées EN PARALLÈLE (2026-08-28), plus en séquence : le jeu de
+  // pages WP à demander est connu d'avance, aucune fenêtre ne dépend du
+  // résultat de la précédente pour savoir QUOI demander (contrairement à
+  // getAllPosts/getAllPages, qui apprennent totalPages au fil de l'eau — pas
+  // touchés ici). Toujours borné par le même limiteur de concurrence que le
+  // reste de ce fichier (MAX_CONCURRENT), déjà éprouvé sûr sur cet
+  // hébergement : ça ne change pas la pression sur PHP-FPM, juste le temps
+  // d'attente perçu par le visiteur/Googlebot. Régression mesurée dans
+  // l'export Search Console du 25/08 : temps de réponse moyen passé de
+  // ~250ms à ~1200ms le jour même de l'introduction du fenêtrage séquentiel
+  // (2026-08-05, commit 81ce6a5, nécessaire pour corriger un bug plus grave —
+  // voir ce commit) — resté élevé depuis, jamais reparallélisé jusqu'ici.
+  //
+  // `lastWpPage` peut viser une fenêtre WP qui n'existe pas réellement (ex.
+  // perPage=30 mais seulement 15 posts au total : lastWpPage=3 alors que la
+  // page 2 est déjà la dernière) — la version séquentielle l'évitait via un
+  // arrêt anticipé quand une fenêtre revenait plus courte que prévu, possible
+  // uniquement parce qu'elle attendait le résultat d'une fenêtre avant de
+  // décider de la suivante. En parallèle cette information n'existe pas
+  // encore : `allSettled` tolère donc l'échec (page hors plage = 400 WP) de
+  // toute fenêtre AU-DELÀ de la première comme "fin de la collection", mais
+  // laisse remonter un échec réel de la première fenêtre (jamais silencieux).
+  const wpPages = Array.from({ length: lastWpPage - firstWpPage + 1 }, (_, i) => firstWpPage + i);
+  const outcomes = await Promise.allSettled(
+    wpPages.map((wpPage) =>
+      wpFetch(`/posts?_embed=1&status=publish&page=${wpPage}&per_page=${SAFE_EMBED_PAGE_SIZE}${extra}`)
+    )
+  );
+  if (outcomes[0].status === "rejected") throw outcomes[0].reason;
+
   let total = 0;
   const collected: WpPost[] = [];
-  for (let wpPage = firstWpPage; wpPage <= lastWpPage; wpPage++) {
-    const res = await wpFetch(
-      `/posts?_embed=1&status=publish&page=${wpPage}&per_page=${SAFE_EMBED_PAGE_SIZE}${extra}`
-    );
-    const batch = ((await res.json()) as WpPost[]).map(decodeEmbeds);
-    total = Number(res.headers.get("X-WP-Total") ?? 0);
+  for (const outcome of outcomes) {
+    if (outcome.status === "rejected") continue; // fenêtre hors plage, fin de collection
+    const batch = ((await outcome.value.json()) as WpPost[]).map(decodeEmbeds);
+    total = Number(outcome.value.headers.get("X-WP-Total") ?? 0);
     collected.push(...batch);
-    if (batch.length < SAFE_EMBED_PAGE_SIZE) break; // dernière page WP atteinte
   }
 
   const startInBatch = offset - (firstWpPage - 1) * SAFE_EMBED_PAGE_SIZE;
