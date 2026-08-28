@@ -222,7 +222,21 @@ function exclusionTraductions(): string {
   return ids.length ? `&categories_exclude=${ids.join(",")}` : "";
 }
 
-export async function getPosts(page = 1, perPage = 12, extra = "") {
+// Mis en cache via unstable_cache (2026-08-28) : cette fonction utilise le
+// module `http(s)` natif, jamais `fetch()` (voir plus haut) — donc invisible
+// pour le Data Cache de Next.js, qui n'instrumente que `fetch()`. Sans ça,
+// une page qui lit `searchParams` (archives, recherche...) est rendue
+// dynamiquement à CHAQUE requête (`Cache-Control: no-store` constaté en
+// prod), et refaisait donc le fenêtrage WP en entier à chaque visite, y
+// compris pour deux visiteurs consécutifs sur la même page — /archives/
+// mesuré à 7-8s de chargement total. `unstable_cache` fonctionne
+// indépendamment du rendu dynamique de la route : la DONNÉE est réutilisée
+// pendant REVALIDATE_SECONDS même si la page elle-même est re-rendue à
+// chaque fois. Même principe déjà en place pour getAllPosts/getAllPages/
+// getCategories/getAllAuthors — jamais étendu à getPosts jusqu'ici, alors
+// que c'est la fonction la plus visitée (accueil, archives, sous-hub,
+// catégorie, auteur, tag, recherche).
+export const getPosts = unstable_cache(async (page = 1, perPage = 12, extra = "") => {
   extra = `${extra}${exclusionTraductions()}`;
   const offset = (page - 1) * perPage;
   const firstWpPage = Math.floor(offset / SAFE_EMBED_PAGE_SIZE) + 1;
@@ -273,7 +287,7 @@ export async function getPosts(page = 1, perPage = 12, extra = "") {
     total,
     totalPages: Math.ceil(total / perPage),
   };
-}
+}, ["wp-posts"], { revalidate: REVALIDATE_SECONDS });
 
 // WP REST plafonne per_page à 100 — pour un sitemap ou generateStaticParams,
 // il faut paginer plutôt que demander un per_page arbitrairement grand.
@@ -452,7 +466,9 @@ export async function getAllPagesFull(): Promise<WpPage[]> {
 
 // Tags réellement utilisés (hide_empty) — potentiellement > 100 à terme (2-5
 // tags par article sur 10 000 articles), donc paginé comme getAllPosts.
-export async function getAllTags(): Promise<WpTerm[]> {
+// Mis en cache (2026-08-28, même raison que getPosts juste au-dessus) :
+// jamais caché jusqu'ici alors qu'/archives/ l'appelle à chaque visite.
+export const getAllTags = unstable_cache(async (): Promise<WpTerm[]> => {
   const all: WpTerm[] = [];
   let page = 1;
   while (true) {
@@ -464,7 +480,7 @@ export async function getAllTags(): Promise<WpTerm[]> {
     page += 1;
   }
   return all;
-}
+}, ["wp-all-tags"], { revalidate: REVALIDATE_SECONDS });
 
 /* ---------- Parsing des champs ACF texte (ACF Free : pas de Repeater) ---------- */
 
