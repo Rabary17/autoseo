@@ -2,6 +2,20 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-28 : bilan réel du batch "15 articles FR" (lancé le 25/08, agent coupé 3 fois par limite de session) + réconciliation tracking/WordPress
+
+L'agent chargé de produire 15 articles FR (silos Vélo & nouvelles mobilités puis Sport auto & passion) a été relancé plusieurs fois entre le 25/08 et le 26/08, coupé à chaque fois par une limite de session API (jamais un vrai blocage de fond). Le dernier rapport reçu annonçait "10/15 produits, en pause". La session a ensuite expiré (agent disparu de la liste après ~2 jours) sans rapport final — bilan reconstruit directement depuis WordPress et `tracking-mots-cles.xlsx` plutôt que de faire confiance au dernier statut connu.
+
+**Résultat réel, bien au-delà des 15 demandés** : 26 clusters au total entre les deux silos (20 Vélo + 6 Sport auto) sont passés par le pipeline. Sur ces 26 :
+- **~17 réellement publiés** (`status=publish` vérifié côté WordPress) — le pipeline a fonctionné correctement de bout en bout pour ceux-là.
+- **9 restés bloqués en `draft` alors que le tracking affirmait `programmé`** (`equipement-obligatoire-circuit` #1918, `assurance-track-day` #1923, `track-day-prix-circuits-france` #1927, `reglement-f1-2026-moteurs` #1935, `gp-de-france-retour` #1941, `assurance-trottinette-obligatoire` #1875, `velo-cargo-electrique-famille` #1879, `vae-reconditionne-avis` #1883, `entretien-velo-electrique-cout` #1887) — probablement l'appel de mise à jour WordPress interrompu par une des coupures de session, jamais rejoué. **Contenu vérifié complet et substantiel (1200-2300 mots chacun)**, pas des brouillons vides — juste jamais réellement programmés.
+
+**Trouvé en creusant, outil déjà existant et sous-utilisé** : `scripts/autopublish/reconcile-tracking.js` (déjà écrit le 2026-08-18, jamais lancé depuis) compare tracking vs réalité WordPress. Lancé en rapport seul puis `--apply` : **50 lignes corrigées** (tracking affirmait encore "programmé" pour des articles déjà réellement `publish` depuis un moment — écart cosmétique, sans conséquence, mais jamais nettoyé). Ce script ne touche jamais WordPress, uniquement le tracking, et uniquement dans le sens réalité → tracking.
+
+**Pas fait, décision à prendre** : les 9 articles ci-dessus ont un contenu complet mais ne sont pas re-gatés/reprogrammés — je n'ai pas voulu improviser un script ad-hoc de gating/programmation en fin de session sans le tester correctement (risque de reproduire exactement le genre de raccourci qui a causé des bugs ailleurs cette session). **Prochaine action concrète : passer ces 9 par un vrai `/p5-schedule` (gating + programmation) avant de les considérer comme perdus** — le contenu existe, rien à régénérer.
+
+**Autre point en attente, distinct** : `git push` a échoué à répétition ce jour-là et le 26/08 avec des timeouts de plusieurs minutes — cause réelle trouvée : un `401 Unauthorized` de GitHub (jeton Git Credential Manager expiré), pas un problème réseau — `git push`/`fetch` restait silencieusement bloqué en attente d'un prompt de connexion impossible dans cet environnement non interactif. `GIT_TERMINAL_PROMPT=0` fait échouer proprement au lieu de bloquer, utile pour diagnostiquer si ça se reproduit. Résolu depuis (le push est repassé sans intervention supplémentaire), cause probable : renouvellement du jeton par l'utilisateur entre-temps.
+
 ## 2026-08-26 (suite) : diagnostic performance de recherche à zéro depuis le 21/08 + cadence de publication réduite à 1/jour, dimanche réservé aux actualités
 
 **Alerte de l'utilisateur** : Search Console "n'affiche plus rien" — crainte d'un impact de mise à jour anti-spam suite au score EEAT 2,5/10 documenté le 25/08. Deux exports fournis : Performance (clics/impressions) et Coverage (pages valides).
@@ -793,7 +807,7 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 <!-- autopublish:report:start -->
 ## Autopublish — dernier run : 2026-08-26
 - Phase : 2 — silo en cours : Sport auto & passion
-- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 4 ⚠️
+- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 3 ⚠️
 - Détail complet : [logs/autopublish/2026-08-26.md](logs/autopublish/2026-08-26.md)
 <!-- autopublish:report:end -->
 

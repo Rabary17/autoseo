@@ -1,12 +1,12 @@
 {
   "phase": 2,
-  "silo_en_cours": "Vélo & nouvelles mobilités",
+  "silo_en_cours": "Sport auto & passion",
   "phase_start_date": "2026-07-22",
   "items_scheduled_in_phase": 137,
   "budget_semaine": 20,
-  "budget_consomme": 29,
-  "semaine_debut": "2026-W34",
-  "silo_start_date": "2026-08-20",
-  "items_scheduled_for_silo": 19,
-  "derniere_execution": "2026-08-20T20:33:58.932Z"
+  "budget_consomme": 13,
+  "semaine_debut": "2026-W35",
+  "silo_start_date": "2026-08-25",
+  "items_scheduled_for_silo": 9,
+  "derniere_execution": "2026-08-26T19:44:52.907Z"
 }
