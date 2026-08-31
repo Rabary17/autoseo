@@ -2,6 +2,22 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-08-31 : /archives/ lent (7-8s) — corrigé par mise en cache de `getPosts()`/`getAllTags()`, confirmé en prod
+
+**Signalement utilisateur** : "https://techcars.fr/archives/ est très lent, le chargement de tous les articles prennent beaucoup de temps".
+
+**Diagnostic, deux causes empilées** :
+- `getPosts()` faisait des appels WP fenêtrés (introduits le 05/08 pour la fiabilité, jamais mesurés côté latence) en série (`for` séquentiel) — corrigé en parallèle (`Promise.allSettled`), après avoir vérifié en direct que WordPress renvoie bien une vraie erreur `400 rest_post_invalid_page_number` pour une page hors plage (donc sûr de tolérer les rejets des fenêtres suivantes, pas seulement la première).
+- Plus profond : `lib/wp.ts` utilise volontairement `http`/`https` bruts (pas `fetch()` — cause historique de 502 sur cet hébergement), donc invisible au Data Cache de Next.js. Combiné au fait que `/archives/` lit `searchParams` (rend la route entièrement dynamique, `Cache-Control: no-store` confirmé via `curl -sI`), **chaque visite refaisait la chaîne complète d'appels WordPress depuis zéro**, mesuré à 7-8s de temps total / 1-3s TTFB.
+
+**Correctif** : `getPosts()` et `getAllTags()` dans [lib/wp.ts](frontend/monauto/lib/wp.ts) enveloppés dans `unstable_cache(..., {revalidate: REVALIDATE_SECONDS})` — le seul mécanisme de cache Next.js qui ne dépend pas de `fetch()`. Poussé (commit `1d702af`).
+
+**Confirmé en production après déploiement** : `/archives/` mesuré à **~1.5-2s** de façon stable sur 4 requêtes consécutives (contre 7-8s avant, y compris en 2e requête). Le HTML de la page reste `X-Vercel-Cache: MISS` (attendu — `searchParams` empêche le cache de page complète), mais les données WordPress sous-jacentes sont bien servies depuis le cache Next.js plutôt que refetchées à chaque fois. Gain réel ~4-5x.
+
+**Non fait, identifié en passant** : `getChildCategories`/`getCategoryById` (appelés sur chaque page article) n'utilisent que `cache()` React (dédup par requête uniquement, pas persistant) — candidat pour le même traitement si une lenteur y est un jour signalée, pas fait ici car hors périmètre de la plainte initiale.
+
+**Distinct, en attente** : `git fetch`/`push` a de nouveau échoué ce jour avec `terminal prompts disabled` (jeton Git Credential Manager expiré, même cause que documentée le 28/08) — aucune action nécessaire côté code, l'utilisateur doit renouveler l'authentification Git quand il repassera sur la machine.
+
 ## 2026-08-28 : bilan réel du batch "15 articles FR" (lancé le 25/08, agent coupé 3 fois par limite de session) + réconciliation tracking/WordPress
 
 L'agent chargé de produire 15 articles FR (silos Vélo & nouvelles mobilités puis Sport auto & passion) a été relancé plusieurs fois entre le 25/08 et le 26/08, coupé à chaque fois par une limite de session API (jamais un vrai blocage de fond). Le dernier rapport reçu annonçait "10/15 produits, en pause". La session a ensuite expiré (agent disparu de la liste après ~2 jours) sans rapport final — bilan reconstruit directement depuis WordPress et `tracking-mots-cles.xlsx` plutôt que de faire confiance au dernier statut connu.
