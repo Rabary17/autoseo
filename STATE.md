@@ -2,6 +2,86 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-09-02 (suite 2) : analyse du spam update Google du 18-21/08 — confirme et détaille la faiblesse EEAT déjà documentée
+
+L'utilisateur confirme que la chute de trafic du 21/08 (documentée le 26/08, cause alors non
+tranchée avec certitude) était bien liée au spam update Google, pas à de la volatilité normale.
+Recherche des sources officielles + comparaison avec les pratiques réelles du projet — voir
+[docs/analyse-spam-update-aout-2026.md](docs/analyse-spam-update-aout-2026.md) pour le détail
+complet (politiques Google, corrélation temporelle, exposition politique par politique,
+recommandations rapide/moyen/long terme).
+
+**Résumé** : rollout mondial confirmé 18-21/08 ("normal spam update", application des règles
+existantes — pas de nouvelles règles). Politique la plus pertinente pour nous : **"scaled
+content abuse"** (pages générées en masse dans le but principal de manipuler le classement).
+Notre exposition structurelle : objectif fondateur du pipeline ("10 000 articles sans attendre
+des mois"), cadence 100 % automatisée sans relecture humaine obligatoire avant mise en ligne
+(`post_status=future`, WordPress publie seul à la date programmée), seul contrôle qualité
+humain existant = audit rétroactif de 5 articles/semaine (`/p6-indexation`), après publication.
+Mitigations déjà en place à ne pas sous-estimer : unicité <20% en gating (`similarity.js`),
+données factuelles propres par page, variation de plan imposée. Faiblesse structurelle
+composée : au moment exact du rollout, les 3 manques de l'audit EEAT du 25/08 (mentions
+légales anonymes, personas non vérifiables, présence sociale nulle) étaient encore tous les
+trois vrais simultanément — le `sameAs` n'a été ajouté qu'aujourd'hui, 2 semaines après.
+
+**Prochaine action concrète** : trancher la Priorité 1 du chantier EEAT (identité légale réelle
+de l'organisation malgache) — bloque tout le reste depuis le 25/08, voir
+[docs/feuille-de-route-eeat-industrialisation.md](docs/feuille-de-route-eeat-industrialisation.md).
+Vérifier aussi si le soft-404 observé le 21/08 (URL française inexistante → 200 au lieu de 404,
+jamais confirmé corrigé) est toujours reproductible.
+
+## 2026-09-02 (suite) : réseaux sociaux + `Organization.sameAs` + outils traduits en anglais (`/en/tools/`)
+
+Demande explicite de l'utilisateur : ajouter les comptes sociaux réels de la marque (Facebook,
+YouTube), corriger le schema pour signaler une entité réelle à Google (pas juste des
+manipulateurs), ajouter un outil interactif sur la home, puis dupliquer les 6 outils existants
+en anglais avec traduction automatique des données.
+
+**Réseaux sociaux + schema** : `SITE_SOCIAL_LINKS` (Facebook + YouTube, URLs réelles fournies
+par l'utilisateur) centralisé dans [lib/site.ts](frontend/monauto/lib/site.ts), consommé par
+`Organization.sameAs` ([lib/schema.ts](frontend/monauto/lib/schema.ts) — émis site-wide, pas
+juste sur la home) et par un nouveau composant partagé
+[SocialLinks.tsx](frontend/monauto/components/SocialLinks.tsx) dans les footers FR et EN.
+**Point d'attention non résolu** : un `sameAs` solide ne clôt pas le chantier EEAT tant que les
+mentions légales restent anonymes — voir l'entrée suivante (analyse spam update).
+
+**Outil sur la home** : en creusant le code, découverte que le site avait déjà **6 outils
+interactifs entièrement construits** (comparateur de véhicules, calculateur de prix
+d'entretien, diagnostic pannes, etc., sur données réelles) mais que `/outils/` n'était lié
+nulle part (ni menu, ni footer, ni accueil) — page orpheline depuis sa création. Plutôt
+qu'inventer un nouveau calculateur : `ComparateurWidget` ajouté sur la home FR, lien "Nos
+outils" ajouté au menu et au footer.
+
+**Version anglaise (`/en/tools/`)** : les 5 composants de widgets (hors "Assistant carte
+grise", exclu — démarches administratives françaises sans équivalent pour un lecteur
+anglophone, même logique que `config/i18n.json` pour le silo `carte-grise-demarches`)
+acceptent maintenant une prop `locale` (UI + fichier de données `en/*.json`). Nouvelle page
+[app/(en)/en/tools/page.tsx](frontend/monauto/app/(en)/en/tools/page.tsx), liée dans le menu,
+le footer et l'accueil EN.
+
+**Traduction des données** (nouveau script
+[scripts/i18n/translate-widgets.js](scripts/i18n/translate-widgets.js), dédié — pas une
+extension de `translate.js` : ces fichiers sont des tableaux JSON plats, pas des articles
+WordPress) : catégories à faible cardinalité traduites une fois puis réappliquées par
+correspondance (prestations, motorisations, segments, gravités, couleurs), texte libre traduit
+ligne par ligne par lots (modèles/fiabilité/pannes, codes défaut, voyants, road trips).
+**Bloqué puis débloqué en cours de route** : le compte Mistral refusait `mistral-large-latest`
+(403 tier_not_allowed) — pas un problème de clé mais d'abonnement, confirmé en resituant que
+c'est le même modèle que tout le pipeline de production. Nouvelle clé fournie par
+l'utilisateur (compte personnel distinct de celle sur GitHub Actions — **les deux coexistent,
+pas de synchronisation automatique entre elles**), qui a résolu le blocage. Un rate limit
+(429) rencontré en lançant 3 traductions en parallèle sur une seule clé — relancé
+séquentiellement sans problème. Qualité vérifiée manuellement sur échantillons répartis
+(début/milieu/fin de chaque fichier) : marques/modèles/codes/prix jamais modifiés, "contrôle
+technique" correctement gardé bilingue, mojibake `Ã©lectrique` corrigé au passage (bug
+d'encodage préexistant, uniquement côté fichier anglais généré — le fichier source français
+n'a pas été touché, hors périmètre de cette tâche, voir tâche spawnée séparée).
+
+**Non fait, signalé en tâches séparées** : mojibake à corriger à la source
+(`data/factuel/entretien-croisement-prix-marques-*.json` ou `scripts/build-widget-data.py`),
+sitemap qui ne liste aucune page statique hors accueil/rubriques/outils (à-propos, FAQ,
+contact, pages légales absentes de `app/sitemap.ts`).
+
 ## 2026-08-31 : /archives/ lent (7-8s) — corrigé par mise en cache de `getPosts()`/`getAllTags()`, confirmé en prod
 
 **Signalement utilisateur** : "https://techcars.fr/archives/ est très lent, le chargement de tous les articles prennent beaucoup de temps".
