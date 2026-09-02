@@ -5,6 +5,7 @@ import DiagnosticWidget from "./DiagnosticWidget";
 import MonVehiculeWidget from "./MonVehiculeWidget";
 import AssistantDemarcheWidget from "./AssistantDemarcheWidget";
 import RoadtripWidget from "./RoadtripWidget";
+import type { WidgetLocale } from "./types";
 
 export {
   ComparateurWidget,
@@ -18,7 +19,7 @@ export {
 export interface WidgetMeta {
   slug: string;
   title: string;
-  Component: ComponentType;
+  Component: ComponentType<{ locale?: WidgetLocale }>;
 }
 
 export const WIDGETS: WidgetMeta[] = [
@@ -28,6 +29,19 @@ export const WIDGETS: WidgetMeta[] = [
   { slug: "mon-vehicule", title: "Mon véhicule", Component: MonVehiculeWidget },
   { slug: "carte-grise", title: "Assistant carte grise", Component: AssistantDemarcheWidget },
   { slug: "road-trip", title: "Péages & vignettes en Europe", Component: RoadtripWidget },
+];
+
+// Version anglaise de /outils/ (voir app/(en)/en/tools/page.tsx) — "carte
+// grise" volontairement ABSENT : démarches administratives 100% françaises
+// (SIV, ANTS), sans équivalent pour un lecteur anglophone hors France — même
+// logique que config/i18n.json (silos_traduisibles n'inclut pas
+// "carte-grise-demarches"). Chaque Component reçoit locale="en" par l'appelant.
+export const EN_TOOLS: WidgetMeta[] = [
+  { slug: "comparateur", title: "Vehicle comparator", Component: ComparateurWidget },
+  { slug: "prix-entretien", title: "Maintenance cost calculator", Component: CalculateurPrixWidget },
+  { slug: "diagnostic", title: "Quick diagnosis (codes & warning lights)", Component: DiagnosticWidget },
+  { slug: "mon-vehicule", title: "My vehicle", Component: MonVehiculeWidget },
+  { slug: "road-trip", title: "Tolls & vignettes in Europe", Component: RoadtripWidget },
 ];
 
 // Widget mis en avant dans la sidebar de chaque silo (slugs = hub_slug réel WordPress, voir

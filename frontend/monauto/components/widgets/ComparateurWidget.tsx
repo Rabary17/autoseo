@@ -1,13 +1,59 @@
 "use client";
 import { useMemo, useState } from "react";
 import { useWidgetData } from "./useWidgetData";
-import type { ModeleEntry } from "./types";
+import type { ModeleEntry, WidgetLocale } from "./types";
+
+interface ComparateurStrings {
+  title: string;
+  desc: string;
+  loading: string;
+  vehicule1: string;
+  vehicule2: string;
+  marquePlaceholder: (label: string) => string;
+  modelePlaceholder: (label: string) => string;
+  modele: string;
+  choisirMarqueDabord: string;
+  nonClasse: string;
+  segmentsDifferents: (a: string, b: string) => string;
+}
+
+const STRINGS: Record<WidgetLocale, ComparateurStrings> = {
+  fr: {
+    title: "🆚 Comparateur de véhicules",
+    desc: "Choisissez deux modèles, n'importe lesquels — fiabilité et segment comparés instantanément.",
+    loading: "Chargement…",
+    vehicule1: "Véhicule 1",
+    vehicule2: "Véhicule 2",
+    marquePlaceholder: (label: string) => `${label} — marque`,
+    modelePlaceholder: (label: string) => `${label} — modèle`,
+    modele: "Modèle",
+    choisirMarqueDabord: "Choisir une marque d'abord",
+    nonClasse: "non classé",
+    segmentsDifferents: (a: string, b: string) => `⚠️ Segments différents (${a} vs ${b}) — comparaison à prendre avec recul.`,
+  },
+  en: {
+    title: "🆚 Vehicle comparator",
+    desc: "Pick any two models — reliability and segment compared instantly.",
+    loading: "Loading…",
+    vehicule1: "Vehicle 1",
+    vehicule2: "Vehicle 2",
+    marquePlaceholder: (label: string) => `${label} — make`,
+    modelePlaceholder: (label: string) => `${label} — model`,
+    modele: "Model",
+    choisirMarqueDabord: "Choose a make first",
+    nonClasse: "unclassified",
+    segmentsDifferents: (a: string, b: string) => `⚠️ Different segments (${a} vs ${b}) — compare with that in mind.`,
+  },
+} as const;
 
 // Comparateur libre (moteur M5) : l'utilisateur choisit DEUX véhicules quelconques (pas
 // seulement les paires déjà publiées en article) — la donnée brute (fiabilité, segment)
-// vient de data/factuel/marques-modeles-fiabilite-*.json via public/widgets/modeles.json.
-export default function ComparateurWidget() {
-  const { data, loading } = useWidgetData<ModeleEntry[]>("modeles.json");
+// vient de data/factuel/marques-modeles-fiabilite-*.json via public/widgets/modeles.json
+// (public/widgets/en/modeles.json pour la version anglaise, voir
+// scripts/i18n/translate-widgets.js).
+export default function ComparateurWidget({ locale = "fr" }: { locale?: WidgetLocale } = {}) {
+  const t = STRINGS[locale];
+  const { data, loading } = useWidgetData<ModeleEntry[]>(locale === "en" ? "en/modeles.json" : "modeles.json");
   const [marqueA, setMarqueA] = useState("");
   const [modeleA, setModeleA] = useState("");
   const [marqueB, setMarqueB] = useState("");
@@ -22,10 +68,10 @@ export default function ComparateurWidget() {
 
   return (
     <div className="widget">
-      <p className="widget__title">🆚 Comparateur de véhicules</p>
-      <p className="widget__desc">Choisissez deux modèles, n&apos;importe lesquels — fiabilité et segment comparés instantanément.</p>
+      <p className="widget__title">{t.title}</p>
+      <p className="widget__desc">{t.desc}</p>
 
-      {loading && <p className="widget__empty">Chargement…</p>}
+      {loading && <p className="widget__empty">{t.loading}</p>}
 
       {data && (
         <>
@@ -37,7 +83,8 @@ export default function ComparateurWidget() {
               modeles={modelesFor(marqueA)}
               onMarque={(v) => { setMarqueA(v); setModeleA(""); }}
               onModele={setModeleA}
-              label="Véhicule 1"
+              label={t.vehicule1}
+              t={t}
             />
             <VehiculeSelect
               marques={marques}
@@ -46,14 +93,15 @@ export default function ComparateurWidget() {
               modeles={modelesFor(marqueB)}
               onMarque={(v) => { setMarqueB(v); setModeleB(""); }}
               onModele={setModeleB}
-              label="Véhicule 2"
+              label={t.vehicule2}
+              t={t}
             />
           </div>
 
           {entryA && entryB && (
             <div className="widget__compare" style={{ marginTop: 12 }}>
-              <ResultCard entry={entryA} other={entryB} />
-              <ResultCard entry={entryB} other={entryA} />
+              <ResultCard entry={entryA} other={entryB} t={t} />
+              <ResultCard entry={entryB} other={entryA} t={t} />
             </div>
           )}
         </>
@@ -70,6 +118,7 @@ function VehiculeSelect({
   onMarque,
   onModele,
   label,
+  t,
 }: {
   marques: string[];
   marque: string;
@@ -78,12 +127,13 @@ function VehiculeSelect({
   onMarque: (v: string) => void;
   onModele: (v: string) => void;
   label: string;
+  t: ComparateurStrings;
 }) {
   return (
     <div>
       <div className="widget__row">
-        <select aria-label={`${label} — marque`} value={marque} onChange={(e) => onMarque(e.target.value)}>
-          <option value="">{label} — marque</option>
+        <select aria-label={t.marquePlaceholder(label)} value={marque} onChange={(e) => onMarque(e.target.value)}>
+          <option value="">{t.marquePlaceholder(label)}</option>
           {marques.map((m) => (
             <option key={m} value={m}>
               {m}
@@ -93,12 +143,12 @@ function VehiculeSelect({
       </div>
       <div className="widget__row">
         <select
-          aria-label={`${label} — modèle`}
+          aria-label={t.modelePlaceholder(label)}
           value={modele}
           onChange={(e) => onModele(e.target.value)}
           disabled={!marque}
         >
-          <option value="">{marque ? "Modèle" : "Choisir une marque d'abord"}</option>
+          <option value="">{marque ? t.modele : t.choisirMarqueDabord}</option>
           {modeles.map((m) => (
             <option key={m.modele} value={m.modele}>
               {m.modele}
@@ -110,7 +160,7 @@ function VehiculeSelect({
   );
 }
 
-function ResultCard({ entry, other }: { entry: ModeleEntry; other: ModeleEntry }) {
+function ResultCard({ entry, other, t }: { entry: ModeleEntry; other: ModeleEntry; t: ComparateurStrings }) {
   const sameSegment = entry.segment && entry.segment === other.segment;
   return (
     <div className="widget__result">
@@ -123,10 +173,7 @@ function ResultCard({ entry, other }: { entry: ModeleEntry; other: ModeleEntry }
       {entry.fiabilite && <p>{entry.fiabilite}</p>}
       {entry.pannes && <p>{entry.pannes}</p>}
       {!sameSegment && other.segment && (
-        <p style={{ fontStyle: "italic" }}>
-          ⚠️ Segments différents ({entry.segment ?? "non classé"} vs {other.segment}) — comparaison à prendre avec
-          recul.
-        </p>
+        <p style={{ fontStyle: "italic" }}>{t.segmentsDifferents(entry.segment ?? t.nonClasse, other.segment)}</p>
       )}
     </div>
   );

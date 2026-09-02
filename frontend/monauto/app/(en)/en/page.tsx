@@ -16,6 +16,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiloThumb from "@/components/SiloThumb";
+import { ComparateurWidget } from "@/components/widgets";
 import { silosFor } from "@/lib/i18n";
 import { livePageSlugs } from "@/lib/i18n-live";
 import { pageMeta } from "@/lib/seo-meta";
@@ -95,6 +96,18 @@ export default async function EnHomePage() {
               </Link>
             ))}
           </div>
+        </section>
+
+        <section className="section">
+          <div className="section__head">
+            <h2>Decide, don&apos;t just read</h2>
+            <Link href="/en/tools/">All our tools</Link>
+          </div>
+          <p style={{ color: "var(--muted)", marginTop: "-6px" }}>
+            Built from our real data (reliability, faults, segment) — compare two vehicles in
+            seconds, no account needed.
+          </p>
+          <ComparateurWidget locale="en" />
         </section>
 
         <section className="section">

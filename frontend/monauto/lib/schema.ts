@@ -2,7 +2,7 @@
 // rendu visible (jamais dupliqué/désynchronisé, voir skills/geo.md section 3
 // et skills/developpement.md section 3 : "une seule source de vérité").
 import type { FaqItem, Source, WpPost, WpUser } from "./types";
-import { SITE_NAME, SITE_URL } from "./site";
+import { SITE_NAME, SITE_SOCIAL_LINKS, SITE_URL } from "./site";
 
 export interface Crumb {
   name: string;
@@ -21,6 +21,11 @@ export const organizationSchema = () => ({
     "@type": "ImageObject",
     url: `${SITE_URL}/logo.png`,
   },
+  // Preuve d'existence indépendante du site pour Google (E-E-A-T) : une
+  // organisation identifiable a une présence sociale active, pas seulement un
+  // nom de domaine. Comptes de MARQUE réels (pas de persona), voir
+  // docs/feuille-de-route-eeat-industrialisation.md section 2.
+  sameAs: SITE_SOCIAL_LINKS.map((s) => s.url),
 });
 
 export const websiteSchema = () => ({

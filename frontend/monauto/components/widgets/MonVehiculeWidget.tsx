@@ -1,16 +1,39 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import { useWidgetData } from "./useWidgetData";
-import type { ModeleEntry } from "./types";
+import type { ModeleEntry, WidgetLocale } from "./types";
 
 const STORAGE_KEY = "monauto:mon-vehicule";
+
+const STRINGS = {
+  fr: {
+    title: "🚗 Mon véhicule",
+    desc: "Enregistrez votre véhicule pour retrouver ses infos en un coup d'œil.",
+    loading: "Chargement…",
+    marque: "Marque",
+    modele: "Modèle",
+    enregistrer: "Enregistrer",
+    changerVehicule: "Changer de véhicule",
+  },
+  en: {
+    title: "🚗 My vehicle",
+    desc: "Save your vehicle to see its info at a glance.",
+    loading: "Loading…",
+    marque: "Make",
+    modele: "Model",
+    enregistrer: "Save",
+    changerVehicule: "Change vehicle",
+  },
+} as const;
 
 // "Mon véhicule" (moteur M3) : sélection persistée (localStorage — jamais de cookie/tracking
 // tiers) réutilisable par d'autres composants du site (ex. mise en avant future d'un
 // paragraphe "spécifique à votre véhicule" dans les articles génériques). Ici : sélection +
-// rappel de la fiche fiabilité/pannes courantes.
-export default function MonVehiculeWidget() {
-  const { data, loading } = useWidgetData<ModeleEntry[]>("modeles.json");
+// rappel de la fiche fiabilité/pannes courantes. Même dataset traduit que ComparateurWidget
+// (public/widgets/en/modeles.json), voir scripts/i18n/translate-widgets.js.
+export default function MonVehiculeWidget({ locale = "fr" }: { locale?: WidgetLocale } = {}) {
+  const t = STRINGS[locale];
+  const { data, loading } = useWidgetData<ModeleEntry[]>(locale === "en" ? "en/modeles.json" : "modeles.json");
   const [marque, setMarque] = useState("");
   const [modele, setModele] = useState("");
   const [saved, setSaved] = useState<{ marque: string; modele: string } | null>(null);
@@ -56,31 +79,31 @@ export default function MonVehiculeWidget() {
 
   return (
     <div className="widget">
-      <p className="widget__title">🚗 Mon véhicule</p>
-      <p className="widget__desc">Enregistrez votre véhicule pour retrouver ses infos en un coup d&apos;œil.</p>
+      <p className="widget__title">{t.title}</p>
+      <p className="widget__desc">{t.desc}</p>
 
-      {loading && <p className="widget__empty">Chargement…</p>}
+      {loading && <p className="widget__empty">{t.loading}</p>}
 
       {data && !saved && (
         <>
           <div className="widget__row widget__row--2">
             <select
-              aria-label="Marque"
+              aria-label={t.marque}
               value={marque}
               onChange={(e) => {
                 setMarque(e.target.value);
                 setModele("");
               }}
             >
-              <option value="">Marque</option>
+              <option value="">{t.marque}</option>
               {marques.map((m) => (
                 <option key={m} value={m}>
                   {m}
                 </option>
               ))}
             </select>
-            <select aria-label="Modèle" value={modele} onChange={(e) => setModele(e.target.value)} disabled={!marque}>
-              <option value="">Modèle</option>
+            <select aria-label={t.modele} value={modele} onChange={(e) => setModele(e.target.value)} disabled={!marque}>
+              <option value="">{t.modele}</option>
               {modeles.map((m) => (
                 <option key={m.modele} value={m.modele}>
                   {m.modele}
@@ -89,7 +112,7 @@ export default function MonVehiculeWidget() {
             </select>
           </div>
           <button className="btn btn--primary" onClick={save} disabled={!marque || !modele} style={{ width: "100%" }}>
-            Enregistrer
+            {t.enregistrer}
           </button>
         </>
       )}
@@ -103,7 +126,7 @@ export default function MonVehiculeWidget() {
           {entry?.fiabilite && <p>{entry.fiabilite}</p>}
           {entry?.pannes && <p>{entry.pannes}</p>}
           <button className="btn btn--ghost" onClick={reset} style={{ marginTop: 8 }}>
-            Changer de véhicule
+            {t.changerVehicule}
           </button>
         </div>
       )}

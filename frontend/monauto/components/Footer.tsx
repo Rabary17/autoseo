@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SocialLinks from "@/components/SocialLinks";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -15,6 +16,7 @@ export default function Footer() {
               Le média expert de l&apos;auto et de la mobilité. Guides testés, sourcés et mis à
               jour par notre rédaction.
             </p>
+            <SocialLinks />
           </div>
           <div>
             <h2>Le média</h2>
@@ -38,6 +40,9 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/rubriques/">Toutes les rubriques</Link>
+              </li>
+              <li>
+                <Link href="/outils/">Nos outils gratuits</Link>
               </li>
             </ul>
           </div>

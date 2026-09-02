@@ -3,6 +3,7 @@ import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
 import JsonLd from "@/components/JsonLd";
 import NewsletterForm from "@/components/NewsletterForm";
+import { ComparateurWidget } from "@/components/widgets";
 import { getPosts } from "@/lib/wp";
 import { SILOS } from "@/lib/taxonomy";
 import SiloThumb from "@/components/SiloThumb";
@@ -87,6 +88,18 @@ export default async function HomePage() {
               </Link>
             ))}
           </div>
+        </section>
+
+        <section className="section">
+          <div className="section__head">
+            <h2>Décidez, ne vous contentez pas de lire</h2>
+            <Link href="/outils/">Tous nos outils</Link>
+          </div>
+          <p style={{ color: "var(--muted)", marginTop: "-6px" }}>
+            Construit à partir de nos données réelles (fiabilité, pannes, segment) — comparez deux
+            véhicules en quelques secondes, sans créer de compte.
+          </p>
+          <ComparateurWidget />
         </section>
 
         {posts.length > 0 && (

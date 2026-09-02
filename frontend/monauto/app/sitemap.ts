@@ -48,6 +48,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticUrls: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "daily", priority: 1 },
     { url: `${SITE_URL}/rubriques/`, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${SITE_URL}/outils/`, changeFrequency: "weekly", priority: 0.7 },
+    { url: `${SITE_URL}/en/tools/`, changeFrequency: "weekly", priority: 0.7 },
   ];
 
   const categoryUrls: MetadataRoute.Sitemap = SILOS.map((s) => ({

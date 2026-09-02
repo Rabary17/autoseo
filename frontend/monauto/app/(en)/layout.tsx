@@ -20,6 +20,7 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 import LangSwitch from "@/components/LangSwitch";
+import SocialLinks from "@/components/SocialLinks";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { silosFor } from "@/lib/i18n";
 import { livePageSlugs } from "@/lib/i18n-live";
@@ -108,6 +109,9 @@ export default async function EnRootLayout({ children }: { children: React.React
             <Link className="chip" href="/en/">
               All sections
             </Link>
+            <Link className="chip" href="/en/tools/">
+              Tools
+            </Link>
           </nav>
           <div className="appbar__actions">
             {/* Pas de SearchBox : la recherche interroge /recherche/, une route
@@ -129,6 +133,7 @@ export default async function EnRootLayout({ children }: { children: React.React
                   The independent guide to cars and mobility. Tested, sourced guides kept up to
                   date by our team.
                 </p>
+                <SocialLinks />
               </div>
               <div>
                 <h2>The guide</h2>
@@ -144,6 +149,9 @@ export default async function EnRootLayout({ children }: { children: React.React
                   </li>
                   <li>
                     <Link href="/contact/">Contact</Link>
+                  </li>
+                  <li>
+                    <Link href="/en/tools/">Our tools</Link>
                   </li>
                 </ul>
               </div>

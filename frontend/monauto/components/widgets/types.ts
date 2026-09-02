@@ -2,6 +2,12 @@
 // scripts/build-widget-data.py à partir des bases factuelles P2 (data/factuel/*.json).
 // Fichiers volontairement plats et compacts (voir le script) : chargés une fois côté
 // client au montage du widget, jamais régénérés dynamiquement.
+
+// Langue d'affichage d'un widget (UI + fichier de données lu, voir
+// useWidgetData). "en" lit public/widgets/en/*.json, traduit par
+// scripts/i18n/translate-widgets.js — jamais "demarches.json" (Assistant carte
+// grise), volontairement non traduit (démarches 100% françaises).
+export type WidgetLocale = "fr" | "en";
 export interface ModeleEntry {
   marque: string;
   modele: string;
