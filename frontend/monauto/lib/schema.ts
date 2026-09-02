@@ -2,7 +2,7 @@
 // rendu visible (jamais dupliqué/désynchronisé, voir skills/geo.md section 3
 // et skills/developpement.md section 3 : "une seule source de vérité").
 import type { FaqItem, Source, WpPost, WpUser } from "./types";
-import { SITE_NAME, SITE_SOCIAL_LINKS, SITE_URL } from "./site";
+import { SITE_LEGAL, SITE_NAME, SITE_SOCIAL_LINKS, SITE_URL } from "./site";
 
 export interface Crumb {
   name: string;
@@ -26,6 +26,16 @@ export const organizationSchema = () => ({
   // nom de domaine. Comptes de MARQUE réels (pas de persona), voir
   // docs/feuille-de-route-eeat-industrialisation.md section 2.
   sameAs: SITE_SOCIAL_LINKS.map((s) => s.url),
+  // Identité légale réelle (Priorité 1 du chantier EEAT, résolue le
+  // 2026-09-02) — même source que mentions-legales/page.tsx, voir lib/site.ts.
+  legalName: SITE_LEGAL.legalName,
+  email: SITE_LEGAL.contactEmail,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE_LEGAL.streetAddress,
+    addressLocality: SITE_LEGAL.addressLocality,
+    addressCountry: SITE_LEGAL.addressCountry,
+  },
 });
 
 export const websiteSchema = () => ({

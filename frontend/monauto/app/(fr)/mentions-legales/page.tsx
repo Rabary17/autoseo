@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo-meta";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_LEGAL, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Mentions légales",
@@ -13,22 +13,31 @@ export default function MentionsLegalesPage() {
     <div className="wrap">
       <article className="legal">
         <h1>Mentions légales</h1>
-        <p className="legal__updated">Dernière mise à jour : juillet 2026</p>
+        <p className="legal__updated">Dernière mise à jour : septembre 2026</p>
 
         <h2>Éditeur du site</h2>
         <p>
           Le site {SITE_NAME} ({SITE_URL}) est un média indépendant consacré à l&apos;automobile
-          et à la mobilité. Pour préserver la confidentialité de l&apos;équipe éditoriale, aucune
-          coordonnée postale ou téléphonique n&apos;est publiée sur le site : toute question,
-          demande d&apos;information ou signalement doit être adressé via notre{" "}
+          et à la mobilité, édité par <strong>{SITE_LEGAL.legalName}</strong>, dont le siège est
+          situé au {SITE_LEGAL.streetAddress}, {SITE_LEGAL.addressLocality},{" "}
+          {SITE_LEGAL.addressCountry}.
+        </p>
+        <p>
+          Contact direct :{" "}
+          <a href={`mailto:${SITE_LEGAL.contactEmail}`}>{SITE_LEGAL.contactEmail}</a>. Toute
+          question, demande d&apos;information ou signalement peut aussi être adressé via notre{" "}
           <a href="/contact/">formulaire de contact</a>.
         </p>
 
         <h2>Directeur de la publication</h2>
         <p>
-          La direction de la publication est assurée par l&apos;éditeur du site, joignable
-          exclusivement via le formulaire de contact mentionné ci-dessus.
+          La direction de la publication est assurée par {SITE_LEGAL.legalName}, joignable à
+          l&apos;adresse ci-dessus ou par email à{" "}
+          <a href={`mailto:${SITE_LEGAL.contactEmail}`}>{SITE_LEGAL.contactEmail}</a>.
         </p>
+
+        <h2>Régie publicitaire</h2>
+        <p>La régie publicitaire du site est assurée par {SITE_LEGAL.legalName}.</p>
 
         <h2>Hébergement</h2>
         <p>

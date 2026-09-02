@@ -2,6 +2,43 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-09-02 (suite 3) : Priorité 1 du chantier EEAT traitée — identité légale réelle fournie par l'utilisateur, mentions légales et schema `Organization` mis à jour
+
+Suite directe de l'analyse du spam update (entrée précédente) : l'utilisateur fournit
+l'identité légale réelle qui bloquait tout le [chantier EEAT](docs/feuille-de-route-eeat-industrialisation.md)
+depuis le 25/08 — éditeur **ANMIRA Madagascar**, adresse 157F Mahatony (Antananarivo,
+Madagascar), régie publicitaire ANMIRA Madagascar, email direct `contact@techcars.fr`.
+
+**Fait** : constante `SITE_LEGAL` centralisée dans [lib/site.ts](frontend/monauto/lib/site.ts)
+(réutilisable telle quelle pour chaque futur site du réseau — seul `contactEmail` change par
+domaine). [mentions-legales/page.tsx](frontend/monauto/app/(fr)/mentions-legales/page.tsx)
+réécrite (éditeur nommé, adresse, contact direct, nouvelle section "Régie publicitaire") —
+fini le texte qui revendiquait l'anonymat total de l'équipe éditoriale. Rappel de l'éditeur
+ajouté sur [a-propos/page.tsx](frontend/monauto/app/(fr)/a-propos/page.tsx). Schema
+`Organization` ([lib/schema.ts](frontend/monauto/lib/schema.ts)) complété avec `legalName`,
+`address` (PostalAddress), `email`, en plus du `sameAs` ajouté plus tôt le même jour — les deux
+sources de vérité (page visible + JSON-LD) partagent maintenant `SITE_LEGAL`, jamais dupliquées
+en dur à deux endroits.
+
+**Volontairement pas fait** : pas de nom de responsable de publication individuel (aucun fourni,
+direction de la publication attribuée à l'entité ANMIRA Madagascar elle-même) ; pas de
+`founder` dans le schema (même raison) ; "Droit applicable" toujours au droit français, décision
+juridique hors de mon périmètre (voir feuille de route section 1, point non tranché).
+
+**Vérifié visuellement** (preview local) : les deux pages affichent le texte attendu, `tsc`
+propre.
+
+**Aussi fait dans la foulée** : commit + push des fichiers de données EN traduits
+(`public/widgets/en/*.json`) et du rapport d'analyse spam update — le commit `d4f27c7` ("push
+manuel", fait par l'utilisateur lui-même pendant cette session) avait déjà mis en ligne la page
+`/en/tools/` mais SANS ses données (fetch 404 sur `/widgets/en/*.json`, widgets bloqués sur
+"Loading..." en prod) — corrigé par le commit `af6af50`, poussé après confirmation explicite de
+l'utilisateur ("oui, tu peux y aller").
+
+**Prochaine action concrète** : décider si on avance sur la section 2 du chantier EEAT
+(LinkedIn/Instagram, comptes à créer manuellement par un humain) ou si on referme le chantier
+EEAT pour l'instant et on surveille la reprise du trafic Search Console suite au spam update.
+
 ## 2026-09-02 (suite 2) : analyse du spam update Google du 18-21/08 — confirme et détaille la faiblesse EEAT déjà documentée
 
 L'utilisateur confirme que la chute de trafic du 21/08 (documentée le 26/08, cause alors non

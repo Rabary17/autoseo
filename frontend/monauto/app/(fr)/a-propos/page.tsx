@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMeta } from "@/lib/seo-meta";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_LEGAL, SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Qui sommes-nous ?",
@@ -52,7 +52,16 @@ export default function AProposPage() {
         <h2>Une question, une remarque ?</h2>
         <p>
           Vous avez repéré une erreur, une information à mettre à jour, ou souhaitez simplement
-          échanger avec nous ? Passez par notre <Link href="/contact/">formulaire de contact</Link>.
+          échanger avec nous ? Passez par notre <Link href="/contact/">formulaire de contact</Link>{" "}
+          ou écrivez-nous directement à{" "}
+          <a href={`mailto:${SITE_LEGAL.contactEmail}`}>{SITE_LEGAL.contactEmail}</a>.
+        </p>
+
+        <h2>Éditeur</h2>
+        <p>
+          {SITE_NAME} est édité par {SITE_LEGAL.legalName} ({SITE_LEGAL.addressLocality},{" "}
+          {SITE_LEGAL.addressCountry}) — voir nos{" "}
+          <Link href="/mentions-legales/">mentions légales</Link> pour le détail complet.
         </p>
       </article>
     </div>

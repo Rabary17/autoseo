@@ -1,7 +1,8 @@
 # Feuille de route EEAT — Identité éditoriale & présence sociale (playbook industrialisation)
 
 **Créé** : 2026-08-25, suite à l'audit EEAT de techcars.fr (note 2,5/10).
-**Statut** : 🔴 Priorité 1 (légal) non traitée — reste du plan en attente.
+**Statut** : 🟢 Priorité 1 (légal) traitée le 2026-09-02 — présence sociale (section 2) démarrée
+le même jour (Facebook + YouTube). Reste : sections 4-6 (cross-posting, calendrier, réplication).
 **Portée** : playbook généralisable à chaque niche du réseau ; techcars.fr sert de site pilote.
 
 ---
@@ -29,12 +30,27 @@ C'est le seul chantier qui ne dépend d'aucune plateforme sociale et qui a l'eff
 
 **Décision du 2026-08-25** : anonymat total et conformité minimale sont incompatibles (une page mentions légales qui ne nomme personne n'est jamais "a minima conforme", quel que soit le pays) — voir [[eeat-legal-organisation-madagascar]] en mémoire. Ce n'est cependant pas un blocage : **les sites appartiennent à une organisation réelle basée à Madagascar**, pas à une entité française à créer de toutes pièces. Pas besoin de SIRET/auto-entrepreneur français — l'identification réelle de cette organisation malgache suffit.
 
-- [ ] **Fournir les informations réelles de l'organisation malgache** : nom légal (ou nom d'usage si pas encore de structure formelle), adresse (ville/pays suffit si l'adresse complète pose un problème de confidentialité), email de contact direct (pas seulement un formulaire), nom du responsable de publication. — **action utilisateur**, je ne peux pas inventer ces informations.
-- [ ] **Réécrire les mentions légales** avec ces informations réelles. Je rédige le texte dès que je les ai.
-- [ ] **Schema `Organization`** (JSON-LD, site-wide, pas juste sur la page auteur) avec `legalName`, `address`, `founder` réels — voir [geo.md](../skills/geo.md) section 3, tableau à compléter avec une ligne `Organization`.
-- [ ] Si un avis juridique sur l'applicabilité exacte du droit français (LCEN) à une organisation basée à Madagascar mais opérant un domaine `.fr` orienté public français est souhaité, ce n'est pas un exercice que je peux trancher moi-même — mais publier une identification réelle et vérifiable (organisation + responsable + contact), même non française, résout déjà l'essentiel du problème EEAT (existence d'une entité accountable, vérifiable, non fictive).
+- [x] **Fournir les informations réelles de l'organisation malgache** — fait le 2026-09-02 :
+  éditeur **ANMIRA Madagascar**, adresse 157F Mahatony, Antananarivo, Madagascar, email direct
+  `contact@techcars.fr`. Pas de nom de responsable de publication individuel fourni — la
+  direction de la publication est attribuée à l'entité elle-même (pas un natural person nommé),
+  choix qui reste supérieur à l'anonymat total mais n'est pas la version la plus complète
+  possible. Ces valeurs sont centralisées dans `SITE_LEGAL`
+  ([lib/site.ts](../frontend/monauto/lib/site.ts)) — `legalName`/adresse à dupliquer tels quels
+  pour chaque nouveau site du réseau (organisation mère commune), seul `contactEmail` change par
+  domaine.
+- [x] **Réécrire les mentions légales** — fait le 2026-09-02
+  ([mentions-legales/page.tsx](../frontend/monauto/app/(fr)/mentions-legales/page.tsx)), plus un
+  rappel de l'éditeur ajouté sur [a-propos/page.tsx](../frontend/monauto/app/(fr)/a-propos/page.tsx).
+- [x] **Schema `Organization`** — fait le 2026-09-02 : `legalName`, `address` (PostalAddress),
+  `email` ajoutés dans [lib/schema.ts](../frontend/monauto/lib/schema.ts), en plus du `sameAs`
+  ajouté plus tôt le même jour. `founder` non ajouté — aucun nom de fondateur/dirigeant individuel
+  fourni, pas inventé.
+- [ ] Si un avis juridique sur l'applicabilité exacte du droit français (LCEN) à une organisation basée à Madagascar mais opérant un domaine `.fr` orienté public français est souhaité, ce n'est pas un exercice que je peux trancher moi-même — mais publier une identification réelle et vérifiable (organisation + responsable + contact), même non française, résout déjà l'essentiel du problème EEAT (existence d'une entité accountable, vérifiable, non fictive). **Non tranché** : la section "Droit applicable" des mentions légales cite toujours le droit français, volontairement inchangée (décision juridique hors de mon périmètre).
 
-**Rien dans les sections suivantes n'a d'effet tant que celle-ci n'est pas traitée** : un site qui affiche un `Organization.sameAs` vers 3 réseaux sociaux mais reste anonyme en mentions légales reste incohérent.
+**Priorité 1 traitée** : le reste du plan (présence sociale, cross-posting, calendrier,
+réplication) a maintenant un socle cohérent — un site n'affiche plus de `sameAs` vers des
+réseaux sociaux tout en restant anonyme en mentions légales.
 
 ---
 
@@ -100,4 +116,8 @@ Checklist condensée par site :
 
 ## Prochaine action concrète
 
-Pour techcars.fr : trancher le point 1 (existence légale de l'entité, ou fourniture des infos si elle existe déjà) — c'est le seul blocage avant de pouvoir rédiger la nouvelle page mentions légales et le schema `Organization`.
+Priorité 1 traitée le 2026-09-02 (voir section 1). Reste : section 2 pour compléter la présence
+sociale au-delà de Facebook/YouTube (LinkedIn, Instagram — comptes à créer manuellement par un
+humain, voir principe directeur en section 0), puis sections 4-6 (pipeline de cross-posting,
+intégration au calendrier éditorial, réplication du playbook aux autres sites du réseau une fois
+techcars.fr stabilisé).
