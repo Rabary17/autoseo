@@ -1,6 +1,6 @@
 # Analyse — spam update Google du 18-21 août 2026 et techcars.fr
 
-**Créé** : 2026-09-02, suite à la confirmation par l'utilisateur que la chute de trafic
+**Créé** : 2026-09-04, suite à la confirmation par l'utilisateur que la chute de trafic
 documentée dans [STATE.md](../STATE.md) (entrée du 2026-08-26) était bien liée au spam
 update, et non une hypothèse non tranchée comme noté à l'époque.
 
@@ -105,9 +105,10 @@ L'audit externe du 2026-08-25 ([STATE.md](../STATE.md), entrée du même jour) n
 manques précis : **anonymat total en mentions légales, personas auteur non vérifiables,
 présence sociale nulle**. Au moment du rollout (18-21/08), les trois étaient encore vrais
 simultanément :
-- Mentions légales toujours anonymes aujourd'hui (02/09) — **non résolu**.
-- `Organization.sameAs` vide jusqu'à ce jour (02/09), corrigé seulement maintenant, deux
-  semaines après l'update.
+- Mentions légales toujours anonymes au moment de cette analyse — **résolu plus tard le
+  2026-09-04, dans la même session** (identité ANMIRA Madagascar, voir STATE.md).
+- `Organization.sameAs` vide jusqu'à ce jour, corrigé le 2026-09-04 — deux semaines après
+  l'update, donc absent pendant toute la fenêtre où il aurait pu compter.
 - Personas fictifs sans existence externe vérifiable (choix assumé et défendable de ne pas
   fabriquer de faux profils — mais qui laisse cette dimension structurellement faible).
 - Bug préexistant jamais confirmé corrigé : une URL française inexistante renvoyait **200 au

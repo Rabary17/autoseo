@@ -2,7 +2,83 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
-## 2026-09-02 (suite 3) : Priorité 1 du chantier EEAT traitée — identité légale réelle fournie par l'utilisateur, mentions légales et schema `Organization` mis à jour
+## 2026-09-04 (suite 6) : les 2 fusions carte grise exécutées (5 pages → 2)
+
+Demande explicite de l'utilisateur ("Vas-y, exécute les 2 fusions carte grise") suite à
+l'audit de l'entrée précédente.
+
+**Cluster "changement de titulaire"** : en relisant le sous-hub #281 en entier avant de
+fusionner, découverte que sa propre section d'orientation renvoyait explicitement vers les
+2 articles à fusionner ("la page sur le changement de titulaire en ligne", "la page
+changement de titulaire carte grise") — ce n'était donc pas un doublon accidentel mais une
+tentative de différenciation par angle qui a échoué en pratique (les 2 articles finissent
+par répéter les mêmes faits). Contenu unique récupéré avant fusion : véhicules de collection
+(critères FFVE, exemption ZFE), camping-car/VASP, véhicule importé, conversion E85, marche à
+suivre en cas de refus ANTS — intégré au sous-hub (2 nouvelles sections + 2 entrées FAQ), sa
+liste d'orientation corrigée (les 2 liens morts retirés). Posts #962 et #958 passés en
+`draft` (jamais supprimés). Redirections 301 ajoutées dans `next.config.ts` vers
+`/categorie/carte-grise-demarches/changement-de-titulaire/`.
+
+**Cluster "changement d'adresse"** : lecture complète des 2 articles a révélé qu'ils étaient
+en fait **complémentaires plutôt que redondants** (l'un couvrant les cas particuliers et
+renvoyant explicitement à "un autre guide" pour la marche à suivre, l'autre étant justement
+cette marche à suivre) — fusion par combinaison plutôt que par élimination : la marche à
+suivre complète, le tableau de tarifs, la section leasing et la section société de
+`changement-adresse-carte-grise-gratuit` (#1012) intégrées dans
+`changement-d-adresse-sur-la-carte-grise` (#1009, conservé), sans dupliquer le paragraphe
+assurance déjà couvert par #1009. #1012 passé en `draft`, redirection 301 ajoutée.
+
+**Tracking mis à jour** : `url_cible` des 2 lignes "changement de titulaire" repointé vers
+`/carte-grise-demarches/changement-de-titulaire` (le sous-hub) — `scripts/autopublish/reconcile-tracking.js`
+ne vérifie que les POSTS, pas les PAGES, donc continuera de signaler ces 2 lignes comme
+"orphelines" à tort ; limite connue de l'outil, pas une vraie erreur de tracking.
+
+**Vérifié** : `tsc` propre, contenu relu via l'API après écriture (nouvelles sections
+présentes, statuts `draft` confirmés sur les 3 posts).
+
+**Prochaine action concrète** : pousser ces changements, puis élargir la même méthode
+(lecture complète avant fusion, jamais se fier au seul score de similarité) aux paires de
+la section 2.2 de l'audit, avant de s'attaquer aux gros silos jamais rédigés.
+
+## 2026-09-04 (suite 5) : audit complet du catalogue publié terminé — [docs/audit-contenu-refactorisation-2026-09.md](docs/audit-contenu-refactorisation-2026-09.md)
+
+Une fois le mu-plugin rétabli (entrée précédente), ré-audit des 124 articles + 100 pages sur
+données fiables. **Bonne nouvelle** : plancher de longueur respecté (1 seul article <900
+mots sur 124), complétude E-E-A-T (TL;DR/sources/FAQ) à 100 % — le problème du catalogue
+existant n'est pas la profondeur individuelle, c'est la **duplication d'intention entre
+pages**, concentrée presque entièrement dans le silo "Carte grise & démarches" (30
+articles sur des démarches administratives proches, chevauchement de vocabulaire naturel).
+
+2 fusions à haute confiance identifiées et vérifiées par lecture complète du texte (pas
+seulement les titres) : cluster "changement de titulaire" (3 pages → 1) et "changement
+d'adresse" (2 pages → 1). Plusieurs autres paires à similarité moyenne listées pour
+vérification manuelle, et des faux positifs identifiés (formule de titre générique
+réutilisée sur des sujets réellement différents — pas des doublons de fond, mais un
+symptôme du même problème de généricité à corriger dans les prochaines rédactions).
+
+**Prochaine action concrète** : exécuter les 2 fusions (dépublier + rediriger 301), avant
+d'élargir la méthode aux 1264 clusters encore "à faire" — priorité aux 2 gros silos jamais
+commencés (Marques & modèles 463, Entretien & révision 314) où le risque de duplication par
+modèle/année est le plus élevé, à traiter en amont du découpage des mots-clés plutôt qu'en
+audit rétroactif après rédaction.
+
+## 2026-09-04 (suite 4) : refactorisation techcars — mu-plugin disparu du serveur (E-E-A-T invisible site-wide), corrigé ; audit de contenu démarré sur données GSC réelles
+
+Demande explicite de l'utilisateur : refactoriser techcars.fr vers une logique qualité plutôt que volume (fin de l'objectif "10 000 articles"), en s'appuyant sur un export Search Console réel (`techcars.fr-Performance-on-Search-2026-09-04.xlsx`) pour prioriser fusions/suppressions et renforcement E-E-A-T (cas réels fournis par l'utilisateur, pas fabriqués).
+
+**Lecture du fichier GSC** (Python/openpyxl — l'outil Read intégré ne gère pas les .xlsx) : **7 clics et 1807 impressions en 3 mois, sur 632 requêtes** — le site n'a jamais vraiment décollé, positions moyennes 40-90 sur la plupart des requêtes. La chute du spam update ne s'est pas résorbée : les 3 derniers jours de données disponibles (30/08-01/09) restent à 2-3 impressions/jour contre 150-360 avant le 21/08.
+
+**Fausse piste écartée après vérification en direct (curl + balises canonical)** : la duplication d'URL apparente dans GSC (`/carte-grise-demarches/malus-taxes` vs `/categorie/carte-grise-demarches/malus-taxes/`, `/carburants-consommation` vs `/carburants-consommation/` vs `/categorie/carburants-consommation/`) n'est PAS un bug — `trailingSlash:true` (next.config.ts) et le rewrite `middleware.ts` (2026-08-03, silo/sous-cocon → `/categorie/...`) fonctionnent correctement, avec la bonne balise canonical dans les deux cas. Juste un décalage de recrawl Google, rien à corriger côté code.
+
+**Vrai problème trouvé, avec preuve** : quasi-doublons éditoriaux réels. Exemple vérifié en lisant le contenu (pas juste les titres) : `changement-de-titulaire-carte-grise` (#962, 30/07) et `changement-titulaire-carte-grise-en-ligne` (#958, 03/08) sont le même article réécrit deux fois à 4 jours d'écart (mêmes montants exacts : 13,76€, amende 135-750€, mêmes documents). Même schéma sur "changement d'adresse" (2 articles). Détecté par recoupement lexical (Jaccard sur titres) sur les 124 articles publiés, confirmé par lecture du corps des textes concernés — proposition de fusion (2 clusters, 5 pages → 2) prête, en attente d'exécution.
+
+**Découverte majeure en cours d'audit, sans rapport direct avec les doublons** : le script d'audit complet remontait "0 article avec TL;DR/sources/FAQ" sur les 124 posts — d'abord pris pour un bug du script, **confirmé réel et site-wide** en testant directement en production (`curl techcars.fr/...` : zéro occurrence de "L'essentiel"/tldr/sources sur 4 articles de silos différents). Cause trouvée à distance, sans accès FTP/SSH : `GET https://mntdev.riseasso.com/?rest_route=/` ne listait plus le namespace `monauto/v1` (404 sur l'endpoint newsletter, normalement 401) — **le mu-plugin `wordpress/mu-plugins/monauto-headless.php` avait disparu du serveur**, silencieusement, durée indéterminée. Ce fichier déclare TOUS les champs ACF (tldr/sources/faq/meta_title/meta_description/job_title/same_as) et l'API newsletter — sans lui, tout disparaît sans aucune erreur visible ni dans wp-admin ni sur le site public. Cause structurelle déjà documentée plusieurs fois (17/07, 28/07) : ce fichier n'a jamais eu de déploiement automatisé, uniquement du FTP manuel — voir [[wordpress-infra-riseasso]] en mémoire, mise à jour avec ce nouvel épisode.
+
+**Résolu par l'utilisateur** (ré-upload FTP du fichier, déjà à jour dans ce dépôt) et vérifié : namespace `monauto/v1` de retour, **aucune perte de données** — TL;DR/sources/FAQ/meta relus intacts via l'API pour l'article testé. Reste à rattraper : le cache Next.js ISR (`revalidate=900`) sert encore l'ancienne version des pages déjà visitées pendant la panne (le webhook de revalidation n'a pas pu se déclencher) — se corrige tout seul au fil des visites dans le quart d'heure suivant, aucune action requise.
+
+**Prochaine action concrète** : (1) valider et exécuter la fusion des 2 clusters carte grise identifiés ; (2) terminer l'audit complet du catalogue (124 articles + 100 pages) sur des données maintenant fiables (le premier passage était faussé par le bug ci-dessus) ; (3) élargir la détection de quasi-doublons aux ~1264 clusters "à faire" avant toute rédaction, en particulier les 2 gros silos jamais commencés (Marques & modèles 463, Entretien & révision 314).
+
+## 2026-09-04 (suite 3) : Priorité 1 du chantier EEAT traitée — identité légale réelle fournie par l'utilisateur, mentions légales et schema `Organization` mis à jour
 
 Suite directe de l'analyse du spam update (entrée précédente) : l'utilisateur fournit
 l'identité légale réelle qui bloquait tout le [chantier EEAT](docs/feuille-de-route-eeat-industrialisation.md)
@@ -39,7 +115,7 @@ l'utilisateur ("oui, tu peux y aller").
 (LinkedIn/Instagram, comptes à créer manuellement par un humain) ou si on referme le chantier
 EEAT pour l'instant et on surveille la reprise du trafic Search Console suite au spam update.
 
-## 2026-09-02 (suite 2) : analyse du spam update Google du 18-21/08 — confirme et détaille la faiblesse EEAT déjà documentée
+## 2026-09-04 (suite 2) : analyse du spam update Google du 18-21/08 — confirme et détaille la faiblesse EEAT déjà documentée
 
 L'utilisateur confirme que la chute de trafic du 21/08 (documentée le 26/08, cause alors non
 tranchée avec certitude) était bien liée au spam update Google, pas à de la volatilité normale.
@@ -67,7 +143,7 @@ de l'organisation malgache) — bloque tout le reste depuis le 25/08, voir
 Vérifier aussi si le soft-404 observé le 21/08 (URL française inexistante → 200 au lieu de 404,
 jamais confirmé corrigé) est toujours reproductible.
 
-## 2026-09-02 (suite) : réseaux sociaux + `Organization.sameAs` + outils traduits en anglais (`/en/tools/`)
+## 2026-09-04 (suite) : réseaux sociaux + `Organization.sameAs` + outils traduits en anglais (`/en/tools/`)
 
 Demande explicite de l'utilisateur : ajouter les comptes sociaux réels de la marque (Facebook,
 YouTube), corriger le schema pour signaler une entité réelle à Google (pas juste des

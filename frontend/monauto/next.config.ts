@@ -57,6 +57,29 @@ const nextConfig: NextConfig = {
       // favicon.png) — confirmé en 404 réel dans l'export Search Console
       // "Statistiques d'exploration" du 2026-08-25.
       { source: "/favicon.ico", destination: "/favicon.png", permanent: true },
+      // Fusion de quasi-doublons éditoriaux (audit du 2026-09-04, voir
+      // docs/audit-contenu-refactorisation-2026-09.md) — les 2 articles
+      // "changement de titulaire" répétaient le sous-hub (mêmes montants,
+      // mêmes documents, rédigés à 4 jours d'écart), leur contenu unique a
+      // été fusionné dedans avant dépublication.
+      {
+        source: "/changement-de-titulaire-carte-grise",
+        destination: "/categorie/carte-grise-demarches/changement-de-titulaire/",
+        permanent: true,
+      },
+      {
+        source: "/changement-titulaire-carte-grise-en-ligne",
+        destination: "/categorie/carte-grise-demarches/changement-de-titulaire/",
+        permanent: true,
+      },
+      // Même audit : la marche à suivre pratique de cet article a été
+      // fusionnée dans son quasi-doublon (plus complet sur les cas
+      // particuliers) avant dépublication.
+      {
+        source: "/changement-adresse-carte-grise-gratuit",
+        destination: "/changement-d-adresse-sur-la-carte-grise/",
+        permanent: true,
+      },
     ];
   },
   // En-têtes de sécurité manquants sur 100% des pages (audit Screaming Frog du

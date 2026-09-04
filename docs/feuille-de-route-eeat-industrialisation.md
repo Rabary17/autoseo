@@ -1,7 +1,7 @@
 # Feuille de route EEAT — Identité éditoriale & présence sociale (playbook industrialisation)
 
 **Créé** : 2026-08-25, suite à l'audit EEAT de techcars.fr (note 2,5/10).
-**Statut** : 🟢 Priorité 1 (légal) traitée le 2026-09-02 — présence sociale (section 2) démarrée
+**Statut** : 🟢 Priorité 1 (légal) traitée le 2026-09-04 — présence sociale (section 2) démarrée
 le même jour (Facebook + YouTube). Reste : sections 4-6 (cross-posting, calendrier, réplication).
 **Portée** : playbook généralisable à chaque niche du réseau ; techcars.fr sert de site pilote.
 
@@ -30,7 +30,7 @@ C'est le seul chantier qui ne dépend d'aucune plateforme sociale et qui a l'eff
 
 **Décision du 2026-08-25** : anonymat total et conformité minimale sont incompatibles (une page mentions légales qui ne nomme personne n'est jamais "a minima conforme", quel que soit le pays) — voir [[eeat-legal-organisation-madagascar]] en mémoire. Ce n'est cependant pas un blocage : **les sites appartiennent à une organisation réelle basée à Madagascar**, pas à une entité française à créer de toutes pièces. Pas besoin de SIRET/auto-entrepreneur français — l'identification réelle de cette organisation malgache suffit.
 
-- [x] **Fournir les informations réelles de l'organisation malgache** — fait le 2026-09-02 :
+- [x] **Fournir les informations réelles de l'organisation malgache** — fait le 2026-09-04 :
   éditeur **ANMIRA Madagascar**, adresse 157F Mahatony, Antananarivo, Madagascar, email direct
   `contact@techcars.fr`. Pas de nom de responsable de publication individuel fourni — la
   direction de la publication est attribuée à l'entité elle-même (pas un natural person nommé),
@@ -39,10 +39,10 @@ C'est le seul chantier qui ne dépend d'aucune plateforme sociale et qui a l'eff
   ([lib/site.ts](../frontend/monauto/lib/site.ts)) — `legalName`/adresse à dupliquer tels quels
   pour chaque nouveau site du réseau (organisation mère commune), seul `contactEmail` change par
   domaine.
-- [x] **Réécrire les mentions légales** — fait le 2026-09-02
+- [x] **Réécrire les mentions légales** — fait le 2026-09-04
   ([mentions-legales/page.tsx](../frontend/monauto/app/(fr)/mentions-legales/page.tsx)), plus un
   rappel de l'éditeur ajouté sur [a-propos/page.tsx](../frontend/monauto/app/(fr)/a-propos/page.tsx).
-- [x] **Schema `Organization`** — fait le 2026-09-02 : `legalName`, `address` (PostalAddress),
+- [x] **Schema `Organization`** — fait le 2026-09-04 : `legalName`, `address` (PostalAddress),
   `email` ajoutés dans [lib/schema.ts](../frontend/monauto/lib/schema.ts), en plus du `sameAs`
   ajouté plus tôt le même jour. `founder` non ajouté — aucun nom de fondateur/dirigeant individuel
   fourni, pas inventé.
@@ -116,7 +116,7 @@ Checklist condensée par site :
 
 ## Prochaine action concrète
 
-Priorité 1 traitée le 2026-09-02 (voir section 1). Reste : section 2 pour compléter la présence
+Priorité 1 traitée le 2026-09-04 (voir section 1). Reste : section 2 pour compléter la présence
 sociale au-delà de Facebook/YouTube (LinkedIn, Instagram — comptes à créer manuellement par un
 humain, voir principe directeur en section 0), puis sections 4-6 (pipeline de cross-posting,
 intégration au calendrier éditorial, réplication du playbook aux autres sites du réseau une fois
