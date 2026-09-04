@@ -2,6 +2,47 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-09-04 (suite 7) : 2 fusions supplémentaires — découverte de données fiscales fausses dans 2 articles, corrigées avec avertissement
+
+Suite de l'audit (entrée précédente) : vérification manuelle des paires signalées en
+section 2.2, comme demandé par l'utilisateur ("Continue sur les paires à vérifier
+manuellement").
+
+**Découverte plus sérieuse qu'une redondance** : les 2 paires les plus fortes n'étaient pas
+que des doublons — elles publiaient des **chiffres fiscaux contradictoires entre elles**.
+Vérifié par recherche web contre des sources actuelles (pas le texte légal officiel) :
+- Cheval fiscal par région : les 2 articles donnaient un tarif Île-de-France différent
+  (54,95€ et 46,15€) — **les deux étaient faux**, le vrai tarif 2026 est 68,95€.
+- Malus CO2 véhicule importé : plafond 4 000€ contre 80 000€ — le second est confirmé
+  correct, mais le mécanisme de décote que les DEUX utilisaient ("10%/an, plafond 80%")
+  serait obsolète depuis une réforme de mars 2025.
+
+**Décision utilisateur** : "Fusionne les deux paires en signalant à vérifier dans le
+texte" — fait. `cheval-fiscal-prix-par-region` fusionné dans `carte-grise-prix-par-region`
+(tarifs corrigés avec les valeurs vérifiées, encadré "⚠️ à vérifier" ajouté pour les régions
+non recoupées) ; `calcul-malus-occasion-importee` fusionné dans `taxe-co2-vehicule-occasion`
+(contenu unique récupéré : conversion WLTP/NEDC, taxe au poids, exonérations
+handicap/déménagement ; avertissements ajoutés sur le barème ET sur le mécanisme de décote).
+Les 2 pages perdantes dépubliées (`draft`), redirections 301 ajoutées dans `next.config.ts`,
+tracking mis à jour.
+
+**Autres paires vérifiées** : `declaration-cession-vehicule-en-ligne` /
+`cession-vehicule-pour-destruction` confirmées complémentaires (pas des doublons, l'une
+renvoie explicitement à l'autre) ; 4 paires confirmées faux positifs (vocabulaire "carte
+grise" générique partagé, sujets réellement distincts) — aucune action.
+
+**Nouveau problème identifié, non traité** : `carte-grise-ants-demarches` est un article
+fourre-tout qui recopie le contenu de 4-5 articles dédiés plus ce guide, plus une section
+"bonus écologique" totalement hors-sujet. Pas une simple fusion de paire — décision à
+prendre (suppression ou reconversion en page de sommaire).
+
+**Détail complet et sources** : [docs/audit-contenu-refactorisation-2026-09.md](docs/audit-contenu-refactorisation-2026-09.md)
+section 2.2/2.2bis/2.2ter.
+
+**Prochaine action concrète** : décider du sort de `carte-grise-ants-demarches`, puis passer
+à la restructuration des 2 gros silos jamais rédigés (Marques & modèles, Entretien &
+révision) avant toute nouvelle production.
+
 ## 2026-09-04 (suite 6) : les 2 fusions carte grise exécutées (5 pages → 2)
 
 Demande explicite de l'utilisateur ("Vas-y, exécute les 2 fusions carte grise") suite à

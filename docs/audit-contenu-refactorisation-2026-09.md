@@ -91,22 +91,53 @@ manquerait à l'autre.
 - `changement-d-adresse-sur-la-carte-grise` (#1009, 1071 mots, 14/08) — **à conserver, plus récent et complet**
 - `changement-adresse-carte-grise-gratuit` (#1012, 935 mots, 04/08) — à fusionner puis rediriger (vérifier que l'angle "gratuit pour les 3 premiers changements" est bien repris dans la page conservée avant de rediriger)
 
-### 2.2. Paires à vérifier manuellement avant décision (signal moyen, pas encore lu le texte complet)
+### 2.2. Paires vérifiées manuellement — résultat (2026-09-04, suite)
 
 Toutes dans "Carte grise & démarches" — silo le plus fourni (30 articles sur des démarches
-administratives proches par nature, donc chevauchement de vocabulaire attendu, mais
-certaines paires ci-dessous décrivent peut-être bien la même démarche sous deux angles :
+administratives proches par nature, donc chevauchement de vocabulaire attendu). Chaque
+paire a été lue intégralement (pas seulement les titres) avant décision.
 
-| Paire | Similarité | À vérifier |
-|---|---|---|
-| `rectifier-erreur-carte-grise` <-> `carte-grise-ants-demarches` | 0.44 | La 2e est-elle un guide générique ANTS qui recouvre la 1re ? |
-| `changement-d-adresse-sur-la-carte-grise` <-> `carte-grise-collection` | 0.44 | Probable faux positif (sujets différents : adresse vs carte de collection) |
-| `changement-de-titulaire-carte-grise` <-> `declaration-de-cession-carte-grise` | 0.40 | Démarches liées (cession précède le changement de titulaire) mais possiblement complémentaires, pas doublons |
-| `cheval-fiscal-prix-par-region` <-> `carte-grise-prix-par-region` | 0.36 | Le cheval fiscal détermine le prix carte grise — vérifier si l'un ne fait que répéter l'autre |
-| `declaration-cession-vehicule-en-ligne` <-> `cession-vehicule-pour-destruction` | 0.33 | Deux démarches de cession différentes (vente normale vs destruction) — probablement légitimement distinctes |
-| `carte-grise-heritage-succession` <-> `rectifier-erreur-carte-grise` / `carte-grise-collection` | 0.30 | Probable faux positif (vocabulaire "carte grise" générique partagé) |
-| `duplicata-carte-grise-perte` <-> `rectifier-erreur-carte-grise` / `carte-grise-collection` | 0.30 | Probable faux positif |
-| `calcul-malus-occasion-importee` <-> `taxe-co2-vehicule-occasion` | 0.30 | Le malus ET la taxe CO2 sont deux taxes distinctes sur le même achat — probablement légitimement distinctes, à vérifier qu'elles ne se recopient pas l'une l'autre |
+| Paire | Similarité | Verdict | Action |
+|---|---|---|---|
+| `cheval-fiscal-prix-par-region` <-> `carte-grise-prix-par-region` | 0.36 | **Doublon confirmé, ET les deux contenaient des tarifs régionaux erronés/contradictoires** (vérifié par recherche web contre des sources actuelles — voir section 2.2bis) | Fusionné dans `carte-grise-prix-par-region`, tarifs corrigés + avertissement "à vérifier" ajouté, `cheval-fiscal-prix-par-region` dépublié et redirigé |
+| `calcul-malus-occasion-importee` <-> `taxe-co2-vehicule-occasion` | 0.30 | **Doublon confirmé, chiffres contradictoires** (plafond 4 000€ vs 80 000€ — le 2e est plus proche de la réalité 2026, mais le mécanisme de décote des deux est obsolète depuis une réforme de mars 2025) | Fusionné dans `taxe-co2-vehicule-occasion`, contenu unique récupéré (conversion WLTP/NEDC, taxe au poids, exonérations handicap/déménagement), avertissements "à vérifier" ajoutés sur le barème et la décote, `calcul-malus-occasion-importee` dépublié et redirigé |
+| `rectifier-erreur-carte-grise` <-> `carte-grise-ants-demarches` | 0.44 | `carte-grise-ants-demarches` est un article fourre-tout qui recopie presque intégralement 4-5 autres articles dédiés (changement de titulaire, succession, E85, collection) et contient une section "bonus écologique" totalement hors-sujet | **Non traité dans ce lot** — nécessite une restructuration plus profonde qu'une simple fusion de paire, voir section 2.2ter |
+| `changement-de-titulaire-carte-grise` <-> `declaration-de-cession-carte-grise` | 0.40 | Obsolète — le premier a été dépublié dans la fusion du cluster A (voir section 2.1) | Aucune action supplémentaire |
+| `changement-d-adresse-sur-la-carte-grise` <-> `carte-grise-collection` | 0.44 | Faux positif confirmé — sujets réellement distincts | Aucune action |
+| `declaration-cession-vehicule-en-ligne` <-> `cession-vehicule-pour-destruction` | 0.33 | **Complémentaires, pas doublons** — le premier traite les cas bloquants d'une cession classique et renvoie explicitement au second pour la destruction | Aucune action |
+| `carte-grise-heritage-succession` <-> `rectifier-erreur-carte-grise` / `carte-grise-collection` | 0.30 | Faux positif confirmé — vocabulaire "carte grise" générique partagé, sujets distincts | Aucune action |
+| `duplicata-carte-grise-perte` <-> `rectifier-erreur-carte-grise` / `carte-grise-collection` | 0.30 | Faux positif confirmé | Aucune action |
+
+### 2.2bis. Découverte en vérifiant les chiffres : deux paires publiaient des données fiscales fausses ou obsolètes
+
+En recoupant les deux paires de tarifs/barèmes contre des sources web actuelles (recherche
+du 2026-09-04, sources secondaires spécialisées — pas le texte réglementaire officiel des
+conseils régionaux/de la loi de finances) :
+
+- **Cheval fiscal par région** : les deux articles se contredisaient sur le tarif
+  Île-de-France (54,95€ et 46,15€) — **les deux étaient faux**. Le vrai tarif 2026 est
+  68,95€ (60€ + 14€ de taxe additionnelle propre à cette région, absente des deux articles).
+  Seule la valeur Auvergne-Rhône-Alpes (43,00€) était déjà correcte.
+- **Malus CO2 véhicule importé** : plafond 4 000€ dans un article contre 80 000€ dans
+  l'autre — le second est confirmé correct. Mais **le mécanisme de décote que les deux
+  utilisaient** ("10% par an, plafonné à 80%") **ne serait plus en vigueur depuis une
+  réforme de mars 2025** selon les sources consultées.
+
+Ces deux corrections ont été appliquées avec un avertissement "à vérifier" explicite dans
+le texte publié (sources secondaires, pas le texte légal), sur demande de l'utilisateur.
+**Sources consultées** : [Autosphere](https://www.autosphere.fr/blog/prix-cheval-fiscal-2026/),
+[Cartegrise-public.fr](https://www.cartegrise-public.fr/prix-cheval-fiscal-2026/),
+[Ulys](https://ulys.com/blog/malus-ecologique-2026-taxes-baremes-cles/),
+[Renew.auto](https://fr.renew.auto/malus-ecologique-occasion.html).
+
+### 2.2ter. `carte-grise-ants-demarches` — à traiter séparément
+
+Ce n'est pas un doublon pairwise mais un article "fourre-tout" qui recopie le contenu de
+plusieurs articles dédiés plus focalisés, plus un hors-sujet ("bonus écologique 2026" sans
+rapport avec les démarches ANTS). Candidat soit à une suppression (son contenu utile existe
+déjà ailleurs, de façon plus approfondie), soit à une reconversion en page de sommaire qui
+renvoie vers les articles dédiés au lieu de les répéter — décision à prendre avant d'agir,
+non traité dans ce lot.
 
 ### 2.3. Faux positifs identifiés (formule de titre réutilisée, produits différents — pas des doublons)
 
@@ -136,11 +167,12 @@ sujets restent distincts :
 
 ## 4. Prochaine action concrète
 
-1. Valider et exécuter les 2 fusions à haute confiance (section 2.1) : enrichir la page
-   conservée si besoin, dépublier les pages perdantes (pas de suppression définitive),
-   poser les redirections 301 dans `next.config.ts`.
-2. Vérifier manuellement les paires de la section 2.2 (lecture du texte complet, comme fait
-   pour les clusters A/B) avant toute décision.
+1. ~~Valider et exécuter les 2 fusions à haute confiance (section 2.1)~~ — **fait le 2026-09-04**.
+2. ~~Vérifier manuellement les paires de la section 2.2~~ — **fait le 2026-09-04** : 2 fusions
+   supplémentaires exécutées (avec correction de données fiscales fausses, voir 2.2bis), 4
+   faux positifs confirmés sans action, 1 cas obsolète (déjà réglé par la fusion du cluster A).
+3. Décider du traitement de `carte-grise-ants-demarches` (section 2.2ter) — suppression ou
+   reconversion en page de sommaire.
 3. Décider du sort du seul article sous le plancher (`gnv-utilitaire-pro`, 862 mots) —
    enrichir plutôt que supprimer, sujet valide et déjà indexé (8 impressions).
 4. Étendre cette méthode (Jaccard + vérification manuelle) aux futurs clusters avant

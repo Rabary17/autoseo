@@ -80,6 +80,22 @@ const nextConfig: NextConfig = {
         destination: "/changement-d-adresse-sur-la-carte-grise/",
         permanent: true,
       },
+      // Même audit, 2e lot (2026-09-04) : 2 paires signalées par recoupement
+      // lexical, vérifiées par lecture complète du texte avant fusion. Les 2
+      // contenaient des chiffres contradictoires entre eux (tarif régional du
+      // cheval fiscal, plafond du malus CO2) — le contenu unique a été
+      // récupéré et un avertissement "à vérifier" ajouté sur les chiffres
+      // encore incertains, voir docs/audit-contenu-refactorisation-2026-09.md.
+      {
+        source: "/cheval-fiscal-prix-par-region",
+        destination: "/carte-grise-prix-par-region/",
+        permanent: true,
+      },
+      {
+        source: "/calcul-malus-occasion-importee",
+        destination: "/taxe-co2-vehicule-occasion/",
+        permanent: true,
+      },
     ];
   },
   // En-têtes de sécurité manquants sur 100% des pages (audit Screaming Frog du
