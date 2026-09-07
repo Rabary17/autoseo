@@ -35,7 +35,7 @@ Le GPL émet moins de particules fines et de NOx que le diesel. Il émet aussi m
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-Pour une solution vraiment verte, l’électrique ou l’hydrogène sont plus performants.
+Pour une solution vraiment verte, l’électrique ou l’hydrogène sont plus performants .
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":2} -->
