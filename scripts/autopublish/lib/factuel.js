@@ -8,8 +8,9 @@
 // nourrir un prompt de génération tant qu'elle n'a pas été validée par un humain.
 const fs = require('fs');
 const path = require('path');
+const nichePaths = require('./niche-paths');
 
-const FACTUEL_DIR = path.join(__dirname, '..', '..', '..', 'data', 'factuel');
+const FACTUEL_DIR = nichePaths.dataPath('factuel');
 
 let cache = null;
 

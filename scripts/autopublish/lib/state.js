@@ -1,12 +1,15 @@
-// Lecture/écriture de data/autopublish-state.json — état minimal partagé entre
-// les runs GitHub Actions (phase courante, silo en cours, budget hebdomadaire
-// consommé). La logique de transition de phase reste une décision humaine
-// (voir skills/wordpress-publication.md section 6) : ce module ne fait que
-// persister l'état, jamais ne décide de changer de phase tout seul.
-const fs = require('fs');
-const path = require('path');
-
-const STATE_PATH = path.join(__dirname, '..', '..', '..', 'data', 'autopublish-state.json');
+// État d'exécution du pipeline — désormais persisté dans Firestore
+// (niches/{nicheId}/state/pipeline) plutôt que data/autopublish-state.json,
+// voir plan MVP SaaS interne. La logique de transition de phase reste une
+// décision humaine (voir skills/wordpress-publication.md section 6) : ce
+// module ne fait que persister l'état, jamais ne décide de changer de phase
+// tout seul.
+//
+// Seuls 2 appelants (run.js, daily-report.js) — migration directe en async,
+// contrairement à niche.json (des dizaines d'appelants synchrones, voir
+// niche-firestore-sync.js pour cette approche différente).
+const nichePaths = require('./niche-paths');
+const { getDb } = require('../../lib_js/firestore-client');
 
 const DEFAULT_STATE = {
   phase: 0,
@@ -26,14 +29,18 @@ const DEFAULT_STATE = {
   derniere_execution: null,
 };
 
-function loadState() {
-  if (!fs.existsSync(STATE_PATH)) return { ...DEFAULT_STATE };
-  const raw = fs.readFileSync(STATE_PATH, 'utf8');
-  return { ...DEFAULT_STATE, ...JSON.parse(raw) };
+function stateDocRef() {
+  return getDb().collection('niches').doc(nichePaths.NICHE_ID).collection('state').doc('pipeline');
 }
 
-function saveState(state) {
-  fs.writeFileSync(STATE_PATH, JSON.stringify(state, null, 2) + '\n', 'utf8');
+async function loadState() {
+  const snap = await stateDocRef().get();
+  if (!snap.exists) return { ...DEFAULT_STATE };
+  return { ...DEFAULT_STATE, ...snap.data() };
+}
+
+async function saveState(state) {
+  await stateDocRef().set(state);
 }
 
 // Réinitialise le compteur hebdomadaire si la semaine ISO a changé depuis la
@@ -56,4 +63,4 @@ function resetWeeklyBudgetIfNeeded(state, now = new Date()) {
   return state;
 }
 
-module.exports = { loadState, saveState, isoWeekKey, resetWeeklyBudgetIfNeeded, STATE_PATH };
+module.exports = { loadState, saveState, isoWeekKey, resetWeeklyBudgetIfNeeded };

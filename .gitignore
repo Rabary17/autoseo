@@ -1,5 +1,6 @@
 .env
 node_modules/
+__pycache__/
 frontend/monauto/.next/
 frontend/monauto/out/
 frontend/monauto/.env.local

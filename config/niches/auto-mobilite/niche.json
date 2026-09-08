@@ -5,29 +5,60 @@
   "authors": {
     "A": {
       "label": "A — Mécanique & technique",
-      "wp_slug": "julien-fabre"
+      "wp_slug": "julien-fabre",
+      "nom": "Julien Fabre",
+      "genre": "H",
+      "age": 41,
+      "intitule_role": "Mécanicien & rédacteur technique",
+      "bio": "Mécanicien pendant douze ans en atelier indépendant avant de se consacrer à l'écriture technique. Julien traduit les diagnostics en explications concrètes — combien ça coûte, peut-on le faire soi-même, jusqu'où attendre avant que ça casse pour de bon."
     },
     "B": {
       "label": "B — Marques, essais & sport auto",
-      "wp_slug": "auteur-b"
+      "wp_slug": "thomas-lefevre",
+      "nom": "Thomas Lefèvre",
+      "genre": "H",
+      "age": 33,
+      "intitule_role": "Essayeur automobile & passionné de sport auto",
+      "bio": "Ancien pilote amateur en circuit, Thomas essaie et compare les modèles avec un œil de conducteur exigeant plutôt que de commercial. Il aime les chiffres qui ne mentent pas : consommation réelle, fiabilité constatée, valeur de revente."
     },
     "C": {
       "label": "C — Achat & mobilité électrique",
-      "wp_slug": "auteur-c"
+      "wp_slug": "camille-roussel",
+      "nom": "Camille Roussel",
+      "genre": "F",
+      "age": 34,
+      "intitule_role": "Conseillère achat & spécialiste mobilité électrique",
+      "bio": "Camille accompagne les lecteurs dans leurs décisions d'achat — neuf, occasion ou électrique — avec un objectif simple : éviter les regrets à 10 000 km. Elle suit de près l'évolution des aides, de l'autonomie réelle et des coûts cachés de l'électrique."
     },
     "D": {
       "label": "D — Démarches, assurance & permis",
-      "wp_slug": "auteur-d"
+      "wp_slug": "sophie-andrieu",
+      "nom": "Sophie Andrieu",
+      "genre": "F",
+      "age": 46,
+      "intitule_role": "Spécialiste démarches administratives auto",
+      "bio": "Sophie décortique les démarches (carte grise, assurance, permis) pour qu'elles prennent le moins de temps possible — délais réels, documents à ne pas oublier, pièges à éviter. Elle n'est pas juriste et le dit clairement quand une situation dépasse le cadre d'un guide pratique."
     },
     "E": {
       "label": "E — Deux-roues & nouvelles mobilités",
-      "wp_slug": "auteur-e"
+      "wp_slug": "karim-belaid",
+      "nom": "Karim Belaïd",
+      "genre": "H",
+      "age": 29,
+      "intitule_role": "Spécialiste deux-roues & mobilités urbaines",
+      "bio": "Karim roule en scooter, moto et vélo électrique selon les trajets — et écrit avec ce mélange d'usages en tête plutôt qu'un seul mode de transport. Sujet de prédilection : ce qui marche vraiment en ville au quotidien, pas en brochure."
     },
     "F": {
       "label": "F — Usages spécifiques & voyage",
-      "wp_slug": "auteur-f"
+      "wp_slug": "nathalie-moreau",
+      "nom": "Nathalie Moreau",
+      "genre": "F",
+      "age": 39,
+      "intitule_role": "Spécialiste voyage & usages auto spécifiques",
+      "bio": "Nathalie a parcouru une bonne partie de l'Europe en camping-car et carbure aux itinéraires bien préparés. Elle couvre aussi les usages moins grand public — utilitaires, flottes pro, consommation — avec le même souci du détail pratique."
     }
   },
+  "ymyl_silos": ["Carte grise & démarches", "Assurance auto", "Permis & conduite"],
   "silos": [
     {
       "name": "Entretien & révision",

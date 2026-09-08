@@ -4,6 +4,18 @@
 // de modifier l'orchestrateur.
 const { PHASE_CAPACITY_PER_DAY } = require('./lib/scheduler');
 const maillage = require('./lib/maillage');
+const nichePaths = require('./lib/niche-paths');
+
+// Dérivé de config/niches/<id>/niche.json#authors (voir lib/persona.js) —
+// plus jamais codé en dur ici, pour qu'ajouter une niche n'exige aucune
+// modification de ce fichier (voir plan MVP multi-niche, 2026-09-08).
+function computeWpAuthorSlugByPersona() {
+  const out = {};
+  for (const [key, author] of Object.entries(nichePaths.niche.authors || {})) {
+    out[key] = author.wp_slug;
+  }
+  return out;
+}
 
 // Silos triés par nombre total d'articles CROISSANT (le plus petit cocon
 // d'abord) — demande explicite de l'utilisateur le 2026-07-28, pour valider
@@ -80,14 +92,13 @@ module.exports = {
   // Noms de plume complétés le 2026-07-21 (voir persona.js) — seule julien-fabre existait
   // jusque-là comme compte WP réel ; les comptes B-F restent à créer (scripts/autopublish/
   // create-missing-authors.js) une fois WordPress à nouveau joignable.
-  WP_AUTHOR_SLUG_BY_PERSONA: {
-    A: 'julien-fabre',
-    B: 'thomas-lefevre',
-    C: 'camille-roussel',
-    D: 'sophie-andrieu',
-    E: 'karim-belaid',
-    F: 'nathalie-moreau',
-  },
+  WP_AUTHOR_SLUG_BY_PERSONA: computeWpAuthorSlugByPersona(),
+
+  // Filet d'urgence pour le full-autopilot (publish immédiat, voir run.js) :
+  // active AUTOPUBLISH_EMERGENCY_DRAFT=true (env/secret GitHub) pour forcer
+  // `draft` inconditionnellement, sans toucher au reste du pipeline — bascule
+  // instantanée en cas de problème constaté sur le contenu publié tout seul.
+  EMERGENCY_DRAFT_ONLY: process.env.AUTOPUBLISH_EMERGENCY_DRAFT === 'true',
 
   // Ordre de traitement des silos en Phase 2 — du plus petit au plus gros
   // cocon (voir computeSiloOrderAscendingByArticleCount ci-dessus). Utilisé

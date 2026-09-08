@@ -21,6 +21,7 @@ import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lib_py'))
 import niche_config
+import niche_firestore_sync
 
 
 def main():
@@ -56,6 +57,7 @@ def main():
     ndir = niche_config.niche_dir(args.niche_id)
     with open(os.path.join(ndir, 'niche.json'), 'w', encoding='utf-8') as f:
         json.dump(niche, f, ensure_ascii=False, indent=2)
+    niche_firestore_sync.push_niche(args.niche_id)
 
     # Squelette dans seeds.json (fichier mère lu par fetch-keywords.js --niche) : sous-cocons
     # déjà déclarés, listes de mots-clés VIDES — jamais devinées.

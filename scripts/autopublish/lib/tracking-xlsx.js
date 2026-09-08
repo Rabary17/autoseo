@@ -2,10 +2,10 @@
 // Le fichier a aussi une feuille "Légende" (documentation humaine) qu'il faut
 // impérativement préserver telle quelle à chaque écriture.
 const fs = require('fs');
-const path = require('path');
 const XLSX = require('xlsx');
+const nichePaths = require('./niche-paths');
 
-const XLSX_PATH = path.join(__dirname, '..', '..', '..', 'data', 'keywords', 'tracking-mots-cles.xlsx');
+const XLSX_PATH = nichePaths.dataPath('keywords', 'tracking-mots-cles.xlsx');
 const SHEET_NAME = 'Suivi';
 
 const COLUMNS = [

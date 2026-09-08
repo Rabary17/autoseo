@@ -135,11 +135,11 @@ function addUsage(acc, usage) {
 // correctif "insertion WP immédiate" (le contenu déjà publié était protégé,
 // mais pas la position dans la file pour la reprise). Appelée après chaque
 // pièce insérée avec succès, jamais en dry-run.
-function persistStateProgress(state) {
+async function persistStateProgress(state) {
   if (DRY_RUN) return;
   state.derniere_execution = new Date().toISOString();
   try {
-    stateLib.saveState(state);
+    await stateLib.saveState(state);
   } catch (e) {
     console.error(`[run] échec de sauvegarde incrémentale de l'état (non bloquant) : ${e.message}`);
   }
@@ -674,7 +674,7 @@ async function runPhase0(state, runDate, usageAcc) {
         capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
       });
       state.items_scheduled_in_phase += 1;
-      persistStateProgress(state);
+      await persistStateProgress(state);
       console.log(`${logTag} : programmé pour le ${scheduled.post_date.slice(0, 10)}.`);
 
       console.log(`${logTag} : résolution WP (auteur, catégorie, image à la une)...`);
@@ -771,7 +771,7 @@ async function runPhase0(state, runDate, usageAcc) {
         capacityOverride: capacity, startIndex: state.items_scheduled_in_phase,
       });
       state.items_scheduled_in_phase += 1;
-      persistStateProgress(state);
+      await persistStateProgress(state);
       console.log(`${logTag} : programmé pour le ${scheduled.post_date.slice(0, 10)}.`);
 
       console.log(`${logTag} : résolution WP (auteur, catégorie, image à la une)...`);
@@ -1090,7 +1090,7 @@ async function runPhase2(state, runDate, trackingRows, usageAcc) {
       });
       state.items_scheduled_for_silo += 1;
       state.budget_consomme += 1;
-      persistStateProgress(state);
+      await persistStateProgress(state);
       console.log(`${logTag} : programmé pour le ${scheduled.post_date.slice(0, 10)}.`);
 
       stage = 'insertion WP';
@@ -1184,7 +1184,7 @@ async function main() {
   let state = { phase: '?', silo_en_cours: null };
 
   try {
-    state = stateLib.loadState();
+    state = await stateLib.loadState();
     stateLib.resetWeeklyBudgetIfNeeded(state);
 
     if (state.phase === 1) {
@@ -1223,7 +1223,7 @@ async function main() {
   state.derniere_execution = new Date().toISOString();
   if (!DRY_RUN && state.phase !== '?') {
     try {
-      stateLib.saveState(state);
+      await stateLib.saveState(state);
     } catch (e) {
       console.error('[run] échec de sauvegarde de l\'état (non bloquant, le rapport sera quand même écrit) :', e);
     }

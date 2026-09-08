@@ -63,7 +63,7 @@ async function main() {
   const afterTomorrow0 = addDays(today0, 2);
   const weekEnd0 = addDays(today0, 8);
 
-  const state = stateLib.loadState();
+  const state = await stateLib.loadState();
 
   const { items: window, errors } = await fetchWindow(today0, weekEnd0);
 

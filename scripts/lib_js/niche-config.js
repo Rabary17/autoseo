@@ -25,4 +25,11 @@ function dataPath(niche, ...parts) {
   return path.join(ROOT, niche.data_dir, ...parts);
 }
 
-module.exports = { DEFAULT_NICHE, nicheDir, loadNiche, dataPath };
+function listNiches() {
+  if (!fs.existsSync(NICHES_DIR)) return [];
+  return fs.readdirSync(NICHES_DIR)
+    .filter((d) => fs.existsSync(path.join(NICHES_DIR, d, 'niche.json')))
+    .sort();
+}
+
+module.exports = { DEFAULT_NICHE, nicheDir, loadNiche, dataPath, listNiches };

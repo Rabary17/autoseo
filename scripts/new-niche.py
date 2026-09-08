@@ -29,6 +29,7 @@ from openpyxl.comments import Comment
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'lib_py'))
 import niche_config
+import niche_firestore_sync
 import json
 
 
@@ -115,6 +116,7 @@ def main():
     }
     with open(os.path.join(ndir, 'niche.json'), 'w', encoding='utf-8') as f:
         json.dump(niche_json, f, ensure_ascii=False, indent=2)
+    niche_firestore_sync.push_niche(args.niche_id)
 
     with open(os.path.join(ndir, 'moteurs.json'), 'w', encoding='utf-8') as f:
         json.dump({'moteurs': []}, f, ensure_ascii=False, indent=2)

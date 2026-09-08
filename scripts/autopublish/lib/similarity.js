@@ -4,8 +4,9 @@
 // par silo+sous-cocon, persisté dans data/similarity-index/.
 const fs = require('fs');
 const path = require('path');
+const nichePaths = require('./niche-paths');
 
-const INDEX_DIR = path.join(__dirname, '..', '..', '..', 'data', 'similarity-index');
+const INDEX_DIR = nichePaths.dataPath('similarity-index');
 
 // Liste courte, suffisante pour ne pas fausser la similarité avec des mots
 // grammaticaux très fréquents — pas besoin d'une liste exhaustive, seuls les

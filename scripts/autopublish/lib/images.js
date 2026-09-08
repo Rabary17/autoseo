@@ -11,6 +11,7 @@
 const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
+const nichePaths = require('./niche-paths');
 
 function loadDotEnvFallback() {
   const envPath = path.join(__dirname, '..', '..', '..', '.env');
@@ -34,7 +35,7 @@ const PEXELS_KEY = getVar('RI_PEXELS_KEY');
 const UNSPLASH_KEY = getVar('RI_UNSPLASH_KEY');
 const PIXABAY_KEY = getVar('RI_PIXABAY_KEY');
 
-const LEDGER_PATH = path.join(__dirname, '..', '..', '..', 'data', 'autopublish-image-ledger.json');
+const LEDGER_PATH = nichePaths.dataPath('autopublish-image-ledger.json');
 
 function loadLedger() {
   if (!fs.existsSync(LEDGER_PATH)) return {};

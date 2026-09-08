@@ -5,9 +5,9 @@
 // d'articles (champs "hub"/"sous_hub") — leur contenu est géré par les
 // commandes /p4-hubs, en amont de ce pipeline.
 const fs = require('fs');
-const path = require('path');
+const nichePaths = require('./niche-paths');
 
-const MAILLAGE_PATH = path.join(__dirname, '..', '..', '..', 'data', 'maillage', 'maillage.json');
+const MAILLAGE_PATH = nichePaths.dataPath('maillage', 'maillage.json');
 
 let cache = null;
 
