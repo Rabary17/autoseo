@@ -2,6 +2,20 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-09-08 : bug de réparation des images cassées (guardrails/artifacts.js) trouvé ET corrigé avant utilisation — 19 articles réels réparés (dont des `publish`)
+
+**Contexte** : `guardrails/artifacts.js` (porté depuis tonton-maj-v2 le 2026-09-07/08, jamais encore câblé au pipeline) détecte et répare un défaut où le modèle tente une 2e insertion d'image improvisée et tronquée — un bloc `wp:image` cassé (`<img src="</p>`) suivi d'un paragraphe orphelin contenant la queue du tag interrompu. Le vrai bloc image (avec le média réellement uploadé) existe toujours par ailleurs.
+
+**Bug trouvé avant toute mise en prod** : `BROKEN_IMAGE_BLOCK_PATTERN` utilisait un `[\s\S]*?` non borné entre l'ouverture du bloc et la fermeture — quand le bloc `wp:image` suivant immédiatement était un bloc LÉGITIME (src propre), le moteur regex continuait à chercher plus loin dans le document une occurrence cassée pour satisfaire le motif, engloutissant au passage tout le contenu réel entre deux défauts (image légitime, paragraphes entiers). Testé sur `assurance-track-day` (#1923, contenu réel) AVANT toute écriture WordPress : aurait supprimé **~50% de l'article** (16783 → 8351 caractères). `ORPHANED_PARAGRAPH_BLOCK_PATTERN` avait le défaut inverse — trop strict (exigeait un `</p>` de fermeture que le contenu réel n'a jamais) — 0 match sur les 3 fragments réels du même article.
+
+**Corrigé** : motif d'image ancré juste après l'ouverture du bloc (ne peut plus traverser un bloc voisin valide) ; `</p>` rendu optionnel dans le motif de paragraphe orphelin. Revérifié sur le contenu réel : 6 fragments trouvés et retirés proprement (39 mots de texte alternatif dupliqué, aucune perte de prose), `findArtifacts()` confirme propre après coup.
+
+**Audit complet lancé une fois le correctif validé** : 210 posts (`publish`/`future`/`draft`) scannés via l'API WP — **16 articles supplémentaires touchés**, dont 9 déjà en `publish` (image cassée visible publiquement depuis leur mise en ligne) : `itineraire-velo-securise-appli`, `meilleur-vae-2026`, `casque-trottinette-obligatoire`, `forfait-mobilites-durables-velo`, `utilitaire-electrique-autonomie-reelle`, `tva-recuperable-utilitaire`, `amortissement-vehicule-societe-plafond`, `utilitaire-occasion-kilometrage`, `location-voiture-aeroport-astuces`, `blablacar-daily-avis` + 6 en `draft`. Tous réparés et repoussés sur WordPress (vérifié systématiquement : delta de mots < 40 par article, `findArtifacts()` propre après coup avant chaque écriture).
+
+**Câblé dans le pipeline pour les prochains articles** : `content-repair.js` appelle désormais `repairKnownArtifacts()` avant le gating (comme les 2 réparations mécaniques existantes) ; `gating.js` ajoute une règle bloquante `artefacts_html` (défense en profondeur si un survivant échappe à la réparation, ex. variante non couverte).
+
+**Non fait** : les 3 articles connus au départ (`assurance-track-day` #1923, `entretien-velo-electrique-cout` #1887, `vae-ville-confort-comparatif` #1764) ont aussi été corrigés dans la foulée. Guardrails `style.js`/`uncertainty.js` (constats non bloquants) restent portés mais pas encore câblés à un rapport — pas fait ici, hors périmètre de cette demande.
+
 ## 2026-09-04 (suite 7) : 2 fusions supplémentaires — découverte de données fiscales fausses dans 2 articles, corrigées avec avertissement
 
 Suite de l'audit (entrée précédente) : vérification manuelle des paires signalées en

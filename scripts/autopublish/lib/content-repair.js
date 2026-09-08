@@ -1,10 +1,9 @@
 // Reparations mecaniques du contenu genere, avant gating (2026-08-21).
 //
-// Ces deux defauts sont produits par le modele malgre une interdiction
-// explicite dans le prompt, et tous deux sont reparables sans aucun jugement
-// editorial. Les laisser bloquer un article au gating revient a jeter un
-// contenu correct pour un caractere de ponctuation ou un commentaire de bloc
-// mal ferme.
+// Ces defauts sont produits par le modele malgre une interdiction explicite
+// dans le prompt, et tous sont reparables sans aucun jugement editorial. Les
+// laisser bloquer un article au gating revient a jeter un contenu correct
+// pour un caractere de ponctuation ou un commentaire de bloc mal ferme.
 //
 // Historique : la reparation des blocs Gutenberg existait deja mais vivait
 // dans `scripts/i18n/lib/sanitize.js`, donc ne servait QU'AUX TRADUCTIONS —
@@ -12,6 +11,14 @@
 // le 2026-08-21 : sur 6 articles etoffes, 1 rejete pour bloc mal ferme et 1
 // pour tiret cadratin, les deux reparables ici. Remonte au niveau commun,
 // `sanitize.js` delegue desormais a ce module.
+//
+// 2026-09-08 : ajout de repairKnownArtifacts() (guardrails/artifacts.js) —
+// 2e tentative d'insertion d'image improvisee et tronquee par le modele,
+// laissant un bloc wp:image casse + un paragraphe orphelin (voir ce module
+// pour le detail). Trouve en QC manuel sur 2 articles, confirme par audit
+// complet sur 19 articles reels (dont plusieurs deja publies) avant que ce
+// garde-fou soit cable ici.
+const guardrailArtifacts = require('./guardrails/artifacts');
 
 /* ---------- Blocs Gutenberg ---------- */
 
@@ -90,6 +97,12 @@ function repairEmDash(texte) {
 function repairContent(content) {
   const repairs = [];
   const out = { ...content };
+
+  const artifacts = guardrailArtifacts.repairKnownArtifacts(out.content_gutenberg || '');
+  if (artifacts.removedCount) {
+    out.content_gutenberg = artifacts.html;
+    repairs.push(`${artifacts.removedCount} artefact(s) d'insertion d'image cassee retire(s) (guardrails/artifacts.js)`);
+  }
 
   const blocs = repairGutenbergBlocks(out.content_gutenberg || '');
   if (blocs.repairs.length) {

@@ -4,6 +4,7 @@
 // ligne de suivi, entrée de maillage, faits fournis au prompt). Un contenu
 // qui échoue une seule règle reste en `draft`, jamais publié "quand même".
 const similarity = require('./similarity');
+const guardrailArtifacts = require('./guardrails/artifacts');
 
 // Hub/sous-hub : plancher ferme, plafond large plutôt qu'une fourchette
 // stricte — un silo à peu de sous-hubs/articles doit quand même atteindre le
@@ -142,6 +143,15 @@ const GENERIC_HUB_OPENING_PATTERN = /\bce (silo|sous-cocon|cocon)\b[^.!?]{0,40}\
 function checkNoGenericOpening(content, contentType) {
   if (contentType !== 'hub' && contentType !== 'sous-hub') return true;
   return !GENERIC_HUB_OPENING_PATTERN.test(stripHtmlToText(content.content_gutenberg || '').slice(0, 500));
+}
+
+// Défense en profondeur (2026-09-08) : content-repair.js appelle déjà
+// repairKnownArtifacts() avant le gating, donc ce cas ne devrait normalement
+// jamais se présenter — mais un survivant (variante non couverte par les 2
+// motifs de réparation) doit bloquer plutôt que publier un `<img>` cassé
+// visible sur le site. Voir guardrails/artifacts.js pour le détail du défaut.
+function checkNoHtmlArtifacts(content) {
+  return guardrailArtifacts.findArtifacts(content.content_gutenberg || '');
 }
 
 /* ---------- Règles individuelles ---------- */
@@ -382,6 +392,14 @@ function runGating({
 
   if (!checkNoGenericOpening(content, contentType)) {
     failures.push({ rule: 'ouverture_generique', message: 'Ouverture générique bannie ("Ce silo/sous-cocon réunit/rassemble/regroupe...") détectée.' });
+  }
+
+  const artifacts = checkNoHtmlArtifacts(content);
+  if (!artifacts.ok) {
+    failures.push({
+      rule: 'artefacts_html',
+      message: `Artefact HTML détecté (${artifacts.findings.map(f => f.pattern).join(', ')}) — insertion d'image cassée non réparée.`,
+    });
   }
 
   // La règle de maillage se vérifie contre `maillage.json`, qui décrit le
