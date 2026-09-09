@@ -2,6 +2,7 @@
   "id": "auto-mobilite",
   "name": "Auto & mobilité",
   "data_dir": "data",
+  "wp_url": "https://mntdev.riseasso.com",
   "authors": {
     "A": {
       "label": "A — Mécanique & technique",
@@ -58,7 +59,11 @@
       "bio": "Nathalie a parcouru une bonne partie de l'Europe en camping-car et carbure aux itinéraires bien préparés. Elle couvre aussi les usages moins grand public — utilitaires, flottes pro, consommation — avec le même souci du détail pratique."
     }
   },
-  "ymyl_silos": ["Carte grise & démarches", "Assurance auto", "Permis & conduite"],
+  "ymyl_silos": [
+    "Carte grise & démarches",
+    "Assurance auto",
+    "Permis & conduite"
+  ],
   "silos": [
     {
       "name": "Entretien & révision",
@@ -113,7 +118,11 @@
         "Marques allemandes",
         "Marques asiatiques",
         "Marques chinoises & nouvelles",
-        "Marques françaises"
+        "Marques françaises",
+        "Fiabilité par modèle",
+        "Pannes par modèle",
+        "Coûts & entretien par modèle",
+        "Achat occasion par modèle"
       ],
       "seeds_file": "marques-modeles.json"
     },

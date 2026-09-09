@@ -1,11 +1,21 @@
-// Écrit le résumé de run dans logs/autopublish/<date>.md et remplace un bloc
-// dédié dans STATE.md (jamais un ajout chronologique de plus — un bloc qui se
-// remplace à chaque run, consultable sans fouiller les logs bruts).
+// Écrit le résumé de run dans logs/autopublish/<niche>/<date>.md et remplace
+// un bloc dédié dans STATE.md (jamais un ajout chronologique de plus — un
+// bloc qui se remplace à chaque run, consultable sans fouiller les logs
+// bruts).
+//
+// Chemin de logs scopé par niche depuis le 2026-09-08 (industrialisation
+// multi-niche) : sans ça, deux niches tournant le même jour calendaire
+// écraseraient le même logs/autopublish/<date>.md. STATE.md, lui, reste
+// volontairement le journal humain d'UNE SEULE niche (auto-mobilite) — voir
+// updateStateMd() plus bas, jamais rendu multi-niche (un seul bloc marqueur,
+// pas fait pour ça).
 const fs = require('fs');
 const path = require('path');
+const nichePaths = require('./niche-paths');
 
-const LOGS_ROOT = path.join(__dirname, '..', '..', '..', 'logs', 'autopublish');
+const LOGS_ROOT = path.join(__dirname, '..', '..', '..', 'logs', 'autopublish', nichePaths.NICHE_ID);
 const STATE_MD_PATH = path.join(__dirname, '..', '..', '..', 'STATE.md');
+const STATE_MD_NICHE_ID = 'auto-mobilite';
 
 const MARKER_START = '<!-- autopublish:report:start -->';
 const MARKER_END = '<!-- autopublish:report:end -->';
@@ -69,17 +79,22 @@ function writeRunReport({ runDate, dryRun, phase, silo, items, totalUsage }) {
   const reportPath = path.join(LOGS_ROOT, `${runDate}.md`);
   fs.writeFileSync(reportPath, lines.join('\n'), 'utf8');
 
-  updateStateMd({
-    runDate,
-    dryRun,
-    phase,
-    silo,
-    publishedCount: published.length,
-    blockedCount: draft.length + aValider.length,
-    errorCount: erreur.length,
-    lastScheduledDate: published.length ? published[published.length - 1].postDate : null,
-    reportRelPath: `logs/autopublish/${runDate}.md`,
-  });
+  // STATE.md reste le journal humain d'auto-mobilite uniquement (un seul
+  // bloc marqueur, jamais pensé pour plusieurs niches en parallèle) — les
+  // autres niches ne le touchent jamais.
+  if (nichePaths.NICHE_ID === STATE_MD_NICHE_ID) {
+    updateStateMd({
+      runDate,
+      dryRun,
+      phase,
+      silo,
+      publishedCount: published.length,
+      blockedCount: draft.length + aValider.length,
+      errorCount: erreur.length,
+      lastScheduledDate: published.length ? published[published.length - 1].postDate : null,
+      reportRelPath: `logs/autopublish/${nichePaths.NICHE_ID}/${runDate}.md`,
+    });
+  }
 
   return reportPath;
 }

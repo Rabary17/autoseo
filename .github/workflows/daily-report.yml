@@ -1,16 +1,18 @@
 name: Rapport quotidien monauto
 
-# Aucun appel à l'API Claude ici — juste une lecture WordPress (source de
-# vérité) puis un envoi d'e-mail. Coût quasi nul, peut tourner tous les jours
-# sans conflit avec l'économie de tokens du pipeline de génération
-# (.github/workflows/autopublish.yml, lui hebdomadaire).
-# Cron désactivé le 2026-08-05 : le contenu du projet est daté sur un
-# calendrier simulé (2026) alors que ce workflow tourne sur l'horloge réelle
-# des runners GitHub Actions — le rapport ne peut donc que rapporter "rien
-# publié/prévu" tant que la vraie date n'a pas rejoint 2026. Toujours
-# déclenchable manuellement (workflow_dispatch) si besoin ponctuel.
+# Aucun appel à l'API Claude/Mistral ici — juste des lectures WordPress
+# (source de vérité) puis un envoi d'e-mail combiné (une section par niche
+# active). Coût quasi nul, peut tourner tous les jours sans conflit avec
+# l'économie de tokens du pipeline de génération (autopublish.yml).
+#
+# Cron réactivé le 2026-09-08 : la raison de désactivation du 2026-08-05
+# (calendrier du projet en avance sur l'horloge réelle des runners) ne tient
+# plus, la date réelle a rejoint le calendrier du pipeline (voir
+# autopublish.yml pour le même changement et son raisonnement détaillé).
 on:
   workflow_dispatch: {}
+  schedule:
+    - cron: '0 7 * * *' # 07:00 UTC, tous les jours
 
 jobs:
   daily-report:
@@ -24,12 +26,13 @@ jobs:
 
       - run: npm install
 
-      - name: Générer le rapport
+      - name: Générer le rapport combiné (une niche par sous-process)
         env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
           WP_URL: ${{ secrets.WP_URL }}
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-        run: npm run daily-report
+        run: npm run daily-report:all
 
       - name: Envoyer l'e-mail
         uses: dawidd6/action-send-mail@v3
@@ -39,6 +42,6 @@ jobs:
           username: ${{ secrets.GMAIL_USER }}
           password: ${{ secrets.GMAIL_APP_PASSWORD }}
           subject: "monauto — rapport quotidien"
-          to: andrianina.rabarivelo@gmail.com
+          to: techcars.fr@gmail.com
           from: monauto autopublish <${{ secrets.GMAIL_USER }}>
           html_body: file://logs/autopublish/daily-report-latest.html

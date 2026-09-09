@@ -5,12 +5,21 @@ name: Autopublish monauto
 # chaque jour aux dates prévues — un seul run par semaine suffit à programmer
 # toute la semaine à venir. workflow_dispatch permet un test manuel (--dry-run)
 # sans attendre le lundi.
-# Cron désactivé le 2026-08-05 (même raison que daily-report.yml) : le
-# contenu du projet est daté sur un calendrier simulé (2026) alors que ce
-# workflow tourne sur l'horloge réelle des runners GitHub Actions — un run
-# automatique calculerait "aujourd'hui" en temps réel, désynchronisé d'environ
-# un an avec les dates déjà utilisées partout ailleurs (WP, tracking xlsx).
-# Toujours déclenchable manuellement (workflow_dispatch) si besoin ponctuel.
+#
+# Multi-niche depuis le 2026-09-08 (industrialisation) : un job par niche
+# "active" (celles qui ont un wp_url dans leur niche.json — sous-site sur le
+# réseau WordPress Multisite), découvertes dynamiquement par le job
+# discover-niches plutôt que codées en dur ici (ajouter une niche à la
+# production automatique ne demande que d'éditer son niche.json).
+#
+# Cron : volontairement PAS encore réactivé ici (contrairement à
+# daily-report.yml, qui ne touche ni WP en écriture ni Mistral/xlsx/git) —
+# à activer manuellement (voir commentaire sous `on:`) seulement après un
+# premier workflow_dispatch matriciel réussi de bout en bout. La raison de
+# désactivation d'origine (calendrier du projet en avance sur l'horloge
+# réelle des runners, 2026-08-05) ne tient plus : todayIso() utilise
+# new Date() réel, aucune autre logique de date fictive dans scheduler.js/
+# state.js, et l'état Firestore réel est déjà aligné sur la date réelle.
 on:
   workflow_dispatch:
     inputs:
@@ -18,17 +27,42 @@ on:
         description: "Dry-run (n'écrit rien dans WP/xlsx, écrit seulement le rapport)"
         type: boolean
         default: false
-
-# Empêche deux runs simultanés (écritures concurrentes WP + xlsx + commit).
-concurrency:
-  group: autopublish
-  cancel-in-progress: false
+  # Décommenter une fois un run manuel matriciel validé de bout en bout :
+  # schedule:
+  #   - cron: '0 6 * * 1' # lundi 06:00 UTC
 
 jobs:
+  discover-niches:
+    runs-on: ubuntu-latest
+    outputs:
+      niches: ${{ steps.list.outputs.niches }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          node -e "
+            const { listNiches, loadNiche } = require('./scripts/lib_js/niche-config');
+            const active = listNiches().filter(id => !!(loadNiche(id).wp_url));
+            console.log('niches=' + JSON.stringify(active));
+          " >> "$GITHUB_OUTPUT"
+
   autopublish:
+    needs: discover-niches
+    if: needs.discover-niches.outputs.niches != '[]'
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    strategy:
+      matrix:
+        niche: ${{ fromJson(needs.discover-niches.outputs.niches) }}
+      max-parallel: 3
+      fail-fast: false
+    concurrency:
+      # Par niche, pas global : deux niches différentes tournent en parallèle
+      # (jusqu'à max-parallel), mais la même niche ne tourne jamais deux fois
+      # à la fois (écritures concurrentes WP + xlsx + commit).
+      group: autopublish-${{ matrix.niche }}
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
 
@@ -38,8 +72,21 @@ jobs:
 
       - run: npm install
 
+      - name: Récupérer la config + le tracking depuis Firestore
+        # Prend en compte les éditions faites depuis le dashboard anmira-saas
+        # depuis le dernier commit — voir l'en-tête de
+        # scripts/lib_js/niche-firestore-sync.js, qui appelle explicitement un
+        # pull avant tout run automatique.
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: |
+          node scripts/sync-niche-firestore.js pull --niche ${{ matrix.niche }}
+          node scripts/sync-tracking-firestore.js pull --niche ${{ matrix.niche }}
+
       - name: Run autopublish
         env:
+          NICHE_ID: ${{ matrix.niche }}
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           WP_URL: ${{ secrets.WP_URL }}
           WP_USER: ${{ secrets.WP_USER }}
@@ -55,23 +102,36 @@ jobs:
             npm run autopublish
           fi
 
+      - name: Renvoyer le tracking mis à jour vers Firestore
+        # always() : même en cas d'échec partiel du run, le tracking déjà
+        # écrit sur disque doit être persisté plutôt que perdu au prochain pull.
+        if: always()
+        env:
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
+        run: node scripts/sync-tracking-firestore.js push --niche ${{ matrix.niche }}
+
       - name: Commit les fichiers mis à jour
         # always() : même si le run précédent a échoué (erreur fatale, voir
         # run.js), le rapport et l'état partiel déjà écrits sur disque doivent
         # être commités — sinon une panne fait perdre la trace du problème en
         # plus de faire échouer le run.
+        #
+        # `data/` et `logs/` couvrent TOUTES les niches (chaque niche écrit
+        # sous son propre data_dir/logs, voir nichePaths.dataPath() et
+        # lib/report.js) — plus de chemins codés en dur qui ne matchaient que
+        # data_dir="data" (auto-mobilite). STATE.md volontairement absent
+        # d'ici : reste le journal humain propre à auto-mobilite (voir
+        # lib/report.js#updateStateMd), jamais touché par les autres niches.
         if: always()
         run: |
           git config user.name "autopublish-bot"
           git config user.email "autopublish-bot@users.noreply.github.com"
-          git add data/keywords/tracking-mots-cles.xlsx data/autopublish-state.json \
-                  data/similarity-index/ data/autopublish-image-ledger.json \
-                  logs/autopublish/ STATE.md 2>/dev/null || true
+          git add data/ logs/ STATE.md 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "autopublish: run $(date -u +%Y-%m-%d)"
-            # main a pu avancer depuis le checkout (push concurrent depuis un
-            # autre poste/session) — rebase avant de pousser plutôt que
-            # d'échouer sèchement en non-fast-forward.
+            git commit -m "autopublish(${{ matrix.niche }}): run $(date -u +%Y-%m-%d)"
+            # main a pu avancer depuis le checkout (autre niche du matrix,
+            # push concurrent depuis un autre poste/session) — rebase avant de
+            # pousser plutôt que d'échouer sèchement en non-fast-forward.
             git fetch origin main
             git rebase origin/main
             git push
@@ -83,6 +143,8 @@ jobs:
         if: always()
         run: |
           DATE=$(date -u +%Y-%m-%d)
-          if [ -f "logs/autopublish/$DATE.md" ]; then
-            cat "logs/autopublish/$DATE.md" >> "$GITHUB_STEP_SUMMARY"
+          REPORT="logs/autopublish/${{ matrix.niche }}/$DATE.md"
+          if [ -f "$REPORT" ]; then
+            echo "## ${{ matrix.niche }}" >> "$GITHUB_STEP_SUMMARY"
+            cat "$REPORT" >> "$GITHUB_STEP_SUMMARY"
           fi
