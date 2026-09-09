@@ -721,6 +721,46 @@ add_action('rest_api_init', function () {
 });
 
 /* ==========================================================================
+   6bis. Industrialisation Multisite (2026-09-08) — rattacher un auteur a un
+   sous-site avec un role, depuis scripts/autopublish/create-missing-authors.js.
+
+   Sur un reseau Multisite, `POST /wp/v2/users` cree (ou reutilise) un
+   utilisateur RESEAU mais ne lui donne AUCUN role sur AUCUN sous-site — il
+   faut explicitement `add_user_to_blog()`, qu'aucun endpoint REST core
+   n'expose. Cette route wrappe cet appel, reservee a un Super Admin reseau
+   (is_super_admin() n'a de sens qu'en Multisite — no-op ailleurs).
+
+   Le sous-site cible n'est jamais un parametre : `get_current_blog_id()`
+   resout automatiquement le site sur lequel la requete REST est arrivee
+   (meme logique que scripts/autopublish/lib/wp-client.js, qui cible deja
+   l'origine `wp_url` propre a chaque niche) — pas de risque de rattacher un
+   auteur au mauvais sous-site par une erreur de parametre.
+========================================================================== */
+add_action('rest_api_init', function () {
+	register_rest_route('monauto/v1', '/network/add-user-to-site', [
+		'methods' => 'POST',
+		'permission_callback' => fn() => is_multisite() && is_super_admin(),
+		'callback' => function (WP_REST_Request $request) {
+			$user_id = (int) $request->get_param('user_id');
+			$role = (string) ($request->get_param('role') ?: 'author');
+
+			$user = get_user_by('id', $user_id);
+			if (!$user) {
+				return new WP_REST_Response(['ok' => false, 'error' => 'utilisateur_introuvable'], 404);
+			}
+
+			$blog_id = get_current_blog_id();
+			if (is_user_member_of_blog($user_id, $blog_id)) {
+				return new WP_REST_Response(['ok' => true, 'already_member' => true], 200);
+			}
+
+			add_user_to_blog($blog_id, $user_id, $role);
+			return new WP_REST_Response(['ok' => true, 'already_member' => false], 201);
+		},
+	]);
+});
+
+/* ==========================================================================
    6. Synchronisation newsletter -> Zoho Campaigns
       Reutilisable tel quel sur chaque nouveau site (industrialisation) :
       seules les 5 constantes wp-config.php ci-dessous changent d'un site a

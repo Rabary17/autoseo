@@ -2,15 +2,20 @@
 // Rapport quotidien — aucune génération, aucun appel Mistral, coût ~nul.
 // Interroge WordPress (source de vérité) pour lister : ce qui est publié
 // aujourd'hui, ce qui est prévu demain, et un aperçu des jours suivants.
-// Écrit un e-mail HTML que le workflow GitHub Actions envoie ensuite (voir
-// .github/workflows/daily-report.yml). Destinataire configuré dans config.js.
+//
+// Écrit un FRAGMENT HTML propre à la niche courante (NICHE_ID) —
+// scripts/autopublish/daily-report-all.js orchestre un run par niche active
+// (sous-process, même contrainte que tracking-firestore-sync.js : NICHE_ID
+// n'est résolu qu'une fois par process) et combine les fragments en un seul
+// e-mail (voir .github/workflows/daily-report.yml).
 const fs = require('fs');
 const path = require('path');
 const wp = require('./lib/wp-client');
 const stateLib = require('./lib/state');
 const config = require('./config');
+const nichePaths = require('./lib/niche-paths');
 
-const OUTPUT_PATH = path.join(__dirname, '..', '..', 'logs', 'autopublish', 'daily-report-latest.html');
+const OUTPUT_PATH = path.join(__dirname, '..', '..', 'logs', 'autopublish', nichePaths.NICHE_ID, 'daily-report-fragment.html');
 
 function dayStart(date) {
   const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
@@ -88,7 +93,7 @@ async function main() {
     .join('') || '<p><em>Rien de programmé au-delà de demain pour l\'instant.</em></p>';
 
   const html = `
-<h2>Rapport quotidien monauto — ${fmtDay(now)}</h2>
+<h2>${nichePaths.NICHE_ID} — ${fmtDay(now)}</h2>
 <p>Phase courante : <strong>${state.phase}</strong>${state.silo_en_cours ? ` — silo en cours : <strong>${state.silo_en_cours}</strong>` : ''}. Dernier run autopublish : ${state.derniere_execution ?? 'jamais'}.</p>
 ${errorBanner}
 ${section('Publié aujourd\'hui', publishedToday, 'Rien publié aujourd\'hui pour l\'instant.')}

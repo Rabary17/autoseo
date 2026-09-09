@@ -7,6 +7,7 @@
     "autopublish": "node scripts/autopublish/run.js",
     "autopublish:dry": "node scripts/autopublish/run.js --dry-run",
     "daily-report": "node scripts/autopublish/daily-report.js",
+    "daily-report:all": "node scripts/autopublish/daily-report-all.js",
     "create-missing-authors": "node scripts/autopublish/create-missing-authors.js",
     "backfill-meta": "node scripts/autopublish/backfill-meta.js",
     "test:e2e": "node scripts/autopublish/test-e2e.js",

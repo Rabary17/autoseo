@@ -8,8 +8,17 @@
 //
 // Credentials : lus depuis process.env (injectés par les secrets GitHub Actions
 // en CI), avec repli sur le .env local pour les tests en dry-run sur poste.
+//
+// Origine WordPress (2026-09-08, préparation Multisite) : chaque niche peut
+// déclarer son propre `wp_url` (son sous-site sur le réseau Multisite) dans
+// `config/niches/<id>/niche.json` — prioritaire sur le `WP_URL` global, qui
+// reste le repli tant qu'une niche n'a pas encore de sous-site dédié.
+// WP_USER/WP_APP_PASSWORD restent UN SEUL secret partagé : un compte Super
+// Admin Multisite s'authentifie nativement sur l'API REST de n'importe quel
+// sous-site du réseau, seule l'origine change par niche.
 const fs = require('fs');
 const path = require('path');
+const nichePaths = require('./niche-paths');
 
 function loadDotEnvFallback() {
   const envPath = path.join(__dirname, '..', '..', '..', '.env');
@@ -29,23 +38,26 @@ function getVar(name) {
   return process.env[name] ?? dotEnv[name];
 }
 
-const WP_ORIGIN = (getVar('WP_URL') || '').replace(/\/$/, '');
+const WP_ORIGIN = (nichePaths.niche.wp_url || getVar('WP_URL') || '').replace(/\/$/, '');
 const WP_USER = getVar('WP_USER');
 const WP_APP_PASSWORD = getVar('WP_APP_PASSWORD');
 
 if (!WP_ORIGIN || !WP_USER || !WP_APP_PASSWORD) {
   throw new Error(
-    'wp-client: WP_URL, WP_USER et WP_APP_PASSWORD doivent être définis (env ou .env local).'
+    'wp-client: origine WordPress introuvable — définir wp_url dans config/niches/<id>/niche.json ou WP_URL (env/.env local), et WP_USER/WP_APP_PASSWORD doivent être définis.'
   );
 }
 
 const AUTH = 'Basic ' + Buffer.from(`${WP_USER}:${WP_APP_PASSWORD}`).toString('base64');
 
-function buildUrl(pathAndQuery) {
+// `namespace` par défaut 'wp/v2' (core) — le mu-plugin expose aussi des
+// routes custom sous 'monauto/v1' (newsletter, et depuis 2026-09-08
+// network/add-user-to-site pour l'industrialisation Multisite).
+function buildUrl(pathAndQuery, namespace = 'wp/v2') {
   const qIndex = pathAndQuery.indexOf('?');
   const resourcePath = qIndex === -1 ? pathAndQuery : pathAndQuery.slice(0, qIndex);
   const query = qIndex === -1 ? '' : pathAndQuery.slice(qIndex + 1);
-  const restRoute = `/wp/v2${resourcePath}`;
+  const restRoute = `/${namespace}${resourcePath}`;
   return `${WP_ORIGIN}/?rest_route=${encodeURIComponent(restRoute).replace(/%2F/g, '/')}${query ? `&${query}` : ''}`;
 }
 
@@ -54,12 +66,12 @@ function buildUrl(pathAndQuery) {
 // l'autre ; un backoff long ne répare rien). Ne retente QUE les erreurs
 // réseau et les statuts 429/5xx — un 400/401/403/404 ne se corrige jamais en
 // réessayant, retenter dans ce cas ne fait que perdre 1-2s pour rien.
-async function request(pathAndQuery, { method = 'GET', body, retries = 2 } = {}) {
+async function request(pathAndQuery, { method = 'GET', body, retries = 2, namespace = 'wp/v2' } = {}) {
   let lastErr;
   for (let attempt = 0; attempt <= retries; attempt++) {
     let res;
     try {
-      res = await fetch(buildUrl(pathAndQuery), {
+      res = await fetch(buildUrl(pathAndQuery, namespace), {
         method,
         headers: { Authorization: AUTH, 'content-type': 'application/json' },
         body: body ? JSON.stringify(body) : undefined,

@@ -69,12 +69,23 @@ async function callMistral({ model, system, messages, schema, maxTokens = 16000 
 
   // Un appel long (hub/sous-hub, max_tokens relevé) reste exposé à des
   // coupures réseau transitoires (même constat que sur l'ancien client
-  // Anthropic) — 2 tentatives avec backoff avant d'abandonner.
+  // Anthropic) — 3 tentatives avec backoff avant d'abandonner.
+  //
+  // 429 traité à part depuis le 2026-09-08 (industrialisation multi-niche,
+  // plusieurs niches CI partagent maintenant la même clé Mistral en
+  // parallèle) : respecte l'en-tête Retry-After si présent, sinon un backoff
+  // nettement plus long qu'une erreur réseau générique — un 429 signale un
+  // vrai dépassement de quota, pas un accident transitoire à réessayer vite.
+  // Un 4xx autre que 429 (400/401/403/404...) ne se corrige jamais en
+  // réessayant : échec immédiat, sans consommer les tentatives restantes.
+  const MAX_ATTEMPTS = 3;
   let response;
   let lastErr;
-  for (let attempt = 0; attempt <= 2; attempt++) {
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    const isLastAttempt = attempt === MAX_ATTEMPTS - 1;
+    let res;
     try {
-      const res = await fetch(API_URL, {
+      res = await fetch(API_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -82,16 +93,38 @@ async function callMistral({ model, system, messages, schema, maxTokens = 16000 
         },
         body: JSON.stringify(body),
       });
-      if (!res.ok) {
-        const errText = await res.text().catch(() => '');
-        throw new Error(`mistral-client: HTTP ${res.status} pour "${schema.name}" — ${errText.slice(0, 500)}`);
-      }
-      response = await res.json();
-      break;
     } catch (e) {
       lastErr = e;
-      if (attempt < 2) await new Promise(r => setTimeout(r, 2000 * (attempt + 1)));
+      if (!isLastAttempt) await new Promise(r => setTimeout(r, 2000 * (attempt + 1)));
+      continue;
     }
+
+    if (res.ok) {
+      response = await res.json();
+      break;
+    }
+
+    const errText = await res.text().catch(() => '');
+    const err = new Error(`mistral-client: HTTP ${res.status} pour "${schema.name}" — ${errText.slice(0, 500)}`);
+    err.status = res.status;
+    lastErr = err;
+
+    if (isLastAttempt) throw err;
+
+    if (res.status === 429) {
+      const retryAfterHeader = res.headers.get('retry-after');
+      const waitMs = retryAfterHeader ? Number(retryAfterHeader) * 1000 : 10000 * (attempt + 1);
+      console.warn(`mistral-client: 429 pour "${schema.name}" — nouvelle tentative dans ${Math.round(waitMs / 1000)}s.`);
+      await new Promise(r => setTimeout(r, waitMs));
+      continue;
+    }
+
+    if (res.status >= 500) {
+      await new Promise(r => setTimeout(r, 2000 * (attempt + 1)));
+      continue;
+    }
+
+    throw err;
   }
   if (!response) throw lastErr;
 

@@ -1069,10 +1069,10 @@ Demande explicite de l'utilisateur ("carte blanche", "ne me pose pas de question
 **⚠️ Point en attente, non tranché par l'utilisateur** : P2 (factuel) et P3 (maillage) des 4 sites ont été générés à partir de l'**ancienne** sélection de mots-clés (avant reformulation). Le tracking xlsx a changé (nouveaux clusters/volumes) mais P2/P3 n'ont pas été refaits — à revoir si l'utilisateur veut que le maillage/les données factuelles reflètent les nouveaux clusters à plus fort volume.
 
 <!-- autopublish:report:start -->
-## Autopublish — dernier run : 2026-08-26
-- Phase : 2 — silo en cours : Sport auto & passion
-- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 3 ⚠️
-- Détail complet : [logs/autopublish/2026-08-26.md](logs/autopublish/2026-08-26.md)
+## Autopublish — dernier run : 2026-09-08
+- Phase : 2 — silo en cours : Marques & modèles
+- Programmées : 0 — bloquées (draft) : 0 — erreurs techniques : 4 ⚠️
+- Détail complet : [logs/autopublish/auto-mobilite/2026-09-08.md](logs/autopublish/auto-mobilite/2026-09-08.md)
 <!-- autopublish:report:end -->
 
 
