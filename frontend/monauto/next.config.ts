@@ -96,6 +96,16 @@ const nextConfig: NextConfig = {
         destination: "/taxe-co2-vehicule-occasion/",
         permanent: true,
       },
+      // Quasi-doublon détecté avant publication (2026-09-14, les deux étaient
+      // encore en brouillon) : changement-titulaire-carte-grise-en-ligne (#958)
+      // fusionné dans changement-de-titulaire-carte-grise (#962, plus complet —
+      // 16 H2 contre 7). Section "Véhicule de collection" récupérée depuis la
+      // page perdante avant fusion.
+      {
+        source: "/changement-titulaire-carte-grise-en-ligne",
+        destination: "/changement-de-titulaire-carte-grise/",
+        permanent: true,
+      },
     ];
   },
   // En-têtes de sécurité manquants sur 100% des pages (audit Screaming Frog du
