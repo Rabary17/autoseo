@@ -1,0 +1,50 @@
+name: Publier un article Tests
+
+# Publication ponctuelle d'un article déjà rédigé et validé du silo "Tests"
+# (pipeline agents IA — voir skills/agents-ia.md), via scripts/publish-test-article.js.
+#
+# Pourquoi ce workflow : scripts/publish-test-article.js ne peut pas être lancé
+# avec --apply depuis une session Claude Code/Cowork classique (proxy réseau de
+# ce type d'environnement, mntdev.riseasso.com non autorisé — voir STATE.md
+# 2026-09-18). Les runners GitHub Actions n'ont pas cette restriction, et
+# réutilisent les mêmes secrets WP déjà configurés pour autopublish.yml — aucun
+# identifiant ne transite par le chat ni par un agent IA.
+#
+# Toujours post_status=draft (garde-fou dans le script lui-même, jamais modifié
+# ici) : ce workflow insère un brouillon à relire dans wp-admin, jamais un
+# publish/future automatique.
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Slug de l'article (data/tests/articles/<slug>.json)"
+        required: true
+        type: string
+      apply:
+        description: "Publier réellement (décoché = simulation, n'écrit rien dans WP)"
+        type: boolean
+        default: false
+
+jobs:
+  publish-test-article:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Publier (ou simuler) l'article
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            node scripts/publish-test-article.js --slug=${{ inputs.slug }} --apply
+          else
+            node scripts/publish-test-article.js --slug=${{ inputs.slug }}
+          fi
