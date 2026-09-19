@@ -6,7 +6,7 @@ import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
   title: "Toutes les rubriques",
-  description: `Les 19 rubriques du guide auto & mobilité ${SITE_NAME} : entretien, pannes, marques, essais, démarches, électrique et plus.`,
+  description: `Les 20 rubriques du guide auto & mobilité ${SITE_NAME} : entretien, pannes, marques, essais, démarches, électrique et plus.`,
   path: "/rubriques/",
 });
 

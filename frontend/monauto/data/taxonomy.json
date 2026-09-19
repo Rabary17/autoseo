@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-28",
-  "total": 10000,
+  "updated": "2026-09-19",
+  "total": 10040,
   "silos": [
     {
       "slug": "entretien-revision",
@@ -6573,6 +6573,43 @@
               "title": "Avantage en nature véhicule fonction"
             }
           ]
+        }
+      ]
+    },
+    {
+      "slug": "combien-ca-coute-vraiment",
+      "name": "Combien ça coûte vraiment",
+      "desc": "Configurateurs, devis et cotes vérifiés en vrai",
+      "articles": 40,
+      "children": [
+        {
+          "name": "Configurateurs & coût de possession",
+          "slug": "configurateurs-cout-de-possession",
+          "count": 1,
+          "articles": [
+            {
+              "slug": "dacia-sandero-vs-clio-vi-prix-reel",
+              "title": "Dacia Sandero vs Renault Clio VI : le vrai prix en 2026"
+            }
+          ]
+        },
+        {
+          "name": "Devis assurance réels",
+          "slug": "devis-assurance-reels",
+          "count": 0,
+          "articles": []
+        },
+        {
+          "name": "Devis entretien réels",
+          "slug": "devis-entretien-reels",
+          "count": 0,
+          "articles": []
+        },
+        {
+          "name": "Cote de reprise réelle",
+          "slug": "cote-de-reprise-reelle",
+          "count": 0,
+          "articles": []
         }
       ]
     }

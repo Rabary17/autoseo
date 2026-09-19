@@ -14,7 +14,7 @@ import { SITE_NAME } from "@/lib/site";
 export const metadata: Metadata = pageMeta({
   title: `${SITE_NAME} — Le média expert de l'auto et de la mobilité`,
   description:
-    "Entretien, pannes, fiabilité, essais et démarches : des guides auto vérifiés par nos experts, sourcés et tenus à jour. 19 rubriques, une rédaction identifiée.",
+    "Entretien, pannes, fiabilité, essais et démarches : des guides auto vérifiés par nos experts, sourcés et tenus à jour. 20 rubriques, une rédaction identifiée.",
   path: "/",
 });
 
