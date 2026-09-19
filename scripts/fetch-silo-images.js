@@ -60,6 +60,7 @@ const SILO_QUERIES = {
   'camping-car-van': 'campervan road trip',
   'utilitaires-flottes-pro': 'van fleet delivery',
   'road-trips-voyage-auto': 'scenic road trip highway',
+  'combien-ca-coute-vraiment': 'car finance calculator laptop',
 };
 
 function parseArgs(argv) {
