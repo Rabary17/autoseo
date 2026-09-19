@@ -1,0 +1,27 @@
+{
+  "slug": "208-sandero-clio-cout-possession",
+  "sujet": "Coût réel de possession : Dacia Sandero vs Renault Clio VI",
+  "sous_cocon": "Configurateurs & coût de possession",
+  "silo": "Tests",
+  "protocole": "configurateur-cout-possession",
+  "angle": "Sandero et Clio VI parmi les citadines les plus vendues en France en 2026 (Sandero : 41 277 immat. / 3,8% depuis janvier ; Clio VI : 33 075 / 3,1%, source caroom.fr) configurées réellement sur les sites constructeurs officiels, à niveau d'équipement comparable — combien coûte vraiment chacune, au-delà du 'prix à partir de' affiché en communication.",
+  "mots_cles_cibles": [
+    "dacia sandero vs renault clio",
+    "prix réel dacia sandero 2026",
+    "prix réel renault clio 2026",
+    "citadine la moins chère 2026",
+    "coût de possession citadine 2026"
+  ],
+  "parametres_precis": {
+    "modeles": ["Dacia Sandero", "Renault Clio VI"],
+    "niveau_finition": "finition intermédiaire équivalente (documenter le nom exact retenu par modèle si les grilles ne s'alignent pas parfaitement)",
+    "motorisation": "essence, niveau d'entrée/milieu de gamme disponible sur cette finition",
+    "options": "aucune option ajoutée",
+    "departement_test": "75 (neutre, signaler si un bonus régional s'applique)"
+  },
+  "note_scope": "La Peugeot 208 était initialement incluse (voir angle d'origine : 3 citadines les plus vendues). Décision de l'utilisateur le 2026-09-18 : l'exclure du comparatif publié, store.peugeot.fr ne proposant pas de configurateur libre comparable à Dacia/Renault. La donnée Peugeot brute reste consignée dans le rapport Testeur (modeles_hors_perimetre) pour traçabilité.",
+  "auteur": "B — Marques, essais & sport auto",
+  "source_classement_ventes": "https://www.caroom.fr/guide/voiture-neuve/meilleures-ventes (consulté 2026-09-18)",
+  "statut": "test terminé — passage en rédaction",
+  "date_creation": "2026-09-18"
+}

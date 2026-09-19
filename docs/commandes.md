@@ -59,6 +59,45 @@ Sans argument : traite tous les articles en attente. Applique la checklist de ga
 ### `/p6-indexation`
 Checklist hebdomadaire : sitemap du dernier silo publié, rappel de soumission GSC, QA aléatoire sur 5 articles, détection des pages à réécrire après 90 jours.
 
+## Pipeline agents IA (silo Tests uniquement)
+
+Le silo **Tests** (comparatifs/devis/cotes réellement vérifiés — voir
+[skills/agents-ia.md](../skills/agents-ia.md)) ne suit pas le pipeline P4/P5 standard : il est
+produit par une chaîne d'agents dédiée, un sujet à la fois, avec un testeur qui exécute réellement
+l'action (configurateur, devis, cote) via navigation web plutôt que de reformuler des sources.
+
+| Commande | Rôle | Prérequis | Écrit dans |
+|---|---|---|---|
+| `/agent-pipeline <sous-cocon> [sujet]` | Orchestre les 5 étapes ci-dessous avec confirmation à chaque étape | aucun | — (appelle les commandes suivantes) |
+| `/agent-brief <sous-cocon>` | Identifie un sujet de test concret et son angle | sous-cocon existant dans le silo Tests | `data/tests/briefs/<slug>.json` |
+| `/agent-test <slug>` | Exécute réellement le protocole, produit le rapport + captures | brief existant | `data/tests/rapports/<slug>.json`, `data/tests/preuves/<slug>/` |
+| `/agent-redaction <slug>` | Rédige l'article strictement à partir du rapport | rapport existant | brouillon d'article (non publié) |
+| `/agent-critique <slug>` | Vérifie que chaque affirmation est traçable dans le rapport | article rédigé | verdict dans `data/tests/rapports/<slug>.json` |
+| `/agent-publier <slug>` | Insère l'article en `draft` WordPress (catégorie Tests + sous-cocon) | verdict "Validé" | post WordPress `draft`, `tracking-mots-cles.xlsx` |
+
+### `/agent-pipeline <sous-cocon> [sujet]`
+Exemple : `/agent-pipeline "Devis assurance réels"`
+Lance Brief → Test → Rédaction → Critique → Publication pour un seul sujet, avec pause et
+confirmation explicite entre chaque étape (contrôle humain systématique en phase 1 — voir
+[skills/agents-ia.md](../skills/agents-ia.md) section 5). N'insère jamais en `publish`/`future` —
+s'arrête toujours en `draft`.
+
+Catégories WordPress du silo créées via `node scripts/create-wp-category.js
+--niche=auto-mobilite --silo="Combien ça coûte vraiment" --apply` (à relancer depuis un environnement ayant accès au
+site — voir [STATE.md](../STATE.md)).
+
+## Ordre d'exécution type pour un sujet du silo Tests
+
+```
+/agent-pipeline "Configurateurs & coût de possession"
+# ou, étape par étape :
+/agent-brief "Configurateurs & coût de possession"
+/agent-test "<slug-du-brief>"
+/agent-redaction "<slug>"
+/agent-critique "<slug>"          (si "corrections demandées", relancer /agent-redaction)
+/agent-publier "<slug>"
+```
+
 ## Ordre d'exécution type pour un nouveau silo
 
 ```

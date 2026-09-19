@@ -1,0 +1,127 @@
+{
+  "slug": "dacia-sandero-vs-clio-vi-prix-reel",
+  "rapport_source": "data/tests/rapports/208-sandero-clio-cout-possession.json",
+  "brief_source": "data/tests/briefs/208-sandero-clio-cout-possession.json",
+  "titre_h1": "Dacia Sandero vs Renault Clio VI : le vrai prix en 2026",
+  "meta_title": "Dacia Sandero vs Renault Clio VI : le vrai prix 2026",
+  "meta_description": "16 050 € vs 23 900 € : on a vraiment configuré une Sandero Expression et une Clio VI techno sur les sites officiels, capture à l'appui.",
+  "silo": "Combien ça coûte vraiment",
+  "sous_cocon": "Configurateurs & coût de possession",
+  "tags": [
+    "Dacia Sandero",
+    "Renault Clio",
+    "Citadines"
+  ],
+  "auteur": "B",
+  "auteur_nom": "Thomas Lefèvre",
+  "image_a_la_une": "data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-expression.jpg",
+  "images_corps": [
+    {
+      "path": "data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-expression.jpg",
+      "alt": "Capture d'écran du configurateur officiel Dacia, Sandero finition expression TCe 100 à 16 050 euros",
+      "placeholder": "__IMG_DACIA_URL__"
+    },
+    {
+      "path": "data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-essential.jpg",
+      "alt": "Capture d'écran du configurateur officiel Dacia, Sandero finition essential TCe 100 à 13 990 euros",
+      "placeholder": "__IMG_DACIA_ESSENTIAL_URL__"
+    },
+    {
+      "path": "data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-expression-equipements.jpg",
+      "alt": "Capture d'écran du configurateur Dacia listant les 4 équipements principaux inclus en finition expression : climatisation manuelle, feux anti-brouillard, lève-vitre conducteur impulsionnel, écran multimédia 10 pouces",
+      "placeholder": "__IMG_DACIA_EQUIPEMENTS_URL__"
+    },
+    {
+      "path": "data/tests/preuves/208-sandero-clio-cout-possession/renault-clio-techno.jpg",
+      "alt": "Capture d'écran du configurateur officiel Renault, Clio VI finition techno TCe 115 ch à 23 900 euros",
+      "placeholder": "__IMG_RENAULT_URL__"
+    },
+    {
+      "path": "data/tests/preuves/208-sandero-clio-cout-possession/renault-clio-evolution.jpg",
+      "alt": "Capture d'écran du configurateur officiel Renault, Clio VI finition evolution TCe 115 ch à 19 900 euros",
+      "placeholder": "__IMG_RENAULT_EVOLUTION_URL__"
+    }
+  ],
+  "content_gutenberg_file": "data/tests/articles/dacia-sandero-vs-clio-vi-prix-reel.gutenberg.html",
+  "schema_jsonld": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Dacia Sandero vs Renault Clio VI : le vrai prix en 2026",
+      "author": {
+        "@type": "Person",
+        "name": "Thomas Lefèvre",
+        "jobTitle": "Journaliste auto"
+      },
+      "datePublished": "2026-09-18",
+      "dateModified": "2026-09-18",
+      "description": "16 050 € vs 23 900 € : on a vraiment configuré une Sandero Expression et une Clio VI techno sur les sites officiels, capture à l'appui."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://www.techcars.fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Combien ça coûte vraiment",
+          "item": "https://www.techcars.fr/combien-ca-coute-vraiment/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Configurateurs & coût de possession",
+          "item": "https://www.techcars.fr/combien-ca-coute-vraiment/configurateurs-cout-de-possession/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Dacia Sandero vs Renault Clio VI : le vrai prix en 2026"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quelle est la citadine la moins chère entre la Dacia Sandero et la Renault Clio VI en 2026 ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La Dacia Sandero est moins chère : 16 050 € en finition expression TCe 100, contre 23 900 € pour la Renault Clio VI en finition techno TCe 115 ch, à configuration comparable et sans option, configurations réalisées le 18 septembre 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Le prix affiché en publicité correspond-il au prix réel de ces voitures ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Non. Le prix « à partir de » communiqué par les marques correspond toujours à l'entrée de gamme la plus dépouillée. Dès qu'on passe à une finition intermédiaire réellement équipée, le prix grimpe : de 13 990 € à 16 050 € pour la Sandero, de 19 900 € à 23 900 € pour la Clio VI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pourquoi la Peugeot 208 n'apparaît-elle pas dans ce comparatif ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parce que store.peugeot.fr ne propose pas de configurateur à la carte comme Dacia et Renault : une seule version pré-construite est présentée par modèle, avec un financement LOA imposé plutôt qu'un prix comptant modulable. Impossible de reproduire la même méthode de test à l'identique."
+          }
+        }
+      ]
+    }
+  ],
+  "date_test_reference": "2026-09-18",
+  "ymyl": true,
+  "mention_non_contractuelle": true,
+  "post_status_cible": "draft",
+  "statut": "brouillon validé (critique OK) — prêt pour insertion WordPress, bloqué par accès réseau",
+  "date_creation": "2026-09-18",
+  "publish_command": "node scripts/publish-test-article.js --slug=dacia-sandero-vs-clio-vi-prix-reel --apply"
+}

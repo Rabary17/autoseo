@@ -1,0 +1,65 @@
+{
+  "slug": "208-sandero-clio-cout-possession",
+  "sujet": "Coût réel de possession : Dacia Sandero vs Renault Clio VI — configuration réelle sur les sites constructeurs",
+  "protocole": "configurateur-cout-possession",
+  "date_test": "2026-09-18",
+  "profil_utilise": "finition intermédiaire équivalente, motorisation essence d'entrée/milieu de gamme, sans option, département neutre (test mené sans code postal requis) — voir data/tests/briefs/208-sandero-clio-cout-possession.json",
+  "modeles_hors_perimetre": [
+    {
+      "modele": "Peugeot 208",
+      "raison_exclusion": "Décision éditoriale (validée par l'utilisateur le 2026-09-18) : store.peugeot.fr ne propose pas de configurateur libre comme Dacia/Renault, mais une offre pré-construite unique par modèle. La comparaison à finition/motorisation choisie n'est donc pas possible à l'identique. Donnée quand même consignée ci-dessous pour traçabilité, mais retirée du comparatif publié.",
+      "observation_reelle": "208 Style Turbo 100 ch — Prix catalogue 20 500 € (prix internet conseillé 18 180 € TTC, hors immatriculation/malus). Détail LOA : 1er loyer 3 000 €, 48 loyers de 138,26 €, durée 49 mois, option d'achat 10 602,95 €.",
+      "preuve": "texte de page extrait via navigateur, URL https://store.peugeot.fr, consulté 2026-09-18"
+    }
+  ],
+  "observations": [
+    {
+      "critere": "Prix configuré Dacia Sandero",
+      "action_effectuee": "Configuration réelle sur dacia.fr : sélection de la version 'expression' (finition intermédiaire, 2e sur 3 : essential/expression/journey), motorisation TCe 100 (par défaut sur cette finition)",
+      "observation_reelle": "SANDERO expression TCe 100 - 25 — prix total 16 050 € (ou 196 €/mois en LLD 49 mois, 1er loyer majoré de 1 900 €)",
+      "preuve": "capture d'écran réelle (résolution bureau 1920x1080, page complète) enregistrée dans data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-expression.jpg + texte de page extrait, URL https://www.dacia.fr/gamme-vehicules/sandero/configurateur.html, consulté 2026-09-18"
+    },
+    {
+      "critere": "Prix configuré Renault Clio VI",
+      "action_effectuee": "Configuration réelle sur le configurateur officiel renault.fr/vehicules-hybrides/nouvelle-clio/configurateur.html : sélection de la version 'techno' (finition intermédiaire, 2e sur 3 : evolution/techno/esprit Alpine), motorisation TCe 115 ch (par défaut), affichage basculé sur 'prix comptant'",
+      "observation_reelle": "NOUVELLE CLIO techno TCe 115 ch - 26 — prix total 23 900 € (couleur et sellerie de série incluses, sans option payante)",
+      "preuve": "capture d'écran réelle (résolution bureau 1920x1080, page complète) enregistrée dans data/tests/preuves/208-sandero-clio-cout-possession/renault-clio-techno.jpg + texte de page extrait, URL https://www.renault.fr/vehicules-hybrides/nouvelle-clio/configurateur.html, consulté 2026-09-18"
+    },
+    {
+      "critere": "Prix d'entrée de gamme (finition la plus dépouillée) des deux modèles",
+      "action_effectuee": "Relevé du prix affiché par défaut à l'arrivée sur chaque configurateur, avant sélection de la finition intermédiaire",
+      "observation_reelle": "Dacia Sandero essential TCe 100 - 25 : prix total 13 990 €. Renault Nouvelle Clio evolution TCe 115 ch - 26 : prix total 19 900 € (prix comptant, après bascule de l'affichage loyer/comptant).",
+      "preuve": "capture d'écran réelle (résolution bureau 1920x1080, page complète) enregistrée dans data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-essential.jpg (Sandero essential, 13 990 €) et renault-clio-evolution.jpg (Clio VI evolution, 19 900 €) + texte de page extrait, URL https://www.dacia.fr/gamme-vehicules/sandero/configurateur.html et https://www.renault.fr/vehicules-hybrides/nouvelle-clio/configurateur.html, consulté 2026-09-18"
+    },
+    {
+      "critere": "Autres motorisations disponibles sur la finition testée",
+      "action_effectuee": "Relevé des boutons de sélection motorisation affichés sur la finition retenue pour chaque modèle",
+      "observation_reelle": "Dacia Sandero expression : hybrid 155, Eco-G 120, Eco-G 120 auto, TCe 100 (retenue) — aucune boîte auto sur la TCe 100. Renault Clio VI techno : TCe 115 ch (retenue), TCe 115 ch EDC (boîte auto), Eco-G 120 EDC, full hybrid E-Tech 160 ch — toutes plus chères que la TCe 115 ch manuelle.",
+      "preuve": "capture d'écran réelle (résolution bureau 1920x1080) — liste des motorisations Sandero expression (hybrid 155, Eco-G 120, Eco-G 120 auto, TCe 100) visible sur data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-expression-equipements.jpg ; liste des motorisations Clio VI techno visible sur renault-clio-techno.jpg, consulté 2026-09-18"
+    },
+    {
+      "critere": "Équipements principaux ajoutés par la finition testée (Dacia Sandero expression)",
+      "action_effectuee": "Relevé de la liste \"4 équipements principaux inclus\" affichée sur le configurateur après sélection de la finition expression",
+      "observation_reelle": "Climatisation manuelle, feux anti brouillard, lève-vitre conducteur impulsionnel, Media Display 10'' + 4 haut-parleurs + réplication smartphone (par câble et sans fil).",
+      "preuve": "capture d'écran réelle (résolution bureau 1920x1080, page complète) enregistrée dans data/tests/preuves/208-sandero-clio-cout-possession/dacia-sandero-expression-equipements.jpg — liste \"4 équipements principaux inclus\" visible directement sur la capture + texte de page extrait, URL https://www.dacia.fr/gamme-vehicules/sandero/configurateur.html, consulté 2026-09-18"
+    }
+  ],
+  "synthese_chiffree": {
+    "Dacia Sandero (Expression, TCe 100)": "16 050 €",
+    "Renault Clio VI (techno, TCe 115 ch)": "23 900 €",
+    "ecart": "7 850 € en faveur du Sandero, à finition intermédiaire équivalente",
+    "note_methodologique": "Prix d'une configuration choisie (finition intermédiaire, sans option) via le configurateur officiel de chaque marque. Peugeot 208 écartée du comparatif : store.peugeot.fr ne propose pas de configurateur libre équivalent (voir modeles_hors_perimetre)."
+  },
+  "blocages": [],
+  "note_infrastructure": "Preuves visuelles obtenues via injection de html2canvas (CDN cdnjs) dans le navigateur intégré, capture de document.documentElement en viewport émulé 1920x1080 (rendu bureau plein écran), extraction du PNG/JPEG base64, décodage et écriture fichier côté environnement cloud, puis transfert vers le poste utilisateur via SendUserFile + device_commit_files. Méthode fonctionnelle mais coûteuse en tokens (~60-70K par capture) et sensible à la mise en page (cibler l'élément DOM pertinent plutôt que document.body brut, qui peut être mal aligné sur des sites à panneaux fixes/scroll imbriqué). Complément 2026-09-18 (suite à la consigne utilisateur \"minimum 5 images par article\") : 3 captures additionnelles obtenues avec la même méthode (essential Sandero 13 990 €, evolution Clio VI 19 900 €, écran équipements Sandero expression), portant le total à 5 images réelles pour cet article, chacune rattachée à une observation déjà présente dans ce rapport plutôt qu'ajoutée en illustration générique.",
+  "critique": {
+    "verdict": "Validé",
+    "date_critique": "2026-09-18",
+    "note": "Relecture affirmation par affirmation de data/tests/articles/dacia-sandero-vs-clio-vi-prix-reel.json contre ce rapport. Deux corrections appliquées avant validation : (1) retrait d'une comparaison de consommation/CO2 WLTP qui référençait des chiffres relevés sur une autre finition (essential/evolution) que celle réellement configurée et chiffrée (expression/techno) — non traçable, supprimée plutôt que laissée au bénéfice du doute ; (2) retrait d'une affirmation non vérifiée sur l'équipement de la Clio VI techno (\"écran plus abouti\") et d'une comparaison d'équipement implicite Sandero/Clio non vérifiée. Deux observations ont été ajoutées au rapport (prix d'entrée de gamme des deux modèles, autres motorisations disponibles, équipements de la finition Sandero expression) pour rendre traçables des faits que le Testeur avait bien observés en session mais pas encore consignés. Toutes les affirmations chiffrées restantes de l'article correspondent à un champ précis de ce rapport. Mention de la date du test et du caractère non contractuel des prix présente en fin d'article (silo YMYL). Complément 2026-09-18 (passage à 5 images réelles) : les 3 nouvelles légendes d'image (Sandero essential 13 990 €, écran équipements Sandero expression, Clio VI evolution 19 900 €) ont été vérifiées une par une contre ce rapport (observations 3, 4 et 5) — aucune n'introduit de donnée non consignée ici. Verdict inchangé.",
+    "corrections_appliquees_avant_validation": [
+      "Suppression du tableau/paragraphe comparant consommation et CO2 WLTP (non traçable à la finition réellement testée)",
+      "Suppression de l'affirmation non vérifiée sur l'écran de la Clio VI techno",
+      "Suppression de la comparaison d'équipement implicite non vérifiée entre Sandero et Clio VI"
+    ]
+  }
+}

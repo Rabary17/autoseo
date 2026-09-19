@@ -62,7 +62,8 @@
   "ymyl_silos": [
     "Carte grise & démarches",
     "Assurance auto",
-    "Permis & conduite"
+    "Permis & conduite",
+    "Combien ça coûte vraiment"
   ],
   "silos": [
     {
@@ -330,6 +331,18 @@
         "Équipement & préparation"
       ],
       "seeds_file": "road-trips-voyage-auto.json"
+    },
+    {
+      "name": "Combien ça coûte vraiment",
+      "hub_slug": "combien-ca-coute-vraiment",
+      "author": "B",
+      "sous_cocons": [
+        "Configurateurs & coût de possession",
+        "Devis assurance réels",
+        "Devis entretien réels",
+        "Cote de reprise réelle"
+      ],
+      "seeds_file": "tests.json"
     }
   ]
 }
