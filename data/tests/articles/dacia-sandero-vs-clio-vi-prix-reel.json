@@ -95,7 +95,7 @@
           "name": "Quelle est la citadine la moins chère entre la Dacia Sandero et la Renault Clio VI en 2026 ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "La Dacia Sandero est moins chère : 16 050 € en finition expression TCe 100, contre 23 900 € pour la Renault Clio VI en finition techno TCe 115 ch, à configuration comparable et sans option, configurations réalisées le 18 septembre 2026."
+            "text": "La Dacia Sandero est moins chère : 16 050 € en finition expression TCe 100, contre 23 900 € pour la Clio VI en finition techno TCe 115 ch. Configuration comparable, sans option, réalisée le 18 septembre 2026."
           }
         },
         {
@@ -111,7 +111,7 @@
           "name": "Pourquoi la Peugeot 208 n'apparaît-elle pas dans ce comparatif ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Parce que store.peugeot.fr ne propose pas de configurateur à la carte comme Dacia et Renault : une seule version pré-construite est présentée par modèle, avec un financement LOA imposé plutôt qu'un prix comptant modulable. Impossible de reproduire la même méthode de test à l'identique."
+            "text": "Store.peugeot.fr ne propose pas de configurateur à la carte, contrairement à Dacia et Renault. Le site présente une seule version pré-construite par modèle, avec un financement LOA imposé plutôt qu'un prix comptant modulable. Impossible de reproduire la même méthode de test à l'identique."
           }
         }
       ]

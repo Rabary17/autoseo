@@ -24,6 +24,10 @@ on:
         description: "Publier réellement (décoché = simulation, n'écrit rien dans WP)"
         type: boolean
         default: false
+      update:
+        description: "Mettre à jour le contenu d'un brouillon déjà existant au lieu d'en créer un nouveau (réutilise les images déjà uploadées)"
+        type: boolean
+        default: false
 
 jobs:
   publish-test-article:
@@ -43,8 +47,11 @@ jobs:
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: |
-          if [ "${{ inputs.apply }}" = "true" ]; then
-            node scripts/publish-test-article.js --slug=${{ inputs.slug }} --apply
-          else
-            node scripts/publish-test-article.js --slug=${{ inputs.slug }}
+          ARGS="--slug=${{ inputs.slug }}"
+          if [ "${{ inputs.update }}" = "true" ]; then
+            ARGS="$ARGS --update"
           fi
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            ARGS="$ARGS --apply"
+          fi
+          node scripts/publish-test-article.js $ARGS
