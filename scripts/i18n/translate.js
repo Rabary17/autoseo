@@ -20,6 +20,8 @@
 //   node scripts/i18n/translate.js --pilote          # lit config/i18n.json
 const path = require('path');
 const wp = require('../autopublish/lib/wp-client');
+const persona = require('../autopublish/lib/persona');
+const autopublishConfig = require('../autopublish/config');
 const gating = require('../autopublish/lib/gating');
 const mistralClient = require('../autopublish/lib/mistral-client');
 const trackingXlsx = require('../autopublish/lib/tracking-xlsx');
@@ -66,6 +68,28 @@ function siloNameFromSlug(rows, siloSlug) {
     if (r.url_cible && r.url_cible.replace(/^\//, '').split('/')[0] === siloSlug) return r.silo;
   }
   return null;
+}
+
+// Auteur WordPress de tout le contenu traduit de ce silo (2026-09-21) — MEME
+// mecanisme que resolveAuthorId() dans scripts/autopublish/run.js pour le
+// francais : sans ce champ explicite, WordPress attribue le post/page au
+// compte authentifie de la requete REST (WP_USER, le compte personnel reel),
+// jamais a une persona. Un seul silo traite par execution de ce script, donc
+// un seul appel suffit (pas besoin du cache par silo de run.js). En DRY_RUN,
+// ne touche pas WordPress du tout, comme resolveAuthorId() cote francais.
+async function resolveAuthorId(siloName) {
+  if (DRY_RUN) return null;
+  const key = persona.getPersonaKeyForSilo(siloName);
+  const slug = autopublishConfig.WP_AUTHOR_SLUG_BY_PERSONA[key];
+  const users = await sanitize.withRetry(() => wp.getAllUsers(),
+    { log: m => console.warn(`  [reseau] ${m}`) });
+  const user = users.find(u => u.slug === slug);
+  if (!user) {
+    throw new Error(
+      `translate: compte WordPress introuvable pour la persona ${key} (slug attendu "${slug}") — a creer dans wp-admin avant de traduire le silo "${siloName}".`
+    );
+  }
+  return user.id;
 }
 
 /* ---------- Collecte des articles français publiables ---------- */
@@ -282,7 +306,7 @@ async function collectSourcePages(index, articles) {
 
 /* ---------- PASSE 2 bis : pages ---------- */
 
-async function passePages(pages, index, pathMap) {
+async function passePages(pages, index, pathMap, authorId) {
   const prefix = i18n.urlPrefix(config, LOCALE);
   const taxo = index.taxonomie[SILO_SLUG][LOCALE];
   let hubIdTraduit = taxo.wp_id || null;
@@ -348,6 +372,9 @@ async function passePages(pages, index, pathMap) {
         title: traduit.title, slug: page.traduit.slug,
         content: traduit.content_gutenberg, excerpt: traduit.excerpt,
         status: 'draft',
+        // Persona francaise du silo, reprise telle quelle pour la traduction
+        // — voir resolveAuthorId() ci-dessus. Jamais le compte personnel reel.
+        author: authorId,
         // Voir le commentaire équivalent dans traduireArticles() : image à la
         // une jamais reprise jusqu'ici, même défaut sur les hubs/sous-hubs.
         featured_media: page.source.featuredMedia || undefined,
@@ -383,7 +410,7 @@ async function passePages(pages, index, pathMap) {
 
 /* ---------- PASSE 2 : contenu ---------- */
 
-async function passeContenu(articles, index, pathMap) {
+async function passeContenu(articles, index, pathMap, authorId) {
   const prefix = i18n.urlPrefix(config, LOCALE);
   let traduits = 0, bloques = 0, erreurs = 0;
 
@@ -464,6 +491,9 @@ async function passeContenu(articles, index, pathMap) {
         content: traduit.content_gutenberg,
         excerpt: traduit.excerpt,
         status: 'draft', // jamais publié ici — décision distincte
+        // Persona francaise du silo, reprise telle quelle pour la traduction
+        // — voir resolveAuthorId() ci-dessus. Jamais le compte personnel reel.
+        author: authorId,
         // Image à la une jamais reprise jusqu'ici (2026-08-25) : `article.source`
         // ne la capturait pas au collect, silencieusement — aucun article traduit
         // n'a d'image à la une, sans erreur ni avertissement. Même image que la
@@ -514,6 +544,8 @@ async function passeContenu(articles, index, pathMap) {
   const siloName = siloNameFromSlug(rows, SILO_SLUG);
   if (!siloName) { console.error(`Aucune ligne de tracking pour le silo "${SILO_SLUG}".`); process.exit(1); }
 
+  const authorId = await resolveAuthorId(siloName);
+
   console.log(`=== Traduction ${siloName} (${SILO_SLUG}) -> ${LOCALE}${DRY_RUN ? ' [dry-run]' : ''} ===\n`);
 
   let articles = await collectSourceArticles(rows, siloName);
@@ -533,10 +565,10 @@ async function passeContenu(articles, index, pathMap) {
   // traduire en second laisserait, en cas d'interruption, des articles dont
   // le lien de remontee pointe vers rien.
   const pages = await collectSourcePages(index, articles);
-  const statsPages = await passePages(pages, index, pathMap);
+  const statsPages = await passePages(pages, index, pathMap, authorId);
   if (!DRY_RUN) i18n.saveIndex(index);
 
-  const stats = await passeContenu(articles, index, pathMap);
+  const stats = await passeContenu(articles, index, pathMap, authorId);
   if (!DRY_RUN) i18n.saveIndex(index);
 
   console.log(`\n=== Pages — traduites : ${statsPages.traduites} | gating KO : ${statsPages.bloquees} | erreurs : ${statsPages.erreurs} ===`);

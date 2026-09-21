@@ -1,0 +1,48 @@
+name: Réattribuer les auteurs du contenu i18n
+
+# Corrige rétroactivement l'auteur WordPress des posts/pages traduits
+# (scripts/i18n/translate.js) créés avant son correctif du 2026-09-21 sans
+# champ `author` explicite — WordPress les avait alors attribués au compte
+# authentifié de la requête REST (WP_USER, le compte personnel réel), jamais
+# à une persona créée pour le site. Voir scripts/i18n/reassign-authors.js
+# pour le détail du mécanisme.
+#
+# Même raison que .github/workflows/publish-test-article.yml pour passer par
+# un runner GitHub Actions plutôt qu'une exécution locale/sandbox : le proxy
+# réseau de ces environnements bloque mntdev.riseasso.com. Les runners
+# réutilisent les mêmes secrets WP déjà configurés pour autopublish.yml —
+# aucun identifiant ne transite par le chat ni par un agent IA.
+#
+# Toujours dry-run par défaut (apply décoché) : affiche le plan de
+# réattribution sans rien écrire dans WordPress.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Appliquer réellement (décoché = simulation, n'écrit rien dans WP)"
+        type: boolean
+        default: false
+
+jobs:
+  reassign-i18n-authors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Réattribuer (ou simuler) les auteurs
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            ARGS="--apply"
+          fi
+          node scripts/i18n/reassign-authors.js $ARGS
