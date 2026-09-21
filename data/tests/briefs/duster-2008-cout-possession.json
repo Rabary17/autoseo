@@ -1,0 +1,26 @@
+{
+  "slug": "duster-2008-cout-possession",
+  "sujet": "Coût réel de possession : Dacia Duster vs Peugeot 2008",
+  "sous_cocon": "Configurateurs & coût de possession",
+  "silo": "Combien ça coûte vraiment",
+  "protocole": "configurateur-cout-possession",
+  "angle": "Peugeot 2008 et Dacia Duster, n°1 et n°4 des SUV les plus vendus en France sur la période janvier-août 2026 (2008 : 33 508 immat. / 3,1% ; Duster : 19 807 immat. / 1,8%, source caroom.fr) configurés réellement sur les sites constructeurs officiels, à niveau d'équipement comparable — même logique 'petit prix vs marque généraliste' que le comparatif Sandero/Clio, transposée au segment SUV compact.",
+  "mots_cles_cibles": [
+    "dacia duster vs peugeot 2008",
+    "prix réel dacia duster 2026",
+    "prix réel peugeot 2008 2026",
+    "suv compact le moins cher 2026",
+    "coût de possession suv compact 2026"
+  ],
+  "parametres_precis": {
+    "modeles": ["Dacia Duster", "Peugeot 2008"],
+    "niveau_finition": "finition intermédiaire équivalente (documenter le nom exact retenu par modèle si les grilles ne s'alignent pas parfaitement)",
+    "motorisation": "essence, niveau d'entrée/milieu de gamme disponible sur cette finition — hybride volontairement hors périmètre de cette comparaison (méthodologie identique à l'article Sandero/Clio, pour rester comparable ; l'hybride peut faire l'objet d'un article dédié ultérieur)",
+    "options": "aucune option ajoutée",
+    "departement_test": "75 (neutre, signaler si un bonus régional s'applique)"
+  },
+  "auteur": "B — Marques, essais & sport auto",
+  "source_classement_ventes": "https://www.caroom.fr/guide/voiture-neuve/comment-choisir/carrosserie/suv/meilleures-ventes (consulté 2026-09-21, période janvier-août 2026)",
+  "statut": "brief créé — en attente de validation avant /agent-test",
+  "date_creation": "2026-09-21"
+}
