@@ -9,6 +9,9 @@ const path = require('path');
 const wp = require('../autopublish/lib/wp-client');
 const mistralClient = require('../autopublish/lib/mistral-client');
 const gating = require('../autopublish/lib/gating');
+const persona = require('../autopublish/lib/persona');
+const autopublishConfig = require('../autopublish/config');
+const images = require('../autopublish/lib/images');
 
 const DATA_DIR = path.join(__dirname, '..', '..', 'data', 'actus');
 const LOG_PATH = path.join(DATA_DIR, 'generated-log.json');
@@ -153,6 +156,62 @@ async function resolveActusCategory() {
   return categoryIdCache;
 }
 
+// Auteur WordPress des actus (2026-09-28) — ce script créait ses brouillons
+// sans champ `author`, donc WordPress les attribuait au compte authentifié de
+// la requête REST (WP_USER, le compte personnel réel), jamais à une persona.
+// Même bug, même correctif que scripts/i18n/translate.js et
+// scripts/autopublish/run.js#resolveAuthorId — sauf qu'une actu n'appartient
+// à aucun silo précis (catégorie WP unique "Actualités" pour tout, voir
+// resolveActusCategory ci-dessus). On mappe donc sur la seule granularité
+// disponible : `item.category` de data/actus/sources.json (reglementaire /
+// actualite-generaliste, voir le commentaire plus bas sur runGenerate — le
+// tri des réglementaires en tête existait déjà pour "un meilleur alignement
+// avec les silos existants du site").
+const ACTUS_PERSONA_BY_CATEGORY = {
+  reglementaire: 'D', // Sophie Andrieu — Carte grise & démarches / Assurance / Permis
+  'actualite-generaliste': 'B', // Thomas Lefèvre — Marques & modèles / Essais & comparatifs
+};
+const actusAuthorIdCache = new Map();
+async function resolveActusAuthorId(category) {
+  const key = ACTUS_PERSONA_BY_CATEGORY[category] || ACTUS_PERSONA_BY_CATEGORY['actualite-generaliste'];
+  if (actusAuthorIdCache.has(key)) return actusAuthorIdCache.get(key);
+  const slug = autopublishConfig.WP_AUTHOR_SLUG_BY_PERSONA[key];
+  const users = await wp.getAllUsers();
+  const user = users.find((u) => u.slug === slug);
+  if (!user) {
+    throw new Error(
+      `generate-actus: compte WordPress introuvable pour la persona ${key} (slug attendu "${slug}") — à créer dans wp-admin.`
+    );
+  }
+  actusAuthorIdCache.set(key, user.id);
+  return user.id;
+}
+
+// Image à la une (2026-09-28) — jusqu'ici jamais renseignée : aucun appel à
+// images.js dans ce script, contrairement à scripts/autopublish/run.js. Même
+// mécanisme (Pexels/Unsplash/Pixabay + ledger + upload WebP), silo fictif
+// "actualites" pour le ledger de dédoublonnage. Un échec de sourcing ne doit
+// jamais bloquer l'insertion du brouillon — repli sur aucune image, comme
+// côté run.js.
+async function resolveActusFeaturedMedia(entityQuery) {
+  try {
+    const found = await images.findImage(entityQuery, { silo: 'actualites' });
+    if (!found) return null;
+    const { buffer } = await images.downloadImage(found.url);
+    const webpBuffer = await images.toWebp(buffer);
+    const media = await wp.uploadMedia(
+      webpBuffer,
+      images.buildImageFilename(entityQuery, 'actu-une'),
+      'image/webp',
+      entityQuery
+    );
+    return media.id;
+  } catch (e) {
+    console.warn(`  [images] échec sourcing pour "${entityQuery}" : ${e.message} — repli sans image.`);
+    return null;
+  }
+}
+
 async function resolveTagIds(tagNames) {
   const ids = [];
   for (const name of tagNames || []) {
@@ -231,12 +290,17 @@ async function main() {
     // (jamais celle du modèle — voir SYSTEM_PROMPT, qui interdit désormais
     // tout lien dans content_gutenberg).
     const sourceParagraph = `\n\n<!-- wp:paragraph --><p>Source : <a href="${item.link}">${item.source}</a></p><!-- /wp:paragraph -->`;
+    const authorId = await resolveActusAuthorId(item.category);
+    const featuredMedia = await resolveActusFeaturedMedia(content.title);
+
     const payload = {
       title: content.title,
       slug,
       status: 'draft', // jamais publié directement — voir approve.js
       content: content.content_gutenberg + sourceParagraph,
       excerpt: content.excerpt,
+      author: authorId,
+      featured_media: featuredMedia || undefined,
       categories: [categoryId],
       tags: tagIds,
       acf: {

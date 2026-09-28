@@ -1,0 +1,57 @@
+name: Réattribuer les auteurs des actus
+
+# Corrige rétroactivement l'auteur WordPress (et backfill l'image à la une en
+# option) des actus déjà publiées avant le correctif du 2026-09-28 de
+# scripts/actus/generate.js — qui créait ses brouillons sans `author` ni
+# `featured_media`. Voir scripts/actus/reassign-authors.js pour le détail.
+#
+# Même raison que les autres workflows reassign-*/publish-test-article pour
+# passer par un runner GitHub Actions plutôt qu'une exécution locale/sandbox :
+# le proxy réseau de ces environnements bloque mntdev.riseasso.com. Les
+# runners réutilisent les mêmes secrets WP déjà configurés pour
+# autopublish.yml — aucun identifiant ne transite par le chat ni par un
+# agent IA.
+#
+# Toujours dry-run par défaut (apply décoché) : affiche le plan de
+# réattribution sans rien écrire dans WordPress.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Appliquer réellement (décoché = simulation, n'écrit rien dans WP)"
+        type: boolean
+        default: false
+      backfill_images:
+        description: "Chercher aussi une image à la une pour les actus qui n'en ont pas (avec apply)"
+        type: boolean
+        default: false
+
+jobs:
+  reassign-actus-authors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install
+
+      - name: Réattribuer (ou simuler) les auteurs des actus
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          RI_PEXELS_KEY: ${{ secrets.RI_PEXELS_KEY }}
+          RI_UNSPLASH_KEY: ${{ secrets.RI_UNSPLASH_KEY }}
+          RI_PIXABAY_KEY: ${{ secrets.RI_PIXABAY_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.apply }}" = "true" ]; then
+            ARGS="$ARGS --apply"
+          fi
+          if [ "${{ inputs.backfill_images }}" = "true" ]; then
+            ARGS="$ARGS --backfill-images"
+          fi
+          node scripts/actus/reassign-authors.js $ARGS
