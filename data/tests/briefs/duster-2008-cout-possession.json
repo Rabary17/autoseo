@@ -1,11 +1,23 @@
 {
   "slug": "duster-2008-cout-possession",
-  "sujet": "Coût réel de possession : Dacia Duster vs Peugeot 2008",
+  "sujet": "Dacia Duster vs Peugeot 2008 : neuf ou occasion, combien ça coûte vraiment",
   "sous_cocon": "Configurateurs & coût de possession",
   "silo": "Combien ça coûte vraiment",
   "protocole": "configurateur-cout-possession",
-  "angle": "Peugeot 2008 et Dacia Duster, n°1 et n°4 des SUV les plus vendus en France sur la période janvier-août 2026 (2008 : 33 508 immat. / 3,1% ; Duster : 19 807 immat. / 1,8%, source caroom.fr) configurés réellement sur les sites constructeurs officiels, à niveau d'équipement comparable — même logique 'petit prix vs marque généraliste' que le comparatif Sandero/Clio, transposée au segment SUV compact.",
+  "protocole_complementaire": {
+    "protocole": "cote-reprise",
+    "raison": "Angle réorienté le 2026-09-28 (décision utilisateur : prioriser la valeur ajoutée réelle mesurée par volume) — 'dacia duster occasion' (9300/mois) et 'peugeot 2008 occasion' (1207/mois) pèsent à eux deux ~10 500 recherches/mois dans data/keywords/tracking-mots-cles.xlsx, contre un volume non mesurable pour la formulation 'X vs Y' seule. Le protocole neuf (configurateur-cout-possession) reste la donnée cœur, différenciante ; ce protocole complémentaire ajoute une estimation d'occasion réellement vérifiée (La Centrale/AutoScout24, jamais inventée) pour répondre honnêtement à l'intention de recherche dominante plutôt que de se limiter au prix neuf.",
+    "vehicule_occasion_type": {
+      "anciennete": "3 ans (mise en circulation ~2023)",
+      "kilometrage": "45 000 km",
+      "etat": "bon état standard (par défaut du protocole, à documenter si l'outil impose une autre échelle)",
+      "motorisation": "même motorisation essence entrée/milieu de gamme que le volet neuf, pour rester comparable"
+    }
+  },
+  "angle": "Peugeot 2008 et Dacia Duster, n°1 et n°4 des SUV les plus vendus en France sur la période janvier-août 2026 (2008 : 33 508 immat. / 3,1% ; Duster : 19 807 immat. / 1,8%, source caroom.fr). Prix neuf configurés réellement sur les sites constructeurs officiels, à niveau d'équipement comparable (même logique que Sandero/Clio) ; complété par une estimation d'occasion réelle (3 ans/45 000 km) sur un outil de cote reconnu — l'intention de recherche dominante sur ce couple de modèles porte sur l'occasion, pas sur la comparaison neuf pur (voir 'protocole_complementaire' pour le détail et les chiffres de volume).",
   "mots_cles_cibles": [
+    "dacia duster occasion",
+    "peugeot 2008 occasion",
     "dacia duster vs peugeot 2008",
     "prix réel dacia duster 2026",
     "prix réel peugeot 2008 2026",
@@ -21,6 +33,8 @@
   },
   "auteur": "B — Marques, essais & sport auto",
   "source_classement_ventes": "https://www.caroom.fr/guide/voiture-neuve/comment-choisir/carrosserie/suv/meilleures-ventes (consulté 2026-09-21, période janvier-août 2026)",
+  "source_volume_mots_cles": "data/keywords/tracking-mots-cles.xlsx (feuille Suivi) : dacia duster occasion = 9300, peugeot 2008 occasion = 1207, dacia duster vs peugeot 2008 = non mesuré. Colonne 'concurrence' non exploitable ici (valeur 0.5 identique sur la quasi-totalité des lignes du fichier — repli faute d'accès Semrush, pas une vraie mesure de difficulté, voir échange du 2026-09-21).",
   "statut": "brief créé — en attente de validation avant /agent-test",
-  "date_creation": "2026-09-21"
+  "date_creation": "2026-09-21",
+  "date_revision_angle": "2026-09-28"
 }

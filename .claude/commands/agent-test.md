@@ -9,7 +9,12 @@ Sinon, arrête-toi et signale-le.
 
 Étapes :
 1. Charge le brief, identifie le protocole indiqué et lis le fichier correspondant dans
-   [skills/protocoles-test/](../../skills/protocoles-test/) en entier avant d'agir.
+   [skills/protocoles-test/](../../skills/protocoles-test/) en entier avant d'agir. Si le brief
+   contient aussi un champ `protocole_complementaire` (ex. un volet occasion en plus du volet neuf,
+   voir [skills/protocoles-test/cote-reprise.md](../../skills/protocoles-test/cote-reprise.md)),
+   lis aussi ce second protocole en entier et exécute-le à la suite du premier — mêmes règles
+   (captures réelles, `blocages` en cas d'échec, rien d'inventé), rapport final unique couvrant
+   les deux volets.
 2. Exécute réellement les étapes du protocole via navigation web réelle (Claude in Chrome ou
    navigateur intégré selon ce qui est disponible) — jamais de simulation ni de valeur estimée à la
    place d'une observation réelle.
