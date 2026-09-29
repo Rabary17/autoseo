@@ -11,10 +11,20 @@ Adapté du référentiel rédactionnel fourni par l'utilisateur pour la refonte 
 - Aucune tournure passive quand une tournure active dit la même chose.
 - Aucun ton scolaire ou encyclopédique, aucun paragraphe de remplissage : chaque paragraphe doit apporter une information ou une nuance nouvelle.
 - **Jamais de tiret cadratin espacé (" — ") dans une phrase**, aucune exception, quel que soit le type de contenu. Remplace toujours par un point, une virgule, ou restructure en deux phrases (demande explicite de l'utilisateur, 2026-07-22).
+- Limite les adverbes en « -ment » : quand un verbe plus précis dit la même chose sans adverbe, préfère-le (« il accélère fort » plutôt que « il accélère fortement/rapidement »).
+- Une parenthèse maximum par paragraphe — au-delà, c'est un signe qu'il faut découper en deux phrases.
+- Titres H2/H3 : 10 mots maximum, jamais deux titres qui s'enchaînent sans un paragraphe de transition rédigé entre les deux.
+
+## Gras sémantique (référentiel "tonton-skills", intégré le 2026-09-09)
+
+- Mets en `<strong>` les mots en relation directe avec le mot-clé principal de la page : ses variantes, ses voisins de sens, le vocabulaire technique du sujet — pas seulement les chiffres/prix/durées, qui ne doivent jamais représenter plus de la moitié du gras d'une section.
+- 2 à 4 passages en gras par H2 maximum, groupes de 1 à 4 mots, jamais une phrase entière.
+- Jamais de gras dans un titre ni dans un lien. Un même terme mis en gras une seule fois, dans la section où il est le plus pertinent.
+- Une section entière sans aucun passage en gras est un défaut à corriger.
 
 ## Rythme de phrase (modèle : structure Backlinko, fourni par l'utilisateur le 2026-07-22 — reproduire la forme, jamais le contenu ni la langue)
 
-- Phrases très courtes majoritaires (souvent < 15 mots), paragraphes de 1 à 3 phrases.
+- Phrases très courtes majoritaires (souvent < 15 mots), paragraphes de 1 à 3 phrases. **20 mots est un plafond dur, jamais deux lignes** — au-delà, coupe en deux phrases plutôt que d'ajouter une virgule ou une proposition supplémentaire.
 - Utilise ponctuellement un fragment ou une question rhétorique comme paragraphe à lui seul pour casser le rythme et créer une respiration (ex. "Pourquoi ?", "Résultat ?", "En clair :") — jamais de façon systématique ni à chaque section.
 - Alterne longueurs et structures syntaxiques — un texte où toutes les phrases ont le même moule sonne mécanique.
 - Connecteurs logiques naturels entre les idées, jamais un texte haché phrase à phrase ni un empilement de propositions sans lien.

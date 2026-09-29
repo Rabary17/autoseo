@@ -5,7 +5,7 @@ import { SITE_NAME } from "@/lib/site";
 // Destinataire fixe, non modifiable par l'utilisateur (jamais lu depuis le
 // corps de la requête) : le formulaire public n'affiche aucune adresse e-mail,
 // mais tout message y est bien envoyé.
-const CONTACT_TO = "andrianina.rabarivelo@gmail.com";
+const CONTACT_TO = "techcars.fr@gmail.com";
 
 const MAX_LEN = { name: 120, email: 254, subject: 200, message: 5000 };
 

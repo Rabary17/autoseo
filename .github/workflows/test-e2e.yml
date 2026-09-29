@@ -76,7 +76,7 @@ jobs:
           username: ${{ secrets.GMAIL_USER }}
           password: ${{ secrets.GMAIL_APP_PASSWORD }}
           subject: "[TEST] monauto — test end-to-end"
-          to: andrianina.rabarivelo@gmail.com
+          to: techcars.fr@gmail.com
           from: monauto autopublish <${{ secrets.GMAIL_USER }}>
           html_body: file://logs/autopublish/daily-report-latest.html
 

@@ -58,20 +58,33 @@ module.exports = {
   // insérer en draft quel que soit le gating (déjà le comportement de run.js),
   // correction/QC manuelle article par article ensuite, publication seulement
   // à une date programmée décidée après coup — jamais automatique.
+  // TEMPORAIRE (2026-09-10) : mistral-large-latest renvoie 403
+  // "tier_not_allowed" — plus accessible avec l'abonnement Mistral actuel
+  // (vérifié via GET /v1/models, absent de la liste des modèles disponibles
+  // pour cette clé API). Repli sur mistral-medium-latest en attendant que
+  // l'abonnement soit mis à niveau — demande explicite de l'utilisateur.
+  // ATTENTION : mistral-medium avait déjà été testé et jugé insuffisant sur
+  // les silos YMYL (hallucination de sources officielles persistante, voir
+  // plus bas) — acceptable ici uniquement parce que ce repli sert le lot du
+  // 2026-09-10 sur "Voiture d'occasion", qui n'est PAS dans ymyl_silos.
+  // Remettre mistral-large-latest dès l'abonnement corrigé, avant tout run
+  // sur un silo YMYL (Carte grise & démarches, Assurance auto, Permis &
+  // conduite).
   MODEL_BY_CONTENT_TYPE: {
-    hub: { model: 'mistral-large-latest' },
-    'sous-hub': { model: 'mistral-large-latest' },
-    article: { model: 'mistral-large-latest' },
+    hub: { model: 'mistral-medium-latest' },
+    'sous-hub': { model: 'mistral-medium-latest' },
+    article: { model: 'mistral-medium-latest' },
   },
 
   // Relecture obligatoire (voir review.js) — repassée à mistral-large-latest
   // partout le 2026-07-30 (même demande explicite que MODEL_BY_CONTENT_TYPE
   // ci-dessus : le modèle le plus performant disponible, coût secondaire tant
-  // que le taux d'échec au gating n'est pas d'abord réduit).
+  // que le taux d'échec au gating n'est pas d'abord réduit). Repli temporaire
+  // sur mistral-medium-latest le 2026-09-10, même raison que ci-dessus.
   REVIEW_MODEL_BY_CONTENT_TYPE: {
-    hub: { model: 'mistral-large-latest' },
-    'sous-hub': { model: 'mistral-large-latest' },
-    article: { model: 'mistral-large-latest' },
+    hub: { model: 'mistral-medium-latest' },
+    'sous-hub': { model: 'mistral-medium-latest' },
+    article: { model: 'mistral-medium-latest' },
   },
 
   // Image par défaut par silo (media_id WordPress déjà uploadé), dernier
@@ -113,5 +126,5 @@ module.exports = {
 
   // Destinataire du rapport quotidien (voir daily-report.js + .github/workflows/daily-report.yml).
   // Ce n'est pas une donnée sensible — laissé en clair ici plutôt qu'en secret.
-  DAILY_REPORT_RECIPIENT: 'andrianina.rabarivelo@gmail.com',
+  DAILY_REPORT_RECIPIENT: 'techcars.fr@gmail.com',
 };
