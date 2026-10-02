@@ -57,6 +57,17 @@ const nextConfig: NextConfig = {
       // favicon.png) — confirmé en 404 réel dans l'export Search Console
       // "Statistiques d'exploration" du 2026-08-25.
       { source: "/favicon.ico", destination: "/favicon.png", permanent: true },
+      // Ancien slug auteur = user_nicename dérivé de l'email perso de
+      // l'auteur (andrianina.rabarivelo@gmail.com), exposé publiquement sur
+      // l'archive /auteur/. Corrigé le 2026-10-02 (slug WordPress changé en
+      // "andrianina-rabarivelo" au moment de configurer son profil réel de
+      // rédacteur en chef) — redirection pour préserver le SEO déjà accumulé
+      // sur cette URL plutôt que de la laisser tomber en 404.
+      {
+        source: "/auteur/andrianina-rabarivelogmail-com",
+        destination: "/auteur/andrianina-rabarivelo/",
+        permanent: true,
+      },
       // Fusion de quasi-doublons éditoriaux (audit du 2026-09-04, voir
       // docs/audit-contenu-refactorisation-2026-09.md) — les 2 articles
       // "changement de titulaire" répétaient le sous-hub (mêmes montants,
