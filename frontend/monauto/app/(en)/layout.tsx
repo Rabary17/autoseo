@@ -63,6 +63,15 @@ export const viewport: Viewport = {
 // paint, sinon flash du thème clair avant hydratation.
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('monauto-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
 
+// Microsoft Clarity — analytics comportementale (heatmaps, session replay).
+// Ajouté dans l'entête de toutes les pages (FR + EN) à la demande explicite
+// de l'utilisateur (2026-10-02).
+const CLARITY_SCRIPT = `(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "yreemaws4i");`;
+
 export default async function EnRootLayout({ children }: { children: React.ReactNode }) {
   const allSilos = silosFor(LOCALE);
   // Même bug que les listings /en/* corrigé le 25/08 (voir lib/i18n-live.ts) :
@@ -78,6 +87,7 @@ export default async function EnRootLayout({ children }: { children: React.React
     <html lang="en">
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: CLARITY_SCRIPT }} />
       </head>
       <body>
         <header className="appbar">

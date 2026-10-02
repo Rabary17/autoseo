@@ -54,6 +54,15 @@ export const viewport: Viewport = {
 // prefers-color-scheme système. Voir components/ThemeToggle.tsx pour la bascule.
 const THEME_INIT_SCRIPT = `(function(){try{var t=localStorage.getItem('monauto-theme');if(t!=='dark'&&t!=='light'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`;
 
+// Microsoft Clarity — analytics comportementale (heatmaps, session replay).
+// Ajouté dans l'entête de toutes les pages (FR + EN) à la demande explicite
+// de l'utilisateur (2026-10-02).
+const CLARITY_SCRIPT = `(function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "yreemaws4i");`;
+
 // Layout racine FRANÇAIS. Depuis le 2026-08-21 le site a DEUX layouts racines,
 // un par langue, via des groupes de routes `(fr)` et `(en)`. Les parenthèses
 // sont invisibles dans l'URL : aucune adresse ne change.
@@ -70,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr">
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: CLARITY_SCRIPT }} />
       </head>
       <body>
         <ReadingProgress />
