@@ -27,6 +27,16 @@ const CONTENT_SCHEMA = {
   type: 'object',
   properties: {
     title: { type: 'string', description: 'Titre H1 de la page' },
+    // Garde-fou connaissance (voir prompts/garde-fou-connaissance.md, ajoute le
+    // 2026-10-03, demande explicite de l'utilisateur) : estimation honnete, par
+    // le modele lui-meme, de la date au-dela de laquelle il ne doit plus se fier
+    // a sa propre memoire pour un fait susceptible d'avoir change (prix, bareme,
+    // nom d'organisme, procedure en vigueur). N'EST PAS une date d'entrainement
+    // officielle (aucune n'est publiee pour ce modele) : une estimation prudente,
+    // jamais dans le futur. Verifie structurellement par checkKnowledgeCutoffDeclared
+    // (gating.js) -- un contenu sans cette estimation est rejete, meme si rien
+    // d'autre ne cloche.
+    connaissance_limite: { type: 'string', description: "Date AAAA-MM au-dela de laquelle le modele ne doit plus affirmer de memoire un fait qui a pu changer (voir prompts/garde-fou-connaissance.md). Estimation honnete, jamais une date future." },
     // `maxLength` fait respecter la limite structurellement (validé le
     // 2026-07-28 : même en demandant explicitement au modèle d'ignorer toute
     // limite et d'écrire 100/250 caractères, Mistral tronque exactement à
@@ -91,7 +101,7 @@ const CONTENT_SCHEMA = {
       },
     },
   },
-  required: ['title', 'meta_title', 'meta_description', 'excerpt', 'content_gutenberg', 'faq', 'sources', 'tags', 'inline_images'],
+  required: ['title', 'connaissance_limite', 'meta_title', 'meta_description', 'excerpt', 'content_gutenberg', 'faq', 'sources', 'tags', 'inline_images'],
   additionalProperties: false,
 };
 
@@ -137,12 +147,18 @@ function buildSystemBlocks(silo, contentType) {
   const personaInfo = persona.getPersonaForSilo(silo);
   const skillContent = readFile(personaInfo.skill);
   const styleGuide = readFile(path.join(PROMPTS_DIR, 'style-anti-ia.md'));
+  // Garde-fou connaissance (voir prompts/garde-fou-connaissance.md) : charge
+  // pour TOUT type de contenu et les deux passes de relecture (ce bloc est
+  // partage, voir buildReviewRequest/buildReadabilityReviewRequest plus bas)
+  // -- jamais sautable, jamais une option de run.
+  const knowledgeCutoffGuardrail = readFile(path.join(PROMPTS_DIR, 'garde-fou-connaissance.md'));
   const contract = readFile(path.join(PROMPTS_DIR, CONTRACT_FILE_BY_TYPE[contentType]));
   return {
     personaInfo,
     system: [
       { type: 'text', text: skillContent },
       { type: 'text', text: styleGuide },
+      { type: 'text', text: knowledgeCutoffGuardrail },
       { type: 'text', text: contract },
     ],
   };

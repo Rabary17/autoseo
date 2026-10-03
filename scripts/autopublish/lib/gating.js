@@ -191,6 +191,35 @@ function checkFactsNotInvented(content, factsProvided) {
   return { ok: true };
 }
 
+// Garde-fou connaissance (voir prompts/garde-fou-connaissance.md, demande
+// explicite de l'utilisateur, 2026-10-03) : le modele doit declarer, pour
+// CHAQUE generation, la date au-dela de laquelle il ne doit plus se fier a sa
+// propre memoire pour un fait susceptible d'avoir change (voir
+// checkFactsNotInvented ci-dessus pour les chiffres -- cette regle couvre les
+// faits NON chiffres : noms d'organismes, procedures en vigueur, etc.). Le
+// schema JSON (required: connaissance_limite) garantit deja la PRESENCE du
+// champ ; cette regle verifie en plus qu'il contient une vraie date plausible
+// -- pas une chaine vide/espace echappant au schema, pas une date dans le
+// futur qui trahirait une reponse de pure forme plutot qu'une estimation
+// honnete.
+const DATE_AAAA_MM_PATTERN = /^(\d{4})-(0[1-9]|1[0-2])$/;
+
+function checkKnowledgeCutoffDeclared(content) {
+  const raw = (content.connaissance_limite || '').trim();
+  if (!raw) {
+    return { ok: false, reason: 'Champ connaissance_limite absent ou vide — voir prompts/garde-fou-connaissance.md.' };
+  }
+  const match = raw.match(DATE_AAAA_MM_PATTERN);
+  if (!match) {
+    return { ok: false, reason: `connaissance_limite ("${raw}") n'est pas au format AAAA-MM attendu.` };
+  }
+  const declared = new Date(`${match[1]}-${match[2]}-01T00:00:00Z`);
+  if (declared.getTime() > Date.now()) {
+    return { ok: false, reason: `connaissance_limite ("${raw}") est dans le futur — ce n'est pas une estimation honnête.` };
+  }
+  return { ok: true };
+}
+
 // La FAQ ne doit exister QUE dans faq[] — le frontend la rend séparément
 // (FaqSection + JSON-LD FAQPage, voir components/FaqSection.tsx), donc la
 // recopier aussi en section visible du corps produit une FAQ dupliquée à
@@ -352,6 +381,9 @@ function runGating({
   const facts = checkFactsNotInvented(content, factsProvided);
   if (!facts.ok) failures.push({ rule: 'faits_non_inventes', message: facts.reason });
 
+  const knowledgeCutoff = checkKnowledgeCutoffDeclared(content);
+  if (!knowledgeCutoff.ok) failures.push({ rule: 'connaissance_limite_declaree', message: knowledgeCutoff.reason });
+
   const faq = checkFaqNotDuplicated(content);
   if (!faq.ok) failures.push({ rule: 'schema_coherent', message: 'FAQ dupliquée : une section "Questions fréquentes" apparaît dans le corps alors que faq[] est déjà renseigné.' });
 
@@ -420,4 +452,4 @@ function runGating({
   return { passed: failures.length === 0, failures };
 }
 
-module.exports = { runGating, LENGTH_RANGES, SIMILARITY_THRESHOLD, countWords, stripHtmlToText };
+module.exports = { runGating, LENGTH_RANGES, SIMILARITY_THRESHOLD, countWords, stripHtmlToText, checkKnowledgeCutoffDeclared };
