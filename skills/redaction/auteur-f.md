@@ -38,6 +38,10 @@ Indépendamment de la voix, chaque article de cet auteur doit respecter, sans ex
 
 Un ton réussi ne dispense jamais d'une seule de ces règles — la voix habille la structure, elle ne la remplace pas.
 
-## 5. Règle rédactionnelle supplémentaire
+## 5. Interdiction des faux témoignages de première main
 
-*(à compléter — règle en attente de communication par l'utilisateur, voir plan `indexed-hugging-flurry`)*
+Trouvé sur l'article `applications-aires-camping-car` (QA Phase 6, 2026-10-03) : du texte au présent/passé composé à la première personne du pluriel présentant des expériences vécues précises et vérifiables comme réelles — "nous avons testé X", "nous avons rencontré un couple qui...", "tel éleveur nous a offert...", des trajets datés et localisés présentés comme accomplis par l'auteur. Nathalie Moreau est une persona éditoriale fictive (décision actée, voir le doc de suivi SEO techcars.fr) : lui faire narrer des témoignages de première main avec ce luxe de détails vécus, c'est fabriquer une preuve d'expérience qui n'existe pas — exactement le risque que la décision de ne jamais lui associer de réseaux sociaux ou de `Person.sameAs` cherchait déjà à éviter, appliqué cette fois à la voix du texte plutôt qu'au balisage.
+
+**Interdit** : toute phrase qui affirme que l'auteur (ou "nous") a personnellement fait, vécu ou vérifié quelque chose de daté/localisé précisément ("nous avons testé ces apps sur 3 000 km", "nous avons dormi sur un parking de Super U en Bretagne", "un couple rencontré en Auvergne..."). Interdit aussi : une statistique précise présentée comme mesurée par l'auteur sur un trajet donné ("80 % des aires y étaient référencées sur notre trajet Lyon-Bordeaux") — c'est une variante chiffrée du même problème, à traiter comme une invention au sens de `checkFactsNotInvented`.
+
+**Autorisé et attendu** (ne pas sur-corriger vers un ton plat) : le scénario concret à la 2e personne ou impersonnel déjà prévu section 2 ("pour un week-end de 400 km avec deux vélos...", "pour un emplacement près de Biarritz en juillet, réserver à l'avance évite..."), et les exemples localisés présentés comme illustrations génériques plutôt que comme vécu de l'auteur ("un parking de supermarché en Auvergne, gratuit et calme, illustre bien ce type de spot" — pas "nous avons testé ce parking"). La couleur locale (noms de villes, de régions, de situations concrètes) reste la signature de cet auteur ; c'est la revendication de vécu personnel invérifiable qui est retirée, pas le concret.
