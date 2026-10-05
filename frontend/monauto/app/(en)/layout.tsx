@@ -72,6 +72,14 @@ const CLARITY_SCRIPT = `(function(c,l,a,r,i,t,y){
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "yreemaws4i");`;
 
+// Marqueur à placer dans le <head> de toutes les pages (FR + EN), à la demande
+// explicite de l'utilisateur (2026-10-05). Commentaire HTML littéral.
+// React ne sait pas émettre un commentaire HTML : on passe par un <template>
+// (jamais rendu par le navigateur, autorisé dans <head>) dont le contenu est
+// injecté tel quel. Le commentaire est donc présent dans le HTML servi
+// (view-source, curl, crawlers) sans toucher à l'hydratation du <head>.
+const HEAD_MARKER_COMMENT = "<!-- f0887df4259cc617ee49b532c1b2e7f1 -->";
+
 export default async function EnRootLayout({ children }: { children: React.ReactNode }) {
   const allSilos = silosFor(LOCALE);
   // Même bug que les listings /en/* corrigé le 25/08 (voir lib/i18n-live.ts) :
@@ -86,6 +94,7 @@ export default async function EnRootLayout({ children }: { children: React.React
   return (
     <html lang="en">
       <head>
+        <template dangerouslySetInnerHTML={{ __html: HEAD_MARKER_COMMENT }} />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <script dangerouslySetInnerHTML={{ __html: CLARITY_SCRIPT }} />
       </head>

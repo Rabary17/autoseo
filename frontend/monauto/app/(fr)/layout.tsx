@@ -63,6 +63,14 @@ const CLARITY_SCRIPT = `(function(c,l,a,r,i,t,y){
     y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "yreemaws4i");`;
 
+// Marqueur à placer dans le <head> de toutes les pages (FR + EN), à la demande
+// explicite de l'utilisateur (2026-10-05). Commentaire HTML littéral.
+// React ne sait pas émettre un commentaire HTML : on passe par un <template>
+// (jamais rendu par le navigateur, autorisé dans <head>) dont le contenu est
+// injecté tel quel. Le commentaire est donc présent dans le HTML servi
+// (view-source, curl, crawlers) sans toucher à l'hydratation du <head>.
+const HEAD_MARKER_COMMENT = "<!-- f0887df4259cc617ee49b532c1b2e7f1 -->";
+
 // Layout racine FRANÇAIS. Depuis le 2026-08-21 le site a DEUX layouts racines,
 // un par langue, via des groupes de routes `(fr)` et `(en)`. Les parenthèses
 // sont invisibles dans l'URL : aucune adresse ne change.
@@ -78,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <head>
+        <template dangerouslySetInnerHTML={{ __html: HEAD_MARKER_COMMENT }} />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <script dangerouslySetInnerHTML={{ __html: CLARITY_SCRIPT }} />
       </head>
