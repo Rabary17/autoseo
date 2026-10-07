@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Techcars — Design Refont</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* DESIGN SYSTEM — Automotive-Tech Identity */
+    /* Layout: Hero + Navbar + 5-Category Grid + Featured Content + Trust Section */
+
+    :root {
+      /* Color Palette — Automotive Blue + Warm Neutrals */
+      --primary: #2E5090;        /* Blue Steel (automotive, technical) */
+      --primary-dark: #1F3A5F;   /* Deeper blue for contrast */
+      --accent: #F97316;         /* Warm orange (energy, innovation) */
+      --accent-muted: #FDB022;   /* Softer orange for secondary */
+      --surface: #F8F9FB;        /* Light neutral (off-white) */
+      --surface-alt: #EEF1F6;    /* Secondary surface */
+      --surface-dark: #1A1D23;   /* Dark neutral */
+      --fg: #1A1D23;             /* Text primary */
+      --fg-secondary: #4A5063;   /* Text secondary */
+      --fg-light: #7B8395;       /* Text tertiary */
+      --border: #D9DDE4;         /* Border color */
+      --success: #10B981;        /* Status: good */
+      --warning: #F59E0B;        /* Status: warning */
+
+      /* Typography Scale */
+      --font-display: 'Syne', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --fs-h1: 3.5rem;
+      --fs-h2: 2.5rem;
+      --fs-h3: 1.75rem;
+      --fs-body: 1rem;
+      --fs-small: 0.875rem;
+      --lh-tight: 1.1;
+      --lh-normal: 1.5;
+      --lh-relaxed: 1.8;
+
+      /* Spacing */
+      --gap: 1.5rem;
+      --gap-lg: 3rem;
+      --gap-xl: 4.5rem;
+
+      color-scheme: light;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --surface: #0F1119;
+        --surface-alt: #1A1D23;
+        --fg: #F3F4F6;
+        --fg-secondary: #B8C5D6;
+        --fg-light: #8B95A8;
+        --border: #2D3139;
+        color-scheme: dark;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --surface: #0F1119;
+      --surface-alt: #1A1D23;
+      --fg: #F3F4F6;
+      --fg-secondary: #B8C5D6;
+      --fg-light: #8B95A8;
+      --border: #2D3139;
+      color-scheme: dark;
+    }
+
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: var(--fs-body);
+      line-height: var(--lh-normal);
+      color: var(--fg);
+      background: var(--surface);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 700;
+      line-height: var(--lh-tight);
+      text-wrap: balance;
+    }
+
+    h1 { font-size: var(--fs-h1); }
+    h2 { font-size: var(--fs-h2); }
+    h3 { font-size: var(--fs-h3); }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    /* Header / Navbar */
+    header {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      background-color: rgba(248, 249, 251, 0.95);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      header:not([data-theme="light"]) {
+        background-color: rgba(15, 17, 25, 0.95);
+      }
+    }
+
+    header[data-theme="dark"] {
+      background-color: rgba(15, 17, 25, 0.95);
+    }
+
+    .header-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      flex-grow: 1;
+      justify-content: center;
+    }
+
+    nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--fg-secondary);
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    .nav-cta {
+      background: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark);
+      color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 6rem 2rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.1) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+    .hero-content .eyebrow {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .hero-content p {
+      font-size: 1.125rem;
+      line-height: var(--lh-relaxed);
+      margin-bottom: 2rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      gap: 1rem;
+    }
+
+    .btn {
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #E56A0B;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .hero-image {
+      position: relative;
+      height: 400px;
+      background: radial-gradient(circle at 30% 50%, rgba(249, 115, 22, 0.15), transparent);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Categories Grid */
+    .categories {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .section-header {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header h2 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-header .eyebrow {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .category-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .category-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      background: var(--surface);
+      box-shadow: 0 12px 24px rgba(46, 80, 144, 0.1);
+    }
+
+    .category-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .category-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .category-card h3 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .category-card p {
+      font-size: 0.95rem;
+      color: var(--fg-secondary);
+      line-height: var(--lh-normal);
+    }
+
+    /* Featured Content */
+    .featured {
+      background: var(--surface-alt);
+      padding: 6rem 2rem;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .featured-container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .featured-card {
+      background: var(--surface);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s;
+      border: 1px solid var(--border);
+    }
+
+    .featured-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 24px rgba(46, 80, 144, 0.08);
+    }
+
+    .featured-image {
+      height: 200px;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    .featured-content {
+      padding: 1.5rem;
+    }
+
+    .featured-content h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    .featured-content p {
+      color: var(--fg-secondary);
+      font-size: 0.95rem;
+      line-height: var(--lh-normal);
+      margin-bottom: 1rem;
+    }
+
+    .featured-meta {
+      font-size: 0.85rem;
+      color: var(--fg-light);
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* Trust Section */
+    .trust {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 6rem 2rem;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .trust-item {
+      text-align: center;
+    }
+
+    .trust-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .trust-item h3 {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .trust-item p {
+      color: var(--fg-secondary);
+      line-height: var(--lh-normal);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--primary);
+      color: white;
+      padding: 4rem 2rem;
+      border-top: 4px solid var(--accent);
+    }
+
+    .footer-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section a {
+      color: rgba(255, 255, 255, 0.8);
+      display: block;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-section a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 2rem;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      :root {
+        --fs-h1: 2.5rem;
+        --fs-h2: 1.75rem;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-image {
+        display: none;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .header-container {
+        justify-content: space-between;
+      }
+
+      .categories-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 4rem 2rem;
+      }
+
+      .categories,
+      .featured,
+      .trust {
+        padding: 4rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon">⚙️</div>
+        <span>Techcars</span>
+      </div>
+      <nav>
+        <a href="#categories">Catégories</a>
+        <a href="#guides">Guides</a>
+        <a href="#comparatif">Comparatif</a>
+        <a href="#about">À propos</a>
+        <a href="#" class="nav-cta">Explorer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="eyebrow">Technologie automobile</span>
+        <h1>L'ingénierie expliquée simplement</h1>
+        <p>Motorisations, sécurité, transmission, autonomie et connectivité — explorez les technologies qui font rouler le monde, avec des guides sourcés et vérifiés par nos experts.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary">Commencer</button>
+          <button class="btn btn-secondary">Lire les guides</button>
+        </div>
+      </div>
+      <div class="hero-image">🏎️</div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <span class="eyebrow">Cinq piliers</span>
+      <h2>Domaines d'expertise</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="category-card">
+        <div class="category-icon">🔧</div>
+        <h3>Motorisations</h3>
+        <p>Moteurs thermiques, hybrides et électriques — technologies de propulsion</p>
+      </div>
+      <div class="category-card">
+        <div class="category-icon">🛡️</div>
+        <h3>Sécurité</h3>
+        <p>Systèmes actifs et passifs — freinage, airbags, ADAS</p>
+      </div>
+      <div class="category-card">
+        <div class="category-icon">⚡</div>
+        <h3>Transmission</h3>
+        <p>Boîtes de vitesses et systèmes de motricité</p>
+      </div>
+      <div class="category-card">
+        <div class="category-icon">🤖</div>
+        <h3>Autonomie & Connectivité</h3>
+        <p>Capteurs, niveaux SAE, connectivité embarquée</p>
+      </div>
+      <div class="category-card">
+        <div class="category-icon">📋</div>
+        <h3>Réglementation</h3>
+        <p>Normes, émissions, homologation et tests</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Content -->
+  <section class="featured" id="guides">
+    <div class="featured-container">
+      <div class="section-header">
+        <span class="eyebrow">Les derniers contenus</span>
+        <h2>Guides & Analyses</h2>
+      </div>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="featured-image">⚙️</div>
+          <div class="featured-content">
+            <h3>Turbocompression</h3>
+            <p>Comment la suralimentation améliore l'efficacité énergétique des petits moteurs.</p>
+            <div class="featured-meta">
+              <span>📅 Oct 2026</span>
+              <span>⏱️ 8 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-image">🔋</div>
+          <div class="featured-content">
+            <h3>Batteries LiFePO₄</h3>
+            <p>Chimie, performance et cycles de charge des batteries de nouvelle génération.</p>
+            <div class="featured-meta">
+              <span>📅 Oct 2026</span>
+              <span>⏱️ 12 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="featured-card">
+          <div class="featured-image">🛑</div>
+          <div class="featured-content">
+            <h3>Freinage Céramique</h3>
+            <p>Matériaux avancés et dissipation thermique jusqu'à 1200°C.</p>
+            <div class="featured-meta">
+              <span>📅 Oct 2026</span>
+              <span>⏱️ 10 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Section -->
+  <section class="trust" id="about">
+    <div class="section-header">
+      <h2>Pourquoi Techcars</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon">✅</div>
+        <h3>Expertise vérifiée</h3>
+        <p>Contenus rédigés par des ingénieurs et experts techniques, avec sources citées.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔬</div>
+        <h3>Rigueur scientifique</h3>
+        <p>Données de constructeurs, brevets, normes ISO et publications académiques.</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">📊</div>
+        <h3>À jour constamment</h3>
+        <p>Spécifications techniques révisées régulièrement et datées sur chaque article.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Techcars</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Confidentialité</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Catégories</h4>
+        <ul>
+          <li><a href="#">Motorisations</a></li>
+          <li><a href="#">Sécurité</a></li>
+          <li><a href="#">Transmission</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="#">Guides complets</a></li>
+          <li><a href="#">Comparatifs</a></li>
+          <li><a href="#">Actualités tech</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Suivez-nous</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Techcars. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
