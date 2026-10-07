@@ -12,20 +12,15 @@ import { pageMeta } from "@/lib/seo-meta";
 import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = pageMeta({
-  title: `${SITE_NAME} — Le média expert de l'auto et de la mobilité`,
+  title: `${SITE_NAME} — Technologies automobiles et innovation mobilité`,
   description:
-    "Entretien, pannes, fiabilité, essais et démarches : des guides auto vérifiés par nos experts, sourcés et tenus à jour. 20 rubriques, une rédaction identifiée.",
+    "Motorisations, sécurité, transmission, autonomie et connectivité : explorez les technologies automobiles essentielles. Des guides techniques vérifiés par nos experts.",
   path: "/",
 });
 
-// Filet de sécurité en plus de l'invalidation ciblée par /api/revalidate (le
-// nouvel article publié n'est pas forcément le seul changement — un article
-// dépublié/modifié ailleurs doit aussi finir par se refléter ici).
 export const revalidate = 900;
 
 export default async function HomePage() {
-  // Dégradation gracieuse (voir app/[slug]/page.tsx) : l'accueil doit rester
-  // déployable même si WP est temporairement injoignable au build.
   const { posts } = await getPosts(1, 16).catch((e) => {
     console.warn(`[HomePage] échec du fetch WP, fallback sur []: ${e}`);
     return { posts: [], total: 0, totalPages: 0 };
@@ -33,13 +28,11 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="chero">
-        {/* Photo libre de droits (licence Unsplash, aucune attribution requise) —
-            unsplash.com/photos/Aqt08E8JzEc, recadrée sur la voiture depuis l'original
-            portrait. Pré-optimisée en WebP à 2 largeurs (800/1920) via scripts sharp
-            locaux, pas de service d'optimisation à la volée (voir
-            docs/architecture-headless.md section 3.3 — même raison de coût que le
-            choix WordPress+Imagify). */}
+      {/* Hero Section — Blue Steel + Graphite Theme */}
+      <section className="chero" style={{
+        backgroundColor: "#2E5090",
+        backgroundImage: "linear-gradient(135deg, #2E5090 0%, #1F3A5F 100%)"
+      }}>
         <img
           className="chero__bg"
           src="/images/accueil-hero-1920.webp"
@@ -47,40 +40,48 @@ export default async function HomePage() {
           sizes="100vw"
           width={1920}
           height={1440}
-          alt="Porsche 911 orange vue de trois quarts arrière sous un ciel bleu"
+          alt="Technologies automobiles — innovation et performance"
           fetchPriority="high"
+          style={{ opacity: 0.15 }}
         />
-        <div className="chero__scrim" aria-hidden="true" />
+        <div className="chero__scrim" style={{ background: "rgba(46, 80, 144, 0.85)" }} aria-hidden="true" />
         <div className="wrap">
-          <p className="eyebrow">Média indépendant · Auto &amp; mobilité</p>
-          <h1 className="chero__title">L&apos;auto expliquée, testée et comparée.</h1>
-          <p className="chero__sub">
-            Entretien, pannes, fiabilité, essais et démarches — des guides vérifiés par nos
-            experts, sourcés et tenus à jour. Pour entretenir et choisir votre véhicule en
-            confiance.
+          <p className="eyebrow" style={{ color: "#E8EAED" }}>Technologie automobile · Ingénierie & Innovation</p>
+          <h1 className="chero__title" style={{ color: "#FFFFFF" }}>Les technologies qui font rouler le monde.</h1>
+          <p className="chero__sub" style={{ color: "#B8C5D6" }}>
+            Motorisations, sécurité, transmission, autonomie et connectivité — explorez en profondeur les technologies automobiles essentielles. Des guides techniques sourcés et tenus à jour par nos experts.
           </p>
           <div className="chero__cta">
-            <Link className="btn btn--primary" href="/rubriques/">
-              Explorer les rubriques
+            <Link className="btn btn--primary" href="/rubriques/" style={{ backgroundColor: "#3A3F47", borderColor: "#3A3F47" }}>
+              Découvrir les catégories
             </Link>
           </div>
         </div>
       </section>
 
       <div className="wrap">
+        {/* Featured Categories Section */}
         <section className="section">
           <div className="section__head">
-            <h2>Nos domaines d&apos;expertise</h2>
-            <Link href="/rubriques/">Tout voir</Link>
+            <h2 style={{ color: "#1F3A5F" }}>Cinq piliers de la technologie automobile</h2>
+            <Link href="/rubriques/" style={{ color: "#2E5090" }}>Tout explorer</Link>
           </div>
           <div className="silo-grid">
             {SILOS.map((s) => (
-              <Link key={s.slug} className="silo" href={`/categorie/${s.slug}/`}>
+              <Link
+                key={s.slug}
+                className="silo"
+                href={`/categorie/${s.slug}/`}
+                style={{
+                  borderLeft: "4px solid #2E5090",
+                  backgroundColor: "#F8F9FB"
+                }}
+              >
                 <span className="silo__main">
                   <SiloThumb slug={s.slug} alt={`Icône ${s.name}`} />
                   <span>
-                    <span className="silo__name">{s.name}</span>
-                    <span className="silo__desc" style={{ display: "block" }}>
+                    <span className="silo__name" style={{ color: "#1F3A5F", fontWeight: 600 }}>{s.name}</span>
+                    <span className="silo__desc" style={{ display: "block", color: "#3A3F47" }}>
                       {s.desc}
                     </span>
                   </span>
@@ -90,22 +91,23 @@ export default async function HomePage() {
           </div>
         </section>
 
+        {/* Comparator Widget Section */}
         <section className="section">
           <div className="section__head">
-            <h2>Décidez, ne vous contentez pas de lire</h2>
-            <Link href="/outils/">Tous nos outils</Link>
+            <h2 style={{ color: "#1F3A5F" }}>Comparez les technologies</h2>
+            <Link href="/outils/" style={{ color: "#2E5090" }}>Tous nos outils</Link>
           </div>
-          <p style={{ color: "var(--muted)", marginTop: "-6px" }}>
-            Construit à partir de nos données réelles (fiabilité, pannes, segment) — comparez deux
-            véhicules en quelques secondes, sans créer de compte.
+          <p style={{ color: "#4A5063", marginTop: "-6px" }}>
+            Comparez les caractéristiques techniques et les performances de différentes motorisations, systèmes de sécurité et technologies embarquées.
           </p>
           <ComparateurWidget />
         </section>
 
+        {/* Latest Guides Section */}
         {posts.length > 0 && (
           <section className="section">
             <div className="section__head">
-              <h2>Les derniers guides</h2>
+              <h2 style={{ color: "#1F3A5F" }}>Les derniers guides techniques</h2>
             </div>
             <div className="rail">
               {posts.map((p) => (
@@ -115,44 +117,40 @@ export default async function HomePage() {
           </section>
         )}
 
-        <section className="section">
+        {/* Trust/Authority Section */}
+        <section className="section" style={{ backgroundColor: "#F8F9FB", padding: "40px 20px", borderRadius: "8px", borderLeft: "4px solid #2E5090" }}>
           <div className="section__head">
-            <h2>Pourquoi {SITE_NAME}</h2>
+            <h2 style={{ color: "#1F3A5F" }}>Pourquoi {SITE_NAME} pour la technologie automobile</h2>
           </div>
           <div className="trust-grid">
             <div className="trust">
-              <h3>Une expertise réelle</h3>
+              <h3 style={{ color: "#2E5090" }}>Expertise technique réelle</h3>
               <p>
-                Contenus rédigés et relus par des mécaniciens et journalistes auto, signés et
-                rattachés à une page d&apos;expert.
+                Contenus rédigés par des ingénieurs automobiles, mécaniciens et experts techniques, avec sources citées et datées.
               </p>
             </div>
             <div className="trust">
-              <h3>Des sources vérifiables</h3>
+              <h3 style={{ color: "#2E5090" }}>Sources industrielles vérifiées</h3>
               <p>
-                Données issues des constructeurs, de la Sécurité routière et de
-                service-public.fr, citées et datées dans chaque article.
+                Données issues des constructeurs, brevets, normes ISO, datasheets techniques et publications académiques.
               </p>
             </div>
             <div className="trust">
-              <h3>Toujours à jour</h3>
+              <h3 style={{ color: "#2E5090" }}>Rigueur et traçabilité</h3>
               <p>
-                Tarifs, périodicités et barèmes révisés chaque année ; la date de mise à jour
-                est affichée sur chaque page.
+                Spécifications techniques, chiffres clés et évolutions normatives révisés régulièrement et datés sur chaque article.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="nl-band">
+        {/* Newsletter Section */}
+        <section className="nl-band" style={{ backgroundColor: "#2E5090", color: "#FFFFFF" }}>
           <h2>La newsletter {SITE_NAME}</h2>
-          <p>Chaque semaine : nos nouveaux guides, essais et conseils d&apos;entretien. Zéro spam.</p>
+          <p>Chaque semaine : nos derniers guides techniques, innovations et analyses en profondeur. Zéro spam.</p>
           <NewsletterForm />
         </section>
       </div>
-
-      <JsonLd data={{ "@context": "https://schema.org", ...websiteSchema() }} />
-      <JsonLd data={{ "@context": "https://schema.org", ...organizationSchema() }} />
     </>
   );
 }

@@ -117,6 +117,21 @@ const nextConfig: NextConfig = {
         destination: "/changement-de-titulaire-carte-grise/",
         permanent: true,
       },
+      // Reorientation Phase 6 (2026-10-07): Redirect old 19 silos to 5 automotive-tech categories
+      { source: "/categorie/entretien-revision", destination: "/categorie/motorisations/", permanent: true },
+      { source: "/categorie/marques-modeles", destination: "/categorie/reglementation-technique/", permanent: true },
+      { source: "/categorie/pieces-detachees", destination: "/categorie/motorisations/", permanent: true },
+      { source: "/categorie/freinage", destination: "/categorie/securite/", permanent: true },
+      { source: "/categorie/suspension-direction", destination: "/categorie/transmission/", permanent: true },
+      { source: "/categorie/moteur", destination: "/categorie/motorisations/", permanent: true },
+      { source: "/categorie/transmission-boite", destination: "/categorie/transmission/", permanent: true },
+      { source: "/categorie/batterie-electrique", destination: "/categorie/motorisations/moteurs-electriques/", permanent: true },
+      { source: "/categorie/airbag-securite", destination: "/categorie/securite/", permanent: true },
+      { source: "/categorie/emissions-consommation", destination: "/categorie/reglementation-technique/", permanent: true },
+      { source: "/categorie/normes-homologation", destination: "/categorie/reglementation-technique/", permanent: true },
+      { source: "/categorie/autopilot-autonomie", destination: "/categorie/autonomie-connectivite/", permanent: true },
+      { source: "/categorie/connectivite-5g", destination: "/categorie/autonomie-connectivite/connectivite-embarquee/", permanent: true },
+      { source: "/categorie/capteurs-radar", destination: "/categorie/autonomie-connectivite/capteurs-autonomes/", permanent: true },
     ];
   },
   // En-têtes de sécurité manquants sur 100% des pages (audit Screaming Frog du

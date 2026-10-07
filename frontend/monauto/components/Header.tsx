@@ -5,7 +5,7 @@ import LangSwitch from "@/components/LangSwitch";
 import { SILOS } from "@/lib/taxonomy";
 import { getCategories } from "@/lib/wp";
 
-const MAX_NAV_CHIPS = 4;
+const MAX_NAV_CHIPS = 5;
 
 // Comptes réels WP (pas data/taxonomy.json, qui reflète la cible planifiée à
 // terme, voir lib/taxonomy.ts) — le menu principal ne doit mettre en avant que

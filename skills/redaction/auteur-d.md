@@ -43,3 +43,9 @@ Un ton réussi ne dispense jamais d'une seule de ces règles — la voix habille
 ## 5. Règle rédactionnelle supplémentaire
 
 *(à compléter — règle en attente de communication par l'utilisateur, voir plan `indexed-hugging-flurry`)*
+
+## [AUTO-TECH SCOPE 2026-10-07] Automotive-Technology Focus
+
+**TechCars reorientation note**: All articles generated for this author must focus on automotive technology per `scope-automotive-technology.md` guardrail. Articles on administrative, commercial, or lifestyle topics are rejected before publication.
+
+This scope constraint applies to all generation passes — the system prompts load the automotive-technology guardrail for every article.

@@ -45,3 +45,31 @@ Trouvé sur l'article `applications-aires-camping-car` (QA Phase 6, 2026-10-03) 
 **Interdit** : toute phrase qui affirme que l'auteur (ou "nous") a personnellement fait, vécu ou vérifié quelque chose de daté/localisé précisément ("nous avons testé ces apps sur 3 000 km", "nous avons dormi sur un parking de Super U en Bretagne", "un couple rencontré en Auvergne..."). Interdit aussi : une statistique précise présentée comme mesurée par l'auteur sur un trajet donné ("80 % des aires y étaient référencées sur notre trajet Lyon-Bordeaux") — c'est une variante chiffrée du même problème, à traiter comme une invention au sens de `checkFactsNotInvented`.
 
 **Autorisé et attendu** (ne pas sur-corriger vers un ton plat) : le scénario concret à la 2e personne ou impersonnel déjà prévu section 2 ("pour un week-end de 400 km avec deux vélos...", "pour un emplacement près de Biarritz en juillet, réserver à l'avance évite..."), et les exemples localisés présentés comme illustrations génériques plutôt que comme vécu de l'auteur ("un parking de supermarché en Auvergne, gratuit et calme, illustre bien ce type de spot" — pas "nous avons testé ce parking"). La couleur locale (noms de villes, de régions, de situations concrètes) reste la signature de cet auteur ; c'est la revendication de vécu personnel invérifiable qui est retirée, pas le concret.
+
+## 6. Automotive-Technology Scope (TechCars Reorientation 2026-10-07)
+
+**CRITICAL: All future articles for this author MUST focus exclusively on automotive technology.**
+
+Suite à la reorientation stratégique de techcars.fr (2026-10-07), cet auteur ne génère plus d'articles sur :
+
+**❌ Interdits immédiatement** (rejet avant publication) :
+- Procédures administratives (carte grise, cession, changement adresse) — domaine zéro
+- Camping-car et van : voyages, équipement pratique, lifestyle → **SUPPRIMÉ** (entièrement hors scope)
+- Carburants & consommation : comparatifs de prix, coûts à l'usage → Transformer en angle technologique ou rejeter
+- Comparatifs de services (BlaBlaCar, Uber, transport) → SUPPRIMÉ
+- Road-trips, destination, voyage → SUPPRIMÉ
+
+**✅ À conserver & reorienter** (technologie automobile seulement) :
+- Chimie des batteries (LFP vs NCM), recharge rapide, gestion thermique
+- Systèmes de propulsion hybride, électrique, hydrogène (aspect mécanique/énergétique)
+- Motorisations alternatives (technologie, pas seulement "où les trouver")
+- Autonomie des véhicules, système de conduite autonome
+- Confort technologique : climatisation, sièges adaptatifs, systèmes d'infodivertissement
+- Sécurité active : ADAS, freinage autonome, stabilité
+- Aspects techniques de la norme Euro (cycle d'essai, mesure réelle)
+
+**Angle technologique obligatoire** : chaque article doit répondre à "Comment cette technologie fonctionne-t-elle ?" et non "Où en acheter ?" ou "Comment c'est pour un weekend ?"
+
+**Personas cibles permises pour cet auteur** : ingénieur, étudiant, passionné (pas "routard" ou "commercial").
+
+Cette contrainte s'applique à **toute génération et relecture** : les prompts systèmes chargeront le garde-fou `scope-automotive-technology.md` pour tous les articles de cet auteur.

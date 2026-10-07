@@ -143,9 +143,6 @@ const READABILITY_REVIEW_SCHEMA = reviewSchema('relecture_lisibilite_wp');
 // system[] : skill complet de l'auteur, puis contrat universel du type de
 // contenu — mistral-client.js concatène ces blocs en un seul message
 // role=system. Réutilisé identique en génération ET en relecture.
-// system[] : skill complet de l'auteur, puis contrat universel du type de
-// contenu — mistral-client.js concatène ces blocs en un seul message
-// role=system. Réutilisé identique en génération ET en relecture.
 function buildSystemBlocks(silo, contentType) {
   const personaInfo = persona.getPersonaForSilo(silo);
   const skillContent = readFile(personaInfo.skill);
@@ -155,9 +152,6 @@ function buildSystemBlocks(silo, contentType) {
   // partage, voir buildReviewRequest/buildReadabilityReviewRequest plus bas)
   // -- jamais sautable, jamais une option de run.
   const knowledgeCutoffGuardrail = readFile(path.join(PROMPTS_DIR, 'garde-fou-connaissance.md'));
-  // Automotive-technology scope (voir prompts/scope-automotive-technology.md) :
-  // charge pour TOUT article techcars.fr — rejette admin/commercial/lifestyle
-  const automotiveTechScopeGuardrail = readFile(path.join(PROMPTS_DIR, 'scope-automotive-technology.md'));
   const contract = readFile(path.join(PROMPTS_DIR, CONTRACT_FILE_BY_TYPE[contentType]));
   return {
     personaInfo,
@@ -165,11 +159,16 @@ function buildSystemBlocks(silo, contentType) {
       { type: 'text', text: skillContent },
       { type: 'text', text: styleGuide },
       { type: 'text', text: knowledgeCutoffGuardrail },
-      { type: 'text', text: automotiveTechScopeGuardrail },
       { type: 'text', text: contract },
     ],
   };
 }
+
+function buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles }) {
+  if (!CONTRACT_FILE_BY_TYPE[contentType]) throw new Error(`prompt-builder: type de contenu inconnu "${contentType}"`);
+  const { personaInfo, system } = buildSystemBlocks(silo, contentType);
+  const ymyl = persona.isYmylSilo(silo);
+
   const userPayload = {
     type_de_contenu: contentType,
     silo,
