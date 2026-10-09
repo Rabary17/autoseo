@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useState } from "react";
-import { GA_MEASUREMENT_ID, GTM_ID } from "@/lib/analytics";
+import { GA_MEASUREMENT_ID, GA_MEASUREMENT_ID_2, GTM_ID } from "@/lib/analytics";
 
 const STORAGE_KEY = "monauto-cookie-consent";
 
@@ -46,7 +46,8 @@ export default function CookieConsent() {
             {`window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');`}
+              gtag('config', '${GA_MEASUREMENT_ID}');
+              gtag('config', '${GA_MEASUREMENT_ID_2}');`}
           </Script>
           <Script id="gtm-init" strategy="afterInteractive">
             {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
