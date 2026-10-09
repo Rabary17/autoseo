@@ -170,6 +170,12 @@ function buildSystemBlocks(silo, contentType) {
     ],
   };
 }
+
+function buildGenerationRequest({ contentType, silo, item, maillageEntry, childLinks, facts, competitorAngles }) {
+  if (!CONTRACT_FILE_BY_TYPE[contentType]) throw new Error(`prompt-builder: type de contenu inconnu "${contentType}"`);
+  const { personaInfo, system } = buildSystemBlocks(silo, contentType);
+  const ymyl = persona.isYmylSilo(silo);
+
   const userPayload = {
     type_de_contenu: contentType,
     silo,
