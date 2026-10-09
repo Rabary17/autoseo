@@ -45,8 +45,8 @@ export default async function Header() {
         <Link className="chip" href="/rubriques/">
           Toutes les rubriques
         </Link>
-        <Link className="chip" href="/archives/">
-          Tous les articles
+        <Link className="chip" href="/blog/">
+          Blog
         </Link>
         <Link className="chip" href="/outils/">
           Nos outils

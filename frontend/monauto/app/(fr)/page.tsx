@@ -3,7 +3,6 @@ import Link from "next/link";
 import ArticleCard from "@/components/ArticleCard";
 import JsonLd from "@/components/JsonLd";
 import NewsletterForm from "@/components/NewsletterForm";
-import { ComparateurWidget } from "@/components/widgets";
 import { getPosts } from "@/lib/wp";
 import { SILOS } from "@/lib/taxonomy";
 import { websiteSchema, organizationSchema } from "@/lib/schema";
@@ -21,7 +20,7 @@ export const revalidate = 900;
 
 // Périmètre accueil (charter 2026-10-02) : technologie automobile uniquement.
 // Exclut vélo/trottinette, démarches carte grise, tarifs et comparatifs de services.
-const HORS_SCOPE = /vélo|velo|trottinette|titulaire|duplicata|carte grise|configurateur|coût de possession|assurance|camping|trottinette/i;
+const HORS_SCOPE = /vélo|velo|trottinette|titulaire|duplicata|carte grise|configurateur|coût de possession|assurance|camping/i;
 
 export default async function HomePage() {
   const { posts: fetched } = await getPosts(1, 30).catch((e) => {
@@ -34,132 +33,124 @@ export default async function HomePage() {
       const cat = p._embedded?.["wp:term"]?.[0]?.[0]?.name ?? "";
       return !HORS_SCOPE.test(`${cat} ${p.title.rendered}`);
     })
-    .slice(0, 12);
+    .slice(0, 6);
 
   return (
     <>
-      {/* Hero Section — Blue Steel + Graphite Theme */}
-      <section className="chero" style={{
-        backgroundColor: "#2E5090",
-        backgroundImage: "linear-gradient(135deg, #2E5090 0%, #1F3A5F 100%)"
-      }}>
-        <img
-          className="chero__bg"
-          src="/images/accueil-hero-1920.webp"
-          srcSet="/images/accueil-hero-800.webp 800w, /images/accueil-hero-1920.webp 1920w"
-          sizes="100vw"
-          width={1920}
-          height={1440}
-          alt="Technologies automobiles — innovation et performance"
-          fetchPriority="high"
-          style={{ opacity: 0.15 }}
-        />
-        <div className="chero__scrim" style={{ background: "rgba(46, 80, 144, 0.85)" }} aria-hidden="true" />
-        <div className="wrap">
-          <p className="eyebrow" style={{ color: "#E8EAED" }}>Technologie automobile · Ingénierie & Innovation</p>
-          <h1 className="chero__title" style={{ color: "#FFFFFF" }}>Les technologies qui font rouler le monde.</h1>
-          <p className="chero__sub" style={{ color: "#B8C5D6" }}>
-            Motorisations, sécurité, transmission, autonomie et connectivité — explorez en profondeur les technologies automobiles essentielles. Des guides techniques sourcés et tenus à jour par nos experts.
-          </p>
-          <div className="chero__cta">
-            <Link className="btn btn--primary" href="/rubriques/" style={{ backgroundColor: "#3A3F47", borderColor: "#3A3F47" }}>
-              Découvrir les catégories
-            </Link>
+      <section className="hp-hero">
+        <div className="wrap hp-hero__grid">
+          <div className="hp-hero__text">
+            <p className="hp-eyebrow">
+              <span className="hp-dot" aria-hidden="true" />
+              Technologie automobile · Ingénierie & innovation
+            </p>
+            <h1>
+              Les technologies qui font <span className="hp-accent">rouler</span> le monde.
+            </h1>
+            <p className="hp-lead">
+              Motorisations, sécurité, transmission, autonomie et connectivité : explore en profondeur
+              les technologies automobiles essentielles, avec des guides techniques sourcés et tenus à
+              jour par nos experts.
+            </p>
+            <div className="hp-actions">
+              <Link className="btn btn--primary" href="/blog/">
+                Lire le blog
+              </Link>
+              <a className="btn btn--ghost" href="#sujets">
+                Choisir une rubrique
+              </a>
+            </div>
+            <ul className="hp-proof">
+              <li>Sources citées et datées</li>
+              <li>Rédaction spécialisée en ingénierie</li>
+              <li>Gratuit, sans inscription</li>
+            </ul>
+          </div>
+          <div className="hp-hero__media">
+            <img
+              src="/images/accueil-hero-1920.webp"
+              srcSet="/images/accueil-hero-800.webp 800w, /images/accueil-hero-1920.webp 1920w"
+              sizes="(min-width: 900px) 45vw, 100vw"
+              width={1920}
+              height={1440}
+              alt="Technologies automobiles : innovation et performance"
+              fetchPriority="high"
+            />
           </div>
         </div>
       </section>
 
-      <div className="wrap">
-        {/* Featured Categories Section */}
-        <section className="section">
-          <div className="section__head">
-            <h2 style={{ color: "#1F3A5F" }}>Cinq piliers de la technologie automobile</h2>
-            <Link href="/rubriques/" style={{ color: "#2E5090" }}>Tout explorer</Link>
+      <section className="hp-section" id="sujets">
+        <div className="wrap">
+          <div className="hp-head">
+            <h2>Choisis ta rubrique</h2>
+            <Link href="/rubriques/">Toutes les rubriques</Link>
           </div>
-          <div className="silo-grid">
+          <div className="hp-topics">
             {SILOS.map((s) => (
-              <Link
-                key={s.slug}
-                className="silo"
-                href={`/categorie/${s.slug}/`}
-                style={{
-                  borderLeft: "4px solid #2E5090",
-                  backgroundColor: "#F8F9FB"
-                }}
-              >
-                <span className="silo__main">
-                  <span>
-                    <span className="silo__name" style={{ color: "#1F3A5F", fontWeight: 600 }}>{s.name}</span>
-                    <span className="silo__desc" style={{ display: "block", color: "#3A3F47" }}>
-                      {s.desc}
-                    </span>
-                  </span>
-                </span>
+              <Link key={s.slug} className="hp-topic" href={`/categorie/${s.slug}/`}>
+                <span className="hp-topic__name">{s.name}</span>
+                <span className="hp-topic__desc">{s.desc}</span>
               </Link>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Comparator Widget Section */}
-        <section className="section">
-          <div className="section__head">
-            <h2 style={{ color: "#1F3A5F" }}>Comparez les technologies</h2>
-            <Link href="/outils/" style={{ color: "#2E5090" }}>Tous nos outils</Link>
+      <section className="hp-section">
+        <div className="wrap">
+          <div className="hp-head">
+            <h2>Derniers articles</h2>
+            <Link href="/blog/">Tous les articles</Link>
           </div>
-          <p style={{ color: "#4A5063", marginTop: "-6px" }}>
-            Comparez les caractéristiques techniques et les performances de différentes motorisations, systèmes de sécurité et technologies embarquées.
-          </p>
-          <ComparateurWidget />
-        </section>
-
-        {/* Latest Guides Section */}
-        {posts.length > 0 && (
-          <section className="section">
-            <div className="section__head">
-              <h2 style={{ color: "#1F3A5F" }}>Les derniers guides techniques</h2>
-            </div>
-            <div className="rail">
+          {posts.length > 0 ? (
+            <div className="hp-grid">
               {posts.map((p) => (
                 <ArticleCard key={p.id} post={p} />
               ))}
             </div>
-          </section>
-        )}
+          ) : (
+            <p className="hp-empty">Les prochains articles arrivent bientôt.</p>
+          )}
+        </div>
+      </section>
 
-        {/* Trust/Authority Section */}
-        <section className="section" style={{ backgroundColor: "#F8F9FB", padding: "40px 20px", borderRadius: "8px", borderLeft: "4px solid #2E5090" }}>
-          <div className="section__head">
-            <h2 style={{ color: "#1F3A5F" }}>Pourquoi {SITE_NAME} pour la technologie automobile</h2>
+      <section className="hp-section">
+        <div className="wrap">
+          <div className="hp-head">
+            <h2>Pourquoi techcars</h2>
           </div>
-          <div className="trust-grid">
-            <div className="trust">
-              <h3 style={{ color: "#2E5090" }}>Expertise technique réelle</h3>
-              <p>
-                Contenus rédigés par des ingénieurs automobiles, mécaniciens et experts techniques, avec sources citées et datées.
-              </p>
+          <div className="hp-trust">
+            <div>
+              <h3>Expertise technique réelle</h3>
+              <p>Contenus rédigés par des ingénieurs automobiles, mécaniciens et experts techniques, avec sources citées et datées.</p>
             </div>
-            <div className="trust">
-              <h3 style={{ color: "#2E5090" }}>Sources industrielles vérifiées</h3>
-              <p>
-                Données issues des constructeurs, brevets, normes ISO, datasheets techniques et publications académiques.
-              </p>
+            <div>
+              <h3>Sources industrielles vérifiées</h3>
+              <p>Données issues des constructeurs, brevets, normes ISO, datasheets techniques et publications académiques.</p>
             </div>
-            <div className="trust">
-              <h3 style={{ color: "#2E5090" }}>Rigueur et traçabilité</h3>
-              <p>
-                Spécifications techniques, chiffres clés et évolutions normatives révisés régulièrement et datés sur chaque article.
-              </p>
+            <div>
+              <h3>Rigueur et traçabilité</h3>
+              <p>Spécifications techniques, chiffres clés et évolutions normatives révisés régulièrement et datés sur chaque article.</p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Newsletter Section */}
-        <section className="nl-band" style={{ backgroundColor: "#2E5090", color: "#FFFFFF" }}>
-          <h2>La newsletter {SITE_NAME}</h2>
-          <p>Chaque semaine : nos derniers guides techniques, innovations et analyses en profondeur. Zéro spam.</p>
-          <NewsletterForm />
-        </section>
-      </div>
+      <section className="hp-section">
+        <div className="wrap">
+          <div className="hp-nl">
+            <h2>La newsletter techcars</h2>
+            <p>Chaque semaine : nos derniers guides techniques, innovations et analyses en profondeur. Zéro spam.</p>
+            <NewsletterForm />
+          </div>
+        </div>
+      </section>
+
+      <div className="hp-section" aria-hidden="true" />
+
+      <JsonLd data={{ "@context": "https://schema.org", ...websiteSchema() }} />
+      <JsonLd data={{ "@context": "https://schema.org", ...organizationSchema() }} />
     </>
   );
 }
