@@ -6,7 +6,6 @@ import NewsletterForm from "@/components/NewsletterForm";
 import { ComparateurWidget } from "@/components/widgets";
 import { getPosts } from "@/lib/wp";
 import { SILOS } from "@/lib/taxonomy";
-import SiloThumb from "@/components/SiloThumb";
 import { websiteSchema, organizationSchema } from "@/lib/schema";
 import { pageMeta } from "@/lib/seo-meta";
 import { SITE_NAME } from "@/lib/site";
@@ -20,11 +19,22 @@ export const metadata: Metadata = pageMeta({
 
 export const revalidate = 900;
 
+// Périmètre accueil (charter 2026-10-02) : technologie automobile uniquement.
+// Exclut vélo/trottinette, démarches carte grise, tarifs et comparatifs de services.
+const HORS_SCOPE = /vélo|velo|trottinette|titulaire|duplicata|carte grise|configurateur|coût de possession|assurance|camping|trottinette/i;
+
 export default async function HomePage() {
-  const { posts } = await getPosts(1, 16).catch((e) => {
+  const { posts: fetched } = await getPosts(1, 30).catch((e) => {
     console.warn(`[HomePage] échec du fetch WP, fallback sur []: ${e}`);
     return { posts: [], total: 0, totalPages: 0 };
   });
+
+  const posts = fetched
+    .filter((p) => {
+      const cat = p._embedded?.["wp:term"]?.[0]?.[0]?.name ?? "";
+      return !HORS_SCOPE.test(`${cat} ${p.title.rendered}`);
+    })
+    .slice(0, 12);
 
   return (
     <>
@@ -78,7 +88,6 @@ export default async function HomePage() {
                 }}
               >
                 <span className="silo__main">
-                  <SiloThumb slug={s.slug} alt={`Icône ${s.name}`} />
                   <span>
                     <span className="silo__name" style={{ color: "#1F3A5F", fontWeight: 600 }}>{s.name}</span>
                     <span className="silo__desc" style={{ display: "block", color: "#3A3F47" }}>
