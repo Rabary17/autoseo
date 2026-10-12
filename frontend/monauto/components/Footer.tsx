@@ -1,26 +1,37 @@
 import Link from "next/link";
 import SocialLinks from "@/components/SocialLinks";
+import { SILOS } from "@/lib/taxonomy";
 
+// Pied de page en quatre blocs (marque, rubriques, le média, informations), comme la maquette.
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="footer">
       <div className="wrap">
-        <div className="footer__cols">
+        <div className="footer-grid">
           <div>
-            {/* .footer a toujours un fond sombre (--brand, indépendant du thème
-                clair/sombre) — toujours la variante logo-dark.png, jamais logo.png
-                dont le mot "tech" en quasi-noir y serait invisible (2026-07-29). */}
-            <img className="footer__brand" src="/logo-dark.png" alt="techcars" width={392} height={32} />
-            <p style={{ color: "rgba(255,255,255,.7)", maxWidth: "38ch", margin: 0 }}>
-              Le média expert de l&apos;auto et de la mobilité. Guides testés, sourcés et mis à
-              jour par notre rédaction.
+            <Link className="footer__logo" href="/" aria-label="techcars — accueil">
+              <img className="footer__brand footer__brand--light" src="/logo.png" alt="techcars" width={392} height={32} />
+              <img className="footer__brand footer__brand--dark" src="/logo-dark.png" alt="" aria-hidden="true" width={392} height={32} />
+            </Link>
+            <p className="footer-tagline">
+              Le média expert de l’auto et de la mobilité. Guides testés, sourcés et mis à jour par notre rédaction.
             </p>
             <SocialLinks />
           </div>
-          <div>
-            <h2>Le média</h2>
-            <ul>
+          <nav aria-label="Rubriques">
+            <h2 className="footer-heading">Rubriques</h2>
+            <ul className="footer-links">
+              {SILOS.map((s) => (
+                <li key={s.slug}>
+                  <Link href={`/categorie/${s.slug}/`}>{s.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <nav aria-label="Le média">
+            <h2 className="footer-heading">Le média</h2>
+            <ul className="footer-links">
               <li>
                 <Link href="/a-propos/">Qui sommes-nous ?</Link>
               </li>
@@ -30,30 +41,19 @@ export default function Footer() {
               <li>
                 <Link href="/contact/">Contact</Link>
               </li>
-            </ul>
-          </div>
-          <div>
-            <h2>Rubriques</h2>
-            <ul>
               <li>
-                <Link href="/categorie/entretien-revision/">Entretien &amp; révision</Link>
-              </li>
-              <li>
-                <Link href="/rubriques/">Toutes les rubriques</Link>
-              </li>
-              <li>
-                <Link href="/outils/">Nos outils gratuits</Link>
+                <Link href="/blog/">Blog</Link>
               </li>
             </ul>
-          </div>
-          <div>
-            <h2>Légal</h2>
-            <ul>
+          </nav>
+          <nav aria-label="Informations légales">
+            <h2 className="footer-heading">Informations</h2>
+            <ul className="footer-links">
               <li>
                 <Link href="/mentions-legales/">Mentions légales</Link>
               </li>
               <li>
-                <Link href="/cgu/">Conditions d&apos;utilisation</Link>
+                <Link href="/cgu/">Conditions d’utilisation</Link>
               </li>
               <li>
                 <Link href="/confidentialite/">Confidentialité</Link>
@@ -62,11 +62,9 @@ export default function Footer() {
                 <Link href="/cookies/">Cookies</Link>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <p className="footer__legal">
-          © <span>{year}</span> techcars — Tous droits réservés.
-        </p>
+        <p className="footer-bottom">© {year} techcars — Tous droits réservés. Photos d’illustration : Pexels.</p>
       </div>
     </footer>
   );

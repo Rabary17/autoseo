@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "provider": "pexels",
+    "credit": "Frederick Adegoke Snr. (Pexels)",
+    "page": "https://www.pexels.com/photo/under-the-hood-of-a-car-15684925/",
+    "query": "car engine detail mechanic technology"
+  },
+  "motorisations": {
+    "provider": "pexels",
+    "credit": "LeenSelina Cook Jordan (Pexels)",
+    "page": "https://www.pexels.com/photo/silver-car-engine-in-close-up-photography-11455717/",
+    "query": "car engine piston close up"
+  },
+  "securite": {
+    "provider": "pexels",
+    "credit": "Erik Mclean (Pexels)",
+    "page": "https://www.pexels.com/photo/close-up-of-car-disc-brake-system-34277923/",
+    "query": "car brake disc close up"
+  },
+  "transmission": {
+    "provider": "pexels",
+    "credit": "John Joshua Mejia Jose (Pexels)",
+    "page": "https://www.pexels.com/photo/close-up-of-a-manual-gear-shift-knob-in-car-38056721/",
+    "query": "car gearbox gear shift interior"
+  },
+  "autonomie-connectivite": {
+    "provider": "pexels",
+    "credit": "Stephen Leonardi (Pexels)",
+    "page": "https://www.pexels.com/photo/close-up-of-autonomous-vehicle-s-sensor-technology-35076211/",
+    "query": "self driving car sensors technology"
+  },
+  "reglementation-technique": {
+    "provider": "pexels",
+    "credit": "Alexey Demidov (Pexels)",
+    "page": "https://www.pexels.com/photo/cars-on-road-on-rush-hour-10658552/",
+    "query": "car emissions exhaust testing laboratory"
+  }
+}
