@@ -82,6 +82,27 @@ const EXEMPLES: Record<string, string> = {
   "reglementation-technique": "Que vérifie le contrôle technique ?",
 };
 
+// Technologies automobiles actuelles (cartes de la section « Technologie automobile »).
+const NOUVELLES_TECHNOLOGIES = [
+  { titre: "Aides à la conduite ADAS", texte: "Freinage d’urgence et maintien de voie : des systèmes qui surveillent la route et interviennent en cas de danger." },
+  { titre: "Industrie automobile actuelle", texte: "Électrification, électronique et logiciel transforment la fabrication, la conception et l’usage des véhicules." },
+  { titre: "Conduite autonome", texte: "Niveaux d’autonomie et pilotage automatique : ce que le véhicule fait seul, et ce qui reste à la charge du conducteur." },
+  { titre: "Mise à jour à distance (OTA)", texte: "Mises à jour du système embarqué transmises sans passer par un atelier, pour corriger ou ajouter des fonctions." },
+  { titre: "Affichage tête haute (HUD)", texte: "Informations projetées sur le pare-brise, pour garder les yeux sur la route, avec des repères en réalité augmentée." },
+  { titre: "Capteurs LiDAR et radars", texte: "Détection d’obstacles et télédétection : radars, lasers et caméras qui mesurent distances et vitesses autour du véhicule." },
+  { titre: "Batterie solide", texte: "Une technologie encore en développement, qui promet une densité énergétique plus élevée et une meilleure autonomie." },
+  { titre: "Cockpit numérique", texte: "Tableau de bord virtuel et écrans OLED qui remplacent les cadrans traditionnels par une instrumentation entièrement digitale." },
+  { titre: "Infodivertissement connecté", texte: "Apple CarPlay et Android Auto, y compris sans fil, pour utiliser son smartphone en toute sécurité au volant." },
+  { titre: "Intelligence artificielle automobile", texte: "Reconnaissance vocale embarquée et analyse prédictive qui anticipe l’usure ou les besoins d’entretien." },
+  { titre: "Régulateur de vitesse adaptatif (ACC)", texte: "Maintien automatique de la vitesse et de la distance de sécurité avec le véhicule qui précède." },
+  { titre: "Clé sur smartphone (UWB et NFC)", texte: "Déverrouillage et démarrage sans contact, grâce à la communication à courte portée entre téléphone et véhicule." },
+  { titre: "Caméras 360 degrés et vision nocturne", texte: "Aide au stationnement et vision thermique, pour voir ce qui se passe autour du véhicule, de jour comme de nuit." },
+  { titre: "Communication V2X", texte: "Échange de données entre véhicule, infrastructure et autres usagers, pour anticiper les dangers avant qu’ils ne se voient." },
+  { titre: "Diagnostic embarqué et télématique", texte: "Prise OBD et suivi à distance : des données de fonctionnement qui permettent une maintenance prédictive." },
+  { titre: "Recharge ultra-rapide 800 V", texte: "Architecture haute tension et gestion thermique qui réduisent le temps de recharge des véhicules électriques." },
+];
+
+
 const CHECK_ICON = (
   <svg {...ICON_PROPS} width={18} height={18}>
     <path d="M20 6 9 17l-5-5" />
@@ -222,7 +243,7 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* Hero : promesse en deux colonnes, image de couverture et repère de marque */}
+      {/* Hero : titre principal et présentation */}
       <section className="hp-hero">
         <div className="wrap hp-wrap hp-hero__grid">
           <div className="hp-hero__text">
@@ -230,20 +251,18 @@ export default async function HomePage() {
               <span className="hp-dot" aria-hidden="true" />
               Média technique automobile
             </p>
-            <h1>
-              <span className="hp-accent">techcars</span> — la technologie automobile expliquée simplement
-            </h1>
+            <h1>Technologie automobile</h1>
             <p className="hp-lead">
-              Motorisations, sécurité, transmission, autonomie et connectivité, réglementation technique : nous
-              décrivons les systèmes qui équipent les véhicules, sans jargon, et distinguons toujours les faits
-              établis des annonces.
+              Sur Tech cars, la technologie automobile s’explique pas à pas : moteurs, sécurité, transmission, autonomie,
+              connectivité et réglementation. Chaque système est décrit sans jargon, et les faits établis sont toujours
+              séparés des annonces.
             </p>
             <div className="hp-actions">
-              <a className="btn btn--primary" href="#rubriques">
-                Choisir une rubrique
+              <a className="btn btn--primary" href="#technologie-automobile">
+                Comprendre la technologie automobile
               </a>
-              <a className="btn btn--secondary" href="#derniers-articles">
-                Lire les derniers articles
+              <a className="btn btn--secondary" href="#rubriques">
+                Choisir une rubrique
               </a>
             </div>
             <ul className="hp-proof">
@@ -274,6 +293,44 @@ export default async function HomePage() {
             />
             <img className="hp-visual__mark" src="/mark.png" alt="" width={56} height={56} aria-hidden="true" />
           </figure>
+        </div>
+      </section>
+
+      {/* Technologie automobile : définition, technologies actuelles et liens vers les rubriques */}
+      <section className="hp-section" id="technologie-automobile">
+        <div className="wrap hp-wrap">
+          <p className="hp-kicker">Le sujet</p>
+          <h2 className="hp-h2">Technologie automobile</h2>
+          <div className="hp-prose">
+            <h3>Qu’est-ce que la technologie automobile ?</h3>
+            <p>
+              La technologie automobile regroupe l’ensemble des systèmes qui permettent à un véhicule de se déplacer,
+              de se diriger, de ralentir, de protéger ses occupants et de communiquer. Elle couvre la motorisation, la
+              transmission, la sécurité active et passive, l’électronique embarquée et les aides à la conduite.
+            </p>
+            <p>
+              Comprendre ces systèmes aide à mieux choisir un véhicule, à entretenir sa voiture et à savoir ce que
+              font réellement les technologies annoncées. Pour approfondir, consultez les guides sur la{" "}
+              <Link href="/categorie/motorisations/">technologie des voitures électriques</Link> et sur la{" "}
+              <Link href="/categorie/motorisations/">technologie des véhicules à moteur</Link>.
+            </p>
+
+            <h3>Quelles sont les nouvelles technologies utilisées dans le secteur automobile ?</h3>
+            <p>
+              L’industrie automobile actuelle combine électrification, électronique et logiciel. Les technologies
+              suivantes sont celles que l’on rencontre le plus souvent aujourd’hui, dans les voitures neuves comme dans
+              les modèles récents.
+            </p>
+          </div>
+
+          <ul className="hp-promise-grid hp-tech-grid">
+            {NOUVELLES_TECHNOLOGIES.map((t) => (
+              <li key={t.titre} className="hp-promise-card">
+                <h3>{t.titre}</h3>
+                <p>{t.texte}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
