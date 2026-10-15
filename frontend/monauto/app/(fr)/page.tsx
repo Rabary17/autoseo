@@ -280,17 +280,10 @@ export default async function HomePage() {
               </li>
             </ul>
           </div>
-          <figure className="hp-visual">
-            <img
-              className="hp-visual__img"
-              src="/images/accueil-hero-1920.webp"
-              srcSet="/images/accueil-hero-800.webp 800w, /images/accueil-hero-1920.webp 1920w"
-              sizes="(min-width: 960px) 520px, 100vw"
-              width={1920}
-              height={1280}
-              alt="Moteur automobile en gros plan : distribution et organes de motorisation"
-              fetchPriority="high"
-            />
+          <figure className="hp-visual hp-slides" role="img" aria-label="Technologie automobile : moteur, habitacle connecté et système de suspension pneumatique">
+            <img className="hp-slides__img" src="/images/hero-1.webp" alt="" width={1600} height={1068} fetchPriority="high" />
+            <img className="hp-slides__img" src="/images/hero-2.webp" alt="" width={1600} height={1068} loading="lazy" />
+            <img className="hp-slides__img" src="/images/hero-3.webp" alt="" width={1067} height={1600} loading="lazy" />
             <img className="hp-visual__mark" src="/mark.png" alt="" width={56} height={56} aria-hidden="true" />
           </figure>
         </div>
