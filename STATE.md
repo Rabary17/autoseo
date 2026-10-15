@@ -2,6 +2,12 @@
 
 > Ce fichier est la mémoire de travail du projet, lisible par n'importe quel agent IA (Claude ou autre) qui reprend la main. Il doit rester à jour en permanence — voir [skills/gestion-de-projet.md](skills/gestion-de-projet.md) pour la règle de mise à jour.
 
+## 2026-10-15 : article Sandero vs Clio VI inséré en brouillon WordPress (id 2034)
+
+**Action** : `node scripts/publish-test-article.js --slug=dacia-sandero-vs-clio-vi-prix-reel --apply` lancé depuis le poste (réseau OK). Catégories déjà présentes (571, 567), 5 images uploadées (médias 2029 à 2033), article inséré en `draft` (id 2034). Aucune publication.
+
+**Prochaine action concrète** : relecture dans wp-admin puis passage en publication par l'utilisateur. Prévisualisation : https://mntdev.riseasso.com/?p=2034?preview=true
+
 ## 2026-09-18 (suite 2) : règle "minimum 5 images réelles par article" appliquée à l'article Tests + article porté à 5 images
 
 **Demande utilisateur** : "il faudrait au minimum ajouter 5 images dans un article comme celui là" — traitée à la fois comme (1) une nouvelle règle standing pour tous les futurs articles du silo Tests, et (2) une demande d'ajouter 3 images réelles supplémentaires à l'article en cours (qui n'en avait que 2).

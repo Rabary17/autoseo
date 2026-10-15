@@ -198,7 +198,7 @@ export default async function EnPage({ params }: Props) {
                 <span>
                   {author?.name ? `${author.name} · ` : ""}
                   Published <time dateTime={post.date}>{dateEn(post.date)}</time>
-                  {new Date(post.modified).getTime() - new Date(post.date).getTime() > 48 * 3600 * 1000 && (
+                  {new Date(post.modified).getTime() - new Date(post.date).getTime() > 14 * 24 * 3600 * 1000 && (
                     <>
                       {" "}
                       · Updated <time dateTime={post.modified}>{dateEn(post.modified)}</time>

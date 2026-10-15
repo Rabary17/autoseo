@@ -223,16 +223,16 @@ async function ArticleView({ post }: { post: Awaited<ReturnType<typeof getPostBy
                     </>
                   )}
                   Publié le <time dateTime={post.date}>{dateFr(post.date)}</time>
-                  {/* N'affiche "Mis à jour" que si l'écart dépasse 48h — WordPress
+                  {/* N'affiche « Modifié le » que si l'écart dépasse 14 jours — WordPress
                       horodate `modified` à CHAQUE écriture API (y compris un
                       correctif technique, ex. planification/QC), pas seulement
                       une vraie révision éditoriale. Sans ce seuil, la mention
                       s'affiche en continu dès le premier correctif, même
                       invisible pour le lecteur (voir échange du 2026-08-06). */}
-                  {new Date(post.modified).getTime() - new Date(post.date).getTime() > 48 * 3600 * 1000 && (
+                  {new Date(post.modified).getTime() - new Date(post.date).getTime() > 14 * 24 * 3600 * 1000 && (
                     <>
                       {" "}
-                      · Mis à jour le <time dateTime={post.modified}>{dateFr(post.modified)}</time>
+                      · Modifié le <time dateTime={post.modified}>{dateFr(post.modified)}</time>
                     </>
                   )}
                 </span>
