@@ -830,3 +830,12 @@ body.reading .article__hero{margin-left:calc(var(--gutter)*-1);margin-right:calc
 .hp-prose p{margin:0 0 16px}
 .hp-prose a{color:var(--accent);font-weight:600}
 .hp-tech-grid{margin-top:0}
+
+/* Accueil : diaporama de fond du hero (fondu enchaîné, 3 visuels, 12 s) */
+.hp-slides{position:relative;overflow:visible;aspect-ratio:4/5;max-height:640px;border-radius:var(--r-lg);background:#15171C}
+.hp-slides__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:var(--r-lg);opacity:0;animation:hp-slide 12s infinite}
+.hp-slides__img:nth-of-type(1){animation-delay:0s}
+.hp-slides__img:nth-of-type(2){animation-delay:4s}
+.hp-slides__img:nth-of-type(3){animation-delay:8s}
+@keyframes hp-slide{0%{opacity:0}8%{opacity:1}33%{opacity:1}41%{opacity:0}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.hp-slides__img{animation:none}.hp-slides__img:nth-of-type(1){opacity:1}}
