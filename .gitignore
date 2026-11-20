@@ -4,6 +4,11 @@ __pycache__/
 frontend/monauto/.next/
 frontend/monauto/out/
 frontend/monauto/.env.local
+frontend/monauto-static/.next/
+frontend/monauto-static/out/
+frontend/monauto-static/node_modules/
+frontend/monauto-static/.env.local
+frontend/monauto-static/next-env.d.ts
 logs/
 
 .vercel
@@ -11,3 +16,11 @@ logs/
 # Snapshots quotidiens de la veille actus (générés par scripts/actus/veille.js) —
 # seul data/actus/sources.json (la liste des flux) est versionné.
 data/actus/veille-*.json
+
+# Export de migration WordPress → Markdown (scripts/migration/export-wordpress.js) —
+# données de travail temporaires (338 items + 328 images, ~31 Mo), reprises par
+# scripts/migration/convertir-en-markdown.js puis obsolètes une fois la bascule faite.
+data/migration/
+
+# Fichiers de verrouillage Office (creees quand un .docx est ouvert)
+~$*
