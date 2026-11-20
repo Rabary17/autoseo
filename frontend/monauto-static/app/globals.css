@@ -68,7 +68,10 @@
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0;
-  background:var(--surface);
+  /* Fond blanc demandé explicitement (2026-11-20) — var(--surface), gris très
+     clair, reste utilisée pour les zones de contraste internes (hp-hero,
+     sections alternées) mais plus comme fond de page par défaut. */
+  background:var(--paper);
   color:var(--ink);
   font-family:var(--font-text);
   font-size:16px; line-height:1.6;

@@ -37,7 +37,11 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
         <JsonLd data={articleSchema(post)} />
         {faq.length > 0 ? <JsonLd data={faqSchema(faq)} /> : null}
         <div className="article__head">
-          {categorie && <p className="eyebrow">{categorie.title}</p>}
+          {categorie && (
+            <Link className="eyebrow" href={`/categorie/${categorie.slug}/`}>
+              {categorie.title}
+            </Link>
+          )}
           <h1 className="article__title">{post.title}</h1>
           <div className="article__byline">
             {author && (
