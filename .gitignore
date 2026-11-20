@@ -4,6 +4,11 @@ __pycache__/
 frontend/monauto/.next/
 frontend/monauto/out/
 frontend/monauto/.env.local
+frontend/monauto-static/.next/
+frontend/monauto-static/out/
+frontend/monauto-static/node_modules/
+frontend/monauto-static/.env.local
+frontend/monauto-static/next-env.d.ts
 logs/
 
 .vercel
