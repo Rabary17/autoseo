@@ -19,5 +19,9 @@
     "firebase-admin": "^14.3.0",
     "sharp": "^0.35.3",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "turndown": "^7.2.5",
+    "turndown-plugin-gfm": "^1.0.2"
   }
 }
