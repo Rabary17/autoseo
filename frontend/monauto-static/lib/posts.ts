@@ -125,15 +125,14 @@ export function getChildHubs(parentSlug: string): Hub[] {
   return getAllHubs().filter((h) => h.parentSlug === parentSlug);
 }
 
-/** Image à la une (réelle ou repli générique par catégorie) — toujours une
- * image valide, jamais de carte sans visuel. */
-export function resolveCoverImage(item: { image?: string; imageAlt?: string; category?: string; title: string }): {
-  src: string;
+/** Image à la une — absente (pas de repli générique) plutôt qu'une icône
+ * d'image cassée pour les quelques articles sans média à la une. */
+export function resolveCoverImage(item: { image?: string; imageAlt?: string; title: string }): {
+  src?: string;
   alt: string;
 } {
   if (item.image) return { src: item.image, alt: item.imageAlt || item.title };
-  const categorie = item.category ? getCategory(item.category) : undefined;
-  return { src: "/images/default-cover.png", alt: categorie?.title || item.title };
+  return { alt: item.title };
 }
 
 /** Extrait les FAQ "## Questions fréquentes" / "### Question" du HTML rendu —

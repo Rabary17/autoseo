@@ -7,6 +7,13 @@
       "runtimeArgs": ["--prefix", "frontend/monauto", "run", "dev"],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "monauto-static",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "frontend/monauto-static", "run", "dev"],
+      "port": 3010,
+      "autoPort": true
     }
   ]
 }

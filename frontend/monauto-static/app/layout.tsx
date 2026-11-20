@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
 import { homepageSchema } from "@/lib/schema";
-import { SITE_NAME, SITE_URL, SITE_DESCRIPTION } from "@/lib/site";
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, SOCIAL_LINKS } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -11,21 +12,35 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const year = new Date().getFullYear();
   return (
     <html lang="fr">
       <body>
         <JsonLd data={homepageSchema()} />
-        <header className="site-header">
-          <div className="container">
-            <a className="site-logo" href="/">
-              {SITE_NAME}
-            </a>
-          </div>
+        <header className="appbar">
+          <Link className="appbar__logo" href="/" aria-label={`${SITE_NAME} — accueil`}>
+            <img className="appbar__brand" src="/logo.png" alt={SITE_NAME} width={343} height={28} />
+          </Link>
         </header>
-        <main className="container">{children}</main>
-        <footer>
-          <div className="container">
-            © {new Date().getFullYear()} {SITE_NAME}
+        <main className="wrap" style={{ paddingTop: 20 }}>
+          {children}
+        </main>
+        <footer className="footer">
+          <div className="wrap">
+            <img className="footer__brand" src="/logo-dark.png" alt={SITE_NAME} width={392} height={32} />
+            <p style={{ color: "rgba(255,255,255,.7)", maxWidth: "38ch", margin: "0 0 14px" }}>{SITE_DESCRIPTION}</p>
+            {SOCIAL_LINKS.length > 0 && (
+              <div className="footer__social">
+                {SOCIAL_LINKS.map((s) => (
+                  <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.label}>
+                    {s.label[0]}
+                  </a>
+                ))}
+              </div>
+            )}
+            <p className="footer__legal">
+              © {year} {SITE_NAME} — Tous droits réservés.
+            </p>
           </div>
         </footer>
       </body>

@@ -1,10 +1,13 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllPosts, getPostBySlug, getAllHubs, getHubBySlug, resolveCoverImage, extraireFaq } from "@/lib/posts";
 import { resolveAuthor, authorUrl } from "@/lib/authors";
 import { getCategory } from "@/lib/categories";
 import { articleSchema, faqSchema } from "@/lib/schema";
 import JsonLd from "@/components/JsonLd";
+
+const dateFr = (d: string) => (d ? new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" }) : "");
 
 export function generateStaticParams() {
   const slugsPosts = getAllPosts().map((p) => ({ slug: p.slug }));
@@ -30,38 +33,61 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
     const categorie = post.category ? getCategory(post.category) : undefined;
     const faq = extraireFaq(post.contentHtml);
     return (
-      <article className="post-content">
+      <article>
         <JsonLd data={articleSchema(post)} />
         {faq.length > 0 ? <JsonLd data={faqSchema(faq)} /> : null}
-        {categorie ? (
-          <a className="tag" href={`/categorie/${categorie.slug}/`}>
-            {categorie.title}
-          </a>
-        ) : null}
-        <h1>{post.title}</h1>
-        <p className="card-meta">
-          {post.date}
-          {author ? (
-            <>
-              {" · "}
-              <a href={authorUrl(author)}>{author.name}</a>
-            </>
-          ) : null}
-        </p>
-        <img className="cover" src={cover.src} alt={cover.alt} />
-        <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        <div className="article__head">
+          {categorie && <p className="eyebrow">{categorie.title}</p>}
+          <h1 className="article__title">{post.title}</h1>
+          <div className="article__byline">
+            {author && (
+              <>
+                {author.image && <img className="avatar" src={author.image} alt={author.name} />}
+                <span>
+                  <Link href={authorUrl(author)}>{author.name}</Link>
+                  {post.date && <> · <time dateTime={post.date}>{dateFr(post.date)}</time></>}
+                </span>
+              </>
+            )}
+          </div>
+        </div>
+        {cover.src && (
+          <div className="article__hero">
+            <img src={cover.src} alt={cover.alt} />
+          </div>
+        )}
+        <div className="prose" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        {author && (
+          <div className="author-box">
+            {author.image && <img className="avatar" src={author.image} alt={author.name} />}
+            <div>
+              <p className="author-box__name">{author.name}</p>
+              <p className="author-box__role">{author.role}</p>
+              <p className="author-box__bio">{author.shortBio}</p>
+              <Link className="author-box__link" href={authorUrl(author)}>
+                Voir tous ses articles
+              </Link>
+            </div>
+          </div>
+        )}
       </article>
     );
   }
 
   const hub = getHubBySlug(slug);
   if (hub) {
-    const cover = resolveCoverImage({ ...hub, title: hub.title });
+    const cover = resolveCoverImage(hub);
     return (
-      <article className="post-content">
-        <h1>{hub.title}</h1>
-        <img className="cover" src={cover.src} alt={cover.alt} />
-        <div dangerouslySetInnerHTML={{ __html: hub.contentHtml }} />
+      <article>
+        <div className="article__head">
+          <h1 className="article__title">{hub.title}</h1>
+        </div>
+        {cover.src && (
+          <div className="article__hero">
+            <img src={cover.src} alt={cover.alt} />
+          </div>
+        )}
+        <div className="prose prose--feature" dangerouslySetInnerHTML={{ __html: hub.contentHtml }} />
       </article>
     );
   }

@@ -144,7 +144,7 @@ export function articleSchema(post: Post) {
     mainEntityOfPage: { "@id": pageUrl },
     headline: post.title,
     description: post.description,
-    image: [urlAbsolue(cover.src)],
+    ...(cover.src ? { image: [urlAbsolue(cover.src)] } : {}),
     datePublished: post.date,
     dateModified: post.date,
     ...(category ? { articleSection: category.title } : {}),

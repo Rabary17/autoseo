@@ -146,17 +146,40 @@ function categorieAnglaise() {
   return cfg.categories_marqueur?.en ?? null;
 }
 
+// Téléchargement BINAIRE (chunks Buffer concaténés directement, jamais
+// `.toString("utf-8")`) — `rawGet()` ci-dessus décode chaque réponse en texte
+// UTF-8, ce qui est correct pour du JSON mais corrompt silencieusement tout
+// octet binaire qui ne forme pas une séquence UTF-8 valide (remplacé par
+// U+FFFD, puis tronqué à 0xFD lors du `Buffer.from(str, "binary")` qui
+// suivait) — bug découvert le 2026-11-20 : les 328 images à la une
+// téléchargées via cette fonction étaient toutes corrompues (jamais les
+// images inline de `convertir-en-markdown.js`, qui utilisent déjà un
+// téléchargement binaire correct). Voir scripts/migration/reparer-images-couverture.js
+// pour le script de réparation des images déjà téléchargées avant ce correctif.
+function telechargerBinaire(url) {
+  return new Promise((resolve, reject) => {
+    const mod = url.startsWith("https:") ? https : http;
+    mod
+      .get(url, { headers: { "User-Agent": "monauto-migration/1.0", ...(AUTH ? { Authorization: AUTH } : {}) } }, (res) => {
+        const chunks = [];
+        res.on("data", (c) => chunks.push(c));
+        res.on("end", () => resolve({ status: res.statusCode ?? 0, ok: (res.statusCode ?? 0) >= 200 && (res.statusCode ?? 0) < 300, body: Buffer.concat(chunks) }));
+      })
+      .on("error", reject);
+  });
+}
+
 async function telechargerImage(url, id) {
   if (!url) return null;
   const ext = (url.split(".").pop() || "jpg").split("?")[0].slice(0, 5);
   const fichier = path.join(IMAGES_DIR, `${id}.${ext}`);
   if (fs.existsSync(fichier)) return path.relative(ROOT, fichier).replace(/\\/g, "/");
-  const res = await rawGet(url);
+  const res = await telechargerBinaire(url);
   if (!res.ok) {
     console.error(`  image ${id} : échec téléchargement (HTTP ${res.status})`);
     return null;
   }
-  fs.writeFileSync(fichier, Buffer.from(res.body, "binary"));
+  fs.writeFileSync(fichier, res.body);
   return path.relative(ROOT, fichier).replace(/\\/g, "/");
 }
 
