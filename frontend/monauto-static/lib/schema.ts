@@ -18,9 +18,15 @@ function urlAbsolue(src: string) {
   return /^https?:\/\//.test(src) ? src : `${SITE_URL}${src}`;
 }
 
-function companySchema() {
+/** Identifiant stable de la société éditrice — nœud séparé du `@graph`,
+ * référencé par `organizationNode().parentOrganization` via `{"@id": ...}`
+ * (modèle cible : jamais de nœud dupliqué/imbriqué, voir lebigdata.fr). */
+export const COMPANY_ID = `${SITE_URL}/#editeur`;
+
+function companyNode() {
   return {
     "@type": "Organization",
+    "@id": COMPANY_ID,
     name: SITE_LEGAL.legalName,
     legalName: SITE_LEGAL.legalName,
     address: {
@@ -48,14 +54,14 @@ function organizationNode() {
     logo: {
       "@type": "ImageObject",
       "@id": `${SITE_URL}/#logo`,
-      url: `${SITE_URL}/favicon.png`,
-      contentUrl: `${SITE_URL}/favicon.png`,
-      width: 192,
-      height: 192,
+      url: `${SITE_URL}/logo-icon.png`,
+      contentUrl: `${SITE_URL}/logo-icon.png`,
+      width: 180,
+      height: 180,
     },
     ...(SOCIAL_LINKS.length > 0 ? { sameAs: SOCIAL_LINKS.map((s) => s.url) } : {}),
     publishingPrinciples: `${SITE_URL}/a-propos/`,
-    parentOrganization: companySchema(),
+    parentOrganization: { "@id": COMPANY_ID },
   };
 }
 
@@ -71,7 +77,7 @@ function websiteNode() {
 }
 
 export function homepageSchema() {
-  return { "@context": "https://schema.org", "@graph": [organizationNode(), websiteNode()] };
+  return { "@context": "https://schema.org", "@graph": [organizationNode(), websiteNode(), companyNode()] };
 }
 
 function personNode(author: Author) {

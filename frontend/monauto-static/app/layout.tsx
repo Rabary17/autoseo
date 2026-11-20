@@ -58,6 +58,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li>
                     <Link href="/rubriques/">Toutes les rubriques</Link>
                   </li>
+                  <li>
+                    <Link href="/a-propos/">À propos</Link>
+                  </li>
                 </ul>
               </div>
             </div>
