@@ -5,7 +5,7 @@ date: "2026-08-03"
 parent: 55
 wp_id: 452
 wp_locale: "fr"
-image: "/images/articles/assurance-reglementation-couverture.webp"
+image: "/images/articles/assurance-reglementation-1.webp"
 imageAlt: "Assurance & réglementation camping-car : ce qu’il faut vérifier avant de prendre la route"
 ---
 Un week-end en Bretagne avec deux vélos sur le porte-bagages, ou un tour d’Europe avec la famille : avant de prendre la route, mieux vaut vérifier que votre assurance camping-car couvre bien plus qu’un simple accident. Parce qu’un camping-car, c’est à la fois un véhicule et un logement, et les garanties standard ne suffisent pas toujours. Voici ce qu’il faut absolument vérifier, des extensions de garantie aux règles de stationnement, pour éviter les mauvaises surprises.

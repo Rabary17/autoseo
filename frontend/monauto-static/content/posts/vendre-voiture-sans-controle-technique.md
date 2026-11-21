@@ -6,7 +6,7 @@ author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 922
 wp_locale: "fr"
-image: "/images/articles/vendre-voiture-sans-controle-technique-couverture.webp"
+image: "/images/articles/vendre-voiture-sans-controle-technique-couverture.jpg"
 imageAlt: "Vendre une voiture sans contrôle technique : est-ce légal en 2026 ?"
 ---
 Vendre une voiture sans contrôle technique n’est possible que dans deux cas. D’abord, si le véhicule a moins de 4 ans. Ensuite, si vous le cédez à un professionnel, comme un garage ou un concessionnaire. Pour une vente entre particuliers, un contrôle technique de moins de 6 mois est obligatoire si la voiture a plus de 4 ans. Sans ce document, la cession est illégale. Elle expose à une amende pouvant aller jusqu’à 750 €.

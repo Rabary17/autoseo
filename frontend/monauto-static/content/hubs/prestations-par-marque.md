@@ -5,7 +5,7 @@ date: "2026-08-04"
 parent: 17
 wp_id: 634
 wp_locale: "fr"
-image: "/images/articles/prestations-par-marque-couverture.webp"
+image: "/images/articles/prestations-par-marque-1.webp"
 imageAlt: "Entretien auto par marque : prix, forfaits et conseils pour bien choisir"
 ---
 Un bruit de cliquetis au ralenti ? Une vidange à faire avant les vacances ? Les prix d’entretien varient du simple au double selon que vous rouliez en Dacia ou en BMW. Voici comment anticiper la facture et éviter les pièges.

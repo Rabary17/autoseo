@@ -4,7 +4,7 @@ description: "Tout savoir sur voiture d’occasion : guide complet pour acheter,
 date: "2026-08-04"
 wp_id: 49
 wp_locale: "fr"
-image: "/images/articles/voiture-d-occasion-couverture.webp"
+image: "/images/articles/voiture-d-occasion-1.webp"
 imageAlt: "Voiture d'occasion : guide complet pour acheter, vendre et entretenir"
 ---
 Accueil › Voiture d’occasion

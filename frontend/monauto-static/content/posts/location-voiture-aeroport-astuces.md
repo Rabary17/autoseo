@@ -6,7 +6,7 @@ author: "karim-belaid"
 category: "location-courte-longue-duree"
 wp_id: 1392
 wp_locale: "fr"
-image: "/images/articles/location-voiture-aeroport-astuces-couverture.webp"
+image: "/images/articles/location-voiture-aeroport-astuces-1.webp"
 imageAlt: "Location de voiture à l’aéroport : 7 astuces pour éviter les pièges et payer moins cher"
 ---
 Vous atterrissez à Lyon-Saint Exupéry pour un week-end ou à Orly pour un déplacement pro ? La location de voiture à l’aéroport semble pratique. Pourtant, les tarifs affichés au comptoir cachent souvent des frais imprévus. Résultat : la note peut doubler entre la réservation et la restitution. Voici comment éviter les pièges et économiser jusqu’à 50%.

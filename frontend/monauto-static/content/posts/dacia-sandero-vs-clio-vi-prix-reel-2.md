@@ -6,7 +6,7 @@ author: "thomas-lefevre"
 category: "configurateurs-cout-de-possession"
 wp_id: 2034
 wp_locale: "fr"
-image: "/images/articles/dacia-sandero-vs-clio-vi-prix-reel-2-couverture.jpg"
+image: "/images/articles/dacia-sandero-vs-clio-vi-prix-reel-2-1.jpg"
 imageAlt: "Capture d'écran du configurateur officiel Dacia, Sandero finition expression TCe 100 à 16 050 euros"
 ---
 À finition intermédiaire équivalente, la Dacia Sandero Expression TCe 100 revient à **16 050 €** sur le configurateur dacia.fr. La Renault Clio VI techno TCe 115, configurée sur renault.fr, coûte **23 900 €**. Écart constaté le 18 septembre 2026, sans option, sur les configurateurs officiels des deux marques.

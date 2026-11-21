@@ -5,7 +5,7 @@ date: "2026-08-17"
 author: "nathalie-moreau"
 wp_id: 1243
 wp_locale: "fr"
-image: "/images/articles/vasp-carte-grise-demarches-couverture.webp"
+image: "/images/articles/vasp-carte-grise-demarches-1.webp"
 imageAlt: "VASP et carte grise : démarches pour un van ou fourgon aménagé"
 ---
 Vous avez transformé un fourgon en espace de vie pour vos road-trips ? Si votre aménagement inclut une cuisine fixe ou un lit permanent, vous devez obtenir une homologation VASP (_Véhicule Automoteur Spécialisé_) et mettre à jour votre carte grise. Sans cette démarche, vous risquez une amende de 135 € et une contre-visite au contrôle technique. Voici comment procéder, que vous prépariez un week-end en Bretagne ou un tour d’Europe.

@@ -5,7 +5,7 @@ date: "2026-08-04"
 parent: 85
 wp_id: 857
 wp_locale: "fr"
-image: "/images/articles/achat-occasion-par-modele-couverture.webp"
+image: "/images/articles/achat-occasion-par-modele-1.webp"
 imageAlt: "Voitures d'occasion par modèle : le guide complet pour bien choisir"
 ---
 Vous cherchez une voiture d’occasion ? Ce sous-cocon répertorie **120 modèles détaillés**, des citadines aux SUV en passant par les utilitaires et les sportives. Chaque fiche vous donne les clés pour évaluer la fiabilité, les pannes courantes, les prix du marché et les critères de choix selon votre profil. Que vous rouliez en ville, sur autoroute ou en zone rurale, voici comment trouver le modèle qui ne vous ruinera pas en entretien.

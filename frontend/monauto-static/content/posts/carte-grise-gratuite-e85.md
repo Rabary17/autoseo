@@ -6,7 +6,7 @@ author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1126
 wp_locale: "fr"
-image: "/images/articles/carte-grise-gratuite-e85-couverture.webp"
+image: "/images/articles/carte-grise-gratuite-e85-1.webp"
 imageAlt: "Carte grise gratuite E85 : comment l'obtenir et quels sont les coûts cachés ?"
 ---
 La mise à jour de la carte grise est obligatoire après l’installation d’un boîtier E85 homologué. Sans elle, risque de contre-visite au contrôle technique et d’amende. Cette obligation s’inscrit dans un cadre plus large : notre guide sur [l’E85 et les conversions](/carburants-consommation/e85-conversions) détaille aussi le choix du boîtier, sa fiabilité et sa rentabilité avant même de penser à la carte grise. TL;DR : La carte grise doit passer en mention « FE ». Coût minimum : 13,76 €, gratuit dans 3 régions. Délai : 1 mois après l’installation.

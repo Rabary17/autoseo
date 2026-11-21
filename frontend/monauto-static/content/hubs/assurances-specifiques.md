@@ -5,7 +5,7 @@ date: "2026-08-04"
 parent: 139
 wp_id: 193
 wp_locale: "fr"
-image: "/images/articles/assurances-specifiques-couverture.webp"
+image: "/images/articles/assurances-specifiques-1.webp"
 imageAlt: "Assurance auto : quel contrat choisir selon votre véhicule ou votre usage"
 ---
 [Accueil](/) » Assurance auto » Profils spécifiques

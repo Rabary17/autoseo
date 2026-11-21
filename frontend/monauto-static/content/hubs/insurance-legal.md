@@ -5,7 +5,7 @@ date: "2026-09-22"
 parent: 1606
 wp_id: 1607
 wp_locale: "en"
-image: "/images/articles/insurance-legal-couverture.webp"
+image: "/images/articles/assurance-reglementation-1.webp"
 imageAlt: "Assurance & réglementation camping-car : ce qu’il faut vérifier avant de prendre la route"
 ---
 A weekend in Brittany with two bikes on the rack, or a family tour of Europe—before setting off, it’s best to check that your motorhome insurance covers more than just a simple accident. Because a motorhome is both a vehicle and a home, standard policies often fall short. Here’s what you absolutely need to check, from additional cover to parking rules, to avoid nasty surprises.

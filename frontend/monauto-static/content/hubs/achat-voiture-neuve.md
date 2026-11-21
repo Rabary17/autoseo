@@ -4,7 +4,7 @@ description: "Tout savoir sur achat voiture neuve : le guide pour ne pas se trom
 date: "2026-08-04"
 wp_id: 169
 wp_locale: "fr"
-image: "/images/articles/achat-voiture-neuve-couverture.webp"
+image: "/images/articles/achat-voiture-neuve-2.webp"
 imageAlt: "Achat voiture neuve : le guide pour ne pas se tromper de budget"
 ---
 Ce guide couvre l’achat d’une voiture neuve sous ses six leviers de budget réels : LOA/LLD, choix du segment, mandataire, options, négociation et fiscalité (bonus, malus). Il s’adresse à qui compare plusieurs pistes avant de signer, pas à qui a déjà arrêté son choix.

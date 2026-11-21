@@ -6,7 +6,7 @@ author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 949
 wp_locale: "fr"
-image: "/images/articles/ct-vehicule-electrique-specificites-couverture.webp"
+image: "/images/articles/ct-vehicule-electrique-specificites-1.webp"
 imageAlt: "Contrôle technique d’un véhicule électrique : spécificités, prix et points de vigilance"
 ---
 Le contrôle technique d’un véhicule électrique en 2026 coûte entre 85 € et 100 € en moyenne. Selon Groupama.fr, ce tarif reflète les vérifications supplémentaires imposées par la réglementation sur la haute tension et la batterie.

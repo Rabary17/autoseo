@@ -6,7 +6,7 @@ author: "nathalie-moreau"
 category: "gpl-gnv-hydrogene"
 wp_id: 882
 wp_locale: "fr"
-image: "/images/articles/gnv-utilitaire-pro-couverture.webp"
+image: "/images/articles/gnv-utilitaire-pro-1.webp"
 imageAlt: "GNV utilitaire pro : avantages, modèles et aides 2026"
 ---
 Le GNV réduit le coût carburant de 25 % par rapport au diesel pour un artisan roulant 50 000 km par an. Les utilitaires GNV en 2026 offrent une autonomie de 350 à 600 km selon le modèle. La TVA est récupérable à 100 % pour les professionnels.

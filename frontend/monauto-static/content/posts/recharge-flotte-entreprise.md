@@ -5,7 +5,7 @@ date: "2026-08-22"
 author: "nathalie-moreau"
 wp_id: 1565
 wp_locale: "fr"
-image: "/images/articles/recharge-flotte-entreprise-couverture.webp"
+image: "/images/articles/recharge-flotte-entreprise-1.webp"
 imageAlt: "Recharge de flotte entreprise : installation, coûts et optimisation fiscale en 2026"
 ---
 Pour une PME livrant en ville avec cinq utilitaires électriques, installer trois bornes de recharge sur son site coûte entre 9 000 et 45 000 €. En effet, l’aide ADVENIR (jusqu’à 960 € par point) et une TVA à 5,5 % réduisent la facture de 30 %. Ainsi, cet investissement mérite une étude approfondie pour les flottes en transition.

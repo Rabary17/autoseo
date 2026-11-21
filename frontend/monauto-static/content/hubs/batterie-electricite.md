@@ -5,7 +5,7 @@ date: "2026-08-04"
 parent: 17
 wp_id: 639
 wp_locale: "fr"
-image: "/images/articles/batterie-electricite-couverture.webp"
+image: "/images/articles/batterie-electricite-1.webp"
 imageAlt: "Batterie et alternateur : tout savoir pour entretenir et remplacer"
 ---
 Votre voiture ne démarre plus. Un voyant batterie clignote ou un grincement bizarre vient du moteur. Deux coupables possibles : la batterie ou l’alternateur. Lequel est en cause ? Et surtout, combien va coûter la réparation ? Voici les signes qui ne trompent pas, les prix 2026 et les astuces pour éviter les pannes.

@@ -6,7 +6,7 @@ author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 974
 wp_locale: "fr"
-image: "/images/articles/code-de-cession-obtenir-couverture.webp"
+image: "/images/articles/code-de-cession-obtenir-couverture.jpg"
 imageAlt: "Code de cession : comment l’obtenir et l’utiliser pour vendre votre voiture"
 ---
 ## Pourquoi le code de cession est-il obligatoire ?
