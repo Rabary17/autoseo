@@ -32,7 +32,7 @@ C’est le critère le plus simple à vérifier. Un mild hybride et un full hybr
 
 Autre point souvent oublié : sur une prise domestique classique, la recharge d’un PHEV prend des heures. Une borne accélère nettement les choses, mais elle ne se justifie que si vous rentrez chaque soir sur une place équipée. Si vous garez le véhicule dans un parking sans prise, oubliez le rechargeable.
 
-Dernier détail, souvent négligé : la prise elle-même. Une prise domestique ordinaire supporte la recharge, mais une installation ancienne ou mal entretenue chauffe vite sous une charge prolongée. Faites contrôler le circuit avant de brancher tous les soirs, surtout dans un logement ancien.
+Dernier détail, souvent négligé : la prise elle-même. Une prise domestique ordinaire supporte la recharge, mais une installation ancienne ou mal entretenue chauffe vite sous une charge prolongée. Faites contrôler le circuit avant de brancher tous les soirs, surtout dans un logement ancien. Notre dossier sur la [recharge à domicile](/recharge-a-domicile/) détaille les solutions adaptées, de la prise renforcée à la borne dédiée.
 
 ## Usage réel : quel trajet pour quel véhicule
 
@@ -48,13 +48,13 @@ Le PHEV convient à qui parcourt chaque jour une distance inférieure à son aut
 
 En atelier, ces hybrides se ressemblent moins qu’on ne le croit. Le mild hybride garde une mécanique thermique classique, avec ses vidanges, ses filtres et sa distribution. Il ajoute une batterie basse tension et un petit ensemble électrique à surveiller, rien de plus exotique qu’une électronique moderne.
 
-Le full hybride et le PHEV portent une batterie haute tension. Elle ne se manipule pas sans équipement adapté ni formation. Un diagnostic de ses cellules se réalise en atelier habilité, et un garage non formé ne prendra pas l’intervention. Avant d’acheter, demandez l’historique d’entretien de la batterie et la garantie constructeur qui s’y rattache.
+Le full hybride et le PHEV portent une batterie haute tension. Elle ne se manipule pas sans équipement adapté ni formation. Un diagnostic de ses cellules se réalise en atelier habilité, et un garage non formé ne prendra pas l’intervention. Avant d’acheter, demandez l’historique d’entretien de la batterie et la garantie constructeur qui s’y rattache. La chimie de la cellule influence aussi sa longévité : notre guide [batterie LFP ou NMC](/batterie-lfp-ou-nmc-ce-qui-change/) explique ce que change concrètement ce choix technique.
 
-Côté usure, le freinage récupératif soulage les plaquettes et les disques. Un hybride freine donc moins souvent avec ses freins mécaniques, ce qui allonge leur durée de vie. Le revers existe pourtant : des disques peu sollicités peuvent rouiller et se bloquer. Faites-les contrôler à chaque révision, même si les plaquettes semblent neuves.
+Côté usure, le freinage récupératif soulage les plaquettes et les disques. Un hybride freine donc moins souvent avec ses freins mécaniques, ce qui allonge leur durée de vie. Le revers existe pourtant : des disques peu sollicités peuvent rouiller et se bloquer. Faites-les contrôler à chaque révision, même si les plaquettes semblent neuves. La question se pose différemment pour une boîte automatique : notre comparatif [DSG, CVT ou boîte automatique classique](/dsg-cvt-ou-automatique-classique-laquelle-choisir/) détaille les points de vigilance propres à chaque transmission.
 
 ## Prix d’achat et coût sur la durée
 
-Le mild hybride est la version la moins chère des trois. Le PHEV coûte plus cher à l’achat, et ses avantages fiscaux dépendent du pays, selon Autojm. Ne comparez donc pas les prix d’affichage : comparez le surcoût initial à ce que vous économiserez réellement sur votre trajet type. Un calcul sur vos propres chiffres pèse plus lourd qu’une promesse commerciale.
+Le mild hybride est la version la moins chère des trois à l'achat. Le PHEV coûte généralement le plus cher, et ses avantages fiscaux dépendent fortement du pays et du barème en vigueur au moment de l'achat. Ne comparez donc pas uniquement les prix d'affichage : comparez le surcoût initial à ce que vous économiserez réellement sur votre trajet type. Un calcul sur vos propres chiffres pèse plus lourd qu'une promesse commerciale. Pour un hybride rechargeable affecté à une entreprise, vérifiez aussi l'avantage en nature applicable : notre guide sur l'[avantage en nature des véhicules de fonction](/avantage-en-nature-vehicule-fonction/) détaille ce point, tout comme notre page sur la [fiscalité des pick-up](/pick-up-fiscalite-avantage/) pour les professionnels qui hésitent entre plusieurs motorisations.
 
 Faites le calcul sur votre quotidien. Combien de kilomètres parcourez-vous chaque jour ? Combien de recharges par semaine pouvez-vous réellement assurer ? Quel écart de prix sépare les deux modèles dans votre gamme ? Les réponses valent plus que n’importe quelle fiche technique. Un écart de prix important ne se justifie que si les économies suivent réellement.
 
@@ -86,4 +86,6 @@ Le full hybride se recharge en roulant et roule électrique sur de courtes dista
 
 Généralement non. Sans recharge régulière, il transporte une batterie lourde inutilisée. Un mild hybride coûte moins cher à l’achat et couvre les mêmes trajets urbains.
 
-_Sources : Autojm, « FAQ : différences entre mild hybride, full hybride et hybride rechargeable »._
+### Un hybride, quel qu'il soit, affiche-t-il le même niveau d'aide à la conduite ?
+
+Pas nécessairement. Le niveau d'équipement en aide à la conduite dépend du modèle et de la finition, pas de la technologie hybride elle-même. Notre guide sur les [niveaux d'autonomie SAE](/niveaux-sae-ce-que-votre-voiture-sait-faire/) explique ce que chaque niveau recouvre réellement.

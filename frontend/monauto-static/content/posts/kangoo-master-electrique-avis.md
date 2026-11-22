@@ -1,75 +1,90 @@
 ---
-title: "Kangoo Master électrique : avis terrain après 15 000 km en flotte pro"
-description: "Le Renault Kangoo Master électrique tient-il ses promesses pour les pros ? Autonomie réelle, coût au km, bonus 2026 et pannes après 15 000 km en flotte de "
+title: "Kangoo ou Master électrique : quel utilitaire Renault choisir pour votre activité ?"
+description: "Le Kangoo Van E-Tech Electric et le Master E-Tech Electric sont deux utilitaires Renault distincts, pas un seul modèle. Autonomie, charge utile et coût d'usage comparés pour les pros en 2026."
 date: "2026-08-22"
 author: "nathalie-moreau"
 wp_id: 1561
 wp_locale: "fr"
 image: "/images/articles/kangoo-master-electrique-avis-couverture.webp"
-imageAlt: "Kangoo Master électrique : avis terrain après 15 000 km en flotte pro"
+imageAlt: "Kangoo ou Master électrique : quel utilitaire Renault choisir pour votre activité ?"
 ---
-## Pourquoi ce fourgon électrique en 2026 ?
+***Le Kangoo Van E-Tech Electric et le Master E-Tech Electric sont deux utilitaires Renault bien distincts, pas une seule et même gamme : le premier compact, le second taillé pour les grosses charges. Voici comment choisir entre les deux selon votre activité.***
 
-Un matin de janvier, avec deux palettes de colis à livrer sur 180 km dans Paris et sa banlieue, le choix était clair. Le Kangoo Master électrique s’est imposé. Pas pour son look, mais pour son autonomie WLTP annoncée à 280 km. De quoi boucler la tournée sans recharge.
+TL;DR : le Kangoo Van E-Tech Electric convient aux livraisons urbaines légères avec une autonomie WLTP autour de 285 à 300 km. Le Master E-Tech Electric, nettement plus volumineux, vise les professionnels qui ont besoin d'une charge utile élevée, avec une autonomie qui grimpe jusqu'à environ 460 km selon la batterie choisie.
 
-Après 15 000 km en flotte pro, voici ce qui change vraiment par rapport à un diesel. L’expérience terrain révèle des écarts entre les promesses et la réalité.
+-   Le **Kangoo Van E-Tech Electric** embarque une batterie de 45 kWh en version actuelle, avec une évolution à 52 kWh annoncée pour davantage d'autonomie.
+-   Le **Master E-Tech Electric** propose deux batteries, 40 kWh et 87 kWh, avec une charge utile qui grimpe jusqu'à environ 1 625 kg sur la plus grande version.
+-   Le **bonus écologique a été supprimé pour les entreprises depuis le 2 décembre 2024** : ne comptez plus dessus dans votre calcul de coût d'acquisition professionnel.
 
-## Autonomie réelle : 220 km en ville, 280 km sur route
+![Fourgon Renault électrique garé en ville avec hayon ouvert et colis à l'arrière](/images/articles/kangoo-master-electrique-avis-1.webp)
 
-![Fourgon Renault Kangoo Master électrique garé en ville avec hayon ouvert et colis à l'arrière](/images/articles/kangoo-master-electrique-avis-1.webp)
+## Kangoo Van E-Tech Electric ou Master E-Tech Electric : lequel pour quel usage ?
 
-L’autonomie WLTP de 280 km du Kangoo Master électrique (batterie 52 kWh) fond dès que le thermomètre descend sous 5°C. En hiver, avec le chauffage à fond et 800 kg de charge, on plafonne à 220 km. L’été, sur route nationale à 90 km/h, on atteint les 280 km annoncés. Cependant, jamais plus.
+**Le Kangoo Van E-Tech Electric cible les livraisons urbaines et périurbaines légères, le Master E-Tech Electric vise les charges lourdes et les volumes importants.** Ce sont deux véhicules de gabarits totalement différents dans la gamme électrique professionnelle de Renault, pas une déclinaison l'un de l'autre.
 
-En effet, un [Mercedes eSprinter](/utilitaires-flottes-pro/utilitaire-electrique-autonomie-reelle) dans les mêmes conditions fait 350 km. Le tableau ci-dessous résume les écarts entre autonomie WLTP et autonomie réelle selon la saison et le type de trajet.
+Pour un artisan ou un livreur qui transporte des colis ou de petits outils en ville, le Kangoo reste maniable, facile à garer et suffisant en volume de chargement. Pour une entreprise qui déplace du mobilier, des palettes ou des charges volumineuses, le Master devient nécessaire, avec un volume de chargement qui peut dépasser 10 m³ selon la configuration retenue.
 
-<table class="wp-block-table"><tbody><tr><td>Saison</td><td>Trajet</td><td>Autonomie WLTP</td><td>Autonomie réelle</td></tr><tr><td>Hiver (0-5°C)</td><td>Ville (Paris)</td><td>280 km</td><td>220 km</td></tr><tr><td>Hiver (0-5°C)</td><td>Route (90 km/h)</td><td>280 km</td><td>240 km</td></tr><tr><td>Été (20-25°C)</td><td>Ville (Paris)</td><td>280 km</td><td>250 km</td></tr><tr><td>Été (20-25°C)</td><td>Route (90 km/h)</td><td>280 km</td><td>280 km</td></tr></tbody></table>
+## Quelle autonomie réelle attendre de chaque modèle ?
 
-Source : automobile-propre.com
+**Le Kangoo Van E-Tech Electric affiche une autonomie WLTP d'environ 285 à 300 km sur sa version actuelle à batterie 45 kWh, le Master E-Tech Electric varie de 180 km à plus de 400 km selon la batterie choisie.**
 
-## Coût total : 0,08 €/km, bonus 2026 inclus
+Renault a annoncé une évolution du Kangoo vers une batterie de 52 kWh, avec une autonomie WLTP revendiquée proche de 354 km, mais cette version doit encore passer les dernières étapes d'homologation au moment de la rédaction : vérifiez la fiche technique définitive chez votre concessionnaire avant de baser un choix d'achat dessus.
 
-Avec un prix catalogue de 37 500 €, le Kangoo Master électrique semble cher. Pourtant, après déduction du bonus écologique 2026 (5 700 € pour les pros) et du surbonus batterie européenne (2 000 €), l’investissement net tombe à 29 800 €. Ainsi, l’écart avec un diesel se réduit.
+| Modèle | Batterie | Autonomie WLTP indicative |
+| --- | --- | --- |
+| Kangoo Van E-Tech Electric | 45 kWh (actuelle) | Environ 285 à 300 km |
+| Kangoo Van E-Tech Electric | 52 kWh (annoncée) | Environ 354 km, homologation en cours |
+| Master E-Tech Electric | 40 kWh | Environ 180 km |
+| Master E-Tech Electric | 87 kWh | Jusqu'à environ 410 à 460 km selon configuration |
 
-Sur 15 000 km, l’électricité coûte 1 200 € (0,08 €/km). En revanche, un diesel équivalent revient à 2 250 € (0,15 €/km). Par ailleurs, la prime à la conversion creuse encore l’écart si vous mettez au rebut un vieux diesel.
+Comme pour tout véhicule électrique, l'autonomie réelle chute par temps froid et avec une charge importante. Prévoyez systématiquement une marge de sécurité par rapport au chiffre WLTP annoncé, surtout en hiver et sur autoroute.
 
-L’entretien confirme cet avantage. Pas de vidange, pas de courroie, pas de filtre à particules. Sur 15 000 km, on économise environ 400 € par rapport à un diesel. La batterie reste le seul point noir. Renault annonce une durée de vie de 8 ans ou 160 000 km. Cependant, après 5 ans, la capacité peut chuter à 80 %. Un remplacement coûte entre 5 000 € et 8 000 €. À anticiper dans le budget.
+## Quelle charge utile et quel volume de chargement pour le Master électrique ?
 
-## Recharge : 1h30 sur une borne 22 kW, 8h sur une prise domestique
+**Le Master E-Tech Electric peut atteindre environ 1 625 kg de charge utile et jusqu'à 14,8 m³ de volume de chargement sur ses plus grandes configurations, selon la carrosserie et la batterie retenues.** Ces chiffres varient fortement d'une version à l'autre : vérifiez la fiche technique précise correspondant à la configuration qui vous intéresse avant de comparer des devis.
 
-Le Kangoo Master électrique se recharge en 1h30 sur une borne publique 22 kW (type Ionity ou réseau Corri-Door). À la maison, sur une prise renforcée 3,7 kW, comptez 8h pour une recharge complète. Résultat, en ville, les bornes 22 kW sont souvent occupées par des Tesla. On perd alors 20 minutes par tournée à attendre son tour.
+Pour une activité de livraison de palettes, de déménagement léger ou de transport de matériel volumineux, ce gabarit dépasse largement ce que propose le Kangoo, dont le volume de chargement reste pensé pour des colis et de petits équipements. Pour comparer les gabarits disponibles chez les différents constructeurs, notre guide sur le [choix entre fourgon 3m³ et 6m³](/fourgon-3m3-vs-6m3-usages/) et notre comparatif du [meilleur utilitaire compact](/meilleur-utilitaire-compact/) complètent cette analyse.
 
-Renault propose un câble de recharge rapide en option (1 200 €). En revanche, il n’est compatible qu’avec les bornes 50 kW. Rares en centre-ville, ces dernières limitent son utilité.
+## Combien coûte réellement un utilitaire électrique Renault à l'usage ?
 
-## Confort et ergonomie : ce qui manque pour les longs trajets
+**Le coût au kilomètre d'un utilitaire électrique reste généralement inférieur à celui d'un diesel équivalent, mais le bonus écologique n'entre plus dans l'équation pour une entreprise depuis fin 2024.**
 
-![Cabine du Kangoo Master électrique montrant le volant, le tableau de bord et l'écran tactile central](/images/articles/kangoo-master-electrique-avis-2.webp)
+Le bonus écologique a été supprimé pour les personnes morales depuis le 2 décembre 2024 : une entreprise qui achète ou loue un Kangoo ou un Master électrique ne peut plus en bénéficier, contrairement à un particulier. Pour réduire le coût d'acquisition réel, tournez-vous plutôt vers la récupération de TVA, généralement possible à 100 % pour un usage professionnel exclusif, et vers les éventuels certificats d'économies d'énergie (CEE) encore disponibles selon votre profil d'entreprise.
 
-Le Kangoo Master électrique est conçu pour la ville. Direction légère, rayon de braquage serré, visibilité à 360°. En revanche, sur autoroute, le manque d’isolation phonique se fait sentir. À 110 km/h, le bruit du vent et des pneus devient fatigant après 1h30 de route.
+Côté entretien, l'absence de vidange, de courroie de distribution et de filtre à particules reste un avantage net face à un diesel équivalent sur la durée. Le point de vigilance principal reste la **batterie** : son vieillissement dépend fortement de l'usage, de la fréquence des recharges rapides et du climat. Demandez systématiquement les conditions précises de la garantie batterie du constructeur avant l'achat, et pas seulement sa durée affichée en façade. Notre guide sur la [TVA récupérable pour les utilitaires](/tva-recuperable-utilitaire/) détaille les conditions précises de cette récupération.
 
-L’absence de régulateur de vitesse adaptatif complique les choses. Avec 800 kg de charge, maintenir une vitesse constante en montée demande une attention de tous les instants. Côté habitacle, l’écran tactile de 8 pouces est réactif. Pourtant, l’interface Renault R-Link 2 commence à dater.
+## Recharge : quelles contraintes au quotidien pour une flotte professionnelle ?
 
-Apple CarPlay et Android Auto sont présents. Cependant, la connexion Bluetooth coupe parfois en roulant. Enfin, le coffre offre 4,6 m³ de volume. Mais l’ouverture des portes arrière est étroite (1,25 m). Un vrai casse-tête pour charger des palettes larges.
+**Une recharge complète prend plusieurs heures sur une prise domestique renforcée, et se réduit fortement sur une borne rapide, selon la puissance acceptée par le véhicule.** Pour une flotte professionnelle, l'enjeu principal reste moins la vitesse de recharge que l'organisation : combien de véhicules doivent recharger en même temps, et sur quelle puissance disponible au dépôt.
 
-## Fiabilité : 3 pannes en 15 000 km, dont une sérieuse
+Avant de basculer une flotte vers l'électrique, vérifiez la puissance électrique réellement disponible sur votre site, le nombre de bornes nécessaires et leur coût d'installation. Notre guide sur la [recharge d'une flotte d'entreprise](/recharge-flotte-entreprise/) détaille ces questions d'infrastructure, souvent sous-estimées dans le calcul initial du projet.
 
-Sur 15 000 km, le Kangoo Master électrique a connu trois pannes. La première concernait un capteur de pression des pneus défectueux. Réparé sous garantie, ce problème a immobilisé le véhicule 2h.
+## Pour qui le Kangoo électrique est-il fait, et pour qui le Master l'est-il ?
 
-La deuxième panne était plus sérieuse. Un connecteur de recharge a fondu après une surchauffe. Le remplacement du câble a coûté 300 €. Enfin, un code P0AA6 (défaut d’isolement haute tension) est apparu à 12 000 km. La batterie a dû être isolée et vérifiée en atelier.
+**Le Kangoo Van E-Tech Electric convient aux professionnels qui roulent principalement en ville ou en périurbain, sur des distances quotidiennes compatibles avec son autonomie.** Son format compact, sa direction légère et son rayon de braquage serré en font un véhicule agréable à manier au quotidien dans la circulation urbaine.
 
-Ce problème a immobilisé le véhicule 5 jours. La facture s’élevait à 1 800 €. Renault a pris en charge 80 % des frais au titre de la garantie batterie (8 ans/160 000 km).
+**Le Master E-Tech Electric s'adresse aux professionnels qui ont besoin d'un volume ou d'une charge utile que le Kangoo ne peut pas offrir**, quitte à composer avec une autonomie plus limitée sur la version à petite batterie. La version à grande batterie (87 kWh) réduit cet écart, au prix d'un investissement plus élevé à l'achat.
 
-Le code P0AA6 est redouté sur les véhicules électriques. Il signale une perte d’isolement entre le circuit haute tension et la carrosserie. Souvent, un câblage endommagé ou une fuite d’électrolyte en est la cause. Sur les Renault électriques, ce problème est récurrent. Il peut entraîner un arrêt immédiat du véhicule pour des raisons de sécurité.
+Pour les trajets longue distance ou les charges les plus lourdes, un modèle électrique plus volumineux d'un autre constructeur peut aussi se comparer utilement : notre guide sur l'[autonomie réelle des utilitaires électriques](/utilitaire-electrique-autonomie-reelle/) met en perspective plusieurs modèles du marché, et notre dossier sur les [aides à l'achat d'un utilitaire électrique professionnel](/aides-utilitaire-electrique-pro/) récapitule les dispositifs encore actifs en 2026.
 
-## Verdict : pour qui ce fourgon est-il fait ?
+## Questions fréquentes
 
-Le Kangoo Master électrique convient aux professionnels qui roulent moins de 200 km par jour en ville ou en banlieue. Son autonomie réelle de 220-280 km et son coût de 0,08 €/km en font un choix économique. Idéal pour les livraisons urbaines, les artisans ou les flottes d’entreprise.
+### Le Kangoo Master électrique existe-t-il en tant que modèle unique ?
 
-Pour les trajets longs ou les charges lourdes (plus de 800 kg), un [utilitaire électrique plus grand](/utilitaires-flottes-pro/utilitaire-electrique-autonomie-reelle) comme le Mercedes eSprinter (autonomie 350 km) sera plus adapté. En effet, ses performances surpassent celles du Kangoo Master sur ces points.
+Non. Le Kangoo Van E-Tech Electric et le Master E-Tech Electric sont deux utilitaires Renault distincts, de gabarits très différents. Ils ne forment pas une seule gamme ou un seul modèle hybride entre les deux noms.
 
-Ce qu’on aime : le coût d’usage réduit à 0,08 €/km, le bonus écologique 2026 jusqu’à 7 700 €, et l’entretien minimal. Pas de vidange, pas de courroie. La direction légère et la visibilité à 360° en font un véhicule agréable en ville.
+### Une entreprise peut-elle encore toucher le bonus écologique pour un utilitaire électrique ?
 
-Ce qui déçoit : l’autonomie limitée en hiver (220 km), la recharge lente sur prise domestique (8h), et le bruit à haute vitesse (110 km/h). La fiabilité n’est pas parfaite non plus. Le code P0AA6, en particulier, peut immobiliser le véhicule plusieurs jours.
+Non, depuis le 2 décembre 2024, le bonus écologique n'est plus accessible aux personnes morales. Seuls les particuliers peuvent encore en bénéficier, sous conditions.
 
-Le Kangoo Master électrique reste un bon choix pour les pros qui veulent passer à l’électrique sans se ruiner. À condition d’accepter ses limites en autonomie et en recharge. Pour les trajets plus longs, mieux vaut viser un modèle avec une batterie plus grande. Sinon, optez pour Le dossier [Utilitaires électriques](/utilitaires-flottes-pro/utilitaires-electriques) compare les autres modèles de la catégorie. [un utilitaire hydrogène](/utilitaires-flottes-pro/aides-utilitaire-electrique-pro).
+### Quelle autonomie attendre en hiver avec une charge utile importante ?
 
-Pour explorer d’autres options, consultez [notre guide des utilitaires électriques](/utilitaires-flottes-pro). Il couvre l’ensemble des modèles disponibles en 2026.
+Comptez une baisse sensible par rapport au chiffre WLTP annoncé, aggravée par le chauffage de l'habitacle et une charge lourde. Prévoyez toujours une marge de sécurité plutôt que de planifier une tournée au plus juste.
+
+### Le Master électrique peut-il remplacer un Master diesel sur toutes les tournées ?
+
+Cela dépend du kilométrage quotidien réel et de l'accès à une recharge adaptée au dépôt. Pour des tournées longues ou mal desservies en bornes, un modèle diesel ou hybride reste parfois plus pertinent.
+
+### Faut-il un entretien spécifique pour la batterie haute tension de ces utilitaires ?
+
+Oui. Toute intervention sur le circuit haute tension doit être réalisée par un atelier habilité. Demandez l'historique d'entretien de la batterie et les conditions précises de la garantie constructeur avant tout achat d'occasion.

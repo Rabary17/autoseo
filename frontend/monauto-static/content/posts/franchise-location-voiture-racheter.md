@@ -1,6 +1,6 @@
 ---
 title: "Franchise location voiture : comment la racheter et à quel prix ?"
-description: "La franchise en location voiture peut coûter jusqu’à 3 000 € en cas d’accident ou de vol. Le rachat de franchise réduit ce risque, avec des tarifs variable"
+description: "La franchise en location voiture peut atteindre 3 000 € en cas d'accident ou de vol. Le rachat de franchise réduit ce risque. Prix, pièges et alternatives en 2026."
 date: "2026-08-11"
 author: "karim-belaid"
 category: "location-courte-longue-duree"
@@ -9,93 +9,96 @@ wp_locale: "fr"
 image: "/images/articles/franchise-location-voiture-racheter-couverture.webp"
 imageAlt: "Franchise location voiture : comment la racheter et à quel prix ?"
 ---
-En location de voiture, la franchise est la somme qui reste à votre charge en cas de sinistre. Par exemple, si elle est fixée à 1 000 € et que les réparations coûtent 1 500 €, vous payez 1 000 € de votre poche. Le rachat de franchise permet de réduire – ou d’annuler – ce montant. Mais à quel prix ? Voici ce qu’il faut savoir avant de signer.
+***La franchise, c'est la somme qui reste à votre charge en cas de sinistre pendant une location de voiture. Le rachat de franchise permet de la réduire, voire de l'annuler, moyennant un supplément journalier.***
 
-## Qu’est-ce que la franchise en location de voiture ?
+Vous réservez une citadine pour le week-end et le loueur vous propose, au comptoir, un "rachat de franchise" à 15 € par jour. Faut-il accepter ? La réponse dépend du montant de la franchise de base, de votre assurance personnelle et de la durée du séjour. Voici comment fonctionne ce mécanisme et comment éviter de payer deux fois la même garantie.
 
-La franchise s’applique à tous les contrats de location. Que ce soit pour un week-end ou une longue durée (LLD, LOA), son montant dépend du type de véhicule :
+TL;DR : la franchise location correspond à votre reste à charge en cas d'accident ou de vol. Le rachat réduit ou annule ce montant, pour un supplément de quelques euros à quelques dizaines d'euros par jour selon le véhicule et le loueur.
 
--   Citadine : 600 à 1 200 €
--   Berline ou SUV : 1 000 à 1 800 €
--   Utilitaire ou premium : 1 500 à 3 000 €
-
-En cas de vol ou de dommages graves, ces montants peuvent doubler. En effet, une mauvaise surprise vous attend si vous n’avez pas anticipé.
-
-## Rachat de franchise : comment ça marche ?
-
-Le rachat de franchise est une option payante. Elle réduit votre reste à charge. Deux formules existent :
-
--   **Rachat partiel** : la franchise passe de 1 000 € à 300 €. Comptez 5 à 15 € par jour en supplément.
--   **Rachat total** : la franchise tombe à 0 €. Le supplément varie entre 10 et 30 € par jour.
-
-Cette option s’achète au moment de la réservation ou lors de la prise en charge du véhicule. Toutefois, elle ne couvre pas les dommages intentionnels ni les infractions au code de la route. Par exemple, la conduite en état d’ivresse est exclue.
-
-## Prix du rachat de franchise : ce qu’il faut prévoir
+-   La franchise de base varie **selon la catégorie du véhicule**, de quelques centaines d'euros pour une citadine à plusieurs milliers d'euros pour un utilitaire ou un premium.
+-   Le rachat total ramène la franchise à **0 €**, mais exclut toujours les dommages intentionnels et les infractions au code de la route.
+-   Certaines cartes bancaires haut de gamme remboursent une partie de la franchise : vérifiez le plafond exact auprès de votre banque avant de payer deux fois la même garantie.
 
 ![Client signant un contrat de location de voiture avec les options de rachat de franchise](/images/articles/franchise-location-voiture-racheter-1.webp)
 
-Le coût du rachat dépend de la durée de location et du type de véhicule. Voici une estimation pour 7 jours :
+## Qu'est-ce que la franchise en location de voiture ?
 
-| Type de rachat | Prix moyen (par jour) | Coût pour 7 jours |
+La franchise est la part des dommages qui reste à votre charge en cas de sinistre, qu'il s'agisse d'un accident, d'un vol ou de dégâts sur la carrosserie. Si elle est fixée à 1 000 € et que les réparations coûtent 1 500 €, vous payez les 1 000 € et le loueur prend en charge le reste.
+
+Son montant **dépend directement de la catégorie du véhicule**. Une citadine affiche généralement la franchise la plus basse, une berline ou un SUV se situent nettement au-dessus, et un utilitaire ou un véhicule premium grimpe souvent le plus haut, parfois jusqu'à 2 000 à 3 000 € chez certaines enseignes. En cas de vol ou de dommages graves, ce montant peut parfois doubler selon les conditions générales du contrat.
+
+Ce montant figure noir sur blanc dans le contrat de location, à la ligne "franchise" ou "dépôt de garantie". Lisez-le avant de signer : un loueur peut appliquer une franchise différente selon que le sinistre touche la carrosserie, le pare-brise ou le vol complet du véhicule.
+
+## Rachat de franchise : comment ça marche concrètement ?
+
+**Le rachat de franchise réduit ou annule ce reste à charge, contre un supplément journalier.** Deux formules coexistent chez la plupart des loueurs.
+
+Le **rachat partiel** abaisse la franchise à un montant résiduel, souvent entre 150 € et 300 €, pour quelques euros à une quinzaine d'euros par jour. Le **rachat total** ramène la franchise à 0 €, pour un supplément plus élevé, généralement entre 10 et 30 € par jour selon le véhicule et la saison.
+
+Cette option s'achète à la réservation en ligne ou directement au comptoir, lors de la prise en charge. Elle ne couvre jamais les **dommages intentionnels**, la conduite sous l'emprise de l'alcool ou de stupéfiants, ni les infractions au code de la route. Un pneu crevé par négligence ou une jante abîmée hors accident restent souvent exclus, même avec un rachat total : relisez les exclusions avant de refuser l'option du loueur.
+
+## Combien coûte le rachat de franchise pour une semaine de location ?
+
+**Comptez en moyenne entre 35 € et 105 € pour un rachat partiel sur 7 jours, et entre 70 € et 210 € pour un rachat total.** Le coût final dépend surtout de la catégorie du véhicule et de la période de location.
+
+| Type de rachat | Prix indicatif par jour | Coût indicatif pour 7 jours |
 | --- | --- | --- |
-| Partiel (réduction de 50 %) | 5 à 15 € | 35 à 105 € |
-| Total (0 € de franchise) | 10 à 30 € | 70 à 210 € |
+| Partiel (franchise réduite) | 5 à 15 € | 35 à 105 € |
+| Total (franchise à 0 €) | 10 à 30 € | 70 à 210 € |
 
-*Source : Vroomly, Getaround, Ucar*
+Ces fourchettes varient d'un loueur à l'autre et selon le type de véhicule réservé : vérifiez toujours le tarif affiché au moment de la réservation plutôt que de vous fier à une moyenne nationale. Certaines offres incluent déjà une franchise réduite, voire nulle, dans le prix affiché : dans ce cas, le rachat proposé au comptoir est inutile. En haute saison, comme l'été ou les fêtes de fin d'année, les suppléments de rachat ont tendance à augmenter, comme la plupart des options facturées par les loueurs.
 
-Chez Ucar, certaines offres incluent déjà une franchise à 0 €. Ainsi, le rachat n’est pas nécessaire. En haute saison, comme l’été ou les fêtes de fin d’année, les tarifs peuvent augmenter de 20 à 30 %.
+## Faut-il systématiquement racheter sa franchise ?
 
-## Où racheter sa franchise ? Comparatif des loueurs
+**Pour un trajet long ou un véhicule de valeur, le rachat total reste souvent rentable face à une franchise de base qui peut atteindre plusieurs milliers d'euros.** Pour un court week-end avec un conducteur expérimenté, il peut être superflu si une autre garantie existe déjà.
 
-Tous les loueurs ne proposent pas les mêmes options. Voici un comparatif des enseignes en France :
+Sur une location de deux semaines, le supplément du rachat total reste généralement limité en valeur absolue, alors que la franchise de base peut représenter plusieurs fois ce montant en cas de sinistre. Le calcul penche alors clairement en faveur du rachat.
 
-| Loueur | Rachat partiel | Rachat total | Franchise de base |
-| --- | --- | --- | --- |
-| Europcar | 8 à 12 €/jour | 15 à 25 €/jour | 800 à 1 500 € |
-| Hertz | 10 à 15 €/jour | 20 à 30 €/jour | 1 000 à 2 000 € |
-| Sixt | 7 à 12 €/jour | 18 à 28 €/jour | 900 à 1 800 € |
-| Getaround | Non | Assurance tous risques incluse | 0 € (partenariat AXA) |
-| Ucar | Non | Franchise 0 € sur certaines offres | 0 à 500 € |
+Pour un week-end en ville avec une citadine, l'équation change. Si vous conduisez prudemment et que votre assurance personnelle ou votre carte bancaire couvre déjà une partie de la franchise, l'option du loueur fait parfois double emploi. **Vérifiez systématiquement vos garanties existantes avant de payer une seconde fois pour la même protection.**
 
-*Source : Sites officiels des loueurs (2026)*
+## Alternatives au rachat de franchise proposé par le loueur
 
-Chez Getaround, l’assurance tous risques est incluse dans le prix. Ainsi, c’est une solution pratique pour les locations entre particuliers. En effet, les risques de sinistre y sont plus élevés.
+Le rachat du loueur n'est pas la seule option pour limiter votre reste à charge.
 
-## Le rachat de franchise est-il toujours rentable ?
+-   **Carte bancaire haut de gamme** : certaines cartes premium incluent une assurance location de voiture qui rembourse la franchise, dans la limite d'un plafond et d'un nombre de sinistres par an fixés par chaque banque. Le véhicule doit généralement avoir été loué et réglé avec cette carte, auprès d'un loueur professionnel. Lisez la notice d'assurance de votre carte avant de refuser l'option au comptoir : les conditions et exclusions varient fortement d'un établissement à l'autre.
+-   **Assurance habitation ou extension voyage** : certains contrats proposent une extension pour les locations occasionnelles, à un coût annuel modéré.
+-   **Location entre particuliers** : sur les plateformes d'autopartage comme celles comparées dans notre [comparatif Getaround et Turo](/getaround-ouicar-comparatif/), une assurance tous risques est généralement incluse dans le prix, avec une franchise propre à la plateforme. Notre [guide sur l'assurance en location entre particuliers](/assurance-location-entre-particuliers/) détaille ce que couvre réellement ce type de contrat.
 
-Pour un road-trip en famille ou une location longue durée, le rachat total est souvent rentable. Par exemple, sur 15 jours, le supplément reste inférieur à 450 €. En revanche, la franchise de base peut atteindre 3 000 €.
+## Que faire en cas de sinistre pendant la location ?
 
-Pour un week-end en ville avec une citadine, le rachat peut sembler superflu. Surtout si vous êtes un conducteur expérimenté. Vérifiez aussi si votre assurance personnelle couvre déjà la franchise. Certaines cartes premium, comme Visa Premier ou Gold, remboursent jusqu’à 800 € en cas de sinistre.
+Même avec un rachat de franchise, certains réflexes restent indispensables.
 
-## Alternatives au rachat de franchise
+1.  **Déclarez le sinistre au loueur rapidement**, dans les délais prévus au contrat. Remplissez un constat amiable si un tiers est impliqué.
+2.  **Prenez des photos** des dégâts et de l'environnement immédiatement après les faits, cela évite les contestations ultérieures.
+3.  **Conservez toutes les preuves** : factures, témoignages, dépôt de plainte en cas de vol.
+4.  **Relisez votre contrat** : certains rachats excluent les pneus, les jantes ou les dommages sous le véhicule, même en cas de rachat total.
 
-### Assurance voyage et extensions de garantie
+Si le loueur vous facture malgré un rachat souscrit, exigez un document écrit justifiant les frais retenus. En cas de désaccord persistant, vous pouvez saisir le médiateur du tourisme et du voyage.
 
-Si le rachat vous semble trop cher, d’autres solutions existent :
+## Erreurs fréquentes à éviter avant de signer
 
--   **Assurance voyage** : certaines cartes bancaires ou assurances voyage couvrent la franchise. Par exemple, avec une carte Visa Premier, vous êtes remboursé jusqu’à 800 €.
--   **Extension de garantie** : certaines assurances habitation proposent des extensions pour les locations occasionnelles. Comptez 20 à 50 € par an.
+Ne pas vérifier si votre assurance personnelle ou votre carte bancaire couvre déjà la franchise reste l'erreur la plus coûteuse : vous payez alors deux fois la même garantie. Choisir un rachat partiel sans comparer son prix à celui du rachat total en est une autre, l'écart étant parfois minime. Ignorer les exclusions du contrat, comme les dommages causés par un conducteur non déclaré au contrat, expose aussi à de mauvaises surprises. Enfin, réserver au dernier moment limite le choix des options de rachat disponibles, surtout en haute saison.
 
-### Location entre particuliers
+Pour comparer les formats de location adaptés à votre besoin, consultez notre dossier [location courte et longue durée](/location-courte-longue-duree/), ou nos conseils pour [louer moins cher un week-end](/louer-voiture-pas-cher-week-end/) et [éviter les pièges en aéroport](/location-voiture-aeroport-astuces/).
 
-Chez Getaround, l’assurance est incluse. Les tarifs sont souvent plus avantageux qu’en agence. Ainsi, c’est une alternative intéressante.
+## Questions fréquentes
 
-## Que faire en cas de sinistre ?
+### Qu'est-ce que la franchise en location de voiture ?
 
-Même avec un rachat de franchise, suivez ces étapes :
+C'est la somme qui reste à votre charge en cas de sinistre : accident, vol ou dommages. Son montant est fixé dans le contrat et varie selon la catégorie du véhicule loué.
 
-1.  Déclarez le sinistre au loueur dans les 24 heures. Envoyez un constat amiable si un tiers est impliqué.
-2.  Prenez des photos des dégâts et de l’environnement. Cela évite les litiges.
-3.  Conservez les preuves. Factures, témoignages ou rapport de police en cas de vol sont essentiels.
-4.  Vérifiez votre contrat. Certains rachats ne couvrent pas les pneus, les jantes ou les dommages sous le véhicule.
+### Le rachat de franchise couvre-t-il tous les dommages ?
 
-Si le loueur vous facture malgré le rachat, exigez un écrit justifiant les frais. En cas de désaccord, saisissez le médiateur du tourisme ou des transports.
+Non. Il exclut toujours les dommages intentionnels, la conduite sous l'emprise d'alcool ou de stupéfiants, et les infractions au code de la route. Certains contrats excluent aussi les pneus et les jantes.
 
-## Erreurs à éviter
+### Ma carte bancaire peut-elle remplacer le rachat de franchise du loueur ?
 
--   Ne pas vérifier si votre assurance personnelle couvre déjà la franchise.
--   Choisir un rachat partiel sans comparer avec le rachat total. Parfois, ce dernier est à peine plus cher.
--   Ignorer les exclusions du contrat. Par exemple, les dommages causés par un conducteur non déclaré.
--   Réserver au dernier moment. En haute saison, les options de rachat peuvent être limitées ou plus chères.
+Certaines cartes premium remboursent la franchise dans la limite d'un plafond propre à chaque banque, sous conditions. Vérifiez la notice d'assurance de votre carte avant de refuser l'option proposée par le loueur.
 
-Pour économiser, comparez les offres avec [notre guide sur la location courte et longue durée](/mobilite-partagee-transports/location-courte-longue-duree). Vous pourriez réduire la facture de 30 %.
+### Le rachat de franchise est-il obligatoire ?
+
+Non, c'est une option payante. Vous pouvez la refuser si une autre garantie, personnelle ou bancaire, couvre déjà le même risque.
+
+### Peut-on racheter sa franchise après la prise en charge du véhicule ?
+
+Généralement non. L'option se souscrit à la réservation ou au comptoir avant le départ. Une fois le contrat signé et le véhicule remis, il est souvent trop tard pour l'ajouter.

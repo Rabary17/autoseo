@@ -9,7 +9,15 @@ wp_locale: "fr"
 image: "/images/articles/immatriculer-vehicule-importe-couverture.webp"
 imageAlt: "Immatriculer un véhicule importé en France : démarches, délais et coûts 2026"
 ---
-Immatriculer un véhicule importé en France impose d’obtenir un certificat d’immatriculation français dans un délai d’1 mois après l’achat ou l’importation. Sans cette carte grise, la circulation est interdite. Voici la procédure exacte, les documents à fournir et les délais à respecter en 2026. Pour aller plus loin, consultez [notre guide détaillé sur l’immatriculation des véhicules importés](/carte-grise-demarches/immatriculation-import).
+***Immatriculer un véhicule importé en France impose d’obtenir un certificat d’immatriculation français dans un délai d’un mois après l’achat ou l’importation. Sans cette carte grise, la circulation reste interdite.***
+
+TL;DR : comptez entre 200 € et 500 € et 7 à 10 jours ouvrés pour un véhicule importé d’un pays de l’UE avec dossier complet. Un véhicule hors UE nécessitant une homologation individuelle peut dépasser 1 500 € et plusieurs semaines de délai.
+
+-   Le **certificat de conformité européen** reste le document le plus souvent bloquant en cas de dossier rejeté par l’ANTS.
+-   Le **contrôle technique français** est obligatoire pour tout véhicule importé de plus de 4 ans, daté de moins de 6 mois au moment de la demande.
+-   Passé le délai légal d’un mois, vous risquez une **amende de 135 € à 750 €**.
+
+Voici la procédure exacte, les documents à fournir et les délais à respecter en 2026. Pour les démarches de carte grise plus largement, consultez notre dossier [carte grise et démarches](/carte-grise-demarches/).
 
 ## 1\. Vérifier l’éligibilité du véhicule importé avant toute démarche
 
@@ -17,7 +25,7 @@ Tous les véhicules importés ne peuvent pas être immatriculés en France. Troi
 
 -   **Conformité européenne**. Le véhicule doit respecter les normes européennes en vigueur. Les véhicules américains ou japonais nécessitent une homologation individuelle, bien plus complexe et coûteuse.
 -   **Dossier d’immatriculation étranger complet**. Vous devez posséder l’intégralité des documents du pays d’origine. Sans eux, la démarche est bloquée.
--   **Absence de restriction administrative**. Le véhicule ne doit pas être sous le coup d’une saisie ou d’un gage. Vérifiez le certificat de situation administrative étranger.
+-   **Absence de restriction administrative**. Le véhicule ne doit pas être sous le coup d’une saisie ou d’un gage. Vérifiez le certificat de situation administrative étranger, et le cas échéant le [quitus fiscal pour un véhicule étranger](/quitus-fiscal-vehicule-etranger/) si la TVA n'a pas encore été régularisée.
 
 Si votre véhicule provient d’un pays de l’UE, la procédure est simplifiée grâce à la reconnaissance mutuelle des certificats de conformité. Pour un véhicule importé hors UE, une homologation individuelle est souvent nécessaire. Ainsi, les coûts supplémentaires peuvent atteindre plusieurs milliers d’euros.
 
@@ -30,7 +38,7 @@ Si vous possédez déjà un véhicule immatriculé à votre nom dans un autre pa
 Le certificat de conformité atteste que votre véhicule respecte les normes européennes en matière de sécurité et d’émissions polluantes. Sans lui, votre dossier sera rejeté par l’ANTS.
 
 -   **Pour un véhicule de l’UE**. Le certificat est généralement fourni avec le véhicule par le constructeur. Vérifiez qu’il porte bien le logo de l’UE.
--   **Pour un véhicule hors UE**. Vous devez faire réaliser une homologation individuelle par un organisme agréé. Cette procédure coûte entre 500 € et 2 000 € et peut prendre plusieurs semaines.
+-   **Pour un véhicule hors UE**. Vous devez faire réaliser une homologation individuelle par un organisme agréé. Cette procédure coûte entre 500 € et 2 000 € et peut prendre plusieurs semaines. Notre guide sur le [certificat de conformité européen (COC)](/certificat-conformite-europeen-coc/) détaille ce document essentiel.
 
 ## 3\. Faire réaliser le contrôle technique en France (obligatoire pour les véhicules de plus de 4 ans)
 
@@ -92,7 +100,7 @@ Une fois votre nouvelle carte grise française en main, vous devez mettre à jou
 -   **Assurance**. Contactez votre assureur pour mettre à jour le certificat d’immatriculation dans votre contrat.
 -   **Contrôle technique**. Il est valable 2 ans pour les véhicules de moins de 10 ans, puis annuellement.
 -   **Équipements obligatoires**. Vérifiez que votre véhicule est équipé des éléments obligatoires en France : gilet jaune, triangle de signalisation.
--   **Plaques d’immatriculation**. Faites fabriquer des plaques aux normes SIV. Comptez entre 20 € et 50 € pour deux plaques.
+-   **Plaques d’immatriculation**. Faites fabriquer des plaques aux normes SIV. Comptez entre 20 € et 50 € pour deux plaques. Si vous circulez en attendant la carte grise définitive, vérifiez aussi la [durée de validité d'une plaque WW provisoire](/plaque-ww-provisoire-duree/).
 
 Si votre véhicule provient d’un pays où la conduite se fait à droite, adaptez vos rétroviseurs et vos phares.
 
@@ -175,4 +183,26 @@ Pour les véhicules de collection ou anciens (plus de 30 ans), la procédure est
 -   **Plaques spécifiques**. Les véhicules de collection peuvent obtenir des plaques noires avec la mention « collection ».
 -   **Assurance**. Ils bénéficient souvent de tarifs réduits, mais doivent être assurés au minimum en responsabilité civile.
 
-Pour obtenir des plaques de collection, fournissez une attestation de la FFVE ou d’un club agréé.
+Pour obtenir des plaques de collection, fournissez une attestation de la FFVE ou d’un club agréé. Notre guide sur la [carte grise collection](/carte-grise-collection/) détaille les démarches et les avantages qui accompagnent ce statut particulier.
+
+## Que faire en cas d'erreur sur la nouvelle carte grise ?
+
+Une erreur sur le certificat d'immatriculation fraîchement obtenu, qu'il s'agisse d'une faute de frappe sur le nom ou d'une donnée technique incorrecte, se corrige par une démarche dédiée auprès de l'ANTS. Notre guide pour [rectifier une erreur sur la carte grise](/rectifier-erreur-carte-grise/) détaille la marche à suivre. Si le document original est perdu avant même d'avoir été utilisé, la procédure de [duplicata de carte grise](/duplicata-carte-grise-perte/) s'applique de la même façon que pour un véhicule immatriculé de longue date en France.
+
+## Questions fréquentes
+
+### Combien de temps a-t-on pour immatriculer un véhicule importé en France ?
+
+Un mois après l'achat ou l'importation. Passé ce délai, vous risquez une amende de 135 € à 750 € et vous ne pouvez plus circuler légalement avec le véhicule.
+
+### Le bonus écologique s'applique-t-il à un véhicule électrique importé ?
+
+Non. Le bonus écologique n'est pas applicable à un véhicule déjà immatriculé à l'étranger avant son importation en France.
+
+### Que faire si le certificat de conformité européen est manquant ?
+
+Pour un véhicule de l'UE, demandez-le au constructeur ou à son réseau. Pour un véhicule hors UE, une homologation individuelle par un organisme agréé devient nécessaire, avec un coût et un délai plus importants.
+
+### Un véhicule importé doit-il repasser un contrôle technique français ?
+
+Oui, s'il a plus de 4 ans. Le contrôle doit dater de moins de 6 mois au moment du dépôt de la demande d'immatriculation, dans un centre agréé en France.
