@@ -1,6 +1,6 @@
 ---
 title: "Citiz Car-Sharing: 2026 Rates, Subscriptions and Savings vs. Owning a Car"
-description: "Citiz offers two car-sharing plans: with a subscription (€16/month + €3/hour) or without (€0/month + €5.50/hour). We compare the real cost for a daily comm"
+description: "Citiz charges €16/month plus €3/hour with a subscription, or €5.50/hour with none. Here's the real cost on 3 typical trips, compared to owning a car in 2026."
 date: "2026-11-02"
 author: "karim-belaid"
 wp_id: 1647
@@ -8,114 +8,114 @@ wp_locale: "en"
 image: "/images/articles/citiz-car-sharing-rates-2026-couverture.webp"
 imageAlt: "Autopartage Citiz : tarifs 2026, abonnements et économies par rapport à une voiture personnelle"
 ---
-Debating between hourly car-sharing with Citiz and keeping your old Clio? Here’s the real cost of car-sharing in 2026. Citiz offers two plans: a €16/month subscription (€3/hour) or a pay-as-you-go rate of €5.50/hour.
+***Citiz offers two car-sharing plans: a €16/month subscription plus €3/hour, or a pay-as-you-go rate of €5.50/hour with no commitment.*** Here's what that actually means for a daily commute, a grocery run or a family weekend away.
 
-We’ve crunched the numbers for you—whether it’s your daily commute, a grocery run or a family weekend away.
+Debating between booking a Citiz by the hour and keeping your old city car? The maths depends entirely on how you actually use it, not just the headline rate. We compare the two Citiz plans, then weigh their cost against owning a car, using concrete trips rather than theoretical averages.
 
-## Citiz 2026 Rates: Subscription vs Pay-As-You-Go
+TL;DR: Citiz costs 2 to 3 times less than owning a car under 10,000 km a year.
+
+-   The **€16/month subscription** pays for itself once you pass a few hours of use a week.
+-   The **pay-as-you-go plan** at €5.50/hour suits occasional use, a few times a month.
+-   Fuel, insurance and maintenance stay **included** in both plans, with no hidden surcharge.
+
+## How much does Citiz car-sharing cost in 2026?
 
 ![User checking Citiz rates on their smartphone in front of a car-sharing station](/images/articles/autopartage-citiz-tarifs-1.webp)
 
-Citiz offers two plans, available across all its cities (Lyon, Paris, Strasbourg, etc.). Here’s how they differ:
+Citiz offers two plans, largely identical across its cities, including Lyon, Paris and Strasbourg.
 
-| Plan | Monthly Subscription | Hourly Rate | Included Mileage |
+| Plan | Monthly subscription | Hourly rate | Included mileage |
 | --- | --- | --- | --- |
-| With Subscription | €16/month | From €3/hour | 100 km/month (then €0.30/km) |
-| Pay-As-You-Go | €0/month | From €5.50/hour | 0 km included (€0.30/km from the first km) |
+| With subscription | €16/month | From €3/hour | 100 km/month (then €0.30/km) |
+| Pay-as-you-go | €0/month | From €5.50/hour | 0 km included (€0.30/km from the first km) |
 
-*Source: Citiz (Lyon and Île-de-France networks)*
+*Source: Citiz, Lyon and Île-de-France networks, 2026*
 
-Fuel, insurance and maintenance are included in both plans. No hidden costs—you only pay for the time used and any extra kilometres beyond the allowance.
+**Fuel**, insurance and maintenance are included in both cases. You only pay for the time used and any kilometres beyond the included allowance, with no surprise charge when you return the car.
 
-## What’s the Real Cost? 3 Practical Examples
+The subscription suits regular use, several times a week. The pay-as-you-go plan targets occasional use, with no monthly fee to pay even in months without a single booking. The right choice depends less on the headline hourly rate than on how often you actually use it over the year.
 
-Let’s look at three typical scenarios to see how the costs add up.
+## What does it really cost on 3 concrete trips?
 
-### 1\. Daily Commute (10 km round trip, 2 hours/day, 20 days/month)
+Headline rates don't mean much until applied to real use. Here are three typical cases, worked out plan by plan.
 
-**With Subscription:**
+### Daily commute
 
--   Subscription: €16
--   Usage hours: 2h × 20 days × €3 = €120
--   Mileage: 200 km (100 km included + 100 km at €0.30/km) = €30
--   **Total: €166/month**
+For 10 km round trip, 2 hours a day, 20 days a month: the subscription plan comes to €166/month (€16 subscription, €120 of hours, €30 of mileage beyond the allowance). The pay-as-you-go plan climbs to €280/month for the same use. The gap exceeds €110 a month, clearly favouring the **subscription** for daily use.
 
-**Pay-As-You-Go:**
+### Weekend grocery run
 
--   Usage hours: 2h × 20 days × €5.50 = €220
--   Mileage: 200 km × €0.30 = €60
--   **Total: €280/month**
+For 50 km and 4 hours of occasional use: the subscription comes to €28 (€12 of hours, mileage covered by the allowance), against €37 with no subscription. The gap stays small for such occasional use; the two plans are close.
 
-### 2\. Weekend Grocery Run (50 km, 4 hours)
+### Family weekend
 
-**With Subscription:**
+For 200 km over 2 days (48 hours of use): the subscription costs €190, against €324 with no subscription. On extended use like this, the gap widens sharply, clearly favouring the subscription.
 
--   Subscription: €16 (prorated for one month)
--   Usage hours: 4h × €3 = €12
--   Mileage: 50 km (100 km included) = €0
--   **Total: €28**
+## Does Citiz really cost less than owning a car?
 
-**Pay-As-You-Go:**
+Yes, in most cases, except for a driver who covers a lot of ground every year. Take a used city car bought for €8,000 and kept for 5 years, compared to 10 hours a month of Citiz use.
 
--   Usage hours: 4h × €5.50 = €22
--   Mileage: 50 km × €0.30 = €15
--   **Total: €37**
-
-### 3\. Family Weekend (200 km, 2 days)
-
-**With Subscription:**
-
--   Subscription: €16 (prorated for one month)
--   Usage hours: 48h × €3 = €144
--   Mileage: 200 km (100 km included + 100 km at €0.30/km) = €30
--   **Total: €190**
-
-**Pay-As-You-Go:**
-
--   Usage hours: 48h × €5.50 = €264
--   Mileage: 200 km × €0.30 = €60
--   **Total: €324**
-
-## Citiz Car-Sharing vs Owning a Car: Which Costs More?
-
-Let’s take a second-hand petrol Clio bought for €8,000 and kept for five years. Here’s the real cost breakdown:
-
-| Expense Item | Annual Cost (Petrol Clio) | Annual Cost (Citiz, 10h/month) |
+| Expense | Personal car (petrol city car) | Citiz (10h/month) |
 | --- | --- | --- |
-| Car Depreciation | €1,600 (€8,000/5 years) | €0 |
-| Insurance | €600 (comprehensive) | €0 (included) |
-| Maintenance | €500 (oil changes, brakes, tyres) | €0 (included) |
-| Fuel | €1,200 (15,000 km/year, 6L/100 km) | €360 (1,200 km/year at €0.30/km) |
-| Parking | €600 (€50/month) | €0 (dedicated Citiz spaces) |
+| Depreciation | €1,600/year | €0 |
+| Insurance | €600/year (comprehensive) | €0 (included) |
+| Maintenance | €500/year | €0 (included) |
+| Fuel | €1,200/year (15,000 km) | €360/year (1,200 km) |
+| Parking | €600/year | €0 (reserved spaces) |
 | **Total** | **€4,500/year** | **€1,200/year** |
 
-*Estimate for 15,000 km/year (Clio) vs 1,200 km/year (Citiz)*
+*Estimate for 15,000 km/year (personal car) vs 1,200 km/year (Citiz)*
 
-The result? Even with low mileage (1,200 km/year), Citiz costs **three times less** than owning a car. If you drive less than 10,000 km/year, the gap widens even further.
+Even with low mileage, Citiz costs about three times less than a **personal car**. The gap only narrows past 10,000 to 12,000 km a year, a threshold beyond which long-term leasing often becomes more relevant. This maths also leaves out one often-overlooked factor: the time spent hunting for a parking space or managing a personal car's upkeep, which carries a real value even if it never appears in a cost table.
 
-## How to Save More with Citiz: 3 Tips
+## How to pay less with Citiz
 
-A few ways to cut costs:
+Three simple levers noticeably cut the monthly bill without changing how you use it.
 
--   **Book in advance** — Rates are cheaper if you reserve 24 hours ahead rather than last-minute.
--   **Opt for an annual subscription** — Some Citiz networks offer yearly plans (e.g. €150/year instead of €192 for monthly). That’s a 20% saving.
--   **Share the cost** — Splitting a trip with others automatically reduces the cost per person. Ideal for weekends away or a house move.
+-   **Book ahead**: rates often rise last-minute, especially at weekends.
+-   **Switch to an annual subscription** if your network offers one, for a saving of around 20% versus paying monthly.
+-   **Split the cost** with others: the price per person drops automatically, ideal for a house move or a weekend with friends.
 
-Need a car more often? Consider combining Citiz with other transport options. For example, use a bike for short trips, public transport for daily commuting, and car-sharing only when necessary. To compare with other options like short-term rental or leasing, [this article](/en/shared-mobility/peer-to-peer-car-sharing) breaks down the differences between car-sharing and alternatives.
+For short everyday trips, combining Citiz with cycling or public transport is often cheaper than booking a car every time. For an occasional longer trip between two cities, long-distance carpooling can also cost less than a Citiz booking calculated by the hour over several hundred kilometres. The two solutions complement each other more than they compete, depending on the actual distance.
 
-## Citiz Car-Sharing: Who Is It For?
+## Is Citiz right for your use?
 
-Citiz car-sharing is particularly well-suited if:
+Citiz suits you particularly well if you drive less than 10,000 km a year, the threshold beyond which a personal car becomes competitive again. The lack of a **reserved parking space** also weighs in the balance: Citiz stations always keep a spot for subscribers.
 
--   You drive less than 10,000 km/year — That’s the threshold where owning a car starts to make financial sense.
--   You don’t have a dedicated parking space — Citiz spaces are reserved for subscribers.
--   You only need a car occasionally — For example, for shopping, a weekend away or a house move, without the fixed costs of ownership.
--   You live in a city and want to avoid the hassle of paid parking.
+An occasional need, shopping, a weekend or a house move, fits the Citiz model well, without the fixed costs of owning a vehicle year-round. Conversely, beyond 20,000 km a year or for daily professional use, long-term leasing remains better suited to your budget.
 
-On the other hand, if you drive over 20,000 km/year or need a car daily for work, long-term rental (LLD) or leasing might be more suitable.
+A household with two cars can also reconsider its situation. Keeping one personal vehicle and topping up with Citiz for the second driver's occasional trips often reduces the overall bill without losing everyday flexibility.
 
-## Citiz vs Other Car-Sharing Solutions
+We recommend the **monthly subscription** over the pay-as-you-go plan once you pass 3 to 4 hours of weekly use; the reduced hourly rate quickly offsets the fixed €16. If your use stays unpredictable month to month, keep the pay-as-you-go plan for a few weeks to observe your real pattern before switching.
 
-Citiz isn’t the only car-sharing option on the market. The key difference lies in the model: Citiz operates on a round-trip basis—the car must return to its starting station—while peer-to-peer rental via [Getaround or Ouicar](/en/shared-mobility/getaround-vs-ouicar-comparison) sometimes offers more flexibility, though availability can be less predictable.
+## Citiz against other car-sharing options
 
-The choice depends on your needs. For regular trips to a fixed destination—like a meeting or train station—Citiz’s fixed stations make planning easier. For one-off, flexible needs, peer-to-peer rental gives you more freedom over the vehicle and duration. Before deciding, also check the insurance terms for each option, detailed in [our guide to insurance for peer-to-peer car rental](/en/shared-mobility/peer-car-rental-insurance-gaps).
+Citiz runs on a **closed loop**: the car always returns to its starting station. Peer-to-peer rental via [Getaround or Turo](/getaround-vs-ouicar-comparison/) allows a freer trip, at the cost of less predictable availability depending on the neighbourhood.
+
+For a recurring trip to a **fixed point**, a station or a regular appointment, Citiz's fixed stations simplify daily planning. For an occasional, flexible need, [peer-to-peer rental](/peer-to-peer-car-rental-guide/) gives more freedom over the vehicle and the exact duration. Before deciding, also check the insurance terms for each option, covered in our [guide to peer-to-peer rental insurance](/peer-car-rental-insurance-gaps/).
+
+## Frequently asked questions
+
+### What is the Citiz subscription rate in 2026?
+
+€16/month plus €3/hour at minimum, with 100 km included per month. Beyond that, each extra kilometre costs €0.30.
+
+### Is Citiz cost-effective compared to a personal car?
+
+Yes, under 10,000 km a year. Beyond that, the fixed costs of an already-depreciated personal car become more competitive than the Citiz hourly rate.
+
+### Do you need a Citiz subscription for occasional use?
+
+No, the pay-as-you-go plan at €5.50/hour suits a few trips a month better. The subscription only pays off with regular use.
+
+### Is fuel included in the Citiz rate?
+
+Yes, along with insurance and maintenance. You only pay for booking time and any kilometres beyond your plan's included allowance.
+
+### Can you reduce the cost of a Citiz subscription?
+
+Yes, through an annual rather than monthly subscription, by booking ahead, or by splitting a trip's cost with others.
+
+### Is Citiz available in every French city?
+
+No. The network mainly covers major cities such as Lyon, Paris or Strasbourg. Check your city's coverage on the Citiz website before comparing plans.

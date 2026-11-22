@@ -1,130 +1,89 @@
 ---
 title: "European Certificate of Conformity (COC): Everything You Need to Register an Imported Vehicle"
-description: "The European Certificate of Conformity (COC) proves that an imported vehicle meets EU standards. Without this document, you cannot obtain a registration ce"
+description: "The COC proves an imported vehicle meets EU standards. Without it, no registration certificate. Cost, how to get it, and what changes with the eCOC in 2026."
 date: "2026-11-20"
 author: "sophie-andrieu"
 wp_id: 1686
 wp_locale: "en"
 image: "/images/articles/european-coc-vehicle-registration-couverture.webp"
-imageAlt: "Certificat de conformité européen (COC) : comment l’obtenir et à quoi sert-il ?"
+imageAlt: "Certificat de conformité européen (COC) : comment l'obtenir et à quoi sert-il ?"
 ---
-Importing a vehicle into France? The European Certificate of Conformity (COC) is essential to obtain its registration certificate. This official document, issued by the manufacturer, certifies that your car, motorcycle or van complies with European technical standards. Here’s what you need to know about obtaining it, the costs involved, and the alternatives if you don’t have one.
+***The European Certificate of Conformity (COC) proves that an imported vehicle meets the EU's technical standards. Without it, the registration authority refuses the registration certificate every time.***
 
-## What is the European Certificate of Conformity (COC)?
+Importing a vehicle into France, new or used, from an EU country? The COC, issued by the manufacturer, remains essential for registration. Here's how to get it, what it really costs, and what changes with the move to an electronic version in 2026.
 
-The European Certificate of Conformity, or COC, proves that a vehicle meets EU directives. Without it, you cannot register an imported vehicle in France. This document contains key information:
+TL;DR: you request the COC from the manufacturer or their representative. The price isn't regulated; expect €100 to €300 depending on the brand, for a 2 to 4-week wait.
 
--   The community type-approval number identifies the vehicle model.
--   Technical characteristics: power, CO₂ emissions, weight, etc.
--   The chassis number (VIN) must match that of your vehicle.
--   Confirmation of compliance with applicable European directives.
+-   Since **5 July 2026**, the paper certificate is no longer legally valid in the EU, replaced by an electronic version (eCOC).
+-   For a vehicle imported from **outside the EU**, an individual vehicle approval (RTI) replaces the COC.
+-   A **classic vehicle** can get an FFVE certificate instead of the COC.
 
-According to service-public.fr, this document is required for all new or used vehicles imported from an EU country. The ANTS (French national vehicle registration agency) will reject your registration application without it.
+## What is the European Certificate of Conformity?
 
-## When is the European Certificate of Conformity mandatory?
+The COC proves a vehicle meets the EU technical directives that apply to its model. It contains the community type-approval number that identifies the model, the vehicle's technical characteristics (power, CO₂ emissions, weight), the chassis number (VIN), which must match your vehicle exactly, and a statement of conformity with the directives in force.
+
+This document is required for any new or used vehicle imported from an EU country that has never been registered in France before. Without it, the registration authority refuses the application outright.
 
 ![Example of a European Certificate of Conformity (COC) placed on a table with a pen and administrative documents](/images/articles/certificat-conformite-europeen-coc-1.webp)
 
-The COC is mandatory in these cases:
+## When is the COC mandatory?
 
--   Importing a new or used vehicle from an EU country.
--   The vehicle has never been registered in France before.
--   The model has not undergone national type-approval in France.
+The COC is required when importing a new or used vehicle from an EU country, where the vehicle has never been registered in France and the model hasn't gone through national type-approval in France.
 
-If you buy a vehicle already registered in France, the seller must provide the French registration certificate. For vehicles imported from outside the EU, an individual vehicle approval (réception à titre isolé, or RTI) from the DREAL (French regional environment, planning and housing agency) is required. This procedure verifies that the vehicle meets French standards.
-
-For more information on import procedures, check out our guide on [vehicle registration and import](/en/vehicle-registration-legal/import-registration).
+If you buy a vehicle already registered in France, the seller hands you the French registration certificate directly, no COC needed. For a vehicle imported from outside the EU, an individual vehicle approval (RTI) from the DREAL replaces this step; see our guide on [registering an imported vehicle](/register-imported-vehicle-france/).
 
 ## How to obtain the European Certificate of Conformity
 
-The COC is issued by the manufacturer or their representative in France. Here are the steps to follow:
+The COC is issued by the manufacturer or their representative in France, never by an administrative body. First check your vehicle's eligibility: the COC only exists for models put into circulation after 1996 and designed for the European market.
 
-1.  **Check your vehicle’s eligibility**. The COC is only available for vehicles first registered after 1996 and designed for the European market.
-2.  **Identify the manufacturer or their representative**. For example, for a Renault car, contact Renault France or an authorised dealer.
-3.  **Prepare the required documents**. The manufacturer will typically ask for a copy of the foreign registration certificate, ID, and proof of purchase.
-4.  **Submit your request**. Most manufacturers allow you to apply online, by post or at a dealership. Be wary of unauthorised websites.
-5.  **Pay the fees**. Costs range from €100 to €300 depending on the manufacturer.
-6.  **Receive your COC**. The standard processing time is 2 to 4 weeks. Some manufacturers offer express options for an additional fee.
+Then contact the manufacturer or an authorised dealer, with a copy of the foreign registration certificate, proof of ID and proof of purchase. The request can be made online, by post or at a dealership depending on the brand. The price isn't regulated by law; each manufacturer sets its own fee, generally between €100 and €300 depending on the model and its rarity, for a 2 to 4-week wait. Be wary of unauthorised sites promising a cut-price COC or a 24-hour turnaround; these documents are often fake and get rejected.
 
-Beware of scams. Some websites offer cut-price COCs or 24-hour turnaround times. These documents are often fake and will be rejected by the ANTS.
+## What to do if you don't have the COC
 
-## What to do if you don’t have the COC
+Three alternatives exist depending on your situation. The **community type-approval certificate**, which some manufacturers issue instead of the COC and which may be enough for registration. The **individual vehicle approval (RTI)**, mandatory for vehicles imported from outside the EU, which costs €300 to €1,000 and takes 2 to 3 months. The **FFVE certificate**, for a classic vehicle, which replaces the COC once eligibility is proven.
 
-If you can’t obtain the COC, here are the alternatives:
+Always check the COC's availability before buying an imported vehicle; some foreign sellers include it directly in the sale, which avoids any extra step afterwards.
 
--   **The community type-approval certificate**. Some manufacturers issue this document instead of the COC. It may be sufficient for registration.
--   **Individual vehicle approval (RTI)**. Mandatory for vehicles imported from outside the EU, this procedure costs between €300 and €1,000 and takes 2 to 3 months.
--   **The FFVE identification certificate**. For classic vehicles, the FFVE (Fédération Française des Véhicules d’Époque) issues a certificate that replaces the COC.
+## The move to eCOC: what changes in 2026
 
-The ANTS states that nearly 20% of registration applications for imported vehicles are rejected. Always check the required documents before buying an imported vehicle.
+Since 5 July 2026, the paper certificate of conformity is no longer legally valid in the EU. It is replaced by an electronic version, the eCOC, digitally signed by the manufacturer and available to view online.
 
-## How much does the European Certificate of Conformity cost?
+This change aims to limit the fake documents that circulated on the paper COC market. For a vehicle put into circulation after that date, ask the manufacturer directly for the electronic version; it carries the same legal weight before the registration authority as the old paper document.
 
-The cost of the COC varies depending on the manufacturer and vehicle type. Here are some examples of 2026 prices:
+## COC and the MOT test: what you still need to check
 
-| Manufacturer | COC price (car) | COC price (motorcycle) | Standard processing time |
-| --- | --- | --- | --- |
-| Renault | €120 | €90 | 2 weeks |
-| Volkswagen | €150 | €110 | 3 weeks |
-| Peugeot | €130 | €100 | 2 weeks |
-| Toyota | €180 | €120 | 4 weeks |
-| BMW | €200 | €150 | 3 weeks |
+The COC doesn't exempt an imported vehicle from the French MOT test (contrôle technique). A vehicle under 6 months old with fewer than 6,000 km stays exempt, like any new car. A used vehicle over 4 years old needs an MOT less than 6 months old before registration. For a classic vehicle over 30 years old, the test is required every 5 years rather than every 2.
 
-*Source: car manufacturers (2026 prices)*
+Having the COC in hand doesn't guarantee the vehicle will pass its first French MOT. A car built to a foreign-market specification can show differences, in headlight beam pattern or emissions figures for instance, that a standard check picks up. Ask the seller whether the vehicle was always built to EU specification before you commit.
 
-These fees are in addition to registration costs, which are calculated based on the vehicle’s taxable horsepower and CO₂ emissions.
+## Scams to avoid and what happens without a valid COC
 
-## What are the risks if you don’t have a COC?
+The COC market attracts its share of scams, for lack of a regulated price or an official standard turnaround. Be wary of any offer under €100 or delivered within 24 hours; these documents are most often fakes rejected as soon as the file is reviewed. Always use the manufacturer's official channel or their approved representative in France, never an intermediary site unrecognised by the brand, and check that the COC on offer genuinely matches your vehicle, not a generic document for an older or non-European model.
 
-Driving without a valid COC carries several risks:
+Without a valid COC, the registration authority refuses the registration application, which blocks any permanent registration. A vehicle driving on foreign plates or an expired [temporary WW plate](/temporary-ww-plate-validity/) risks a fine. Insurers may also refuse to cover a vehicle not registered in France, or charge higher premiums while the paperwork is sorted out. Finally, without a French registration certificate, reselling the vehicle becomes almost impossible. For the tax side of a vehicle brought in from abroad, see our guide on the [tax clearance certificate](/foreign-vehicle-tax-clearance-2026/).
 
--   **Registration refusal**. Without a COC, the ANTS will reject your registration application.
--   **€135 fine**. Driving with foreign plates or a temporary WW registration is punishable by a fine.
--   **Insurance issues**. Insurers may refuse to cover a vehicle not registered in France.
--   **Difficulty selling the vehicle**. Without a French registration certificate, selling the vehicle is almost impossible.
+## Frequently asked questions
 
-To avoid these problems, check the availability of the COC before buying an imported vehicle. Some foreign sellers include the COC in the sale.
+### Where do you get the European Certificate of Conformity?
 
-## European Certificate of Conformity: scams to avoid
+From the vehicle's manufacturer or their representative in France, never from the registration authority or a local administration, which don't issue this document.
 
-The COC market is rife with scams. Here are the pitfalls to avoid:
+### How much does a COC cost in 2026?
 
--   **Cut-price COCs**. Be wary of offers under €100. These documents are often fake.
--   **Unofficial express services**. Stick to official processing times (2 to 4 weeks).
--   **Unauthorised websites**. Check that the site is approved by the manufacturer before ordering.
--   **COCs for ineligible vehicles**. Some sites offer COCs for older or American vehicles. These documents are useless.
--   **Hidden fees**. Read the terms and conditions carefully before ordering.
+The price isn't regulated; it varies by manufacturer, generally between €100 and €300. Be wary of offers under €100 or delivered within 24 hours, which are often fraudulent.
 
-To avoid scams, use the manufacturers’ official websites. For example, trusted platforms like Euro Conformité. If in doubt, consult a registration professional or the ANTS.
+### Is the paper COC still valid in 2026?
 
-## European Certificate of Conformity and MOT test
+No. Since 5 July 2026, only the electronic version (eCOC) carries legal weight in the EU for vehicles covered by this change.
 
-The COC does not exempt you from the MOT test (contrôle technique). Here are the rules:
+### What about a vehicle imported from outside the EU?
 
--   **New vehicles**. A vehicle under 6 months old and with fewer than 6,000 km is exempt from the MOT test.
--   **Used vehicles**. An MOT test less than 6 months old is mandatory for vehicles over 4 years old.
--   **Classic vehicles**. Vehicles over 30 years old are subject to an MOT test every 5 years.
+An individual vehicle approval (RTI) from the DREAL replaces the COC, for a cost of €300 to €1,000 and a 2 to 3-month wait.
 
-According to UTAC (the French technical union for the automobile industry), around 15% of imported vehicles fail their first MOT test, often due to compliance issues.
+### Does a classic vehicle need a COC?
 
-## COC and insurance: what you need to know
+No, a certificate from the Fédération Française des Véhicules d'Époque (FFVE) replaces the COC once eligibility for classic status is proven.
 
-To insure an imported vehicle, you’ll need the COC or an equivalent document. Here are the key points:
+### Can a garage request the COC on my behalf?
 
--   **Temporary insurance**. Temporary insurance with a provisional WW plate allows you to drive while waiting for the final registration certificate.
--   **Full insurance**. Without a French registration certificate, insurers will refuse to cover you—or will offer high premiums.
--   **No-claims bonus**. Your foreign insurance history won’t be transferred automatically. Provide a claims record to your insurer.
-
-Insurance costs for an imported vehicle range from €600 to €1,200 per year, depending on the insurer’s criteria, according to LesFurets.com.
-
-## European Certificate of Conformity: alternatives for ineligible vehicles
-
-If your vehicle isn’t eligible for a COC, here are the alternatives:
-
--   **Individual vehicle approval (RTI)**. Mandatory for vehicles imported from outside the EU, this procedure costs between €300 and €1,000.
--   **FFVE certificate**. For classic vehicles, this certificate costs €60 and allows you to obtain a classic vehicle registration certificate.
--   **National type-approval certificate**. Some older vehicles can obtain this certificate from the DREAL.
-
-Contact the DREAL or a registration professional before buying a vehicle that isn’t eligible for a COC. These procedures are longer and more expensive—but essential to register your vehicle in France.
-
-For more information on import-related procedures, check out [our guide on provisional WW plates](/en/vehicle-registration-legal/temporary-ww-plate-validity), [our guide to registering an imported vehicle](/en/vehicle-registration-legal/register-imported-vehicle-france), or [our guide on the tax clearance certificate (quitus fiscal)](/en/vehicle-registration-legal/foreign-vehicle-tax-clearance-2026).
+Yes, some registration professionals handle the request with the manufacturer for a service fee, on top of the price charged by the brand itself.

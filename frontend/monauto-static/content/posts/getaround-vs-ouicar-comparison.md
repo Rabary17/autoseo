@@ -1,84 +1,94 @@
 ---
-title: "Getaround vs Ouicar: Which Car-Sharing Service Should You Choose in 2026?"
-description: "Getaround and Ouicar dominate peer-to-peer car-sharing in France. We compare their pricing, insurance and services to help you decide."
+title: "Getaround or Turo (ex-Ouicar): Which Car-Sharing Service Should You Choose in 2026?"
+description: "Ouicar became Turo in late 2023. Compare Getaround and Turo on pricing, insurance, availability and use cases before booking your next peer-to-peer rental."
 date: "2026-10-31"
 author: "karim-belaid"
 wp_id: 1646
 wp_locale: "en"
 image: "/images/articles/getaround-vs-ouicar-comparison-couverture.webp"
-imageAlt: "Getaround ou Ouicar : quel service d’autopartage choisir en 2026 ?"
+imageAlt: "Getaround ou Turo (ex-Ouicar) : quel service d'autopartage choisir en 2026 ?"
 ---
-Need a car for a few hours or several days? Skip the traditional rental agencies. Getaround and Ouicar dominate the peer-to-peer car-sharing market in France. With differences in pricing, insurance and extra fees, choosing between them isn’t straightforward.
+***Need a car for a few hours or several days, without going through a traditional rental agency? Getaround and Turo, known in France as Ouicar until recently, dominate the peer-to-peer car-sharing market.***
 
-We’ve compared the two platforms on concrete criteria. The result? Depending on your trip, one can be up to 30% cheaper than the other.
+TL;DR: Ouicar changed its name and has operated as Turo since late 2023, with a vehicle catalogue largely inherited from the old platform. Getaround focuses on simplicity and automatic unlocking, Turo often offers a wider vehicle choice outside major cities.
 
-## 1\. Pricing: Getaround often cheaper, but watch out for hidden fees
-
-On paper, Getaround’s hourly rates are lower than Ouicar’s. For example, a city car like a Renault Clio costs an average of €5.50/hour on Getaround compared to €6.80/hour on Ouicar (2026 figures, excluding promotions).
-
-However, the final bill can climb with optional extras:
-
--   **Cleaning fee**: €25 if you return the car dirty. Getaround applies this fee more often than Ouicar, according to user feedback.
--   **Fuel charge**: Both platforms charge extra if the tank is returned below a quarter full. Getaround charges €0.50 per missing litre, Ouicar €0.60 per litre.
--   **Toll fees**: Not included in the base price. Getaround offers a Liber-t tag as an option (€2/day), which Ouicar doesn’t provide.
-
-For a 4-hour trip in a Clio, expect to pay around €28 on Getaround (excluding fuel) versus €32 on Ouicar. However, if you forget to refuel, the total can rise to €40 on Getaround compared to €38 on Ouicar.
+-   If you're still searching for "Ouicar", the site **now redirects to Turo**, which took over the activity in France.
+-   Both platforms include **fully comprehensive insurance**, but with protection plans and excesses that vary by the level you choose.
+-   Getaround focuses on **fully digital unlocking**, Turo keeps more direct contact with the vehicle owner.
 
 ![User comparing rental prices between two cars on a car-sharing app](/images/articles/getaround-ouicar-comparatif-1.webp)
 
-## 2\. Insurance: fully comprehensive included, but differences in case of a claim
+## What does Ouicar's disappearance mean for users?
 
-Both services include fully comprehensive insurance. Getaround partners with AXA, Ouicar with Allianz. The excess amounts differ:
+Ouicar was bought by the American company Turo in 2022, and the French brand gave way entirely to Turo from November 2023. If an old link or a search still points you to "Ouicar", you'll be redirected automatically to the Turo website or app.
 
-| Criteria | Getaround | Ouicar |
+In practice, most of the vehicle catalogue and owners already registered on Ouicar moved over to Turo, which continues operating in France with a comparable offer, but its own interface and insurance plans. To compare the two platforms today, you're really comparing Getaround and Turo, not Getaround and Ouicar.
+
+## Pricing: how do the two platforms differ?
+
+Hourly and daily rates mostly depend on the vehicle, the owner and the location, more than on the platform itself. Both services work on a similar model: a price set by the owner, with the platform's service fees added on top.
+
+On both apps, the final bill can rise with **extra fees**: cleaning if the car comes back dirty, a surcharge if the tank isn't returned at the agreed level, mileage beyond the included allowance. These fees are set by each owner in their listing, so read them carefully rather than relying on a national average, which varies too much from one listing to the next to be reliable.
+
+For an accurate comparison on a given trip, the most effective approach is to simulate the same booking on both apps and compare the total price shown, service fees included.
+
+## Insurance: how do the two platforms cover a claim?
+
+Both services include fully comprehensive cover, with several protection levels to choose from and excesses that fall as you move up the range.
+
+| Criteria | Getaround | Turo (ex-Ouicar) |
 | --- | --- | --- |
-| Theft/damage excess | €750 | €900 |
-| Windscreen damage excess | €150 | €200 |
-| 24/7 assistance | Yes (dedicated number) | Yes (via the app) |
+| Insurance partner in France | Allianz | Baloise Assurances |
+| Protection plans | Several levels (lower excess for a supplement) | Several plans (Limited, Standard, Premium) |
+| Excess | Varies by plan chosen | Varies by plan chosen |
+| Assistance | Dedicated phone line | Via the app |
 
-*Source: Getaround, Ouicar*
+Exact excess amounts change regularly and differ by vehicle rented; always check them in the booking summary before confirming, rather than trusting a fixed figure. On both platforms, choosing the most complete protection plan sharply reduces what you'd owe after an accident or theft, for a moderate daily supplement.
 
-In case of an accident, Getaround offers a replacement vehicle within 24 hours (subject to conditions). Ouicar doesn’t guarantee this service. As a result, some owners on Ouicar refuse young drivers (under 25), a restriction that doesn’t apply on Getaround.
+## Availability: where is each platform strongest?
 
-## 3\. Availability: Ouicar more present in regions, Getaround in Île-de-France
+Getaround remains historically strong in the Paris region, while Turo inherits Ouicar's wider footprint in mid-sized provincial cities. The two apps don't necessarily list the same vehicles in the same place.
 
-Getaround leads in the Paris region. In fact, 80% of vehicles are available within a 5 km radius of train stations. Ouicar, on the other hand, has a stronger presence in medium-sized cities. In Lyon, Bordeaux or Toulouse, you’ll find twice as many offers on Ouicar as on Getaround.
+In major cities, Getaround often lists plenty of city cars and small vans close to stations and transport hubs. Outside the big cities, the offer inherited from Ouicar on Turo generally includes more family vehicles such as MPVs or SUVs. Before choosing a platform for a specific trip, simply compare how many listings are available near your starting point on both apps.
 
-Ouicar also offers more family vehicles (MPVs, SUVs) and electric cars. Getaround focuses more on city cars and utility vehicles. If you need a spacious boot, Ouicar is often the better choice.
+## User experience: what's different day to day?
 
-![Family loading luggage into the boot of an SUV rented via a car-sharing platform](/images/articles/getaround-ouicar-comparatif-2.webp)
+Getaround focuses on a fully digital journey, unlocking the car from the app with no direct exchange with the owner. Turo keeps more contact between owner and renter before booking.
 
-## 4\. User experience: Getaround’s app is more intuitive
+On Getaround, booking takes a few clicks and automatic unlocking avoids any physical meet-up to collect keys. On Turo, a message or exchange with the owner is often still needed before final confirmation, which can slow down a last-minute booking but also lets you ask precise questions about the vehicle's condition.
 
-Getaround prioritises simplicity. Book in 3 clicks, unlock the car via the app without contacting the owner. Ouicar requires a phone call or message before booking, which can slow down the process.
+On payment, both platforms generally take a deposit at pickup, with the amount depending on the vehicle booked. Check this point in each listing's terms before confirming your reservation.
 
-### Transparency and payment
+## Which service should you choose?
 
-Ouicar clearly displays reviews from previous renters. Getaround only provides an overall rating without details. For payment, both platforms take a deposit (€300 to €500 depending on the vehicle).
+For a **short city trip**, Getaround is often the most convenient thanks to its digital journey and strong presence in major metropolitan areas. For a **family weekend or a trip in the regions**, Turo frequently offers more family vehicles and better coverage outside big cities. For an experience with **no contact with the owner**, Getaround is the better pick. For a **wider vehicle choice in the regions**, Turo is often the best option.
 
-Getaround offers interest-free payment in 3 instalments for bookings over €100. This option isn’t available on Ouicar.
+In every case, check previous renters' reviews and the vehicle's condition before setting off, and contact the owner if you have any doubt about mileage or return conditions: a quick, precise answer often says a lot about how serious a listing is.
 
-## 5\. Verdict: which service to choose based on your needs?
+## Round-trip car-sharing, peer-to-peer rental or traditional hire?
 
--   **For a short trip in the city**: Getaround, thanks to its lower hourly rates and availability in Île-de-France.
--   **For a weekend or a trip in the regions**: Ouicar, with more family vehicles and better coverage outside major cities.
--   **To avoid hidden fees**: Ouicar, less strict on cleaning and fuel.
--   **For a fully digital experience**: Getaround, with its automatic unlocking and smoother app.
+Getaround and Turo aren't the only alternatives to owning a car. **Round-trip car-sharing**, like Citiz, works differently: the car always stays in the same place, with a monthly subscription and a fixed hourly rate, a good option for regular, predictable use. Our [Citiz pricing comparison](/citiz-car-sharing-rates-2026/) covers this model in detail.
 
-Always check previous renters’ reviews and the vehicle’s condition before hitting the road. To try them out, Getaround offers a €15 discount for your first booking, Ouicar €20.
+**Peer-to-peer rental** suits an occasional need better: a weekend away, a house move, an unplanned trip, with a wider vehicle choice but availability that depends on owners nearby. Before booking, our [guide to peer-to-peer rental insurance](/peer-car-rental-insurance-gaps/) explains what each platform's included cover actually protects, and what stays the renter's responsibility. Our broader [guide to peer-to-peer car rental](/peer-to-peer-car-rental-guide/) rounds out the comparison if you're still weighing it against a traditional rental agency.
 
-For more information, check out [everything you need to know about car-sharing and peer-to-peer car rental](/en/shared-mobility/peer-to-peer-car-sharing).
+## Frequently asked questions
 
-## 6\. Use cases: peer-to-peer rental, station-based car-sharing or traditional rental?
+### Does Ouicar still exist in France in 2026?
 
-Getaround and Ouicar aren’t the only options for going without a personal car. Two other models are worth comparing before making a decision.
+No, the brand disappeared in November 2023. The website and app automatically redirect to Turo, which took over the business and most of the vehicle catalogue in France.
 
-Station-based car-sharing, like Citiz, works differently. The car always stays in the same place, with a monthly subscription and a fixed hourly rate. It’s a good option for regular, predictable use, without relying on a private owner’s availability. Our [Citiz pricing comparison](/en/shared-mobility/citiz-car-sharing-rates-2026) explains this model in detail.
+### Do you need a new account to use Turo if you had an Ouicar account?
 
-Peer-to-peer rental, on the other hand, is better suited for occasional needs: a weekend away, a house move, an unexpected trip. The choice of vehicles is wider, but availability depends on owners in your area.
+In most cases, existing accounts were migrated automatically to Turo. If in doubt, use the account-recovery option in the app with your usual email address.
 
-Before booking on Getaround or Ouicar, also check the insurance terms. Our [guide to insurance for peer-to-peer rentals](/en/shared-mobility/peer-car-rental-insurance-gaps) explains what the platform’s contract actually covers and what remains the renter’s responsibility.
+### Which platform refunds you better after an accident?
 
-Finally, if you’re still torn between renting from a private owner or using a traditional rental company, keep in mind that user experiences vary greatly from one owner to another. Take the time to read reviews before booking.
+Both offer protection plans with a reduced or zero excess for a supplement. The exact amount depends on the vehicle and the plan chosen: check it before each booking rather than comparing averages.
 
-One last tip for both platforms: contact the owner before booking if you have any doubts about the vehicle’s condition, mileage or return terms. A quick and precise response often speaks volumes about the listing’s reliability.
+### Can a young driver rent a vehicle on these platforms?
+
+It depends on the conditions each owner sets in their listing, not a single platform-wide rule. Some owners exclude drivers under 25, others don't.
+
+### Do Getaround and Turo cover the same cities in France?
+
+Not exactly. Getaround remains historically denser in the Paris region, while Turo often inherits a wider footprint in mid-sized cities thanks to the old Ouicar network.
