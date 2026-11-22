@@ -1,7 +1,7 @@
 ---
 title: "Prime vélo électrique 2026 : quelles aides locales et régionales en France ?"
-description: "L’État a supprimé la prime nationale en 2025. En 2026, ce sont les collectivités locales qui financent jusqu’à 800 € d’aides pour un vélo électrique, avec "
-date: "2026-08-24"
+description: "L'État a supprimé la prime nationale vélo électrique début 2025. En 2026, seules les collectivités locales financent encore l'achat, sous conditions."
+date: "2026-11-22"
 author: "karim-belaid"
 category: "aides-a-l-achat"
 wp_id: 1707
@@ -9,79 +9,108 @@ wp_locale: "fr"
 image: "/images/articles/prime-velo-electrique-2026-couverture.webp"
 imageAlt: "Prime vélo électrique 2026 : quelles aides locales et régionales en France ?"
 ---
-L’État a mis fin à la prime nationale pour l’achat d’un vélo électrique en 2025. En 2026, ce sont les régions, départements et villes qui prennent le relais. Certaines offrent jusqu’à 800 € d’aides, mais tout dépend de votre code postal. Voici comment en profiter sans se tromper.
+***L'État a mis fin au bonus écologique vélo (500 €) et à la prime à la conversion vélo (1 500 €) en février 2025. En 2026, seules les régions, départements et villes financent encore l'achat d'un vélo électrique, selon des règles très variables.***
 
-## Pourquoi l’État a-t-il supprimé la prime nationale ?
+Avant d'acheter, mieux vaut savoir précisément ce qui reste finançable et ce qui ne l'est plus, pour ne pas intégrer une aide nationale qui n'existe plus dans votre budget.
 
-Le gouvernement a recentré ses aides sur les véhicules électriques neufs depuis 2025. Ainsi, le bonus écologique pour les vélos électriques a disparu pour les particuliers. Quant aux entreprises, elles n’y avaient déjà plus droit depuis fin 2024. Tout savoir sur les aides fiscales 2026 pour les pros.
+TL;DR : il n'existe plus aucune aide nationale à l'achat d'un vélo électrique depuis février 2025.
 
-Pourtant, la demande reste forte. En effet, un trajet domicile-travail de 10 km en vélo électrique coûte moins de 50 € par an en électricité. En comparaison, la même distance en essence revient à 500 €. Un budget étudiant ou un foyer modeste y gagne clairement. C’est pourquoi les collectivités locales ont décidé de combler le vide. Cependant, leurs règles varient du tout au tout.
-
-## Quelles régions offrent les meilleures aides en 2026 ?
+-   Le **bonus écologique vélo** et la **prime à la conversion vélo** ont tous deux disparu au niveau national.
+-   Seules les **aides locales** (région, département, ville) subsistent, avec des montants très inégaux selon votre adresse.
+-   Certaines villes **cumulent** leur propre prime avec celle de leur région, pour un total parfois conséquent.
 
 ![Cycliste sur un vélo électrique en ville avec un bâtiment officiel en arrière-plan](/images/articles/prime-velo-electrique-2026-1.webp)
 
-Voici les montants maximaux observés en 2026, selon les régions. Attention, ces aides sont souvent réservées aux ménages modestes ou aux zones rurales. De plus, les budgets sont limités. En Île-de-France, par exemple, l’enveloppe 2026 a été épuisée en 2 mois l’an dernier.
+## Existe-t-il encore une aide nationale pour acheter un vélo électrique en 2026 ?
 
-| Région | Aide maximale (€) | Conditions |
+**Réponse directe** : non. L'État a supprimé le bonus écologique vélo et la prime à la conversion vélo en février 2025. Ces deux dispositifs nationaux, qui pouvaient atteindre respectivement 500 € et 1 500 €, ne sont plus distribués depuis cette date, pour les particuliers comme pour les entreprises.
+
+Le gouvernement a recentré ses aides nationales sur les véhicules électriques neufs. Pour les entreprises, l'exclusion est encore plus ancienne : elles n'avaient déjà plus droit au bonus écologique vélo depuis fin 2024. Reste que la demande, elle, n'a pas faibli : un trajet domicile-travail de 10 km en vélo électrique coûte moins de 50 € par an en électricité, contre plusieurs centaines d'euros en carburant pour la même distance en voiture. C'est ce qui pousse de nombreuses collectivités locales à combler le vide laissé par l'État.
+
+## Quelles régions offrent encore des aides en 2026 ?
+
+Les montants et les conditions varient fortement d'une région à l'autre, et les budgets alloués restent souvent limités dans le temps. Vérifiez systématiquement le montant exact et les critères en vigueur sur le site de votre collectivité avant tout achat, ces aides évoluant d'une année sur l'autre selon le budget voté.
+
+| Région (ordre de grandeur) | Aide indicative | Conditions typiques |
 | --- | --- | --- |
-| Île-de-France | 600 | Revenu fiscal < 19 000 €/an (38 000 € pour un couple avec 2 enfants) |
-| Auvergne-Rhône-Alpes | 500 | Vélo neuf ou reconditionné, assemblé en Europe |
-| Occitanie | 400 | Réservé aux zones rurales (communes < 20 000 habitants) |
-| Nouvelle-Aquitaine | 300 | Cumulable avec aides départementales (ex. Gironde : +200 €) |
-| Hauts-de-France | 250 | Vélo cargo ou pliant (bonus +100 €) |
+| Île-de-France | Jusqu'à 600 € | Plafond de revenu fiscal |
+| Auvergne-Rhône-Alpes | Jusqu'à 500 € | Vélo neuf ou reconditionné, assemblé en Europe |
+| Occitanie | Jusqu'à 400 € | Souvent réservé aux communes rurales |
+| Nouvelle-Aquitaine | Jusqu'à 300 € | Cumulable avec certaines aides départementales |
+| Hauts-de-France | Jusqu'à 250 € | Bonus possible pour vélo cargo ou pliant |
 
-*Source : Groupama (données 2026)*
+*Montants indicatifs 2026, à vérifier au cas par cas auprès de chaque collectivité*
 
-### Exemples concrets par ville
+Certaines métropoles ajoutent leur propre prime à celle de la région, ce qui peut faire grimper sensiblement le montant total pour un même achat. D'autres réservent leur aide aux vélos assemblés en Europe, aux zones rurales, ou aux ménages sous un certain plafond de revenu fiscal. Les budgets de ces dispositifs locaux restent généralement limités et peuvent s'épuiser avant la fin de l'année, surtout dans les grandes agglomérations.
 
-À Lyon, l’aide de 500 € est ouverte à tous. Toutefois, elle est réservée aux vélos assemblés en Europe. À Paris, un couple avec deux enfants peut toucher 600 € pour un vélo cargo électrique. Mais cela, à condition que leur revenu fiscal ne dépasse pas 38 000 €/an. En Occitanie, l’aide de 400 € est réservée aux communes de moins de 20 000 habitants. Ainsi, si vous habitez Toulouse, vous n’y aurez pas droit.
+## Comment cumuler une aide de ville et une aide régionale ?
 
-## Comment cumuler les aides locales ?
+De nombreuses villes ajoutent leur propre prime à celle de leur région ou de leur département, sans que ce cumul soit systématique ni garanti dans le temps. Avant de vous engager, vérifiez toujours trois points auprès de votre mairie et de votre région : le cumul est-il explicitement autorisé, le budget est-il encore disponible, et votre profil respecte-t-il les critères des deux dispositifs à la fois.
 
-Certaines villes ajoutent leur propre prime à celle de la région. Voici quelques exemples qui font la différence :
+Certains départements ajoutent aussi leur propre enveloppe à celle de la région, ce qui peut porter le total à plusieurs centaines d'euros pour un même vélo. Ce type de cumul à trois niveaux (ville, département, région) reste toutefois minoritaire et concerne surtout les grandes agglomérations dotées d'un budget mobilité conséquent.
 
--   **Paris** : 400 € (cumulable avec les 600 € de la région Île-de-France → total 1 000 €). Le budget est limité à 5 000 demandes/an. En 2025, les fonds ont été épuisés en 3 semaines.
--   **Bordeaux** : 200 € (cumulable avec les 300 € de Nouvelle-Aquitaine → total 500 €). Réservé aux vélos neufs achetés chez un professionnel local.
--   **Strasbourg** : 300 € (non cumulable avec l’aide régionale). Délai de traitement : 6 à 8 semaines.
--   **Montpellier** : 150 € (réservé aux vélos reconditionnés). Bonus de 50 € si le vélo est acheté chez un réparateur labellisé.
+## Quels vélos restent éligibles aux aides locales ?
 
-Astuce : vérifiez si votre département propose aussi une aide. En Gironde, par exemple, le département ajoute 200 € à l’aide régionale de 300 €. Ainsi, le total atteint 500 €. Mais attention, les budgets sont souvent épuisés avant la fin de l’année. En 2025, la région Auvergne-Rhône-Alpes a clôturé son dispositif en avril.
+Les critères varient selon les collectivités, mais certaines règles reviennent fréquemment d'un dispositif à l'autre :
 
-## Quels vélos sont éligibles ?
+-   **Prix d'achat plafonné**, généralement autour de 3 000 € hors accessoires.
+-   **Batterie amovible** et moteur limité à 250 W, conformément à la norme européenne.
+-   **Vélo neuf ou reconditionné** selon les collectivités, certaines favorisant explicitement le reconditionné.
+-   **Facture au nom du demandeur**, une facture établie au nom d'un proche étant systématiquement refusée.
 
-Les critères varient selon les collectivités. Voici cependant les règles communes à la plupart des aides :
+Les vélos cargos et pliants bénéficient souvent d'un bonus supplémentaire par rapport à un vélo électrique classique, un point à vérifier précisément avant l'achat si vous hésitez entre plusieurs modèles. Notre comparatif des [meilleurs vélos à assistance électrique en 2026](/meilleur-vae-2026/) et notre guide sur le [vélo électrique reconditionné](/vae-reconditionne-avis/) aident à orienter ce choix selon votre budget réel après aide.
 
--   Prix d’achat ≤ 3 000 € (hors accessoires).
--   Batterie amovible et moteur ≤ 250 W (norme européenne).
--   Vélo neuf ou reconditionné (selon les régions).
--   Facture au nom du demandeur (pas de facture au nom d’un proche).
+## Comment faire une demande d'aide locale ?
 
-Les vélos cargos et pliants bénéficient souvent de bonus supplémentaires. À Nantes, par exemple, l’aide passe de 200 € à 400 € pour un vélo cargo. À Lille, les vélos reconditionnés sont éligibles à une prime de 250 €, contre 150 € pour un vélo neuf.
+La procédure reste presque toujours dématérialisée, mais chaque collectivité conserve son propre site et ses propres délais de traitement.
 
-## Comment faire la demande ?
+1.  **Vérifiez votre éligibilité** sur le site de votre région, département ou ville avant tout achat. Un dépassement de plafond de revenu, même minime, entraîne généralement un refus automatique.
+2.  **Achetez votre vélo chez un professionnel.** Une facture en bonne et due forme reste indispensable ; certaines collectivités imposent même un achat chez un revendeur local.
+3.  **Créez un compte sur la plateforme de la collectivité** et déposez votre dossier, idéalement sans attendre les derniers jours ouverts du dispositif.
+4.  **Joignez les justificatifs demandés** : facture, pièce d'identité, justificatif de domicile récent, et parfois un relevé d'identité bancaire.
+5.  **Patientez le temps du traitement**, qui varie de quelques semaines à plusieurs mois selon la collectivité et la période de l'année.
 
-La procédure est 100 % en ligne. Cependant, chaque collectivité a son propre site et ses propres délais. Voici les étapes clés pour éviter les mauvaises surprises :
+Certaines collectivités acceptent une demande rétroactive dans un délai de quelques semaines à quelques mois après l'achat, d'autres exigent au contraire une demande avant la facturation. Vérifiez ce point précis avant de signer votre bon de commande.
 
-1.  Vérifiez votre éligibilité sur le site de votre [région ou ville](/velo-nouvelles-mobilites/aides-a-l-achat). Certaines collectivités refusent les demandes si vous dépassez le plafond de revenus, même de 1 €.
-2.  Achetez votre vélo chez un professionnel. La facture est obligatoire. Certaines villes, comme Bordeaux, imposent d’acheter chez un revendeur local pour être éligible.
-3.  Créez un compte sur la plateforme de la collectivité. Certains sites plantent aux heures de pointe. Essayez donc tôt le matin.
-4.  Téléchargez les justificatifs. Il s’agit de la facture, d’une pièce d’identité, et d’un justificatif de domicile de moins de 3 mois. Certaines régions demandent aussi un RIB.
-5.  Attendez la réponse. Le délai varie de 2 à 8 semaines. En Île-de-France, les demandes sont traitées en 3 à 4 semaines. En Provence-Alpes-Côte d’Azur, cela peut prendre jusqu’à 2 mois.
+## Et pour les entreprises qui équipent leurs salariés ?
 
-Astuce : certaines villes acceptent les demandes rétroactives. À Rennes, vous avez jusqu’à 3 mois après l’achat pour faire votre dossier. À Paris, en revanche, la demande doit être faite dans les 30 jours suivant l’achat.
+Les sociétés qui souhaitent équiper leurs salariés en vélos électriques passent généralement par le [leasing vélo en entreprise](/leasing-velo-entreprise/), un montage qui reste fiscalement avantageux indépendamment des aides locales à l'achat individuel. Certaines régions proposent par ailleurs des bonus spécifiques pour les flottes de vélos électriques professionnels, à vérifier directement auprès de votre chambre de commerce ou de votre expert-comptable.
 
-## Et les entreprises ?
+Le [forfait mobilités durables à vélo](/forfait-mobilites-durables-velo/) reste par ailleurs totalement indépendant de ces aides à l'achat : il finance les trajets domicile-travail au quotidien, pas l'acquisition du vélo lui-même, et continue de s'appliquer en 2026 sans lien avec la suppression du bonus écologique vélo. Notre guide sur le [vélo cargo électrique pour les familles](/velo-cargo-electrique-famille/) complète ce panorama pour les foyers qui hésitent sur le type de vélo à financer en priorité.
 
-Les sociétés peuvent bénéficier d’aides via le [leasing vélo entreprise](/velo-nouvelles-mobilites/leasing-velo-entreprise). Certaines régions, comme la Bretagne, offrent un bonus de 500 € pour les flottes de vélos électriques. Renseignez-vous auprès de votre chambre de commerce ou de votre expert-comptable. En effet, certaines aides sont cumulables avec des dispositifs fiscaux.
+## Prime vélo électrique 2026 : ce qu'il faut retenir
 
-## Prime vélo électrique 2026 : le bilan
+En 2026, aucune prime nationale ne finance plus l'achat d'un vélo électrique, que vous soyez particulier ou entreprise. Seules les aides locales peuvent encore faire la différence sur un budget serré, avec des montants et des conditions qui varient fortement d'un territoire à l'autre :
 
-En 2026, plus de prime nationale. Cependant, des aides locales peuvent faire la différence sur un budget serré. Voici ce qu’il faut retenir :
+-   Certaines régions et métropoles cumulent leurs aides, pour un total parfois conséquent.
+-   Les vélos cargos et reconditionnés bénéficient souvent d'un bonus supplémentaire.
+-   Les délais de traitement varient de quelques semaines à plusieurs mois selon la collectivité.
+-   Vérifiez toujours le montant exact et les conditions en vigueur avant l'achat, ces dispositifs locaux évoluant chaque année selon le budget voté.
 
--   Île-de-France et Auvergne-Rhône-Alpes offrent les montants les plus élevés (600 € et 500 €). Toutefois, les conditions sont strictes (revenus, zone rurale, etc.).
--   Certaines villes cumulent leurs aides avec celles de la région. Par exemple, Paris + Île-de-France = 1 000 €. Mais les budgets sont limités. Faites donc votre demande dès l’achat.
--   Les vélos cargos et reconditionnés sont souvent mieux subventionnés. Ainsi, ils bénéficient d’un bonus de 50 à 200 € en plus.
--   Les délais de traitement varient de 2 à 8 semaines selon les collectivités. Prévoyez donc large si vous avez besoin de l’aide pour boucler votre budget.
+Pour bien choisir votre modèle avant de déposer une demande d'aide, notre guide sur le [vélotaf pour débuter](/velotaf-debuter-conseils/) complète cette information avec des conseils pratiques d'usage quotidien.
 
-Pour maximiser vos chances, commencez par vérifier les aides disponibles dans votre ville ou département. Si vous hésitez entre un vélo neuf et reconditionné, sachez que ce dernier est souvent éligible à des primes supplémentaires. Un bon plan pour économiser encore plus.
+## Questions fréquentes
+
+### Existe-t-il encore un bonus écologique pour l'achat d'un vélo électrique en 2026 ?
+
+Non. Le bonus écologique vélo (500 €) et la prime à la conversion vélo (1 500 €) ont tous deux été supprimés au niveau national en février 2025.
+
+### Les entreprises peuvent-elles encore toucher une aide nationale pour équiper leurs salariés en vélos électriques ?
+
+Non, elles n'y avaient déjà plus droit depuis fin 2024, avant même la suppression du dispositif pour les particuliers en 2025.
+
+### Quelles aides restent disponibles pour acheter un vélo électrique en 2026 ?
+
+Uniquement des aides locales, versées par certaines régions, départements ou villes, avec des montants et des conditions qui varient fortement d'un territoire à l'autre.
+
+### Peut-on cumuler une aide de ville et une aide de région pour un vélo électrique ?
+
+Dans certains cas oui, mais ce cumul n'est ni systématique ni garanti dans le temps. Vérifiez toujours auprès des deux collectivités avant de vous engager sur un achat.
+
+### Un vélo électrique reconditionné est-il éligible aux aides locales ?
+
+Souvent oui, et certaines collectivités le favorisent même par rapport à un vélo neuf. Les conditions précises varient néanmoins d'un dispositif à l'autre.
+
+### Le forfait mobilités durables finance-t-il l'achat d'un vélo électrique ?
+
+Non. Il finance les trajets domicile-travail réalisés à vélo, pas l'acquisition du vélo lui-même. Ces deux dispositifs restent indépendants l'un de l'autre.

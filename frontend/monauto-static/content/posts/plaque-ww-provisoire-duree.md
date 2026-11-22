@@ -1,7 +1,7 @@
 ---
 title: "Plaque WW provisoire : durée de validité, renouvellement et démarches 2026"
-description: "La plaque WW provisoire permet de circuler en France avec un véhicule importé le temps d’obtenir la carte grise définitive. Sa durée maximale est de 6 mois"
-date: "2026-07-30"
+description: "Depuis le 1er janvier 2026, la plaque WW est rose et valable 4 mois, sans renouvellement possible. Durée, coût et démarches ANTS expliqués simplement."
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "immatriculation-import"
 wp_id: 900
@@ -9,127 +9,100 @@ wp_locale: "fr"
 image: "/images/articles/plaque-ww-provisoire-duree-couverture.webp"
 imageAlt: "Plaque WW provisoire : durée de validité, renouvellement et démarches 2026"
 ---
-Une plaque WW provisoire permet de circuler en France avec un véhicule importé le temps d’obtenir sa carte grise définitive. Selon service-public.gouv.fr, sa durée de validité est strictement encadrée. Voici tout ce qu’il faut savoir en 2026 sur sa durée, son renouvellement et les démarches à suivre.
+***Depuis le 1er janvier 2026, la plaque WW provisoire change de visage : fond rose, date d'expiration affichée, et surtout une durée fixée à 4 mois sans aucun renouvellement possible pour un véhicule importé.***
 
-![Plaque WW provisoire blanche apposée sur un véhicule importé en attente de sa carte grise définitive](/images/articles/plaque-ww-provisoire-duree-1.webp)
+Cette réforme remplace l'ancien système, qui permettait une prolongation de 2 mois. Voici ce qui a changé, ce qui reste identique, et comment éviter de vous retrouver sans immatriculation valide en plein milieu d'un dossier de carte grise.
 
-## Durée maximale d’une plaque WW provisoire en 2026
+TL;DR : la plaque WW provisoire ne se renouvelle plus depuis 2026.
 
-En France, une plaque WW provisoire est valable \*\*4 mois maximum\*\* à compter de sa date d’émission, comme le précise service-public.gouv.fr. Cette durée peut être prolongée \*\*une seule fois\*\* pour \*\*2 mois supplémentaires\*\*, soit un total de \*\*6 mois\*\*. Passé ce délai, le véhicule ne peut plus circuler légalement en France sans immatriculation définitive. Cette règle s’applique à tous les véhicules importés, qu’ils proviennent de l’Union européenne ou d’un pays tiers. Les démarches d’immatriculation pour un véhicule importé sont détaillées dans [notre guide sur l’immatriculation et l’import de véhicules](/carte-grise-demarches/immatriculation-import).
+-   Durée standard pour un véhicule importé : **4 mois**, non renouvelable.
+-   Durée spécifique carrossage ou engin agricole automoteur : **6 mois**, non renouvelable.
+-   La plaque est désormais **rose à caractères noirs**, avec le mois et l'année d'expiration affichés directement dessus.
 
-## Quand et comment renouveler une plaque WW provisoire ?
+![Plaque WW provisoire apposée sur un véhicule importé en attente de sa carte grise définitive](/images/articles/plaque-ww-provisoire-duree-1.webp)
 
-Le renouvellement n’est pas automatique. Il doit être demandé \*\*avant l’expiration\*\* de la plaque en cours, idéalement \*\*15 jours avant la fin de validité\*\*. La demande se fait en ligne sur le site de l’ANTS ou via un professionnel agréé. Ainsi, la première prolongation (de 4 à 6 mois) est possible une seule fois. Le dossier doit être complet et déposé dans les temps. Le délai de traitement est de \*\*5 à 10 jours ouvrés\*\* pour obtenir le nouveau certificat provisoire, comme indiqué sur ants.gouv.fr.
+## Combien de temps dure une plaque WW provisoire en 2026 ?
+
+Depuis l'arrêté entré en vigueur le 1er janvier 2026, une plaque WW standard, délivrée pour un véhicule importé en attente de sa carte grise définitive, reste valable **4 mois**, sans possibilité de renouvellement. L'ancien système autorisait 2 mois puis une prolongation automatique de 2 mois supplémentaires, pour un total équivalent, mais la reconduction a désormais disparu.
+
+Ce changement ne modifie donc pas la durée totale maximale pour un dossier d'import classique, mais il supprime l'étape de prolongation. Passé ce délai de 4 mois, impossible d'obtenir un nouveau certificat provisoire pour le même véhicule : la carte grise définitive doit être délivrée avant l'échéance, ou le véhicule cesse de pouvoir circuler légalement.
+
+| Situation | Durée depuis 2026 | Renouvelable ? |
+| --- | --- | --- |
+| Véhicule importé en attente de carte grise définitive | 4 mois | Non |
+| Véhicule destiné à l'exportation | 4 mois | Non |
+| Carrossage ou engin agricole automoteur incomplet | 6 mois | Non |
+
+*Source : arrêté relatif aux plaques d'immatriculation provisoires, entré en vigueur le 1er janvier 2026*
+
+## Pourquoi la plaque WW est-elle devenue rose ?
+
+La nouvelle plaque WW affiche un fond rose à caractères noirs, avec la date de fin de validité (mois et année) inscrite directement sur la plaque, à droite. Cette évolution vise à faciliter le repérage par les forces de l'ordre et à limiter la fraude, un véhicule circulant au-delà de l'échéance affichée devenant immédiatement identifiable lors d'un contrôle routier. Les plaques blanches émises avant la réforme restent valables jusqu'à leur propre date d'expiration, sans obligation de remplacement anticipé.
 
 ## Quels véhicules nécessitent une plaque WW provisoire ?
 
-La plaque WW provisoire est obligatoire pour tous les véhicules importés sans immatriculation française définitive. Cela concerne notamment :
+La plaque WW reste obligatoire pour tout véhicule qui ne dispose pas encore d'une immatriculation française définitive. Cela concerne principalement :
 
--   Les véhicules achetés à l’étranger (neufs ou d’occasion).
--   Les véhicules importés depuis un pays hors Union européenne.
--   Les véhicules ayant changé de propriétaire à l’étranger et nécessitant une nouvelle immatriculation en France.
+-   Les véhicules **achetés à l'étranger**, neufs ou d'occasion.
+-   Les véhicules **importés depuis un pays hors Union européenne**, en attente de leur quitus fiscal et de leur certificat de conformité.
+-   Les véhicules ayant changé de propriétaire à l'étranger et nécessitant une nouvelle immatriculation en France.
 
-À noter : une plaque WW provisoire ne peut pas être utilisée pour un véhicule déjà immatriculé en France. Dans ce cas, une nouvelle carte grise doit être demandée via la procédure classique.
+Notre guide sur l'[immatriculation et l'import de véhicules](/immatriculation-import/) détaille le dossier complet à constituer, pièce par pièce, selon l'origine du véhicule. Pour un véhicule venu d'un pays hors UE, le [quitus fiscal](/quitus-fiscal-vehicule-etranger/) reste un préalable indispensable avant toute démarche d'immatriculation définitive, tout comme l'ensemble de la procédure détaillée dans notre guide pour [immatriculer un véhicule importé](/immatriculer-vehicule-importe/).
 
-## Assurance obligatoire avec une plaque WW provisoire
+## Comment obtenir une plaque WW provisoire en 2026 ?
 
-Circuler avec une plaque WW provisoire sans assurance valide est strictement interdit. Selon legifrance.gouv.fr, cela expose à des sanctions lourdes, comme une amende jusqu’à 3 750 € ou l’immobilisation du véhicule.
+La démarche se fait entièrement en ligne, sur ants.gouv.fr, en quelques étapes.
 
--   **Assurance temporaire obligatoire :** le véhicule doit être assuré au minimum en \*\*responsabilité civile\*\*.
--   **Durée de couverture :** l’assurance doit couvrir toute la période de validité de la plaque WW, y compris en cas de prolongation.
--   **Attestation d’assurance :** le certificat doit être présenté en cas de contrôle routier.
+1.  **Réunissez vos documents** : pièce d'identité, justificatif de domicile de moins de 6 mois, certificat de conformité européen ou [certificat de conformité (COC)](/certificat-conformite-europeen-coc/), facture d'achat ou certificat de cession, et attestation d'assurance temporaire.
+2.  **Connectez-vous à votre compte ANTS** ou créez-en un si besoin.
+3.  **Sélectionnez « Demande de certificat provisoire d'immatriculation »** dans la rubrique immatriculation, et joignez les pièces demandées.
+4.  **Validez et réglez les frais de dossier**, de l'ordre de quelques dizaines d'euros selon votre région et le type de véhicule.
+5.  **Recevez votre certificat** par voie électronique, généralement sous 5 à 10 jours ouvrés. La plaque physique se commande ensuite séparément auprès d'un professionnel agréé.
 
-## Démarches pour obtenir une plaque WW provisoire en 2026
+Pour une immatriculation définitive classique une fois le dossier complet, notre article sur les [démarches carte grise ANTS](/carte-grise-ants-demarches/) reprend l'ensemble de la procédure standard.
 
-L’obtention d’une plaque WW provisoire se fait principalement en ligne via le site de l’ANTS. Voici les étapes clés.
+## Faut-il une assurance spécifique pendant la période WW ?
 
-### 1\. Préparer les documents nécessaires
+Oui. Circuler avec une plaque WW sans assurance valide reste strictement interdit et expose à une amende pouvant atteindre 3 750 €, ainsi qu'à l'immobilisation du véhicule. L'assurance doit couvrir a minima la **responsabilité civile**, et sa durée doit correspondre à celle de la plaque provisoire. La plupart des assureurs acceptent d'ouvrir un contrat sur la base de la carte grise étrangère et de la facture d'achat, sans attendre la carte grise française définitive.
 
--   Justificatif d’identité.
--   Justificatif de domicile de moins de 6 mois.
--   Certificat de conformité européen.
--   Facture d’achat ou certificat de cession du véhicule.
--   Preuve de l’importation (si le véhicule provient d’un pays hors UE).
--   Attestation d’assurance temporaire.
+## Que faire si la carte grise définitive n'arrive pas à temps ?
 
-### 2\. Créer un compte sur ants.gouv.fr
+Puisque la plaque WW ne se renouvelle plus depuis 2026, un dossier qui traîne devient urgent dès les premières semaines. Trois options existent :
 
-Rendez-vous sur le site officiel et créez un compte si ce n’est pas déjà fait.
-
-### 3\. Déposer la demande de plaque WW
-
-Connectez-vous à votre espace personnel. Sélectionnez ensuite la rubrique « Immatriculation » puis « Demande de certificat provisoire d’immatriculation (CPI) ». Remplissez le formulaire en ligne et joignez les documents demandés. Validez enfin et payez les frais de dossier (\*\*13,76 € en 2026\*\*).
-
-### 4\. Recevoir le certificat provisoire
-
-Le certificat provisoire est généralement délivré sous \*\*5 à 10 jours ouvrés\*\* après validation du dossier. Il est envoyé par email et doit être imprimé ou conservé sur un support numérique. Par conséquent, la plaque WW physique est à commander séparément auprès d’un professionnel agréé. Une fois le certificat provisoire reçu, vous avez \*\*1 mois\*\* pour faire apposer la plaque WW sur votre véhicule. Passé ce délai, le certificat devient caduc.
-
-## Que faire si la carte grise définitive n’est pas obtenue dans les 6 mois ?
-
-Si la carte grise définitive n’est toujours pas délivrée après les 6 mois de validité de la plaque WW, le véhicule ne peut plus circuler légalement en France. Plusieurs solutions existent.
-
--   **Demander une prorogation exceptionnelle**
-    
-    Dans certains cas, une prorogation peut être accordée par les services préfectoraux. Cette demande doit être justifiée par des documents officiels.
-    
--   **Faire immatriculer le véhicule à l’étranger**
-    
-    Si la carte grise française n’est pas obtenue dans les délais, vous pouvez demander une immatriculation temporaire dans le pays d’achat. Ensuite, réimportez le véhicule en France avec une nouvelle plaque WW.
-    
--   **Vendre le véhicule en l’état**
-    
-    Si aucune solution ne permet d’obtenir la carte grise dans les temps, la vente du véhicule à un professionnel peut être une issue.
-    
-
-Dans tous les cas, il est interdit de rouler sans plaque valide ou sans carte grise définitive. Les sanctions peuvent aller jusqu’à l’immobilisation du véhicule.
+-   **Relancer activement votre dossier** auprès de l'ANTS ou du professionnel qui vous accompagne, en vérifiant l'état d'avancement dans votre espace personnel. Notre article sur le [délai d'obtention de la carte grise après achat](/delai-carte-grise-apres-achat/) donne un ordre de grandeur réaliste pour anticiper ce suivi.
+-   **Vérifier les documents en attente**, en particulier le quitus fiscal pour un véhicule hors UE : c'est souvent la pièce qui bloque le dossier le plus longtemps.
+-   **Ne jamais circuler au-delà de l'échéance affichée sur la plaque** : sans certificat valide, vous risquez l'immobilisation immédiate du véhicule lors d'un contrôle.
 
 ## Plaque WW provisoire : erreurs à éviter absolument
 
--   **Oublier de souscrire une assurance temporaire**
-    
-    Circuler sans assurance valide est passible d’une amende de 3 750 € et d’une immobilisation du véhicule.
-    
--   **Ne pas respecter les délais de demande de prolongation**
-    
-    Une demande de prolongation doit être déposée avant l’expiration de la plaque en cours. Un dossier déposé en retard sera rejeté.
-    
--   **Utiliser une plaque WW pour un véhicule déjà immatriculé en France**
-    
-    Une plaque WW provisoire est réservée aux véhicules importés en attente de leur carte grise française.
-    
--   **Négliger la conformité du véhicule**
-    
-    Le certificat de conformité européen est obligatoire pour obtenir une plaque WW.
-    
--   **Rouler sans le certificat provisoire imprimé ou numérique**
-    
-    Le certificat provisoire doit être présenté en cas de contrôle routier.
-    
+-   **Attendre la dernière semaine pour relancer le dossier.** Sans renouvellement possible, un retard de quelques jours suffit à vous laisser sans immatriculation valide.
+-   **Négliger l'assurance temporaire.** Son absence coûte jusqu'à 3 750 € d'amende, en plus de l'immobilisation du véhicule.
+-   **Confondre la plaque WW avec une immatriculation définitive.** Elle ne dispense d'aucune démarche : elle évite seulement d'immobiliser le véhicule pendant l'instruction du dossier.
+-   **Oublier le certificat de conformité européen.** Sans lui, la demande de certificat provisoire est rejetée d'office.
+-   **Circuler sans le certificat imprimé ou accessible numériquement.** Il doit être présenté à chaque contrôle routier, au même titre qu'une carte grise classique.
 
-## Combien coûte une plaque WW provisoire en 2026 ?
+## Questions fréquentes
 
-Le coût d’une plaque WW provisoire se compose de plusieurs postes.
+### Combien de temps dure une plaque WW provisoire en 2026 ?
 
-<table><tbody><tr><td><strong>Poste de dépense</strong></td><td><strong>Coût estimé</strong></td></tr><tr><td>Frais de dossier ANTS</td><td>13,76 €</td></tr><tr><td>Plaque WW physique</td><td>20 € à 50 €</td></tr><tr><td>Assurance temporaire (4 mois)</td><td>50 € à 150 €</td></tr><tr><td>Certificat de conformité</td><td>100 € à 300 €</td></tr></tbody></table>
+Pour un véhicule importé en attente de sa carte grise définitive, la durée est de 4 mois, sans renouvellement possible depuis l'entrée en vigueur de la réforme au 1er janvier 2026.
 
-*Source : ants.gouv.fr*
+### Peut-on encore prolonger une plaque WW au-delà de 4 mois ?
 
-Ainsi, le budget total pour une plaque WW provisoire (hors certificat de conformité) varie entre \*\*80 € et 250 €\*\* selon les options choisies.
+Non. La reconduction automatique qui existait auparavant a été supprimée. Passé le délai, seule la carte grise définitive permet de continuer à circuler légalement.
 
-## Que faire en cas de perte ou de vol de la plaque WW provisoire ?
+### Pourquoi la plaque WW est-elle désormais rose ?
 
-En cas de perte ou de vol de la plaque WW provisoire, vous devez suivre ces étapes.
+Pour faciliter son repérage par les forces de l'ordre et limiter la fraude. La date d'expiration, mois et année, figure directement sur la plaque.
 
--   Déclarer la perte ou le vol auprès des forces de l’ordre et obtenir un récépissé.
--   Faire une nouvelle demande de certificat provisoire sur ants.gouv.fr. Joignez le récépissé et une nouvelle attestation d’assurance.
--   Commander une nouvelle plaque WW physique auprès d’un professionnel agréé.
+### Une plaque WW provisoire est-elle valable pour un véhicule déjà immatriculé en France ?
 
-## Plaque WW provisoire vs. plaque WW définitive : quelles différences ?
+Non. Elle est réservée aux véhicules sans immatriculation française définitive, notamment ceux importés de l'étranger.
 
-Il ne faut pas confondre la plaque WW provisoire et la plaque WW définitive, valable 1 an. Voici les principales différences.
+### Faut-il une assurance particulière pendant la période de validité de la plaque WW ?
 
-<table><tbody><tr><td></td><th><strong>Plaque WW provisoire</strong></th><th><strong>Plaque WW définitive</strong></th></tr><tr><td><strong>Durée de validité</strong></td><td>6 mois max</td><td>1 an (renouvelable)</td></tr><tr><td><strong>Usage</strong></td><td>Véhicule importé en attente de carte grise définitive</td><td>Véhicule en attente de régularisation administrative</td></tr><tr><td><strong>Obligation d’assurance</strong></td><td>Assurance temporaire obligatoire</td><td>Assurance classique obligatoire</td></tr></tbody></table>
+Oui, une assurance responsabilité civile au minimum, valable pour toute la durée de la plaque. Son absence expose à une amende de 3 750 € et à l'immobilisation du véhicule.
 
-*Source : service-public.gouv.fr*
+### Quels véhicules bénéficient d'une plaque WW valable 6 mois ?
 
-La plaque WW provisoire est donc une solution temporaire pour les véhicules importés.
+Les véhicules neufs incomplets destinés au carrossage et les engins agricoles automoteurs, dont la durée a également été doublée mais reste, elle aussi, non renouvelable.

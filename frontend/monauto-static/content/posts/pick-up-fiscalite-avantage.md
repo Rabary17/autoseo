@@ -1,7 +1,7 @@
 ---
-title: "Pick-up et fiscalité : quels avantages pour les pros en 2026 ?"
-description: "Un pick-up immatriculé en CTTE échappe à la TVS, permet de récupérer 20 % de TVA et contourne le malus écologique. Explications et conditions pour les flot"
-date: "2026-08-20"
+title: "Pick-up et fiscalité en 2026 : quels avantages réels pour les professionnels ?"
+description: "Depuis la loi de finances 2025, un pick-up double cabine à 5 places paie malus et taxes comme une voiture. Seule la cabine simple reste exonérée. Le détail."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "choisir-un-utilitaire"
 wp_id: 1522
@@ -9,84 +9,106 @@ wp_locale: "fr"
 image: "/images/articles/pick-up-fiscalite-avantage-couverture.webp"
 imageAlt: "Pick-up et fiscalité : quels avantages pour les pros en 2026 ?"
 ---
-Un pick-up immatriculé en CTTE (catégorie utilitaire) échappe à la Taxe sur les Véhicules de Société (TVS). Il récupère aussi 20 % de TVA sur le loyer ou l’achat. Enfin, il contourne le malus écologique. Ainsi, ces trois leviers fiscaux réduisent le coût total de détention de 30 à 50 % par rapport à un véhicule particulier équivalent. Le dossier [Choisir un utilitaire](/utilitaires-flottes-pro/choisir-un-utilitaire) replace ce choix dans l’ensemble de la gamme.
+***Un pick-up à cabine simple et deux places échappe encore au malus et aux taxes annuelles sur les véhicules. Un pick-up double cabine à cinq places, lui, est désormais traité fiscalement comme une voiture particulière depuis la loi de finances 2025.***
 
-## 1\. Exonération de TVS : le pick-up utilitaire sort du radar fiscal
+Beaucoup d'entreprises croient encore qu'un pick-up CTTE échappe automatiquement à toute fiscalité lourde. Ce n'était vrai avant 2025. Voici ce qui reste exonéré, ce qui ne l'est plus, et comment éviter une mauvaise surprise sur votre prochain véhicule professionnel.
 
-![Pick-up utilitaire Ford Ranger sur un chantier, benne chargée d'outils](/images/articles/pick-up-fiscalite-avantage-1.webp)
+TL;DR : depuis la loi de finances 2025, le nombre de places détermine tout.
 
-La Taxe sur les Véhicules de Société (TVS) a été remplacée en 2022 par deux taxes annuelles. L’une cible les émissions de CO₂, l’autre les polluants atmosphériques. Toutefois, les pick-up immatriculés en CTTE (mention CTTE sur la carte grise, deux places max) en sont totalement exonérés. Cette exonération s’applique quelle que soit leur motorisation ou leur ancienneté. Par conséquent, une économie de 2 000 € à 6 500 € par an est possible selon la puissance fiscale du véhicule.
+-   Un pick-up **cabine simple (2 places)** reste exonéré du malus écologique et des taxes annuelles.
+-   Un pick-up **double cabine (5 places)** est **assimilé à une voiture particulière** : malus à l'achat et taxes annuelles identiques.
+-   La TVA suit la même logique : **100 % récupérable** sur une cabine simple à usage pro exclusif, **non récupérable** sur une double cabine.
 
-Pour vérifier l’éligibilité de votre pick-up, consultez la case J.1 de la carte grise. Si elle indique « CTTE », l’exonération s’applique automatiquement. Aucun justificatif supplémentaire n’est requis lors de la déclaration fiscale annuelle.
+![Pick-up utilitaire sur un chantier, benne chargée d'outils](/images/articles/pick-up-fiscalite-avantage-1.webp)
 
-### Cas pratique : un Ford Ranger 2.0 EcoBlue 213 ch en LLD
+## Pourquoi la plupart des pick-up ne sont plus exonérés de malus ?
 
-Un artisan loue ce pick-up en Location Longue Durée (LLD) pour 850 € HT/mois. Sans l’exonération TVS, il paierait environ 3 200 € de taxe annuelle (barème 2026 pour 10 CV). En effet, avec l’immatriculation CTTE, cette somme disparaît entièrement de sa liasse fiscale.
+Depuis l'article 97 de la loi de finances 2024, précisé par l'article 28 de la loi de finances 2025, un **camion pick-up** (code carrosserie BE en case J2) avec **au moins 5 places assises** est assimilé à une voiture particulière. Il paie donc le malus écologique à l'achat, comme n'importe quel SUV.
 
-## 2\. Récupération de la TVA : 20 % de réduction immédiate
+Cette requalification visait justement les pick-up double cabine devenus, selon les parlementaires, un contournement du malus pour des véhicules familiaux haut de gamme. Or la quasi-totalité des pick-up vendus en France aux particuliers et aux PME (Ford Ranger, Toyota Hilux, Mitsubishi L200, Volkswagen Amarok, Isuzu D-Max) le sont en version double cabine, à 4 ou 5 places. **Ces modèles paient désormais le malus**, calculé sur leurs émissions de CO₂ comme une voiture de tourisme.
 
-Les entreprises récupèrent 20 % de TVA sur l’achat ou la location d’un pick-up CTTE. Cette règle s’applique à condition que le véhicule soit utilisé exclusivement à des fins professionnelles. Elle concerne aussi bien les loyers de LLD que les mensualités de crédit-bail ou d’achat à crédit.
+Seule une version **cabine simple**, à deux places et benne nue ou plateau, continue d'échapper à cette requalification. Elle reste rare au catalogue, réservée aux flottes de chantier ou aux métiers agricoles, et son code carrosserie diffère sur la carte grise.
 
-Attention, si le pick-up sert aussi à des trajets privés, même occasionnels, la TVA devient partiellement ou totalement non récupérable. L’administration fiscale peut exiger des justificatifs comme un carnet de bord ou un relevé kilométrique. Ces documents doivent prouver l’usage professionnel exclusif.
+### Qui reste réellement exonéré en 2026 ?
 
-### Exemple chiffré : Toyota Hilux 2.8 D-4D 204 ch
-
-Achat comptant : 45 000 € HT. La TVA récupérable s’élève à 9 000 € (20 % de 45 000 €). En LLD sur 48 mois à 700 € HT/mois, l’entreprise récupère 140 € de TVA par mois. Ainsi, cela représente 6 720 € sur la durée du contrat.
-
-## 3\. Contournement du malus écologique : le pick-up CTTE évite la facture salée
-
-Le malus écologique 2026 frappe les véhicules neufs émettant plus de 108 g/km de CO₂. Le plafond est fixé à 80 000 € pour les modèles les plus polluants (192 g/km et plus). En revanche, les pick-up immatriculés en CTTE échappent à ce malus, même s’ils dépassent largement ce seuil.
-
-Par exemple, un Nissan Navara 2.3 dCi 190 ch (198 g/km) ne paiera aucun malus à l’achat. Un SUV particulier équivalent serait taxé à 20 000 €. Cette exemption s’applique uniquement aux véhicules de catégorie CTTE. Un pick-up immatriculé en VP (véhicule particulier) reste soumis au malus, même s’il est utilisé à 100 % pour le travail.
-
-### Comparatif malus : pick-up CTTE vs VP
-
-| **Modèle** | **Émissions CO₂ (g/km)** | **Malus VP (2026)** | **Malus CTTE (2026)** |
+| Configuration | Places assises | Code carrosserie (case J2) | Statut fiscal 2026 |
 | --- | --- | --- | --- |
-| Mitsubishi L200 2.4 DI-D 181 ch | 206 | 36 000 € | 0 € |
-| Volkswagen Amarok 3.0 V6 TDI 240 ch | 235 | 60 000 € | 0 € |
-| Ram 1500 5.7 V8 HEMI | 320 | 80 000 € (plafond) | 0 € |
+| Pick-up cabine simple | 2 | BE, usage utilitaire strict | Exonéré (malus et taxes annuelles) |
+| Pick-up double cabine | 4 ou 5 | BE | Assimilé véhicule de tourisme : malus et taxes dus |
+| Pick-up dédié aux stations de ski ou remontées mécaniques | Variable | BE | Exonéré, usage dérogatoire |
 
-Source : barème du malus écologique 2026 et fiches techniques constructeurs.
+*Source : service-public.gouv.fr (fiche entreprendre), articles 97 (LF 2024) et 28 (LF 2025)*
 
-## 4\. Bonus écologique : les pros sont exclus depuis 2025
+## Un pick-up double cabine paie-t-il le malus écologique ?
 
-Depuis le 1er janvier 2025, les entreprises (personnes morales) ne bénéficient plus du bonus écologique. Cette suppression concerne aussi bien les véhicules particuliers que les utilitaires légers, y compris les pick-up. Seuls les particuliers (personnes physiques) peuvent encore en profiter. Les montants vont jusqu’à 5 700 € pour les ménages précaires.
+Oui, depuis 2025. Un pick-up double cabine à 5 places est assimilé à une voiture particulière et paie le malus écologique calculé sur ses émissions de CO₂, exactement comme un SUV diesel équivalent. Le seuil de déclenchement 2026 est fixé à 108 g/km, avec un plafond de 80 000 € atteint à 192 g/km.
 
-Pour les pros, cette mesure annule un avantage qui pouvait atteindre 7 000 € pour un pick-up électrique. Par exemple, le Rivian R1T ou le Ford F-150 Lightning ne bénéficient plus de cette aide. Les flottes doivent désormais intégrer ce coût supplémentaire dans leur budget.
+Concrètement, un pick-up double cabine diesel qui affiche entre 180 et 210 g/km de CO₂, ce qui reste courant sur ce segment, entre dans une tranche haute du barème. Avant de signer un bon de commande, vérifiez toujours le nombre de places inscrit sur la fiche technique **et** sur la carte grise, car un même modèle existe parfois en version 4 et 5 places selon les marchés.
 
-## 5\. LLD : les loyers déductibles et la TVA récupérable en un seul contrat
+## Les taxes annuelles sur les véhicules : qui paie encore ?
 
-La Location Longue Durée (LLD) cumule deux avantages fiscaux pour les pick-up CTTE. D’abord, les loyers sont considérés comme des charges d’exploitation. Ils sont intégralement déductibles du résultat imposable. Ensuite, la TVA est récupérable en totalité (20 %) si l’usage est exclusivement professionnel.
+La Taxe sur les Véhicules de Société (TVS) a disparu en 2022, remplacée par deux taxes annuelles : l'une sur les **émissions de CO₂**, l'autre sur les **polluants atmosphériques**. Un pick-up cabine simple, resté hors du champ des véhicules de tourisme, **échappe aux deux**. Un pick-up double cabine assimilé à une voiture particulière, lui, **les paie intégralement**, que l'entreprise l'utilise exclusivement pour des chantiers ou non.
 
-Ces mécanismes réduisent significativement le coût réel du véhicule. Par exemple, pour un loyer de 900 € HT/mois, l’entreprise ne paie effectivement que 720 € après récupération de TVA. Elle déduit aussi les 900 € de son résultat imposable.
+Pour une entreprise qui détient plusieurs pick-up double cabine en flotte, cette taxe annuelle s'ajoute chaque année au coût de possession, en plus du malus déjà payé à l'achat. Le cumul peut représenter plusieurs milliers d'euros par an selon la puissance fiscale et les émissions du véhicule. Notre guide sur le [calcul de la taxe sur les véhicules de société](/tvs-taxe-vehicules-societe-calcul/) détaille la méthode précise pour estimer ce montant selon votre parc.
 
-### Cas d’entreprise : une PME du BTP avec 5 pick-up en LLD
+## La TVA est-elle récupérable sur un pick-up professionnel ?
 
-Loyer mensuel par véhicule : 800 € HT. Sur 36 mois, l’entreprise paie 28 800 € HT par pick-up. Toutefois, elle récupère 5 760 € de TVA (20 %). Elle déduit aussi 28 800 € de son résultat imposable. Avec un taux d’IS à 25 %, l’économie d’impôt s’élève à 7 200 € par véhicule. Ainsi, le coût réel après impôt tombe à 15 840 € sur 3 ans, soit 440 €/mois.
+Sur une cabine simple à usage professionnel exclusif, la TVA est récupérable à 100 % sur l'achat, la location longue durée ou le crédit-bail. Sur une double cabine assimilée à une voiture de tourisme, la TVA suit la règle des véhicules particuliers : elle n'est en principe pas récupérable, sauf activités dérogatoires comme les auto-écoles ou les loueurs.
 
-## 6\. Attention aux pièges : quand le pick-up perd son statut utilitaire
+Cette distinction change tout le calcul économique d'un dossier de financement. Pour un achat de 45 000 € HT, la différence entre récupération totale et absence de récupération représente 9 000 € de TVA, un écart que beaucoup de gestionnaires de flotte découvrent trop tard, une fois le bon de commande signé.
 
-Plusieurs situations peuvent faire basculer un pick-up CTTE en VP (véhicule particulier). Les conséquences fiscales sont alors lourdes :
+### Exemple chiffré avant et après requalification
 
--   **Ajout de sièges arrière** : même une banquette occasionnelle fait perdre la mention CTTE. Par exemple, un Ford Ranger Wildtrak avec sièges arrière optionnels devient VP dès leur installation.
--   **Usage privé régulier** : si l’administration fiscale prouve que le pick-up sert aussi à des trajets non professionnels (week-ends, vacances), elle peut requalifier le véhicule en VP. Elle peut alors exiger le paiement rétroactif de la TVS et du malus.
--   **Modification de la carte grise** : toute transformation qui augmente le nombre de places (passage de 2 à 5 places) entraîne automatiquement une requalification en VP.
+Pour un pick-up double cabine à 204 ch affichant 195 g/km de CO₂, acheté 48 000 € HT par une société :
 
-Pour éviter ces risques, conservez tous les justificatifs d’usage professionnel. Factures, bons de livraison ou carnets de bord doivent couvrir au moins 6 ans.
+-   **TVA récupérable** : 0 € (véhicule assimilé à une voiture de tourisme).
+-   **Malus à l'achat** : plusieurs dizaines de milliers d'euros selon le barème 2026, à vérifier précisément avant commande.
+-   **Taxe annuelle CO₂ et polluants** : due chaque année de détention.
 
-## 7\. Road trip en Europe : la vignette roumaine à 28 €/an
+Une cabine simple équivalente, achetée au même prix pour un usage de chantier, récupère l'intégralité de la TVA et ne paie ni malus ni taxe annuelle.
 
-![Pick-up roulant sur une route roumaine avec panneau indiquant la vignette obligatoire](/images/articles/pick-up-fiscalite-avantage-2.webp)
+## Bonus écologique : les entreprises restent exclues
 
-Si vous roulez en pick-up en Roumanie, la vignette électronique Rovinieta est obligatoire. Elle concerne tous les véhicules jusqu’à 3,5 tonnes. En 2026, les tarifs restent parmi les plus avantageux d’Europe : 3 € pour 7 jours, 7 € pour un mois, 13 € pour 90 jours, ou 28 € pour un an. La vignette est liée à la plaque d’immatriculation et contrôlée par caméras ANPR.
+Depuis le 1er janvier 2025, les entreprises (personnes morales) ne bénéficient plus du bonus écologique, quelle que soit la motorisation du véhicule. Seuls les particuliers peuvent encore y prétendre pour un achat de véhicule électrique, avec des montants modulés selon le revenu fiscal. Pour un pick-up électrique, aucun constructeur généraliste ne commercialise aujourd'hui un modèle homologué à large échelle sur le marché français, ce segment reste encore embryonnaire en 2026.
 
-Pour les pros qui traversent régulièrement la Roumanie, l’abonnement annuel à 28 € est le plus économique. À titre de comparaison, la vignette autrichienne coûte 96 €/an pour les véhicules utilitaires. La suisse, elle, coûte 40 CHF (environ 42 €) pour 14 mois.
+## LLD et crédit-bail : quel montage reste pertinent ?
 
-### Où acheter la Rovinieta ?
+La location longue durée reste un montage courant pour les flottes de pick-up cabine simple : les loyers restent intégralement déductibles du résultat imposable, et la TVA reste récupérable à 100 % si l'usage professionnel est exclusif. Conservez systématiquement un carnet de bord ou un relevé kilométrique : en cas de contrôle, l'administration peut exiger la preuve que le véhicule ne sert jamais à un usage privé, faute de quoi elle requalifie l'avantage et réclame un rattrapage fiscal rétroactif.
 
--   En ligne sur le site officiel roviniete.ro (paiement par carte).
--   Dans les stations-service Petrom ou OMV le long des frontières.
--   Via des plateformes comme Winiety24 ou Vintra. Attention aux frais de commission.
+Pour un pick-up double cabine désormais assimilé à une voiture de tourisme, la LLD garde un intérêt pratique (pas d'immobilisation de trésorerie), mais perd son avantage fiscal spécifique : le traitement comptable et fiscal rejoint celui d'une voiture de fonction classique. Notre dossier [TVA récupérable sur les utilitaires](/tva-recuperable-utilitaire/) détaille les justificatifs à conserver, et notre guide sur l'[amortissement des véhicules de société](/amortissement-vehicule-societe-plafond/) précise les plafonds applicables aux véhicules assimilés à des voitures de tourisme.
 
-La vignette est valable immédiatement après l’achat en ligne. Conservez le justificatif de paiement pendant toute la durée de validité. En cas de contrôle, les autorités roumaines vérifient la plaque via leur base de données.
+## Comment éviter une requalification fiscale coûteuse ?
+
+Trois vérifications évitent une mauvaise surprise au moment du contrôle fiscal ou d'une revente.
+
+-   **Vérifiez le nombre de places sur la carte grise**, pas seulement sur la fiche commerciale. Un ajout de banquette arrière, même en option, fait basculer le véhicule en 5 places et déclenche la requalification.
+-   **Gardez les justificatifs d'usage professionnel** pendant au moins six ans : factures de chantier, bons de livraison, carnet de bord. L'administration peut les demander en cas de contrôle.
+-   **Anticipez le coût réel avant de signer**, en demandant au concessionnaire le barème de malus applicable à la configuration exacte du véhicule, cabine simple ou double, avant la commande plutôt qu'après la livraison.
+
+Pour comparer ce choix aux autres catégories d'utilitaires, notre dossier [choisir un utilitaire](/choisir-un-utilitaire/) replace le pick-up dans l'ensemble de la gamme professionnelle, aux côtés des fourgons et des véhicules électriques. Notre article sur l'[avantage en nature d'un véhicule de fonction](/avantage-en-nature-vehicule-fonction/) complète ce panorama pour les salariés qui disposent d'un pick-up à titre personnel. Pour une flotte qui mixe plusieurs pick-up, notre guide sur la [gestion de flotte en logiciel pour TPE](/gestion-flotte-logiciel-tpe/) aide à centraliser le suivi fiscal et kilométrique de chaque véhicule.
+
+## Questions fréquentes
+
+### Un pick-up double cabine paie-t-il encore le malus écologique en 2026 ?
+
+Oui. Depuis la loi de finances 2025, un pick-up à 5 places est assimilé à une voiture particulière et paie le malus écologique calculé sur ses émissions de CO₂, comme n'importe quel véhicule de tourisme.
+
+### Quel pick-up reste exonéré de malus et de taxes annuelles ?
+
+Seul le pick-up cabine simple, à deux places, conserve son statut utilitaire exonéré. La version double cabine à 4 ou 5 places est désormais traitée comme une voiture de tourisme.
+
+### La TVA reste-t-elle récupérable sur un pick-up professionnel ?
+
+Seulement sur une cabine simple à usage professionnel exclusif, où la récupération atteint 100 %. Sur une double cabine assimilée à une voiture de tourisme, la TVA n'est en principe pas récupérable.
+
+### Les entreprises peuvent-elles toucher le bonus écologique sur un pick-up électrique ?
+
+Non. Depuis le 1er janvier 2025, le bonus écologique est réservé aux particuliers, quel que soit le type de véhicule électrique acheté.
+
+### Que risque une entreprise qui déclare à tort un pick-up double cabine comme exonéré ?
+
+Un redressement fiscal rétroactif, avec paiement du malus et des taxes annuelles dues depuis l'achat, majorés d'intérêts de retard en cas de contrôle.
+
+### Comment savoir si mon pick-up est une cabine simple ou une double cabine au sens fiscal ?
+
+Vérifiez le nombre de places assises et le code carrosserie en case J2 de la carte grise. Cinq places assises suffisent à déclencher l'assimilation à une voiture de tourisme.

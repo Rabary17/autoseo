@@ -1,131 +1,135 @@
 ---
 title: "Réglementation EDPM 2026 : ce qui change pour les trottinettes et engins électriques"
-description: "Depuis 2019, les trottinettes électriques et autres EDPM sont encadrés par la loi. Âge minimum, vitesse, équipement, assurance : voici les règles 2026 à co"
-date: "2026-08-25"
+description: "Âge minimum, vitesse à 25 km/h, assurance obligatoire : les règles EDPM 2026 pour trottinettes et gyropodes, avec le barème complet des amendes."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1753
 wp_locale: "fr"
 image: "/images/articles/reglementation-edpm-2026-couverture.webp"
 imageAlt: "Réglementation EDPM 2026 : ce qui change pour les trottinettes et engins électriques"
 ---
-Vous prenez votre trottinette électrique pour aller au travail ou faire vos courses ? Depuis 2019, ces engins – appelés EDPM (Engins de Déplacement Personnel Motorisés) – ont leurs propres règles. Âge, vitesse, équipement, assurance : en 2026, certaines obligations restent les mêmes, mais d’autres évoluent.
+***Trottinettes, gyropodes, hoverboards : ces engins de déplacement personnel motorisés (EDPM) répondent à leurs propres règles depuis 2019. En 2026, l'essentiel reste stable, mais une amende peut vite tomber si vous ignorez un détail.***
 
-Voici ce qui compte vraiment pour éviter les amendes et rouler sans stress. Surtout si vous dépendez de votre engin pour vos trajets du quotidien.
+Voici ce qui compte vraiment pour rouler sans stress au quotidien, et éviter les sanctions les plus fréquentes.
+
+TL;DR : les règles EDPM restent globalement stables en 2026, avec des sanctions parfois lourdes.
+
+-   **Âge minimum : 14 ans**, assurance responsabilité civile **obligatoire** sous peine de 350 € d'amende.
+-   **Vitesse plafonnée à 25 km/h** : au-delà, jusqu'à 1 500 € d'amende et confiscation de l'engin.
+-   Le **Forfait Mobilités Durables** peut financer jusqu'à 600 €/an dans le privé pour vos trajets domicile-travail.
+
+![Utilisateur de trottinette électrique équipée de feux avant et arrière](/images/articles/reglementation-edpm-2026-1.webp)
 
 ## À partir de quel âge peut-on conduire une trottinette électrique ?
 
-14 ans minimum. Cette règle n’a pas changé en 2026. Elle s’applique à tous les EDPM : trottinettes, gyropodes, hoverboards.
+**Réponse directe** : 14 ans minimum, sans exception, pour tous les EDPM (trottinettes, gyropodes, hoverboards) circulant sur la voie publique. Cette règle ne s'applique pas dans un jardin privé ou sur un parking fermé, mais devient obligatoire dès qu'une roue touche la route ou une piste cyclable.
 
-Si vous avez un ado qui veut en acheter une, vérifiez son âge avant de signer le chèque. Sinon, c’est 35 € d’amende pour lui. Et l’engin sera confisqué.
+Un mineur contrôlé en dessous de cet âge risque 35 € d'amende, et l'engin peut être confisqué sur place. Avant d'équiper un adolescent, vérifiez donc son âge exact : la règle se base sur l'âge réel au moment du contrôle, pas sur l'année de naissance.
 
-Pourquoi 14 ans ? Parce qu’à cet âge, on commence à anticiper les dangers en ville. Un piéton qui traverse sans regarder, une voiture qui grille un stop, un scooter qui double trop près. En dessous, c’est trop risqué. La loi le rappelle.
+## Quelle est la vitesse maximale autorisée pour une trottinette électrique ?
 
-Un détail qui peut sauver votre portefeuille : cette règle ne s’applique pas dans votre jardin ou sur un parking privé. Mais dès que vous mettez un pied sur la route ou une piste cyclable, les 14 ans deviennent obligatoires.
+**Réponse directe** : 25 km/h, pas un de plus. Une trottinette débridée pour dépasser cette limite expose à une amende pouvant atteindre 1 500 €, assortie d'une confiscation de l'engin.
 
-## Quelle est la vitesse maximale autorisée ?
-
-![Utilisateur de trottinette électrique équipée de feux avant et arrière pour une meilleure visibilité nocturne](/images/articles/reglementation-edpm-2026-1.webp)
-
-25 km/h, pas un de plus. Si votre trottinette est débridée pour aller plus vite, vous risquez jusqu’à 1 500 € d’amende. Et la confiscation de l’engin.
-
-Les contrôles sont rares. Mais quand ils tombent, c’est sans pitié. Pourquoi cette limite ? Parce qu’au-delà, votre trottinette devient un cyclomoteur. Permis obligatoire, immatriculation, assurance spécifique. Bref, tout ce que vous vouliez éviter en achetant une trottinette.
-
-Si vous roulez tous les jours pour aller au boulot, une trottinette à 25 km/h vous évitera des ennuis. Et un budget assurance qui explose.
-
-Un conseil d’utilisateur : avant d’acheter, vérifiez la vitesse annoncée. Certains modèles low-cost dépassent les 25 km/h en sortie d’usine. C’est illégal. Mieux vaut payer 100 € de plus pour une trottinette homologuée. Que 1 500 € d’amende.
+Au-delà de 25 km/h, l'engin change de statut aux yeux de la loi et devient assimilable à un cyclomoteur : permis, immatriculation et assurance spécifique deviennent alors nécessaires, ce qui annule l'intérêt pratique d'une trottinette au quotidien. Avant d'acheter un modèle, vérifiez la vitesse homologuée annoncée par le fabricant : certains modèles d'entrée de gamme dépassent cette limite en sortie d'usine, une non-conformité qui reste de votre responsabilité une fois l'engin en circulation.
 
 ## Faut-il une assurance pour une trottinette électrique ?
 
-Oui. Et c’est obligatoire depuis 2019. Comme pour une voiture, vous devez souscrire une assurance responsabilité civile. Elle couvre les dommages que vous pourriez causer à autrui.
+**Réponse directe** : oui, obligatoire depuis 2019. Une assurance responsabilité civile couvre les dommages que vous pourriez causer à autrui. Son absence expose à 350 € d'amende, et en cas d'accident, vous restez responsable des dégâts même sans faute de votre part.
 
-Sans assurance, c’est 350 € d’amende. En cas d’accident, vous paierez de votre poche les dégâts. Même si ce n’est pas de votre faute.
+Comptez entre 30 € et 80 € par an pour une couverture de base, certaines assurances habitation incluant déjà cette garantie. Pour une protection complète incluant vol et casse, prévoyez plutôt 150 € à 200 € par an. Vérifiez toujours les exclusions : une trottinette volée garée devant chez vous n'est pas systématiquement couverte, sauf garantie vol spécifique. Notre article dédié sur l'[assurance trottinette obligatoire](/assurance-trottinette-obligatoire/) détaille les garanties à comparer avant de souscrire.
 
-Combien ça coûte ? Entre 30 € et 80 € par an pour une couverture de base. Certaines assurances habitation incluent cette garantie. Vérifiez votre contrat avant de souscrire.
+## Casque et équipements : que dit la loi en 2026 ?
 
-Par ailleurs, si vous voulez une protection complète (vol, casse), comptez plutôt 150 € à 200 € par an. Un piège à éviter : l’assurance ne couvre pas toujours les accessoires. Si on vous vole votre trottinette garée devant chez vous, vous ne serez pas remboursé. Sauf si vous avez une garantie vol. Lisez les petites lignes.
+Le casque n'est pas obligatoire pour les adultes, mais fortement recommandé. Pour les mineurs de 14 à 18 ans, il reste **obligatoire**, sous peine de 135 € d'amende. Il doit être homologué et correctement attaché. Notre guide sur le [casque trottinette obligatoire](/casque-trottinette-obligatoire/) détaille les normes à vérifier avant l'achat.
 
-## Casque, gilet réfléchissant : quels équipements sont obligatoires ?
-
-En 2026, le casque n’est pas obligatoire pour les adultes. Mais il est fortement recommandé. Pour les mineurs de 14 à 18 ans, en revanche, c’est une obligation. 135 € d’amende si vous êtes contrôlé sans casque.
-
-Le casque doit être homologué (norme ECE 22.05 ou 22.06). Et bien attaché.
-
-Côté visibilité, votre trottinette doit être équipée de :
-
--   Feux avant et arrière (obligatoires de nuit et par mauvais temps)
--   Dispositifs réfléchissants arrière et latéraux (sauf si les pneus sont déjà réfléchissants)
--   Un avertisseur sonore (klaxon ou sonnette)
--   Un système de freinage efficace
-
-Le gilet réfléchissant, lui, n’est pas obligatoire. Mais si vous roulez souvent la nuit ou sous la pluie, c’est un investissement qui peut sauver votre peau. Certains modèles de trottinettes ont des bandes réfléchissantes intégrées. Un plus pour la sécurité. Sans surcoût.
+Côté visibilité, l'engin doit être équipé de feux avant et arrière, de dispositifs réfléchissants arrière et latéraux, d'un avertisseur sonore et d'un système de freinage efficace. Le gilet réfléchissant reste facultatif, mais recommandé pour tout trajet nocturne ou par mauvais temps.
 
 ## Où peut-on rouler avec une trottinette électrique ?
 
-Les règles sont simples. Mais beaucoup les ignorent.
+| Zone | Règle |
+| --- | --- |
+| Pistes cyclables | Autorisé, terrain de circulation principal |
+| Route sans piste cyclable | Autorisé uniquement en zone limitée à 50 km/h |
+| Trottoirs | Interdit, sauf autorisation municipale explicite |
+| Routes à 70 km/h ou plus | Interdit, sauf piste cyclable aménagée |
+| Zones piétonnes | Autorisé à 6 km/h maximum, sans gêner les piétons |
 
--   **Pistes cyclables** : c’est votre terrain de jeu. Si aucune piste n’est disponible, vous pouvez rouler sur la route. Mais uniquement dans les zones limitées à 50 km/h.
--   **Trottoirs** : interdits, sauf si le maire l’autorise. Ce qui reste rare. Si vous devez traverser un trottoir, descendez de votre engin. Et marchez à côté.
--   **Routes à 70 km/h ou plus** : interdites. Sauf si une piste cyclable y est aménagée.
--   **Zones piétonnes** : autorisées. Mais à 6 km/h maximum. Et sans gêner les piétons.
+*Source : service-public.gouv.fr*
 
-Un détail qui change tout : en ville, vous pouvez rouler sur les voies vertes et les zones de rencontre. Mais toujours en adaptant votre vitesse. Si vous foncez dans une zone piétonne, c’est 35 € d’amende. Et un piéton en colère.
+Si vous devez traverser un trottoir, descendez de l'engin et marchez à côté. En zone piétonne, adaptez systématiquement votre allure : foncer dans ce type de zone expose à 35 € d'amende, en plus du risque évident pour les piétons.
 
-## Transport de passagers, téléphone, alcool : ce qui est interdit
+## Transport de passagers, téléphone, alcool : ce qui reste interdit
 
-Quelques règles de bon sens. Mais souvent oubliées.
+-   **Transport de passagers** : interdit, même pour un enfant. Une trottinette reste conçue pour une seule personne. Amende de 35 €.
+-   **Téléphone tenu en main** : interdit, comme en voiture. Utilisez un support fixe et le mode mains-libres. Amende de 135 €.
+-   **Écouteurs ou casque audio** : interdits, pour garder l'ouïe disponible aux klaxons et sirènes. Amende de 135 €.
+-   **Alcool et stupéfiants** : mêmes règles que pour un automobiliste. Au-delà de 0,5 g d'alcool par litre de sang, l'amende atteint jusqu'à 4 500 €, avec une peine de prison possible en cas d'accident.
 
--   **Transport de passagers** : interdit, même un enfant. Une trottinette, c’est fait pour une personne. Et c’est déjà assez instable comme ça. 35 € d’amende si vous êtes pris.
--   **Téléphone tenu en main** : interdit, comme en voiture. Si vous devez consulter votre GPS, utilisez un support fixe. Et activez le mode mains-libres. 135 € d’amende sinon.
--   **Écouteurs ou casque audio** : interdits. Vous devez entendre les klaxons, les sirènes, les cris des piétons. 135 € d’amende si vous êtes contrôlé.
--   **Alcool et stupéfiants** : les mêmes règles que pour les automobilistes. Au-delà de 0,5 g d’alcool par litre de sang, c’est jusqu’à 4 500 € d’amende. Et une peine de prison en cas d’accident.
+## Où garer sa trottinette sans risquer une amende ?
 
-Un conseil d’utilisateur : si vous sortez boire un verre, laissez votre trottinette chez vous. Les contrôles sont rares. Mais en cas d’accident, votre assurance refusera de vous couvrir. Les conséquences peuvent être dramatiques.
+Le stationnement reste un point sensible en ville. Sur un trottoir, laissez toujours au moins 1,40 m de passage pour les piétons, sous peine de 35 € d'amende. Privilégiez les arceaux à vélos lorsqu'ils sont disponibles, ou les zones dédiées aménagées par certaines municipalités. Ne garez jamais votre engin devant une entrée d'immeuble, un arrêt de bus ou un passage piéton.
 
-## Stationnement : où garer sa trottinette sans risquer une amende ?
+Si vous utilisez une trottinette en libre-service, vérifiez toujours les zones de stationnement autorisées dans l'application : une restitution hors zone peut entraîner une facturation pour course non terminée, même après avoir rendu l'engin.
 
-Le stationnement des trottinettes, c’est un casse-tête en ville. Voici les règles.
+## Que risque-t-on en cas d'infraction ?
 
--   **Trottoirs** : vous pouvez y garer votre trottinette. À condition de ne pas gêner les piétons. Laissez au moins 1,40 m de passage. Sinon, c’est 35 € d’amende.
--   **Arceaux à vélos** : c’est l’idéal. Mais ils sont souvent saturés. Si vous en trouvez un libre, utilisez-le.
--   **Zones dédiées** : certaines villes aménagent des parkings pour trottinettes. Renseignez-vous auprès de votre mairie.
--   **Interdictions** : ne garez jamais votre engin devant une entrée d’immeuble, un arrêt de bus ou un passage piéton. 35 € d’amende à la clé.
+| Infraction | Amende |
+| --- | --- |
+| Circulation sur un trottoir sans autorisation | 35 € |
+| Vitesse excessive (plus de 25 km/h) | Jusqu'à 1 500 € + confiscation |
+| Transport de passager | 35 € |
+| Téléphone tenu en main | 135 € |
+| Non-respect des feux tricolores | 135 € |
+| Stationnement gênant | 35 € |
+| Absence d'assurance | 350 € |
+| Alcoolémie supérieure à 0,5 g/L | Jusqu'à 4 500 € + peine de prison |
 
-Un détail qui évite les mauvaises surprises : si vous utilisez une trottinette en libre-service, vérifiez les zones de stationnement autorisées. Sinon, vous pourriez être facturé pour une course non terminée. Même si vous avez rendu l’engin.
+*Source : service-public.gouv.fr*
 
-## Que risque-t-on en cas d’infraction ?
+Une amende réglée sous 15 jours bénéficie généralement d'une réduction de 30 %, un réflexe utile en cas de verbalisation.
 
-<table class="wp-block-table"><tbody><tr><td><strong>Infraction</strong></td><td><strong>Amende</strong></td></tr><tr><td>Circulation sur un trottoir (sans autorisation)</td><td>35 €</td></tr><tr><td>Vitesse excessive (&gt; 25 km/h)</td><td>Jusqu’à 1 500 € + confiscation</td></tr><tr><td>Transport de passager</td><td>35 €</td></tr><tr><td>Téléphone tenu en main</td><td>135 €</td></tr><tr><td>Non-respect des feux tricolores</td><td>135 €</td></tr><tr><td>Stationnement gênant</td><td>35 €</td></tr><tr><td>Absence d’assurance</td><td>350 €</td></tr><tr><td>Alcoolémie (&gt; 0,5 g/L)</td><td>Jusqu’à 4 500 € + peine de prison</td></tr></tbody></table>
+## Le Forfait Mobilités Durables couvre-t-il la trottinette électrique ?
 
-Source : service-public.gouv.fr
+Oui. Si vous utilisez votre trottinette pour vos trajets domicile-travail, votre employeur peut vous verser jusqu'à **600 € par an** dans le secteur privé, exonérés d'impôts et de cotisations sociales, via le Forfait Mobilités Durables (FMD). Ce montant grimpe à 900 €/an en cumul avec un abonnement de transports en commun. Dans la fonction publique, le plafond reste fixé à 300 € par an selon un barème propre à ce secteur.
 
-Un conseil pratique : si vous êtes verbalisé, payez rapidement. Certaines amendes bénéficient d’une réduction de 30 % si vous réglez sous 15 jours.
-
-## Forfait mobilités durables : une aide pour les trajets domicile-travail
-
-Si vous utilisez votre trottinette pour aller au boulot, votre employeur peut vous verser jusqu’à 600 € par an. Exonérés d’impôts et de cotisations sociales. Ce forfait mobilités durables (FMD) est facultatif. Mais de plus en plus d’entreprises le proposent.
-
-Surtout depuis que le télétravail a réduit les budgets transports en commun. Comment en profiter ? Parlez-en à votre service RH. Le FMD couvre aussi le vélo, le covoiturage et l’autopartage. Mais pas les taxis ou les VTC.
-
-Dans la fonction publique, le plafond est fixé à 300 € par an. Un exemple concret : si vous habitez à 5 km de votre travail et que vous utilisez votre trottinette 4 jours par semaine, le FMD peut couvrir votre assurance. Ou une partie de l’entretien.
-
-Sur un an, ça fait une belle économie. Surtout si vous cumulez avec un abonnement de transports en commun. Jusqu’à 900 € au total.
+Le FMD reste facultatif dans le secteur privé : parlez-en à votre service RH s'il n'est pas encore en place. Il couvre aussi le vélo, le covoiturage et l'autopartage, mais jamais les taxis ou les VTC. Notre guide sur le [forfait mobilités durables pour le vélo](/forfait-mobilites-durables-velo/) détaille des cas d'usage comparables pour un trajet à vélo électrique.
 
 ## Trottinette électrique vs vélo : quelle différence de réglementation ?
 
-Même si les deux engins se ressemblent, leurs règles ne sont pas les mêmes.
+| Critère | Trottinette électrique (EDPM) | Vélo |
+| --- | --- | --- |
+| Âge minimum | 14 ans | Aucun, recommandé pour les enfants |
+| Assurance obligatoire | Oui (responsabilité civile) | Non, sauf usage professionnel |
+| Casque obligatoire | Oui pour les 14-18 ans | Non, sauf enfants de moins de 12 ans |
+| Vitesse maximale | 25 km/h | Pas de limite, sauf 6 km/h en zone piétonne |
+| Circulation sur trottoir | Interdite, sauf autorisation municipale | Interdite, sauf enfants de moins de 8 ans |
 
-<table class="wp-block-table"><tbody><tr><td><strong>Critère</strong></td><td><strong>Trottinette électrique (EDPM)</strong></td><td><strong>Vélo</strong></td></tr><tr><td>Âge minimum</td><td>14 ans</td><td>Aucun (mais recommandé pour les enfants)</td></tr><tr><td>Assurance obligatoire</td><td>Oui (responsabilité civile)</td><td>Non (sauf si utilisé à titre professionnel)</td></tr><tr><td>Casque obligatoire</td><td>Oui pour les 14-18 ans</td><td>Non (sauf pour les enfants de moins de 12 ans)</td></tr><tr><td>Vitesse maximale</td><td>25 km/h (limite de construction)</td><td>Pas de limite (sauf zones piétonnes : 6 km/h)</td></tr><tr><td>Feux obligatoires</td><td>Oui (avant et arrière)</td><td>Oui (avant et arrière la nuit)</td></tr><tr><td>Circulation sur trottoir</td><td>Interdite (sauf autorisation municipale)</td><td>Interdite (sauf enfants de moins de 8 ans)</td></tr></tbody></table>
+*Source : service-public.gouv.fr*
 
-Source : service-public.gouv.fr
+Pour un trajet court et maniable en ville, la trottinette reste pertinente. Pour une distance plus longue ou un usage sportif, le vélo garde l'avantage, avec une réglementation plus souple. Si vous hésitez entre les deux, notre comparatif des [meilleures trottinettes électriques](/meilleure-trottinette-electrique/) et notre article sur l'[autonomie réelle d'une trottinette électrique](/trottinette-electrique-autonomie-reelle/) aident à choisir selon votre trajet quotidien. Pour sécuriser votre itinéraire, notre guide sur les [applis d'itinéraire vélo sécurisé](/itineraire-velo-securise-appli/) reste également valable pour un déplacement en trottinette.
 
-Le choix entre trottinette et vélo dépend de vos besoins. Si vous cherchez un engin léger et maniable pour des trajets courts, la trottinette est idéale. Pour des distances plus longues ou un usage sportif, le vélo reste plus adapté. Et moins réglementé.
+## Questions fréquentes
 
-## Ce qui pourrait changer dans les mois à venir
+### Quel est l'âge minimum pour conduire une trottinette électrique en 2026 ?
 
-La réglementation des EDPM évolue vite. Voici ce qui pourrait changer d’ici fin 2026.
+14 ans, sans exception, dès que l'engin circule sur la voie publique, une piste cyclable ou une zone piétonne.
 
--   **Casque obligatoire pour tous** : une proposition de loi (n°1810) vise à rendre le casque obligatoire pour tous les utilisateurs de trottinettes et vélos. Pour l’instant, elle est toujours en commission. Mais elle pourrait être adoptée rapidement.
--   **Immatriculation des EDPM** : certains députés veulent imposer une immatriculation, comme pour les cyclomoteurs. L’objectif ? Lutter contre les vols et les incivilités. Aucune décision n’a encore été prise. Mais le débat est lancé.
--   **Zones à circulation restreinte** : plusieurs villes étudient la création de zones où les EDPM seraient interdits aux heures de pointe. Pour fluidifier la circulation.
+### Quelle est la vitesse maximale autorisée pour une trottinette électrique ?
 
-Pour rester à jour, consultez régulièrement [notre guide complet sur les trottinettes et EDPM](/velo-nouvelles-mobilites/trottinettes-edpm). Ou suivez les actualités de votre ville. Les règles changent vite. Une infraction qui n’existait pas il y a six mois peut vous coûter cher aujourd’hui.
+25 km/h. Au-delà, l'amende peut atteindre 1 500 € avec confiscation de l'engin, qui change aussi de statut légal.
+
+### L'assurance est-elle obligatoire pour une trottinette électrique ?
+
+Oui, depuis 2019. Une assurance responsabilité civile minimum reste exigée, sous peine de 350 € d'amende en cas de contrôle.
+
+### Le casque est-il obligatoire pour les adultes ?
+
+Non, seulement recommandé. Il devient obligatoire pour les utilisateurs de 14 à 18 ans, sous peine de 135 € d'amende.
+
+### Peut-on rouler sur le trottoir avec une trottinette électrique ?
+
+Non, sauf autorisation municipale explicite, qui reste rare. Si vous devez le traverser, descendez de l'engin et marchez à côté.
+
+### Le Forfait Mobilités Durables finance-t-il l'usage d'une trottinette électrique ?
+
+Oui, jusqu'à 600 € par an dans le secteur privé pour les trajets domicile-travail, 900 € en cumul avec un abonnement de transports en commun, et 300 € dans la fonction publique.

@@ -1,94 +1,110 @@
 ---
-title: "Recharge de flotte entreprise : installation, coûts et optimisation fiscale en 2026"
-description: "Installer des bornes de recharge pour une flotte d’utilitaires électriques coûte entre 3 000 et 15 000 € par point. Aides ADVENIR, TVA réduite et exonérati"
-date: "2026-08-22"
+title: "Recharge de flotte entreprise : installation, coûts réels et aides en 2026"
+description: "L'aide Advenir pour les parkings privés d'entreprise a disparu en 2026. Coût réel d'une borne, TVA à 20 %, obligations légales et aides qui restent actives."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1565
 wp_locale: "fr"
 image: "/images/articles/recharge-flotte-entreprise-1.webp"
 imageAlt: "Recharge de flotte entreprise : installation, coûts et optimisation fiscale en 2026"
 ---
-Pour une PME livrant en ville avec cinq utilitaires électriques, installer trois bornes de recharge sur son site coûte entre 9 000 et 45 000 €. En effet, l’aide ADVENIR (jusqu’à 960 € par point) et une TVA à 5,5 % réduisent la facture de 30 %. Ainsi, cet investissement mérite une étude approfondie pour les flottes en transition.
+***L'aide Advenir réservée aux flottes d'entreprise sur parking privé n'existe plus en 2026. Installer des bornes pour une flotte d'utilitaires électriques coûte donc son prix plein, entre 3 000 et 15 000 € par point, hors frais d'installation.***
 
-Pour comparer les autres postes de dépense d’une flotte électrifiée, consultez notre dossier [Utilitaires électriques](/utilitaires-flottes-pro/utilitaires-electriques).
+Beaucoup de gestionnaires de flotte budgétisent encore cette installation en comptant sur une aide qui a disparu. Voici ce qui reste vraiment financé en 2026, et ce qu'il faut prévoir à la charge de l'entreprise.
 
-## Combien coûte une borne de recharge pour flotte professionnelle ?
+TL;DR : l'aide Advenir classique ne couvre plus les flottes d'entreprise sur parking privé.
 
-Le prix d’une borne de recharge varie entre 3 000 et 15 000 € par point. Tout dépend de la puissance et des options choisies. Par exemple, une wallbox 7 kW pour un parking d’entreprise coûte environ 3 500 €. Toutefois, une borne rapide 50 kW dépasse 12 000 €.
+-   Une borne coûte entre **3 000 et 15 000 €** selon la puissance, hors installation.
+-   La **TVA reste au taux normal de 20 %** pour une entreprise, aucune réduction à 5,5 % ne s'applique à ce type de travaux.
+-   Des **aides régionales** et un dispositif Advenir spécifique aux flottes lourdes subsistent, sous conditions précises.
 
-Les frais d’installation s’ajoutent à ce budget. Ils oscillent entre 2 000 et 5 000 €, surtout si le tableau électrique doit être renforcé. Pour une flotte de dix véhicules, l’investissement initial atteint au minimum 30 000 €. Heureusement, des aides existent pour alléger cette enveloppe.
+## L'aide Advenir couvre-t-elle encore les bornes de flotte en entreprise ?
 
-### Tableau comparatif : coûts par type de borne
+**Réponse directe** : non, plus depuis 2026. L'aide Advenir dédiée aux parkings privés d'entreprise, qui finançait jusqu'à 40 % de l'installation pour une flotte de véhicules de société, n'est plus disponible. Cette suppression change entièrement le calcul budgétaire d'un projet d'équipement pour une PME.
 
-| Type de borne | Puissance | Prix unitaire (€) | Frais d’installation (€) | Temps de recharge (utilitaire 50 kWh) |
-| --- | --- | --- | --- | --- |
-| Wallbox standard | 7 kW | 3 000 – 5 000 | 2 000 – 3 000 | 7h |
-| Borne accélérée | 22 kW | 6 000 – 9 000 | 3 000 – 4 000 | 2h30 |
-| Borne rapide | 50 kW | 12 000 – 15 000 | 4 000 – 5 000 | 1h |
+Un dispositif Advenir distinct subsiste pour les **flottes de poids lourds**, avec des montants qui dépendent de la puissance installée, mais il vise un usage très différent de celui d'une PME qui équipe son parking pour quelques utilitaires légers. Pour un parking accessible au public, d'autres aides régionales ou sectorielles peuvent encore s'appliquer, à vérifier au cas par cas auprès de votre collectivité.
 
-*Source : Vroomly*
+## Combien coûte réellement une borne de recharge pour flotte professionnelle ?
 
-![Utilitaire électrique en recharge sur une borne d'entreprise avec panneaux solaires](/images/articles/recharge-flotte-entreprise-1.webp)
+Le prix d'une borne varie entre 3 000 et 15 000 € par point selon la puissance et les options choisies, hors frais d'installation. Les frais de pose s'ajoutent à ce budget, surtout si le tableau électrique doit être renforcé pour supporter plusieurs points de charge simultanés.
 
-## Quelles aides pour installer des bornes en entreprise ?
-
-L’aide ADVENIR couvre jusqu’à 40 % du coût d’installation. Son plafond s’élève à 960 € par point de recharge. Pour une flotte de cinq véhicules, cela représente une économie de 4 800 €. Cette subvention s’applique aux bornes murales comme aux bornes rapides.
-
-Toutefois, l’installation doit être réalisée par un professionnel certifié IRVE. Autre avantage : la TVA à 5,5 % pour les travaux d’installation, contre 20 % habituellement. Ainsi, une entreprise qui installe trois bornes 7 kW économise 1 200 € sur la facture globale.
-
-### Exemple concret : une PME de livraison
-
-Une entreprise lyonnaise a équipé son parking de quatre bornes 22 kW. Elle a bénéficié de 3 840 € d’aides ADVENIR. Avec la TVA réduite, son investissement initial de 36 000 € est passé à 24 000 €. Par conséquent, l’économie atteint 33 %.
-
-## Optimisation fiscale : comment déduire les coûts ?
-
-Les bornes de recharge sont amortissables sur cinq ans. Une entreprise peut déduire 20 % de leur valeur chaque année de son résultat imposable. Pour une borne à 10 000 €, cela représente une économie d’impôt de 600 € par an.
-
-Le taux d’IS est fixé à 30 %. Les frais d’électricité consommée pour recharger la flotte sont déductibles à 100 % comme charges d’exploitation. Une flotte de dix utilitaires électriques consommant 50 000 kWh par an génère une économie supplémentaire de 3 000 €.
-
-### Cas pratique : une flotte de dix véhicules
-
-Une entreprise de maintenance a installé cinq bornes 22 kW pour 45 000 €. Grâce aux aides (4 800 €) et à l’amortissement (9 000 € sur cinq ans), son coût réel après impôts s’élève à 25 000 €. En effet, les économies sur la facture d’électricité (3 000 €/an) couvrent 12 % de l’investissement initial.
-
-![Chef d'entreprise calculant les coûts d'installation de bornes de recharge](/images/articles/recharge-flotte-entreprise-2.webp)
-
-## Quelles obligations légales pour les entreprises ?
-
-Depuis 2025, les entreprises de plus de 50 salariés doivent prévoir des places de parking équipées pour la recharge électrique. Le décret impose un point de recharge pour cinq places. La puissance minimale requise est de 7 kW.
-
-Les parkings de plus de 20 places doivent aussi être pré-équipés pour une future extension. Pour les flottes de plus de 100 véhicules, une étude de faisabilité est obligatoire. Elle évalue la puissance nécessaire, l’impact sur le réseau électrique et les coûts d’exploitation.
-
-### Sanctions en cas de non-respect
-
-Une entreprise qui ne respecte pas ces obligations risque une amende de 1 500 € par place non équipée. Toutefois, en cas de contrôle, elle doit justifier d’un plan d’équipement progressif sur trois ans.
-
-## Comment choisir le bon prestataire ?
-
-Pour installer des bornes de recharge, privilégiez un installateur certifié IRVE. Ces professionnels garantissent une installation conforme aux normes NFC 15-100. Ils assurent aussi une maintenance adaptée aux flottes professionnelles.
-
-Comparez les offres en fonction de la puissance, du prix et des services inclus. Certains prestataires proposent des contrats tout compris, avec abonnement mensuel incluant l’électricité et la maintenance. Pour en savoir plus sur les solutions adaptées, consultez [notre guide sur l’autonomie des utilitaires électriques](/utilitaires-flottes-pro/utilitaire-electrique-autonomie-reelle).
-
-### Critères de choix
-
--   Puissance adaptée à la flotte : 7 kW pour une recharge nocturne, 22 kW pour une recharge en journée.
--   Compatibilité avec les véhicules : connecteurs Type 2 ou Combo CCS.
--   Services inclus : maintenance, supervision, facturation individualisée.
--   Garantie : minimum trois ans sur les bornes.
-
-## Quelles solutions pour les flottes en déplacement ?
-
-Pour les flottes qui roulent sur tout le territoire, une carte de recharge multi-réseaux est indispensable. La Carte Fleet de TotalEnergies donne accès à 99 % des bornes publiques en France. Elle propose aussi une facturation centralisée.
-
-Une flotte de dix véhicules peut économiser jusqu’à 2 000 € par an en évitant les surcoûts des bornes non partenaires. Pour optimiser vos coûts, découvrez aussi [les aides pour l’achat d’utilitaires électriques](/utilitaires-flottes-pro/aides-utilitaire-electrique-pro).
-
-Autre option : les bornes mobiles. Ces solutions plug-and-play permettent de recharger un véhicule n’importe où, sans installation fixe. Elles coûtent entre 1 500 et 3 000 €. Toutefois, elles sont idéales pour les chantiers ou les tournées itinérantes.
-
-### Comparatif des cartes de recharge
-
-| Carte | Réseaux couverts | Prix moyen (€/kWh) | Facturation centralisée |
+| Type de borne | Puissance | Prix unitaire indicatif | Frais d'installation indicatifs |
 | --- | --- | --- | --- |
-| Carte Fleet (TotalEnergies) | 99 % des bornes publiques | 0,45 – 0,60 | Oui |
-| Carte Izivia | Réseau Corri-Door | 0,50 – 0,65 | Oui |
-| Carte Chargemap | 150 000 bornes en Europe | 0,40 – 0,70 | Non |
+| Wallbox standard | 7 kW | 3 000 à 5 000 € | 2 000 à 3 000 € |
+| Borne accélérée | 22 kW | 6 000 à 9 000 € | 3 000 à 4 000 € |
+| Borne rapide | 50 kW | 12 000 à 15 000 € | 4 000 à 5 000 € |
 
-*Source : données 2026*
+*Source : prix constatés chez les installateurs certifiés IRVE, 2026*
+
+![Utilitaire électrique en recharge sur une borne d'entreprise](/images/articles/recharge-flotte-entreprise-1.webp)
+
+Pour une flotte de dix véhicules équipée de bornes 22 kW, l'investissement initial dépasse généralement 60 000 €, sans aide nationale dédiée au parking privé. Ce montant justifie d'autant plus une étude de dimensionnement précise avant de commander les équipements : mieux vaut sous-équiper dans un premier temps et étendre ensuite, plutôt que surdimensionner un investissement qui n'est plus subventionné.
+
+## Quelle TVA s'applique à l'installation de bornes en entreprise ?
+
+Le taux normal de **20 %** s'applique à l'installation de bornes de recharge par une entreprise, sans réduction spécifique. Le taux réduit à 5,5 %, parfois évoqué, concerne des travaux de rénovation énergétique résidentielle sous conditions précises et ne s'applique pas à une installation professionnelle. Intégrez donc le coût TTC complet dans votre budget prévisionnel, sans compter sur un allègement de TVA qui n'existe pas pour ce type de chantier.
+
+## Comment amortir fiscalement cet investissement ?
+
+Les bornes de recharge restent amortissables sur cinq ans, comme la plupart des équipements professionnels. Une entreprise déduit chaque année une quote-part de leur valeur de son résultat imposable, ce qui réduit mécaniquement l'impôt sur les sociétés dû sur la période. Les frais d'électricité consommée pour recharger la flotte restent par ailleurs déductibles à 100 % en tant que charges d'exploitation, indépendamment du sort de l'aide Advenir.
+
+Notre article sur l'[amortissement des véhicules de société](/amortissement-vehicule-societe-plafond/) détaille les règles applicables aux équipements liés à une flotte professionnelle, et notre dossier sur la [TVA récupérable sur les utilitaires](/tva-recuperable-utilitaire/) complète ce panorama fiscal pour l'ensemble du parc.
+
+## Quelles aides restent réellement actives en 2026 ?
+
+Plusieurs pistes subsistent malgré la fin de l'aide Advenir classique pour les flottes privées :
+
+-   **Les aides régionales**, qui varient fortement d'un territoire à l'autre. Certaines régions soutiennent encore l'équipement des entreprises qui accueillent du public, avec des plafonds par infrastructure à vérifier directement auprès du conseil régional.
+-   **Le dispositif Advenir dédié aux flottes de poids lourds**, pour les entreprises qui dépassent certains seuils de puissance installée, un cas qui concerne surtout les flottes de transport plutôt que les PME de livraison urbaine.
+-   **Les aides pour un parking ouvert au public**, distinctes de celles pour un parking strictement réservé aux salariés, selon la nature de l'accès autorisé.
+
+Avant tout projet, contactez votre conseil régional et le gestionnaire du réseau électrique local : un projet mal qualifié dès le départ (parking privé déclaré comme public, ou inversement) peut entraîner un refus de l'aide a posteriori.
+
+## Quelles obligations légales pour les parkings d'entreprise ?
+
+Depuis le 1er janvier 2025, les parkings non résidentiels **ouverts au public** et comptant plus de 20 places doivent être équipés d'au moins un point de recharge. Les bâtiments neufs sont soumis à des règles de pré-équipement renforcées, avec une part minimale des places câblées pour une future installation. Ces obligations ne s'appliquent pas de la même façon à un parking strictement privé réservé aux salariés : vérifiez précisément le statut de votre parking avant de dimensionner votre projet, car les seuils et les obligations exactes dépendent du code de la construction et de l'habitation.
+
+En cas de doute sur votre situation, un diagnostic réalisé par un installateur certifié IRVE reste le moyen le plus fiable de clarifier vos obligations réelles, avant d'investir dans un dimensionnement surdimensionné ou, à l'inverse, non conforme.
+
+## Comment choisir le bon installateur et la bonne puissance ?
+
+Privilégiez systématiquement un installateur certifié **IRVE** (infrastructures de recharge pour véhicules électriques), seul habilité à garantir une installation conforme aux normes électriques en vigueur et à assurer une maintenance adaptée à un usage professionnel intensif.
+
+-   **Puissance adaptée à l'usage réel** : 7 kW suffit pour une recharge nocturne sur un utilitaire qui roule en journée, 22 kW convient mieux à une recharge en journée entre deux tournées.
+-   **Compatibilité des connecteurs** avec votre flotte actuelle et future, Type 2 ou Combo CCS selon les modèles.
+-   **Supervision et facturation individualisée**, utiles pour répartir le coût de l'électricité entre plusieurs véhicules ou conducteurs.
+-   **Garantie d'au moins trois ans** sur le matériel installé.
+
+Pour dimensionner correctement votre projet, notre guide sur l'[autonomie réelle des utilitaires électriques](/utilitaire-electrique-autonomie-reelle/) aide à estimer les besoins réels de recharge selon vos tournées, et notre dossier sur les [aides à l'achat d'un utilitaire électrique](/aides-utilitaire-electrique-pro/) reste pertinent pour le véhicule lui-même, même si l'aide à l'infrastructure de recharge a changé.
+
+## Quelles solutions pour les flottes qui roulent sur tout le territoire ?
+
+Pour une flotte qui circule au-delà de son site principal, une carte de recharge multi-réseaux simplifie la gestion administrative et donne accès à un grand nombre de bornes publiques avec une facturation centralisée. Les bornes mobiles, plug-and-play, restent une alternative pour les chantiers ou les tournées itinérantes sans installation fixe.
+
+Pour piloter l'ensemble de ces coûts au quotidien, notre comparatif des [cartes carburant professionnelles](/carte-carburant-pro-comparatif/), notre guide sur la [gestion de flotte en logiciel pour TPE](/gestion-flotte-logiciel-tpe/) et notre article sur les [avantages de la télématique de flotte](/telematique-flotte-avantages/) complètent cette approche globale de la recharge professionnelle.
+
+## Questions fréquentes
+
+### L'aide Advenir existe-t-elle encore pour équiper un parking d'entreprise en 2026 ?
+
+Pour un parking privé dédié à une flotte d'entreprise, non, cette aide a disparu en 2026. Un dispositif distinct subsiste pour les flottes de poids lourds selon la puissance installée.
+
+### Quelle TVA s'applique à l'installation de bornes par une entreprise ?
+
+Le taux normal de 20 %. Le taux réduit à 5,5 %, parfois évoqué, concerne la rénovation énergétique résidentielle et ne s'applique pas à ce type de chantier professionnel.
+
+### Combien coûte une borne de recharge pour une flotte de dix utilitaires électriques ?
+
+Comptez généralement plus de 60 000 € pour une installation complète avec des bornes 22 kW, hors aide nationale dédiée, puisque l'aide Advenir pour parking privé d'entreprise n'est plus disponible.
+
+### Les bornes de recharge sont-elles amortissables fiscalement ?
+
+Oui, sur cinq ans, comme la plupart des équipements professionnels, indépendamment du sort de l'aide Advenir à l'installation.
+
+### Quelles entreprises doivent obligatoirement équiper leur parking en bornes de recharge ?
+
+Depuis le 1er janvier 2025, les parkings non résidentiels ouverts au public de plus de 20 places. Un parking strictement privé réservé aux salariés suit des règles différentes, à vérifier au cas par cas.
+
+### Existe-t-il encore des aides régionales pour l'installation de bornes en entreprise ?
+
+Oui, certaines régions maintiennent leurs propres dispositifs, avec des montants et des conditions qui varient fortement d'un territoire à l'autre. Vérifiez directement auprès de votre conseil régional.

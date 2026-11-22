@@ -1,7 +1,7 @@
 ---
-title: "Prime covoiturage 100 euros : comment en profiter en 2026 ?"
-description: "La prime covoiturage de 100 € est relancée en 2026. Découvrez les conditions pour en bénéficier, les plateformes éligibles et les démarches à suivre."
-date: "2026-08-12"
+title: "Prime covoiturage 100 euros en 2026 : existe-t-elle encore ?"
+description: "La prime nationale de 100 € pour un premier trajet en covoiturage a disparu le 1er janvier 2025. Voici ce qui la remplace et comment financer vos trajets."
+date: "2026-11-22"
 author: "karim-belaid"
 category: "covoiturage"
 wp_id: 1341
@@ -9,87 +9,89 @@ wp_locale: "fr"
 image: "/images/articles/prime-covoiturage-100-euros-couverture.webp"
 imageAlt: "Prime covoiturage 100 euros : comment en profiter en 2026 ?"
 ---
-Vous faites du covoiturage pour vos trajets quotidiens ? Bonne nouvelle : la prime covoiturage de 100 € est de retour en 2026. En effet, le dispositif a été ajusté pour simplifier son accès. Voici tout ce qu’il faut savoir pour en profiter sans se tromper.
+***La prime nationale de 100 € pour un premier trajet en covoiturage n'existe plus depuis le 1er janvier 2025. Beaucoup de conducteurs continuent pourtant à la chercher en ligne, parfois sur la foi d'informations obsolètes.***
 
-## Qui peut bénéficier de la prime covoiturage 100 € ?
+Si vous tombez sur cette recherche en 2026, voici ce qu'il faut savoir avant de perdre du temps à chercher une aide qui n'est plus versée, et ce qui la remplace réellement sur vos trajets du quotidien.
+
+TL;DR : la prime nationale de 100 € a pris fin début 2025, sans reconduction.
+
+-   Aucune prime de **100 €** n'est plus versée par l'État pour un premier trajet en covoiturage depuis janvier 2025.
+-   Le **Forfait Mobilités Durables** (FMD), versé par l'employeur, reste l'aide la plus solide en 2026, jusqu'à **600 €/an**.
+-   Certaines **collectivités locales** maintiennent leurs propres campagnes d'incitation, à vérifier au cas par cas.
 
 ![Conducteur consultant une appli de covoiturage pour valider un trajet](/images/articles/prime-covoiturage-100-euros-1.webp)
 
-La prime covoiturage 2026 est ouverte à tous les conducteurs. Ainsi, aucune condition de revenus n’est exigée. Il suffit de respecter ces trois critères :
+## La prime covoiturage de 100 € existe-t-elle encore en 2026 ?
 
--   Être inscrit sur une plateforme de covoiturage partenaire. Parmi elles, Klaxit, BlaBlaCar Daily ou Karos.
--   Effectuer au moins **10 trajets en tant que conducteur** sur une période de 3 mois.
--   Respecter une distance minimale de 2 km par trajet. Cela évite les trajets fictifs. Un aller-retour domicile-travail de moins de 2 km ne sera donc jamais éligible, quelle que soit la régularité du trajet.
+**Réponse directe** : non. L'État a mis fin à cette prime nationale le 1er janvier 2025. Elle récompensait un premier trajet en covoiturage, avec un versement pouvant atteindre 100 € selon les plateformes partenaires, mais aucune reconduction n'a été annoncée depuis.
 
-Seul un passager par trajet est comptabilisé. Par exemple, si vous faites le même trajet avec deux collègues, un seul trajet sera validé. Cette règle vise à éviter les abus : sans elle, un même trajet effectué avec plusieurs passagers aurait permis d’accumuler artificiellement les 10 validations bien plus vite.
+Ce dispositif avait été lancé pour amorcer l'usage du covoiturage domicile-travail, financé dans le cadre d'un plan national. Son arrêt ne concerne pas les autres aides au covoiturage : le **Forfait Mobilités Durables**, lui, reste pleinement actif en 2026 et constitue aujourd'hui la principale source de financement garantie au niveau national.
 
-## Montant et versement : ce qui change en 2026
+Si vous avez touché cette prime avant son arrêt, vous ne pouvez plus y prétendre une seconde fois de toute façon : le dispositif n'était pas renouvelable par personne, même du temps où il existait encore.
 
-La prime reste fixée à **100 €**. Toutefois, son versement est désormais étalé. Voici comment obtenir cette somme :
+## Pourquoi cette prime a-t-elle été supprimée ?
 
--   **50 €** après les 5 premiers trajets validés.
--   **50 € supplémentaires** après les 5 trajets suivants. Ainsi, vous atteignez les 10 trajets requis.
+L'État a recentré son budget sur des dispositifs jugés plus efficaces à long terme, notamment le Forfait Mobilités Durables, pérenne et porté directement par les employeurs plutôt que financé par une enveloppe publique limitée. La prime au premier trajet visait surtout à lever la réticence initiale des nouveaux utilisateurs, un objectif que les plateformes de covoiturage estiment aujourd'hui largement atteint auprès de leur base d'utilisateurs réguliers.
 
-Le délai de traitement est d’environ **15 jours** après validation des trajets. En effet, la plateforme transmet les données à l’État. Le versement se fait directement sur le compte bancaire renseigné lors de l’inscription.
+Le budget alloué à ce type d'incitation ponctuelle s'épuisait aussi rapidement chaque année, ce qui limitait sa portée réelle. Un recentrage vers des aides récurrentes, comme le FMD, offre une visibilité plus stable aux covoitureurs comme aux employeurs.
 
-Pour notre article dédié à la prime covoiturage, consultez notre page dédiée.
+## Par quoi remplacer cette prime en 2026 ?
 
-## Quelles plateformes sont éligibles ?
+Trois pistes permettent de financer concrètement vos trajets de covoiturage aujourd'hui.
 
-Seules les plateformes de covoiturage **agréées par l’État** permettent de bénéficier de la prime. Voici les principales :
+-   **Le Forfait Mobilités Durables**, versé par votre employeur, finance jusqu'à **600 € par an** de covoiturage domicile-travail, exonérés d'impôts et de cotisations sociales. En cumulant avec un abonnement de transports en commun, ce montant grimpe jusqu'à 900 €/an. Notre article dédié au [covoiturage domicile-travail et au FMD](/covoiturage-domicile-travail-prime/) détaille les conditions précises et la marche à suivre auprès de votre service RH, et notre guide sur le [forfait mobilités durables à vélo](/forfait-mobilites-durables-velo/) montre comment le cumuler avec d'autres modes doux.
+-   **Les aides locales**, financées par certaines régions, métropoles ou intercommunalités, qui maintiennent leurs propres campagnes d'incitation au covoiturage. Leur montant et leurs conditions varient fortement d'un territoire à l'autre, et toutes les applications ne sont pas éligibles partout.
+-   **Le partage des frais directement entre conducteur et passagers**, sans prime ni subvention, reste la base économique du covoiturage : carburant et péage partagés réduisent déjà sensiblement le coût d'un trajet régulier.
 
--   [Klaxit](/mobilite-partagee-transports/covoiturage), idéal pour les trajets domicile-travail.
--   BlaBlaCar Daily, pour les trajets réguliers ou ponctuels.
--   Karos, spécialisé dans les trajets courts.
--   Ynstant, pour les trajets en région parisienne.
+| Dispositif | Montant | Statut en 2026 |
+| --- | --- | --- |
+| Prime nationale premier trajet | 100 € | Supprimée depuis janvier 2025 |
+| Forfait Mobilités Durables (covoiturage seul) | Jusqu'à 600 €/an | Actif |
+| Forfait Mobilités Durables (cumul transports en commun) | Jusqu'à 900 €/an | Actif |
+| Aides locales (régions, métropoles) | Variable | Selon le territoire |
 
-Attention, les trajets effectués via des groupes Facebook ou des forums ne sont pas éligibles. Seules les applications ayant signé une convention officielle avec l’État peuvent déclarer vos trajets pour le calcul de la prime.
+*Source : dispositifs nationaux et territoriaux en vigueur en 2026*
 
-## Comment s’inscrire et valider ses trajets ?
+## Comment vérifier si une aide locale existe près de chez vous ?
 
-Tout se fait en ligne, sans paperasse. Voici les étapes à suivre :
+Certaines collectivités continuent de financer des campagnes d'incitation au covoiturage, souvent via le Fonds vert ou leur propre budget mobilité. La carte de l'**Observatoire national du covoiturage** recense ces dispositifs territoriaux, qui changent régulièrement selon les budgets votés chaque année.
 
-1.  Créez un compte sur une plateforme éligible, comme [Klaxit](/mobilite-partagee-transports/covoiturage).
-2.  Renseignez vos coordonnées bancaires pour le versement de la prime.
-3.  Proposez ou réservez des trajets en tant que conducteur.
-4.  Validez chaque trajet via l’appli. Le passager doit confirmer sa présence.
-5.  Une fois les 10 trajets validés, la plateforme transmet les données à l’État.
-6.  Recevez votre prime sous 15 jours.
+Avant de vous engager sur un objectif de nombre de trajets, vérifiez toujours les conditions en vigueur directement sur la plateforme ou auprès de votre collectivité : les critères d'éligibilité peuvent évoluer sans préavis long, et un dispositif actif aujourd'hui peut disparaître l'an prochain, comme ce fut le cas pour la prime nationale.
 
-Astuce : activez les notifications dans l’appli. Ainsi, vous ne raterez aucune confirmation de trajet.
+## Quelles plateformes utiliser pour covoiturer au quotidien ?
 
-## Prime covoiturage vs. autres aides à la mobilité
+Même sans prime nationale, les applications de covoiturage restent le moyen le plus simple d'organiser des trajets réguliers ou ponctuels. Pour les trajets domicile-travail récurrents, [BlaBlaCar Daily](/blablacar-daily-avis/) reste l'une des solutions les plus répandues. Pour des trajets plus courts et occasionnels, notre comparatif des [applis de covoiturage courte distance](/covoiturage-courte-distance-applis/) recense les options disponibles selon votre zone géographique.
 
-La prime covoiturage 100 € est cumulable avec d’autres dispositifs. Voici un comparatif :
+Si vous hésitez entre plusieurs applications, mieux vaut tester chacune sur quelques trajets isolés avant de vous engager sérieusement sur celle qui convient le mieux à votre trajet habituel.
 
-| Dispositif | Montant | Conditions | Cumulable ? |
-| --- | --- | --- | --- |
-| Forfait mobilités durables | Jusqu’à 800 €/an | Employeur public ou privé | Oui |
-| Prime à la conversion | Jusqu’à 5 000 € | Achat d’un véhicule propre | Oui |
-| Bonus écologique | Jusqu’à 5 700 € | Achat d’un véhicule électrique | Oui |
+## Passager ou conducteur : qui peut toucher une aide ?
 
-*Source : economie.gouv.fr*
+Le Forfait Mobilités Durables, contrairement à l'ancienne prime nationale, peut bénéficier aux deux profils selon la politique de l'employeur : conducteur comme passager régulier peuvent justifier leurs trajets pour en profiter. C'est une différence importante avec l'ancien dispositif national, qui ne récompensait que le conducteur lors de son premier trajet.
 
-Toutefois, elle n’est pas cumulable avec le remboursement partiel des frais de carburant pour les mêmes trajets.
+Pour un foyer où plusieurs personnes covoiturent au quotidien, chacune peut donc potentiellement faire valoir ses trajets auprès de son propre employeur, à condition que celui-ci ait mis en place le FMD. Notre guide sur l'[autopartage Citiz](/autopartage-citiz-tarifs/) complète ce panorama pour les trajets où le covoiturage classique ne suffit pas, de même que notre comparatif de l'[abonnement TER pour les trajets domicile-travail](/ter-abonnement-travail/) pour les jours sans covoiturage disponible.
 
-## Et si ça ne marche pas ?
+## Questions fréquentes
 
-Si la plateforme ne valide pas vos trajets, vérifiez d’abord qu’ils ont bien été confirmés par les passagers. En cas de problème persistant, contactez le support de la plateforme.
+### La prime de 100 € pour un premier trajet de covoiturage existe-t-elle toujours en 2026 ?
 
-Pour faire valoir vos droits, consultez plus d’informations sur les recours possibles.
+Non. L'État a mis fin à cette prime nationale le 1er janvier 2025, sans reconduction annoncée depuis.
 
-## Le financement de la prime : qui paie, et jusqu’à quand ?
+### Quelle aide remplace la prime covoiturage de 100 € ?
 
-La prime covoiturage 100 € est financée par l’État dans le cadre du plan national covoiturage, avec un relais possible de certaines collectivités locales qui ajoutent parfois leur propre bonus régional. L’enveloppe budgétaire est fixée annuellement, ce qui explique les ajustements de conditions d’une année sur l’autre : en cas de forte demande, les critères peuvent être resserrés en cours d’année pour éviter un dépassement budgétaire.
+Le Forfait Mobilités Durables reste la principale aide active en 2026, jusqu'à 600 € par an pour le covoiturage seul, ou 900 € en cumul avec les transports en commun.
 
-Vérifiez donc régulièrement les conditions en vigueur sur la plateforme que vous utilisez avant de vous engager sur un objectif de nombre de trajets, car ces règles peuvent évoluer sans préavis long.
+### Puis-je encore toucher la prime si je l'ai demandée avant 2025 ?
 
-## Passager ou conducteur : qui touche la prime ?
+Non, si vous l'avez déjà perçue, vous ne pouviez de toute façon pas la redemander une seconde fois, même du temps où le dispositif existait encore.
 
-La prime de 100 € est réservée aux conducteurs qui proposent des trajets, pas aux passagers qui les réservent. C’est une différence importante par rapport à d’autres aides comme le forfait mobilités durables, qui peut bénéficier aux deux profils selon la politique de l’employeur. Un passager régulier n’a donc aucune prime nationale à percevoir directement, mais profite du partage des frais de trajet (carburant, péage) avec le conducteur.
+### Mon employeur est-il obligé de proposer le Forfait Mobilités Durables ?
 
-Pour un couple ou une famille où plusieurs membres covoiturent au quotidien, seule la personne qui conduit effectivement et valide les trajets en tant que conducteur peut cumuler les 10 trajets nécessaires à l’obtention de la prime.
+Non, dans le secteur privé il reste facultatif. Un dispositif spécifique existe dans la fonction publique, avec ses propres montants fixés par arrêté.
 
-## Que faire si vous changez de plateforme en cours de route ?
+### Existe-t-il encore des aides locales au covoiturage en 2026 ?
 
-Les 10 trajets requis doivent, en général, être validés sur une même plateforme partenaire : changer d’application en cours de comptabilisation remet généralement le compteur à zéro. Si vous hésitez entre plusieurs applis, mieux vaut tester chacune sur quelques trajets isolés avant de vous engager sérieusement sur celle qui vous convient le mieux, plutôt que de risquer de perdre la progression déjà accumulée.
+Oui, certaines régions, métropoles ou intercommunalités maintiennent leurs propres campagnes d'incitation, financées notamment via le Fonds vert. Leurs conditions varient fortement selon le territoire.
+
+### Le passager peut-il aussi bénéficier d'une aide au covoiturage ?
+
+Oui, via le Forfait Mobilités Durables si l'employeur l'a mis en place, contrairement à l'ancienne prime nationale réservée au conducteur lors de son premier trajet.

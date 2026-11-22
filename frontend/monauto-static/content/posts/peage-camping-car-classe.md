@@ -1,7 +1,7 @@
 ---
 title: "Péage camping-car classe 2 : tarifs, règles et astuces pour voyager malin en Europe"
-description: "Un camping-car classe 2 paie plus cher au péage qu’une voiture. Quels sont les tarifs exacts en France et en Europe ? Comment éviter les mauvaises surprise"
-date: "2026-08-07"
+description: "Un camping-car classe 2 paie plus cher au péage qu'une voiture. Tarifs exacts en France et en Europe, et astuces pour éviter les mauvaises surprises."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1151
@@ -9,98 +9,112 @@ wp_locale: "fr"
 image: "/images/articles/peage-camping-car-classe-couverture.webp"
 imageAlt: "Péage camping-car classe 2 : tarifs, règles et astuces pour voyager malin en Europe"
 ---
-Un camping-car classe 2 (hauteur entre 2 et 3 mètres, poids < 3,5 tonnes) paie plus cher au péage qu’une voiture. En France, comptez environ 1,7 fois le tarif voiture pour un trajet Paris-Marseille, soit ~110 € au lieu de 65 €. Mais les règles varient selon les pays : vignette obligatoire en Hongrie, péages électroniques en Turquie, ou hausse de péage pour les poids lourds en Pologne (qui ne concerne pas les camping-cars classe 2, sous 3,5 tonnes). Voici ce qu’il faut savoir avant de prendre la route.
+***Un camping-car classe 2 mesure entre 2 et 3 mètres de haut pour un poids total inférieur à 3,5 tonnes. Sur autoroute française, il paie environ 1,7 fois le tarif d'une voiture, soit près de 45 € de plus sur un Paris-Marseille.***
 
-Pour un road trip sans mauvaise surprise, préparez-vous. Un week-end de 400 km avec deux vélos sur le toit peut coûter cher si vous ignorez les tarifs.
+Un week-end de 400 km avec deux vélos sur le toit peut coûter cher si vous ignorez cette règle de classement. Voici les tarifs réels, les pièges à éviter et ce qui change selon les pays traversés.
 
-## 1\. Comment fonctionne le classement des camping-cars aux péages ?
+TL;DR : un camping-car classe 2 relève de la classe 2 des péages français (coefficient 1,7).
+
+-   Un trajet **Paris-Marseille** coûte environ **110 €**, contre 65 € pour une voiture.
+-   Un dépassement de **3 mètres de hauteur** fait basculer le véhicule en classe 3, avec une facture alourdie de 30 à 50 %.
+-   En Europe de l'Est, des **vignettes électroniques** remplacent les barrières de péage classiques.
 
 ![Camping-car classe 2 franchissant un péage français avec panneau de hauteur](/images/articles/peage-camping-car-classe-1.webp)
 
-Les péages classent les véhicules selon leur hauteur et leur poids total autorisé en charge (PTAC). En France, un camping-car classe 2 mesure entre 2 et 3 mètres de haut. Il pèse moins de 3,5 tonnes. Cette catégorie inclut la plupart des fourgons aménagés et des camping-cars compacts.
+## Comment fonctionne le classement des camping-cars aux péages ?
 
-Pourquoi cette classification ? Un véhicule plus haut ou plus lourd occupe plus d’espace. Il use davantage les infrastructures. Résultat : le tarif augmente. Par exemple, sur l’A6 entre Paris et Lyon, un camping-car classe 2 paiera ~80 €. Une voiture ne paiera que 50 €. Cette différence pèse sur le budget d’un voyage en famille.
+Les sociétés d'autoroutes classent chaque véhicule selon sa **hauteur** et son **poids total autorisé en charge** (PTAC). Un véhicule classé 2 (entre 2 et 3 mètres) paie 1,7 fois le tarif d'une voiture classée 1. La plupart des fourgons aménagés et des camping-cars compacts entrent dans cette catégorie.
 
-### Les 5 classes de véhicules aux péages français
+Cette classification suit une logique simple : un véhicule plus haut occupe davantage d'espace sur la chaussée et use plus vite les infrastructures. Les tarifs grimpent en conséquence, et la **différence se chiffre vite** sur un long trajet estival.
 
 | Classe | Hauteur | PTAC | Exemples de véhicules |
 | --- | --- | --- | --- |
 | 1 | < 2 m | < 3,5 t | Voitures, motos, petits utilitaires |
-| 2 | 2–3 m | < 3,5 t | Fourgons aménagés, camping-cars compacts |
-| 3 | \> 3 m | < 3,5 t | Camping-cars intégraux, bus |
-| 4 | \> 3 m | 3,5–12 t | Poids lourds, cars |
-| 5 | Tous | \> 12 t | Camions, semi-remorques |
+| 2 | 2 à 3 m | < 3,5 t | Fourgons aménagés, camping-cars compacts |
+| 3 | > 3 m | < 3,5 t | Camping-cars intégraux, minibus |
+| 4 | > 3 m | 3,5 à 12 t | Poids lourds, autocars |
+| 5 | Toutes | > 12 t | Camions, semi-remorques |
 
-*Source : VINCI Autoroutes*
+*Source : classification VINCI Autoroutes, grille tarifaire des sociétés concessionnaires*
 
-Astuce : vérifiez la hauteur exacte de votre camping-car. Certains modèles dépassent légèrement les 3 mètres. Ils basculent alors en classe 3. La facture peut grimper de 30 à 50%. Un détail crucial pour un budget serré.
+Mesurez toujours la hauteur réelle de votre véhicule, antenne satellite et porte-vélos compris. Un camping-car qui dépasse 3 mètres bascule en classe 3, et la facture grimpe de 30 à 50 % sur le même trajet.
 
-## 2\. Tarifs des péages pour un camping-car classe 2 en France (2026)
+## Combien coûte le péage pour un camping-car classe 2 en France ?
 
-En France, les tarifs dépendent de la classe du véhicule et de la distance. Pour un camping-car classe 2, le coefficient multiplicateur est de 1,7. Voici des exemples concrets pour un trajet estival. Avec deux vélos sur le toit et un plein de carburant E85 :
+Un camping-car classe 2 paie environ 1,7 fois le tarif d'une voiture sur les autoroutes françaises. Sur un Paris-Marseille, comptez près de **110 €** contre 65 € pour une voiture, soit environ 45 € de différence pour le même trajet.
 
--   **Paris → Marseille (A6/A7)** : ~110 € (contre 65 € pour une voiture).
--   **Lyon → Bordeaux (A89)** : ~95 € (contre 56 € pour une voiture).
--   **Strasbourg → Montpellier (A36/A7)** : ~105 € (contre 62 € pour une voiture).
+Voici trois exemples concrets pour un road trip estival :
 
-Ces tarifs incluent les hausses annuelles indexées sur l’inflation. Ils excluent les majorations pour travaux ou événements exceptionnels. Pour estimer précisément votre trajet, utilisez le simulateur officiel des péages. Notre guide sur l’[assurance et la réglementation](/camping-car-van/assurance-reglementation) en propose un.
+-   **Paris → Marseille (A6/A7)** : environ 110 € (contre 65 € pour une voiture).
+-   **Lyon → Bordeaux (A89)** : environ 95 € (contre 56 € pour une voiture).
+-   **Strasbourg → Montpellier (A36/A7)** : environ 105 € (contre 62 € pour une voiture).
 
-### Comment payer moins cher ? 3 astuces testées sur le terrain
+Ces montants incluent les hausses annuelles indexées sur l'inflation, mais excluent les majorations liées à des travaux ou à des événements exceptionnels. Pour estimer précisément votre itinéraire, utilisez le simulateur de péage de la société concessionnaire concernée. Notre dossier [péages et vignettes](/peages-vignettes/) détaille aussi les règles applicables aux autres véhicules.
 
--   **Évitez les heures de pointe** : Certains péages appliquent des tarifs réduits la nuit ou le week-end. Par exemple, sur l’A13 entre Paris et Caen, le tarif baisse de 10% entre 22h et 6h. Une astuce utile pour les trajets avec enfants.
--   **Optez pour les routes gratuites** : Les nationales et départementales sont gratuites. Elles rallongent souvent le trajet. Comparez les coûts avec un calculateur d’itinéraire. Celui de notre article sur les [limitations de vitesse des camping-cars](/camping-car-van/limitation-vitesse-camping-car) en propose un.
--   **Vérifiez les passes et abonnements** : Un abonnement comme Liber-t (VINCI Autoroutes) réduit la facture de 5 à 10%. Un investissement rentable pour les grands voyageurs.
+### Trois astuces pour payer moins cher
 
-## 3\. Péages en Europe : ce qui change pour un camping-car classe 2
+-   **Évitez les heures de pointe.** Certains péages appliquent un tarif réduit la nuit ou le week-end, parfois 10 % de moins entre 22h et 6h.
+-   **Comparez avec les routes gratuites.** Les nationales et départementales rallongent le trajet, mais évitent le péage. Vérifiez le détail dans notre article sur les [limitations de vitesse en camping-car](/limitation-vitesse-camping-car/).
+-   **Souscrivez un abonnement télépéage.** Un badge comme Liber-t réduit la facture de 5 à 10 % pour les conducteurs réguliers.
 
-![Carte de l'Europe avec les systèmes de péage pour camping-cars en surbrillance](/images/articles/peage-camping-car-classe-2.webp)
+## Quelles sont les règles de péage en Europe pour un camping-car classe 2 ?
 
-Chaque pays européen a son propre système de péage. Les règles pour les camping-cars classe 2 varient. Voici un tour d’horizon des pays les plus fréquentés. Avec des exemples concrets pour un trajet de deux semaines en été.
+Chaque pays applique son propre système, et un camping-car classe 2 n'est pas toujours traité comme en France. Avant un road trip de plusieurs semaines, vérifiez le système en vigueur dans chaque pays traversé : vignette, péage électronique ou barrière classique.
 
-### Hongrie : vignette électronique obligatoire
+### Hongrie : la vignette électronique e-matrica
 
-En Hongrie, pas de barrière de péage. Une vignette électronique (e-matrica) est obligatoire pour les véhicules jusqu’à 3,5 tonnes. En 2026, le tarif annuel pour un camping-car classe 2 (catégorie D1) est d’environ 168 €. Des vignettes 10 jours (~19 €) ou mensuelles (~30 €) sont aussi disponibles.
+En Hongrie, aucune barrière physique n'existe. Une **vignette électronique** (e-matrica) reste obligatoire pour tout véhicule jusqu'à 3,5 tonnes. Le tarif annuel pour la catégorie D1 (camping-cars classe 2) avoisine 168 €, avec des formules 10 jours (environ 19 €) ou mensuelles (environ 30 €). L'achat se fait en ligne, et la vignette est liée à la plaque d'immatriculation. Les contrôles se font par caméra, sans tolérance en cas d'oubli.
 
-Le système est 100% numérique. Tout est lié à la plaque d’immatriculation. Les contrôles sont effectués par caméra. En cas d’oubli, l’amende est salée. L’achat se fait en ligne sur le site officiel du gouvernement hongrois. La vignette est valable immédiatement après paiement.
+### Pologne : des péages ciblés, sans vignette nationale
 
-### Pologne : péages sur sections spécifiques + hausse de 40% en 2026
+La Pologne n'impose pas de vignette nationale, mais certaines sections d'autoroutes (A1, A2, A4) restent payantes au poste de péage classique. La hausse de 40 % appliquée début 2026 ne concerne que les poids lourds et autocars de plus de 3,5 tonnes, soumis au système e-TOLL. Un camping-car classe 2 n'y est pas soumis et paie un tarif stable, par exemple environ 5 € sur la section Gdańsk-Toruń.
 
-La Pologne n’a pas de vignette nationale. Mais des péages existent sur certaines sections d’autoroutes (A1, A2, A4). Une hausse de 40 à 42% a bien eu lieu début 2026, mais elle ne concerne que les poids lourds et autocars de plus de 3,5 tonnes (système e-TOLL) — les camping-cars classe 2 n’y sont pas soumis. Pour un camping-car classe 2, un trajet Gdańsk–Toruń (~150 km) coûte ~5 € ; la section Katowice–Cracovie (~60 km) revient à ~3 €, des tarifs restés stables.
+### Turquie : tout électronique, aucun espèce accepté
 
-Le paiement se fait en espèces ou par carte aux postes de péage. Les poids lourds (>3,5 t) sont soumis au système e-TOLL. Pas les camping-cars classe 2. Le réseau autoroutier polonais est en développement. Certaines sections sont gratuites. Leur état peut laisser à désirer après un orage.
+Les péages turcs fonctionnent à 100 % via deux systèmes électroniques, le transpondeur OGS et la carte HGS. Sans l'un des deux, impossible de passer. Comptez environ 0,50 € pour un trajet Edirne-Istanbul et environ 1,50 € pour traverser un pont du Bosphore. Un camping-car classe 2 est classé en catégorie 2, comme un fourgon de livraison.
 
-### Turquie : péages électroniques (OGS/HGS) et ponts du Bosphore
+### Roumanie : la vignette Rovinieta, la moins chère de la zone
 
-En Turquie, les péages sont 100% électroniques. Ils sont basés sur la distance parcourue. Deux systèmes coexistent : le transpondeur OGS et la carte HGS. Pour un camping-car classe 2, comptez ~0,50 € pour un trajet Edirne–Istanbul (O-3). Et ~1,50 € pour traverser les ponts du Bosphore.
+Pour les véhicules jusqu'à 3,5 tonnes (catégorie A), les tarifs CNAIR revalorisés en 2025 s'élèvent à environ 6 € pour 10 jours, 9,50 € pour 30 jours ou 50 € pour un an. C'est la formule la moins onéreuse des pays cités ici, idéale pour un road trip dans les Carpates. La vignette est liée à la plaque et contrôlée par caméra.
 
-Aucun paiement en espèces n’est possible. Sans OGS ou HGS, impossible de passer. Les tarifs sont révisés chaque année en janvier. Selon l’inflation. Une particularité : les camping-cars classe 2 sont classés en catégorie 2. Comme les fourgons de livraison.
+### Grèce : un système à barrières proche du modèle français
 
-### Roumanie : vignette Rovinieta à petit prix
+La Grèce applique un péage classique, avec paiement en espèces ou par carte à chaque barrière. Un camping-car classe 2 paie un supplément modeste par rapport à une voiture, par exemple autour de 30 € sur Athènes-Thessalonique contre 20 € pour une voiture.
 
-La Roumanie applique un système de vignette électronique (Rovinieta). Pour les véhicules jusqu’à 3,5 tonnes (catégorie A), il n’existe pas de formule 7 jours : les tarifs CNAIR, revalorisés en septembre 2025, sont d’environ 6 € pour 10 jours, 9,50 € pour 30 jours, ou 50 € pour un an. Cela reste la vignette la moins chère des pays couverts ici, pour un road trip dans les Carpates.
+## Quelles erreurs éviter avec un camping-car classe 2 ?
 
-La vignette est liée à la plaque d’immatriculation. Les contrôles sont effectués par caméra. L’achat se fait en ligne sur le site officiel. La vignette est valable immédiatement. Le réseau autoroutier roumain est en expansion. Certaines portions sont encore en travaux. Prévoyez des détours si vous êtes pressé.
+Voyager en camping-car reste une liberté précieuse, à condition d'éviter certains pièges fréquents chez les primo-accédants à ce type de véhicule.
 
-### Maroc : vignette annuelle + péages classiques
+-   **Négliger la hauteur exacte.** Un véhicule à 3,01 mètres bascule en classe 3, avec une hausse de 30 à 50 % du tarif de péage. Mesurez-le avec les accessoires montés.
+-   **Ignorer les systèmes électroniques obligatoires.** En Turquie ou en Hongrie, aucun paiement en espèces n'est possible. Sans transpondeur ou vignette, vous bloquez la circulation et risquez une amende.
+-   **Rouler sans assurance adaptée.** Un camping-car classe 2 nécessite une couverture qui intègre les accessoires comme le porte-vélos, souvent exclus des contrats standards. Notre [comparatif assurance camping-car](/assurance-camping-car-comparatif/) détaille les garanties à vérifier.
+-   **Stationner sans vérifier la réglementation locale.** Certains arrêtés municipaux limitent le stationnement des camping-cars, même si leur légalité reste parfois contestable. Consultez notre article sur les [règles de stationnement en ville](/stationnement-camping-car-regles-ville/) avant de partir.
+-   **Sous-estimer le poids du véhicule chargé.** Le PTAC détermine aussi le permis requis. Notre guide [camping-car et permis B](/camping-car-permis-b-poids/) explique les seuils à respecter.
 
-Le Maroc combine deux systèmes. Une vignette annuelle obligatoire et des péages classiques sur les autoroutes. En 2026, les tarifs de la vignette varient. Selon la puissance fiscale et le type de carburant. 350 DH (~35 €) pour un véhicule essence < 8 CV. Jusqu’à 20 000 DH (~2000 €) pour un diesel > 10 CV.
+Avant de choisir votre véhicule, notre comparatif [profilé, intégral ou capucine](/profile-vs-integral-vs-capucine/) et notre guide [camping-car d'occasion](/camping-car-occasion-prix-conseils/) vous aident à anticiper le poids et la consommation réels sur la route.
 
-La vignette est vérifiée numériquement par les terminaux policiers. Sans elle, impossible de circuler sur les autoroutes. Les péages autoroutiers sont payables en espèces ou par carte. En cas de retard de paiement, une majoration de 15% s’applique dès le premier mois. Un système unique en Europe. À anticiper avant de traverser le détroit de Gibraltar.
+## Questions fréquentes
 
-### Grèce : péages à barrière similaires à la France
+### Un camping-car classe 2 paie-t-il plus cher qu'une voiture au péage ?
 
-La Grèce applique un système de péage classique. Avec des barrières physiques sur les autoroutes. Les tarifs varient selon les tronçons. Les camping-cars classe 2 paient un tarif légèrement supérieur à celui des voitures. Par exemple, un trajet Athènes–Thessalonique coûte ~30 €. Contre 20 € pour une voiture.
+Oui. Le coefficient multiplicateur appliqué en France est de 1,7 par rapport au tarif voiture, ce qui représente environ 45 € de plus sur un Paris-Marseille.
 
-Le paiement se fait en espèces ou par carte aux postes de péage. Les motos bénéficient d’un tarif réduit. Comme en France. Le réseau autoroutier grec est bien développé. Certaines routes secondaires sont sinueuses et étroites. Prévoyez des arrêts fréquents pour admirer le paysage.
+### Que se passe-t-il si mon camping-car dépasse 3 mètres de haut ?
 
-## 4\. Erreurs à éviter avec un camping-car classe 2
+Il bascule automatiquement en classe 3, avec un tarif de péage supérieur de 30 à 50 % à celui d'un véhicule classé 2. Mesurez toujours la hauteur avec les accessoires montés.
 
-Voyager en camping-car, c’est la liberté. À condition d’éviter quelques pièges. Voici les erreurs qui coûtent cher. Surtout pour un premier voyage avec un véhicule de cette taille.
+### Faut-il une vignette pour circuler en camping-car en Hongrie ?
 
--   **Oublier de vérifier la hauteur exacte** : Un camping-car mesurant 3,01 mètres bascule en classe 3. Le tarif de péage augmente de 30 à 50%. Mesurez-le avant de partir. Surtout si vous avez ajouté un porte-vélo ou une antenne satellite.
--   **Ne pas anticiper les systèmes électroniques** : En Turquie ou en Hongrie, impossible de payer en espèces. Sans transpondeur OGS ou vignette e-matrica, vous bloquez la circulation. Et vous risquez une amende.
--   **Rouler sans assurance adaptée** : Un camping-car classe 2 nécessite une assurance spécifique. Vérifiez que votre contrat couvre les accessoires. Comme le porte-vélo ou les vélos. Souvent exclus des garanties standard. Notre [comparatif assurance camping-car](/camping-car-van/assurance-camping-car-comparatif) détaille les points à vérifier.
--   **Stationner n’importe où** : En France, un camping-car peut stationner sur la voie publique. Mais certains arrêtés municipaux l’interdisent. Ces arrêtés sont souvent jugés illégaux. Mieux vaut vérifier avant de risquer une amende, surtout dans les communes touristiques. Notre article sur les [règles de stationnement en ville](/camping-car-van/stationnement-camping-car-regles-ville) détaille les cas fréquents.
--   **Négliger les limitations de vitesse** : Un camping-car classe 2 est soumis aux mêmes règles qu’une voiture. Mais certains pays appliquent des limites spécifiques. En Espagne, par exemple, la limite est de 90 km/h sur route. Et 100 km/h sur autoroute. Consultez notre article sur les limitations de vitesse pour éviter les surprises.
+Oui, une vignette électronique e-matrica est obligatoire pour tout véhicule jusqu'à 3,5 tonnes, y compris un camping-car classe 2, avec des formules allant de 10 jours à un an.
 
-Pour aller plus loin, consultez notre [hub dédié aux camping-cars et vans](/camping-car-van) : conseils pour choisir votre véhicule, l’assurer, et préparer votre road trip.
+### Un camping-car classe 2 est-il concerné par le système e-TOLL polonais ?
+
+Non. Ce système s'applique uniquement aux poids lourds et autocars de plus de 3,5 tonnes. Un camping-car classe 2 paie le tarif classique aux postes de péage existants.
+
+### Peut-on payer un péage en espèces en Turquie avec un camping-car ?
+
+Non. Les péages turcs fonctionnent uniquement avec les systèmes électroniques OGS ou HGS. Sans l'un des deux, le passage est impossible.
+
+### Quelle vignette européenne reste la moins chère pour un camping-car classe 2 ?
+
+La vignette roumaine Rovinieta, avec des tarifs à partir d'environ 6 € pour 10 jours, reste la formule la plus économique parmi les principaux pays traversés en road trip.
