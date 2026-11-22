@@ -9,82 +9,93 @@ wp_locale: "fr"
 image: "/images/articles/vendre-voiture-sans-controle-technique-couverture.jpg"
 imageAlt: "Vendre une voiture sans contrôle technique : est-ce légal en 2026 ?"
 ---
-Vendre une voiture sans contrôle technique n’est possible que dans deux cas. D’abord, si le véhicule a moins de 4 ans. Ensuite, si vous le cédez à un professionnel, comme un garage ou un concessionnaire. Pour une vente entre particuliers, un contrôle technique de moins de 6 mois est obligatoire si la voiture a plus de 4 ans. Sans ce document, la cession est illégale. Elle expose à une amende pouvant aller jusqu’à 750 €.
+***Vendre une voiture sans contrôle technique n'est possible que dans deux cas : un véhicule de moins de 4 ans, ou une cession à un professionnel de l'automobile.***
+
+Pour une vente entre particuliers, un contrôle technique de moins de 6 mois reste obligatoire si la voiture a plus de 4 ans. Sans ce document, la cession expose à des sanctions et fragilise l'acheteur comme le vendeur.
+
+TL;DR :
+
+-   Un contrôle technique de moins de **6 mois** est obligatoire pour vendre un véhicule de plus de 4 ans à un particulier.
+-   Rouler ou céder sans contrôle valide reste une **contravention de 4e classe**, amende forfaitaire de 135 €, jusqu'à 750 € en cas de majoration.
+-   Un véhicule vendu **pour destruction** n'a besoin d'aucun contrôle technique, car il ne sera pas remis en circulation.
+-   Le certificat de non-gage et le certificat de cession restent obligatoires, quel que soit l'état du véhicule.
 
 ## Pourquoi le contrôle technique est-il obligatoire pour vendre une voiture ?
 
-La réglementation impose ce document pour protéger l’acheteur contre les vices cachés. En effet, le contrôle technique vérifie l’état général du véhicule et son niveau de sécurité. Ainsi, un procès-verbal valide (moins de 6 mois) doit être remis à l’acheteur. Il s’accompagne de la carte grise barrée, du certificat de cession et d’un certificat de non-gage.
+La réglementation impose ce document pour protéger l'acheteur contre les vices cachés liés à la sécurité. Le contrôle technique vérifie l'état général du véhicule et son niveau de sécurité avant la remise en circulation sous un nouveau propriétaire. Un procès-verbal valide, de moins de 6 mois, doit être remis à l'acheteur, en complément de la **carte grise barrée**, du **certificat de cession** et du **certificat de non-gage**.
 
-Sans ce document, l’acheteur peut annuler la vente pour vice caché. Par conséquent, la responsabilité du vendeur reste engagée pendant 5 ans pour les défauts non déclarés.
+Sans ce document, l'acheteur peut contester la vente pour vice caché si un défaut de sécurité non signalé apparaît après l'achat. La responsabilité du vendeur peut rester engagée plusieurs années pour les défauts non déclarés au moment de la vente.
 
 ## Quels sont les risques si je vends sans contrôle technique ?
 
-Les sanctions sont lourdes. Voici ce que vous risquez :
+Vendre ou faire circuler un véhicule sans contrôle technique valide constitue une **contravention de 4e classe**. L'amende forfaitaire s'élève à 135 €, réduite à 90 € en cas de paiement rapide, et peut grimper jusqu'à 750 € en cas de majoration. L'obligation de présenter un contrôle technique valide pour la vente d'un véhicule de plus de 4 ans découle de l'article R323-22 du Code de la route.
 
--   **Amende de 750 €** pour le vendeur (article R323-26 du Code de la route).
--   **Annulation de la vente** par l’acheteur pour vice caché.
--   **Responsabilité civile** pendant 5 ans pour les défauts non déclarés (freinage, direction, pollution).
--   **Refus d’immatriculation** par l’ANTS si le contrôle technique manque lors du changement de titulaire.
+Au-delà de l'amende, l'acheteur peut demander l'annulation de la vente pour vice caché si un défaut de sécurité non signalé est découvert ensuite. L'ANTS peut également refuser l'immatriculation au nom de l'acheteur si le contrôle technique manque au dossier de changement de titulaire.
 
-Exemple concret : en 2025, un vendeur a été condamné à rembourser 8 000 € à l’acheteur. La raison ? Un défaut de freinage non signalé par le contrôle technique.
+## Quelles sont les exceptions à l'obligation de contrôle technique ?
 
-## Quelles sont les exceptions à l’obligation de contrôle technique ?
+Deux cas permettent de vendre un véhicule sans contrôle technique :
 
-Deux cas permettent de vendre sans contrôle technique :
+-   Le véhicule a **moins de 4 ans**, le premier contrôle technique n'étant pas encore exigé à cet âge.
+-   Le véhicule est cédé à un **professionnel de l'automobile** (garage, concessionnaire, marchand agréé), qui pourra le remettre en état avant sa propre revente.
 
--   Le véhicule a moins de 4 ans (premier contrôle technique non encore exigé).
--   Le véhicule est cédé à un professionnel de l’automobile (garage, concessionnaire, marchand agréé), qui pourra le remettre en état avant sa propre revente.
+En dehors de ces deux cas, une vente entre particuliers d'un véhicule de plus de 4 ans nécessite systématiquement un contrôle technique de moins de 6 mois.
 
-## Quels documents dois-je remettre à l’acheteur ?
+## Quels documents remettre à l'acheteur ?
 
-Pour une vente en règle, la réglementation impose quatre documents. Pour plus de détails sur les démarches liées à la carte grise, consultez [notre guide sur la cession et l’achat d’un véhicule](/carte-grise-demarches/cession-achat).
+Pour une vente en règle, quatre documents sont à réunir. Pour les démarches liées à la carte grise après une vente, notre guide sur la [déclaration de cession en ligne](/declaration-cession-vehicule-en-ligne/) détaille chaque étape.
 
 | Document | Détails | Validité |
 | --- | --- | --- |
-| Carte grise (certificat d’immatriculation) | Barrée avec la mention « Vendu/cédé le \[date\] » et signée par le vendeur. | Illimitée si correctement remplie. |
-| Certificat de cession (Cerfa 15776\*02) | À remplir en 2 exemplaires (1 pour le vendeur, 1 pour l’acheteur). | À déclarer sous 15 jours sur [l’ANTS](/carte-grise-demarches/declaration-cession-vehicule-en-ligne). |
-| Certificat de non-gage (ou situation administrative) | Atteste que le véhicule n’est pas gagé ou volé. Délivré par le SIV. | Moins de 15 jours. |
-| Contrôle technique | Procès-verbal de moins de 6 mois (obligatoire si véhicule > 4 ans). | 6 mois (2 mois si contre-visite). |
+| Carte grise | Barrée avec la mention « Vendu/cédé le [date] » et signée par le vendeur | Illimitée si correctement remplie |
+| Certificat de cession (Cerfa 15776*02) | Rempli en 2 exemplaires, un pour chaque partie | À déclarer sous 15 jours à l'ANTS |
+| Certificat de non-gage | Atteste que le véhicule n'est ni gagé ni volé, délivré par le SIV | Moins de 15 jours |
+| Contrôle technique | Procès-verbal de moins de 6 mois, obligatoire si le véhicule a plus de 4 ans | 6 mois (2 mois en cas de contre-visite) |
 
-Un oubli sur l’un de ces documents peut bloquer l’immatriculation du véhicule par l’acheteur. Par exemple, un certificat de non-gage périmé entraîne un refus automatique par l’ANTS.
+Un document manquant ou périmé peut bloquer l'immatriculation du véhicule au nom de l'acheteur, un certificat de non-gage périmé entraînant par exemple un refus automatique par l'ANTS.
 
-## Comment déclarer la vente à l’ANTS ?
+## Comment déclarer la vente à l'ANTS ?
 
-### Étapes pour déclarer la cession en ligne
-
-La déclaration de cession doit être faite en ligne sur le site de l’ANTS. Voici comment procéder :
-
-1.  Connectez-vous à votre compte ANTS ou via FranceConnect.
-2.  Sélectionnez « Déclarer la cession d’un véhicule » dans votre espace personnel.
-3.  Renseignez les informations du certificat de cession et les coordonnées de l’acheteur.
-4.  Validez la déclaration : un accusé d’enregistrement est envoyé par email sous 24 à 48 heures.
+La déclaration de cession se fait en ligne sur le site de l'ANTS. Connectez-vous via votre compte ANTS ou FranceConnect, puis sélectionnez « Déclarer la cession d'un véhicule » dans votre espace personnel. Renseignez les informations du certificat de cession et les coordonnées de l'acheteur, puis validez : un accusé d'enregistrement arrive par email sous 24 à 48 heures.
 
 ## Puis-je vendre ma voiture pour pièces sans contrôle technique ?
 
-Oui, mais sous conditions strictes :
+Oui, mais sous conditions strictes. Le véhicule doit être déclaré **hors d'usage (VHU)** auprès d'un centre agréé, avec la carte grise barrée portant la mention « Vendu pour destruction le [date] ». Aucun contrôle technique n'est exigé dans ce cas, puisque le véhicule ne sera jamais remis en circulation. Notre guide sur la [cession pour destruction](/cession-vehicule-pour-destruction/) détaille la procédure complète.
 
--   Le véhicule doit être déclaré [hors d’usage (VHU)](/carte-grise-demarches/cession-vehicule-pour-destruction) auprès d’un centre agréé.
--   La carte grise doit être barrée avec la mention « Vendu pour destruction le \[date\] ».
--   Aucun contrôle technique n’est exigé, car le véhicule ne sera pas remis en circulation.
-
-Attention : vendre un véhicule « pour pièces » sans le déclarer comme VHU expose à une amende de 1 500 €. En effet, cela est considéré comme un abandon de véhicule. Le centre agréé doit remettre un certificat de destruction au vendeur. Ce certificat de destruction, à conserver précieusement, sert de preuve en cas de contrôle ultérieur et permet de radier définitivement le véhicule du système d’immatriculation.
+Attention : céder un véhicule « pour pièces » sans le déclarer officiellement comme VHU reste risqué, car cela peut être assimilé à un abandon de véhicule par les autorités. Le centre agréé doit remettre un certificat de destruction au vendeur, document à conserver précieusement comme preuve en cas de contrôle ultérieur.
 
 ## Que faire si mon contrôle technique est périmé ?
 
-Si votre contrôle technique date de plus de 6 mois, vous devez le repasser avant de vendre le véhicule. Voici les étapes à suivre :
+Si votre contrôle technique date de plus de 6 mois, repassez-le avant de vendre. Prenez rendez-vous dans un centre agréé, comptez généralement quelques jours de délai selon la région et environ 30 minutes pour le contrôle. En cas de défaillance mineure ou majeure, effectuez les réparations nécessaires avant une contre-visite, à réaliser sous 2 mois. Une fois le procès-verbal favorable obtenu, il reste valable 6 mois pour la vente.
 
-1.  Prenez rendez-vous dans un centre de contrôle technique agréé (comptez généralement quelques jours de délai selon la région).
-2.  Présentez la carte grise du véhicule et procédez au contrôle (environ 30 minutes).
-3.  En cas de défaillance mineure ou majeure, effectuez les réparations nécessaires avant une contre-visite, à réaliser sous 2 mois.
-4.  Une fois le procès-verbal favorable obtenu, il reste valable 6 mois pour la vente.
+## Comment vérifier l'historique d'un véhicule avant de l'acheter ?
 
-## Comment vérifier l’historique d’un véhicule avant de l’acheter ?
+Pour éviter les mauvaises surprises, utilisez le service gratuit **HistoVec** du ministère de l'Intérieur. Ce service permet de consulter les changements de propriétaires, les contrôles techniques passés, les sinistres déclarés aux assurances et la situation administrative (gage, opposition, vol) d'un véhicule. Le service reste accessible gratuitement avec le numéro d'immatriculation et le numéro de formule de la carte grise, mais il ne remonte les informations qu'à partir de 2009, une limite à garder en tête pour les véhicules plus anciens.
 
-Pour éviter les mauvaises surprises, utilisez le service gratuit HistoVec du Ministère de l’Intérieur. Ce service permet de consulter plusieurs informations clés :
+Pour les autres démarches liées à la vente, nos guides sur le [certificat de cession Cerfa 15776](/certificat-cession-cerfa-15776/), le [changement de titulaire de la carte grise](/changement-de-titulaire-carte-grise/), la [demande de duplicata en cas de perte](/duplicata-carte-grise-perte/) et le [prix de la carte grise par région](/carte-grise-prix-par-region/) complètent ce dossier. Côté contrôle technique, nos articles sur les [points vérifiés lors du contrôle](/controle-technique-points-verifies/) et sur [comment trouver un contrôle technique pas cher près de chez vous](/controle-technique-pas-cher-pres/) aident à anticiper la démarche.
 
--   Les changements de propriétaires.
--   Les contrôles techniques passés.
--   Les sinistres déclarés aux assurances.
--   La situation administrative (gage, opposition, vol).
+## Questions fréquentes
 
-Exemple : un acheteur a découvert via HistoVec qu’un véhicule avait été déclaré volé en 2022. Pourtant, le vendeur affirmait qu’il n’avait jamais eu de problème. Le service reste gratuit et accessible avec le numéro d’immatriculation et le numéro de formule de la carte grise. Il ne remonte toutefois que les informations enregistrées depuis 2009, une limite à garder en tête pour les véhicules plus anciens.
+### Peut-on vendre une voiture de moins de 4 ans sans contrôle technique ?
+
+Oui, un véhicule de moins de 4 ans n'a pas encore passé son premier contrôle technique obligatoire, la vente est donc possible sans ce document.
+
+### Quelle amende en cas de vente sans contrôle technique valide ?
+
+Il s'agit d'une contravention de 4e classe : 135 € d'amende forfaitaire, 90 € en paiement rapide, jusqu'à 750 € en cas de majoration.
+
+### Peut-on vendre une voiture à un garage sans contrôle technique ?
+
+Oui, la cession à un professionnel de l'automobile (garage, concessionnaire, marchand agréé) ne nécessite pas de contrôle technique valide.
+
+### Faut-il un contrôle technique pour vendre une épave ?
+
+Non, si le véhicule est déclaré hors d'usage (VHU) auprès d'un centre agréé, aucun contrôle technique n'est exigé puisqu'il ne sera pas remis en circulation.
+
+### Combien de temps un contrôle technique reste-t-il valable pour une vente ?
+
+6 mois à compter de la date du contrôle, réduit à 2 mois si une contre-visite a été nécessaire après une défaillance.
+
+### Comment vérifier qu'un véhicule n'a pas de défaut caché avant l'achat ?
+
+Consultez gratuitement son historique sur HistoVec avec le numéro d'immatriculation et le numéro de formule, qui recense les contrôles techniques, sinistres et changements de propriétaires depuis 2009.

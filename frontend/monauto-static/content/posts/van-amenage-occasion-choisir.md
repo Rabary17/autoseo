@@ -8,110 +8,102 @@ wp_locale: "fr"
 image: "/images/articles/van-amenage-occasion-choisir-couverture.webp"
 imageAlt: "Van aménagé d’occasion : comment bien le choisir sans se tromper ?"
 ---
-Un fourgon transformé en espace de vie, c’est la liberté à petit prix. Mais attention aux pièges. Entre l’homologation VASP, les vices cachés et les coûts d’assurance, un mauvais choix peut coûter cher.
+***Un fourgon transformé en espace de vie, c'est la liberté à petit prix. Mais entre l'homologation VASP, les vices cachés et les coûts d'assurance, un mauvais choix peut coûter cher.***
 
-Pour un week-end en Bretagne ou un road-trip de trois mois, voici ce qui fait la différence.
+Pour un week-end en Bretagne ou un road-trip de plusieurs mois, voici ce qui fait vraiment la différence avant d'acheter.
 
-## 1\. Vérifiez l’homologation VASP : obligatoire ou pas ?
+TL;DR :
+
+-   L'**homologation VASP** s'impose dès que l'aménagement cumule 5 critères précis : rangements fixes, table, couchage, cuisine fixe et aménagement inamovible.
+-   La mention **CTTE ou VASP** sur la carte grise change l'assurance, le stationnement et parfois le permis requis.
+-   Vérifiez toujours l'**historique du véhicule** (HistoVec) avant de signer, le kilométrage trafiqué reste un risque réel.
+-   Comptez **200 à 600 €/an d'assurance** selon le type de van et son usage.
 
 ![Intérieur d'un van aménagé d'occasion avec kitchenette et lit fixe](/images/articles/van-amenage-occasion-choisir-1.webp)
 
-L’homologation VASP est obligatoire si votre véhicule répond à 5 critères. Ces critères doivent être cumulatifs :
+## Quand l'homologation VASP est-elle obligatoire ?
 
--   Rangements fixes (étagères, placards)
--   Table et assises intégrées
--   Banquette convertible en lit (ou lit fixe)
--   Cuisine fixe (gaz, électrique ou diesel, pas de réchaud mobile)
--   Aménagement inamovible (non démontable en moins de 2 heures)
+L'homologation VASP (Véhicule Automoteur Spécialisé) devient obligatoire quand votre véhicule cumule **5 critères** : des rangements fixes (étagères, placards), une table et des assises intégrées, une banquette convertible en lit ou un lit fixe, une cuisine fixe (gaz, électrique ou diesel, pas de réchaud mobile), et un aménagement inamovible, non démontable en moins de 2 heures.
 
-Si votre véhicule échappe à ces critères, l’homologation VASP n’est pas exigée. Mais sans VASP, votre fourgon reste classé en CTTE sur la carte grise. Cela peut compliquer l’assurance ou le stationnement.
+Si votre véhicule échappe à l'un de ces critères, l'homologation n'est pas exigée, mais le fourgon reste classé **CTTE** sur la carte grise, ce qui peut compliquer l'assurance ou le stationnement dans certaines zones. Un fourgon avec un matelas posé au sol et un réchaud à gaz mobile n'a par exemple pas besoin de VASP. Un van avec une kitchenette soudée et un lit fixe, en revanche, doit être homologué. Pour la démarche complète, notre guide sur les [démarches VASP et carte grise](/vasp-carte-grise-demarches/) détaille chaque étape.
 
-[Tout savoir sur les spécificités des Van & fourgon aménagé](/camping-car-van/van-fourgon-amenage).
+## CTTE ou VASP : quelles conséquences sur la carte grise ?
 
-Exemple : un fourgon avec un matelas posé au sol et un réchaud à gaz mobile n’a pas besoin de VASP. En revanche, un van avec une kitchenette soudée et un lit fixe doit être homologué.
+La mention **CTTE** (ligne J1 de la carte grise) signifie que le véhicule reste considéré comme un utilitaire. La mention **VASP** indique qu'il est reconnu comme un camping-car, avec des conséquences concrètes :
 
-## 2\. Contrôlez la carte grise : CTTE ou VASP ?
+-   **Assurance** : les tarifs diffèrent, comptez 200 à 600 €/an pour un VASP, souvent moins pour un CTTE.
+-   **Stationnement** : certains parkings ou centres-villes limitent l'accès aux véhicules classés camping-car (VASP), sans viser les CTTE.
+-   **Permis** : un VASP de plus de 3,5 tonnes nécessite un permis C, sauf exception pour les titulaires d'un permis B obtenu avant le 20 janvier 1975.
 
-La mention CTTE (ligne J1 de la carte grise) signifie que votre véhicule est toujours considéré comme un utilitaire. La mention VASP indique qu’il est reconnu comme un camping-car.
+Si vous achetez un van en CTTE avec l'intention de le transformer en VASP, prévoyez des frais d'homologation, généralement entre 500 et 1 500 € selon la complexité de l'aménagement.
 
-Cette distinction a des conséquences :
+## Vérifier l'historique du véhicule : kilométrage et accidents
 
--   **Assurance** : les tarifs diffèrent. Comptez 200 à 600 €/an pour un VASP, souvent moins pour un CTTE.
--   **Stationnement** : certains parkings interdisent les camping-cars (VASP), mais pas les CTTE.
--   **Permis** : un VASP de plus de 3,5 tonnes nécessite un permis C. Sauf exception pour les anciens permis B (obtenus avant 20/01/1975).
+Un kilométrage trafiqué ou un accident non déclaré peut coûter cher après l'achat. Demandez systématiquement le **carnet d'entretien** : un van bien suivi présente des factures régulières de vidange, de freins et de distribution. Comparez ensuite le kilométrage affiché avec les contrôles techniques passés, consultables via **HistoVec**, le service gratuit du ministère de l'Intérieur.
 
-Astuce : si vous achetez un van en CTTE et souhaitez le transformer en VASP, prévoyez des frais d’homologation. Comptez 500 à 1 500 € selon les aménagements.
+En cas de tromperie avérée, comme un kilométrage minoré, la justice peut condamner le vendeur à rembourser l'acheteur, même si celui-ci affirme avoir ignoré la fraude lui-même.
 
-## 3\. Vérifiez l’historique du véhicule : kilométrage et accidents
-
-Un kilométrage trafiqué ou un accident non déclaré peut coûter cher. Voici comment limiter les risques.
-
--   **Demandez le carnet d’entretien**. Un van bien entretenu a des factures régulières (vidanges, freins, distribution).
--   **Vérifiez le kilométrage**. Comparez-le avec les précédents contrôles techniques (disponibles sur les sites spécialisés).
--   **Utilisez un service d’historique**. Des plateformes comme HistoVec ou CarVertical permettent de retracer la vie du véhicule.
-
-En cas de tromperie (ex. : kilométrage minoré), la justice peut condamner le vendeur à rembourser l’acheteur. Même s’il ignorait la fraude.
-
-## 4\. Testez les équipements : cuisine, électricité, isolation
+## Tester les équipements avant d'acheter
 
 ![Vérification du système électrique dans un van aménagé avant achat](/images/articles/van-amenage-occasion-choisir-2.webp)
 
-Un van aménagé, c’est avant tout un espace de vie. Voici les points à vérifier lors de l’essai.
+Un van aménagé reste avant tout un espace de vie. Lors de l'essai, vérifiez chaque fonction une à une :
 
--   **Cuisine** : testez les plaques de cuisson (gaz ou induction), le frigo et l’évier. Vérifiez l’étanchéité des raccords gaz.
--   **Électricité** : allumez les lumières, les prises USB et le chauffage. Une batterie auxiliaire en bon état est indispensable.
--   **Isolation** : touchez les parois intérieures. Si elles sont froides ou humides, l’isolation est insuffisante.
--   **Eau** : ouvrez les robinets et vérifiez la pression. Un réservoir d’eau propre et un système de vidange fonctionnel sont essentiels.
+-   **Cuisine** : testez les plaques de cuisson, le frigo et l'évier. Vérifiez l'étanchéité des raccords gaz à la main et à l'œil.
+-   **Électricité** : allumez les lumières, les prises USB et le chauffage. Une batterie auxiliaire en bon état est indispensable pour l'autonomie hors branchement.
+-   **Isolation** : touchez les parois intérieures. Si elles sont froides ou humides au toucher, l'isolation est probablement insuffisante.
+-   **Eau** : ouvrez les robinets et vérifiez la pression, ainsi que le système de vidange des eaux grises.
 
-Exemple : un van avec une cuisine au gaz doit avoir un détecteur de monoxyde de carbone. Obligatoire depuis 2023. Sans lui, l’assurance peut refuser de couvrir un sinistre.
+Un détecteur de monoxyde de carbone n'est pas une obligation légale en France à ce jour, mais il reste **fortement recommandé** sur un van équipé d'une cuisine ou d'un chauffage au gaz. Demandez à l'assureur si son absence influe sur la prise en charge d'un sinistre.
 
-## 5\. Comparez les prix et les assurances
+## Combien coûte un van aménagé d'occasion ?
 
-Les prix des vans aménagés d’occasion varient du simple au triple. Selon l’âge, le kilométrage et les équipements. Voici quelques repères.
+Les prix varient du simple au triple selon l'âge, le kilométrage et les équipements.
 
-| Type de van | Prix moyen (occasion) | Assurance annuelle |
+| Type de van | Prix moyen (occasion) | Assurance annuelle estimée |
 | --- | --- | --- |
 | Van aménagé basique (moins de 5 ans) | 25 000 – 40 000 € | 200 – 400 € |
 | Fourgon haut de gamme (moins de 3 ans) | 40 000 – 70 000 € | 400 – 600 € |
 | Van ancien (plus de 10 ans) | 10 000 – 20 000 € | 200 – 350 € |
 
-*Source : LesFurets, GoodAssur (2026)*
+*Ordres de grandeur constatés sur le marché de l'occasion en 2026, à affiner selon le modèle et la région.*
 
-Astuce : certains accessoires (porte-vélos, auvent) ne sont pas couverts par l’assurance auto standard. Vérifiez auprès de votre assureur pour éviter les mauvaises surprises.
+Certains accessoires, comme un porte-vélos ou un auvent fixé à demeure, ne sont pas toujours couverts par l'assurance auto standard. Vérifiez ce point précis auprès de votre assureur avant la signature.
 
-Pour en savoir plus sur les extensions de garantie, consultez [van aménagé occasion choisir](/camping-car-van/amenager-fourgon-soi-meme-homologation).
+## Entretien, hivernage et où acheter en confiance
 
-## 6\. Pensez à l’entretien et à l’hivernage
+Un van aménagé demande un entretien régulier, surtout s'il reste immobilisé une partie de l'année. Avant l'hivernage, vidangez tous les réservoirs (eau propre, eaux grises), coupez l'électricité en débranchant la batterie, nettoyez l'extérieur pour limiter la corrosion, et vérifiez l'état des joints de porte et de fenêtre. Un van mal hiverné développe plus facilement des moisissures ou des pannes électriques au printemps.
 
-Un van aménagé demande un entretien régulier. Surtout si vous ne l’utilisez pas toute l’année. Voici les étapes clés pour l’hivernage.
+Pour acheter en sécurité, privilégiez les plateformes spécialisées plutôt qu'une petite annonce isolée :
 
--   **Vidangez tous les réservoirs**. Eau propre, eaux grises et eaux noires.
--   **Coupez l’électricité**. Débranchez la batterie et stockez-la dans un endroit sec.
--   **Nettoyez l’extérieur**. La saleté et l’humidité accélèrent la corrosion.
--   **Vérifiez les joints**. Des joints de porte ou de fenêtre abîmés laissent passer l’humidité.
+-   **Wikicampers** : plateforme d'occasion entre particuliers avec des véhicules inspectés et une garantie proposée sur la transaction.
+-   **WeVan Market** : plateforme dédiée à la revente de vans et fourgons aménagés d'occasion, adossée à un réseau de professionnels.
+-   **Réseaux de concessions spécialisés** (type YpoCamp) : véhicules révisés et accompagnement pour le financement, avec un choix souvent plus restreint qu'en ligne.
 
-Exemple : un van mal hiverné peut développer des moisissures ou des problèmes électriques. Prévoyez un budget de 100 à 300 €/an pour l’entretien courant (pneus, freins, distribution).
+Sur Leboncoin ou Facebook Marketplace, méfiez-vous des annonces trop alléchantes. Vérifiez systématiquement l'historique du véhicule et exigez un essai routier avant de vous engager, comme détaillé dans notre guide sur l'[aménagement d'un fourgon en autonomie et son homologation](/amenager-fourgon-soi-meme-homologation/). Pour la suite de vos démarches, notre guide sur les [démarches de carte grise ANTS](/carte-grise-ants-demarches/), notre comparatif [assurance camping-car](/assurance-camping-car-comparatif/) et notre dossier sur les [prix et conseils d'un camping-car d'occasion](/camping-car-occasion-prix-conseils/) complètent cette préparation.
 
-## 7\. Où acheter ? Les bonnes adresses pour éviter les arnaques
+## Questions fréquentes
 
-### Plateformes spécialisées
+### Un van aménagé doit-il obligatoirement avoir la mention VASP ?
 
-Pour acheter un van aménagé d’occasion en toute sécurité, privilégiez ces plateformes :
+Oui, dès que l'aménagement cumule les 5 critères légaux : rangements fixes, table et assises, couchage, cuisine fixe et aménagement inamovible. En dessous, le véhicule reste classé CTTE.
 
--   **WeVan Market**. Large choix de vans aménagés, neufs et d’occasion. Avec un accompagnement personnalisé.
--   **Libertium**. Spécialiste des fourgons aménagés. Modèles garantis et contrôlés.
--   **Vanlife Market**. Plateforme collaborative. Idéale pour trouver des vans à petits prix.
--   **YpoCamp**. Propose des financements adaptés aux vans aménagés.
+### Peut-on rouler avec un van aménagé non homologué VASP ?
 
-### Précautions à prendre
+Vous risquez une amende et une contre-visite au contrôle technique si l'aménagement correspond en réalité aux critères VASP sans avoir été déclaré. Régularisez la situation avant de prendre la route.
 
-Évitez les annonces trop alléchantes sur Leboncoin ou Facebook Marketplace. Vérifiez toujours l’historique du véhicule. Et exigez un essai routier.
+### Combien coûte l'assurance d'un van aménagé ?
 
-Pour plus de conseils, lisez [cet article](/camping-car-van/amenager-fourgon-soi-meme-homologation).
+Comptez entre 200 et 600 € par an selon le type de van, son classement CTTE ou VASP, et les garanties souscrites pour les équipements embarqués.
 
-## Bonus : les erreurs à éviter absolument
+### Comment vérifier qu'un van aménagé d'occasion n'a pas un compteur trafiqué ?
 
--   **Négliger le contrôle technique**. Un van aménagé doit passer le CT comme n’importe quel véhicule. Vérifiez la date du dernier contrôle (valable 6 mois pour la vente).
--   **Oublier la carte grise**. Le changement de titulaire doit être fait sous 1 mois après l’achat. Amende de 135 à 750 € en cas de retard.
--   **Sous-estimer les coûts annexes**. Assurance, entretien, péages… Un van aménagé coûte plus cher qu’une voiture classique.
--   **Choisir un modèle peu fiable**. Certains véhicules, comme la Mini Countryman (génération 1), ont des problèmes récurrents. Renseignez-vous avant d’acheter.
+Comparez le kilométrage affiché aux contrôles techniques passés via HistoVec, et demandez le carnet d'entretien complet avec les dates des interventions.
+
+### Faut-il un détecteur de monoxyde de carbone dans un van aménagé ?
+
+Ce n'est pas une obligation légale en France actuellement, mais c'est fortement recommandé dès qu'une cuisine ou un chauffage au gaz est installé à bord.
+
+### Où acheter un van aménagé d'occasion en toute sécurité ?
+
+Privilégiez les plateformes spécialisées comme Wikicampers ou WeVan Market, ou un réseau de concessions dédié, plutôt qu'une annonce isolée sans historique vérifiable.
