@@ -1,7 +1,7 @@
 ---
 title: "Exonération malus famille nombreuse : conditions et demande en 2026"
 description: "Les familles nombreuses peuvent demander une exonération partielle du malus écologique sur leur véhicule. Découvrez les conditions, le montant maximal (20 "
-date: "2026-08-05"
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "malus-taxes"
 wp_id: 915
@@ -24,7 +24,7 @@ Le dispositif vise les foyers comptant au moins **trois enfants à charge**, au 
 -   Il compte **au moins cinq places assises**, mention figurant sur la carte grise.
 -   Il est **acheté ou loué** : achat comptant ou à crédit, location avec option d’achat (LOA) ou location longue durée (LDD) d’au moins deux ans.
 -   Il a effectivement donné lieu au paiement du malus CO2 ou du malus au poids.
--   Le demandeur figure sur la [carte grise](https://techcars.fr/carte-grise-demarches/), comme propriétaire ou locataire.
+-   Le demandeur figure sur la [carte grise](/carte-grise-demarches/), comme propriétaire ou locataire.
 
 Un véhicule 100 % électrique n’est pas concerné en pratique : il n’a pas de malus à rembourser, puisqu’il émet 0 g/km de CO2 et reste exonéré du malus au poids en 2026.
 
@@ -46,7 +46,7 @@ Les textes officiels consultés ne détaillent pas le cas de la **garde alterné
 
 Le montant remboursé correspond à la **différence entre le malus payé et le malus recalculé** avec la réduction familiale. La fiche officielle de service-public.fr ne fixe aucun plafond en euros propre à ce dispositif, et ses cas chiffrés vont de quelques centaines à plusieurs dizaines de milliers d’euros. Seul le plafond général du malus s’applique : le montant cumulé du malus CO2 et du malus au poids ne peut pas dépasser **80 000 €**.
 
-Le [barème du malus écologique](https://techcars.fr/malus-ecologique-bareme/) a été durci en 2026. Le malus CO2 démarre désormais à **108 g/km**, avec 50 € à ce seuil, et atteint son plafond de 80 000 € à partir de 192 g/km. Plus le véhicule émet, plus la réduction familiale pèse lourd en euros : à 180 g/km, le malus CO2 atteint déjà 45 990 €.
+Le barème du [malus écologique](/malus-taxes/) a été durci en 2026. Le malus CO2 démarre désormais à **108 g/km**, avec 50 € à ce seuil, et atteint son plafond de 80 000 € à partir de 192 g/km. Plus le véhicule émet, plus la réduction familiale pèse lourd en euros : à 180 g/km, le malus CO2 atteint déjà 45 990 €.
 
 ### La réduction de 20 g/km et 200 kg par enfant
 
@@ -77,9 +77,9 @@ Le dossier complet part vers le centre des finances publiques indiqué sur votre
 
 Plusieurs règles complémentaires encadrent le dispositif. **Un seul véhicule par foyer peut bénéficier de la réduction sur une période de deux ans**. Cette limite s’allège si le premier véhicule a été détruit ou rendu inutilisable (accident, catastrophe naturelle, vol, force majeure) : un justificatif est alors demandé.
 
-La réduction vise un véhicule qui a réellement supporté le malus. Or le malus se paie une seule fois, à la première immatriculation. Une occasion déjà immatriculée en France n’ouvre donc rien à rembourser, puisque le premier propriétaire l’a déjà acquitté (voir notre page sur l’[immatriculation d’un véhicule d’occasion](https://techcars.fr/immatriculation-vehicule-occasion/)). Le cas d’une occasion importée est différent : le malus est dû à sa première immatriculation en France. Le [malus pour une voiture importée](https://techcars.fr/malus-vehicule-importe/) suit des règles spécifiques selon l’origine du véhicule, et il vaut mieux confirmer l’accès à la réduction auprès de votre centre des finances publiques.
+La réduction vise un véhicule qui a réellement supporté le malus. Or le malus se paie une seule fois, à la première immatriculation. Une occasion déjà immatriculée en France n’ouvre donc rien à rembourser, puisque le premier propriétaire l’a déjà acquitté (voir notre page sur l’[achat d’un véhicule d’occasion](/voiture-d-occasion/)). Le cas d’une occasion importée est différent : le malus est dû à sa première immatriculation en France. Notre guide pour [immatriculer un véhicule importé](/immatriculer-vehicule-importe/) détaille ces règles spécifiques selon l’origine du véhicule, et il vaut mieux confirmer l’accès à la réduction auprès de votre centre des finances publiques.
 
-Le remboursement du malus est indépendant des aides à l’achat. Le bonus écologique a été remplacé le 1er juillet 2025 par la prime « coup de pouce » véhicules particuliers électriques, financée par les certificats d’économies d’énergie. Elle porte sur le prix d’achat d’un véhicule électrique, qui n’a de toute façon pas de malus à rembourser. Consultez notre page sur le [bonus écologique](https://techcars.fr/bonus-ecologique-vehicules-electriques/) pour le détail, et vérifiez les conditions en vigueur au moment de l’achat.
+Le remboursement du malus est indépendant des aides à l’achat. Le bonus écologique a été remplacé le 1er juillet 2025 par la prime « coup de pouce » véhicules particuliers électriques, financée par les certificats d’économies d’énergie. Elle porte sur le prix d’achat d’un véhicule électrique, qui n’a de toute façon pas de malus à rembourser. Consultez notre dossier sur les [aides et la fiscalité des véhicules électriques](/aides-fiscalite-ev/) pour le détail, et vérifiez les conditions en vigueur au moment de l’achat.
 
 ## Exemples concrets de remboursement malus famille nombreuse 2026
 
@@ -91,7 +91,7 @@ Le remboursement du malus est indépendant des aides à l’achat. Le bonus éco
 | 4 enfants, monospace 7 places | 150 g/km | 2 100 kg | 15 279 € | 0 € | 15 279 € |
 | 3 enfants, berline 5 places | 170 g/km | 1 450 kg | 22 380 € | 100 € | 22 280 € |
 
-Ces montants restent indicatifs et dépendent du barème applicable à la date de première immatriculation. Dans les deux premiers cas, la réduction ramène les émissions sous le seuil de 108 g/km et la masse sous 1 500 kg, d’où un malus final nul. Dans le troisième, 170 g/km moins 60 g/km donnent 110 g/km, soit un malus résiduel de 100 €. Pour un véhicule dont la fiscalité dépend de la puissance administrative, consultez notre page sur le [prix du cheval fiscal](https://techcars.fr/calcul-cheval-fiscal/). Une famille qui hésite entre neuf et occasion peut aussi regarder la [taxe CO2 sur les véhicules d’occasion](https://techcars.fr/taxe-co2-vehicule-occasion/), qui obéit à d’autres critères.
+Ces montants restent indicatifs et dépendent du barème applicable à la date de première immatriculation. Dans les deux premiers cas, la réduction ramène les émissions sous le seuil de 108 g/km et la masse sous 1 500 kg, d’où un malus final nul. Dans le troisième, 170 g/km moins 60 g/km donnent 110 g/km, soit un malus résiduel de 100 €. Pour un véhicule dont la fiscalité dépend de la puissance administrative, consultez notre page sur le [prix de la carte grise par région](/carte-grise-prix-par-region/), qui détaille le calcul du cheval fiscal. Une famille qui hésite entre neuf et occasion peut aussi regarder la [taxe CO2 sur les véhicules d’occasion](/taxe-co2-vehicule-occasion/), qui obéit à d’autres critères.
 
 ### Acheter une occasion déjà immatriculée : y a-t-il un remboursement ?
 
@@ -106,3 +106,29 @@ Après plusieurs mois sans nouvelles, **contactez d’abord le centre des financ
 En cas de refus jugé infondé, alors que le dossier est complet et les conditions remplies, un recours hiérarchique reste possible auprès du service concerné. Le **Médiateur des ministères économiques et financiers** peut être saisi en dernier ressort.
 
 Gardez systématiquement une copie complète du dossier envoyé : formulaire, justificatifs et accusé de dépôt. Cette pièce sert de référence en cas de contestation, quel que soit le motif du refus invoqué.
+
+## Questions fréquentes
+
+### Combien d'enfants faut-il pour demander le remboursement du malus famille nombreuse ?
+
+Trois enfants à charge minimum, reconnus au sens des prestations familiales. Chaque enfant supplémentaire au-delà du troisième augmente la réduction de 20 g/km et 200 kg.
+
+### Le remboursement est-il automatique à l'immatriculation ?
+
+Non. Le malus est payé au tarif plein à l'immatriculation, puis le foyer dépose une demande de remboursement séparée avec le formulaire n°1712-SD.
+
+### Quel est le délai pour déposer sa demande de remboursement ?
+
+Avant le 31 décembre de la deuxième année suivant l'immatriculation du véhicule. Passé ce délai, la demande n'est plus recevable.
+
+### Une occasion déjà immatriculée en France ouvre-t-elle droit au remboursement ?
+
+Non, sauf si le foyer est le premier titulaire ayant payé le malus. Un véhicule déjà immatriculé par un précédent propriétaire n'a rien à rembourser à l'acheteur suivant.
+
+### Un véhicule électrique peut-il bénéficier de ce dispositif ?
+
+Non, en pratique. Un véhicule 100 % électrique n'a pas de malus CO2 à payer et reste exonéré du malus au poids en 2026, donc il n'y a rien à rembourser.
+
+### Que faire si le centre des finances publiques ne répond pas ?
+
+Relancez-le en indiquant la date de dépôt et le numéro de dossier. En cas de refus jugé infondé, un recours hiérarchique puis une saisine du Médiateur des ministères économiques et financiers restent possibles.

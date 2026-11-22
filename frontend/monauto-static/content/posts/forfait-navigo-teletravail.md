@@ -1,85 +1,99 @@
 ---
 title: "Forfait Navigo télétravail : remboursement, règles et alternatives en 2026"
-description: "Le forfait Navigo reste remboursable même en télétravail. Employeurs et salariés : voici les règles 2026, les exonérations et les alternatives pour optimis"
-date: "2026-08-13"
+description: "Le forfait Navigo reste remboursable même en télétravail. Taux de prise en charge, exonération fiscale et alternatives : les règles 2026 expliquées simplement."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1385
 wp_locale: "fr"
 image: "/images/articles/forfait-navigo-teletravail-couverture.webp"
 imageAlt: "Forfait Navigo télétravail : remboursement, règles et alternatives en 2026"
 ---
-Vous télétravaillez 3 jours par semaine mais gardez votre abonnement Navigo ? Bonne nouvelle : votre employeur doit toujours vous rembourser. En effet, le taux reste fixé à 50% dans le secteur privé et 75% dans le public. Ainsi, même sans utiliser les transports tous les jours, votre abonnement reste valable. Les règles d’exonération fiscale et sociale n’ont pas changé non plus. Voici comment en profiter sans perdre un euro.
+***Vous télétravaillez plusieurs jours par semaine mais gardez votre abonnement Navigo ? Votre employeur doit toujours vous rembourser une partie de son coût, quel que soit votre nombre de jours de présence au bureau.***
 
-## 1\. Remboursement du Navigo en télétravail : les règles 2026
+Voici les règles de remboursement en 2026, les plafonds d'exonération réels et les alternatives à envisager selon votre rythme de télétravail.
 
-L’obligation légale de remboursement partiel des abonnements de transport en commun par l’employeur n’a pas changé. En effet, que vous soyez en présentiel ou à distance, votre employeur doit prendre en charge :
+TL;DR : l'employeur rembourse 50 % de l'abonnement Navigo dans le privé (75 % dans le public), que vous soyez en présentiel ou en télétravail, sans condition de fréquence de trajets.
 
--   50% du coût de votre abonnement Navigo (secteur privé).
--   75% du coût (secteur public).
+-   Le Navigo toutes zones coûte **90,80 € par mois** en 2026.
+-   L'exonération fiscale et sociale porte sur un **pourcentage** de l'abonnement (jusqu'à 75 %), sans plafond fixe en euros pour la part obligatoire.
+-   Avec un télétravail intensif, le [forfait mobilités durables](/forfait-mobilites-durables-velo/) devient souvent plus avantageux que l'abonnement transport.
 
-En 2026, l’abonnement Navigo toutes zones coûte **90,80 € par mois** (+2 € vs 2025). Votre employeur doit donc vous rembourser :
+## Remboursement du Navigo en télétravail : les règles 2026
 
-| Secteur | Remboursement mensuel (2026) | Coût restant à votre charge |
-| --- | --- | --- |
-| Privé | 45,40 € | 45,40 € |
-| Public | 68,10 € | 22,70 € |
+L'obligation légale de remboursement partiel des abonnements de transport en commun par l'employeur ne dépend pas de votre présence physique au bureau. Que vous soyez en présentiel ou en télétravail, votre employeur doit prendre en charge au moins **50 % du coût de votre abonnement Navigo** dans le secteur privé, et **75 %** dans le secteur public.
 
-*Source : service-public.gouv.fr / Île-de-France Mobilités*
+En 2026, l'abonnement Navigo toutes zones coûte **90,80 € par mois**. Votre employeur vous rembourse donc, a minima, les montants suivants.
 
-Ce remboursement est **obligatoire**. Ainsi, même avec 3 jours de télétravail par semaine, votre abonnement Navigo vous revient à **moins de 1,50 € par jour** (secteur public) ou **3 € par jour** (secteur privé). Difficile de trouver moins cher pour des trajets illimités en Île-de-France.
+| Secteur | Taux minimal | Remboursement mensuel | Reste à charge |
+| --- | --- | --- | --- |
+| Privé | 50 % | 45,40 € | 45,40 € |
+| Public | 75 % | 68,10 € | 22,70 € |
 
-## 2\. Exonérations fiscales et sociales : un avantage pour tous
+*Tarif Navigo : grille officielle Île-de-France Mobilités 2026.*
 
-Le remboursement du Navigo n’est pas une charge pour votre employeur. En effet, il est **exonéré de cotisations sociales et d’impôt sur le revenu**, dans la limite de 710 € par an et par salarié. Ainsi, en 2026, cela représente :
+Ce remboursement minimal est **obligatoire** et ne dépend d'aucune justification de fréquence de trajets : même avec 3 jours de télétravail par semaine, l'employeur doit verser la part prévue par la loi, calculée sur le prix plein de l'abonnement souscrit.
 
--   Un gain de **~45% de charges sociales** pour l’employeur.
--   Une économie d’**impôt sur le revenu** pour vous.
+## Exonération fiscale et sociale : ce qui change vraiment
 
-Concrètement, si votre employeur vous rembourse 544,80 € par an (45,40 € x 12 mois), il ne paie en réalité que **~300 €** après exonérations. Ainsi, les deux parties y gagnent.
+Contrairement à une idée répandue, l'exonération de cotisations sociales et d'impôt sur le revenu applicable à la prise en charge des frais de transport public **n'est pas plafonnée en euros** pour l'année 2026. La règle est **en pourcentage** : la prise en charge employeur reste exonérée jusqu'à **75 % du coût de l'abonnement**, que ce taux résulte de l'obligation légale de 50 % ou d'une prise en charge volontaire plus généreuse de l'employeur.
 
-Toutefois, cette exonération a une limite. Si le remboursement dépasse 710 € par an, la part excédentaire devient imposable. Par exemple, un remboursement de 800 € entraînerait une imposition sur 90 €.
+Concrètement, si votre employeur prend en charge 50 % de votre Navigo (le minimum légal dans le privé), cette part reste intégralement exonérée, puisqu'elle est inférieure au seuil de 75 %. Un employeur qui choisirait de rembourser davantage, jusqu'à 75 % de l'abonnement, bénéficierait toujours de cette exonération sur l'intégralité de la somme versée. Au-delà de 75 %, la part excédentaire redevient en revanche soumise à cotisations et à impôt.
 
 ![Employeur remettant un justificatif de remboursement à un salarié en télétravail](/images/articles/forfait-navigo-teletravail-1.webp)
 
-## 3\. Télétravail et Navigo : les pièges à éviter
+Un dispositif distinct, la prime carburant, prévoit pour sa part un plafond chiffré propre aux frais de carburant versés par l'employeur sur une période limitée. Il ne concerne pas le remboursement de l'abonnement Navigo et répond à des règles différentes : ne confondez pas les deux dispositifs lors du calcul de votre fiche de paie.
 
-Même si le remboursement est obligatoire, quelques règles sont à connaître. En effet, elles permettent d’éviter les mauvaises surprises.
+## Télétravail et Navigo : les points à vérifier
 
-1.  **Le remboursement est lié à l’abonnement, pas aux trajets réels.** Ainsi, même avec 4 jours de télétravail sur 5, votre employeur doit rembourser 50% (ou 75%) du coût. Aucune justification de fréquence de trajets n’est exigée.
-2.  **Pas de cumul avec le forfait mobilités durables (FMD).** Si votre employeur vous verse déjà le FMD (jusqu’à 600 €/an pour le covoiturage ou le vélo), vous ne pouvez pas cumuler les deux dispositifs pour le même trajet. Toutefois, vous pouvez utiliser le FMD pour vos trajets domicile-travail en vélo et le remboursement Navigo pour vos déplacements professionnels en transports.
-3.  **Attention aux changements de situation.** Si vous quittez votre entreprise ou changez d’abonnement, prévenez votre service RH. En effet, un oubli peut entraîner un trop-perçu à rembourser.
-4.  **Pas de remboursement pour les titres occasionnels.** L’obligation légale ne concerne que les abonnements mensuels ou annuels. Ainsi, les carnets de tickets ou passes journaliers ne sont pas concernés.
+Même si le remboursement reste obligatoire, quelques règles méritent d'être connues pour éviter les mauvaises surprises.
 
-## 4\. Alternatives au Navigo en télétravail : quand ça vaut le coup
+1.  **Le remboursement est lié à l'abonnement, pas aux trajets réels.** Aucune justification de fréquence de trajets n'est exigée pour la part obligatoire, que vous soyez au bureau 1 jour ou 5 jours par semaine.
+2.  **Le cumul avec le forfait mobilités durables (FMD) est encadré.** Un salarié peut combiner la prise en charge de son abonnement de transport avec le FMD, jusqu'à un plafond annuel combiné de 900 €, par exemple pour des trajets mixtes vélo et transports en commun.
+3.  **Attention aux changements de situation.** Si vous quittez votre entreprise ou changez d'abonnement, prévenez votre service RH sans tarder : un oubli peut entraîner un trop-perçu à rembourser.
+4.  **Les titres occasionnels ne sont pas concernés.** L'obligation légale ne porte que sur les abonnements mensuels ou annuels, pas sur les carnets de tickets ni les passes journaliers.
 
-Avec 3 ou 4 jours de télétravail par semaine, le Navigo peut sembler moins intéressant. Voici quand le garder et quand le remplacer.
+## Alternatives au Navigo en télétravail : quand ça vaut le coup
 
-| Votre situation | Navigo toutes zones (90,80 €/mois) | Alternative | Économie potentielle |
-| --- | --- | --- | --- |
-| 2-3 jours de présentiel/semaine | ✅ Intéressant (coût réel après remboursement : 22,70 € à 45,40 €/mois) | – | 0 € |
-| 1 jour de présentiel/semaine | ❌ Peu rentable | Pass Navigo hebdo (30 €/semaine) ou tickets à l’unité (2 €/trajet) | Jusqu’à 60 €/mois |
-| Télétravail à 100% | ❌ Inutile | Forfait mobilités durables (vélo, covoiturage) ou Vélib’/trottinette | 90,80 €/mois |
+Avec plusieurs jours de télétravail par semaine, le Navigo toutes zones peut sembler moins rentable qu'un titre adapté à un usage occasionnel.
 
-*Comparatif basé sur les tarifs 2026*
+| Votre situation | Navigo toutes zones (90,80 €/mois) | Alternative à envisager |
+| --- | --- | --- |
+| 2-3 jours de présentiel/semaine | Intéressant, coût réel après remboursement limité | — |
+| 1 jour de présentiel/semaine | Peu rentable | Pass hebdomadaire ou tickets à l'unité |
+| Télétravail à 100 % | Inutile | [Forfait mobilités durables](/forfait-mobilites-durables-velo/) (vélo, covoiturage) |
 
-Cas particulier : si vous télétravaillez depuis une autre région, vérifiez si votre employeur propose un [forfait mobilités durables](/mobilite-partagee-transports/train-transports-en-commun). En effet, ce dispositif permet de toucher jusqu’à **600 €/an** (exonérés) pour vos trajets en vélo, covoiturage ou autopartage. Une bonne alternative si vous n’utilisez plus les transports en commun.
+Si vous télétravaillez depuis une autre région et n'utilisez plus les transports en commun franciliens, vérifiez si votre employeur propose le forfait mobilités durables pour vos trajets en vélo ou en covoiturage, une alternative pertinente lorsque l'abonnement Navigo ne se justifie plus. Pour les trajets occasionnels en train plutôt qu'en Navigo, notre page sur l'[abonnement TER](/ter-abonnement-travail/) détaille les options de prise en charge en région, et notre comparatif de la [carte avantage SNCF](/carte-avantage-sncf-rentable/) aide à juger sa rentabilité pour des trajets ponctuels hors Île-de-France. Pour des trajets longue distance réguliers, notre avis sur l'[abonnement TGV Max](/tgv-max-abonnement-avis/) complète ce comparatif.
 
-## 5\. Comment obtenir le remboursement ? Étapes clés
+## Comment obtenir le remboursement ? Étapes clés
 
-1.  **Conservez votre justificatif d’abonnement.** Il peut s’agir de la facture mensuelle ou de l’attestation annuelle disponible sur votre compte Île-de-France Mobilités.
-2.  **Transmettez-le à votre service RH ou paie.** Certaines entreprises utilisent des plateformes comme Lucca ou PayFit pour centraliser les demandes.
-3.  **Vérifiez votre fiche de paie.** Le remboursement doit apparaître sous la ligne ‘Remboursement transports’.
+Conservez votre justificatif d'abonnement : facture mensuelle ou attestation annuelle disponible sur votre compte Île-de-France Mobilités. Transmettez-le à votre service RH ou paie, certaines entreprises utilisant des plateformes dédiées pour centraliser les demandes. Vérifiez ensuite votre fiche de paie : le remboursement doit apparaître sous une ligne dédiée aux frais de transport.
 
-Pour aller plus loin, consultez [notre guide sur les transports en commun en Île-de-France](/mobilite-partagee-transports/train-transports-en-commun).
+## Cas particuliers : mi-temps, changement d'employeur, plusieurs abonnements
 
-## 6\. Cas particuliers : mi-temps, changement d’employeur, plusieurs abonnements
+Si vous travaillez à **temps partiel**, le remboursement reste généralement calculé sur le prix réel de l'abonnement souscrit, et non sur un prorata de vos jours de présence : un salarié à mi-temps qui garde son Navigo toutes zones touche donc le même taux de remboursement qu'un salarié à temps plein, sauf accord d'entreprise spécifique.
 
-Certaines situations sortent du cadre classique. Voici comment elles sont traitées.
+En cas de **changement d'employeur** en cours de mois, le nouvel employeur prend le relais dès le début de son contrat. Conservez votre justificatif d'abonnement pour éviter tout trou dans le remboursement.
 
-Si vous travaillez à temps partiel, le remboursement reste calculé sur le prix réel de l’abonnement souscrit, pas sur un prorata de vos jours de présence. Un salarié à mi-temps qui garde son Navigo toutes zones touche donc le même taux de remboursement qu’un salarié à temps plein.
+Si vous cumulez **plusieurs employeurs** à temps partiel, chacun contribue au remboursement, au prorata de son temps de travail, selon une répartition à négocier entre vous et vos employeurs sur la base du même abonnement.
 
-En cas de changement d’employeur en cours de mois, le nouvel employeur prend le relais dès le début de son contrat. Conservez votre justificatif d’abonnement pour éviter tout trou dans le remboursement.
+## Questions fréquentes
 
-Si vous cumulez plusieurs employeurs à temps partiel, chacun doit contribuer au remboursement, au prorata de son temps de travail. La répartition exacte se négocie entre vous et vos employeurs, sur la base du même abonnement.
+### Mon employeur peut-il refuser de rembourser mon Navigo si je télétravaille beaucoup ?
 
-Enfin, un salarié en poste dans plusieurs villes ne peut prétendre au remboursement Navigo que pour la partie de son trajet effectuée en Île-de-France. Pour un trajet combinant TER et Navigo, chaque titre suit sa propre règle de remboursement.
+Non, le remboursement reste obligatoire quelle que soit votre fréquence de présence au bureau, à hauteur du minimum légal de 50 % (privé) ou 75 % (public).
+
+### Existe-t-il un plafond en euros pour l'exonération du remboursement Navigo ?
+
+Non, pour 2026 l'exonération fiscale et sociale est calculée en pourcentage, jusqu'à 75 % du coût de l'abonnement, sans plafond chiffré fixe pour ce dispositif.
+
+### Peut-on cumuler le remboursement Navigo avec le forfait mobilités durables ?
+
+Oui, dans la limite d'un plafond combiné de 900 € par an, par exemple pour un salarié combinant vélo et transports en commun selon ses trajets.
+
+### Que faire si mon abonnement n'est pas remboursé sur ma fiche de paie ?
+
+Contactez votre service RH avec votre justificatif d'abonnement. Le remboursement doit apparaître sous une ligne dédiée, distincte du salaire de base.
+
+### Le Navigo reste-t-il intéressant en télétravail à 100 % ?
+
+Rarement : dans ce cas, un forfait mobilités durables ou un titre de transport occasionnel s'avère souvent plus économique qu'un abonnement toutes zones inutilisé la plupart du temps.
