@@ -1,7 +1,7 @@
 ---
-title: "Carte grise gratuite E85 : comment l’obtenir et quels sont les coûts cachés ?"
-description: "La mise à jour de la carte grise est obligatoire après l’installation d’un boîtier E85 homologué. Voici comment l’obtenir à moindre coût, avec les délais e"
-date: "2026-08-15"
+title: "Carte grise E85 : la mise à jour est-elle vraiment gratuite en 2026 ?"
+description: "La mise à jour de la carte grise après un boîtier E85 homologué est obligatoire sous 1 mois. Coût réel, documents et démarche ANTS expliqués pour 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1126
@@ -9,86 +9,101 @@ wp_locale: "fr"
 image: "/images/articles/carte-grise-gratuite-e85-1.webp"
 imageAlt: "Carte grise gratuite E85 : comment l'obtenir et quels sont les coûts cachés ?"
 ---
-La mise à jour de la carte grise est obligatoire après l’installation d’un boîtier E85 homologué. Sans elle, risque de contre-visite au contrôle technique et d’amende. Cette obligation s’inscrit dans un cadre plus large : notre guide sur [l’E85 et les conversions](/carburants-consommation/e85-conversions) détaille aussi le choix du boîtier, sa fiabilité et sa rentabilité avant même de penser à la carte grise. TL;DR : La carte grise doit passer en mention « FE ». Coût minimum : 13,76 €, gratuit dans 3 régions. Délai : 1 mois après l’installation.
+***La mise à jour de la carte grise après un boîtier E85 homologué n'est pas gratuite. La taxe fixe de 13,76 € reste due dans la quasi-totalité des régions, seule la taxe régionale varie.***
+
+Vous venez d'installer un boîtier E85 homologué ? La carte grise doit refléter ce changement sous un mois, sans quoi vous risquez une contre-visite au contrôle technique. Voici ce que coûte réellement cette mise à jour et comment l'effectuer en ligne.
+
+TL;DR : la mention carburant passe à « FE » (ou « FL » pour un hybride, « FG » pour un GPL). Coût minimum de 13,76 €, délai légal d'un mois après l'installation.
+
+- Sans mise à jour, l'assurance peut **refuser d'indemniser** un sinistre.
+- Le [boîtier doit être homologué](/boitier-e85-homologue-prix/), un certificat de conformité est exigé par l'ANTS.
+- La plupart des régions ont **supprimé leurs exonérations** E85 depuis 2023.
 
 ## Pourquoi modifier la carte grise après un boîtier E85 ?
 
-Un boîtier E85 homologué transforme votre véhicule en bicombustible. En effet, la carte grise doit refléter ce changement : la mention « carburant » passe à « FE » pour les essence, « FL » pour les hybrides. Sans cette mise à jour, le contrôle technique peut échouer. Ainsi, pour un week-end de 400 km avec un plein à 0,80 €/L, l’économie est immédiate. Mais sans carte grise à jour, vous risquez une amende de 135 €. La \[reprogrammation E85 vs boîtier homologué\]() pose la même question de conformité administrative.
+**Un boîtier E85 homologué transforme votre véhicule en bicarburation, et la carte grise doit l'indiquer.** La mention carburant passe de « EE » à « FE » pour un véhicule essence, « FL » pour un hybride déjà en « EE », « FG » pour un véhicule déjà au GPL.
+
+Sans cette mise à jour, le contrôle technique peut prononcer une contre-visite, puisque le document ne correspond plus à la réalité technique du véhicule. L'assureur, de son côté, peut refuser d'indemniser un sinistre si la carte grise ne mentionne pas la conversion, un risque bien plus coûteux que la démarche elle-même.
 
 ![Mécanicien installant un boîtier E85 sous le capot d'une voiture](/images/articles/carte-grise-gratuite-e85-1.webp)
 
-### Que risquez-vous sans mise à jour ?
-
-Contre-visite au contrôle technique. Amende de 135 € en cas de contrôle routier. Refus d’indemnisation par l’assurance en cas de sinistre.
+Cette obligation découle de l'arrêté du 30 novembre 2017, qui encadre l'homologation et l'installation des dispositifs de conversion E85. L'installateur agréé délivre un certificat de conformité au moment de la pose, document indispensable pour la démarche en ligne.
 
 ## La carte grise E85 est-elle vraiment gratuite ?
 
-Non. La taxe fixe de 13,76 € (11 € + 2,76 € de redevance) est toujours due. Cependant, certaines régions exonèrent cette taxe pour les conversions E85. En 2026, c’est le cas en Bretagne, Occitanie et Nouvelle-Aquitaine. Pour vérifier, utilisez le simulateur officiel de l’ANTS.
+**Non, la taxe fixe de 13,76 € reste due dans la quasi-totalité des régions.** Plusieurs régions ont longtemps exonéré les véhicules dits « propres », E85 inclus, de la part régionale de la taxe. Depuis 2023, la plupart de ces exonérations ont été supprimées, notamment en Occitanie et en Nouvelle-Aquitaine.
 
-### Coût réel selon votre région
-
-<table><tbody><tr><td><strong>Région</strong></td><td><strong>Coût carte grise E85</strong></td><td><strong>Exonération</strong></td></tr><tr><td>Bretagne</td><td>0 €</td><td>Oui</td></tr><tr><td>Occitanie</td><td>0 €</td><td>Oui</td></tr><tr><td>Nouvelle-Aquitaine</td><td>0 €</td><td>Oui</td></tr><tr><td>Île-de-France</td><td>13,76 € + taxe régionale</td><td>Non</td></tr><tr><td>Auvergne-Rhône-Alpes</td><td>13,76 € + taxe régionale</td><td>Non</td></tr></tbody></table>
-
-*bioethanolcarburant.com*
-
-## Délais et documents pour la carte grise E85
-
-Le délai légal pour mettre à jour votre carte grise après l’installation d’un boîtier E85 est d’un mois. Passé ce délai, amende de 135 €.
-
-### Documents à fournir
-
-Pour une demande en ligne sur ants.gouv.fr, fournissez :
-
--   Justificatif de domicile de moins de 6 mois
--   Ancienne carte grise barrée avec la mention « vendu » si changement de propriétaire
--   Certificat de conformité du boîtier E85
--   Attestation d’assurance mentionnant l’E85
--   Contrôle technique à jour si le véhicule a plus de 4 ans
-
-### Démarches en ligne : étape par étape
-
-Connectez-vous sur ants.gouv.fr. Sélectionnez « Demander une carte grise » puis « Changement de carburant ». Remplissez ensuite le formulaire en joignant les documents demandés.
-
-![Exemple de carte grise avec mention FE pour E85](/images/articles/carte-grise-gratuite-e85-2.webp)
-
-Validez votre demande. Vous recevrez un accusé de réception par email sous 24h. Traitement : 7 à 10 jours ouvrés. Envoi de la nouvelle carte grise sous 3 à 5 jours ouvrés après validation.
-
-## Combien coûte une carte grise E85 en 2026 ?
-
-Le coût de base est de 13,76 €. À cela s’ajoute la taxe régionale, variable selon votre département. En moyenne, comptez entre 200 € et 500 € selon la puissance fiscale de votre véhicule.
+Le montant exact dépend donc entièrement de votre région de résidence et de la puissance fiscale de votre véhicule. Un simulateur officiel, disponible sur ants.gouv.fr, calcule le montant exact avant toute démarche. Ne vous fiez pas à un chiffre annoncé par un comparateur privé, les barèmes régionaux évoluent chaque année.
 
 ### Exemple de calcul pour un véhicule essence de 6 CV fiscaux
 
-<table><tbody><tr><td><strong>Poste</strong></td><td><strong>Coût (€)</strong></td></tr><tr><td>Taxe fixe</td><td>11,00</td></tr><tr><td>Redevance</td><td>2,76</td></tr><tr><td>Taxe régionale (ex. Paris)</td><td>180,00</td></tr><tr><td><strong>Total</strong></td><td><strong>193,76</strong></td></tr></tbody></table>
+| Poste | Coût (€) |
+| --- | --- |
+| Taxe fixe | 11,00 |
+| Redevance | 2,76 |
+| Taxe régionale (exemple Île-de-France) | 180,00 |
+| **Total** | **193,76** |
 
-*ants.gouv.fr*
+## Délais et documents pour la mise à jour
 
-Pour connaître le montant exact de la taxe régionale, utilisez le simulateur officiel sur ants.gouv.fr.
+**Le délai légal est d'un mois après l'installation du boîtier.** Passé ce délai, vous vous exposez à une amende lors d'un contrôle routier, en plus du risque de contre-visite au contrôle technique.
 
-## Faut-il passer par un professionnel ?
+Le dossier en ligne sur ants.gouv.fr réunit un justificatif de domicile de moins de 6 mois, l'ancienne carte grise barrée en cas de changement de propriétaire, le certificat de conformité du boîtier, une attestation d'assurance mentionnant l'E85, et un contrôle technique à jour si le véhicule a plus de 4 ans.
 
-Non. La démarche est entièrement réalisable en ligne sur ants.gouv.fr. Certains garagistes proposent un service clé en main pour 50 € à 150 €. De plus, vérifiez qu’ils fournissent un certificat de conformité valide.
+Connectez-vous sur ants.gouv.fr, sélectionnez « Demander une carte grise » puis « Changement de carburant », et joignez les documents demandés. Un accusé de réception arrive par email sous 24 heures, le traitement prend ensuite 7 à 10 jours ouvrés, puis 3 à 5 jours ouvrés pour l'envoi du nouveau document.
 
-### Les pièges à éviter
+![Exemple de carte grise avec mention FE pour E85](/images/articles/carte-grise-gratuite-e85-2.webp)
 
-Boîtier non homologué : demande rejetée. Ancienne carte grise non barrée : problème de responsabilité. Contrôle technique périmé : refus si le véhicule a plus de 4 ans. Oubli de l’attestation d’assurance : certains assureurs exigent une mention E85.
+## Faut-il passer par un professionnel pour cette démarche ?
 
-## Que faire si votre demande est refusée par l’ANTS ?
+**Non, la démarche se fait entièrement en ligne sur ants.gouv.fr, sans intermédiaire obligatoire.** Certains garagistes proposent un service clé en main pour 50 à 150 €, utile si vous manquez de temps, mais jamais indispensable pour un dossier complet.
 
-Un refus survient souvent pour document manquant ou boîtier non homologué. L’ANTS envoie un email détaillé avec le motif. Corrigez l’erreur et renvoyez votre dossier. Si le refus concerne l’homologation, contactez le fabricant pour un duplicata du certificat.
+Trois pièges reviennent souvent : un boîtier non homologué entraîne un rejet systématique du dossier, une ancienne carte grise non barrée complique la responsabilité en cas de revente, et un contrôle technique périmé bloque toute demande pour un véhicule de plus de 4 ans. Vérifiez aussi que votre assurance mentionne explicitement l'E85, certains contrats l'exigent.
 
-### Recours possible
+## Le cas particulier des véhicules hybrides et GPL
 
-Contacter l’ANTS par email ou téléphone. Saisir le médiateur de l’ANTS si le refus persiste sans justification claire.
+**Le principe de mise à jour reste identique quelle que soit la motorisation d'origine, seule la mention change.** Sur un véhicule hybride essence, la mention carburant passe de « EE » à « FL » une fois le boîtier E85 posé. Sur un véhicule déjà équipé au GPL, la mention « EG » devient « FG ».
 
-## D’où vient cette obligation légale ?
+Dans ces deux cas, le dossier à fournir à l'ANTS ne change pas : certificat de conformité du boîtier, justificatif de domicile et, le cas échéant, contrôle technique à jour. La première lettre du nouveau code signale la bicarburation avec du Superéthanol, la seconde rappelle l'énergie d'origine du véhicule, un détail utile à connaître avant de lire votre propre certificat d'immatriculation.
 
-La mise à jour du certificat d’immatriculation après pose d’un boîtier E85 n’est pas une simple recommandation. Elle découle de l’arrêté du 30 novembre 2017, qui fixe les conditions d’homologation et d’installation des dispositifs de conversion E85. Ce texte encadre à la fois le matériel autorisé et l’obligation de déclarer le changement de carburant auprès de l’administration. Concrètement, un installateur agréé délivre un certificat de conformité au moment de la pose. Ce document sert de justificatif pour la démarche en ligne. Sans lui, l’ANTS rejette systématiquement le dossier, quelle que soit la qualité réelle du boîtier installé.
+## Que faire en cas de refus de l'ANTS ?
 
-## Vendre un véhicule équipé d’un boîtier E85 : ce qu’il faut anticiper
+Un refus survient généralement pour un document manquant ou un boîtier non homologué. L'ANTS envoie un email détaillant le motif exact du rejet.
 
-Si vous revendez un véhicule converti, la mention « FE » doit déjà figurer sur la carte grise avant la cession. Un acheteur averti vérifie ce détail : une carte grise non mise à jour signale un flou administratif qui peut faire fuir un acquéreur ou justifier une négociation à la baisse. Pensez à conserver le certificat de conformité du boîtier avec les papiers du véhicule. Il pourra être redemandé lors d’un contrôle technique ou d’une vérification par le nouvel acquéreur, surtout si celui-ci envisage lui-même de faire re-homologuer l’installation.
+Corrigez l'erreur signalée et renvoyez le dossier complet. Si le refus concerne l'homologation elle-même, contactez le fabricant du boîtier pour obtenir un duplicata du certificat de conformité. En cas de blocage persistant sans justification claire, le médiateur de l'ANTS peut être saisi par email ou téléphone.
 
-### Le cas particulier des véhicules hybrides et GPL
+## Vendre un véhicule équipé d'un boîtier E85
 
-Sur un véhicule hybride essence, la mention carburant passe de « EE » à « FL » une fois le boîtier E85 posé. Sur un véhicule déjà équipé au GPL, la mention « EG » devient « FG ». Le principe reste identique : la première lettre du nouveau code signale la bicarburation avec du Superéthanol, la seconde rappelle l’énergie d’origine. Dans ces deux cas, le dossier à fournir à l’ANTS ne change pas : certificat de conformité du boîtier, justificatif de domicile et, le cas échéant, contrôle technique à jour.
+**La mention « FE » doit déjà figurer sur la carte grise avant toute cession.** Un acheteur averti vérifie ce détail, une mention non mise à jour signale un flou administratif qui peut faire fuir un acquéreur ou justifier une négociation à la baisse.
+
+Conservez le certificat de conformité du boîtier avec les papiers du véhicule, il peut être redemandé lors d'un contrôle technique ou d'une vérification par le nouvel acquéreur. Pour la suite de la transaction, notre guide sur le [certificat de cession Cerfa n°15776](/certificat-cession-cerfa-15776/) détaille le document à transmettre à l'acheteur. Avant de choisir entre boîtier et reprogrammation, notre comparatif sur la [reprogrammation E85 face au boîtier homologué](/reprogrammation-e85-vs-boitier/) pose la même question de conformité administrative.
+
+## Questions fréquentes
+
+### La carte grise E85 est-elle gratuite dans certaines régions en 2026 ?
+
+Non, pas de façon généralisée. La plupart des régions qui exonéraient les véhicules E85 ont supprimé cet avantage depuis 2023. Vérifiez votre région exacte via le simulateur ANTS.
+
+### Quel est le délai pour mettre à jour la carte grise après un boîtier E85 ?
+
+Un mois après l'installation. Passé ce délai, vous risquez une amende en plus du refus possible au contrôle technique.
+
+### Quelle mention apparaît sur la carte grise après un boîtier E85 ?
+
+« FE » pour un véhicule essence, « FL » pour un hybride, « FG » pour un véhicule déjà au GPL converti à l'E85.
+
+### Peut-on rouler sans mettre à jour la carte grise ?
+
+Légalement non. Le véhicule risque une contre-visite au contrôle technique et un refus d'indemnisation par l'assurance en cas de sinistre.
+
+### Que faire si le dossier est refusé par l'ANTS ?
+
+Corrigez le document manquant ou l'erreur signalée par email, puis renvoyez le dossier. En cas de blocage persistant, saisissez le médiateur de l'ANTS.
+
+### Un garage peut-il poser le boîtier sans mettre à jour la carte grise ?
+
+Non, un installateur sérieux délivre toujours le certificat de conformité nécessaire à la démarche. Sans lui, la mise à jour de la carte grise reste impossible, quel que soit le garage sollicité.
+
+### La mise à jour de la carte grise change-t-elle le prix de l'assurance ?
+
+Parfois. Certains assureurs ajustent la prime une fois la mention E85 déclarée, d'autres n'appliquent aucun changement. Vérifiez les conditions de votre contrat avant toute conversion.

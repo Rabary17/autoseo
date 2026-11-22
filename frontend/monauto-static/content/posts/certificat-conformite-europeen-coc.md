@@ -1,131 +1,94 @@
 ---
 title: "Certificat de conformité européen (COC) : tout savoir pour immatriculer un véhicule importé"
-description: "Le certificat de conformité européen (COC) prouve qu’un véhicule importé respecte les normes européennes. Sans ce document, impossible d’obtenir une carte "
-date: "2026-08-03"
+description: "Le certificat de conformité européen (COC) est indispensable pour immatriculer un véhicule importé. Obtention, coût réel et passage à l'eCOC en 2026."
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "immatriculation-import"
 wp_id: 903
 wp_locale: "fr"
 image: "/images/articles/certificat-conformite-europeen-coc-couverture.webp"
-imageAlt: "Certificat de conformité européen (COC) : comment l’obtenir et à quoi sert-il ?"
+imageAlt: "Certificat de conformité européen (COC) : comment l'obtenir et à quoi sert-il ?"
 ---
-Vous importez un véhicule en France ? Le certificat de conformité européen (COC) est indispensable pour obtenir sa carte grise. Ce document officiel, délivré par le constructeur, atteste que votre voiture, moto ou utilitaire respecte les normes techniques européennes. Voici ce qu’il faut savoir sur son obtention, son coût et les alternatives si vous ne l’avez pas.
+***Le certificat de conformité européen (COC) prouve qu'un véhicule importé respecte les normes techniques européennes. Sans lui, l'ANTS refuse systématiquement la carte grise.***
 
-## Qu’est-ce que le certificat de conformité européen (COC) ?
+Vous importez un véhicule en France, neuf ou d'occasion, depuis un pays de l'Union européenne ? Le COC, délivré par le constructeur, reste indispensable à l'immatriculation. Voici comment l'obtenir, ce qu'il coûte réellement et ce qui change avec le passage au format électronique en 2026.
 
-Le certificat de conformité européen, ou COC, prouve qu’un véhicule respecte les directives européennes. Sans lui, impossible d’immatriculer un véhicule importé en France. Ce document contient des informations clés.
+TL;DR : le COC se demande auprès du constructeur ou de son représentant en France. Son prix n'est pas réglementé, comptez généralement 100 € à 300 € selon la marque, pour un délai de 2 à 4 semaines.
 
--   Le numéro de réception communautaire identifie le modèle du véhicule.
--   Les caractéristiques techniques : puissance, émissions de CO₂, poids, etc.
--   Le numéro de châssis (VIN) doit correspondre à celui de votre véhicule.
--   La mention de conformité aux directives européennes applicables.
+- Depuis le **5 juillet 2026**, le certificat papier n'est plus valable juridiquement dans l'Union européenne, remplacé par une version électronique (eCOC).
+- Pour un véhicule importé **hors Union européenne**, une réception à titre isolé (RTI) remplace le COC.
+- Un véhicule de **collection** peut obtenir une attestation FFVE à la place du COC.
 
-Selon service-public.fr, ce document est exigé pour tous les véhicules neufs ou d’occasion importés d’un pays de l’Union européenne. L’ANTS refusera votre demande de carte grise sans lui.
+## Qu'est-ce que le certificat de conformité européen ?
 
-## Quand le certificat de conformité européen est-il obligatoire ?
+**Le COC prouve qu'un véhicule respecte les directives techniques européennes applicables à son modèle.** Il contient le numéro de réception communautaire qui identifie le modèle, les caractéristiques techniques du véhicule (puissance, émissions de CO₂, poids), le numéro de châssis (VIN), qui doit correspondre exactement à celui de votre véhicule, et la mention de conformité aux directives en vigueur.
+
+Ce document est exigé pour tout véhicule neuf ou d'occasion importé d'un pays de l'Union européenne, et jamais immatriculé en France auparavant. Sans lui, l'ANTS refuse la demande de carte grise.
 
 ![Exemple d'un certificat de conformité européen (COC) posé sur une table avec un stylo et des documents administratifs](/images/articles/certificat-conformite-europeen-coc-1.webp)
 
-Le COC est obligatoire dans ces cas :
+## Quand le COC est-il obligatoire ?
 
--   Import d’un véhicule neuf ou d’occasion depuis un pays de l’Union européenne.
--   Le véhicule n’a jamais été immatriculé en France auparavant.
--   Le modèle n’a pas fait l’objet d’une réception nationale en France.
+Le COC est exigé pour l'import d'un véhicule neuf ou d'occasion depuis un pays de l'Union européenne, lorsque le véhicule n'a jamais été immatriculé en France et que le modèle n'a pas fait l'objet d'une réception nationale française.
 
-Si vous achetez un véhicule déjà immatriculé en France, le vendeur doit vous remettre la carte grise française. Pour les véhicules importés hors Union européenne, une réception à titre isolé (RTI) auprès de la DREAL est nécessaire. Ainsi, cette procédure vérifie que le véhicule respecte les normes françaises.
-
-Pour en savoir plus sur les démarches d’importation, consultez notre guide sur l’[immatriculation et l’import de véhicules](/carte-grise-demarches/immatriculation-import).
+Si vous achetez un véhicule déjà immatriculé en France, le vendeur vous remet directement la carte grise française, sans besoin de COC. Pour un véhicule importé hors Union européenne, c'est une réception à titre isolé (RTI) auprès de la DREAL qui remplace cette démarche, voir notre guide sur l'[immatriculation d'un véhicule importé](/immatriculer-vehicule-importe/).
 
 ## Comment obtenir le certificat de conformité européen ?
 
-Le COC est délivré par le constructeur ou son représentant en France. Voici les étapes à suivre :
+**Le COC est délivré par le constructeur ou son représentant en France**, jamais par un organisme administratif. Vérifiez d'abord l'éligibilité de votre véhicule, le COC n'existe que pour les modèles mis en circulation après 1996 et conçus pour le marché européen.
 
-1.  **Vérifiez l’éligibilité de votre véhicule**. Le COC n’existe que pour les véhicules mis en circulation après 1996 et conçus pour le marché européen.
-2.  **Identifiez le constructeur ou son représentant**. Par exemple, pour une voiture Renault, adressez-vous à Renault France ou à un concessionnaire agréé.
-3.  **Préparez les documents nécessaires**. Le constructeur demandera généralement une copie de la carte grise étrangère, une pièce d’identité et une preuve d’achat.
-4.  **Faites la demande**. La plupart des constructeurs permettent de la faire en ligne, par courrier ou en concession. Méfiez-vous des sites non agréés.
-5.  **Payez les frais**. Le coût varie entre 100 € et 300 € selon les constructeurs.
-6.  **Recevez votre COC**. Le délai standard est de 2 à 4 semaines. Certains constructeurs proposent des options express pour un surcoût.
+Contactez ensuite le constructeur ou un concessionnaire agréé de la marque, muni d'une copie de la carte grise étrangère, d'une pièce d'identité et d'une preuve d'achat. La demande se fait en ligne, par courrier ou en concession selon les marques. Le prix n'est pas réglementé par la loi, chaque constructeur fixe librement son tarif, généralement entre 100 € et 300 € selon le modèle et sa rareté, pour un délai de 2 à 4 semaines. Méfiez-vous des sites non agréés qui promettent un COC à prix cassé ou en 24 heures, ces documents sont souvent des faux refusés par l'ANTS.
 
-Attention aux arnaques. En effet, certains sites proposent des COC à prix cassés ou en 24 heures. Ces documents sont souvent des faux et seront refusés par l’ANTS.
+## Que faire si vous n'avez pas le COC ?
 
-## Que faire si vous n’avez pas le COC ?
+Trois alternatives existent selon votre situation. La **fiche de réception communautaire**, que certains constructeurs délivrent à la place du COC et qui peut suffire pour l'immatriculation. La **réception à titre isolé (RTI)**, obligatoire pour les véhicules importés hors Union européenne, qui coûte entre 300 € et 1 000 € et prend 2 à 3 mois. L'**attestation FFVE**, pour un véhicule de [collection](/carte-grise-collection/), qui remplace le COC une fois l'éligibilité prouvée.
 
-Si vous ne parvenez pas à obtenir le COC, voici les alternatives :
+Vérifiez systématiquement la disponibilité du COC avant d'acheter un véhicule importé, certains vendeurs étrangers l'incluent directement dans la transaction, ce qui évite toute démarche supplémentaire après l'achat.
 
--   **La fiche de réception communautaire**. Certains constructeurs délivrent ce document à la place du COC. Il peut suffire pour l’immatriculation.
--   **La réception à titre isolé (RTI)**. Obligatoire pour les véhicules importés hors UE, cette procédure coûte entre 300 € et 1 000 € et prend 2 à 3 mois.
--   **L’attestation d’identification**. Pour les véhicules de collection, la FFVE délivre une attestation qui remplace le COC.
+## Le passage à l'eCOC : ce qui change en 2026
 
-L’ANTS précise que près de 20 % des demandes de carte grise pour des véhicules importés sont refusées. Par conséquent, vérifiez toujours les documents nécessaires avant d’acheter un véhicule importé.
+**Depuis le 5 juillet 2026, le certificat de conformité au format papier n'est plus valable juridiquement dans l'Union européenne.** Il est remplacé par une version électronique, l'eCOC, signée numériquement par le constructeur et consultable en ligne.
 
-## Combien coûte le certificat de conformité européen ?
+Cette évolution vise à limiter les faux documents qui circulaient sur le marché du COC papier. Pour un véhicule mis en circulation après cette date, demandez directement la version électronique auprès du constructeur, elle fait foi devant l'ANTS au même titre que l'ancien document papier.
 
-Le coût du COC varie selon le constructeur et le type de véhicule. Voici quelques exemples de tarifs en 2026 :
+## Les arnaques à éviter sur le marché du COC
 
-| Constructeur | Prix du COC (voiture) | Prix du COC (moto) | Délai standard |
-| --- | --- | --- | --- |
-| Renault | 120 € | 90 € | 2 semaines |
-| Volkswagen | 150 € | 110 € | 3 semaines |
-| Peugeot | 130 € | 100 € | 2 semaines |
-| Toyota | 180 € | 120 € | 4 semaines |
-| BMW | 200 € | 150 € | 3 semaines |
+**Le marché du COC attire son lot d'arnaques, faute de tarif réglementé et de délai standard officiel.** Méfiez-vous systématiquement des offres annoncées à moins de 100 € ou livrées en 24 heures, ces documents sont le plus souvent des faux que l'ANTS refuse immédiatement lors de l'examen du dossier.
 
-*Source : constructeurs automobiles (tarifs 2026)*
+Privilégiez toujours le canal officiel du constructeur ou de son représentant agréé en France, jamais un site intermédiaire non reconnu par la marque. Vérifiez aussi que le COC proposé correspond réellement à votre véhicule, certains sites proposent des documents génériques pour des modèles anciens ou non européens, totalement inutiles pour une immatriculation en France. En cas de doute sur l'authenticité d'un document déjà obtenu, un professionnel de l'immatriculation ou l'ANTS peut vérifier sa validité avant le dépôt du dossier.
 
-À ces frais s’ajoutent ceux de l’immatriculation. Ainsi, ils sont calculés en fonction de la puissance fiscale et des émissions de CO₂ du véhicule.
+## Quels sont les risques sans COC valide ?
 
-## Quels sont les risques si vous n’avez pas de COC ?
+**Sans COC, l'ANTS refuse la demande de carte grise**, ce qui bloque toute immatriculation définitive. Un véhicule qui roule avec une plaque étrangère ou une [plaque WW provisoire](/plaque-ww-provisoire-duree/) au-delà de la durée autorisée s'expose à une amende.
 
-Rouler sans COC valide expose à plusieurs risques :
+Les assureurs peuvent aussi refuser de couvrir un véhicule non immatriculé en France, ou proposer des tarifs majorés en attendant la régularisation. Enfin, sans carte grise française, la revente du véhicule devient quasiment impossible. Pour la fiscalité liée à un véhicule venu de l'étranger, consultez notre guide sur le [quitus fiscal](/quitus-fiscal-vehicule-etranger/).
 
--   **Refus d’immatriculation**. Sans COC, l’ANTS refusera votre demande de carte grise.
--   **Amende de 135 €**. Rouler avec des plaques étrangères ou une plaque WW provisoire est passible d’une amende.
--   **Problèmes d’assurance**. Les assureurs peuvent refuser de couvrir un véhicule non immatriculé en France.
--   **Difficultés pour vendre le véhicule**. Sans carte grise française, la revente est quasi impossible.
+## Questions fréquentes
 
-Pour éviter ces problèmes, vérifiez la disponibilité du COC avant d’acheter un véhicule importé. En effet, certains vendeurs étrangers incluent le COC dans la vente.
+### Où obtenir le certificat de conformité européen ?
 
-## Certificat de conformité européen : les arnaques à éviter
+Auprès du constructeur du véhicule ou de son représentant en France, jamais auprès de l'ANTS ou d'une préfecture, qui ne délivrent pas ce document.
 
-Le marché du COC est propice aux arnaques. Voici les pièges à éviter :
+### Combien coûte un COC en 2026 ?
 
--   **Les COC à prix cassés**. Méfiez-vous des offres à moins de 100 €. Ces documents sont souvent des faux.
--   **Les délais express non officiels**. Privilégiez les délais officiels (2 à 4 semaines).
--   **Les sites non agréés**. Vérifiez que le site est agréé par le constructeur avant de commander.
--   **Les COC pour véhicules non éligibles**. Certains sites proposent des COC pour des véhicules anciens ou américains. Ces documents sont inutiles.
--   **Les frais cachés**. Lisez bien les conditions générales avant de commander.
+Le prix n'est pas réglementé, il varie selon le constructeur, généralement entre 100 € et 300 €. Méfiez-vous des offres à moins de 100 € ou en 24 heures, souvent frauduleuses.
 
-Pour éviter les arnaques, privilégiez les sites officiels des constructeurs. Par exemple, des plateformes reconnues comme Euro Conformité. En cas de doute, consultez un professionnel de l’immatriculation ou l’ANTS.
+### Le COC papier est-il encore valable en 2026 ?
 
-## Certificat de conformité européen et contrôle technique
+Non, depuis le 5 juillet 2026 seule la version électronique (eCOC) fait foi juridiquement dans l'Union européenne pour les véhicules concernés par cette évolution.
 
-Le COC ne dispense pas de passer le contrôle technique. Voici les règles :
+### Que faire pour un véhicule importé hors Union européenne ?
 
--   **Véhicules neufs**. Un véhicule de moins de 6 mois et moins de 6 000 km est dispensé de contrôle technique.
--   **Véhicules d’occasion**. Un contrôle technique de moins de 6 mois est obligatoire pour les véhicules de plus de 4 ans.
--   **Véhicules de collection**. Les véhicules de plus de 30 ans bénéficient d’un contrôle technique tous les 5 ans.
+Une réception à titre isolé (RTI) auprès de la DREAL remplace le COC, pour un coût de 300 € à 1 000 € et un délai de 2 à 3 mois.
 
-Selon l’UTAC, environ 15 % des véhicules importés échouent au premier contrôle technique. En effet, cela est souvent dû à des problèmes de conformité.
+### Un véhicule de collection a-t-il besoin d'un COC ?
 
-## COC et assurance : ce qu’il faut savoir
+Non, une attestation de la Fédération Française des Véhicules d'Époque (FFVE) remplace le COC une fois l'éligibilité au statut de collection prouvée.
 
-Pour assurer un véhicule importé, vous aurez besoin du COC ou d’un document équivalent. Voici les points clés :
+### Le COC est-il demandé au moment de l'achat ou de l'immatriculation ?
 
--   **Assurance temporaire**. Une assurance temporaire avec plaque WW provisoire permet de rouler en attendant la carte grise définitive.
--   **Assurance définitive**. Sans carte grise française, les assureurs refuseront de vous couvrir. Ainsi, ils proposeront des tarifs élevés.
--   **Bonus-malus**. Votre historique d’assurance étranger ne sera pas transféré automatiquement. Fournissez un relevé d’information à votre assureur.
+Idéalement avant l'achat, pour vérifier sa disponibilité et son coût. Il reste en tout cas indispensable au moment du dépôt du dossier d'immatriculation auprès de l'ANTS.
 
-Le prix de l’assurance pour un véhicule importé varie entre 600 € et 1 200 € par an. Ainsi, cela dépend des critères de l’assureur, selon LesFurets.com.
+### Un garage peut-il obtenir le COC à ma place ?
 
-## Certificat de conformité européen : les alternatives pour les véhicules non éligibles
-
-Si votre véhicule n’est pas éligible au COC, voici les alternatives :
-
--   **La réception à titre isolé (RTI)**. Obligatoire pour les véhicules importés hors UE, cette procédure coûte entre 300 € et 1 000 €.
--   **L’attestation FFVE**. Pour les véhicules de collection, cette attestation coûte 60 €. Elle permet d’obtenir une carte grise de collection.
--   **La fiche de réception nationale**. Certains véhicules anciens peuvent obtenir cette fiche auprès de la DREAL.
-
-Contactez la DREAL ou un professionnel de l’immatriculation avant d’acheter un véhicule non éligible au COC. En effet, ces procédures sont plus longues et coûteuses. Toutefois, elles sont indispensables pour immatriculer votre véhicule en France.
-
-Pour plus d’informations sur les démarches liées à l’importation, consultez [notre guide sur la plaque WW provisoire](/carte-grise-demarches/plaque-ww-provisoire-duree), [notre guide pour immatriculer un véhicule importé](/carte-grise-demarches/immatriculer-vehicule-importe) ou [celui sur le quitus fiscal](/carte-grise-demarches/quitus-fiscal-vehicule-etranger).
+Oui, certains professionnels de l'immatriculation se chargent de la demande auprès du constructeur, moyennant des frais de service qui s'ajoutent au prix facturé par la marque elle-même.

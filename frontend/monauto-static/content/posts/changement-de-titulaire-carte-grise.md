@@ -1,7 +1,7 @@
 ---
 title: "Changement de titulaire carte grise : prix, délais et documents en 2026"
-description: "Le changement de titulaire de carte grise est obligatoire sous 1 mois après achat. Découvrez les documents à fournir, les délais et le coût moyen pour évit"
-date: "2026-09-19"
+description: "Le changement de titulaire de carte grise est obligatoire sous 1 mois après achat. Documents, délais et coût moyen pour éviter une amende en 2026."
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 962
@@ -9,123 +9,92 @@ wp_locale: "fr"
 image: "/images/articles/changement-de-titulaire-carte-grise-couverture.webp"
 imageAlt: "Changement de titulaire carte grise : prix, délais et documents en 2026"
 ---
-Le changement de titulaire d’une carte grise après un achat d’occasion est obligatoire sous 1 mois. Délai, coût moyen et documents à fournir pour éviter une amende de 135€ à 750€. TL;DR : 1 mois pour déclarer le changement. Coût à partir de 13,76€ + taxe régionale. Documents : Cerfa 13750\*08, justificatif de domicile, ancienne carte grise barrée.
+***Le changement de titulaire de la carte grise après un achat d'occasion est obligatoire sous un mois. Un retard expose à une amende de 135 € à 750 €.***
 
-## Pourquoi changer le titulaire de la carte grise après un achat ?
+Vous venez d'acheter un véhicule d'occasion ? La carte grise doit passer à votre nom dans le mois, sans exception. Voici les documents à fournir, le coût réel de la démarche et les cas particuliers qui compliquent parfois le dossier.
 
-Cette démarche est une obligation légale. Sans elle, vous restez responsable du véhicule aux yeux de la loi. L’ancienne carte grise doit être barrée avec la mention « vendu » et signée par l’ancien propriétaire. En effet, le non-respect du délai expose à une amende de 135€ à 750€, même si le véhicule est garé.
+TL;DR : un mois pour déclarer le changement, coût à partir de 13,76 € plus la taxe régionale. Documents requis : Cerfa 13750\*08, justificatif de domicile, ancienne carte grise barrée.
 
-## Quel est le délai légal pour faire la démarche ?
+- Le certificat provisoire d'immatriculation (CPI) permet de **circuler en attendant**, valable 1 mois.
+- Depuis 2017, les **préfectures ne traitent plus** les demandes de carte grise.
+- Le service **HistoVec** permet de vérifier gratuitement l'historique d'un véhicule avant achat.
 
-Le délai maximal est de 1 mois à compter de la date d’achat. Aucune exception n’est tolérée. Une fois le dossier déposé sur l’ANTS, le traitement prend 7 à 10 jours ouvrés. Ainsi, la nouvelle carte grise arrive sous 3 à 5 jours ouvrés après validation.
+## Pourquoi changer le titulaire après un achat ?
 
-## Combien coûte un changement de titulaire de carte grise en 2026 ?
+**Cette démarche est une obligation légale, sans elle vous restez responsable du véhicule aux yeux de la loi.** L'ancienne carte grise doit être barrée avec la mention « vendu » et signée par l'ancien propriétaire avant toute remise à l'acheteur.
 
-Le coût minimal est de 13,76€. Il comprend une taxe fixe de 11€ et une redevance de 2,76€. S’y ajoute la taxe régionale, calculée selon la puissance fiscale du véhicule. Par conséquent, comptez 200€ à 500€ en moyenne selon la région et le type de véhicule.
+Le délai maximal est d'un mois à compter de la date d'achat, aucune exception n'est tolérée. Le non-respect de ce délai expose à une amende de 135 € à 750 €, même si le véhicule reste garé sans circuler.
 
-## Quels documents fournir pour le changement de titulaire ?
+## Combien coûte un changement de titulaire en 2026 ?
 
-Les pièces obligatoires sont :
+**Le coût minimal est de 13,76 €**, soit une taxe fixe de 11 € et une redevance de 2,76 €. S'y ajoute la taxe régionale, calculée selon la puissance fiscale du véhicule, pour un total moyen de 200 € à 500 € selon votre [région](/carte-grise-prix-par-region/).
 
--   **Cerfa n°13750\*08** : formulaire de demande de certificat d’immatriculation, rempli et signé.
--   **Justificatif de domicile** de moins de 6 mois au nom du nouveau propriétaire.
--   **Ancienne carte grise** barrée avec la mention « vendu » et signée par l’ancien propriétaire.
--   **Contrôle technique** de moins de 6 mois si le véhicule a plus de 4 ans.
+Une fois le dossier déposé sur l'ANTS, le traitement prend 7 à 10 jours ouvrés, puis la nouvelle carte grise arrive sous 3 à 5 jours ouvrés après validation.
 
-## Comment faire la démarche en ligne sur l’ANTS ?
+## Quels documents fournir pour la démarche ?
 
-La demande se fait uniquement en ligne sur le site officiel. Pour un [changement de titulaire carte grise](/carte-grise-demarches/changement-de-titulaire), suivez ces étapes :
+Les pièces obligatoires sont le **Cerfa n°13750\*08**, formulaire de demande de certificat d'immatriculation rempli et signé, un justificatif de domicile de moins de 6 mois au nom du nouveau propriétaire, l'ancienne carte grise barrée avec la mention « vendu » et signée par l'ancien propriétaire, et un contrôle technique de moins de 6 mois si le véhicule a plus de 4 ans.
 
--   Créez un compte sur immatriculation.ants.gouv.fr.
--   Remplissez le formulaire Cerfa n°13750\*08 en ligne.
--   Téléchargez les documents demandés.
+Si l'ancien propriétaire ne fournit pas l'ancienne carte grise, demandez-lui un duplicata ou faites établir une [déclaration de cession](/declaration-de-cession-carte-grise/) en ligne, complétée d'une attestation de vente signée et datée. En cas de refus persistant, le tribunal judiciaire peut être saisi.
 
-Payez ensuite les frais par carte bancaire. Vous recevrez le certificat provisoire d’immatriculation (CPI) par e-mail sous 24 à 48h.
+## Comment faire la démarche en ligne ?
 
--   Recevez la nouvelle carte grise sous 7 à 10 jours ouvrés après validation.
+La demande se fait uniquement en ligne sur immatriculation.ants.gouv.fr, depuis 2017 les préfectures ne traitent plus ces dossiers. Créez un compte, remplissez le formulaire Cerfa n°13750\*08, téléchargez les documents demandés, puis payez les frais par carte bancaire.
 
-En cas d’erreur ou de document manquant, l’ANTS vous contacte par e-mail. Vous avez alors 15 jours pour corriger le dossier.
+Vous recevez le certificat provisoire d'immatriculation (CPI) par email sous 24 à 48 heures, ce document permet de circuler légalement en attendant la nouvelle carte grise. En cas d'erreur ou de document manquant, l'ANTS vous contacte par email, avec 15 jours pour corriger le dossier. Un professionnel agréé, garagiste ou centre auto, peut aussi effectuer la démarche pour vous, moyennant 30 € à 50 € de frais supplémentaires.
 
-## Peut-on faire la démarche en préfecture ou chez un professionnel ?
+## Cas particuliers : succession, collection, véhicule importé
 
-Depuis 2017, les préfectures ne traitent plus les demandes de carte grise. La démarche est donc obligatoire en ligne. Cependant, un professionnel agréé (garagiste, centre auto) peut effectuer la démarche pour vous. Comptez 30€ à 50€ de frais supplémentaires.
+Pour un véhicule reçu en [succession](/carte-grise-heritage-succession/), les documents diffèrent légèrement : certificat de décès, livret de famille complet ou acte de notoriété, attestation signée par tous les héritiers. Le coût reste identique à un changement classique, environ 13,76 €.
 
-## Que faire si l’ancien propriétaire ne fournit pas l’ancienne carte grise ?
+Pour un véhicule de plus de 30 ans éligible à la mention « [collection](/carte-grise-collection/) », le coût de la mention reste à 13,76 €, avec les mêmes avantages que pour tout autre titulaire, libre circulation en ZFE et contrôle technique espacé à 5 ans.
 
-Régularisez d’abord la situation :
+Pour un véhicule acheté à l'étranger, des documents supplémentaires sont nécessaires, [certificat de conformité européen](/certificat-conformite-europeen-coc/) ou traduction assermentée selon les cas. Le coût total grimpe généralement, comptez un budget nettement supérieur à un changement classique selon l'état du véhicule et les démarches d'homologation associées.
 
--   Demandez un duplicata à l’ancien propriétaire.
--   Faites une déclaration de cession en ligne sur le site de l’ANTS.
+## Camping-car et véhicule utilitaire : attention à la mention
 
-Obtenez également une attestation de vente signée et datée. En cas de refus, saisissez le tribunal judiciaire.
+**Pour un camping-car, la mention « VASP » doit figurer sur la carte grise**, un fourgon resté en genre « CTTE » n'est pas légalement un camping-car, même aménagé. Pour la mise à jour, fournissez un certificat de conformité ou une attestation d'aménagement, voir notre guide sur les [démarches VASP](/vasp-carte-grise-demarches/).
 
-## Changement de titulaire pour un véhicule en succession ou héritage
+La mention CTTE indique un véhicule utilitaire, un contrôle qui détecte un usage non conforme peut entraîner une amende, et certaines assurances refusent de couvrir un véhicule aménagé si la mention ne correspond pas à son usage réel.
 
-Les documents diffèrent légèrement :
+## Que faire en cas de refus de l'ANTS ?
 
--   Certificat de décès du propriétaire initial.
--   Livret de famille complet ou acte de notoriété.
--   Attestation signée par tous les héritiers.
--   Ancienne carte grise ou déclaration de perte/vol.
+**Un refus survient généralement pour un document manquant ou une erreur dans le formulaire déposé en ligne.** Vérifiez d'abord l'email de refus envoyé par l'ANTS, il détaille systématiquement le motif exact, puis corrigez les erreurs ou fournissez les pièces manquantes dans les 15 jours impartis.
 
-Le coût reste identique à celui d’un changement classique, soit environ 13,76€.
+Si le refus persiste sans justification claire, contactez le support de l'ANTS par téléphone ou via le formulaire en ligne. Pour un dossier bloqué à plusieurs reprises, un professionnel agréé ou un avocat spécialisé peut débloquer la situation, moyennant des frais supplémentaires. Gardez toujours une copie de l'intégralité du dossier envoyé, cette précaution simplifie un éventuel second dépôt si le délai d'un mois approche.
 
-## Changement de département : une démarche inutile ?
+## Changement de titulaire et contrôle technique : ce qu'il faut vérifier
 
-![Ancienne carte grise barrée avec la mention 'vendu' pour un changement de titulaire](/images/articles/changement-de-titulaire-carte-grise-1.webp)
+**Un contrôle technique de moins de 6 mois reste exigé uniquement pour les véhicules de plus de 4 ans**, une règle que beaucoup d'acheteurs découvrent trop tard, au moment du dépôt du dossier en ligne. Demandez systématiquement le procès-verbal complet avant la signature, pas seulement la vignette apposée sur le pare-brise, il mentionne d'éventuelles contre-visites déjà réalisées.
 
-Depuis la réforme SIV de 2009, le numéro d’immatriculation ne dépend plus du département. Ainsi, aucune démarche n’est nécessaire en cas de déménagement.
+Si le contrôle technique fourni par le vendeur dépasse ce délai de 6 mois au moment où vous déposez votre dossier, la demande sera rejetée même si la vente elle-même a eu lieu dans les temps. Faites repasser le véhicule au contrôle si nécessaire avant de finaliser la démarche, plutôt que de risquer un refus qui retarde encore le dossier et rapproche la date limite de l'amende.
 
-## Changement de carburant (E85) : faut-il modifier la carte grise ?
+## Questions fréquentes
 
-Oui. Après la pose d’un boîtier E85 homologué, la mention carburant doit passer à « FE » (bicarburation Superéthanol-E85 + essence). Cette mise à jour est obligatoire. Sans elle, risque de contre-visite au contrôle technique et d’amende de 135€.
+### Quel est le délai pour changer le titulaire après un achat ?
 
-## Que faire en cas de refus de l’ANTS ?
+Un mois maximum à compter de la date d'achat, sans aucune exception tolérée. Passé ce délai, l'amende grimpe de 135 € à 750 €.
 
-Un refus survient pour document manquant ou erreur dans le formulaire. Voici comment réagir :
+### Peut-on conduire en attendant la nouvelle carte grise ?
 
--   Vérifiez l’e-mail de refus de l’ANTS.
--   Corrigez les erreurs ou fournissez les documents manquants sous 15 jours.
+Oui, avec le certificat provisoire d'immatriculation (CPI), valable un mois. Sans ce document, conduire avec l'ancienne carte grise est une infraction.
 
-Contactez le support de l’ANTS si le refus semble injustifié. En cas de refus répété, faites appel à un professionnel ou un avocat spécialisé.
+### Peut-on faire la démarche en préfecture ?
 
-## Changement de titulaire pour un camping-car ou un fourgon aménagé
+Non, depuis 2017 les préfectures ne traitent plus les demandes de carte grise. La démarche se fait uniquement en ligne ou via un professionnel agréé.
 
-![Camping-car avec plaque d'immatriculation visible, illustrant la mention VASP sur la carte grise](/images/articles/changement-de-titulaire-carte-grise-2.webp)
+### Comment vérifier l'historique d'un véhicule avant achat ?
 
-Pour un camping-car, la mention « VASP » doit figurer sur la carte grise. Un fourgon en genre « CTTE » n’est pas considéré comme un camping-car, même aménagé. Pour la mise à jour, fournissez un certificat de conformité ou une attestation d’aménagement.
+Via le service HistoVec du ministère de l'Intérieur, gratuit, accessible sur histovec.interieur.gouv.fr avec le numéro d'immatriculation du véhicule.
 
-### Pourquoi la mention CTTE pose-t-elle problème ?
+### Que faire si l'ancien propriétaire refuse de fournir la carte grise ?
 
-La mention CTTE indique un véhicule utilitaire. En cas de contrôle, risque d’amende pour usage non conforme. De plus, certaines assurances refusent de couvrir un véhicule aménagé si la mention ne correspond pas à son usage.
+Demandez-lui un duplicata ou établissez une déclaration de cession en ligne, complétée d'une attestation de vente signée. En cas de refus persistant, saisissez le tribunal judiciaire.
 
-## Combien de temps pour recevoir la nouvelle carte grise ?
+### Peut-on changer de titulaire sans passer par l'ANTS ?
 
-Une fois le dossier validé, la nouvelle carte grise arrive sous 7 à 10 jours ouvrés. Ce délai peut varier selon la période. En cas de retard, suivez l’avancement sur le site de l’ANTS. Si le délai dépasse 15 jours ouvrés, contactez le support.
+Non, la démarche se fait exclusivement en ligne sur l'ANTS depuis 2017, directement par le titulaire ou via un professionnel agréé qui saisit le dossier pour son compte.
 
-## Peut-on conduire avec l’ancienne carte grise en attendant la nouvelle ?
+### Le changement de titulaire modifie-t-il le numéro d'immatriculation ?
 
-Oui, mais uniquement avec un certificat provisoire d’immatriculation (CPI). Ce document, valable 1 mois, permet de circuler légalement. Sans CPI, conduire avec l’ancienne carte grise est une infraction. Risque : amende de 135€ et immobilisation du véhicule.
-
-## Changement de titulaire pour un véhicule importé
-
-Pour un véhicule acheté à l’étranger, fournissez des documents supplémentaires : certificat de conformité européen ou traduction assermentée. Le coût est plus élevé : 500€ à 1 500€ selon le type de véhicule et son état.
-
-## Changement de titulaire pour un véhicule de collection
-
-Pour obtenir une carte grise de collection (CIC), le véhicule doit avoir été construit ou immatriculé pour la première fois il y a au moins 30 ans, ne plus être produit, et n’avoir subi aucune modification essentielle de ses caractéristiques techniques. La mention « collection » coûte 13,76€, comme un changement de titulaire classique. Elle offre la libre circulation dans les Zones à Faibles Émissions (ZFE) sans vignette Crit’Air. Selon la Fédération Française des Véhicules d’Époque (FFVE), les véhicules légers de plus de 1960 bénéficient aussi d’un contrôle technique tous les 5 ans au lieu de tous les 2 ans.
-
-## Comment vérifier l’historique d’un véhicule avant achat ?
-
-Le service HistoVec, proposé par le Ministère de l’Intérieur, permet d’accéder gratuitement à l’historique administratif du véhicule :
-
--   Changements de propriétaires.
--   Contrôles techniques effectués.
--   Sinistres déclarés.
--   Situation administrative (gage, opposition, vol).
-
-Rendez-vous sur histovec.interieur.gouv.fr et saisissez le numéro d’immatriculation. Le rapport est généré instantanément.
-
-## Pour aller plus loin
-
-Besoin d’aide pour d’autres démarches liées à la carte grise ? Consultez [le code de cession](/carte-grise-demarches/code-de-cession-obtenir), [les délais après achat](/carte-grise-demarches/delai-carte-grise-apres-achat) ou.
+Non, le numéro reste identique toute la vie du véhicule depuis la réforme du SIV de 2009, seul le nom du titulaire change sur le certificat d'immatriculation.

@@ -1,93 +1,111 @@
 ---
 title: "Carte VTC examen : tout savoir pour réussir et obtenir sa carte professionnelle"
-description: "Passer l’examen VTC est la première étape pour devenir chauffeur professionnel. Coût, inscription, durée de validité et renouvellement : on vous dit tout p"
-date: "2026-08-12"
+description: "Passer l'examen VTC coûte environ 200 € en 2026 et reste l'unique voie d'accès depuis le décret du 5 août 2026. Coût, inscription et renouvellement."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1319
 wp_locale: "fr"
 image: "/images/articles/carte-vtc-examen-couverture.webp"
 imageAlt: "Carte VTC examen : tout savoir pour réussir et obtenir sa carte professionnelle"
 ---
-Pour conduire un VTC en France, la carte professionnelle est obligatoire. Elle s’obtient après avoir réussi un examen organisé par les Chambres de Métiers et de l’Artisanat (CMA). Coût, durée de validité, renouvellement : voici comment décrocher ce sésame sans perdre de temps.
+***L'examen organisé par les Chambres de Métiers et de l'Artisanat est depuis août 2026 l'unique voie d'accès à la carte professionnelle VTC. Comptez environ 200 € d'inscription.***
 
-## 1\. L’examen VTC : une épreuve en deux temps
+Pour conduire un VTC en France, la carte professionnelle est obligatoire. Un décret du 5 août 2026 a supprimé la voie d'accès par équivalence d'expérience, l'examen théorique et pratique reste désormais la seule porte d'entrée. Coût, durée de validité, renouvellement : voici comment décrocher ce sésame.
 
-L’examen se compose d’un QCM théorique et d’une épreuve pratique. Le QCM aborde la réglementation, la sécurité routière et la gestion d’entreprise. L’épreuve pratique, elle, teste votre conduite.
+TL;DR : inscription à l'examen autour de 200 €, carte professionnelle délivrée pour 60 €, valable 5 ans. Un stage de 14 heures est obligatoire pour la renouveler.
 
-Elle évalue aussi votre capacité à gérer une course avec un client, comme en conditions réelles.
+- Depuis le **5 août 2026**, l'examen est la seule voie d'accès à la profession.
+- La **garantie financière** s'élève à 1 500 € par véhicule utilisé régulièrement.
+- Les cartes déjà délivrées par équivalence **restent valables**, la réforme ne s'applique qu'aux nouveaux dossiers.
+
+## L'examen VTC : une épreuve en deux temps
+
+**L'examen combine un QCM théorique et une épreuve pratique de conduite, organisés par les Chambres de Métiers et de l'Artisanat.** Le QCM porte sur la réglementation, la sécurité routière et la gestion d'entreprise, l'épreuve pratique évalue la conduite et la gestion d'une course en conditions réelles.
 
 ![Examen pratique VTC avec un candidat et un examinateur dans un véhicule](/images/articles/carte-vtc-examen-1.webp)
 
-Le taux de réussite dépend de votre préparation. Ainsi, les candidats libres s’inscrivent directement auprès des CMA. Les écoles agréées, en revanche, proposent des formations payantes. Comptez entre 500 € et 1 500 € selon l’organisme.
+Deux voies de préparation existent. Le candidat libre s'inscrit directement auprès de la CMA de sa région, pour un coût limité à l'inscription elle-même. Une école agréée propose des cours théoriques et des simulations d'examen, entre 400 € et 1 500 € selon l'organisme et la durée de la formation.
 
-## 2\. Coût et validité : ce qu’il faut savoir
+## Combien coûte l'examen VTC en 2026 ?
 
-L’inscription à l’examen coûte **60 €**, un tarif fixé par les CMA. Une fois obtenu, le précieux sésame est valable **5 ans**.
+**L'inscription à l'examen coûte environ 200 € en 2026**, un tarif fixé par chaque CMA et susceptible de varier légèrement selon la région. La carte professionnelle, délivrée une fois l'examen réussi, coûte ensuite environ 60 €, un montant distinct de l'inscription à l'épreuve.
 
-Pour le renouveler, un stage de remise à niveau de 14 heures est obligatoire. Sans ce stage, pas de reconduction. En effet, ce stage met à jour vos connaissances sur les évolutions réglementaires et les bonnes pratiques du métier.
+Le macaron d'inscription au registre des VTC s'ajoute, autour de 35 €. Les formations préparatoires en école agréée restent à part, non finançables par le CPF, et ne comprennent jamais les frais d'inscription à l'examen lui-même.
 
-Anticipez cette démarche 3 mois avant l’expiration de votre carte. Ainsi, vous éviterez une interruption d’activité.
+## Depuis quand l'examen est-il la seule voie d'accès ?
 
-## 3\. Comment s’inscrire à l’examen ?
+**Un décret du 5 août 2026, publié au Journal officiel le 11 août, a mis fin à l'accès par équivalence d'expérience professionnelle.** Jusqu'alors, un chauffeur pouvait obtenir sa carte sans passer l'examen en justifiant d'une expérience suffisante.
 
-L’inscription se fait en ligne sur le site des [Chambres de Métiers et de l’Artisanat](/mobilite-partagee-transports/vtc-taxi). Voici les documents à fournir :
+Les cartes déjà délivrées par cette voie restent valables, et les dossiers déposés avant le 12 août 2026 suivent les anciennes règles. Pour tout nouveau candidat, l'examen est désormais obligatoire, sans exception liée à l'expérience antérieure dans le transport de personnes.
 
--   Une pièce d’identité valide
--   Un justificatif de domicile de moins de 3 mois
--   Un certificat médical attestant de votre aptitude physique
--   Un extrait de casier judiciaire (bulletin n°3)
+## Comment s'inscrire à l'examen ?
 
-Les sessions d’examen sont organisées plusieurs fois par an. Réservez votre place au moins 2 mois à l’avance. En effet, les créneaux partent vite.
+L'inscription se fait en ligne sur le site de la Chambre de Métiers et de l'Artisanat de votre région. Le dossier réunit une pièce d'identité valide, un justificatif de domicile de moins de 3 mois, un certificat médical d'aptitude physique et un extrait de casier judiciaire (bulletin n°3).
 
-## 4\. Après l’examen : les démarches pour obtenir sa carte
+Les sessions d'examen sont organisées plusieurs fois par an, réservez votre place au moins 2 mois à l'avance, les créneaux partent vite. Une fois l'examen réussi, demandez votre carte professionnelle en ligne, elle arrive par courrier sous 2 à 3 semaines. Notre guide sur les [conditions pour devenir chauffeur VTC](/devenir-chauffeur-vtc-conditions/) détaille l'ensemble du parcours, statut compris.
 
-Une fois l’examen réussi, demandez votre carte professionnelle en ligne. [Notre guide complet sur les démarches VTC](/mobilite-partagee-transports/vtc-taxi) vous explique la procédure. Vous recevrez votre carte par courrier sous 2 à 3 semaines.
+## Quelles obligations après l'obtention de la carte ?
 
-Pour exercer, souscrivez une assurance professionnelle. Immatriculez également votre activité. La garantie financière, obligatoire pour les exploitants, s’élève à **1 500 € par véhicule** utilisé régulièrement. Toutefois, cette règle ne s’applique pas si vous êtes propriétaire ou en location longue durée.
+**Exercer suppose une assurance professionnelle et, dans la plupart des cas, une garantie financière de 1 500 € par véhicule utilisé régulièrement.** Cette garantie n'est pas exigée si vous êtes propriétaire du véhicule ou en location de plus de six mois.
 
-## 5\. Renouvellement : ne ratez pas le coche
+Il faut aussi immatriculer une activité, le plus souvent en micro-entreprise pour démarrer sans lourdeur administrative. Ce statut permet de tester l'activité avant, éventuellement, de basculer vers une société si le volume de courses le justifie.
 
-Cinq ans après l’obtention de votre carte, un stage de remise à niveau de 14 heures est obligatoire. Ce stage aborde les évolutions réglementaires, la sécurité routière et la relation client.
+| Poste | Coût indicatif |
+| --- | --- |
+| Inscription à l'examen | environ 200 € |
+| Carte professionnelle | environ 60 € |
+| Macaron registre VTC | environ 35 € |
+| Formation en école agréée (facultative) | 400 à 1 500 € |
+| Garantie financière (si requise) | 1 500 € par véhicule |
 
-Comptez entre **200 € et 400 €** selon les organismes. Anticipez 3 à 6 mois avant l’expiration de votre carte. Sans renouvellement, vous ne pourrez plus travailler légalement. Les délais de traitement peuvent, en effet, traîner.
+## Renouvellement : ne ratez pas le coche
 
-## 6\. Candidat libre ou formation payante : que choisir ?
+**Cinq ans après l'obtention de la carte, un stage de remise à niveau de 14 heures devient obligatoire.** Sans ce stage, aucune reconduction n'est possible, et le chauffeur ne peut plus exercer légalement.
 
-### 6.1 Préparer l’examen en candidat libre
+Anticipez la démarche 3 à 6 mois avant l'expiration, les délais de traitement peuvent traîner en période de forte demande. Le stage aborde les évolutions réglementaires, la sécurité routière et la relation client, pour un coût généralement compris entre 200 € et 400 € selon les organismes.
 
-Deux options s’offrent à vous : passer l’examen en candidat libre ou suivre une formation dans une école agréée. La première solution est économique. Elle coûte seulement 60 €. Toutefois, elle demande une préparation autonome.
+## VTC ou taxi : quelle différence pour l'examen ?
 
-Entraînez-vous avec des annales en ligne. Les thèmes récurrents ? La réglementation VTC, la sécurité routière et la gestion d’une entreprise de transport.
+Le taxi et le VTC exigent deux examens distincts, organisés par des instances différentes. La carte VTC ne permet jamais de prendre un client à la volée dans la rue, contrairement à la licence taxi, un chauffeur VTC ne travaille que sur réservation préalable, via une plateforme ou en direct. Pour comprendre une activité réservée aux taxis, consultez notre article sur le [taxi conventionné CPAM](/taxi-conventionne-cpam/), qui détaille le transport de patients.
 
-### 6.2 Les avantages d’une école agréée
+## Les erreurs qui coûtent cher aux candidats
 
-Les écoles agréées proposent des cours théoriques et des simulations d’examen. Leur coût varie entre 500 € et 1 500 €. Ainsi, elles conviennent aux candidats qui préfèrent un encadrement structuré.
+**Bâcler la préparation reste la première cause d'échec**, la réglementation en particulier pose problème aux candidats libres qui s'entraînent seulement avec des annales en ligne sans réviser la gestion d'entreprise. Oublier le stage de renouvellement figure aussi parmi les pièges fréquents, sans lui la carte expire purement et simplement, marquez systématiquement la date d'expiration dans votre agenda plusieurs mois à l'avance.
 
-## 7\. Les erreurs à éviter
+Sous-estimer les coûts annexes pose également problème à de nombreux candidats : au-delà de l'examen, prévoyez un budget pour l'assurance professionnelle et, le cas échéant, la garantie financière par véhicule. Ne signez jamais de contrat avec une plateforme ou un loueur avant d'avoir la carte professionnelle en main, le délai de réception de 2 à 3 semaines après l'examen doit être anticipé dans votre planning de lancement d'activité.
 
--   **Bâcler la préparation** : Beaucoup échouent à cause d’un manque de révision. La réglementation, en particulier, pose problème.
--   **Oublier le stage de renouvellement** : Sans ce stage, votre carte expire. Vous ne pourrez plus travailler. Marquez la date d’expiration dans votre agenda.
--   **Sous-estimer les coûts** : En plus de l’examen, prévoyez un budget pour l’assurance et la garantie financière. Une formation, si vous en suivez une, représente aussi un coût.
--   **Négliger les délais** : Comptez 2 à 3 semaines pour recevoir votre carte après l’examen. Ne signez pas de contrat avant de l’avoir en main.
+## Reconversion professionnelle : aucune condition de diplôme
 
-## 8\. Cas particuliers : reconversion, statut et comparaison avec le taxi
+**Aucune condition de diplôme n'est exigée pour s'inscrire à l'examen VTC.** Un ancien salarié du commerce, du bâtiment ou de la restauration peut candidater sans formation préalable, seule la réussite à l'examen théorique et pratique compte pour obtenir la carte professionnelle.
 
-Beaucoup de candidats viennent d’un autre métier. Voici les questions qui reviennent le plus souvent.
+Entre l'inscription et la première course rémunérée, comptez plusieurs semaines : réserver une session d'examen, réviser, attendre la réception de la carte professionnelle une fois l'examen réussi, puis trouver une assurance professionnelle adaptée et immatriculer son activité. Mieux vaut anticiper ce délai si vous comptez sur ce revenu rapidement après une reconversion.
 
-### 8.1 Reconversion professionnelle
+## Questions fréquentes
 
-Aucune condition de diplôme n’est exigée pour s’inscrire à l’examen VTC. Un ancien salarié du commerce, du bâtiment ou de la restauration peut candidater sans formation préalable. Seule la réussite à l’examen compte.
+### Combien coûte réellement l'examen VTC en 2026 ?
 
-### 8.2 Quel statut choisir pour exercer ?
+Environ 200 € pour l'inscription à l'épreuve, puis environ 60 € pour la délivrance de la carte professionnelle une fois l'examen réussi.
 
-La carte professionnelle ne suffit pas pour rouler. Il faut aussi immatriculer une activité, le plus souvent en micro-entreprise pour démarrer sans lourdeur administrative. Ce statut permet de tester l’activité avant, éventuellement, de basculer vers une société si le volume de courses le justifie.
+### L'accès par expérience professionnelle existe-t-il encore ?
 
-### 8.3 VTC ou taxi : quelle différence pour l’examen ?
+Non, depuis le décret du 5 août 2026. Seules les cartes déjà délivrées par cette voie avant cette date restent valables.
 
-Le taxi et le VTC exigent deux examens distincts, organisés par des instances différentes. La carte VTC ne permet pas de prendre des clients à la volée dans la rue, contrairement à la licence taxi. Un chauffeur VTC ne peut travailler que sur réservation préalable, via une plateforme ou en direct.
+### Combien de temps la carte VTC reste-t-elle valable ?
 
-Pour aller plus loin sur les différences entre les deux métiers, consultez [notre article sur le taxi conventionné CPAM](/mobilite-partagee-transports/taxi-conventionne-cpam), qui détaille aussi le fonctionnement du transport de patients, une activité réservée aux taxis.
+5 ans. Le renouvellement impose un stage de remise à niveau de 14 heures, sans lequel la carte ne peut pas être reconduite.
 
-### 8.4 Combien de temps pour être opérationnel ?
+### Faut-il une garantie financière pour exercer en VTC ?
 
-Entre l’inscription et la première course, comptez plusieurs semaines. Il faut réserver une session d’examen, réviser, puis attendre la réception de la carte professionnelle une fois l’examen réussi. Ajoutez à cela le temps de trouver une assurance professionnelle adaptée et, le cas échéant, d’immatriculer votre activité. Mieux vaut anticiper ce délai si vous comptez sur ce revenu rapidement.
+Oui, 1 500 € par véhicule utilisé régulièrement, sauf si vous êtes propriétaire du véhicule ou en location de plus de six mois.
+
+### Quel statut choisir pour exercer en tant que chauffeur VTC ?
+
+La micro-entreprise reste la plus utilisée pour démarrer, avant une éventuelle bascule vers une société si le volume d'activité le justifie.
+
+### Peut-on passer l'examen VTC sans permis B depuis plusieurs années ?
+
+Oui, aucune ancienneté de permis n'est exigée pour s'inscrire à l'examen lui-même, seule l'aptitude physique attestée par le certificat médical et la réussite aux épreuves comptent.
+
+### Que se passe-t-il si on échoue à l'examen VTC ?
+
+Il est possible de se réinscrire à une session suivante, sans limite de tentatives, en payant à nouveau les frais d'inscription à chaque nouvelle présentation de l'épreuve.
