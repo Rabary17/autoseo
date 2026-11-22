@@ -1,7 +1,7 @@
 ---
 title: "Assurance camping-car comparatif : comment choisir la meilleure offre en 2026 ?"
-description: "Un road-trip en camping-car ou van aménagé, c’est la promesse de liberté. Mais cette liberté se paie aussi en assurance : entre 200 € et 600 € par an selon"
-date: "2026-08-10"
+description: "Assurance camping-car : comparatif des formules tiers et tous risques, prix 2026, garanties à vérifier et cas particuliers du van aménagé VASP."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1208
@@ -9,74 +9,90 @@ wp_locale: "fr"
 image: "/images/articles/assurance-camping-car-comparatif-couverture.webp"
 imageAlt: "Assurance camping-car comparatif : comment choisir la meilleure offre en 2026 ?"
 ---
-Imaginez un road-trip de 15 jours en famille, avec deux vélos fixés à l’arrière et un van aménagé en guise de maison roulante. Tout semble parfait… jusqu’à ce que votre assureur vous rappelle que vos vélos ne sont pas couverts en cas de vol. Ou que votre aménagement fixe nécessite une homologation VASP.
+***En 2026, une assurance camping-car coûte entre 200 € et 600 € par an, soit environ 17 à 50 € par mois, selon la formule et la valeur du véhicule.***
 
-En 2026, les tarifs des assurances camping-car varient du simple au triple : **entre 17 € et 50 € par mois**, selon la formule (tiers ou tous risques) et la valeur du véhicule. Mais attention : toutes les offres ne se valent pas. Voici ce qu’il faut vérifier avant de signer.
+Un road-trip de 15 jours en famille, deux vélos fixés à l'arrière, un van aménagé en guise de maison roulante : tout semble parfait, jusqu'à ce que l'assureur rappelle que les vélos ne sont pas couverts en cas de vol, ou que l'aménagement fixe exige une homologation VASP. Voici ce qu'il faut vérifier avant de signer.
 
-## Pourquoi votre assurance auto classique ne couvre pas votre camping-car
+TL;DR : le tarif varie du simple au triple selon la formule choisie.
+
+-   Formule **tiers** : environ 200 à 250 € par an pour un véhicule ancien et peu utilisé.
+-   Formule **tous risques** : généralement 500 à 600 € par an pour un modèle récent.
+-   Un aménagement fixe non déclaré, ou une **homologation VASP** manquante, peut entraîner un refus de sinistre.
 
 ![Famille comparant des offres d'assurance pour un camping-car en plein air](/images/articles/assurance-camping-car-comparatif-1.webp)
 
-Un camping-car n’est pas une voiture. Son usage – longs trajets, stationnement prolongé, équipement intérieur coûteux – en fait un risque spécifique pour les assureurs. Ainsi, une assurance auto standard peut refuser de couvrir certains dommages. Ou appliquer des exclusions tacites.
+## Pourquoi une assurance auto classique ne couvre-t-elle pas un camping-car ?
 
-Prenons l’exemple des vélos. Si vous partez en vacances avec deux vélos fixés sur un porte-vélo, sachez que **la plupart des contrats auto classiques excluent leur vol**. Une extension de garantie est souvent nécessaire. La MAAF et la MAIF le confirment.
+Un camping-car n'est pas une voiture. Son usage, longs trajets, stationnement prolongé, équipement intérieur coûteux, en fait un risque spécifique pour les assureurs. Une assurance auto standard refuse souvent certains dommages ou applique des exclusions tacites sur l'aménagement et les accessoires fixés à l'extérieur.
 
-Autre cas : un van aménagé sommairement (lit démontable, réchaud mobile) peut échapper à l’homologation VASP. En revanche, si votre aménagement est fixe – cuisine intégrée, banquette convertible –, vous devrez **obtenir cette homologation**. Sans elle, un sinistre pourrait être refusé.
+Prenons l'exemple des vélos. Partir en vacances avec deux vélos sur un porte-vélo expose à une mauvaise surprise : **la plupart des contrats auto classiques excluent leur vol**. Une extension de garantie comble ce vide dans la plupart des contrats.
 
-Enfin, le stationnement en ville pose question. Un camping-car a le droit de stationner comme une voiture. Mais **déplier un auvent ou sortir une table sur la voie publique est interdit**. Cela relève du « camping sauvage », passible d’une amende. Par conséquent, mieux vaut connaître les règles avant de s’installer pour la nuit.
+Autre cas fréquent : un van aménagé sommairement (lit démontable, réchaud mobile) échappe généralement à l'homologation VASP. En revanche, un aménagement fixe, cuisine intégrée, banquette convertible, impose cette homologation. Sans elle, un assureur peut refuser un sinistre lié à l'aménagement.
 
-## Tiers ou tous risques : quelle formule choisir selon votre usage ?
+## Tiers ou tous risques : quelle formule choisir ?
 
-Le choix entre une assurance tiers et tous risques dépend de deux critères : l’âge de votre véhicule et votre budget. Pour un camping-car de plus de 10 ans, une formule tiers peut suffire. Surtout si vous roulez peu.
+Le choix entre tiers et tous risques dépend d'abord de l'âge du véhicule et du budget disponible. Pour un camping-car de plus de 10 ans peu utilisé, une formule tiers suffit souvent. Pour un modèle récent ou haut de gamme, une couverture tous risques protège mieux l'investissement.
 
-Pour un modèle récent ou haut de gamme, une couverture tous risques est recommandée. Les tarifs ? Entre **200 € et 600 € par an**, selon les garanties incluses.
+| Formule | Prix indicatif/an | Garanties principales |
+| --- | --- | --- |
+| Tiers | 200 à 250 € | Dommages causés à autrui, responsabilité civile |
+| Tiers étendu | 300 à 400 € | Tiers + vol, incendie, bris de glace |
+| Tous risques | 500 à 600 € | Tiers étendu + dommages tous accidents |
 
-Mais attention aux pièges. Certaines offres affichent des prix attractifs, mais excluent des éléments essentiels. Comme le vol des accessoires (porte-vélo, auvent) ou les dommages causés par un stationnement prolongé. Ainsi, vérifiez les petites lignes avant de signer. Une garantie « vol des vélos » ou « protection juridique » peut faire la différence en cas de litige.
+*Exemple de fourchette observée sur comparateurs en ligne en 2026 ; le tarif réel dépend du véhicule, du profil conducteur et de la franchise choisie.*
 
-## Van aménagé : VASP ou pas VASP ?
+Certaines offres affichent un prix attractif tout en excluant des éléments essentiels : vol des accessoires, dommages liés à un stationnement prolongé. Vérifiez systématiquement la ligne **vol des vélos** et la **protection juridique**, deux garanties qui font souvent la différence en cas de litige.
 
-L’homologation VASP (Véhicule Automoteur Spécialisé de Personnes) est obligatoire si votre van répond à cinq critères : rangements fixes, table et assises, banquette convertible en lit, cuisine fixe et aménagement inamovible. Si votre aménagement est sommaire – lit démontable, réchaud mobile –, vous pouvez échapper à cette obligation.
+## Van aménagé : l'homologation VASP change-t-elle l'assurance ?
 
-Pourquoi cette règle ? Parce qu’un van aménagé de façon permanente change de catégorie aux yeux de la loi. Il n’est plus un simple utilitaire, mais un véhicule de loisirs. Avec des risques spécifiques : incendie, vol, dommages intérieurs. Si vous hésitez, consultez [notre guide complet sur l’assurance et la réglementation](/camping-car-van/assurance-reglementation).
+L'homologation VASP est obligatoire dès que l'aménagement remplit cinq critères : rangements fixes, table et assises ancrées, banquette convertible en lit, cuisine fixe, aménagement inamovible en moins de deux heures. Un aménagement sommaire, lit démontable, réchaud mobile, permet d'y échapper.
 
-## Bonus-malus : comment réduire votre prime d’assurance
+Un van homologué VASP change de catégorie aux yeux de l'assureur : il n'est plus un simple utilitaire, mais un véhicule de loisirs, avec des risques spécifiques (incendie, vol, dommages intérieurs). Le détail des critères et de la démarche figure dans notre guide sur l'[homologation VASP d'un fourgon aménagé](/amenager-fourgon-soi-meme-homologation/).
 
-Le coefficient bonus-malus (CRM) peut faire varier votre prime du simple au triple. Après 13 ans sans sinistre responsable, vous atteignez le bonus maximal (50 %). Soit une réduction de moitié sur votre tarif.
+## Comment réduire sa prime grâce au bonus-malus ?
 
-À l’inverse, un seul sinistre responsable peut faire grimper votre coefficient de 25 %. Pour limiter les hausses, privilégiez les petits sinistres que vous pouvez régler vous-même.
+Le coefficient bonus-malus peut faire varier la prime du simple au triple. Après 13 ans sans sinistre responsable, le bonus maximal atteint 50 %, soit une prime divisée par deux. À l'inverse, un seul sinistre responsable fait grimper le coefficient d'environ 25 %.
 
-Autre astuce : comparez les offres en ligne. Les comparateurs comme LesFurets ou GoodAssur permettent de trouver des tarifs compétitifs. Mais attention aux garanties cachées. Une offre à 17 €/mois peut sembler attractive. Pourtant, si elle exclut le vol des vélos ou les dommages liés à un stationnement prolongé, elle pourrait vous coûter cher en cas de problème.
+Pour limiter les hausses, privilégiez les petits sinistres réglés directement, sans passer par l'assurance. Comparez aussi les offres en ligne : les comparateurs permettent de repérer des tarifs compétitifs, mais une offre à 17 € par mois peut cacher des **garanties réduites**, notamment sur le vol des vélos ou les dommages liés au stationnement prolongé.
 
-## Stationnement et camping sauvage : ce que dit la loi
+## Le stationnement influence-t-il la couverture d'assurance ?
 
-### Où stationner son camping-car en ville ?
+Un camping-car stationne sur la voie publique comme une voiture classique. En revanche, camper, déployer un auvent, sortir une table ou des chaises, est interdit et peut compliquer une déclaration de sinistre si l'infraction est constatée au moment des faits.
 
-![Camping-car stationné en ville avec des vélos fixés sur un porte-vélo arrière](/images/articles/assurance-camping-car-comparatif-2.webp)
+Les arrêtés municipaux qui interdisent spécifiquement le stationnement des camping-cars sont souvent jugés discriminatoires et contestables. Pour les règles précises à connaître avant de s'installer pour la nuit, consultez notre guide sur le [stationnement du camping-car en ville](/stationnement-camping-car-regles-ville/).
 
-Un camping-car a le droit de stationner sur la voie publique, comme n’importe quelle voiture. En revanche, **camper – c’est-à-dire déployer un auvent, sortir une table ou des chaises – est interdit**. Cette distinction est cruciale. Un stationnement abusif peut vous valoir une amende. Tandis qu’un camping sauvage est passible d’une verbalisation plus lourde.
+Côté conduite, le permis B suffit tant que le PTAC ne dépasse pas 3,5 tonnes. Pour tracter une remorque de plus de 750 kg, la mention B96 est obligatoire. Le détail des règles de poids et de vitesse figure dans nos guides sur la [limitation de vitesse du camping-car](/limitation-vitesse-camping-car/) et sur le [poids maximal autorisé avec le permis B](/camping-car-permis-b-poids/).
 
-Les arrêtés municipaux interdisant spécifiquement le stationnement des camping-cars sont souvent jugés illégaux. Car discriminatoires. En cas de verbalisation, vous pouvez contester l’amende. Invoquez la jurisprudence (réponse du Sénat à la question écrite n° qSEQ241001232).
+## Comment bien comparer les offres d'assurance camping-car ?
 
-### Où dormir en toute légalité ?
-
-Pour éviter les problèmes, privilégiez les aires de stationnement dédiées. Ou les campings. Ces solutions offrent plus de sécurité et de services. Comme l’accès à l’eau ou à l’électricité.
-
-## Permis et remorques : ce qu’il faut savoir avant de prendre la route
-
-Pour conduire un camping-car, le permis B suffit si son PTAC (Poids Total Autorisé en Charge) ne dépasse pas 3,5 tonnes. Au-delà, un permis C est obligatoire. Si vous tractez une remorque, vérifiez que votre permis B inclut la mention B96. Elle permet de tracter une remorque de plus de 750 kg. Sans dépasser 4 250 kg pour l’ensemble véhicule + remorque.
-
-Ces règles sont essentielles. Un contrôle routier pourrait vous coûter cher si vous dépassez les limites de poids autorisées. Pour en savoir plus, consultez [notre article sur les limitations de vitesse et les règles de circulation pour les camping-cars](/camping-car-van/limitation-vitesse-camping-car).
-
-## Comment bien comparer les offres d’assurance camping-car
-
-Comparer les offres d’assurance camping-car ne se limite pas à regarder le prix. Voici les critères à vérifier :
+Comparer des offres d'assurance camping-car ne se limite jamais au seul prix affiché. Les garanties, les exclusions et la franchise pèsent souvent plus lourd que l'écart de tarif entre deux assureurs, surtout sur un véhicule récent ou fortement équipé.
 
 -   **Les garanties incluses** : vol, incendie, dommages tous accidents, protection juridique.
 -   **Les exclusions** : porte-vélo, auvent, vélos, stationnement prolongé.
--   **Les franchises** : montant à votre charge en cas de sinistre.
--   **Le bonus-malus** : coefficient appliqué à votre prime.
--   **Les services annexes** : assistance 24/7, véhicule de remplacement.
+-   **Les franchises** : part non couverte en cas de sinistre.
+-   **Le bonus-malus** : coefficient appliqué à la prime de départ.
+-   **Les services annexes** : assistance 0 km, véhicule de remplacement.
 
-Pour vous aider, utilisez un comparateur en ligne. Mais gardez à l’esprit que les offres les moins chères ne sont pas toujours les plus protectrices. Si vous avez un doute, contactez directement les assureurs. Pour obtenir des précisions sur les garanties.
+Avant d'acheter un camping-car d'occasion, vérifiez aussi la [décote attendue](/decote-camping-car-neuf/) et les pièges classiques recensés dans notre guide sur le [camping-car d'occasion](/camping-car-occasion-prix-conseils/), deux critères qui influencent directement le montant assuré.
 
-Enfin, si vous envisagez d’acheter un camping-car, vérifiez les règles de stationnement et les limitations de vitesse. Pour cela, consultez [notre guide sur le stationnement des camping-cars en ville](/camping-car-van/stationnement-camping-car-regles-ville) et [celui sur les classes de péage pour les camping-cars](/camping-car-van/peage-camping-car-classe).
+## Questions fréquentes
+
+### Combien coûte une assurance camping-car en 2026 ?
+
+Entre 200 € et 600 € par an selon la formule, soit environ 17 à 50 € par mois. Le tarif dépend de l'âge du véhicule, de sa valeur et du profil du conducteur.
+
+### Un van aménagé sans homologation VASP peut-il être assuré ?
+
+Oui, en tant qu'utilitaire aménagé, à condition de déclarer précisément l'aménagement à l'assureur. Sans déclaration, un sinistre lié à l'aménagement risque un refus de prise en charge.
+
+### Le vol des vélos est-il couvert par défaut ?
+
+Rarement. Les contrats auto classiques excluent souvent ce risque. Une extension de garantie dédiée au porte-vélo et aux vélos s'ajoute généralement au contrat de base.
+
+### Quelle différence entre tiers et tiers étendu ?
+
+Le tiers couvre uniquement les dommages causés à autrui. Le tiers étendu ajoute le vol, l'incendie et le bris de glace, pour un surcoût de 100 à 150 € par an environ.
+
+### Le bonus-malus s'applique-t-il au camping-car comme à une voiture ?
+
+Oui, le même principe s'applique : le coefficient baisse chaque année sans sinistre responsable, jusqu'à un bonus maximal de 50 % après 13 ans.

@@ -1,7 +1,7 @@
 ---
-title: "Aménagement utilitaire artisan : équiper son fourgon comme un pro"
-description: "Un aménagement utilitaire artisanal transforme un fourgon en atelier roulant. Voici comment choisir le bois, fixer le contreplaqué et éviter les pièges fis"
-date: "2026-08-19"
+title: "Aménagement utilitaire artisan : bois, prix et règles fiscales 2026"
+description: "Casiers sur mesure, contreplaqué marine, fixation sans perdre l'exonération TVS : le guide complet pour équiper son fourgon comme un pro en 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "amenagement-equipement"
 wp_id: 1546
@@ -9,134 +9,104 @@ wp_locale: "fr"
 image: "/images/articles/amenagement-utilitaire-artisan-couverture.webp"
 imageAlt: "Aménagement utilitaire artisan : équiper son fourgon comme un pro"
 ---
-Un menuisier charge ses outils dans un Berlingo transformé en atelier roulant. Un électricien utilise son Transit Custom comme comptoir de travail en contreplaqué. L’aménagement utilitaire artisanal optimise l’espace. Il préserve aussi les avantages fiscaux, comme l’exonération de TVS pour les camionnettes CTTE. Voici comment habiller un utilitaire sans perdre ces bénéfices.
+***Un aménagement utilitaire sur mesure coûte plus cher qu'un kit du commerce, mais il respecte le PTAC, se démonte en moins de deux heures et préserve l'exonération de TVS attachée à la mention CTTE.***
 
-Des solutions testées par des pros, pour des pros.
+Un menuisier range sa scie circulaire dans un casier taillé à sa mesure. Un électricien travaille debout sur un plan en contreplaqué fixé sur rails. L'aménagement utilitaire artisanal gagne du terrain face aux kits standardisés, parce qu'il colle aux outils réels du métier et préserve les avantages fiscaux du genre CTTE. Voici comment habiller un fourgon sans perdre ces bénéfices.
 
-## Pourquoi choisir un aménagement artisanal plutôt qu’un kit du commerce ?
+TL;DR : un aménagement sur mesure coûte 1 200 à 4 000 € selon les prestations, contre 800 à 1 500 € pour un kit standard.
 
-Un kit d’habillage bois standardisé coûte entre 800 et 1 500 €. Pourtant, il impose souvent des dimensions inadaptées. Par exemple, pour des outils longs ou des charges lourdes. Un artisan, lui, conçoit des casiers sur mesure. Pour une scie circulaire de 1,20 m ou un compresseur de 50 kg.
-
-Résultat ? Moins de temps perdu à caler les objets. Une meilleure répartition du poids. Crucial pour rester sous les 3 500 kg de PTAC et conserver le permis B. En effet, un kit du commerce se démonte rarement sans laisser de traces. Trous ou résidus de colle compliquent la revente du véhicule.
-
-Un aménagement artisanal, lui, peut être démontable en moins de 2 heures. Un critère clé pour éviter l’homologation VASP. Surtout si vous utilisez votre fourgon pour des week-ends en famille. Pour explorer d’autres options d’[aménagement & équipement](/utilitaires-flottes-pro/amenagement-equipement), les solutions modulaires gagnent en popularité.
-
-### Cas pratique : un électricien aménage son Peugeot Expert
-
-Jean, électricien à Lyon, a fait habiller son Expert 2018. Voici ce qu’il a choisi :
-
--   Un plan de travail en contreplaqué marine de 18 mm. Fixé sur des rails en aluminium pour résister aux vibrations.
--   Des tiroirs coulissants pour les petits matériels. Comme les dominos ou les gaines. Verrouillables pour éviter les vols.
--   Une étagère haute pour les tubes fluorescents. Accessible sans se baisser.
-
-Coût total : 2 200 €. Soit 1 000 € de plus qu’un kit standard. Mais avec un gain de temps estimé à 1h30 par jour. « Avant, je perdais 20 minutes à chaque chantier pour chercher un outil. Maintenant, tout est à portée de main », explique-t-il.
-
-Sur un trajet de 400 km avec deux vélos, ce gain se traduit par une journée plus fluide.
+- Le contreplaqué **marine** domine toujours le marché, entre 40 et 60 €/m².
+- Un aménagement doit rester **démontable en moins de 2 heures** pour conserver la mention CTTE.
+- Un lit fixe ou une cuisine intégrée déclenche l'**homologation VASP**, et la fin de l'exonération de TVS.
 
 ![Menuisier fixant un plan de travail en contreplaqué dans un utilitaire](/images/articles/amenagement-utilitaire-artisan-1.webp)
 
-## Quel bois choisir pour un habillage utilitaire durable ?
+## Pourquoi choisir un aménagement sur mesure plutôt qu'un kit du commerce ?
 
-Le contreplaqué marine (épaisseur 15 à 18 mm) est le matériau le plus utilisé. Ses avantages :
+Un kit d'habillage standard coûte 800 à 1 500 €, mais impose des dimensions fixes, mal adaptées à une scie longue ou à un compresseur lourd. Un aménagement **sur mesure** répartit mieux le poids et ne dépasse pas les 3 500 kg de PTAC, condition du permis B. Il se démonte aussi sans laisser de traces à la revente.
 
--   **Résistance à l’humidité**. Idéal pour les véhicules exposés à la pluie ou aux fuites de liquide de refroidissement.
--   **Légèreté**. Un panneau de 1,22 x 2,44 m pèse environ 30 kg. Contre 50 kg pour du médium.
--   **Prix**. Entre 40 et 60 €/m². Soit 2 à 3 fois moins cher que l’aluminium.
+La répartition du poids conditionne directement la tenue de route d'un fourgon chargé, un point que détaille notre comparatif [fourgon 3m³ contre 6m³](/fourgon-3m3-vs-6m3-usages/). Un casier mal placé déséquilibre l'essieu arrière, un défaut qui ressort lors du contrôle technique au moment de la pesée.
 
-Alternative : le contreplaqué bouleau. Plus résistant aux chocs. Mais moins adapté aux environnements humides. « Pour un utilitaire de chantier, je recommande le marine. Pour un véhicule d’artisan d’art, le bouleau est préférable », précise un menuisier.
+Un artisan qui conçoit ses propres casiers gagne aussi en **temps de chantier**. Les tiroirs verrouillables limitent le vol de petit matériel, un critère de plus en plus demandé sur les devis d'aménagement. Pour comparer les solutions clé en main, notre guide sur les [kits d'habillage bois](/habillage-bois-utilitaire-kit/) donne un bon aperçu avant de passer au sur-mesure.
 
-### Fixation : vis, colle ou rails ?
+## Quel bois et quelle fixation choisir pour un habillage durable ?
 
-Trois méthodes coexistent. Chacune avec ses avantages et inconvénients :
+Le contreplaqué **marine**, en épaisseur 15 à 18 mm, domine le marché grâce à sa résistance à l'humidité, sa légèreté et son prix, entre 40 et 60 €/m², deux à trois fois moins cher que l'aluminium. Le contreplaqué bouleau, plus rigide, convient mieux aux chocs mais tolère moins bien l'eau.
 
-| Méthode | Avantages | Inconvénients | Coût (pour un fourgon type Transit Custom) |
+Trois méthodes de fixation coexistent, chacune avec son coût et sa réversibilité.
+
+| Méthode | Avantages | Inconvénients | Coût (fourgon type Transit Custom) |
 | --- | --- | --- | --- |
-| Vis autoforeuses + rondelles | Démontable, solide | Risque de corrosion si vis non inox | 50-80 € |
-| Colle polyuréthane (type Sikaflex) | Pas de perçage, étanchéité | Difficile à démonter, poids ajouté | 120-180 € |
-| Rails en aluminium (système Modul’Van) | Réglable, modulable | Prix élevé, installation complexe | 300-500 € |
+| Vis autoforeuses + rondelles | Démontable, solide | Corrosion si vis non inox | 50-80 € |
+| Colle polyuréthane | Pas de perçage, étanche | Démontage difficile | 120-180 € |
+| Rails en aluminium | Réglable, modulable | Prix élevé, pose technique | 300-500 € |
 
-*Source : Vroomly*
+Un silentbloc placé entre le bois et la carrosserie évite la fissuration du contreplaqué sous les vibrations, un détail souvent oublié sur les aménagements faits maison, un sujet que traite notre guide pour [aménager son fourgon soi-même](/amenager-fourgon-soi-meme-homologation/).
 
-Astuce : placez des silentblocs entre le bois et la carrosserie. « Sans ça, le contreplaqué finit par se fissurer au niveau des fixations », avertit un carrossier.
+Le bois ne couvre pas tous les usages. L'**aluminium**, trois fois plus léger, résiste mieux à l'eau et convient aux métiers exposés à l'humidité, pour 80 à 120 €/m². Le PVC expansé, imputrescible et facile à nettoyer, sert surtout aux cloisons intérieures, à 30 à 50 €/m², mais encaisse mal les chocs. Le choix dépend surtout du climat et du métier : un électricien qui transporte des câbles enroulés gagne à l'aluminium, un menuisier qui cogne ses outils garde le bois comme matériau le plus solide au quotidien.
 
-## Aménagement utilitaire et fiscalité : comment garder l’exonération TVS ?
+## Comment garder l'exonération de TVS avec un aménagement artisanal ?
 
-Un utilitaire aménagé reste exonéré de TVS. À une condition : conserver la mention CTTE sur la carte grise. Pour cela, l’aménagement doit :
+Un utilitaire aménagé échappe toujours à la taxe sur les véhicules de société à condition de garder la mention **CTTE** sur la carte grise. L'aménagement doit se démonter en moins de deux heures, sans lit fixe ni cuisine intégrée, et laisser deux places assises à l'avant.
 
--   Être **démontable en moins de 2 heures**. Critère fixé par la Matmut.
--   Ne pas comporter de **lit fixe** ou de cuisine intégrée. Sinon, homologation VASP obligatoire.
--   Laisser **au moins 2 places assises** à l’avant. Conducteur et passager.
+Un comptoir de travail et des étagères ne changent rien au genre du véhicule. Un lit installé pour dormir sur un chantier, en revanche, fait **basculer** le fourgon en VASP et déclenche la taxe. Le détail complet des seuils et du calcul figure dans notre guide sur la [TVS et son calcul](/tvs-taxe-vehicules-societe-calcul/). Même un équipement de cuisson mobile, s'il est fixé en permanence, risque une requalification en cuisine fixe lors d'un contrôle.
 
-« Un artisan qui installe un comptoir de travail et des étagères reste en CTTE. S’il ajoute un lit pour dormir sur les chantiers, il bascule en VASP. Il perd alors l’exonération », résume un expert en fiscalité automobile. Pour un fourgon utilisé 80 % du temps en professionnel, cette distinction peut représenter une économie de 2 000 € par an.
+La frontière entre CTTE et VASP se joue parfois sur un détail mineur. Mieux vaut faire valider le projet d'aménagement par le carrossier ou consulter notre page sur les [démarches carte grise VASP](/vasp-carte-grise-demarches/) avant de commander du matériel qui ne se retire plus facilement.
 
-### Cas concret : un plombier perd son exonération TVS
+## Quel utilitaire choisir pour un aménagement sur mesure ?
 
-Marc, plombier à Bordeaux, a fait aménager son Jumpy. Voici ce qu’il a installé :
+La **hauteur sous plafond** et la largeur des portes latérales déterminent surtout le confort de travail et la facilité de chargement. Un Transit Custom affiche 1,80 m de hauteur utile contre 1,60 m pour un Expert, un écart qui compte pour transporter des panneaux longs debout.
 
--   Un plan de travail fixe en contreplaqué.
--   Des casiers pour les tuyaux.
--   Un petit réchaud à gaz pour les pauses déjeuner.
+| Modèle | Hauteur utile (m) | Largeur portes latérales (m) | Prix neuf (2026) |
+| --- | --- | --- | --- |
+| Peugeot Expert | 1,60 | 1,26 | 32 000 € |
+| Ford Transit Custom | 1,80 | 1,30 | 35 000 € |
+| Mercedes Sprinter | 1,90 | 1,30 | 40 000 € |
 
-Problème : le réchaud, même mobile, a été considéré comme une « cuisine fixe ». Résultat : homologation VASP obligatoire. Et une TVS de 2 000 € par an (barème 2026 pour un véhicule de 5 CV). Coût de l’erreur : 6 000 € sur 3 ans. Ainsi, pour ceux qui envisagent un [attelage utilitaire homologué](/utilitaires-flottes-pro/attelage-utilitaire-homologation), cette vigilance est cruciale.
-
-![Plombier inspectant un aménagement utilitaire avec un réchaud mobile](/images/articles/amenagement-utilitaire-artisan-2.webp)
-
-## Quels modèles d’utilitaires privilégier pour un aménagement artisanal ?
-
-Tous les utilitaires ne se valent pas pour un aménagement sur mesure. Voici les critères à vérifier avant d’acheter :
-
--   **Hauteur sous plafond**. Un Ford Transit Custom offre 1,80 m de hauteur utile. Contre 1,40 m pour un Berlingo. « Pour un menuisier qui transporte des planches de 2,50 m, c’est indispensable », note un aménageur.
--   **Fiabilité du moteur**. Le 2.0 TDCi EcoBlue du Transit Custom (130-170 ch) affiche une longévité de 250 000 km sans intervention majeure. Le 1.6 HDi du Berlingo, lui, atteint 160 000 km. Avec un risque de joint de culasse après 165 000 km.
--   **Largeur des portes**. Un Sprinter a des portes latérales de 1,30 m de large. Contre 0,80 m pour un Jumpy. Pratique pour charger des plaques de plâtre.
-
-### Comparatif : trois utilitaires adaptés à l’aménagement artisanal
-
-| Modèle | Hauteur utile (m) | Largeur portes latérales (m) | Fiabilité (sur 10) | Prix neuf (2026) |
-| --- | --- | --- | --- | --- |
-| Peugeot Expert | 1,60 | 1,26 | 7,5 | 32 000 € |
-| Ford Transit Custom | 1,80 | 1,30 | 8,5 | 35 000 € |
-| Mercedes Sprinter | 1,90 | 1,30 | 8 | 40 000 € |
-
-*Source : Utilitaire Magazine*
-
-## Où faire aménager son utilitaire en France ?
-
-Plusieurs artisans se spécialisent dans les aménagements sur mesure. Pour les professionnels :
-
--   **Espace V.U (Bordeaux)**. Spécialisé dans les habillages bois pour artisans du bâtiment. Prix moyen : 1 800 € pour un fourgon type Jumpy.
--   **SD Services (Lyon)**. Propose des solutions modulables avec rails en aluminium. Budget : 2 500 à 4 000 € selon les options.
--   **MDP Utilitaire (Île-de-France)**. Connu pour ses comptoirs de travail intégrés. Tarif : 1 500 à 3 500 €.
-
-« Le plus important, c’est de visiter l’atelier avant de commander. Certains artisans utilisent du contreplaqué de 12 mm au lieu de 18 mm. Pour réduire les coûts. Ce qui pose problème sur les longs trajets », conseille un client. Pour ceux qui cherchent des solutions clés en main, des [kits d’habillage bois](/utilitaires-flottes-pro/habillage-bois-utilitaire-kit) peuvent aussi être une option intermédiaire.
-
-## Erreurs à éviter lors d’un aménagement utilitaire
-
--   **Percer la carrosserie sans protection**. Les trous non traités rouillent en quelques mois. Solution : appliquer un apprêt anti-corrosion avant de visser.
--   **Négliger l’aération**. Un fourgon mal ventilé accumule l’humidité. Résultat : le contreplaqué gonfle. « J’ai vu des planchers se déformer en 6 mois à cause de ça », témoigne un carrossier.
--   **Oublier les normes électriques**. Une prise 12V installée sans fusible peut provoquer un incendie. « Pour un compresseur ou une scie, prévoyez un circuit dédié », recommande un électricien automobile.
--   **Surcharger le véhicule**. Un habillage bois + outils peut ajouter 200 à 300 kg. Vérifiez que le PTAC reste sous 3 500 kg pour conserver le permis B.
+Pour choisir entre un format compact et un grand volume selon l'activité, notre comparatif du [meilleur utilitaire compact](/meilleur-utilitaire-compact/) détaille les usages types par métier. Un fourgon déjà équipé d'un attelage homologué gagne aussi en polyvalence pour tracter une remorque d'outillage, un sujet que traite notre guide sur l'[attelage utilitaire homologué](/attelage-utilitaire-homologation/).
 
 ## Combien coûte un aménagement utilitaire artisanal ?
 
-Les tarifs varient selon la complexité et les matériaux. Voici quelques exemples :
+Les tarifs varient selon la complexité du projet et les matériaux retenus, du simple habillage bois au fourgon transformé en atelier complet.
 
 | Prestation | Prix (€) | Détails |
 | --- | --- | --- |
 | Habillage bois complet (étagères + plan de travail) | 1 200 – 2 500 | Contreplaqué marine 18 mm, fixation sur rails |
-| Comptoir de travail intégré | 800 – 1 500 | Avec tiroirs verrouillables et bac de rétention |
-| Éclairage LED 12V | 150 – 300 | 3 spots + interrupteur étanche |
-| Isolation phonique | 300 – 600 | Laine de roche + pare-vapeur |
+| Comptoir de travail intégré | 800 – 1 500 | Tiroirs verrouillables, bac de rétention |
+| Éclairage LED 12V | 150 – 300 | 3 spots et interrupteur étanche |
+| Isolation phonique | 300 – 600 | Laine de roche et pare-vapeur |
 
-*Source : Comptoir de l’Utilitaire*
+Un budget serré oriente plutôt vers un kit standard, complété ensuite pièce par pièce. Un fourgon transformé en atelier complet, avec éclairage et isolation, demande plutôt 3 000 à 4 000 €. L'écart avec un véhicule neuf équipé d'un [utilitaire d'occasion](/utilitaire-occasion-kilometrage/) bien choisi compense souvent la facture d'aménagement.
 
-« Un aménagement basique coûte 1 500 €. Pour un fourgon transformé en atelier complet, comptez 3 000 à 4 000 € », précise un artisan. Sur un budget serré, un kit d’habillage bois standard peut être une première étape.
+## Quelles erreurs évitent de perdre du temps et de l'argent ?
 
-## Aménagement utilitaire : les alternatives au bois
+Quatre pièges reviennent le plus souvent sur un chantier d'aménagement mal préparé.
 
-Le bois n’est pas la seule option. Voici d’autres matériaux utilisés par les professionnels :
+- **Percer sans protection** : un trou non traité rouille en quelques mois. Un apprêt anti-corrosion avant le vissage règle ce point.
+- **Négliger l'aération** : un fourgon mal ventilé accumule l'humidité, le contreplaqué gonfle et le plancher se déforme.
+- **Oublier le circuit électrique** : une prise 12V sans fusible dédié expose à un risque d'incendie, surtout pour un compresseur ou une scie.
+- **Dépasser le PTAC** : un habillage complet ajoute facilement 200 à 300 kg, un dépassement qui invalide le permis B et la carte grise.
 
--   **Aluminium**. Léger (3 fois moins lourd que le bois) et résistant à la corrosion. Idéal pour les véhicules exposés à l’eau. Comme ceux des paysagistes ou piscinistes. Prix : 80 à 120 €/m².
--   **PVC expansé**. Imputrescible et facile à nettoyer. Mais moins résistant aux chocs. Utilisé pour les cloisons intérieures. Prix : 30 à 50 €/m².
--   **Composite (fibre de verre)**. Ultra-résistant. Mais cher (150 à 200 €/m²). Réservé aux utilitaires haut de gamme.
+Vérifier la **compatibilité fiscale** avant de signer un devis évite aussi de perdre l'exonération de TVS en cours de route, un risque déjà exposé plus haut, que chiffre notre guide sur la [fiscalité des véhicules pro](/tva-recuperable-utilitaire/).
 
-« Pour un électricien qui transporte des câbles enroulés, l’aluminium est parfait. Pour un menuisier qui a besoin de solidité, le bois reste imbattable », résume un spécialiste. Le choix dépend aussi du climat. En région humide, l’aluminium ou le composite évitent les problèmes de moisissures.
+## Questions fréquentes
+
+### Un aménagement utilitaire artisanal fait-il perdre la garantie constructeur ?
+
+Non, tant que les fixations ne touchent pas la structure du véhicule ni ses faisceaux électriques d'origine. Un perçage mal placé sur une traverse porteuse peut en revanche annuler la garantie sur cette zone précise.
+
+### Faut-il déclarer un aménagement utilitaire à l'assurance ?
+
+Oui, un aménagement coûteux doit figurer au contrat, sous peine de sous-indemnisation en cas de vol ou de sinistre. L'assureur demande souvent une facture détaillée des matériaux et de la pose.
+
+### Quelle épaisseur de contreplaqué choisir pour un plancher d'utilitaire ?
+
+18 mm sert de référence pour un plancher soumis à un usage intensif. Une épaisseur de 12 mm réduit le coût mais fléchit sous une charge lourde sur un long trajet.
+
+### Un aménagement démontable protège-t-il vraiment la mention CTTE ?
+
+Oui, à condition de retirer l'ensemble en moins de deux heures sans outil spécialisé. Un contrôleur technique ou un agent des impôts peut demander une démonstration lors d'un contrôle.
+
+### Peut-on amortir fiscalement un aménagement utilitaire ?
+
+Oui, les frais d'aménagement s'ajoutent généralement à la valeur du véhicule et suivent le même plan d'amortissement, sans plafond pour un utilitaire maintenu en genre CTTE.

@@ -1,124 +1,125 @@
 ---
-title: "Assurance trottinette obligatoire : ce que dit la loi en 2026"
-description: "Rouler en trottinette électrique sans assurance expose à une amende de 135 €. Voici les obligations légales, les garanties minimales et les prix pratiqués "
-date: "2026-09-09"
+title: "Assurance trottinette obligatoire : la loi en 2026"
+description: "Rouler sans assurance trottinette expose à une amende de 135 €. Garanties obligatoires, prix réels et sanctions à connaître en 2026."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1875
 wp_locale: "fr"
 image: "/images/articles/assurance-trottinette-obligatoire-couverture.webp"
 imageAlt: "Assurance trottinette obligatoire : ce que dit la loi en 2026"
 ---
-Vous sortez votre trottinette électrique pour éviter les bouchons ou faire un trajet rapide ? Attention : depuis 2019, une assurance responsabilité civile est **obligatoire** pour circuler légalement. Sans elle, vous risquez une amende de 135 € – et bien plus en cas d’accident. Voici ce que dit la loi en 2026, avec des exemples concrets pour éviter les mauvaises surprises.
+
+***Une assurance responsabilité civile est obligatoire pour circuler en trottinette électrique depuis 2019. Sans elle, l'amende grimpe à 135 €, et un accident responsable peut coûter bien plus cher de votre poche.***
+
+Vous sortez la trottinette pour éviter les bouchons ou gagner dix minutes sur le trajet du matin ? La loi impose une assurance minimale avant de rouler, quel que soit le modèle ou l'usage. Voici ce qu'elle couvre réellement, ce qu'elle coûte en 2026, et les règles qui l'accompagnent.
+
+TL;DR : l'assurance trottinette est obligatoire, mais la loi n'impose que la responsabilité civile.
+
+-   Rouler sans assurance expose à une amende de **135 €**, et bien plus en cas d'accident responsable.
+-   Un contrat de base coûte entre **5 et 10 €/mois**, vol et dommages en option.
+-   Le vol de la trottinette n'est jamais couvert par défaut, il faut une garantie spécifique.
 
 ## Pourquoi une assurance trottinette est-elle obligatoire ?
 
-Une trottinette électrique est un **engin de déplacement personnel motorisé (EDPM)**. Comme un hoverboard ou un gyropode, elle peut causer des dégâts. Un piéton renversé, une voiture rayée, ou un accident grave : l’assurance responsabilité civile (RC) couvre ces dommages. Sans elle, c’est à vous de payer.
+Elle est obligatoire parce qu'une trottinette électrique reste un **engin de déplacement personnel motorisé (EDPM)** capable de causer de vrais dégâts, au même titre qu'un vélomoteur. Un piéton renversé ou une voiture rayée entraînent des frais que seule une garantie dommages aux tiers prend en charge.
 
-Imaginez : vous percutez un piéton qui se fracture le poignet. Les frais médicaux et la perte de revenus peuvent atteindre **plusieurs milliers d’euros**. En effet, sans assurance, c’est votre budget qui trinque. Les forces de l’ordre vérifient systématiquement que vous êtes assuré lors des contrôles.
+Les forces de l'ordre vérifient cette assurance lors des contrôles routiers classiques, mais aussi de plus en plus en zone piétonne dans les grandes villes. Une part significative des utilisateurs contrôlés ces dernières années roulait sans contrat valide, un chiffre qui recule mais reste trop élevé selon les assureurs spécialisés.
 
-En 2026, les contrôles se sont intensifiés, surtout dans les grandes villes. À Paris, les agents municipaux vérifient même les trottinettes en libre-service. Ainsi, près de 20 % des utilisateurs contrôlés en 2025 roulaient sans assurance, selon Groupama. Ce chiffre baisse, mais reste trop élevé.
+Un accident responsable sans assurance engage directement votre **patrimoine personnel**. Des frais médicaux et des dommages et intérêts peuvent atteindre plusieurs dizaines de milliers d'euros si la victime garde des séquelles. Face à ce risque, une prime de quelques euros par mois reste dérisoire.
+
+Beaucoup de trottinettes en libre-service intègrent déjà une assurance dans leur forfait de location, mais ce n'est jamais le cas pour une trottinette personnelle. Dès l'achat, vous devez souscrire vous-même un contrat, même si vous ne roulez que quelques kilomètres par semaine.
 
 ![Contrôle d'assurance trottinette électrique par un agent de police](/images/articles/assurance-trottinette-obligatoire-1.webp)
 
-## Quelles garanties sont incluses dans l’assurance trottinette obligatoire ?
+## Quelles garanties sont incluses dans une assurance trottinette ?
 
-La loi impose uniquement la **responsabilité civile**. Mais les assureurs proposent souvent des options. Voici ce que couvre un contrat de base :
+La loi n'impose que la **responsabilité civile**, qui couvre les dommages causés à autrui : frais médicaux, réparations de véhicule, défense pénale en cas de poursuites. Le reste dépend entièrement du contrat choisi.
 
--   **Dommages causés à autrui** : frais médicaux ou réparations de véhicules.
--   **Défense pénale** : prise en charge des frais d’avocat en cas de poursuites.
--   **Protection juridique** : aide pour faire valoir vos droits en cas de litige.
+Le vol ou les dommages sur votre propre trottinette ne sont jamais couverts par défaut. Il faut ajouter une **garantie vol** ou une garantie individuelle accident, en général pour 2 à 5 € de plus par mois. Pour une trottinette à moins de 500 €, l'option vaut rarement le coût supplémentaire.
 
-Le vol ou les dommages à votre trottinette ne sont pas couverts par défaut. Pour cela, il faut souscrire une **garantie vol** ou une **garantie individuelle accident**. Comptez 2 à 5 € de plus par mois. Par exemple, chez Groupama, l’assurance de base coûte 7 €/mois, tandis qu’un contrat tout compris monte à 12 €/mois. À vous de voir si ça vaut le coup – surtout si votre trottinette vaut moins de 500 €.
+Un usage professionnel, comme la livraison à vélo ou à trottinette, change entièrement la donne : les contrats classiques excluent cet usage, il faut une formule dédiée, souvent plus chère. Certains assureurs réduisent aussi la prime si la trottinette est équipée d'un [antivol certifié](/antivol-velo-u-comparatif/), jusqu'à 20 % de réduction chez certains contrats.
 
-Pour les trajets domicile-travail, la plupart des contrats couvrent déjà cet usage. Mais si vous utilisez votre trottinette pour des livraisons (type Uber Eats), il vous faudra une assurance spécifique. Les assureurs comme [Trottinettes & EDPM](/velo-nouvelles-mobilites/trottinettes-edpm) proposent des formules adaptées, souvent plus chères.
+## Quelles sanctions en cas de défaut d'assurance ?
 
-Certains assureurs offrent des réductions si votre trottinette est équipée d’un antivol certifié. Chez Direct Assurance, par exemple, vous pouvez économiser jusqu’à 20 % sur votre prime.
-
-## Quelles sont les sanctions en cas de défaut d’assurance ?
-
-Rouler sans assurance trottinette électrique, c’est prendre un risque financier. Voici les amendes encourues :
-
-| Infraction | Amende | Risques supplémentaires |
+| Infraction | Amende | Risque supplémentaire |
 | --- | --- | --- |
-| Défaut d’assurance | 135 € | Immobilisation de la trottinette |
-| Circulation sur trottoir | 35 € | – |
-| Non-respect des équipements obligatoires | 35 € | – |
-| Dépassement de la vitesse limite (25 km/h) | 1 500 € | Confiscation de la trottinette |
+| Défaut d'assurance | 135 € | Immobilisation de la trottinette |
+| Circulation sur trottoir non autorisée | 35 € | Aucun |
+| Équipements obligatoires manquants | 35 € | Aucun |
+| Dépassement de la vitesse limite (25 km/h) | 1 500 € | Confiscation possible |
 
-*Source : service-public.gouv.fr*
+*Source : service-public.gouv.fr, code de la route.*
 
-En cas d’accident responsable sans assurance, les conséquences peuvent être lourdes. Par exemple, si vous blessez un piéton qui se fracture la hanche, les frais médicaux et les dommages et intérêts peuvent atteindre **plusieurs dizaines de milliers d’euros**. Ainsi, sans assurance, c’est votre patrimoine qui est engagé.
+Au-delà de l'amende forfaitaire, un accident responsable sans assurance vous expose à payer vous-même l'**intégralité des dommages** causés. Les récidivistes risquent une amende alourdie et une immobilisation plus longue de leur véhicule, surtout dans les grandes villes où les contrôles se sont renforcés.
 
-Un conseil : gardez toujours une preuve d’assurance sur vous. Les contrôles sont fréquents, surtout dans les grandes villes. Depuis 2025, les sanctions se sont durcies pour les récidivistes. Par conséquent, si vous êtes contrôlé plusieurs fois sans assurance, l’amende peut monter à 375 €, et votre trottinette peut être confisquée.
+Les agents municipaux et la police nationale peuvent contrôler l'assurance à tout moment, pas seulement lors d'un accident. Une simple **vérification de routine** suffit à déclencher l'amende si vous ne pouvez pas présenter d'attestation, même sur un trajet de quelques centaines de mètres.
 
-## Combien coûte une assurance trottinette électrique en 2026 ?
+## Combien coûte une assurance trottinette en 2026 ?
 
-Les tarifs varient selon les assureurs. Voici une fourchette réaliste :
+Les tarifs varient selon le niveau de garantie choisi et votre profil de conducteur.
 
--   **Assurance responsabilité civile seule** : 5 à 10 €/mois (soit 60 à 120 €/an).
--   **Assurance vol + dommages** : 10 à 15 €/mois (120 à 180 €/an).
--   **Contrats « tout compris »** : 15 à 25 €/mois (180 à 300 €/an).
+-   **Responsabilité civile seule** : 5 à 10 €/mois, soit 60 à 120 €/an.
+-   **Vol et dommages inclus** : 10 à 15 €/mois, soit 120 à 180 €/an.
+-   **Contrat tout compris** : 15 à 25 €/mois, soit 180 à 300 €/an.
 
-Pour trouver le meilleur prix, comparez les offres sur des plateformes comme LesFurets.com ou LeLynx.fr. Certains assureurs proposent des réductions si vous avez déjà un contrat chez eux. Par exemple, Pacifica (Crédit Agricole) offre -10 % sur l’assurance trottinette si vous êtes client auto ou habitation.
+Un **jeune conducteur** paie généralement plus cher qu'un adulte expérimenté, même pour une trottinette identique. Les assureurs tiennent compte de l'historique de sinistres et de l'âge dans le calcul de la prime. Comparer plusieurs devis reste le réflexe le plus rentable avant de signer.
 
-Le prix dépend aussi de votre profil. Un jeune de 18 ans paiera plus cher qu’un adulte de 40 ans, même pour la même trottinette. En effet, les assureurs prennent en compte votre historique de sinistres et votre expérience de conduite.
+Le paiement annuel réduit aussi la facture chez la plupart des assureurs, parfois de 10 à 15 % par rapport à un règlement mensuel. Un détail qui compte sur un budget serré, surtout pour un étudiant qui roule toute l'année.
 
 ![Trottinette électrique conforme à la réglementation avec feux et réflecteurs](/images/articles/assurance-trottinette-obligatoire-2.webp)
 
-Pour un étudiant, une assurance à 5 €/mois peut représenter un budget serré. Mais comparé au prix d’un abonnement de transport en commun (environ 75 €/mois à Paris), c’est une alternative économique. Surtout si vous utilisez votre trottinette tous les jours pour aller en cours.
+À titre de repère, une assurance à 5 €/mois coûte largement moins qu'un abonnement de transport en commun mensuel en grande ville. Pour un trajet domicile-travail quotidien, l'écart se rentabilise vite, surtout combiné à une trottinette fiable : voir notre sélection de la [meilleure trottinette électrique](/meilleure-trottinette-electrique/) et son [autonomie réelle](/trottinette-electrique-autonomie-reelle/) en usage courant.
 
-## Quels sont les équipements obligatoires pour rouler en trottinette ?
+## Quels équipements et règles complètent l'obligation d'assurance ?
 
-L’assurance ne suffit pas : votre trottinette doit aussi respecter certaines règles techniques. Voici la liste des équipements obligatoires depuis 2019 :
+L'assurance ne suffit pas : la trottinette doit aussi respecter des règles techniques précises, en vigueur depuis 2019 et renforcées par la [réglementation EDPM 2026](/reglementation-edpm-2026/).
 
--   **Système de freinage efficace** : deux freins indépendants sont recommandés, mais un seul suffit légalement.
--   **Avertisseur sonore** : un klaxon ou une sonnette audible à 50 mètres.
--   **Feux avant et arrière** : obligatoires de nuit et par mauvaise visibilité.
--   **Dispositifs réfléchissants** : bandes réfléchissantes latérales et arrière, ou pneus déjà équipés.
+-   **Freinage** : un système de freinage efficace est exigé, deux freins indépendants recommandés.
+-   **Feux et réflecteurs** : obligatoires de nuit et par mauvaise visibilité, à l'avant comme à l'arrière.
+-   **Avertisseur sonore** audible à 50 mètres, type klaxon ou sonnette.
+-   **Âge minimum** de 14 ans pour circuler sur la voie publique.
+-   **Casque** non obligatoire pour un adulte, mais imposé pour les mineurs de 14 à 18 ans. Notre guide sur le [casque trottinette obligatoire](/casque-trottinette-obligatoire/) détaille les cas précis.
 
-Le non-respect de ces règles expose à une amende de 35 €. Mais au-delà de l’aspect légal, ces équipements améliorent votre sécurité. Par exemple, des feux bien visibles réduisent les risques de collision avec une voiture la nuit.
+Le non-respect de ces équipements coûte 35 € d'amende, moins qu'un défaut d'assurance, mais le risque réel reste l'accident évitable grâce à un bon éclairage ou un freinage fiable.
 
-Petit bonus : certains assureurs offrent des réductions si votre trottinette est équipée d’un antivol certifié. Chez Direct Assurance, par exemple, vous pouvez économiser jusqu’à 20 % sur votre prime si vous installez un antivol homologué.
+## Comment bien choisir et déclarer son assurance trottinette ?
 
-Depuis 2025, une nouvelle réglementation impose un limiteur de vitesse sur les trottinettes neuves. Ce dispositif empêche l’engin de dépasser les 25 km/h autorisés. Pour les modèles plus anciens, un kit de rétrofit est disponible chez certains revendeurs. Comptez entre 50 et 100 € pour cette mise à niveau. Ainsi, cet investissement peut vous éviter une amende de 1 500 €.
+Choisir une assurance trottinette demande de comparer les garanties réelles, pas juste le prix affiché. Une offre à 5 €/mois peut sembler attractive, mais exclure totalement les dommages sur votre propre engin.
 
-## Casque, âge minimum… Les autres règles à connaître
+Pour un usage quotidien domicile-travail, une formule intermédiaire avec garantie vol reste souvent le meilleur compromis coût-protection, surtout pour une trottinette au-delà de 500 €. Nous recommandons de comparer en priorité les offres qui incluent la garantie vol sans franchise excessive, un point que beaucoup de contrats d'entrée de gamme négligent.
 
-L’assurance et les équipements ne sont pas les seules obligations. Voici les autres règles en vigueur en 2026 :
+Déclarer son contrat correctement évite les mauvaises surprises :
 
--   **Âge minimum** : 14 ans pour conduire une trottinette électrique sur la voie publique.
--   **Vitesse maximale** : 25 km/h. Au-delà, votre trottinette est considérée comme un véhicule motorisé, avec des règles plus strictes.
--   **Interdiction des trottoirs** : sauf si le maire l’autorise localement. En général, vous devez rouler sur les pistes cyclables ou, à défaut, sur la route.
--   **Casque** : non obligatoire pour les adultes, mais **obligatoire pour les mineurs de 14 à 18 ans**. Même si ce n’est pas une obligation légale pour vous, le port du casque réduit de 70 % le risque de blessure grave à la tête, selon Decathlon.
+1.  **Indiquez le modèle exact et le numéro de série**, ces détails conditionnent le niveau de couverture.
+2.  **Mettez à jour le contrat** en cas de changement de trottinette ou d'usage, notamment pour une activité de livraison.
+3.  **Gardez une attestation d'assurance** sur vous, numérique ou papier, lors de chaque contrôle.
 
-Une proposition de loi vise à rendre le casque obligatoire pour tous les utilisateurs. Pour l’instant, elle n’a pas été adoptée. Mais la tendance est claire : la sécurité devient une priorité. Autant prendre les devants !
+Un détail souvent oublié : toute modification technique, comme un moteur plus puissant que l'origine, peut justifier un refus de prise en charge en cas de sinistre. Déclarez systématiquement ce type de changement à votre assureur. Le [forfait mobilités durables](/forfait-mobilites-durables-velo/) de votre employeur peut par ailleurs couvrir une partie de vos trajets en EDPM, à vérifier selon votre contrat de travail.
 
-En 2026, les villes durcissent aussi leurs règles locales. À Paris, les trottinettes en libre-service sont limitées à 10 km/h dans les zones piétonnes. À Lyon, des zones de stationnement dédiées ont été créées pour éviter l’encombrement des trottoirs. Renseignez-vous auprès de votre mairie pour connaître les spécificités de votre commune.
+Enfin, résiliez proprement un ancien contrat avant d'en signer un nouveau si vous changez d'assureur. Un chevauchement de quelques jours ne pose pas de problème, mais un trou de couverture, même d'une semaine, vous expose à l'amende en cas de contrôle entre les deux dates.
 
-## Comment bien déclarer son assurance trottinette ?
+## Questions fréquentes
 
-Souscrire une assurance trottinette est une chose. Mais encore faut-il bien la déclarer. Voici les étapes à suivre :
+### Quelle assurance est obligatoire pour une trottinette électrique ?
 
-1.  **Fournissez les bonnes informations** : indiquez le modèle de votre trottinette, son numéro de série et sa valeur. Ces détails permettent à l’assureur d’adapter la couverture.
-2.  **Mettez à jour votre contrat** : si vous changez de trottinette ou modifiez son usage, prévenez votre assureur. Une trottinette utilisée pour des livraisons nécessite une assurance spécifique.
-3.  **Conservez une preuve d’assurance** : gardez toujours sur vous une attestation d’assurance, numérique ou papier.
+La responsabilité civile, qui couvre les dommages causés à autrui. Le vol ou les dommages sur votre propre trottinette nécessitent une garantie optionnelle supplémentaire, jamais incluse par défaut.
 
-Un oubli courant concerne les modifications apportées à votre trottinette. Par exemple, si vous installez un moteur plus puissant, votre assurance peut refuser de couvrir les dommages en cas d’accident. En 2026, les assureurs sont de plus en plus stricts sur ce point.
+### Quelle amende en cas de défaut d'assurance trottinette ?
 
-Enfin, certaines villes exigent une immatriculation des trottinettes électriques. À Bordeaux, par exemple, les trottinettes en libre-service doivent être enregistrées auprès de la mairie. Renseignez-vous auprès de votre commune pour savoir si cette règle s’applique à vous.
+135 €, auxquels s'ajoute l'immobilisation possible de l'engin. En cas d'accident responsable sans assurance, les frais réels à votre charge peuvent atteindre plusieurs milliers d'euros.
 
-## Comment choisir son assurance trottinette ? Nos conseils
+### Combien coûte une assurance trottinette électrique par mois ?
 
-Avec autant d’offres sur le marché, difficile de s’y retrouver. Voici nos conseils pour faire le bon choix :
+Entre 5 et 10 €/mois pour une responsabilité civile seule, jusqu'à 25 €/mois pour un contrat tout compris avec vol et dommages inclus.
 
-1.  **Comparez les garanties** : une assurance à 5 €/mois peut sembler attractive. Mais vérifiez ce qu’elle couvre vraiment. Certaines excluent les dommages causés à votre propre trottinette.
-2.  **Vérifiez les exclusions** : la plupart des contrats ne couvrent pas les courses ou les livraisons. Si vous utilisez votre trottinette pour travailler, cherchez une assurance « usage professionnel ».
-3.  **Optez pour un paiement annuel** : certains assureurs offrent jusqu’à 15 % de réduction si vous payez en une fois plutôt qu’au mois.
-4.  **Profitez des offres groupées** : certains assureurs proposent des tarifs préférentiels si vous avez déjà un contrat chez eux.
-5.  **Lisez les avis clients** : sur des plateformes comme Trustpilot, vous trouverez des retours d’expérience sur la rapidité des remboursements.
+### Le vol de ma trottinette est-il couvert automatiquement ?
 
-Un exemple concret : chez AXA, le contrat « Passion EDPM » couvre la responsabilité civile, le vol et les dommages accidentels pour environ 12 €/mois. Chez Allianz, l’offre « Trottinette & Hoverboard » propose les mêmes garanties pour 10 €/mois. Mais avec une franchise de 150 € en cas de vol.
+Non. La garantie vol reste une option payante, généralement 2 à 5 € de plus par mois. Sans elle, un vol reste entièrement à votre charge.
 
-Pour un étudiant, une assurance à 5 €/mois peut suffire si vous utilisez votre trottinette occasionnellement. Mais si vous roulez tous les jours, un contrat tout compris à 15 €/mois peut être plus intéressant. Tout dépend de votre usage et de votre budget.
+### Le casque est-il obligatoire pour rouler en trottinette électrique ?
 
-N’oubliez pas de déclarer votre trottinette à votre assureur si vous changez de modèle. Une trottinette à 300 € ne nécessite pas les mêmes garanties qu’un modèle à 1 500 €.
+Non pour un adulte, mais oui pour un mineur de 14 à 18 ans. Le port reste fortement recommandé pour tous, vu la réduction nette du risque de blessure grave.
+
+### Peut-on utiliser une trottinette pour des livraisons sans assurance spécifique ?
+
+Non. Un usage professionnel comme la livraison exige une formule dédiée. Les contrats classiques excluent explicitement cette activité, qui multiplie les trajets et donc le risque d'accident.

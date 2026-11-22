@@ -1,89 +1,110 @@
 ---
-title: "Aménager un fourgon soi-même : l’homologation VASP est-elle obligatoire ?"
-description: "Transformer un fourgon en espace habitable impose une homologation VASP si l’aménagement est fixe et complet. Sinon, un aménagement mobile et démontable en"
-date: "2026-08-18"
+title: "Aménager un fourgon soi-même : l'homologation VASP est-elle obligatoire ?"
+description: "Homologation VASP obligatoire si l'aménagement du fourgon est fixe et complet. Critères, démarches, coût et erreurs à éviter pour un aménagement DIY."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1231
 wp_locale: "fr"
 image: "/images/articles/amenager-fourgon-soi-meme-homologation-couverture.webp"
-imageAlt: "Aménager un fourgon soi-même : l’homologation VASP est-elle obligatoire ?"
+imageAlt: "Aménager un fourgon soi-même : l'homologation VASP est-elle obligatoire ?"
 ---
-Un fourgon aménagé avec un lit fixe, une cuisine inamovible et des rangements boulonnés ? En effet, l’homologation VASP devient obligatoire. Mais si tout se démonte en moins de deux heures – comme pour un week-end en montagne avec deux amis et un chien –, vous gardez votre mention CTTE.
+***Un fourgon avec lit fixe, cuisine inamovible et rangements vissés bascule obligatoirement en catégorie VASP. Un aménagement démontable en moins de deux heures garde, lui, la mention CTTE.***
 
-Voici les règles du jeu.
+Voici les règles du jeu avant de sortir la perceuse : les cinq critères qui déclenchent l'obligation, la démarche auprès de la DREAL, son coût réel, et les erreurs qui coûtent le plus cher aux vanlifers.
 
-## Les 5 critères qui déclenchent l’obligation VASP
+TL;DR : cinq critères cumulatifs déterminent la catégorie du véhicule, pas une impression générale.
 
-Cinq éléments suffisent à transformer votre utilitaire en camping-car aux yeux de la loi :
+-   Rangements fixes, cuisine fixe et couchage permanent entraînent l'**homologation VASP**.
+-   Un fourgon qui garde la mention **CTTE** ne peut pas stationner sur les aires camping-car réservées.
+-   La démarche DREAL coûte en général entre **450 € et 800 €**, redevance et contrôle de conformité compris.
 
--   Rangements fixes (étagères vissées, placards intégrés)
--   Table et assises ancrées au sol (banquettes, sièges non amovibles)
--   Couchage convertible ou permanent (lit escamotable ou matelas cloué)
--   Cuisine fixe (évier encastré, plaque de cuisson gaz/électrique/diesel – exit le réchaud de camping)
--   Aménagement inamovible (impossible à démonter en moins de deux heures)
+![Intérieur d'un fourgon aménagé avec une cuisine fixe en bois et un lit convertible en banquette](/images/articles/amenager-fourgon-soi-meme-homologation-1.webp)
 
-Cochez ces cinq cases, et votre fourgon bascule en catégorie VASP. À l’inverse, un aménagement sommaire – matelas au sol, table pliante, cuisine sur roulettes – vous permet de rester en CTTE. Ainsi, la différence se résume à une ligne sur la carte grise et des règles d’assurance distinctes.
+## Quels critères déclenchent l'obligation d'homologation VASP ?
 
-![Intérieur d’un fourgon aménagé avec une cuisine fixe en bois et un lit convertible en banquette](/images/articles/amenager-fourgon-soi-meme-homologation-1.webp)
+Cinq éléments cumulés suffisent à faire basculer un utilitaire en catégorie VASP : rangements fixes, table et assises ancrées, couchage convertible ou permanent, cuisine fixe, aménagement inamovible en moins de deux heures. Un seul critère manquant permet généralement de conserver la mention CTTE d'origine.
 
-## CTTE vs VASP : ce que change la mention sur votre carte grise
+-   **Rangements fixes** : étagères vissées, placards intégrés dans la structure.
+-   **Table et assises ancrées** : banquettes ou sièges non amovibles.
+-   **Couchage permanent** : lit escamotable ou matelas fixé, pas un simple matelas posé au sol.
+-   **Cuisine fixe** : évier encastré, plaque de cuisson intégrée, et non un réchaud de camping transportable.
+-   **Démontage impossible en deux heures** : c'est le seuil qui tranche entre aménagement mobile et aménagement VASP.
 
-Sur la ligne J1 de votre carte grise, deux options :
+Un aménagement sommaire, matelas au sol, table pliante, cuisine sur roulettes, permet de garder la mention CTTE. La différence tient à une seule ligne sur la carte grise, mais elle change les règles d'assurance et de stationnement.
 
--   **CTTE** : statut par défaut. Pas de restrictions, mais pas de droits non plus. Par exemple, il est interdit de dormir sur les aires camping-car.
--   **VASP** : mention obtenue après homologation. L’assurance est plus chère et le contrôle technique renforcé.
+## CTTE ou VASP : que change la mention sur la carte grise ?
 
-En revanche, cette mention donne accès aux parkings dédiés et autorise le stationnement en zone camping-car. Passer de CTTE à VASP modifie aussi la fiscalité du véhicule. En effet, un fourgon resté en CTTE, même aménagé, reste un utilitaire.
+La ligne J1 de la carte grise affiche l'un des deux statuts. CTTE forme le statut par défaut d'un utilitaire, sans restriction particulière mais sans droit spécifique non plus : impossible, par exemple, de dormir sur une aire camping-car réservée. VASP ouvre l'accès à ces emplacements, moyennant une assurance et un contrôle technique renforcés.
 
-Cela implique des limites : pas de place sur les aires de stationnement réservées, et des assureurs qui peuvent refuser de couvrir un « camping-car non déclaré ».
+Passer de CTTE à VASP modifie aussi la fiscalité du véhicule. Un fourgon qui garde la mention CTTE, même largement aménagé, continue de porter la fiscalité d'un utilitaire. Un fourgon non déclaré auprès de l'assureur, malgré un aménagement complet, s'expose à un refus de sinistre en cas de dégât sur l'aménagement intérieur.
 
-## Comment éviter l’homologation VASP ?
+## Comment éviter l'homologation VASP avec un aménagement mobile ?
 
-Pour contourner la VASP, misez sur la mobilité :
+Pour garder la mention CTTE, misez sur la mobilité plutôt que sur l'installation fixe : tout élément démontable en moins de deux heures, table pliante, matelas gonflable, cuisine sur roulettes, échappe aux critères VASP. Cette option garde un usage 100 % utilitaire possible en quelques minutes.
 
--   Démontage express : tout ce qui se range en moins de deux heures (table pliante, matelas gonflable, cuisine sur roulettes) échappe aux critères VASP.
--   Équipement léger : évitez les placards boulonnés ou les éviers encastrés. Préférez les boîtes empilables et les réchauds portables.
--   Couchage convertible : une banquette qui se transforme en lit évite d’avoir un lit fixe.
+-   **Démontage express** : privilégier les éléments qui se rangent rapidement, sans outillage.
+-   **Équipement léger** : éviter les placards boulonnés ou les éviers encastrés, préférer les boîtes empilables et les réchauds portables.
+-   **Couchage convertible** : une banquette transformable en lit évite d'installer un couchage fixe.
 
-Un aménagement mobile a un autre avantage : il permet de revenir à un usage 100% utilitaire en quelques minutes. Ainsi, c’est pratique pour les déménagements ou les livraisons le week-end. Attention, même minimaliste, votre assureur doit être informé. En effet, un oubli de déclaration peut entraîner la double peine : refus de prise en charge et résiliation du contrat.
+Même minimaliste, l'aménagement doit être déclaré à l'assureur. Un oubli de déclaration entraîne une double peine : refus de prise en charge d'un sinistre, puis résiliation du contrat. Le détail des garanties applicables figure dans notre [comparatif d'assurance camping-car](/assurance-camping-car-comparatif/).
 
-## Coût et démarches pour obtenir l’homologation VASP
+## Quelles démarches et quel coût pour l'homologation VASP ?
 
-Si votre aménagement est fixe, voici la marche à suivre :
+![Mécanicien contrôlant les câbles et la batterie d'un fourgon aménagé avant homologation](/images/articles/amenager-fourgon-soi-meme-homologation-2.webp)
 
-![Mécanicien contrôlant les câbles et la batterie d’un fourgon aménagé avant homologation](/images/articles/amenager-fourgon-soi-meme-homologation-2.webp)
+La démarche se déroule en trois étapes : un contrôle de conformité par un organisme agréé, le dépôt du dossier à la DREAL, puis la modification de la carte grise. Comptez généralement entre **450 € et 800 €** au total, redevance et contrôle compris.
+
+-   **Contrôle de conformité VHL** : un organisme agréé (Veritas, Qualigaz) vérifie l'aménagement et délivre un certificat, pour un coût qui tourne autour de 300 à 400 €.
+-   **Dépôt du dossier RTI** : la fiche de réception à titre isolé part ensuite vers la DREAL, ou la DRIEAT en Île-de-France.
+-   **Redevance DREAL** : environ 87 €, un montant fixé par arrêté et stable d'une région à l'autre.
+-   **Procès-verbal RTI** : une fois le dossier validé, il permet de modifier la mention sur la [carte grise VASP](/vasp-carte-grise-demarches/) auprès de l'ANTS.
+
+Prévoyez des délais variables selon la DREAL concernée, souvent plusieurs semaines entre le contrôle et la réception du procès-verbal. Les tarifs exacts du contrôle de conformité varient aussi selon l'organisme et la région, mieux vaut demander un devis avant de s'engager.
 
 ## Quel fourgon choisir pour un aménagement DIY ?
 
-Voici quelques modèles plébiscités par les vanlifers :
+Le choix du fourgon de base conditionne tout le reste de l'aménagement : plancher plat, parois lisses et version longue facilitent le travail et le volume habitable final. Trois modèles reviennent souvent chez les vanlifers, chacun avec ses points forts et ses limites.
 
 | Modèle | Points forts | Points faibles |
 | --- | --- | --- |
-| Citroën Jumpy (2016+) | Plateforme robuste (identique à Peugeot Expert et Toyota Proace), moteur 1.6 BlueHDi fiable (score 7,5/10), boîte manuelle 6 vitesses solide, climatisation stable. | Joint de culasse fragile sur les versions 165 ch (milésimes 2016-2018, risque vers 160 000 km), entretien régulier du filtre à particules (DPF) nécessaire. |
-| Renault Trafic (2014+) | Espace intérieur généreux, moteur dCi 1.6 réputé pour sa longévité, bonne tenue de route. | Problèmes récurrents de turbo sur les premiers millésimes, consommation élevée en ville. |
-| Ford Transit Custom (2012+) | Moteur EcoBoost 2.0 très coupleux, intérieur spacieux, bonne isolation phonique. | Électronique complexe (risque de pannes coûteuses), suspension arrière parfois jugée trop ferme. |
+| Citroën Jumpy (2016+) | Plateforme robuste, partagée avec Peugeot Expert et Toyota Proace, moteur BlueHDi fiable, boîte manuelle solide | Joint de culasse fragile sur certaines versions 165 ch, filtre à particules exigeant |
+| Renault Trafic (2014+) | Espace intérieur généreux, moteur dCi reconnu pour sa longévité | Turbo parfois capricieux sur les premiers millésimes, consommation élevée en ville |
+| Ford Transit Custom (2012+) | Moteur EcoBoost coupleux, bonne isolation phonique | Électronique plus complexe, suspension arrière ferme |
 
-*Source : utilitairemagazine.com, elite-auto.fr*
+*Source : retours d'expérience de la presse utilitaire spécialisée, à confirmer selon le millésime et le kilométrage du véhicule visé.*
 
-Pour un aménagement DIY, privilégiez un modèle avec un plancher plat et des parois intérieures lisses. Les versions L2H2 (longueur et hauteur maximales) offrent un volume habitable confortable. Ainsi, le Citroën Jumpy en L2H2 permet d’installer un lit transversal de 1,90 m sans encombrer l’espace de vie.
+Pour un aménagement DIY confortable, une version L2H2 (longueur et hauteur maximales) permet d'installer un lit transversal sans empiéter sur l'espace de vie. Notre guide sur le [meilleur fourgon pour un aménagement van](/meilleur-fourgon-base-amenagement/) détaille ce choix, et notre comparatif [3m³ contre 6m³](/fourgon-3m3-vs-6m3-usages/) l'affine selon l'usage visé.
 
-## Assurance : ce qui change avec un fourgon aménagé
+## Quelles erreurs éviter en aménageant un fourgon soi-même ?
 
-Votre assureur doit être informé, quelle que soit l’option choisie :
+Les erreurs les plus coûteuses touchent rarement l'esthétique : elles concernent le poids, l'isolation, la ventilation et l'installation électrique. Vérifier chaque point avant de prendre la route évite une panne, une amende ou, pire, un départ de feu.
 
--   **Aménagement mobile (CTTE conservé)** : déclaration obligatoire. Votre prime peut augmenter légèrement en raison d’un risque accru en cas de vol ou d’accident.
--   **Homologation VASP** : bascule vers une assurance camping-car. Certains assureurs proposent des formules spécifiques.
-    
-    Ces formules couvrent le matériel intérieur et incluent une assistance 0 km. Dans les deux cas, documentez votre aménagement : photos, factures des matériaux, schéma électrique. En effet, ces preuves facilitent la déclaration et évitent les mauvaises surprises en cas de sinistre.
-    
-    Pour les voyages à l’étranger, vérifiez les garanties. Certains pays, comme la Suisse ou la Norvège, imposent des clauses spécifiques pour les véhicules aménagés.
-    
-    ## Erreurs à éviter quand on aménage un fourgon soi-même
-    
-    -   **Sous-estimer le poids** : 300 à 500 kg supplémentaires avec un aménagement complet. Vérifiez votre PTAC pour éviter une amende (jusqu’à 750 €) et un refus au contrôle technique.
-    -   **Négliger l’isolation** : condensation, moisissures, inconfort thermique. Optez pour de la laine de roche ou du liège expansé, et évitez les ponts thermiques.
-    -   **Oublier la ventilation** : deux aérations minimum (une en haut, une en bas) pour éviter l’accumulation de CO2 et d’humidité.
-    -   **Improviser l’électricité** : une batterie auxiliaire mal dimensionnée ou des câbles sous-dimensionnés peuvent provoquer un incendie. Faites valider votre installation par un pro si besoin.
-    -   **Ignorer les normes gaz** : plaque de cuisson ou chauffage au gaz ? Respectez la norme NF EN 1949 (ventilation, détendeur, tuyaux flexibles). Un contrôle Qualigaz est obligatoire pour l’homologation VASP.
-    
-    Pour éviter ces pièges, inspirez-vous des retours d’expérience partagés dans [notre guide complet sur les vans et fourgons aménagés](/camping-car-van/van-fourgon-amenage). Les communautés de vanlifers regorgent aussi de conseils pratiques. Par exemple, sur un trajet Lyon-Marseille en plein été, une isolation insuffisante peut transformer votre fourgon en fournaise, même avec les fenêtres ouvertes.
+-   **Sous-estimer le poids** : un aménagement complet ajoute souvent 300 à 500 kg. Dépasser le PTAC expose à une amende qui peut atteindre 750 € et à un refus au contrôle technique.
+-   **Négliger l'isolation** : condensation, moisissures et inconfort thermique guettent un fourgon mal isolé. La laine de roche ou le liège expansé limitent les ponts thermiques.
+-   **Oublier la ventilation** : deux aérations, une en haut et une en bas, évitent l'accumulation de CO2 et d'humidité pendant la nuit.
+-   **Improviser l'électricité** : une batterie auxiliaire mal dimensionnée ou des câbles sous-dimensionnés créent un risque d'incendie réel. Notre guide sur l'[entretien de la batterie cellule](/batterie-cellule-entretien/) détaille le dimensionnement à respecter.
+-   **Ignorer les normes gaz** : une installation gaz doit respecter la norme NF EN 1949. Un contrôle Qualigaz conditionne l'homologation VASP, le détail figure dans notre guide sur la [sécurité gaz en camping-car](/gaz-camping-car-securite/).
+
+Pour l'habillage intérieur et les finitions, un [kit d'habillage bois prêt à poser](/habillage-bois-utilitaire-kit/) accélère souvent le chantier par rapport à un habillage découpé sur mesure.
+
+## Questions fréquentes
+
+### Un matelas posé au sol déclenche-t-il l'homologation VASP ?
+
+Non, à condition qu'il se démonte rapidement et que les autres critères (cuisine fixe, rangements vissés) soient absents. Un matelas simplement posé ne forme pas un couchage permanent.
+
+### Combien coûte l'homologation VASP au total ?
+
+Comptez généralement entre 450 € et 800 €, en incluant le contrôle de conformité par un organisme agréé et la redevance DREAL d'environ 87 €.
+
+### Un fourgon en CTTE peut-il stationner sur une aire camping-car ?
+
+Non, dans la majorité des cas. La mention VASP conditionne l'accès aux aires réservées. Un fourgon en CTTE compte toujours comme un utilitaire pour l'administration, même largement aménagé à l'intérieur.
+
+### Faut-il déclarer un aménagement mobile à l'assureur ?
+
+Oui, systématiquement. Même un aménagement démontable modifie le risque assuré. Un oubli de déclaration peut entraîner un refus de sinistre, puis une résiliation du contrat.
+
+### Quel organisme réalise le contrôle de conformité avant l'homologation ?
+
+Veritas ou Qualigaz interviennent le plus souvent. Le contrôle valide la conformité de l'aménagement avant le dépôt du dossier RTI auprès de la DREAL.

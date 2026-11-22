@@ -1,7 +1,7 @@
 ---
-title: "Attelage utilitaire homologation : ce que dit la loi en 2026"
-description: "Un attelage utilitaire doit être homologué pour circuler légalement. Voici les normes en vigueur, les étapes de certification et les risques encourus en ca"
-date: "2026-08-19"
+title: "Attelage utilitaire homologation : normes, prix et sanctions 2026"
+description: "UNECE R55, plaque d'homologation, mise à jour de la carte grise : ce qu'impose la loi pour tracter légalement avec un utilitaire en 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "amenagement-equipement"
 wp_id: 1526
@@ -9,88 +9,108 @@ wp_locale: "fr"
 image: "/images/articles/attelage-utilitaire-homologation-couverture.webp"
 imageAlt: "Attelage utilitaire homologation : ce que dit la loi en 2026"
 ---
-Pour un week-end de livraisons en région parisienne avec un Ford Transit Custom, un attelage non homologué peut coûter cher. En effet, l’amende atteint 135 € et le contrôle technique est refusé. La loi impose des normes strictes pour garantir la sécurité. Résistance minimale, compatibilité avec le PTAC et certification par un organisme agréé sont obligatoires. Voici ce qu’il faut vérifier avant de fixer un crochet sur un Renault Kangoo ou un Peugeot Expert.
+***Un attelage posé sur un utilitaire doit porter une plaque d'homologation rivetée, respecter le PTAC du véhicule et figurer sur la carte grise dès qu'il modifie ce PTAC.***
 
-## Pourquoi l’homologation d’un attelage est-elle obligatoire ?
+Un artisan qui tracte une remorque d'outillage avec son Ford Transit Custom, un livreur qui ajoute une remorque les jours de forte demande. Dans les deux cas, l'attelage doit répondre à des normes précises de résistance et de certification. Sans cela, le contrôle technique refuse le véhicule et l'assurance peut refuser d'indemniser un accident.
 
-Un attelage non certifié peut se détacher en roulant. Il risque alors de provoquer un accident ou d’endommager la structure du véhicule. Les normes européennes (directive 94/20/CE et règlement UNECE R55) imposent des tests de résistance. Ceux-ci incluent traction, torsion et charge verticale.
+TL;DR : un attelage non homologué expose à une amende de 135 € et à un refus au contrôle technique.
 
-Par exemple, un attelage pour un Ford Transit Custom doit supporter une force de traction de 1 500 kg sans déformation. Lors d’un contrôle, la police vérifie la plaque d’homologation rivetée sur l’attelage. Cette plaque indique le numéro d’agrément et le PTAC maximal autorisé. Sans elle, le véhicule est immobilisé et l’amende s’applique immédiatement.
+- La norme **UNECE R55** encadre tous les attelages posés sur un véhicule immatriculé après 1998.
+- L'installation coûte entre **500 et 1 200 €** pour un utilitaire léger.
+- Une modification du PTAC impose une mise à jour de la **carte grise**, pour 4 €.
 
-## Quelles normes encadrent les attelages utilitaires ?
+## Pourquoi l'homologation d'un attelage est-elle obligatoire, et quelles normes s'appliquent ?
 
-![Mécanicien installant un attelage sur un utilitaire blanc en atelier](/images/articles/attelage-utilitaire-homologation-1.webp)
+Un attelage non certifié peut se détacher en roulant et provoquer un accident ou endommager la structure du véhicule. La directive européenne **94/20/CE** et le règlement UNECE R55 imposent des tests de traction, de torsion et de charge verticale avant toute mise sur le marché.
 
-Trois normes régissent les attelages en France :
+Un attelage pour un utilitaire type Transit Custom doit supporter une force de traction de 1 500 kg sans déformation. Lors d'un contrôle routier, les forces de l'ordre vérifient la **plaque rivetée** sur l'attelage, qui indique le numéro d'agrément et le PTAC maximal autorisé. Son absence entraîne l'immobilisation immédiate du véhicule.
 
--   **UNECE R55** : norme européenne obligatoire pour les véhicules immatriculés après 1998. Elle définit les exigences de résistance et les méthodes d’essai.
--   **NF R18-510** : norme française complémentaire. Elle concerne notamment les attelages à boule démontable.
--   **Directive 2007/46/CE** : cadre général pour l’homologation des véhicules et de leurs équipements, y compris les attelages.
+Trois textes régissent un attelage posé en France. L'**UNECE R55** fixe les exigences de résistance pour tout véhicule immatriculé après 1998. La norme NF R18-510 complète ce cadre pour les attelages à boule démontable. La directive 2007/46/CE organise l'homologation générale des véhicules et de leurs équipements.
 
-Un attelage doit aussi être compatible avec le PTAC du véhicule. Prenons l’exemple d’un Citroën Jumpy avec un PTAC de 2,8 tonnes. Il ne peut pas tracter une remorque de 3,5 tonnes, même avec un attelage homologué pour cette charge. Le dépassement du PTAC expose à une amende de 135 € et à un retrait de 3 points sur le permis.
+Un attelage doit aussi respecter le PTAC du véhicule qui le porte. Un Citroën Jumpy limité à 2,8 tonnes ne peut pas tracter une remorque de 3,5 tonnes, même avec un attelage homologué pour cette charge. Le dépassement expose à une amende de 135 € et à un retrait de 3 points sur le permis. Pour comparer les capacités de traction selon les modèles, notre guide sur le [meilleur utilitaire compact](/meilleur-utilitaire-compact/) détaille les PTAC courants.
 
 ## Comment homologuer un attelage sur un utilitaire ?
 
-L’homologation d’un attelage passe par quatre étapes clés :
+L'homologation suit quatre étapes, dans cet ordre précis.
 
-1.  **Choisir un attelage certifié** : optez pour un modèle déjà homologué pour votre véhicule. Par exemple, un kit Brink ou Westfalia pour un Renault Kangoo 2021+.
-2.  **Faire installer par un professionnel** : un garagiste agréé vérifie la compatibilité et appose la plaque d’homologation. Pour un Peugeot Expert, comptez 2 heures de main-d’œuvre.
-3.  **Passer le contrôle technique** : cette étape valide la conformité. Le centre vérifie la plaque d’homologation et la fixation de l’attelage.
-4.  **Mettre à jour la carte grise** : si l’attelage modifie le PTAC, cette démarche est obligatoire. Elle coûte 4 € et se fait en ligne sur le site de l’ANTS.
+1. **Choisir un attelage certifié**, déjà homologué pour le modèle exact du véhicule.
+2. **Faire installer par un professionnel**, qui vérifie la compatibilité et appose la plaque d'homologation.
+3. **Passer le contrôle technique**, qui valide la plaque et la fixation de l'attelage.
+4. **Mettre à jour la carte grise**, si l'attelage modifie le PTAC du véhicule.
 
-Pour un utilitaire comme le Peugeot Expert, l’installation d’un attelage homologué coûte entre 500 € et 1 200 €. Le prix varie selon le modèle.
+L'installation coûte entre 500 et 1 200 € pour un utilitaire comme le Peugeot Expert, selon le modèle d'attelage choisi. La mise à jour de la carte grise, quand le PTAC change, coûte 4 € et se traite en ligne sur le site de l'[ANTS](/carte-grise-ants-demarches/).
 
-## Quels risques en cas d’attelage non homologué ?
+## Quels risques en cas d'attelage non homologué ?
 
-Rouler avec un attelage non conforme expose à plusieurs sanctions :
+Rouler avec un attelage non conforme expose à plusieurs sanctions cumulables.
 
--   **135 € d’amende** pour défaut d’homologation ou dépassement du PTAC.
--   **Immobilisation du véhicule** en cas de danger immédiat.
--   **Refus au contrôle technique**, ce qui bloque la validation du véhicule.
--   **Nullité de l’assurance** en cas d’accident. Les conséquences financières sont lourdes pour un professionnel.
+- **135 € d'amende** pour défaut d'homologation ou dépassement du PTAC.
+- **Immobilisation du véhicule** en cas de danger immédiat constaté sur route.
+- **Refus au contrôle technique**, qui bloque la validation du véhicule.
+- **Nullité partielle de l'assurance** en cas d'accident lié directement à l'attelage.
 
-Ces risques s’ajoutent aux frais de régularisation. Ils entraînent aussi une perte de temps pour les flottes pro.
+Ces sanctions s'ajoutent aux frais de mise en conformité et à l'immobilisation du véhicule, un coût souvent sous-estimé pour une flotte de plusieurs utilitaires.
 
-## Quels utilitaires peuvent être équipés d’un attelage ?
+## Quels utilitaires équiper, et quel impact fiscal pour les professionnels ?
 
-![Plaque d'homologation rivetée sur un attelage utilitaire](/images/articles/attelage-utilitaire-homologation-2.webp)
+Tout utilitaire léger de genre **CTTE** peut recevoir un attelage, à condition de respecter son PTAC. La capacité de traction varie fortement d'un modèle à l'autre, un critère à vérifier avant tout achat de remorque.
 
-Tous les utilitaires légers (catégorie CTTE sur la carte grise) peuvent recevoir un attelage. La condition ? Respecter leur PTAC. Voici quelques modèles courants et leurs capacités :
+| Modèle | PTAC (kg) | Capacité de traction max (kg) |
+| --- | --- | --- |
+| Renault Kangoo Van (2021+) | 2 000 | 1 300 |
+| Peugeot Expert (2016+) | 2 800 | 2 000 |
+| Citroën Jumpy (2016+) | 2 800 | 2 000 |
+| Ford Transit Custom (2018+) | 3 200 | 2 500 |
 
-*Source : utilitairemagazine.com*
+Un utilitaire qui tracte régulièrement de lourdes charges gagne aussi à afficher une fiabilité moteur éprouvée sur le long terme, un point que développe notre comparatif de [fourgons 3m³ contre 6m³](/fourgon-3m3-vs-6m3-usages/).
 
-La fiabilité est cruciale pour les professionnels. Ainsi, le Ford Transit Custom affiche un score de 8,5/10. Son moteur 2.0 TDCi EcoBlue parcourt 250 000 km sans intervention majeure. À l’inverse, le Citroën Berlingo (2008-2018) présente des risques de défaillance du turbo sur les moteurs 1.6 HDi.
+Un utilitaire équipé d'un attelage conserve son exonération de taxe sur les véhicules de société, tant que la mention CTTE figure sur la carte grise. Si l'attelage fait franchir au véhicule le seuil des 3,5 tonnes de PTAC, la taxe peut en revanche s'appliquer, le véhicule sortant alors des critères d'exonération. Le détail des seuils figure dans notre page sur la [TVS et son calcul](/tvs-taxe-vehicules-societe-calcul/).
 
-## Attelage utilitaire et fiscalité : impacts pour les pros
+Pour une entreprise en location longue durée, les loyers liés à l'attelage se déduisent du résultat imposable, et la TVA se récupère en totalité si l'utilitaire sert exclusivement à des fins professionnelles. Notre guide sur la [TVA récupérable d'un utilitaire](/tva-recuperable-utilitaire/) complète ces avantages.
 
-Un utilitaire équipé d’un attelage reste exonéré de la Taxe sur les Véhicules de Société (TVS). Toutefois, la mention CTTE doit figurer sur la carte grise. Si l’attelage modifie le PTAC (ex. : passage à 3,5 tonnes), la TVS peut s’appliquer. Le véhicule dépasse alors les seuils autorisés pour les utilitaires.
+## Où acheter un attelage homologué, fixe ou démontable ?
 
-Pour les entreprises en Location Longue Durée (LLD), les loyers de l’attelage sont déductibles du résultat imposable. La TVA est récupérable en totalité si l’utilitaire sert à des fins professionnelles. Cet avantage fiscal est non négligeable pour les flottes pro, comme le détaille [notre guide sur l’aménagement et l’équipement](/utilitaires-flottes-pro/amenagement-equipement).
+Un concessionnaire propose des attelages homologués avec installation garantie et mise à jour automatique de la carte grise. Des spécialistes de l'équipement, comme Brink ou Westfalia, fabriquent des kits adaptés à chaque modèle, attelages à boule démontable compris.
 
-## Où acheter un attelage utilitaire homologué ?
+Avant tout achat en ligne, vérifiez systématiquement la mention **UNECE R55** sur la fiche produit, ainsi que la compatibilité exacte avec votre modèle. Un attelage conçu pour un Renault Kangoo ne convient pas forcément à un Peugeot Expert, même quand les dimensions semblent proches.
 
-Plusieurs options s’offrent aux professionnels :
+Les ventes aux enchères domaniales, sur le site public dédié, proposent parfois des attelages d'occasion issus de flottes publiques réformées, à prix réduit. Vérifiez toujours la lisibilité de la plaque d'homologation avant d'enchérir, un document absent ou effacé rend l'équipement inutilisable légalement.
 
--   **Concessionnaires** : les marques comme Renault ou Peugeot proposent des attelages homologués. L’installation est garantie et la carte grise mise à jour automatiquement.
--   **Spécialistes de l’équipement** : des enseignes comme H2R Equipements ou Westfalia offrent des kits adaptés. Les attelages à boule démontable en font partie.
--   **Enchères publiques** : le site encheres-domaine.gouv.fr propose parfois des attelages d’occasion. Ils proviennent de flottes publiques et sont vendus à prix réduit. Vérifiez toujours la plaque d’homologation avant d’acheter.
+Vient ensuite la question du modèle à retenir. Un attelage **fixe** convient à une entreprise qui tracte quotidiennement une remorque, par exemple pour transporter des matériaux de chantier. Il garantit une meilleure résistance aux charges répétées et demande moins d'entretien que les systèmes à verrouillage.
 
-Pour un achat en ligne, privilégiez les sites affichant la certification UNECE R55. Vérifiez aussi la compatibilité avec votre modèle. Par exemple, un attelage pour un Renault Kangoo ne convient pas forcément à un Peugeot Expert, même si les dimensions semblent similaires.
+Un attelage à **boule démontable** répond mieux aux flottes qui alternent livraisons en ville et trajets avec remorque. La boule se retire en quelques secondes, ce qui évite les gênes à l'arrière du véhicule lors des manœuvres de stationnement ou au passage au lavage automatique. Son prix dépasse souvent de 100 à 200 € un modèle fixe équivalent, un surcoût vite amorti pour une utilisation occasionnelle.
 
-## Attelage utilitaire : les erreurs à éviter
+Le choix dépend aussi de la fréquence d'utilisation de la remorque. Une entreprise qui tracte plusieurs fois par semaine gagne à investir dans un système fixe plus robuste, tandis qu'un artisan qui tracte ponctuellement privilégie la discrétion du démontable.
 
-Quelques pièges peuvent coûter cher :
+## Les erreurs les plus fréquentes à éviter
 
--   **Vérifier la compatibilité** : un attelage pour un véhicule particulier (VP) n’est pas adapté à un utilitaire (CTTE). Les normes de résistance diffèrent.
--   **Mettre à jour la carte grise** : si l’attelage modifie le PTAC, cette démarche est obligatoire. Sans elle, le véhicule est non conforme.
--   **Confier l’installation à un professionnel** : un montage mal réalisé peut entraîner un détachement en roulant.
--   **Passer le contrôle technique** : après l’installation, ce passage valide la conformité.
+Quatre erreurs reviennent le plus souvent chez les professionnels qui équipent leur flotte.
 
-Pour un professionnel, ces erreurs entraînent des pertes de temps et d’argent. Par conséquent, suivez les étapes d’homologation à la lettre.
+- **Confondre VP et utilitaire** : un attelage conçu pour un véhicule particulier n'est pas adapté à un utilitaire, les normes de résistance diffèrent.
+- **Oublier la carte grise** : si l'attelage change le PTAC, la mise à jour s'avère obligatoire, sous peine de non-conformité.
+- **Confier l'installation à un amateur** : un montage mal réalisé peut provoquer un détachement en roulant.
+- **Sauter le contrôle technique** : ce passage valide la conformité de l'ensemble après la pose.
 
-| Modèle | PTAC (kg) | Capacité de traction max (kg) | Fiabilité (score/10) |
-| --- | --- | --- | --- |
-| Renault Kangoo Van (2021+) | 2 000 | 1 300 | 8/10 |
-| Peugeot Expert (2016+) | 2 800 | 2 000 | 7,5/10 |
-| Citroën Jumpy (2016+) | 2 800 | 2 000 | 7,5/10 |
-| Ford Transit Custom (2018+) | 3 200 | 2 500 | 8,5/10 |
+Pour une flotte professionnelle, ces oublis entraînent des pertes de temps et des coûts de régularisation évitables. Un suivi rigoureux de chaque étape, notamment via un [logiciel de gestion de flotte](/gestion-flotte-logiciel-tpe/), limite ce type d'incident.
+
+## Questions fréquentes
+
+### Un attelage non homologué bloque-t-il le contrôle technique ?
+
+Oui. Le contrôleur vérifie la présence et la lisibilité de la plaque d'homologation. Sans elle, le véhicule obtient une contre-visite obligatoire avant toute nouvelle présentation.
+
+### Faut-il déclarer un attelage à l'assurance ?
+
+Oui, surtout s'il modifie le PTAC du véhicule. Une déclaration omise peut justifier un refus d'indemnisation en cas de sinistre directement lié à la remorque tractée.
+
+### Un attelage à boule démontable change-t-il la procédure d'homologation ?
+
+Non, il suit les mêmes normes UNECE R55 et NF R18-510 qu'un attelage fixe. Seule la manipulation de démontage change, sans impact sur la certification technique.
+
+### Combien coûte la mise à jour de la carte grise après pose d'un attelage ?
+
+4 € en ligne sur le site de l'ANTS, uniquement si l'attelage modifie le PTAC du véhicule. Sans changement de PTAC, aucune démarche n'est nécessaire.
+
+### Peut-on poser un attelage d'occasion sur un utilitaire ?
+
+Oui, à condition de vérifier la plaque d'homologation et son adéquation avec le PTAC exact du véhicule. Un attelage d'occasion sans plaque lisible n'a aucune valeur légale.

@@ -1,7 +1,7 @@
 ---
-title: "Autopartage Citiz : tarifs 2026, abonnements et économies par rapport à une voiture personnelle"
-description: "Citiz propose deux formules d’autopartage : avec abonnement (16 €/mois + 3 €/h) ou sans (0 €/mois + 5,50 €/h). On compare le coût réel pour un trajet domic"
-date: "2026-08-13"
+title: "Autopartage Citiz : tarifs et abonnements 2026"
+description: "Citiz : 16 €/mois + 3 €/h, ou 5,50 €/h sans engagement. Coût réel sur 3 trajets types, comparé à une voiture personnelle en 2026."
+date: "2026-11-22"
 author: "karim-belaid"
 category: "autopartage-location-particuliers"
 wp_id: 1423
@@ -9,114 +9,123 @@ wp_locale: "fr"
 image: "/images/articles/autopartage-citiz-tarifs-couverture.webp"
 imageAlt: "Autopartage Citiz : tarifs 2026, abonnements et économies par rapport à une voiture personnelle"
 ---
-Vous hésitez entre louer une voiture à l’heure avec Citiz ou garder votre vieille Clio ? Voici le vrai coût de l’autopartage en 2026. Citiz propose deux formules : un abonnement à 16 €/mois (3 €/h) ou un tarif sans engagement à 5,50 €/h.
 
-On a calculé pour vous ce que ça donne sur un trajet domicile-travail, une journée de courses ou un week-end en famille.
+***Citiz propose deux formules d'autopartage : un abonnement à 16 €/mois plus 3 €/h, ou un tarif libre à 5,50 €/h sans engagement. Voici ce que ça donne vraiment sur un trajet domicile-travail, des courses ou un week-end en famille.***
 
-## Les tarifs Citiz 2026 : abonnement vs sans abonnement
+Vous hésitez entre réserver une Citiz à l'heure ou garder votre vieille citadine ? Le calcul dépend entièrement de votre usage réel, pas juste du tarif affiché. On compare les deux formules Citiz, puis leur coût face à une voiture personnelle, sur des trajets concrets plutôt que sur des moyennes théoriques.
+
+TL;DR : Citiz coûte entre 2 et 3 fois moins cher qu'une voiture personnelle sous 10 000 km/an.
+
+-   L'**abonnement à 16 €/mois** devient rentable dès que vous dépassez quelques heures d'usage par semaine.
+-   La **formule sans engagement** à 5,50 €/h convient mieux à un usage ponctuel, quelques fois par mois.
+-   Carburant, assurance et entretien restent **inclus** dans les deux formules, sans supplément caché.
+
+## Combien coûte l'autopartage Citiz en 2026 ?
 
 ![Utilisateur consultant les tarifs Citiz sur son smartphone devant une station d'autopartage](/images/articles/autopartage-citiz-tarifs-1.webp)
 
-Citiz propose deux formules, valables dans toutes ses villes (Lyon, Paris, Strasbourg, etc.). Voici ce qui les distingue :
+Citiz propose deux formules identiques dans la plupart de ses villes, Lyon, Paris ou Strasbourg comprises.
 
 | Formule | Abonnement mensuel | Tarif horaire | Kilométrage inclus |
 | --- | --- | --- | --- |
 | Avec abonnement | 16 €/mois | À partir de 3 €/h | 100 km/mois (puis 0,30 €/km) |
 | Sans abonnement | 0 €/mois | À partir de 5,50 €/h | 0 km inclus (0,30 €/km dès le 1er km) |
 
-*Source : Citiz (réseaux Lyon et Île-de-France)*
+*Source : Citiz, réseaux Lyon et Île-de-France, 2026.*
 
-Le carburant, l’assurance et l’entretien sont inclus dans les deux cas. Ainsi, pas de mauvaise surprise : vous payez uniquement le temps d’utilisation et les kilomètres au-delà du forfait.
+Le **carburant**, l'assurance et l'entretien sont intégrés dans les deux cas. Vous ne payez que le temps d'utilisation et les kilomètres au-delà du forfait inclus, sans frais surprise à la restitution du véhicule.
 
-## Combien ça coûte vraiment ? 3 exemples concrets
+L'abonnement s'adresse surtout à un usage régulier, plusieurs fois par semaine. La formule libre vise plutôt un usage occasionnel, sans engagement mensuel à payer même les mois sans réservation. Le choix dépend donc moins du prix horaire affiché que de la fréquence réelle d'utilisation sur l'année.
 
-Prenons trois cas typiques pour voir ce que ça donne sur la facture.
+## Combien ça coûte vraiment sur 3 trajets concrets ?
 
-### 1\. Trajet domicile-travail (10 km aller-retour, 2h/jour, 20 jours/mois)
+Les tarifs affichés ne veulent pas dire grand-chose sans les rapporter à un usage réel. Voici trois cas typiques, calculés formule par formule.
 
-**Avec abonnement :**
+### Trajet domicile-travail quotidien
 
--   Abonnement : 16 €
--   Heures d’utilisation : 2h × 20 jours × 3 € = 120 €
--   Kilométrage : 200 km (100 km inclus + 100 km à 0,30 €/km) = 30 €
--   **Total : 166 €/mois**
+Pour 10 km aller-retour, 2h/jour, 20 jours par mois : l'abonnement revient à 166 €/mois (16 € d'abonnement, 120 € d'heures, 30 € de kilomètres hors forfait). La formule sans engagement grimpe à 280 €/mois sur le même usage. L'écart dépasse 110 € chaque mois, largement en faveur de l'**abonnement** dès un usage quotidien.
 
-**Sans abonnement :**
+### Courses du week-end
 
--   Heures d’utilisation : 2h × 20 jours × 5,50 € = 220 €
--   Kilométrage : 200 km × 0,30 € = 60 €
--   **Total : 280 €/mois**
+Pour 50 km et 4h d'utilisation ponctuelle : l'abonnement revient à 28 € (12 € d'heures, kilométrage inclus dans le forfait), contre 37 € sans engagement. L'écart reste faible sur un usage aussi ponctuel, les deux formules se valent presque.
 
-### 2\. Courses du week-end (50 km, 4h)
+### Week-end en famille
 
-**Avec abonnement :**
+Pour 200 km sur 2 jours (48h d'utilisation) : l'abonnement coûte 190 €, contre 324 € sans engagement. Sur un usage prolongé comme celui-ci, l'écart se creuse fortement, l'abonnement devient nettement plus avantageux.
 
--   Abonnement : 16 € (proratisé sur 1 mois)
--   Heures d’utilisation : 4h × 3 € = 12 €
--   Kilométrage : 50 km (100 km inclus) = 0 €
--   **Total : 28 €**
+## Citiz coûte-t-il vraiment moins cher qu'une voiture personnelle ?
 
-**Sans abonnement :**
+Oui, dans la grande majorité des cas, sauf pour un conducteur qui roule beaucoup chaque année. Prenons une citadine d'occasion à 8 000 €, gardée 5 ans, comparée à un usage Citiz de 10h/mois.
 
--   Heures d’utilisation : 4h × 5,50 € = 22 €
--   Kilométrage : 50 km × 0,30 € = 15 €
--   **Total : 37 €**
-
-### 3\. Week-end en famille (200 km, 2 jours)
-
-**Avec abonnement :**
-
--   Abonnement : 16 € (proratisé sur 1 mois)
--   Heures d’utilisation : 48h × 3 € = 144 €
--   Kilométrage : 200 km (100 km inclus + 100 km à 0,30 €/km) = 30 €
--   **Total : 190 €**
-
-**Sans abonnement :**
-
--   Heures d’utilisation : 48h × 5,50 € = 264 €
--   Kilométrage : 200 km × 0,30 € = 60 €
--   **Total : 324 €**
-
-## Autopartage Citiz vs voiture personnelle : qui est le plus cher ?
-
-Prenons une Clio essence achetée d’occasion à 8 000 €, que vous gardez 5 ans. Voici ce que ça coûte vraiment, poste par poste :
-
-| Poste de dépense | Coût annuel (Clio essence) | Coût annuel (Citiz, 10h/mois) |
+| Poste de dépense | Voiture personnelle (citadine essence) | Citiz (10h/mois) |
 | --- | --- | --- |
-| Amortissement voiture | 1 600 € (8 000 €/5 ans) | 0 € |
-| Assurance | 600 € (tous risques) | 0 € (incluse) |
-| Entretien | 500 € (vidange, freins, pneus) | 0 € (inclus) |
-| Carburant | 1 200 € (15 000 km/an, 6L/100 km) | 360 € (1 200 km/an à 0,30 €/km) |
-| Parking | 600 € (50 €/mois) | 0 € (places Citiz réservées) |
+| Amortissement | 1 600 €/an | 0 € |
+| Assurance | 600 €/an (tous risques) | 0 € (incluse) |
+| Entretien | 500 €/an | 0 € (inclus) |
+| Carburant | 1 200 €/an (15 000 km) | 360 €/an (1 200 km) |
+| Stationnement | 600 €/an | 0 € (places réservées) |
 | **Total** | **4 500 €/an** | **1 200 €/an** |
 
-*Estimation pour 15 000 km/an (Clio) vs 1 200 km/an (Citiz)*
+*Estimation pour 15 000 km/an (voiture perso) contre 1 200 km/an (Citiz).*
 
-Résultat ? Même en roulant peu (1 200 km/an), Citiz coûte **3 fois moins cher** qu’une voiture personnelle. En revanche, si vous roulez moins de 10 000 km/an, l’écart se creuse encore.
+Même en roulant peu, Citiz coûte environ trois fois moins cher qu'une **voiture personnelle**. L'écart se resserre uniquement au-delà de 10 000 à 12 000 km parcourus par an, un seuil au-delà duquel une [LLD particulier sans apport](/lld-particulier-sans-apport/) devient souvent plus pertinente.
 
-## Comment payer moins cher avec Citiz ? 3 astuces
+Ce calcul ne prend pas en compte un facteur souvent négligé : le temps perdu à chercher une place de parking ou à gérer l'entretien d'un véhicule personnel. Pour un citadin sans garage, ce temps a aussi une valeur réelle, même s'il ne figure dans aucun tableau de coûts.
 
-Quelques pistes pour réduire la facture :
+## Comment payer moins cher avec Citiz ?
 
--   **Réservez à l’avance** : les tarifs sont moins chers si vous réservez 24h à l’avance plutôt qu’en dernière minute.
--   **Optez pour un abonnement annuel** : certains réseaux Citiz proposent des abonnements à l’année (ex. 150 €/an au lieu de 192 € en mensuel). Ainsi, vous économisez 20%.
--   **Partagez les frais** : si vous faites un trajet à plusieurs, le coût par personne baisse mécaniquement. Parfait pour un week-end entre amis ou un déménagement.
+Trois leviers simples réduisent sensiblement la facture mensuelle, sans changer d'usage.
 
-Et si vous avez besoin d’une voiture plus souvent ? Pensez à combiner Citiz avec d’autres modes de transport. Par exemple, le vélo pour les trajets courts, les transports en commun pour le quotidien, et l’autopartage uniquement quand c’est indispensable. Pour comparer avec d’autres options comme la location courte durée ou le leasing, [cet article](/mobilite-partagee-transports/autopartage-location-particuliers) détaille les différences entre autopartage et alternatives.
+-   **Réservez à l'avance** : les tarifs grimpent souvent en dernière minute, surtout le week-end.
+-   **Passez à l'abonnement annuel** si votre réseau le propose, le gain tourne autour de 20 % par rapport au paiement mensuel classique.
+-   **Partagez le trajet** à plusieurs : le coût par personne chute mécaniquement, idéal pour un déménagement ou un week-end entre amis.
 
-## Autopartage Citiz : pour qui, pour quoi ?
+Pour les trajets courts du quotidien, combiner Citiz avec le vélo ou les transports en commun reste souvent plus économique que de réserver une voiture systématiquement. Le [covoiturage domicile-travail](/covoiturage-domicile-travail-prime/) complète bien ce type d'organisation sur les trajets récurrents.
 
-L’autopartage Citiz convient particulièrement si :
+Pour un trajet occasionnel plus long entre deux villes, le covoiturage longue distance via une appli comme [BlaBlaCar Daily](/blablacar-daily-avis/) coûte souvent moins cher qu'une réservation Citiz calculée à l'heure sur plusieurs centaines de kilomètres. Les deux solutions se complètent plus qu'elles ne s'opposent, selon la distance réelle du trajet.
 
--   Vous roulez moins de 10 000 km/an. En effet, c’est le seuil où une voiture personnelle devient rentable.
--   Vous n’avez pas de place de parking attitrée. Les places Citiz sont réservées aux abonnés.
--   Vous avez besoin d’une voiture ponctuellement. Par exemple, pour des courses, un week-end ou un déménagement, sans vouloir assumer les coûts fixes.
--   Vous habitez en ville et voulez éviter les contraintes du stationnement payant.
+## L'autopartage Citiz convient-il à votre usage ?
 
-En revanche, si vous faites plus de 20 000 km/an ou avez besoin d’une voiture tous les jours pour le travail, une location longue durée (LLD) ou un leasing peuvent être plus adaptés.
+Citiz convient particulièrement si vous roulez moins de 10 000 km par an, le seuil au-delà duquel une voiture personnelle redevient compétitive. L'absence de **place de parking attitrée** pèse aussi dans la balance : les stations Citiz réservent toujours un emplacement aux abonnés.
 
-## Citiz face aux autres solutions d’autopartage
+Un besoin ponctuel, courses, week-end ou déménagement, correspond bien au modèle Citiz, sans les coûts fixes d'un véhicule possédé à l'année. À l'inverse, au-delà de 20 000 km annuels ou pour un usage professionnel quotidien, une location longue durée reste mieux dimensionnée pour votre budget.
 
-Citiz n’est pas la seule option sur le marché de l’autopartage. La différence principale tient au modèle : Citiz fonctionne en boucle, la voiture doit revenir à sa station de départ, alors que la location entre particuliers via [Getaround ou Ouicar](/mobilite-partagee-transports/getaround-ouicar-comparatif) permet parfois une plus grande liberté de trajet, au prix d’une disponibilité moins prévisible.
+Un foyer avec deux voitures peut aussi revoir sa situation à la baisse. Garder un seul véhicule personnel et compléter avec Citiz pour les trajets occasionnels du second conducteur réduit souvent la facture globale, sans perdre en liberté de déplacement au quotidien.
 
-Le choix entre les deux dépend surtout de votre usage. Pour un trajet récurrent vers un point fixe, comme un rendez-vous ou une gare, la station fixe de Citiz simplifie l’organisation. Pour un besoin ponctuel et flexible, la location entre particuliers laisse plus de latitude sur le véhicule et la durée. Avant de choisir, pensez aussi à vérifier les conditions d’assurance de chaque formule, détaillées dans [notre guide sur l’assurance en location entre particuliers](/mobilite-partagee-transports/assurance-location-entre-particuliers).
+Nous recommandons l'**abonnement mensuel** plutôt que la formule libre dès que vous dépassez 3 à 4 heures d'usage hebdomadaire, le tarif horaire réduit compense rapidement les 16 € fixes. Ce choix se justifie par le calcul simple fait plus haut sur le trajet domicile-travail : l'écart dépasse 110 € par mois dès un usage quotidien, un montant qui pèse vite sur un budget.
+
+Si votre usage reste imprévisible d'un mois à l'autre, gardez la formule libre quelques semaines le temps d'observer votre rythme réel avant de basculer vers l'abonnement. Beaucoup d'utilisateurs changent de formule après les premiers mois, une fois leur usage réel mieux identifié.
+
+## Citiz face aux autres solutions d'autopartage
+
+Citiz fonctionne en **boucle fermée** : la voiture revient toujours à sa station de départ. La location entre particuliers via [Getaround ou Ouicar](/getaround-ouicar-comparatif/) permet un trajet plus libre, au prix d'une disponibilité moins prévisible selon le quartier.
+
+Pour un trajet récurrent vers un **point fixe**, gare ou rendez-vous régulier, la station Citiz simplifie l'organisation au quotidien. Pour un besoin ponctuel et flexible, la [location entre particuliers](/location-voiture-entre-particuliers-avis/) laisse plus de latitude sur le modèle et la durée exacte.
+
+Avant de choisir, vérifiez aussi les conditions d'assurance propres à chaque formule : notre [guide sur l'assurance en location entre particuliers](/assurance-location-entre-particuliers/) détaille les franchises et les exclusions à connaître, très différentes d'une plateforme à l'autre. Pour un trajet longue distance ponctuel, [louer une voiture pas cher le week-end](/louer-voiture-pas-cher-week-end/) reste parfois une alternative à comparer au tarif Citiz.
+
+## Questions fréquentes
+
+### Quel est le tarif Citiz avec abonnement en 2026 ?
+
+16 €/mois plus 3 €/h minimum, avec 100 km inclus par mois. Au-delà, chaque kilomètre supplémentaire coûte 0,30 €.
+
+### Citiz est-il rentable par rapport à une voiture personnelle ?
+
+Oui sous 10 000 km par an. Au-delà, les coûts fixes d'une voiture possédée, déjà amortis, deviennent plus compétitifs que le tarif horaire Citiz.
+
+### Faut-il un abonnement Citiz pour un usage ponctuel ?
+
+Non, la formule sans engagement à 5,50 €/h convient mieux pour quelques trajets par mois. L'abonnement ne devient rentable qu'à partir d'un usage régulier.
+
+### Le carburant est-il inclus dans le tarif Citiz ?
+
+Oui, tout comme l'assurance et l'entretien. Vous payez uniquement le temps de réservation et les kilomètres au-delà du forfait inclus dans votre formule.
+
+### Peut-on réduire le coût d'un abonnement Citiz ?
+
+Oui, via un abonnement annuel plutôt que mensuel, en réservant à l'avance, ou en partageant le trajet à plusieurs pour diviser le coût total.
+
+### Citiz est-il disponible dans toutes les villes de France ?
+
+Non. Le réseau couvre surtout les grandes métropoles comme Lyon, Paris ou Strasbourg. Vérifiez la couverture de votre ville sur le site Citiz avant de comparer les formules.
