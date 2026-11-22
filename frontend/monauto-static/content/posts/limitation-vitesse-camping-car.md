@@ -1,7 +1,7 @@
 ---
 title: "Limitation de vitesse camping-car : ce que dit la loi en France et en Europe"
-description: "Un camping-car de moins de 3,5 t suit les mêmes limitations qu’une voiture, mais les modèles plus lourds sont assimilés à des poids lourds. Voici les vites"
-date: "2026-08-06"
+description: "Un camping-car de moins de 3,5 t suit les mêmes limitations qu’une voiture, mais les modèles plus lourds suivent un régime à part. Voici les vitesses par p"
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1147
@@ -9,83 +9,110 @@ wp_locale: "fr"
 image: "/images/articles/limitation-vitesse-camping-car-couverture.webp"
 imageAlt: "Limitation de vitesse camping-car : ce que dit la loi en France et en Europe"
 ---
-Pour un week-end en Bretagne avec votre fourgon aménagé ou un road-trip en Espagne, la question revient souvent. À quelle vitesse avez-vous le droit de rouler ? En France, un camping-car de moins de 3,5 tonnes est limité à **120 km/h sur autoroute**. Sur route, la limite est de 80 km/h. En ville, elle tombe à 50 km/h. Au-delà de 3,5 t, la limite chute à 100 km/h sur autoroute, comme pour les poids lourds.
+***Pour un week-end en Bretagne avec un fourgon aménagé ou un road-trip en Espagne, la question revient toujours : à quelle vitesse a-t-on le droit de rouler ? La réponse dépend d'abord d'un chiffre, le poids total autorisé en charge.***
 
-Ces règles s’appliquent aux modèles neufs comme aux fourgons aménagés homologués VASP. Elles varient aussi selon les pays européens. Avec une remorque, les limites baissent encore. Pour un ensemble ≤ 3,5 t, la vitesse maximale est de 90 km/h sur autoroute. Au-delà, elle passe à 80 km/h. Attention aux pièges : un disque de limitation de vitesse est obligatoire pour les camping-cars de plus de 3,5 t. Sans lui, vous risquez une amende.
+TL;DR : un camping-car de moins de 3,5 tonnes suit les limites d'une voiture classique, 130 km/h sur autoroute, 80 km/h sur route. Au-delà de 3,5 tonnes, il bascule sur un régime spécifique aux véhicules de transport de personnes lourds, 110 km/h sur autoroute, 100 km/h sur voie rapide, 80 km/h ailleurs.
+
+-   Le **PTAC** indiqué en case F2 de la carte grise détermine le régime applicable, pas le gabarit visuel du véhicule.
+-   Avec une **remorque**, les limites baissent encore, 90 km/h sur autoroute pour un ensemble ≤ 3,5 t.
+-   Un **disque de limitation de vitesse** reste recommandé au-delà de 3,5 t pour informer les autres usagers.
 
 ## Limitation de vitesse camping-car en France : les règles selon le poids
 
-En France, la limitation de vitesse d’un camping-car dépend de son **poids total autorisé en charge (PTAC)**. Ce poids est indiqué sur la carte grise, case F2. Deux cas de figure existent :
+En France, la limitation de vitesse d'un camping-car dépend de son **poids total autorisé en charge (PTAC)**, indiqué sur la carte grise en case F2. Deux régimes coexistent.
 
-<table class="wp-block-table"><tbody><tr><td><strong>PTAC du camping-car</strong></td><td><strong>Autoroute</strong></td><td><strong>Route à 2 voies</strong></td><td><strong>Ville</strong></td></tr><tr><td>≤ 3,5 t</td><td>120 km/h</td><td>80 km/h</td><td>50 km/h</td></tr><tr><td>&gt; 3,5 t</td><td>100 km/h</td><td>80 km/h</td><td>50 km/h</td></tr></tbody></table>
+| PTAC du camping-car | Autoroute | Voie rapide (2 chaussées séparées) | Route à 2 voies | Ville |
+| --- | --- | --- | --- | --- |
+| ≤ 3,5 t | 130 km/h (110 par temps de pluie) | 110 km/h | 80 km/h | 50 km/h |
+| > 3,5 t et ≤ 12 t | 110 km/h | 100 km/h | 80 km/h | 50 km/h |
 
-Ces limites concernent aussi les **fourgons aménagés** homologués VASP. Pour être valable, l’aménagement doit être fixe. Un lit, une cuisine ou des rangements inamovibles sont nécessaires. Un van avec un aménagement sommaire et démontable en moins de 2 heures reste en genre CTTE. Il suit alors les mêmes règles qu’un véhicule léger. Par exemple, un Citroën Berlingo aménagé avec une kitchenette mobile et un lit pliant n’a pas besoin de l’homologation VASP. Il peut rouler à 120 km/h sur autoroute.
+*Source : article R. 413-8 du code de la route, décret n° 2008-754 du 30 juillet 2008*
 
-Pour tracter une remorque, le permis B suffit si l’ensemble ne dépasse pas 3,5 t. Au-delà, le permis BE ou la mention B96 est obligatoire. Voici les limitations de vitesse avec remorque :
+Un camping-car de plus de 3,5 tonnes n'est **pas soumis au régime des poids lourds de transport de marchandises**, limités quant à eux à 90 km/h sur autoroute. Comme il transporte des personnes et non du fret, il relève d'un régime intermédiaire, plus favorable. C'est une confusion fréquente, y compris chez certains loueurs.
+
+Ces limites concernent aussi les **fourgons aménagés** homologués VASP, à condition que l'aménagement soit fixe : un lit, une cuisine ou des rangements inamovibles. Un van avec un aménagement sommaire et démontable en moins de deux heures reste en genre CTTE et suit alors les règles d'un véhicule léger classique, quel que soit son poids réel. Notre guide sur l'[aménagement d'un fourgon et l'homologation](/amenager-fourgon-soi-meme-homologation/) détaille cette distinction, décisive pour savoir quel régime de vitesse s'applique réellement.
+
+Pour tracter une remorque, le permis B suffit si l'ensemble ne dépasse pas 3,5 t. Au-delà, le permis BE ou la mention B96 devient obligatoire. Voici les limitations avec remorque :
 
 -   90 km/h sur autoroute pour un ensemble ≤ 3,5 t ;
 -   80 km/h sur autoroute pour un ensemble > 3,5 t ;
--   80 km/h sur route, quelle que soit la masse.
+-   80 km/h sur route, quelle que soit la masse de l'ensemble.
 
 ![Camping-car sur autoroute française avec panneaux de limitation de vitesse](/images/articles/limitation-vitesse-camping-car-1.webp)
 
 ## Limitation de vitesse camping-car en Europe : les différences par pays
 
-Les règles changent selon les pays. Voici les limitations pour un camping-car ≤ 3,5 t. Les modèles plus lourds suivent généralement les mêmes règles qu’en France, avec des variations locales.
+Les règles changent sensiblement selon les pays traversés. Voici les limitations pour un camping-car ≤ 3,5 t, le cas le plus courant pour un usage loisir.
 
-<table class="wp-block-table"><tbody><tr><td><strong>Pays</strong></td><td><strong>Autoroute</strong></td><td><strong>Route à 2 voies</strong></td><td><strong>Ville</strong></td></tr><tr><td>Espagne</td><td>120 km/h</td><td>90 km/h</td><td>50 km/h</td></tr><tr><td>Allemagne</td><td>Pas de limite sur certaines portions (recommandé : 130 km/h)</td><td>100 km/h</td><td>50 km/h</td></tr><tr><td>Portugal</td><td>120 km/h</td><td>90 km/h</td><td>50 km/h</td></tr><tr><td>Italie</td><td>130 km/h (110 km/h sous la pluie)</td><td>90 km/h</td><td>50 km/h</td></tr><tr><td>Belgique</td><td>120 km/h</td><td>90 km/h</td><td>50 km/h</td></tr></tbody></table>
+| Pays | Autoroute | Route à 2 voies | Ville |
+| --- | --- | --- | --- |
+| Espagne | 120 km/h | 90 km/h | 50 km/h |
+| Allemagne | Pas de limite sur certains tronçons (130 km/h recommandés) | 100 km/h | 50 km/h |
+| Portugal | 120 km/h | 90 km/h | 50 km/h |
+| Italie | 130 km/h (110 km/h sous la pluie) | 90 km/h | 50 km/h |
+| Belgique | 120 km/h | 90 km/h | 50 km/h |
 
-En **Espagne**, les camping-cars de plus de 3,5 t sont limités à 90 km/h sur autoroute. Sur route, la limite est de 80 km/h. En **Allemagne**, certains tronçons d’autoroute n’imposent aucune limite. Toutefois, une vitesse recommandée de 130 km/h s’applique. Avec une remorque, les limites baissent souvent de 10 à 20 km/h. Par exemple, en Espagne, un camping-car de 3,5 t avec remorque ne peut pas dépasser 80 km/h sur autoroute.
+*Source : sécurité routière des pays concernés, données 2026*
 
-## Disque de limitation de vitesse : obligatoire pour les camping-cars > 3,5 t ?
+En **Espagne**, les camping-cars de plus de 3,5 t sont limités à 90 km/h sur autoroute et 80 km/h sur route. En **Allemagne**, certains tronçons d'autoroute n'imposent aucune limite, mais une vitesse recommandée de 130 km/h s'applique pour tous les véhicules légers. Avec une remorque, les limites baissent souvent de 10 à 20 km/h selon le pays. Vérifiez toujours la réglementation locale avant un long trajet, les contrôles ciblant spécifiquement les camping-cars restent fréquents en période estivale.
 
-En France, les camping-cars de plus de 3,5 t doivent afficher un **disque de limitation de vitesse** à l’arrière. Ce disque indique 100 km/h. Il doit être visible et conforme à la norme. Un cercle rouge avec la vitesse en noir sur fond blanc est requis. Sans lui, vous risquez une amende de 135 €.
+## Disque de limitation de vitesse : que dit vraiment la loi ?
 
-Cette obligation concerne aussi les fourgons aménagés homologués VASP. Leur PTAC doit dépasser 3,5 t. En revanche, les vans et fourgons restés en genre CTTE en sont exemptés. Même s’ils dépassent ce poids, aucun disque n’est nécessaire. À l’étranger, certains pays imposent aussi ce disque. En Espagne ou en Italie, par exemple, les véhicules > 3,5 t doivent l’afficher. Vérifiez les règles locales avant de prendre la route. En Espagne, l’absence de disque peut coûter jusqu’à 200 €.
+Les professionnels de l'équipement camping-car recommandent fortement un **kit de trois disques** affichant 80, 100 et 110 km/h pour un camping-car de plus de 3,5 t, afin d'informer les autres usagers de la vitesse maximale réellement autorisée selon le type de route parcouru. Un cercle avec la vitesse inscrite en noir sur fond blanc reste le format attendu.
 
-![Arrière d'un camping-car avec un disque de limitation de vitesse à 100 km/h](/images/articles/limitation-vitesse-camping-car-2.webp)
+Cette pratique s'inspire des obligations applicables aux poids lourds de transport de marchandises, mais son caractère strictement obligatoire pour un camping-car fait débat parmi les professionnels du secteur. Dans le doute, mieux vaut l'installer : il ne coûte que quelques euros et évite toute discussion avec les forces de l'ordre lors d'un contrôle, notamment à l'étranger où certains pays l'exigent plus strictement, comme l'Espagne ou l'Italie pour les véhicules dépassant 3,5 tonnes.
+
+![Arrière d'un camping-car avec des disques de limitation de vitesse](/images/articles/limitation-vitesse-camping-car-2.webp)
 
 ## Stationnement et camping : ce qui est autorisé (ou pas) en France
 
-Un camping-car peut stationner sur la voie publique comme une voiture. Il doit respecter les règles de stationnement. Ainsi, il ne doit pas gêner ni présenter de danger. En revanche, **camper** est interdit sur la voie publique. Sortir une table, des chaises ou un auvent est prohibé. Cette distinction est cruciale :
+Un camping-car peut stationner sur la voie publique comme une voiture, en respectant les règles habituelles de stationnement. En revanche, **camper** est interdit sur la voie publique : sortir une table, des chaises ou déployer un auvent reste prohibé, même pour une seule nuit. Cette distinction est cruciale :
 
--   **Autorisé** : stationner pour la nuit et dormir à l’intérieur sans déployer d’équipement extérieur ;
--   **Interdit** : installer un auvent, sortir une table ou des chaises, poser des cales sous les roues.
+-   **Autorisé** : stationner pour la nuit et dormir à l'intérieur, sans déployer d'équipement extérieur.
+-   **Interdit** : installer un auvent, sortir du mobilier, poser des cales ou des niveleurs apparents sous les roues.
 
-Les aires de camping-car dédiées sont une alternative légale. Certaines communes interdisent le stationnement des camping-cars via des arrêtés municipaux. Toutefois, ces mesures sont souvent jugées illégales par la jurisprudence. Elles doivent être motivées par un risque avéré, comme un stationnement dangereux. Pour éviter les ennuis, privilégiez les parkings désignés ou les campings.
+Les aires de camping-car dédiées restent l'alternative la plus sûre. Certaines communes tentent d'interdire le stationnement des camping-cars par arrêté municipal, mais ces mesures sont régulièrement annulées par la jurisprudence administrative lorsqu'elles ne sont pas justifiées par un risque précis. Notre guide sur les [règles de stationnement en ville](/stationnement-camping-car-regles-ville/) détaille les recours possibles, et notre recensement des [aires gratuites en France](/aires-camping-car-gratuites-france/) aide à éviter tout litige.
 
-## Assurance et réglementation : ce qu’il faut vérifier avant de prendre la route
+## Assurance et réglementation : ce qu'il faut vérifier avant de prendre la route
 
-L’assurance d’un camping-car coûte entre **200 € et 600 € par an**. Le prix varie selon la formule. Un contrat tiers ou tous risques influence le tarif. La valeur du véhicule compte aussi. Avant de partir, vérifiez que votre contrat couvre :
+L'assurance d'un camping-car coûte généralement entre 200 € et 600 € par an, selon la formule tiers ou tous risques et la valeur du véhicule. Avant de partir, vérifiez que votre contrat couvre les **accessoires** (porte-vélos, auvent, équipement intérieur), souvent exclus des contrats auto standards, ainsi que la **remorque** si vous en tractez une. Notre [comparatif des assurances camping-car](/assurance-camping-car-comparatif/) détaille les garanties à privilégier selon votre usage.
 
--   Les **accessoires** : porte-vélos, auvent, équipement intérieur. Ils sont souvent exclus des contrats auto standards ;
--   La **remorque** si vous en tractez une. Certains assureurs exigent une extension de garantie ;
--   Les **vélos** transportés sur un porte-vélos. Le risque de vol n’est pas couvert par défaut.
+Pour les camping-cars de plus de 3,5 t, le **permis C1** est généralement nécessaire au-delà de 3,5 t jusqu'à 7,5 t, sauf pour les titulaires d'un permis B obtenu avant le 20 janvier 1975. Notre article sur le [permis B et le poids des camping-cars](/camping-car-permis-b-poids/) détaille les équivalences et les démarches. En cas de contrôle, présentez la carte grise avec la mention VASP pour les fourgons aménagés, le permis adapté au PTAC, et le disque de limitation si applicable.
 
-Pour les camping-cars > 3,5 t, certains assureurs imposent un **permis C**. Une formation spécifique peut aussi être requise. En cas de contrôle, vous devrez présenter :
+## Péages et frais annexes : prévoir le bon budget
 
--   La carte grise, avec la mention VASP pour les fourgons aménagés ;
--   Le permis adapté au PTAC du véhicule ;
--   Le disque de limitation de vitesse si applicable.
-
-Un oubli peut entraîner une amende. Pour un défaut de permis, elle est de 135 €. Pour un défaut d’assurance, elle atteint 750 €. Pour tout savoir sur les démarches et les pièges à éviter, consultez [notre guide complet sur l’assurance et la réglementation des camping-cars](/camping-car-van/assurance-reglementation).
-
-## Problèmes courants liés à la vitesse : voyants et codes OBD à surveiller
-
-Un camping-car qui roule souvent à haute vitesse peut subir des pannes. Les capteurs de vitesse ou le système ABS sont souvent en cause. Voici les codes OBD les plus fréquents et leurs causes :
-
-<table class="wp-block-table"><tbody><tr><td><strong>Code OBD</strong></td><td><strong>Libellé</strong></td><td><strong>Causes possibles</strong></td></tr><tr><td>P0500</td><td>Dysfonctionnement du capteur de vitesse</td><td>Capteur défectueux, câblage endommagé, connecteur oxydé</td></tr><tr><td>P0501</td><td>Plage/performance du capteur de vitesse</td><td>Capteur ou couronne (reluctor ring) endommagé, calculateur défaillant</td></tr><tr><td>P0503</td><td>Signal intermittent/erratique du capteur de vitesse</td><td>Connecteur desserré, câblage endommagé (cause la plus probable)</td></tr><tr><td>C0050</td><td>Capteur ABS arrière gauche défaillant</td><td>Capteur ou cible ABS usée, câblage en court-circuit</td></tr><tr><td>U0001</td><td>Circuit CAN-bus haute vitesse défaillant</td><td>Module de communication CAN défectueux, câblage endommagé</td></tr></tbody></table>
-
-Ces codes peuvent affecter le compteur de vitesse. Ils influencent aussi le régulateur de vitesse ou les changements de rapports. Si un voyant s’allume, faites diagnostiquer le véhicule rapidement. Une panne du capteur de vitesse peut entraîner une perte de contrôle du régulateur. Cela devient dangereux sur autoroute. Pour un modèle comme le **Citroën Berlingo 2e génération (2008-2018)**, les pannes récurrentes incluent des problèmes de pompe à vide. L’assistance au freinage peut alors être perdue. L’embrayage pose aussi souvent problème, surtout sur les versions diesel. Un entretien régulier limite ces risques.
+Au-delà de la vitesse, un camping-car lourd change aussi de catégorie au péage. Les gestionnaires d'autoroutes classent généralement les véhicules selon leur hauteur et leur PTAC, ce qui peut faire basculer un fourgon aménagé en classe 2 ou 3 plutôt qu'en classe 1, avec un tarif sensiblement plus élevé. Notre guide sur les [classes de péage pour camping-car](/peage-camping-car-classe/) permet d'anticiper ce surcoût avant un long trajet.
 
 ## Préparer son road-trip : checklist avant le départ
 
-Avant de prendre la route, vérifiez ces points :
+Avant de prendre la route, vérifiez ces points essentiels :
 
--   **Le PTAC** de votre camping-car et de la remorque, si applicable ;
--   **Les limitations de vitesse** des pays traversés. Par exemple, en Espagne, les > 3,5 t sont limités à 90 km/h sur autoroute ;
--   **Le disque de limitation** si votre véhicule dépasse 3,5 t ;
--   **L’assurance**. Vérifiez la couverture des accessoires et de la remorque ;
--   **Les documents** : carte grise, permis, attestation d’assurance.
+-   Le **PTAC** de votre camping-car et de la remorque éventuelle, indiqué en case F2 de la carte grise.
+-   Les **limitations de vitesse** des pays traversés, particulièrement pour un véhicule dépassant 3,5 t.
+-   Le **disque de limitation** si votre véhicule dépasse 3,5 t, même si son caractère obligatoire reste discuté.
+-   L'**assurance**, avec la couverture des accessoires et de la remorque vérifiée en amont.
+-   Les **documents** : carte grise, permis adapté, attestation d'assurance à jour.
 
-Pour un road-trip en Europe, prévoyez aussi un **kit de sécurité**. Un gilet jaune, un triangle et un éthylotest sont indispensables. Un adaptateur de prise électrique est utile pour le Royaume-Uni ou la Suisse. En cas de doute sur les règles locales, une vérification rapide peut éviter une amende salée.
+Pour un road-trip hivernal, les contraintes changent encore. Notre guide sur le [camping-car en hiver et à la montagne](/camping-car-hiver-ski-conseils/) détaille les équipements supplémentaires à prévoir, pneus et chaînes en tête.
+
+## Questions fréquentes
+
+### Un camping-car de plus de 3,5 tonnes roule-t-il à 90 km/h comme un poids lourd ?
+
+Non. Il relève d'un régime distinct réservé aux véhicules de transport de personnes, avec 110 km/h sur autoroute, 100 km/h sur voie rapide et 80 km/h sur route, tant que son PTAC ne dépasse pas 12 tonnes.
+
+### Le disque de limitation de vitesse est-il obligatoire sur un camping-car ?
+
+Son caractère obligatoire fait débat pour les camping-cars, contrairement aux poids lourds de marchandises. Les professionnels du secteur le recommandent fortement au-delà de 3,5 t, notamment pour les trajets à l'étranger où certains pays le contrôlent plus strictement.
+
+### Quel permis faut-il pour un camping-car de plus de 3,5 tonnes ?
+
+Le permis C1 est généralement requis entre 3,5 et 7,5 tonnes, sauf pour les titulaires d'un permis B obtenu avant le 20 janvier 1975, qui conservent ce droit sans repasser d'examen.
+
+### Peut-on dormir dans son camping-car sur un parking public ?
+
+Oui, tant que vous restez à l'intérieur du véhicule sans déployer d'équipement extérieur. Sortir une table, des chaises ou un auvent relève du camping, interdit hors des zones autorisées.
+
+### Les limites de vitesse changent-elles avec une remorque ?
+
+Oui, elles baissent systématiquement. Un ensemble camping-car plus remorque de moins de 3,5 tonnes est limité à 90 km/h sur autoroute, contre 110 ou 130 km/h sans remorque selon le PTAC du camping-car seul.

@@ -1,7 +1,7 @@
 ---
 title: "Leasing vélo entreprise : prix, avantages fiscaux et comment le mettre en place"
 description: "Le leasing vélo entreprise permet aux salariés de rouler à vélo sans achat. Coût mensuel, avantages fiscaux et étapes pour le mettre en place en entreprise"
-date: "2026-08-23"
+date: "2026-11-22"
 author: "karim-belaid"
 category: "aides-a-l-achat"
 wp_id: 1704
@@ -9,106 +9,103 @@ wp_locale: "fr"
 image: "/images/articles/leasing-velo-entreprise-couverture.webp"
 imageAlt: "Leasing vélo entreprise : prix, avantages fiscaux et comment le mettre en place"
 ---
-Vous voulez équiper vos salariés d’un vélo sans les faire payer ? Le leasing vélo entreprise est la solution. Pour 15 à 40 € par mois, vos équipes roulent à vélo électrique ou classique. En effet, vous bénéficiez aussi d’avantages fiscaux. On vous explique comment ça marche, combien ça coûte, et quelles aides existent en 2026.
+***Équiper vos salariés d'un vélo sans qu'ils déboursent un euro, c'est tout l'intérêt du leasing vélo entreprise. Pour 15 à 40 € par mois, vos équipes roulent à vélo électrique ou classique, entretien souvent compris.***
+
+TL;DR : l'entreprise loue des vélos sur 24 à 48 mois auprès d'un prestataire spécialisé, déduit les loyers et récupère la TVA, pendant que le salarié profite du forfait mobilités durables pour alléger encore la facture.
+
+-   Comptez **15 à 25 €/mois** pour un vélo classique, **25 à 45 €/mois** pour un vélo à assistance électrique.
+-   Les loyers sont **déductibles du résultat** et la TVA est récupérable si l'usage est professionnel.
+-   Le **forfait mobilités durables** (FMD) peut couvrir jusqu'à 600 € par an et par salarié, en plus du dispositif de leasing.
 
 ## Leasing vélo entreprise : combien ça coûte ?
 
-Le prix d’un leasing vélo entreprise dépend du modèle choisi et de la durée du contrat. Voici ce qu’il faut prévoir :
+Le prix d'un leasing vélo entreprise dépend du modèle choisi et de la durée du contrat, généralement comprise entre 24 et 48 mois.
 
 | Type de vélo | Prix mensuel (leasing) | Durée typique |
 | --- | --- | --- |
-| Vélo classique | 15–25 €/mois | 3 ans |
-| Vélo électrique (VAE) | 25–40 €/mois | 3 ans |
+| Vélo classique | 15–25 €/mois | 24 à 36 mois |
+| Vélo électrique (VAE) | 25–45 €/mois | 24 à 48 mois |
+| Vélo cargo électrique | 50–80 €/mois | 36 à 48 mois |
 
-*Source : données compilées*
+Ces tarifs incluent souvent l'**entretien et l'assurance** vol-casse, mais vérifiez toujours le contrat ligne par ligne. Certains loueurs facturent ces garanties en option, ce qui change nettement le calcul. Pour un VAE, comptez plutôt 30 à 45 €/mois : plus cher qu'un vélo classique, mais nettement plus attractif pour les salariés sur des trajets longs ou vallonnés, comme le détaille notre guide sur l'[entretien et le coût réel d'un vélo électrique](/entretien-velo-electrique-cout/).
 
-Ces tarifs incluent souvent l’entretien et l’assurance. Toutefois, vérifiez bien les contrats. Certains loueurs proposent des options comme le remplacement en cas de panne ou de vol.
+## Quels avantages fiscaux pour l'entreprise ?
 
-Pour un vélo électrique, comptez plutôt 30–40 €/mois. C’est plus cher, mais plus attractif pour les salariés. Surtout sur des trajets longs ou vallonnés. Un VAE, c’est moins de sueur et plus de kilomètres sans effort.
+Le leasing vélo entreprise ouvre droit à plusieurs avantages fiscaux cumulables. D'abord, une **réduction d'impôt de 25 %** s'applique sur les loyers versés pour un vélo mis à disposition des salariés, plafonnée à 1 000 € par vélo et par an. Pour un loyer de 30 €/mois, cela représente 90 € récupérés sur l'année.
 
-## Quels avantages fiscaux pour l’entreprise ?
-
-Le leasing vélo entreprise ouvre droit à des avantages fiscaux. D’abord, une réduction d’impôt de 25 % sur les loyers versés. Elle est plafonnée à 1 000 € par vélo et par an. Par exemple, pour un loyer de 30 €/mois, vous récupérez 90 € par an.
-
-Ensuite, la participation de l’employeur au loyer est exonérée de charges sociales. Cela dans la limite de 600 €/an par salarié. Enfin, la TVA est déductible à 100 % si le vélo sert pour des trajets professionnels. Ainsi, ces dispositifs s’ajoutent aux économies réalisées sur les frais de parking ou les indemnités kilométriques.
+Ensuite, la participation de l'employeur au loyer est **exonérée de charges sociales**, dans la limite du plafond du forfait mobilités durables. Enfin, la TVA est déductible à 100 % si le vélo sert exclusivement à des trajets professionnels, et partiellement en cas d'usage mixte. Ces dispositifs s'ajoutent aux économies réalisées sur les places de parking ou les indemnités kilométriques versées pour des trajets en voiture.
 
 ## Comment mettre en place un leasing vélo en entreprise ?
 
 Voici les étapes pour lancer un leasing vélo entreprise :
 
-1.  **Choisir un loueur spécialisé** : des entreprises comme Bike2Mobility ou Vélo Company proposent des contrats adaptés. Comparez les offres, notamment sur l’entretien inclus ou non.
-2.  **Définir le budget et le type de vélo** : vélo classique ou électrique ? Tout dépend des trajets de vos salariés. Un VAE encourage plus de monde à se mettre en selle.
-3.  **Signer un contrat de location longue durée (LLD)** : la durée typique est de 3 ans. Une option d’achat est souvent proposée en fin de contrat.
-4.  **Informer et former les salariés** : expliquez les avantages, les règles d’utilisation et les aides disponibles. Par exemple, le forfait mobilités durables.
-5.  **Suivre et évaluer** : après quelques mois, faites un bilan pour ajuster le dispositif.
-
-Certains loueurs proposent aussi des services clés en main. Ainsi, vous pouvez installer des parkings sécurisés ou organiser des ateliers de réparation en entreprise.
+1.  **Choisir un loueur spécialisé.** Des acteurs comme Zenride, Ayvens (ex-ALD Automotive) ou Lease a Bike proposent des contrats de vélo de fonction en location longue durée, avec entretien et assistance inclus selon les formules. Comparez systématiquement ce qui est couvert en cas de panne ou de vol.
+2.  **Définir le budget et le type de vélo.** Vélo classique ou électrique, tout dépend des trajets de vos salariés. Un VAE encourage davantage de monde à se mettre en selle, surtout au-delà de 5 km.
+3.  **Signer un contrat de location longue durée (LLD).** La durée typique va de 24 à 48 mois. Une option d'achat est parfois proposée en fin de contrat, mais elle reste l'exception plutôt que la règle.
+4.  **Informer et former les salariés.** Expliquez les avantages, les règles d'utilisation et les aides disponibles, notamment le [forfait mobilités durables](/forfait-mobilites-durables-velo/).
+5.  **Suivre et évaluer.** Après quelques mois, faites un bilan d'usage réel pour ajuster le nombre de vélos ou les modèles proposés.
 
 ![Salarié utilisant un vélo électrique en leasing pour ses trajets domicile-travail](/images/articles/leasing-velo-entreprise-1.webp)
 
 ## Leasing vélo vs achat : lequel choisir ?
 
-Le leasing et l’achat ont chacun leurs atouts. Le leasing permet de tester le dispositif sans engagement lourd. Les loyers mensuels et l’entretien sont souvent inclus. L’achat, lui, est plus rentable sur le long terme. Toutefois, il faut assumer l’entretien et le risque de vol.
-
-Voici un comparatif pour vous aider à trancher :
+Le leasing et l'achat ont chacun leurs atouts. Le leasing permet de **tester le dispositif sans engagement lourd**, loyers et entretien souvent regroupés en une seule mensualité. L'achat, lui, reste plus rentable sur le long terme, mais l'entreprise assume alors l'entretien et le risque de vol en direct.
 
 | Critère | Leasing | Achat |
 | --- | --- | --- |
-| Coût initial | Faible (loyer mensuel) | Élevé (investissement) |
-| Entretien | Souvent inclus | À la charge de l’entreprise |
-| Flexibilité | Élevée (changement de modèle possible) | Faible (vélo acheté = vélo gardé) |
-| Avantages fiscaux | Réduction d’impôt + TVA déductible | Amortissement sur 3–5 ans |
-| Engagement | 3 ans typiquement | Durée de vie du vélo (5–10 ans) |
+| Coût initial | Faible (loyer mensuel) | Élevé (investissement immédiat) |
+| Entretien | Souvent inclus | À la charge de l'entreprise |
+| Flexibilité | Élevée (changement de modèle possible) | Faible (le vélo acheté reste acheté) |
+| Avantages fiscaux | Réduction d'impôt 25 % + TVA déductible | Amortissement sur 3 à 5 ans |
+| Engagement | 24 à 48 mois | Durée de vie du vélo (5 à 10 ans) |
 
-*Source : données compilées*
+Un bon compromis consiste à démarrer par un leasing pour quelques salariés volontaires, puis à passer à l'achat une fois le dispositif éprouvé en interne.
 
-Un bon compromis ? Commencez par un leasing pour quelques salariés. Ensuite, passez à l’achat si le dispositif fonctionne bien.
+## Quelles aides pour réduire encore la facture ?
 
-## Quelles aides pour le leasing vélo entreprise ?
+En plus des avantages fiscaux de l'entreprise, deux dispositifs réduisent le reste à charge du salarié :
 
-En plus des avantages fiscaux, des aides locales ou nationales réduisent le coût du leasing vélo entreprise :
+-   **Forfait mobilités durables (FMD)** : jusqu'à 600 € par an et par salarié pour les trajets domicile-travail à vélo, exonéré de charges sociales et d'impôt sur le revenu. Il grimpe à 900 € en cas de cumul avec un abonnement de transport en commun. Notre article sur le [forfait mobilités durables](/forfait-mobilites-durables-velo/) détaille les conditions d'activation.
+-   **Aides locales** : certaines régions ou métropoles proposent encore des subventions à l'achat ou à la location, mais la prime nationale pour les vélos électriques a été supprimée en février 2025. Notre guide sur les [aides locales et régionales 2026](/prime-velo-electrique-2026/) recense les dispositifs encore actifs selon votre code postal.
 
--   **Forfait mobilités durables (FMD)** : jusqu’à 600 €/an par salarié pour les trajets domicile-travail à vélo. Il est exonéré de charges sociales et d’impôt sur le revenu.
--   **Aides locales** : certaines régions ou métropoles (Paris, Lyon, Nantes) proposent des subventions. Elles visent les entreprises qui mettent en place des plans de mobilité durable.
--   **Prime à la conversion** : si vous remplacez une voiture de société par des vélos, certaines aides peuvent s’appliquer.
-
-Pour maximiser les économies, combinez le leasing avec le forfait mobilités durables. Par exemple, si le loyer est de 30 €/mois, le FMD peut couvrir 20 €. Ainsi, le salarié ne paie que 10 €.
+Pour maximiser les économies, combinez le leasing avec le forfait mobilités durables. Si le loyer est de 30 €/mois, le FMD peut en couvrir une bonne partie selon le barème retenu par l'employeur, le salarié ne payant alors que le solde.
 
 ## Leasing vélo entreprise : les pièges à éviter
 
-Le leasing vélo entreprise semble simple. Pourtant, quelques erreurs peuvent coûter cher :
+Le dispositif semble simple, mais quelques erreurs reviennent souvent et coûtent cher :
 
--   **Ne pas vérifier les garanties** : certains contrats n’incluent pas le vol ou la casse. Vérifiez que l’assurance est bien incluse.
--   **Oublier l’entretien** : un vélo mal entretenu tombe en panne. Prévoyez un budget pour les révisions ou choisissez un contrat qui les inclut.
--   **Choisir un vélo inadapté** : adaptez le modèle aux besoins de vos salariés. Vélo de ville, VAE ou vélo cargo, tout dépend des trajets.
--   **Négliger la sécurité** : prévoyez des parkings sécurisés et des antivols de qualité.
--   **Ne pas communiquer** : si vos salariés ne savent pas que le leasing existe, le dispositif ne servira à rien. Prévoyez une campagne d’information en interne.
-
-Testez le dispositif avec un petit groupe de salariés motivés. Leurs retours vous aideront à ajuster l’offre.
+-   **Ne pas vérifier les garanties.** Certains contrats n'incluent pas le vol ou la casse accidentelle. Vérifiez que l'assurance est bien comprise, et pas simplement proposée en option payante.
+-   **Oublier l'entretien.** Un vélo mal entretenu tombe en panne plus vite. Prévoyez un budget dédié ou choisissez un contrat qui inclut les révisions.
+-   **Choisir un vélo inadapté.** Vélo de ville, VAE ou vélo cargo : adaptez le modèle aux trajets réels de vos salariés plutôt qu'à un choix générique.
+-   **Négliger la sécurité.** Prévoyez des parkings sécurisés et des antivols certifiés. Notre [comparatif des antivols en U](/antivol-velo-u-comparatif/) aide à choisir un modèle réellement dissuasif.
+-   **Ne pas communiquer.** Si vos salariés ignorent que le dispositif existe, il ne servira à rien. Une campagne d'information interne reste indispensable au lancement.
 
 ![Parking vélo sécurisé en entreprise avec vélos en leasing](/images/articles/leasing-velo-entreprise-2.webp)
 
-## Leasing vélo entreprise : témoignages et retours d’expérience
+## Et après : faire vivre le dispositif dans la durée
 
-Pour vous donner une idée concrète, voici ce que disent les entreprises qui ont sauté le pas :
+Une fois le leasing mis en place, plusieurs leviers permettent d'aller plus loin. Étendez le dispositif à davantage de salariés ou ajoutez des options comme les vélos cargos. Combinez le leasing vélo avec d'autres solutions de mobilité, covoiturage ou autopartage, dans le cadre d'un plan de mobilité employeur plus large.
 
-> « On a équipé 15 salariés en VAE il y a un an. 80 % l’utilisent au moins 2 fois par semaine pour venir au bureau. Les retours sont super positifs, surtout sur les trajets de plus de 5 km. »
-> 
-> Thomas, responsable RSE dans une PME lyonnaise
+Organisez aussi des temps forts pour ancrer l'usage : challenges inter-équipes, ateliers de réparation en entreprise, ou simple marquage [Bicycode](/marquage-bicycode-obligatoire/) des vélos pour en faciliter la restitution en cas de vol. Pour les salariés qui découvrent le vélo au quotidien, notre guide pour [débuter le vélotaf](/velotaf-debuter-conseils/) complète utilement l'accompagnement proposé par l'entreprise. Enfin, communiquez sur votre démarche dans votre rapport RSE ou sur vos réseaux sociaux, un argument de recrutement de plus en plus regardé par les candidats.
 
-> « Le leasing nous a permis de tester sans risque. On a commencé avec 5 vélos, et aujourd’hui on en a 30. Les salariés adorent, et ça nous coûte moins cher que les places de parking qu’on a pu supprimer. »
-> 
-> Sophie, DRH dans une startup nantaise
+## Questions fréquentes
 
-Ces retours montrent que le leasing vélo entreprise réduit les coûts. Ainsi, il améliore aussi le bien-être des salariés.
+### Le leasing vélo entreprise est-il réservé aux grandes entreprises ?
 
-## Leasing vélo entreprise : et après ?
+Non. La plupart des loueurs spécialisés acceptent des contrats dès quelques vélos, ce qui convient aussi bien à une PME qu'à une grande structure.
 
-Une fois le leasing mis en place, voici comment aller plus loin :
+### Le salarié peut-il garder le vélo en cas de départ de l'entreprise ?
 
--   **Étendre le dispositif** : proposez-le à plus de salariés ou ajoutez des options. Par exemple, vélos cargos ou remorques.
--   **Créer un plan de mobilité entreprise (PDE)** : combinez le leasing vélo avec d’autres solutions. Covoiturage ou autopartage, par exemple.
--   **Organiser des événements** : challenges inter-équipes ou ateliers de réparation. Ils renforcent la cohésion.
--   **Communiquer en externe** : mettez en avant votre démarche éco-responsable. Dans votre rapport RSE ou sur vos réseaux sociaux, par exemple.
+Cela dépend du contrat. Certains loueurs prévoient un transfert du contrat au nom du salarié ou une option de rachat, d'autres imposent la restitution immédiate du vélo au loueur.
 
-Pour aller plus loin, consultez [les aides à l’achat](/velo-nouvelles-mobilites/aides-a-l-achat) ou découvrez [toutes nos ressources sur la mobilité durable](/velo-nouvelles-mobilites).
+### Le forfait mobilités durables est-il obligatoire pour l'employeur ?
+
+Non. Le FMD reste facultatif, sauf accord de branche ou d'entreprise qui en prévoirait l'obligation. L'entreprise choisit librement le montant versé, dans la limite du plafond exonéré.
+
+### Existe-t-il encore une prime nationale pour les vélos électriques des salariés ?
+
+Non. L'État a supprimé la prime nationale à l'achat d'un vélo électrique en février 2025. Seules des aides locales ou régionales subsistent selon les territoires, en complément du leasing et du forfait mobilités durables.
+
+### Quelle est la durée minimale d'un contrat de leasing vélo ?
+
+La plupart des loueurs proposent des contrats de 24 à 48 mois. En dessous, la mensualité grimpe souvent de façon significative, rendant l'achat direct plus pertinent pour un usage très court.
