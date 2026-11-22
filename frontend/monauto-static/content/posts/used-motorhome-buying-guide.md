@@ -1,79 +1,104 @@
 ---
-title: "Used Motorhome Buyer’s Guide 2026: Prices, Tips and Pitfalls to Avoid"
-description: "Discover the average prices of used motorhomes in 2026, the key criteria for making the right choice and the common pitfalls to avoid. Real-life example: a"
+title: "Used Motorhome Buyer's Guide 2026: Prices, Tips and Pitfalls to Avoid"
+description: "Used motorhomes sell for €10,000 to €80,000 in 2026. Engine, brakes and waterproofing matter as much as the price tag. Checks, costs and buying tips."
 date: "2026-10-19"
 author: "nathalie-moreau"
 wp_id: 1613
 wp_locale: "en"
 image: "/images/articles/used-motorhome-buying-guide-couverture.webp"
-imageAlt: "Camping-car d'occasion : prix, conseils et pièges à éviter en 2026"
+imageAlt: "Used motorhome buyer's guide 2026: prices, tips and pitfalls to avoid"
 ---
-In 2026, a used motorhome will set you back between €10,000 and €80,000. For a 400 km weekend trip with a bike rack in tow, the condition of the engine and brakes is critical. Here’s how to assess a realistic budget, spot the most common pitfalls and secure your purchase—whether you buy from a private seller or a dealer.
+***A used motorhome sells for €10,000 to €80,000 in 2026. The condition of the engine, the brakes and the waterproofing weighs as much on the decision as the price on the ad.***
 
-## What budget should you plan for a used motorhome in 2026?
+Buying a used motorhome means looking well past the bodywork and the interior decor. Here's how to set a realistic budget, spot the most common pitfalls and secure the purchase, whether you buy from a private seller or a dealer.
+
+TL;DR: a reliable used motorhome sits between €20,000 and €35,000 for a first purchase, provided you check the waterproofing, the engine, the brakes and the history before signing.
+
+-   **Depreciation** reaches 15 to 20% a year over the first three years.
+-   Past **80,000 km**, the risk of mechanical breakdown rises noticeably.
+-   Insurance costs **€200 to €600 a year**, depending on the vehicle's value.
 
 ![Used motorhome parked by the roadside with mountain views](/images/articles/camping-car-occasion-prix-conseils-1.webp)
 
-A model from the 2010s with 100,000 km on the clock typically sells for around €25,000. A more recent vehicle (2020–2023) with under 50,000 km often exceeds €50,000. Camper vans, being more compact, start at around €15,000.
+## What budget should you plan for a used motorhome in 2026?
 
-Three factors drive up the cost:
+**A reliable motorhome sits between €20,000 and €35,000**, a budget that opens the door to low-profile models from 2015-2018 with under 70,000 km.
 
--   Age: depreciation of 15–20% per year in the first three years.
--   Mileage: beyond 80,000 km, the risk of mechanical breakdown increases.
--   Equipment: gas heating or solar panels add €3,000 to €8,000 to the price.
+A model from the 2010s with 100,000 km on the clock typically sells for around €25,000. A more recent vehicle, from 2020 to 2023, with under 50,000 km, often exceeds €50,000. Camper vans, being more compact, start around €15,000.
 
-For a first purchase, a budget of €20,000 to €35,000 will get you a reliable model. For example, a low-profile motorhome from 2015–2018 with under 70,000 km. To compare different body types, check out [our guide on low-profile, integrated or over-cab motorhomes](/en/motorhomes-campervans/choosing-motorhome-type-guide).
+### Typical price by vehicle profile
 
-## 5 key checks before buying
+| Profile | Typical price (2026) |
+| --- | --- |
+| Camper van, compact | From €15,000 |
+| 2010s low-profile, ~100,000 km | Around €25,000 |
+| First-purchase sweet spot, 2015-2018, under 70,000 km | €20,000-35,000 |
+| 2020-2023 model, under 50,000 km | Over €50,000 |
 
-A used motorhome often hides flaws that aren’t immediately obvious. Here’s what to inspect:
+Three factors push the price up: **age**, with depreciation of 15 to 20% a year over the first three years; **mileage**, since the risk of mechanical breakdown rises noticeably past 80,000 km; and **equipment**, since gas heating or solar panels add €3,000 to €8,000 to the final price. To compare body types before setting a budget, see our guide on [low-profile, coachbuilt or over-cab motorhomes](/choosing-motorhome-type-guide/).
 
-### 1\. Waterproofing and insulation
+## Which checks matter most before buying?
 
-A water leak can lead to mould. Check the seals around windows and the roof. Tap the walls—if they sound hollow, the insulation may have come away. In winter, poor insulation means higher gas consumption.
+A used motorhome often hides flaws that aren't obvious at first glance. Five checks matter more than the rest.
 
-### 2\. Engine and gearbox
+**Waterproofing and insulation** come first. A water leak causes mould, so check the seals around the windows and the roof, and tap the walls: a hollow sound signals the insulation has come loose. Poor insulation also shows up as higher gas use in winter, covered in more detail in our [motorhome waterproofing check guide](/motorhome-waterproofing-check-guide/).
 
-![Mechanic checking the engine of a used motorhome in a workshop](/images/articles/camping-car-occasion-prix-conseils-2.webp)
+**The engine and gearbox** need a test drive of at least 30 minutes. Listen for unusual noises and test the acceleration: a crunchy gearbox or a slipping clutch signal advanced wear. For a vehicle over 100,000 km, budget €1,500 to €3,000 for maintenance over the first years.
 
-A 30-minute test drive is essential. Listen for unusual noises and test the acceleration. A crunchy gearbox or slipping clutch are signs of advanced wear. For a vehicle with over 100,000 km, budget €1,500 to €3,000 for maintenance.
+**Brakes and tyres** turn a trip dangerous if neglected. Check the brake pad thickness and the tread depth: the legal minimum sits at 1.6 mm, but 3 mm is recommended for real safety. A new set of tyres costs €600 to €1,200.
 
-### 3\. Brakes and tyres
+**Electronics and equipment** need a full test: heating, fridge, lighting, and the condition of the leisure battery, essential for nights off-grid and covered in our [leisure battery maintenance guide](/leisure-battery-maintenance-tips/).
 
-Worn brakes or bald tyres turn a journey into a hazard. Check the thickness of the brake pads and the tread depth. The legal minimum is 1.6 mm, but 3 mm is recommended for safety. A new set of tyres costs between €600 and €1,200.
+**History and paperwork** close the check. Ask for the service log, repair invoices and a history report like HistoVec, and check for any outstanding finance on the ANTS website. Tampered mileage can void the sale or justify a sharp price cut.
 
-### 4\. Electronics and equipment
+## What insurance and licence rules apply?
 
-Test all the equipment: heating, fridge and lights. Electrical problems can be expensive to fix. Also check the condition of the auxiliary battery—essential for off-grid nights.
+Insuring a used motorhome costs **€200 to €600 a year**. For a €30,000 model, expect around €30 a month for fully comprehensive cover, and always check whether accessories like a bike rack or bikes are included by default.
 
-### 5\. History and paperwork
+On regulations, a motorhome can park anywhere a car is allowed, but camping on public roads stays prohibited. For a vehicle over 3,500 kg, a **category C licence** becomes necessary, unless you passed your test before 1975 under code B79. To tow a bike or car trailer over 750 kg without exceeding 4,250 kg for the whole combination, code **B96** suffices, with no need to retake a test. Our article on [category B licences and motorhome weight limits](/motorhome-weight-licence-guide/) details these thresholds precisely.
 
-Ask for the service log, repair invoices and a history report like HistoVec. Also check for any outstanding finance via the ANTS website. Tampered mileage can void the sale or reduce the price.
+## Private seller or dealer: what's the real difference?
 
-## Insurance and regulations: what you need to know
+The asking price is only part of the equation. A private seller usually offers a lower price, but with no legal warranty beyond the statutory protection against hidden defects. The buyer takes the vehicle as-is, with any undisclosed faults, and any later claim means proving the defect already existed at the sale.
 
-Insuring a used motorhome costs between €200 and €600 a year. For a €30,000 model, expect to pay around €30 a month for comprehensive cover. Also check whether accessories like a bike rack or bikes are included in the policy.
+A dealer, or a specialist broker, charges more but often includes a commercial warranty of several months, a recent roadworthiness test, and sometimes a full service before handing over the keys. That warranty generally covers the mechanics and essential equipment, rarely the waterproofing of the living area, which stays the point to inspect yourself before signing, whoever the seller is.
 
-When it comes to regulations, a motorhome can park anywhere a car is allowed. However, camping on public roads is prohibited. For vehicles over 3,500 kg, a category C licence is required—unless you passed your test before 1975 (code B79). To tow a bike rack or car trailer over 750 kg without exceeding 4,250 kg for the combined weight, the B96 code is sufficient—no need to retake your test. For more on this, see [our article on category B licences and motorhome weights](/en/motorhomes-campervans/motorhome-weight-licence-guide).
+In both cases, the vehicle transfer declaration stays a mandatory step, separate from price negotiation. It transfers administrative responsibility for the motorhome to the new owner and must be completed without delay after signing.
 
-## Buying from a private seller vs a dealer: the real differences
+## How do you finance the purchase?
 
-The asking price is only part of the story. A private seller will usually offer a lower price, but with no legal warranty beyond the statutory protection against hidden defects. You get the vehicle as-is, with any undisclosed faults, and any later claim means proving the defect existed at the time of sale.
+Beyond paying cash, two options come up most often among used motorhome buyers. A **dedicated loan** finances only the vehicle named in the contract, with funds paid directly to the seller, which reassures both parties but means finalising the choice of vehicle before applying for finance.
 
-A dealer (or specialist broker) charges more but often includes a commercial warranty of several months, a recent MOT (contrôle technique) and sometimes a full service before handing over the keys. This warranty typically covers the mechanics and essential equipment (heating, fridge, electrics), but rarely the waterproofing of the living area—which remains your responsibility to check before signing, regardless of the seller.
+**Lease purchase** stays more common on new vehicles than on recent used ones. It lets you drive the motorhome for set monthly payments, then decide whether to exercise the purchase option at the end of the contract. Before committing, compare the total cost of the loan, interest included, against the cash price, and check that the lender's insurance isn't systematically pricier than an equivalent policy taken out elsewhere.
 
-In both cases, the vehicle transfer declaration (déclaration de cession) is a mandatory step in the transaction—separate from price negotiations. It transfers administrative responsibility for the motorhome to the new owner and must be completed without delay after signing.
+## Where to buy, and how do you negotiate?
 
-## Financing your purchase: common options
+Specialist platforms list thousands of ads to compare. To negotiate, target visible flaws, scratches or worn seats: a seller in a hurry sometimes drops the price by 5 to 10% for a quick, unconditional payment.
 
-Beyond paying in cash, two options are most common among used motorhome buyers. A dedicated loan (crédit affecté) finances only the specific vehicle named in the contract: funds are paid directly to the seller, which reassures both parties but means finalising your choice before applying for finance.
+Before travelling to view a vehicle, always ask for recent photos of the interior, the underside of the chassis and the mileage display, plus a copy of the latest roadworthiness test. A seller who refuses to share these before a visit, or who rushes the sale without allowing a full test drive, should raise suspicion. To compare against buying new, our [depreciation guide for new motorhomes](/motorhome-depreciation-first-year/) quantifies the value lost over the first years.
 
-Lease purchase (LOA) is more common for new vehicles than recent used ones. It lets you drive the motorhome for set monthly payments, then decide whether to buy it at the end of the contract. Before committing, compare the total cost of the loan (including interest) with the cash price, and check that the borrower’s insurance isn’t automatically more expensive than an equivalent policy elsewhere.
+## Frequently asked questions
 
-## Where to buy and how to negotiate
+### What's the minimum budget for a reliable used motorhome?
 
-Platforms like Annonces Caravaning or Libertium list thousands of ads. To negotiate, target visible flaws like scratches or worn seats. A seller in a hurry may drop the price by 5–10% if you offer quick payment.
+Count on €20,000 to €35,000 for a reliable model, often a low-profile from 2015-2018 with under 70,000 km on the clock.
 
-Before travelling to view a vehicle, always ask for recent photos of the interior, the underside of the chassis and the mileage display, plus a copy of the latest MOT (contrôle technique). A seller who refuses to provide these before a visit—or who rushes the sale without allowing a full test drive—should raise suspicions.
+### Up to what mileage does a motorhome stay reliable?
 
-For a stress-free purchase, also see [our complete guide to buying a motorhome](/en/motorhomes-campervans/buying-guide) and our [depreciation comparison for new motorhomes](/en/motorhomes-campervans/motorhome-depreciation-first-year).
+Past 80,000 km, the risk of mechanical breakdown rises noticeably. Budget €1,500 to €3,000 for maintenance on a vehicle past that threshold.
+
+### How do you spot a waterproofing problem before buying?
+
+Tap the interior walls: a hollow sound signals the insulation has come loose. Also check the seals around the windows and the roof, the first points where water gets in.
+
+### Do you need a special licence to drive a motorhome over 3,500 kg?
+
+Yes, a category C licence becomes necessary above 3,500 kg, unless you passed your test before 1975 under code B79.
+
+### Does a private seller offer any warranty on a used motorhome?
+
+No, beyond the statutory warranty against hidden defects. The buyer takes the vehicle as-is, unlike a purchase from a dealer, which often includes a commercial warranty of several months.
+
+### How much does insuring a used motorhome cost?
+
+€200 to €600 a year, depending on the vehicle's value and the cover chosen, around €30 a month for a €30,000 model under fully comprehensive insurance.

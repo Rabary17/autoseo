@@ -1,141 +1,113 @@
 ---
 title: "Pro-Level Van Conversion: How to Fit Out Your Van Like an Expert"
-description: "A custom van conversion turns a van into a mobile workshop. Here’s how to choose the wood, fix the plywood, and avoid tax pitfalls."
+description: "A custom van conversion turns a van into a mobile workshop. Here's the wood to pick, the fixing method, the VASP rules and the real cost in 2026."
 date: "2026-10-23"
 author: "nathalie-moreau"
 wp_id: 1669
 wp_locale: "en"
 image: "/images/articles/pro-van-conversion-guide-couverture.webp"
-imageAlt: "Aménagement utilitaire artisan : équiper son fourgon comme un pro"
+imageAlt: "Pro-level van conversion: how to fit out your van like an expert"
 ---
-A carpenter loads his tools into a Berlingo transformed into a mobile workshop. An electrician uses his Transit Custom as a plywood workbench. A pro-level van conversion optimises space. It also preserves tax benefits, such as the TVS exemption for CTTE vans. Here’s how to fit out a van without losing these advantages.
+***A custom van conversion turns a bare utility van into a real mobile workshop, built around the tools a tradesperson actually carries. Done right, it also keeps the van's CTTE status and its tax advantages intact.***
 
-Solutions tested by pros, for pros.
+A carpenter who loads a van with long boards every morning needs something different from an electrician running cable reels. A commercial kit rarely fits either job perfectly. A custom fit-out solves that, provided it stays removable enough to avoid tipping the vehicle into a different legal category.
+
+TL;DR:
+
+-   A **custom fit-out costs more** than an off-the-shelf kit, but it's built around your actual tools and loads.
+-   **Marine plywood** (15-18 mm) stays the standard choice, at roughly **€40-60/m²**.
+-   A van keeps its **CTTE tax status** only if the fit-out stays removable in under two hours, with no fixed bed or fixed kitchen.
+-   Crossing into **VASP territory** adds a certification step that typically costs **€450-800**.
 
 ## Why choose a custom conversion over a commercial kit?
 
-A standard plywood lining kit costs between €800 and €1,500. Yet it often comes with unsuitable dimensions. For example, for long tools or heavy loads. A tradesperson, on the other hand, designs custom racks. For a 1.20 m circular saw or a 50 kg compressor.
+**A custom conversion earns its price by fitting your actual tools**, not a generic layout. A standard plywood lining kit costs €800-1,500 but often comes with the wrong dimensions for long tools or heavy loads, while a tailored build sizes racks around a specific saw or compressor.
 
-The result? Less time wasted securing items. Better weight distribution. Crucial for staying under the 3,500 kg GVW limit and keeping your category B licence. Indeed, a commercial kit is rarely removable without leaving traces. Holes or glue residue complicate reselling the vehicle.
+The upside goes beyond convenience. Better weight distribution matters for staying under the 3,500 kg gross vehicle weight that keeps a category B licence valid, and a well-planned layout cuts the time spent securing loose items before every trip. A commercial kit is also rarely removable without leaving holes or glue residue, which complicates resale. A custom build, by contrast, can come out in under two hours when it's designed with that in mind, the same threshold that keeps the van's commercial tax status, as covered further down.
 
-A custom conversion, however, can be dismantled in under two hours. A key criterion for avoiding VASP approval. Especially if you use your van for family weekends. To explore other [conversion & equipment](/en/commercial-vehicles-fleets/van-conversions-equipment) options, modular solutions are growing in popularity.
-
-### Case study: an electrician fits out his Peugeot Expert
-
-Jean, an electrician in Lyon, had his 2018 Expert fitted out. Here’s what he chose:
-
--   A 18 mm marine plywood worktop. Fixed to aluminium rails to withstand vibrations.
--   Sliding drawers for small equipment. Like terminal blocks or conduits. Lockable to prevent theft.
--   A high shelf for fluorescent tubes. Accessible without bending down.
-
-Total cost: €2,200. That’s €1,000 more than a standard kit. But with an estimated time saving of 1.5 hours per day. “Before, I wasted 20 minutes on every job looking for a tool. Now, everything’s within reach,” he explains.
-
-On a 400 km trip with two bikes, this translates into a smoother day.
+For an electrician fitting out a mid-size van, a typical build runs a worktop in 18 mm marine plywood on aluminium rails, lockable drawers for small parts, and a high shelf for long items kept out of the way. That kind of layout commonly costs around €2,000-2,500 once fixings and wiring are included, against €800-1,500 for a basic kit, with the difference paid back through less time lost hunting for tools on site.
 
 ![Carpenter fitting a plywood worktop in a custom van conversion](/images/articles/amenagement-utilitaire-artisan-1.webp)
 
 ## Which wood should you choose for a durable van lining?
 
-Marine plywood (15 to 18 mm thick) is the most commonly used material. Its advantages:
+Marine plywood, 15 to 18 mm thick, remains the material most converters reach for first. It resists moisture well, which matters in a vehicle exposed to rain or the odd coolant leak, and a 1.22 x 2.44 m panel weighs around 30 kg, roughly 20 kg less than the same sheet in MDF. Pricing sits at **€40-60/m²**, two to three times cheaper than aluminium sheeting.
 
--   **Moisture resistance**. Ideal for vehicles exposed to rain or coolant leaks.
--   **Lightweight**. A 1.22 x 2.44 m panel weighs around 30 kg. Compared to 50 kg for MDF.
--   **Price**. Between €40 and €60/m². That’s 2 to 3 times cheaper than aluminium.
-
-Alternative: birch plywood. More resistant to impacts. But less suited to damp environments. “For a works van, I recommend marine ply. For a craftsperson’s vehicle, birch is preferable,” says a carpenter.
+Birch plywood is the usual alternative. It handles impacts better but copes less well with damp, which makes it a better fit for a trade with less water exposure than, say, landscaping or plumbing.
 
 ### Fixing: screws, glue or rails?
 
-Three methods exist. Each with its pros and cons:
-
-| Method | Advantages | Disadvantages | Cost (for a van like the Transit Custom) |
+| Method | Advantages | Drawbacks | Cost (mid-size van) |
 | --- | --- | --- | --- |
-| Self-tapping screws + washers | Removable, sturdy | Risk of corrosion if screws aren’t stainless steel | €50-80 |
-| Polyurethane glue (e.g. Sikaflex) | No drilling, watertight | Hard to remove, adds weight | €120-180 |
-| Aluminium rails (Modul’Van system) | Adjustable, modular | Expensive, complex installation | €300-500 |
+| Self-tapping screws + washers | Removable, sturdy | Corrosion risk without stainless steel | €50-80 |
+| Polyurethane adhesive (e.g. Sikaflex) | No drilling, watertight | Hard to remove, adds weight | €120-180 |
+| Aluminium rail system | Adjustable, modular | Pricier, more complex install | €300-500 |
 
-*Source: Vroomly*
+*Source: workshop and dealer pricing estimates, 2026.*
 
-Tip: place rubber mounts between the wood and the bodywork. “Without them, the plywood eventually cracks around the fixings,” warns a bodywork specialist.
+Fit rubber mounts between the wood and the bodywork wherever you screw through. Without them, plywood tends to crack around the fixing points after repeated vibration.
 
-## Van conversion and tax: how to keep your TVS exemption
+## Does a work van conversion risk losing its CTTE tax status?
 
-A converted van remains exempt from TVS (tax on company vehicles). On one condition: keeping the CTTE designation on the vehicle registration certificate. For this, the conversion must:
+**A fit-out stays tax-neutral as long as it's removable within two hours and skips a fixed bed or fixed kitchen.** Add either of those and the vehicle generally needs VASP approval, which changes both its registration category and its tax treatment.
 
--   Be **removable in under two hours**. A criterion set by Matmut (a French insurance company).
--   Not include a **fixed bed** or integrated kitchen. Otherwise, VASP approval is mandatory.
--   Leave **at least two seats** at the front. For the driver and passenger.
+Commercial vans registered as CTTE sit outside the two annual company-car taxes introduced in 2022 (the CO2 tax and the pollutant tax, which replaced the old TVS). A van that crosses into VASP territory loses that CTTE line on its registration document and can fall back under ordinary passenger-vehicle tax rules depending on how it's used.
 
-“A tradesperson who installs a workbench and shelves keeps their CTTE status. If they add a bed for sleeping on jobs, they switch to VASP. They then lose the exemption,” explains an automotive tax expert. For a van used 80% of the time for work, this distinction can save €2,000 a year. For those considering a [certified tow hitch for commercial vehicles](/en/commercial-vehicles-fleets/van-towing-hitch-regulations-2026), this vigilance is crucial.
+The cumulative criteria that trigger VASP approval are fixed storage bolted into the structure, an anchored table or seating, a permanent or foldaway bed, a fixed kitchen with a built-in sink or hob, and, overall, a fit-out that can't come out in under two hours. Miss just one of these and the van usually keeps its CTTE status. A tradesperson installing a worktop, shelving and lockable drawers stays well within CTTE territory. The same van with a fixed cooker or a permanent bed added for sleeping on site crosses into VASP, with the approval process covered in more detail in our guide on [towing hitch rules for vans](/van-towing-hitch-regulations-2026/), which runs through the same registration-category logic.
 
-### Real-life case: a plumber loses his TVS exemption
+## Which van models suit a custom conversion best?
 
-Marc, a plumber in Bordeaux, had his Jumpy converted. Here’s what he installed:
-
--   A fixed plywood worktop.
--   Racks for pipes.
--   A small gas stove for lunch breaks.
-
-The problem: the stove, even if mobile, was considered a “fixed kitchen”. Result: VASP approval became mandatory. And a TVS bill of €2,000 a year (2026 rate for a 5 CV vehicle). Cost of the mistake: €6,000 over three years.
-
-![Plumber inspecting a van conversion with a mobile stove](/images/articles/amenagement-utilitaire-artisan-2.webp)
-
-## Which van models are best for a custom conversion?
-
-Not all vans are equal when it comes to custom conversions. Here are the criteria to check before buying:
-
--   **Headroom**. A Ford Transit Custom offers 1.80 m of usable height. Compared to 1.40 m for a Berlingo. “For a carpenter transporting 2.50 m planks, it’s essential,” notes a converter.
--   **Engine reliability**. The 2.0 TDCi EcoBlue in the Transit Custom (130-170 hp) has a lifespan of 250,000 km without major work. The 1.6 HDi in the Berlingo, on the other hand, reaches 160,000 km. With a risk of head gasket failure after 165,000 km.
--   **Door width**. A Sprinter has side doors 1.30 m wide. Compared to 0.80 m for a Jumpy. Handy for loading plasterboard.
+Not every base van handles a custom build equally well. Interior height, door width and engine reliability all shape how much work the conversion itself takes, and how long it holds up.
 
 ### Comparison: three vans suited to custom conversions
 
-| Model | Usable height (m) | Side door width (m) | Reliability (out of 10) | New price (2026) |
-| --- | --- | --- | --- | --- |
-| Peugeot Expert | 1.60 | 1.26 | 7.5 | €32,000 |
-| Ford Transit Custom | 1.80 | 1.30 | 8.5 | €35,000 |
-| Mercedes Sprinter | 1.90 | 1.30 | 8 | €40,000 |
+| Model | Usable height (m) | Side door width (m) | Known engine notes |
+| --- | --- | --- | --- |
+| Peugeot Expert / Citroën Jumpy | 1.60 | 1.26 | 1.6 BlueHDi reaches 200,000 km, but watch the head gasket beyond 160,000-165,000 km |
+| Ford Transit Custom | 1.80 | 1.30 | 2.0 TDCi EcoBlue (130-170 hp) commonly passes 250,000 km with regular servicing |
+| Mercedes Sprinter | 1.90 | 1.30 | Strong payload and headroom, higher purchase and parts cost |
 
-*Source: Utilitaire Magazine*
+*Source: workshop feedback and manufacturer specifications, 2026, to confirm against the specific model year.*
 
-## Where to get your van converted in France
+A Transit Custom's 1.80 m of usable height suits anyone transporting 2.5 m boards far better than a lower-roof van, and its 1.30 m side door makes loading plasterboard or sheet goods easier than the 0.80-1.26 m openings on smaller vans. Our guide comparing [3m³ and 6m³ van sizes](/van-size-guide-business/) goes further into matching the base vehicle to the job.
 
-Several tradespeople specialise in custom conversions. For professionals:
+## How much does a custom conversion cost, and where can you get it done?
 
--   **Espace V.U (Bordeaux)**. Specialises in wood linings for building trades. Average price: €1,800 for a van like the Jumpy.
--   **SD Services (Lyon)**. Offers modular solutions with aluminium rails. Budget: €2,500 to €4,000 depending on options.
--   **MDP Utilitaire (Île-de-France)**. Known for integrated workbenches. Price: €1,500 to €3,500.
-
-“The most important thing is to visit the workshop before ordering. Some tradespeople use 12 mm plywood instead of 18 mm to cut costs. Which causes problems on long trips,” advises a customer. For those looking for turnkey solutions, [plywood lining kits](/en/commercial-vehicles-fleets/wooden-van-lining-kit-guide) can also be an intermediate option.
-
-## Mistakes to avoid when converting a van
-
--   **Drilling the bodywork without protection**. Untreated holes rust within months. Solution: apply anti-corrosion primer before screwing.
--   **Neglecting ventilation**. A poorly ventilated van accumulates moisture. Result: the plywood swells. “I’ve seen floors warp in six months because of this,” says a bodywork specialist.
--   **Ignoring electrical standards**. A 12V socket installed without a fuse can cause a fire. “For a compressor or saw, plan a dedicated circuit,” recommends an automotive electrician.
--   **Overloading the vehicle**. A wood lining plus tools can add 200 to 300 kg. Check the GVW stays under 3,500 kg to keep your category B licence.
-
-## How much does a custom van conversion cost?
-
-Prices vary depending on complexity and materials. Here are some examples:
-
-| Service | Price (€) | Details |
+| Service | Price | Details |
 | --- | --- | --- |
-| Full wood lining (shelves + worktop) | 1,200 – 2,500 | 18 mm marine plywood, rail-mounted |
-| Integrated workbench | 800 – 1,500 | With lockable drawers and retention tray |
-| 12V LED lighting | 150 – 300 | 3 spotlights + watertight switch |
-| Soundproofing | 300 – 600 | Rock wool + vapour barrier |
+| Full wood lining (shelves + worktop) | €1,200-2,500 | 18 mm marine plywood, rail-mounted |
+| Integrated workbench | €800-1,500 | Lockable drawers, retention tray |
+| 12V LED lighting | €150-300 | Three spotlights, watertight switch |
+| Soundproofing | €300-600 | Rock wool plus vapour barrier |
 
-*Source: Comptoir de l’Utilitaire*
+*Source: workshop pricing estimates, 2026.*
 
-“A basic conversion costs €1,500. For a van turned into a full workshop, expect €3,000 to €4,000,” explains a tradesperson. On a tight budget, a standard plywood lining kit can be a first step.
+A basic conversion typically lands around €1,500. A van turned into a full mobile workshop, worktop, storage, lighting and soundproofing combined, usually runs €3,000-4,000. Specialist conversion workshops exist in most regions, generally cheaper than a general bodyshop for this kind of work; ask to see a completed van before ordering, and check the plywood thickness quoted, since 12 mm instead of 18 mm cuts the price but also the durability on long, rough routes. On a tighter budget, a [ready-to-fit wooden lining kit](/wooden-van-lining-kit-guide/) remains a reasonable first step before a fully custom build.
 
-## Van conversion: alternatives to wood
+## Which mistakes, and material alternatives, should you plan for?
 
-Wood isn’t the only option. Here are other materials used by professionals:
+Four mistakes come up more often than the rest. **Drilling the bodywork without protection** lets untreated holes rust within months, so apply an anti-corrosion primer before screwing in. **Skipping ventilation** traps moisture, which swells plywood and can warp a floor within a season. **Improvising the electrics** is riskier still: a 12V socket wired without a fuse can start a fire, so give a compressor or saw its own dedicated circuit. **Overloading the van** matters too, since a wood lining plus tools commonly adds 200-300 kg, and the gross vehicle weight needs to stay under 3,500 kg to keep a standard licence valid.
 
--   **Aluminium**. Lightweight (three times lighter than wood) and corrosion-resistant. Ideal for vehicles exposed to water. Like those used by landscapers or pool technicians. Price: €80 to €120/m².
--   **Expanded PVC**. Rot-proof and easy to clean. But less impact-resistant. Used for interior partitions. Price: €30 to €50/m².
--   **Composite (fibreglass)**. Ultra-resistant. But expensive (€150 to €200/m²). Reserved for high-end vans.
+Wood isn't the only option. Aluminium runs about three times lighter than wood and resists corrosion well, a good fit for trades exposed to water, like landscaping or pool maintenance, at roughly €80-120/m². Expanded PVC resists rot and cleans easily but takes impacts less well, mostly used for partitions, at €30-50/m². Composite fibreglass panels cost more, around €150-200/m², but hold up best on high-end builds. A roof rack or ladder carrier, covered in our [van roof rack guide](/van-roof-rack-ladder-guide/), often completes the setup once the interior is sorted.
 
-“For an electrician transporting coiled cables, aluminium is perfect. For a carpenter needing strength, wood is still unbeatable,” sums up a specialist. The choice also depends on the climate. In damp regions, aluminium or composite avoid mould problems.
+## Frequently asked questions
+
+### Does a custom van conversion cost more than a commercial kit?
+
+Yes, usually by several hundred euros, but it's sized to your actual tools and loads rather than a generic layout, which often pays off in time saved on site.
+
+### What keeps a converted van under CTTE status instead of VASP?
+
+Staying removable in under two hours, with no fixed bed and no fixed kitchen. Cross either line and the van generally needs VASP approval.
+
+### Which plywood thickness should a work van lining use?
+
+18 mm marine plywood is the standard for durability. Some converters use 12 mm to cut costs, but it holds up less well on long or rough routes.
+
+### How much weight does a full van conversion typically add?
+
+Around 200 to 300 kg once wood, fixings and tools are accounted for. Check this against your van's payload to keep the gross vehicle weight under 3,500 kg.
+
+### Is aluminium a better choice than wood for a van lining?
+
+It depends on the trade. Aluminium suits water-exposed work like landscaping thanks to its weight and corrosion resistance, while wood still offers the best strength for heavier loads.
