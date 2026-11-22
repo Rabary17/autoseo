@@ -1,99 +1,103 @@
 ---
 title: "LPG Cars: Pros, Cons and Key Points to Know"
-description: "LPG costs up to 50% less at the pump than petrol, but its range and filling station network raise questions. Here are the pros, cons and real costs in 2026"
-date: "2026-11-14"
+description: "LPG costs up to 50% less at the pump than petrol, but its range and filling station network raise questions. The pros, cons and real costs in 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1695
 wp_locale: "en"
 image: "/images/articles/lpg-car-pros-cons-couverture.webp"
-imageAlt: "Voiture GPL : avantages, inconvénients et points clés à connaître"
+imageAlt: "LPG car: advantages, drawbacks and key points to know"
 ---
-In 2026, LPG remains the cheapest alternative fuel at the pump in France. Its average price ranges between €0.95 and €1.08 per litre—30 to 50% cheaper than petrol, which costs between €1.90 and €2.20 per litre. But is it right for your needs, given its reduced range and limited network of filling stations?
+***LPG stays the cheapest alternative fuel at the pump in France, at an average €0.95 to €1.08 per litre, 30 to 50% less than petrol.***
+
+But does it suit your driving, given its shorter range and a limited filling station network? Here are the pros, the cons and the points to check before buying.
+
+TL;DR:
+
+-   LPG costs **30 to 50% less** per litre than petrol, for a range cut by 20 to 30%.
+-   The network counts around **1,800 LPG stations** in France, against over 11,000 for petrol or diesel.
+-   **No ecological bonus** applies to LPG, which still falls under the same ecological penalty as other combustion vehicles.
+-   Since 2022, the **TVS has been scrapped**, replaced by two annual taxes (CO2 and pollutants) that generally hit LPG vehicles less than diesels.
 
 ## Why choose an LPG car? The 3 main advantages
 
-LPG’s biggest draw is its price. In 2026, it ranges from **€0.95 to €1.08 per litre**, compared with **€1.90 to €2.20 per litre** for petrol. The result? An LPG fill-up costs 30 to 50% less.
+LPG wins drivers over first on **price**: in 2026 it ranges from €0.95 to €1.08 per litre, against €1.90 to €2.20 per litre for petrol. A fill-up costs 30 to 50% less as a result. For 15,000 km a year, that means several hundred euros saved on fuel alone, thanks to a reduced TICPE rate (the French tax on energy products) that keeps its price competitive.
 
-For 15,000 km a year, that means a saving of **€400 to €700** on fuel alone. LPG benefits from a reduced TICPE rate (domestic tax on energy products) in France, which keeps its price competitive.
+LPG also emits **less CO2** than an equivalent petrol engine, a point in its favour for drivers watching their carbon footprint, even though it remains a fossil fuel. It also produces fewer fine particles and less NOx than diesel.
 
-Finally, LPG emits **10 to 15% less CO₂** than an equivalent petrol engine—a selling point for drivers concerned about their carbon footprint.
+For professional fleets, LPG can mean significant savings over the long run, alongside other alternatives for commercial vehicles. For a genuinely low-carbon option, though, an electric car or a [plug-in hybrid](/light-hybrid-or-plug-in-hybrid-real-difference/) still performs better, and the battery chemistry behind that electric car, [LFP or NMC](/lfp-or-nmc-battery-what-changes/), changes its own running costs just as LPG changes a petrol car's.
 
-For professional fleets, LPG can also mean significant savings. CNG and hydrogen offer other alternatives for commercial vehicles, but LPG remains the most accessible option for tighter budgets.
+## The 3 drawbacks to weigh before buying an LPG car
 
-### A cleaner fuel?
+The first hurdle is **range**. An LPG car loses 20 to 30% of its range compared with its petrol version, because a litre of LPG holds around 20% less energy than a litre of petrol. Where you'd get 500 km on petrol, expect 350 to 400 km on LPG for an equivalent tank.
 
-LPG emits fewer fine particles and NOx than diesel. It also produces less CO₂ than petrol—but it’s still a fossil fuel.
+### A still-limited LPG filling station network
 
-For a truly green solution, electric or hydrogen vehicles are more effective.
+France counts around **1,800 LPG stations** in 2026, against over 11,000 for petrol or diesel. They cluster mainly around large cities and industrial areas. In rural areas, filling up becomes a real point to watch, and it pays to check station coverage along your usual routes before committing to LPG. The hydrogen network stays even thinner by comparison, which only confirms how far LPG's own network still has to grow before it rivals petrol and diesel.
 
-## The 3 drawbacks to consider before buying an LPG car
+A practical habit: before a long trip, plan your fill-up stops in advance rather than trusting you'll find a station on the way. Several apps list LPG stations by region, and checking one the night before saves a detour on the day.
 
-The first hurdle is range. An LPG car loses **20 to 30% of its range** compared with its petrol version. That’s because a litre of LPG contains 20% less energy than a litre of petrol.
+### Technical constraints and sometimes higher running costs
 
-So, while you might get 500 km from a petrol tank, expect **350 to 400 km on LPG**.
-
-### A limited LPG filling station network
-
-In France, there are around **1,800 LPG filling stations** in 2026—compared with over 11,000 for petrol or diesel. They’re mainly concentrated in large cities and industrial areas.
-
-![LPG pump displaying the price per litre in euros](/images/articles/voiture-gpl-avantages-inconvenients-1.webp)
-
-In rural areas, filling up can be tricky. Apps like “GPL France” or “Antargaz” help locate stations.
-
-Note: the hydrogen network is even more limited. [Our map of hydrogen filling stations in France](/en/fuel-consumption/hydrogen-stations-france-2026) lets you compare the two options.
-
-### Technical constraints and potentially higher maintenance costs
-
-Fitting an LPG system to a vehicle not originally designed for it costs between **€1,500 and €3,000**. Some garages also charge more for servicing—particularly for oil changes or fuel injection system checks.
-
-What’s more, a non-approved conversion can void the manufacturer’s warranty.
-
-For factory-fitted vehicles, [our guide to LPG, CNG and hydrogen](/en/fuel-consumption/alternative-fuels) explains the differences between these alternative fuels.
+Fitting an LPG system to a car not originally designed for it costs between €1,500 and €3,000. Some garages also charge more for servicing, particularly for checking the injection system. An unapproved conversion can also void the manufacturer's warranty, so always check that the installer holds the right certification before signing off on the work. For the tank itself, our guide to [LPG tank inspection](/lpg-tank-inspection-guide/) covers what the periodic check involves and how often it falls due.
 
 ## How much does an LPG car really cost in 2026?
 
-The purchase price depends on the model and whether it’s factory-fitted. Here’s a realistic range for 2026.
+The purchase price depends on the model and whether the LPG system came fitted from the factory.
 
-<table><tbody><tr><td><strong>Vehicle type</strong></td><td><strong>Average price (new)</strong></td><td><strong>Average price (used, 5 years old)</strong></td></tr><tr><td>City car (LPG)</td><td>€18,000 – €22,000</td><td>€10,000 – €14,000</td></tr><tr><td>Saloon (LPG)</td><td>€25,000 – €30,000</td><td>€14,000 – €18,000</td></tr><tr><td>Estate/MPV (LPG)</td><td>€28,000 – €35,000</td><td>€16,000 – €22,000</td></tr><tr><td>Aftermarket LPG conversion</td><td>€1,500 – €3,000</td><td>N/A</td></tr></tbody></table>
+| Vehicle type | Average price (new) | Average price (used, 5 years) |
+| --- | --- | --- |
+| City car (LPG) | €18,000 – €22,000 | €10,000 – €14,000 |
+| Saloon (LPG) | €25,000 – €30,000 | €14,000 – €18,000 |
+| Estate/MPV (LPG) | €28,000 – €35,000 | €16,000 – €22,000 |
+| Aftermarket LPG conversion | €1,500 – €3,000 | Not applicable |
 
-*Source: Antargaz, Butagaz, prix-du-carburant.com*
+*Market estimates for 2026. New LPG models stay rare as manufacturers focus on electric and hybrid cars, so most LPG vehicles on offer are used or aftermarket conversions.*
 
-Note: new LPG models are rare in 2026. Manufacturers are focusing on electric and hybrid vehicles instead. Most LPG vehicles available are therefore used or converted models.
+## LPG vs petrol vs diesel: which fuel should you choose?
 
-## LPG vs petrol vs diesel: which fuel should you choose in 2026?
+| Criteria | LPG | Petrol | Diesel |
+| --- | --- | --- | --- |
+| Average price per litre (2026) | €0.95 – €1.08 | €1.90 – €2.20 | €1.80 – €2.10 |
+| Range for an equivalent tank | Cut by 20–30% | Reference | Generally higher |
+| Filling station network | Around 1,800 | Over 11,000 | Over 11,000 |
 
-To make things clearer, let’s compare the three options based on three criteria: cost per km, range and environmental impact.
+LPG stays unbeatable on price per litre, but its shorter range and thinner network make it less practical for repeated long trips. Petrol offers the best all-round compromise. Diesel still suits high-mileage drivers, despite city driving restrictions.
 
-<table><tbody><tr><td><strong>Criteria</strong></td><td><strong>LPG</strong></td><td><strong>Petrol</strong></td><td><strong>Diesel</strong></td></tr><tr><td>Average price per litre (2026)</td><td>€0.95 – €1.08</td><td>€1.90 – €2.20</td><td>€1.80 – €2.10</td></tr><tr><td>Average range (50 L tank)</td><td>400 km</td><td>600 km</td><td>700 km</td></tr><tr><td>CO₂ emissions (g/km)</td><td>120 – 140</td><td>160 – 180</td><td>140 – 160</td></tr><tr><td>Filling station network</td><td>1,800</td><td>11,000</td><td>11,000</td></tr></tbody></table>
+## Taxation and incentives: is LPG still worth it in 2026?
 
-*Source: Antargaz, Butagaz, globalpetrolprices.com*
+In 2026, LPG no longer enjoys the attractive incentives it once did. **No ecological bonus** applies to a new LPG car purchase, since the French government does not treat LPG as a green fuel. LPG vehicles still fall under the **ecological penalty**, but their generally lower CO2 score than equivalent petrol models often limits the amount owed.
 
-LPG is unbeatable on price per litre. However, its reduced range and limited network make it less practical for long journeys.
-
-Petrol offers the best compromise. Diesel remains a good option for high-mileage drivers, despite restrictions in cities.
-
-## Taxation and incentives: is LPG still a good deal in 2026?
-
-In 2026, LPG no longer benefits from the same attractive incentives as before. Here’s what you need to know.
-
--   **Ecological bonus**: No bonus is available for buying a new LPG car. The French government does not consider LPG a green fuel.
--   **Ecological penalty**: LPG vehicles are subject to the penalty. However, since their CO₂ emissions are lower than those of petrol vehicles, the penalty is often less. Example: €50 for an LPG vehicle emitting 130 g/km, compared with €100 for a petrol vehicle emitting 160 g/km.
--   **Company vehicle tax**: Since 2022, the TVS (tax on company vehicles) has been replaced by two taxes (CO₂ and pollutants). As a result, LPG vehicles are generally taxed less than diesel vehicles.
-
-In short, LPG remains a good option for private motorists who drive a lot in cities or on short trips. However, public incentives no longer work in its favour.
+**Since 1 January 2022, the TVS has been scrapped**, replaced by two annual taxes on passenger cars: one on CO2 emissions and one on air pollutant emissions. LPG vehicles generally pay less on both than equivalent diesels, which still counts in its favour for a professional fleet.
 
 ## Who is an LPG car really suited to?
 
-LPG isn’t a one-size-fits-all solution. Here are the profiles it might suit.
+LPG isn't a one-size-fits-all solution. It suits **low-mileage urban drivers**, under 10,000 km a year, who cut their fuel budget without too much hassle from the station network. **City dwellers**, whose trips stay short and in areas with a denser LPG network, also benefit, as do **tradespeople's fleets** that manage the specific maintenance properly.
 
--   **Low-mileage drivers**: Less than 10,000 km a year? LPG cuts fuel costs without too many drawbacks.
--   **City dwellers**: In urban areas, journeys are short and the LPG network is denser.
--   **Professional fleets**: For tradespeople, LPG can mean significant long-term savings—provided maintenance is well managed.
--   **Pragmatic eco-drivers**: Want to reduce your carbon footprint without going electric? LPG is a credible alternative.
+On the other hand, avoid LPG if you often drive over 300 km in one stretch, live in a rural area poorly served by stations, or cover a lot of motorway miles, where the reduced range becomes a real drawback. New LPG models also stay rare at dealerships in 2026.
 
-On the other hand, avoid LPG if:
+## Frequently asked questions
 
--   You often make long trips (over 300 km at a stretch).
--   You live in a rural area with few LPG filling stations.
--   You do a lot of motorway driving—LPG’s reduced range can be a drawback.
--   You’re looking for a new vehicle. LPG models are rare in dealerships.
+### Does LPG really cost less than petrol?
+
+Yes, a litre of LPG costs 30 to 50% less than petrol in 2026, thanks to a reduced tax rate on this fuel.
+
+### Why does an LPG car have a shorter range?
+
+A litre of LPG holds around 20% less energy than a litre of petrol, which cuts range by 20 to 30% for an equivalent tank size.
+
+### Can you still buy a new LPG car in 2026?
+
+New LPG models stay rare, as manufacturers focus on electric and hybrid cars. Most LPG vehicles on offer are used or aftermarket conversions.
+
+### Does an LPG car pay the ecological penalty?
+
+Yes, LPG still falls under the penalty like other combustion vehicles, but its generally lower CO2 score often limits the amount owed compared with an equivalent petrol car.
+
+### How much does converting a petrol car to LPG cost?
+
+Between €1,500 and €3,000 depending on the model and installer, provided you choose an approved system so you don't lose the manufacturer's warranty.
+
+### Does LPG suit long motorway trips?
+
+Less well than petrol or diesel: the shorter range and thinner station network make trips over 300 km in one stretch harder to plan.

@@ -1,113 +1,104 @@
 ---
 title: "Motorhome Waterproofing Check: When, How and What It Costs"
-description: "A motorhome with poor waterproofing can develop mould or costly corrosion. Discover when and how to check its waterproofing, with DIY methods and professio"
-date: "2026-11-09"
+description: "A motorhome that lets in water risks mould and corrosion, and a repair bill that easily tops €1,000. When to check its waterproofing, and how."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1624
 wp_locale: "en"
 image: "/images/articles/motorhome-waterproofing-check-guide-couverture.webp"
-imageAlt: "Contrôle d'étanchéité d'un camping-car : quand, comment et à quel prix ?"
+imageAlt: "Motorhome waterproofing check: when, how and what it costs"
 ---
-A motorhome that lets in water is a sure way to get mould in the walls, corrosion under the bodywork, and repair bills that can reach €2,000. For example, for a 5-year-old vehicle parked in Brittany, a check in October prevents storing a damp motorhome after autumn rains. Here’s how to do it yourself, when to call in a professional, and how much it costs.
+***A motorhome that lets in water risks mould in its panels, corrosion under the bodywork, and a repair bill that easily tops €1,000. A regular check prevents most of this damage.***
 
-## Why check your motorhome’s waterproofing?
+Here's how to check the waterproofing yourself, when to call in a professional, and what a repair costs depending on how bad the problem is.
 
-There are many weak points: a roof seal that comes unstuck after a high-pressure wash, a loose fixing screw on a window after a mountain road trip, or an ageing waterproof membrane on an 8-year-old motorhome. Moisture seeps in, lingers, and eventually rots the wooden panels or oxidises the metal reinforcements.
+TL;DR: check the waterproofing twice a year, before winterisation and before the holiday season, with a visual inspection and a water test you can do yourself.
 
-Here’s what happens when you ignore these signs:
+-   The most common weak points are **roof seals**, **skylight fixings** and the **lower bodywork**.
+-   A DIY test (visual check, water, absorbent paper) catches **most leaks** before they get worse.
+-   Repairing a roof membrane generally costs between **€300 and €800**, far less than an ignored leak in the panels.
 
--   Persistent musty smells, even after 48 hours of airing with a dehumidifier.
--   Black stains on walls or ceilings, especially around skylights.
--   Swelling of the interior lining, a sign of trapped water behind the panels.
--   Abnormally high electricity consumption, as the dehumidifier runs continuously.
-
-On a 5-year-old vehicle, an undetected leak can reduce its resale value by 30%. Consequently, if you rent out your motorhome through a platform like Wikicampers, poor waterproofing can lead to an insurance refusal in case of a claim.
-
-## When should you carry out the check?
+## Why check your motorhome's waterproofing?
 
 ![Technician checking the roof seals of a motorhome with a torch](/images/articles/etancheite-camping-car-controle-1.webp)
 
-Two key times for a motorhome used all year round:
+There are plenty of weak points: a roof seal that comes unstuck after a high-pressure wash, a fixing screw that loosens on a window after a motorway trip, or an ageing waterproof membrane on a vehicle that's a few years old. Moisture seeps in, lingers, and eventually damages the panels and corrodes the metal reinforcements.
 
-1.  **October, before winter storage** — after a season on the road, seals have endured sun, cold, and vibrations. A check prevents storing a damp vehicle, especially in rainy regions like the Pays de la Loire.
-2.  **April, before the holiday season** — ensure winter hasn’t weakened the waterproofing. A single night in the rain with a leaky motorhome can let moisture set in for good.
+Several signs should put you on alert: persistent musty smells even after airing out, dark stains on the walls or ceiling, swelling in the interior lining that signals trapped water behind the panels, or unusually high electricity use if a dehumidifier keeps running.
 
-Other situations call for a check:
+On a vehicle that's a few years old, an undetected leak can noticeably cut its resale value, adding to the [depreciation](/motorhome-depreciation-first-year/) a motorhome already carries in its first years. If you rent out your motorhome peer-to-peer, poor waterproofing can also complicate an insurance claim if something goes wrong.
 
--   After a high-pressure wash, as seals can come unstuck under pressure, even on a motorhome less than 3 years old.
--   If you’ve driven through heavy rain, as water can seep in through roof openings or vents.
--   Before a long road trip to Northern Europe, to avoid emergency repairs in Germany or the Netherlands.
+## When should you check it?
 
-## How to check waterproofing yourself
+Two key moments punctuate the year for a motorhome used regularly. **October, before winterisation**: after a season on the road, seals have taken the sun, the cold and vibration. A check at this point stops you storing an already damp vehicle, especially in a rainy region. **April, before the holiday season**: check that winter hasn't weakened the seals, since one night in the rain with poor waterproofing can let moisture settle in for good.
 
-No need for fancy tools for a first check. Here’s how to do it, step by step:
+Other situations call for a one-off check: after a high-pressure wash, since seals can come loose under the pressure even on a recent vehicle; after driving through heavy rain; or before a long road trip, to avoid an emergency repair far from home.
 
-1.  **Visual inspection**:
-    -   Door and window seals — look for cracks, peeling, or mould, especially on rubber seals from 2010s models.
-    -   Roof — check fixings on skylights, aerials, and air conditioning units. A loose screw after a motorway trip is a common cause of leaks.
-    -   Lower bodywork — with a torch, spot rust marks or white streaks, signs of corrosion, especially on motorhomes parked near the sea.
+## How do you check the waterproofing yourself?
 
-2.  **Water test**:
-    -   With a garden hose, wet the motorhome section by section. Inside, a second person watches the walls and ceiling for drips or dark patches — a sign of water absorption.
-    -   Tip — don’t aim the jet directly at seals, as this can loosen them. Use a moderate flow at a 45° angle.
+You don't need sophisticated tools for a first check. Here's the method, step by step.
 
-These two steps catch most problems. For trickier leaks, other methods exist.
+1.  **Visual inspection**: check the door and window seals for cracks, peeling or mould, the roof fixings (skylights, aerials, air conditioning unit), and the lower bodywork with a torch for rust marks or streaks.
+2.  **Water test**: using a garden hose at a moderate flow and a 45° angle, wet the motorhome section by section. Inside, a second person watches the walls and ceiling for patches that darken.
+3.  **Absorbent paper test**: place sheets of absorbent paper along suspect seals and corners, and leave them for 24 hours. Damp or warped paper signals a leak.
+4.  **Smoke test** (for invisible leaks): a smoke generator, available to hire, helps detect draughts. Light the smoke outside near suspect areas; if it gets drawn inside, that's a breach.
 
-3.  **Absorbent paper test**:
-    -   Place sheets of absorbent paper along suspect seals and corners, such as around windows, doors, and skylights.
-    -   Leave for 24 hours. If the paper is damp or warped, there’s a leak.
+These methods catch the large majority of problems. For more subtle leaks, such as an infiltration inside the panels or through electrical cables, a professional becomes necessary.
 
-4.  **Smoke test** (for invisible leaks):
-    -   Use a smoke generator, available for hire at €50/day, or a smoke bomb to detect draughts.
-    -   Light the smoke outside near suspect areas. If it’s drawn inside, there’s a breach.
+Keep a simple log of what you check and when, with a photo of any damp patch or suspect seal. That record speeds up a professional diagnosis later, and it also reassures a buyer at resale, the same way a documented service history does for the engine and the gas system.
 
-These methods spot 80% of problems. For the remaining 20% — like leaks in walls or through electrical cables — professional tools are needed.
+## When should you call in a professional?
 
-## When to call in a professional
+If you've spotted a leak but can't pin down its source, or if your motorhome is over 10 years old, a professional check is worth it.
 
-If you’ve found a leak but can’t pinpoint it, or if your motorhome is over 10 years old, a professional check is essential. Here’s what they offer:
-
-| Method | Principle | Price | Duration |
+| Method | Principle | Indicative price | Duration |
 | --- | --- | --- | --- |
-| Pressure test | A fan draws air out of the motorhome to create a vacuum. Leaks are detected with smoke or a draught detector. | €80–120 | 1h |
-| Thermal imaging camera | An infrared camera detects temperature variations caused by moisture — damp areas appear colder. | €100–150 | 30 min |
-| Moisture meter | A sensor measures moisture levels in walls. Above 15%, there’s a risk of mould. | €50–80 | 20 min |
+| Pressure test | A fan creates negative pressure inside the vehicle; leaks are spotted with a smoke pencil or a draught detector. | €80–120 | ~1h |
+| Thermal imaging camera | An infrared camera detects temperature variations caused by moisture. | €100–150 | ~30 min |
+| Moisture meter | A sensor measures moisture levels in the panels; a high reading signals a risk of mould. | €50–80 | ~20 min |
 
-*Source: Wikicampers*
+You'll find these services at specialist maintenance centres, independent garages, dedicated motorhome shows, or directly with the manufacturer during an annual service, since a waterproofing check is often included in a winterisation package.
 
-Where to find these services?
+## How much does a waterproofing repair cost?
 
--   [Specialist motorhome maintenance centres](/en/motorhomes-campervans/maintenance-winterising), like Norauto Pro or Feu Vert networks, or independent garages.
--   Motorhome shows, where stands offer free or discounted diagnostics, like the Salon des Véhicules de Loisirs in Paris.
--   Manufacturers like Hymer or Dethleffs during annual services — a waterproofing check is often included in winter storage packages.
--   [Specialist winter storage workshops](/en/motorhomes-campervans/motorhome-winterisation-checklist) for a full check before hitting the road again.
-
-## How much does waterproofing repair cost?
-
-Costs depend on the severity of the problem. Here’s what to expect:
+The cost depends on how severe the problem is.
 
 | Problem | Repair cost | Duration |
 | --- | --- | --- |
-| Door seal replacement | €50–150 | 1h |
-| Partial roof membrane replacement | €300–800 | 1 day |
-| Skylight replacement | €200–500 | 2h |
-| Anti-corrosion treatment (lower bodywork) | €150–400 | 3h |
-| Leak repair in walls (partial dismantling) | €800–2,000 | 2–3 days |
+| Door seal replacement | €50–150 | ~1h |
+| Partial roof membrane repair | €300–800 | ~1 day |
+| Skylight replacement | €200–500 | ~2h |
+| Anti-corrosion treatment (lower bodywork) | €150–400 | ~3h |
+| Repairing an infiltration inside the panels | €800–2,000 | 2–3 days |
 
-*Source: Generali*
+If your motorhome is still under manufacturer warranty, check whether waterproofing is covered: some policies cover roof membrane repairs, provided you've had a documented annual check within the manufacturer's network.
 
-If your motorhome is still under manufacturer’s warranty — typically 5 to 7 years — check if waterproofing is covered. Some policies cover leak repairs, provided you’ve had an annual check. For example, Hymer covers roof membrane repairs for 6 years if the vehicle has been serviced within its network.
-
-## How to prevent waterproofing problems
+## How can you prevent waterproofing problems?
 
 ![Applying water-repellent spray to the roof of a camper van](/images/articles/etancheite-camping-car-controle-2.webp)
 
-A few simple steps can prevent nasty surprises, especially if you often drive in the rain or near the sea:
+A few simple habits prevent nasty surprises, especially for a vehicle that often drives in the rain or near the sea. Clean the seals once a month with a damp cloth, and apply a specialist seal spray to keep them supple before winter. Check the fixing screws after every wash or outing in the rain: a simple screwdriver is enough to retighten those on skylights and aerials. A water-repellent product applied to the roof and lower bodywork, renewed roughly every 2 years, extends the life of the membranes. Avoid high-pressure washes, which can loosen seals, and favour a manual wash instead. Finally, park the vehicle under cover where possible, since a motorhome left in full sun then in the rain ages faster.
 
--   **Clean the seals** — once a month, wipe door and window seals with a damp cloth to remove dust and silicone residue. Use a specialist seal spray like CRC Joints to keep them supple, especially before winter.
--   **Check fixing screws** — after every wash or outing in the rain, tighten screws on skylights, aerials, and air conditioning units. A simple cross-head screwdriver can prevent leaks after a motorway trip.
--   **Apply a water-repellent product** — on the roof and lower bodywork, a water-repellent spray (€50 per litre) extends the life of waterproof membranes. Reapply every 2 years for a motorhome used year-round.
--   **Avoid high-pressure washes** — the pressure can loosen seals or force water into gaps. Opt for a manual wash or roller, especially on older models.
--   **Store your motorhome dry** — if possible, park under cover or use a breathable tarpaulin to avoid condensation. A motorhome left in full sun in summer and rain in winter ages twice as fast.
+For a full cold-season preparation, our [winterisation checklist](/motorhome-winterisation-checklist/) rounds out these waterproofing checks, and our guide to [gas safety](/motorhome-gas-safety-guide/) covers the other points to check before putting the vehicle away. If the waterproofing reveals damage too severe to repair sensibly, our guide to [buying a used motorhome](/used-motorhome-buying-guide/) helps you weigh the cost of a heavy repair against changing vehicles altogether.
 
-For a weekend camper van, these steps are enough. However, for a 10-year-old motorhome touring Europe, an annual professional check is a must.
+## Frequently asked questions
+
+### How often should you check your motorhome's waterproofing?
+
+Twice a year is enough for regular use: before winterisation in October, and before setting off on holiday in spring.
+
+### How do you detect a leak without professional equipment?
+
+A visual inspection of the seals and roof, backed by a water test with a garden hose at a moderate flow, catches most leaks.
+
+### How much does repairing a roof membrane cost?
+
+Between €300 and €800 for a partial repair, depending on how extensive the damage is and the motorhome model.
+
+### Can a high-pressure wash cause a leak?
+
+Yes, the pressure can loosen existing seals. A manual wash stays safer for sensitive areas around openings.
+
+### Does the manufacturer warranty cover waterproofing problems?
+
+It depends on the contract: some manufacturers cover roof membrane repairs for several years, provided you have a documented annual check within their network.

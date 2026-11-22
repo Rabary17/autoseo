@@ -1,118 +1,107 @@
 ---
 title: "Motorhome Parking in Cities: Rules, Bans and Tips to Avoid Fines"
-description: "Parking a motorhome in a city is legal, just like parking a car, but abusive local by-laws and confusion between parking and camping lead to avoidable fine"
-date: "2026-10-29"
+description: "Parking a motorhome in a city is legal, just like parking a car. Most fines actually punish camping on the public road, not parking itself."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1627
 wp_locale: "en"
 image: "/images/articles/motorhome-parking-city-rules-couverture.webp"
-imageAlt: "Stationnement camping-car en ville : règles, interdictions et astuces pour éviter les amendes"
+imageAlt: "Motorhome parking in town: rules, bans and tips to avoid fines"
 ---
-Parking a motorhome in a city is perfectly legal. You can leave it on any standard parking space—unless a sign explicitly forbids it. But beware: 80% of fines issued to motorhome owners in urban areas aren’t for parking violations. They’re for « camping » on public roads. Setting up a table and chairs or extending an awning, for example, is against the rules. Here’s what the law actually says, how to spot the pitfalls, and what tricks to use to avoid penalties.
+***Parking a motorhome in a city is entirely legal, on any standard parking space.*** *Most fines issued to motorhome owners in urban areas don't punish the parking itself, but "camping" on the public road: taking out a table, extending an awning. Here's what the law actually says, and how to avoid the pitfalls.*
 
-## 1\. What the law says: parking vs. camping
+TL;DR:
 
-![Motorhome parked in a city parking space with no awning or table outside](/images/articles/stationnement-camping-car-regles-ville-1.webp)
+-   **Parking** a motorhome, engine off, with nothing taken out of the living area, is allowed anywhere a car can park.
+-   **Camping** on the public road, chocks, table, an awning extended, risks a **€35** fine, €75 if paid late.
+-   A municipal bylaw that bans motorhomes **generally and absolutely** can be challenged, but a limited, justified restriction can hold up.
 
-French regulations clearly distinguish between two situations.
+## Parking versus camping: what does the law actually say?
 
--   **Parking**: leaving your motorhome in a parking space with the engine off. The vehicle must not take up more space than its size. This is allowed anywhere a car can park—unless a local by-law specifically bans it. However, such by-laws are often ruled illegal. More on that below.
--   **Camping**: turning a public road into a living space. Putting out chocks, setting up a table, or extending an awning? That’s not allowed. Even opening a window to air out a bed in the height of summer can land you a fine. The penalty is €35, rising to €75 if you pay late.
+**The regulation clearly separates two situations, and that's where everything turns.** Parking means leaving your vehicle in a space, engine off, without taking up more room than its own size. That's allowed anywhere a car can park, unless a specific municipal bylaw says otherwise.
 
-For a city weekend with two bikes on a bike rack, the rule is simple. Park like a car. Don’t take anything out of the living area. That way, you’ll be fine. If you fancy an aperitif outside, look for a dedicated motorhome area or a campsite. After all, the public highway isn’t an extension of your living room.
+**Camping** means turning the public road into a living space: putting down chocks, taking out a table, extending an awning, or even opening a window to air out a bed in summer. That's banned, with a fine of **€35**, rising to **€75** if paid late. For a weekend in town, the rule stays simple: park like a car, don't take anything out of the living area, and look for a dedicated area if you want to sit outside for a drink. Before you set off, also check the [speed limits that apply to a motorhome](/motorhome-speed-limits-law/) and the [maximum weight allowed on a standard car licence](/motorhome-weight-licence-guide/), two points that shape the trip before parking even comes into it.
 
-## 2\. Local by-laws: often illegal, but how to challenge them?
+### Direct answer
 
-Some towns put up signs saying « No motorhome parking » or « Motorhomes over 3.5 tonnes prohibited. » The problem? These by-laws are frequently overturned by administrative courts. They’re often deemed insufficiently justified or discriminatory.
+Parking a motorhome with the engine off, without taking anything out of the vehicle, is exactly as legal as parking a car. Camping on the public road, with a table, chair or awning out, is banned and fined €35 to €75.
 
-The French Federation of Camping and Caravanning (FFCC) and the Senate have confirmed this illegality. Blanket bans are invalid—unless the local authority can prove motorhomes cause a specific issue, such as obstruction or a safety risk.
+## Are anti-motorhome bylaws actually legal?
 
-If you’re fined for illegal parking when you were parked like a car, you can appeal. Here’s how:
+![Motorhome parked on a city parking space with no awning or table outside](/images/articles/stationnement-camping-car-regles-ville-1.webp)
 
--   Check that the local by-law is displayed at the town hall. It must be accessible to the public.
--   Request a copy of the by-law via a [request for administrative documents](/en/motorhomes-campervans/insurance-legal).
--   If the by-law doesn’t justify the ban, you stand a good chance of winning. For example, a vague mention like « for safety reasons » without evidence isn’t enough. A formal appeal or administrative court can overturn the fine.
+**A bylaw that bans motorhomes generally and permanently gets overturned by administrative courts fairly often.** Case law, pushed notably by the Comité de Liaison du Camping-Car (CLC), has secured the cancellation of several bylaws judged disproportionate, sometimes alongside an order to remove the signage. A bylaw must cite specific legal and factual grounds to justify a restriction, under Article L. 2213-2 of the French Code général des collectivités territoriales.
 
-In practice, many local authorities prefer to drop proceedings. They’d rather avoid the risk of the fine being overturned—especially if you cite FFCC case law or the Senate’s response (written question no. qSEQ241001232).
+This rule isn't absolute, though. A restriction **limited in space and time**, for example a night-time ban on a specific car park backed by a genuine justification, can be upheld by a court. The difference lies in the bylaw's stated reasoning, not simply in the fact that it targets motorhomes.
 
-## 3\. Where to park in a city without risk?
+If you receive a fine while parked like a car, a few steps help you challenge it: check that the bylaw is properly displayed at the town hall, request a copy of it, and compare its stated reasoning against your actual situation. In practice, many town halls drop proceedings rather than risk having the bylaw overturned in administrative court, especially when it lacks a detailed justification.
 
-Even if the law lets you park like a car, some areas are safer. Here’s where to leave your motorhome in a city:
+## Where can you park in a city without a bad surprise?
 
--   **Public car parks**: often paid, but no risk of a « camping » fine. Check the height clearance—motorhomes easily exceed 2.80 m.
--   **Motorhome service areas**: some towns offer these free or at a low cost (€5-10 per night). They come with facilities like waste disposal or water. That way, you avoid conflicts with local residents.
--   **Industrial or commercial zones**: on the outskirts, spaces are wide and less monitored. Avoid residential city centres—locals quickly report « suspicious » vehicles.
--   **Municipal campsites**: an affordable option (€10-15 per night) for stress-free city stays. Some even accept late arrivals.
+Even where the law allows parking just like for a car, some spots cut the practical risk. **Public car parks** often charge a fee but carry no risk of a "camping" fine, provided you check the height clearance, since a motorhome easily tops 2.80 m. Dedicated **motorhome service areas**, free or around €5 to €10 a night, also offer facilities like waste disposal or water.
 
-For a 10-day road trip with city stops, alternate between dedicated motorhome areas and public car parks. Avoid staying in the same spot for more than 24 hours—local authorities don’t like motorhomes hogging the same spaces.
+**Industrial or commercial zones** on the outskirts offer wide, lightly monitored spaces, unlike residential city centres where locals more readily report a vehicle they see as "suspicious." A **municipal campsite**, around €10 to €15 a night, stays an affordable, stress-free way to sleep in town, and some even accept late arrivals.
 
-## 4\. Pitfalls to avoid (and how to get around them)
+For a road trip with several urban stops, alternate between dedicated areas and public car parks, and avoid staying more than 24 hours in the same spot: town halls rarely appreciate a motorhome settling in long-term on the same space.
 
-![Motorhome with awning extended in a car park next to a no-camping sign](/images/articles/stationnement-camping-car-regles-ville-2.webp)
+## What are the costliest pitfalls?
 
-Some situations seem harmless. Yet they can land you a fine. Here are common traps and how to sidestep them:
+Some situations look harmless but still lead to a fine. Here are the most common cases and how to avoid them.
 
 | Situation | Risk | Solution |
 | --- | --- | --- |
-| Taking out a folding chair to read on the pavement | Fine for « camping » (€35) | Stay in the vehicle or find a park. |
-| Extending an awning to shelter from the sun | Fine for occupying public space (€75) | Use a built-in blind or park in the shade. |
-| Emptying grey water on the road | Fine for pollution (up to €450) | Use the waste disposal points at dedicated service areas. |
-| Double-parking « just for 5 minutes » | Fine for obstructive parking (€35) | Find a legal space, even if it’s further away. |
-| Forgetting to pay the parking meter (even for 10 minutes) | Fine for non-payment (€17) | Use a mobile payment app (PayByPhone, etc.). |
+| Taking out a folding chair on the pavement | Camping fine (€35) | Stay in the vehicle or find a park |
+| Extending an awning for shade | Fine for occupying the public road (€75) | Use a built-in blind or park in the shade |
+| Emptying grey water on the road | Pollution fine (up to €450) | Use the waste points at dedicated service areas |
+| Double-parking "for just 5 minutes" | Obstructive parking fine (€35) | Find a legal spot, even if it's further away |
+| Forgetting to pay the meter | Non-payment fine (€17) | Use a mobile payment app |
 
 *Source: FFCC*
 
-Another trap: **ZTL zones** (Zona a Traffico Limitato) in Italy or Spain. Even if parked like a car, entering a ZTL without permission costs between €80 and €160. The fine often arrives months later—so you might get an unpleasant surprise after returning to France. If you’re staying at a hotel in a ZTL, ask the establishment to register your number plate.
+Another trap concerns **ZTL zones** (limited traffic zones) in Italy or Spain. Even parked correctly, entering a ZTL without authorisation costs between €80 and €160, a fine that often arrives months after you're back home.
 
-## 5\. Insurance and parking: what your policy covers (and doesn’t)
+### Direct answer
 
-Your motorhome insurance covers damage to the vehicle in case of an accident or theft. However, some situations aren’t included:
+The costliest fines target camping on the public road, not parking. Taking out a table, an awning, or emptying wastewater in the street risks fines from €35 up to €450, far beyond a simple missed parking meter.
 
--   **The bike rack and bikes**: often **not covered** by default. If you’re carrying two bikes worth €1,500 each, check your policy. You might need « accessories » or « transported items » cover. Otherwise, an extension costs €20-50 per year.
--   **Fines**: never covered by insurance, even with « fully comprehensive » policies.
--   **Damage caused by unsafe parking**: parked your motorhome under a dead tree? A branch falls on it. Your insurer might refuse to cover the damage—it could be deemed negligence.
+## What does your insurance actually cover?
 
-The average cost of motorhome insurance in France? Between **€200 and €600 per year**—that’s €17-50 per month. For a new motorhome costing €80,000, expect to pay €500-600 per year for fully comprehensive cover.
+Your motorhome insurance covers damage to the vehicle in case of an accident or theft, but several situations stay excluded by default. The **bike rack and the bikes carried** often aren't covered without a specific add-on, with an "accessories" or "transported items" extension costing €20 to €50 a year. **Fines** are never covered, even under a fully comprehensive policy. Clearly unsafe parking, under a dead tree for instance, can also give an insurer grounds to refuse a claim for negligence.
 
-## 6\. What to do if you get a fine
+The average cost of motorhome insurance sits between **€200 and €600 a year**, or €17 to €50 a month, and can rise to €500–600 a year for fully comprehensive cover on a new vehicle, whose [depreciation](/motorhome-depreciation-first-year/) runs faster than an ordinary car's in the first few years.
 
-If you receive a penalty notice for illegal parking or « camping, » here’s what to do:
+## What should you do if you get a fine?
 
-1.  **Check the legality of the local by-law**. If it’s illegal, you can appeal. The FFCC provides appeal templates for members.
-2.  **Pay within 15 days**. You’ll get a 30% discount. For example, €35 instead of €50.
-3.  **Appeal if the fine is unfair**. Send a recorded-delivery letter to the address on the notice. Include photos showing your vehicle parked like a car and proving no « no parking » sign was present.
-4.  **Make a formal appeal** to the local authority. Many drop proceedings to avoid a court case.
+Four steps structure your response to a fine. First, check the **legality of the municipal bylaw** cited: if it lacks a precise justification, a challenge stands a good chance. Pay within **15 days** if you choose not to contest it, for a 30% reduction. Challenge by **recorded-delivery letter** if the fine looks unfair, backed by photos showing the vehicle parked like an ordinary car. Finally, file an **informal appeal** with the town hall, since many drop proceedings rather than risk a court case.
 
-For a three-week road trip with city stops, budget €50-100 for « fines. » Even if you follow the rules to the letter, some local authorities issue penalties as a matter of course.
+## Alternatives for a stress-free night in town
 
-## 7\. Alternatives to city parking: stress-free overnight solutions
+**Motorhome service areas**, often free or low-cost, offer water and waste disposal and are easy to find through dedicated apps. **Municipal campsites** stay affordable, with toilets and sometimes a pool. Some **supermarket car parks** tolerate one night of parking, worth checking directly with the store or the security guard.
 
-Want to avoid the risk of fines or sleep in peace? Here are the alternatives:
+Abroad, the rules shift noticeably. Spain allows parking as in France, with plenty of well-equipped dedicated areas (*áreas para autocaravanas*). Germany tolerates parking in public car parks but bans camping, with *Stellplätze* around €5 to €15 a night. Italy calls for particular care around ZTL zones. Portugal tolerates parking but restricts beaches and nature parks. For planning a route without surprises between stops, keeping half an eye on your [winterisation checklist](/motorhome-winterisation-checklist/) also helps if your trip runs into the colder months.
 
--   **Motorhome service areas**: often free or low-cost (€5-10 per night). They offer facilities like water or waste disposal. Some are right in the city centre—like the Lyon Part-Dieu service area. Others are on the outskirts. Use apps like _Park4Night_ or _CamperContact_ to find them.
--   **Municipal campsites**: affordable (€10-15 per night). They provide toilets and sometimes a pool. Some accept late arrivals.
--   **Supermarket car parks**: some tolerate motorhomes for one night. Check the signs or ask the security guard. Chains like _Lidl_ or _Aldi_ are often welcoming.
--   **Couchsurfing or home swaps**: platforms like _Gamping_ or _HomeCamper_ offer stays with locals. Expect to pay €10-20 per night for a garden or private parking space.
+## Frequently asked questions
 
-For a weekend in Paris with a 7-metre motorhome, the Porte de Saint-Cloud service area is a good option. It’s free and limited to 24 hours—but arrive early, as it’s often full.
+### Can you park a motorhome anywhere in a city?
 
-### What about abroad?
+Yes, on any standard parking space, engine off and with nothing taken out of the living area, unless a specific, justified municipal bylaw says otherwise. It's camping, not parking, that gets punished.
 
-The rules vary by country. Here’s what you need to know:
+### Is a bylaw banning motorhomes always illegal?
 
--   **Spain**: parking is allowed as in France. Local authorities can impose restrictions. Dedicated motorhome areas (_áreas para autocaravanas_) are plentiful and well-equipped.
--   **Germany**: parking is allowed in public car parks. However, « camping » (setting up tables/chairs) is banned. _Stellplätze_ (dedicated areas) cost €5-15 per night.
--   **Italy**: watch out for **ZTLs** (Zona a Traffico Limitato) in city centres. Even if parked, entering a ZTL costs €80-160. Service areas (_aree sosta_) are often paid (€10-20 per night).
--   **Portugal**: parking is generally tolerated. However, beaches and nature parks often ban motorhomes. _Parques de campismo_ are affordable (€8-15 per night).
+No. A general, permanent ban with no precise justification is often overturned by the courts. A restriction limited in space and time, properly justified, can instead be upheld.
 
-For a European road trip, budget €10-20 per night for parking. Download local apps to avoid nasty surprises.
+### What fine do you risk for taking out a table or an awning?
 
-## In summary: the 5 golden rules for stress-free city parking
+€35 for a simple item taken out of the vehicle, up to €75 for occupying the public road with an awning extended. Emptying grey water in the street can cost up to €450.
 
--   Park like a car. No chocks, no awning, no table outside.
--   Check the signs. A local by-law can ban motorhomes—but it must be justified. If not, appeal.
--   Avoid residential city centres. Opt for public car parks or dedicated service areas.
--   Don’t stay in the same spot for more than 24 hours. Even if it’s legal, local authorities don’t like squatters.
--   Check your insurance. Bike racks, bikes, and accessories aren’t always covered.
+### Does motorhome insurance cover fines?
 
-With these rules in mind, a city weekend in your motorhome will go smoothly—and fine-free. Happy travels!
+No, never, even under a fully comprehensive policy. It covers damage to the vehicle, not administrative penalties linked to parking or camping on the public road.
+
+### How do you challenge a fine you think is unfair?
+
+By recorded-delivery letter, backed by photos showing the vehicle parked like an ordinary car, after first checking that the bylaw cited is properly displayed at the town hall and clearly justified.
+
+### Do Italy's ZTL zones also affect parking?
+
+Yes, indirectly: even parked correctly, entering a ZTL without authorisation costs between €80 and €160, a fine that can arrive several months after you're back home.

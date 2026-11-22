@@ -1,109 +1,93 @@
 ---
 title: "Motorhome Gas Safety: Regulations and Best Practices for Worry-Free Travel"
-description: "Which gas cylinders are permitted in motorhomes? How do you detect a leak, and what equipment should you install for safe travel? Practical answers and up-"
-date: "2026-11-11"
+description: "Which gas cylinders are allowed in a motorhome, how to detect a leak, and what equipment to install for safe travel. The practical answers for 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1625
 wp_locale: "en"
 image: "/images/articles/motorhome-gas-safety-guide-couverture.webp"
-imageAlt: "Gaz en camping-car : sécurité, réglementation et bonnes pratiques pour voyager serein"
+imageAlt: "Gas in a motorhome: safety, regulations and best practices for worry-free travel"
 ---
-A motorhome or converted van often relies on gas for cooking, heating or producing hot water. But this independence comes at a cost. Gas remains a pressurised, flammable fuel that can be dangerous if mishandled. Here’s what the law says, and how to apply it on the road for a family road trip or getaway with friends without any nasty surprises.
+***A motorhome or converted van often relies on gas for cooking, heating or hot water. That independence comes at a price: gas stays a pressurised, flammable fuel that turns dangerous when mishandled.***
 
-## 1\. Which gas cylinders are permitted in motorhomes?
+TL;DR: only cylinders designed for leisure vehicles are allowed on board, stored in a dedicated, ventilated locker. A gas detector and a hose that meets the standard are the most important safety equipment to check before every trip.
+
+-   Cylinders must be **approved for leisure vehicles** (EN 12807 standard): 35 kg domestic cylinders are banned on board.
+-   A **gas detector** near the locker stays the best protection against a leak, even though no general legal obligation currently requires one; check what your insurer recommends.
+-   The **connecting hose** has a limited lifespan, generally around 5 years: the date is stamped on it, check it regularly.
 
 ![Ventilated motorhome gas locker with approved cylinder and safety valve](/images/articles/gaz-camping-car-securite-1.webp)
 
-In France, only gas cylinders designed for leisure vehicles are permitted on board. They must meet several strict criteria:
+## Which gas cylinders are allowed in a motorhome?
 
--   **European approval**: marked **EN 12807** with a safety valve to limit pressure in case of overheating.
--   **Vibration resistance**: models such as **Butagaz 13 kg**, **Primagaz 13 kg** or **Antargaz 13 kg** are designed to withstand bumps while travelling.
--   **Domestic cylinders banned**: 35 kg propane cylinders (for fixed use) are prohibited in motorhomes. They don’t withstand impacts and pose a risk in case of rollover.
+**Only cylinders designed for leisure vehicles, compliant with the European EN 12807 standard, are allowed on board a motorhome.** They must withstand road vibration and include a safety valve that limits pressure in case of overheating.
 
-Gas is stored in a **dedicated locker**, ventilated to the outside and isolated from the living area. This locker must be airtight, with a **low ventilation hatch** to release any leaks. Propane is heavier than air, after all.
+The 13 kg propane or butane cylinders sold for leisure vehicles meet these criteria. By contrast, **35 kg domestic cylinders**, designed for fixed use, are banned in a motorhome: they don't withstand impacts and pose a greater risk if the vehicle rolls over.
 
-### 1.1 Can you use a gas cylinder bought abroad in France?
+Gas must be stored in a **dedicated locker**, sealed and ventilated to the outside, isolated from the living area. A low ventilation hatch clears any leak, since propane is heavier than air and settles at ground level.
 
-Yes, but with an adapter. Cylinders bought in Spain, Germany or Italy are permitted if they comply with the **EN 12807** standard. However, their valve must be compatible with French regulators. Connections often differ, such as in Spain where the threading is reversed.
+### Can you use a gas cylinder bought abroad in France?
 
-To avoid leaks, have your cylinder refilled at an approved French station. The list is available on Antargaz or Butagaz websites.
+Yes, with the right adapter. Cylinders bought in another European country are tolerated if they meet the EN 12807 standard, but their valve isn't always compatible with French regulators: the threading sometimes differs from one country to the next. To avoid a leak at the connection, have your cylinder refilled at an approved French station as soon as you can.
 
-## 2\. Detecting a gas leak: warning signs
+## How do you detect a gas leak in a motorhome?
 
-A gas leak in a motorhome can cause carbon monoxide (CO) poisoning or an explosion. Here’s what to watch for:
+**A distinctive smell, a hiss near the connections, or a lit detector light should alert you immediately.** An untreated leak can cause carbon monoxide poisoning or, in the worst cases, an explosion.
 
--   **Rotten egg smell**: mercaptan added to gas makes it detectable. Never ignore it.
--   **Hissing near connections**: a faulty seal or cracked hose may be leaking.
--   **Detector light on**: recent models trigger a visual and audible alarm.
--   **Difficulty lighting appliances**: low pressure may indicate a leak.
+Domestic gas contains mercaptan, an additive that gives it a rotten-egg smell specifically to make it detectable: never ignore it, even if faint. A hiss near the connections often signals a faulty seal or a cracked hose. Difficulty lighting an appliance can also point to low pressure caused by a leak.
 
-### 2.1 What to do if you suspect a gas leak
+If you suspect a leak, turn off the gas supply immediately, ventilate the living area by opening doors and windows, avoid touching any electrical switch that could spark, and leave the vehicle until the smell fully clears. Have the installation checked by a professional before using it again.
 
-If you suspect a leak:
+Don't wait for a strong smell before acting. A leak that starts small rarely stays that way, and the earlier you catch it, the simpler and cheaper the fix. A professional check after any suspected leak also protects you if you later need to make an insurance claim.
 
-1.  **Turn off the gas supply** immediately.
-2.  **Ventilate the living area** by opening doors and windows.
-3.  **Avoid sparks**: don’t touch any electrical switches.
-4.  **Leave the vehicle** until the smell has completely dissipated.
-5.  **Have the installation checked** by a professional before using it again.
-
-## 3\. Mandatory and recommended safety equipment
+## What safety equipment should you install on board?
 
 ![Fixed gas detector near the gas locker in a motorhome](/images/articles/gaz-camping-car-securite-2.webp)
 
-To travel safely, here’s the equipment you should have. Some is mandatory, while other items are strongly recommended.
+**A gas detector near the locker, a hose that meets the standard, and a safety valve form the trio of equipment to check every season.**
 
-| Equipment | Mandatory? | Purpose |
+| Equipment | Role | Point to watch |
 | --- | --- | --- |
-| Gas detector | Yes (since 2021) | Detects propane/butane leaks and triggers an alarm. _Source: Matmut_ |
-| CO detector | Yes (if gas heating) | Detects carbon monoxide, an odourless and deadly gas. |
-| Approved hose | Yes | Must bear the **NF D 36-121** mark and be replaced every **5 years**. |
-| Safety valve | Yes | Cuts off the gas supply in case of overpressure or hose rupture. |
-| Ventilated gas locker | Yes | Must be airtight and ventilated to the outside. |
+| Gas detector | Detects propane or butane leaks and triggers an alarm | Strongly recommended by professionals and insurers |
+| Carbon monoxide (CO) detector | Detects an odourless, potentially deadly gas | Useful as soon as a gas heater is on board |
+| Connecting hose | Links the cylinder to the circuit | Limited lifespan, generally around 5 years: check the stamped date |
+| Safety valve | Cuts the gas supply in case of overpressure | Test it visually before every long trip |
+| Ventilated gas locker | Isolates and clears any leak | Must stay sealed towards the living area and ventilated outside |
 
-Other equipment, though not mandatory, improves safety:
+Place the detector low down, near the gas locker, away from heat sources or draughts that could skew the reading. Some connected models send a smartphone alert if a leak occurs, even while you're away from the vehicle.
 
--   **Anti-theft device for cylinder**: secures the cylinder in its locker.
--   **Gas filter**: protects appliances from impurities.
+## Does a motorhome's gas circuit need regular inspection?
 
-*Source: Matmut*
+**Yes, a periodic check of the installation stays strongly recommended, even though no uniform obligation applies based on vehicle weight.** That check covers the circuit's tightness, the condition of hoses and connectors, the safety valves' operation, and the locker's ventilation.
 
-### 3.1 Where to install a gas detector
+An approved professional generally runs a pressure test to catch micro-leaks invisible to the eye. You get a compliance certificate after the check; keep it, since it can be requested after an incident or a roadside check, and it also makes reselling the vehicle easier.
 
-Install the detector **less than 30 cm from the floor**, near the **gas locker**. Avoid heat sources or draughts. Some connected models send an alert to your smartphone if a leak occurs, even when you’re away.
+Before winterisation, empty the cylinder to prevent corrosion, disconnect the hose and store it somewhere dry, check the gas locker's seal and cleanliness, and test the detectors, replacing their batteries if needed. For a full seasonal preparation, our [complete winterisation checklist](/motorhome-winterisation-checklist/) covers each step in order, and our guide to [leisure battery care](/leisure-battery-maintenance-tips/) covers the electrical side of that same seasonal routine. Since a gas locker shares the same bodywork as the rest of the vehicle, also check our guide to [motorhome waterproofing](/motorhome-waterproofing-check-guide/): a leak around the locker's seal often starts as a water infiltration issue before it becomes a gas one.
 
-## 4\. Inspections and maintenance: what the regulations say
+## What mistakes do experienced travellers avoid?
 
-In France, the gas installation in a motorhome must be inspected every three years. This rule applies to vehicles over 3.5 tonnes (maximum authorised mass). For others, an inspection is strongly recommended before a long trip.
+A few mistakes come up regularly and compromise safety on board. **Storing a spare cylinder in the living area**, even empty, stays a bad habit: it must always stay in the dedicated locker. **Using a hose past its stamped date** multiplies the risk of an invisible crack. **Ignoring a gas smell**, even a faint one, can let a leak worsen over days. Finally, **skipping checks after a long period of standing**, exposes you to leaks that developed while the vehicle sat idle in the garage.
 
-Here’s what’s checked during the inspection:
+By following these simple rules, you can enjoy your motorhome with complete peace of mind, whether for a weekend in the mountains or a multi-week tour of Europe. For the road itself, also check the [speed limits that apply to your motorhome](/motorhome-speed-limits-law/) based on its weight, and the [parking rules in towns](/motorhome-parking-city-rules/) that apply to your vehicle.
 
--   Circuit tightness (pressure test).
--   Condition of hoses and connections.
--   Operation of safety valves.
--   Ventilation of the gas locker.
+## Frequently asked questions
 
-A compliance certificate will be issued after the inspection. Keep it safe—it may be requested during a roadside check or in case of an accident.
+### Can you cook with gas while the motorhome is moving?
 
-### 4.1 Winter storage: how to prepare your gas installation
+No, that's not recommended. The gas supply should stay closed while driving, to avoid any risk from an impact or prolonged vibration on the circuit.
 
-Before storing your motorhome for winter, follow these key steps:
+### How long does a 13 kg gas cylinder last in a motorhome?
 
-1.  **Drain the cylinder** to prevent corrosion.
-2.  **Disconnect the hose** and store it in a dry place.
-3.  **Check the gas locker’s airtightness** and clean it.
-4.  **Test the detectors** (gas and CO) and replace batteries if needed.
-5.  **Protect appliances** with covers to guard against moisture.
+That depends heavily on use: cooking alone, occasional heating, or hot water production. Expect generally several weeks for occasional cooking use, far less if gas heating runs continuously in cold weather.
 
-For more details, see our [Maintenance & Winter Storage](/en/motorhomes-campervans/maintenance-winterising) guide. For a full [winter storage checklist](/en/motorhomes-campervans/motorhome-winterisation-checklist), follow our detailed advice.
+### Do you need separate gas and CO detectors?
 
-## 5\. Gas in motorhomes: mistakes to avoid
+Ideally yes, since they detect two different risks: combustible gas on one side, odourless carbon monoxide on the other, often produced by incomplete combustion in a heater.
 
-A few common mistakes can compromise your safety:
+### What should you do if the gas hose is cracked?
 
--   **Storing a spare cylinder in the living area**: even when empty, it must stay in the dedicated locker.
--   **Using an expired hose**: a hose has a maximum lifespan of 5 years. Check the date stamped on it.
--   **Ignoring a gas smell**: even a minor leak can worsen. Act immediately.
--   **Skipping inspections**: a motorhome left unused for months may develop leaks. Have the installation checked before setting off again.
+Stop using it and replace it immediately with a new, compliant model. Even a slight crack can let gas escape gradually, in a way that's hard to detect.
 
-By following these rules, you can enjoy your motorhome with complete peace of mind. Whether for a weekend in the mountains or a tour of Europe, safety comes first.
+### Does an LPG-fuelled motorhome follow the same rules as its domestic gas?
+
+No, these are two entirely separate circuits. LPG fuel powers the engine and follows its own regulations for the tank, covered in our guide to [LPG tank inspection](/lpg-tank-inspection-guide/), while domestic gas powers the kitchen, heating and hot water.
