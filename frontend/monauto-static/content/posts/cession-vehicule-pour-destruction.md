@@ -1,109 +1,122 @@
 ---
-title: "Cession d’un véhicule pour destruction : guide complet 2026 (ANTS, Cerfa, délais)"
-description: "Vous cédez un véhicule pour destruction ? Délai : 15 jours pour déclarer la cession à l’ANTS avec le Cerfa n°15776*02. On détaille les étapes et documents "
-date: "2026-07-30"
+title: "Céder un véhicule pour destruction : démarches 2026"
+description: "La cession pour destruction se déclare à l'ANTS sous 15 jours. Délai, Cerfa, coût réel et étapes à suivre, expliqués simplement en 2026."
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 926
 wp_locale: "fr"
 image: "/images/articles/cession-vehicule-pour-destruction-couverture.webp"
-imageAlt: "Cession d'un véhicule pour destruction : guide complet 2026 (ANTS, Cerfa, délais)"
+imageAlt: "Céder un véhicule pour destruction : démarches ANTS 2026"
 ---
-Vous devez déclarer la cession de votre véhicule pour destruction à l’ANTS dans un délai strict de 15 jours à compter de la date de vente. Cette obligation légale, prévue par l’article R322-4 du Code de la route, évite que vous restiez responsable des infractions commises avec le véhicule après la cession. Voici la marche à suivre, étape par étape.
+***Céder un véhicule pour destruction suit une règle stricte, une déclaration à l'ANTS sous 15 jours. Passé ce délai, le vendeur répond encore des infractions commises avec le véhicule.***
 
-![Personne remplissant le formulaire Cerfa n°15776\*02 pour une cession de véhicule à détruire](/images/articles/cession-vehicule-pour-destruction-1.webp)
+Votre voiture est accidentée, trop âgée pour repasser le contrôle technique, ou simplement bonne pour la casse. Avant de la confier à un centre agréé, il faut d'abord déclarer la cession. Voici la marche à suivre, les documents à réunir et ce que coûte réellement l'opération.
 
-## 1\. Pourquoi déclarer la cession d’un véhicule pour destruction ?
+TL;DR : la cession pour destruction se déclare en ligne sous 15 jours, avec le certificat de cession Cerfa n°15776\*02.
 
-La déclaration de cession est obligatoire pour trois raisons.
+-   La reprise par un centre VHU agréé est **gratuite** si le véhicule est complet.
+-   Le retard de déclaration expose à une amende de **90 à 375 €**.
+-   Personne ne reçoit de nouvelle carte grise, le véhicule part directement à la destruction.
 
--   **Transfert de responsabilité.** Une fois la cession déclarée, vous n’êtes plus responsable des amendes ou accidents impliquant le véhicule.
--   **Annulation de la carte grise.** L’ANTS invalide l’ancien certificat d’immatriculation. Cela empêche toute utilisation frauduleuse.
--   **Conformité légale.** L’article R322-4 du Code de la route l’impose sous peine de sanctions.
+![Personne remplissant le formulaire Cerfa n°15776*02 pour une cession de véhicule à détruire](/images/articles/cession-vehicule-pour-destruction-1.webp)
 
-Sans déclaration, vous restez responsable pendant 1 mois après la vente. En effet, l’acheteur peut circuler avec l’ancienne carte grise à votre nom. Vous risquez alors de recevoir des PV pour des infractions commises par lui.
+## Pourquoi déclarer la cession d'un véhicule détruit
 
-## 2\. Quels documents fournir pour la cession d’un véhicule pour destruction ?
+Un véhicule promis à la casse engage votre **responsabilité** tant que la cession n'est pas déclarée. L'article R322-4 du code de la route impose cette démarche pour toute cession, destruction comprise. Sans déclaration, les amendes liées au véhicule continuent de vous parvenir, même un mois après la vente.
 
-Pour déclarer la cession, réunissez 4 documents.
+Une cession classique oblige l'acheteur à payer une nouvelle carte grise, comme le détaillent nos [démarches carte grise ANTS](/carte-grise-ants-demarches/). Un véhicule détruit ne circule plus. Aucune **réimmatriculation** n'a donc lieu, le centre agréé enregistrant seulement sa sortie définitive du fichier des immatriculations.
 
--   **Carte grise barrée.** Mentionnez « Cédé pour destruction » ou « Vendu le \[date\] » et signez-la, vous et l’acheteur.
--   **Certificat de cession (Cerfa n°15776\*02).** Téléchargeable sur service-public.fr. Remplissez-le en double exemplaire.
--   **Certificat de situation administrative.** À demander sur siv.interieur.gouv.fr. Gratuit, valable 15 jours.
--   **Justificatif d’identité.** CNI ou passeport en cours de validité.
+La déclaration protège aussi votre **contrat d'assurance**. Un contrat résilié trop tôt, sans preuve de cession, complique parfois un remboursement de prime en cours. Gardez une copie de chaque document transmis, l'assureur la demande souvent avant de clôturer le dossier.
 
-Pour un véhicule importé, le certificat de non-gage n’existe pas. Fournissez alors une attestation sur l’honneur d’absence de gage. Elle doit être signée par l’ancien propriétaire. Ajoutez aussi le certificat de conformité européen. Pour aller plus loin sur les démarches liées à la vente ou à l’achat, consultez notre rubrique [Cession & achat](/carte-grise-demarches/cession-achat).
+Sans cette démarche, un radar automatique ou un stationnement payant non réglé continuent de vous viser pendant plusieurs semaines. Le centre agréé ne commet pas ce type d'infraction. Un simple retard administratif de son côté retombe pourtant d'abord sur votre dossier, tant que l'ANTS n'a pas enregistré le changement.
 
-## 3\. Comment déclarer la cession à l’ANTS ?
+## Documents à réunir avant la démarche ANTS
+
+Quatre documents suffisent pour déclarer une cession pour destruction. Réunissez-les avant de commencer la démarche en ligne, le dossier se complète alors en une seule session, sans aller-retour.
+
+-   **Carte grise barrée**, portant la mention « Cédé pour destruction le [date] », signée par vous.
+-   **Certificat de cession**, via le [certificat de cession Cerfa n°15776](/certificat-cession-cerfa-15776/), rempli en deux exemplaires.
+-   **Certificat de situation administrative**, gratuit en ligne, valable 15 jours.
+-   **Pièce d'identité** en cours de validité, carte nationale ou passeport.
+
+Pour un véhicule importé, ce certificat de situation administrative n'existe pas toujours. Une attestation sur l'honneur d'absence de gage, signée par vous, le remplace. Le certificat de conformité européen complète alors le dossier, à demander au constructeur si vous ne l'avez plus.
+
+Un véhicule encore sous crédit-bail ou en location avec option d'achat ne peut pas partir à la casse sans l'accord écrit de l'organisme financeur. Celui-ci garde la propriété du bien jusqu'au dernier paiement, même si vous l'utilisez au quotidien. Contactez-le avant toute cession, la démarche se règle alors en quelques jours par courrier ou par email.
+
+## Comment déclarer la cession en ligne ?
 
 ![Écran d'ordinateur affichant la page d'accueil du site de l'ANTS](/images/articles/cession-vehicule-pour-destruction-2.webp)
 
-La déclaration se fait uniquement en ligne sur ants.gouv.fr. Suivez ces étapes.
+La déclaration se fait sur ants.gouv.fr, ou directement auprès du centre VHU qui reprend le véhicule, en **dix minutes** environ une fois les documents prêts.
 
--   **Connectez-vous** via FranceConnect.
--   **Sélectionnez** « Déclarer une cession de véhicule ».
--   **Remplissez le formulaire** avec les informations du véhicule. Indiquez aussi les coordonnées de l’acheteur (centre VHU agréé) et le numéro du Cerfa n°15776\*02.
--   **Joignez les pièces justificatives** : carte grise barrée, certificat de cession, certificat de situation administrative, justificatif d’identité.
--   **Validez et recevez votre accusé de réception** par email.
+Connectez-vous via FranceConnect, puis choisissez « Déclarer une cession de véhicule ». Le formulaire demande les informations du véhicule et le [code de cession](/code-de-cession-obtenir/) communiqué par l'acheteur ou le centre agréé.
 
-L’ANTS traite généralement la demande sous 48 heures. Toutefois, ce délai peut varier selon la période.
+Joignez vos pièces justificatives et validez. Un **accusé de réception** arrive par email, généralement sous 48 heures. Beaucoup de centres VHU enregistrent aujourd'hui cette déclaration eux-mêmes, dès la remise du véhicule, ce qui évite une démarche séparée au vendeur.
 
-## 4\. Que faire après la déclaration ?
+Conservez cet accusé pendant au moins **cinq ans**. Il sert de seule preuve en cas de litige sur une infraction commise après la vente.
 
-L’ANTS envoie un accusé de réception par email. Conservez-le. Il prouve que vous avez rempli votre obligation légale. \*\*Pour l’acheteur (centre VHU) :\*\*
+Si FranceConnect ne fonctionne pas, créez un compte ANTS classique avec une adresse email. Le traitement du dossier prend alors un peu plus de temps, souvent trois à quatre jours ouvrés contre 48 heures pour une connexion via FranceConnect.
 
--   Il doit détruire le véhicule sous 15 jours après réception de la carte grise barrée.
--   Il reçoit un certificat de destruction à conserver 5 ans.
+## Combien coûte la destruction d'un véhicule ?
 
-\*\*Pour vous (vendeur) :\*\*
+La reprise d'un véhicule complet par un centre VHU agréé ne coûte rien, et la déclaration de cession non plus. Seul un véhicule incomplet, sans moteur ou sans batterie par exemple, peut entraîner des frais fixés au cas par cas.
 
--   Vous n’avez plus aucune responsabilité sur le véhicule.
--   Vous pouvez demander un duplicata de carte grise si besoin. Cela peut servir pour votre assurance ou votre banque.
+Cette gratuité, prévue par le code de l'environnement, s'applique à un véhicule qui conserve son **châssis**, son moteur et ses pare-chocs. La batterie de traction compte aussi, pour un modèle électrique. [Un véhicule incomplet](https://www.service-public.gouv.fr/particuliers/vosdroits/F36516) justifie parfois une facturation, faute de pièces valorisables pour le recycleur.
 
-## 5\. Cession pour destruction : les erreurs à éviter
+Une [déclaration de cession classique](/declaration-de-cession-carte-grise/) entraîne une taxe de réimmatriculation pour l'acheteur, d'environ **200 à 500 €** selon la région. Rien de tel ici. Le vendeur ne paie, le cas échéant, que le transport du véhicule jusqu'au centre.
 
-Voici les pièges les plus fréquents.
+| Poste | Coût pour la destruction |
+| --- | --- |
+| Reprise par le centre VHU (véhicule complet) | 0 € |
+| Déclaration de cession à l'ANTS | 0 € |
+| Nouvelle carte grise | Non applicable |
+| Transport jusqu'au centre, si non assuré par lui | Variable, à négocier |
 
--   **Oublier de barrer la carte grise.** Sans cette mention, la cession n’est pas valable. Utilisez un stylo indélébile.
--   **Ne pas déclarer la cession dans les 15 jours.** Passé ce délai, vous restez responsable des infractions commises avec le véhicule.
--   **Utiliser un Cerfa obsolète.** Vérifiez que vous utilisez bien le formulaire n°15776\*02.
--   **Oublier le certificat de situation administrative.** Ce document est obligatoire pour prouver que le véhicule n’est pas gagé.
--   **Confondre cession pour destruction et donation.** Pour une donation, utilisez le Cerfa n°13757\*03.
+La plupart des centres agréés viennent chercher le véhicule gratuitement dans un rayon de quelques kilomètres. Demandez toujours ce détail avant de signer, certains facturent le déplacement au-delà d'une certaine distance.
 
-En cas d’erreur, vous risquez une amende de 135 €. Vous restez aussi responsable des infractions pendant 1 mois après la vente.
+## Cas particuliers : succession, donation, véhicule importé
 
-## 6\. Cas particuliers : succession, donation ou véhicule importé
+Un véhicule hérité suit les mêmes règles, avec des documents en plus. Les héritiers fournissent le **certificat de décès** et le livret de famille complet. Une attestation signée par chaque héritier complète le certificat de cession habituel.
 
-Certaines situations nécessitent des démarches spécifiques.
+Notre guide sur la [carte grise après succession](/carte-grise-heritage-succession/) détaille ces situations. Il couvre aussi les successions avec plusieurs héritiers, lorsque ceux-ci ne s'accordent pas sur le sort du véhicule, un cas plus fréquent qu'on ne le pense.
 
-### 6.1. Cession d’un véhicule pour destruction dans le cadre d’une succession
+Une donation suit une procédure voisine, avec le **Cerfa n°13757\*03** à la place du certificat de cession. Pour un véhicule importé sans certificat de situation administrative, l'attestation sur l'honneur décrite plus haut remplace ce document.
 
-Si le véhicule appartient à une succession, les héritiers doivent déclarer la cession. Documents à fournir : certificat de décès, livret de famille complet, attestation signée par tous les héritiers. Cela concerne les successions simples sans testament ni litige. Ajoutez aussi le certificat de cession (Cerfa n°15776\*02). Coût : environ 13,76 € pour la nouvelle carte grise. Les héritiers doivent choisir entre conserver le véhicule ou le céder pour destruction.
+Une donation ne peut se faire qu'au profit d'un proche ou d'une association, jamais d'un professionnel. Le centre VHU, lui, agit toujours dans le cadre d'une cession pour destruction, même symbolique, et non d'une donation au sens juridique du terme.
 
-### 6.2. Donation d’un véhicule pour destruction
+## Erreurs fréquentes et recours en cas de litige
 
-Pour une donation, utilisez le Cerfa n°13757\*03. Les autres documents restent identiques.
+Trois erreurs reviennent souvent. Oublier de barrer la carte grise invalide la cession, un **stylo indélébile** pour la mention et la signature règle ce point. Dépasser les 15 jours expose à une amende, 90 € sous 30 jours, jusqu'à 375 € après 45 jours. Un Cerfa périmé bloque aussi le dossier, vérifiez toujours la version en vigueur.
 
-### 6.3. Véhicule importé : que faire ?
+Le centre VHU doit détruire le véhicule dans les **15 jours** suivant sa réception. Comme pour une [vente sans contrôle technique valide](/vendre-voiture-sans-controle-technique/), la responsabilité bascule vers le professionnel une fois le véhicule remis et la déclaration envoyée.
 
-Pour un véhicule importé, le certificat de situation administrative n’est pas disponible. Fournissez alors une attestation sur l’honneur d’absence de gage. Elle doit être signée par l’ancien propriétaire. Ajoutez aussi le certificat de conformité européen.
+Si le centre ne déclare rien passé ce délai, envoyez d'abord un **courrier recommandé** de mise en demeure. Vous pouvez ensuite saisir la direction départementale de la protection des populations de votre département pour un signalement officiel, document à l'appui.
 
-## 7\. Combien coûte une cession pour destruction ?
+Vérifiez aussi, avant toute remise, que le centre figure sur la **liste préfectorale** des professionnels agréés. Un centre non agréé n'a pas le droit de délivrer de certificat de destruction. Votre véhicule continue alors de porter votre nom dans le fichier des immatriculations.
 
-La déclaration de cession à l’ANTS est gratuite. Coûts éventuels :
+## Questions fréquentes
 
--   Frais de destruction dans un centre VHU agréé : entre 50 € et 150 € selon le poids du véhicule.
--   Frais de nouvelle carte grise pour l’acheteur : 13,76 € (montant fixe).
--   Frais de certificat de destruction : généralement inclus dans le prix de la destruction.
+### Combien de temps pour déclarer la cession d'un véhicule détruit ?
 
-Si vous vendez le véhicule à un particulier avant destruction, vous pouvez facturer un prix symbolique. Par exemple : 1 € pour justifier la cession.
+Le délai légal est de 15 jours après la remise au centre VHU. Passé ce délai, vous répondez des infractions commises avec le véhicule, sans limite de durée.
 
-## 8\. Que faire si l’acheteur ne déclare pas la destruction ?
+### La destruction d'un véhicule chez un centre VHU est-elle payante ?
 
-Si l’acheteur (centre VHU) ne déclare pas la destruction dans les 15 jours, vous pouvez :
+Non, si le véhicule est complet. Le centre reprend gratuitement un véhicule avec son châssis, son moteur et ses pare-chocs, puisqu'il valorise ensuite les matériaux recyclables.
 
--   Lui envoyer une mise en demeure par courrier recommandé avec accusé de réception.
--   Contacter la DDPP de votre département. Signalez ainsi le non-respect de l’obligation légale.
--   En cas de litige persistant, saisir le tribunal judiciaire.
+### Quel Cerfa utiliser pour céder un véhicule à un centre VHU ?
 
-Conservez l’accusé de réception de la déclaration de cession à l’ANTS. Gardez aussi le certificat de destruction comme preuves.
+Le certificat de cession Cerfa n°15776\*02 sert de document de référence. Une donation utilise un autre formulaire, le Cerfa n°13757\*03.
+
+### Que risque-t-on en cas de retard de déclaration ?
+
+Une amende forfaitaire de 90 € à 375 € selon le retard, et la responsabilité des infractions commises avec le véhicule jusqu'à la déclaration effective.
+
+### Peut-on céder un véhicule sans contrôle technique valide pour destruction ?
+
+Oui. Un véhicule promis à la casse n'a pas besoin de contrôle technique valide, contrairement à une vente classique à un particulier.
+
+### Qui doit détruire le véhicule après la cession ?
+
+Le centre VHU agréé qui a reçu le véhicule, dans un délai de 15 jours. Il remet ensuite un certificat de destruction à conserver cinq ans.
