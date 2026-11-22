@@ -1,7 +1,7 @@
 ---
 title: "Carte carburant pro comparatif 2026 : quelle solution pour votre flotte ?"
-description: "Quelle carte carburant pro choisir en 2026 pour optimiser les coûts de votre flotte ? Comparatif des solutions Ticket Fleet Pro, Intermarché Pro, Carrefour"
-date: "2026-08-21"
+description: "Carte pétrolière, carte multi-réseaux digitale ou carte poids lourds : comparatif des vraies solutions de carte carburant pro pour les flottes en 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "lld-gestion-de-flotte"
 wp_id: 1508
@@ -9,74 +9,92 @@ wp_locale: "fr"
 image: "/images/articles/carte-carburant-pro-comparatif-1.webp"
 imageAlt: "Carte carburant pro comparatif 2026 : quelle solution pour votre flotte ?"
 ---
-Pour une flotte de 10 utilitaires roulant 2 500 km par mois, le choix de la carte carburant pro peut économiser jusqu’à 1 200 € par an. En 2026, cinq solutions se détachent : **Ticket Fleet Pro**, **Intermarché Pro**, **Carrefour Pro**, **EasyFuel** et **TotalEnergies Club**. Chacune propose des tarifs préférentiels et des réseaux étendus. Elles incluent aussi des services comme la gestion des péages ou l’entretien. Mais laquelle correspond à vos trajets et à votre budget ?
+***Le marché de la carte carburant professionnelle regroupe trois familles bien distinctes : les cartes pétrolières classiques, les cartes multi-réseaux digitales et les cartes spécialisées poids lourds. Chacune cible un profil de flotte précis.***
 
-## 1\. Ticket Fleet Pro : la polyvalente qui couvre tous les carburants
+Choisir la bonne carte carburant pro dépend avant tout de la taille de votre flotte, de vos trajets et du niveau de suivi dont vous avez besoin. Voici un comparatif des solutions réellement disponibles en France en 2026, leurs réseaux, leurs tarifs et leurs services annexes.
+
+TL;DR : les cartes multi-réseaux digitales conviennent aux flottes mixtes et légères, les cartes pétrolières aux flottes fidèles à une enseigne, et les cartes spécialisées poids lourds aux transporteurs roulant en Europe.
+
+-   Les cartes digitales type Mooncard ou Soldo coûtent généralement **5 € par mois et par carte**.
+-   **Ticket Fleet Pro** (Edenred Mobilité) couvre environ **6 000 stations-service** en France, EV charging compris.
+-   Pour un transporteur international, **DKV et AS24** restent les références sur le réseau poids lourds européen.
 
 ![Responsable de flotte comparant des cartes carburant pro sur une tablette](/images/articles/carte-carburant-pro-comparatif-1.webp)
 
-Avec 8 500 stations en France, dont 1 200 en E85 et 300 en GPL, **Ticket Fleet Pro** est la carte la plus versatile. Elle accepte tous les carburants : SP95, SP98, gazole, E85, GPL et hydrogène. Elle sert aussi pour les péages, les lavages et les réparations dans 2 000 garages partenaires. Ainsi, elle convient aux flottes aux trajets variés ou testant des motorisations alternatives.
+## Quelles familles de cartes carburant pro existent en 2026 ?
 
-Les remises vont de 2 à 5 centimes par litre selon le volume mensuel. Pour un utilitaire consommant 100 L de gazole par semaine, cela représente 10 à 25 € d’économie mensuelle. La carte inclut un outil de reporting détaillé. Il envoie des alertes en cas de dépassement de budget ou de kilométrage anormal.
+**Trois familles se distinguent : les cartes multi-réseaux digitales, les cartes liées à un réseau pétrolier ou de distribution, et les cartes spécialisées poids lourds.**
 
-Toutefois, elle présente des points faibles. Les frais de gestion s’élèvent à 3 € par mois et par carte. De plus, elle n’offre pas de remises sur les carburants premium comme le SP98 ou l’AdBlue.
+Les **cartes multi-réseaux digitales**, comme Mooncard, Soldo, Wallester ou GreenWay, fonctionnent sur la quasi-totalité des stations grâce à un réseau de paiement classique, sans dépendre d'une enseigne particulière. Elles ciblent les flottes légères ou mixtes qui veulent avant tout un suivi des dépenses simplifié, une dématérialisation des notes de frais et un paramétrage fin par carte.
 
-## 2\. Intermarché Pro : le meilleur rapport prix/réseau pour les trajets régionaux
+Les **cartes liées à un réseau pétrolier**, comme la carte Fleet de TotalEnergies ou Ticket Fleet Pro d'Edenred Mobilité, s'appuient sur un réseau de stations propre ou partenaire, avec des services annexes intégrés : recharge électrique, lavage, parking, parfois péage. Les **cartes de grande distribution**, chez Intermarché ou E.Leclerc, ciblent les flottes qui roulent surtout en région, avec un réseau dense mais concentré en France.
 
-Si vos véhicules restent en région, **Intermarché Pro** est la carte la plus économique. Elle compte 1 800 stations en France, dont 80 % en zone rurale. Les remises atteignent 8 centimes par litre sur le gazole et 6 centimes sur le SP95. En mai 2026, le prix moyen du gazole chez Intermarché était de 1,88 € le litre. La moyenne nationale s’élevait à 1,96 €, selon l’INSEE.
+Les **cartes spécialisées poids lourds**, DKV et AS24 en tête, s'adressent aux transporteurs qui traversent plusieurs pays européens, avec des stations à haut débit, de l'AdBlue, un télépéage interopérable et une récupération de TVA étrangère intégrée au service.
 
-Autre avantage : la carte est gratuite et sans frais de gestion. Elle permet de payer les péages et les lavages. En revanche, son réseau est moins étendu pour les carburants alternatifs. Elle ne propose que 200 stations E85 et 50 GPL.
+## Quelles sont les cartes multi-réseaux digitales disponibles ?
 
-Idéale pour les flottes roulant principalement en province et privilégiant le gazole.
+| Carte | Réseau | Tarif indicatif | Point fort |
+| --- | --- | --- | --- |
+| Wallester | Quasi toutes les stations | Gratuit | Coût d'entrée nul |
+| GreenWay | Quasi toutes les stations | À partir de 3 €/mois/carte | Tarif d'entrée accessible |
+| Mooncard | Quasi toutes les stations | 5 €/mois/carte | Récupération de TVA facilitée |
+| Soldo | Quasi toutes les stations | 5 €/mois/carte | Cartes gratuites incluses selon l'offre |
+| Ticket Fleet Pro (Edenred Mobilité) | Environ 6 000 stations-service | Sur devis | Recharge électrique offerte |
 
-## 3\. Carrefour Pro : la solution tout-en-un pour les gros rouleurs
+*Source : comparatifs professionnels 2026, à confirmer directement auprès de chaque fournisseur*
 
-![Pompe à carburant multi-carburants dans une station Carrefour Pro](/images/articles/carte-carburant-pro-comparatif-2.webp)
+Ces cartes conviennent particulièrement à une flotte qui ne roule pas systématiquement sur un réseau de stations précis, et qui privilégie un suivi des dépenses en temps réel plutôt qu'une remise fixe au litre. La plupart intègrent une dématérialisation des justificatifs utile pour la [récupération de TVA sur un utilitaire](/tva-recuperable-utilitaire/).
 
-Avec 3 000 stations en France, dont 500 en E85 et 100 en GPL, **Carrefour Pro** est la carte la plus complète pour les flottes dépassant 5 000 km par mois. Les remises sont progressives : 3 centimes par litre dès 1 000 L par mois. Elles montent jusqu’à 10 centimes pour 10 000 L mensuels. En 2026, le prix moyen du SP95 chez Carrefour était de 1,82 € le litre. La moyenne nationale s’établissait à 1,90 €.
+## Que proposent les cartes pétrolières et de grande distribution ?
 
-La carte inclut aussi un service de gestion des péages et des lavages. Elle couvre les entretiens dans 1 500 garages partenaires. Un outil de reporting suit les consommations par véhicule et par conducteur. Il envoie des alertes en cas de surconsommation ou de fraude.
+La **carte Fleet de TotalEnergies** reste la référence chez les pétroliers français, avec un réseau dense en France et en Europe. Elle couvre carburant, recharge électrique, lavage et parking sur une facture unique, avec un suivi des consommations en temps réel et un paramétrage par carte. Son tarif précis dépend de la formule choisie et des services associés, à demander directement auprès de TotalEnergies selon la taille de votre flotte.
 
-Toutefois, elle présente des points faibles. Les frais de gestion s’élèvent à 2 € par mois et par carte. De plus, son réseau est moins dense en zone rurale qu’Intermarché Pro.
+Côté grande distribution, la **carte Intermarché** donne accès à plus de 1 600 stations-service en France, et la **carte E.Leclerc** à plus de 1 100 stations, deux réseaux particulièrement denses en zone rurale et périurbaine. Ces cartes conviennent bien à une flotte qui circule essentiellement en région, sans besoin d'un réseau européen.
 
-## 4\. EasyFuel : la carte low-cost pour les petits budgets
+## Quelles cartes choisir pour une flotte de poids lourds ?
 
-Si vous cherchez une carte sans frais et avec des remises immédiates, **EasyFuel** est la solution la plus économique. Elle compte 4 000 stations en France, dont 300 en E85 et 100 en GPL. Les remises vont de 2 à 4 centimes par litre sur tous les carburants. En 2026, le prix moyen du gazole chez EasyFuel était de 1,85 € le litre. La moyenne nationale s’élevait à 1,96 €, selon l’INSEE.
+Pour un transporteur qui traverse plusieurs pays, les cartes généralistes montrent vite leurs limites. **DKV** et **AS24** dominent ce segment avec un réseau de stations à haut débit, adaptées aux semi-remorques, proposant de l'AdBlue et parfois du GNR pour les groupes frigorifiques. Ces cartes intègrent un télépéage interopérable dans plus de dix pays, des parkings sécurisés avec sanitaires, une assistance 24h/24 et une récupération de TVA étrangère directement gérée par le prestataire.
 
-La carte est gratuite et sans frais de gestion. Elle permet de payer les péages et les lavages. En revanche, son réseau est moins étendu pour les carburants alternatifs. Elle n’offre pas de reporting détaillé, mais un suivi basique via une appli mobile.
+Leur tarification fonctionne différemment des cartes légères : plutôt qu'un abonnement fixe par carte, elles appliquent des frais de gestion à la transaction et parfois un pourcentage prélevé sur la TVA récupérée à l'étranger, à négocier selon le volume de votre flotte.
 
-Idéale pour les petites flottes ou les indépendants recherchant une solution simple et économique.
+## Comment choisir la bonne carte selon son profil de flotte ?
 
-## 5\. TotalEnergies Club : la carte premium pour les trajets internationaux
+Trois questions orientent le choix. **Quelle est la taille et la nature de la flotte ?** Une flotte légère et mixte, qui roule sans réseau de prédilection, gagne à choisir une carte digitale comme Mooncard ou Soldo pour la simplicité de gestion. Une flotte fidèle à un réseau, TotalEnergies en tête, profite davantage d'une carte pétrolière intégrée avec ses services annexes. Un transporteur international doit se tourner vers DKV ou AS24, les seules solutions réellement adaptées au gabarit et aux trajets des poids lourds.
 
-Si vos véhicules roulent à l’étranger, **TotalEnergies Club** est la carte la plus adaptée. Elle compte 12 000 stations en Europe, dont 1 500 en France. Les remises vont de 3 à 6 centimes par litre sur tous les carburants. En 2026, le prix moyen du SP95 chez TotalEnergies était de 1,84 € le litre. La moyenne nationale s’établissait à 1,90 €.
+**Quels trajets effectuez-vous ?** Pour des trajets régionaux, les cartes Intermarché ou E.Leclerc restent compétitives grâce à leur réseau dense en zone rurale. Pour des trajets européens réguliers, seules les cartes spécialisées poids lourds ou la carte Fleet de TotalEnergies couvrent correctement le territoire.
 
-La carte inclut un service de gestion des péages dans 15 pays européens. Elle couvre aussi les lavages et les entretiens dans 2 000 garages partenaires. Un outil de reporting détaillé suit les consommations par véhicule et par pays. Il envoie des alertes en cas de dépassement de budget.
+**Quel niveau de suivi recherchez-vous ?** Pour un reporting détaillé par véhicule et par conducteur, couplé à de la [télématique de flotte](/telematique-flotte-avantages/), les cartes digitales et la carte Fleet offrent toutes deux un suivi en temps réel. Pour une gestion encore plus fine, coupler la carte carburant à un [logiciel de gestion de flotte pour TPE](/gestion-flotte-logiciel-tpe/) centralise l'ensemble des coûts sur un seul tableau de bord.
 
-Toutefois, elle présente des points faibles. Les frais de gestion s’élèvent à 5 € par mois et par carte. De plus, son réseau est moins dense en zone rurale qu’Intermarché Pro.
+Avant de signer, demandez systématiquement un devis personnalisé détaillant les frais de gestion par carte, les éventuelles remises sur volume, et les services réellement inclus, ces éléments variant fortement d'un fournisseur à l'autre et restant rarement publics sur les sites commerciaux.
 
-## Comparatif des cartes carburant pro : quel est le meilleur choix ?
+## La LLD et l'électrique changent-ils la donne côté carburant ?
 
-| Carte | Réseau (stations) | Remises (centimes/L) | Frais de gestion | Services annexes | Idéale pour |
-| --- | --- | --- | --- | --- | --- |
-| Ticket Fleet Pro | 8 500 | 2-5 | 3 €/mois | Péages, lavages, entretiens | Flottes polyvalentes |
-| Intermarché Pro | 1 800 | 6-8 (gazole) | Gratuit | Péages, lavages | Trajets régionaux |
-| Carrefour Pro | 3 000 | 3-10 | 2 €/mois | Péages, lavages, entretiens | Gros rouleurs |
-| EasyFuel | 4 000 | 2-4 | Gratuit | Péages, lavages | Petits budgets |
-| TotalEnergies Club | 12 000 (Europe) | 3-6 | 5 €/mois | Péages, lavages, entretiens | Trajets internationaux |
+Au-delà du choix de la carte, deux leviers structurels réduisent davantage la facture carburant d'une flotte. La **location longue durée**, détaillée dans notre guide [LLD utilitaire pro sans apport](/lld-utilitaire-pro-sans-apport/), renouvelle plus souvent le parc avec des véhicules récents et économes en carburant. Le passage à l'**électrique**, lui, déplace la dépense vers la recharge, un budget à anticiper via notre guide de la [recharge de flotte en entreprise](/recharge-flotte-entreprise/) et des [aides disponibles pour les utilitaires électriques professionnels](/aides-utilitaire-electrique-pro/).
 
-*Source : Roole Data, INSEE (2026)*
+Pour une flotte encore majoritairement thermique, comparer régulièrement les prix à la pompe reste utile en complément d'une carte, notre guide du [carburant moins cher autour de chez vous](/carburant-moins-cher-autour-de-moi/) et notre dossier sur le [boîtier E85 homologué](/boitier-e85-homologue-prix/) détaillent deux leviers d'économie immédiats pour les véhicules compatibles.
 
-## Comment choisir la bonne carte carburant pro ?
+## Questions fréquentes
 
-Pour faire le bon choix, posez-vous ces trois questions :
+### Quelle carte carburant choisir pour une petite flotte mixte ?
 
--   **Quels carburants utilisez-vous ?** Pour le gazole, Intermarché Pro est imbattable. Pour l’E85 ou le GPL, privilégiez Ticket Fleet Pro ou Carrefour Pro.
--   **Quels sont vos trajets ?** Pour les trajets régionaux, Intermarché Pro ou EasyFuel suffisent. Pour les longs trajets ou l’international, TotalEnergies Club est plus adapté.
--   **Quel est votre budget ?** Pour une solution économique, EasyFuel ou Intermarché Pro sont les meilleures options. Pour un suivi détaillé et des services annexes, Ticket Fleet Pro ou Carrefour Pro sont plus complets.
+Une carte digitale multi-réseaux comme Mooncard, Soldo ou GreenWay convient bien, grâce à un réseau quasi universel et un suivi des dépenses simplifié, sans dépendre d'une enseigne particulière.
 
-Enfin, n’oubliez pas de négocier. Certaines cartes offrent des remises supplémentaires pour les gros volumes ou les contrats longs. Ainsi, un comparatif personnalisé avec un conseiller peut faire gagner jusqu’à 15 % sur votre budget carburant.
+### Les cartes carburant pétrolières offrent-elles vraiment des remises sur le litre ?
 
-## Optimiser sa flotte avec la [LLD & gestion de flotte](/utilitaires-flottes-pro/lld-gestion-de-flotte)
+Les remises existent mais varient fortement selon le volume et la formule souscrite, les fournisseurs communiquant rarement un taux public, un devis personnalisé reste nécessaire pour les connaître précisément.
 
-Pour aller plus loin, la location longue durée (LLD) peut réduire vos coûts carburant. En effet, une flotte en LLD consomme jusqu’à 20 % de moins qu’une flotte en propriété. Les véhicules récents et économes en sont la raison. Ce levier est à ne pas négliger pour optimiser votre budget. Surtout si vous combinez cette approche avec une carte carburant adaptée à vos trajets.
+### Quelle carte choisir pour un transporteur roulant en Europe ?
+
+DKV ou AS24 restent les références pour les poids lourds, avec un réseau de stations à haut débit, un télépéage interopérable et une récupération de TVA étrangère intégrée au service.
+
+### Les cartes carburant couvrent-elles aussi la recharge électrique ?
+
+Certaines oui, notamment Ticket Fleet Pro d'Edenred Mobilité et la carte Fleet de TotalEnergies, qui intègrent la recharge électrique aux côtés du carburant classique sur une facture unique.
+
+### Faut-il privilégier une carte régionale comme Intermarché ou E.Leclerc ?
+
+Oui pour une flotte qui circule essentiellement en région, ces cartes offrant un réseau dense en zone rurale, mais elles restent moins adaptées à des trajets européens réguliers.
+
+### Comment réduire encore la facture carburant au-delà de la carte choisie ?
+
+En combinant la carte avec une veille régulière des prix à la pompe, un passage progressif à l'électrique ou à un carburant alternatif compatible, et un renouvellement du parc en location longue durée.
