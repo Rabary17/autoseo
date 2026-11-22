@@ -1,223 +1,118 @@
 ---
-title: "Surconsommation d’essence : les 10 causes les plus fréquentes et comment les repérer"
-description: "Une surconsommation d’essence peut coûter cher. Découvrez les 10 causes les plus fréquentes, les symptômes à surveiller et les solutions pour réduire votre"
-date: "2026-08-10"
+title: "Surconsommation d'essence : les 10 causes les plus fréquentes et comment les repérer"
+description: "Une surconsommation de 1,5 à 2 L/100 km cache presque toujours une cause mécanique identifiable. Symptômes, coûts de réparation et seuils d'alerte en 2026."
+date: "2026-11-22"
 author: "nathalie-moreau"
 wp_id: 1104
 wp_locale: "fr"
 image: "/images/articles/surconsommation-causes-courantes-couverture.webp"
-imageAlt: "Surconsommation d’essence : les 10 causes les plus fréquentes et comment les repérer"
+imageAlt: "Surconsommation d'essence : les 10 causes les plus fréquentes et comment les repérer"
 ---
-Votre voiture consomme soudainement 1,5 à 2 litres de plus aux 100 km ? Ce n’est pas une fatalité.
 
-Dans 9 cas sur 10, une surconsommation d’essence cache un problème mécanique ou électronique identifiable. Voici les 10 causes les plus fréquentes. Ainsi, vous pourrez repérer les signes avant de passer à l’atelier. [notre guide sur la réduction de la consommation](/carburants-consommation/reduire-sa-consommation).
+***Votre voiture consomme soudainement 1,5 à 2 litres de plus aux 100 km ?*** _Ce n'est pas une fatalité. Dans la grande majorité des cas, une surconsommation cache un problème mécanique ou électronique identifiable. Voici les dix causes les plus fréquentes, leurs symptômes et ce qu'elles coûtent à réparer._
 
-Pour un trajet quotidien de 30 km en ville, cela représente entre 10 et 15 euros supplémentaires par mois. Sur une année, l’addition peut atteindre 150 à 200 euros. Sans compter l’usure prématurée du moteur et l’impact écologique.
+TL;DR :
 
-## 1\. Un débitmètre d’air (MAF) encrassé ou défaillant
+-   Un **capteur ou un filtre encrassé** explique la majorité des cas de surconsommation soudaine, avant même d'envisager une panne grave.
+-   Un **diagnostic OBD2**, même sans voyant moteur allumé, révèle souvent l'anomalie en quelques minutes.
+-   Au-delà de **1,5 L/100 km** d'écart avec la consommation habituelle, un diagnostic complet en atelier s'impose.
 
-Le débitmètre d’air massique (MAF) mesure la quantité d’air entrant dans le moteur.
+## Pourquoi votre voiture consomme-t-elle soudainement plus ?
 
-S’il est encrassé par des dépôts de poussière ou d’huile, il envoie une information erronée à l’injection. Résultat : le calculateur dose mal le carburant.
+**Une surconsommation apparue sans changement d'usage ou de trajet a presque toujours une cause mécanique précise.** Pour un trajet quotidien de 30 km en ville, un écart de 1,5 L/100 km représente entre 10 et 15 € supplémentaires par mois, soit 150 à 200 € sur une année. Au-delà du coût, cet écart use prématurément le moteur et dégrade les émissions polluantes.
 
-Votre voiture consomme alors jusqu’à 15 % de plus.
+Dix causes reviennent le plus souvent : un capteur encrassé, une fuite d'admission, des injecteurs sales, une sonde défaillante, un problème de pression de carburant, un papillon des gaz grippé, une vanne EGR bouchée, un défaut de distribution variable, un capteur de régime défectueux, ou un souci de communication entre calculateurs. Chacune se repère par des symptômes propres, détaillés ci-dessous.
 
--   **Symptômes** : perte de puissance à l’accélération, à-coups, voyant moteur allumé, démarrage difficile à froid.
--   **À vérifier** : un nettoyage au spray spécifique peut suffire. Sinon, comptez entre 150 et 300 € pour un remplacement.
+### Réponse directe
 
-Sur une Peugeot 308 1.6 HDi, un MAF défectueux peut faire grimper la consommation de 1,2 L/100 km en moyenne.
+Une surconsommation soudaine de 1 à 2 L/100 km résulte presque toujours d'un capteur encrassé, d'un filtre colmaté ou d'un composant d'injection défaillant. Un diagnostic OBD2, même sans voyant allumé, permet de cibler la cause en quelques minutes.
 
-## 2\. Une fuite d’admission d’air ou un filtre à air bouché
+## Les capteurs et filtres, premiers suspects d'une surconsommation
 
-L’air doit circuler librement pour une combustion optimale.
+Le **débitmètre d'air massique (MAF)** mesure la quantité d'air entrant dans le moteur. Encrassé par des dépôts de poussière ou d'huile, il transmet une information erronée au calculateur, qui dose alors mal le carburant. Les symptômes typiques incluent perte de puissance à l'accélération, à-coups et démarrage difficile à froid. Un nettoyage au spray spécifique suffit parfois, sinon comptez entre 150 et 300 € pour un remplacement.
 
-Une fuite sur le collecteur d’admission ou un filtre à air colmaté perturbe ce ratio air/carburant. Le moteur compense alors en injectant plus d’essence.
+Une **fuite d'admission d'air** ou un **filtre à air colmaté** perturbent de la même façon le ratio air/carburant, le moteur compensant en injectant plus d'essence. Un sifflement au niveau du moteur accompagne souvent ce défaut. Remplacer le filtre à air tous les 15 000 à 20 000 km, pour 10 à 30 €, reste le meilleur réflexe préventif.
 
-Cela augmente la consommation.
-
--   **Symptômes** : sifflement au niveau du moteur, perte de puissance, consommation anormalement élevée.
--   **À vérifier** : inspectez visuellement les durites d’admission. Remplacez le filtre à air tous les 15 000 à 20 000 km (coût : 10 à 30 €).
-
-Sur un Renault Clio 1.0 SCe, un filtre à air encrassé peut augmenter la consommation de 0,8 L/100 km.
+Une **sonde lambda** défaillante, qui mesure l'oxygène dans les gaz d'échappement pour ajuster le mélange, fait fonctionner le moteur en mode dégradé si elle dysfonctionne. Son remplacement coûte entre 50 et 150 € et prend moins d'une heure.
 
 ![Mécanicien utilisant un spray pour nettoyer un débitmètre d'air encrassé dans un moteur](/images/articles/surconsommation-causes-courantes-1.webp)
 
-## 3\. Des injecteurs encrassés ou défectueux
+## Injection, pression et papillon des gaz : les causes qui réclament un atelier
 
-Les injecteurs pulvérisent le carburant dans les cylindres.
+Des **injecteurs encrassés ou grippés** ne pulvérisent plus le carburant correctement. Le calculateur compense en injectant davantage, ce qui se traduit par un démarrage difficile, des ratés à l'accélération et parfois de la fumée noire à l'échappement. Un nettoyage par ultrasons coûte entre 80 et 150 €, le remplacement d'un injecteur entre 200 et 400 €.
 
-S’ils sont encrassés ou grippés, ils ne fonctionnent plus de manière optimale. Le moteur reçoit moins de carburant, mais le calculateur compense en injectant plus.
+Un problème de **pression de carburant**, lié à la pompe ou au régulateur, réduit le débit arrivant au moteur, qui compense en consommant plus. Le diagnostic nécessite un passage en atelier, la pompe à carburant coûtant entre 200 et 500 € et le régulateur entre 50 et 150 €.
 
-La consommation augmente donc.
-
--   **Symptômes** : démarrage difficile, ratés à l’accélération, fumée noire à l’échappement, voyant moteur.
--   **À vérifier** : un nettoyage par ultrasons coûte entre 80 et 150 €. Le remplacement d’un injecteur peut atteindre 200 à 400 €.
-
-Sur une Volkswagen Golf 1.4 TSI, des injecteurs encrassés peuvent faire grimper la consommation de 1,5 L/100 km.
-
-## 4\. Une sonde lambda (capteur d’oxygène) défaillante
-
-La sonde lambda mesure l’oxygène dans les gaz d’échappement. Elle permet d’ajuster le mélange air/carburant.
-
-Si elle est défectueuse, le moteur fonctionne en mode dégradé. La surconsommation peut alors atteindre 20 %.
-
--   **Symptômes** : voyant moteur, perte de puissance, fumée noire à l’échappement, consommation excessive.
--   **À vérifier** : une sonde lambda coûte entre 50 et 150 €. Son remplacement prend moins d’une heure.
-
-Sur une Citroën C4 1.6 HDi, une sonde lambda défectueuse peut augmenter la consommation de 1,8 L/100 km.
-
-## 5\. Un problème de pression de carburant
-
-La pompe à carburant et le régulateur de pression doivent maintenir une pression constante dans le circuit d’injection.
-
-Si la pression est trop basse, le moteur reçoit moins de carburant. Le calculateur compense alors en injectant plus.
-
-La consommation augmente donc.
-
--   **Symptômes** : démarrage difficile, perte de puissance, ratés à l’accélération, consommation excessive.
--   **À vérifier** : un diagnostic en atelier est nécessaire. La pompe à carburant coûte entre 200 et 500 €, le régulateur entre 50 et 150 €.
-
-Sur une Ford Focus 1.6 TDCi, une pression de carburant anormale peut faire grimper la consommation de 1,3 L/100 km.
+Un **papillon des gaz encrassé ou grippé** perturbe également le mélange air/carburant, avec un ralenti instable comme signal d'alerte fréquent. Un nettoyage au spray coûte 20 à 50 €, le remplacement du papillon 200 à 400 €.
 
 ![Contrôle de la pression des pneus avec un manomètre en atelier](/images/articles/surconsommation-causes-courantes-2.webp)
 
-## 6\. Un papillon des gaz encrassé ou défectueux
+### Réponse directe
 
-Le papillon des gaz contrôle le flux d’air entrant dans le moteur.
+Des injecteurs sales, une pression de carburant anormale ou un papillon des gaz grippé provoquent les mêmes effets : le calculateur compense une mauvaise combustion en injectant plus de carburant. Un diagnostic en atelier reste nécessaire pour ces trois causes.
 
-S’il est encrassé ou grippé, il perturbe le mélange air/carburant. Cela entraîne une surconsommation.
+## EGR, distribution variable et électronique du véhicule
 
--   **Symptômes** : ralenti instable, perte de puissance, consommation excessive, voyant moteur.
--   **À vérifier** : un nettoyage au spray spécifique coûte entre 20 et 50 €. Le remplacement du papillon peut atteindre 200 à 400 €.
+Le système de **recirculation des gaz d'échappement (EGR)** réduit les émissions en recyclant une partie des gaz brûlés. Une électrovanne encrassée ou bloquée perturbe la combustion, avec perte de puissance et fumée noire à la clé. Le nettoyage coûte 50 à 100 €, le remplacement complet 200 à 400 €.
 
-Sur une Toyota Corolla 1.2T, un papillon des gaz encrassé peut augmenter la consommation de 1 L/100 km.
+Le système de **distribution variable (VVT)** optimise l'ouverture des soupapes. Défaillant, il dégrade l'efficacité du moteur, souvent accompagné d'un bruit de cliquetis. Une vidange avec huile adaptée résout parfois le problème, sinon comptez 300 à 600 € pour le remplacement des électrovannes ou de la chaîne.
 
-## 7\. Un système de recirculation des gaz d’échappement (EGR) défaillant
+Un **capteur de régime moteur (RPM)** défectueux perturbe l'injection et l'allumage, pour un coût de remplacement modeste, entre 30 et 100 €. Enfin, un problème de **communication CAN-bus**, le réseau reliant les calculateurs entre eux, peut provoquer des dysfonctionnements en cascade, voyants multiples et perte de fonctions électroniques à l'appui. La réparation coûte entre 100 et 300 € selon la cause identifiée.
 
-L’EGR réduit les émissions en recyclant une partie des gaz d’échappement.
+## Comment identifier la cause sans être mécanicien ?
 
-Si l’électrovanne EGR est encrassée ou bloquée, elle perturbe la combustion. La consommation augmente alors.
+Pas besoin d'expertise technique pour cibler une piste sérieuse. Quatre réflexes simples orientent déjà le diagnostic. **Vérifiez le voyant moteur** : s'il est allumé, un outil de diagnostic OBD2 lit les codes défaut, certains pointant directement vers une cause fréquente, comme le code P0171 pour un mélange trop pauvre. **Inspectez visuellement** le filtre à air, les durites d'admission et les bougies d'allumage, des éléments souvent responsables et simples à corriger. **Testez l'accélération** : des à-coups ou une perte de puissance orientent vers les injecteurs, le MAF ou le papillon des gaz. **Écoutez les bruits** : un cliquetis évoque un problème de distribution, un sifflement une fuite d'admission.
 
--   **Symptômes** : perte de puissance, voyants moteur, consommation excessive, fumée noire.
--   **À vérifier** : un nettoyage de l’EGR coûte entre 50 et 100 €. Son remplacement peut atteindre 200 à 400 €.
-
-Sur une BMW Série 1 1.6d, un EGR défectueux peut faire grimper la consommation de 1,6 L/100 km.
-
-## 8\. Un problème de distribution variable (VVT)
-
-Le système de distribution variable (VVT) optimise l’ouverture des soupapes.
-
-Il améliore ainsi les performances et réduit la consommation. S’il est défaillant, le moteur fonctionne moins efficacement.
-
--   **Symptômes** : perte de puissance, consommation excessive, bruit de cliquetis, voyant moteur.
--   **À vérifier** : une vidange avec huile adaptée peut résoudre le problème. Sinon, comptez entre 300 et 600 € pour le remplacement des électrovannes ou de la chaîne.
-
-Sur une Mercedes Classe A 1.8, un VVT défectueux peut augmenter la consommation de 1,4 L/100 km.
-
-## 9\. Un capteur de vitesse moteur (RPM) défaillant
-
-Le capteur de vitesse moteur fournit des informations essentielles au calculateur.
-
-Il permet d’ajuster l’injection et l’allumage. S’il est défectueux, le moteur peut mal fonctionner.
-
-Cela entraîne une surconsommation.
-
--   **Symptômes** : voyant moteur, perte de puissance, consommation excessive, démarrage difficile.
--   **À vérifier** : un capteur de vitesse moteur coûte entre 30 et 100 €. Son remplacement est rapide.
-
-Sur une Opel Astra 1.4, un capteur RPM défectueux peut faire grimper la consommation de 1,1 L/100 km.
-
-## 10\. Un problème de communication CAN-bus
-
-Le CAN-bus est le réseau de communication entre les calculateurs du véhicule.
-
-S’il est défaillant, les informations ne circulent plus correctement. Le moteur peut alors mal fonctionner.
-
-Cela entraîne une surconsommation.
-
--   **Symptômes** : voyants moteur multiples, perte de fonctions électroniques, consommation excessive, démarrage impossible.
--   **À vérifier** : un diagnostic en atelier est nécessaire. La réparation peut coûter entre 100 et 300 € selon la cause.
-
-Sur une Audi A3 1.6, un problème CAN-bus peut augmenter la consommation de 1,7 L/100 km.
-
-## Comment identifier la cause de votre surconsommation ?
-
-Pas besoin d’être mécanicien pour suspecter une cause.
-
-Voici une méthode simple pour cibler le problème.
-
--   **Vérifiez le voyant moteur** : s’il est allumé, branchez un outil de diagnostic (OBD2) pour lire les codes défauts. Certains codes pointent directement vers une cause fréquente (ex. P0171 pour un mélange trop pauvre).
--   **Inspectez visuellement** : filtre à air, durites d’admission, bougies d’allumage. Un filtre à air colmaté ou des durites fissurées sont des causes simples à corriger.
--   **Testez l’accélération** : si votre voiture a des à-coups ou perd en puissance, le problème vient probablement des injecteurs, du MAF ou du papillon des gaz.
--   **Écoutez les bruits** : un cliquetis peut indiquer un problème de distribution (VVT ou chaîne). Un sifflement peut révéler une fuite d’admission.
-
-Sur une Renault Mégane 1.5 dCi, un diagnostic OBD2 a permis d’identifier une sonde lambda défectueuse. La consommation a baissé de 1,9 L/100 km après réparation.
-
-## Que faire si votre voiture consomme trop ?
-
-Ne tardez pas à agir.
-
-Une surconsommation non traitée peut endommager votre moteur. Elle peut aussi coûter bien plus cher en réparations.
-
-Voici les étapes à suivre.
-
--   **Faites un diagnostic** : même sans voyant moteur, un outil OBD2 peut révéler des anomalies cachées.
--   **Nettoyez ou remplacez les pièces encrassées** : filtre à air, MAF, injecteurs, papillon des gaz. Ces opérations sont souvent peu coûteuses.
--   **Vérifiez les capteurs** : sonde lambda, capteur de pression, capteur de température. Un capteur défectueux peut être remplacé pour quelques dizaines d’euros.
--   **Contrôlez la pression des pneus** : des pneus sous-gonflés augmentent la résistance au roulement. Ainsi, la consommation grimpe. Un bar de pression en moins peut faire monter la consommation de 0,3 L/100 km.
--   **Adoptez une conduite souple** : évitez les accélérations brutales et les freinages fréquents. Une conduite fluide peut réduire la consommation de 10 à 15 %.
-
-Sur une Peugeot 208 1.2 PureTech, un diagnostic OBD2 a révélé un problème de pression de carburant. Après remplacement de la pompe, la consommation est passée de 6,8 L/100 km à 5,9 L/100 km.
-
-## Combien coûte une réparation pour une surconsommation ?
-
-Le coût dépend de la cause et du modèle de votre voiture.
-
-Voici une estimation des prix moyens en atelier.
-
-| Cause | Coût moyen (€) | Durée estimée |
+| Cause | Coût moyen de réparation | Durée estimée |
 | --- | --- | --- |
-| Nettoyage MAF | 20 à 50 | 30 min |
-| Remplacement MAF | 150 à 300 | 1h |
-| Nettoyage injecteurs | 80 à 150 | 1h30 |
-| Remplacement injecteurs | 200 à 400 | 2h à 3h |
-| Remplacement sonde lambda | 50 à 150 | 1h |
-| Remplacement pompe à carburant | 200 à 500 | 2h |
-| Nettoyage papillon des gaz | 20 à 50 | 30 min |
-| Remplacement papillon des gaz | 200 à 400 | 1h30 |
-| Nettoyage EGR | 50 à 100 | 1h |
-| Remplacement EGR | 200 à 400 | 2h |
+| Nettoyage MAF | 20 à 50 € | 30 min |
+| Remplacement MAF | 150 à 300 € | 1h |
+| Nettoyage injecteurs | 80 à 150 € | 1h30 |
+| Remplacement injecteurs | 200 à 400 € | 2h à 3h |
+| Remplacement sonde lambda | 50 à 150 € | 1h |
+| Remplacement pompe à carburant | 200 à 500 € | 2h |
+| Nettoyage papillon des gaz | 20 à 50 € | 30 min |
+| Nettoyage EGR | 50 à 100 € | 1h |
+| Remplacement EGR | 200 à 400 € | 2h |
 
-*Source : obd-codes.com, yourmechanic.com, repairpal.com, carparts.com*
+*Prix moyens constatés en atelier, hors diagnostic initial, généralement facturé entre 50 et 100 €.*
 
-Ces prix ne comprennent pas le diagnostic initial. Il coûte généralement entre 50 et 100 €.
+### Réponse directe
 
-Pensez à demander un devis avant de lancer les réparations.
+Un diagnostic OBD2, une inspection visuelle du filtre à air et des durites, un test d'accélération et une écoute attentive des bruits moteur suffisent à orienter la panne avant même de passer en atelier.
 
-## Surconsommation : quand faut-il s’inquiéter ?
+## À partir de quel écart faut-il s'inquiéter ?
 
-Une augmentation de 0,5 L/100 km peut passer inaperçue.
+Une augmentation de **0,5 L/100 km** peut passer inaperçue et se corrige souvent en vérifiant la pression des pneus et la qualité du carburant. Entre **1 et 1,5 L/100 km**, direction les durites d'admission, le MAF et les injecteurs. Au-delà de **1,5 L/100 km**, un diagnostic complet en atelier devient nécessaire pour identifier la cause exacte avant qu'elle ne dégrade d'autres composants.
 
-Mais au-delà de 1,5 L/100 km, il est temps d’agir.
+Des [pneus sous-gonflés](/pneus-basse-resistance-economie/) augmentent aussi la résistance au roulement : un bar de pression en moins peut faire grimper la consommation de 0,3 L/100 km, un facteur à vérifier avant même d'envisager une panne électronique. La [climatisation](/climatisation-surconsommation/) et un [coffre de toit](/coffre-de-toit-consommation/) laissé en place hors utilisation pèsent eux aussi sur la facture, sans qu'aucune pièce ne soit défaillante. Un passage à l'[E85](/e85-fiabilite-moteur-long-terme/) modifie aussi la consommation affichée au litre, un point à ne pas confondre avec une véritable surconsommation mécanique.
 
-Voici les seuils à surveiller.
+## Comment prévenir une surconsommation récurrente ?
 
--   **0,5 à 1 L/100 km** : vérifiez la pression des pneus, le filtre à air et la qualité du carburant.
--   **1 à 1,5 L/100 km** : inspectez les durites d’admission, le MAF et les injecteurs.
--   **Plus de 1,5 L/100 km** : faites un diagnostic complet en atelier pour identifier la cause exacte.
+Cinq réflexes limitent le risque sur la durée. Un **entretien régulier** : vidange tous les 15 000 à 20 000 km, filtre à air tous les 10 000 km, bougies selon les préconisations constructeur. Une **conduite souple**, qui évite les accélérations brutales et les freinages fréquents, réduit la consommation de 10 à 15 %. La **vérification mensuelle de la pression des pneus** limite la résistance au roulement. Un **carburant de qualité**, avec des additifs qui limitent l'encrassement des injecteurs, complète cette routine, un point détaillé dans notre comparatif des [stations low cost et de la qualité du carburant](/stations-low-cost-qualite-carburant/). Enfin, **éviter les trajets courts répétés** laisse au moteur le temps de monter en température, ce qui limite l'encrassement progressif des composants d'injection.
 
-Sur une Volkswagen Passat 2.0 TDI, une surconsommation de 2 L/100 km a été résolue après remplacement de la sonde lambda et nettoyage des injecteurs. La consommation est redescendue à 6,2 L/100 km.
+## Questions fréquentes
 
-## Peut-on éviter une surconsommation ?
+### Une surconsommation signale-t-elle toujours une panne grave ?
 
-Oui, en adoptant quelques bonnes pratiques.
+Non. Dans la majorité des cas, elle vient d'un capteur encrassé, d'un filtre colmaté ou d'une pièce d'injection sale, des réparations peu coûteuses si elles sont traitées rapidement.
 
-Voici ce que vous pouvez faire pour limiter les risques.
+### Comment savoir si le problème vient du débitmètre d'air (MAF) ?
 
--   **Entretenez régulièrement votre voiture** : vidange tous les 15 000 à 20 000 km, filtre à air tous les 10 000 km, bougies d’allumage selon les préconisations du constructeur.
--   **Conduisez de manière souple** : évitez les accélérations brutales et les freinages fréquents. Une conduite fluide peut réduire la consommation de 10 à 15 %.
--   **Vérifiez la pression des pneus** : des pneus sous-gonflés augmentent la résistance au roulement. Contrôlez la pression tous les mois.
--   **Utilisez un carburant de qualité** : les additifs dans les carburants premium peuvent réduire l’encrassement des injecteurs. Ils améliorent aussi la combustion.
--   **Évitez les trajets courts répétés** : le moteur n’a pas le temps de monter en température. Cela favorise l’encrassement et la surconsommation.
+Des à-coups à l'accélération, une perte de puissance et un démarrage difficile à froid orientent vers le MAF. Un nettoyage au spray spécifique suffit parfois avant d'envisager un remplacement à 150-300 €.
 
-Sur une Citroën C3 1.2 PureTech, une conduite souple et un entretien régulier ont permis de maintenir la consommation à 5,3 L/100 km. C’est 0,8 L/100 km de moins qu’avec un conducteur moins attentif.
+### Faut-il un diagnostic en atelier même sans voyant moteur allumé ?
+
+Oui, c'est recommandé. Un outil OBD2 révèle parfois des anomalies cachées qui n'ont pas encore déclenché le voyant, notamment sur la pression de carburant ou le papillon des gaz.
+
+### La pression des pneus influence-t-elle vraiment la consommation ?
+
+Oui. Un bar de pression en moins peut faire grimper la consommation de 0,3 L/100 km. Vérifiez la pression tous les mois, surtout avant un trajet long.
+
+### Combien coûte un diagnostic complet en atelier ?
+
+Généralement entre 50 et 100 €, hors coût de la réparation elle-même. Ce diagnostic initial permet d'éviter de remplacer une pièce qui n'est pas réellement en cause.
+
+### À partir de quel seuil la surconsommation devient-elle préoccupante ?
+
+Au-delà de 1,5 L/100 km d'écart avec la consommation habituelle. En dessous de 1 L/100 km, vérifier pneus et filtre à air suffit souvent à résoudre le problème.

@@ -1,75 +1,72 @@
 ---
 title: "TER abonnement travail : prix, remboursement employeur et régions éligibles"
-description: "L’abonnement TER pour les trajets domicile-travail est remboursé à 50 % par l’employeur (secteur privé) ou 75 % (secteur public). Prix, régions concernées "
-date: "2026-08-14"
+description: "L'abonnement TER domicile-travail est remboursé à 50 % par l'employeur dans le privé, 75 % dans le public. Prix 2026, régions et cumul avec le FMD."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1360
 wp_locale: "fr"
 image: "/images/articles/ter-abonnement-travail-couverture.webp"
 imageAlt: "TER abonnement travail : prix, remboursement employeur et régions éligibles"
 ---
-Vous prenez le TER pour aller au boulot ? Bonne nouvelle : votre employeur rembourse 50 % de votre abonnement si vous êtes dans le privé. Ce taux monte à 75 % dans le public. Un coup de pouce qui allège vraiment le budget transport. Surtout quand on combine avec d’autres aides comme le Forfait Mobilités Durables.
 
-On fait le point sur les tarifs 2026, les régions éligibles et les démarches pour en profiter sans stress.
+***Prendre le TER pour aller travailler ouvre droit à un remboursement obligatoire de votre employeur.*** _50 % du prix dans le secteur privé, 75 % dans le public. Ce coup de pouce se cumule avec le Forfait Mobilités Durables si vous combinez train et covoiturage. Voici les tarifs 2026, les régions concernées et la marche à suivre._
+
+TL;DR :
+
+-   L'employeur rembourse **50 %** du prix de l'abonnement dans le privé, **75 %** dans le public, exonérés de cotisations et d'impôt.
+-   Les tarifs TER régionaux vont de **20 € à 150 €** par mois selon la distance. Le Navigo francilien coûte **90,80 €/mois** en 2026.
+-   Le **Forfait Mobilités Durables** peut porter l'économie totale à **900 €/an** en complément du remboursement TER.
 
 ## Combien coûte un abonnement TER travail en 2026 ?
 
 ![Usagers montant dans un TER en gare un matin de semaine](/images/articles/ter-abonnement-travail-1.webp)
 
-Le prix varie selon les régions. En Île-de-France, un abonnement Navigo coûte 86,40 € par mois en 2026. Ce pass couvre aussi les TER franciliens. En province, les tarifs oscillent entre 20 € et 150 € par mois. Tout dépend de la distance et de la région.
+**Le prix varie fortement selon la région et la distance parcourue, de 20 € à 150 € par mois en province.** En Île-de-France, le forfait Navigo couvre aussi les TER franciliens et coûte **90,80 € par mois** en 2026, toutes zones confondues, contre 88,80 € en 2025. Les tarifs par zone restreinte restent plus bas, autour de 84 à 88 € selon le périmètre choisi.
 
-La loi impose à votre employeur de participer :
+La loi impose à l'employeur de participer, quel que soit le mode de transport public utilisé. Dans le **secteur privé**, il rembourse **50 % du prix** de l'abonnement. Dans le **secteur public**, la prise en charge atteint **75 %**. Ce remboursement est exonéré de cotisations sociales et d'impôt sur le revenu, donc sans coût supplémentaire pour le salarié.
 
--   Dans le **secteur privé**, il rembourse **50 % du prix**.
--   Dans le **secteur public**, la prise en charge atteint **75 %**.
--   Ce remboursement est **exonéré de cotisations sociales et d’impôt sur le revenu**. Donc, aucun coût supplémentaire pour vous.
+Pour un abonnement à 100 € par mois, le reste à charge tombe à 50 € dans le privé et 25 € dans le public. Sur une année pleine, l'écart avec un trajet en voiture devient vite significatif, carburant, péage et stationnement compris.
 
-Prenons un exemple. Si votre abonnement coûte 100 € par mois, vous ne paierez que 50 € dans le privé après remboursement. Dans le public, ce sera seulement 25 €. En effet, la différence est notable sur un budget annuel.
+### Réponse directe
 
-## Quelles régions proposent des abonnements TER travail ?
+Un abonnement TER travail coûte entre 20 € et 150 € par mois en province selon la distance, et 90,80 € via le Navigo en Île-de-France. L'employeur rembourse 50 % dans le privé, 75 % dans le public, sans charges ni impôt sur cette part.
 
-Presque toutes les régions proposent des abonnements TER travail. Mais chaque région utilise un nom différent. Voici les principales options :
+## Quelles régions proposent un abonnement TER travail ?
+
+Presque toutes les régions proposent une formule domicile-travail, sous un nom différent selon le territoire. Voici les principales offres et leur tarif de départ :
 
 | Région | Abonnement TER travail | Prix indicatif (2026) |
 | --- | --- | --- |
 | Auvergne-Rhône-Alpes | Libertés TER | À partir de 20 €/mois |
-| Provence-Alpes-Côte d’Azur | Zou ! Liberté | À partir de 30 €/mois |
+| Provence-Alpes-Côte d'Azur | Zou ! Liberté | À partir de 30 €/mois |
 | Hauts-de-France | TER Hauts-de-France | À partir de 25 €/mois |
 | Nouvelle-Aquitaine | TER Nouvelle-Aquitaine | À partir de 20 €/mois |
 | Occitanie | LiO TER | À partir de 25 €/mois |
+| Île-de-France | Navigo (toutes zones) | 90,80 €/mois |
 
-*SNCF Connect*
+*Source : SNCF Connect, Île-de-France Mobilités.*
 
-Pour vérifier l’éligibilité de votre trajet, consultez le site de votre région. Vous pouvez aussi utiliser SNCF Connect. La plupart des régions proposent un simulateur. Il calcule le prix de votre abonnement en fonction de votre trajet.
+Pour vérifier l'éligibilité de votre trajet, consultez le site de votre région ou SNCF Connect. La plupart des régions proposent un simulateur qui calcule le prix exact selon la gare de départ et d'arrivée, un préalable indispensable avant toute souscription.
 
-Besoin d’aide ? Rendez-vous sur notre page [Train & transports en commun](/mobilite-partagee-transports/train-transports-en-commun) pour plus d’infos.
+## Peut-on cumuler le TER avec le Forfait Mobilités Durables ?
 
-## Peut-on cumuler l’abonnement TER avec le Forfait Mobilités Durables ?
+**Oui, et c'est l'une des combinaisons les plus avantageuses pour un trajet mixte.** Le Forfait Mobilités Durables (FMD) permet à l'employeur de verser jusqu'à **600 € par an**, exonérés de cotisations et d'impôt. Ce plafond passe à **900 € par an** lorsque le FMD se cumule avec la prise en charge d'un abonnement de transport public, une règle reconduite pour 2026.
 
-Oui, et c’est même malin ! Le **Forfait Mobilités Durables (FMD)** permet à votre employeur de vous verser jusqu’à 600 € par an. Ce montant passe à 900 € si vous combinez avec un abonnement de transports en commun. Et bonne nouvelle : ce forfait est **exonéré de cotisations sociales et d’impôt sur le revenu**.
+Concrètement, un salarié qui prend le TER pour une partie de son trajet et complète en covoiturage ou à vélo peut cumuler le remboursement de 50 % ou 75 % de son abonnement TER avec le FMD versé pour la portion restante. Le total peut représenter une économie annuelle proche de **1 500 €** pour un trajet régulier, un montant qui pèse lourd face à la hausse continue du carburant et des péages. Notre guide sur le [Forfait Mobilités Durables à vélo](/forfait-mobilites-durables-velo/) détaille les justificatifs à fournir pour la portion non motorisée du trajet.
 
-Voici comment ça marche. Si vous prenez le TER pour une partie de votre trajet et que vous faites du covoiturage pour le reste, vous pouvez cumuler :
+### Réponse directe
 
--   Le remboursement de 50 % ou 75 % de votre abonnement TER.
--   Le Forfait Mobilités Durables pour la partie covoiturage ou vélo.
-
-Résultat ? Vous pouvez économiser jusqu’à **1 500 € par an** sur vos trajets domicile-travail. Une aubaine, surtout avec la hausse des prix de l’essence et des péages.
+Oui. Le remboursement de l'abonnement TER (50 % ou 75 %) se cumule avec le Forfait Mobilités Durables, plafonné à 900 € par an en cas de cumul avec un abonnement de transport public, pour la partie du trajet effectuée en covoiturage ou à vélo.
 
 ## Comment souscrire un abonnement TER travail ?
 
-La démarche est simple. Voici les étapes à suivre :
+La démarche suit cinq étapes simples. Vérifiez d'abord l'éligibilité de votre trajet sur le site de votre région ou via SNCF Connect, qui simule le tarif exact selon votre gare de départ. Choisissez ensuite la formule, hebdomadaire, mensuelle ou annuelle, cette dernière étant souvent la plus économique rapportée au mois. Faites remplir l'**attestation employeur**, qui certifie l'usage professionnel du trajet. Transmettez votre dossier, en ligne ou par courrier selon la région. Récupérez enfin votre titre de transport, par courrier ou en version dématérialisée sur votre smartphone.
 
-1.  **Vérifiez l’éligibilité de votre trajet**. Rendez-vous sur le site de votre région ou sur SNCF Connect pour simuler votre abonnement.
-2.  **Choisissez votre abonnement**. Optez pour un abonnement hebdomadaire, mensuel ou annuel. L’abonnement annuel est souvent moins cher.
-3.  **Faites remplir l’attestation employeur**. Votre employeur doit certifier que vous utilisez les transports en commun pour vos trajets domicile-travail.
-4.  **Envoyez votre dossier**. Selon les régions, vous pouvez souscrire en ligne ou par courrier.
-5.  **Récupérez votre titre de transport**. Une fois votre dossier validé, vous recevrez votre abonnement par courrier ou en version dématérialisée.
+Conservez une copie de chaque justificatif transmis à votre employeur, notamment pour la demande de remboursement mensuelle ou le renouvellement annuel de l'attestation. Pour les derniers kilomètres entre la gare et le lieu de travail, un [vélo pliant compatible avec le train](/velo-pliant-train-comparatif/) complète souvent l'abonnement TER sans surcoût notable.
 
-Et voilà ! Vous êtes prêt à profiter de votre abonnement et à faire des économies.
+## TER ou voiture : quel est le coût réel comparé ?
 
-## TER abonnement travail vs. voiture : lequel est le plus rentable ?
-
-Prenons l’exemple d’un trajet Lyon-Grenoble (100 km aller-retour). Voici la comparaison :
+Prenons l'exemple d'un trajet Lyon-Grenoble, 100 km aller-retour, comparé entre voiture solo et TER complété par du covoiturage :
 
 | Poste de dépense | Voiture (essence) | TER + covoiturage |
 | --- | --- | --- |
@@ -80,18 +77,42 @@ Prenons l’exemple d’un trajet Lyon-Grenoble (100 km aller-retour). Voici la 
 | Entretien/usure | 50 €/mois | 0 € |
 | **Total** | **270 €/mois** | **40 €/mois** |
 
-*Estimation pour un trajet Lyon-Grenoble (100 km aller-retour)*
+*Estimation pour un trajet Lyon-Grenoble, 100 km aller-retour.*
 
-Le TER + covoiturage coûte **6 fois moins cher** que la voiture solo. En plus, vous évitez les bouchons et le stress du volant. Bref, c’est un combo gagnant pour votre portefeuille et votre tranquillité.
+Le combo TER et covoiturage revient environ six fois moins cher qu'un trajet solo en voiture sur cet exemple, sans compter le temps gagné à ne pas gérer le volant dans les bouchons. Pour affiner cette comparaison sur votre propre trajet, notre guide sur le [covoiturage domicile-travail](/covoiturage-domicile-travail-prime/) détaille la [prime de 100 €](/prime-covoiturage-100-euros/) qui peut s'y ajouter.
 
-## TER abonnement travail : les cas particuliers à connaître
+## Cas particuliers : temps partiel, intérim, changement de région
 
-Certaines situations compliquent le calcul du remboursement. Voici comment les gérer.
+Certaines situations compliquent le calcul du remboursement. Un salarié à **temps partiel** conserve le même droit : l'employeur rembourse 50 % ou 75 % du prix réel de l'abonnement souscrit, sans proratisation selon le nombre de jours travaillés par semaine.
 
-Si vous travaillez à temps partiel, la règle ne change pas. Votre employeur doit rembourser 50 % (privé) ou 75 % (public) du prix de l’abonnement, même si vous ne venez que 3 jours par semaine. Le calcul se fait sur le prix réel de l’abonnement souscrit, pas sur un prorata des jours travaillés.
+En **intérim**, l'obligation s'applique dès le premier jour de mission, l'agence jouant le rôle d'employeur. Si la mission s'arrête avant la fin d'un mois d'abonnement, le remboursement se calcule au prorata des jours restants.
 
-En intérim, l’obligation s’applique aussi, dès le premier jour de mission. La mission s’arrête avant la fin d’un mois d’abonnement ? Demandez le remboursement au prorata des jours restants auprès de l’agence d’intérim, qui joue le rôle d’employeur.
+Un **changement de région** en cours d'année suppose de résilier l'ancien abonnement et d'en souscrire un nouveau. Prévenez le service RH dès que possible, le remboursement suivant l'abonnement en cours et non une moyenne annuelle. Enfin, un **indépendant ou freelance** n'a droit à aucun remboursement obligatoire, cette règle ne concernant que les salariés liés par un contrat de travail.
 
-Un changement de région en cours d’année suppose de résilier l’ancien abonnement et d’en souscrire un nouveau. Prévenez votre service RH dès que possible : le remboursement suit l’abonnement en cours, pas une moyenne annuelle.
+Pour un trajet occasionnel en grande vitesse en complément du TER, notre comparatif [MAX Jeune et MAX Senior](/tgv-max-abonnement-avis/) détaille l'abonnement SNCF qui a remplacé TGV Max. Pour les Franciliens qui alternent télétravail et présentiel, notre guide sur le [Navigo en télétravail](/forfait-navigo-teletravail/) explique comment ajuster la prise en charge selon le nombre de jours au bureau.
 
-Enfin, si vous êtes indépendant ou freelance, aucune obligation légale ne s’applique. Le remboursement partiel concerne uniquement les salariés liés par un contrat de travail.
+## Questions fréquentes
+
+### Quel est le taux de remboursement d'un abonnement TER travail ?
+
+50 % du prix dans le secteur privé, 75 % dans le secteur public. Ce remboursement est exonéré de cotisations sociales et d'impôt sur le revenu pour le salarié.
+
+### Combien coûte le Navigo en 2026 ?
+
+90,80 € par mois pour la formule toutes zones, contre 88,80 € en 2025. Il couvre aussi les TER circulant en Île-de-France.
+
+### Peut-on cumuler le remboursement TER et le Forfait Mobilités Durables ?
+
+Oui. Le plafond du FMD passe à 900 € par an lorsqu'il se cumule avec la prise en charge d'un abonnement de transport public, pour la partie du trajet effectuée en covoiturage ou à vélo.
+
+### Un salarié à temps partiel a-t-il droit au même remboursement ?
+
+Oui. Le calcul se fait sur le prix réel de l'abonnement souscrit, sans proratisation selon le nombre de jours travaillés par semaine.
+
+### Un intérimaire peut-il bénéficier du remboursement TER ?
+
+Oui, dès le premier jour de mission. L'agence d'intérim joue le rôle d'employeur et rembourse au prorata des jours restants si la mission s'arrête en cours de mois.
+
+### Un freelance peut-il demander ce remboursement ?
+
+Non. L'obligation de remboursement de 50 % ou 75 % ne concerne que les salariés liés par un contrat de travail, pas les indépendants ni les freelances.

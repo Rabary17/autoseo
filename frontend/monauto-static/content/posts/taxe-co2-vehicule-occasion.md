@@ -1,7 +1,7 @@
 ---
-title: "Taxe CO₂ sur un véhicule d’occasion : calcul, exonération et malus en 2026"
-description: "La taxe CO₂ s’applique-t-elle aux véhicules d’occasion ? Découvrez les règles 2026, les malus pour les modèles importés et les cas d’exonération."
-date: "2026-08-03"
+title: "Taxe CO2 sur un véhicule d'occasion : calcul, exonération et malus en 2026"
+description: "La taxe CO2 vise surtout les occasions importées. Seuil à 108 g/km en 2026, décote selon l'ancienneté, exonérations CTTE et famille nombreuse détaillées."
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "malus-taxes"
 wp_id: 907
@@ -9,122 +9,111 @@ wp_locale: "fr"
 image: "/images/articles/taxe-co2-vehicule-occasion-couverture.webp"
 imageAlt: "Taxe CO2 sur un véhicule d'occasion : calcul, montant et exonérations en 2026"
 ---
-En France, la taxe CO₂ ne concerne pas tous les véhicules d’occasion. Elle vise surtout les modèles importés ou immatriculés pour la première fois après 2020. Voici les changements en 2026, les seuils de malus et les exonérations possibles.
 
-## 1\. La taxe CO₂ s’applique-t-elle aux véhicules d’occasion en France ?
+***Acheter une voiture d'occasion en France ne déclenche presque jamais le malus CO2.*** _Cette taxe cible d'abord les véhicules importés et les occasions quasi-neuves. Voici le seuil 2026, le calcul réel pour un import et les exonérations qui s'appliquent vraiment._
 
-Contrairement aux idées reçues, la taxe CO₂ ne cible pas systématiquement les voitures d’occasion achetées en France. Elle concerne principalement deux cas :
+TL;DR :
 
--   Les véhicules **importés**, achetés à l’étranger et immatriculés en France pour la première fois.
--   Les modèles **neufs immatriculés après 2020** et revendus en occasion, si leurs émissions dépassent les seuils en vigueur.
+-   Le seuil de déclenchement du malus passe à **108 g/km WLTP** en 2026, contre 113 g/km en 2025.
+-   Un véhicule déjà immatriculé en France **ne déclenche pas** la taxe lors d'un simple changement de propriétaire.
+-   Une occasion importée **de moins de 6 mois et moins de 6 000 km** est traitée comme un véhicule neuf, sans décote.
 
-Pour les voitures déjà immatriculées en France avant 2021, la taxe CO₂ n’est généralement pas due. En effet, un simple changement de propriétaire ne déclenche pas cette taxe. Certaines exceptions existent, comme les véhicules haut de gamme ou très polluants.
+## La taxe CO2 s'applique-t-elle à toutes les occasions ?
 
-### Cas particuliers : les véhicules exonérés
+**Non, elle ne vise que deux situations précises.** Un véhicule d'occasion acheté et revendu en France, entre particuliers ou via un professionnel, ne déclenche aucune taxe CO2 lors du changement de carte grise. Seuls deux cas génèrent un malus : un **véhicule importé** et immatriculé pour la première fois en France, ou un véhicule neuf immatriculé après la réforme en vigueur et revendu rapidement sous sa forme quasi-neuve.
 
-Plusieurs situations permettent d’échapper à la taxe CO₂, même pour un véhicule importé :
+Ce deuxième cas surprend souvent les acheteurs. Une occasion importée avec moins de **6 mois d'immatriculation** et moins de **6 000 kilomètres** au compteur est fiscalement assimilée à un véhicule neuf. Le barème 2026 s'applique alors dans sa version la plus stricte, sans la moindre décote liée à l'ancienneté.
 
--   Les voitures **immatriculées avant 2021**, sauf si elles dépassent 190 g/km de CO₂.
--   Les véhicules **utilitaires légers** (catégorie CTTE sur la carte grise), exonérés de malus écologique.
+Pour un véhicule déjà immatriculé en France depuis plusieurs années et revendu normalement, aucune de ces deux situations ne s'applique. La case V7 de la carte grise (émissions de CO2) ne déclenche rien au moment du simple transfert de propriété, que l'acheteur découvre souvent avec soulagement lors de sa [demande de carte grise](/carte-grise-prix-par-region/). Un véhicule revenant d'un pays étranger via un [quitus fiscal](/quitus-fiscal-vehicule-etranger/) suit en revanche la procédure complète décrite ci-dessous.
 
--   Les modèles **électriques ou hybrides rechargeables**, sous conditions d’autonomie.
--   Les véhicules **adaptés aux personnes handicapées**, sur justificatif.
--   Les véhicules importés dans le cadre d’un **déménagement**, sous conditions de résidence à l’étranger pendant au moins 12 mois.
--   Les voitures **achetées par une famille nombreuse** (3 enfants ou plus), sous réserve de justificatifs (voir notre [guide sur l’exonération famille nombreuse](/carte-grise-demarches/exoneration-malus-famille-nombreuse)).
+### Réponse directe
 
-Pour vérifier votre éligibilité, consultez le simulateur officiel sur service-public.fr.
+La taxe CO2 vise les véhicules importés et immatriculés pour la première fois en France, ainsi que les occasions quasi-neuves de moins de 6 mois et 6 000 km. Un changement de propriétaire classique, sur un véhicule déjà immatriculé en France, n'y est pas soumis.
 
-## 2\. Barème 2026 de la taxe CO₂ pour les véhicules d’occasion importés
-
-_⚠️ À vérifier : le seuil de déclenchement (128 g/km) et le barème ci-dessous ont été vérifiés le 04/09/2026 via des sources secondaires, pas le texte réglementaire officiel. Une source consultée à cette date indique un seuil de déclenchement à 108 g/km pour 2026, ce qui diffère du chiffre ci-dessous. Le plafond de 80 000 € est en revanche confirmé. Vérifiez le seuil exact via le simulateur officiel de l’ANTS avant tout calcul définitif._
-
-En 2026, le malus écologique pour les véhicules d’occasion importés a été durci. Voici les seuils et montants applicables :
-
-| Émissions de CO₂ (g/km) | Montant du malus en 2026 |
-| --- | --- |
-| 128 à 137 | 50 € |
-| 138 à 147 | 100 € |
-| 148 à 157 | 200 € |
-| 158 à 167 | 500 € |
-| 168 à 177 | 1 000 € |
-| 178 à 187 | 2 000 € |
-| 188 à 197 | 3 500 € |
-| 198 et plus | Jusqu’à 80 000 € (plafond) |
-
-*Source : Barème officiel 2026.*
-
-Le seuil de déclenchement du malus a été abaissé à **128 g/km** en 2026. Ainsi, davantage de véhicules sont concernés. Pour les modèles importés, le calcul se base sur les données du certificat de conformité européen (COC).
-
-### Cycle WLTP ou NEDC : une source d’erreur fréquente
-
-Le certificat de conformité européen (COC) d’un véhicule importé peut indiquer ses émissions de CO₂ selon deux cycles de mesure différents. Si le document est au format NEDC, effectuez la conversion WLTP avant de vous fier au barème : les deux mesures ne donnent pas le même chiffre pour un même véhicule, ce qui peut faire changer de tranche. Vérifiez aussi le poids du véhicule indiqué sur le COC : au-delà d’un certain seuil, une taxe au poids peut s’ajouter au malus CO₂.
-
-### Comment est calculée la taxe pour un véhicule importé ?
-
-Le montant du malus dépend de deux critères :
-
--   Les **émissions de CO₂** indiquées sur le certificat de conformité (COC).
--   L’**âge du véhicule**. Plus il est ancien, plus le malus est réduit. Une décote de 10 % par an s’applique, dans la limite de 80 %.
-
-_⚠️ À vérifier : une réforme entrée en vigueur en mars 2025 a revu les règles de décote du malus selon l’ancienneté du véhicule. Le mécanisme simple « 10 % par an, plafonné à 80 % » décrit ci-dessous ne serait plus celui appliqué depuis cette date. Le calcul ci-dessous illustre le principe général mais son taux exact est à confirmer avant de vous y fier pour un montant définitif._
-
-Prenons un exemple. Un véhicule émettant 160 g/km et immatriculé pour la première fois en 2022 bénéficie d’une décote de 40 %. Son malus sera donc de 500 € × 60 % = **300 €**.
+## Barème 2026 : quel malus pour un véhicule importé ?
 
 ![Calculatrice, documents de taxe CO2 et clé de voiture sur une table en bois](/images/articles/taxe-co2-vehicule-occasion-1.webp)
 
-## 3\. Comment éviter ou réduire la taxe CO₂ sur une occasion ?
+Le seuil de déclenchement du malus CO2 a été abaissé à **108 grammes par kilomètre** en cycle WLTP pour 2026, contre 113 g/km en 2025. Le plafond reste fixé à **80 000 €**, atteint autour de 191-192 g/km. Voici quelques repères du barème, utiles pour situer un véhicule avant de consulter le montant exact :
 
-Plusieurs stratégies permettent de limiter, voire d’éviter, le malus écologique :
+| Émissions WLTP (g/km) | Malus dû en 2026 |
+| --- | --- |
+| 107 et moins | 0 € |
+| 108 | 50 € |
+| 109 | 75 € |
+| 110 | 100 € |
+| 112 | 150 € |
+| 150 (estimation) | environ 10 000 à 15 000 € |
+| 190 | 76 800 € |
+| 191 | 79 911 € |
+| 192 et plus | 80 000 € (plafond) |
 
-1.  **Choisir un modèle peu polluant**. Privilégiez les véhicules émettant moins de 128 g/km de CO₂.
-2.  **Acheter un véhicule déjà immatriculé en France**. La taxe ne s’applique pas lors d’un simple changement de propriétaire.
-3.  **Opter pour un utilitaire léger** (catégorie CTTE). Ces véhicules sont exonérés de malus, quelle que soit leur motorisation.
-4.  **Bénéficier d’une exonération famille nombreuse**. Les ménages avec 3 enfants ou plus peuvent être dispensés de malus sous conditions.
-5.  **Attendre la décote**. Pour un véhicule importé, plus il est ancien, plus le malus est réduit. La décote peut atteindre 80 %.
+*Source : service-public.gouv.fr, barèmes relayés par Assurland et Legipermis.*
 
-Pour vérifier votre éligibilité à une exonération, utilisez le simulateur en ligne de l’[ANTS](/carte-grise-demarches/malus-taxes). Vous pouvez aussi consulter notre [guide complet sur les démarches liées à la carte grise](/carte-grise-demarches).
+Le barème progresse gramme par gramme, avec des paliers qui s'accélèrent nettement après 150 g/km. Pour un montant exact, le certificat de conformité européen (COC) du véhicule importé donne le taux WLTP précis à reporter dans le simulateur officiel de l'ANTS ou de service-public.gouv.fr, bien plus fiable qu'une estimation par tranche.
 
-## 4\. Taxe CO₂ et véhicules de société : ce qui change en 2026
+### Cycle WLTP ou NEDC : une source d'erreur fréquente
 
-Depuis 2022, la Taxe sur les Véhicules de Société (TVS) a été remplacée par deux taxes distinctes :
+Le COC d'un véhicule importé plus ancien peut encore indiquer ses émissions selon le cycle NEDC, aujourd'hui abandonné au profit du WLTP. Les deux mesures ne donnent jamais le même chiffre pour un véhicule identique, ce qui peut faire changer de tranche de malus. Une conversion s'impose avant tout calcul. Vérifiez aussi le **poids** indiqué sur le COC : au-delà de 1 500 kg, un malus au poids s'ajoute au malus CO2, sauf pour les véhicules hybrides rechargeables et électriques.
 
--   Une **taxe annuelle sur les émissions de CO₂**.
--   Une **taxe sur les émissions de polluants atmosphériques**.
+## Comment la décote réduit le malus d'un véhicule plus ancien
 
-Pour les véhicules d’occasion achetés par une entreprise, voici les règles applicables en 2026 :
+**Le malus baisse de 10 % par année entamée depuis la première immatriculation à l'étranger**, dans la limite d'une décote plafonnée. C'est bien la date de première immatriculation hors de France qui sert de référence, pas la date d'achat ni celle de l'import. Un véhicule acheté en novembre mais immatriculé pour la première fois en janvier suit le barème de son année d'immatriculation d'origine.
 
-| Type de véhicule | Taxe CO₂ (2026) | Taxe polluants (2026) |
-| --- | --- | --- |
-| Véhicule émettant < 50 g/km | 0 € | 0 € |
-| 50 à 100 g/km | 2 €/g au-delà de 50 | 0 € |
-| 101 à 120 g/km | 4 €/g au-delà de 100 | 20 € |
-| 121 à 140 g/km | 6,5 €/g au-delà de 120 | 40 € |
-| 141 à 160 g/km | 13 €/g au-delà de 140 | 100 € |
-| \> 160 g/km | 16 €/g au-delà de 160 | 500 € |
+Prenons un véhicule émettant 150 g/km WLTP, immatriculé pour la première fois à l'étranger en 2022. Quatre années entamées entraînent une décote de 40 %. Le malus théorique à l'état neuf, de l'ordre de 12 000 € selon le barème applicable à son année d'immatriculation, se retrouve ainsi ramené à environ **7 200 €** une fois la décote appliquée. Ce calcul reste indicatif : seul le simulateur officiel, alimenté par le taux WLTP exact et l'année de première immatriculation, donne un montant définitif.
 
-*Source : Barème 2026.*
+Cette décote ne s'applique jamais à une occasion importée de moins de 6 mois et 6 000 km, traitée comme neuve quelle que soit sa date de première immatriculation réelle.
 
-Les véhicules utilitaires légers (catégorie CTTE) sont **exonérés** de ces deux taxes. En effet, leur usage professionnel justifie cette exemption.
+## Quels véhicules échappent totalement au malus ?
 
-### Cas pratique : calcul pour une voiture de société d’occasion
+Plusieurs situations permettent d'éviter la taxe CO2, même pour un véhicule importé :
 
-Prenons l’exemple d’une berline diesel d’occasion émettant 150 g/km de CO₂. Une entreprise l’achète en 2026. Voici le calcul :
+-   Les **utilitaires légers** immatriculés CTTE (catégorie N1), exonérés de malus écologique quelle que soit leur motorisation. Notre dossier sur la [TVA récupérable sur un utilitaire](/tva-recuperable-utilitaire/) détaille les autres avantages fiscaux liés à cette immatriculation.
+-   Les véhicules **électriques** et les hybrides rechargeables sous conditions d'autonomie électrique minimale.
+-   Les véhicules **adaptés aux personnes handicapées**, sur présentation d'un justificatif.
+-   Un import réalisé dans le cadre d'un **déménagement**, sous réserve d'une résidence à l'étranger d'au moins 12 mois avant le retour.
+-   Les familles d'au moins **3 enfants**, pour un véhicule d'au moins 5 places assises, dans la limite d'une puissance fiscale plafonnée. Notre [guide sur l'exonération famille nombreuse](/exoneration-malus-famille-nombreuse/) détaille les justificatifs à fournir.
 
--   Taxe CO₂ : (150 – 140) × 13 € = **130 €**.
--   Taxe polluants : **100 €**.
--   Total annuel : **230 €**.
+Pour vérifier une éligibilité précise, le simulateur officiel reste la référence, les critères d'autonomie ou de puissance évoluant régulièrement.
 
-Pour un véhicule électrique ou hybride rechargeable (autonomie > 50 km), ces taxes sont nulles. Ainsi, ces motorisations restent avantageuses pour les entreprises.
+## Déclarer et payer la taxe CO2 sur un véhicule importé
 
-![Document d'immatriculation allemand avec les émissions de CO2 mises en évidence](/images/articles/taxe-co2-vehicule-occasion-2.webp)
+La démarche suit quatre étapes, à réaliser dans le mois suivant l'achat. D'abord, relever le taux de CO2 exact sur le **certificat de conformité européen**, en vérifiant le cycle de mesure utilisé. Ensuite, calculer le montant via le simulateur de l'ANTS, en renseignant l'année de première immatriculation à l'étranger pour appliquer la bonne décote. Puis déclarer le véhicule sur le site de l'ANTS, en même temps que la demande de carte grise. Enfin, régler la taxe en ligne, ce paiement conditionnant la délivrance du certificat d'immatriculation définitif.
 
-## 5\. Démarches pour déclarer et payer la taxe CO₂
+Un retard dans cette démarche expose à une amende de **135 €**, en plus du malus lui-même. Le délai court à partir de la date d'achat, et non de la date d'arrivée effective du véhicule sur le territoire français.
 
-Si vous achetez un véhicule d’occasion soumis à la taxe CO₂, voici les étapes à suivre :
+### Réponse directe
 
-1.  **Vérifiez les émissions de CO₂**. Consultez le certificat de conformité (COC) ou la carte grise.
-2.  **Calculez le montant du malus**. Utilisez le simulateur officiel de l’[ANTS](/carte-grise-demarches/malus-taxes).
-3.  **Déclarez le véhicule**. Rendez-vous sur le site de l’ANTS dans un délai d’1 mois après l’achat.
-4.  **Payez la taxe**. Effectuez le paiement en ligne via le même portail. Ce paiement est obligatoire pour obtenir la nouvelle carte grise.
+La déclaration s'effectue sur le site de l'ANTS, dans le mois suivant l'achat, à partir du taux de CO2 figurant sur le certificat de conformité européen. Le paiement en ligne conditionne la délivrance de la carte grise définitive.
 
-En cas de retard, vous risquez une amende de **135 €**. Pour les véhicules importés, le malus est dû lors de la première immatriculation en France.
+## Taxe CO2 et véhicule de société : ne pas confondre les deux systèmes
+
+Un particulier qui importe un véhicule paie le **malus CO2 classique**, décrit ci-dessus. Une entreprise qui achète un véhicule de tourisme, neuf ou d'occasion, relève d'un système différent : la **taxe annuelle sur les émissions de CO2** et la **taxe annuelle sur les émissions de polluants**, qui ont remplacé l'ancienne TVS depuis 2022. Ces deux taxes se paient chaque année, et non une seule fois à l'achat.
+
+Pour une occasion achetée par une société, les deux systèmes peuvent se cumuler : le malus à l'achat si le véhicule est importé et quasi-neuf, puis la taxe annuelle due tant que le véhicule reste dans la flotte. Notre dossier sur le [calcul de ces deux taxes annuelles](/tvs-taxe-vehicules-societe-calcul/) détaille le barème applicable aux flottes d'entreprise, à comparer avec la [TVA récupérable sur un utilitaire](/tva-recuperable-utilitaire/) et le [pick-up fiscalement avantageux](/pick-up-fiscalite-avantage/) pour les professionnels qui hésitent entre plusieurs catégories de véhicules.
+
+## Questions fréquentes
+
+### À partir de quel seuil le malus CO2 s'applique-t-il en 2026 ?
+
+À partir de 108 g/km WLTP, contre 113 g/km en 2025. En dessous de ce seuil, aucun malus n'est dû, quelle que soit l'origine du véhicule.
+
+### Un changement de propriétaire en France déclenche-t-il la taxe CO2 ?
+
+Non. Seuls les véhicules importés et immatriculés pour la première fois en France, ou les occasions quasi-neuves de moins de 6 mois et 6 000 km, sont concernés.
+
+### Comment la décote est-elle calculée pour un véhicule importé plus ancien ?
+
+Elle réduit le malus de 10 % par année entamée depuis la première immatriculation à l'étranger, et non depuis la date d'achat ou d'import en France.
+
+### Un utilitaire CTTE paie-t-il le malus écologique ?
+
+Non. Les véhicules immatriculés CTTE (catégorie N1) restent exonérés de malus, quelle que soit leur motorisation, thermique ou électrique.
+
+### Que risque-t-on en cas de retard de déclaration ?
+
+Une amende forfaitaire de 135 €, en plus du montant du malus lui-même, calculé à partir de la date d'achat du véhicule.
+
+### Où calculer le montant exact du malus pour un véhicule précis ?
+
+Le simulateur officiel de l'ANTS ou de service-public.gouv.fr, alimenté par le taux WLTP du certificat de conformité et l'année de première immatriculation à l'étranger, donne le montant définitif.

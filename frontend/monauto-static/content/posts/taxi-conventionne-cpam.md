@@ -1,84 +1,111 @@
 ---
-title: "Taxi conventionné CPAM : remboursement, prix et conditions en 2026"
-description: "Un taxi conventionné CPAM permet d’être remboursé à 55 % (voire 100 % dans certains cas) pour des trajets médicaux. Voici les conditions, tarifs et démarch"
-date: "2026-08-12"
+title: "Taxi conventionné CPAM : remboursement, tarifs et nouvelle convention 2025"
+description: "Un taxi conventionné CPAM rembourse 55 % des frais, 100 % en ALD. Depuis la convention nationale 2025, un forfait de 13 € s'ajoute au tarif kilométrique."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1307
 wp_locale: "fr"
 image: "/images/articles/taxi-conventionne-cpam-couverture.webp"
 imageAlt: "Taxi conventionné CPAM : remboursement, prix et conditions en 2026"
 ---
-Vous avez besoin d’un taxi pour un rendez-vous médical ? La CPAM rembourse 55 % des frais, voire 100 % dans certains cas. Mais attention : une franchise de 4 € par trajet s’applique. Voici comment éviter les mauvaises surprises.
 
-## Qu’est-ce qu’un taxi conventionné CPAM ?
+***Un trajet médical en taxi conventionné ouvre droit à un remboursement de 55 % par la CPAM, 100 % dans certains cas.*** _Une franchise de 4 € par trajet reste à votre charge. Depuis la nouvelle convention nationale entrée en vigueur en 2025, la tarification a changé : voici ce qui se passe vraiment en 2026._
+
+TL;DR :
+
+-   Le remboursement est de **55 %** en règle générale, **100 %** en ALD, grossesse à risque ou accident du travail.
+-   Une **franchise de 4 €** s'applique par trajet, plafonnée à **8 €/jour** et **50 €/an**.
+-   Depuis la convention nationale 2025-2029, le tarif repose sur un **forfait de prise en charge** et un tarif kilométrique, au lieu des anciens suppléments d'attente.
+
+## Qu'est-ce qu'un taxi conventionné CPAM ?
 
 ![Taxi conventionné CPAM avec vignette visible transportant un patient vers un hôpital](/images/articles/taxi-conventionne-cpam-1.webp)
 
-Un taxi conventionné CPAM est agréé par l’Assurance Maladie. Il transporte des patients vers des lieux de soins : hôpital, clinique, cabinet médical. Contrairement à un VTC, ses tarifs sont encadrés. Résultat ? Un remboursement partiel ou total selon votre situation.
+**Un taxi conventionné CPAM a signé un accord avec l'Assurance Maladie pour transporter des patients vers un lieu de soins à un tarif encadré.** Reconnaissable à son macaron bleu apposé sur le pare-brise, il facture directement la part remboursable à votre caisse si vous bénéficiez du tiers payant. Un taxi non conventionné ne donne droit à aucun remboursement, prescription médicale ou non.
 
-Pour en bénéficier, trois conditions :
+Trois conditions ouvrent le droit au remboursement : une **prescription médicale de transport**, sauf urgence ou affection de longue durée déjà reconnue, le choix d'un taxi **conventionné** avec vignette visible, et la présentation de votre **carte Vitale** ou d'une attestation de droits. Le médecin coche la case « transport assis professionnalisé » sur le bon, une catégorie qui couvre à la fois le taxi conventionné et le véhicule sanitaire léger.
 
--   Avoir une prescription médicale (sauf urgence ou ALD).
--   Choisir un taxi **conventionné** (vérifiez la vignette CPAM sur le véhicule).
--   Présenter votre carte Vitale ou une attestation de droits.
+### Réponse directe
 
-Sans ces conditions, la CPAM ne remboursera pas votre trajet. Même avec un taxi conventionné.
+Un taxi conventionné CPAM est agréé par l'Assurance Maladie pour un tarif encadré et un remboursement partiel ou total. Il faut une prescription médicale, sauf urgence, un taxi affichant la vignette CPAM, et votre carte Vitale pour en bénéficier.
 
-## Remboursement CPAM : 55 % ou 100 % ?
+## Combien la CPAM rembourse-t-elle réellement ?
 
-La CPAM rembourse 55 % des frais de transport. Mais dans certains cas, la prise en charge monte à 100 % :
+Le taux de remboursement de base est de **55 %** des frais de transport, dans la limite des tarifs conventionnels. Il grimpe à **100 %** dans plusieurs situations : affection longue durée (ALD) reconnue, grossesse à risque à partir du 6ᵉ mois, accident du travail ou maladie professionnelle, et urgence médicale avérée.
 
--   Affection Longue Durée (ALD).
--   Grossesse à risque (à partir du 6ᵉ mois).
--   Accident du travail ou maladie professionnelle.
--   Urgence médicale (hospitalisation en urgence, par exemple).
+Une **franchise médicale de 4 €** s'applique néanmoins à chaque trajet, y compris en prise en charge à 100 %. Elle est plafonnée à **8 € par jour** et **50 € par an** toutes franchises médicales confondues. Un aller-retour représente donc 8 € de franchise, sauf si le plafond annuel est déjà atteint. Les bénéficiaires de la Complémentaire santé solidaire n'ont, sous conditions, pas à avancer ces frais.
 
-Attention, une franchise de 4 € par trajet s’applique. Elle est plafonnée à 8 € par jour et 50 € par an. Ainsi, si vous cumulez plusieurs trajets, cette franchise peut vite atteindre son plafond.
+| Situation | Taux de remboursement | Franchise applicable |
+| --- | --- | --- |
+| Trajet médical classique | 55 % | 4 €/trajet |
+| ALD reconnue | 100 % | 4 €/trajet (sous plafond annuel) |
+| Grossesse à risque (dès le 6ᵉ mois) | 100 % | 4 €/trajet |
+| Urgence médicale | 100 % | 4 €/trajet |
 
-## Comment réserver un taxi conventionné CPAM ?
+*Source : Assurance Maladie, justice.fr.*
+
+## Ce qui change avec la convention nationale 2025-2029
+
+**La tarification des taxis conventionnés a été réformée en profondeur.** Une convention-cadre nationale, entrée en vigueur le 9 août 2025, uniformise les règles pour l'ensemble des entreprises de transport sanitaire conventionnées. Elle remplace les anciens suppléments d'attente et de frais d'approche par un système à deux composantes : un **forfait de prise en charge de 13 €**, applicable depuis le 1er mai 2025, auquel s'ajoute un **tarif kilométrique** qui reste variable selon le département.
+
+Cette réforme a modifié la structure de la facture, sans changer le taux de remboursement de 55 % ni la franchise de 4 €. Une partie de la profession conteste son impact économique, notamment pour les trajets longs en zone rurale où le retour à vide n'est plus indemnisé comme auparavant. Pour le patient, l'essentiel reste inchangé : vérifier que le taxi affiche bien la vignette CPAM et demander une facture détaillée en cas de doute sur le montant facturé.
+
+### Réponse directe
+
+Depuis août 2025, une convention nationale remplace les anciens suppléments d'attente par un forfait de prise en charge de 13 € et un tarif kilométrique départemental. Le taux de remboursement de 55 % et la franchise de 4 € restent inchangés pour le patient.
+
+## Le transport partagé, une nouveauté à connaître
+
+Depuis le **1er mars 2025**, lorsque votre état de santé le permet et que la prescription porte sur un transport assis professionnalisé, la CPAM peut vous orienter vers un **transport partagé** avec un autre patient suivant un trajet proche. Cette règle vise à réduire le nombre de trajets à vide et à limiter la dépense globale de transport sanitaire.
+
+Le transport partagé ne s'impose pas si votre état de santé ne le permet pas, ce que le médecin précise sur la prescription. En pratique, il concerne surtout les trajets réguliers vers un même établissement, comme les séances de dialyse ou de radiothérapie, où plusieurs patients d'un secteur suivent des horaires proches.
+
+## Comment réserver et se faire rembourser ?
 
 ![Facture de taxi conventionné CPAM accompagnée d'une ordonnance médicale pour remboursement](/images/articles/taxi-conventionne-cpam-2.webp)
 
-Plusieurs options s’offrent à vous pour réserver un taxi conventionné :
+Plusieurs options permettent de trouver un taxi conventionné : votre médecin traitant peut vous orienter directement, l'annuaire disponible sur ameli.fr recense les professionnels conventionnés de votre secteur, et certaines plateformes de réservation dédiées au transport médical en recensent également. Vérifiez systématiquement la vignette CPAM avant de monter, un oubli coûtant cher en cas de refus de remboursement.
 
--   Votre médecin traitant peut vous orienter vers un taxi agréé.
--   Consultez l’annuaire des taxis conventionnés sur ameli.fr.
--   Utilisez des plateformes comme TaxiProxi ou Click&Care pour réserver en ligne.
+La plupart des taxis conventionnés pratiquent le **tiers payant** : ils facturent directement la part prise en charge à votre CPAM, et vous ne réglez que la franchise et l'éventuel reste à charge. Sans tiers payant, vous avancez l'intégralité de la course puis transmettez la facture et la prescription à votre caisse. Le remboursement intervient généralement sous **2 à 3 semaines**, par virement sur le compte enregistré dans votre espace ameli.
 
-Vérifiez toujours que le taxi affiche la vignette CPAM. Sans elle, le remboursement ne sera pas possible.
+### Réponse directe
 
-## Taxi conventionné vs VTC : quelle différence ?
+Réservez via votre médecin, l'annuaire ameli.fr ou une plateforme dédiée, en vérifiant la vignette CPAM. Avec le tiers payant, vous ne réglez que la franchise. Sans tiers payant, le remboursement arrive sous 2 à 3 semaines après envoi de la facture et de la prescription.
 
-Les VTC (Uber, Bolt) ne sont pas agréés par la CPAM. Impossible donc d’obtenir un remboursement pour un trajet en VTC. Même avec une prescription médicale. Pour tout savoir sur les différences, consultez [notre guide dédié](/mobilite-partagee-transports/vtc-taxi).
+## Taxi, VSL ou ambulance : qui choisit et pourquoi ?
+
+Le médecin prescripteur choisit le mode de transport selon votre autonomie, pas selon vos préférences. Le **taxi conventionné** convient aux patients autonomes, capables de marcher et de s'installer seuls. Le **VSL** s'adresse à ceux qui ont besoin d'une aide pour se déplacer, sans surveillance médicale particulière pendant le trajet. L'**ambulance** reste réservée aux transports nécessitant une surveillance ou des soins en cours de route, ou une position allongée.
+
+Pour un traitement itératif comme la dialyse ou la chimiothérapie, la prescription peut couvrir plusieurs mois de transport en une seule fois, évitant un renouvellement à chaque rendez-vous. Le médecin précise alors la fréquence et la durée totale sur le bon de transport. Conservez toujours un exemplaire signé, y compris pour ces trajets réguliers liés à une ALD, où la franchise de 4 € continue de s'appliquer jusqu'au plafond annuel de 50 €.
 
 ## Que faire en cas de refus de remboursement ?
 
-Si votre taxi refuse votre carte Vitale, exigez une facture détaillée. Elle doit mentionner le numéro de convention du taxi. Vous pourrez ensuite la transmettre à votre CPAM. En cas de refus persistant, signalez-le via votre compte ameli.fr.
+Si un refus survient, exigez d'abord une **facture détaillée** mentionnant le numéro de convention du taxi. Transmettez-la ensuite à votre CPAM avec la prescription médicale correspondante. En cas de refus persistant ou de doute sur le respect du tarif conventionné, un signalement via votre compte ameli.fr permet d'ouvrir une réclamation formelle. Conservez systématiquement une copie de chaque document transmis, la seule preuve valable en cas de litige sur un trajet ancien.
 
-## Combien de temps pour être remboursé ?
+Pour les trajets qui ne relèvent pas d'une prescription médicale, d'autres solutions de mobilité existent : le [covoiturage domicile-travail](/covoiturage-domicile-travail-prime/) pour les déplacements réguliers, ou l'[abonnement TER](/ter-abonnement-travail/) remboursé en partie par l'employeur pour rejoindre un lieu de soins desservi par le rail.
 
-Dans la majorité des cas, le taxi conventionné pratique le tiers payant : il facture directement la part prise en charge à votre CPAM, et vous ne réglez que le reste à charge (la franchise de 4 € et, le cas échéant, la part non remboursée). Vous n’avez alors aucune démarche à effectuer.
+## Questions fréquentes
 
-Si le tiers payant n’est pas appliqué, vous devez avancer l’intégralité de la course, puis envoyer la facture et la prescription médicale à votre CPAM. Le remboursement intervient généralement sous 2 à 3 semaines après réception du dossier complet, par virement sur le compte bancaire enregistré sur votre espace ameli.
+### Combien rembourse la CPAM pour un taxi conventionné ?
 
-## Cas particulier : les trajets réguliers pour un traitement longue durée
+55 % des frais de transport dans le cas général, 100 % en ALD, grossesse à risque dès le 6ᵉ mois, accident du travail ou urgence médicale. Une franchise de 4 € par trajet reste due dans tous les cas, sauf plafond annuel atteint.
 
-Pour un traitement nécessitant des trajets répétés (dialyse plusieurs fois par semaine, séances de radiothérapie), la prescription peut couvrir plusieurs mois de transport en une seule fois, évitant de renouveler la démarche à chaque rendez-vous. Le médecin précise alors la fréquence et la durée totale du traitement sur le bon de transport.
+### Qu'est-ce qui a changé avec la convention nationale 2025 ?
 
-Dans ce cas de figure, l’Affection Longue Durée permet généralement une prise en charge à 100 %, sans la franchise de 4 € qui reste due uniquement en dessous du plafond annuel de 50 €. Vérifiez ce point directement avec votre CPAM, car les règles d’exonération varient selon la nature exacte de l’ALD reconnue.
+Les anciens suppléments d'attente et de frais d'approche ont été remplacés par un forfait de prise en charge de 13 € et un tarif kilométrique variable selon le département, entrés en vigueur entre mai et août 2025.
 
-## La prescription médicale de transport : un document indispensable
+### Un VTC donne-t-il droit à un remboursement CPAM ?
 
-Le remboursement d’un trajet en taxi conventionné passe presque toujours par un bon de transport (aussi appelé prescription médicale de transport, ou PMT). C’est votre médecin qui le remplit, en cochant le mode de transport adapté à votre état de santé. Ce document précise le motif médical, la fréquence des trajets si le traitement est récurrent (dialyse, chimiothérapie, kinésithérapie), et la durée de validité de la prescription.
+Non. Seuls les taxis conventionnés, affichant la vignette CPAM, permettent un remboursement. Un [VTC](/uber-vs-bolt-comparatif-prix/) n'est jamais conventionné, même avec une prescription médicale, une différence que détaille notre guide sur [devenir chauffeur VTC](/devenir-chauffeur-vtc-conditions/) et les conditions d'obtention de la [carte VTC](/carte-vtc-examen/).
 
-Sans ce bon, même un taxi conventionné ne pourra pas facturer le trajet à l’Assurance Maladie : vous devrez avancer les frais et risquez un refus de remboursement a posteriori. Conservez toujours un exemplaire du bon signé, y compris pour les trajets réguliers liés à une Affection Longue Durée.
+### Qu'est-ce que le transport partagé introduit en mars 2025 ?
 
-## Taxi, VSL ou ambulance : quel transport pour quel besoin ?
+C'est la possibilité, quand l'état de santé le permet, de partager un trajet en VSL ou en taxi conventionné avec un autre patient suivant un parcours proche, afin de réduire les trajets à vide.
 
-Le médecin prescripteur choisit le mode de transport en fonction de votre autonomie et de votre état de santé, pas selon vos préférences :
+### Faut-il avancer les frais avec un taxi conventionné ?
 
--   **Le taxi conventionné** convient aux patients autonomes qui peuvent marcher et s’installer seuls dans le véhicule.
--   **Le VSL (véhicule sanitaire léger)** s’adresse aux patients dont l’état nécessite une aide pour se déplacer, sans surveillance médicale particulière durant le trajet.
--   **L’ambulance** est réservée aux transports nécessitant une surveillance ou des soins pendant le trajet, ou un transport en position allongée.
+Pas si le tiers payant s'applique : le taxi facture directement votre CPAM et vous ne réglez que la franchise. Sans tiers payant, vous avancez la course puis envoyez la facture et la prescription pour remboursement.
 
-Les tarifs des taxis conventionnés sont encadrés par une convention nationale signée avec les autorités de santé, qui fixe une prise en charge kilométrique et une prise en charge fixe par trajet, variables selon le département. Ces tarifs sont généralement supérieurs à ceux d’une course de taxi classique, pour compenser les contraintes liées au transport de patients (attente pendant les rendez-vous, horaires parfois décalés).
+### Combien de temps pour être remboursé sans tiers payant ?
+
+Généralement entre 2 et 3 semaines après réception du dossier complet par la CPAM, par virement sur le compte bancaire enregistré sur votre espace ameli.

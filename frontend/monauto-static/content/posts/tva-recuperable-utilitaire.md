@@ -1,7 +1,7 @@
 ---
 title: "TVA récupérable sur un utilitaire : ce que votre entreprise peut vraiment déduire"
-description: "Un utilitaire immatriculé CTTE permet à une entreprise de récupérer 100 % de la TVA sur l’achat, la location ou l’entretien. Voici les règles 2026 et les e"
-date: "2026-08-20"
+description: "Un utilitaire immatriculé CTTE permet de récupérer 100 % de la TVA sur l'achat, la location, l'entretien et le carburant. Règles 2026 et pièges à éviter."
+date: "2026-11-22"
 author: "nathalie-moreau"
 category: "fiscalite-vehicule-pro"
 wp_id: 1573
@@ -9,118 +9,109 @@ wp_locale: "fr"
 image: "/images/articles/tva-recuperable-utilitaire-couverture.webp"
 imageAlt: "TVA récupérable sur un utilitaire : ce que votre entreprise peut vraiment déduire"
 ---
-Un utilitaire immatriculé CTTE (camionnette) permet à une entreprise de récupérer **100 % de la TVA** sur son achat, sa location ou son entretien. Cette règle fiscale, stable depuis 2022, s’applique aux fourgons comme aux petits utilitaires compacts. Exemples : Renault Kangoo ou Peugeot Expert. Mais attention : une erreur d’immatriculation ou un usage mixte (pro/perso) peut tout faire perdre.
 
-## 1\. Quels utilitaires donnent droit à la récupération totale de la TVA ?
+***Un utilitaire immatriculé CTTE permet à une entreprise de récupérer 100 % de la TVA*** _sur son achat, sa location et son entretien, une règle stable depuis 2022. Mais une erreur d'immatriculation ou un usage mixte, même occasionnel, peut tout faire perdre. Voici les règles 2026 et les pièges à éviter._
 
-Seuls les véhicules portant la mention **CTTE** en case J.1 de la carte grise (catégorie européenne N1) ouvrent droit à la récupération intégrale de la TVA. Cette mention désigne les camionnettes et fourgons conçus pour le transport de marchandises. Conditions : **PTAC ≤ 3,5 tonnes** et **2 places maximum** (conducteur inclus).
+TL;DR :
 
-Exemples de modèles éligibles :
+-   Seuls les véhicules portant la mention **CTTE** en case J.1 (PTAC ≤ 3,5 t, 2 places maximum) ouvrent droit à la récupération intégrale.
+-   La TVA sur le **carburant** est récupérable à **100 %** pour un CTTE, contre **80 %** seulement pour une voiture particulière.
+-   Un **usage privé**, même ponctuel, expose à un remboursement partiel de la TVA déjà récupérée, avec pénalités en cas de contrôle.
 
--   Renault Kangoo Van (1.5 dCi, 2021+)
--   Peugeot Expert (1.6 BlueHDi, 2016+)
--   Citroën Jumpy (1.6 BlueHDi, 2016+)
--   Ford Transit Custom (2.0 TDCi EcoBlue, 2018+)
+## Quels véhicules donnent droit à la récupération totale de la TVA ?
 
-![Fourgon blanc immatriculé CTTE avec hayon ouvert, chargé de cartons, sur un parking d’entreprise](/images/articles/tva-recuperable-utilitaire-1.webp)
+**Seule la mention CTTE en case J.1 de la carte grise ouvre droit à la récupération intégrale.** Cette mention désigne les camionnettes et fourgons de catégorie européenne N1, conçus pour le transport de marchandises, avec un **PTAC de 3,5 tonnes maximum** et **2 places assises maximum**, conducteur inclus.
 
-À l’inverse, un véhicule immatriculé **VP** (voiture particulière) ou **VASP** (camping-car) ne permet pas de récupérer la TVA. Même s’il est utilisé pour le travail, la distinction se fait **uniquement** sur la carte grise. Un fourgon aménagé en bureau mobile reste éligible s’il conserve la mention CTTE. Mais il perd ce droit s’il est reclassé en VASP.
+Les modèles les plus courants dans cette catégorie incluent le Renault Kangoo Van, le Peugeot Expert, le Citroën Jumpy ou le Ford Transit Custom. À l'inverse, un véhicule immatriculé **VP** (voiture particulière) ou **VASP** ne permet jamais de récupérer la TVA, même utilisé exclusivement pour le travail. La distinction se fait uniquement sur la carte grise, pas sur l'usage réel du véhicule.
 
-### 1.1. Cas particulier : les pick-up et les utilitaires avec strapontins
+Les **pick-up double cabine** suivent une règle plus stricte. Un modèle homologué pour 5 places perd d'office l'accès à la mention CTTE, qui exige 2 places maximum. Seul un pick-up à 2 places, utilisé exclusivement pour le transport de marchandises ou d'outils, reste éligible. Notre dossier sur la [fiscalité des pick-up](/pick-up-fiscalite-avantage/) détaille ce cas, qui se double depuis peu d'un classement en véhicule de tourisme pour les taxes annuelles dès que le modèle compte 5 places ou plus.
 
-Les pick-up à double cabine (type Ford Ranger ou Toyota Hilux) sont éligibles à la récupération totale de la TVA. Mais seulement s’ils sont immatriculés CTTE. Leur usage doit aussi être **exclusivement** professionnel. Transport de marchandises ou d’outils uniquement.
+### Réponse directe
 
-Dès qu’ils servent à transporter des passagers, même occasionnellement, l’administration fiscale peut requalifier le véhicule en VP. Conséquence : remboursement de la TVA. Pour les utilitaires avec strapontins (ex. : Citroën Berlingo 5 places), la règle est identique. La TVA n’est récupérable que pour un usage **strictement** professionnel. Un usage privé, même minime, peut entraîner un redressement.
+La mention CTTE, PTAC ≤ 3,5 t et 2 places maximum, conditionne la récupération totale de la TVA. Un VP ou un VASP n'y donne jamais droit, quel que soit l'usage réel du véhicule au quotidien.
 
-## 2\. Quels usages permettent de récupérer 100 % de la TVA ?
+## Quels usages et quels postes de dépense sont concernés ?
 
-La récupération intégrale de la TVA sur un utilitaire CTTE dépend d’un **usage strictement professionnel**. Voici les situations éligibles :
+![Fourgon blanc immatriculé CTTE avec hayon ouvert, chargé de cartons, sur un parking d'entreprise](/images/articles/tva-recuperable-utilitaire-1.webp)
 
--   **Achat ou location** (LLD, LOA, crédit-bail) : la TVA sur les loyers ou le prix d’achat est déductible.
--   **Entretien et réparations** : vidange, pneus, freins, etc.
--   **Carburant** : la TVA sur le diesel ou l’essence est récupérable à 100 % pour un CTTE (contre 80 % pour un VP).
--   **Équipements professionnels** : hayon élévateur, rack de stockage, etc.
+La récupération intégrale dépend d'un **usage strictement professionnel** du véhicule. Plusieurs postes de dépense sont concernés : l'**achat ou la location** (LLD, LOA, crédit-bail), l'**entretien et les réparations**, les **équipements professionnels** comme un hayon élévateur, et le **carburant**.
 
-En revanche, un usage privé, même occasionnel, remet en cause cette exonération. Par exemple, si 20 % des kilomètres sont personnels, 20 % de la TVA récupérée devront être remboursés. Ainsi, un carnet de bord précis est indispensable pour justifier l’usage professionnel.
+Sur ce dernier point, la règle diffère nettement d'une voiture particulière. La TVA sur le diesel et l'essence est récupérable à **100 %** pour un utilitaire CTTE, contre **80 %** seulement pour un véhicule de tourisme depuis l'alignement des deux carburants en 2022. L'**électricité** fait exception : elle reste récupérable à 100 % même pour un véhicule de tourisme. Le **GNV** suit aussi un taux de 100 %, tandis que le **GPL** reste plafonné à 50 % pour un véhicule de tourisme.
 
-### 2.1. Preuves à conserver en cas de contrôle fiscal
+Un usage privé, même occasionnel, remet en cause cette récupération. Si 20 % des kilomètres parcourus sont personnels, 20 % de la TVA récupérée doivent être reversés à l'administration. Un carnet de bord précis reste la meilleure protection en cas de contrôle.
 
-Pour éviter un redressement, l’entreprise doit prouver l’usage professionnel exclusif du véhicule. Voici les documents à conserver :
+| Carburant | TVA récupérable utilitaire CTTE | TVA récupérable véhicule de tourisme |
+| --- | --- | --- |
+| Essence / gazole | 100 % | 80 % |
+| Électricité | 100 % | 100 % |
+| GNV | 100 % | 100 % |
+| GPL | 100 % | 50 % |
 
--   Carnet de bord détaillé (kilométrage, trajets, motifs professionnels).
--   Factures d’entretien et de carburant au nom de l’entreprise.
--   Contrat de location ou facture d’achat mentionnant l’immatriculation CTTE.
--   Attestation sur l’honneur de non-usage privé (signée par le dirigeant ou le salarié).
+*Source : Code général des impôts, article 298 et suivants.*
 
-## 3\. TVA récupérable sur un utilitaire d’occasion : les règles à connaître
+## Quelles preuves conserver en cas de contrôle fiscal ?
 
-La récupération de la TVA sur un utilitaire d’occasion est possible. Mais sous conditions :
+Pour justifier l'usage professionnel exclusif, l'entreprise doit conserver plusieurs documents : un **carnet de bord détaillé**, mentionnant kilométrage, trajets et motifs professionnels, les **factures d'entretien et de carburant** au nom de l'entreprise, le **contrat de location ou la facture d'achat** mentionnant l'immatriculation CTTE, et une **attestation sur l'honneur de non-usage privé**, signée par le dirigeant ou le salarié utilisateur.
 
--   Achat auprès d’un **professionnel assujetti à la TVA** (garagiste, concessionnaire, plateforme comme encheres-domaine.gouv.fr).
--   Mention CTTE obligatoire sur la carte grise.
--   Usage **exclusivement professionnel**.
+Ces justificatifs doivent être conservés pendant **6 ans**, le délai de prescription applicable en matière de TVA. Un contrôle fiscal qui porte sur un exercice clos depuis plus de six ans ne peut plus remettre en cause la récupération déjà effectuée.
 
-Si le vendeur est un particulier (non assujetti à la TVA), **aucune TVA ne peut être récupérée**. Même pour un utilitaire CTTE. C’est une différence majeure avec l’achat neuf ou auprès d’un professionnel.
+### Réponse directe
 
-![Intérieur d’un garage professionnel avec un utilitaire d’occasion en révision, outils et factures visibles](/images/articles/tva-recuperable-utilitaire-2.webp)
+Conservez le carnet de bord, les factures au nom de l'entreprise et une attestation de non-usage privé pendant 6 ans. Ces documents constituent la seule défense en cas de contrôle fiscal sur l'usage réel du véhicule.
 
-### 3.1. Exemple concret : achat d’un Citroën Berlingo d’occasion
+## TVA sur un utilitaire d'occasion : les règles changent selon le vendeur
 
-Vous achetez un Citroën Berlingo (2015, 1.6 HDi) auprès d’un garagiste pour 8 000 € HT. La TVA s’élève à 1 600 €. Si le véhicule est immatriculé CTTE et utilisé uniquement pour votre activité, vous pouvez récupérer ces 1 600 €. En revanche, un achat auprès d’un particulier pour le même prix ne permet **aucune déduction**.
+La récupération de la TVA sur un utilitaire d'occasion reste possible, mais sous une condition souvent ignorée : le vendeur doit être un **professionnel assujetti à la TVA**, garagiste, concessionnaire ou plateforme de vente aux enchères. Si le vendeur est un **particulier**, non assujetti, aucune TVA ne peut être récupérée, même pour un utilitaire CTTE en parfait état.
 
-## 4\. Autres avantages fiscaux des utilitaires CTTE
+Exemple concret : un Citroën Berlingo d'occasion acheté 8 000 € HT chez un garagiste génère 1 600 € de TVA récupérable, si le véhicule reste immatriculé CTTE et utilisé exclusivement pour l'activité. Le même achat auprès d'un particulier ne permet aucune déduction, quel que soit le prix payé.
 
-En plus de la récupération de la TVA, les utilitaires CTTE bénéficient d’autres exonérations fiscales :
+## Autres avantages fiscaux liés à l'immatriculation CTTE
 
--   **Exonération totale de TVS** (Taxe sur les Véhicules de Société). Contrairement aux voitures particulières, les CTTE ne sont pas soumis à cette taxe annuelle.
--   **Déductibilité intégrale des loyers** en LLD ou crédit-bail. Les loyers réduisent le résultat imposable.
--   **Pas de malus écologique**. Les utilitaires sont exonérés, même pour les modèles thermiques les plus polluants. À l’inverse, le malus pour les VP peut atteindre **80 000 €** en 2026.
-
-Ces avantages font des CTTE un choix fiscalement avantageux. Surtout depuis la suppression du [bonus écologique](/utilitaires-flottes-pro/fiscalite-vehicule-pro) pour les personnes morales en 2025.
-
-### 4.1. Comparatif fiscal : utilitaire CTTE vs voiture particulière (VP)
+Au-delà de la TVA, un utilitaire CTTE cumule plusieurs exonérations. Il échappe totalement aux **taxes annuelles sur les émissions de CO2 et de polluants**, qui ont remplacé l'ancienne TVS depuis 2022 et s'appliquent uniquement aux véhicules de tourisme. Il échappe aussi au [malus écologique](/taxe-co2-vehicule-occasion/), qui peut atteindre 80 000 € pour un véhicule de tourisme très émetteur en 2026. Son [amortissement comptable](/amortissement-vehicule-societe-plafond/) n'est, en outre, soumis à aucun plafond, contrairement à une voiture de tourisme mise à disposition d'un salarié en [avantage en nature](/avantage-en-nature-vehicule-fonction/).
 
 | Critère | Utilitaire CTTE | Voiture particulière (VP) |
 | --- | --- | --- |
-| Récupération TVA | 100 % (usage pro exclusif) | 0 % (sauf exceptions comme les taxis) |
-| TVS (Taxe annuelle) | Exonération totale | De 2 000 € à 6 500 €/an |
-| Malus écologique | Exonération totale | Jusqu’à 80 000 € (2026) |
-| Déductibilité loyers (LLD) | 100 % | Limité à 18 300 €/an (plafond 2026) |
+| Récupération TVA (achat/location) | 100 % | 0 % (sauf taxis, auto-écoles) |
+| Taxes CO2 + polluants (ex-TVS) | Exonération totale | Jusqu'à plusieurs milliers d'€/an |
+| Malus écologique | Exonération totale | Jusqu'à 80 000 € (2026) |
+| Plafond d'amortissement | Aucun plafond | 9 900 € à 30 000 € selon le CO2 |
 
-*Source : service-public.gouv.fr, legalplace.fr*
+*Source : Code général des impôts, legifiscal.fr.*
 
-## 5\. Pièges à éviter pour ne pas perdre le bénéfice de la TVA
+Notre guide sur le [calcul des deux taxes qui ont remplacé la TVS](/tvs-taxe-vehicules-societe-calcul/) détaille le barème applicable à une flotte de véhicules de tourisme, pour comparer précisément le coût réel face à un choix d'utilitaires.
 
-Quelques erreurs courantes peuvent entraîner un redressement fiscal :
+## Pièges fréquents qui font perdre le bénéfice de la TVA
 
--   **Usage mixte (pro/perso)** : même un trajet privé occasionnel peut remettre en cause la récupération totale. Solution : tenir un carnet de bord précis.
--   **Mauvaise immatriculation** : un fourgon aménagé en bureau mobile doit rester CTTE. Un reclassement en VASP fait perdre la TVA.
--   **Achat auprès d’un particulier** : la TVA n’est récupérable que si le vendeur est assujetti à la TVA (professionnel).
--   **Oubli de la mention CTTE sur la facture** : vérifiez que la carte grise et la facture mentionnent bien CTTE.
--   **Non-conservation des justificatifs** : en cas de contrôle, l’entreprise doit prouver l’usage professionnel exclusif (carnet de bord, factures, etc.).
+Plusieurs erreurs reviennent régulièrement chez les professionnels. Un **usage mixte** non documenté, même un trajet privé occasionnel, peut remettre en cause la récupération totale. Un fourgon aménagé en bureau mobile doit conserver la mention CTTE : un reclassement en VASP fait perdre immédiatement le droit à déduction. L'achat auprès d'un **particulier** non assujetti bloque toute récupération, quelle que soit la qualité du véhicule. L'oubli de la mention CTTE sur la **facture**, alors qu'elle figure bien sur la carte grise, complique aussi la justification en cas de contrôle.
 
-## 6\. Questions pratiques sur la TVA récupérable utilitaire
+Si l'administration fiscale estime que l'usage n'est pas exclusivement professionnel, elle peut exiger le remboursement de la TVA avec des pénalités de **10 % à 40 %** selon la gravité. En cas de fraude avérée, carnet de bord falsifié ou fausses factures, les sanctions peuvent atteindre **80 %** des sommes en jeu. Pour limiter ce risque, la [location longue durée d'utilitaire](/lld-utilitaire-pro-sans-apport/) simplifie souvent la traçabilité de l'usage, tout comme un boîtier de [télématique de flotte](/telematique-flotte-avantages/) qui documente automatiquement les trajets professionnels, un argument de poids en cas de contrôle.
 
-Voici les réponses aux questions les plus fréquentes des professionnels :
+## Comment déclarer la TVA récupérable sur un utilitaire ?
 
-### 6.1. Peut-on récupérer la TVA sur un utilitaire électrique ?
+La TVA récupérable s'impute directement sur la **déclaration de TVA** (formulaire CA3), dans la case **20**, « TVA déductible sur autres biens et services ». Trois réflexes évitent les erreurs : vérifier que la facture mentionne bien l'immatriculation CTTE, reporter le montant exact hors taxes multiplié par le taux de TVA applicable, et conserver l'ensemble des justificatifs pendant 6 ans. En cas de doute sur une opération complexe, mieux vaut se faire accompagner par un expert-comptable avant le dépôt de la déclaration.
 
-Oui. La récupération de la TVA s’applique **quel que soit le type de motorisation**. Thermique, électrique ou hybride, peu importe. À condition que le véhicule soit immatriculé CTTE et utilisé exclusivement pour le travail. Exemples : Renault Kangoo E-Tech ou Mercedes eSprinter.
+## Questions fréquentes
 
-### 6.2. Que risque une entreprise en cas de contrôle fiscal ?
+### Peut-on récupérer la TVA sur un utilitaire électrique ?
 
-Si l’administration fiscale estime que l’usage du véhicule n’est pas **exclusivement professionnel**, elle peut exiger le remboursement de la TVA. Avec des pénalités de 10 % à 40 % selon la gravité. En cas de fraude avérée (faux carnet de bord, fausses factures), les sanctions peuvent atteindre 80 % des sommes en jeu.
+Oui, quelle que soit la motorisation, thermique, électrique ou hybride, à condition que le véhicule soit immatriculé CTTE et utilisé exclusivement pour l'activité professionnelle.
 
-### 6.3. Comment déclarer la TVA récupérable sur un utilitaire ?
+### Un pick-up à 5 places peut-il récupérer la TVA à 100 % ?
 
-La TVA récupérable s’impute directement sur la **déclaration de TVA** (formulaire CA3). Voici les étapes :
+Non. La mention CTTE exige 2 places maximum. Un pick-up à 5 places est classé véhicule de tourisme et ne récupère pas la TVA sur son achat.
 
--   Reportez le montant de la TVA déductible dans la case **20** (« TVA déductible sur autres biens et services »).
--   Conservez les justificatifs (factures, carnet de bord) pendant **6 ans** (délai de prescription).
--   En cas de doute, faites-vous accompagner par un expert-comptable.
+### Quelle est la différence de TVA sur le carburant entre un utilitaire et une voiture de tourisme ?
 
-## 7\. Conclusion : optimisez votre fiscalité avec un utilitaire CTTE
+L'utilitaire CTTE récupère 100 % de la TVA sur l'essence et le gazole. Un véhicule de tourisme est plafonné à 80 % pour ces mêmes carburants, et à 50 % pour le GPL.
 
-La récupération de la TVA sur un utilitaire est un levier fiscal puissant. Mais elle exige le respect de règles strictes : immatriculation CTTE, usage professionnel exclusif et conservation des justificatifs. En combinant cet avantage avec l’exonération de TVS et l’absence de malus écologique, les utilitaires restent l’option la plus rentable pour les professionnels.
+### Que risque une entreprise en cas de contrôle fiscal défavorable ?
 
-Pour aller plus loin, consultez notre guide sur [la fiscalité des véhicules professionnels](/utilitaires-flottes-pro/fiscalite-vehicule-pro). Ou notre comparatif des [différentes taxes applicables aux flottes d’entreprise](/utilitaires-flottes-pro/tvs-taxe-vehicules-societe-calcul).
+Un remboursement de la TVA déjà récupérée, assorti de pénalités de 10 % à 40 % selon la gravité, pouvant atteindre 80 % en cas de fraude avérée.
+
+### Peut-on récupérer la TVA sur un utilitaire acheté à un particulier ?
+
+Non, jamais. Seul un achat auprès d'un professionnel assujetti à la TVA, garagiste, concessionnaire ou plateforme spécialisée, ouvre droit à récupération, même pour un véhicule CTTE.
+
+### Combien de temps conserver les justificatifs d'usage professionnel ?
+
+6 ans, délai de prescription applicable en matière de TVA. Carnet de bord, factures et attestation de non-usage privé doivent être conservés pendant toute cette durée.

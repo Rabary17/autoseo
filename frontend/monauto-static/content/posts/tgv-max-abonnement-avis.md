@@ -1,108 +1,105 @@
 ---
-title: "TGV Max : l’abonnement qui change (vraiment) la donne pour les voyageurs fréquents"
-description: "79 €/mois pour voyager sans limite en TGV et INTERCITÉS ? L’abonnement TGV Max promet des économies, mais les contraintes (réservation, pas de remboursemen"
-date: "2026-08-14"
+title: "TGV Max : ce qu'est devenu l'abonnement illimité SNCF en 2026"
+description: "TGV Max s'appelle désormais MAX Jeune et MAX Senior, réservés aux 16-27 ans et aux plus de 60 ans à 79 €/mois. Les autres voyageurs dépendent de MAX Actif."
+date: "2026-11-22"
 author: "karim-belaid"
 wp_id: 1371
 wp_locale: "fr"
 image: "/images/articles/tgv-max-abonnement-avis-couverture.webp"
-imageAlt: "TGV Max : l’abonnement qui change (vraiment) la donne pour les voyageurs fréquents"
+imageAlt: "TGV Max : l'abonnement qui change (vraiment) la donne pour les voyageurs fréquents"
 ---
-79 € par mois pour voyager sans limite en TGV et INTERCITÉS, OUIGO inclus depuis 2023 : l’abonnement TGV Max séduit les habitués du rail. Mais avec des réservations obligatoires et pas de remboursement, est-ce vraiment le bon plan ? Le Navigo à 90,80 €/mois en Île-de-France offre une alternative. On a creusé.
 
-## Comment ça marche ?
+***L'abonnement historiquement connu sous le nom de TGV Max n'existe plus sous cette appellation.*** _La SNCF l'a scindé en deux offres à prix fixe, MAX Jeune et MAX Senior, chacune réservée à une tranche d'âge précise. Les autres voyageurs dépendent d'une formule à quota, MAX Actif, au prix bien plus élevé qu'un simple 79 € par mois. Voici ce qui a vraiment changé._
 
-Pour 79 €/mois (ou 790 €/an), le pass donne accès à tous les TGV INOUI, INTERCITÉS et OUIGO Grande Vitesse en 2nde classe. Pas de quota, mais quelques règles s’appliquent.
+TL;DR :
 
--   **Réservation obligatoire** : même avec l’abonnement, il faut réserver sa place gratuitement. Sans place disponible ? Attendez le prochain train ou payez un billet classique.
--   **Pas de remboursement** : si vous ratez votre train, la place est perdue.
--   **OUIGO inclus, mais limité** : les trains low-cost sont souvent complets en vacances scolaires ou week-ends.
--   **2nde classe uniquement** : pour la 1ère, il faut payer un supplément.
+-   **MAX Jeune** (16-27 ans) et **MAX Senior** (60 ans et plus) coûtent **79 €/mois** pour un accès illimité, hors périodes de forte affluence.
+-   Entre ces deux âges, aucun abonnement illimité à prix fixe n'existe. **MAX Actif** facture entre **350 € et 1 100 € par mois**, calculé par trajet et par classe.
+-   Le Navigo francilien coûte **90,80 €/mois** en 2026, un repère utile pour comparer selon votre profil.
 
-Sur un Paris-Lyon ou Bordeaux-Toulouse, l’abonnement peut être rentable. En revanche, pour les longs trajets ou les heures de pointe, mieux vaut anticiper.
+## TGV Max existe-t-il encore en 2026 ?
+
+**Non, pas sous ce nom.** La marque commerciale a disparu au profit de quatre abonnements MAX distincts : MAX Jeune, MAX Senior, MAX Actif et MAX Actif+. Seuls les deux premiers reprennent le principe qui a fait la réputation de TGV Max, un accès **illimité** à prix fixe de 79 € par mois, réservation gratuite mais obligatoire, sans remboursement en cas d'absence.
+
+Cette évolution change la donne pour un voyageur de 35 ou 50 ans qui cherchait encore « TGV Max » en pensant accéder au même tarif plat que les jeunes ou les seniors. Ce n'est plus possible. La SNCF a remplacé l'équivalent pour les actifs par **MAX Actif** et **MAX Actif+**, deux formules à quota de réservations, dont le prix dépend du trajet et de la classe choisie, et non un montant unique national.
+
+Beaucoup de comparatifs en ligne continuent de présenter « TGV Max » comme un abonnement universel à 79 €. Ce n'est vrai que pour les 16-27 ans et les 60 ans et plus. Vérifiez toujours votre éligibilité avant de comparer les prix, car la différence de budget entre les deux systèmes est considérable.
+
+### Réponse directe
+
+TGV Max a disparu en tant que marque. Il subsiste sous deux formes à prix fixe, MAX Jeune pour les 16-27 ans et MAX Senior pour les 60 ans et plus, toutes deux à 79 €/mois. Les 28-59 ans n'ont pas d'équivalent illimité à prix fixe.
+
+## MAX Jeune et MAX Senior : comment fonctionne le 79 €/mois ?
 
 ![Voyageur consultant son téléphone dans un TGV avec un café à la main](/images/articles/tgv-max-abonnement-avis-1.webp)
 
-## TGV Max vs Navigo : lequel choisir ?
+Les deux formules partagent le même principe. Pour **79 € par mois**, elles donnent accès à un nombre illimité de trajets en TGV INOUI, certains INTERCITÉS à réservation obligatoire, et OUIGO Grande Vitesse, hors tarif Avantage. La réservation reste gratuite, mais obligatoire avant chaque départ. Aucune place n'est garantie en période de forte affluence, vacances scolaires et week-ends compris.
 
-Si vous habitez en Île-de-France, comparez avec le [Navigo](/mobilite-partagee-transports/train-transports-en-commun) (90,80 €/mois en 2026). Voici les différences clés.
+MAX Jeune cible les **16 à 27 ans inclus**, justificatif d'âge à l'appui lors de la souscription. MAX Senior s'adresse aux **60 ans et plus**, avec un usage limité du lundi au vendredi pour certains trajets, hors forte affluence également. Les deux formules s'engagent sur **12 mois**, avec prélèvement mensuel automatique et un préavis à respecter en cas de résiliation anticipée.
 
-| Critère | TGV Max | Navigo (Île-de-France) |
-| --- | --- | --- |
-| Prix mensuel | 79 € | 90,80 € |
-| Zone couverte | France entière | Île-de-France (zones 1 à 5) |
-| Type de trains | TGV, INTERCITÉS, OUIGO | Métro, RER, Transilien, bus, tram |
-| Réservation obligatoire | Oui | Non |
-| Remboursement | Non | Non |
-| Idéal pour | Voyages occasionnels hors IDF | Trajets quotidiens en IDF |
+Un aller-retour Paris-Lyon ou Bordeaux-Toulouse chaque mois suffit largement à rentabiliser ces 79 €, un billet classique dépassant souvent ce montant pour un seul trajet aller-retour en période normale. Pour une correspondance à vélo pliant en bout de trajet, notre guide [vélo pliant et train](/velo-pliant-train-comparatif/) détaille les modèles acceptés sans réservation supplémentaire.
 
-*Source : service-public.gouv.fr*
+## MAX Actif et MAX Actif+ : le vrai prix pour les 28-59 ans
 
-Deux allers-retours Paris-Lyon en TGV classique coûtent environ 160 €. Avec TGV Max, vous économisez déjà 2 € par rapport au Navigo. Cependant, si vous prenez les transports en commun tous les jours, le Navigo reste imbattable.
+**Contrairement à MAX Jeune et MAX Senior, MAX Actif n'est pas un abonnement illimité à prix fixe.** Son tarif dépend de la distance du trajet et de la classe choisie, calculé sur devis via SNCF Connect, pour un trajet domicile-travail fixe réservé à l'avance.
 
-## MAX SENIOR : l’offre à 79 €/mois pour les +60 ans
+MAX Actif donne droit à **250 réservations gratuites par mois**, du lundi au jeudi, sur un trajet déterminé à la souscription. Les tarifs observés vont de **350 € à 650 € par mois** selon le trajet et la classe. MAX Actif+ monte à **450 réservations**, utilisables sept jours sur sept, avec 50 réservations supplémentaires possibles une fois le quota épuisé, pour un tarif mensuel de **600 € à 1 100 €**.
 
-Pour les plus de 60 ans, l’abonnement MAX SENIOR offre les mêmes avantages. Il inclut une réduction de 30 % pour jusqu’à 3 accompagnants. Un aller-retour Paris-Marseille en TGV coûte environ 120 €. Ainsi, vous rentabilisez l’abonnement en deux trajets.
+Ces montants s'adressent à un usage quasi quotidien sur un trajet fixe, typiquement un salarié qui navette chaque semaine entre deux métropoles. Pour un usage occasionnel, ce système revient bien plus cher qu'un abonnement TGV Max classique du passé, et un billet à l'unité reste souvent plus avantageux.
 
-Les trains OUIGO sont aussi inclus. Les mêmes restrictions s’appliquent : réservation obligatoire et pas de remboursement.
+| Formule | Public | Tarif mensuel | Fonctionnement |
+| --- | --- | --- | --- |
+| MAX Jeune | 16-27 ans | 79 € | Illimité, hors forte affluence |
+| MAX Senior | 60 ans et plus | 79 € | Illimité, lundi-vendredi surtout |
+| MAX Actif | Tous âges | 350 à 650 € | 250 réservations/mois, trajet fixe |
+| MAX Actif+ | Tous âges | 600 à 1 100 € | 450 réservations/mois, 7j/7 |
 
-![Femme senior souriante regardant par la fenêtre d'un train en mouvement](/images/articles/tgv-max-abonnement-avis-2.webp)
+*Source : SNCF Connect, SNCF Voyageurs.*
 
-## Les limites à connaître
+## TGV Max vs Navigo : lequel choisir selon votre trajet ?
 
-L’abonnement a des contraintes. Voici les principales :
+**Pour un trajet quotidien en Île-de-France, le Navigo reste la référence, pas MAX.** Le [Navigo](/forfait-navigo-teletravail/) coûte **90,80 € par mois** en 2026 (toutes zones) et couvre métro, RER, Transilien, bus et tram sans réservation ni restriction d'âge. MAX Jeune ou MAX Senior couvrent la France entière en grande vitesse, mais imposent une réservation systématique et aucune garantie de place en période chargée.
 
--   **Pas de garantie de place** : en période de forte affluence, les trains (surtout OUIGO) peuvent être complets.
--   **Pas de flexibilité** : si vous ratez votre train, la place est perdue.
--   **Pas de 1ère classe** : seul la 2nde est incluse.
--   **Pas de couverture TER** : pour les correspondances, il faut payer un billet supplémentaire.
--   **Engagement annuel** : pas de remboursement si vous résiliez en cours d’année.
+Pour un salarié éligible à MAX Jeune ou MAX Senior qui effectue deux allers-retours Paris-Lyon par mois, 79 € reste imbattable face à des billets classiques à 80 € l'aller-retour. Pour un actif de 35 ans sans équivalent illimité, comparer le coût réel de MAX Actif à celui des billets à l'unité, ou des cartes de réduction comme la carte Avantage, devient indispensable avant de s'engager sur 12 mois.
 
-Si vos trajets sont imprévisibles ou en heure de pointe, un billet classique ou un [Pass Rail](/mobilite-partagee-transports) (pour les moins de 27 ans) peut être plus adapté.
+### Réponse directe
 
-## Pour qui est-ce rentable ?
+Le Navigo convient aux trajets quotidiens franciliens, toutes générations confondues, pour 90,80 €/mois. MAX Jeune ou MAX Senior conviennent aux déplacements grande vitesse fréquents pour les publics éligibles. Entre les deux, MAX Actif se compare plutôt à un abonnement domicile-travail interrégional classique.
 
-L’abonnement convient aux :
+## Les limites à connaître avant de s'engager
 
--   **Voyageurs fréquents** : deux allers-retours Paris-Lyon par mois suffisent à le rentabiliser.
--   **Télétravailleurs nomades** : réservation au dernier moment sans se soucier du prix.
--   **Seniors** : MAX SENIOR offre une réduction pour les accompagnants.
--   **Étudiants** : idéal pour les allers-retours entre ville d’études et domicile familial.
+L'abonnement impose plusieurs contraintes, quelle que soit la formule. La **réservation reste obligatoire**, même gratuite, et une place non disponible oblige à attendre le train suivant ou à payer un billet classique. **Aucun remboursement** n'est prévu en cas de train manqué. La **2nde classe** seule est incluse dans MAX Jeune et MAX Senior, un supplément s'appliquant pour la 1ère. Les **trajets en TER** ne sont pas couverts et nécessitent un titre complémentaire pour une correspondance.
 
-À éviter si :
+L'**engagement de 12 mois** mérite une vigilance particulière. Résilier avant terme expose à des pénalités selon les conditions générales en vigueur au moment de la souscription. Mieux vaut suivre sa fréquence réelle de voyage sur un ou deux mois avant de basculer sur un abonnement annuel, un calcul optimiste conduisant souvent à payer pour des trajets qui ne se concrétisent pas.
 
--   Vous voyagez rarement en TGV (moins d’une fois par mois).
--   Vos horaires sont imprévisibles.
--   Vous prenez souvent des TER.
--   Vous voyagez toujours en 1ère classe.
+## Comment souscrire et vérifier son éligibilité ?
 
-## Comment souscrire ?
+La souscription se fait sur SNCF Connect, site ou application. Il faut choisir la formule correspondant à son âge, MAX Jeune ou MAX Senior, ou MAX Actif en l'absence d'éligibilité à ces deux premières. Un justificatif d'identité, et d'âge pour MAX Jeune et MAX Senior, est demandé lors de la création du compte. La carte d'abonnement, physique ou numérique, doit être présentée à chaque contrôle à bord, en complément de la réservation effectuée pour le trajet.
 
-1\. Rendez-vous sur SNCF Connect (site ou appli). 2. Choisissez TGV Max ou MAX SENIOR (pour les +60 ans). 3. Fournissez une pièce d’identité et un justificatif de domicile (âge pour MAX SENIOR). 4. Recevez votre carte (physique ou numérique). 5. Réservez vos trajets gratuitement.
+Avant de signer, mieux vaut comparer sa fréquence de voyage réelle, son trajet type et sa classe habituelle avec le tarif affiché pour sa situation précise. Pour un trajet occasionnel en TER avant de rejoindre une gare desservie en grande vitesse, un billet complémentaire reste nécessaire : notre guide sur l'[abonnement TER travail](/ter-abonnement-travail/) détaille le remboursement employeur applicable à ces trajets régionaux. Pour la portion du trajet effectuée en covoiturage, notre dossier sur la [prime covoiturage domicile-travail](/covoiturage-domicile-travail-prime/) et son [bonus de 100 €](/prime-covoiturage-100-euros/) complète ce budget transport, tout comme le [Forfait Mobilités Durables à vélo](/forfait-mobilites-durables-velo/) pour la partie non motorisée.
 
-L’abonnement est valable 12 mois, avec prélèvement automatique. Pour résilier, rendez-vous sur votre compte SNCF Connect.
+## Questions fréquentes
 
-## Notre verdict
+### TGV Max existe-t-il toujours sous ce nom en 2026 ?
 
-TGV Max est un bon plan pour les voyageurs fréquents, les télétravailleurs ou les seniors. Cependant, ses contraintes (réservation, pas de remboursement) en font un choix à peser. Avant de souscrire, évaluez vos besoins :
+Non. La SNCF a remplacé cette marque par MAX Jeune et MAX Senior, toutes deux à 79 €/mois, réservées respectivement aux 16-27 ans et aux 60 ans et plus.
 
--   Combien de trajets en TGV par mois ?
--   Vos horaires sont-ils flexibles ?
--   Voyagez-vous souvent en période de forte affluence ?
--   La 2nde classe vous suffit-elle ?
+### Un actif de 40 ans peut-il souscrire un abonnement illimité à 79 € ?
 
-Si l’abonnement correspond à vos besoins, foncez. Sinon, explorez les alternatives comme les billets Prem’s ou le [Pass Rail](/mobilite-partagee-transports/train-transports-en-commun).
+Non. Aucune formule illimitée à prix fixe n'existe pour cette tranche d'âge. L'équivalent, MAX Actif, fonctionne par quota de réservations et coûte entre 350 € et 1 100 € par mois selon le trajet.
 
-## TGV Max : les questions pratiques avant de s’engager
+### MAX Jeune inclut-il les trains OUIGO ?
 
-Avant de souscrire, quelques points pratiques méritent d’être clarifiés.
+Oui, les OUIGO Grande Vitesse sont inclus, hors tarif Avantage. Les TER ne sont pas couverts et nécessitent un billet complémentaire pour une correspondance.
 
-Le nombre de trajets disponibles par jour et par ligne dépend du remplissage des trains. Sur les lignes très fréquentées, comme Paris-Lyon en période de vacances scolaires, le nombre de places réservées aux abonnés TGV Max peut être limité. Mieux vaut réserver tôt, même si la place est gratuite.
+### Peut-on résilier MAX Jeune ou MAX Senior avant 12 mois ?
 
-L’abonnement se résilie en ligne, avec un préavis à respecter selon les conditions générales en vigueur au moment de la souscription. Vérifiez ce délai avant de vous engager si votre besoin de déplacement est temporaire.
+C'est possible mais généralement pénalisé financièrement, selon les conditions générales en vigueur à la souscription. Mieux vaut vérifier ce délai avant de s'engager si le besoin de déplacement est temporaire.
 
-Pour les trajets internationaux ou les correspondances avec un TER, l’abonnement ne couvre pas l’intégralité du parcours. Prévoyez un billet complémentaire pour la portion non couverte, en particulier pour rejoindre une gare TGV depuis une ville non desservie directement.
+### Navigo ou MAX Jeune pour un trajet quotidien en Île-de-France ?
 
-Enfin, comparez toujours votre fréquence de voyage réelle sur les derniers mois avant de vous engager sur 12 mois. Un abonnement rentable sur le papier ne l’est plus si vos déplacements deviennent occasionnels en cours d’année.
+Le Navigo, à 90,80 €/mois en 2026, reste préférable pour des trajets quotidiens en Île-de-France, sans réservation ni restriction d'âge. MAX Jeune cible plutôt les déplacements grande vitesse occasionnels ou fréquents hors région parisienne.
 
-Un dernier conseil avant de vous décider : suivez vos trajets réels sur un mois ou deux avant de basculer sur un abonnement annuel. Un calcul basé sur une estimation optimiste conduit souvent à payer pour des trajets qui ne se réalisent pas.
+### Combien coûte MAX Actif+ par rapport à MAX Actif ?
+
+MAX Actif+ coûte entre 600 € et 1 100 € par mois pour 450 réservations utilisables 7 jours sur 7. MAX Actif coûte 350 € à 650 € pour 250 réservations, du lundi au jeudi uniquement.
