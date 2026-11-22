@@ -6,6 +6,7 @@ author: "julien-fabre"
 category: "boites-de-vitesses"
 wp_id: 2047
 wp_locale: "en"
+image: "/images/articles/dsg-cvt-ou-automatique-classique-laquelle-choisir-couverture.jpg"
 ---
 At the dealership, « automatic gearbox » is often treated as a single block. In the workshop, we see three distinct mechanisms that do not age the same way. Knowing which one sits in your car avoids surprises at the first service.
 

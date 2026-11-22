@@ -6,6 +6,7 @@ author: "julien-fabre"
 category: "moteurs-electriques"
 wp_id: 2038
 wp_locale: "fr"
+image: "/images/articles/batterie-lfp-ou-nmc-ce-qui-change-couverture.jpg"
 ---
 Quand on ouvre le dossier d’une électrique, la fiche technique parle d’autonomie et de puissance. Elle dit rarement quelle chimie se cache sous le plancher. Pourtant, c’est elle qui décide de la façon dont la batterie vieillit et de ce qu’il faut faire pour la préserver.
 

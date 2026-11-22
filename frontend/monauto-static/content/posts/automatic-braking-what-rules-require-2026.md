@@ -5,6 +5,7 @@ date: "2026-10-23"
 author: "julien-fabre"
 wp_id: 2046
 wp_locale: "en"
+image: "/images/articles/freinage-automatique-ce-que-la-regle-impose-2026-couverture.jpg"
 ---
 Braking that triggers on its own is first a safety matter. It is also a practical one: what does the system do, when does it act, and what is still your job? The European GSR2 regulation now sets a precise framework for new cars.
 
