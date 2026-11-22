@@ -47,7 +47,7 @@ Les points communs à tous les véhicules s'appliquent d'abord, freinage ou pneu
 
 Un défaut d'isolement domine largement les motifs de contre-visite. Le contrôleur exige alors un rapport détaillé, et parfois l'intervention préalable d'un garage spécialisé avant de repasser le contrôle.
 
-Les mesures d'isolation attendues dépassent généralement 500 kilo-ohms pour une batterie de 400 volts. En dessous de ce seuil, le contrôleur classe le défaut comme grave, ce qui interdit toute réparation sommaire avant la contre-visite.
+La résistance d'isolement mesurée doit rester au-dessus d'un seuil minimal, exprimé en ohms par volt de tension de la batterie. En dessous de ce seuil, le contrôleur classe le défaut comme grave, ce qui interdit toute réparation sommaire avant la contre-visite.
 
 ## Combien coûte le contrôle technique d'une voiture électrique ?
 
@@ -79,7 +79,7 @@ Les propriétaires récents oublient souvent un détail. L'échéance se calcule
 
 Trois défauts reviennent le plus souvent et se préviennent facilement avant le rendez-vous.
 
-Le défaut d'isolement, souvent noté sous le code P0AA6, vient d'un câblage endommagé ou d'une fuite d'électrolyte. Un **garagiste spécialisé** en véhicules électriques détecte ce problème avant qu'il ne bloque le contrôle. Un câble de recharge fissuré ou une prise corrodée entraîne lui aussi systématiquement une contre-visite, un remplacement coûte rarement plus de 100 €.
+Le défaut d'isolement vient le plus souvent d'un câblage endommagé ou d'une fuite d'électrolyte. Un **garagiste spécialisé** en véhicules électriques détecte ce problème avant qu'il ne bloque le contrôle. Un câble de recharge fissuré ou une prise corrodée entraîne lui aussi systématiquement une contre-visite, un remplacement coûte rarement plus de 100 €.
 
 La carte grise non actualisée figure parmi les erreurs les plus simples à éviter. Vous devez déclarer toute modification du système de recharge, sans quoi [une rectification d'erreur sur la carte grise](/rectifier-erreur-carte-grise/) s'avère nécessaire avant de repasser le contrôle.
 
@@ -107,7 +107,7 @@ Identique à un thermique. Première visite six mois avant les 4 ans du véhicul
 
 ### Quel est le défaut le plus fréquent en contrôle technique sur un véhicule électrique ?
 
-Le défaut d'isolement de la batterie haute tension, souvent noté P0AA6. Il entraîne systématiquement une contre-visite et nécessite un diagnostic spécialisé.
+Le défaut d'isolement de la batterie haute tension. Il entraîne systématiquement une contre-visite et nécessite un diagnostic spécialisé.
 
 ### Un câble de recharge endommagé bloque-t-il le contrôle technique ?
 

@@ -1,7 +1,7 @@
 ---
-title: "Contrôle technique moto 2026 : ce qui change vraiment (et ce que ça coûte)"
-description: "Le contrôle technique moto 2026 concerne les deux-roues immatriculés entre 2020 et 2021. Découvrez les tarifs, les points vérifiés et les étapes pour réuss"
-date: "2026-08-06"
+title: "Contrôle technique moto 2026 : calendrier, prix et points vérifiés"
+description: "Le contrôle technique moto concerne en 2026 les deux-roues immatriculés entre 2020 et 2021. Calendrier complet, tarifs moyens et points de contrôle à connaître."
+date: "2026-11-22"
 author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 952
@@ -9,87 +9,110 @@ wp_locale: "fr"
 image: "/images/articles/controle-technique-moto-2026-couverture.webp"
 imageAlt: "Contrôle technique moto 2026 : obligations, prix et changements à connaître"
 ---
-Depuis mars 2026, le contrôle technique moto est obligatoire. Il concerne les deux-roues immatriculés entre 2020 et 2021. Cette mesure vise à réduire les émissions polluantes et améliorer la sécurité routière, selon la Sécurité Routière.
+***Le contrôle technique moto est entré en vigueur le 15 avril 2024. En 2026, il concerne en priorité les deux-roues immatriculés entre 2020 et 2021, dernière tranche d'un calendrier déjà bien avancé.***
 
-## Quelles motos sont concernées par le contrôle technique 2026 ?
+Scooter, moto 125 ou grosse cylindrée : tous les deux-roues de plus de 4 ans doivent désormais passer ce contrôle, selon un calendrier étalé par tranche d'âge depuis fin 2024. Voici qui est concerné en 2026, ce que ça coûte réellement et comment éviter une contre-visite.
 
-Seules les motos immatriculées entre le 1er janvier 2020 et le 31 décembre 2021 doivent passer ce contrôle en 2026. D’après service-public.fr, le calendrier s’étendra progressivement.
+TL;DR : les motos immatriculées en 2020 et 2021 doivent passer leur premier contrôle technique avant le 31 décembre 2026.
 
-En 2027, ce seront les motos de 2016 à 2019. En 2028, toutes les motos immatriculées avant 2016 seront incluses. Les scooters et trois-roues de la même période sont aussi concernés.
+-   Prix moyen constaté : **60 € à 80 €**, bien loin des 150 € parfois annoncés.
+-   Validité du premier contrôle : **3 ans**, comme pour les contrôles suivants.
+-   Les motos immatriculées avant 2020 ont déjà dû passer leur premier contrôle en 2024 ou 2025.
 
-Toutefois, les motos de collection (plus de 30 ans) et les véhicules électriques restent exemptés. Cette exemption pourrait évoluer dans les années à venir.
+![Contrôleur technique examinant les plaquettes de frein d'une moto lors d'un contrôle agréé](/images/articles/controle-technique-moto-2026-couverture.webp)
+
+## Quelles motos doivent passer le contrôle technique en 2026 ?
+
+**Réponse directe** : les deux-roues, trois-roues et quadricycles motorisés immatriculés en 2020 ou 2021 doivent réaliser leur premier contrôle technique avant le 31 décembre 2026, selon le calendrier fixé par le décret du 23 octobre 2023.
+
+Ce calendrier, qui a démarré par les véhicules les plus anciens, se termine cette année sur les deux-roues de 2020-2021 :
+
+| Année de première immatriculation | Date limite du premier contrôle |
+| --- | --- |
+| Avant 2017 | 31 décembre 2024 (déjà passé) |
+| 2017 à 2019 | 31 décembre 2025 |
+| 2020 à 2021 | 31 décembre 2026 |
+| À partir de 2022 | 5 ans après l'immatriculation, puis tous les 3 ans |
+
+Le repère à vérifier figure sur votre carte grise, à la case B (date de première mise en circulation). Une moto immatriculée en mars 2020 doit ainsi passer son contrôle avant fin 2026, la date exacte dépendant de l'anniversaire d'immatriculation selon le centre consulté.
+
+Les motos de collection, de plus de 30 ans, restent exemptées, de même que les véhicules strictement électriques dans certaines configurations. Renseignez-vous auprès d'un centre agréé en cas de doute sur votre catégorie.
 
 ## Fréquence et validité du contrôle technique moto
 
-Le premier contrôle doit être réalisé dans les 6 mois suivant la date d’immatriculation. Par exemple, une moto immatriculée en juin 2020 doit passer son contrôle avant décembre 2026. Ensuite, la validité est de 3 ans.
+Le premier contrôle doit intervenir avant la date limite de votre tranche d'âge. Ensuite, la validité est de **3 ans**, identique pour chaque contrôle suivant.
 
-En cas de vente, le contrôle technique doit dater de moins de 6 mois. Sans ce document, la carte grise ne pourra pas être mise à jour au nom du nouvel acquéreur, comme le précise l’ANTS.
+En cas de vente, le contrôle technique doit dater de moins de **6 mois**, ou de moins de 2 mois si une contre-visite était requise. Sans ce document à jour, la carte grise ne peut pas être mise à jour au nom du nouvel acquéreur.
 
-## Points vérifiés lors du contrôle technique moto 2026
+## Quels points sont vérifiés lors du contrôle technique moto ?
 
-\[\[IMAGE:1\]\]
-
-Le contrôle technique moto 2026 porte sur plusieurs éléments clés. Voici les principaux points vérifiés pour garantir la sécurité et la conformité du véhicule.
+Le contrôle porte sur plusieurs éléments clés, proches de ceux vérifiés sur une voiture mais adaptés aux spécificités d'un deux-roues.
 
 -   **Éclairage et signalisation** : phares, clignotants, feux stop et feux de position doivent fonctionner correctement.
 -   **Freinage** : état des plaquettes, disques et niveau de liquide de frein.
--   **Pneus** : usure (profondeur des sculptures ≥ 1,6 mm), pression et conformité aux normes.
--   **Pollution** : mesure des émissions de CO2 et des particules fines.
--   **Direction et suspension** : jeu dans la direction, état des amortisseurs.
+-   **Pneus** : usure (sculptures d'au moins 1,6 mm sur la plupart des modèles), pression et conformité.
+-   **Pollution** : mesure des émissions et du niveau sonore.
+-   **Direction et suspension** : jeu dans la direction, état des amortisseurs et roulements.
 -   **Châssis et carrosserie** : absence de corrosion ou de déformations dangereuses.
 
-Un voyant d’entretien allumé peut entraîner une contre-visite. Pour éviter cela, consultez [notre guide sur les points vérifiés lors du contrôle technique](/carte-grise-demarches/controle-technique-points-verifies).
+Notre guide sur les [points vérifiés au contrôle technique](/controle-technique-points-verifies/) détaille la grille complète applicable aux voitures comme aux deux-roues. Un voyant d'entretien allumé ou un éclairage mal réglé suffit souvent à déclencher une contre-visite.
 
-## Prix du contrôle technique moto en 2026
+## Combien coûte le contrôle technique moto en 2026 ?
 
-Le prix du contrôle technique moto varie entre 45 € et 150 €. En moyenne, comptez environ 78 € pour un deux-roues thermique, selon Groupama. Les véhicules électriques ou hybrides coûtent entre 85 € et 100 €.
+Le prix n'est pas réglementé, chaque centre fixe librement son tarif, comme pour les [voitures particulières](/carte-grise-ants-demarches/). Les fourchettes les plus citées se situent entre **60 € et 80 €** pour une moto thermique, avec des écarts selon la région et le centre choisi.
 
-Les tarifs sont libres. Cela explique les écarts importants. En Île-de-France, les prix dépassent souvent 90 €. Dans d’autres régions, des offres autour de 50 € existent. Pour comparer, consultez [notre page dédiée aux centres de contrôle technique pas chers](/carte-grise-demarches/controle-technique-pas-cher-pres).
+| Poste | Tarif moyen |
+| --- | --- |
+| Premier contrôle technique moto | 60 € à 80 € |
+| Contre-visite | 15 € à 30 € |
+
+Depuis le 1er janvier 2026, les centres doivent afficher leurs prix sur le comparateur officiel prix.conso.gouv.fr, un bon réflexe avant de prendre rendez-vous. Pour comparer les tarifs autour de chez vous sur l'ensemble des véhicules, consultez aussi notre page dédiée aux [centres de contrôle technique pas chers](/controle-technique-pas-cher-pres/).
 
 ## Que se passe-t-il en cas de contre-visite ?
 
-Si votre moto ne passe pas le contrôle technique, vous disposez de 2 mois pour effectuer les réparations. Les défauts mineurs, comme un clignotant défectueux, se corrigent rapidement.
+Si votre moto ne passe pas le contrôle, vous disposez de **2 mois** pour effectuer les réparations nécessaires, exactement comme pour une voiture. Un clignotant défectueux se corrige en quelques minutes, un problème de freinage demande une intervention plus lourde.
 
-En revanche, les problèmes graves, comme un freinage défaillant, nécessitent des interventions plus lourdes. Sans contre-visite dans les délais, vous risquez une amende de 135 €. Pour plus d’informations, lisez [notre article sur les contre-visites](/carte-grise-demarches/contre-visite-delai-defauts).
+Sans contre-visite réalisée dans les délais, vous devez repasser l'intégralité du contrôle, au tarif plein. Notre article sur les [délais et défauts de la contre-visite](/contre-visite-delai-defauts/) détaille la procédure, commune à tous les types de véhicules.
 
-## Contrôle technique moto 2026 : annulé ou reporté ?
+## Le contrôle technique moto a-t-il été annulé ?
 
-Le contrôle technique moto 2026 n’a pas été annulé. Il est entré en vigueur le 1er mars 2026 pour les motos immatriculées entre 2020 et 2021. La FFMC a contesté cette obligation.
+Non, le contrôle technique moto n'a pas été annulé. Il est bien entré en vigueur le 15 avril 2024 et s'applique selon le calendrier détaillé plus haut. La Fédération française des motards en colère (FFMC) a contesté cette obligation dès son annonce, estimant qu'elle pénalise les petits budgets sans réel bénéfice de sécurité démontré pour les deux-roues.
 
-Selon elle, cette mesure pénalise les petits budgets. Le gouvernement a maintenu sa position. Il invoque la nécessité de réduire les émissions polluantes et d’harmoniser les règles européennes.
+Une pétition demandant son abrogation circule depuis 2025, sans avoir à ce jour recueilli assez de soutiens pour infléchir la position du gouvernement, qui invoque la transposition d'une directive européenne et la nécessité d'harmoniser les règles au niveau continental. Plusieurs autres pays européens, dont l'Allemagne, l'Italie et l'Espagne, imposent déjà un contrôle périodique à leurs deux-roues, chacun selon ses propres modalités.
 
 ## Comment préparer sa moto pour le contrôle technique ?
 
-Pour réussir votre contrôle technique, suivez ces conseils. Vérifiez d’abord l’éclairage et la signalisation. Tous les feux doivent fonctionner correctement.
+Quelques vérifications simples évitent la plupart des contre-visites :
 
--   Contrôlez l’usure des pneus. La profondeur des sculptures doit être d’au moins 1,6 mm.
--   Assurez-vous que les freins sont en bon état. Vérifiez plaquettes, disques et niveau de liquide.
--   Nettoyez votre moto. Un véhicule propre facilite l’inspection visuelle.
--   Présentez les documents obligatoires. Carte grise, assurance et, le cas échéant, le précédent contrôle technique.
+-   Contrôlez l'éclairage : tous les feux doivent fonctionner, y compris les clignotants latéraux.
+-   Vérifiez l'usure des pneus, la profondeur de sculpture doit rester au-dessus du seuil réglementaire.
+-   Assurez-vous que les freins sont en bon état : plaquettes, disques et niveau de liquide.
+-   Présentez les documents obligatoires : carte grise, attestation d'assurance et, le cas échéant, le précédent contrôle technique.
 
-Si votre moto a subi des modifications, comme l’installation d’un boîtier E85, mettez à jour la carte grise. D’après guichetcartegrise.com, sans cette mise à jour, vous risquez une contre-visite. Pour en savoir plus, consultez notre guide du [contrôle technique](/carte-grise-demarches/controle-technique), qui couvre aussi bien les voitures que les deux-roues.
+Si votre moto a été modifiée, par exemple avec l'installation d'un boîtier de conversion, [mettez d'abord à jour la carte grise](/rectifier-erreur-carte-grise/). Sans cette mise à jour, une contre-visite pour non-conformité administrative devient quasiment automatique, indépendamment de l'état mécanique réel du véhicule. Si vous envisagez de vendre une moto ancienne plutôt que d'enchaîner les contrôles, notre guide sur la [vente sans contrôle technique valide](/vendre-voiture-sans-controle-technique/) détaille les rares cas où cela reste possible.
 
-## Contrôle technique moto 2026 : ce qui attend les autres véhicules
+## Questions fréquentes
 
-Le calendrier d’application du contrôle technique moto s’étendra progressivement. En 2027, les motos immatriculées entre 2016 et 2019 seront concernées.
+### Quelles motos doivent passer le contrôle technique en 2026 ?
 
--   **2028** : toutes les motos immatriculées avant 2016.
+Celles immatriculées en 2020 ou 2021. Les motos plus anciennes ont déjà dû passer leur premier contrôle en 2024 ou 2025, selon leur année d'immatriculation.
 
-Les véhicules électriques et les motos de collection restent exemptés. Toutefois, cette exemption pourrait être réévaluée. La Sécurité Routière précise que cette mesure vise à adapter les contrôles aux évolutions technologiques.
+### Combien coûte un contrôle technique moto ?
 
-## Comparaison avec d’autres pays européens
+Entre 60 € et 80 € en moyenne pour un deux-roues thermique, le prix étant fixé librement par chaque centre agréé.
 
-La France n’est pas le seul pays à imposer un contrôle technique pour les deux-roues. Voici quelques exemples en Europe.
+### Quelle est la validité du contrôle technique moto ?
 
-*Source : Groupama*
+3 ans, aussi bien pour le premier contrôle que pour les suivants, contrairement à une idée reçue de renouvellement tous les 2 ans.
 
-En République Tchèque, les motos sont exemptées de vignette électronique. En Hongrie, elles sont soumises à une vignette électronique obligatoire. Les tarifs sont indexés depuis 2026. Ces différences illustrent la diversité des approches européennes.
+### Le contrôle technique moto a-t-il été supprimé ?
 
-Ce nouveau calendrier moto s’ajoute donc aux règles déjà en vigueur pour les voitures et utilitaires, sans les remplacer.
+Non. Il reste en vigueur depuis le 15 avril 2024, malgré une pétition et l'opposition de la FFMC qui réclament son abrogation.
 
-| Pays | Véhicules concernés | Fréquence | Prix indicatif (2026) |
-| --- | --- | --- | --- |
-| Allemagne | Motos > 125 cm³ | Tous les 2 ans | ~50-80 € |
-| Belgique | Tous les deux-roues | Tous les 2 ans | ~40-60 € |
-| Espagne | Motos > 125 cm³ | Tous les 2 ans (après 4 ans) | ~30-50 € |
-| Italie | Motos > 50 cm³ | Tous les 2 ans (après 4 ans) | ~50-70 € |
+### Que risque-t-on en cas de contre-visite ratée sur une moto ?
+
+Comme pour une voiture, 2 mois sont accordés pour les réparations. Passé ce délai, un contrôle technique complet redevient obligatoire, au tarif plein.
+
+### Les motos de collection sont-elles concernées par le contrôle technique ?
+
+Non, les deux-roues de plus de 30 ans restent exemptés de cette obligation, au même titre que certaines catégories de véhicules électriques spécifiques.
