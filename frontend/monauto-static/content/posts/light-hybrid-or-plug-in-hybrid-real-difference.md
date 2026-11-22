@@ -6,6 +6,7 @@ author: "julien-fabre"
 category: "moteurs-hybrides"
 wp_id: 2044
 wp_locale: "en"
+image: "/images/articles/hybride-leger-ou-rechargeable-couverture.jpg"
 ---
 Walk into a garage for long enough and you see hybrids that do not match what their owners expected. Some believed they had bought an electric car because a small green motor appeared on the dashboard. Others plugged a PHEV into a home socket without realising it was still a hybrid. The word covers three distinct technologies, and each one changes your costs.
 

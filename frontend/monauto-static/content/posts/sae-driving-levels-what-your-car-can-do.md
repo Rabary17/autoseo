@@ -5,6 +5,7 @@ date: "2026-10-30"
 author: "thomas-lefevre"
 wp_id: 2048
 wp_locale: "en"
+image: "/images/articles/niveaux-sae-ce-que-votre-voiture-sait-faire-couverture.jpg"
 ---
 On a product page, « self-driving » can mean almost anything. On the road, the difference comes down to one simple point: who is watching the road, you or the system? The SAE J3016 standard answers that question with six levels, from level 0 to level 5.
 

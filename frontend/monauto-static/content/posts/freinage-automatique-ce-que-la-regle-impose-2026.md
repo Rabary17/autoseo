@@ -5,6 +5,7 @@ date: "2026-10-21"
 author: "julien-fabre"
 wp_id: 2039
 wp_locale: "fr"
+image: "/images/articles/freinage-automatique-ce-que-la-regle-impose-2026-couverture.jpg"
 ---
 Un freinage qui se déclenche tout seul, c’est d’abord une question de sécurité. Mais c’est aussi une question pratique : que fait le système, à quel moment, et que vous reste-t-il à faire ? Le règlement européen GSR2 fixe désormais un cadre précis pour les voitures neuves.
 

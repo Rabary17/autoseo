@@ -6,6 +6,7 @@ author: "julien-fabre"
 category: "moteurs-electriques"
 wp_id: 2045
 wp_locale: "en"
+image: "/images/articles/batterie-lfp-ou-nmc-ce-qui-change-couverture.jpg"
 ---
 Open the file of an electric car and the spec sheet talks about range and power. It rarely says which chemistry sits under the floor. Yet that chemistry decides how the battery ages and what you should do to protect it.
 

@@ -6,6 +6,7 @@ author: "julien-fabre"
 category: "boites-de-vitesses"
 wp_id: 2042
 wp_locale: "fr"
+image: "/images/articles/dsg-cvt-ou-automatique-classique-laquelle-choisir-couverture.jpg"
 ---
 En concession, on vous parle souvent de « boîte automatique » comme d’un seul bloc. En atelier, on voit trois mécaniques bien distinctes, qui ne vieillissent pas de la même façon. Savoir laquelle équipe votre voiture évite bien des surprises à la première révision.
 

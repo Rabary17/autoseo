@@ -6,6 +6,7 @@ author: "julien-fabre"
 category: "moteurs-hybrides"
 wp_id: 2035
 wp_locale: "fr"
+image: "/images/articles/hybride-leger-ou-rechargeable-couverture.jpg"
 ---
 **_Un hybride léger ne se branche jamais, alors qu’un hybride rechargeable peut rouler plusieurs kilomètres sans une goutte d’essence._** **_Derrière ces deux étiquettes se cachent deux philosophies, deux entretiens et deux budgets très différents au quotidien._**
 
