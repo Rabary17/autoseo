@@ -12,6 +12,7 @@ Un moteur génératif ne "visite" pas une page comme un lecteur : il extrait des
 - Structurer avec des **titres formulés en questions** quand c'est naturel (H2/H3), reprenant les variantes du cluster de mots-clés.
 - Sous chaque question : réponse courte et directe en premier paragraphe, développement/nuances ensuite.
 - Utiliser des listes à puces et tableaux pour les données comparables (prix, délais, caractéristiques) — plus facilement extractibles qu'un paragraphe dense.
+- Ces tableaux et listes doivent toujours être en Markdown structuré (texte réellement parsable), jamais une donnée uniquement visible dans une image (capture, infographie, tableau en image) : un moteur génératif qui ne peut pas lire le texte ne peut ni l'extraire ni le citer — même principe de citabilité que le reste de cette section.
 - Éviter les réponses qui nécessitent de lire tout l'article pour être comprises : chaque section doit être auto-suffisante.
 
 ## 3. Données structurées (schema.org / JSON-LD)

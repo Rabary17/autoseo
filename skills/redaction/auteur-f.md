@@ -35,6 +35,7 @@ Indépendamment de la voix, chaque article de cet auteur doit respecter, sans ex
 - Le maillage exact résolu dans `maillage.json`, jamais improvisé à la rédaction.
 - Les données factuelles sourcées, jamais inventées (`data/factuel/*.json`).
 - La checklist de gating avant publication ([wordpress-publication.md](../wordpress-publication.md) section 5).
+- Le gras sémantique de la section 7.
 
 Un ton réussi ne dispense jamais d'une seule de ces règles — la voix habille la structure, elle ne la remplace pas.
 
@@ -73,3 +74,7 @@ Suite à la reorientation stratégique de techcars.fr (2026-10-07), cet auteur n
 **Personas cibles permises pour cet auteur** : ingénieur, étudiant, passionné (pas "routard" ou "commercial").
 
 Cette contrainte s'applique à **toute génération et relecture** : les prompts systèmes chargeront le garde-fou `scope-automotive-technology.md` pour tous les articles de cet auteur.
+
+## 7. Gras sémantique
+
+**Gras sémantique** : mets en **gras** (Markdown) 2 à 4 passages par section H2/H3, des groupes de 1 à 4 mots en lien direct avec l'entité ou le mot-clé de la section (vocabulaire technique, variantes du mot-clé) — pas uniquement des chiffres : au moins la moitié du gras d'une section doit porter sur des notions, pas sur des données. Jamais une phrase entière en gras, jamais dans un titre ni dans un lien, un même terme en gras une seule fois dans tout l'article. Une section entière sans aucun gras est un défaut à corriger.

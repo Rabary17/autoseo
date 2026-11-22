@@ -45,6 +45,7 @@ Le graphe de maillage doit toujours être généré **avant** la rédaction (fic
 - FAQ en fin d'article quand pertinent (alimente aussi le schema `FAQPage`, voir [geo.md](geo.md)).
 - Dates de mise à jour visibles sur les pages sensibles au temps (tarifs, barèmes, réglementation).
 - E-E-A-T : page auteur avec profil crédible (métier en lien avec la niche), sources citées (organismes officiels, constructeurs), avis d'expert encadré quand pertinent.
+- Transparence éditoriale : si un article recommande un produit, un prestataire ou un service précis dans un contexte commercial/affiliation (pages "Commercial"/"Transactionnel" du cocon, voir section 3), le texte doit expliquer en une phrase pourquoi ce choix a été fait par rapport aux autres — jamais de recommandation non justifiée.
 
 ## 5. Technique (SEOPress)
 
