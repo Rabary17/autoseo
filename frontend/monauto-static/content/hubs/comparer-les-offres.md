@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/comparer-les-offres-couverture.webp"
 imageAlt: "Comparer et changer d'assurance auto : le guide pratique"
 ---
-[Assurance auto](/assurance-auto) » Comparer et changer d’assurance auto
+[Assurance auto](/assurance-auto/) » Comparer et changer d’assurance auto
 
 Vous voulez changer d’assurance auto sans perdre de temps entre loi Hamon, devis en ligne, comparateurs et offres 2026 ? Ce guide indique quel chemin correspond à votre situation, selon l’ancienneté de votre contrat et votre budget.
 
@@ -121,4 +121,4 @@ Les mêmes erreurs reviennent d’un changement d’assurance à l’autre, souv
 -   Oublier de déclarer un sinistre passé au nouvel assureur : motif fréquent de nullité de contrat lors d’un sinistre ultérieur.
 -   Changer d’assureur juste avant l’échéance sans vérifier le report du bonus-malus sur le nouveau contrat.
 
-Les autres pages du [dossier assurance auto](/assurance-auto) couvrent les garanties optionnelles, les franchises et les recours possibles en cas de litige avec l’assureur, utiles une fois le nouveau contrat signé et la période de rétractation passée.
+Les autres pages du [dossier assurance auto](/assurance-auto/) couvrent les garanties optionnelles, les franchises et les recours possibles en cas de litige avec l’assureur, utiles une fois le nouveau contrat signé et la période de rétractation passée.

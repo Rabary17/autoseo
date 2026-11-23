@@ -44,7 +44,7 @@ Deux repères pour lire ce tableau. D’abord, la fourchette suit surtout l’ac
 
 On confond les deux tout le temps. L’**entretien**, c’est l’ensemble des gestes qui gardent la voiture en état au fil des kilomètres : vidange, filtres, freins, pneus. La **révision**, elle, est un rendez-vous précis inscrit au carnet du constructeur : un forfait périodique (125 à 180 €) où le garage vérifie une liste de points et remplace ce qui doit l’être à cet intervalle. Faire ses révisions au carnet, c’est aussi ce qui protège la garantie et la valeur à la revente : un historique complet vaut de l’argent le jour où vous vendez.
 
-L’intervalle exact n’est jamais une valeur universelle : il est fixé par le **carnet d’entretien** de votre modèle, et il varie selon la motorisation (essence, diesel, hybride) et le type d’huile. C’est le seul document qui fasse foi, pas le voisin, pas le forum. Le détail opération par opération se trouve dans le sous-cocon [révision et contrôle technique](/categorie/entretien-revision/revision-controle/).
+L’intervalle exact n’est jamais une valeur universelle : il est fixé par le **carnet d’entretien** de votre modèle, et il varie selon la motorisation (essence, diesel, hybride) et le type d’huile. C’est le seul document qui fasse foi, pas le voisin, pas le forum. Le détail opération par opération se trouve dans le sous-cocon [révision et contrôle technique](/entretien-revision/).
 
 ## Les grands postes d’entretien, un par un
 
@@ -52,43 +52,43 @@ Voici comment ce guide est organisé. Chaque famille d’opérations a sa page d
 
 ### Vidange et filtres
 
-C’est l’entretien le plus fréquent et le plus rentable : une huile propre, c’est un moteur qui dure. On y traite le choix de l’huile, la viscosité (le fameux 5W30 contre 5W40), la vidange de boîte automatique et les trois filtres : à huile, à air, habitacle. La vidange est aussi l’opération la plus accessible au bricoleur équipé. Tout est détaillé dans [vidange et filtres](/categorie/entretien-revision/vidange-filtres/).
+C’est l’entretien le plus fréquent et le plus rentable : une huile propre, c’est un moteur qui dure. On y traite le choix de l’huile, la viscosité (le fameux 5W30 contre 5W40), la vidange de boîte automatique et les trois filtres : à huile, à air, habitacle. La vidange est aussi l’opération la plus accessible au bricoleur équipé. Tout est détaillé dans [vidange et filtres](/entretien-revision/).
 
 ### Freinage
 
-Le poste sécurité par excellence, et un de ceux où l’on repousse le plus l’échéance à tort. Plaquettes qui grincent, disques voilés, pédale spongieuse : chaque symptôme a un coût et une urgence différents. Un jeu de plaquettes avant tourne autour de 40 à 200 €, un liquide de frein à purger entre 50 et 300 €. On aborde [tout ce qui touche au freinage](/categorie/entretien-revision/freinage/) : quand changer, dans quel ordre, et pourquoi disques et plaquettes vont souvent ensemble.
+Le poste sécurité par excellence, et un de ceux où l’on repousse le plus l’échéance à tort. Plaquettes qui grincent, disques voilés, pédale spongieuse : chaque symptôme a un coût et une urgence différents. Un jeu de plaquettes avant tourne autour de 40 à 200 €, un liquide de frein à purger entre 50 et 300 €. On aborde [tout ce qui touche au freinage](/entretien-revision/) : quand changer, dans quel ordre, et pourquoi disques et plaquettes vont souvent ensemble.
 
 ### Distribution et courroies
 
-La courroie de distribution, la courroie et les galets qui synchronisent le moteur, est l’échéance qui fait peur, et à raison : si elle casse, le moteur est souvent bon pour la casse. Le kit complet (courroie, galets, pompe à eau) coûte 600 à 800 €, mais c’est une assurance, pas une dépense de confort. À ne jamais reporter au-delà de l’intervalle constructeur. Le détail par modèle est dans [la distribution et les courroies](/categorie/entretien-revision/distribution-courroies/).
+La courroie de distribution, la courroie et les galets qui synchronisent le moteur, est l’échéance qui fait peur, et à raison : si elle casse, le moteur est souvent bon pour la casse. Le kit complet (courroie, galets, pompe à eau) coûte 600 à 800 €, mais c’est une assurance, pas une dépense de confort. À ne jamais reporter au-delà de l’intervalle constructeur. Le détail par modèle est dans [la distribution et les courroies](/entretien-revision/).
 
 ### Pneus et géométrie
 
-Quatre bouts de gomme, seul contact avec la route : on n’économise pas dessus. Un jeu de 4 pneus entrée de gamme posés démarre à 250 €. On y compare été, hiver et 4 saisons, on explique quand un parallélisme s’impose et comment lire l’usure d’un pneu. Direction [Pneus & géométrie](/categorie/entretien-revision/pneus-geometrie/).
+Quatre bouts de gomme, seul contact avec la route : on n’économise pas dessus. Un jeu de 4 pneus entrée de gamme posés démarre à 250 €. On y compare été, hiver et 4 saisons, on explique quand un parallélisme s’impose et comment lire l’usure d’un pneu. Direction [Pneus & géométrie](/entretien-revision/).
 
 ### Batterie et électricité
 
-Une batterie qui lâche, c’est toujours au mauvais moment : un matin d’hiver, parking désert. On explique comment la recharger, la changer soi-même (100 à 300 € en pièce), et les précautions des batteries Start & Stop, qui ne se remplacent pas comme une batterie classique. À lire dans [la batterie et le circuit électrique](/categorie/entretien-revision/batterie-electricite/).
+Une batterie qui lâche, c’est toujours au mauvais moment : un matin d’hiver, parking désert. On explique comment la recharger, la changer soi-même (100 à 300 € en pièce), et les précautions des batteries Start & Stop, qui ne se remplacent pas comme une batterie classique. À lire dans [la batterie et le circuit électrique](/entretien-revision/).
 
 ### Boîte et embrayage
 
-Un embrayage qui patine, une pédale qui accroche : les symptômes sont clairs, la facture l’est moins (300 à 1 700 € pour un kit, selon l’accès à la boîte). On explique aussi l’intérêt, souvent ignoré, de vidanger une boîte automatique. Tout est dans [boîte et embrayage](/categorie/entretien-revision/boite-embrayage/).
+Un embrayage qui patine, une pédale qui accroche : les symptômes sont clairs, la facture l’est moins (300 à 1 700 € pour un kit, selon l’accès à la boîte). On explique aussi l’intérêt, souvent ignoré, de vidanger une boîte automatique. Tout est dans [boîte et embrayage](/entretien-revision/).
 
 ### Climatisation
 
-Une clim qui ne refroidit plus n’est pas toujours une panne grave : souvent, c’est juste le gaz qui s’est dissipé avec le temps. Une recharge coûte 50 à 300 €. On traite aussi la désinfection du circuit, cette odeur de renfermé à la première mise en route. Voir [Climatisation](/categorie/entretien-revision/climatisation/).
+Une clim qui ne refroidit plus n’est pas toujours une panne grave : souvent, c’est juste le gaz qui s’est dissipé avec le temps. Une recharge coûte 50 à 300 €. On traite aussi la désinfection du circuit, cette odeur de renfermé à la première mise en route. Voir [Climatisation](/entretien-revision/).
 
 ### Dépollution et échappement
 
-Filtre à particules colmaté, vanne EGR encrassée, voyant moteur qui s’allume : les organes de dépollution sont devenus un vrai poste d’entretien, surtout en diesel et en usage urbain. Une ligne d’échappement se change entre 100 et 400 €. On démêle les symptômes et les vrais coûts dans [la dépollution et la ligne d’échappement](/categorie/entretien-revision/depollution-echappement/).
+Filtre à particules colmaté, vanne EGR encrassée, voyant moteur qui s’allume : les organes de dépollution sont devenus un vrai poste d’entretien, surtout en diesel et en usage urbain. Une ligne d’échappement se change entre 100 et 400 €. On démêle les symptômes et les vrais coûts dans [la dépollution et la ligne d’échappement](/entretien-revision/).
 
 ### Révision et contrôle technique
 
-Le rendez-vous administratif et le rendez-vous mécanique. Le contrôle technique (45 à 150 €) est obligatoire ; la révision constructeur ne l’est pas, mais elle conditionne la garantie. On explique ce qui est vérifié, comment préparer sa voiture pour éviter la contre-visite, et le contenu réel d’une révision. Voir [révision et contrôle technique](/categorie/entretien-revision/revision-controle/).
+Le rendez-vous administratif et le rendez-vous mécanique. Le contrôle technique (45 à 150 €) est obligatoire ; la révision constructeur ne l’est pas, mais elle conditionne la garantie. On explique ce qui est vérifié, comment préparer sa voiture pour éviter la contre-visite, et le contenu réel d’une révision. Voir [révision et contrôle technique](/entretien-revision/).
 
 ### Prestations par marque
 
-Renault, Peugeot, Volkswagen, Toyota, Dacia : à opération égale, la facture n’est pas la même d’une marque à l’autre : pièces plus ou moins chères, forfaits réseau, accès moteur. On compare les [tarifs par marque](/categorie/entretien-revision/prestations-par-marque/) pour que vous sachiez à quoi vous attendre avant de pousser la porte du garage.
+Renault, Peugeot, Volkswagen, Toyota, Dacia : à opération égale, la facture n’est pas la même d’une marque à l’autre : pièces plus ou moins chères, forfaits réseau, accès moteur. On compare les [tarifs par marque](/entretien-revision/) pour que vous sachiez à quoi vous attendre avant de pousser la porte du garage.
 
 ## Où faire son entretien : centre auto, indépendant ou concession ?
 

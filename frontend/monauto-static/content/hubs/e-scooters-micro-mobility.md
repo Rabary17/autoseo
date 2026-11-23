@@ -8,7 +8,7 @@ wp_locale: "en"
 image: "/images/articles/e-scooters-micro-mobility-couverture.webp"
 imageAlt: "Trottinette électrique et EDPM : quel guide choisir en 2026 ?"
 ---
-Home › [Bikes & New Mobility](/en/bikes-personal-transport) › Electric Scooters & PMDs
+Home › [Bikes & New Mobility](/bikes-personal-transport/) › Electric Scooters & PMDs
 
 Minimum age, speed limits, helmets, insurance, model choice—five questions keep coming up about electric scooters and PMDs. Each article listed below answers just one of them, with the figures and regulations in force for 2026. No need to read everything at once: find the question that applies to you and go straight to the relevant article.
 
@@ -86,4 +86,4 @@ Another common mix-up: the mandatory anti-theft marking introduced in 2021 appli
 
 Checks are increasing in city centres, especially where scooters and pedestrians cross paths. Riding on pavements, exceeding speed limits in pedestrian zones, or carrying a passenger all carry the same risk: a fine and sometimes on-the-spot immobilisation.
 
-Electric scooters, e-bikes, shared mopeds—these modes often share the same streets and the same questions about insurance or maintenance. The [bikes & new mobility](/en/bikes-personal-transport) section brings together all our guides on commuting, purchase grants, and shared transport.
+Electric scooters, e-bikes, shared mopeds—these modes often share the same streets and the same questions about insurance or maintenance. The [bikes & new mobility](/bikes-personal-transport/) section brings together all our guides on commuting, purchase grants, and shared transport.

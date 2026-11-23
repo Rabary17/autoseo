@@ -96,4 +96,4 @@ Some habits prove costly, whether for short or long-term hire.
 
 In all five cases, the written contract overrides anything said at the counter. Reading it before signing avoids almost all the nasty surprises listed above.
 
-This section is part of our [shared mobility and transport](/en/shared-mobility) category, where we also cover carpooling, car-sharing and free-floating scooters to complete a journey without your own vehicle.
+This section is part of our [shared mobility and transport](/shared-mobility/) category, where we also cover carpooling, car-sharing and free-floating scooters to complete a journey without your own vehicle.

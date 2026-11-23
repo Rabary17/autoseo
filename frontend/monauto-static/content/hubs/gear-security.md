@@ -8,7 +8,7 @@ wp_locale: "en"
 image: "/images/articles/gear-security-couverture.webp"
 imageAlt: "Équipement & antivol vélo : éclairage, antivol U, GPS et marquage"
 ---
-Home > [Bike & New Mobility](/en/bikes-personal-transport) > Equipment & Anti-Theft
+Home > [Bike & New Mobility](/bikes-personal-transport/) > Equipment & Anti-Theft
 
 An anti-theft lock that gives way in 30 seconds, the bicycode marking requirement in place since 2021, inadequate lighting that leads to a fine—bike equipment is all about precise details. Budget matters less than choosing the right gear for the right situation: a budget lock used incorrectly sometimes offers less protection than a decent model fitted properly. Four practical guides help you pick the right lock, lighting, GPS tracker, and understand the marking requirement, based on real-world use: daily commuting, city riding, cargo bikes, or occasional trips.
 
@@ -91,4 +91,4 @@ Locking your bike to a post that isn’t fixed to the ground, leaving the front 
 -   Lock left open or poorly locked out of habit, which is as good as not having one
 -   No marking or tracker in place, making recovery harder if the bike is stolen
 
-A properly protected bike combines a good anchor point, a certified lock, and a digital or physical identifier that helps identify it afterwards. To explore the wider world of active travel, the [bike & new mobility](/en/bikes-personal-transport) page is a good starting point for commuting guides, e-scooters, and regulations.
+A properly protected bike combines a good anchor point, a certified lock, and a digital or physical identifier that helps identify it afterwards. To explore the wider world of active travel, the [bike & new mobility](/bikes-personal-transport/) page is a good starting point for commuting guides, e-scooters, and regulations.

@@ -41,7 +41,7 @@ Pour comparer, regardez :
 -   Les outils de reporting (suivi des consommations, alertes en cas de dépassement).
 -   Les frais de gestion (abonnements, commissions).
 
-Une carte multi-enseignes comme la [DKV Card](/carte-carburant-pro-comparatif) convient à une flotte qui roule partout en France. Pour une entreprise concentrée sur un territoire, une carte mono-enseigne (TotalEnergies) peut suffire.
+Une carte multi-enseignes comme la [DKV Card](/carte-carburant-pro-comparatif/) convient à une flotte qui roule partout en France. Pour une entreprise concentrée sur un territoire, une carte mono-enseigne (TotalEnergies) peut suffire.
 
 ## 3\. Logiciels de gestion de flotte pour TPE : quels outils pour quels besoins ?
 
@@ -61,7 +61,7 @@ Les fonctionnalités essentielles :
 
 La télématique embarquée analyse les comportements de conduite (accélérations brutales, freinages, excès de vitesse) et fournit des rapports pour améliorer la sécurité et réduire la consommation de carburant. Pour une entreprise de transport, ces données permettent de réduire la consommation jusqu’à 15 %, de diminuer les coûts d’entretien et d’optimiser les trajets.
 
-Cependant, certains conducteurs peuvent mal vivre le sentiment de surveillance. L’installation des boîtiers coûte entre 100 € et 300 € par véhicule. Pour une TPE, un [logiciel de suivi GPS basique](/telematique-flotte-avantages) peut être plus rentable avant d’investir dans une solution avancée.
+Cependant, certains conducteurs peuvent mal vivre le sentiment de surveillance. L’installation des boîtiers coûte entre 100 € et 300 € par véhicule. Pour une TPE, un [logiciel de suivi GPS basique](/telematique-flotte-avantages/) peut être plus rentable avant d’investir dans une solution avancée.
 
 ## 5\. Financer sa flotte : LLD, LOA ou crédit-bail ?
 

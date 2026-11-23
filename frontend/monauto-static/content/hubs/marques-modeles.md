@@ -51,19 +51,19 @@ Le manque d’historique joue clairement contre elles : sans dix ans de retours 
 
 Avant de comparer deux versions d’un même modèle, une fiche synthétique évite de partir dans toutes les directions à la fois.
 
-Chaque fiche du dossier [fiches modèles & fiabilité](/categorie/marques-modeles/fiches-modeles-fiabilite/) regroupe la note de fiabilité globale, les motorisations à privilégier et celles à écarter, ainsi que les kilométrages où apparaissent les pannes les plus fréquentes. C’est la porte d’entrée logique quand un modèle précis est déjà visé, plutôt qu’une comparaison entre plusieurs marques.
+Chaque fiche du dossier [fiches modèles & fiabilité](/marques-modeles/) regroupe la note de fiabilité globale, les motorisations à privilégier et celles à écarter, ainsi que les kilométrages où apparaissent les pannes les plus fréquentes. C’est la porte d’entrée logique quand un modèle précis est déjà visé, plutôt qu’une comparaison entre plusieurs marques.
 
 ## Fiabilité par modèle, les scores qui font la différence
 
 Un même segment peut cacher un écart de fiabilité énorme. Comparer une Ford Focus notée 5,5/10 (26e sur 30 dans son segment chez What Car) à une Dacia Sandero SCe, dont l’absence de turbo supprime le principal facteur de panne grave, donne une idée du grand écart possible entre deux citadines au prix proche.
 
-Le dossier [fiabilité par modèle](/categorie/marques-modeles/fiabilite-par-modele/) centralise ces notes, motorisation par motorisation, pour éviter de se fier à la seule réputation générale d’une marque. Une marque globalement bien notée peut cacher un moteur à problèmes, et l’inverse est vrai aussi : la Dacia Sandero SCe tient une fiabilité solide malgré une image encore perçue comme entrée de gamme.
+Le dossier [fiabilité par modèle](/marques-modeles/) centralise ces notes, motorisation par motorisation, pour éviter de se fier à la seule réputation générale d’une marque. Une marque globalement bien notée peut cacher un moteur à problèmes, et l’inverse est vrai aussi : la Dacia Sandero SCe tient une fiabilité solide malgré une image encore perçue comme entrée de gamme.
 
 ## Pannes par modèle, les défauts à connaître avant de signer
 
 Certaines pannes reviennent avec une régularité suffisante pour être qualifiées de défauts de conception plutôt que de simples coups du sort.
 
-La Fiat 500 première génération (2007-2015) cumule un taux de défaillance de 25 % dès 80 000 km sur son diesel 1.3 Multijet, avec un risque de saisie moteur et une réparation autour de 5 000 €. L’embrayage de la même génération glisse dès 50 000 km, pour une facture de 800 à 1 200 €. Sur la Citroën C5 Aircross hybride, le calculateur de gestion d’énergie provoque parfois des arrêts moteur involontaires, et la batterie haute tension peut coûter jusqu’à 12 000 € à remplacer passé 120 000 km. Le dossier [pannes par modèle](/categorie/marques-modeles/pannes-par-modele/) liste ces défauts récurrents modèle par modèle, avec les kilométrages d’apparition et, quand elle existe, la fourchette de réparation. Un défaut connu et chiffré à l’avance change complètement la négociation d’un prix d’occasion.
+La Fiat 500 première génération (2007-2015) cumule un taux de défaillance de 25 % dès 80 000 km sur son diesel 1.3 Multijet, avec un risque de saisie moteur et une réparation autour de 5 000 €. L’embrayage de la même génération glisse dès 50 000 km, pour une facture de 800 à 1 200 €. Sur la Citroën C5 Aircross hybride, le calculateur de gestion d’énergie provoque parfois des arrêts moteur involontaires, et la batterie haute tension peut coûter jusqu’à 12 000 € à remplacer passé 120 000 km. Le dossier [pannes par modèle](/marques-modeles/) liste ces défauts récurrents modèle par modèle, avec les kilométrages d’apparition et, quand elle existe, la fourchette de réparation. Un défaut connu et chiffré à l’avance change complètement la négociation d’un prix d’occasion.
 
 ## Coûts & entretien par modèle, anticiper la facture
 
@@ -71,13 +71,13 @@ Le prix d’achat ne raconte qu’une partie de l’histoire. L’entretien annu
 
 ![Mécanicien vérifiant le niveau d'huile sous le capot](/images/articles/marques-modeles-4.webp)
 
-Une Renault Twingo au moteur 1.0 SCe s’entretient pour 200 à 400 € par an, un budget parmi les plus bas du marché. À l’autre extrémité, une Citroën C5 Aircross hybride mal tombée peut cumuler plus de 20 000 € de réparations sur 150 000 km, entre batterie, chargeur embarqué et système AdBlue. Le dossier [coûts & entretien par modèle](/categorie/marques-modeles/couts-entretien-par-modele/) détaille ces écarts par motorisation, pièce par pièce quand les données le permettent. Sur un budget serré, ce chiffre pèse souvent plus dans la décision finale que la puissance ou l’équipement.
+Une Renault Twingo au moteur 1.0 SCe s’entretient pour 200 à 400 € par an, un budget parmi les plus bas du marché. À l’autre extrémité, une Citroën C5 Aircross hybride mal tombée peut cumuler plus de 20 000 € de réparations sur 150 000 km, entre batterie, chargeur embarqué et système AdBlue. Le dossier [coûts & entretien par modèle](/marques-modeles/) détaille ces écarts par motorisation, pièce par pièce quand les données le permettent. Sur un budget serré, ce chiffre pèse souvent plus dans la décision finale que la puissance ou l’équipement.
 
 ## Achat occasion par modèle, les points de contrôle qui comptent
 
 Sur le marché de l’occasion, chaque modèle réclame une vérification différente selon ses points faibles connus.
 
-Sur une Golf 5 TDI, exiger les factures d’entretien du volant moteur bimasse et des injecteurs évite une mauvaise surprise. Sur une Fiat Panda diesel Multijet, la vanne EGR et l’embrayage, sous-dimensionné sur ce modèle, méritent un contrôle sérieux passé 80 000 km, tout comme la recherche de suintements d’huile aux joints de carter au-delà de ce seuil sur la version essence. Le dossier [achat occasion par modèle](/categorie/marques-modeles/achat-occasion-par-modele/) détaille, modèle par modèle, la liste des points à contrôler avant signature. Un contrôle technique récent ne remplace jamais cette vérification ciblée sur les défauts connus du modèle précis.
+Sur une Golf 5 TDI, exiger les factures d’entretien du volant moteur bimasse et des injecteurs évite une mauvaise surprise. Sur une Fiat Panda diesel Multijet, la vanne EGR et l’embrayage, sous-dimensionné sur ce modèle, méritent un contrôle sérieux passé 80 000 km, tout comme la recherche de suintements d’huile aux joints de carter au-delà de ce seuil sur la version essence. Le dossier [achat occasion par modèle](/marques-modeles/) détaille, modèle par modèle, la liste des points à contrôler avant signature. Un contrôle technique récent ne remplace jamais cette vérification ciblée sur les défauts connus du modèle précis.
 
 ## Comparatif express : scores de fiabilité par modèle
 

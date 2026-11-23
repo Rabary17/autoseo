@@ -27,7 +27,7 @@ L’assurance responsabilité civile est obligatoire depuis 2019, comme pour un 
 
 Les autres EDPM (gyroroue, monoroue, hoverboard) suivent globalement les mêmes règles de circulation : interdiction du trottoir sauf autorisation municipale explicite et à allure de marche, obligation de circuler sur les pistes cyclables quand elles existent, sinon sur les routes limitées à 50 km/h. Le stationnement gênant sur un trottoir, lui, expose à une amende distincte de celle liée au débridage. Deux infractions bien séparées, souvent confondues par les usagers.
 
-Côté équipement, le code de la route impose un système de freinage efficace, un avertisseur sonore, un feu avant et un feu arrière, ainsi que des dispositifs réfléchissants latéraux, sauf si les pneus sont déjà réfléchissants. La rubrique [Trottinettes & EDPM](/categorie/velo-nouvelles-mobilites/trottinettes-edpm) détaille la réglementation complète, les sanctions applicables et les nuances qui varient selon la ville.
+Côté équipement, le code de la route impose un système de freinage efficace, un avertisseur sonore, un feu avant et un feu arrière, ainsi que des dispositifs réfléchissants latéraux, sauf si les pneus sont déjà réfléchissants. La rubrique [Trottinettes & EDPM](/velo-nouvelles-mobilites/) détaille la réglementation complète, les sanctions applicables et les nuances qui varient selon la ville.
 
 ## Aides à l’achat : bonus vélo, forfait mobilités durables et primes locales
 
@@ -35,7 +35,7 @@ Financer un vélo électrique ou une trottinette coûte souvent moins cher qu’
 
 S’ajoutent à ce dispositif le bonus vélo national et des primes locales versées par certaines régions, départements ou communes, dont le montant varie fortement d’un territoire à l’autre. Avant d’acheter, mieux vaut vérifier ce que propose sa collectivité plutôt que de se fier au seul barème national.
 
-Ces aides se cumulent rarement sans condition : plafond de ressources pour le bonus national, ancienneté minimale dans l’entreprise pour le forfait mobilités durables, justificatif d’achat ou de facture d’entretien à conserver pour la prime locale. Un dossier incomplet retarde souvent le versement de plusieurs semaines, mieux vaut monter le dossier avant l’achat plutôt qu’après. La rubrique [Aides à l’achat](/categorie/velo-nouvelles-mobilites/aides-a-l-achat) détaille les montants, les conditions de ressources et les démarches propres à chaque dispositif.
+Ces aides se cumulent rarement sans condition : plafond de ressources pour le bonus national, ancienneté minimale dans l’entreprise pour le forfait mobilités durables, justificatif d’achat ou de facture d’entretien à conserver pour la prime locale. Un dossier incomplet retarde souvent le versement de plusieurs semaines, mieux vaut monter le dossier avant l’achat plutôt qu’après. La rubrique [Aides à l’achat](/categorie/aides-a-l-achat/) détaille les montants, les conditions de ressources et les démarches propres à chaque dispositif.
 
 ## Vélo électrique : budget, autonomie et entretien au quotidien
 
@@ -45,7 +45,7 @@ Un vélo à assistance électrique change la donne sur un trajet domicile-travai
 
 L’autonomie réelle dépend du dénivelé, du poids du cycliste et du mode d’assistance choisi, bien plus que de la fiche technique du fabricant. Sur un trajet vallonné, l’écart entre l’autonomie annoncée et l’autonomie constatée peut être important.
 
-Le remplacement de la batterie constitue souvent le poste d’entretien le plus lourd sur la durée de vie d’un vélo électrique, largement devant les pneus ou les plaquettes de frein. Un chargement complet et régulier plutôt que des cycles partiels répétés allonge sa durée de vie utile. Sur un modèle équipé de freins hydrauliques, l’entretien coûte généralement plus cher qu’avec des freins à patins, mais la puissance de freinage justifie le choix sur un vélo plus lourd et plus rapide. Les guides d’achat, comparatifs de moteurs et conseils d’entretien détaillés sont regroupés dans la rubrique [Vélo électrique](/categorie/velo-nouvelles-mobilites/velo-electrique).
+Le remplacement de la batterie constitue souvent le poste d’entretien le plus lourd sur la durée de vie d’un vélo électrique, largement devant les pneus ou les plaquettes de frein. Un chargement complet et régulier plutôt que des cycles partiels répétés allonge sa durée de vie utile. Sur un modèle équipé de freins hydrauliques, l’entretien coûte généralement plus cher qu’avec des freins à patins, mais la puissance de freinage justifie le choix sur un vélo plus lourd et plus rapide. Les guides d’achat, comparatifs de moteurs et conseils d’entretien détaillés sont regroupés dans la rubrique [Vélo électrique](/velo-nouvelles-mobilites/).
 
 ## Équipement et antivol : le marquage FNUCI change la donne
 
@@ -55,7 +55,7 @@ Depuis le 1er janvier 2021, tout vélo neuf de plus de 16 pouces vendu par un pr
 
 Un bon antivol en U ou une chaîne épaisse ne suffit pas toujours : le choix du point d’attache, la visibilité du vélo garé et l’heure de la journée comptent autant que le niveau de sécurité de l’antivol lui-même.
 
-En cas de vol, la première démarche consiste à déposer plainte en mentionnant le numéro FNUCI gravé sur le cadre : ce numéro permet aux forces de l’ordre de rapprocher un vélo retrouvé de sa déclaration de vol, même plusieurs mois après. Certaines assurances habitation couvrent le vol de vélo en option, à condition que l’antivol utilisé au moment du vol corresponde au niveau de sécurité minimal exigé par le contrat. Les tests d’antivols, les modèles recommandés et les démarches précises en cas de vol sont détaillés dans la rubrique [Équipement & antivol](/categorie/velo-nouvelles-mobilites/equipement-antivol).
+En cas de vol, la première démarche consiste à déposer plainte en mentionnant le numéro FNUCI gravé sur le cadre : ce numéro permet aux forces de l’ordre de rapprocher un vélo retrouvé de sa déclaration de vol, même plusieurs mois après. Certaines assurances habitation couvrent le vol de vélo en option, à condition que l’antivol utilisé au moment du vol corresponde au niveau de sécurité minimal exigé par le contrat. Les tests d’antivols, les modèles recommandés et les démarches précises en cas de vol sont détaillés dans la rubrique [Équipement & antivol](/categorie/equipement-antivol/).
 
 ## Vélotaf : organiser son trajet domicile-travail
 
@@ -65,7 +65,7 @@ Le vélotaf ne se résume pas à enfourcher son vélo un matin de printemps. Plu
 
 Comparé à un abonnement de transport en commun ou à l’essence d’une voiture, le vélotaf réduit nettement le budget mensuel de déplacement, même en comptant l’entretien du vélo et l’équipement pluie.
 
-L’hiver change la donne : jours plus courts, chaussée mouillée ou verglacée, éclairage insuffisant sur certains tronçons. Un gilet réfléchissant, des pneus plus larges et un éclairage puissant font souvent plus la différence qu’un vélo haut de gamme sur cette période. Beaucoup de vélotafeurs alternent vélo classique et vélo électrique selon la saison, ou basculent temporairement vers les transports en commun sur les tronçons les plus exposés. La rubrique [Vélotaf & pratique](/categorie/velo-nouvelles-mobilites/velotaf-pratique) rassemble les conseils d’itinéraires, de tenue et d’organisation pour tenir ce rythme toute l’année.
+L’hiver change la donne : jours plus courts, chaussée mouillée ou verglacée, éclairage insuffisant sur certains tronçons. Un gilet réfléchissant, des pneus plus larges et un éclairage puissant font souvent plus la différence qu’un vélo haut de gamme sur cette période. Beaucoup de vélotafeurs alternent vélo classique et vélo électrique selon la saison, ou basculent temporairement vers les transports en commun sur les tronçons les plus exposés. La rubrique [Vélotaf & pratique](/velo-nouvelles-mobilites/) rassemble les conseils d’itinéraires, de tenue et d’organisation pour tenir ce rythme toute l’année.
 
 ## Vélo, trottinette électrique ou mobilité partagée : quel mode pour quel trajet
 

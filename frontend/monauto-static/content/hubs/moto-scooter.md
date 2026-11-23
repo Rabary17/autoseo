@@ -23,17 +23,17 @@ Six familles de questions reviennent sans cesse chez les motards et futurs motar
 
 ![Motos et scooters garés côte à côte dans une rue de ville](/images/articles/moto-scooter-1.webp)
 
-La question de [l’assurance et de la réglementation moto](/categorie/moto-scooter/assurance-reglementation-moto/) arrive souvent en premier, avant même le choix du modèle : catégorie de permis nécessaire, niveau de garantie minimum, obligations qui changent selon la cylindrée. C’est ce dossier qui démêle qui a le droit de conduire quoi, et à quel tarif d’assurance il faut s’attendre selon son profil.
+La question de [l’assurance et de la réglementation moto](/moto-scooter/) arrive souvent en premier, avant même le choix du modèle : catégorie de permis nécessaire, niveau de garantie minimum, obligations qui changent selon la cylindrée. C’est ce dossier qui démêle qui a le droit de conduire quoi, et à quel tarif d’assurance il faut s’attendre selon son profil.
 
-Pour un usage urbain quotidien, le réflexe naturel va vers le [scooter 125](/categorie/moto-scooter/scooter-125/) : accessible avec le permis B sous conditions, économique à l’usage, pratique pour se faufiler. Ce dossier compare les modèles qui tiennent la route sur la durée et ceux qui déçoivent après six mois.
+Pour un usage urbain quotidien, le réflexe naturel va vers le [scooter 125](/moto-scooter/) : accessible avec le permis B sous conditions, économique à l’usage, pratique pour se faufiler. Ce dossier compare les modèles qui tiennent la route sur la durée et ceux qui déçoivent après six mois.
 
-Une fois le besoin clarifié vient la vraie décision : quelle machine acheter. Le dossier [choisir sa moto](/categorie/moto-scooter/choisir-sa-moto/) détaille les critères qui comptent vraiment selon le gabarit du pilote, le kilométrage annuel prévu et le budget disponible, plutôt que de se fier à la seule fiche technique.
+Une fois le besoin clarifié vient la vraie décision : quelle machine acheter. Le dossier [choisir sa moto](/moto-scooter/) détaille les critères qui comptent vraiment selon le gabarit du pilote, le kilométrage annuel prévu et le budget disponible, plutôt que de se fier à la seule fiche technique.
 
-Une moto qui roule mal entretenue coûte cher sur le long terme. Le dossier [entretien moto](/categorie/moto-scooter/entretien-moto/) couvre les gestes réguliers, chaîne, pneus, freins, vidange, et le rythme auquel les faire réellement, pas celui annoncé dans la notice.
+Une moto qui roule mal entretenue coûte cher sur le long terme. Le dossier [entretien moto](/moto-scooter/) couvre les gestes réguliers, chaîne, pneus, freins, vidange, et le rythme auquel les faire réellement, pas celui annoncé dans la notice.
 
-La sécurité ne se joue pas qu’au niveau du casque. Le dossier [équipement pilote](/categorie/moto-scooter/equipement-pilote/) détaille ce qui protège vraiment en cas de chute, du blouson homologué aux gants CE, et ce qui n’est qu’un argument marketing.
+La sécurité ne se joue pas qu’au niveau du casque. Le dossier [équipement pilote](/moto-scooter/) détaille ce qui protège vraiment en cas de chute, du blouson homologué aux gants CE, et ce qui n’est qu’un argument marketing.
 
-Enfin, pour ceux qui veulent partir plus loin qu’un trajet domicile-travail, le dossier [balades et voyage moto](/categorie/moto-scooter/balades-voyage-moto/) traite de la préparation d’un road-trip, du chargement du bagage à la logistique d’étapes sur plusieurs jours.
+Enfin, pour ceux qui veulent partir plus loin qu’un trajet domicile-travail, le dossier [balades et voyage moto](/moto-scooter/) traite de la préparation d’un road-trip, du chargement du bagage à la logistique d’étapes sur plusieurs jours.
 
 ## Scooter, trail ou roadster : le bon choix dépend du trajet, pas du style
 

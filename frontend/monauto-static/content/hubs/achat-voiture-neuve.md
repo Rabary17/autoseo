@@ -29,7 +29,7 @@ Rouler dans une voiture neuve sans en être propriétaire change la façon de ca
 
 ![Signature d'un contrat de leasing pour une voiture neuve](/images/articles/achat-voiture-neuve-1.webp)
 
-Le bon format dépend surtout du kilométrage annuel réel et de la durée de détention prévue, bien plus que du prix du véhicule seul. Un gros rouleur qui dépasse le forfait kilométrique d’un contrat LLD paie des pénalités qui annulent vite l’avantage de la mensualité basse. Notre page sur le [leasing LOA et LLD](/categorie/achat-voiture-neuve/leasing-loa-lld) détaille les formules, les frais de restitution et les clauses de kilométrage à vérifier avant de signer.
+Le bon format dépend surtout du kilométrage annuel réel et de la durée de détention prévue, bien plus que du prix du véhicule seul. Un gros rouleur qui dépasse le forfait kilométrique d’un contrat LLD paie des pénalités qui annulent vite l’avantage de la mensualité basse. Notre page sur le [leasing LOA et LLD](/achat-voiture-neuve/) détaille les formules, les frais de restitution et les clauses de kilométrage à vérifier avant de signer.
 
 ## Citadine, compacte, SUV, familiale : le bon segment avant le bon prix
 
@@ -37,7 +37,7 @@ Le segment choisi pèse plus sur le budget final que la marque elle-même. Une c
 
 ![Famille comparant plusieurs voitures neuves en concession](/images/articles/achat-voiture-neuve-2.webp)
 
-Le bon réflexe consiste à fixer d’abord l’usage réel (trajets urbains, autoroute régulière, nombre de passagers), puis à comparer les segments qui y répondent, plutôt que l’inverse. Notre [guide d’achat par segment](/categorie/achat-voiture-neuve/guide-d-achat-par-segment) détaille les écarts de budget entre citadines, compactes, SUV et familiales, motorisation par motorisation.
+Le bon réflexe consiste à fixer d’abord l’usage réel (trajets urbains, autoroute régulière, nombre de passagers), puis à comparer les segments qui y répondent, plutôt que l’inverse. Notre [guide d’achat par segment](/achat-voiture-neuve/) détaille les écarts de budget entre citadines, compactes, SUV et familiales, motorisation par motorisation.
 
 ## Mandataire et import : la remise réelle sur une voiture neuve
 
@@ -45,19 +45,19 @@ Les mandataires auto affichent régulièrement des remises annoncées entre 30 e
 
 ![Voitures neuves alignées chez un mandataire automobile](/images/articles/achat-voiture-neuve-3.webp)
 
-L’import intracommunautaire fonctionne sur un principe voisin : un véhicule neuf immatriculé dans un autre pays de l’Union européenne coûte parfois moins cher à configuration égale, mais impose un délai de livraison plus long et une vérification systématique de la garantie constructeur valable en France. Notre page [mandataire et import](/categorie/achat-voiture-neuve/mandataire-import) reprend les vérifications à faire avant de verser un acompte.
+L’import intracommunautaire fonctionne sur un principe voisin : un véhicule neuf immatriculé dans un autre pays de l’Union européenne coûte parfois moins cher à configuration égale, mais impose un délai de livraison plus long et une vérification systématique de la garantie constructeur valable en France. Notre page [mandataire et import](/achat-voiture-neuve/) reprend les vérifications à faire avant de verser un acompte.
 
 ## Options et configuration : ce qui gonfle vraiment la facture
 
 Une liste d’options cochée sans arbitrage peut ajouter plusieurs milliers d’euros au prix d’un modèle de base, parfois davantage que l’écart entre deux motorisations. Certaines options techniques (aide à la conduite, attelage, jantes) pèsent aussi sur la valeur de revente ; d’autres (couleur, sellerie) n’ont presque aucun effet sur la décote à moyen terme. Certaines aides à la conduite influencent en plus la prime d’assurance, dans un sens comme dans l’autre selon l’assureur.
 
-Le bon calcul consiste à distinguer les options qui protègent la revente de celles qui répondent seulement à une préférence personnelle, puis à arbitrer selon le budget mensuel visé plutôt que selon la longueur du configurateur en ligne. Notre page [options et configuration](/categorie/achat-voiture-neuve/options-configuration) détaille lesquelles gardent de la valeur et lesquelles n’en gardent pas.
+Le bon calcul consiste à distinguer les options qui protègent la revente de celles qui répondent seulement à une préférence personnelle, puis à arbitrer selon le budget mensuel visé plutôt que selon la longueur du configurateur en ligne. Notre page [options et configuration](/achat-voiture-neuve/) détaille lesquelles gardent de la valeur et lesquelles n’en gardent pas.
 
 ## Négocier en concession : reprendre la main sur le prix
 
 Le prix catalogue en concession n’est presque jamais le prix payé par l’acheteur qui négocie. La reprise du véhicule actuel, la remise de fin de mois ou de fin d’année, et le financement maison forment trois leviers distincts qui se négocient séparément, pas en bloc.
 
-Un acheteur qui compare plusieurs devis avant de se présenter en concession obtient presque toujours une meilleure remise que celui qui négocie sur place sans point de comparaison. Le vendeur ajuste rarement son offre spontanément ; il répond à une contre-offre chiffrée. Notre page [négociation et remises](/categorie/achat-voiture-neuve/negociation-remises) détaille les arguments qui font vraiment baisser un prix, et ceux qui n’ont aucun effet.
+Un acheteur qui compare plusieurs devis avant de se présenter en concession obtient presque toujours une meilleure remise que celui qui négocie sur place sans point de comparaison. Le vendeur ajuste rarement son offre spontanément ; il répond à une contre-offre chiffrée. Notre page [négociation et remises](/achat-voiture-neuve/) détaille les arguments qui font vraiment baisser un prix, et ceux qui n’ont aucun effet.
 
 ## Bonus écologique, malus, TVS : ce que l’État ajoute ou retire
 
@@ -65,7 +65,7 @@ La fiscalité change la facture finale d’une voiture neuve avant même la prem
 
 ![Voiture électrique neuve en charge, concernée par le bonus écologique](/images/articles/achat-voiture-neuve-4.webp)
 
-Ces montants évoluent chaque année selon le barème en vigueur au moment de la commande, pas au moment de la livraison, ce qui explique certains écarts entre un devis établi en fin d’année et la facture réelle quelques mois plus tard. Notre page [bonus, malus et fiscalité](/categorie/achat-voiture-neuve/bonus-malus-fiscalite) reprend les barèmes actualisés et les cas particuliers (véhicules de société, TVS).
+Ces montants évoluent chaque année selon le barème en vigueur au moment de la commande, pas au moment de la livraison, ce qui explique certains écarts entre un devis établi en fin d’année et la facture réelle quelques mois plus tard. Notre page [bonus, malus et fiscalité](/achat-voiture-neuve/) reprend les barèmes actualisés et les cas particuliers (véhicules de société, TVS).
 
 ## Assurance et délai de livraison : les postes qui changent aussi le budget
 

@@ -96,4 +96,4 @@ Certains réflexes coûtent cher, en courte comme en longue durée.
 
 Dans les cinq cas, le contrat écrit prime toujours sur ce qui a été dit au comptoir. Le relire avant de signer évite la quasi-totalité des mauvaises surprises listées ci-dessus.
 
-Ce sous-cocon fait partie de notre rubrique [mobilité partagée et transports](/mobilite-partagee-transports), où l’on traite aussi le covoiturage, l’autopartage et les scooters en free-floating pour compléter un trajet sans véhicule personnel.
+Ce sous-cocon fait partie de notre rubrique [mobilité partagée et transports](/mobilite-partagee-transports/), où l’on traite aussi le covoiturage, l’autopartage et les scooters en free-floating pour compléter un trajet sans véhicule personnel.

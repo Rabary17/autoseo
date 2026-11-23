@@ -16,7 +16,7 @@ Passer l’examen de la carte VTC, obtenir une convention CPAM en tant que taxi,
 -   Le conventionnement CPAM ouvre l’accès au transport médical assis, un marché fermé aux VTC.
 -   Entre Uber et Bolt, la facture pour un même trajet varie sensiblement selon l’heure et la zone : mieux vaut comparer avant de valider la course.
 
-Ce sous-cocon fait partie du dossier plus large sur la [mobilité partagée et les transports](/mobilite-partagee-transports), qui couvre aussi le covoiturage et les trottinettes en libre-service.
+Ce sous-cocon fait partie du dossier plus large sur la [mobilité partagée et les transports](/mobilite-partagee-transports/), qui couvre aussi le covoiturage et les trottinettes en libre-service.
 
 ## Les conditions pour exercer comme chauffeur VTC
 

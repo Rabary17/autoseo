@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/changement-de-titulaire-couverture.webp"
 imageAlt: "Changement de titulaire de carte grise : le guide des démarches"
 ---
-Le changement de titulaire regroupe plusieurs démarches distinctes : obtenir le code de cession, mettre à jour la carte grise via l’ANTS, respecter le délai d’un mois, connaître le prix selon la région. Cette page aide à choisir la bonne démarche ; le dossier complet [carte grise et démarches](/carte-grise-demarches) donne le contexte plus large.
+Le changement de titulaire regroupe plusieurs démarches distinctes : obtenir le code de cession, mettre à jour la carte grise via l’ANTS, respecter le délai d’un mois, connaître le prix selon la région. Cette page aide à choisir la bonne démarche ; le dossier complet [carte grise et démarches](/carte-grise-demarches/) donne le contexte plus large.
 
 **Trois chiffres résument tout le sujet.**
 

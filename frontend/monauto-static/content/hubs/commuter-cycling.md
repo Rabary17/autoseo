@@ -91,4 +91,4 @@ Cycling infrastructure is expanding in most major French cities, with segregated
 -   Neglecting basic maintenance (tyre pressure, brake adjustment) until a breakdown.
 -   Relying on an employer subsidy never verified before buying the bike.
 
-These four pitfalls crop up in most accounts from cycle commuters who stopped after a few months. Conversely, those who stick with it for several years almost always tweaked their gear and route within the first few weeks, rather than waiting for a breakdown or a fall to react. For a broader look at other forms of soft mobility—scooters and shared transport included—the page [Bikes & new mobility](/en/bikes-personal-transport) covers the whole section.
+These four pitfalls crop up in most accounts from cycle commuters who stopped after a few months. Conversely, those who stick with it for several years almost always tweaked their gear and route within the first few weeks, rather than waiting for a breakdown or a fall to react. For a broader look at other forms of soft mobility—scooters and shared transport included—the page [Bikes & new mobility](/bikes-personal-transport/) covers the whole section.

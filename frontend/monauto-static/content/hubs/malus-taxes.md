@@ -28,11 +28,11 @@ Un surbonus de 1 200 € à 2 000 € s’ajoute si la batterie est fabriquée d
 
 Le malus CO₂ s’applique aux voitures neuves ou importées dont les émissions dépassent 118 g/km (barème 2026). Pour une voiture d’occasion importée, le calcul dépend de sa date de première immatriculation et de son taux d’émission. Par exemple, un véhicule immatriculé en 2020 avec 150 g/km de CO₂ peut coûter jusqu’à 2 000 € de malus en plus du prix d’achat. [Comment calculer ce malus ?](/calcul-malus-occasion-importee) explique la méthode en détail.
 
-Les familles nombreuses (3 enfants ou plus) bénéficient d’une exonération partielle ou totale. Pour en profiter, il faut fournir un justificatif de quotient familial ou un livret de famille. [Toutes les conditions ici](/exoneration-malus-famille-nombreuse).
+Les familles nombreuses (3 enfants ou plus) bénéficient d’une exonération partielle ou totale. Pour en profiter, il faut fournir un justificatif de quotient familial ou un livret de famille. [Toutes les conditions ici](/exoneration-malus-famille-nombreuse/).
 
 ## Taxe CO₂ sur les véhicules d’occasion : ce qui change en 2026
 
-La taxe CO₂ concerne aussi les véhicules d’occasion immatriculés pour la première fois après juin 2020. Son montant dépend du taux d’émission et de l’âge du véhicule. Par exemple, une voiture émettant 130 g/km achetée en 2026 peut coûter entre 50 € et 500 € de taxe supplémentaire. [Comment l’estimer avant l’achat ?](/taxe-co2-vehicule-occasion) détaille la démarche.
+La taxe CO₂ concerne aussi les véhicules d’occasion immatriculés pour la première fois après juin 2020. Son montant dépend du taux d’émission et de l’âge du véhicule. Par exemple, une voiture émettant 130 g/km achetée en 2026 peut coûter entre 50 € et 500 € de taxe supplémentaire. [Comment l’estimer avant l’achat ?](/taxe-co2-vehicule-occasion/) détaille la démarche.
 
 ![Contrôle technique d'une voiture d'occasion importée avec test d'émissions CO₂](/images/articles/malus-taxes-2.webp)
 

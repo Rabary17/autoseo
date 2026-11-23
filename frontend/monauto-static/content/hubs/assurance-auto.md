@@ -23,7 +23,7 @@ Deux contrats identiques sur le papier affichent souvent des écarts de prix con
 
 ![Comparaison de devis d'assurance auto sur ordinateur et smartphone](/images/articles/assurance-auto-1.webp)
 
-Le prix moyen d’une assurance auto en France tourne autour de 650 à 700 euros par an, mais ce chiffre cache de fortes disparités : un jeune conducteur en zone urbaine paie facilement le double d’un conducteur expérimenté en zone rurale. La page [comparer les offres](/categorie/assurance-auto/comparer-les-offres) détaille les critères qui font varier la prime : puissance du véhicule, kilométrage annuel, lieu de stationnement, antécédents. Un devis se compare toujours à garanties équivalentes, sinon la comparaison n’a pas de sens.
+Le prix moyen d’une assurance auto en France tourne autour de 650 à 700 euros par an, mais ce chiffre cache de fortes disparités : un jeune conducteur en zone urbaine paie facilement le double d’un conducteur expérimenté en zone rurale. La page [comparer les offres](/assurance-auto/) détaille les critères qui font varier la prime : puissance du véhicule, kilométrage annuel, lieu de stationnement, antécédents. Un devis se compare toujours à garanties équivalentes, sinon la comparaison n’a pas de sens.
 
 Un contrat avec une franchise à 150 euros sur le bris de glace coûte souvent plus cher à la souscription qu’un contrat à 300 euros de franchise, mais revient moins cher sur la durée si les sinistres de ce type sont fréquents dans la zone d’habitation. Comparer un devis gratuit exige donc de regarder au-delà du prix affiché en une seule ligne.
 
@@ -33,7 +33,7 @@ Trois grandes familles de contrats existent : au tiers, tiers étendu (ou interm
 
 ![Contrat d'assurance auto et clés de voiture posés sur un bureau](/images/articles/assurance-auto-2.webp)
 
-Le choix dépend surtout de l’âge et de la valeur du véhicule. Un utilitaire ancien de faible valeur n’a souvent pas besoin d’une couverture tous risques, alors qu’une voiture récente financée à crédit y trouve un vrai intérêt. La rubrique [formules et garanties](/categorie/assurance-auto/formules-garanties) détaille chaque option (bris de glace, vol, incendie, assistance 0 km) et précise dans quel cas elle mérite d’être ajoutée au contrat de base.
+Le choix dépend surtout de l’âge et de la valeur du véhicule. Un utilitaire ancien de faible valeur n’a souvent pas besoin d’une couverture tous risques, alors qu’une voiture récente financée à crédit y trouve un vrai intérêt. La rubrique [formules et garanties](/assurance-auto/) détaille chaque option (bris de glace, vol, incendie, assistance 0 km) et précise dans quel cas elle mérite d’être ajoutée au contrat de base.
 
 Certaines options se glissent facilement dans un contrat existant sans repartir de zéro : la garantie conducteur, par exemple, couvre les blessures du conducteur responsable de l’accident, absente par défaut d’un contrat au tiers simple. Elle mérite d’être ajoutée dès qu’un enfant ou un proche conduit régulièrement le véhicule.
 
@@ -43,7 +43,7 @@ Jeune conducteur, conducteur résilié, malussé, senior : chaque profil paie un
 
 ![Jeune conducteur tenant les clés de sa première voiture](/images/articles/assurance-auto-3.webp)
 
-Un jeune conducteur démarre son contrat avec un coefficient de 1, sans historique favorable, ce qui explique une prime élevée les deux à trois premières années. Un conducteur résilié pour non-paiement ou sinistres répétés se tourne souvent vers des compagnies spécialisées dans les profils à risque, avec des primes plus hautes mais une couverture réelle. La page [profils spécifiques](/categorie/assurance-auto/profils-specifiques) détaille les solutions par situation : jeune conducteur, malussé, résilié, senior ou conducteur occasionnel.
+Un jeune conducteur démarre son contrat avec un coefficient de 1, sans historique favorable, ce qui explique une prime élevée les deux à trois premières années. Un conducteur résilié pour non-paiement ou sinistres répétés se tourne souvent vers des compagnies spécialisées dans les profils à risque, avec des primes plus hautes mais une couverture réelle. La page [profils spécifiques](/assurance-auto/) détaille les solutions par situation : jeune conducteur, malussé, résilié, senior ou conducteur occasionnel.
 
 Un senior au volant depuis plus de 40 ans conserve en général un bonus maximal, mais certains assureurs appliquent une surprime après 75 ou 80 ans, en lien avec les statistiques d’accidentologie liées à l’âge. Un conducteur occasionnel, qui n’utilise pas de véhicule à titre principal, trouve de son côté des contrats au kilomètre plus adaptés qu’une assurance annuelle classique.
 
@@ -51,7 +51,7 @@ Un senior au volant depuis plus de 40 ans conserve en général un bonus maximal
 
 Une auto de collection, un utilitaire professionnel, une voiture sans permis ou un véhicule électrique ne s’assurent pas dans les mêmes conditions qu’une citadine classique. Le calcul de la prime intègre la valeur de remplacement, l’usage déclaré et parfois un kilométrage plafonné.
 
-Un véhicule électrique coûte souvent plus cher à assurer à l’achat neuf en raison du prix de la batterie, mais bénéficie de tarifs plus doux sur l’entretien mécanique. La rubrique [assurances spécifiques](/categorie/assurance-auto/assurances-specifiques) détaille les contrats adaptés aux véhicules de collection, utilitaires, deux-roues, voitures sans permis et véhicules électriques ou hybrides.
+Un véhicule électrique coûte souvent plus cher à assurer à l’achat neuf en raison du prix de la batterie, mais bénéficie de tarifs plus doux sur l’entretien mécanique. La rubrique [assurances spécifiques](/assurance-auto/) détaille les contrats adaptés aux véhicules de collection, utilitaires, deux-roues, voitures sans permis et véhicules électriques ou hybrides.
 
 ## Critères qui pèsent vraiment sur le tarif final
 
@@ -63,7 +63,7 @@ La puissance fiscale et la motorisation jouent aussi un rôle direct : un moteur
 
 Le coefficient de réduction-majoration (CRM), encadré par les articles A.121-1 et A.121-2 du Code des assurances, part de 1 à la signature du premier contrat. Chaque année sans sinistre responsable le réduit de 5 % (coefficient x 0,95) ; chaque sinistre responsable l’augmente de 25 % (x 1,25).
 
-Le bonus maximal, un coefficient de 0,50, s’obtient après 13 années consécutives sans accident responsable. À l’inverse, le malus grimpe jusqu’à 3,50 en cas de sinistres répétés. Ce calcul porte sur une période de référence de 12 mois qui se termine deux mois avant l’échéance annuelle du contrat, pas sur l’année civile : un détail qui explique pourquoi un accident récent n’affecte parfois pas immédiatement le contrat en cours. La page [bonus-malus](/categorie/assurance-auto/bonus-malus) détaille le calcul complet, avec des exemples chiffrés selon le nombre de sinistres.
+Le bonus maximal, un coefficient de 0,50, s’obtient après 13 années consécutives sans accident responsable. À l’inverse, le malus grimpe jusqu’à 3,50 en cas de sinistres répétés. Ce calcul porte sur une période de référence de 12 mois qui se termine deux mois avant l’échéance annuelle du contrat, pas sur l’année civile : un détail qui explique pourquoi un accident récent n’affecte parfois pas immédiatement le contrat en cours. La page [bonus-malus](/assurance-auto/) détaille le calcul complet, avec des exemples chiffrés selon le nombre de sinistres.
 
 ## Sinistre : déclaration et indemnisation
 
@@ -71,7 +71,7 @@ Un accident, un vol ou un bris de glace déclenche un délai légal de déclarat
 
 ![Expert examinant les dégâts d'un véhicule après un accident](/images/articles/assurance-auto-4.webp)
 
-L’indemnisation dépend de la formule souscrite et du constat amiable rempli sur place. Un tort partagé ou une responsabilité contestée retarde souvent le remboursement, le temps qu’un expert tranche. La page [sinistres et indemnisation](/categorie/assurance-auto/sinistres-indemnisation) détaille les délais, les recours en cas de désaccord et le fonctionnement du fonds de garantie quand l’auteur du dommage n’est pas assuré.
+L’indemnisation dépend de la formule souscrite et du constat amiable rempli sur place. Un tort partagé ou une responsabilité contestée retarde souvent le remboursement, le temps qu’un expert tranche. La page [sinistres et indemnisation](/assurance-auto/) détaille les délais, les recours en cas de désaccord et le fonctionnement du fonds de garantie quand l’auteur du dommage n’est pas assuré.
 
 ## Éviter les erreurs classiques au moment de la souscription
 

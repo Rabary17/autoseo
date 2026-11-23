@@ -20,7 +20,7 @@ Le réservoir GPL prend de la place dans le coffre, et son contrôle technique e
 
 ### Où trouver une station GPL en France ?
 
-Notre [carte interactive des stations GPL](/station-hydrogene-france-carte) recense plus de 1 800 points de distribution en 2026. Les régions les mieux couvertes ? Provence-Alpes-Côte d’Azur, Occitanie et Nouvelle-Aquitaine, où les stations sont espacées de moins de 50 km sur les axes principaux. En revanche, la Bretagne et la Normandie restent des déserts GPL : prévoyez un plein avant de partir, ou optez pour une voiture en bicarburation essence-GPL pour éviter les mauvaises surprises.
+Notre [carte interactive des stations GPL](/station-hydrogene-france-carte/) recense plus de 1 800 points de distribution en 2026. Les régions les mieux couvertes ? Provence-Alpes-Côte d’Azur, Occitanie et Nouvelle-Aquitaine, où les stations sont espacées de moins de 50 km sur les axes principaux. En revanche, la Bretagne et la Normandie restent des déserts GPL : prévoyez un plein avant de partir, ou optez pour une voiture en bicarburation essence-GPL pour éviter les mauvaises surprises.
 
 ### GPL : points forts et limites
 
@@ -110,6 +110,6 @@ Pour l’instant, l’hydrogène reste réservé aux early adopters et aux flott
 
 Pour aller plus loin, explorez nos articles dédiés :
 
--   [Voiture GPL : avantages et inconvénients en 2026](/voiture-gpl-avantages-inconvenients)
--   [GNV pour les utilitaires professionnels : tout ce qu’il faut savoir](/gnv-utilitaire-pro)
--   [Carte des stations hydrogène en France](/station-hydrogene-france-carte)
+-   [Voiture GPL : avantages et inconvénients en 2026](/voiture-gpl-avantages-inconvenients/)
+-   [GNV pour les utilitaires professionnels : tout ce qu’il faut savoir](/gnv-utilitaire-pro/)
+-   [Carte des stations hydrogène en France](/station-hydrogene-france-carte/)

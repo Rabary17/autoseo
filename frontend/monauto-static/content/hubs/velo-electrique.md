@@ -26,7 +26,7 @@ Dans notre [comparatif VAE ville 2026](/vae-ville-confort-comparatif), on passe 
 
 Besoin de remplacer la voiture pour les trajets familiaux ? Le vélo cargo électrique est fait pour ça. Avec une capacité de charge jusqu’à 100 kg, il embarque deux enfants, les courses de la semaine, ou même le chien. Les versions longues (type « longtail ») sont plus maniables en ville, tandis que les triporteurs offrent une stabilité rassurante pour les petits.
 
-Notre guide [vélo cargo électrique famille](/velo-cargo-electrique-famille) détaille les critères à vérifier avant d’acheter : taille du plateau de charge, type de freins – un cargo chargé freine moins bien –, autonomie (comptez 50-70 km en usage réel avec deux enfants à bord) et accessoires indispensables (siège bébé homologué, bâche de protection). Attention au poids : un cargo électrique peut peser jusqu’à 40 kg, ce qui complique le stationnement en appartement.
+Notre guide [vélo cargo électrique famille](/velo-cargo-electrique-famille/) détaille les critères à vérifier avant d’acheter : taille du plateau de charge, type de freins – un cargo chargé freine moins bien –, autonomie (comptez 50-70 km en usage réel avec deux enfants à bord) et accessoires indispensables (siège bébé homologué, bâche de protection). Attention au poids : un cargo électrique peut peser jusqu’à 40 kg, ce qui complique le stationnement en appartement.
 
 ## Batterie de VAE : combien de temps ça dure vraiment ?
 
@@ -36,7 +36,7 @@ La batterie, c’est le cœur d’un vélo électrique. En théorie, une batteri
 -   **Gare à la chaleur** : laisser son VAE en plein soleil l’été ou près d’un radiateur l’hiver accélère l’usure.
 -   **Le froid réduit l’autonomie** : en hiver, une batterie peut perdre 20 à 30 % de sa capacité par grand froid.
 
-Notre article sur la [durée de vie des batteries VAE](/batterie-vae-duree-de-vie) explique comment prolonger leur durée de vie, reconnaître les signes d’usure (autonomie qui chute brutalement, temps de charge anormalement long) et savoir quand la remplacer. Une batterie neuve coûte entre 500 € et 900 €, alors autant en prendre soin.
+Notre article sur la [durée de vie des batteries VAE](/batterie-vae-duree-de-vie/) explique comment prolonger leur durée de vie, reconnaître les signes d’usure (autonomie qui chute brutalement, temps de charge anormalement long) et savoir quand la remplacer. Une batterie neuve coûte entre 500 € et 900 €, alors autant en prendre soin.
 
 ## VAE reconditionné : la bonne affaire ou un risque ?
 
@@ -44,7 +44,7 @@ Notre article sur la [durée de vie des batteries VAE](/batterie-vae-duree-de-vi
 
 Un vélo électrique reconditionné, c’est un VAE d’occasion vérifié, réparé et remis à neuf par un professionnel. L’avantage ? Un prix 30 à 50 % moins cher qu’un modèle neuf, avec une garantie (souvent 12 à 24 mois) et l’assurance que la batterie et le moteur sont en bon état. Mais attention : tous les reconditionneurs ne se valent pas.
 
-Dans notre guide [VAE reconditionné avis](/vae-reconditionne-avis), on vous aide à faire le tri entre les bonnes et les mauvaises affaires. On y parle des points à vérifier absolument (état de la batterie, usure des pneus et des freins, historique du vélo), des marques qui se reconditionnent bien (et celles à éviter), et des pièges courants (comme les vélos volés remis en circulation). Un bon reconditionné peut durer des années, mais un mauvais choix, c’est la panne assurée.
+Dans notre guide [VAE reconditionné avis](/vae-reconditionne-avis/), on vous aide à faire le tri entre les bonnes et les mauvaises affaires. On y parle des points à vérifier absolument (état de la batterie, usure des pneus et des freins, historique du vélo), des marques qui se reconditionnent bien (et celles à éviter), et des pièges courants (comme les vélos volés remis en circulation). Un bon reconditionné peut durer des années, mais un mauvais choix, c’est la panne assurée.
 
 ## Quel budget prévoir pour un vélo électrique en 2026 ?
 
@@ -80,4 +80,4 @@ Pour ne pas vous tromper, voici comment adapter votre choix à votre quotidien :
 4.  **Campagne ou dénivelé** : optez pour un VAE tout-terrain avec une autonomie d’au moins 80 km et un moteur puissant (500 W minimum). Vérifiez aussi la qualité des suspensions et des pneus pour absorber les chocs.
 5.  **Petit budget** : un VAE d’entrée de gamme peut suffire pour des trajets occasionnels, mais évitez les modèles à moins de 1 200 €. Privilégiez les marques reconnues pour leur fiabilité (ex. Decathlon, Moustache, Cube).
 
-Notre [guide des meilleurs VAE 2026](/meilleur-vae-2026) passe en revue les modèles qui se distinguent sur ces critères, avec des tests terrain et des retours d’utilisateurs. Parce qu’un vélo électrique, ça se choisit avec la tête… et les jambes.
+Notre [guide des meilleurs VAE 2026](/meilleur-vae-2026/) passe en revue les modèles qui se distinguent sur ces critères, avec des tests terrain et des retours d’utilisateurs. Parce qu’un vélo électrique, ça se choisit avec la tête… et les jambes.

@@ -16,7 +16,7 @@ Taking the Private Hire Vehicle (PHV) licence exam, securing a CPAM (French Nati
 -   CPAM accreditation opens access to non-emergency medical transport, a market closed to PHVs.
 -   Between Uber and Bolt, the fare for the same journey can vary significantly depending on the time and area—comparing before booking avoids nasty surprises.
 
-This guide is part of our broader section on [shared mobility and transport](/en/shared-mobility), which also covers carpooling and e-scooter hire.
+This guide is part of our broader section on [shared mobility and transport](/shared-mobility/), which also covers carpooling and e-scooter hire.
 
 ## Requirements for working as a PHV driver
 

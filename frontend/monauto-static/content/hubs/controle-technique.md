@@ -27,7 +27,7 @@ Les échéances varient selon l’âge et le type de véhicule. Voici les règle
 
 *Source : service-public.gouv.fr*
 
-Un délai de tolérance de 2 mois est accordé après la date limite. Au-delà, vous risquez une amende et une immobilisation du véhicule. Pour les véhicules électriques, certains points spécifiques (batterie, câblage haute tension) sont vérifiés. Pour en savoir plus, consultez notre article sur [les spécificités du contrôle technique pour véhicules électriques](/ct-vehicule-electrique-specificites).
+Un délai de tolérance de 2 mois est accordé après la date limite. Au-delà, vous risquez une amende et une immobilisation du véhicule. Pour les véhicules électriques, certains points spécifiques (batterie, câblage haute tension) sont vérifiés. Pour en savoir plus, consultez notre article sur [les spécificités du contrôle technique pour véhicules électriques](/ct-vehicule-electrique-specificites/).
 
 ## Combien coûte un contrôle technique en 2026 ?
 
@@ -39,7 +39,7 @@ Les tarifs sont libres et varient selon les centres. Voici les fourchettes obser
 -   **Véhicule électrique ou hybride** : entre 85€ et 100€.
 -   **Moto** : entre 50€ et 90€.
 
-Les centres en Île-de-France pratiquent souvent des tarifs plus élevés. Pour trouver un contrôle technique pas cher près de chez vous, comparez les prix sur des plateformes comme [Mon Contrôle Technique](/controle-technique-pas-cher-pres). Attention aux offres trop alléchantes : un prix bas peut cacher un service expéditif ou des frais cachés pour la contre-visite.
+Les centres en Île-de-France pratiquent souvent des tarifs plus élevés. Pour trouver un contrôle technique pas cher près de chez vous, comparez les prix sur des plateformes comme [Mon Contrôle Technique](/controle-technique-pas-cher-pres/). Attention aux offres trop alléchantes : un prix bas peut cacher un service expéditif ou des frais cachés pour la contre-visite.
 
 ## Les 133 points vérifiés : défauts à éviter
 
@@ -53,7 +53,7 @@ Le contrôle technique examine 133 points répartis en 9 catégories. Voici les 
 -   **Visibilité** : pare-brise fissuré dans le champ de vision.
 -   **Structure** : corrosion perforante sur les longerons.
 
-Un défaut critique (freins HS, pollution excessive) impose une contre-visite sous 2 mois. Les défauts mineurs (ampoule grillée) sont signalés mais n’empêchent pas la validation. Pour tout savoir sur les délais et défauts de contre-visite, lisez notre guide [Contre-visite : délais et défauts à corriger](/contre-visite-delai-defauts).
+Un défaut critique (freins HS, pollution excessive) impose une contre-visite sous 2 mois. Les défauts mineurs (ampoule grillée) sont signalés mais n’empêchent pas la validation. Pour tout savoir sur les délais et défauts de contre-visite, lisez notre guide [Contre-visite : délais et défauts à corriger](/contre-visite-delai-defauts/).
 
 ## Préparer son véhicule : les vérifications essentielles
 
@@ -74,7 +74,7 @@ Pour les véhicules électriques, vérifiez aussi la batterie et le câblage hau
 -   **Oublier la date limite** : le contrôle doit être fait dans les 6 mois avant la date anniversaire des 4 ans du véhicule. Un dépassement de 2 mois entraîne une amende.
 -   **Négliger les défauts mineurs** : même s’ils n’empêchent pas la validation, ils peuvent devenir critiques lors du prochain contrôle.
 -   **Choisir un centre non agréé** : seul un centre agréé par l’État peut délivrer un procès-verbal valide. Vérifiez la liste sur utac.com.
--   **Ignorer les spécificités des véhicules électriques** : les bornes de recharge et la batterie font l’objet de vérifications supplémentaires. Pour en savoir plus, consultez notre article sur [les spécificités du contrôle technique pour véhicules électriques](/ct-vehicule-electrique-specificites).
+-   **Ignorer les spécificités des véhicules électriques** : les bornes de recharge et la batterie font l’objet de vérifications supplémentaires. Pour en savoir plus, consultez notre article sur [les spécificités du contrôle technique pour véhicules électriques](/ct-vehicule-electrique-specificites/).
 -   **Rouler sans contrôle technique à jour** : en cas d’accident, votre assurance peut refuser de couvrir les dommages.
 
 ## Que faire en cas de contre-visite ?
@@ -85,7 +85,7 @@ Si votre véhicule présente un défaut critique, vous avez 2 mois pour le faire
 2.  **Repassez la contre-visite** : présentez-vous dans un centre agréé avec le procès-verbal initial et la facture des réparations.
 3.  **Validez le contrôle** : si les réparations sont conformes, vous recevrez un nouveau procès-verbal valide pour 2 ans.
 
-La contre-visite est gratuite si elle est effectuée dans le même centre. Sinon, comptez entre 15€ et 30€. Pour plus d’informations, consultez notre guide [Contre-visite : délais et défauts](/contre-visite-delai-defauts).
+La contre-visite est gratuite si elle est effectuée dans le même centre. Sinon, comptez entre 15€ et 30€. Pour plus d’informations, consultez notre guide [Contre-visite : délais et défauts](/contre-visite-delai-defauts/).
 
 ## Contrôle technique moto : ce qui change en 2026
 
@@ -96,7 +96,7 @@ Depuis 2023, les motos de plus de 125 cm³ doivent passer un contrôle technique
 -   **Défauts critiques** : plaquettes de frein usées, pneus lisses, feu arrière défectueux.
 -   **Contre-visite** : obligatoire sous 2 mois en cas de défaut critique.
 
-Pour tout savoir sur le contrôle technique moto, lisez notre article [Contrôle technique moto : tout ce qu’il faut savoir](/controle-technique-moto-2026).
+Pour tout savoir sur le contrôle technique moto, lisez notre article [Contrôle technique moto : tout ce qu’il faut savoir](/controle-technique-moto-2026/).
 
 ## Questions pratiques sur le contrôle technique
 
@@ -108,7 +108,7 @@ Voici les questions les plus fréquentes des automobilistes :
 -   **Le contrôle technique est-il valable à l’étranger ?** Non, chaque pays a ses propres règles. Vérifiez les exigences du pays de destination (ex. : vignette Crit’Air pour l’Allemagne).
 -   **Comment contester un résultat de contrôle technique ?** Adressez-vous à la UTAC dans les 15 jours suivant le contrôle.
 
-Pour trouver un centre près de chez vous, utilisez notre outil [Contrôle technique pas cher près de moi](/controle-technique-pas-cher-pres).
+Pour trouver un centre près de chez vous, utilisez notre outil [Contrôle technique pas cher près de moi](/controle-technique-pas-cher-pres/).
 
 | Type de véhicule | Premier contrôle | Contrôles suivants |
 | --- | --- | --- |

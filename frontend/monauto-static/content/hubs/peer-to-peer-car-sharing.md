@@ -90,4 +90,4 @@ A few simple habits can help you avoid most bad surprises, whichever platform yo
 
 ## Broaden the comparison
 
-These pages cover the essentials for comparing platforms, calculating the true cost of a hire and avoiding the most common insurance pitfalls. To explore other ways of getting around without owning a car, our [shared mobility and transport](/en/shared-mobility) section also covers carpooling and public transport.
+These pages cover the essentials for comparing platforms, calculating the true cost of a hire and avoiding the most common insurance pitfalls. To explore other ways of getting around without owning a car, our [shared mobility and transport](/shared-mobility/) section also covers carpooling and public transport.

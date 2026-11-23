@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/profils-specifiques-couverture.webp"
 imageAlt: "Assurance auto profil spécifique : jeune conducteur, malussé, résilié"
 ---
-[Assurance auto](/assurance-auto) › Profils spécifiques
+[Assurance auto](/assurance-auto/) › Profils spécifiques
 
 Jeune conducteur, malussé, assuré résilié ou automobiliste qui roule peu : chaque profil paie un tarif différent et n’accède pas aux mêmes offres. Ce sous-cocon détaille cinq situations concrètes et pointe vers l’article qui correspond exactement à la vôtre.
 
@@ -109,4 +109,4 @@ Le choix du bon contrat dépend d’abord du facteur de risque qui pèse le plus
 | Petit rouleur | Forfait kilométrique surdimensionné | Passage à un contrat au kilomètre |
 | Jeune conducteur suivi | Absence de données de conduite | Boîtier télématique |
 
-Chaque situation détaillée ici renvoie vers un guide complet plutôt que vers une réponse mécanique. Pour comparer l’ensemble des contrats disponibles au-delà de ces profils, notre [guide complet de l’assurance auto](/assurance-auto) donne une vue d’ensemble utile avant de démarrer une demande de devis.
+Chaque situation détaillée ici renvoie vers un guide complet plutôt que vers une réponse mécanique. Pour comparer l’ensemble des contrats disponibles au-delà de ces profils, notre [guide complet de l’assurance auto](/assurance-auto/) donne une vue d’ensemble utile avant de démarrer une demande de devis.

@@ -23,13 +23,13 @@ Pour une entreprise qui exploite entre trois et trente véhicules, la question n
 
 ![Gestionnaire de flotte inspectant une rangée de fourgons utilitaires garés sur un parking d'entreprise](/images/articles/utilitaires-flottes-pro-1.webp)
 
-La [location longue durée et la gestion de flotte](/categorie/utilitaires-flottes-pro/lld-gestion-de-flotte/) permettent de lisser les coûts et d’externaliser l’entretien, mais le calcul change dès que le kilométrage grimpe ou que la durée de détention dépasse quatre ans. Un contrat mal calibré au départ génère des pénalités de restitution qui pèsent lourd en fin de bail.
+La [location longue durée et la gestion de flotte](/categorie/lld-gestion-de-flotte/) permettent de lisser les coûts et d’externaliser l’entretien, mais le calcul change dès que le kilométrage grimpe ou que la durée de détention dépasse quatre ans. Un contrat mal calibré au départ génère des pénalités de restitution qui pèsent lourd en fin de bail.
 
 ## Choisir un utilitaire adapté à son activité
 
 Un plombier qui transporte du matériel lourd n’a pas besoin du même véhicule qu’un livreur urbain qui multiplie les arrêts. Le choix se joue sur le volume utile, la charge utile réelle, souvent inférieure à l’annonce commerciale une fois les options montées, et la hauteur sous plafond pour travailler debout à l’arrière.
 
-Bien [choisir un utilitaire](/categorie/utilitaires-flottes-pro/choisir-un-utilitaire/) commence par lister les trajets types sur une semaine normale, pas sur le meilleur cas. Un fourgon surdimensionné consomme plus sans jamais servir sa capacité. Un fourgon trop petit oblige à multiplier les rotations.
+Bien [choisir un utilitaire](/utilitaires-flottes-pro/) commence par lister les trajets types sur une semaine normale, pas sur le meilleur cas. Un fourgon surdimensionné consomme plus sans jamais servir sa capacité. Un fourgon trop petit oblige à multiplier les rotations.
 
 La carrosserie compte aussi. Un fourgon tôlé protège la marchandise et isole du bruit. Un châssis-cabine avec benne ou plateau convient mieux au BTP ou aux espaces verts. Un fourgon vitré sert plutôt au transport de personnes ou de matériel fragile visible depuis l’avant. Le mauvais choix de carrosserie oblige souvent à revendre le véhicule avant la fin de l’amortissement prévu.
 
@@ -39,13 +39,13 @@ Un fourgon qui sort d’usine n’a rien d’un outil de travail. Rangements, é
 
 ![Aménagement intérieur d'un fourgon utilitaire avec rangements et étagères métalliques](/images/articles/utilitaires-flottes-pro-2.webp)
 
-L’[aménagement et l’équipement du fourgon](/categorie/utilitaires-flottes-pro/amenagement-equipement/) se pensent dès la commande, pas après livraison. Un plan d’aménagement mal anticipé oblige souvent à percer ou renforcer un plancher qui n’était pas prévu pour ça.
+L’[aménagement et l’équipement du fourgon](/categorie/amenagement-equipement/) se pensent dès la commande, pas après livraison. Un plan d’aménagement mal anticipé oblige souvent à percer ou renforcer un plancher qui n’était pas prévu pour ça.
 
 Le matériau des rangements change aussi la donne. Le bois pèse peu et se modifie facilement en atelier, mais résiste moins bien aux chocs répétés. L’aluminium ou l’acier pèsent plus lourd mais tiennent sur la durée, un critère décisif pour un véhicule qui roule six jours sur sept. Une cloison amovible entre cabine et zone de chargement protège le conducteur en cas de freinage brusque et limite les nuisances sonores.
 
 ## Utilitaires électriques : une transition qui s’accélère en ville
 
-Sur une tournée urbaine de moins de 150 km avec des arrêts fréquents, un [utilitaire électrique](/categorie/utilitaires-flottes-pro/utilitaires-electriques/) change vraiment la donne : coût au kilomètre réduit, accès facilité aux zones à faibles émissions, entretien allégé sans vidange ni embrayage à surveiller.
+Sur une tournée urbaine de moins de 150 km avec des arrêts fréquents, un [utilitaire électrique](/utilitaires-flottes-pro/) change vraiment la donne : coût au kilomètre réduit, accès facilité aux zones à faibles émissions, entretien allégé sans vidange ni embrayage à surveiller.
 
 ![Fourgon utilitaire électrique en charge sur une borne de dépôt professionnel](/images/articles/utilitaires-flottes-pro-3.webp)
 
@@ -55,7 +55,7 @@ Les zones à faibles émissions se durcissent dans plusieurs grandes villes, et 
 
 ## Fiscalité du véhicule professionnel : ce qui change la facture
 
-TVA récupérable, amortissement, malus au poids pour les véhicules les plus lourds, avantage en nature si le véhicule sort du cadre strictement professionnel : la [fiscalité du véhicule professionnel](/categorie/utilitaires-flottes-pro/fiscalite-vehicule-pro/) pèse autant que le prix d’achat sur le coût réel de possession.
+TVA récupérable, amortissement, malus au poids pour les véhicules les plus lourds, avantage en nature si le véhicule sort du cadre strictement professionnel : la [fiscalité du véhicule professionnel](/categorie/fiscalite-vehicule-pro/) pèse autant que le prix d’achat sur le coût réel de possession.
 
 Un choix de motorisation ou de carrosserie qui semble anecdotique au moment de la commande peut faire basculer le véhicule dans une tranche fiscale différente. Vérifier ce point avant de signer évite une mauvaise surprise à la première déclaration.
 

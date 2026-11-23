@@ -39,7 +39,7 @@ Le contrôle technique, souvent oublié dans le calcul, coûte en moyenne 78 €
 
 Le marché de l’électrique s’est densifié en quelques années : citadines à moins de 25 000 €, familiales à 400 km d’autonomie réelle, SUV premium au-delà de 60 000 €. Le bon choix dépend moins de la fiche technique que de l’usage réel : trajets quotidiens, recharge disponible chez soi ou non, budget mensuel fixé en amont.
 
-Comparer sur le seul prix catalogue mène souvent à une erreur de choix. Deux modèles au même tarif peuvent afficher un écart de plusieurs milliers d’euros sur la revente à 5 ans selon la marque et la fiabilité du pack batterie. La [sélection des modèles électriques par usage et par budget](/categorie/electrique-hybride/modeles-electriques/) croise ces critères pour éviter ce piège.
+Comparer sur le seul prix catalogue mène souvent à une erreur de choix. Deux modèles au même tarif peuvent afficher un écart de plusieurs milliers d’euros sur la revente à 5 ans selon la marque et la fiabilité du pack batterie. La [sélection des modèles électriques par usage et par budget](/electrique-hybride/) croise ces critères pour éviter ce piège.
 
 ## L’hybride rechargeable, un compromis toujours pertinent ?
 
@@ -67,7 +67,7 @@ Installer une borne murale coûte entre 800 et 1 500 € pose comprise, un inves
 
 Sur autoroute, une recharge rapide de 150 kW et plus redonne 80 % de batterie en 20 à 30 minutes sur la plupart des modèles récents. Le prix au kWh y grimpe pourtant nettement au-dessus du tarif domicile, parfois du double.
 
-La disponibilité des bornes pose plus de problèmes sur les trajets de vacances que la vitesse de charge elle-même : aux heures de pointe estivales, l’attente dépasse parfois la durée de la recharge. Le dossier [recharge publique et itinérance longue distance](/categorie/electrique-hybride/recharge-publique-itinerance/) liste les réseaux les plus fiables et les applications pour anticiper une file d’attente.
+La disponibilité des bornes pose plus de problèmes sur les trajets de vacances que la vitesse de charge elle-même : aux heures de pointe estivales, l’attente dépasse parfois la durée de la recharge. Le dossier [recharge publique et itinérance longue distance](/electrique-hybride/) liste les réseaux les plus fiables et les applications pour anticiper une file d’attente.
 
 ## Aides et fiscalité : combien l’État finance réellement
 
@@ -79,13 +79,13 @@ La prime à la conversion, le bonus et les aides locales se cumulent parfois, à
 
 Convertir un véhicule thermique en électrique via un kit de rétrofit homologué coûte entre 15 000 et 25 000 € actuellement, un montant qui dépasse souvent la valeur du véhicule d’origine. La technologie progresse néanmoins vite, portée par des filières spécialisées sur les utilitaires et les véhicules de collection.
 
-D’autres pistes avancent en parallèle : batteries à état solide annoncées pour la fin de la décennie, recharge par induction encore expérimentale, allègement des packs pour gagner en autonomie sans grossir la batterie. Le point complet sur [le rétrofit électrique et les technologies à venir](/categorie/electrique-hybride/technologies-d-avenir-retrofit/) sépare ce qui est déjà disponible de ce qui n’a pas quitté le stade d’annonce commerciale.
+D’autres pistes avancent en parallèle : batteries à état solide annoncées pour la fin de la décennie, recharge par induction encore expérimentale, allègement des packs pour gagner en autonomie sans grossir la batterie. Le point complet sur [le rétrofit électrique et les technologies à venir](/electrique-hybride/) sépare ce qui est déjà disponible de ce qui n’a pas quitté le stade d’annonce commerciale.
 
 ## Voiture autonome et connectée : où en est-on vraiment
 
 La conduite autonome de niveau 3, autorisée sur certains tronçons d’autoroute en Europe, ne dispense pas le conducteur de garder les mains prêtes à reprendre le volant : elle gère l’accélération et la trajectoire sur autoroute dégagée, rien de plus pour l’instant sur le marché grand public.
 
-La connectivité, elle, avance plus vite : mises à jour à distance, diagnostic prédictif des pannes, applications qui pilotent la recharge à distance. Le dossier [voiture autonome et connectée, ce qui existe vraiment](/categorie/electrique-hybride/voiture-autonome-connectee/) distingue les fonctions déjà opérationnelles des promesses marketing.
+La connectivité, elle, avance plus vite : mises à jour à distance, diagnostic prédictif des pannes, applications qui pilotent la recharge à distance. Le dossier [voiture autonome et connectée, ce qui existe vraiment](/electrique-hybride/) distingue les fonctions déjà opérationnelles des promesses marketing.
 
 ## Entretien et fiabilité : ce que révèlent les pannes les plus fréquentes
 

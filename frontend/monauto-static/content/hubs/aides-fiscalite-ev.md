@@ -111,4 +111,4 @@ Trois erreurs reviennent souvent dans les dossiers refusés ou sous-évalués :
 -   Signer un leasing social sans vérifier le kilométrage réellement parcouru, ce qui déclenche des frais au-delà du forfait prévu.
 -   Oublier de signaler un véhicule électrique de fonction au service paie, ce qui maintient l’ancien taux d’avantage en nature pendant plusieurs mois.
 
-Ces quatre dispositifs ne couvrent pas tout ce qui touche à l’électrique au quotidien. Pour l’autonomie, la recharge ou l’entretien, direction notre dossier complet sur [l’électrique et l’hybride](/electrique-hybride).
+Ces quatre dispositifs ne couvrent pas tout ce qui touche à l’électrique au quotidien. Pour l’autonomie, la recharge ou l’entretien, direction notre dossier complet sur [l’électrique et l’hybride](/electrique-hybride/).

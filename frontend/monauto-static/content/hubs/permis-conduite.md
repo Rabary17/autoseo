@@ -23,7 +23,7 @@ Auto-école traditionnelle, plateforme en ligne, cours particuliers : le format 
 
 ![Élève en train de s'exercer à une manœuvre lors d'une leçon de conduite](/images/articles/permis-conduite-1.webp)
 
-Le financement pèse souvent plus dans la décision que le nombre d’heures de conduite. Selon le statut du candidat (salarié, demandeur d’emploi, étudiant), plusieurs dispositifs réduisent le reste à charge. Notre guide pour [financer sa formation au permis](/categorie/permis-conduite/auto-ecoles-financement) détaille les aides mobilisables et les pièges des forfaits « tout compris » qui excluent les heures supplémentaires en cas d’échec pratique.
+Le financement pèse souvent plus dans la décision que le nombre d’heures de conduite. Selon le statut du candidat (salarié, demandeur d’emploi, étudiant), plusieurs dispositifs réduisent le reste à charge. Notre guide pour [financer sa formation au permis](/permis-conduite/) détaille les aides mobilisables et les pièges des forfaits « tout compris » qui excluent les heures supplémentaires en cas d’échec pratique.
 
 ## Permis moto & autres catégories : du A1 au A sans repasser l’examen
 
@@ -31,7 +31,7 @@ Le permis A1 s’obtient dès 16 ans et limite la moto à 125 cm³ et 11 kW (15 
 
 ![Motard équipé de gants homologués et d'un casque en ville](/images/articles/permis-conduite-2.webp)
 
-Pour accéder au permis A sans limite de puissance, deux chemins existent : 24 ans directement, ou 20 ans après deux années de détention du A2, via une formation complémentaire de 7 heures sans repasser l’examen. Une attestation de fin de formation suffit à mettre à jour le permis. Ce genre de détail change tout dans la planification d’un budget moto, tout comme l’équipement : les gants homologués CE (norme EN 13594) sont obligatoires depuis novembre 2016, et leur absence coûte 68 € d’amende plus un point de retrait, pas seulement une remarque au contrôle. Le détail des [catégories de permis moto](/categorie/permis-conduite/permis-moto-autres) aide à situer où se place chaque projet, du 125 cm³ au gros cube.
+Pour accéder au permis A sans limite de puissance, deux chemins existent : 24 ans directement, ou 20 ans après deux années de détention du A2, via une formation complémentaire de 7 heures sans repasser l’examen. Une attestation de fin de formation suffit à mettre à jour le permis. Ce genre de détail change tout dans la planification d’un budget moto, tout comme l’équipement : les gants homologués CE (norme EN 13594) sont obligatoires depuis novembre 2016, et leur absence coûte 68 € d’amende plus un point de retrait, pas seulement une remarque au contrôle. Le détail des [catégories de permis moto](/permis-conduite/) aide à situer où se place chaque projet, du 125 cm³ au gros cube.
 
 ## Éco-conduite : ce que l’étiquette WLTP ne montre pas
 
@@ -39,7 +39,7 @@ Le chiffre d’autonomie affiché sur la fiche technique ne se retrouve presque 
 
 ![Conducteur consultant l'autonomie affichée au tableau de bord en hiver](/images/articles/permis-conduite-3.webp)
 
-En hiver, la batterie perd de son efficacité et le chauffage de l’habitacle ponctionne l’énergie disponible : la perte supplémentaire atteint 20 à 30 %, parfois jusqu’à 30 % sur autoroute. Un style de conduite plus souple ne compense pas tout, mais il limite la casse sur les longs trajets. Les techniques concrètes pour [adopter les bons réflexes d’éco-conduite](/categorie/permis-conduite/eco-conduite) s’appliquent aussi bien à un thermique qu’à un véhicule électrique, avec des gains différents selon la motorisation.
+En hiver, la batterie perd de son efficacité et le chauffage de l’habitacle ponctionne l’énergie disponible : la perte supplémentaire atteint 20 à 30 %, parfois jusqu’à 30 % sur autoroute. Un style de conduite plus souple ne compense pas tout, mais il limite la casse sur les longs trajets. Les techniques concrètes pour [adopter les bons réflexes d’éco-conduite](/permis-conduite/) s’appliquent aussi bien à un thermique qu’à un véhicule électrique, avec des gains différents selon la motorisation.
 
 ## Points & infractions : le permis probatoire en pratique
 
@@ -59,19 +59,19 @@ La durée de cette période probatoire et sa vitesse de reconstitution ne sont p
 
 Une seule règle casse ce mécanisme : toute infraction avec retrait de points, même mineure, remet le compteur annuel à zéro jusqu’à la fin de la période probatoire. Un franchissement de feu rouge ou de stop retire 4 points et coûte 135 € d’amende forfaitaire. Un taux d’alcool délictuel retire 6 points, avec des sanctions pénales complémentaires possibles selon le taux et l’antécédent. Pendant la période probatoire, toute infraction qui retire 3 points ou plus impose en plus un stage de sensibilisation obligatoire, à suivre dans les 4 mois suivant la notification.
 
-Récupérer ses points suit trois logiques différentes selon la situation : 2 ans sans nouvelle infraction pour effacer une infraction mineure, 3 ans pour une infraction grave, ou un stage volontaire qui restitue 4 points immédiatement, dans la limite d’un stage par an et du plafond de 12 points. Le guide pour [récupérer des points via un stage](/categorie/permis-conduite/points-infractions) détaille les délais et les conditions selon le type d’infraction.
+Récupérer ses points suit trois logiques différentes selon la situation : 2 ans sans nouvelle infraction pour effacer une infraction mineure, 3 ans pour une infraction grave, ou un stage volontaire qui restitue 4 points immédiatement, dans la limite d’un stage par an et du plafond de 12 points. Le guide pour [récupérer des points via un stage](/permis-conduite/) détaille les délais et les conditions selon le type d’infraction.
 
 ## Sécurité routière : les signaux à ne pas ignorer
 
 Certains véhicules récents affichent une alerte de fatigue du conducteur, généralement en orange, quand le système détecte des signes de baisse de vigilance dans le comportement de conduite. Ce n’est pas un défaut mécanique, c’est une recommandation à prendre au sérieux : s’arrêter dès que possible pour faire une pause plutôt que de continuer en comptant sur la volonté.
 
-La sécurité routière ne se limite pas à ce type d’alerte électronique. Elle couvre aussi les comportements à risque, les distances de sécurité et les équipements obligatoires selon le véhicule. Le volet [identifier les alertes de sécurité routière](/categorie/permis-conduite/securite-routiere) rassemble les cas concrets rencontrés au quotidien, du voyant tableau de bord au réflexe qui évite l’accident.
+La sécurité routière ne se limite pas à ce type d’alerte électronique. Elle couvre aussi les comportements à risque, les distances de sécurité et les équipements obligatoires selon le véhicule. Le volet [identifier les alertes de sécurité routière](/permis-conduite/) rassemble les cas concrets rencontrés au quotidien, du voyant tableau de bord au réflexe qui évite l’accident.
 
 ## Permis B & code : le socle avant tout le reste
 
 Le permis B garde un statut particulier : c’est la référence à partir de laquelle se construisent la plupart des autres démarches, du capital de points à l’assurance auto. Un conducteur qui l’obtient hors filière probatoire démarre avec 12 points, contre 6 pour un jeune conducteur.
 
-L’âge minimum et les conditions d’accès au permis B, ainsi que le contenu exact de l’épreuve de code, figurent sur les supports officiels publiés par service-public.gouv.fr. Réviser le code ne se limite pas à mémoriser des questions : les candidats qui échouent en pratique après un code réussi de longue date perdent souvent l’habitude des réflexes de conduite. Le volet [réviser le code de la route et le permis B](/categorie/permis-conduite/permis-b-code) couvre ce socle, panneaux, priorités et règles de circulation compris.
+L’âge minimum et les conditions d’accès au permis B, ainsi que le contenu exact de l’épreuve de code, figurent sur les supports officiels publiés par service-public.gouv.fr. Réviser le code ne se limite pas à mémoriser des questions : les candidats qui échouent en pratique après un code réussi de longue date perdent souvent l’habitude des réflexes de conduite. Le volet [réviser le code de la route et le permis B](/permis-conduite/) couvre ce socle, panneaux, priorités et règles de circulation compris.
 
 ## Permis international et dématérialisation : ce qui change progressivement
 

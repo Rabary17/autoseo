@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/bonus-malus-couverture.webp"
 imageAlt: "Bonus-Malus Assurance Auto : Comprendre le Coefficient CRM"
 ---
-[Assurance auto](/assurance-auto) > Bonus-malus
+[Assurance auto](/assurance-auto/) > Bonus-malus
 
 Un conducteur sans sinistre responsable depuis 13 ans paie sa prime avec un coefficient de 0,50, soit la moitié du tarif de référence. Un conducteur responsable d’un accident voit son coefficient grimper de 25 % dès l’échéance suivante. Entre ces deux extrêmes, plusieurs questions reviennent sans cesse : comment se calcule le coefficient, comment le faire redescendre après une hausse, ce que rapporte réellement le bonus maximal, où le consulter, et pourquoi les jeunes conducteurs paient une surprime distincte. Chaque page listée plus bas répond à une de ces questions précises.
 

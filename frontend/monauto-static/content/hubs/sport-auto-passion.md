@@ -25,27 +25,27 @@ Chaque univers de ce silo répond à un budget, un niveau d’engagement et une 
 
 ### Youngtimers & collection
 
-Une youngtimer, c’est une voiture des années 1980 à 2000 qui a franchi le cap de la banalité pour entrer dans une cote de collection. GTI, coupés sportifs, japonaises culte : le marché grimpe vite dès qu’un modèle devient rare en bon état d’origine. La difficulté n’est pas de trouver la voiture, elle est de juger son état réel avant l’achat, loin des photos flatteuses d’une annonce. Notre guide sur les [youngtimers et la collection](/categorie/sport-auto-passion/youngtimers-collection/) détaille les modèles qui montent en valeur et les pièges classiques d’un achat mal préparé.
+Une youngtimer, c’est une voiture des années 1980 à 2000 qui a franchi le cap de la banalité pour entrer dans une cote de collection. GTI, coupés sportifs, japonaises culte : le marché grimpe vite dès qu’un modèle devient rare en bon état d’origine. La difficulté n’est pas de trouver la voiture, elle est de juger son état réel avant l’achat, loin des photos flatteuses d’une annonce. Notre guide sur les [youngtimers et la collection](/sport-auto-passion/) détaille les modèles qui montent en valeur et les pièges classiques d’un achat mal préparé.
 
 ### Track days & circuits
 
-Rouler sur circuit sans risquer une amende ni un accrochage avec un tiers, c’est tout le principe du track day. Encore faut-il choisir le bon circuit, la bonne assurance et préparer sa voiture pour tenir la distance sans la casser au troisième tour. Notre dossier [track days et circuits](/categorie/sport-auto-passion/track-days-circuits/) explique comment s’inscrire à sa première session et ce qu’il faut vérifier avant de prendre la piste.
+Rouler sur circuit sans risquer une amende ni un accrochage avec un tiers, c’est tout le principe du track day. Encore faut-il choisir le bon circuit, la bonne assurance et préparer sa voiture pour tenir la distance sans la casser au troisième tour. Notre dossier [track days et circuits](/sport-auto-passion/) explique comment s’inscrire à sa première session et ce qu’il faut vérifier avant de prendre la piste.
 
 ### F1 & compétition
 
-Suivre la F1 aujourd’hui demande de comprendre un règlement technique qui évolue presque chaque saison, du budget cap aux évolutions aérodynamiques. Notre page [F1 et compétition](/categorie/sport-auto-passion/f1-competition/) revient sur les écuries, les pilotes et les règles qui font basculer un championnat d’un côté ou de l’autre.
+Suivre la F1 aujourd’hui demande de comprendre un règlement technique qui évolue presque chaque saison, du budget cap aux évolutions aérodynamiques. Notre page [F1 et compétition](/categorie/f1-competition/) revient sur les écuries, les pilotes et les règles qui font basculer un championnat d’un côté ou de l’autre.
 
 ### Tuning & préparation
 
-Préparer un moteur, c’est gagner de la puissance sans perdre en fiabilité, un équilibre que beaucoup de préparations amateurs ratent complètement. Reprogrammation, échappement, admission : chaque étape a un effet mesurable, et parfois un effet secondaire coûteux quelques milliers de kilomètres plus tard. La rubrique [tuning et préparation](/categorie/sport-auto-passion/tuning-preparation/) détaille ce qui marche vraiment et ce qui abîme un moteur à moyen terme.
+Préparer un moteur, c’est gagner de la puissance sans perdre en fiabilité, un équilibre que beaucoup de préparations amateurs ratent complètement. Reprogrammation, échappement, admission : chaque étape a un effet mesurable, et parfois un effet secondaire coûteux quelques milliers de kilomètres plus tard. La rubrique [tuning et préparation](/sport-auto-passion/) détaille ce qui marche vraiment et ce qui abîme un moteur à moyen terme.
 
 ### Rallye & endurance
 
-Le rallye amateur et les épreuves d’endurance forment la porte d’entrée la plus accessible vers la compétition officielle, avant d’envisager une licence circuit nettement plus coûteuse. Notre section [rallye et endurance](/categorie/sport-auto-passion/rallye-endurance/) couvre les épreuves françaises, le matériel obligatoire et les licences à obtenir pour s’aligner au départ.
+Le rallye amateur et les épreuves d’endurance forment la porte d’entrée la plus accessible vers la compétition officielle, avant d’envisager une licence circuit nettement plus coûteuse. Notre section [rallye et endurance](/sport-auto-passion/) couvre les épreuves françaises, le matériel obligatoire et les licences à obtenir pour s’aligner au départ.
 
 ### Simracing
 
-Un volant à retour de force et trois écrans suffisent aujourd’hui à reproduire une bonne partie des sensations d’un vrai circuit, pour une fraction du budget d’un track day. Notre guide [simracing](/categorie/sport-auto-passion/simracing/) compare le matériel d’entrée de gamme et les configurations qui rapprochent le plus de la piste réelle.
+Un volant à retour de force et trois écrans suffisent aujourd’hui à reproduire une bonne partie des sensations d’un vrai circuit, pour une fraction du budget d’un track day. Notre guide [simracing](/sport-auto-passion/) compare le matériel d’entrée de gamme et les configurations qui rapprochent le plus de la piste réelle.
 
 ## Ce qui casse quand on pousse sa mécanique
 

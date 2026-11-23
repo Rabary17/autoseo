@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/trottinettes-edpm-couverture.webp"
 imageAlt: "Trottinette électrique et EDPM : quel guide choisir en 2026 ?"
 ---
-[Accueil](/) › [Vélo & nouvelles mobilités](/velo-nouvelles-mobilites) › Trottinettes & EDPM
+[Accueil](/) › [Vélo & nouvelles mobilités](/velo-nouvelles-mobilites/) › Trottinettes & EDPM
 
 Âge minimum, vitesse autorisée, casque, assurance, choix du modèle : cinq questions reviennent sans cesse sur les trottinettes électriques et les EDPM. Chaque article listé plus bas répond à une seule de ces questions, avec les chiffres et les textes en vigueur pour 2026. Pas besoin de tout lire d’un coup : repérez la question qui vous concerne et allez directement à l’article correspondant.
 
@@ -86,4 +86,4 @@ Autre confusion fréquente : le marquage antivol obligatoire depuis 2021 concern
 
 Les contrôles se multiplient en centre-ville, en particulier sur les axes où trottinettes et piétons se croisent. Rouler sur le trottoir, dépasser la vitesse autorisée en zone piétonne ou transporter un passager expose au même risque : amende et parfois immobilisation de l’engin sur place.
 
-Trottinette, vélo électrique, scooter partagé : ces mobilités partagent souvent la même rue et les mêmes questions d’assurance ou d’entretien. Le silo [vélo & nouvelles mobilités](/velo-nouvelles-mobilites) centralise l’ensemble de nos guides sur le vélotaf, les aides à l’achat et les transports partagés.
+Trottinette, vélo électrique, scooter partagé : ces mobilités partagent souvent la même rue et les mêmes questions d’assurance ou d’entretien. Le silo [vélo & nouvelles mobilités](/velo-nouvelles-mobilites/) centralise l’ensemble de nos guides sur le vélotaf, les aides à l’achat et les transports partagés.

@@ -19,7 +19,7 @@ Un prix affiché à 8 000 € peut cacher un budget réel de 8 500 à 9 000 € 
 
 ## Vérifier l’historique et éviter les vices cachés
 
-Un contrôle technique périmé, un compteur trafiqué ou un accident caché coûtent cher une fois la signature passée. Concrètement, trois documents suffisent pour un premier tri : la carte grise, le carnet d’entretien et le rapport [historique du véhicule](/categorie/voiture-d-occasion/historique-vices-caches/), gratuit via le numéro d’immatriculation. Un kilométrage qui stagne sur plusieurs contrôles techniques successifs doit alerter immédiatement, avant même de regarder le reste du dossier.
+Un contrôle technique périmé, un compteur trafiqué ou un accident caché coûtent cher une fois la signature passée. Concrètement, trois documents suffisent pour un premier tri : la carte grise, le carnet d’entretien et le rapport [historique du véhicule](/voiture-d-occasion/), gratuit via le numéro d’immatriculation. Un kilométrage qui stagne sur plusieurs contrôles techniques successifs doit alerter immédiatement, avant même de regarder le reste du dossier.
 
 ![Vérification des documents et de l'historique d'une voiture avant achat](/images/articles/voiture-d-occasion-1.webp)
 
@@ -29,17 +29,17 @@ Un essai routier de dix minutes suffit rarement à déceler tous les défauts, m
 
 ## Bien acheter une occasion : particulier, garage ou mandataire
 
-Le prix affiché n’est jamais le budget réel. Un véhicule à 8 000 € chez un particulier peut revenir moins cher qu’un modèle à 7 500 € chez un professionnel sans garantie, une fois les frais de remise en état comptés. Petites annonces entre particuliers, garages traditionnels, plateformes spécialisées ou mandataires : [chaque circuit d’achat](/categorie/voiture-d-occasion/acheter-une-occasion/) a ses propres marges de négociation, à condition de savoir où appuyer.
+Le prix affiché n’est jamais le budget réel. Un véhicule à 8 000 € chez un particulier peut revenir moins cher qu’un modèle à 7 500 € chez un professionnel sans garantie, une fois les frais de remise en état comptés. Petites annonces entre particuliers, garages traditionnels, plateformes spécialisées ou mandataires : [chaque circuit d’achat](/voiture-d-occasion/) a ses propres marges de négociation, à condition de savoir où appuyer.
 
 ![Acheteur examinant le moteur d'une voiture d'occasion chez un vendeur](/images/articles/voiture-d-occasion-2.webp)
 
 ## Cote et estimation : connaître la vraie valeur avant de négocier
 
-Négocier sans connaître la cote du modèle revient à négocier à l’aveugle. Les barèmes officiels donnent une base, mais l’état réel, le kilométrage et la région font varier le prix de plusieurs centaines d’euros. Une même berline diesel de trois ans peut afficher un écart de 800 à 1 200 € entre deux régions, selon la demande locale et le nombre d’annonces comparables au moment de la vente. Croiser plusieurs barèmes avec l’état réel du véhicule reste le seul moyen d’arriver à un [prix d’achat ou de vente réaliste](/categorie/voiture-d-occasion/cote-estimation/), plutôt qu’un chiffre sorti d’une moyenne nationale.
+Négocier sans connaître la cote du modèle revient à négocier à l’aveugle. Les barèmes officiels donnent une base, mais l’état réel, le kilométrage et la région font varier le prix de plusieurs centaines d’euros. Une même berline diesel de trois ans peut afficher un écart de 800 à 1 200 € entre deux régions, selon la demande locale et le nombre d’annonces comparables au moment de la vente. Croiser plusieurs barèmes avec l’état réel du véhicule reste le seul moyen d’arriver à un [prix d’achat ou de vente réaliste](/voiture-d-occasion/), plutôt qu’un chiffre sorti d’une moyenne nationale.
 
 ## Enchères et ventes pro : de bonnes affaires sous conditions
 
-Les ventes aux enchères et les lots de véhicules pro, loueurs ou flottes d’entreprise, permettent parfois d’acheter 15 à 30 % sous la cote. Le revers : pas d’essai, souvent pas de garantie, et des frais d’enchère à ajouter au prix marteau. Une [vente domaniale ou judiciaire](/categorie/voiture-d-occasion/encheres-ventes-pro/) ne s’improvise pas : accès réservé, déroulement particulier, pièges budgétaires à anticiper avant d’enchérir.
+Les ventes aux enchères et les lots de véhicules pro, loueurs ou flottes d’entreprise, permettent parfois d’acheter 15 à 30 % sous la cote. Le revers : pas d’essai, souvent pas de garantie, et des frais d’enchère à ajouter au prix marteau. Une [vente domaniale ou judiciaire](/voiture-d-occasion/) ne s’improvise pas : accès réservé, déroulement particulier, pièges budgétaires à anticiper avant d’enchérir.
 
 ## Financer son achat : cash, crédit ou LOA
 
@@ -47,11 +47,11 @@ Payer cash évite les intérêts, mais immobilise souvent la trésorerie qu’il
 
 ## Garantie occasion : sécuriser l’achat après la vente
 
-Une garantie constructeur encore active ne couvre pas les mêmes pannes qu’une garantie commerciale souscrite chez un professionnel indépendant. Certaines excluent l’embrayage, la climatisation ou l’électronique, justement les postes qui coûtent le plus cher en réparation. Entre [garantie légale des vices cachés et garanties payantes](/categorie/voiture-d-occasion/garanties-occasion/), l’écart se joue sur ce que le contrat couvre vraiment, pas sur ce qu’annonce la plaquette commerciale.
+Une garantie constructeur encore active ne couvre pas les mêmes pannes qu’une garantie commerciale souscrite chez un professionnel indépendant. Certaines excluent l’embrayage, la climatisation ou l’électronique, justement les postes qui coûtent le plus cher en réparation. Entre [garantie légale des vices cachés et garanties payantes](/voiture-d-occasion/), l’écart se joue sur ce que le contrat couvre vraiment, pas sur ce qu’annonce la plaquette commerciale.
 
 ## Vendre sa voiture au meilleur prix
 
-Vendre vite et vendre cher sont rarement compatibles. Un particulier pressé par le temps accepte souvent une offre 10 à 15 % sous le prix qu’il aurait obtenu avec deux semaines de patience et de bonnes photos. Certificat de cession, déclaration en ligne : les étapes administratives pour [vendre sa voiture](/categorie/voiture-d-occasion/vendre-sa-voiture/) comptent presque autant que les leviers qui font grimper le prix final.
+Vendre vite et vendre cher sont rarement compatibles. Un particulier pressé par le temps accepte souvent une offre 10 à 15 % sous le prix qu’il aurait obtenu avec deux semaines de patience et de bonnes photos. Certificat de cession, déclaration en ligne : les étapes administratives pour [vendre sa voiture](/voiture-d-occasion/) comptent presque autant que les leviers qui font grimper le prix final.
 
 ![Remise des clés lors de la vente d'une voiture entre particuliers](/images/articles/voiture-d-occasion-3.webp)
 

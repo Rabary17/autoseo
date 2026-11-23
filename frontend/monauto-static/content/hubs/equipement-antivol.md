@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/equipement-antivol-couverture.webp"
 imageAlt: "Équipement & antivol vélo : éclairage, antivol U, GPS et marquage"
 ---
-Accueil > [Vélo & nouvelles mobilités](/velo-nouvelles-mobilites) > Équipement & antivol
+Accueil > [Vélo & nouvelles mobilités](/velo-nouvelles-mobilites/) > Équipement & antivol
 
 Antivol qui cède en 30 secondes, marquage bicycode obligatoire depuis 2021, éclairage insuffisant qui vaut une amende : l’équipement d’un vélo se joue sur des détails précis. Le budget compte moins que le bon choix au bon endroit : un antivol premier prix mal utilisé protège parfois moins qu’un modèle correct correctement posé. Quatre guides pratiques aident à choisir l’antivol, l’éclairage, le traceur GPS et à comprendre l’obligation de marquage, selon l’usage réel : vélotaf, ville, vélo cargo ou usage occasionnel.
 
@@ -91,4 +91,4 @@ Attacher son vélo à un poteau qui ne tient pas au sol, laisser la roue avant l
 -   Antivol laissé ouvert ou mal verrouillé par habitude, ce qui revient à ne pas en avoir
 -   Aucun marquage ni traceur en place, ce qui complique toute restitution en cas de vol
 
-Un vélo correctement protégé combine un bon point d’attache, un antivol certifié et une trace numérique ou physique qui permet de l’identifier après coup. Pour élargir la recherche à l’ensemble de la mobilité douce, la page [vélo & nouvelles mobilités](/velo-nouvelles-mobilites) sert de point de départ vers les guides vélotaf, trottinette et réglementation.
+Un vélo correctement protégé combine un bon point d’attache, un antivol certifié et une trace numérique ou physique qui permet de l’identifier après coup. Pour élargir la recherche à l’ensemble de la mobilité douce, la page [vélo & nouvelles mobilités](/velo-nouvelles-mobilites/) sert de point de départ vers les guides vélotaf, trottinette et réglementation.

@@ -86,10 +86,10 @@ Même sans chercher la pompe la moins chère, vous pouvez réduire votre facture
 
 Ce sous-hub regroupe quatre articles complémentaires pour vous aider à payer moins à la pompe. Voici comment les utiliser :
 
--   [Carburant moins cher autour de moi](/carburant-moins-cher-autour-de-moi) : l’outil indispensable pour trouver la pompe la moins chère en temps réel, avec des applis et sites à bookmarker.
--   [Tout savoir sur prix essence évolution 2026](/prix-essence-evolution-2026) : analyse des tendances et prévisions pour anticiper les hausses et baisses des prochains mois.
--   [Stations low cost qualité carburant](/stations-low-cost-qualite-carburant) : comparatif détaillé des enseignes low-cost, avec leurs avantages et inconvénients pour votre moteur.
--   [Carte carburant particulier cashback](/carte-carburant-particulier-cashback) : guide des meilleures cartes et applis pour cumuler des remises et du cashback sur chaque plein.
+-   [Carburant moins cher autour de moi](/carburant-moins-cher-autour-de-moi/) : l’outil indispensable pour trouver la pompe la moins chère en temps réel, avec des applis et sites à bookmarker.
+-   [Tout savoir sur prix essence évolution 2026](/prix-essence-evolution-2026/) : analyse des tendances et prévisions pour anticiper les hausses et baisses des prochains mois.
+-   [Stations low cost qualité carburant](/stations-low-cost-qualite-carburant/) : comparatif détaillé des enseignes low-cost, avec leurs avantages et inconvénients pour votre moteur.
+-   [Carte carburant particulier cashback](/carte-carburant-particulier-cashback/) : guide des meilleures cartes et applis pour cumuler des remises et du cashback sur chaque plein.
 
 Si vous cherchez une solution immédiate, commencez par l’article sur les stations autour de vous. Pour optimiser vos dépenses sur le long terme, explorez les cartes cashback et les astuces de conduite économique.
 

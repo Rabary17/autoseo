@@ -90,4 +90,4 @@ Quelques réflexes évitent la plupart des mauvaises surprises, quelle que soit 
 
 ## Pour élargir la comparaison
 
-Ces pages couvrent l’essentiel pour comparer les plateformes, calculer le vrai coût d’une location et éviter les pièges d’assurance les plus courants. Pour élargir la réflexion aux autres façons de se déplacer sans voiture personnelle, notre rubrique [mobilité partagée et transports](/mobilite-partagee-transports) aborde aussi le covoiturage et les transports en commun.
+Ces pages couvrent l’essentiel pour comparer les plateformes, calculer le vrai coût d’une location et éviter les pièges d’assurance les plus courants. Pour élargir la réflexion aux autres façons de se déplacer sans voiture personnelle, notre rubrique [mobilité partagée et transports](/mobilite-partagee-transports/) aborde aussi le covoiturage et les transports en commun.

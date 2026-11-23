@@ -8,9 +8,9 @@ wp_locale: "fr"
 image: "/images/articles/scooter-125-couverture.webp"
 imageAlt: "Scooter 125 : le guide complet pour bien le choisir en 2026"
 ---
-[Moto & scooter](/categorie/moto-scooter/) › Scooter 125
+[Moto & scooter](/moto-scooter/) › Scooter 125
 
-Un scooter 125 se choisit d’abord sur l’usage : ville pure, longs trajets en maxi-scooter, ou stabilité en plus avec un 3 roues. Cette page de [notre rubrique moto et scooter](/categorie/moto-scooter/) oriente vers l’article qui correspond à votre cas précis : comparatifs de modèles, règles de permis, formation obligatoire et budget d’entretien, plutôt que de vous laisser fouiller cinq pages au hasard.
+Un scooter 125 se choisit d’abord sur l’usage : ville pure, longs trajets en maxi-scooter, ou stabilité en plus avec un 3 roues. Cette page de [notre rubrique moto et scooter](/moto-scooter/) oriente vers l’article qui correspond à votre cas précis : comparatifs de modèles, règles de permis, formation obligatoire et budget d’entretien, plutôt que de vous laisser fouiller cinq pages au hasard.
 
 **À retenir :** le scooter 125 domine la mobilité urbaine en France, à condition de connaître trois pièges avant d’acheter.
 

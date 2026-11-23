@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/equipement-pilote-couverture.webp"
 imageAlt: "Équipement moto : casque, gants, blouson et normes à connaître"
 ---
-[Retrouvez tous les guides moto et scooter](/categorie/moto-scooter/) avant de choisir l’équipement du pilote au bon niveau de protection.
+[Retrouvez tous les guides moto et scooter](/moto-scooter/) avant de choisir l’équipement du pilote au bon niveau de protection.
 
 Casque mal ajusté, gants en similicuir, blouson qui laisse passer le froid : la plupart des chutes révèlent un mauvais équipement plus qu’un mauvais réflexe au guidon. Cinq guides détaillent ici le casque, les gants, le blouson airbag, la norme ECE 22.06 et la tenue hiver : de quoi trancher vite entre un budget serré et un usage quotidien de la moto.
 

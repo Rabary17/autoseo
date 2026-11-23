@@ -25,27 +25,27 @@ Six dossiers composent ce silo, chacun couvre un symptôme ou un outil précis. 
 
 ### Un voyant s’allume sur le tableau de bord
 
-Orange, rouge, clignotant ou fixe : chaque couleur et chaque comportement changent la marche à suivre. Certains voyants tolèrent un trajet prudent jusqu’au garage, d’autres imposent l’arrêt sur place. Le dossier [Voyants tableau de bord](/categorie/pannes-diagnostic/voyants-tableau-de-bord/) détaille la signification de chaque symbole et le degré d’urgence réel derrière chacun.
+Orange, rouge, clignotant ou fixe : chaque couleur et chaque comportement changent la marche à suivre. Certains voyants tolèrent un trajet prudent jusqu’au garage, d’autres imposent l’arrêt sur place. Le dossier [Voyants tableau de bord](/pannes-diagnostic/) détaille la signification de chaque symbole et le degré d’urgence réel derrière chacun.
 
 ### Le moteur tourne mal, cale ou perd en puissance
 
-À-coups, ralenti instable, perte de puissance en côte : ces symptômes ont souvent une cause identifiable avant même de sortir la valise OBD. Le dossier [Pannes moteur](/categorie/pannes-diagnostic/pannes-moteur/) reprend les causes les plus courantes selon le symptôme observé, du démarrage difficile à la fumée à l’échappement.
+À-coups, ralenti instable, perte de puissance en côte : ces symptômes ont souvent une cause identifiable avant même de sortir la valise OBD. Le dossier [Pannes moteur](/pannes-diagnostic/) reprend les causes les plus courantes selon le symptôme observé, du démarrage difficile à la fumée à l’échappement.
 
 ### Un bruit anormal sous le capot ou au freinage
 
-Cliquetis au ralenti, sifflement en accélération, grincement au freinage : un bruit renseigne autant qu’un voyant, parfois plus tôt. Le dossier [Bruits & symptômes](/categorie/pannes-diagnostic/bruits-symptomes/) classe ces bruits par origine probable et par niveau de gravité, pour éviter de démonter une pièce saine à la recherche d’un grincement venu d’ailleurs.
+Cliquetis au ralenti, sifflement en accélération, grincement au freinage : un bruit renseigne autant qu’un voyant, parfois plus tôt. Le dossier [Bruits & symptômes](/pannes-diagnostic/) classe ces bruits par origine probable et par niveau de gravité, pour éviter de démonter une pièce saine à la recherche d’un grincement venu d’ailleurs.
 
 ### Un code défaut lu à la valise
 
-Un code P0xxx ne dit jamais « le moteur est cassé », il pointe un circuit ou un composant précis. Le dossier [Codes défaut OBD](/categorie/pannes-diagnostic/codes-defaut-obd/) traduit les codes les plus fréquents en langage compréhensible, avec les causes qui reviennent le plus souvent derrière chaque référence.
+Un code P0xxx ne dit jamais « le moteur est cassé », il pointe un circuit ou un composant précis. Le dossier [Codes défaut OBD](/pannes-diagnostic/) traduit les codes les plus fréquents en langage compréhensible, avec les causes qui reviennent le plus souvent derrière chaque référence.
 
 ### Un capteur ou un système électronique en cause
 
-Sonde lambda, débitmètre, capteur de position, calculateur : l’électronique embarquée pilote presque tout sur une voiture récente et tombe en panne différemment d’une pièce mécanique. Le dossier [Pannes électroniques & capteurs](/categorie/pannes-diagnostic/pannes-electroniques-capteurs/) explique comment ces composants lâchent et ce qu’ils coûtent à remplacer.
+Sonde lambda, débitmètre, capteur de position, calculateur : l’électronique embarquée pilote presque tout sur une voiture récente et tombe en panne différemment d’une pièce mécanique. Le dossier [Pannes électroniques & capteurs](/pannes-diagnostic/) explique comment ces composants lâchent et ce qu’ils coûtent à remplacer.
 
 ### Choisir sa valise ou son outil de diagnostic
 
-Une valise OBD à 30 euros ne lit pas les mêmes données qu’un outil de garage à 500 euros. Le dossier [Valises & outils diagnostic](/categorie/pannes-diagnostic/valises-outils-diagnostic/) compare les modèles selon l’usage : lecture de code simple, effacement de voyant, ou diagnostic constructeur poussé.
+Une valise OBD à 30 euros ne lit pas les mêmes données qu’un outil de garage à 500 euros. Le dossier [Valises & outils diagnostic](/pannes-diagnostic/) compare les modèles selon l’usage : lecture de code simple, effacement de voyant, ou diagnostic constructeur poussé.
 
 ## Voyants tableau de bord : lesquels prendre au sérieux
 

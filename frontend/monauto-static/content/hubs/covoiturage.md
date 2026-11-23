@@ -36,13 +36,13 @@ Toutes les applis de covoiturage ne se valent pas. Certaines sont optimisées po
 
 ### Pour les trajets courts (moins de 80 km) : BlaBlaCar Daily, Karos, Klaxit
 
-Si vous faites régulièrement le même trajet, comme pour aller au travail, des applis comme [BlaBlaCar Daily](/blablacar-daily-avis) ou Karos sont idéales. Elles sont conçues pour les trajets récurrents et permettent de trouver des covoitureurs rapidement. Vous pouvez même réserver à l’avance et choisir des conducteurs ou passagers réguliers pour plus de sérénité.
+Si vous faites régulièrement le même trajet, comme pour aller au travail, des applis comme [BlaBlaCar Daily](/blablacar-daily-avis/) ou Karos sont idéales. Elles sont conçues pour les trajets récurrents et permettent de trouver des covoitureurs rapidement. Vous pouvez même réserver à l’avance et choisir des conducteurs ou passagers réguliers pour plus de sérénité.
 
 Ces applis sont aussi compatibles avec les primes covoiturage. Par exemple, avec BlaBlaCar Daily, vous pouvez cumuler la prime de 100 € et le forfait mobilités durables de votre employeur. Un vrai plus pour votre portefeuille.
 
 ### Pour les trajets longs (plus de 80 km) : BlaBlaCar classique
 
-Si vous partez en week-end ou en vacances, [BlaBlaCar classique](/covoiturage-courte-distance-applis) reste la référence. L’appli propose des trajets dans toute la France et en Europe, et vous permet de choisir votre conducteur en fonction des avis et des préférences (musique, discussions, etc.).
+Si vous partez en week-end ou en vacances, [BlaBlaCar classique](/covoiturage-courte-distance-applis/) reste la référence. L’appli propose des trajets dans toute la France et en Europe, et vous permet de choisir votre conducteur en fonction des avis et des préférences (musique, discussions, etc.).
 
 Les prix sont souvent moins chers qu’un billet de train, et vous pouvez voyager avec des bagages sans stress. En revanche, les primes de l’État ne s’appliquent pas aux trajets longs, donc c’est moins intéressant financièrement.
 
@@ -92,7 +92,7 @@ Le covoiturage en France, c’est une solution économique, écologique et prati
 
 _Besoin d’aide pour choisir ? Consultez nos articles pour faire le bon choix :_
 
--   [BlaBlaCar Daily : notre avis complet](/blablacar-daily-avis)
--   [Prime covoiturage 100 € : comment en bénéficier ?](/prime-covoiturage-100-euros)
--   [Covoiturage domicile-travail : primes et conseils pratiques](/covoiturage-domicile-travail-prime)
--   [Covoiturage courte distance : quelle appli choisir ?](/covoiturage-courte-distance-applis)
+-   [BlaBlaCar Daily : notre avis complet](/blablacar-daily-avis/)
+-   [Prime covoiturage 100 € : comment en bénéficier ?](/prime-covoiturage-100-euros/)
+-   [Covoiturage domicile-travail : primes et conseils pratiques](/covoiturage-domicile-travail-prime/)
+-   [Covoiturage courte distance : quelle appli choisir ?](/covoiturage-courte-distance-applis/)

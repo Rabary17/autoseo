@@ -19,7 +19,7 @@ Le bon choix dépend du moment où vous en êtes. Face à deux finalistes, le co
 
 ## Comparatifs face-à-face : deux voitures, un verdict tranché
 
-Deux modèles, un même budget, un classement clair : c’est la promesse d’un comparatif face-à-face. La rubrique [Comparatifs face-à-face](/categorie/essais-comparatifs/comparatifs-face-a-face) met en vis-à-vis les rivales directes d’un même segment, Peugeot 3008 contre Renault Austral, Golf contre Civic, sur les mêmes critères : prix catalogue, consommation réelle, volume de coffre, agrément de conduite.
+Deux modèles, un même budget, un classement clair : c’est la promesse d’un comparatif face-à-face. La rubrique [Comparatifs face-à-face](/essais-comparatifs/) met en vis-à-vis les rivales directes d’un même segment, Peugeot 3008 contre Renault Austral, Golf contre Civic, sur les mêmes critères : prix catalogue, consommation réelle, volume de coffre, agrément de conduite.
 
 ![Deux SUV rivaux garés côte à côte lors d'un comparatif face-à-face](/images/articles/essais-comparatifs-1.webp)
 
@@ -29,7 +29,7 @@ Un exemple courant : une berline diesel de 130 ch face à une hybride essence de
 
 ## Essais par segment : situer une voiture dans sa catégorie
 
-Un comparatif oppose deux voitures. Un essai par segment en aligne parfois cinq ou six, pour juger un modèle face à toute sa catégorie plutôt qu’à un seul rival. La rubrique [Essais par segment](/categorie/essais-comparatifs/essais-par-segment) couvre les citadines, les compactes, les SUV, les breaks et les familiales, avec la même grille de lecture d’un article à l’autre.
+Un comparatif oppose deux voitures. Un essai par segment en aligne parfois cinq ou six, pour juger un modèle face à toute sa catégorie plutôt qu’à un seul rival. La rubrique [Essais par segment](/essais-comparatifs/) couvre les citadines, les compactes, les SUV, les breaks et les familiales, avec la même grille de lecture d’un article à l’autre.
 
 ![Citadine testée sur route sinueuse lors d'un essai par segment](/images/articles/essais-comparatifs-2.webp)
 
@@ -39,7 +39,7 @@ La grille de lecture d’un essai par segment reprend toujours les mêmes postes
 
 ## Avis long terme : ce qu’un essai d’une semaine ne montre jamais
 
-Un essai presse dure rarement plus d’une semaine, souvent sur un exemplaire tout juste sorti d’usine. L’avis long terme change de méthode : un seul véhicule, gardé plusieurs mois, parfois plus de 30 000 kilomètres, pour révéler ce qu’un essai court ne peut pas voir. La rubrique [Avis long terme](/categorie/essais-comparatifs/avis-long-terme) documente la consommation réelle au fil des saisons, l’usure des pneus et les premières pannes.
+Un essai presse dure rarement plus d’une semaine, souvent sur un exemplaire tout juste sorti d’usine. L’avis long terme change de méthode : un seul véhicule, gardé plusieurs mois, parfois plus de 30 000 kilomètres, pour révéler ce qu’un essai court ne peut pas voir. La rubrique [Avis long terme](/essais-comparatifs/) documente la consommation réelle au fil des saisons, l’usure des pneus et les premières pannes.
 
 ![Compteur kilométrique affichant un kilométrage élevé lors d'un essai longue durée](/images/articles/essais-comparatifs-3.webp)
 
@@ -49,7 +49,7 @@ Les coûts d’entretien ne se limitent pas aux plaquettes de frein. Pneumatique
 
 ## Nouveautés & salons : préparer un achat à moyen terme
 
-Un lancement officiel, un salon comme le Mondial de l’Auto ou Genève, une fuite de photos avant la présentation : la rubrique [Nouveautés & salons](/categorie/essais-comparatifs/nouveautes-salons) suit ce qui arrive en concession dans les prochains mois, avant même le premier essai routier.
+Un lancement officiel, un salon comme le Mondial de l’Auto ou Genève, une fuite de photos avant la présentation : la rubrique [Nouveautés & salons](/essais-comparatifs/) suit ce qui arrive en concession dans les prochains mois, avant même le premier essai routier.
 
 Ces pages servent surtout à décider quand acheter, pas seulement quoi acheter. Attendre la génération suivante d’un modèle a du sens quand un restylage ou une motorisation électrifiée arrive l’année suivante. Foncer sur le modèle actuel a du sens quand la remise concessionnaire compense largement l’attente.
 
@@ -57,7 +57,7 @@ Le calendrier des salons rythme aussi ces pages : Mondial de Paris, Genève, CES
 
 ## Concept-cars & anticipation : ce que les prototypes annoncent vraiment
 
-Un concept-car ne roule jamais dans la vraie vie sous cette forme, mais il annonce presque toujours quelque chose : une nouvelle signature lumineuse, une architecture de plateforme électrique, parfois un segment de carrosserie entièrement nouveau. La rubrique [Concept-cars & anticipation](/categorie/essais-comparatifs/concept-cars-anticipation) décrypte ces prototypes de salon pour anticiper les modèles de série qui en découlent deux ou trois ans plus tard.
+Un concept-car ne roule jamais dans la vraie vie sous cette forme, mais il annonce presque toujours quelque chose : une nouvelle signature lumineuse, une architecture de plateforme électrique, parfois un segment de carrosserie entièrement nouveau. La rubrique [Concept-cars & anticipation](/essais-comparatifs/) décrypte ces prototypes de salon pour anticiper les modèles de série qui en découlent deux ou trois ans plus tard.
 
 ![Concept-car exposé sur un stand lors d'un salon automobile](/images/articles/essais-comparatifs-4.webp)
 

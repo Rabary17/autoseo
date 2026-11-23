@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/permis-b-code-couverture.webp"
 imageAlt: "Permis de conduire : le guide pour choisir la bonne formation"
 ---
-[Accueil](/) > [Permis & conduite](/permis-conduite)
+[Accueil](/) > [Permis & conduite](/permis-conduite/)
 
 Le permis de conduire regroupe plusieurs démarches distinctes : apprentissage du code, choix du mode de formation, passage de l’examen pratique, puis conversion éventuelle vers une boîte manuelle. Cette page trie les cinq guides du sous-cocon selon la situation du candidat : jeune de 15 ans en AAC, budget serré, ou titulaire d’un B78 qui veut évoluer vers toutes boîtes. Direction l’article qui correspond à l’étape en cours.
 

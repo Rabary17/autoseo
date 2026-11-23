@@ -87,4 +87,4 @@ L’hybride rechargeable reprend des parts de marché ailleurs en Europe, mais e
 
 Le réseau de recharge, en revanche, n’est plus un obstacle sérieux. La France compte plus de 100 000 bornes publiques, largement suffisant pour recharger une batterie de PHEV en quelques heures sur une prise classique ou en moins d’une heure sur une borne accélérée. Le frein tient donc au budget et à la fiscalité, pas à la technique. Les flottes d’entreprise, elles, profitent encore d’avantages fiscaux qui compensent en partie ce malus, ce qui explique pourquoi la majorité des PHEV vendues en France partent vers ce marché plutôt que vers les particuliers.
 
-Pour comparer les motorisations hybrides à l’électrique pur ou au thermique récent, direction la page [électrique et hybride](/categorie/electrique-hybride/), qui regroupe l’ensemble des dossiers du silo.
+Pour comparer les motorisations hybrides à l’électrique pur ou au thermique récent, direction la page [électrique et hybride](/electrique-hybride/), qui regroupe l’ensemble des dossiers du silo.

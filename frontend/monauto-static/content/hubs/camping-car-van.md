@@ -50,7 +50,7 @@ Pour un week-end de 400 km avec deux vélos à l’arrière et l’envie de dorm
 
 ![Aménagement intérieur en bois d'un van aménagé](/images/articles/camping-car-van-2.webp)
 
-Cette compacité a un prix : moins de couchages fixes, un espace de vie plus réduit et une isolation thermique parfois moins généreuse que sur un camping-car intégral, ce qui pèse en hivernage. Les fourgons récents rattrapent l’écart avec des aménagements modulaires (banquette-lit, cuisine escamotable) pensés pour vivre à deux sur des trajets fréquents plutôt que sur un long séjour fixe. Le [van et fourgon aménagé](/categorie/camping-car-van/van-fourgon-amenage/) se choisit surtout sur ces configurations, celles qui tiennent la route sur la durée.
+Cette compacité a un prix : moins de couchages fixes, un espace de vie plus réduit et une isolation thermique parfois moins généreuse que sur un camping-car intégral, ce qui pèse en hivernage. Les fourgons récents rattrapent l’écart avec des aménagements modulaires (banquette-lit, cuisine escamotable) pensés pour vivre à deux sur des trajets fréquents plutôt que sur un long séjour fixe. Le [van et fourgon aménagé](/camping-car-van/) se choisit surtout sur ces configurations, celles qui tiennent la route sur la durée.
 
 ## Voyager et choisir ses aires d’étape
 

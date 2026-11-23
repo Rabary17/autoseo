@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/sinistres-indemnisation-couverture.webp"
 imageAlt: "Sinistre auto : indemnisation, démarches et délais à connaître"
 ---
-Accueil > [Assurance auto](/assurance-auto) > Sinistre et indemnisation
+Accueil > [Assurance auto](/assurance-auto/) > Sinistre et indemnisation
 
 Un accident, une vitre brisée dans un parking, une voiture déclarée épave après un choc : chaque sinistre auto suit son propre parcours d’indemnisation. Constat à remplir, délai à respecter, parfois un recours contre le responsable : cinq guides pratiques répondent chacun à une situation précise, du dépôt de plainte pour vandalisme au recours contre un tiers responsable.
 
@@ -20,7 +20,7 @@ Un accident, une vitre brisée dans un parking, une voiture déclarée épave ap
 
 ## Cinq sinistres, cinq démarches à ne pas confondre
 
-Retrouvez la vue d’ensemble de nos guides sur l’[assurance auto](/assurance-auto) pour comparer garanties et franchises avant de creuser un sinistre précis. Selon ce qui est arrivé à votre véhicule, la démarche à suivre change du tout au tout.
+Retrouvez la vue d’ensemble de nos guides sur l’[assurance auto](/assurance-auto/) pour comparer garanties et franchises avant de creuser un sinistre précis. Selon ce qui est arrivé à votre véhicule, la démarche à suivre change du tout au tout.
 
 -   Voiture vandalisée : vitres brisées, carrosserie rayée ou pneus crevés relèvent de la garantie vol/vandalisme, jamais de la garantie tiers, et nécessitent un dépôt de plainte avant toute déclaration.
 -   Accident avec un tiers identifié : tout commence par le constat amiable, document qui fixe les responsabilités et donc le montant versé par chaque assureur.

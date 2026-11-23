@@ -16,7 +16,7 @@ Si vous voulez **suivre la saison au jour le jour**, le [classement en direct](/
 
 Préférez **planifier vos soirées** ? Le [calendrier 2026](/calendrier-f1-2026-horaires) centralise toutes les dates, horaires et fuseaux horaires. Les courses en Asie ? Comptez un réveil à 6h. Celles en Europe ? Un dimanche après-midi devant la télé. Indispensable pour ne rien rater.
 
-Enfin, si vous voulez **comprendre les coulisses**, plongez dans le [règlement 2026](/reglement-f1-2026-moteurs). Moteurs simplifiés, aides électroniques limitées, plafond budgétaire : ces règles redéfinissent la compétition. Un must pour anticiper les évolutions de la saison.
+Enfin, si vous voulez **comprendre les coulisses**, plongez dans le [règlement 2026](/reglement-f1-2026-moteurs/). Moteurs simplifiés, aides électroniques limitées, plafond budgétaire : ces règles redéfinissent la compétition. Un must pour anticiper les évolutions de la saison.
 
 ![Voiture de Formule 1 en action sur le Circuit Paul Ricard lors d'un Grand Prix](/images/articles/f1-competition-1.webp)
 

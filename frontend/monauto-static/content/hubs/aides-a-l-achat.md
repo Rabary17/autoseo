@@ -16,7 +16,7 @@ Financer un vélo électrique passe rarement par une seule aide. Prime nationale
 -   Le leasing vélo en entreprise fait sauter l’apport initial, mais seulement si l’employeur a signé un contrat cadre avec un opérateur.
 -   Le forfait mobilités durables n’est jamais une obligation pour l’employeur : rien ne l’oblige à le proposer, même pour un trajet domicile-travail quotidien à vélo.
 
-Cette page fait partie du dossier plus large consacré à la [mobilité à vélo et aux nouvelles mobilités urbaines](/velo-nouvelles-mobilites), qui couvre aussi l’entretien, l’équipement antivol et les trottinettes électriques. Ici, on se concentre sur un seul sujet : comment payer moins cher son vélo électrique, du premier vélotaf au vélo de toute la famille.
+Cette page fait partie du dossier plus large consacré à la [mobilité à vélo et aux nouvelles mobilités urbaines](/velo-nouvelles-mobilites/), qui couvre aussi l’entretien, l’équipement antivol et les trottinettes électriques. Ici, on se concentre sur un seul sujet : comment payer moins cher son vélo électrique, du premier vélotaf au vélo de toute la famille.
 
 ## Quatre façons de payer moins cher un vélo électrique
 

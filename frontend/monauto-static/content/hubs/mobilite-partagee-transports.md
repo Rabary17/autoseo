@@ -21,7 +21,7 @@ Un VTC se réserve en trois clics quand il pleut à verse ou que le dernier mét
 
 ![Passager montant dans un VTC un soir de pluie en ville](/images/articles/mobilite-partagee-transports-1.webp)
 
-La rubrique [VTC & taxi](/categorie/mobilite-partagee-transports/vtc-taxi) détaille les écarts de prix entre Uber, Bolt et les taxis conventionnés selon l’heure et la ville, et pourquoi un chauffeur taxi facture parfois moins cher qu’un VTC premium sur une longue distance. Un repère simple : sous 5 km, le taxi à la maraude bat souvent le VTC réservé à l’avance sur le prix final. Au-delà de 20 km ou vers un aéroport, la course forfaitaire d’un VTC évite les mauvaises surprises d’un compteur bloqué dans les bouchons.
+La rubrique [VTC & taxi](/mobilite-partagee-transports/) détaille les écarts de prix entre Uber, Bolt et les taxis conventionnés selon l’heure et la ville, et pourquoi un chauffeur taxi facture parfois moins cher qu’un VTC premium sur une longue distance. Un repère simple : sous 5 km, le taxi à la maraude bat souvent le VTC réservé à l’avance sur le prix final. Au-delà de 20 km ou vers un aéroport, la course forfaitaire d’un VTC évite les mauvaises surprises d’un compteur bloqué dans les bouchons.
 
 Le statut de chauffeur VTC impose une carte professionnelle et un examen, contrairement à certaines plateformes de mise en relation moins encadrées à l’étranger. Cette régulation explique surtout pourquoi la vraie différence entre deux courses se joue sur le prix affiché au moment de la réservation, plus que sur la qualité de la voiture. Annuler une course dans les minutes suivant la validation coûte aussi parfois plus cher que prévu selon la plateforme, un détail que peu d’utilisateurs vérifient avant de confirmer une réservation en urgence.
 
@@ -31,7 +31,7 @@ Covoiturer un trajet domicile-travail de 40 km partagé à trois transforme le b
 
 ![Trois passagers covoiturant ensemble sur l'autoroute](/images/articles/mobilite-partagee-transports-2.webp)
 
-La rubrique [covoiturage](/categorie/mobilite-partagee-transports/covoiturage) compare le coût réel au kilomètre selon la distance et le nombre de passagers, et liste les pièges d’assurance à vérifier avant de proposer un trajet régulier. Un vendredi soir d’exode ou un jour de grève dans les transports, le covoiturage spontané absorbe une demande que le train ne peut plus gérer.
+La rubrique [covoiturage](/categorie/covoiturage/) compare le coût réel au kilomètre selon la distance et le nombre de passagers, et liste les pièges d’assurance à vérifier avant de proposer un trajet régulier. Un vendredi soir d’exode ou un jour de grève dans les transports, le covoiturage spontané absorbe une demande que le train ne peut plus gérer.
 
 Le covoiturage courte distance, pensé pour des trajets de 5 à 30 km entre voisins ou collègues, cible un usage différent du covoiturage longue distance type week-end ou vacances. Les deux se réservent sur des applis distinctes, et confondre les deux mène souvent à chercher un trajet ponctuel là où il n’y a que des habitués d’un même parcours quotidien.
 
@@ -41,7 +41,7 @@ Un abonnement Navigo ou un forfait TER coûte souvent moins cher au mois qu’un
 
 ![Voyageurs attendant un train régional sur le quai d'une gare](/images/articles/mobilite-partagee-transports-3.webp)
 
-La rubrique [train & transports en commun](/categorie/mobilite-partagee-transports/train-transports-en-commun) détaille les cartes de réduction utiles selon l’âge et la fréquence des trajets, et comment anticiper une correspondance ratée sans perdre le prix du billet. Pour un budget étudiant serré, combiner carte jeune et heures creuses s’avère souvent la solution la plus économique sur l’année.
+La rubrique [train & transports en commun](/mobilite-partagee-transports/) détaille les cartes de réduction utiles selon l’âge et la fréquence des trajets, et comment anticiper une correspondance ratée sans perdre le prix du billet. Pour un budget étudiant serré, combiner carte jeune et heures creuses s’avère souvent la solution la plus économique sur l’année.
 
 Les transports en commun urbains, métro, bus, tram, gardent l’avantage dès qu’il s’agit de rejoindre un point du centre-ville aux heures de pointe : aucune place de parking à chercher, un temps de trajet prévisible malgré le trafic. La vraie limite apparaît en zone périurbaine ou rurale, où la fréquence des lignes tombe parfois à un bus par heure. Les applis régionales de mobilité affichent d’ailleurs parfois des tarifs TER plus lisibles que l’appli nationale, avec un cumul automatique des réductions liées à l’abonnement local.
 
@@ -51,7 +51,7 @@ Louer une voiture pour un week-end ou plusieurs mois coûte moins cher qu’un c
 
 ![Client récupérant les clés d'une voiture de location à l'agence](/images/articles/mobilite-partagee-transports-4.webp)
 
-Un road trip à l’étranger ajoute une contrainte souvent oubliée au comptoir du loueur : passer par la Suisse en voiture impose d’acheter la vignette autoroutière avant de franchir la frontière. Elle coûte 44,50 euros pour la vignette annuelle valable du 1er décembre 2025 au 31 janvier 2027, et couvre tout véhicule à moteur, remorque ou caravane jusqu’à 3,5 tonnes. Oublier ce détail expose à une amende lors d’un contrôle routier, un point que les loueurs mentionnent rarement au moment de remettre les clés. La rubrique [location courte & longue durée](/categorie/mobilite-partagee-transports/location-courte-longue-duree) détaille les franchises d’assurance et les pièges de l’état des lieux au retour.
+Un road trip à l’étranger ajoute une contrainte souvent oubliée au comptoir du loueur : passer par la Suisse en voiture impose d’acheter la vignette autoroutière avant de franchir la frontière. Elle coûte 44,50 euros pour la vignette annuelle valable du 1er décembre 2025 au 31 janvier 2027, et couvre tout véhicule à moteur, remorque ou caravane jusqu’à 3,5 tonnes. Oublier ce détail expose à une amende lors d’un contrôle routier, un point que les loueurs mentionnent rarement au moment de remettre les clés. La rubrique [location courte & longue durée](/categorie/location-courte-longue-duree/) détaille les franchises d’assurance et les pièges de l’état des lieux au retour.
 
 Pour un usage de plusieurs mois, la location longue durée sans apport ni engagement de plusieurs années séduit un public qui change souvent de ville, étudiants en alternance ou jeunes actifs en CDD. Le tarif mensuel intègre l’entretien et l’assurance, ce qui simplifie le budget face à un achat où ces postes s’ajoutent à un crédit.
 
@@ -59,7 +59,7 @@ Pour un usage de plusieurs mois, la location longue durée sans apport ni engage
 
 L’autopartage en libre-service façon Zity ou Citiz facture à la minute ou à l’heure pour un trajet urbain ponctuel, sans les contraintes d’entretien ni de place de parking fixe. La location entre particuliers via Getaround ou OuiCar vise plutôt un usage sur une journée ou un week-end, avec un prix souvent inférieur à celui d’une agence classique pour un modèle équivalent.
 
-La rubrique [autopartage & location entre particuliers](/categorie/mobilite-partagee-transports/autopartage-location-particuliers) compare les formules par minute, par heure et à la journée, et explique comment fonctionne l’assurance du propriétaire quand un particulier prête son véhicule. Pour un usage occasionnel de moins de 3 000 km par an, l’autopartage coûte structurellement moins cher qu’une seconde voiture au foyer. Le contrat d’un particulier qui loue sa voiture bascule généralement sur une assurance professionnelle fournie par la plateforme le temps de la location, ce qui protège aussi bien le propriétaire que le locataire en cas d’accrochage.
+La rubrique [autopartage & location entre particuliers](/categorie/autopartage-location-particuliers/) compare les formules par minute, par heure et à la journée, et explique comment fonctionne l’assurance du propriétaire quand un particulier prête son véhicule. Pour un usage occasionnel de moins de 3 000 km par an, l’autopartage coûte structurellement moins cher qu’une seconde voiture au foyer. Le contrat d’un particulier qui loue sa voiture bascule généralement sur une assurance professionnelle fournie par la plateforme le temps de la location, ce qui protège aussi bien le propriétaire que le locataire en cas d’accrochage.
 
 ## Choisir le bon mode de transport selon le trajet, pas selon l’appli
 

@@ -70,10 +70,10 @@ Sans cette homologation, votre assurance pourrait refuser de vous couvrir en cas
 
 Ce sous-cocon regroupe tous les aspects réglementaires et assurantiels liés aux camping-cars et vans aménagés. Voici comment trouver l’article qui répond à votre besoin :
 
--   Vous roulez souvent sur autoroute et vous voulez savoir à quelle vitesse rouler avec un véhicule de plus de 3,5 tonnes ? L’article sur les [limitations de vitesse en camping-car](/limitation-vitesse-camping-car) est fait pour vous.
--   Vous passez régulièrement aux péages et vous voulez éviter les mauvaises surprises ? Consultez notre guide sur les [classes de camping-cars aux péages](/peage-camping-car-classe).
--   Vous cherchez la meilleure assurance pour votre budget ? Notre [comparatif des assurances camping-car](/assurance-camping-car-comparatif) vous aidera à y voir plus clair.
--   Vous voulez savoir où garer votre camping-car en ville sans risquer une amende ? L’article sur les [règles de stationnement en ville](/stationnement-camping-car-regles-ville) vous donnera toutes les clés.
+-   Vous roulez souvent sur autoroute et vous voulez savoir à quelle vitesse rouler avec un véhicule de plus de 3,5 tonnes ? L’article sur les [limitations de vitesse en camping-car](/limitation-vitesse-camping-car/) est fait pour vous.
+-   Vous passez régulièrement aux péages et vous voulez éviter les mauvaises surprises ? Consultez notre guide sur les [classes de camping-cars aux péages](/peage-camping-car-classe/).
+-   Vous cherchez la meilleure assurance pour votre budget ? Notre [comparatif des assurances camping-car](/assurance-camping-car-comparatif/) vous aidera à y voir plus clair.
+-   Vous voulez savoir où garer votre camping-car en ville sans risquer une amende ? L’article sur les [règles de stationnement en ville](/stationnement-camping-car-regles-ville/) vous donnera toutes les clés.
 
 Chaque article approfondit un point précis, mais tous partagent un même objectif : vous éviter les pièges et rouler en toute sérénité.
 

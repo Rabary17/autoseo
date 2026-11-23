@@ -33,19 +33,19 @@ Vous venez d’acheter une voiture d’occasion ? La loi vous donne un mois, pas
 
 ![Vendeur et acheteur échangeant les clés et les documents lors d'une vente de voiture](/images/articles/carte-grise-demarches-2.webp)
 
-Côté budget, comptez au minimum 13,76€ (11€ de taxe fixe plus 2,76€ de redevance d’acheminement), auxquels s’ajoute la taxe régionale calculée sur la puissance fiscale du véhicule. Dans les faits, le coût total oscille le plus souvent entre 200€ et 500€ selon la région et la puissance de la voiture. Le traitement du dossier prend en général 7 à 10 jours quand tous les documents sont réunis dès le départ, avec un envoi du certificat sous 3 à 5 jours ouvrés après validation. Si vous voulez éviter les erreurs de dossier, la page dédiée au [changement de titulaire](/categorie/carte-grise-demarches/changement-de-titulaire) liste les pièces exactes selon votre cas, y compris pour un achat hors de votre région.
+Côté budget, comptez au minimum 13,76€ (11€ de taxe fixe plus 2,76€ de redevance d’acheminement), auxquels s’ajoute la taxe régionale calculée sur la puissance fiscale du véhicule. Dans les faits, le coût total oscille le plus souvent entre 200€ et 500€ selon la région et la puissance de la voiture. Le traitement du dossier prend en général 7 à 10 jours quand tous les documents sont réunis dès le départ, avec un envoi du certificat sous 3 à 5 jours ouvrés après validation. Si vous voulez éviter les erreurs de dossier, la page dédiée au [changement de titulaire](/categorie/changement-de-titulaire/) liste les pièces exactes selon votre cas, y compris pour un achat hors de votre région.
 
 ## Duplicata et modifications : quand la carte grise existante doit changer
 
 Toutes les démarches ne partent pas d’un achat. Une carte grise perdue, volée ou abîmée donne lieu à un duplicata ; un changement d’adresse, de nom après un mariage, ou l’ajout d’un attelage donne lieu à une simple modification. Les documents varient à chaque fois, mais le principe ne change pas : le certificat d’immatriculation doit toujours correspondre à la situation réelle du véhicule et de son titulaire.
 
-Le cas de la succession illustre bien la difficulté. À la mort du titulaire, aucun duplicata n’est possible à son nom. Les héritiers doivent choisir entre mettre le véhicule à leur nom, avec certificat de décès, livret de famille complet et attestation signée par tous les héritiers pour une succession simple, ou le vendre, avec une déclaration de cession préalable si c’est cette option qui est retenue. La page [duplicata et modifications](/categorie/carte-grise-demarches/duplicata-modifications) explique la marche à suivre selon la configuration familiale.
+Le cas de la succession illustre bien la difficulté. À la mort du titulaire, aucun duplicata n’est possible à son nom. Les héritiers doivent choisir entre mettre le véhicule à leur nom, avec certificat de décès, livret de famille complet et attestation signée par tous les héritiers pour une succession simple, ou le vendre, avec une déclaration de cession préalable si c’est cette option qui est retenue. La page [duplicata et modifications](/categorie/duplicata-modifications/) explique la marche à suivre selon la configuration familiale.
 
 ## Cession et achat : sécuriser la transaction avant l’immatriculation
 
 Une cession mal préparée retarde toute la suite. Le vendeur doit remettre un certificat de cession signé des deux parties, un certificat de situation administrative de moins de 15 jours, et, pour un véhicule de plus de quatre ans, un contrôle technique de moins de six mois. Sans ce dernier document, l’acheteur ne peut pas immatriculer le véhicule à son nom, même si le reste du dossier est complet.
 
-Côté [cession et achat](/categorie/carte-grise-demarches/cession-achat), plusieurs pièges reviennent souvent : une carte grise mal barrée, un compteur kilométrique qui ne correspond pas à celui déclaré, ou un ancien titulaire injoignable pour signer. Anticiper ces points avant la signature évite des allers-retours avec l’ANTS.
+Côté [cession et achat](/categorie/cession-achat/), plusieurs pièges reviennent souvent : une carte grise mal barrée, un compteur kilométrique qui ne correspond pas à celui déclaré, ou un ancien titulaire injoignable pour signer. Anticiper ces points avant la signature évite des allers-retours avec l’ANTS.
 
 ## Immatriculation et import : les démarches propres aux véhicules venus d’ailleurs
 
@@ -53,13 +53,13 @@ Un véhicule acheté à l’étranger, même dans l’Union européenne, ne roul
 
 ![Véhicule transporté sur un camion lors d'une opération d'import](/images/articles/carte-grise-demarches-3.webp)
 
-Les démarches d’[immatriculation et import](/categorie/carte-grise-demarches/immatriculation-import) diffèrent sensiblement selon que le véhicule vient d’un pays de l’UE ou d’ailleurs, et selon son âge. Un modèle de plus de 30 ans échappe à certaines contraintes, sans pour autant se dispenser de l’immatriculation classique.
+Les démarches d’[immatriculation et import](/categorie/immatriculation-import/) diffèrent sensiblement selon que le véhicule vient d’un pays de l’UE ou d’ailleurs, et selon son âge. Un modèle de plus de 30 ans échappe à certaines contraintes, sans pour autant se dispenser de l’immatriculation classique.
 
 ## Malus écologique et taxes : ce qui s’ajoute au prix de base
 
 La taxe régionale n’est pas le seul poste qui gonfle la facture. Un véhicule neuf ou d’occasion récent peut être frappé d’un malus écologique calculé sur ses émissions de CO2, parfois plusieurs milliers d’euros pour les modèles les plus puissants. Une taxe additionnelle sur la puissance administrative complète parfois la note pour les véhicules les plus lourds.
 
-Le montant final dépend de la date de première immatriculation et du barème en vigueur au moment de la démarche, pas au moment de l’achat du véhicule. Pour connaître le barème applicable à votre voiture, mieux vaut consulter la page [malus et taxes](/categorie/carte-grise-demarches/malus-taxes), qui suit les mises à jour réglementaires au fil de l’année.
+Le montant final dépend de la date de première immatriculation et du barème en vigueur au moment de la démarche, pas au moment de l’achat du véhicule. Pour connaître le barème applicable à votre voiture, mieux vaut consulter la page [malus et taxes](/categorie/malus-taxes/), qui suit les mises à jour réglementaires au fil de l’année.
 
 ## Contrôle technique : un document à vérifier avant de déposer le dossier
 
@@ -67,7 +67,7 @@ Le contrôle technique revient dans presque toutes les démarches vues plus haut
 
 ![Voiture sur un pont élévateur pendant un contrôle technique en garage](/images/articles/carte-grise-demarches-4.webp)
 
-Vérifier la date de validité avant de lancer une démarche évite un aller-retour au centre de contrôle en pleine procédure de carte grise. La page [contrôle technique](/categorie/carte-grise-demarches/controle-technique) répertorie les points qui provoquent le plus souvent une contre-visite, utile à connaître avant une cession.
+Vérifier la date de validité avant de lancer une démarche évite un aller-retour au centre de contrôle en pleine procédure de carte grise. La page [contrôle technique](/categorie/controle-technique/) répertorie les points qui provoquent le plus souvent une contre-visite, utile à connaître avant une cession.
 
 ## Suivre son dossier et anticiper les retards après l’envoi
 

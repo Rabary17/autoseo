@@ -8,7 +8,7 @@ wp_locale: "fr"
 image: "/images/articles/van-fourgon-amenage-couverture.webp"
 imageAlt: "Fourgon et van aménagés : choisir, aménager et immatriculer son véhicule"
 ---
-Accueil » [Camping-car & van](/categorie/camping-car-van/) » Fourgon et van aménagés
+Accueil » [Camping-car & van](/camping-car-van/) » Fourgon et van aménagés
 
 Passer d’un fourgon nu à un van habitable suit quatre étapes obligées : choisir la base, aménager, homologuer en VASP, refaire la carte grise. Sauter l’homologation expose à une amende de 135 à 500 € une fois le fourgon déjà transformé. Chaque guide ci-dessous répond à une question précise de ce parcours, sans repasser par la théorie générale du van life.
 
@@ -20,7 +20,7 @@ Passer d’un fourgon nu à un van habitable suit quatre étapes obligées : cho
 
 ## Van aménagé, fourgon aménagé : de quoi parle-t-on ici ?
 
-Un fourgon aménagé désigne un utilitaire transformé en espace de vie : couchage, cuisine, rangements, parfois douche. Le van vise la même fonction sur un gabarit plus compact, souvent dérivé d’un utilitaire de tournée urbaine. Dans l’univers plus large du [camping-car et du van aménagé](/categorie/camping-car-van/), ce sous-cocon traite spécifiquement du fourgon : l’acheter déjà transformé, le construire soi-même, ou choisir la bonne base avant de s’y lancer.
+Un fourgon aménagé désigne un utilitaire transformé en espace de vie : couchage, cuisine, rangements, parfois douche. Le van vise la même fonction sur un gabarit plus compact, souvent dérivé d’un utilitaire de tournée urbaine. Dans l’univers plus large du [camping-car et du van aménagé](/camping-car-van/), ce sous-cocon traite spécifiquement du fourgon : l’acheter déjà transformé, le construire soi-même, ou choisir la bonne base avant de s’y lancer.
 
 Les tailles varient beaucoup. Un van compact type Ducato court se gare comme une voiture familiale, alors qu’un fourgon L3H2 permet de se tenir debout et propose un vrai volume habitable. Le choix dépend surtout de l’usage : virées courtes en solo, road trip à deux sur plusieurs mois, ou vie nomade à l’année. Les modèles de série signés Challenger ou Chausson couvrent ce spectre avec des gammes calibrées par longueur et par équipement, du modèle d’entrée de gamme au fourgon quatre saisons pensé pour l’hiver en montagne.
 

@@ -80,4 +80,4 @@ Concrètement, un acheteur n’a pas besoin de suivre ce calendrier au jour le j
 
 Si la question porte sur le droit de lâcher le volant, direction le guide niveau 3. Pour comprendre les capteurs derrière le mot « autonome », direction l’article technique. En cours d’achat d’une voiture neuve, la liste des ADAS aide à trier les options utiles des gadgets facturés cher. Face à une inquiétude sur les données transmises, l’article dédié détaille les réglages à changer. Et pour comprendre pourquoi une voiture change de comportement après une mise à jour, le dossier OTA répond en détail. Pour la question de l’assurance ou de la responsabilité en cas d’accident, les repères donnés plus haut dans ce sous-cocon suffisent déjà à orienter la discussion avec votre assureur.
 
-Ce sous-cocon fait partie du [silo électrique et hybride](/electrique-hybride), où figurent aussi les guides sur l’autonomie des batteries et les usages de la recharge au quotidien.
+Ce sous-cocon fait partie du [silo électrique et hybride](/electrique-hybride/), où figurent aussi les guides sur l’autonomie des batteries et les usages de la recharge au quotidien.
