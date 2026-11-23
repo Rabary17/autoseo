@@ -2,6 +2,7 @@
 title: "Carte Avantage SNCF : rentable ou pas ? Le calcul en 2026"
 description: "La carte Avantage SNCF coûte 49 € par an et réduit de 30 % les TGV et Intercités. À partir de combien de trajets devient-elle rentable en 2026 ?"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1377
 wp_locale: "fr"

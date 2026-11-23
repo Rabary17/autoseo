@@ -2,6 +2,7 @@
 title: "BYD dépasse Tesla en intentions d'achat en Europe, Musk en cause"
 description: "BYD surpasse Tesla dans les intentions d'achat de véhicules électriques en Europe, selon une étude liant ce recul à l'impopularité d'Elon Musk."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 category: "actualites"
 wp_id: 1437

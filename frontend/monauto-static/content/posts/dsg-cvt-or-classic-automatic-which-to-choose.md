@@ -2,6 +2,7 @@
 title: "DSG, CVT or Classic Automatic, Which Gearbox to Choose"
 description: "Three families of automatic gearboxes share the market. Dual-clutch, continuously variable or classic automatic: each changes how the car drives, servicing costs and reliability."
 date: "2026-10-27"
+updated: "2026-11-23"
 author: "julien-fabre"
 category: "boites-de-vitesses"
 wp_id: 2047

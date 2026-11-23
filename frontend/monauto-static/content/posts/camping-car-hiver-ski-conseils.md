@@ -2,6 +2,7 @@
 title: "Camping-car en hiver : 10 conseils pour skier sans stress (et sans geler)"
 description: "Partir au ski en camping-car, c'est la liberté totale, à condition d'éviter le gel des réservoirs et les parkings payants. 10 conseils testés pour 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1171
 wp_locale: "fr"

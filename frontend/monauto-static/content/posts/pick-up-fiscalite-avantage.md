@@ -2,6 +2,7 @@
 title: "Pick-up et fiscalité en 2026 : quels avantages réels pour les professionnels ?"
 description: "Depuis la loi de finances 2025, un pick-up double cabine à 5 places paie malus et taxes comme une voiture. Seule la cabine simple reste exonérée. Le détail."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "choisir-un-utilitaire"
 wp_id: 1522

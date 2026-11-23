@@ -2,6 +2,7 @@
 title: "Quelle est la meilleure trottinette électrique en 2026 ? Comparatif et guide d'achat"
 description: "Choisir une trottinette électrique en 2026 dépend de votre usage : trajets urbains, chemins accidentés ou budget serré. Voici les modèles les plus fiables "
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1743
 wp_locale: "fr"

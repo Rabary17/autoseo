@@ -2,6 +2,7 @@
 title: "Motorhome Waterproofing Check: When, How and What It Costs"
 description: "A motorhome that lets in water risks mould and corrosion, and a repair bill that easily tops €1,000. When to check its waterproofing, and how."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1624
 wp_locale: "en"

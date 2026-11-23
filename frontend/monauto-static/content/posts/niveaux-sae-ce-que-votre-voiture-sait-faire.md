@@ -2,6 +2,7 @@
 title: "Niveaux SAE, ce que votre voiture sait vraiment faire"
 description: "Conduite autonome, assistance, pilotage automatique : les constructeurs emploient des mots flatteurs. La norme SAE J3016 classe les systèmes de 0 à 5 selon"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 wp_id: 2043
 wp_locale: "fr"

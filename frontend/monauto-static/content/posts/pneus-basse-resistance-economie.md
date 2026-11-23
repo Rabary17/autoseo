@@ -2,6 +2,7 @@
 title: "Pneus basse résistance : économie réelle et gains à l'usage"
 description: "Les pneus basse résistance réduisent la consommation de carburant de 3 à 5 %. Gains réels, prix, modèles 2026 et conseils pour ne pas perdre l'économie."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1108
 wp_locale: "fr"

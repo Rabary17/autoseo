@@ -2,6 +2,7 @@
 title: "Gestion de flotte logiciel TPE : comment choisir une solution adaptée à 3-10 véhicules"
 description: "Un logiciel de gestion de flotte permet aux TPE de suivre leurs véhicules en temps réel, automatiser les tâches administratives et repérer les économies cachées. Comment choisir en 2026."
 date: "2026-08-21"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "lld-gestion-de-flotte"
 wp_id: 1515

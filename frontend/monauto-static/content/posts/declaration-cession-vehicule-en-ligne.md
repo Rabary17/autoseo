@@ -2,6 +2,7 @@
 title: "Déclaration de cession de véhicule en ligne : les cas particuliers à connaître"
 description: "Véhicule gagé, acheteur qui n'immatricule pas, vente à un professionnel : voici comment gérer les situations qui sortent du cadre classique de la déclaration de cession."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 933

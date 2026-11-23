@@ -2,6 +2,7 @@
 title: "Avantage en nature véhicule de fonction : calcul, fiscalité et optimisation en 2026"
 description: "L'avantage en nature véhicule de fonction se calcule en pourcentage du prix d'achat ou du loyer depuis février 2025. Barème, fiscalité et leviers d'optimisation 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "fiscalite-vehicule-pro"
 wp_id: 1539

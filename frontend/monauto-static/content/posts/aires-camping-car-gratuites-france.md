@@ -2,6 +2,7 @@
 title: "Aires de camping-car gratuites en France : où les trouver et comment les utiliser ?"
 description: "Plus de 500 aires accueillent gratuitement les camping-cars en France. Emplacements, services, règles de stationnement et erreurs à éviter pour voyager sereinement."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1159
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Utilitaire d’occasion à kilométrage élevé : comment bien choisir sans se tromper ?"
 description: "Acheter un utilitaire d’occasion avec un kilométrage élevé n’est pas un pari risqué si l’on cible les bons modèles et que l’on vérifie les points critiques"
 date: "2026-08-20"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "choisir-un-utilitaire"
 wp_id: 1581

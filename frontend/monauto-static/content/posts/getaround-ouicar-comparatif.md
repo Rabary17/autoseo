@@ -2,6 +2,7 @@
 title: "Getaround ou Turo (ex-Ouicar) : quel service d'autopartage choisir en 2026 ?"
 description: "Ouicar est devenu Turo depuis fin 2023. Comparatif avec Getaround : tarifs, assurance, disponibilité et usages pour bien choisir votre location entre particuliers."
 date: "2026-08-13"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "autopartage-location-particuliers"
 wp_id: 1413

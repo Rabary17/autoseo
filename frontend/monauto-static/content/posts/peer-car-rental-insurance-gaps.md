@@ -2,6 +2,7 @@
 title: "Peer-to-Peer Car Rental Insurance: What Your Standard Policy Doesn’t Cover"
 description: "Renting through Getaround or Citiz? Your own car insurance won't cover it. Real excesses, exclusions and pitfalls to check before you book in 2026."
 date: "2026-11-03"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1648
 wp_locale: "en"

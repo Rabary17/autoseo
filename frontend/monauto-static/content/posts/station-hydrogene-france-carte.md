@@ -2,6 +2,7 @@
 title: "Carte des stations hydrogène en France : où faire le plein en 2026 ?"
 description: "Le réseau hydrogène français compte une cinquantaine de stations actives en 2026, après une crise sévère de la filière. Localisation, prix au kg et modèles."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "gpl-gnv-hydrogene"
 wp_id: 878

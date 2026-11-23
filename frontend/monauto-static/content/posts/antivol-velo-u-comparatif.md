@@ -2,6 +2,7 @@
 title: "Antivol vélo U comparatif 2026 : lequel choisir ?"
 description: "Un antivol U certifié SRA ou FUB reste la meilleure protection contre le vol en ville. Comparatif de 3 modèles, prix et conseils pour bien choisir."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "equipement-antivol"
 wp_id: 1724

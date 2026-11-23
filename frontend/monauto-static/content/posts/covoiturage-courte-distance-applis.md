@@ -2,6 +2,7 @@
 title: "Covoiturage courte distance : quelles applis pour des trajets du quotidien ?"
 description: "BlaBlaCar Daily, Karos, Klaxit, Mobicoop : comparatif des applications de covoiturage courte distance en 2026, pour réduire vos frais sur les trajets du quotidien."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "covoiturage"
 wp_id: 1356

@@ -2,6 +2,7 @@
 title: "Galerie et porte-échelle pour fourgon : choisir et installer sans se tromper"
 description: "Porte-échelle latéral ou galerie de toit : comment choisir, installer et respecter le PTAC et l'assurance de votre fourgon utilitaire en 2026."
 date: "2026-08-19"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "amenagement-equipement"
 wp_id: 1550

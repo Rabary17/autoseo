@@ -2,6 +2,7 @@
 title: "Certificat de conformité européen (COC) : tout savoir pour immatriculer un véhicule importé"
 description: "Le certificat de conformité européen (COC) est indispensable pour immatriculer un véhicule importé. Obtention, coût réel et passage à l'eCOC en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "immatriculation-import"
 wp_id: 903

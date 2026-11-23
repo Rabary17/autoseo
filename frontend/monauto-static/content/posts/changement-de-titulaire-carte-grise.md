@@ -2,6 +2,7 @@
 title: "Changement de titulaire carte grise : prix, délais et documents en 2026"
 description: "Le changement de titulaire de carte grise est obligatoire sous 1 mois après achat. Documents, délais et coût moyen pour éviter une amende en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 962

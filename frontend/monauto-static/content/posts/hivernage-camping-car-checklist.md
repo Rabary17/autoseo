@@ -2,6 +2,7 @@
 title: "Hivernage camping-car : la checklist terrain pour ne rien oublier"
 description: "Préparez votre camping-car pour l’hiver avec cette checklist en 12 étapes : vidange complète, protection batterie, stockage gaz et nettoyage extérieur."
 date: "2026-08-17"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "entretien-hivernage"
 wp_id: 1263

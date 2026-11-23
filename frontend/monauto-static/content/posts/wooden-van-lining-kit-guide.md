@@ -2,6 +2,7 @@
 title: "Wooden Van Lining Kits: Ready-to-Fit Options, Prices and Installation Tips"
 description: "A wooden van lining kit turns a commercial vehicle into an organised workspace, no weeks-long wait for a custom build. Prices, models and install tips."
 date: "2026-10-26"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1678
 wp_locale: "en"

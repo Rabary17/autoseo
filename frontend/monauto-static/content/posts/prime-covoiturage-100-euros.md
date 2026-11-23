@@ -2,6 +2,7 @@
 title: "Prime covoiturage 100 euros en 2026 : existe-t-elle encore ?"
 description: "La prime nationale de 100 € pour un premier trajet en covoiturage a disparu le 1er janvier 2025. Voici ce qui la remplace et comment financer vos trajets."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "covoiturage"
 wp_id: 1341

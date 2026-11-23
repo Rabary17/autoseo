@@ -2,6 +2,7 @@
 title: "Motorhome Class 2 Tolls: Prices, Rules and Smart Travel Tips Across Europe"
 description: "A Class 2 motorhome costs more at tolls than a car. Exact rates in France and across Europe, and how to avoid surprises and cut costs."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1611
 wp_locale: "en"

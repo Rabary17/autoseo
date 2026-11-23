@@ -2,6 +2,7 @@
 title: "LPG Cars: Pros, Cons and Key Points to Know"
 description: "LPG costs up to 50% less at the pump than petrol, but its range and filling station network raise questions. The pros, cons and real costs in 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1695
 wp_locale: "en"

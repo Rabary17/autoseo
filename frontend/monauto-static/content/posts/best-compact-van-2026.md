@@ -2,6 +2,7 @@
 title: "Best Compact Van in 2026: Reliability, Price and Usage Comparison"
 description: "For a tradesperson, courier or small fleet, the best compact van balances reliability, total cost and versatility. 2026 comparison of Kangoo, Transit Custom and more."
 date: "2026-11-04"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1668
 wp_locale: "en"

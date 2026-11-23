@@ -2,6 +2,7 @@
 title: "Batterie cellule : entretien et hivernage pour la faire durer"
 description: "La batterie cellule alimente frigo, éclairage et chauffage en camping-car. Entretien, choix de technologie et hivernage pour éviter les pannes en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "entretien-hivernage"
 wp_id: 1280

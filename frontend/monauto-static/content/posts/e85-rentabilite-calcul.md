@@ -2,6 +2,7 @@
 title: "E85 : calculer sa rentabilité en 2026 (guide pratique)"
 description: "En novembre 2026, l'E85 coûte environ 1,25 € de moins par litre que le SP95. Voici comment calculer précisément le délai d'amortissement d'une conversion selon votre kilométrage."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1143

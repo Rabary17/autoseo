@@ -2,6 +2,7 @@
 title: "LPG Tank Inspection: When and How to Do It"
 description: "An LPG tank runs under pressure. Its periodic inspection, separate from the standard roadworthiness test, is your best protection against a leak."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1697
 wp_locale: "en"

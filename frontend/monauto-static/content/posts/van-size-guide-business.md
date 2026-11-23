@@ -2,6 +2,7 @@
 title: "3m³ vs 6m³ Van: Which Size is Right for Your Business Needs?"
 description: "Choosing between a 3m³ and a 6m³ van depends on your loads, routes and tax rules. Dimensions, real-world uses and CTTE tax advantages explained simply."
 date: "2026-11-05"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1670
 wp_locale: "en"

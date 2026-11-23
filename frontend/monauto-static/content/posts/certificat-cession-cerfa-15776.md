@@ -2,6 +2,7 @@
 title: "Certificat de cession Cerfa 15776 : téléchargement, remplissage et déclaration en ligne"
 description: "Le certificat de cession Cerfa 15776 est obligatoire pour vendre un véhicule d'occasion. Téléchargement, remplissage et déclaration ANTS sous 15 jours."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 937

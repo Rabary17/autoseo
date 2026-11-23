@@ -2,6 +2,7 @@
 title: "Motorhome Gas Safety: Regulations and Best Practices for Worry-Free Travel"
 description: "Which gas cylinders are allowed in a motorhome, how to detect a leak, and what equipment to install for safe travel. The practical answers for 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1625
 wp_locale: "en"

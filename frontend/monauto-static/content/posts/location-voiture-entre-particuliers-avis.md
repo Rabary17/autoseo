@@ -2,6 +2,7 @@
 title: "Location de voiture entre particuliers : avis, pièges et bonnes pratiques en 2026"
 description: "Location entre particuliers en 2026 : économisez 25 à 45 % vs un loueur pro, mais attention aux assurances et aux pièges. Voici les avis et bonnes pratiques."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "autopartage-location-particuliers"
 wp_id: 1445

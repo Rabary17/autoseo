@@ -2,6 +2,7 @@
 title: "Motorhome Weight Limits: How Heavy Can You Go on a Category B Licence?"
 description: "A motorhome under 3.5 tonnes drives on a standard Category B licence. Category C becomes mandatory above that, except for the B79 exception and a coming reform."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1615
 wp_locale: "en"

@@ -2,6 +2,7 @@
 title: "Boîtier E85 homologué : prix, installation et rentabilité en 2026"
 description: "Installer un boîtier E85 homologué coûte entre 500 € et 1 200 €. Prix détaillés, étapes d'installation et rentabilité réelle face à la hausse des carburants."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1115

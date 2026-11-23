@@ -2,6 +2,7 @@
 title: "Fourgon 3m³ vs 6m³ : quel volume choisir pour vos besoins pro ?"
 description: "Choisir entre un fourgon 3m³ et 6m³ dépend de vos charges, trajets et contraintes fiscales. Dimensions, usages concrets et avantages du CTTE expliqués simplement."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "choisir-un-utilitaire"
 wp_id: 1554

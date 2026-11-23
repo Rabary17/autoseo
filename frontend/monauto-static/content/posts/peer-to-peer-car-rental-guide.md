@@ -2,6 +2,7 @@
 title: "Peer-to-Peer Car Rental: Reviews, Pitfalls and Best Practices in 2026"
 description: "Peer-to-peer car rental in 2026 saves 25 to 45% vs a professional rental, insurance included. Here's what reviews say, and the pitfalls to check first."
 date: "2026-10-30"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1645
 wp_locale: "en"

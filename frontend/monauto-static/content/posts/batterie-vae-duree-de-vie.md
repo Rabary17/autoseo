@@ -2,6 +2,7 @@
 title: "Batterie VAE : durée de vie réelle, entretien et signes d'usure"
 description: "La batterie d'un vélo électrique dure entre 3 et 5 ans, soit 2 000 à 3 000 cycles de charge. Entretien, signes de fatigue et remplacement en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1756
 wp_locale: "fr"

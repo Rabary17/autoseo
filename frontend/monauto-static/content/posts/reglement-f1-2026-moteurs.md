@@ -2,6 +2,7 @@
 title: "Règlement F1 2026 : ce qui change pour les moteurs"
 description: "La F1 2026 passe à une répartition quasi 50/50 entre thermique et électrique, un poids minimal de 768 kg et un budget moteur de 190 millions de dollars."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 category: "f1-competition"
 wp_id: 1935

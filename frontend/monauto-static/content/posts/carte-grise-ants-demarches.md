@@ -2,6 +2,7 @@
 title: "Carte grise ANTS : démarches 2026, délais et coûts expliqués"
 description: "Changement de titulaire, succession, collection : démarches carte grise ANTS 2026, délais légaux, coûts réels et documents à fournir, expliqués simplement."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 966

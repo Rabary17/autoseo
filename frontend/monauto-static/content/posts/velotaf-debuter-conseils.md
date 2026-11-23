@@ -2,6 +2,7 @@
 title: "Vélotaf pour débutants : 7 conseils pratiques pour se lancer sans stress"
 description: "Se lancer dans le vélotaf peut sembler intimidant, mais avec les bons conseils, c’est plus simple qu’on ne le pense. Voici 7 astuces pour rouler en toute s"
 date: "2026-09-08"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1731
 wp_locale: "fr"

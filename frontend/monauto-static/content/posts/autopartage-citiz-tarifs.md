@@ -2,6 +2,7 @@
 title: "Autopartage Citiz : tarifs et abonnements 2026"
 description: "Citiz : 16 €/mois + 3 €/h, ou 5,50 €/h sans engagement. Coût réel sur 3 trajets types, comparé à une voiture personnelle en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "autopartage-location-particuliers"
 wp_id: 1423

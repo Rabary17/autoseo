@@ -2,6 +2,7 @@
 title: "Registering an Imported Vehicle in France: Steps, Timelines and Costs for 2026"
 description: "Registering an imported vehicle in France takes 7 to 10 days once the file is complete. Average cost: €200 to €500 depending on the region, for 2026."
 date: "2026-11-18"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 wp_id: 1684
 wp_locale: "en"

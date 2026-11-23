@@ -2,6 +2,7 @@
 title: "VAE reconditionné : avis, prix et fiabilité en 2026"
 description: "Le marché du vélo électrique reconditionné progresse en 2026, avec des remises allant jusqu'à 60% face au neuf. Mais est-ce vraiment fiable ? Notre avis dét"
 date: "2026-09-11"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1883
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Prime vélo électrique 2026 : quelles aides locales et régionales en France ?"
 description: "L'État a supprimé la prime nationale vélo électrique début 2025. En 2026, seules les collectivités locales financent encore l'achat, sous conditions."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "aides-a-l-achat"
 wp_id: 1707

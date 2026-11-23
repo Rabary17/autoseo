@@ -2,6 +2,7 @@
 title: "Track day : prix des circuits en France en 2026"
 description: "Un track day en France coûte de 65 € pour un stage découverte à plus de 2 000 € pour une journée en GT au Paul Ricard. Prix, circuits et équipement 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 wp_id: 1927
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Amortissement véhicule société : plafonds 2026 et calcul"
 description: "18 300 €, 30 000 € ou aucune limite pour un utilitaire CTTE : les plafonds d'amortissement 2026 pour les véhicules de société, calcul à l'appui."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "fiscalite-vehicule-pro"
 wp_id: 1577

@@ -2,6 +2,7 @@
 title: "SAE Driving Levels, What Your Car Can Really Do"
 description: "Self-driving, assisted, autopilot: carmakers use flattering words. The SAE J3016 standard ranks systems from 0 to 5 on one simple question: who drives?"
 date: "2026-10-30"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 wp_id: 2048
 wp_locale: "en"

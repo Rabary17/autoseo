@@ -2,6 +2,7 @@
 title: "Contrôle technique moto 2026 : calendrier, prix et points vérifiés"
 description: "Le contrôle technique moto concerne en 2026 les deux-roues immatriculés entre 2020 et 2021. Calendrier complet, tarifs moyens et points de contrôle à connaître."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 952

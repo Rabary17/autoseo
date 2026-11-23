@@ -2,6 +2,7 @@
 title: "Batterie LFP ou NMC, ce qui change vraiment au volant"
 description: "LFP ou NMC : deux chimies dominent les batteries des voitures électriques. Prix, autonomie, recharge et durée de vie, les vraies différences en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "julien-fabre"
 category: "moteurs-electriques"
 wp_id: 2038

@@ -2,6 +2,7 @@
 title: "Dacia Sandero vs Renault Clio VI : le vrai prix en 2026"
 description: "16 050 € vs 23 900 € : on a vraiment configuré une Sandero Expression et une Clio VI techno sur les sites officiels, capture à l’appui."
 date: "2026-09-19"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 category: "configurateurs-cout-de-possession"
 wp_id: 2017

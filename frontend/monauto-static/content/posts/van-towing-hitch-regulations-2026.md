@@ -2,6 +2,7 @@
 title: "Van Towing Hitch Regulations in 2026: What the Law Says"
 description: "A van towing hitch must carry a riveted approval plate, respect the vehicle's GVW, and appear on the registration certificate if it changes that GVW."
 date: "2026-10-27"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1679
 wp_locale: "en"

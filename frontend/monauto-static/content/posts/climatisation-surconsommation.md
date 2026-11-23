@@ -2,6 +2,7 @@
 title: "Climatisation qui fait surconsommer : causes, solutions et modèles à risque"
 description: "Une climatisation défaillante peut ajouter jusqu'à 1 L/100 km de consommation. Causes réelles, coût de réparation et bonnes pratiques pour l'éviter."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1111
 wp_locale: "fr"

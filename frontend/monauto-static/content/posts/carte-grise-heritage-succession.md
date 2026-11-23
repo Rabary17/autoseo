@@ -2,6 +2,7 @@
 title: "Carte grise héritage et succession : démarches après un décès"
 description: "Après un décès, les héritiers doivent régulariser la carte grise sous 3 mois. Procédure exacte, documents à fournir et pièges à éviter, pour 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "duplicata-modifications"
 wp_id: 1015

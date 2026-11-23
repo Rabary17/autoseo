@@ -2,6 +2,7 @@
 title: "Décote d'un camping-car neuf : combien perd-il vraiment la première année ?"
 description: "Un camping-car neuf perd environ 15 à 20 % de sa valeur dès la première année. Pourquoi cette décote est plus forte que pour une voiture, et comment la limiter."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "acheter-camping-car"
 wp_id: 1225

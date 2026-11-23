@@ -2,6 +2,7 @@
 title: "Voiture GPL : avantages, inconvénients et points clés à connaître"
 description: "Le GPL coûte jusqu’à 50 % moins cher à la pompe que l’essence, mais son autonomie et son réseau de stations posent question. Voici les avantages, inconvéni"
 date: "2026-08-08"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "gpl-gnv-hydrogene"
 wp_id: 885

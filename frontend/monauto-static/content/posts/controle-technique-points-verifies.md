@@ -2,6 +2,7 @@
 title: "Contrôle technique : les points vérifiés en 2026 (liste complète)"
 description: "Le contrôle technique 2026 examine 133 points de sécurité répartis en 9 fonctions. Freins, éclairage, pollution : la liste complète et les défauts les plus fréquents."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 1007

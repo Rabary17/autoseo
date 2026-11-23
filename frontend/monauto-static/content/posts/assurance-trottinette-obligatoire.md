@@ -2,6 +2,7 @@
 title: "Assurance trottinette obligatoire : la loi en 2026"
 description: "Rouler sans assurance trottinette expose à une amende de 135 €. Garanties obligatoires, prix réels et sanctions à connaître en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1875
 wp_locale: "fr"

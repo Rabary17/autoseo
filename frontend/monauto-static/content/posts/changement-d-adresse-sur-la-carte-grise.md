@@ -2,6 +2,7 @@
 title: "Changement d'adresse sur la carte grise : démarches, prix et délais en 2026"
 description: "Changer l'adresse sur sa carte grise reste gratuit dans la majorité des cas. Cotitularité, procuration, retard : les cas particuliers expliqués en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "duplicata-modifications"
 wp_id: 1009

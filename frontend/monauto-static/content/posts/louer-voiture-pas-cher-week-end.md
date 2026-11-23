@@ -2,6 +2,7 @@
 title: "Louer une voiture pas cher pour un week-end : 7 astuces testées et approuvées"
 description: "Besoin d'une voiture pour un week-end sans exploser votre budget ? Voici 7 astuces concrètes pour trouver une location à prix réduit, avec des exemples et "
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "location-courte-longue-duree"
 wp_id: 1496

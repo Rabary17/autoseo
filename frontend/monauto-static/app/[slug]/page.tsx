@@ -6,8 +6,7 @@ import { resolveAuthor, authorUrl } from "@/lib/authors";
 import { getCategory } from "@/lib/categories";
 import { articleSchema, faqSchema } from "@/lib/schema";
 import JsonLd from "@/components/JsonLd";
-
-const dateFr = (d: string) => (d ? new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" }) : "");
+import { formatDate } from "@/lib/format";
 
 export function generateStaticParams() {
   const slugsPosts = getAllPosts().map((p) => ({ slug: p.slug }));
@@ -44,15 +43,18 @@ export default async function ItemPage({ params }: { params: Promise<{ slug: str
           )}
           <h1 className="article__title">{post.title}</h1>
           <div className="article__byline">
-            {author && (
-              <>
-                {author.image && <img className="avatar" src={author.image} alt={author.name} />}
-                <span>
-                  <Link href={authorUrl(author)}>{author.name}</Link>
-                  {post.date && <> · <time dateTime={post.date}>{dateFr(post.date)}</time></>}
-                </span>
-              </>
-            )}
+            {author?.image && <img className="avatar" src={author.image} alt={author.name} />}
+            <span>
+              {author && <Link href={authorUrl(author)}>{author.name}</Link>}
+              {author && post.date && <span aria-hidden="true"> · </span>}
+              {post.date && <time dateTime={post.date}>{formatDate(post.date)}</time>}
+              {post.updated && post.updated !== post.date && (
+                <>
+                  <span aria-hidden="true"> · </span>
+                  mis à jour le <time dateTime={post.updated}>{formatDate(post.updated)}</time>
+                </>
+              )}
+            </span>
           </div>
         </div>
         {cover.src && (

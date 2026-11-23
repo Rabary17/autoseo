@@ -152,7 +152,7 @@ export function articleSchema(post: Post) {
     description: post.description,
     ...(cover.src ? { image: [urlAbsolue(cover.src)] } : {}),
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated ?? post.date,
     ...(category ? { articleSection: category.title } : {}),
     author: personRef(author),
     publisher: organizationRef(),

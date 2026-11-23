@@ -2,6 +2,7 @@
 title: "Meilleur éclairage vélo 2026 : comparatif et guide d'achat pour rouler en sécurité"
 description: "Quel éclairage vélo choisir en 2026 ? Comparatif des modèles USB, dynamo et rechargeables, avec prix, autonomie et conseils pour votre usage (ville, route,"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "equipement-antivol"
 wp_id: 1720

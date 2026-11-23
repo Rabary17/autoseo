@@ -2,6 +2,7 @@
 title: "Camping-car et permis B : quel poids maximum sans permis C ?"
 description: "Un camping-car de moins de 3,5 tonnes se conduit avec un simple permis B. Au-delà, le permis C reste obligatoire en 2026, sauf exceptions B79 et future réforme."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "acheter-camping-car"
 wp_id: 1218

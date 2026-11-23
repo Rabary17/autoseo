@@ -2,6 +2,7 @@
 title: "Getaround or Turo (ex-Ouicar): Which Car-Sharing Service Should You Choose in 2026?"
 description: "Ouicar became Turo in late 2023. Compare Getaround and Turo on pricing, insurance, availability and use cases before booking your next peer-to-peer rental."
 date: "2026-10-31"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1646
 wp_locale: "en"

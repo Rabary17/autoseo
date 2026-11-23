@@ -2,6 +2,7 @@
 title: "Motorhome Parking in Cities: Rules, Bans and Tips to Avoid Fines"
 description: "Parking a motorhome in a city is legal, just like parking a car. Most fines actually punish camping on the public road, not parking itself."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1627
 wp_locale: "en"

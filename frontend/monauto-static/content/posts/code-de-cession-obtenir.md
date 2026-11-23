@@ -2,6 +2,7 @@
 title: "Code de cession : comment l'obtenir après la vente de votre voiture ?"
 description: "Le code de cession est indispensable pour finaliser la vente d'un véhicule. Comment le générer sur l'ANTS, le transmettre à l'acheteur et que faire s'il expire."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 974

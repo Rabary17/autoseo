@@ -2,6 +2,7 @@
 title: "Immatriculer un véhicule importé en France : démarches, délais et coûts 2026"
 description: "Immatriculer un véhicule importé en France prend 7 à 10 jours une fois le dossier complet. Coût moyen : 200 à 500 € selon la région. Voici la marche à suiv"
 date: "2026-07-30"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "immatriculation-import"
 wp_id: 895

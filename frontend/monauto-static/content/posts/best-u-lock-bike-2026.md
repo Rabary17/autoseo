@@ -2,6 +2,7 @@
 title: "Best U-Lock for Bikes in 2026: Top Picks for Urban Cycling"
 description: "An SRA- or FUB-certified U-lock is the best protection for a bike in the city. We compare 3 models, their strengths, limits and how to choose without mistakes."
 date: "2026-11-12"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1773
 wp_locale: "en"

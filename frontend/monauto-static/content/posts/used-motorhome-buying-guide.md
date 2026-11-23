@@ -2,6 +2,7 @@
 title: "Used Motorhome Buyer's Guide 2026: Prices, Tips and Pitfalls to Avoid"
 description: "Used motorhomes sell for €10,000 to €80,000 in 2026. Engine, brakes and waterproofing matter as much as the price tag. Checks, costs and buying tips."
 date: "2026-10-19"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1613
 wp_locale: "en"

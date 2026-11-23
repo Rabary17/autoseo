@@ -2,6 +2,7 @@
 title: "Contrôle technique d'une voiture électrique en 2026"
 description: "Le contrôle technique d'une voiture électrique coûte 80 à 95 € en 2026. Points vérifiés, prix réel et astuces pour éviter la contre-visite."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 949

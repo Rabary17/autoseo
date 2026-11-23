@@ -2,6 +2,7 @@
 title: "Stations low cost : où trouver du carburant de qualité au meilleur prix en 2026 ?"
 description: "Le gazole a oscillé entre 1,65 € et 2,26 €/L en 2026 selon les mois. Voici où faire le plein en station low cost sans risque pour le moteur."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1096
 wp_locale: "fr"

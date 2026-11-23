@@ -2,6 +2,7 @@
 title: "Assurance location entre particuliers : ce qu'il faut savoir"
 description: "Louer via Getaround ou Citiz ? Votre assurance auto classique ne couvre pas cet usage. Garanties réelles, franchises et pièges à éviter en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "autopartage-location-particuliers"
 wp_id: 1403

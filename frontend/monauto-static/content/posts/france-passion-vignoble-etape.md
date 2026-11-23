@@ -2,6 +2,7 @@
 title: "France Passion vignoble étape : le guide complet pour camper chez les vignerons"
 description: "France Passion propose des milliers d'étapes gratuites en France, dont de nombreux domaines viticoles. Comment en profiter en camping-car ou en van, sans mauvaise surprise."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1167
 wp_locale: "fr"

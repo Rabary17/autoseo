@@ -2,6 +2,7 @@
 title: "Recharge de flotte entreprise : installation, coûts réels et aides en 2026"
 description: "L'aide Advenir pour les parkings privés d'entreprise a disparu en 2026. Coût réel d'une borne, TVA à 20 %, obligations légales et aides qui restent actives."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1565
 wp_locale: "fr"

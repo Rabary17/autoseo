@@ -2,6 +2,7 @@
 title: "Taxi conventionné CPAM : remboursement, tarifs et nouvelle convention 2025"
 description: "Un taxi conventionné CPAM rembourse 55 % des frais, 100 % en ALD. Depuis la convention nationale 2025, un forfait de 13 € s'ajoute au tarif kilométrique."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1307
 wp_locale: "fr"

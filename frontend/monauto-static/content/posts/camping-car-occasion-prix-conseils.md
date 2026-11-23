@@ -2,6 +2,7 @@
 title: "Camping-car d'occasion : prix, conseils et pièges à éviter en 2026"
 description: "Prix moyens des camping-cars d'occasion en 2026, critères essentiels pour bien choisir et pièges courants à éviter avant de signer l'achat."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "acheter-camping-car"
 wp_id: 1297

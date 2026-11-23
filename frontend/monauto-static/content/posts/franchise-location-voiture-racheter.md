@@ -2,6 +2,7 @@
 title: "Franchise location voiture : comment la racheter et à quel prix ?"
 description: "La franchise en location voiture peut atteindre 3 000 € en cas d'accident ou de vol. Le rachat de franchise réduit ce risque. Prix, pièges et alternatives en 2026."
 date: "2026-08-11"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "location-courte-longue-duree"
 wp_id: 1452

@@ -2,6 +2,7 @@
 title: "Carte carburant pro comparatif 2026 : quelle solution pour votre flotte ?"
 description: "Carte pétrolière, carte multi-réseaux digitale ou carte poids lourds : comparatif des vraies solutions de carte carburant pro pour les flottes en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "lld-gestion-de-flotte"
 wp_id: 1508

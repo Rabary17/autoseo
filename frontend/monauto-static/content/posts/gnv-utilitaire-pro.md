@@ -2,6 +2,7 @@
 title: "GNV utilitaire pro : avantages, modèles et aides 2026"
 description: "Le GNV séduit les pros pour son coût réduit et son empreinte écologique. Quels modèles existent réellement en 2026 ? Quelles aides fiscales pour les professionnels ?"
 date: "2026-08-09"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "gpl-gnv-hydrogene"
 wp_id: 882

@@ -2,6 +2,7 @@
 title: "TER abonnement travail : prix, remboursement employeur et régions éligibles"
 description: "L'abonnement TER domicile-travail est remboursé à 50 % par l'employeur dans le privé, 75 % dans le public. Prix 2026, régions et cumul avec le FMD."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1360
 wp_locale: "fr"

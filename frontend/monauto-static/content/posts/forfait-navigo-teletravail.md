@@ -2,6 +2,7 @@
 title: "Forfait Navigo télétravail : remboursement, règles et alternatives en 2026"
 description: "Le forfait Navigo reste remboursable même en télétravail. Taux de prise en charge, exonération fiscale et alternatives : les règles 2026 expliquées simplement."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1385
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "European Certificate of Conformity (COC): Everything You Need to Register an Imported Vehicle"
 description: "The COC proves an imported vehicle meets EU standards. Without it, no registration certificate. Cost, how to get it, and what changes with the eCOC in 2026."
 date: "2026-11-20"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 wp_id: 1686
 wp_locale: "en"

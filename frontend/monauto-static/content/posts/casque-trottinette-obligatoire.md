@@ -2,6 +2,7 @@
 title: "Casque trottinette obligatoire : ce que dit vraiment la loi en 2026"
 description: "Le casque est obligatoire pour les mineurs en trottinette électrique et pour tous hors agglomération. Règles, sanctions et arrêtés locaux 2026 expliqués."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1746
 wp_locale: "fr"

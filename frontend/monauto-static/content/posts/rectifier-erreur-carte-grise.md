@@ -2,6 +2,7 @@
 title: "Rectifier une erreur sur sa carte grise : démarches et coûts en 2026"
 description: "Nom mal orthographié, mention de carburant erronée, genre national incorrect : voici comment rectifier une carte grise en ligne, avec délais et coûts 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "duplicata-modifications"
 wp_id: 1022

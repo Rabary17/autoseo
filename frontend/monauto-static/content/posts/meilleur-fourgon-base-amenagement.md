@@ -2,6 +2,7 @@
 title: "Quel est le meilleur fourgon base pour un aménagement van en 2026 ?"
 description: "Choisir le bon fourgon pour un aménagement van dépend de l'espace, de la fiabilité et des contraintes légales. Voici les 5 modèles les plus adaptés en 2026"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1253
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Déclaration de cession de carte grise : délai, prix et documents en 2026"
 description: "La déclaration de cession doit être effectuée sous 15 jours après la vente d'un véhicule, sous peine d'amende de 90 € à 375 €. Documents, étapes et coûts 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 929

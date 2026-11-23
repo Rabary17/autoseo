@@ -2,6 +2,7 @@
 title: "Carte carburant particulier cashback : comment gagner de l'argent en faisant le plein ?"
 description: "Points fidélité, prix plafonné ou cashback bancaire ponctuel : voici ce qui existe vraiment en France en 2026 pour réduire sa facture carburant, sans fausses promesses."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1088
 wp_locale: "fr"

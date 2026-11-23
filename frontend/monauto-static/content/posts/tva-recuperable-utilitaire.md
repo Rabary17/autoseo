@@ -2,6 +2,7 @@
 title: "TVA récupérable sur un utilitaire : ce que votre entreprise peut vraiment déduire"
 description: "Un utilitaire immatriculé CTTE permet de récupérer 100 % de la TVA sur l'achat, la location, l'entretien et le carburant. Règles 2026 et pièges à éviter."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "fiscalite-vehicule-pro"
 wp_id: 1573

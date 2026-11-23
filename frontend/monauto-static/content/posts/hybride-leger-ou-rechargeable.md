@@ -2,6 +2,7 @@
 title: "Ne confondez plus hybride léger et rechargeable"
 description: "Un hybride léger ne se branche jamais, alors qu’un hybride rechargeable peut rouler plusieurs kilomètres sans une goutte d’essence. Derrière ces deux étiqu"
 date: "2026-10-16"
+updated: "2026-11-23"
 author: "julien-fabre"
 category: "moteurs-hybrides"
 wp_id: 2035

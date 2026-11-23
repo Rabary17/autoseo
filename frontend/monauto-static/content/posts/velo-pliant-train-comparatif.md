@@ -2,6 +2,7 @@
 title: "Vélo pliant et train : le comparatif malin pour voyager léger en 2026"
 description: "Voyager en train avec un vélo pliant, c’est possible sans se ruiner ni transpirer. On compare 5 modèles légers, pliables rapidement et compatibles avec les"
 date: "2026-08-26"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1735
 wp_locale: "fr"

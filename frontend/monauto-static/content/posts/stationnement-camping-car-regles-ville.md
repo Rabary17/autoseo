@@ -2,6 +2,7 @@
 title: "Stationnement camping-car en ville : règles, interdictions et astuces pour éviter les amendes"
 description: "Stationner un camping-car en ville est légal comme pour une voiture. La majorité des amendes sanctionnent en réalité le camping sur la voie publique."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1155

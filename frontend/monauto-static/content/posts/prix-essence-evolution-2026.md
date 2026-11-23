@@ -2,6 +2,7 @@
 title: "Prix essence 2026 : évolution, crise du gazole et conseils pour payer moins cher"
 description: "Depuis la guerre au Moyen-Orient de février 2026, le gazole dépasse 2,20 €/L en France. Déstockage stratégique, écarts entre carburants et astuces d'économie."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1086
 wp_locale: "fr"

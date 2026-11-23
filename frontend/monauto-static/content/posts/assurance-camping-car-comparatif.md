@@ -2,6 +2,7 @@
 title: "Assurance camping-car comparatif : comment choisir la meilleure offre en 2026 ?"
 description: "Assurance camping-car : comparatif des formules tiers et tous risques, prix 2026, garanties à vérifier et cas particuliers du van aménagé VASP."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1208

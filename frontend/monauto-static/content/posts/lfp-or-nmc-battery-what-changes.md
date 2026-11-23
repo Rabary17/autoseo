@@ -2,6 +2,7 @@
 title: "LFP or NMC Battery, What Changes Behind the Wheel"
 description: "Two chemistries dominate electric car batteries, LFP and NMC. Price, range, charging and lifespan, the real differences in 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "julien-fabre"
 category: "moteurs-electriques"
 wp_id: 2045

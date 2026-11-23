@@ -2,6 +2,7 @@
 title: "Gaz en camping-car : sécurité, réglementation et bonnes pratiques pour voyager serein"
 description: "Quelles bouteilles de gaz sont autorisées en camping-car, comment détecter une fuite et quels équipements installer pour voyager en sécurité. Le point en 2026."
 date: "2026-08-23"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "entretien-hivernage"
 wp_id: 1500

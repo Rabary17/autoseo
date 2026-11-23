@@ -2,6 +2,7 @@
 title: "Carte VTC examen : tout savoir pour réussir et obtenir sa carte professionnelle"
 description: "Passer l'examen VTC coûte environ 200 € en 2026 et reste l'unique voie d'accès depuis le décret du 5 août 2026. Coût, inscription et renouvellement."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1319
 wp_locale: "fr"

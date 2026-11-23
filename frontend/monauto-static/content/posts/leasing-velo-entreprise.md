@@ -2,6 +2,7 @@
 title: "Leasing vélo entreprise : prix, avantages fiscaux et comment le mettre en place"
 description: "Le leasing vélo entreprise permet aux salariés de rouler à vélo sans achat. Coût mensuel, avantages fiscaux et étapes pour le mettre en place en entreprise"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "aides-a-l-achat"
 wp_id: 1704

@@ -2,6 +2,7 @@
 title: "Devenir chauffeur VTC : toutes les conditions à connaître en 2026"
 description: "Depuis août 2026, l'examen est l'unique voie d'accès à la carte VTC. Carte professionnelle, garantie financière, véhicule conforme : le guide complet des coûts et démarches."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1333
 wp_locale: "fr"

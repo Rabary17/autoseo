@@ -2,6 +2,7 @@
 title: "Taxe CO2 sur un véhicule d'occasion : calcul, exonération et malus en 2026"
 description: "La taxe CO2 vise surtout les occasions importées. Seuil à 108 g/km en 2026, décote selon l'ancienneté, exonérations CTTE et famille nombreuse détaillées."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "malus-taxes"
 wp_id: 907

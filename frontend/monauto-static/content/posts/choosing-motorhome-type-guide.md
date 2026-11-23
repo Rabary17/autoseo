@@ -2,6 +2,7 @@
 title: "Low-Profile, Coachbuilt or Over-Cab: Which Motorhome Suits Your Travel Style?"
 description: "Low-profile, coachbuilt or over-cab: the choice comes down to weight, space and budget. A clear comparison for a couple's weekend or a family tour of Europe."
 date: "2026-10-20"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1614
 wp_locale: "en"

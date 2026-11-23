@@ -2,6 +2,7 @@
 title: "Plaque WW provisoire : durée de validité, renouvellement et démarches 2026"
 description: "Depuis le 1er janvier 2026, la plaque WW est rose et valable 4 mois, sans renouvellement possible. Durée, coût et démarches ANTS expliqués simplement."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "immatriculation-import"
 wp_id: 900

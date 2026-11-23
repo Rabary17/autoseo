@@ -2,6 +2,7 @@
 title: "Contre-visite du contrôle technique : délais, défauts et conséquences"
 description: "Une contre-visite impose un délai de 2 mois pour corriger les défauts. Défauts critiques, amendes et démarches à connaître pour régulariser votre véhicule."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 945

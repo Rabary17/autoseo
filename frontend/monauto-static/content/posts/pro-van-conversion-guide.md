@@ -2,6 +2,7 @@
 title: "Pro-Level Van Conversion: How to Fit Out Your Van Like an Expert"
 description: "A custom van conversion turns a van into a mobile workshop. Here's the wood to pick, the fixing method, the VASP rules and the real cost in 2026."
 date: "2026-10-23"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1669
 wp_locale: "en"

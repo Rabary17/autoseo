@@ -2,6 +2,7 @@
 title: "TVS 2026 : calcul, exonérations et barème des deux taxes qui l'ont remplacée"
 description: "La TVS a disparu en 2022, remplacée par la taxe CO2 et la taxe polluants. Barème 2026, exonérations CTTE et calcul réel pour une flotte d'entreprise."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "fiscalite-vehicule-pro"
 wp_id: 1569

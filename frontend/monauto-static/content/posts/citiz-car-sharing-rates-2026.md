@@ -2,6 +2,7 @@
 title: "Citiz Car-Sharing: 2026 Rates, Subscriptions and Savings vs. Owning a Car"
 description: "Citiz charges €16/month plus €3/hour with a subscription, or €5.50/hour with none. Here's the real cost on 3 typical trips, compared to owning a car in 2026."
 date: "2026-11-02"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1647
 wp_locale: "en"

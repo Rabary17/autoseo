@@ -2,6 +2,7 @@
 title: "Applications pour aires de camping-car : les 5 indispensables en 2026"
 description: "AireCampingCar, Park4Night, Camping-Car Park, France Passion, CamperContact : comparatif des 5 meilleures applications pour trouver une aire en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1163
 wp_locale: "fr"

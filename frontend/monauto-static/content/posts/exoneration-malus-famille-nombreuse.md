@@ -2,6 +2,7 @@
 title: "Exonération malus famille nombreuse : conditions et demande en 2026"
 description: "Les familles nombreuses peuvent demander une exonération partielle du malus écologique sur leur véhicule. Découvrez les conditions, le montant maximal (20 "
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "malus-taxes"
 wp_id: 915

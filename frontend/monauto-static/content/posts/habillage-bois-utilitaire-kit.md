@@ -2,6 +2,7 @@
 title: "Habillage bois pour utilitaire : kit prêt à poser, prix et conseils d'installation"
 description: "Un kit d'habillage bois transforme un utilitaire en espace de travail organisé. Prix, modèles compatibles et astuces d'installation sans percer la carrosserie."
 date: "2026-08-19"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "amenagement-equipement"
 wp_id: 1530

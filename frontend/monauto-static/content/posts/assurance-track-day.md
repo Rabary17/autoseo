@@ -2,6 +2,7 @@
 title: "Assurance track day : prix, garanties et courtiers 2026"
 description: "RC circuit, dommages véhicule, équipements : comptez entre 65 € et 200 € par jour pour rouler sur circuit en 2026. Garanties, pièges et courtiers."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 wp_id: 1923
 wp_locale: "fr"

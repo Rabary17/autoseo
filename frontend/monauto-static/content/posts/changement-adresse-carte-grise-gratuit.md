@@ -2,6 +2,7 @@
 title: "Changement d'adresse sur la carte grise : gratuit et obligatoire, mode d'emploi"
 description: "Le changement d'adresse sur la carte grise est gratuit pour les 3 premiers changements. Démarche en ligne, délais et documents à fournir en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "duplicata-modifications"
 wp_id: 1012

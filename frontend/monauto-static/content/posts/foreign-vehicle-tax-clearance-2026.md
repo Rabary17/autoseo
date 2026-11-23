@@ -2,6 +2,7 @@
 title: "Foreign Vehicle Tax Clearance Certificate: How to Obtain It in 2026"
 description: "The tax clearance certificate is free and mandatory to register a vehicle bought abroad. Documents, timelines and exceptions, step by step for 2026."
 date: "2026-11-17"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 wp_id: 1683
 wp_locale: "en"

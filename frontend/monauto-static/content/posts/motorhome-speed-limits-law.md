@@ -2,6 +2,7 @@
 title: "Motorhome Speed Limits: What the Law Says in France and Europe"
 description: "A motorhome under 3.5 t follows the same speed limits as a car. Heavier models follow a distinct regime, not the one for HGVs. The rules by weight."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1605
 wp_locale: "en"

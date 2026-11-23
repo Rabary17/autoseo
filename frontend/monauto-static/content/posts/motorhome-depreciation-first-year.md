@@ -2,6 +2,7 @@
 title: "New Motorhome Depreciation: How Much Value Does It Lose in the First Year?"
 description: "A new motorhome loses around 15 to 20% of its value in the first year alone. Why this depreciation runs steeper than a car's, and how to limit it."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1616
 wp_locale: "en"

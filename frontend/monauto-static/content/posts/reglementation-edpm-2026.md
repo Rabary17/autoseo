@@ -2,6 +2,7 @@
 title: "Réglementation EDPM 2026 : ce qui change pour les trottinettes et engins électriques"
 description: "Âge minimum, vitesse à 25 km/h, assurance obligatoire : les règles EDPM 2026 pour trottinettes et gyropodes, avec le barème complet des amendes."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1753
 wp_locale: "fr"

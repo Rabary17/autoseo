@@ -17,6 +17,7 @@ export type Post = {
   title: string;
   description: string;
   date: string;
+  updated?: string;
   author?: string;
   category?: string;
   image?: string;
@@ -58,6 +59,7 @@ function versPost(slug: string, data: Record<string, unknown>, contentHtml: stri
     title: String(data.title ?? slug),
     description: String(data.description ?? ""),
     date: String(data.date ?? ""),
+    updated: data.updated ? String(data.updated) : undefined,
     author: data.author ? String(data.author) : undefined,
     category: data.category ? String(data.category) : undefined,
     image: data.image ? String(data.image) : undefined,

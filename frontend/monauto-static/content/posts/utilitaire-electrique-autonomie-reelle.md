@@ -2,6 +2,7 @@
 title: "Utilitaire électrique : quelle autonomie réelle en 2026 ?"
 description: "En 2026, un utilitaire électrique offre une autonomie réelle de 200 à 460 km selon le segment. Pour un livreur parisien ou un artisan, voici comment ces ch"
 date: "2026-08-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1534
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Leisure Battery Care: Maintenance and Winterisation for Longevity"
 description: "A leisure battery powers your fridge, lights and heating off-grid. Poorly maintained, it dies in a single season. Here's how to make it last five to ten years."
 date: "2026-11-10"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1630
 wp_locale: "en"

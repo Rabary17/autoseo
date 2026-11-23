@@ -2,6 +2,7 @@
 title: "Limitation de vitesse camping-car : ce que dit la loi en France et en Europe"
 description: "Un camping-car de moins de 3,5 t suit les mêmes limitations qu’une voiture, mais les modèles plus lourds suivent un régime à part. Voici les vitesses par p"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1147

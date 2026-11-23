@@ -2,6 +2,7 @@
 title: "Marquage Bicycode obligatoire : ce que dit la loi en 2026"
 description: "Le marquage Bicycode est obligatoire pour tous les vélos neufs vendus en France depuis 2021. Un étudiant qui achète un VAE à 1 200 € en magasin repart avec"
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "equipement-antivol"
 wp_id: 1717

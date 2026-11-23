@@ -2,6 +2,7 @@
 title: "Carburant moins cher autour de moi : où faire le plein au meilleur prix en 2026 ?"
 description: "Gazole, SP98 ou E85 : les prix du carburant varient fortement d'une station à l'autre fin 2026. Applis, carburants alternatifs et astuces pour payer moins cher."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1092
 wp_locale: "fr"

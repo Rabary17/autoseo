@@ -2,6 +2,7 @@
 title: "Kangoo ou Master électrique : quel utilitaire Renault choisir pour votre activité ?"
 description: "Le Kangoo Van E-Tech Electric et le Master E-Tech Electric sont deux utilitaires Renault distincts, pas un seul modèle. Autonomie, charge utile et coût d'usage comparés pour les pros en 2026."
 date: "2026-08-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1561
 wp_locale: "fr"

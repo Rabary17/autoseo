@@ -2,6 +2,7 @@
 title: "Motorhome Winterisation: The Essential On-Site Checklist"
 description: "Prepare your motorhome for winter with this 12-step checklist: full drainage, battery protection, gas storage and exterior cleaning, in order."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1623
 wp_locale: "en"

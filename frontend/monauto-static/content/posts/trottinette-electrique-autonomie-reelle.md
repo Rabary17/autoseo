@@ -2,6 +2,7 @@
 title: "Trottinette électrique : quelle autonomie réelle en usage quotidien ?"
 description: "Entre 20 et 40 km d'autonomie réelle pour une trottinette électrique, loin des promesses constructeur mesurées en laboratoire. Ce qui fait vraiment chuter la batterie."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1750
 wp_locale: "fr"

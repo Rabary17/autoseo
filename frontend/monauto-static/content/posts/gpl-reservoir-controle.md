@@ -2,6 +2,7 @@
 title: "GPL réservoir contrôle : quand et comment le faire ?"
 description: "Le contrôle du réservoir GPL garantit la sécurité du véhicule et protège votre assurance en cas de sinistre. Étapes, coûts indicatifs et bonnes pratiques en 2026."
 date: "2026-08-15"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "gpl-gnv-hydrogene"
 wp_id: 1082

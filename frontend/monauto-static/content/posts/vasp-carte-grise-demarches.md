@@ -2,6 +2,7 @@
 title: "VASP et carte grise : démarches pour un van ou fourgon aménagé"
 description: "Un van ou fourgon aménagé nécessite une homologation VASP et une carte grise spécifique. Voici les étapes, documents et coûts pour immatriculer votre véhic"
 date: "2026-08-17"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1243
 wp_locale: "fr"

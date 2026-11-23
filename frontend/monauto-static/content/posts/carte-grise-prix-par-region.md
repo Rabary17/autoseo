@@ -2,6 +2,7 @@
 title: "Carte grise : prix par région en 2026 (simulateur et barème officiel)"
 description: "Le prix de la carte grise dépend de votre région et de la puissance fiscale du véhicule. Barème 2026 région par région et formule de calcul exacte."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 969

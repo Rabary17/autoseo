@@ -2,6 +2,7 @@
 title: "Céder un véhicule pour destruction : démarches 2026"
 description: "La cession pour destruction se déclare à l'ANTS sous 15 jours. Délai, Cerfa, coût réel et étapes à suivre, expliqués simplement en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 926

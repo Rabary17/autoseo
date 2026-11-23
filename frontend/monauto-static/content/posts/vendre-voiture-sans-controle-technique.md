@@ -2,6 +2,7 @@
 title: "Vendre une voiture sans contrôle technique : ce que dit la loi en 2026"
 description: "Vendre une voiture sans contrôle technique n’est autorisé que pour les véhicules de moins de 4 ans ou vendus à un professionnel. Voici les règles, les risq"
 date: "2026-08-14"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "cession-achat"
 wp_id: 922

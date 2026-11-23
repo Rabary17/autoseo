@@ -2,6 +2,7 @@
 title: "Coffre de toit : quel impact réel sur la consommation de carburant ?"
 description: "Un coffre de toit augmente la consommation de carburant de 15 à 20 % à 130 km/h, selon les tests de l'ADAC. Impact réel, coût annuel et astuces pour le limiter."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "entretien-pratique"
 wp_id: 1100

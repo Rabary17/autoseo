@@ -2,6 +2,7 @@
 title: "Quitus fiscal pour véhicule étranger : comment l'obtenir en 2026 ?"
 description: "Le quitus fiscal est gratuit et obligatoire pour immatriculer un véhicule acheté à l'étranger. Documents, délais et exceptions, étape par étape en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "immatriculation-import"
 wp_id: 897

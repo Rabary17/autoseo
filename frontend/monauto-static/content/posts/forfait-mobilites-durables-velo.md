@@ -2,6 +2,7 @@
 title: "Forfait mobilités durables vélo : jusqu'à 600 € par an pour vos trajets à vélo"
 description: "Le forfait mobilités durables (FMD) rembourse jusqu'à 600 € par an vos trajets à vélo domicile-travail, sans impôt ni cotisations. Comment l'activer, même si votre employeur ne le propose pas encore."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "aides-a-l-achat"
 wp_id: 1714

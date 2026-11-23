@@ -2,6 +2,7 @@
 title: "Van aménagé d’occasion : comment bien le choisir sans se tromper ?"
 description: "Choisir un van aménagé d’occasion demande de vérifier son homologation VASP, son historique, son entretien et son assurance. Voici les 7 critères indispens"
 date: "2026-08-17"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1239
 wp_locale: "fr"

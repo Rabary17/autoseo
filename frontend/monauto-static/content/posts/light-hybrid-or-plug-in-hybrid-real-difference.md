@@ -2,6 +2,7 @@
 title: "Light Hybrid or Plug-in Hybrid, Here Is the Real Difference"
 description: "A mild hybrid never plugs in, a plug-in hybrid can drive several kilometres without a drop of petrol. The real differences in cost, charging and upkeep."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "julien-fabre"
 category: "moteurs-hybrides"
 wp_id: 2044

@@ -2,6 +2,7 @@
 title: "High-Mileage Used Van: How to Choose the Right One Without Regrets"
 description: "A used van with 200,000 km on the clock isn't a gamble if you target the right models and check the critical points. History checks, tax perks and warning signs."
 date: "2026-11-06"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1671
 wp_locale: "en"

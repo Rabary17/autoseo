@@ -2,6 +2,7 @@
 title: "Profilé, intégral ou capucine : quel camping-car choisir pour vos voyages ?"
 description: "Profilé, intégral ou capucine : le choix dépend du poids, de l'espace et du budget. Comparatif chiffré pour un week-end en couple ou un tour d'Europe en famille."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "acheter-camping-car"
 wp_id: 1175

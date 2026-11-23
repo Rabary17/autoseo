@@ -2,6 +2,7 @@
 title: "Van Roof Rack and Ladder Carrier: How to Choose and Install Correctly"
 description: "A side-mounted ladder carrier or roof rack turns a utility van into a versatile work tool. How to choose, install and respect the GVW and insurance in 2026."
 date: "2026-10-24"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1677
 wp_locale: "en"

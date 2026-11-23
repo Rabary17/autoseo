@@ -2,6 +2,7 @@
 title: "Itinéraire vélo sécurisé : quelle appli choisir pour rouler en toute confiance ?"
 description: "Trouver un itinéraire vélo sécurisé n'a jamais été aussi simple. Comparatif de trois applis qui cartographient les pistes cyclables et évitent les axes dangereux."
 date: "2026-08-26"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1739
 wp_locale: "fr"

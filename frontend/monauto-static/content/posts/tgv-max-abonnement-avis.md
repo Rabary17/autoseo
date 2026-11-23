@@ -2,6 +2,7 @@
 title: "TGV Max : ce qu'est devenu l'abonnement illimité SNCF en 2026"
 description: "TGV Max s'appelle désormais MAX Jeune et MAX Senior, réservés aux 16-27 ans et aux plus de 60 ans à 79 €/mois. Les autres voyageurs dépendent de MAX Actif."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1371
 wp_locale: "fr"

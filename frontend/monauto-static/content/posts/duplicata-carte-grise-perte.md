@@ -2,6 +2,7 @@
 title: "Duplicata de carte grise en cas de perte : démarches et coût en 2026"
 description: "Un duplicata de carte grise après une perte se demande en ligne sur le site de l'ANTS (France Titres). Coût fixe de 13,76 €, délai moyen de 5 jours ouvrés."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "duplicata-modifications"
 wp_id: 1018

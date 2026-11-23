@@ -2,6 +2,7 @@
 title: "Uber vs Bolt : lequel est le moins cher pour vos trajets en 2026 ?"
 description: "Bolt affiche des tarifs 15 à 30 % inférieurs à ceux d’Uber en France en 2026. Découvrez quel VTC choisir selon votre trajet, budget et besoins (promos, dis"
 date: "2026-08-11"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1449
 wp_locale: "fr"

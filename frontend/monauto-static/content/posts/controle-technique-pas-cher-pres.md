@@ -2,6 +2,7 @@
 title: "Contrôle technique pas cher près de chez moi : où faire son CT à prix réduit ?"
 description: "Le contrôle technique coûte en moyenne 78 € en France en 2026. Comparateurs, centres indépendants, affichage obligatoire des prix : nos astuces pour payer moins cher."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "controle-technique"
 wp_id: 941

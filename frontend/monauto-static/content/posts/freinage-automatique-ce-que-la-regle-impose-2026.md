@@ -2,6 +2,7 @@
 title: "Freinage automatique, ce que la règle impose dès 2026"
 description: "Depuis le 7 juillet 2026, toutes les voitures neuves doivent détecter les piétons et les cyclistes en plus des véhicules. Ce que change le règlement européen GSR2, concrètement."
 date: "2026-10-21"
+updated: "2026-11-23"
 author: "julien-fabre"
 wp_id: 2039
 wp_locale: "fr"

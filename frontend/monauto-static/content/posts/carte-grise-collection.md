@@ -2,6 +2,7 @@
 title: "Carte grise de collection : critères, prix et démarches 2026"
 description: "Obtenir une carte grise collection (CIC) coûte 13,76 € en 2026 et offre la libre circulation en ZFE sans vignette Crit'Air. Critères, coûts et démarches."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "duplicata-modifications"
 wp_id: 978

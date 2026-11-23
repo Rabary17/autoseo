@@ -2,6 +2,7 @@
 title: "Aides utilitaire électrique pro 2026 : ce que les entreprises touchent encore"
 description: "Bonus et prime à la conversion ont disparu pour les entreprises. Les CEE et les aides locales forment le principal levier en 2026, jusqu'à 9 000 € cumulés."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1557
 wp_locale: "fr"

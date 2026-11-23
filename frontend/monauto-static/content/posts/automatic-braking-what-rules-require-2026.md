@@ -2,6 +2,7 @@
 title: "Automatic Braking, What the Rules Require From 2026"
 description: "Since 7 July 2026, new cars must detect pedestrians and cyclists as well as vehicles. The GSR2 regulation also adds a driver-attention camera. Here's what changes."
 date: "2026-10-23"
+updated: "2026-11-23"
 author: "julien-fabre"
 wp_id: 2046
 wp_locale: "en"

@@ -2,6 +2,7 @@
 title: "Entretien vélo électrique : coût réel et budget à prévoir en 2026"
 description: "L'entretien d'un vélo électrique coûte entre 50 € et 300 € par an selon l'usage. Révisions, pièces d'usure et pannes de batterie : le budget réel à prévoir pour un VAE."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1887
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Carte grise E85 : la mise à jour est-elle vraiment gratuite en 2026 ?"
 description: "La mise à jour de la carte grise après un boîtier E85 homologué est obligatoire sous 1 mois. Coût réel, documents et démarche ANTS expliqués pour 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1126

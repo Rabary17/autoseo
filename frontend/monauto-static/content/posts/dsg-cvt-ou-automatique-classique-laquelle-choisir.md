@@ -2,6 +2,7 @@
 title: "DSG, CVT ou automatique classique, laquelle choisir"
 description: "Trois familles de boîtes automatiques cohabitent sur le marché. Double embrayage, variation continue ou automatique classique, chacune change la conduite, l'entretien et la fiabilité."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "julien-fabre"
 category: "boites-de-vitesses"
 wp_id: 2042

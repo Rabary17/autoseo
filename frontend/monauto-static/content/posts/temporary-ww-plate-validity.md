@@ -2,6 +2,7 @@
 title: "Temporary WW Registration Plate: Validity, Renewal and Process for 2026"
 description: "Since 1 January 2026, the temporary WW plate is pink and valid for 4 months, with no renewal possible. Duration, cost and ANTS steps explained simply."
 date: "2026-11-19"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 wp_id: 1685
 wp_locale: "en"

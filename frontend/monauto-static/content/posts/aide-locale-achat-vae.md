@@ -2,6 +2,7 @@
 title: "Aide locale achat VAE : montants et démarches 2026"
 description: "Le bonus national a disparu, mais votre ville finance peut-être encore votre vélo électrique. Montants réels par ville et démarches 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "aides-a-l-achat"
 wp_id: 1710

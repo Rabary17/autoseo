@@ -2,6 +2,7 @@
 title: "E85 : fiabilité moteur sur le long terme, ce qu'il faut vraiment surveiller"
 description: "L'E85 modifie la combustion et la chimie du moteur. Dilution de l'huile, corrosion des durites, usure des joints : voici les mécanismes réels et comment les anticiper."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1122

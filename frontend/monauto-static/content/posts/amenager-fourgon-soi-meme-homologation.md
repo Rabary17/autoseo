@@ -2,6 +2,7 @@
 title: "Aménager un fourgon soi-même : l'homologation VASP est-elle obligatoire ?"
 description: "Homologation VASP obligatoire si l'aménagement du fourgon est fixe et complet. Critères, démarches, coût et erreurs à éviter pour un aménagement DIY."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1231
 wp_locale: "fr"

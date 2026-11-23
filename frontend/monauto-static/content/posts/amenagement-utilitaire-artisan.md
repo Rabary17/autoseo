@@ -2,6 +2,7 @@
 title: "Aménagement utilitaire artisan : bois, prix et règles fiscales 2026"
 description: "Casiers sur mesure, contreplaqué marine, fixation sans perdre l'exonération TVS : le guide complet pour équiper son fourgon comme un pro en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "amenagement-equipement"
 wp_id: 1546

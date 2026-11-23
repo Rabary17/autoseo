@@ -2,6 +2,7 @@
 title: "Meilleur VAE 2026 : notre sélection pour rouler malin et pas cher"
 description: "Vélo électrique 2026 : comparatif de 5 modèles pour tous les budgets. Autonomie réelle, confort et prix, ce qu'il faut savoir avant d'acheter."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1760
 wp_locale: "fr"

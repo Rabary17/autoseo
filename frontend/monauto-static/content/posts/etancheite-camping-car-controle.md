@@ -2,6 +2,7 @@
 title: "Contrôle d'étanchéité d'un camping-car : quand, comment et à quel prix ?"
 description: "Un camping-car mal étanche développe moisissures et corrosion. Voici quand contrôler l'étanchéité, les méthodes pour le faire soi-même et le coût d'une réparation."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "entretien-hivernage"
 wp_id: 1273

@@ -2,6 +2,7 @@
 title: "Traceur GPS vélo caché : discrétion, efficacité et modèles recommandés en 2026"
 description: "Un traceur GPS vélo caché localise votre vélo en temps réel en cas de vol. Modèles, autonomie réelle, réseau et budget à prévoir pour bien choisir en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "equipement-antivol"
 wp_id: 1728

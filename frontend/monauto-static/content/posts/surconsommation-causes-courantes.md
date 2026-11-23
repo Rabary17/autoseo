@@ -2,6 +2,7 @@
 title: "Surconsommation d'essence : les 10 causes les plus fréquentes et comment les repérer"
 description: "Une surconsommation de 1,5 à 2 L/100 km cache presque toujours une cause mécanique identifiable. Symptômes, coûts de réparation et seuils d'alerte en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 wp_id: 1104
 wp_locale: "fr"

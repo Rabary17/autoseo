@@ -2,6 +2,7 @@
 title: "Télématique flotte : 5 avantages concrets pour les pros (et comment les activer)"
 description: "Pour une flotte de 10 utilitaires, la télématique agit sur carburant, maintenance et assurance, environ la moitié du coût total de possession d'un véhicule."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "lld-gestion-de-flotte"
 wp_id: 1504

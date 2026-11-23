@@ -2,6 +2,7 @@
 title: "Covoiturage domicile-travail : prime 2026, montant et conditions du Forfait Mobilités Durables"
 description: "Le Forfait Mobilités Durables finance jusqu'à 600 € par an de covoiturage domicile-travail, exonérés d'impôts. Montant, conditions et cumul avec les transports en commun."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "karim-belaid"
 category: "covoiturage"
 wp_id: 1352

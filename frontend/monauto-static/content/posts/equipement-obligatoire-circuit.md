@@ -2,6 +2,7 @@
 title: "Équipement obligatoire sur circuit : ce que dit la réglementation en 2026"
 description: "Rouler sur circuit impose un équipement précis : casque homologué, gants certifiés et tenue adaptée. Règles, budget et sanctions à connaître avant votre premier track day."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "thomas-lefevre"
 wp_id: 1918
 wp_locale: "fr"

@@ -2,6 +2,7 @@
 title: "Vélo cargo électrique famille : le guide complet pour bien choisir en 2026"
 description: "Transporter ses enfants ou ses courses en ville sans voiture, c’est possible avec un vélo cargo électrique familial. Modèles, budget, aides et conseils pou"
 date: "2026-09-10"
+updated: "2026-11-23"
 author: "karim-belaid"
 wp_id: 1879
 wp_locale: "fr"

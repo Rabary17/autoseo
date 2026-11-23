@@ -2,6 +2,7 @@
 title: "Péage camping-car classe 2 : tarifs, règles et astuces pour voyager malin en Europe"
 description: "Un camping-car classe 2 paie plus cher au péage qu'une voiture. Tarifs exacts en France et en Europe, et astuces pour éviter les mauvaises surprises."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "assurance-reglementation"
 wp_id: 1151

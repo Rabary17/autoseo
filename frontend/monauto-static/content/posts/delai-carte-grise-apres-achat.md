@@ -2,6 +2,7 @@
 title: "Délai carte grise après achat : tout savoir sur les 30 jours légaux"
 description: "Après l'achat d'une voiture d'occasion, vous disposez d'un délai légal d'1 mois pour obtenir une nouvelle carte grise à votre nom. Passé ce délai, une amende de 135 € s'applique."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "sophie-andrieu"
 category: "changement-de-titulaire"
 wp_id: 955

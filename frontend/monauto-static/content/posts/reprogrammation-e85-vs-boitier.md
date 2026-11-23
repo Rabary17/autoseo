@@ -2,6 +2,7 @@
 title: "Reprogrammation E85 vs boîtier : lequel choisir pour convertir sa voiture ?"
 description: "Boîtier E85 ou reprogrammation moteur : coûts, homologation FE, fiabilité et économies réelles face à un gazole et un SP95 au plus haut en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "e85-conversions"
 wp_id: 1119

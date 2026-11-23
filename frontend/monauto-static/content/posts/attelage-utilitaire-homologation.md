@@ -2,6 +2,7 @@
 title: "Attelage utilitaire homologation : normes, prix et sanctions 2026"
 description: "UNECE R55, plaque d'homologation, mise à jour de la carte grise : ce qu'impose la loi pour tracter légalement avec un utilitaire en 2026."
 date: "2026-11-22"
+updated: "2026-11-23"
 author: "nathalie-moreau"
 category: "amenagement-equipement"
 wp_id: 1526
