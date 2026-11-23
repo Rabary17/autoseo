@@ -1,0 +1,69 @@
+name: Autopilote actus techcars (statique)
+
+# Chaque jour : lit le sheet de veille, écrit les actus retenues dans
+# frontend/monauto/content/posts/, puis commit et push sur la branche de
+# production. Le push déclenche le déploiement Vercel (intégration Git).
+# Même principe que techno-play : pas de WordPress, le site est reconstruit à
+# chaque publication.
+#
+# Secrets à créer dans GitHub (Settings > Secrets and variables > Actions) :
+#   SHEETS_SERVICE_ACCOUNT_JSON  contenu complet du JSON du compte de service Google
+#                                (ce compte doit être éditeur du sheet de veille)
+#   ANTHROPIC_API_KEY            clé API Claude (tri et rédaction)
+#   VEILLE_SHEET_ID (optionnel)  identifiant du sheet, valeur par défaut dans le script
+
+on:
+  schedule:
+    # 06:00 UTC = 09:00 à Antananarivo
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      n:
+        description: "Nombre d'articles à écrire"
+        default: "2"
+      dry_run:
+        description: "true = rédige sans écrire de fichier ni pousser"
+        type: boolean
+        default: false
+
+jobs:
+  actus:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    defaults:
+      run:
+        working-directory: frontend/monauto
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Lancer l'autopilote
+        env:
+          SHEETS_SERVICE_ACCOUNT_JSON: ${{ secrets.SHEETS_SERVICE_ACCOUNT_JSON }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VEILLE_SHEET_ID: ${{ secrets.VEILLE_SHEET_ID }}
+        run: |
+          N="${{ github.event.inputs.n || '2' }}"
+          DRY=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then DRY="--dry-run"; fi
+          node scripts/actus-autopilote.mjs --n="$N" $DRY
+
+      - name: Commit et push (si de nouveaux articles)
+        if: github.event.inputs.dry_run != 'true'
+        working-directory: .
+        run: |
+          git config user.name "actus-autopilote[bot]"
+          git config user.email "actus-autopilote@techcars.fr"
+          git add frontend/monauto/content/posts
+          if git diff --cached --quiet; then
+            echo "Aucun nouvel article."
+          else
+            git commit -m "feat(actus): autopilote, nouveaux articles d'actualité"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
