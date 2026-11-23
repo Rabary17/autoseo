@@ -5,6 +5,7 @@ import { AUTHORS, getAuthor } from "@/lib/authors";
 import { getPostsByAuthor, resolveCoverImage } from "@/lib/posts";
 import { getCategory } from "@/lib/categories";
 import { profilePageSchema } from "@/lib/schema";
+import { pageMetadata } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 
 const dateFr = (d: string) => (d ? new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" }) : "");
@@ -17,7 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const author = getAuthor(slug);
   if (!author) return {};
-  return { title: author.name, description: author.shortBio };
+  return pageMetadata({
+    title: `Articles de ${author.name}`,
+    description: author.shortBio,
+    path: `/auteur/${author.slug}/`,
+  });
 }
 
 export default async function AuthorPage({ params }: { params: Promise<{ slug: string }> }) {

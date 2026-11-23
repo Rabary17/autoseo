@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_NAME, SITE_DESCRIPTION, SITE_LEGAL, SOCIAL_LINKS } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 import { AUTHORS, DEFAULT_AUTHOR_SLUG, getAuthor, authorUrl, type Author } from "@/lib/authors";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "À propos",
   description: `${SITE_NAME}, le média expert de l'auto et de la mobilité : pour qui, comment on écrit, qui édite le site.`,
-};
+  path: "/a-propos/",
+});
 
 // Page E-E-A-T centrale (qui publie, pourquoi, selon quels principes) —
 // référencée par `publishingPrinciples` dans le JSON-LD (lib/schema.ts).

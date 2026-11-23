@@ -5,6 +5,7 @@ import Card from "@/components/Card";
 import { getPostsByCategory, resolveCoverImage } from "@/lib/posts";
 import { CATEGORIES, getCategory } from "@/lib/categories";
 import { resolveAuthor, authorUrl } from "@/lib/authors";
+import { pageMetadata } from "@/lib/seo";
 
 const dateFr = (d: string) => (d ? new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" }) : "");
 
@@ -16,7 +17,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const categorie = getCategory(slug);
   if (!categorie) return {};
-  return { title: categorie.title };
+  return pageMetadata({
+    title: categorie.title,
+    description: `${categorie.title} : les articles de la rubrique ${categorie.section} sur techcars.`,
+    path: `/categorie/${categorie.slug}/`,
+  });
 }
 
 export default async function CategoriePage({ params }: { params: Promise<{ slug: string }> }) {

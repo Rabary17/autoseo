@@ -5,11 +5,13 @@ import { getAllPosts, resolveCoverImage } from "@/lib/posts";
 import { getCategory } from "@/lib/categories";
 import { resolveAuthor, authorUrl } from "@/lib/authors";
 import { SITE_NAME } from "@/lib/site";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Blog",
+export const metadata: Metadata = pageMetadata({
+  title: "Blog : tous les articles auto et mobilité",
   description: `Tous les articles ${SITE_NAME} : entretien, pannes, marques, essais, démarches.`,
-};
+  path: "/blog/",
+});
 
 const dateFr = (d: string) => (d ? new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" }) : "");
 

@@ -3,6 +3,14 @@ import Card from "@/components/Card";
 import { getAllPosts, resolveCoverImage } from "@/lib/posts";
 import { getCategory } from "@/lib/categories";
 import { resolveAuthor, authorUrl } from "@/lib/authors";
+import { pageMetadata } from "@/lib/seo";
+import { SITE_DESCRIPTION } from "@/lib/site";
+
+export const metadata = {
+  ...pageMetadata({ title: "Le média expert de l'auto et de la mobilité", description: SITE_DESCRIPTION, path: "/" }),
+  // Titre d'accueil inchangé (marque + promesse), hors gabarit « %s — techcars ».
+  title: { absolute: `techcars — Le média expert de l'auto et de la mobilité` },
+};
 
 const dateFr = (d: string) => (d ? new Date(d).toLocaleDateString("fr-FR", { dateStyle: "long" }) : "");
 

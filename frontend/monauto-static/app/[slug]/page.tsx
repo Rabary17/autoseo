@@ -7,6 +7,7 @@ import { getCategory } from "@/lib/categories";
 import { articleSchema, faqSchema } from "@/lib/schema";
 import JsonLd from "@/components/JsonLd";
 import { formatDate } from "@/lib/format";
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   const slugsPosts = getAllPosts().map((p) => ({ slug: p.slug }));
@@ -17,9 +18,22 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostBySlug(slug);
-  if (post) return { title: post.title, description: post.description };
+  if (post)
+    return pageMetadata({
+      title: post.title,
+      description: post.description,
+      path: `/${post.slug}/`,
+      type: "article",
+      image: resolveCoverImage(post).src,
+    });
   const hub = getHubBySlug(slug);
-  if (hub) return { title: hub.title, description: hub.description };
+  if (hub)
+    return pageMetadata({
+      title: hub.title,
+      description: hub.description,
+      path: `/${hub.slug}/`,
+      image: resolveCoverImage(hub).src,
+    });
   return {};
 }
 
