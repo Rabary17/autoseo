@@ -46,5 +46,5 @@ export function getCategory(slug: string | undefined): Category | undefined {
 }
 
 export function categoryUrl(category: Category) {
-  return `/${category.slug}/`;
+  return `/categorie/${category.slug}/`;
 }

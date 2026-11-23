@@ -1,6 +1,8 @@
 // Identité du site — reprise telle quelle de frontend/monauto/lib/site.ts
 // (même marque, techcars.fr, migration WordPress → Markdown 2026-11-20).
-export const SITE_URL = (process.env.SITE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+// Repli sur l'hôte de production : sans SITE_URL, les canonical et le JSON-LD
+// pointaient sur localhost:3000 dans le build statique.
+export const SITE_URL = (process.env.SITE_URL ?? "https://techcars.fr").replace(/\/$/, "");
 export const SITE_NAME = process.env.SITE_NAME ?? "techcars";
 export const SITE_DESCRIPTION =
   "Le média expert de l'auto et de la mobilité : entretien, pannes, marques, essais, démarches. Guides vérifiés, sourcés et tenus à jour par une rédaction identifiée.";
