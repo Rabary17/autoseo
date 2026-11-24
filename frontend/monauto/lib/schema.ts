@@ -1,172 +1,131 @@
-// Génération JSON-LD — un seul endroit, à partir des mêmes données que le
-// rendu visible (jamais dupliqué/désynchronisé, voir skills/geo.md section 3
-// et skills/developpement.md section 3 : "une seule source de vérité").
-import type { FaqItem, Source, WpPost, WpUser } from "./types";
-import { SITE_LEGAL, SITE_NAME, SITE_SOCIAL_LINKS, SITE_URL } from "./site";
+// JSON-LD structuré — même modèle cible que techno-play.com et
+// besthomeproject.com (2026-11-20) : entités (Organization, WebSite, Person)
+// déclarées une fois avec un @id stable, puis référencées ailleurs
+// (`{"@id": ...}`) plutôt que dupliquées à chaque page.
+import { SITE_NAME, SITE_URL, SITE_DESCRIPTION, SOCIAL_LINKS, SITE_LEGAL } from "./site";
+import { resolveCoverImage, type Post } from "./posts";
+import { resolveAuthor, authorUrl, type Author } from "./authors";
+import { getCategory } from "./categories";
 
-export interface Crumb {
-  name: string;
-  href: string;
+export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
+export const WEBSITE_ID = `${SITE_URL}/#website`;
+
+function organizationRef() {
+  return { "@id": ORGANIZATION_ID };
 }
 
-export const organizationSchema = () => ({
-  "@type": "Organization",
-  "@id": `${SITE_URL}/#organization`,
-  name: SITE_NAME,
-  url: SITE_URL,
-  // Requis par Google pour afficher le logo de la marque dans les résultats
-  // enrichis / le Knowledge Panel. Format raster (PNG), pas SVG — recommandation
-  // Google pour ce champ précis (voir docs/architecture-headless.md section 6).
-  logo: {
-    "@type": "ImageObject",
-    url: `${SITE_URL}/logo.png`,
-  },
-  // Preuve d'existence indépendante du site pour Google (E-E-A-T) : une
-  // organisation identifiable a une présence sociale active, pas seulement un
-  // nom de domaine. Comptes de MARQUE réels (pas de persona), voir
-  // docs/feuille-de-route-eeat-industrialisation.md section 2.
-  sameAs: SITE_SOCIAL_LINKS.map((s) => s.url),
-  // Identité légale réelle (Priorité 1 du chantier EEAT, résolue le
-  // 2026-09-02) — même source que mentions-legales/page.tsx, voir lib/site.ts.
-  legalName: SITE_LEGAL.legalName,
-  email: SITE_LEGAL.contactEmail,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: SITE_LEGAL.streetAddress,
-    addressLocality: SITE_LEGAL.addressLocality,
-    addressCountry: SITE_LEGAL.addressCountry,
-  },
-});
+function urlAbsolue(src: string) {
+  return /^https?:\/\//.test(src) ? src : `${SITE_URL}${src}`;
+}
 
-export const websiteSchema = () => ({
-  "@type": "WebSite",
-  "@id": `${SITE_URL}/#website`,
-  url: SITE_URL,
-  name: SITE_NAME,
-});
+/** Identifiant stable de la société éditrice — nœud séparé du `@graph`,
+ * référencé par `organizationNode().parentOrganization` via `{"@id": ...}`
+ * (modèle cible : jamais de nœud dupliqué/imbriqué, voir lebigdata.fr). */
+export const COMPANY_ID = `${SITE_URL}/#editeur`;
 
-export const breadcrumbSchema = (items: Crumb[]) => ({
-  "@type": "BreadcrumbList",
-  itemListElement: items.map((c, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: c.name,
-    item: `${SITE_URL}${c.href}`,
-  })),
-});
+function companyNode() {
+  return {
+    "@type": "Organization",
+    "@id": COMPANY_ID,
+    name: SITE_LEGAL.legalName,
+    legalName: SITE_LEGAL.legalName,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: SITE_LEGAL.streetAddress,
+      addressLocality: SITE_LEGAL.addressLocality,
+      addressCountry: SITE_LEGAL.addressCountry,
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      email: SITE_LEGAL.contactEmail,
+      availableLanguage: ["fr", "en"],
+    },
+  };
+}
 
-export const personSchema = (author: WpUser) => ({
-  "@type": "Person",
-  "@id": `${SITE_URL}/auteur/${author.slug}#person`,
-  name: author.name,
-  description: author.description,
-  url: `${SITE_URL}/auteur/${author.slug}`,
-  jobTitle: author.acf?.job_title,
-  sameAs: (author.acf?.same_as ?? "")
-    .split("\n")
-    .map((s) => s.trim())
-    .filter(Boolean),
-});
+function organizationNode() {
+  return {
+    "@type": ["Organization", "NewsMediaOrganization"],
+    "@id": ORGANIZATION_ID,
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    logo: {
+      "@type": "ImageObject",
+      "@id": `${SITE_URL}/#logo`,
+      url: `${SITE_URL}/logo-icon.png`,
+      contentUrl: `${SITE_URL}/logo-icon.png`,
+      width: 180,
+      height: 180,
+    },
+    ...(SOCIAL_LINKS.length > 0 ? { sameAs: SOCIAL_LINKS.map((s) => s.url) } : {}),
+    publishingPrinciples: `${SITE_URL}/a-propos/`,
+    parentOrganization: { "@id": COMPANY_ID },
+  };
+}
 
-export function articleSchema(post: WpPost, sources: Source[]) {
-  const author = post._embedded?.author?.[0];
-  const media = post._embedded?.["wp:featuredmedia"]?.[0];
-  const cat = post._embedded?.["wp:term"]?.[0]?.[0];
+function websiteNode() {
+  return {
+    "@type": "WebSite",
+    "@id": WEBSITE_ID,
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    publisher: organizationRef(),
+  };
+}
 
+export function homepageSchema() {
+  return { "@context": "https://schema.org", "@graph": [organizationNode(), websiteNode(), companyNode()] };
+}
+
+function personNode(author: Author) {
+  const pageUrl = `${SITE_URL}${authorUrl(author)}`;
+  const portraitId = `${pageUrl}#portrait`;
+  return {
+    "@type": "Person",
+    "@id": `${pageUrl}#person`,
+    name: author.name,
+    url: pageUrl,
+    jobTitle: author.role,
+    description: author.shortBio,
+    knowsAbout: author.expertise,
+    ...(author.image
+      ? { image: { "@type": "ImageObject", "@id": portraitId, url: urlAbsolue(author.image), contentUrl: urlAbsolue(author.image) } }
+      : {}),
+    worksFor: organizationRef(),
+    sameAs: author.socials.map((s) => s.url),
+    mainEntityOfPage: { "@id": pageUrl },
+  };
+}
+
+function personRef(author: Author) {
+  const pageUrl = `${SITE_URL}${authorUrl(author)}`;
+  return { "@type": "Person", "@id": `${pageUrl}#person`, name: author.name, url: pageUrl };
+}
+
+export function profilePageSchema(author: Author) {
+  const pageUrl = `${SITE_URL}${authorUrl(author)}`;
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Article",
-        "@id": `${SITE_URL}/${post.slug}#article`,
-        headline: post.title.rendered,
-        datePublished: post.date,
-        dateModified: post.modified,
-        mainEntityOfPage: `${SITE_URL}/${post.slug}`,
-        // ImageObject avec dimensions (pas juste une URL nue) : requis par
-        // Google pour l'éligibilité aux images dans les résultats enrichis et
-        // Discover — largeur ≥ 696px recommandée (dépend de l'image uploadée
-        // dans WordPress, voir skills/wordpress-publication.md section 3).
-        image: media
-          ? {
-              "@type": "ImageObject",
-              url: media.source_url,
-              width: media.media_details?.width,
-              height: media.media_details?.height,
-            }
-          : undefined,
-        articleSection: cat?.name,
-        author: author
-          ? { "@type": "Person", name: author.name, url: `${SITE_URL}/auteur/${author.slug}` }
-          : undefined,
-        citation: sources.map((s) => s.label),
-        publisher: { "@id": `${SITE_URL}/#organization` },
+        "@type": "ProfilePage",
+        "@id": pageUrl,
+        url: pageUrl,
+        name: author.name,
+        isPartOf: { "@id": WEBSITE_ID },
+        mainEntity: { "@id": `${pageUrl}#person` },
+        ...(author.image ? { primaryImageOfPage: { "@id": `${pageUrl}#portrait` } } : {}),
+        inLanguage: "fr-FR",
       },
-      organizationSchema(),
-      websiteSchema(),
+      personNode(author),
     ],
   };
 }
 
-export function breadcrumbLd(items: Crumb[]) {
-  return { "@context": "https://schema.org", ...breadcrumbSchema(items) };
-}
-
-// Pages de silo/sous-cocon/tag : ce sont des pages de LISTING (catégories WP),
-// pas des articles — CollectionPage + ItemList est le schéma recommandé par
-// Google pour ce type de page (voir https://schema.org/CollectionPage), à ne
-// pas confondre avec Article qui décrit un contenu éditorial unique avec
-// auteur/date. Le BreadcrumbList est déjà émis séparément par le composant
-// <Breadcrumb> (voir components/Breadcrumb.tsx) — pas dupliqué ici.
-export function collectionPageLd({
-  title,
-  description,
-  path,
-  items,
-}: {
-  title: string;
-  description?: string;
-  path: string;
-  items: { name: string; href: string }[];
-}) {
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "CollectionPage",
-        "@id": `${SITE_URL}${path}#webpage`,
-        name: title,
-        description,
-        url: `${SITE_URL}${path}`,
-        isPartOf: { "@id": `${SITE_URL}/#website` },
-        ...(items.length > 0
-          ? {
-              mainEntity: {
-                "@type": "ItemList",
-                itemListElement: items.map((it, i) => ({
-                  "@type": "ListItem",
-                  position: i + 1,
-                  url: `${SITE_URL}${it.href}`,
-                  name: it.name,
-                })),
-              },
-            }
-          : {}),
-      },
-      organizationSchema(),
-      websiteSchema(),
-    ],
-  };
-}
-
-export function personLd(author: WpUser) {
-  return { "@context": "https://schema.org", ...personSchema(author) };
-}
-
-// Un seul bloc FAQPage par page, questions dans le même ordre que le texte
-// visible (voir skills/geo.md section 3) — le composant appelant est
-// responsable d'afficher exactement les mêmes questions/réponses.
-export function faqPageLd(items: FaqItem[]) {
+export function faqSchema(items: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -175,5 +134,36 @@ export function faqPageLd(items: FaqItem[]) {
       name: item.question,
       acceptedAnswer: { "@type": "Answer", text: item.answer },
     })),
+  };
+}
+
+export function articleSchema(post: Post) {
+  const cover = resolveCoverImage(post);
+  const author = resolveAuthor(post.author);
+  const category = post.category ? getCategory(post.category) : undefined;
+  const pageUrl = `${SITE_URL}/${post.slug}/`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "@id": `${pageUrl}#article`,
+    url: pageUrl,
+    mainEntityOfPage: { "@id": pageUrl },
+    headline: post.title,
+    description: post.description,
+    ...(cover.src ? { image: [urlAbsolue(cover.src)] } : {}),
+    datePublished: post.date,
+    dateModified: post.updated ?? post.date,
+    ...(category ? { articleSection: category.title } : {}),
+    author: personRef(author),
+    publisher: organizationRef(),
+    inLanguage: post.locale === "en" ? "en" : "fr-FR",
+  };
+}
+
+export function breadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, item: item.url })),
   };
 }
